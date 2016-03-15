@@ -1,0 +1,32 @@
+reset
+unset key
+unset colorbox
+set ytics offset 0,-1
+set ticslevel 0
+min = 0
+col = 10
+
+DATA = ""
+DATA2 = ""
+PALETTE = "set palette defined ("
+
+pr(x, y) = sprintf("%f %f\n", x, y)
+zero_line(x, y) = DATA.sprintf("\n").DATA2.sprintf("\n%f %f\n", x, y)
+zero_pal(x) = sprintf("%d %.3f %.3f %.3f", x, rand(0), rand(0), rand(0))
+
+f(x, y) = ($0 == 0 ? (DATA = zero_line($1, x), DATA2 = pr($1, min), PALETTE = PALETTE.zero_pal(y).", ") : \
+        (DATA = DATA.pr($1, x), DATA2 = DATA2.pr($1, min)), x)
+
+plot for [i=2:col+1] '../data/temporary_data/histogram_of_card_answer_rates_by_days.txt' u 1:(f(column(i), i))
+
+DATA = DATA.sprintf("\n").DATA2
+
+set print '../data/temporary_data/histogram_of_card_answer_rates_by_days.txt'
+print DATA
+set print
+
+eval(PALETTE.zero_pal(col+2).")")
+
+splot for [i=5:col-1] '../data/temporary_data/histogram_of_card_answer_rates_by_days.txt' every :::(2*i)::(2*i+1) u 1:(i):2:(i+2) with lines
+
+pause -1
