@@ -67,12 +67,14 @@ public class LanguageStudyer {
 			cardTester.setAnswerDataContainer(answerDataContainer);
 
 			System.out.print("\033[H\033[2J");
-			System.out.println("1 - practising with 20 random cards from data base (~6 min)");
-			System.out.println("2 - practising with 6 latest studyed cards, 6 cards among the hardest ones, 8 random cards (~6 min)");
-			System.out.println("3 - practising with 4 latest studyed cards, 8 cards among the hardest ones, 8 random cards (~6 min)");
-			System.out.println("4 - practising with 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
-			System.out.println("5 - practising with 4 latest studyed cards, 8 among hardest cards, 4 cards with least significant answer rate, 4 random cards");
-			System.out.println("6 - practising with 4 latest studyed cards, 8 among hardest cards, 2 among cards with the 100 least significant answer rate, 4 random cards");
+			System.out.println("practising with:");
+			System.out.println("1 - 20 random cards from data base");
+			System.out.println("2 - 6 latest studyed cards, 6 cards among the hardest 20%, 8 random cards");
+			System.out.println("3 - 4 latest studyed cards, 8 among the hardest 20%, 8 random cards");
+			System.out.println("4 - 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
+			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
+			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
+			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
 
 			String c = console.readLine();
 			if (c.equals("1")) {
@@ -92,6 +94,9 @@ public class LanguageStudyer {
 			}
 			if (c.equals("6")) {
 				cardTester.performTest6();
+			}
+			if (c.equals("7")) {
+				cardTester.performTest7();
 			}
 		}
 

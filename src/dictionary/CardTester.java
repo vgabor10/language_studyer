@@ -143,7 +143,6 @@ public class CardTester {
 		}
 	}
 
-
 	public int getRandomCardIndex() {
 		return randomGenerator.nextInt(cardContainer.numberOfCards());
 	}
@@ -314,11 +313,51 @@ public class CardTester {
 		}
 	}
 
+	public void chooseCardsToTestIndexesForTest7() {
+
+		cardsToTestIndexes.clear();
+
+		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
+ 		for (int index : cardsToTestIndexes) {
+			testAdvance.put(index,0);
+		}
+
+		int index;
+		for (int i=0; i<4; i++) {
+			do {
+				index = getRandomHardestCardIndex(0.2);
+			} while (cardsToTestIndexes.contains(index));
+			cardsToTestIndexes.add(index);
+			testAdvance.put(index,0);
+		}
+
+		for (int i=0; i<4; i++) {
+			do {
+				index = getRandomHardestCardIndex2(100);
+			} while (cardsToTestIndexes.contains(index));
+			cardsToTestIndexes.add(index);
+			testAdvance.put(index,0);
+		}
+
+		Set<Integer> cardsToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
+		for (int i : cardsToAdd) {
+			testAdvance.put(i,0);
+			cardsToTestIndexes.add(i);
+		}
+
+		for (int i=0; i<6; i++) {
+			do {
+				index = getRandomCardIndex();
+			} while (cardsToTestIndexes.contains(index));
+			cardsToTestIndexes.add(index);
+			testAdvance.put(index,0);
+		}
+	}
+
 	public void performTest1() {	//20 random cards
 		chooseCardsToTestIndexesForTest1();
 		performTest();
 	}
-
 
 	public void performTest2() {	//6 latest studyed cards, 6 among hardest cards, 8 random cards
 		chooseCardsToTestIndexesForTest2();
@@ -340,8 +379,13 @@ public class CardTester {
 		performTest();
 	}
 
-	public void performTest6() {	//4 latest studyed cards, 8 among hardest cards, 2 cards among cards with the 100 lest significant answer rate, 4 random cards
+	public void performTest6() {	//4 latest studyed cards, 8 among hardest cards, 2 cards among cards with the 100 lest significant answer rate, 6 random cards
 		chooseCardsToTestIndexesForTest6();
+		performTest();
+	}
+
+	public void performTest7() {	//4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards
+		chooseCardsToTestIndexesForTest7();
 		performTest();
 	}
 
