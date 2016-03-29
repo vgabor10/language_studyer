@@ -139,7 +139,7 @@
 138	e Krankheit	betegség
 139	unten	lenn
 140	hässlich	ronda
-141	r Wagen	autó
+141	r Wagen	autó, kocsi
 142	e Küche	konyha
 143	zeigen	mutat
 144	erklären	elmagyaráz
@@ -408,7 +408,7 @@
 407	beinahe	majdnem
 408	e Agentur	ügynükség
 409	vergangen	múlt (mn)
-410	r Tote	halott
+410	r Tote	halott (fn)
 411	r Lastwagen	teherautó
 412	weiterhin	továbbá, továbbra
 413	e Wahl	választás
@@ -669,7 +669,7 @@
 668	erobern	elfoglal
 669	zerstören	lerombol
 670	messen	mér
-671	e Herbst	ősz
+671	r Herbst	ősz
 672	e Halbinsel	félsziget
 673	r Maler	festő
 674	antragen	javasol
@@ -876,7 +876,7 @@
 875	nachdenken	gondolkodik
 876	ermöglichen	engedélyez
 877	besorgen	aggódik
-878	e Untersützung	támogatás
+878	e Unterstützung	támogatás
 879	e Entscheidung	döntés
 880	erläutern	elmagyaráz
 881	früher	előbb
@@ -1486,7 +1486,7 @@
 1485	e Literatur	irodalom
 1486	e Grammatik	nyelvtan
 1487	e Fremdsprache	idegen nyelv
-1488	r Mathematik	matematika
+1488	e Mathematik	matematika
 1489	e Geographie	földrajz
 1490	e Physik	fizika
 1491	e Chemie	kémia
@@ -1529,7 +1529,7 @@
 1528	s Gehalt	fizetés
 1529	r Lohn	bér
 1530	r Arbeitgeber	munkaadó
-1531	r Angestellter	alkalmazott
+1531	r Angestellte	alkalmazott
 1532	e Bewerbung	pályázat
 1533	r Lebenslauf	életrajz
 1534	r Tag	nap
@@ -2003,2759 +2003,2752 @@
 2002	r Winter	tél
 2003	r Frühling	tavasz
 2004	r Sommer	nyár
-2005	r Herbst	ősz
-2006	r Schnee	hó
-2007	e Wolke	felhő
-2008	wolkig	felhős
-2009	eisig	jeges
-2010	glatt	csúszós
-2011	e Sonne	Nap
-2012	sonnig	napos
-2013	heiß	forró
-2014	warm	meleg
-2015	nass	nedves
-2016	e Jahreszeit	évszak
-2017	r Sturm	vihar
-2018	mild	enyhe
-2019	veränderlich	változékony
-2020	freundlich	barátságos
-2021	kühl	hűvös
-2022	neblig	ködös
-2023	trüb	borús
-2024	stürmisch	viharos
-2025	regnerisch	esős
-2026	scheußlich	szörnyű
-2027	e Wettervorhersage	időjáráselőrejelzés
-2028	e Strömung	áramlás, áramlat
-2029	r Luftdruck	légnyomás
-2030	bewölkt	felhős
-2031	klar	tiszta
-2032	r Niederschlag	csapadék
-2033	r Nebel	köd
-2034	r Frost	fagy (fn)
-2035	frieren	fagy (ige)
-2036	tauen	olvad
-2037	r Blitz	villám
-2038	blitzen	villámlik
-2039	r Donner	dörgés
-2040	donnern	dörög (ég)
-2041	e Dürre	szárazság
-2042	e Temperatur	hőmérséklet
-2043	r Ast	ág
-2044	kahl	kopasz, kopár
-2045	e Überschwemmung	áradás
-2046	e Sichtweite	látótávolság
-2047	e Rose	rózsa
-2048	r Radler	kerékpáros
-2049	r Radweg	bicikliút
-2050	r Apparat	berendezés
-2051	s Wartezimmer	váróterem
-2052	vorkommen	előfordul, látszik
-2053	husten	köhög
-2054	r Patient	páciens
-2055	erschöpft	kimerült
-2056	s Medikament	gyógyszer
-2057	e Arznei	orvosság
-2058	zuständig	illetékes (mn)
-2059	schmerzhaft	fájdalmas
-2060	e Untersuchung	vizsgálat
-2061	r Chirurg	sebész
-2062	e Krankenschwester	ápolónő
-2063	e Operation	operáció
-2064	r Oberarzt	főorvos
-2065	s Organ	szerv
-2066	e Komplikation	komplikáció
-2067	r Prozeß	eljárás
-2068	e Grippe	influenza
-2069	r Schnupfen	nátha
-2070	e Erkältung	megfázás
-2071	r Harn	vizelet
-2072	r Durchfall	hasmenés
-2073	e Kondome	óvszer
-2074	s Rezept	recept
-2075	verschreiben	felír
-2076	e Tablette	tabletta
-2077	r Tropfen	csepp
-2078	e Vergiftung	mérgezés
-2079	lebensgefährlich	életveszélyes
-2080	e Nebenwirkung	mellékhatás
-2081	s Fest	ünnep, ünnepség
-2082	r Brauch	szokás
-2083	e Ostern	húsvét
-2084	e Weihnachten	karácsony
-2085	r Geburtstag	szülinap
-2086	e Hochzeit	esküvő
-2087	e Geburt	születés
-2088	s Nest	fészek
-2089	s Familienmitglied	családtag
-2090	s Grab	sír (főnév)
-2091	anzünden	meggyújt
-2092	e Kerze	gyertya
-2093	r Weihnachtsbaum	karácsonyfa
-2094	schmücken	feldíszíteni vmit
-2095	e Kugel	gömb
-2096	einpacken	becsomagol
-2097	auspacken	kicsomagol
-2098	s Neujahr	újév
-2099	staatlich	állami
-2100	e Bürgerrevolution	forradalom
-2101	r Freiheitskampf	szabadságharc
-2102	r Kreis	kör, körzet
-2103	e Party	buli, parti
-2104	verschicken	elküld
-2105	r Zeuge	tanú
-2106	r Pfarrer	pap
-2107	schwören	esküszik
-2108	e Treue	hűség
-2109	ewig	örök
-2110	e Hochzeitsreise	nászút
-2111	e Veranstaltung	rendezvény
-2112	r Kosename	becenév
-2113	vertraut	bizalmas
-2114	r Politiker	politikus
-2115	e Gedenkfeier	visszaemlékezés
-2116	e Forderung	követelmény, követelés
-2117	zusammenfassen	összefoglalni
-2118	e Königin	királynő
-2119	r Herzog	herceg
-2120	s Feuerwerk	tűzijáték
-2121	e Republik	köztársaság
-2122	e Unterdrückung	elnyomás
-2123	e Truppe	csapat
-2124	stationieren	állomásoztat
-2125	e Unzufriedenheit	elégedettlenség
-2126	e Erbitterung	elkeseredés
-2127	e Demonstration	demonsráció
-2128	r Streik	sztrájk
-2129	e Reform	reform
-2130	e Wille	akarat
-2131	damalig	akkori
-2132	e Handschelle	bilincs
-2133	töten	megöl
-2134	s Begräbnis	temetés
-2135	e Pressefreiheit	sajtószabadság
-2136	s Pluralismus	többpártrendszer
-2137	r Umweltschutz	környezetvédelem
-2138	heutzutage	manapság
-2139	e Plastiktüte	nylonzacskó
-2140	s Waschpulver	mosópor
-2141	e Verpackung	csomagolás
-2142	r Abfall	hulladék
-2143	r Müll	szemét
-2144	schaden	károsítani
-2145	e Vorschrift	előírás
-2146	vernichten	megsemmisít
-2147	e Kanalisation	csatornázás
-2148	s Taschentuch	zsebkendő
-2149	s Zeichen	jel
-2150	umweltschmutzig	környezetszennyező
-2151	umweltfreundlich	környezetbarát
-2152	umweltschädlich	környezetkárosító
-2153	e Folie	fólia
-2154	e Batterie	elem
-2155	s Filter	szűrő
-2156	volljährig	nagykorú
-2157	minderjährig	fiatalkorú
-2158	e Stimme	szavazat
-2159	s Mandatum	mandátum
-2160	e Koalition	koalíció
-2161	e Post	posta
-2162	neutral	semleges
-2163	r Staatsoberhaupt	államfő
-2164	r Ministerpräsident	miniszterelnök
-2165	r Minister	miniszter
-2166	r Finanzminister	pénzügyminiszter
-2167	e Kampagne	kampány
-2168	r Wahlbürger	választópolgár
-2169	erfolgreich	sikeres
-2170	s Kreuz	kereszt
-2171	e Runde	forduló
-2172	e Kenntnis	ismeret
-2173	schmutzig	koszos
-2174	e Hemmung	gátlás
-2175	s Ackerland	szántóföld
-2176	r Fremdenverkehr	idegenforgalom
-2177	wirtschaftlich	gazdasági
-2178	e Tiefebene	alföld
-2179	s Hochwasser	árvíz
-2180	nahelegen	közeli
-2181	prachtvoll	pompás
-2182	r Springbrunnen	szökőkút
-2183	e Wiedervereinigung	újraegyesítés
-2184	s Parlament	parlament
-2185	s Symbol	szimbólum
-2186	e Fahne	zászló
-2187	e Nationalhymne	nemzeti himnusz
-2188	e Strophe	versszak
-2189	e Melodie	dallam
-2190	e Oberfläche	felszín
-2191	r Fluss	folyó
-2192	s Industriegebiet	iparvidék
-2193	r Bodenschatz	ásványkincs
-2194	e Wiese	rét, mező
-2195	r Dichter	költő
-2196	e Novelle	novella
-2197	e Übersetzung	fordítás
-2198	e Bibel	Biblia  
-2199	e Einfachheit	egyszerűség
-2200	e Klarheit	tisztaság
-2201	e Funktion	funkció
-2202	e Schrift	írás
-2203	e Spannung	izgalom, feszültség
-2204	r Briefwechsel	levelezés
-2205	e Definition	definíció
-2206	e Berührung	érintés
-2207	r Höhepunkt	tetőpont
-2208	e Lyrik	líra
-2209	r Räpresentant	képviselő
-2210	e Sammlung	gyűjtemény
-2211	parallel	párhuzamos
-2212	e Bedeutung	jelentés
-2213	r Roman	regény
-2214	r Mittelpunkt	középpont
-2215	e Form	forma
-2216	e Perspektive	perspektíva
-2217	e Phase	korszak, fázis
-2218	r Musiker	zenész
-2219	e Kunst	művészet
-2220	e Muster	minta
-2221	r Bildhauer	szobrász
-2222	e Architektur	építészet
-2223	tanzen	táncol
-2224	r Fischer	halász
-2225	fischen	halászik
-2226	e Wanderung	kirándulás
-2227	r Odeur	illat
-2228	e Treppe	lépcső
-2229	kratzen	karcol
-2230	ausgehen	elfogy
-2231	r Fiskus	kincstár
-2232	r Vorteil	előny
-2233	e Platte	tál
-2234	beraten	tanácsot ad
-2235	e Interaktion	kölcsönhatás
-2236	e Kuh	tehén
-2237	s Fett	zsír
-2238	wahrnehmen	észlel
-2239	s Jahr	év
-2240	e Katze	macska
-2241	s Pferd	ló
-2242	sprechen	beszél
-2243	e Frage	kérdés
-2244	lernen	tanul
-2245	s Ende	vég, végződés
-2246	verschieden	különböző
-2247	beginnen	elkezd
-2248	schreiben	ír
-2249	überhaupt	általában
-2250	s Geld	pénz
-2251	sitzen	ül
-2252	r Abend	este
-2253	r Monat	hónap
-2254	r Euro	euró
-2255	s Defizit	deficit
-2256	r Hirsch	szarvas
-2257	lieben	szeret
-2258	r Wolf	farkas
-2259	ramponieren	tönkretesz
-2260	r Beton	beton
-2261	e Tasche	táska
-2262	künftig	jövőbeli
-2263	r Nutzer	felhasználó
-2264	brüsten	dicsekszik
-2265	eskalieren	kiterjed, erősödik
-2266	e Uniform	egyenruha
-2267	s Problem	probléma
-2268	s Leben	élet
-2269	sagen	mond
-2270	umrüsten	átalakít
-2271	kauen	rág
-2272	e Emotion	érzelem
-2273	s Gemüt	kedv
-2274	r Becher	bögre
-2275	e Deutung	magyarázat
-2276	s Feuer	tűz
-2277	finden	talál
-2278	s Ding	dolog
-2279	abbauen	lebont
-2280	abbilden	másol, ábrázol
-2281	abbrechen	abbahagy
-2282	abdecken	betakar
-2283	aber	de
-2284	abhängen	függ vmitől
-2285	abhängig	függő (mn)
-2286	fein	finom
-2287	ferner	továbbá
-2288	fertig	kész
-2289	festhalten	visszatart
-2290	festnehmen	elfog
-2291	fest	kemény
-2292	festsetzen	megállapít
-2293	feststellen	megállapít
-2294	feucht	nedves
-2295	folglich	következésképp
-2296	formal	hivatalos
-2297	formen	alakít
-2298	formulieren	fogalmaz
-2299	fort	el, tovább
-2300	fortsetzen	folytat
-2301	r Frankfurter	frankfurti (fn)
-2302	französisch	francia (mn)
-2303	freigeben	felszabadít
-2304	r Freitag	péntek
-2305	freiwillig	önként
-2306	fressen	zabál
-2307	freuen	örül
-2308	friedlich	békés
-2309	frisch	friss
-2310	froh	boldog
-2311	fröhlich	vidám
-2312	e Frucht	termés
-2313	früh	korán
-2314	fügen	illesz, hozzátesz
-2315	fühlen	érez
-2316	füllen	tölt
-2317	furchtbar	borzasztó
-2318	fürchten	fél (ige)
-2319	gänzlich	teljesen
-2320	garantieren	garantál
-2321	gar	talán
-2322	geboren	születik
-2323	gefährden	veszélyeztet
-2324	gefährlich	veszélyes
-2325	gefangen	bebörtönzött
-2326	gegebenenfalls	adott esetben
-2327	gegen	ellen
-2328	gegenseitig	kölcsönös
-2329	gegenwärtig	pillanatnyilag
-2330	geheim	titkos
-2331	gehen	megy
-2332	geistig	szellemi
-2333	geistlich	egyházi
-2334	gelb	sárga
-2335	gelegentlich	alkalmanként
-2336	gelingen	sikerül
-2337	gemütlich	kényelmes
-2338	genauso	pontosan úgy
-2339	genetisch	genetikai
-2340	genießen	élvez
-2341	genügen	eleget tesz vminek
-2342	geographisch	földrajzi
-2343	gerade	egyenesen
-2344	geradezu	éppen
-2345	geraten	fejlődik
-2346	gern	szívesen
-2347	gesellschaftlich	társadalmi
-2348	gesetzlich	törvényes
-2349	gespannt	feszült
-2350	gestalten	formál, alakít
-2351	gestehen	bevall, elismer
-2352	e Gesundheit	egészség
-2353	s Getreide	gabona
-2354	gewähren	ad, megad
-2355	gewährleisten	garantál
-2356	gewiss	biztosan
-2357	gewohnt	szokásos
-2358	gießen	önt
-2359	glänzend	ragyogó
-2360	gleichen	kiegyenlít
-2361	gleichmäßig	egyenletes
-2362	gleichzeitig	egyidejűleg
-2363	gleiten	csúszik
-2364	global	globális
-2365	glücklich	boldog, szerencsés
-2366	golden	aranyszínű
-2367	s Gras	fű
-2368	grau	szürke
-2369	greifen	elkap
-2370	griechisch	görög (mn)
-2371	großartig	nagyszerű
-2372	groß	nagy
-2373	großzügig	nagyvonalú
-2374	grün	zöld
-2375	grundlegend	alapvető
-2376	gründlich	alaposan
-2377	grundsätzlich	alapvetően
-2378	grüßen	üdvözöl
-2379	gucken	néz, kukucskál
-2380	r Gürtel	öv
-2381	gut	jó
-2382	haften	szavatol
-2383	haften	tapad
-2384	r Hahn	kakas
-2385	halb	fél (mn)
-2386	halten	tart
-2387	r Hamster	hörcsög
-2388	hängen	felakaszt
-2389	harmlos	ártalmatlan
-2390	hassen	gyűlöl
-2391	heben	emel
-2392	heftig	heves
-2393	heilig	szent (mn)
-2394	heimisch	hazai
-2395	heißen	hív
-2396	helfen	segít
-2397	hell	tiszta
-2398	herausgeben	kiad
-2399	herausfinden	rájön
-2400	herausnehmen	kivesz
-2401	heraus	ki (hat)
-2402	herausstellen	kiemel vmit 
-2403	herkommen	ered, származik
-2404	herrlich	gyönyörű
-2405	herum	körül
-2406	hervorgehen	származik, keletkezik
-2407	herzlich	kedves
-2408	heuer	idén
-2409	heutig	mai
-2410	hierfür	ezzel kapcsolatban
-2411	hier	itt
-2412	hierher	ide
-2413	hierzu	ehhez
-2414	hilflos	gyámoltalan
-2415	hinauf	felfelé
-2416	hinausgehen	kimegy
-2417	hinaus	kifelé
-2418	hinein	befelé
-2419	hinfahren	odautazik
-2420	hingehen	odamegy
-2421	hinnehmen	elfogad
-2422	hinsichtlich	tekintettel vmire
-2423	hinten	hátul
-2424	hinter	mögé
-2425	hinterher	utána
-2426	hinterlassen	hátrahagy
-2427	hin	felé
-2428	hinüber	át
-2429	hinweg	el
-2430	hinweisen	rámutat
-2431	hinzu	hozzá
-2432	historisch	történelmi
-2433	höchstens	legfeljebb
-2434	hochwertig	magas minőségű
-2435	hocken	guggol
-2436	hoffentlich	remélhetőleg
-2437	hören	hall
-2438	hübsch	csinos
-2439	s Huhn	tyúk
-2440	s Hundert	száz
-2441	r Hut	kalap
-2442	ideal	ideális
-2443	identisch	azonos
-2444	identifizieren	azonosít
-2445	fliehen	menekül
-2446	fließend	folyékonyan
-2447	fließen	folyik
-2448	illegal	illegális
-2449	erschießen	lelő
-2450	erschließen	kinyit
-2451	erschöpfen	kimerül
-2452	erschrecken	megijeszt
-2453	erschweren	megnehezít
-2454	ersetzen	pótol
-2455	ersparen	megtakarít
-2456	erstaunen	csodálkozik
-2457	erstaunlich	csodálatos
-2458	erstellen	előállít, megalkot
-2459	erstmal	először
-2460	erstrecken	terjed
-2461	erst	első
-2462	ertragen	elvisel
-2463	e Rücksicht	tekintet
-2464	erwähnen	megemlít
-2465	erwecken	felébreszt
-2466	erweisen	bebizonyít
-2467	erweitern	tágít, bővít
-2468	erwerben	megszerez
-2469	erwidern	válaszol
-2470	erwischen	elkap
-2471	erzeugen	termel
-2472	erziehen	nevel
-2473	erzielen	elér
-2474	e Saison	idény, szezon
-2475	e Säule	oszlop
-2476	e Scheibe	üveg, ablak
-2477	e Scheidung	elválás
-2478	e Schlange	kígyó
-2479	e Schnittstelle	adapter
-2480	e Schönheit	szépség
-2481	e Schulden	adósság
-2482	e Schwäche	gyengeség
-2483	e Schwangerschaft	terhesség
-2484	e Schwierigkeit	nehézség
-2485	e Seele	lélek
-2486	e Sehnsucht	vágy
-2487	e Sekunde	másodperc
-2488	r Esel	szamár
-2489	e Selbstständigkeit	függetlenség
-2490	e Sicherung	biztosítás
-2491	e Sicht	kilátás
-2492	e Situation	szituáció
-2493	e Sitzung	gyűlés
-2494	e Skala	skála
-2495	e Solidarität	szolidaritás, összetartás
-2496	e Spalte	oszlop, repedés
-2497	e Sportart	sportág
-2498	e Spur	nyom, ösvény
-2499	essen	eszik
-2500	e Stabilität	stabilitás
-2501	e Statistik	statisztika
-2502	e Steckdose	konnektor
-2503	e Steigerung	fokozás, növelés
-2504	e Stellungnahme	állásfoglalás
-2505	e Stellung	állás
-2506	s Sterben	halál
-2507	e Steuerung	kormányzás
-2508	e Stiftung	alapítás
-2509	e Stille	némaság
-2510	e Stimme	hang
-2511	e Stimmung	kedv, hangulat
-2512	e Strahlung	sugárzás
-2513	e Straße	utca
-2514	e Strecke	távolság
-2515	e Struktur	szerkezet
-2516	e Substanz	lényeg
-2517	e Subvention	anyagi támogatás
-2518	e Suche	keresés
-2519	etablieren	alapít
-2520	e Tageszeitung	napilap
-2521	e Taste	nyomógomb
-2522	e Tatsache	tény
-2523	e Technologie	technológia
-2524	e Teilnahme	részvétel
-2525	e Tendenz	tendencia
-2526	e Theorie	elmélet
-2527	e Therapie	terápia
-2528	e These	tétel
-2529	e Tiefe	mélység
-2530	etliche	néhány
-2531	e Tonne	tonna
-2532	e Tour	túra
-2533	e Tradition	hagyomány
-2534	e Träne	könny
-2535	e Trauer	gyász
-2536	e Trennung	elválás
-2537	e Übernahme	átvétel
-2538	e Überlegung	megfontolás
-2539	e Überprüfung	vizsgálat
-2540	e Überraschung	meglepetés
-2541	e Übersicht	áttekintés
-2542	e Umfrage	felmérés, közvéleménykutatás
-2543	e Umsetzung	átalakulás
-2544	e Union	unió
-2545	e Unruhe	izgalom, nyugtalanság
-2546	e Unsicherheit	bizonytalanság
-2547	e Unterhaltung	szórakoztatás
-2548	e Unternehmung	vállalkozás
-2549	e Unterscheidung	megkülönböztetés
-2550	e Unterstützung	támogatás
-2551	europäisch	európai
-2552	e Ursache	ok
-2553	e Evaluation	kiértékelés
-2554	e Variante	változat
-2555	verändern	megváltoztat
-2556	e Verarbeitung	feldolgozás
-2557	e Verbesserung	javítás
-2558	e Verbindlichkeit	kötelezettség
-2559	e Vereinbarung	megállapodás
-2560	e Vereinigung	szövetség
-2561	e Verhaltensweise	viselkedés
-2562	e Verknüpfung	kapcsolat
-2563	e Vermittlung	közvetítés, közbenjárás
-2564	e Vernunft	ész, értelem
-2565	e Veröffentlichung	közzététel
-2566	e Verordnung	recept, rendelet
-2567	e Versammlung	gyűlés, gyülekezet
-2568	e Versicherung	biztosítás
-2569	e Version	verzió
-2570	e Versorgung	ellátás
-2571	e Vertretung	helyettesítés
-2572	e Verwaltung	ügyintézés
-2573	e Vorlesung	előadás
-2574	e Verwendung	használat
-2575	vielzahl	számos
-2576	e Volkswirtschaft	nemzetgazdaság
-2577	e Vorgabe	előny
-2578	e Vorlage	javaslat
-2579	e Vorsicht	óvatosság
-2580	e Wahrnehmung	észlelés
-2581	e Wahrscheinlichkeit	valószínűség
-2582	e Wange	arc
-2583	e Wärme	melegség
-2584	e Wäsche	mosás
-2585	e Wechselwirkung	kölcsönhatás
-2586	e Weile	időtartam
-2587	e Weiterbildung	továbbképzés
-2588	e Weltmeisterschaft	világbajnokság
-2589	e Welt	világ
-2590	e Werkstatt	műhely
-2591	e Wirklichkeit	valóság
-2592	e Wirtschaft	gazdaság
-2593	e Wirtschaftspolitik	gazdaságpolitika
-2594	e Woche	hét
-2595	e Wunde	seb
-2596	e Wut	düh
-2597	exakt	pontosan
-2598	flexibel	sokoldalú
-2599	existieren	létezik
-2600	experimentell	kísérleti
-2601	explizit	explicit
-2602	extern	külső
-2603	extrem	extrém
-2604	e Zahlung	fizetés
-2605	e Zeichnung	rajz
-2606	e Zeile	sor
-2607	e Zeitschrift	magazin
-2608	e Zelle	sejt (fn)
-2609	e Zerstörung	rombolás
-2610	e Zielsetzung	célkitűzés
-2611	e Zigarette	cigaretta
-2612	e Zone	zóna
-2613	e Zulassung	engedély
-2614	e Zunahme	növekedés
-2615	e Zuordnung	hozzárendelés
-2616	e Zusammenarbeit	együttműködés
-2617	e Zusammensetzung	összetétel
-2618	e Zustimmung	helyeslés
-2619	fachlich	szakszerű
-2620	fahren	vezet
-2621	r Fall	esés
-2622	fällig	esedékes
-2623	falsch	hamis
-2624	fassen	megfog
-2625	faszinieren	lenyűgöz
-2626	r Februar	február
-2627	fehlen	hiányzik
-2628	fehlen	elhibáz
-2629	e Nacht	éjszaka
-2630	e Nähe	közelség
-2631	e Nahrung	táplálkozás, étel
-2632	e Nation	nemzet
-2633	e Natur	természet
-2634	e Naturwissenschaft	természettudomány
-2635	enden	befelyez
-2636	endlich	végül
-2637	endlos	végtelen
-2638	engagieren	alkalmaz
-2639	englisch	angol (mn)
-2640	enorm	óriási
-2641	e Norm	norma
-2642	e Not	szükség
-2643	entfalten	kibont
-2644	entgegenkommen	megfelel
-2645	entgehen	elmenekül
-2646	enthalten	tartalmaz
-2647	e Lust	öröm
-2648	e Malerei	festmény
-2649	e Marke	márka
-2650	e Marke	bélyeg
-2651	e Masse	tömeg
-2652	e Materie	anyag
-2653	e Mathematik	matematika
-2654	e Medizin	orvosság
-2655	e Mehrheit	többség
-2656	e Meldung	jelentés
-2657	e Menge	mennyiség
-2658	e Messe	vásár
-2659	e Messung	mérés
-2660	e Miete	lakbér
-2661	e Minute	perc
-2662	e Mischung	keverés
-2663	e Mission	küldetés
-2664	e Mitte	közép
-2665	emotional	érzelmi
-2666	e Motivation	motiváció
-2667	empfangen	kap, fogad
-2668	empfehlen	ajánl
-2669	empirisch	tapasztalati
-2670	empfindlich	érzékeny
-2671	kritisieren	krizizál
-2672	kündigen	kirúg, felmond
-2673	küssen	csókol
-2674	lächeln	mosolyog
-2675	lachen	nevet
-2676	lagern	tárol, raktároz
-2677	künstlich	mesterséges
-2678	ländlich	vidéki
-2679	langweilig	unalmas
-2680	laufen	fut
-2681	lauschen	hallgat, fülel
-2682	lebendig	élő, eleven
-2683	leben	él
-2684	leer	üres
-2685	lediglich	csupán
-2686	lehnen	támaszkodik
-2687	lehren	tanít
-2688	leiten	vezet, irányít
-2689	logisch	logikus
-2690	lustig	vidám, vicces
-2691	mahnen	buzdít, figyelmeztet
-2692	malen	fest
-2693	manche	néhány
-2694	e Katastrophe	katasztrófa
-2695	e Kassette	kazetta
-2696	e Kasse	pénztár
-2697	e Kategorie	kategória
-2698	e Karriere	karrier
-2699	e Kindheit	gyermekkor
-2700	e Klinik	klinika
-2701	e Kollegin	kolléga (nő)
-2702	e Kombination	kombináció
-2703	e Kommune	közösség
-2704	e Kompetenz	kompetencia
-2705	e Komponente	alkotóelem
-2706	e Konferenz	konferencia
-2707	e Konjunktur	konjunktúra, fellendülés
-2708	e Konkurrenz	konkurencia
-2709	e Konstruktion	szerkezet, konstrukció
-2710	e Konzentration	összpontosítás
-2711	e Konzeption	koncepció
-2712	e Kooperation	együttműködés
-2713	e Koralle	korall
-2714	e Kosten	ár
-2715	e Kraft	erő
-2716	e Krankenkasse	egészség biztosítás
-2717	e Kreativität	kreativitás
-2718	e Krise	válság
-2719	e Kritik	kritika
-2720	e Kultur	kultúra
-2721	e Kündigung	felmondás
-2722	e Kurve	kanyar
-2723	e Landesregierung	közigazgatás
-2724	e Länge	hosszúság
-2725	e Last	teher
-2726	e Laune	kedv
-2727	e Lehre	oktatás, tanulás
-2728	e Leiche	hulla
-2729	e Leidenschaft	szenvedély
-2730	e Leistungsfähigkeit	termelékenység
-2731	elektrisch	elektromos
-2732	elementar	alapvető
-2733	e Liebe	szerelem
-2734	e Lieferung	szállítás
-2735	e Liga	liga
-2736	e Linse	lencse
-2737	e Liste	lista
-2738	einverstanden	egyetért
-2739	einzeln	egyenként
-2740	einziehen	beköltözik
-2741	einzig	egyedül
-2742	e Jacke	dzseki
-2743	jugendlich	fiatalos
-2744	e Jugend	fiatalság
-2745	eintragen	bejegyez
-2746	e Interpretation	magyarázat
-2747	e Integration	integráció
-2748	e Intelligenz	intelligencia
-2749	e Inszenierung	rendezés
-2750	einst	egykor, hajdan
-2751	e Institution	intézmény
-2752	einstig	egykori
-2753	einsetzen	berak
-2754	ein	egy
-2755	einseitig	egyoldalú
-2756	einsehen	betekint
-2757	einschränken	korlátoz
-2758	einschließen	bezár
-2759	einschlagen	betör, bezúz
-2760	einschlafen	elalszik
-2761	einschätzen	felbecsül
-2762	einrichten	berendez, elrendez
-2763	weinen	sír (ig)
-2764	e Grenze	határ
-2765	e Nuss	dió
-2766	null	nulla
-2767	r Angehörige	rokon
-2768	r Amerikaner	amerikai (ember)
-2769	r Planet	bolygó
-2770	ökonomisch	gazdasági
-2771	e Feuerwehr	tűzoltóság
-2772	r Außenminister	külügyminiszter
-2773	prüfen	megvizsgál
-2774	e Gestalt	forma, alak
-2775	r Name	név
-2776	ehe	mielőtt
-2777	neun	kilenc
-2778	praktisch	hasznos, praktikus
-2779	e Identität	identitás
-2780	obwohl	habár
-2781	e Gleichung	egyenlet
-2782	protestieren	tiltakozik
-2783	präzise	szabatos
-2784	e Frequenz	frekvencia, gyakoriság
-2785	planen	tervez
-2786	einlegen	berak
-2787	radioaktiv	rádióaktív
-2788	e Furcht	félelem
-2789	neugierig	kíváncsi
-2790	r Dialog	párbeszéd
-2791	e Haustür	kapu
-2792	e Generation	generáció
-2793	e Geste	gesztus
-2794	e Hauptstadt	főváros
-2795	nochmal	újra
-2796	östlich	keleti
-2797	nervös	ideges
-2798	nochmals	újból
-2799	einführen	behoz, bevezet
-2800	wach	éber
-2801	r Beitrag	hozzájárulás
-2802	r Backofen	sütő
-2803	r Bayer	bajor (fn)
-2804	r Benutzer	felhasználó
-2805	nennen	elnevez
-2806	öffnen	nyit
-2807	passen	passzol, illik
-2808	e Freiheit	szabadság
-2809	niederländisch	holland (mn)
-2810	einmalig	egyszeri, egyedülálló
-2811	olympisch	olimpiai
-2812	e Freundin	barátnő
-2813	notieren	feljegyez
-2814	e Infrastruktur	infrastruktúra
-2815	einigermaßen	valamelyest
-2816	qualitativ	minőségi, kvalitatív
-2817	r Absolvent	végzős
-2818	e Gegend	vidék, környék
-2819	e Fraktion	frakció, párt
-2820	probieren	probál
-2821	plädieren	véd
-2822	warten	vár
-2823	r Dienstag	kedd
-2824	normal	normális
-2825	einigen	egyesít
-2826	r Abschied	búcsú
-2827	r Bube	fiú
-2828	r Dialekt	dialektus, nyelvjárás
-2829	ehrlich	őszinte
-2830	r Assistent	asszisztens
-2831	einig	egyetértő
-2832	r Aufbau	szerkezet, építmény
-2833	objektiv	objektív
-2834	r Wahlkampf	választási kampány
-2835	eilen	siet
-2836	e Gunst	jóindulat, pártfogás
-2837	e Grundlage	alap
-2838	r Anbieter	ellátó
-2839	offensichtlich	nyilván
-2840	e Gliederung	szerkezet
-2841	einheimisch	hazai
-2842	eignen	illik
-2843	österreichisch	osztrák
-2844	e Fluggesellschaft	légitársaság
-2845	passieren	történik
-2846	orange	narancsszínű
-2847	nirgendwo	sehol
-2848	ordnen	rendez
-2849	primär	eredeti, elsődleges
-2850	e Gewerkschaft	szakszervezet
-2851	e Initiative	kezdeményezés
-2852	e Herstellung	gyártás
-2853	niemals	soha
-2854	notwendig	szükséges
-2855	wagen	kockáztat
-2856	e Gerechtigkeit	igazságosság
-2857	e Flüssigkeit	folyadék
-2858	e Freizeit	szabadidő
-2859	r Ansatz	kezdet
-2860	r Alkohol	alkohol
-2861	nunmehr	immár
-2862	r Anteil	részesedés
-2863	r Austausch	csere
-2864	effizient	hatékony
-2865	e Folge	következmény
-2866	einmal	egyszer
-2867	r April	április
-2868	r Aspekt	szempont
-2869	e Hälfte	fél (fn)
-2870	privat	magán
-2871	e Fusion	egyesülés
-2872	einlassen	belemegy, beilleszt
-2873	wahr	igaz
-2874	e Gewalt	erőszak, erő
-2875	r Akteur	színész
-2876	r August	augusztus
-2877	e Gegenwart	jelen
-2878	örtlich	helyi
-2879	eigenständig	önálló
-2880	e Großstadt	nagyváros
-2881	e Genehmigung	engedély, beleegyezés
-2882	neunzig	kilencven
-2883	einleiten	bevezet, megkezd
-2884	professionell	szakszerű
-2885	e Handlung	cselekvés
-2886	r Ausbau	kiépítés
-2887	politisch	politikai
-2888	r November	november
-2889	effektiv	tényleges
-2890	pressen	présel, összeszorít
-2891	orientieren	tájol
-2892	r Beginn	kezdet
-2893	nebenbei	mellesleg
-2894	e Haltung	magatartás
-2895	prinzipiell	alapvetően
-2896	national	nemzeti
-2897	r Part	rész
-2898	paar	néhány
-2899	r Aufstieg	emelkedés
-2900	wann	mikor
-2901	radikal	radikális
-2902	finanzieren	finanszíroz
-2903	e Freundschaft	barátság
-2904	nur	csak
-2905	e Höhle	barlang
-2906	einhalten	betart, teljesít
-2907	einbringen	bevisz
-2908	vorwiegend	főleg
-2909	real	valós
-2910	optimal	optimális
-2911	natürlich	természetesen
-2912	obere	felső
-2913	e Halle	előcsarnok
-2914	e Gestaltung	alak, kialakítás
-2915	waschen	mos
-2916	r Augenblick	pillanat
-2917	wahnsinnig	őrült
-2918	r Ärger	harag
-2919	r Antrag	kérvény
-2920	öffentlich	nyilvános
-2921	prägen	alkot
-2922	peinlich	kínos
-2923	einbauen	beszerel
-2924	einander	egymás
-2925	ableiten	elterel
-2926	r Ausgangspunkt	kiindulópont
-2927	r Aktionär	részvényes
-2928	quer	ferdén
-2929	r Atem	légzés
-2930	e Gelegenheit	alkalom
-2931	optimistisch	optimista
-2932	e Hütte	menedékház
-2933	e Figur	ábra
-2934	r Aufsatz	tanulmány
-2935	rauschen	zúg
-2936	realistisch	valószerű
-2937	r Ablauf	folyamat
-2938	oftmals	gyakran
-2939	r Anspruch	követelés
-2940	nutzen	használ
-2941	r Weltkrieg	világháború
-2942	profitieren	profitál
-2943	e Fotografie	fénykép
-2944	na	nos
-2945	einerseits	egyrészt
-2946	e Hinsicht	szempont
-2947	r Durchmesser	átmérő
-2948	r Akt	tett
-2949	eindeutig	egyértelmű
-2950	nebeneinander	egymás mellett
-2951	positiv	pozitív
-2952	neigen	meghajol
-2953	ordentlich	alapos, gondos
-2954	einfallen	összeomlik
-2955	einkaufen	bevásárol
-2956	r Brief	levél
-2957	r Anhänger	szurkoló
-2958	r Anwalt	ügyvéd
-2959	ehemalig	korábbi
-2960	e Formel	képlet, formula
-2961	wandern	kirándul
-2962	vorziehen	előhúz
-2963	e Innenstadt	belváros
-2964	zwölf	tizenkettő
-2965	wandeln	megváltoztat
-2966	r Pilot	pilóta
-2967	r Abbau	leépítés
-2968	problematisch	problémás
-2969	einbeziehen	tartalmaz
-2970	r Abschluss	zárás
-2971	pflegen	gondoz
-2972	r Aufbau	építés
-2973	r Anstieg	növekedés
-2974	nördlich	északi
-2975	r Beamte	hivatalnok
-2976	organisch	szerves
-2977	ohnehin	különben is
-2978	r Araber	arab (fn)
-2979	niemand	senki
-2980	r Aufwand	költség
-2981	e Formulierung	kifejezés, megfogalmazás
-2982	e Fülle	jólét, gazdagság
-2983	r Bedarf	szükséglet
-2984	qualifizieren	minősít
-2985	r Bär	medve
-2986	offen	nyitva
-2987	quantitativ	kvantitatív
-2988	r Ausgleich	kiegyenlítés
-2989	e Infektion	fertőzés
-2990	r Oktober	október
-2991	perfekt	tökéletes
-2992	vorzeitig	korai
-2993	eher	előbb
-2994	unterstreichen	aláhúz, hangsúlyoz
-2995	aufbewahren	eltesz, megőriz
-2996	behindert	fogyatékos (mn)
-2997	komplett	teljes
-2998	e Bakterie	bektérium
-2999	r Bildschirm	képernyő
-3000	aktivieren	aktivál
-3001	üben	gyakorol
-3002	davor	azelőtt
-3003	vereinfachen	egyszerűsít
-3004	senden	küld
-3005	schieben	tol
-3006	zuhören	hallgat, odafigyel
-3007	s Vorbild	példakép
-3008	r Senat	szenátus
-3009	r Kontinent	kontinens
-3010	r Zettel	cédula
-3011	s Turnier	verseny, torna
-3012	anerkennen	elismer
-3013	vertreten	képvisel
-3014	s Tal	völgy
-3015	s Mittelalter	középkor
-3016	s Diplom	diploma
-3017	klopfen	kopog, üt
-3018	vorschlagen	javasol, indítványoz
-3019	abgeben	lead, hiányzik
-3020	r Grundsatz	elv
-3021	daraus	abból
-3022	e Beachtung	figyelem, óvatosság
-3023	e Beziehung	kapcsolat
-3024	wovon	amiről
-3025	auffordern	felhív, felszólít
-3026	zusammenleben	együtt él
-3027	ausschließen	kizár, kinyit
-3028	vielfältig	sokoldalú, változatos
-3029	e Ehe	házasság
-3030	denn	mert
-3031	e Erkenntnis	észlelés, megismerés
-3032	abweichen	eltér, különbözik
-3033	auffallen	feltűnik
-3034	e Anordnung	rendelet, rendelkezés
-3035	äußern	kijelent, kinyilvánít
-3036	e Reihe	sor
-3037	r Franzose	francia (ember)
-3038	e Fassung	változat
-3039	konservativ	konzervatív
-3040	r Standort	székhely
-3041	s Spektrum	spektrum
-3042	r Kaiser	császár
-3043	s Ausmaß	terjedelem, méret
-3044	winken	int, integet
-3045	statistisch	statisztikai
-3046	ziehen	húz, von
-3047	r Kilometer	kilóméter
-3048	übersehen	átnéz, áttekint
-3049	ablegen	lerak
-3050	r General	tábornok
-3051	s Olympia	olimpia
-3052	reichlich	gazdag, bőséges
-3053	rühren	kever, elmozdít
-3054	vergleichbar	összehasonlítható
-3055	verwandeln	átalakít
-3056	schmal	vékony
-3057	s Prinzip	elv, alapelv
-3058	r Verband	egyesület, kötés
-3059	e Auffassung	szemlélet, felfogás
-3060	wodurch	amitől
-3061	flüssig	folyékony
-3062	r Nachwuchs	új nemzedék
-3063	schalten	kapcsol, bekapcsol
-3064	s Fräulein	kisasszony
-3065	überschreiten	átlép, túllép
-3066	erlangen	megszerez
-3067	r Schaden	kár, sérülés
-3068	e Diagnose	diagnózis
-3069	e Ehre	tisztelet, becsület
-3070	r Nachteil	hátrány
-3071	aufspringen	felugrik
-3072	anderthalb	másfél
-3073	absetzen	elad, elhelyez
-3074	mögen	szeret
-3075	anstelle	helyett
-3076	verdrängen	előz, kiszorít
-3077	scheinbar	látszólag
-3078	s Wiedersehen	viszontlátás
-3079	s Niederländisch	holland nyelv
-3080	r Teufel	ördög
-3081	rutschen	csúszik
-3082	r Klang	hang
-3083	r Berater	tanácsadó
-3084	r Ruf	hírnév, meghívás
-3085	e Erwartung	elvárás, várakozás
-3086	s Seminar	szeminárium
-3087	klinisch	klinikai
-3088	mathematisch	matematikai
-3089	e Philosophie	filozófia
-3090	dastehen	ott áll
-3091	mitmachen	csatlakozik, részt vesz
-3092	e Ferien	ünnep, szabadság
-3093	e Polizei	rendőrség
-3094	erforschen	kutat
-3095	wohin	ahova
-3096	s Glied	tag
-3097	s Volumen	térfogat
-3098	kommentieren	kommentál
-3099	zunächst	mindenekelőtt
-3100	zentral	központi
-3101	r Koffer	bőrőnd
-3102	s Modell	modell
-3103	streichen	befest, töröl
-3104	zurückkommen	visszatér
-3105	bedenken	megfontol
-3106	keineswegs	semmiképpen
-3107	s Schicksal	sors
-3108	vertrauen	bízik
-3109	e Äußerung	kifejezés, nyilatkozat
-3110	r Mythos	mítosz
-3111	zurückgreifen	visszanyúl
-3112	erhoffen	remél
-3113	e Bearbeitung	feldolgozás
-3114	r Sprung	ugrás
-3115	zusammenarbeiten	együttműködik
-3116	aufführen	előad
-3117	r Fortschritt	haladás
-3118	r Bereich	térség, körzet
-3119	untersuchen	kivizsgál
-3120	e Fahrt	út, utazás
-3121	bevorstehen	közel van
-3122	s Lager	tábor, raktár
-3123	verabschieden	elbocsát
-3124	e Rechtsprechung	igazságszolgáltatás
-3125	s Resultat	eredmény
-3126	letzte	utolsó
-3127	behandeln	kezel, bánik
-3128	r Block	tömb
-3129	zugrundelegen	alapul vesz
-3130	ausgezeichnet	kiváló
-3131	s Bedürfnis	szükséglet
-3132	ausdrücklich	kifejezetten
-3133	irgendwo	valahol
-3134	wissenschaftlich	tudományos
-3135	verbergen	elrejt
-3136	r Fernseher	televízió
-3137	beliebig	tetszőleges
-3138	s Gen	gén
-3139	e Persönlichkeit	személyiség
-3140	kirchlich	egyházi
-3141	dringend	sürgős
-3142	beispielsweise	például
-3143	e Benutzung	használat
-3144	e Einigung	egyezség
-3145	musikalisch	zenei
-3146	kurzfristig	rövid lejáratú
-3147	kriegen	megkap, háborúzik
-3148	auswärtig	külső
-3149	vorsichtig	óvatos
-3150	längst	régen
-3151	sechzig	hatvan
-3152	r Halt	megállás
-3153	scheinen	tűnik, látszik
-3154	dahinter	mögötte
-3155	unerwartet	váratlanul
-3156	wiedersehen	viszontlát
-3157	anlegen	rátesz, befektet
-3158	äußerst	rendkívül, nagyon
-3159	blicken	pillant, tekint
-3160	sinnvoll	ésszerű, értelmes
-3161	s Geräusch	zaj
-3162	wenden	elfordít
-3163	s Gespräch	beszélgetés
-3164	s Element	elem, elemi rész
-3165	e Planung	terv
-3166	r Zuhörer	hallgató
-3167	vorig	előző
-3168	darunter	alatta
-3169	r Durchschnitt	átlag
-3170	schlimm	rossz, végzetes
-3171	sprachlich	nyelvi
-3172	e Beschäftigung	alkalmazás, foglalkozás
-3173	e Fachleute	szakemberek
-3174	r Verkauf	eladás
-3175	aufbrechen	elindul, feltör
-3176	r Kerl	fickó
-3177	s Profil	profil, oldalnézet
-3178	aktiv	aktív
-3179	r Bundestag	szövetségi parlament Németországban
-3180	studieren	tanul
-3181	links	balra
-3182	s Anliegen	kérés
-3183	winzig	pici
-3184	selbstverständlich	nyilvánvaló
-3185	r Ursprung	eredet
-3186	aufwachsen	felnő
-3187	dienen	szolgál
-3188	bringen	hoz, visz
-3189	e Entdeckung	felfedezés
-3190	solange	ameddig
-3191	r Vorstand	elnök, elnőkség
-3192	divers	különféle, vegyes
-3193	scharf	éles
-3194	e Anweisung	útmutatás
-3195	e Erholung	felépülés, pihenés
-3196	s Bundesland	tartomány, szövetségi állam
-3197	s Gas	gáz
-3198	außerordentlich	rendkívül
-3199	weitgehend	messzemenően
-3200	streiten	küzd, harcol
-3201	nachdem	miután
-3202	zufolge	szerint
-3203	r Grenzwert	határérték
-3204	r Terror	terror
-3205	dennoch	mégis
-3206	r Flur	előszoba, folyosó
-3207	r Bestand	állandóság, készlet
-3208	entweder	mindkét
-3209	wirksam	hatékony
-3210	e Entstehung	keletkezés
-3211	r Rohstoff	nyersanyag
-3212	wegnehmen	elvesz
-3213	r Beruf	szakma, foglalkozás
-3214	e Bereitschaft	készenlét, hajlandóság
-3215	vorlegen	bemutat, terjeszt
-3216	breit	tágas, széles
-3217	s Projekt	vállalkozás, projekt
-3218	anhören	meghallgat
-3219	r Gang	folyosó, gang
-3220	e Einstellung	magatartás, alkalmazás
-3221	s Wunder	csoda
-3222	s Rathaus	városháza
-3223	e Ausführung	kidolgozás, kivitelezés
-3224	r Staub	por
-3225	r September	szeptember
-3226	konkret	konkrét, valós
-3227	r Unsinn	zagyvaság
-3228	s Foto	fotó
-3229	zueinander	egymáshoz
-3230	konsequent	konzekvens, következetes
-3231	angewiesen	vmire rászoruló
-3232	auftragen	felrak, megbíz
-3233	r Wettbewerb	verseny
-3234	e Antwort	válasz
-3235	unwahrscheinlich	valószínűtlen
-3236	auftreten	megjelenik, feltűnik
-3237	demnach	ennélfogva, ezért
-3238	bezeichnen	jelez, megjelöl
-3239	erfordern	megkíván, követel
-3240	verfallen	hanyatlik, lejár
-3241	chemisch	vegyi
-3242	besitzen	birtokol
-3243	weitaus	sokkal, jóval
-3244	r Mord	gyilkosság
-3245	ernsthaft	komoly
-3246	flach	sík, lapos
-3247	täglich	naponta
-3248	entscheidend	meghatározó
-3249	s Forum	fórum
-3250	bleiben	marad
-3251	schräg	ferde
-3252	verbrennen	eléget
-3253	s Mitglied	tag
-3254	e Empfehlung	ajánlás
-3255	jedenfalls	mindenesetre
-3256	benötigen	szükséges, kell (ig)
-3257	äußere	külső
-3258	e Demokratie	demokrácia
-3259	alternativ	alternatív
-3260	s Dokument	dokumentum
-3261	s Muster	minta
-3262	r Liter	liter
-3263	ärztlich	orvosi
-3264	r Kandidat	jelölt
-3265	s Gewebe	anyag, szövet
-3266	r Stress	stressz
-3267	lieb	kedves
-3268	verknüpfen	összefűz
-3269	s Heim	haza
-3270	irgendwann	valamikor
-3271	aufsuchen	felkeres, meglátogat
-3272	ausgeben	kiad, kibocsát
-3273	s Team	csapat
-3274	r Gegenstand	tárgy
-3275	r Dollar	dollár
-3276	möglicherweise	talán
-3277	weggehen	elmegy. eltávozik
-3278	spätestens	legkésőbb
-3279	ausbauen	kiterjeszt, kibővít
-3280	s Russisch	orosz (nyelv)
-3281	r Spezialist	szakember, specialista
-3282	aufstellen	feltesz, felállít
-3283	r Kritiker	bíráló, kritikus (fn)
-3284	decken	befed
-3285	acht	nyolc
-3286	übertragen	átvisz, közvetít
-3287	lauter	valódi
-3288	intensiv	intenzív
-3289	setzen	tesz, helyez
-3290	e Botschaft	üzenet
-3291	r Rhythmus	ritmus
-3292	s Gut	vagyon, érték
-3293	r Tanz	tánc
-3294	eingehen	vállal
-3295	realisieren	megvalósít
-3296	e Arbeitslosigkeit	munkanélküliség
-3297	r Griff	nyél, fogás
-3298	r Frieden	béke
-3299	stetig	egyenletes
-3300	seufzen	sóhajt
-3301	s Gericht	bíróság
-3302	vorliegen	előtte van
-3303	akzeptieren	elfogad
-3304	auswerten	kiértékel, elbírál
-3305	zuführen	odavezet
-3306	e Betrachtung	vizsgálat, szemlélődés
-3307	s Baby	csecsemő
-3308	komisch	vicces, komikus
-3309	wunderschön	gyönyörű
-3310	voraussichtlich	várhatóan
-3311	r Schade	kár
-3312	daneben	mellette
-3313	s Türkisch	török
-3314	wenigstens	legalább
-3315	übergehen	mellőz, behoz
-3316	e Begegnung	találkozás, összeütközés
-3317	innerhalb	belül
-3318	r Konkurrent	versenytárs
-3319	r Zuwachs	növekedés, gyarapodás
-3320	begreifen	megért
-3321	r Unternehmer	vállakozó
-3322	wesentlich	lényeges
-3323	richten	ítél, igazít
-3324	verraten	elárul
-3325	analog	analóg
-3326	r Geist	értelem, szellem
-3327	verzeichnen	feljegyez
-3328	r Umzug	költözés, felvonulás
-3329	allmählich	fokozatos
-3330	r Motor	motor
-3331	stützen	támogat, alátámaszt
-3332	spionieren	kémkedik
-3333	r Fachbereich	szakterület, tanszék
-3334	e Partie	parti, játszma
-3335	r Koch	szakács
-3336	e Einnahme	jövedelem, bevétel
-3337	verstecken	elrejt
-3338	r Rand	perem
-3339	r Stamm	törzs, gyökér
-3340	e Erklärung	nyilatkozat, magyarázat
-3341	ausbrechen	kitör
-3342	aufhören	abbahagy
-3343	ausnutzen	kihasznál
-3344	verweisen	utal
-3345	unterscheiden	megkülönböztet
-3346	bitten	kér
-3347	irgendwie	valahogyan
-3348	jederzeit	bármikor
-3349	r Bau	szerkezet, épület
-3350	e Auseinandersetzung	vita, veszekedés
-3351	r Geschäftsführer	ügyvezető igazgató
-3352	r Betrachter	néző, szemlélő
-3353	anziehen	vonz, felvesz, felöltöztet
-3354	r Ertrag	hozam
-3355	sehen	néz, lát
-3356	außen	kint
-3357	zwanzig	húsz
-3358	regeln	szabályoz, rendez
-3359	s Abkommen	megállapodás
-3360	verbreiten	terjeszt
-3361	r Wechsel	átalakulás, változás
-3362	r Zentimeter	centiméter
-3363	stets	mindig, folyton
-3364	erleben	átél, megél
-3365	r Gewinn	haszon
-3366	draußen	kint
-3367	r Kontakt	kapcsolat, érintkezés
-3368	durchaus	teljesen
-3369	r Moslem	muzulmán
-3370	r Witz	vicc
-3371	zwischendurch	közben
-3372	aufklären	felderít, felvilágosít
-3373	s Tempo	tempó, sebesség
-3374	wohl	jól
-3375	beabsichtigen	szándékozik
-3376	schreiten	lép, halad
-3377	s Gewehr	puska
-3378	nachher	azután
-3379	wert	érdemes
-3380	weich	puha
-3381	indirekt	közvetett, indirekt
-3382	differenzieren	megkülönböztet
-3383	s Gramm	gramm
-3384	schaffen	elintéz, alkot
-3385	verschließen	elzár
-3386	touristisch	túrisztikai
-3387	regieren	vezet, kormányoz
-3388	s Vitamin	vitamin
-3389	zurückführen	származtat, visszavezet
-3390	alltäglich	mindennapos, megszokott
-3391	befürchten	fél (ig)
-3392	vorne	elöl
-3393	r Juli	július
-3394	zusammenkommen	összegyűlik
-3395	durchgehen	keresztülmegy
-3396	umfangreich	terjedelmes
-3397	r Gesellschafter	üzlettárs
-3398	r Glauben	hit, vallás
-3399	r Schuldner	adós
-3400	krank	beteg
-3401	r Dezember	december
-3402	konventionell	hagyományos
-3403	israelisch	israeli (mn)
-3404	bemerken	megjegyez, megemlít
-3405	ausgleichen	kiegyenlít, ellensúlyoz
-3406	islamisch	iszlám (mn)
-3407	s Center	központ
-3408	e Fachhochschule	főiskola
-3409	medizinisch	orvosi
-3410	untergehen	lemegy, tönkremegy
-3411	voneinander	egymástól
-3412	attraktiv	vonzó, csinos
-3413	schildern	leír
-3414	beantworten	válaszol
-3415	e Abgrenzung	elhatárolás
-3416	r Kauf	vásárlás
-3417	auflegen	kiad, feltesz
-3418	r Zufall	véletlen (fn)
-3419	e Darstellung	előadás, bemutatás
-3420	dramatisch	drámai
-3421	unverzüglich	haladéktalan
-3422	s Ministerium	ministérium
-3423	schweben	lebeg
-3424	r Ofen	tűzhely
-3425	anzeigen	közöl, bejelent
-3426	r Reiz	inger, vonzerő
-3427	r Quadratmeter	négyzetméter
-3428	telefonieren	telefonál
-3429	bedauern	sajnál
-3430	e Qualifikation	minősítés, kvalifikáció
-3431	zulassen	megenged
-3432	s Spanisch	spanyol
-3433	blühen	virágzik
-3434	erbringen	felhoz, előhoz
-3435	e Eintragung	beiratkozás
-3436	berechtigen	feljogosít
-3437	eröffnen	megnyit
-3438	r Zweck	cél
-3439	anstellen	alkalmaz, beállít
-3440	r Konzern	vállalatcsoport, konszern
-3441	bedeutsam	fontos, jelentős
-3442	vergeblich	hasztalan
-3443	e Anzahl	szám, mennyiség
-3444	recht	igaz, valódi
-3445	reizen	izgat, ingerel
-3446	r Partner	partner, társ
-3447	e Änderung	változás
-3448	vielmehr	sokkal inkább
-3449	r Sand	homok
-3450	vorhin	nemrég
-3451	wozu	amiért
-3452	aushalten	elvisel, kibír
-3453	langfristig	hosszú távon
-3454	r Schutz	védelem
-3455	ankommen	elér, megérkezik
-3456	wechseln	változtat, cserél
-3457	e Feier	ünnepség
-3458	immerhin	minden esetre
-3459	strahlen	ragyog, sugárzik
-3460	ursprünglich	eredetileg
-3461	unglücklich	boldogtalan, szerencsétlen
-3462	r Strahl	sugár
-3463	r Wille	szándék, akarat
-3464	e Anerkennung	elismerés
-3465	aussetzen	kirak, kiűz
-3466	nämlich	nevezetesen, ugyanis
-3467	e Art	mód, fajta
-3468	r Test	teszt
-3469	konstant	állandó, konstans
-3470	s Gleichgewicht	egyensúly
-3471	jüdisch	zsidó (mn)
-3472	andere	másik
-3473	bürgerlich	polgári
-3474	dass	hogy
-3475	s Medium	médium
-3476	ärgern	bosszant
-3477	allzu	túlzottan
-3478	sozial	szociális
-3479	e Bekämpfung	harc, leküzdés
-3480	zwangsläufig	szükségszerű
-3481	e Prognose	előrejelzés
-3482	total	teljes, totális
-3483	schimpfen	szid
-3484	beteiligen	részt vesz
-3485	e Fakten	tények
-3486	beklagen	panaszkodik, sajnál
-3487	bayrisch	bajor (mn)
-3488	e Bedrohung	fenyegetés
-3489	e Rente	nyugdíj
-3490	abgrenzen	elhatárol
-3491	aufmachen	kinyit
-3492	r Erzähler	narrátor, elbeszélő
-3493	auseinander	szét, széjjel
-3494	katholisch	katolikus
-3495	s Geschäftsjahr	üzleti év
-3496	r Einblick	betekintés
-3497	nahe	közel
-3498	r Ersatz	pótlás, kárpótlás
-3499	verschaffen	beszerez, biztosít
-3500	e Auswirkung	hatás
-3501	trinken	iszik
-3502	technologisch	technológiai
-3503	bedienen	kezel, kiszolgál
-3504	anvertrauen	rábíz
-3505	r Spaß	vidámság
-3506	anklagen	vádol
-3507	e Abwehr	védelem
-3508	militärisch	katonai
-3509	soweit	ameddig
-3510	e Bundesrepublik	szövetségi köztársaság
-3511	aufschlagen	felnyit, feltör
-3512	schulisch	iskolai
-3513	jemals	valamikor
-3514	e Aktiengesellschaft	részvénytársaság
-3515	r Sektor	szektor, terület
-3516	e Beratung	tanácskozás, tanácsadás
-3517	religiös	vallási
-3518	e Begeisterung	lelkesedés
-3519	wofür	amiért
-3520	veranlassen	rávesz
-3521	r Gott	isten
-3522	e Verfügung	intézkedés
-3523	r Empfang	átvétel, fogadás
-3524	r Grad	fok, fokozat
-3525	moralisch	erlölcsi
-3526	konzipieren	kigondol, kidolgoz
-3527	s Institut	intézmény
-3528	deren	akié
-3529	s Virus	vírus
-3530	e Presse	sajtó
-3531	r Rest	maradék (fn)
-3532	überfordern	túl sokat követel
-3533	anbringen	elhelyez
-3534	unglaublich	hihetetlen
-3535	aufbauen	felépít
-3536	e Berechnung	számítás
-3537	beweisen	igazol, bizonyít
-3538	e Disziplin	fegyelem
-3539	e Erzählung	elbeszélés
-3540	ansprechen	megszólít
-3541	mittlerweile	időközben
-3542	ästhetisch	esztétikus
-3543	zulässig	megengedhető
-3544	linear	lineáris
-3545	erlernen	megtanul
-3546	außer	kívül
-3547	bezüglich	vonatkozóan
-3548	murmeln	morog
-3549	drastisch	drasztikus
-3550	e Ausnahme	kivétel
-3551	vielfach	sokszor
-3552	virtuell	virtuális
-3553	s Maß	mérték, méret
-3554	r Deutsche	német
-3555	e Region	tartomány, vidék
-3556	ausführlich	részletesen
-3557	zumal	különösen
-3558	drehen	forog, forgat
-3559	interpretieren	előad, értelmez
-3560	e Relation	viszony
-3561	anschließen	csatol, mellékel
-3562	anmerken	megjelöl, megjegyzést tesz
-3563	r Vordergrund	előtér
-3564	e Auskunft	információ
-3565	teils	részben
-3566	r Fleck	folt
-3567	jede	mindegyik
-3568	anschließend	azután
-3569	doppelt	dupla (mn)
-3570	beruflich	szakmai
-3571	r Zeitpunkt	időpont
-3572	wild	lakatlan, műveletlen
-3573	rechtlich	törvényes
-3574	verwirren	összezavar
-3575	zurückgehen	visszamegy, hátrál
-3576	befestigen	rőgzít, felszerel
-3577	versichern	biztosít, megerősít
-3578	schütteln	ráz
-3579	beeinträchtigen	korlátoz
-3580	anhalten	megáll, megmarad
-3581	wieso	hogyan
-3582	schlafen	alszik
-3583	s Merkmal	tulajdonság
-3584	s Konzept	elképzelés, koncepció
-3585	zuwenden	fordul vmi felé
-3586	mutmaßlich	feltételezett
-3587	r Schmerz	fájdalom
-3588	modern	modern, korszerű
-3589	relevant	releváns, lényeges
-3590	sämtlich	összes
-3591	r Deckel	fedél
-3592	r Dienst	szolgálat
-3593	s Talent	tehetség
-3594	e Durchführung	kivitelezés
-3595	r Sieg	gyűzelem
-3596	s Universum	univerzum, világegyetem
-3597	e Anfrage	érdeklődés
-3598	s Buch	könyv
-3599	begrenzen	korlátoz
-3600	beurteilen	megítél, elbírál
-3601	daheim	otthon (mn)
-3602	zurück	vissza
-3603	meistens	többnyire
-3604	klingen	hangzik
-3605	schauen	tekint, néz
-3606	r Status	státusz, állapot
-3607	bekämpfen	harcol, szembeszáll
-3608	betrachten	figyel, szemlél
-3609	durchziehen	végigcsinál
-3610	segeln	vitorlázik
-3611	verheiratet	házas
-3612	r Missbrauch	rossz bánásmód
-3613	infizieren	megfertőz
-3614	bedürfen	rászorul
-3615	ausbreiten	kiterít, elterjeszt
-3616	auswählen	kiválaszt
-3617	verarbeiten	kidolgoz, feldolgoz
-3618	r Leser	olvasó
-3619	r Kanton	kanton (Svájcban)
-3620	rechtfertigen	igazol, indokol
-3621	international	nemzetközi
-3622	s Gehirn	agy
-3623	berufstätig	dolgozó, hivatását gyakorló (mn)
-3624	unterstellen	alávet, alárendel
-3625	befriedigen	kielégít, megelégszik
-3626	s Ensemble	együttes (fn)
-3627	ansteigen	emelkedik
-3628	r Club	klub
-3629	anfangs	kezdetben
-3630	vorhanden	létező, meglévő
-3631	benennen	elnevez
-3632	s Polnisch	lengyel (fn)
-3633	bitter	keserű
-3634	e Pflegerin	ápolónő
-3635	s Bedauern	sajnálat, részvét
-3636	s Kloster	kolostor
-3637	unterhalten	szórakoztat
-3638	r Fall	eset, ügy
-3639	verhalten	viselkedik, viszonyul
-3640	s Wesen	lét, teremtmény
-3641	beleben	lelkesít, élénkít
-3642	lenken	vezet, irányít
-3643	e Option	opció, választási jog
-3644	bestreiten	vitat
-3645	aufsetzen	felrak
-3646	monatlich	havonta
-3647	befreien	kiszabadít, felszabadít
-3648	r Konsument	fogyasztó
-3649	e Aktivität	tevékenység
-3650	bewirken	okoz
-3651	e Eröffnung	kinyitás
-3652	s Material	anyag
-3653	unangenehm	kellemetlen
-3654	demnächst	hamarosan
-3655	erregen	ébreszt
-3656	r Kunststoff	műanyag
-3657	r Eintritt	kezdet, belépés
-3658	r Kreislauf	áramkör, vérkeringés
-3659	s Dunkel	sötétség
-3660	klappen	sikerül, lecsap
-3661	zwingen	kényszerít
-3662	wer	ki, aki
-3663	zucken	von, rángatózik
-3664	bewegen	mozgat, megmozdul
-3665	r Umsatz	forgalom (kereskedelemben) 
-3666	r Offizier	tiszt, tisztségviselő
-3667	westlich	nyugati
-3668	entsprechend	vmi szerint, vminek megfelelően
-3669	drücken	tol, nyom
-3670	s Gepäck	csomag, poggyász
-3671	loslassen	elenged
-3672	ausrichten	elrendez, sorbaáll, kiegyenesít
-3673	s Individuum	egyén
-3674	r Chinese	kínai
-3675	umstritten	vitás
-3676	achten	figyel, becsül
-3677	installieren	felszerel, beszerel
-3678	integrieren	integrál, egyesít
-3679	nachfolgen	követ, következik
-3680	überlassen	átad, rábíz
-3681	zeichnen	rajzol
-3682	unsichtbar	láthatatlan
-3683	begründen	igazol
-3684	s Grundgesetz	alkotmány
-3685	schweizerisch	svájci
-3686	s Gewissen	lelkiismeret
-3687	r Marktanteil	piaci részesedés
-3688	e Erweiterung	terjeszkedés, bővítés
-3689	außerhalb	kívül
-3690	beachten	vigyáz, törődik
-3691	überwachen	megfigyel, lehallgat
-3692	r Hang	lejtő, szenvedély
-3693	s Festival	fesztivál
-3694	sodass	azért, hogy
-3695	e Dunkelheit	homály, sötétség
-3696	s Kriterium	ismertetőjel, jellegzetesség
-3697	unendlich	végtelen
-3698	versammeln	összegyűjt, gyülekezik
-3699	ausführen	végrehajt
-3700	sollen	kell
-3701	r Januar	január
-3702	womöglich	talán
-3703	schwingen	leng
-3704	ausscheiden	kilép, felmond
-3705	symbolisch	szimbolikus, jelképes
-3706	s Studium	tanulmány
-3707	jeweils	mindig
-3708	r Prinz	herceg
-3709	entfallen	elesik, kiesik
-3710	belegen	igazol, befed
-3711	akut	akut, sürgős
-3712	r Vorgänger	előd
-3713	zugehen	közelít
-3714	danke	köszönöm
-3715	zurückgeben	visszad
-3716	angucken	megnéz
-3717	r Schnitt	vágás, szelet
-3718	anführen	vezet, idéz
-3719	anschauen	ránéz, megnéz
-3720	r Bogen	ív, íj
-3721	beschreiben	leír, jellemez
-3722	schuld	bűnös (mn)
-3723	verschwinden	eltűnik
-3724	anordnen	rendez, elrendez
-3725	s Semester	szemeszter
-3726	atmen	lélegzik
-3727	unverändert	változatlan
-3728	r Gesetzgeber	törvényhozó (fn)
-3729	benehmen	viselkedik
-3730	e Pflege	gondozás, ápolás
-3731	r Montag	hétfő
-3732	e Aufregung	izgalom
-3733	dahin	oda
-3734	mitnehmen	elvisz
-3735	unbekannt	ismeretlen
-3736	streben	törekszik
-3737	e Basis	bázis
-3738	umwandeln	átalakít, megváltoztat
-3739	wecken	felébresz
-3740	aufheben	felemel, eltesz
-3741	vermeiden	elkerül
-3742	absolvieren	elvégez, abszolvál
-3743	r Beschäftigte	dolgozó, alkalmazott
-3744	e Periode	periódus
-3745	einholen	elér, megszerez
-3746	r Handwerker	iparos
-3747	demonstrieren	demonstrál, bemutat
-3748	vertreiben	elűz, elad
-3749	e Bindung	kötés
-3750	juristisch	jogi
-3751	erarbeiten	kidolgoz
-3752	e Autobahn	autópálya
-3753	r Schwerpunkt	súlypont
-3754	s Vergnügen	öröm
-3755	zugleich	egyszerre, ugyanakkor
-3756	r Trend	trend, irányzat
-3757	darstellen	ábrázol, vázol
-3758	bitte	kérem
-3759	r Angestellte	alkalmazott
-3760	e Erinnerung	emlék, emlékezet
-3761	r West	nyugat
-3762	zählen	számol
-3763	r Käufer	vevő
-3764	sanft	enyhe, szelíd
-3765	verlegen	zavarodott
-3766	e Angelegenheit	ügy, eset
-3767	e Brücke	híd
-3768	s Personal	személyzet, állomány
-3769	abschalten	lekapcsol
-3770	arabisch	arab (mn)
-3771	s Blatt	lap, levél (fáé)
-3772	dringen	behatol, zaklat
-3773	bestehen	létezik, kibír, helytáll
-3774	mitbringen	magával hoz
-3775	kaufen	vásárol
-3776	seit	óta
-3777	aktuell	aktuális
-3778	aufzeigen	fölmutat
-3779	kreativ	kreatív
-3780	erheben	felemel
-3781	charakterisieren	jellemez
-3782	künstlerisch	művészi
-3783	r Ingenieur	mérnök
-3784	bewusst	tudatos
-3785	speziell	különösen
-3786	schleppen	húz, cipel
-3787	vergrößern	nagyít, gyarapít
-3788	s Ticket	jegy
-3789	r Beschluss	döntés, elhatározás
-3790	e Plattform	platform. emelvény
-3791	r Widerstand	ellenállás, ellenszegülés
-3792	e Fähigkeit	adottság, képesség
-3793	dominieren	dominál
-3794	vorübergehen	múlik
-3795	schuldig	bűnös
-3796	akademisch	akadémiai
-3797	e Phantasie	képzelet
-3798	r Schreck	ijedség, rémület
-3799	r Schmetterling	pillangó
-3800	spazieren	sétál
-3801	ausweisen	igazolja magát, kiutasít
-3802	überziehen	bevon, túlterhel
-3803	r Gesichtspunkt	szempont, nézőpont
-3804	mehrmals	többször
-3805	deutsch	német
-3806	flüchten	szökik, menekül
-3807	bewältigen	legyőz
-3808	sportlich	sportos
-3809	versehen	teljesít, ellát
-3810	s Business	üzlet
-3811	r Nerv	ideg
-3812	e Chance	esély
-3813	britisch	brit
-3814	zutreffen	igaznak bizonyul
-3815	s Motiv	motiváció, indíték
-3816	beträchtlich	jelentős
-3817	r Übersetzer	tolmács
-3818	verlaufen	megtörténik, eltéved
-3819	r Veranstalter	rendező, szervező
-3820	zurückziehen	visszavonul
-3821	ausfüllen	kitölt
-3822	basieren	alapul vmin
-3823	verbringen	eltölt (időt)
-3824	r Nachfolger	utód
-3825	s Grundstück	telek
-3826	e Einsicht	betekintés
-3827	e Premiere	premier, bemutató
-3828	unklar	homályos
-3829	diskret	diszkrét, tapintatos
-3830	r Gedanke	eszme, gondolat
-3831	s Geschlecht	nem (fn)
-3832	tatsächlich	tényleg, valóban
-3833	r Moment	pillanat, nyomaték
-3834	e Dauer	időtartam
-3835	r Nachweis	bizonyíték, igazolás
-3836	e Erhaltung	megőrzés, fenntartás
-3837	s Klavier	zongora
-3838	abzeichnen	lerajzol
-3839	r Dank	hála
-3840	schlimmer	rosszabb
-3841	bewerten	értékel, elbírál
-3842	flüstern	suttog
-3843	r Graf	gróf
-3844	derzeitig	jelenlegi
-3845	besser	jobb
-3846	r Mut	bátorság
-3847	ruhen	pihen
-3848	r Experte	szakértő
-3849	merkwürdig	furcsa, különös
-3850	willkommen	üdvözöl
-3851	r Manager	igazgató, menedzser
-3852	verbindlich	udvarias, kötelező
-3853	tätig	tevékeny, aktív
-3854	r Zugriff	hozzáférés
-3855	e Aufführung	előadás
-3856	verwenden	felhasznál
-3857	s Unternehmen	vállalkozás
-3858	danken	megköszön
-3859	r Champion	bajnok
-3860	e Alternative	alternatíva
-3861	r Besucher	vendég
-3862	s Zeugnis	bizonyíték
-3863	aufschreiben	felír
-3864	verwirklichen	megvalósít
-3865	r Geliebte	szerető
-3866	kennen	ismer
-3867	angehen	érint, vonatkozik
-3868	s Lächeln	mosoly
-3869	spiegeln	ragyog, tükröz
-3870	s Umfeld	környezet
-3871	reichen	elér
-3872	e Ausrichtung	irány
-3873	zumindest	legalább
-3874	testen	tesztel
-3875	wiederum	újra
-3876	s Training	edzés
-3877	übel	beteg, rossz
-3878	jetzig	jelenlegi
-3879	seltsam	furcsa, különös
-3880	voraussetzen	feltételez
-3881	s Design	forma
-3882	s Bad	kád, fürdő
-3883	r Umstand	körülmény
-3884	r Philosoph	filozófus
-3885	s Gefängnis	börtön
-3886	r Rucksack	hátizsák
-3887	s Licht	fény
-3888	schief	ferde
-3889	konzentrieren	koncentrál, összpontosít
-3890	nachdenklich	gondolkodtató
-3891	s Gefühl	érzés
-3892	strecken	kinyújt, kiterjeszt
-3893	korrekt	pontos, helyes
-3894	r Kongress	kongresszus
-3895	versterben	meghal, elhuny
-3896	r Wissenschaftler	természettudós
-3897	entspannen	pihen
-3898	r Gruß	köszöntés
-3899	spontan	spontán
-3900	vertraglich	elfogadható, elviselhető
-3901	reiten	lovagol
-3902	begegnen	találkozik, történik
-3903	e Erscheinung	jelenség
-3904	süß	édes
-3905	unterbringen	elhelyez
-3906	e Beschreibung	leírás
-3907	s Labor	laboratórium
-3908	loswerden	megszabadul vmitől
-3909	r Kern	mag
-3910	s Verhältnis	viszony, kapcsolat
-3911	r Bergsteiger	hegymászó
-3912	r Hunger	éhség
-3913	schmelzen	elolvad, megolvaszt
-3914	abschließen	bezár, befelyez
-3915	vorbeigehen	elmegy, elmúlik
-3916	r Wähler	szavazó
-3917	r Maßstab	mérce, mérték
-3918	r Erreger	kórokozó
-3919	e Anstrengung	törekvés, erőfeszítés
-3920	anmelden	jelentkezik, bejelentkezik
-3921	vermutlich	valószínűleg
-3922	abnehmen	fogy, csökken
-3923	spezialisieren	specializálódik
-3924	r Engel	angyal
-3925	r Mörder	gyilkos
-3926	industriell	ipari
-3927	mächtig	hatalmas
-3928	s Magazin	magazin, raktár
-3929	kommunikativ	kommunikatív, közlékeny
-3930	zuordnen	sorol, hozzárendel
-3931	suchen	keres
-3932	bieten	nyújt, kínál
-3933	beschränken	korlátoz, megszorít
-3934	e Abhängigkeit	függés
-3935	s Atom	atom
-3936	abschließend	végül
-3937	e Aufmerksamkeit	figyelem
-3938	r Bauer	földműves
-3939	worauf	amin
-3940	e Öffnung	nyílás, megnyitás
-3941	e Angst	félelem, izgalom
-3942	stumm	néma, szótlan
-3943	sogleich	azonnal
-3944	liefern	nyújt, szállít
-3945	r März	március
-3946	aufgrund	alapján
-3947	e City	belváros
-3948	vollständig	teljes
-3949	r Organismus	szervezet, organizmus
-3950	zusagen	megígér
-3951	e Einschätzung	megítélés
-3952	r Tourismus	turizmus, idegenforgalom
-3953	ergänzen	pótol, kiegészít
-3954	leider	sajnos
-3955	r Studiengang	tanulmány
-3956	r Verlust	kár, veszteség
-3957	vergeben	odaítél
-3958	regional	területi, regionális
-3959	e Fassade	arculat, homlokzat
-3960	bunt	színes
-3961	mitunter	időnként
-3962	toll	remek, nagyszerű
-3963	spannend	izgalmas
-3964	ausüben	gyakorol, folytat
-3965	denken	gondol
-3966	s Riff	szirt
-3967	sich wehren	védekezik
-3968	ändern	változtat
-3969	r Rechner	számítógép, számológép
-3970	s Werkzeug	eszköz
-3971	r Widerspruch	ellentmondás
-3972	belasten	terhel, megterhel
-3973	resultieren	eredményez
-3974	e Breite	szélesség
-3975	austauschen	kicserél
-3976	e Dimension	dimenzió
-3977	s Detail	részlet
-3978	bisherig	eddig
-3979	inzwischen	közben, időközben
-3980	strukturell	szerkezeti, strukturális
-3981	rein	tiszta
-3982	schlicht	egyszerű, sima
-3983	seit langem	régóta
-3984	r Protest	tiltakozás
-3985	zufrieden	elégedett
-3986	r Geheimdienst	titkosszolgálat
-3987	ansonsten	különben
-3988	e Betreuung	gondoskodás
-3989	r Verlauf	folyamat
-3990	vertiefen	mélyít
-3991	biegen	hajlik, hajlít
-3992	vorerst	mindenekelőtt
-3993	landwirtschaftlich	mezőgazdasági
-3994	r Schweiß	izzadság, verejték
-3995	verzweifeln	kétségbeesik
-3996	unheimlich	ijesztő, furcsa
-3997	e Reichweite	hatótávolság
-3998	ausstellen	kiállít, kitölt
-3999	weltweit	világszerte
-4000	r Nutzen	nyereség, haszon
-4001	ergreifen	megfog, megragad
-4002	r Investor	befektető
-4003	beschädigen	megrongál, károsít
-4004	zurückkehren	visszatér
-4005	umgekehrt	fordítva, viszont
-4006	r Gläubiger	hitelező
-4007	e Organisation	szervezet
-4008	innen	belül
-4009	bearbeiten	kidolgoz, feldolgoz
-4010	verleihen	kölcsönad, adományoz
-4011	befragen	megkérdez
-4012	riechen	szagol
-4013	tödlich	halálos
-4014	belgisch	belga
-4015	e Regelung	szabályozás
-4016	s Drittel	harmad
-4017	anfangen	elkezd, kezdődik
-4018	beziehen	beszerez, bevon
-4019	still	halk, csendes
-4020	verpflichten	kötelez, szerződtet
-4021	r Hügel	domb
-4022	kräftig	erős
-4023	angeben	megad
-4024	spüren	érzékel
-4025	unmöglich	lehetetlen
-4026	weiblich	női
-4027	zuverlässig	megbízható
-4028	tragen	hord, visel
-4029	r Lastkraftwagen	teherautó
-4030	unterdrücken	elnyom
-4031	s Gelände	terep, vidék
-4032	r Streifen	csík, sáv
-4033	beten	imádkozik
-4034	r Charakter	jellem, karakter
-4035	r Chor	kórus
-4036	vermitteln	közvetít, közbenjár
-4037	r Bezirk	körzet
-4038	verurteilen	elítél
-4039	unterrichten	tanít, oktat
-4040	teilen	feloszt, megoszt
-4041	s Kapital	tőke
-4042	e Richtlinie	irányelv
-4043	erkennen	elismer, felismer
-4044	auskommen	boldogul, gazdálkodik
-4045	indes	időközben
-4046	e Anregung	ösztönzés
-4047	befassen	foglalkozik vmivel
-4048	stabil	stabil
-4049	angreifen	megtámad
-4050	vorangehen	előremegy, megelőz
-4051	e Anwesenheit	jelenlét
-4052	vermissen	nélkülöz, hiányol
-4053	zudem	méghozzá, ráadásul
-4054	r Service	szolgáltatás
-4055	verdeutlichen	megvilágít, megmagyaráz
-4056	r Forscher	kutató
-4057	trennen	szétválaszt, felbont
-4058	r Lauf	futás, működés
-4059	e Realisierung	kivitelezés, végrehajtás
-4060	e Berücksichtigung	figyelembevétel
-4061	r Standard	norma, mérték
-4062	e Pistole	pisztoly
-4063	r Hinweis	utalás
-4064	kleben	ragad, ragaszt
-4065	kombinieren	kombinál
-4066	r Leib	has
-4067	s Risiko	kockázat
-4068	r Bundesrat	Német parlament alsó háza
-4069	markieren	megjelöl
-4070	r Mai	május
-4071	r Komponist	zeneszerző
-4072	angeblich	állítólag
-4073	ernst	komoly
-4074	sonst	különben
-4075	deuten	mutat, magyaráz, értelmez
-4076	e Bitte	kérés
-4077	allenfalls	talán, esetleg
-4078	s Leid	kín, bánat
-4079	auflösen	felold, megold
-4080	r Fan	rajongó
-4081	e Decke	fedél, plafon
-4082	absehen	előrelát
-4083	abholen	elhoz, elvisz
-4084	s Mädchen	lány
-4085	bedanken	megköszön
-4086	berühren	megérint
-4087	kommen	jön
-4088	innere	belső
-4089	schwer	nehéz, súlyos
-4090	s Arbeitsamt	munkaügyi hivatal
-4091	r Geruch	szag, szaglás
-4092	unterbrechen	megszakít
-4093	vielleicht	talán
-4094	vermindern	csökkent
-4095	auffällig	feltűnő
-4096	s Französisch	francia (fn)
-4097	kümmern	törődik
-4098	ständig	állandó
-4099	e Erfindung	találmány
-4100	nachgehen	követ, utánajár
-4101	nachweisen	igazol, kimutat
-4102	r Posten	poszt, tisztség
-4103	abstellen	megszüntet
-4104	zusammenstellen	összeállít
-4105	arbeitslos	munkanélküli (mn)
-4106	detailliert	részletes
-4107	zugunsten	vkinek a javára
-4108	e Aufwendung	költség, kiadás
-4109	sich erholen	kipiheni magát
-4110	reißen	elszakít, letép
-4111	schneiden	vág
-4112	r Zins	kamat
-4113	relativ	relatív, viszonylagos
-4114	südlich	déli
-4115	r Sprecher	szónok
-4116	betrieblich	üzemi
-4117	sich befinden	valamilyennek talál
-4118	vermögen	képes vmire, megtehet vmit
-4119	vernehmen	megtud, kihallgat
-4120	ausreichen	elég (ige)
-4121	s Klima	klíma, éghajlat
-4122	abwenden	elfordít
-4123	e Faust	ököl
-4124	e Erkrankung	betegség, megbetegedés
-4125	unterliegen	veszít, vereséget szenved
-4126	ergeben	eredményez
-4127	sich ergeben	megadja magát
-4128	s Vorjahr	előző év
-4129	e Allianz	szövetség
-4130	vorwerfen	megvádol, felró
-4131	anhand	alapján, segítségével
-4132	verlängern	hosszabbít, meghosszabbít
-4133	beeindrucken	benyomást kelt
-4134	braun	barna (mn)
-4135	r Betrag	mennyiség
-4136	verhandeln	tárgyal
-4137	r Stolz	büszkeség
-4138	zweimal	kétszer
-4139	verschärfen	fokoz, kiélez
-4140	s Vorgehen	eljárás
-4141	s Gremium	bizottság
-4142	zielen	céloz
-4143	tausend	ezer (számnév)
-4144	s Bewusstsein	tudat
-4145	r Prozess	eljárás, per
-4146	s Unrecht	igazságtalanság
-4147	e Annahme	elfogadás, felvetés
-4148	daraufhin	ezért, ennek következtében
-4149	sich schämen	szégyelli magát
-4150	s Chinesisch	kinai (fn)
-4151	anwesend	jelenlévő
-4152	klären	tisztít, tisztáz
-4153	unterdessen	közben
-4154	dumm	buta, hülye
-4155	wiederholen	ismétel
-4156	r Fuß	láb
-4157	entziehen	visszavon, megvon
-4158	voraus	előre
-4159	untereinander	egymásközt
-4160	samt	vkivel együtt
-4161	theoretisch	elméleti
-4162	r Rahmen	keret, váz
-4163	e Person	személy
-4164	überwiegend	túlnyomórészt
-4165	überprüfen	átvizsgál
-4166	zulegen	beszerez, növel
-4167	irgendein	valamilyen, akármilyen
-4168	träumen	álmodik
-4169	vortragen	előad
-4170	sorgfältig	alapos, gondos
-4171	e Differenzierung	megkülönböztetés
-4172	s Symptom	tünet
-4173	verwundern	elcsodálkozik, ámulatba ejt
-4174	systematisch	rendszeres, szisztematikus
-4175	verfügbar	elérhető
-4176	r Bord	fedélzet
-4177	schweigen	csendben van, hallgat
-4178	unterschreiben	aláír
-4179	r Träger	vivő, hordó, szállító (fn)
-4180	sich bemühen	igyekszik, fáradozik
-4181	s Paar	pár (fn)
-4182	unabhängig	független (mn)
-4183	aufrufen	felhív, felszólít
-4184	biologisch	biológiai
-4185	flüchtig	múlandó, felületes
-4186	verdoppeln	megkettőz, megdupláz
-4187	r Bewohner	lakos, lakó
-4188	verrückt	bolond, őrült
-4189	r Großteil	többség, nagy rész (fn)
-4190	mittlere	középső
-4191	r Spruch	kijelentés, mondás
-4192	r Bescheid	válasz, értesítés
-4193	r Mittag	dél, délidő (fn)
-4194	starr	merev, kemény
-4195	loben	dícsér
-4196	r Freund	barát
-4197	analysieren	elemez
-4198	langjährig	sokévi
-4199	blöd	hülye, ostoba
-4200	verringern	csökkent
-4201	r Besuch	látogatás
-4202	e Beschränkung	korlátozás, megszorítás
-4203	r Europäer	Európai (fn)
-4204	unzählig	számtalan
-4205	veranstalten	rendez, megrendez
-4206	aufrecht	függőleges
-4207	materiell	anyagi
-4208	nachträglich	utólag
-4209	zurzeit	pillanatnyilag
-4210	e Problematik	probléma, problematika
-4211	e Rezession	visszaesés, recesszió
-4212	versetzen	áthelyez
-4213	r Terrorismus	terrorizmus
-4214	angehören	hozzátartozik
-4215	kontinuierlich	folyamatos
-4216	s Krankenhaus	kórház
-4217	bohren	fúr
-4218	r Horizont	horizont, látóhatár
-4219	weitere	többi
-4220	r Tourist	turista
-4221	s Verbrechen	bűntett
-4222	e Entfernung	távolság
-4223	bilden	alkot, művel
-4224	rechts	jobboldalt
-4225	drüben	odaát
-4226	springen	ugrik
-4227	r Polizist	rendőr
-4228	r Winkel	szög (matematika)
-4229	diskutieren	megvitat, megbeszél
-4230	definieren	definiál
-4231	s Ehepaar	házaspár
-4232	stimmen	szavaz
-4233	einsam	magányosan
-4234	r Regierungschef	kormányfő
-4235	e Existenz	létezés
-4236	r Meter	méter
-4237	e Auswertung	kiértékelés
-4238	mitten	közepén
-4239	e Auflage	kiadás
-4240	trauen	bízik
-4241	r Eigentümer	tulajdonos
-4242	s Tuch	szövet, kendő
-4243	lauten	hangzik
-4244	vorschreiben	megszab
-4245	r Professor	professzor
-4246	ausschalten	kikapcsol
-4247	ausprobieren	kipróbál
-4248	vorhaben	tervez
-4249	verkehren	eljár, érintkezik
-4250	lieber	inkább
-4251	intellektuell	szellemi, intellektuális
-4252	r Einbruch	betörés
-4253	komplex	komplex, összetett
-4254	schwierig	nehéz, bonyolult
-4255	durchführen	elvégez, végrehajt
-4256	bemerkenswert	jelentős, figyelemre méltó
-4257	besorgt	aggódó, aggályos
-4258	aufreißen	feltép, felszakít
-4259	s Verfahren	eljárás, folyamat
-4260	umdrehen	elfordít, megfordít
-4261	auslegen	kiad, értelmez
-4262	dulden	eltűr, elvisel
-4263	r Bundeskanzler	szövetségi kancellár
-4264	r Kommentar	megjegyzés
-4265	vermuten	gyanít, sejt
-4266	blond	szőke
-4267	minimal	minimális
-4268	zukommen	eljut, odaérkezik
-4269	r Präsident	elnök
-4270	e Reaktion	reagálás, reakció
-4271	r Salon	szalon
-4272	begehen	elkövet
-4273	r Nacken	nyak
-4274	ausnehmen	meglát, felismer
-4275	werfen	dob, hajít
-4276	täuschen	becsap, cselez
-4277	e Provinz	tartomány
-4278	beauftragen	megbíz vkit vmivel
-4279	aufstehen	felkel, feláll
-4280	stoppen	megáll
-4281	e Distanz	távolság
-4282	r Platz	hely
-4283	r Vortrag	előadás
-4284	schreien	kiált, sikít
-4285	irgendwelche	valamilyen, akármilyen
-4286	r Kampf	harc, küzdelem
-4287	sich entschließen	elhatározza magát
-4288	beseitigen	eltávolít, megsemmisít
-4289	spezifisch	sajátos, specifikus
-4290	locker	laza
-4291	s Verbot	tiltás
-4292	verbieten	tilt, megtilt
-4293	vorher	előbb
-4294	s Nahrungsmittel	élelem, élelmiszer
-4295	dort	ott
-4296	vor kurzem	nemrég
-4297	amerikanisch	amerikai
-4298	r Umgang	bánásmód, kapcsolat
-4299	schwanger	várandós, állapotos
-4300	r Islam	iszlám vallás
-4301	e Atmosphäre	légkör, atmoszféra
-4302	ungewöhnlich	szokatlan
-4303	r Juni	június
-4304	sehr	nagyon
-4305	r Faktor	tényező
-4306	r Eingriff	beavatkozás
-4307	s Potenzial	potenciál, lehetőség
-4308	sich wundern	csodálkozik
-4309	s Chaos	káosz
-4310	r Verein	egyesület
-4311	e Differenz	különbség
-4312	r Beweis	igazolás, bizonyíték
-4313	s Gegenteil	ellentét
-4314	isolieren	elszigetel, izolál
-4315	somit	tehát, következésképp
-4316	verzichten	felad, lemond
-4317	versorgen	ellát, gondoskodik
-4318	mittels	vmi útján, vmi segítségével
-4319	klassisch	klasszikus
-4320	s Management	vezetés, menedzsment
-4321	technisch	műszaki, technikai
-4322	abschneiden	levág
-4323	verschieben	elhalaszt, eltol
-4324	bedecken	befed, beborít
-4325	s Entwicklungsland	fejlődő országok
-4326	r Vorgang	esemény, történés
-4327	r Lärm	zaj
-4328	tot	halott (mn)
-4329	fixieren	rögzít
-4330	verteidigen	véd
-4331	trocken	száraz
-4332	wohnen	lakik
-4333	r Landkreis	körzet
-4334	anrufen	felhív
-4335	e Anpassung	alkalmazkodás
-4336	r Osten	kelet
-4337	trösten	vigasztal
-4338	verletzen	megsebez, megsért
-4339	dazwischen	között
-4340	r Zweifel	kétely, kétség
-4341	wiegen	nyom vmennyit
-4342	behaupten	állít, kijelent
-4343	s Lebewesen	élőlény
-4344	untere	alsó
-4345	e Kanone	ágyú
-4346	r Feldzug	hadjárat, kampány
-4347	e Achse	tengely
-4348	e Eroberung	hódítás
-4349	r Vergleich	összehasonlítás
-4350	übertreiben	túloz, nagyít
-4351	erneut	újra, ismét
-4352	irgendetwas	valami
-4353	s Griechisch	görög nyelv
-4354	bewahren	megóv, megőriz
-4355	ansiedeln	letelepedik
-4356	andeuten	sejtet, céloz
-4357	r Betracht	figyelembe vevés, megfontolás
-4358	selbstständig	önálló
-4359	e Aussage	állítás, kijelentés
-4360	erfreuen	örül
-4361	mischen	kever
-4362	r Palästinenser	palesztin (fn)
-4363	s Gerücht	pletyka, szóbeszéd
-4364	vermeintlich	vélt, állítólagos
-4365	e Ahnung	sejtés
-4366	kriechen	mászik, kúszik
-4367	überlegen	gondolkodik, megfontol vmit
-4368	s Englisch	angol (fn)
-4369	literarisch	irodalmi
-4370	r Sinn	értelem, jelentés
-4371	stehlen	lop
-4372	scheitern	megbukik, kudarcot vall
-4373	s Regime	uralom, vezetés
-4374	e Bundesregierung	szövetségi kormány
-4375	bedingen	okoz, feltételez
-4376	zusammenhängen	összefügg
-4377	s Ereignis	esemény
-4378	vorlesen	felolvas
-4379	r Bezug	vonatkozás, hivatkozás
-4380	überzeugen	meggyőz, rábeszél
-4381	besondere	sajátos, különleges
-4382	entstehen	keletkezik, létrejön
-4383	absolut	abszolút, teljes
-4384	r Schuss	lövés
-4385	maximal	maximális
-4386	vollkommen	tökéletes, teljes
-4387	locken	vonz, csábít
-4388	düster	homályos
-4389	e Arbeitszeit	munkaidő
-4390	solide	erős, tartós, megbízható
-4391	zusammensetzen	összeállít
-4392	r Christ	keresztény (fn)
-4393	r Helfer	segítő (fn)
-4394	verbleiben	megmarad
-4395	chronisch	krónikus, tartós
-4396	e Energie	energia
-4397	weitergeben	továbbad, továbbít
-4398	mehrere	több, többen
-4399	sofern	hogyha, hacsak
-4400	vernünftig	értelmes, ésszerű
-4401	s Ausland	külföld (fn)
-4402	bereitstellen	elkészít
-4403	starren	bámul
-4404	jenseits	túl vmin
-4405	scheiden	elválik, szétválaszt
-4406	jetzt	most
-4407	weiß	fehér
-4408	entwerfen	tervez
-4409	s Format	formátum
-4410	r Dirigent	karmester
-4411	r Italiener	olasz (fn)
-4412	e Partnerschaft	partnerség
-4413	vorbeugen	megelőz
-4414	e Beteiligung	részvétel
-4415	r Sachverhalt	tények, tényállás
-4416	menschlich	emberi
-4417	e Ansicht	vélemény, nézet
-4418	e Feststellung	megállapítás, megfigyelés
-4419	zutrauen	megbízik, feltételez
-4420	aufkommen	felnő, felemelkedik
-4421	sich verlieben	szerelmes lesz
-4422	aufregen	felizgat
-4423	r Kontext	kontextus, szövegkörnyezet
-4424	erkennbar	felismerhető
-4425	aufziehen	felnevel
-4426	ablenken	más irányba terel, figyelmét elvonja
-4427	r Zinssatz	kamat, kamatláb
-4428	r Einzelfall	egyedi eset
-4429	regelmäßig	szabályos, rendszeres
-4430	bereiten	elkészít, okoz
-4431	r Transport	szállítás, szállítmány
-4432	traditionell	hagyományos
-4433	absurd	abszurd, képtelen
-4434	anrichten	elkövet
-4435	r Parkplatz	parkolóhely
-4436	versagen	megbukik, kudarcot vall
-4437	linke	bal (mn)
-4438	umsonst	ingyen, hiába
-4439	zittern	remeg, reszket
-4440	zurückweisen	elutasít, visszautasít
-4441	nächste	következő
-4442	treiben	űz, hajt, folytat
-4443	schenken	ajándékoz
-4444	nackt	csupasz, meztelen
-4445	r Eindruck	benyomás
-4446	ausziehen	kivonul, levet
-4447	e Nutzung	használat
-4448	übereinstimmen	egyezik, összhangban van
-4449	trocknen	szárít, felszárad
-4450	beruhen	alapul, alapszik
-4451	s Café	kávézó
-4452	selbe	ugyanaz
-4453	e Anleihe	kölcsön (fn)
-4454	s Experiment	kísérlet
-4455	anstehen	fennáll, sorban áll
-4456	repräsentieren	képvisel, reprezentál
-4457	steil	meredek
-4458	außergewöhnlich	szokatlan, különös
-4459	e Aktion	cselekmény, akció
-4460	allerdings	valóban, természetesen
-4461	e Blüte	virág, virágzás
-4462	darum	ezért, ekörül
-4463	verbinden	összeköt, összekapcsol
-4464	abhalten	visszatart
-4465	r Zwang	kényszer
-4466	meinetwegen	tőlem, miattam
-4467	meiste	többnyire, legtöbbször
-4468	erleiden	szenved
-4469	r Kompromiss	kompromisszum, kiegyezés
-4470	e Erwachsene	felnőttek
-4471	versprechen	megígér
-4472	übrig	maradék, megmaradt (mn)
-4473	sowie	amint, mihelyt
-4474	s Gutachten	szakvélemény
-4475	unterstützen	támogat
-4476	aufsteigen	felszáll, felemelkedik
-4477	spannen	kifeszít, megfeszít
-4478	mehr	több
-4479	s Volk	nép
-4480	zukünftig	jövő, jövőbeli (mn)
-4481	weitermachen	folytat
-4482	r Student	diák
-4483	umfassen	tartalmaz, magába foglal
-4484	zurückhalten	visszafog, visszatart
-4485	subjektiv	szubjektiv
-4486	insbesondere	különösen, kiváltképpen
-4487	e Position	pozíció, állapot
-4488	zeitlich	időbeli, korai
-4489	umsetzen	áthelyez, felvesz
-4490	enttäuschen	csalódást okoz
-4491	beobachten	megfigyel, észlel
-4492	bevor	mielőtt
-4493	nachhaltig	tartós, fenntartható
-4494	r Hass	gyűlölet
-4495	körperlich	testi
-4496	e Akte	akta, irat
-4497	e Bestimmung	elhatározás, rendelkezés
-4498	s Ufer	part
-4499	motorisch	motorikus
-4500	s Phänomen	jelenség
-4501	umbringen	megöl
-4502	e Oma	nagyi
-4503	e Beobachtung	megfigyelés
-4504	liegen	fekszik
-4505	zerreißen	széttép
-4506	ausdehnen	kitágít, kiterjeszt
-4507	s Militär	katonaság
-4508	beschaffen	megszerez, beszerez
-4509	intern	belső
-4510	zumeist	többnyire
-4511	zurücklegen	visszatesz
-4512	s Teilchen	részecske
-4513	sowieso	úgyis
-4514	finanziell	pénzügyi
-4515	r Vorwurf	vád, szemrehányás
-4516	nachts	éjszakánként
-4517	rücken	mozdul, költözik
-4518	tief	mély
-4519	übrigens	különben, egyébként
-4520	s Eigentum	tulajdon
-4521	r Verdacht	gyanú
-4522	konfrontieren	szembeszáll
-4523	andererseits	másrész
-4524	e Entschuldigung	bocsánatkérés
-4525	veröffentlichen	publikál, közzétesz
-4526	vorherrschen	túlsúlyban van, uralkodik
-4527	ansehen	ránéz, megnéz
-4528	sorgen	aggodik, gondoskodik
-4529	antreten	elindul, megkezd
-4530	unternehmen	vállal, vállalkozik
-4531	e Chefin	főnöknő
-4532	schwimmen	úszik
-4533	s Erlebnis	élmény
-4534	leiden	szenved
-4535	regelrecht	szabályos, valóságos
-4536	r Jäger	vadász
-4537	charakteristisch	jellemző, jellegzetes
-4538	berücksichtigen	figyelembe vesz
-4539	demokratisch	demokratikus
-4540	zugeben	bevall, elismer
-4541	s Netz	hálózat
-4542	setzen	leül, helyet foglal
-4543	steigern	növel, emel
-4544	strategisch	stratégiai
-4545	interessieren	érdekel (ig)
-4546	spät	késő
-4547	e Rüstung	fegyverzet
-4548	r Wirtschaftszweig	iparág
-4549	unheilbar	gyógyíthatatlan
-4550	e Tankstelle	benzinkút
-4551	feststellbar	megállapítható
-4552	s Bündnis	szövetség
-4553	s Heer	hadsereg
-4554	r Vermieter	bérbeadó
-4555	anfallen	megtámat
-4556	vereinen	egyesít
-4557	welch	melyik
-4558	r Täter	tettes, elkövető
-4559	vorläufig	átmeneti, ideiglenes
-4560	schleichen	mászik, oson, lopakodik
-4561	mangeln	hiányt szenved
-4562	beste	legjobb
-4563	verdächtig	gyanús
-4564	e Realität	valóság, realitás
-4565	behalten	megtart
-4566	zugänglich	elérhető
-4567	e Fakultät	képesség, egyetemi kar
-4568	s Betriebssystem	operációs rendszer
-4569	tauchen	búvárkodik, merül
-4570	ablösen	vált, felvált
-4571	s Mittel	eszköz, mód
-4572	verdanken	köszön
-4573	los	szabad, mentes vmitől
-4574	e Auflösung	felbontás, felbomlás
-4575	durch	át, keresztül
-4576	dicht	feszes, sűrű
-4577	besprechen	megvitat, megbeszél
-4578	r Russe	orosz (fn)
-4579	verweigern	megtagad
-4580	jemand	valaki
-4581	e Anlage	létesítmény
-4582	berufen	kinevez
-4583	kämpfen	harcol
-4584	anscheinend	látszólag
-4585	r Katalog	jegyzék, katalógus
-4586	e Ferne	távolság
-4587	zustehen	jár vkinek
-4588	r Schlag	ütés, csapás
-4589	e Beschwerde	panasz, teher
-4590	stoßen	meglök, taszít
-4591	berechnen	kiszámol
-4592	starten	indul
-4593	kennzeichnen	jellemez, megjelöl
-4594	ausweichen	elkerül, kikerül
-4595	unsicher	bizonytalan
-4596	e Erhöhung	növekedés
-4597	letztendlich	végső soron
-4598	r Ehegatte	férj
-4599	intelligent	intelligens
-4600	r Therapeut	kezelőorvos
-4601	steuern	vezet, irányít
-4602	aufgehen	felkel, felnyit
-4603	jegliche	minden egyes
-4604	e Erfüllung	teljesítés, teljesülés
-4605	aufwachen	felébred
-4606	beherrschen	ural, uralkodik
-4607	derart	úgy, annyira
-4608	womit	amivel
-4609	rennen	fut
-4610	r Mieter	bérlő, albérlő
-4611	vernachlässigen	elhanyagol
-4612	e Analyse	elemzés
-4613	e Beurteilung	megítélés
-4614	e Bemerkung	észrevétel, megjegyzés
-4615	s Darlehen	hitel, kölcsön
-4616	stören	zavar (ig)
-4617	aufrichten	felállít, felemel
-4618	anders	másképpen
-4619	bescheiden	szerény
-4620	dauerhaft	tartós
-4621	abwarten	kivár
-4622	beinhalten	tartalmaz
-4623	ausschließlich	kizárólag
-4624	r Hörer	hallgató
-4625	aufhalten	meggátol, feltartóztat
-4626	aufbringen	előteremt, felhajt
-4627	vereinigen	egyesít
-4628	automatisch	automatikus
-4629	r Sportler	sportoló
-4630	zufällig	véletlen (mn)
-4631	mühsam	nehéz, fáradtságos
-4632	ziemlich	egészen, meglehetősen
-4633	abreißen	letép, félbeszakad
-4634	erfüllen	teljesít, véghezvisz
-4635	sauber	tiszta
-4636	vorgeben	tettet, színlel
-4637	typisch	tipikus, jellemző
-4638	sich abspielen	lejátszódik, végbemegy
-4639	anwenden	alkalmaz, felhasznál
-4640	e Besonderheit	sajátosság
-4641	r Sieger	győztes, bajnok
-4642	r Tisch	asztal
-4643	nähern	közelít
-4644	dementsprechend	eszerint, ennek megfelelően
-4645	e Absicht	szándék
-4646	dynamisch	dinamikus
-4647	e Anforderung	követelmény, igény
-4648	stärken	erősít
-4649	sozusagen	úgymond, úgyszólván
-4650	r Durcheinander	zűrzavar
-4651	verfügen	elrendel
-4652	r Zusammenhang	kapcsolat, összefüggés
-4653	abstrakt	absztrakt, elvont
-4654	r Bulle	bika
-4655	überstehen	kiáll, elszenved
-4656	irren	téved
-4657	e Akademie	akadémia
-4658	beugen	hajlít
-4659	e Oper	opera
-4660	wertvoll	értékes
-4661	s Auftreten	fellépés
-4662	unterschiedlich	különféle, különböző
-4663	r Tipp	tipp
-4664	verstehen	megért
-4665	sonstig	más
-4666	weshalb	miért
-4667	teuer	drága
-4668	treu	hűséges
-4669	umarmen	megölel
-4670	sicherlich	biztosan
-4671	verständlich	érthetően
-4672	ausdrücken	kifejez
-4673	inwieweit	mennyire
-4674	schon	már
-4675	betreuen	gondoz, gondoskodik
-4676	s Gedächtnis	emlék, emlékezet
-4677	servieren	felszolgál
-4678	übergeben	átad
-4679	anstreben	törekszik, vágyakozik
-4680	e Orientierung	igazodás, tájékozódás
-4681	agieren	cselekszik, működik
-4682	jährlich	évenkénti
-4683	ahnen	gyanít, sejt
-4684	r Teilnehmer	résztvevő
-4685	aufgeben	felad
-4686	abziehen	levon, visszavon
-4687	männlich	hím (mn)
-4688	r Dolmetscher	tolmács
-4689	verpassen	lekésik, elmulaszt
-4690	jagen	vadászik
-4691	leuchten	világít
-4692	begeistern	ihlet, lelkesít
-4693	e Praxis	rendelés, praxis
-4694	e Droge	drog, kábítószer
-4695	vorsehen	tervbe vesz, előre lát
-4696	verfassen	megfogalmaz
-4697	ausmachen	alkot, kitesz
-4698	sachlich	tárgyilagos
-4699	vorbei	elmúlt (hat)
-4700	ablaufen	lejár, elmúlik
-4701	dokumentieren	dokumentál
-4702	dunkel	sötét (mn)
-4703	s Schweigen	csend, hallgatás
-4704	regnen	esik (eső)
-4705	r Konflikt	konfliktus
-4706	e Einheit	egység
-4707	erforderlich	szükséges
-4708	r Impuls	impulzus, ösztönzés
-4709	bisschen	kissé
-4710	dankbar	hálás
-4711	städtisch	városi
-4712	braten	süt, megsüt
-4713	e Bahn	vonat, vasút
-4714	informieren	informál, tájékoztat
-4715	r Terrorist	terrorista
-4716	r Papa	apu
-4717	blass	sápadt
-4718	christlich	keresztény (mn)
-4719	völlig	teljes
-4720	sobald	mihelyt
-4721	ausgeprägt	megkülönböztető, kifejezett
-4722	aufeinander	egymásra
-4723	nah	közel
-4724	e Ebene	sík, szint
-4725	s Protein	fehérje
-4726	e Produktion	termelés
-4727	entnehmen	kivesz, merít
-4728	erlassen	kiad, megenged
-4729	derartig	ilyen
-4730	ebenfalls	szintén, ugyancsak
-4731	s Schloss	lakat
-4732	beiseite	mellé
-4733	jeweilig	mindenkori
-4734	anpassen	igazít, hozzáilleszt
-4735	aneinander	egymáshoz
-4736	s Motto	mottó, jelmondat
-4737	s Italienisch	olasz nyelv
-4738	r Riese	óriás (fn)
-4739	s Zeug	eszköz, dolog
-4740	inszenieren	rendez
-4741	antun	ráad, felöltöztet
-4742	e Reflexion	visszaverődés
-4743	reflektieren	visszaver, visszatükröz
-4744	umgeben	körülvesz
-4745	sich vornehmen	elhatározza magát
-4746	losgehen	indul, elsül
-4747	individuell	egyéni, individuális
-4748	zur Verfügung stehen	rendelkezásre áll
-4749	strukturieren	szerkeszt, strukturál
-4750	e Bilanz	mérleg (közgazdaságban)
-4751	Schweiz	svájc
-4752	r Rang	rang, helyezés
-4753	stellvertretend	helyettes (mn)
-4754	widmen	vminek szentel, ráfordít
-4755	weisen	mutat, utasít
-4756	Japan	Japán
-4757	e Karte	térkép
-4758	e Hölle	pokol
-4759	e Immobilie	ingatlan
-4760	r Rauch	füst
+2005	r Schnee	hó
+2006	e Wolke	felhő
+2007	wolkig	felhős
+2008	eisig	jeges
+2009	glatt	csúszós
+2010	e Sonne	Nap
+2011	sonnig	napos
+2012	heiß	forró
+2013	warm	meleg
+2014	nass	nedves
+2015	e Jahreszeit	évszak
+2016	r Sturm	vihar
+2017	mild	enyhe
+2018	veränderlich	változékony
+2019	freundlich	barátságos
+2020	kühl	hűvös
+2021	neblig	ködös
+2022	trüb	borús
+2023	stürmisch	viharos
+2024	regnerisch	esős
+2025	scheußlich	szörnyű
+2026	e Wettervorhersage	időjáráselőrejelzés
+2027	e Strömung	áramlás, áramlat
+2028	r Luftdruck	légnyomás
+2029	bewölkt	felhős
+2030	klar	tiszta
+2031	r Niederschlag	csapadék
+2032	r Nebel	köd
+2033	r Frost	fagy (fn)
+2034	frieren	fagy (ige)
+2035	tauen	olvad
+2036	r Blitz	villám
+2037	blitzen	villámlik
+2038	r Donner	dörgés
+2039	donnern	dörög (ég)
+2040	e Dürre	szárazság
+2041	e Temperatur	hőmérséklet
+2042	r Ast	ág
+2043	kahl	kopasz, kopár
+2044	e Überschwemmung	áradás
+2045	e Sichtweite	látótávolság
+2046	e Rose	rózsa
+2047	r Radler	kerékpáros
+2048	r Radweg	bicikliút
+2049	r Apparat	berendezés
+2050	s Wartezimmer	váróterem
+2051	vorkommen	előfordul, látszik
+2052	husten	köhög
+2053	r Patient	páciens
+2054	erschöpft	kimerült
+2055	s Medikament	gyógyszer
+2056	e Arznei	orvosság
+2057	zuständig	illetékes (mn)
+2058	schmerzhaft	fájdalmas
+2059	e Untersuchung	vizsgálat
+2060	r Chirurg	sebész
+2061	e Krankenschwester	ápolónő
+2062	e Operation	operáció
+2063	r Oberarzt	főorvos
+2064	s Organ	szerv
+2065	e Komplikation	komplikáció
+2066	r Prozeß	eljárás, per
+2067	e Grippe	influenza
+2068	r Schnupfen	nátha
+2069	e Erkältung	megfázás
+2070	r Harn	vizelet
+2071	r Durchfall	hasmenés
+2072	e Kondome	óvszer
+2073	s Rezept	recept
+2074	verschreiben	felír
+2075	e Tablette	tabletta
+2076	r Tropfen	csepp
+2077	e Vergiftung	mérgezés
+2078	lebensgefährlich	életveszélyes
+2079	e Nebenwirkung	mellékhatás
+2080	s Fest	ünnep, ünnepség
+2081	r Brauch	szokás
+2082	e Ostern	húsvét
+2083	e Weihnachten	karácsony
+2084	r Geburtstag	szülinap
+2085	e Hochzeit	esküvő
+2086	e Geburt	születés
+2087	s Nest	fészek
+2088	s Familienmitglied	családtag
+2089	s Grab	sír (főnév)
+2090	anzünden	meggyújt
+2091	e Kerze	gyertya
+2092	r Weihnachtsbaum	karácsonyfa
+2093	schmücken	feldíszíteni vmit
+2094	e Kugel	gömb
+2095	einpacken	becsomagol
+2096	auspacken	kicsomagol
+2097	s Neujahr	újév
+2098	staatlich	állami
+2099	e Bürgerrevolution	forradalom
+2100	r Freiheitskampf	szabadságharc
+2101	r Kreis	kör, körzet
+2102	e Party	buli, parti
+2103	verschicken	elküld
+2104	r Zeuge	tanú
+2105	r Pfarrer	pap
+2106	schwören	esküszik
+2107	e Treue	hűség
+2108	ewig	örök
+2109	e Hochzeitsreise	nászút
+2110	e Veranstaltung	rendezvény
+2111	r Kosename	becenév
+2112	vertraut	bizalmas
+2113	r Politiker	politikus
+2114	e Gedenkfeier	visszaemlékezés
+2115	e Forderung	követelmény, követelés
+2116	zusammenfassen	összefoglalni
+2117	e Königin	királynő
+2118	r Herzog	herceg
+2119	s Feuerwerk	tűzijáték
+2120	e Republik	köztársaság
+2121	e Unterdrückung	elnyomás
+2122	e Truppe	csapat
+2123	stationieren	állomásoztat
+2124	e Unzufriedenheit	elégedettlenség
+2125	e Erbitterung	elkeseredés
+2126	e Demonstration	demonsráció
+2127	r Streik	sztrájk
+2128	e Reform	reform
+2129	e Wille	akarat
+2130	damalig	akkori
+2131	e Handschelle	bilincs
+2132	töten	megöl
+2133	s Begräbnis	temetés
+2134	e Pressefreiheit	sajtószabadság
+2135	s Pluralismus	többpártrendszer
+2136	r Umweltschutz	környezetvédelem
+2137	heutzutage	manapság
+2138	e Plastiktüte	nylonzacskó
+2139	s Waschpulver	mosópor
+2140	e Verpackung	csomagolás
+2141	r Abfall	hulladék
+2142	r Müll	szemét
+2143	schaden	károsítani
+2144	e Vorschrift	előírás
+2145	vernichten	megsemmisít
+2146	e Kanalisation	csatornázás
+2147	s Taschentuch	zsebkendő
+2148	s Zeichen	jel
+2149	umweltschmutzig	környezetszennyező
+2150	umweltfreundlich	környezetbarát
+2151	umweltschädlich	környezetkárosító
+2152	e Folie	fólia
+2153	e Batterie	elem
+2154	s Filter	szűrő
+2155	volljährig	nagykorú
+2156	minderjährig	fiatalkorú
+2157	e Stimme	szavazat
+2158	s Mandatum	mandátum
+2159	e Koalition	koalíció
+2160	e Post	posta
+2161	neutral	semleges
+2162	r Staatsoberhaupt	államfő
+2163	r Ministerpräsident	miniszterelnök
+2164	r Minister	miniszter
+2165	r Finanzminister	pénzügyminiszter
+2166	e Kampagne	kampány
+2167	r Wahlbürger	választópolgár
+2168	erfolgreich	sikeres
+2169	s Kreuz	kereszt
+2170	e Runde	forduló
+2171	e Kenntnis	ismeret
+2172	schmutzig	koszos
+2173	e Hemmung	gátlás
+2174	s Ackerland	szántóföld
+2175	r Fremdenverkehr	idegenforgalom
+2176	wirtschaftlich	gazdasági
+2177	e Tiefebene	alföld
+2178	s Hochwasser	árvíz
+2179	nahelegen	közeli
+2180	prachtvoll	pompás
+2181	r Springbrunnen	szökőkút
+2182	e Wiedervereinigung	újraegyesítés
+2183	s Parlament	parlament
+2184	s Symbol	szimbólum
+2185	e Fahne	zászló
+2186	e Nationalhymne	nemzeti himnusz
+2187	e Strophe	versszak
+2188	e Melodie	dallam
+2189	e Oberfläche	felszín
+2190	r Fluss	folyó
+2191	s Industriegebiet	iparvidék
+2192	r Bodenschatz	ásványkincs
+2193	e Wiese	rét, mező
+2194	r Dichter	költő
+2195	e Novelle	novella
+2196	e Übersetzung	fordítás
+2197	e Bibel	Biblia  
+2198	e Einfachheit	egyszerűség
+2199	e Klarheit	tisztaság
+2200	e Funktion	funkció
+2201	e Schrift	írás
+2202	e Spannung	izgalom, feszültség
+2203	r Briefwechsel	levelezés
+2204	e Definition	definíció
+2205	e Berührung	érintés
+2206	r Höhepunkt	tetőpont
+2207	e Lyrik	líra
+2208	r Räpresentant	képviselő
+2209	e Sammlung	gyűjtemény
+2210	parallel	párhuzamos
+2211	e Bedeutung	jelentés
+2212	r Roman	regény
+2213	r Mittelpunkt	középpont
+2214	e Form	forma
+2215	e Perspektive	perspektíva
+2216	e Phase	korszak, fázis
+2217	r Musiker	zenész
+2218	e Kunst	művészet
+2219	e Muster	minta
+2220	r Bildhauer	szobrász
+2221	e Architektur	építészet
+2222	tanzen	táncol
+2223	r Fischer	halász
+2224	fischen	halászik
+2225	e Wanderung	kirándulás
+2226	r Odeur	illat
+2227	e Treppe	lépcső
+2228	kratzen	karcol
+2229	ausgehen	elfogy
+2230	r Fiskus	kincstár
+2231	r Vorteil	előny
+2232	e Platte	tál
+2233	beraten	tanácsot ad
+2234	e Interaktion	kölcsönhatás
+2235	e Kuh	tehén
+2236	s Fett	zsír
+2237	wahrnehmen	észlel
+2238	s Jahr	év
+2239	e Katze	macska
+2240	s Pferd	ló
+2241	sprechen	beszél
+2242	e Frage	kérdés
+2243	lernen	tanul
+2244	s Ende	vég, végződés
+2245	verschieden	különböző
+2246	beginnen	elkezd
+2247	schreiben	ír
+2248	überhaupt	általában
+2249	s Geld	pénz
+2250	sitzen	ül
+2251	r Abend	este
+2252	r Monat	hónap
+2253	r Euro	euró
+2254	s Defizit	deficit
+2255	r Hirsch	szarvas
+2256	lieben	szeret
+2257	r Wolf	farkas
+2258	ramponieren	tönkretesz
+2259	r Beton	beton
+2260	e Tasche	táska
+2261	künftig	jövőbeli
+2262	r Nutzer	felhasználó
+2263	brüsten	dicsekszik
+2264	eskalieren	kiterjed, erősödik
+2265	e Uniform	egyenruha
+2266	s Problem	probléma
+2267	s Leben	élet
+2268	sagen	mond
+2269	umrüsten	átalakít
+2270	kauen	rág
+2271	e Emotion	érzelem
+2272	s Gemüt	kedv
+2273	r Becher	bögre
+2274	e Deutung	magyarázat
+2275	s Feuer	tűz
+2276	finden	talál
+2277	s Ding	dolog
+2278	abbauen	lebont
+2279	abbilden	másol, ábrázol
+2280	abbrechen	abbahagy
+2281	abdecken	betakar
+2282	aber	de
+2283	abhängen	függ vmitől
+2284	abhängig	függő (mn)
+2285	fein	finom
+2286	ferner	továbbá
+2287	fertig	kész
+2288	festhalten	visszatart
+2289	festnehmen	elfog
+2290	fest	kemény
+2291	festsetzen	megállapít
+2292	feststellen	megállapít
+2293	feucht	nedves
+2294	folglich	következésképp
+2295	formal	hivatalos
+2296	formen	alakít
+2297	formulieren	fogalmaz
+2298	fort	el, tovább
+2299	fortsetzen	folytat
+2300	r Frankfurter	frankfurti (fn)
+2301	französisch	francia (mn)
+2302	freigeben	felszabadít
+2303	r Freitag	péntek
+2304	freiwillig	önként
+2305	fressen	zabál
+2306	freuen	örül
+2307	friedlich	békés
+2308	frisch	friss
+2309	froh	boldog
+2310	fröhlich	vidám
+2311	e Frucht	termés
+2312	früh	korán
+2313	fügen	illesz, hozzátesz
+2314	fühlen	érez
+2315	füllen	tölt
+2316	furchtbar	borzasztó
+2317	fürchten	fél (ige)
+2318	gänzlich	teljesen
+2319	garantieren	garantál
+2320	gar	talán
+2321	geboren	születik
+2322	gefährden	veszélyeztet
+2323	gefährlich	veszélyes
+2324	gefangen	bebörtönzött
+2325	gegebenenfalls	adott esetben
+2326	gegen	ellen
+2327	gegenseitig	kölcsönös
+2328	gegenwärtig	pillanatnyilag
+2329	geheim	titkos
+2330	gehen	megy
+2331	geistig	szellemi
+2332	geistlich	egyházi
+2333	gelb	sárga
+2334	gelegentlich	alkalmanként
+2335	gelingen	sikerül
+2336	gemütlich	kényelmes
+2337	genauso	pontosan úgy
+2338	genetisch	genetikai
+2339	genießen	élvez
+2340	genügen	eleget tesz vminek
+2341	geographisch	földrajzi
+2342	gerade	egyenesen
+2343	geradezu	éppen
+2344	geraten	fejlődik
+2345	gern	szívesen
+2346	gesellschaftlich	társadalmi
+2347	gesetzlich	törvényes
+2348	gespannt	feszült
+2349	gestalten	formál, alakít
+2350	gestehen	bevall, elismer
+2351	e Gesundheit	egészség
+2352	s Getreide	gabona
+2353	gewähren	ad, megad
+2354	gewährleisten	garantál
+2355	gewiss	biztosan
+2356	gewohnt	szokásos
+2357	gießen	önt
+2358	glänzend	ragyogó
+2359	gleichen	kiegyenlít
+2360	gleichmäßig	egyenletes
+2361	gleichzeitig	egyidejűleg
+2362	gleiten	csúszik
+2363	global	globális
+2364	glücklich	boldog, szerencsés
+2365	golden	aranyszínű
+2366	s Gras	fű
+2367	grau	szürke
+2368	greifen	elkap
+2369	griechisch	görög (mn)
+2370	großartig	nagyszerű
+2371	groß	nagy
+2372	großzügig	nagyvonalú
+2373	grün	zöld
+2374	grundlegend	alapvető
+2375	gründlich	alaposan
+2376	grundsätzlich	alapvetően
+2377	grüßen	üdvözöl
+2378	gucken	néz, kukucskál
+2379	r Gürtel	öv
+2380	gut	jó
+2381	haften	szavatol
+2382	haften	tapad
+2383	r Hahn	kakas
+2384	halb	fél (mn)
+2385	halten	tart
+2386	r Hamster	hörcsög
+2387	hängen	felakaszt
+2388	harmlos	ártalmatlan
+2389	hassen	gyűlöl
+2390	heben	emel
+2391	heftig	heves
+2392	heilig	szent (mn)
+2393	heimisch	hazai
+2394	heißen	hív
+2395	helfen	segít
+2396	hell	tiszta
+2397	herausgeben	kiad
+2398	herausfinden	rájön
+2399	herausnehmen	kivesz
+2400	heraus	ki (hat)
+2401	herausstellen	kiemel vmit 
+2402	herkommen	ered, származik
+2403	herrlich	gyönyörű
+2404	herum	körül
+2405	hervorgehen	származik, keletkezik
+2406	herzlich	kedves
+2407	heuer	idén
+2408	heutig	mai
+2409	hierfür	ezzel kapcsolatban
+2410	hier	itt
+2411	hierher	ide
+2412	hierzu	ehhez
+2413	hilflos	gyámoltalan
+2414	hinauf	felfelé
+2415	hinausgehen	kimegy
+2416	hinaus	kifelé
+2417	hinein	befelé
+2418	hinfahren	odautazik
+2419	hingehen	odamegy
+2420	hinnehmen	elfogad
+2421	hinsichtlich	tekintettel vmire
+2422	hinten	hátul
+2423	hinter	mögé
+2424	hinterher	utána
+2425	hinterlassen	hátrahagy
+2426	hin	felé
+2427	hinüber	át
+2428	hinweg	el
+2429	hinweisen	rámutat
+2430	hinzu	hozzá
+2431	historisch	történelmi
+2432	höchstens	legfeljebb
+2433	hochwertig	magas minőségű
+2434	hocken	guggol
+2435	hoffentlich	remélhetőleg
+2436	hören	hall
+2437	hübsch	csinos
+2438	s Huhn	tyúk
+2439	s Hundert	száz
+2440	r Hut	kalap
+2441	ideal	ideális
+2442	identisch	azonos
+2443	identifizieren	azonosít
+2444	fliehen	menekül
+2445	fließend	folyékonyan
+2446	fließen	folyik
+2447	illegal	illegális
+2448	erschießen	lelő
+2449	erschließen	kinyit
+2450	erschöpfen	kimerül
+2451	erschrecken	megijeszt
+2452	erschweren	megnehezít
+2453	ersetzen	pótol
+2454	ersparen	megtakarít
+2455	erstaunen	csodálkozik
+2456	erstaunlich	csodálatos
+2457	erstellen	előállít, megalkot
+2458	erstmal	először
+2459	erstrecken	terjed
+2460	erst	első
+2461	ertragen	elvisel
+2462	e Rücksicht	tekintet
+2463	erwähnen	megemlít
+2464	erwecken	felébreszt
+2465	erweisen	bebizonyít
+2466	erweitern	tágít, bővít
+2467	erwerben	megszerez
+2468	erwidern	válaszol
+2469	erwischen	elkap
+2470	erzeugen	termel
+2471	erziehen	nevel
+2472	erzielen	elér
+2473	e Saison	idény, szezon
+2474	e Säule	oszlop
+2475	e Scheibe	üveg, ablak
+2476	e Scheidung	elválás
+2477	e Schlange	kígyó
+2478	e Schnittstelle	adapter
+2479	e Schönheit	szépség
+2480	e Schulden	adósság
+2481	e Schwäche	gyengeség
+2482	e Schwangerschaft	terhesség
+2483	e Schwierigkeit	nehézség
+2484	e Seele	lélek
+2485	e Sehnsucht	vágy
+2486	e Sekunde	másodperc
+2487	r Esel	szamár
+2488	e Selbstständigkeit	függetlenség
+2489	e Sicherung	biztosítás
+2490	e Sicht	kilátás
+2491	e Situation	szituáció
+2492	e Sitzung	gyűlés
+2493	e Skala	skála
+2494	e Solidarität	szolidaritás, összetartás
+2495	e Spalte	oszlop, repedés
+2496	e Sportart	sportág
+2497	e Spur	nyom, ösvény
+2498	essen	eszik
+2499	e Stabilität	stabilitás
+2500	e Statistik	statisztika
+2501	e Steckdose	konnektor
+2502	e Steigerung	fokozás, növelés
+2503	e Stellungnahme	állásfoglalás
+2504	e Stellung	állás
+2505	s Sterben	halál
+2506	e Steuerung	kormányzás
+2507	e Stiftung	alapítás
+2508	e Stille	némaság
+2509	e Stimme	hang
+2510	e Stimmung	kedv, hangulat
+2511	e Strahlung	sugárzás
+2512	e Straße	utca
+2513	e Strecke	távolság
+2514	e Struktur	szerkezet
+2515	e Substanz	lényeg
+2516	e Subvention	anyagi támogatás
+2517	e Suche	keresés
+2518	etablieren	alapít
+2519	e Tageszeitung	napilap
+2520	e Taste	nyomógomb
+2521	e Tatsache	tény
+2522	e Technologie	technológia
+2523	e Teilnahme	részvétel
+2524	e Tendenz	tendencia
+2525	e Theorie	elmélet
+2526	e Therapie	terápia
+2527	e These	tétel
+2528	e Tiefe	mélység
+2529	etliche	néhány
+2530	e Tonne	tonna
+2531	e Tour	túra
+2532	e Tradition	hagyomány
+2533	e Träne	könny
+2534	e Trauer	gyász
+2535	e Trennung	elválás
+2536	e Übernahme	átvétel
+2537	e Überlegung	megfontolás
+2538	e Überprüfung	vizsgálat
+2539	e Überraschung	meglepetés
+2540	e Übersicht	áttekintés
+2541	e Umfrage	felmérés, közvéleménykutatás
+2542	e Umsetzung	átalakulás
+2543	e Union	unió
+2544	e Unruhe	izgalom, nyugtalanság
+2545	e Unsicherheit	bizonytalanság
+2546	e Unterhaltung	szórakoztatás
+2547	e Unternehmung	vállalkozás
+2548	e Unterscheidung	megkülönböztetés
+2549	europäisch	európai
+2550	e Ursache	ok
+2551	e Evaluation	kiértékelés
+2552	e Variante	változat
+2553	verändern	megváltoztat
+2554	e Verarbeitung	feldolgozás
+2555	e Verbesserung	javítás
+2556	e Verbindlichkeit	kötelezettség
+2557	e Vereinbarung	megállapodás
+2558	e Vereinigung	szövetség
+2559	e Verhaltensweise	viselkedés
+2560	e Verknüpfung	kapcsolat
+2561	e Vermittlung	közvetítés, közbenjárás
+2562	e Vernunft	ész, értelem
+2563	e Veröffentlichung	közzététel
+2564	e Verordnung	recept, rendelet
+2565	e Versammlung	gyűlés, gyülekezet
+2566	e Versicherung	biztosítás
+2567	e Version	verzió
+2568	e Versorgung	ellátás
+2569	e Vertretung	helyettesítés
+2570	e Verwaltung	ügyintézés
+2571	e Vorlesung	előadás
+2572	e Verwendung	használat
+2573	vielzahl	számos
+2574	e Volkswirtschaft	nemzetgazdaság
+2575	e Vorgabe	előny
+2576	e Vorlage	javaslat
+2577	e Vorsicht	óvatosság
+2578	e Wahrnehmung	észlelés
+2579	e Wahrscheinlichkeit	valószínűség
+2580	e Wange	arc
+2581	e Wärme	melegség
+2582	e Wäsche	mosás
+2583	e Wechselwirkung	kölcsönhatás
+2584	e Weile	időtartam
+2585	e Weiterbildung	továbbképzés
+2586	e Weltmeisterschaft	világbajnokság
+2587	e Welt	világ
+2588	e Werkstatt	műhely
+2589	e Wirklichkeit	valóság
+2590	e Wirtschaft	gazdaság
+2591	e Wirtschaftspolitik	gazdaságpolitika
+2592	e Woche	hét
+2593	e Wunde	seb
+2594	e Wut	düh
+2595	exakt	pontosan
+2596	flexibel	sokoldalú
+2597	existieren	létezik
+2598	experimentell	kísérleti
+2599	explizit	explicit
+2600	extern	külső
+2601	extrem	extrém
+2602	e Zahlung	fizetés
+2603	e Zeichnung	rajz
+2604	e Zeile	sor
+2605	e Zeitschrift	magazin
+2606	e Zelle	sejt (fn)
+2607	e Zerstörung	rombolás
+2608	e Zielsetzung	célkitűzés
+2609	e Zigarette	cigaretta
+2610	e Zone	zóna
+2611	e Zulassung	engedély
+2612	e Zunahme	növekedés
+2613	e Zuordnung	hozzárendelés
+2614	e Zusammenarbeit	együttműködés
+2615	e Zusammensetzung	összetétel
+2616	e Zustimmung	helyeslés
+2617	fachlich	szakszerű
+2618	fahren	vezet
+2619	r Fall	esés
+2620	fällig	esedékes
+2621	falsch	hamis
+2622	fassen	megfog
+2623	faszinieren	lenyűgöz
+2624	r Februar	február
+2625	fehlen	hiányzik
+2626	fehlen	elhibáz
+2627	e Nacht	éjszaka
+2628	e Nähe	közelség
+2629	e Nahrung	táplálkozás, étel
+2630	e Nation	nemzet
+2631	e Natur	természet
+2632	e Naturwissenschaft	természettudomány
+2633	enden	befelyez
+2634	endlich	végül
+2635	endlos	végtelen
+2636	engagieren	alkalmaz
+2637	englisch	angol (mn)
+2638	enorm	óriási
+2639	e Norm	norma
+2640	e Not	szükség
+2641	entfalten	kibont
+2642	entgegenkommen	megfelel
+2643	entgehen	elmenekül
+2644	enthalten	tartalmaz
+2645	e Lust	öröm
+2646	e Malerei	festmény
+2647	e Marke	márka
+2648	e Marke	bélyeg
+2649	e Masse	tömeg
+2650	e Materie	anyag
+2651	e Medizin	orvosság
+2652	e Mehrheit	többség
+2653	e Meldung	jelentés
+2654	e Menge	mennyiség
+2655	e Messe	vásár
+2656	e Messung	mérés
+2657	e Miete	lakbér
+2658	e Minute	perc
+2659	e Mischung	keverés
+2660	e Mission	küldetés
+2661	e Mitte	közép
+2662	emotional	érzelmi
+2663	e Motivation	motiváció
+2664	empfangen	kap, fogad
+2665	empfehlen	ajánl
+2666	empirisch	tapasztalati
+2667	empfindlich	érzékeny
+2668	kritisieren	krizizál
+2669	kündigen	kirúg, felmond
+2670	küssen	csókol
+2671	lächeln	mosolyog
+2672	lachen	nevet
+2673	lagern	tárol, raktároz
+2674	künstlich	mesterséges
+2675	ländlich	vidéki
+2676	langweilig	unalmas
+2677	laufen	fut
+2678	lauschen	hallgat, fülel
+2679	lebendig	élő, eleven
+2680	leben	él
+2681	leer	üres
+2682	lediglich	csupán
+2683	lehnen	támaszkodik
+2684	lehren	tanít
+2685	leiten	vezet, irányít
+2686	logisch	logikus
+2687	lustig	vidám, vicces
+2688	mahnen	buzdít, figyelmeztet
+2689	malen	fest
+2690	manche	néhány
+2691	e Katastrophe	katasztrófa
+2692	e Kassette	kazetta
+2693	e Kasse	pénztár
+2694	e Kategorie	kategória
+2695	e Karriere	karrier
+2696	e Kindheit	gyermekkor
+2697	e Klinik	klinika
+2698	e Kollegin	kolléga (nő)
+2699	e Kombination	kombináció
+2700	e Kommune	közösség
+2701	e Kompetenz	kompetencia
+2702	e Komponente	alkotóelem
+2703	e Konferenz	konferencia
+2704	e Konjunktur	konjunktúra, fellendülés
+2705	e Konkurrenz	konkurencia
+2706	e Konstruktion	szerkezet, konstrukció
+2707	e Konzentration	összpontosítás
+2708	e Konzeption	koncepció
+2709	e Kooperation	együttműködés
+2710	e Koralle	korall
+2711	e Kosten	ár
+2712	e Kraft	erő
+2713	e Krankenkasse	egészség biztosítás
+2714	e Kreativität	kreativitás
+2715	e Krise	válság
+2716	e Kritik	kritika
+2717	e Kultur	kultúra
+2718	e Kündigung	felmondás
+2719	e Kurve	kanyar
+2720	e Landesregierung	közigazgatás
+2721	e Länge	hosszúság
+2722	e Last	teher
+2723	e Laune	kedv
+2724	e Lehre	oktatás, tanulás
+2725	e Leiche	hulla
+2726	e Leidenschaft	szenvedély
+2727	e Leistungsfähigkeit	termelékenység
+2728	elektrisch	elektromos
+2729	elementar	alapvető
+2730	e Liebe	szerelem
+2731	e Lieferung	szállítás
+2732	e Liga	liga
+2733	e Linse	lencse
+2734	e Liste	lista
+2735	einverstanden	egyetért
+2736	einzeln	egyenként
+2737	einziehen	beköltözik
+2738	einzig	egyedül
+2739	e Jacke	dzseki
+2740	jugendlich	fiatalos
+2741	e Jugend	fiatalság
+2742	eintragen	bejegyez
+2743	e Interpretation	magyarázat
+2744	e Integration	integráció
+2745	e Intelligenz	intelligencia
+2746	e Inszenierung	rendezés
+2747	einst	egykor, hajdan
+2748	e Institution	intézmény
+2749	einstig	egykori
+2750	einsetzen	berak
+2751	ein	egy
+2752	einseitig	egyoldalú
+2753	einsehen	betekint
+2754	einschränken	korlátoz
+2755	einschließen	bezár
+2756	einschlagen	betör, bezúz
+2757	einschlafen	elalszik
+2758	einschätzen	felbecsül
+2759	einrichten	berendez, elrendez
+2760	weinen	sír (ig)
+2761	e Grenze	határ
+2762	e Nuss	dió
+2763	null	nulla
+2764	r Angehörige	rokon
+2765	r Amerikaner	amerikai (ember)
+2766	r Planet	bolygó
+2767	ökonomisch	gazdasági
+2768	e Feuerwehr	tűzoltóság
+2769	r Außenminister	külügyminiszter
+2770	prüfen	megvizsgál
+2771	e Gestalt	forma, alak
+2772	r Name	név
+2773	ehe	mielőtt
+2774	neun	kilenc
+2775	praktisch	hasznos, praktikus
+2776	e Identität	identitás
+2777	obwohl	habár
+2778	e Gleichung	egyenlet
+2779	protestieren	tiltakozik
+2780	präzise	szabatos
+2781	e Frequenz	frekvencia, gyakoriság
+2782	planen	tervez
+2783	einlegen	berak
+2784	radioaktiv	rádióaktív
+2785	e Furcht	félelem
+2786	neugierig	kíváncsi
+2787	r Dialog	párbeszéd
+2788	e Haustür	kapu
+2789	e Generation	generáció
+2790	e Geste	gesztus
+2791	e Hauptstadt	főváros
+2792	nochmal	újra
+2793	östlich	keleti
+2794	nervös	ideges
+2795	nochmals	újból
+2796	einführen	behoz, bevezet
+2797	wach	éber
+2798	r Beitrag	hozzájárulás
+2799	r Backofen	sütő
+2800	r Bayer	bajor (fn)
+2801	r Benutzer	felhasználó
+2802	nennen	elnevez
+2803	öffnen	nyit
+2804	passen	passzol, illik
+2805	e Freiheit	szabadság
+2806	niederländisch	holland (mn)
+2807	einmalig	egyszeri, egyedülálló
+2808	olympisch	olimpiai
+2809	e Freundin	barátnő
+2810	notieren	feljegyez
+2811	e Infrastruktur	infrastruktúra
+2812	einigermaßen	valamelyest
+2813	qualitativ	minőségi, kvalitatív
+2814	r Absolvent	végzős
+2815	e Gegend	vidék, környék
+2816	e Fraktion	frakció, párt
+2817	probieren	probál
+2818	plädieren	véd
+2819	warten	vár
+2820	r Dienstag	kedd
+2821	normal	normális
+2822	einigen	egyesít
+2823	r Abschied	búcsú
+2824	r Bube	fiú
+2825	r Dialekt	dialektus, nyelvjárás
+2826	ehrlich	őszinte
+2827	r Assistent	asszisztens
+2828	einig	egyetértő
+2829	r Aufbau	szerkezet, építmény
+2830	objektiv	objektív
+2831	r Wahlkampf	választási kampány
+2832	eilen	siet
+2833	e Gunst	jóindulat, pártfogás
+2834	e Grundlage	alap
+2835	r Anbieter	ellátó
+2836	offensichtlich	nyilván
+2837	e Gliederung	szerkezet
+2838	einheimisch	hazai
+2839	eignen	illik
+2840	österreichisch	osztrák
+2841	e Fluggesellschaft	légitársaság
+2842	passieren	történik
+2843	orange	narancsszínű
+2844	nirgendwo	sehol
+2845	ordnen	rendez
+2846	primär	eredeti, elsődleges
+2847	e Gewerkschaft	szakszervezet
+2848	e Initiative	kezdeményezés
+2849	e Herstellung	gyártás
+2850	niemals	soha
+2851	notwendig	szükséges
+2852	wagen	kockáztat
+2853	e Gerechtigkeit	igazságosság
+2854	e Flüssigkeit	folyadék
+2855	e Freizeit	szabadidő
+2856	r Ansatz	kezdet
+2857	r Alkohol	alkohol
+2858	nunmehr	immár
+2859	r Anteil	részesedés
+2860	r Austausch	csere
+2861	effizient	hatékony
+2862	e Folge	következmény
+2863	einmal	egyszer
+2864	r April	április
+2865	r Aspekt	szempont
+2866	e Hälfte	fél (fn)
+2867	privat	magán
+2868	e Fusion	egyesülés
+2869	einlassen	belemegy, beilleszt
+2870	wahr	igaz
+2871	e Gewalt	erőszak, erő
+2872	r Akteur	színész
+2873	r August	augusztus
+2874	e Gegenwart	jelen
+2875	örtlich	helyi
+2876	eigenständig	önálló
+2877	e Großstadt	nagyváros
+2878	e Genehmigung	engedély, beleegyezés
+2879	neunzig	kilencven
+2880	einleiten	bevezet, megkezd
+2881	professionell	szakszerű
+2882	e Handlung	cselekvés
+2883	r Ausbau	kiépítés
+2884	politisch	politikai
+2885	r November	november
+2886	effektiv	tényleges
+2887	pressen	présel, összeszorít
+2888	orientieren	tájol
+2889	r Beginn	kezdet
+2890	nebenbei	mellesleg
+2891	e Haltung	magatartás
+2892	prinzipiell	alapvetően
+2893	national	nemzeti
+2894	r Part	rész
+2895	paar	néhány
+2896	r Aufstieg	emelkedés
+2897	wann	mikor
+2898	radikal	radikális
+2899	finanzieren	finanszíroz
+2900	e Freundschaft	barátság
+2901	nur	csak
+2902	e Höhle	barlang
+2903	einhalten	betart, teljesít
+2904	einbringen	bevisz
+2905	vorwiegend	főleg
+2906	real	valós
+2907	optimal	optimális
+2908	natürlich	természetesen
+2909	obere	felső
+2910	e Halle	előcsarnok
+2911	e Gestaltung	alak, kialakítás
+2912	waschen	mos
+2913	r Augenblick	pillanat
+2914	wahnsinnig	őrült
+2915	r Ärger	harag
+2916	r Antrag	kérvény
+2917	öffentlich	nyilvános
+2918	prägen	alkot
+2919	peinlich	kínos
+2920	einbauen	beszerel
+2921	einander	egymás
+2922	ableiten	elterel
+2923	r Ausgangspunkt	kiindulópont
+2924	r Aktionär	részvényes
+2925	quer	ferdén
+2926	r Atem	légzés
+2927	e Gelegenheit	alkalom
+2928	optimistisch	optimista
+2929	e Hütte	menedékház
+2930	e Figur	ábra
+2931	r Aufsatz	tanulmány
+2932	rauschen	zúg
+2933	realistisch	valószerű
+2934	r Ablauf	folyamat
+2935	oftmals	gyakran
+2936	r Anspruch	követelés
+2937	nutzen	használ
+2938	r Weltkrieg	világháború
+2939	profitieren	profitál
+2940	e Fotografie	fénykép
+2941	na	nos
+2942	einerseits	egyrészt
+2943	e Hinsicht	szempont
+2944	r Durchmesser	átmérő
+2945	r Akt	tett
+2946	eindeutig	egyértelmű
+2947	nebeneinander	egymás mellett
+2948	positiv	pozitív
+2949	neigen	meghajol
+2950	ordentlich	alapos, gondos
+2951	einfallen	összeomlik
+2952	einkaufen	bevásárol
+2953	r Brief	levél
+2954	r Anhänger	szurkoló
+2955	r Anwalt	ügyvéd
+2956	ehemalig	korábbi
+2957	e Formel	képlet, formula
+2958	wandern	kirándul
+2959	vorziehen	előhúz
+2960	e Innenstadt	belváros
+2961	zwölf	tizenkettő
+2962	wandeln	megváltoztat
+2963	r Pilot	pilóta
+2964	r Abbau	leépítés
+2965	problematisch	problémás
+2966	einbeziehen	tartalmaz
+2967	r Abschluss	zárás
+2968	pflegen	gondoz
+2969	r Aufbau	építés
+2970	r Anstieg	növekedés
+2971	nördlich	északi
+2972	r Beamte	hivatalnok
+2973	organisch	szerves
+2974	ohnehin	különben is
+2975	r Araber	arab (fn)
+2976	niemand	senki
+2977	r Aufwand	költség
+2978	e Formulierung	kifejezés, megfogalmazás
+2979	e Fülle	jólét, gazdagság
+2980	r Bedarf	szükséglet
+2981	qualifizieren	minősít
+2982	r Bär	medve
+2983	offen	nyitva
+2984	quantitativ	kvantitatív
+2985	r Ausgleich	kiegyenlítés
+2986	e Infektion	fertőzés
+2987	r Oktober	október
+2988	perfekt	tökéletes
+2989	vorzeitig	korai
+2990	eher	előbb
+2991	unterstreichen	aláhúz, hangsúlyoz
+2992	aufbewahren	eltesz, megőriz
+2993	behindert	fogyatékos (mn)
+2994	komplett	teljes
+2995	e Bakterie	bektérium
+2996	r Bildschirm	képernyő
+2997	aktivieren	aktivál
+2998	üben	gyakorol
+2999	davor	azelőtt
+3000	vereinfachen	egyszerűsít
+3001	senden	küld
+3002	schieben	tol
+3003	zuhören	hallgat, odafigyel
+3004	s Vorbild	példakép
+3005	r Senat	szenátus
+3006	r Kontinent	kontinens
+3007	r Zettel	cédula
+3008	s Turnier	verseny, torna
+3009	anerkennen	elismer
+3010	vertreten	képvisel
+3011	s Tal	völgy
+3012	s Mittelalter	középkor
+3013	s Diplom	diploma
+3014	klopfen	kopog, üt
+3015	vorschlagen	javasol, indítványoz
+3016	abgeben	lead, hiányzik
+3017	r Grundsatz	elv
+3018	daraus	abból
+3019	e Beachtung	figyelem, óvatosság
+3020	e Beziehung	kapcsolat
+3021	wovon	amiről
+3022	auffordern	felhív, felszólít
+3023	zusammenleben	együtt él
+3024	ausschließen	kizár, kinyit
+3025	vielfältig	sokoldalú, változatos
+3026	e Ehe	házasság
+3027	denn	mert
+3028	e Erkenntnis	észlelés, megismerés
+3029	abweichen	eltér, különbözik
+3030	auffallen	feltűnik
+3031	e Anordnung	rendelet, rendelkezés
+3032	äußern	kijelent, kinyilvánít
+3033	e Reihe	sor
+3034	r Franzose	francia (ember)
+3035	e Fassung	változat
+3036	konservativ	konzervatív
+3037	r Standort	székhely
+3038	s Spektrum	spektrum
+3039	r Kaiser	császár
+3040	s Ausmaß	terjedelem, méret
+3041	winken	int, integet
+3042	statistisch	statisztikai
+3043	ziehen	húz, von
+3044	r Kilometer	kilóméter
+3045	übersehen	átnéz, áttekint
+3046	ablegen	lerak
+3047	r General	tábornok
+3048	s Olympia	olimpia
+3049	reichlich	gazdag, bőséges
+3050	rühren	kever, elmozdít
+3051	vergleichbar	összehasonlítható
+3052	verwandeln	átalakít
+3053	schmal	vékony
+3054	s Prinzip	elv, alapelv
+3055	r Verband	egyesület, kötés
+3056	e Auffassung	szemlélet, felfogás
+3057	wodurch	amitől
+3058	flüssig	folyékony
+3059	r Nachwuchs	új nemzedék
+3060	schalten	kapcsol, bekapcsol
+3061	s Fräulein	kisasszony
+3062	überschreiten	átlép, túllép
+3063	erlangen	megszerez
+3064	r Schaden	kár, sérülés
+3065	e Diagnose	diagnózis
+3066	e Ehre	tisztelet, becsület
+3067	r Nachteil	hátrány
+3068	aufspringen	felugrik
+3069	anderthalb	másfél
+3070	absetzen	elad, elhelyez
+3071	mögen	szeret
+3072	anstelle	helyett
+3073	verdrängen	előz, kiszorít
+3074	scheinbar	látszólag
+3075	s Wiedersehen	viszontlátás
+3076	s Niederländisch	holland nyelv
+3077	r Teufel	ördög
+3078	rutschen	csúszik
+3079	r Klang	hang
+3080	r Berater	tanácsadó
+3081	r Ruf	hírnév, meghívás
+3082	e Erwartung	elvárás, várakozás
+3083	s Seminar	szeminárium
+3084	klinisch	klinikai
+3085	mathematisch	matematikai
+3086	e Philosophie	filozófia
+3087	dastehen	ott áll
+3088	mitmachen	csatlakozik, részt vesz
+3089	e Ferien	ünnep, szabadság
+3090	e Polizei	rendőrség
+3091	erforschen	kutat
+3092	wohin	ahova
+3093	s Glied	tag
+3094	s Volumen	térfogat
+3095	kommentieren	kommentál
+3096	zunächst	mindenekelőtt
+3097	zentral	központi
+3098	r Koffer	bőrőnd
+3099	s Modell	modell
+3100	streichen	befest, töröl
+3101	zurückkommen	visszatér
+3102	bedenken	megfontol
+3103	keineswegs	semmiképpen
+3104	s Schicksal	sors
+3105	vertrauen	bízik
+3106	e Äußerung	kifejezés, nyilatkozat
+3107	r Mythos	mítosz
+3108	zurückgreifen	visszanyúl
+3109	erhoffen	remél
+3110	e Bearbeitung	feldolgozás
+3111	r Sprung	ugrás
+3112	zusammenarbeiten	együttműködik
+3113	aufführen	előad
+3114	r Fortschritt	haladás
+3115	r Bereich	térség, körzet
+3116	untersuchen	kivizsgál
+3117	e Fahrt	út, utazás
+3118	bevorstehen	közel van
+3119	s Lager	tábor, raktár
+3120	verabschieden	elbocsát
+3121	e Rechtsprechung	igazságszolgáltatás
+3122	s Resultat	eredmény
+3123	letzte	utolsó
+3124	behandeln	kezel, bánik
+3125	r Block	tömb
+3126	zugrundelegen	alapul vesz
+3127	ausgezeichnet	kiváló
+3128	s Bedürfnis	szükséglet
+3129	ausdrücklich	kifejezetten
+3130	irgendwo	valahol
+3131	wissenschaftlich	tudományos
+3132	verbergen	elrejt
+3133	r Fernseher	televízió
+3134	beliebig	tetszőleges
+3135	s Gen	gén
+3136	e Persönlichkeit	személyiség
+3137	kirchlich	egyházi
+3138	dringend	sürgős
+3139	beispielsweise	például
+3140	e Benutzung	használat
+3141	e Einigung	egyezség
+3142	musikalisch	zenei
+3143	kurzfristig	rövid lejáratú
+3144	kriegen	megkap, háborúzik
+3145	auswärtig	külső
+3146	vorsichtig	óvatos
+3147	längst	régen
+3148	sechzig	hatvan
+3149	r Halt	megállás
+3150	scheinen	tűnik, látszik
+3151	dahinter	mögötte
+3152	unerwartet	váratlanul
+3153	wiedersehen	viszontlát
+3154	anlegen	rátesz, befektet
+3155	äußerst	rendkívül, nagyon
+3156	blicken	pillant, tekint
+3157	sinnvoll	ésszerű, értelmes
+3158	s Geräusch	zaj
+3159	wenden	elfordít
+3160	s Gespräch	beszélgetés
+3161	s Element	elem, elemi rész
+3162	e Planung	terv
+3163	r Zuhörer	hallgató
+3164	vorig	előző
+3165	darunter	alatta
+3166	r Durchschnitt	átlag
+3167	schlimm	rossz, végzetes
+3168	sprachlich	nyelvi
+3169	e Beschäftigung	alkalmazás, foglalkozás
+3170	e Fachleute	szakemberek
+3171	r Verkauf	eladás
+3172	aufbrechen	elindul, feltör
+3173	r Kerl	fickó
+3174	s Profil	profil, oldalnézet
+3175	aktiv	aktív
+3176	r Bundestag	szövetségi parlament Németországban
+3177	studieren	tanul
+3178	links	balra
+3179	s Anliegen	kérés
+3180	winzig	pici
+3181	selbstverständlich	nyilvánvaló
+3182	r Ursprung	eredet
+3183	aufwachsen	felnő
+3184	dienen	szolgál
+3185	bringen	hoz, visz
+3186	e Entdeckung	felfedezés
+3187	solange	ameddig
+3188	r Vorstand	elnök, elnőkség
+3189	divers	különféle, vegyes
+3190	scharf	éles
+3191	e Anweisung	útmutatás
+3192	e Erholung	felépülés, pihenés
+3193	s Bundesland	tartomány, szövetségi állam
+3194	s Gas	gáz
+3195	außerordentlich	rendkívül
+3196	weitgehend	messzemenően
+3197	streiten	küzd, harcol
+3198	nachdem	miután
+3199	zufolge	szerint
+3200	r Grenzwert	határérték
+3201	r Terror	terror
+3202	dennoch	mégis
+3203	r Flur	előszoba, folyosó
+3204	r Bestand	állandóság, készlet
+3205	entweder	mindkét
+3206	wirksam	hatékony
+3207	e Entstehung	keletkezés
+3208	r Rohstoff	nyersanyag
+3209	wegnehmen	elvesz
+3210	r Beruf	szakma, foglalkozás
+3211	e Bereitschaft	készenlét, hajlandóság
+3212	vorlegen	bemutat, terjeszt
+3213	breit	tágas, széles
+3214	s Projekt	vállalkozás, projekt
+3215	anhören	meghallgat
+3216	r Gang	folyosó, gang
+3217	e Einstellung	magatartás, alkalmazás
+3218	s Wunder	csoda
+3219	s Rathaus	városháza
+3220	e Ausführung	kidolgozás, kivitelezés
+3221	r Staub	por
+3222	r September	szeptember
+3223	konkret	konkrét, valós
+3224	r Unsinn	zagyvaság
+3225	s Foto	fotó
+3226	zueinander	egymáshoz
+3227	konsequent	konzekvens, következetes
+3228	angewiesen	vmire rászoruló
+3229	auftragen	felrak, megbíz
+3230	r Wettbewerb	verseny
+3231	e Antwort	válasz
+3232	unwahrscheinlich	valószínűtlen
+3233	auftreten	megjelenik, feltűnik
+3234	demnach	ennélfogva, ezért
+3235	bezeichnen	jelez, megjelöl
+3236	erfordern	megkíván, követel
+3237	verfallen	hanyatlik, lejár
+3238	chemisch	vegyi
+3239	besitzen	birtokol
+3240	weitaus	sokkal, jóval
+3241	r Mord	gyilkosság
+3242	ernsthaft	komoly
+3243	flach	sík, lapos
+3244	täglich	naponta
+3245	entscheidend	meghatározó
+3246	s Forum	fórum
+3247	bleiben	marad
+3248	schräg	ferde
+3249	verbrennen	eléget
+3250	s Mitglied	tag
+3251	e Empfehlung	ajánlás
+3252	jedenfalls	mindenesetre
+3253	benötigen	szükséges, kell (ig)
+3254	äußere	külső
+3255	e Demokratie	demokrácia
+3256	alternativ	alternatív
+3257	s Dokument	dokumentum
+3258	s Muster	minta
+3259	r Liter	liter
+3260	ärztlich	orvosi
+3261	r Kandidat	jelölt
+3262	s Gewebe	anyag, szövet
+3263	r Stress	stressz
+3264	lieb	kedves
+3265	verknüpfen	összefűz
+3266	s Heim	haza
+3267	irgendwann	valamikor
+3268	aufsuchen	felkeres, meglátogat
+3269	ausgeben	kiad, kibocsát
+3270	s Team	csapat
+3271	r Gegenstand	tárgy
+3272	r Dollar	dollár
+3273	möglicherweise	talán
+3274	weggehen	elmegy. eltávozik
+3275	spätestens	legkésőbb
+3276	ausbauen	kiterjeszt, kibővít
+3277	s Russisch	orosz (nyelv)
+3278	r Spezialist	szakember, specialista
+3279	aufstellen	feltesz, felállít
+3280	r Kritiker	bíráló, kritikus (fn)
+3281	decken	befed
+3282	acht	nyolc
+3283	übertragen	átvisz, közvetít
+3284	lauter	valódi
+3285	intensiv	intenzív
+3286	setzen	tesz, helyez
+3287	e Botschaft	üzenet
+3288	r Rhythmus	ritmus
+3289	s Gut	vagyon, érték
+3290	r Tanz	tánc
+3291	eingehen	vállal
+3292	realisieren	megvalósít
+3293	e Arbeitslosigkeit	munkanélküliség
+3294	r Griff	nyél, fogás
+3295	r Frieden	béke
+3296	stetig	egyenletes
+3297	seufzen	sóhajt
+3298	s Gericht	bíróság
+3299	vorliegen	előtte van
+3300	akzeptieren	elfogad
+3301	auswerten	kiértékel, elbírál
+3302	zuführen	odavezet
+3303	e Betrachtung	vizsgálat, szemlélődés
+3304	s Baby	csecsemő
+3305	komisch	vicces, komikus
+3306	wunderschön	gyönyörű
+3307	voraussichtlich	várhatóan
+3308	daneben	mellette
+3309	s Türkisch	török
+3310	wenigstens	legalább
+3311	übergehen	mellőz, behoz
+3312	e Begegnung	találkozás, összeütközés
+3313	innerhalb	belül
+3314	r Konkurrent	versenytárs
+3315	r Zuwachs	növekedés, gyarapodás
+3316	begreifen	megért
+3317	r Unternehmer	vállakozó
+3318	wesentlich	lényeges
+3319	richten	ítél, igazít
+3320	verraten	elárul
+3321	analog	analóg
+3322	r Geist	értelem, szellem
+3323	verzeichnen	feljegyez
+3324	r Umzug	költözés, felvonulás
+3325	allmählich	fokozatos
+3326	r Motor	motor
+3327	stützen	támogat
+3328	spionieren	kémkedik
+3329	r Fachbereich	szakterület, tanszék
+3330	e Partie	parti, játszma
+3331	r Koch	szakács
+3332	e Einnahme	jövedelem, bevétel
+3333	verstecken	elrejt
+3334	r Rand	perem
+3335	r Stamm	törzs, gyökér
+3336	e Erklärung	nyilatkozat, magyarázat
+3337	ausbrechen	kitör
+3338	aufhören	abbahagy
+3339	ausnutzen	kihasznál
+3340	verweisen	utal
+3341	unterscheiden	megkülönböztet
+3342	bitten	kér
+3343	irgendwie	valahogyan
+3344	jederzeit	bármikor
+3345	r Bau	szerkezet, épület
+3346	e Auseinandersetzung	vita, veszekedés
+3347	r Geschäftsführer	ügyvezető igazgató
+3348	r Betrachter	néző, szemlélő
+3349	anziehen	vonz, felvesz, felöltöztet
+3350	r Ertrag	hozam
+3351	sehen	néz, lát
+3352	außen	kint
+3353	zwanzig	húsz
+3354	regeln	szabályoz, rendez
+3355	s Abkommen	megállapodás
+3356	verbreiten	terjeszt
+3357	r Wechsel	átalakulás, változás
+3358	r Zentimeter	centiméter
+3359	stets	mindig, folyton
+3360	erleben	átél, megél
+3361	r Gewinn	haszon
+3362	draußen	kint
+3363	r Kontakt	kapcsolat, érintkezés
+3364	durchaus	teljesen
+3365	r Moslem	muzulmán
+3366	r Witz	vicc
+3367	zwischendurch	közben
+3368	aufklären	felderít, felvilágosít
+3369	s Tempo	tempó, sebesség
+3370	wohl	jól
+3371	beabsichtigen	szándékozik
+3372	schreiten	lép, halad
+3373	s Gewehr	puska
+3374	nachher	azután
+3375	wert	érdemes
+3376	weich	puha
+3377	indirekt	közvetett, indirekt
+3378	differenzieren	megkülönböztet
+3379	s Gramm	gramm
+3380	schaffen	elintéz, alkot
+3381	verschließen	elzár
+3382	touristisch	túrisztikai
+3383	regieren	vezet, kormányoz
+3384	s Vitamin	vitamin
+3385	zurückführen	származtat, visszavezet
+3386	alltäglich	mindennapos, megszokott
+3387	befürchten	fél (ig)
+3388	vorne	elöl
+3389	r Juli	július
+3390	zusammenkommen	összegyűlik
+3391	durchgehen	keresztülmegy
+3392	umfangreich	terjedelmes
+3393	r Gesellschafter	üzlettárs
+3394	r Glauben	hit, vallás
+3395	r Schuldner	adós
+3396	krank	beteg (mn)
+3397	r Dezember	december
+3398	konventionell	hagyományos
+3399	israelisch	israeli (mn)
+3400	bemerken	megjegyez, megemlít
+3401	ausgleichen	kiegyenlít, ellensúlyoz
+3402	islamisch	iszlám (mn)
+3403	s Center	központ
+3404	e Fachhochschule	főiskola
+3405	medizinisch	orvosi
+3406	untergehen	lemegy, tönkremegy
+3407	voneinander	egymástól
+3408	attraktiv	vonzó, csinos
+3409	schildern	leír
+3410	beantworten	válaszol
+3411	e Abgrenzung	elhatárolás
+3412	r Kauf	vásárlás
+3413	auflegen	kiad, feltesz
+3414	r Zufall	véletlen (fn)
+3415	e Darstellung	előadás, bemutatás
+3416	dramatisch	drámai
+3417	unverzüglich	haladéktalan
+3418	s Ministerium	ministérium
+3419	schweben	lebeg
+3420	r Ofen	tűzhely
+3421	anzeigen	közöl, bejelent
+3422	r Reiz	inger, vonzerő
+3423	r Quadratmeter	négyzetméter
+3424	telefonieren	telefonál
+3425	bedauern	sajnál
+3426	e Qualifikation	minősítés, kvalifikáció
+3427	zulassen	megenged
+3428	s Spanisch	spanyol
+3429	blühen	virágzik
+3430	erbringen	felhoz, előhoz
+3431	e Eintragung	beiratkozás
+3432	berechtigen	feljogosít
+3433	eröffnen	megnyit
+3434	r Zweck	cél
+3435	anstellen	alkalmaz, beállít
+3436	r Konzern	vállalatcsoport, konszern
+3437	bedeutsam	fontos, jelentős
+3438	vergeblich	hasztalan
+3439	e Anzahl	szám, mennyiség
+3440	recht	igaz, valódi
+3441	reizen	izgat, ingerel
+3442	r Partner	partner, társ
+3443	e Änderung	változás
+3444	vielmehr	sokkal inkább
+3445	r Sand	homok
+3446	vorhin	nemrég
+3447	wozu	amiért
+3448	aushalten	elvisel, kibír
+3449	langfristig	hosszú távon
+3450	r Schutz	védelem
+3451	ankommen	elér, megérkezik
+3452	wechseln	változtat, cserél
+3453	e Feier	ünnepség
+3454	immerhin	minden esetre
+3455	strahlen	ragyog, sugárzik
+3456	ursprünglich	eredetileg
+3457	unglücklich	boldogtalan, szerencsétlen
+3458	r Strahl	sugár
+3459	r Wille	szándék, akarat
+3460	e Anerkennung	elismerés
+3461	aussetzen	kirak, kiűz
+3462	nämlich	nevezetesen, ugyanis
+3463	e Art	mód, fajta
+3464	r Test	teszt
+3465	konstant	állandó, konstans
+3466	s Gleichgewicht	egyensúly
+3467	jüdisch	zsidó (mn)
+3468	andere	másik
+3469	bürgerlich	polgári
+3470	dass	hogy
+3471	s Medium	médium
+3472	ärgern	bosszant
+3473	allzu	túlzottan
+3474	sozial	szociális
+3475	e Bekämpfung	harc, leküzdés
+3476	zwangsläufig	szükségszerű
+3477	e Prognose	előrejelzés
+3478	total	teljes, totális
+3479	schimpfen	szid
+3480	beteiligen	részt vesz
+3481	e Fakten	tények
+3482	beklagen	panaszkodik, sajnál
+3483	bayrisch	bajor (mn)
+3484	e Bedrohung	fenyegetés
+3485	e Rente	nyugdíj
+3486	abgrenzen	elhatárol
+3487	aufmachen	kinyit
+3488	r Erzähler	narrátor, elbeszélő
+3489	auseinander	szét, széjjel
+3490	katholisch	katolikus
+3491	s Geschäftsjahr	üzleti év
+3492	r Einblick	betekintés
+3493	nahe	közel
+3494	r Ersatz	pótlás, kárpótlás
+3495	verschaffen	beszerez, biztosít
+3496	e Auswirkung	hatás
+3497	trinken	iszik
+3498	technologisch	technológiai
+3499	bedienen	kezel, kiszolgál
+3500	anvertrauen	rábíz
+3501	r Spaß	vidámság
+3502	anklagen	vádol
+3503	e Abwehr	védelem
+3504	militärisch	katonai
+3505	soweit	ameddig
+3506	e Bundesrepublik	szövetségi köztársaság
+3507	aufschlagen	felnyit, feltör
+3508	schulisch	iskolai
+3509	jemals	valamikor
+3510	e Aktiengesellschaft	részvénytársaság
+3511	r Sektor	szektor, terület
+3512	e Beratung	tanácskozás, tanácsadás
+3513	religiös	vallási
+3514	e Begeisterung	lelkesedés
+3515	wofür	amiért
+3516	veranlassen	rávesz
+3517	r Gott	isten
+3518	e Verfügung	intézkedés
+3519	r Empfang	átvétel, fogadás
+3520	r Grad	fok, fokozat
+3521	moralisch	erlölcsi
+3522	konzipieren	kigondol, kidolgoz
+3523	s Institut	intézmény
+3524	deren	akié
+3525	s Virus	vírus
+3526	e Presse	sajtó
+3527	r Rest	maradék (fn)
+3528	überfordern	túl sokat követel
+3529	anbringen	elhelyez
+3530	unglaublich	hihetetlen
+3531	aufbauen	felépít
+3532	e Berechnung	számítás
+3533	beweisen	igazol, bizonyít
+3534	e Disziplin	fegyelem
+3535	e Erzählung	elbeszélés
+3536	ansprechen	megszólít
+3537	mittlerweile	időközben
+3538	ästhetisch	esztétikus
+3539	zulässig	megengedhető
+3540	linear	lineáris
+3541	erlernen	megtanul
+3542	außer	kívül
+3543	bezüglich	vonatkozóan
+3544	murmeln	morog
+3545	drastisch	drasztikus
+3546	e Ausnahme	kivétel
+3547	vielfach	sokszor
+3548	virtuell	virtuális
+3549	s Maß	mérték, méret
+3550	r Deutsche	német
+3551	e Region	tartomány, vidék
+3552	ausführlich	részletesen
+3553	zumal	különösen
+3554	drehen	forog, forgat
+3555	interpretieren	előad, értelmez
+3556	e Relation	viszony
+3557	anschließen	csatol, mellékel
+3558	anmerken	megjelöl, megjegyzést tesz
+3559	r Vordergrund	előtér
+3560	e Auskunft	információ
+3561	teils	részben
+3562	r Fleck	folt
+3563	jede	mindegyik
+3564	anschließend	azután
+3565	doppelt	dupla (mn)
+3566	beruflich	szakmai
+3567	r Zeitpunkt	időpont
+3568	wild	lakatlan, műveletlen
+3569	rechtlich	törvényes
+3570	verwirren	összezavar
+3571	zurückgehen	visszamegy, hátrál
+3572	befestigen	rőgzít, felszerel
+3573	versichern	biztosít, megerősít
+3574	schütteln	ráz
+3575	beeinträchtigen	korlátoz
+3576	anhalten	megáll, megmarad
+3577	wieso	hogyan
+3578	schlafen	alszik
+3579	s Merkmal	tulajdonság
+3580	s Konzept	elképzelés, koncepció
+3581	zuwenden	fordul vmi felé
+3582	mutmaßlich	feltételezett
+3583	r Schmerz	fájdalom
+3584	modern	modern, korszerű
+3585	relevant	releváns, lényeges
+3586	sämtlich	összes
+3587	r Deckel	fedél
+3588	r Dienst	szolgálat
+3589	s Talent	tehetség
+3590	e Durchführung	kivitelezés
+3591	r Sieg	gyűzelem
+3592	s Universum	univerzum, világegyetem
+3593	e Anfrage	érdeklődés
+3594	s Buch	könyv
+3595	begrenzen	korlátoz
+3596	beurteilen	megítél, elbírál
+3597	daheim	otthon (mn)
+3598	zurück	vissza
+3599	meistens	többnyire
+3600	klingen	hangzik
+3601	schauen	tekint, néz
+3602	r Status	státusz, állapot
+3603	bekämpfen	harcol, szembeszáll
+3604	betrachten	figyel, szemlél
+3605	durchziehen	végigcsinál
+3606	segeln	vitorlázik
+3607	verheiratet	házas
+3608	r Missbrauch	rossz bánásmód
+3609	infizieren	megfertőz
+3610	bedürfen	rászorul
+3611	ausbreiten	kiterít, elterjeszt
+3612	auswählen	kiválaszt
+3613	verarbeiten	kidolgoz, feldolgoz
+3614	r Leser	olvasó
+3615	r Kanton	kanton (Svájcban)
+3616	rechtfertigen	igazol, indokol
+3617	international	nemzetközi
+3618	s Gehirn	agy
+3619	berufstätig	dolgozó, hivatását gyakorló (mn)
+3620	unterstellen	alávet, alárendel
+3621	befriedigen	kielégít, megelégszik
+3622	s Ensemble	együttes (fn)
+3623	ansteigen	emelkedik
+3624	r Club	klub
+3625	anfangs	kezdetben
+3626	vorhanden	létező, meglévő
+3627	benennen	elnevez
+3628	s Polnisch	lengyel (fn)
+3629	bitter	keserű
+3630	e Pflegerin	ápolónő
+3631	s Bedauern	sajnálat, részvét
+3632	s Kloster	kolostor
+3633	unterhalten	szórakoztat
+3634	r Fall	eset, ügy
+3635	verhalten	viselkedik, viszonyul
+3636	s Wesen	lét, teremtmény
+3637	beleben	lelkesít, élénkít
+3638	lenken	vezet, irányít
+3639	e Option	opció, választási jog
+3640	bestreiten	vitat
+3641	aufsetzen	felrak
+3642	monatlich	havonta
+3643	befreien	kiszabadít, felszabadít
+3644	r Konsument	fogyasztó
+3645	e Aktivität	tevékenység
+3646	bewirken	okoz
+3647	e Eröffnung	kinyitás
+3648	s Material	anyag
+3649	unangenehm	kellemetlen
+3650	demnächst	hamarosan
+3651	erregen	ébreszt
+3652	r Kunststoff	műanyag
+3653	r Eintritt	kezdet, belépés
+3654	r Kreislauf	áramkör, vérkeringés
+3655	s Dunkel	sötétség
+3656	klappen	sikerül, lecsap
+3657	zwingen	kényszerít
+3658	wer	ki, aki
+3659	zucken	von, rángatózik
+3660	bewegen	mozgat, megmozdul
+3661	r Umsatz	forgalom (kereskedelemben) 
+3662	r Offizier	tiszt, tisztségviselő
+3663	westlich	nyugati
+3664	entsprechend	vmi szerint, vminek megfelelően
+3665	drücken	tol, nyom
+3666	s Gepäck	csomag, poggyász
+3667	loslassen	elenged
+3668	ausrichten	elrendez, sorbaáll, kiegyenesít
+3669	s Individuum	egyén
+3670	r Chinese	kínai
+3671	umstritten	vitás
+3672	achten	figyel, becsül
+3673	installieren	felszerel, beszerel
+3674	integrieren	integrál, egyesít
+3675	nachfolgen	követ, következik
+3676	überlassen	átad, rábíz
+3677	zeichnen	rajzol
+3678	unsichtbar	láthatatlan
+3679	begründen	igazol
+3680	s Grundgesetz	alkotmány
+3681	schweizerisch	svájci
+3682	s Gewissen	lelkiismeret
+3683	r Marktanteil	piaci részesedés
+3684	e Erweiterung	terjeszkedés, bővítés
+3685	außerhalb	kívül
+3686	beachten	vigyáz, törődik
+3687	überwachen	megfigyel, lehallgat
+3688	r Hang	lejtő, szenvedély
+3689	s Festival	fesztivál
+3690	sodass	azért, hogy
+3691	e Dunkelheit	homály, sötétség
+3692	s Kriterium	ismertetőjel, jellegzetesség
+3693	unendlich	végtelen
+3694	versammeln	összegyűjt, gyülekezik
+3695	ausführen	végrehajt
+3696	sollen	kell
+3697	r Januar	január
+3698	womöglich	talán
+3699	schwingen	leng
+3700	ausscheiden	kilép, felmond
+3701	symbolisch	szimbolikus, jelképes
+3702	s Studium	tanulmány
+3703	jeweils	mindig
+3704	r Prinz	herceg
+3705	entfallen	elesik, kiesik
+3706	belegen	igazol, befed
+3707	akut	akut, sürgős
+3708	r Vorgänger	előd
+3709	zugehen	közelít
+3710	danke	köszönöm
+3711	zurückgeben	visszad
+3712	angucken	megnéz
+3713	r Schnitt	vágás, szelet
+3714	anführen	vezet, idéz
+3715	anschauen	ránéz, megnéz
+3716	r Bogen	ív, íj
+3717	beschreiben	leír, jellemez
+3718	schuld	bűnös (mn)
+3719	verschwinden	eltűnik
+3720	anordnen	rendez, elrendez
+3721	s Semester	szemeszter
+3722	atmen	lélegzik
+3723	unverändert	változatlan
+3724	r Gesetzgeber	törvényhozó (fn)
+3725	benehmen	viselkedik
+3726	e Pflege	gondozás, ápolás
+3727	r Montag	hétfő
+3728	e Aufregung	izgalom
+3729	dahin	oda
+3730	mitnehmen	elvisz
+3731	unbekannt	ismeretlen
+3732	streben	törekszik
+3733	e Basis	bázis
+3734	umwandeln	átalakít, megváltoztat
+3735	wecken	felébresz
+3736	aufheben	felemel, eltesz
+3737	vermeiden	elkerül
+3738	absolvieren	elvégez, abszolvál
+3739	r Beschäftigte	dolgozó, alkalmazott
+3740	e Periode	periódus
+3741	einholen	elér, megszerez
+3742	r Handwerker	iparos (fn)
+3743	demonstrieren	demonstrál, bemutat
+3744	vertreiben	elűz, elad
+3745	e Bindung	kötés
+3746	juristisch	jogi
+3747	erarbeiten	kidolgoz
+3748	e Autobahn	autópálya
+3749	r Schwerpunkt	súlypont
+3750	s Vergnügen	öröm
+3751	zugleich	egyszerre, ugyanakkor
+3752	r Trend	trend, irányzat
+3753	darstellen	ábrázol, vázol
+3754	bitte	kérem
+3755	e Erinnerung	emlék, emlékezet
+3756	r West	nyugat
+3757	zählen	számol
+3758	r Käufer	vevő
+3759	sanft	enyhe, szelíd
+3760	verlegen	zavarodott
+3761	e Angelegenheit	ügy, eset
+3762	e Brücke	híd
+3763	s Personal	személyzet, állomány
+3764	abschalten	lekapcsol
+3765	arabisch	arab (mn)
+3766	s Blatt	lap, levél (fáé)
+3767	dringen	behatol, zaklat
+3768	bestehen	létezik, kibír, helytáll
+3769	mitbringen	magával hoz
+3770	kaufen	vásárol
+3771	seit	óta
+3772	aktuell	aktuális
+3773	aufzeigen	fölmutat
+3774	kreativ	kreatív
+3775	erheben	felemel
+3776	charakterisieren	jellemez
+3777	künstlerisch	művészi
+3778	r Ingenieur	mérnök
+3779	bewusst	tudatos
+3780	speziell	különösen
+3781	schleppen	húz, cipel
+3782	vergrößern	nagyít, gyarapít
+3783	s Ticket	jegy
+3784	r Beschluss	döntés, elhatározás
+3785	e Plattform	platform. emelvény
+3786	r Widerstand	ellenállás, ellenszegülés
+3787	e Fähigkeit	adottság, képesség
+3788	dominieren	dominál
+3789	vorübergehen	múlik
+3790	schuldig	bűnös
+3791	akademisch	akadémiai
+3792	e Phantasie	képzelet
+3793	r Schreck	ijedség, rémület
+3794	r Schmetterling	pillangó
+3795	spazieren	sétál
+3796	ausweisen	igazolja magát, kiutasít
+3797	überziehen	bevon, túlterhel
+3798	r Gesichtspunkt	szempont, nézőpont
+3799	mehrmals	többször
+3800	deutsch	német (mn)
+3801	flüchten	szökik, menekül
+3802	bewältigen	legyőz
+3803	sportlich	sportos
+3804	versehen	teljesít, ellát
+3805	s Business	üzlet
+3806	r Nerv	ideg
+3807	e Chance	esély
+3808	britisch	brit
+3809	zutreffen	igaznak bizonyul
+3810	s Motiv	motiváció, indíték
+3811	beträchtlich	jelentős
+3812	r Übersetzer	tolmács
+3813	verlaufen	megtörténik, eltéved
+3814	r Veranstalter	rendező, szervező
+3815	zurückziehen	visszavonul
+3816	ausfüllen	kitölt
+3817	basieren	alapul vmin
+3818	verbringen	eltölt (időt)
+3819	r Nachfolger	utód
+3820	s Grundstück	telek
+3821	e Einsicht	betekintés
+3822	e Premiere	premier, bemutató
+3823	unklar	homályos
+3824	diskret	diszkrét, tapintatos
+3825	r Gedanke	eszme, gondolat
+3826	s Geschlecht	nem (fn)
+3827	tatsächlich	tényleg, valóban
+3828	r Moment	pillanat, nyomaték
+3829	e Dauer	időtartam
+3830	r Nachweis	bizonyíték, igazolás
+3831	e Erhaltung	megőrzés, fenntartás
+3832	s Klavier	zongora
+3833	abzeichnen	lerajzol
+3834	r Dank	hála
+3835	schlimmer	rosszabb
+3836	bewerten	értékel, elbírál
+3837	flüstern	suttog
+3838	r Graf	gróf
+3839	derzeitig	jelenlegi
+3840	besser	jobb
+3841	r Mut	bátorság
+3842	ruhen	pihen
+3843	r Experte	szakértő
+3844	merkwürdig	furcsa, különös
+3845	willkommen	üdvözöl
+3846	r Manager	igazgató, menedzser
+3847	verbindlich	udvarias, kötelező
+3848	tätig	tevékeny, aktív
+3849	r Zugriff	hozzáférés
+3850	e Aufführung	előadás
+3851	verwenden	felhasznál
+3852	s Unternehmen	vállalkozás
+3853	danken	megköszön
+3854	r Champion	bajnok
+3855	e Alternative	alternatíva
+3856	r Besucher	vendég
+3857	s Zeugnis	bizonyíték
+3858	aufschreiben	felír
+3859	verwirklichen	megvalósít
+3860	r Geliebte	szerető
+3861	kennen	ismer
+3862	angehen	érint, vonatkozik
+3863	s Lächeln	mosoly
+3864	spiegeln	ragyog, tükröz
+3865	s Umfeld	környezet
+3866	reichen	elér
+3867	e Ausrichtung	irány
+3868	zumindest	legalább
+3869	testen	tesztel
+3870	wiederum	újra
+3871	s Training	edzés
+3872	übel	beteg, rossz
+3873	jetzig	jelenlegi
+3874	seltsam	furcsa, különös
+3875	voraussetzen	feltételez
+3876	s Design	forma
+3877	s Bad	kád, fürdő
+3878	r Umstand	körülmény
+3879	r Philosoph	filozófus
+3880	s Gefängnis	börtön
+3881	r Rucksack	hátizsák
+3882	s Licht	fény
+3883	schief	ferde
+3884	konzentrieren	koncentrál, összpontosít
+3885	nachdenklich	gondolkodtató
+3886	s Gefühl	érzés
+3887	strecken	kinyújt, kiterjeszt
+3888	korrekt	pontos, helyes
+3889	r Kongress	kongresszus
+3890	versterben	meghal, elhuny
+3891	r Wissenschaftler	természettudós
+3892	entspannen	pihen
+3893	r Gruß	köszöntés
+3894	spontan	spontán
+3895	vertraglich	elfogadható, elviselhető
+3896	reiten	lovagol
+3897	begegnen	találkozik, történik
+3898	e Erscheinung	jelenség
+3899	süß	édes
+3900	unterbringen	elhelyez
+3901	e Beschreibung	leírás
+3902	s Labor	laboratórium
+3903	loswerden	megszabadul vmitől
+3904	r Kern	mag
+3905	s Verhältnis	viszony, kapcsolat
+3906	r Bergsteiger	hegymászó
+3907	r Hunger	éhség
+3908	schmelzen	elolvad, megolvaszt
+3909	abschließen	bezár, befelyez
+3910	vorbeigehen	elmegy, elmúlik
+3911	r Wähler	szavazó
+3912	r Maßstab	mérce, mérték
+3913	r Erreger	kórokozó
+3914	e Anstrengung	törekvés, erőfeszítés
+3915	anmelden	jelentkezik, bejelentkezik
+3916	vermutlich	valószínűleg
+3917	abnehmen	fogy, csökken
+3918	spezialisieren	specializálódik
+3919	r Engel	angyal
+3920	r Mörder	gyilkos
+3921	industriell	ipari
+3922	mächtig	hatalmas
+3923	s Magazin	magazin, raktár
+3924	kommunikativ	kommunikatív, közlékeny
+3925	zuordnen	sorol, hozzárendel
+3926	suchen	keres
+3927	bieten	nyújt, kínál
+3928	beschränken	korlátoz, megszorít
+3929	e Abhängigkeit	függés
+3930	s Atom	atom
+3931	abschließend	végül
+3932	e Aufmerksamkeit	figyelem
+3933	r Bauer	földműves
+3934	worauf	amin
+3935	e Öffnung	nyílás, megnyitás
+3936	e Angst	félelem, izgalom
+3937	stumm	néma, szótlan
+3938	sogleich	azonnal
+3939	liefern	nyújt, szállít
+3940	r März	március
+3941	aufgrund	alapján
+3942	e City	belváros
+3943	vollständig	teljes
+3944	r Organismus	szervezet, organizmus
+3945	zusagen	megígér
+3946	e Einschätzung	megítélés
+3947	r Tourismus	turizmus, idegenforgalom
+3948	ergänzen	pótol, kiegészít
+3949	leider	sajnos
+3950	r Studiengang	tanulmány
+3951	r Verlust	kár, veszteség
+3952	vergeben	odaítél
+3953	regional	területi, regionális
+3954	e Fassade	arculat, homlokzat
+3955	bunt	színes
+3956	mitunter	időnként
+3957	toll	remek, nagyszerű
+3958	spannend	izgalmas
+3959	ausüben	gyakorol, folytat
+3960	denken	gondol
+3961	s Riff	szirt
+3962	sich wehren	védekezik
+3963	ändern	változtat
+3964	r Rechner	számítógép, számológép
+3965	s Werkzeug	eszköz
+3966	r Widerspruch	ellentmondás
+3967	belasten	terhel, megterhel
+3968	resultieren	eredményez
+3969	e Breite	szélesség
+3970	austauschen	kicserél
+3971	e Dimension	dimenzió
+3972	s Detail	részlet
+3973	bisherig	eddig
+3974	inzwischen	közben, időközben
+3975	strukturell	szerkezeti, strukturális
+3976	rein	tiszta
+3977	schlicht	egyszerű, sima
+3978	seit langem	régóta
+3979	r Protest	tiltakozás
+3980	zufrieden	elégedett
+3981	r Geheimdienst	titkosszolgálat
+3982	ansonsten	különben
+3983	e Betreuung	gondoskodás
+3984	r Verlauf	folyamat
+3985	vertiefen	mélyít
+3986	biegen	hajlik, hajlít
+3987	vorerst	mindenekelőtt
+3988	landwirtschaftlich	mezőgazdasági
+3989	r Schweiß	izzadság, verejték
+3990	verzweifeln	kétségbeesik
+3991	unheimlich	ijesztő, furcsa
+3992	e Reichweite	hatótávolság
+3993	ausstellen	kiállít, kitölt
+3994	weltweit	világszerte
+3995	r Nutzen	nyereség, haszon
+3996	ergreifen	megfog, megragad
+3997	r Investor	befektető
+3998	beschädigen	megrongál, károsít
+3999	zurückkehren	visszatér
+4000	umgekehrt	fordítva, viszont
+4001	r Gläubiger	hitelező
+4002	e Organisation	szervezet
+4003	innen	belül
+4004	bearbeiten	kidolgoz, feldolgoz
+4005	verleihen	kölcsönad, adományoz
+4006	befragen	megkérdez
+4007	riechen	szagol
+4008	tödlich	halálos
+4009	belgisch	belga
+4010	e Regelung	szabályozás
+4011	s Drittel	harmad
+4012	anfangen	elkezd, kezdődik
+4013	beziehen	beszerez, bevon
+4014	still	halk, csendes
+4015	verpflichten	kötelez, szerződtet
+4016	r Hügel	domb
+4017	kräftig	erős
+4018	angeben	megad
+4019	spüren	érzékel
+4020	unmöglich	lehetetlen
+4021	weiblich	női
+4022	zuverlässig	megbízható
+4023	tragen	hord, visel
+4024	r Lastkraftwagen	teherautó
+4025	unterdrücken	elnyom
+4026	s Gelände	terep, vidék
+4027	r Streifen	csík, sáv
+4028	beten	imádkozik
+4029	r Charakter	jellem, karakter
+4030	r Chor	kórus
+4031	vermitteln	közvetít, közbenjár
+4032	r Bezirk	körzet
+4033	verurteilen	elítél
+4034	unterrichten	tanít, oktat
+4035	teilen	feloszt, megoszt
+4036	s Kapital	tőke
+4037	e Richtlinie	irányelv
+4038	erkennen	elismer, felismer
+4039	auskommen	boldogul, gazdálkodik
+4040	indes	időközben
+4041	e Anregung	ösztönzés
+4042	befassen	foglalkozik vmivel
+4043	stabil	stabil
+4044	angreifen	megtámad
+4045	vorangehen	előremegy, megelőz
+4046	e Anwesenheit	jelenlét
+4047	vermissen	nélkülöz, hiányol
+4048	zudem	méghozzá, ráadásul
+4049	r Service	szolgáltatás
+4050	verdeutlichen	megvilágít, megmagyaráz
+4051	r Forscher	kutató
+4052	trennen	szétválaszt, felbont
+4053	r Lauf	futás, működés
+4054	e Realisierung	kivitelezés, végrehajtás
+4055	e Berücksichtigung	figyelembevétel
+4056	r Standard	norma, mérték
+4057	e Pistole	pisztoly
+4058	r Hinweis	utalás
+4059	kleben	ragad, ragaszt
+4060	kombinieren	kombinál
+4061	r Leib	has
+4062	s Risiko	kockázat
+4063	r Bundesrat	Német parlament alsó háza
+4064	markieren	megjelöl
+4065	r Mai	május
+4066	r Komponist	zeneszerző
+4067	angeblich	állítólag
+4068	ernst	komoly
+4069	sonst	különben
+4070	deuten	mutat, magyaráz, értelmez
+4071	e Bitte	kérés
+4072	allenfalls	talán, esetleg
+4073	s Leid	kín, bánat
+4074	auflösen	felold, megold
+4075	r Fan	rajongó
+4076	e Decke	fedél, plafon
+4077	absehen	előrelát
+4078	abholen	elhoz, elvisz
+4079	s Mädchen	lány
+4080	bedanken	megköszön
+4081	berühren	megérint
+4082	kommen	jön
+4083	innere	belső
+4084	schwer	nehéz, súlyos
+4085	s Arbeitsamt	munkaügyi hivatal
+4086	r Geruch	szag, szaglás
+4087	unterbrechen	megszakít
+4088	vielleicht	talán
+4089	vermindern	csökkent
+4090	auffällig	feltűnő
+4091	s Französisch	francia (fn)
+4092	kümmern	törődik
+4093	ständig	állandó
+4094	e Erfindung	találmány
+4095	nachgehen	követ, utánajár
+4096	nachweisen	igazol, kimutat
+4097	r Posten	poszt, tisztség
+4098	abstellen	megszüntet
+4099	zusammenstellen	összeállít
+4100	arbeitslos	munkanélküli (mn)
+4101	detailliert	részletes
+4102	zugunsten	vkinek a javára
+4103	e Aufwendung	költség, kiadás
+4104	sich erholen	kipiheni magát
+4105	reißen	elszakít, letép
+4106	schneiden	vág
+4107	r Zins	kamat
+4108	relativ	relatív, viszonylagos
+4109	südlich	déli
+4110	r Sprecher	szónok
+4111	betrieblich	üzemi
+4112	sich befinden	valamilyennek talál
+4113	vermögen	képes vmire, megtehet vmit
+4114	vernehmen	megtud, kihallgat
+4115	ausreichen	elég (ige)
+4116	s Klima	klíma, éghajlat
+4117	abwenden	elfordít
+4118	e Faust	ököl
+4119	e Erkrankung	betegség, megbetegedés
+4120	unterliegen	veszít, vereséget szenved
+4121	ergeben	eredményez
+4122	sich ergeben	megadja magát
+4123	s Vorjahr	előző év
+4124	e Allianz	szövetség
+4125	vorwerfen	megvádol, felró
+4126	anhand	alapján, segítségével
+4127	verlängern	hosszabbít, meghosszabbít
+4128	beeindrucken	benyomást kelt
+4129	braun	barna (mn)
+4130	r Betrag	mennyiség
+4131	verhandeln	tárgyal
+4132	r Stolz	büszkeség
+4133	zweimal	kétszer
+4134	verschärfen	fokoz, kiélez
+4135	s Vorgehen	eljárás
+4136	s Gremium	bizottság
+4137	zielen	céloz
+4138	tausend	ezer (számnév)
+4139	s Bewusstsein	tudat
+4140	s Unrecht	igazságtalanság
+4141	e Annahme	elfogadás, felvetés
+4142	daraufhin	ezért, ennek következtében
+4143	sich schämen	szégyelli magát
+4144	s Chinesisch	kinai (fn)
+4145	anwesend	jelenlévő
+4146	klären	tisztít, tisztáz
+4147	unterdessen	közben
+4148	dumm	buta, hülye
+4149	wiederholen	ismétel
+4150	r Fuß	láb
+4151	entziehen	visszavon, megvon
+4152	voraus	előre
+4153	untereinander	egymásközt
+4154	samt	vkivel együtt
+4155	theoretisch	elméleti
+4156	r Rahmen	keret, váz
+4157	e Person	személy
+4158	überwiegend	túlnyomórészt
+4159	überprüfen	átvizsgál
+4160	zulegen	beszerez, növel
+4161	irgendein	valamilyen, akármilyen
+4162	träumen	álmodik
+4163	vortragen	előad
+4164	sorgfältig	alapos, gondos
+4165	e Differenzierung	megkülönböztetés
+4166	s Symptom	tünet
+4167	verwundern	elcsodálkozik, ámulatba ejt
+4168	systematisch	rendszeres, szisztematikus
+4169	verfügbar	elérhető
+4170	r Bord	fedélzet
+4171	schweigen	csendben van, hallgat
+4172	unterschreiben	aláír
+4173	r Träger	vivő, hordó, szállító (fn)
+4174	sich bemühen	igyekszik, fáradozik
+4175	s Paar	pár (fn)
+4176	unabhängig	független (mn)
+4177	aufrufen	felhív, felszólít
+4178	biologisch	biológiai
+4179	flüchtig	múlandó, felületes
+4180	verdoppeln	megkettőz, megdupláz
+4181	r Bewohner	lakos, lakó
+4182	verrückt	bolond, őrült
+4183	r Großteil	többség, nagy rész (fn)
+4184	mittlere	középső
+4185	r Spruch	kijelentés, mondás
+4186	r Bescheid	válasz, értesítés
+4187	r Mittag	dél, délidő (fn)
+4188	starr	merev, kemény
+4189	loben	dícsér
+4190	r Freund	barát
+4191	analysieren	elemez
+4192	langjährig	sokévi
+4193	blöd	hülye, ostoba
+4194	verringern	csökkent
+4195	r Besuch	látogatás
+4196	e Beschränkung	korlátozás, megszorítás
+4197	r Europäer	Európai (fn)
+4198	unzählig	számtalan
+4199	veranstalten	rendez, megrendez
+4200	aufrecht	függőleges
+4201	materiell	anyagi
+4202	nachträglich	utólag
+4203	zurzeit	pillanatnyilag
+4204	e Problematik	probléma, problematika
+4205	e Rezession	visszaesés, recesszió
+4206	versetzen	áthelyez
+4207	r Terrorismus	terrorizmus
+4208	angehören	hozzátartozik
+4209	kontinuierlich	folyamatos
+4210	s Krankenhaus	kórház
+4211	bohren	fúr
+4212	r Horizont	horizont, látóhatár
+4213	weitere	többi
+4214	r Tourist	turista
+4215	s Verbrechen	bűntett
+4216	e Entfernung	távolság
+4217	bilden	alkot, művel
+4218	rechts	jobboldalt
+4219	drüben	odaát
+4220	springen	ugrik
+4221	r Polizist	rendőr
+4222	r Winkel	szög (matematika)
+4223	diskutieren	megvitat, megbeszél
+4224	definieren	definiál
+4225	s Ehepaar	házaspár
+4226	stimmen	szavaz
+4227	einsam	magányosan
+4228	r Regierungschef	kormányfő
+4229	e Existenz	létezés
+4230	r Meter	méter
+4231	e Auswertung	kiértékelés
+4232	mitten	közepén
+4233	e Auflage	kiadás
+4234	trauen	bízik
+4235	r Eigentümer	tulajdonos
+4236	s Tuch	szövet, kendő
+4237	lauten	hangzik
+4238	vorschreiben	megszab
+4239	r Professor	professzor
+4240	ausschalten	kikapcsol
+4241	ausprobieren	kipróbál
+4242	vorhaben	tervez
+4243	verkehren	eljár, érintkezik
+4244	lieber	inkább
+4245	intellektuell	szellemi, intellektuális
+4246	r Einbruch	betörés
+4247	komplex	komplex, összetett
+4248	schwierig	nehéz, bonyolult
+4249	durchführen	elvégez, végrehajt
+4250	bemerkenswert	jelentős, figyelemre méltó
+4251	besorgt	aggódó, aggályos
+4252	aufreißen	feltép, felszakít
+4253	s Verfahren	eljárás, folyamat
+4254	umdrehen	elfordít, megfordít
+4255	auslegen	kiad, értelmez
+4256	dulden	eltűr, elvisel
+4257	r Bundeskanzler	szövetségi kancellár
+4258	r Kommentar	megjegyzés
+4259	vermuten	gyanít, sejt
+4260	blond	szőke
+4261	minimal	minimális
+4262	zukommen	eljut, odaérkezik
+4263	r Präsident	elnök
+4264	e Reaktion	reagálás, reakció
+4265	r Salon	szalon
+4266	begehen	elkövet
+4267	r Nacken	nyak
+4268	ausnehmen	meglát, felismer
+4269	werfen	dob, hajít
+4270	täuschen	becsap, cselez
+4271	e Provinz	tartomány
+4272	beauftragen	megbíz vkit vmivel
+4273	aufstehen	felkel, feláll
+4274	stoppen	megáll
+4275	e Distanz	távolság
+4276	r Platz	hely
+4277	r Vortrag	előadás
+4278	schreien	kiált, sikít
+4279	irgendwelche	valamilyen, akármilyen
+4280	r Kampf	harc, küzdelem
+4281	sich entschließen	elhatározza magát
+4282	beseitigen	eltávolít, megsemmisít
+4283	spezifisch	sajátos, specifikus
+4284	locker	laza
+4285	s Verbot	tiltás
+4286	verbieten	tilt, megtilt
+4287	vorher	előbb
+4288	s Nahrungsmittel	élelem, élelmiszer
+4289	dort	ott
+4290	vor kurzem	nemrég
+4291	amerikanisch	amerikai
+4292	r Umgang	bánásmód, kapcsolat
+4293	schwanger	várandós, állapotos
+4294	r Islam	iszlám vallás
+4295	e Atmosphäre	légkör, atmoszféra
+4296	ungewöhnlich	szokatlan
+4297	r Juni	június
+4298	sehr	nagyon
+4299	r Faktor	tényező
+4300	r Eingriff	beavatkozás
+4301	s Potenzial	potenciál, lehetőség
+4302	sich wundern	csodálkozik
+4303	s Chaos	káosz
+4304	r Verein	egyesület
+4305	e Differenz	különbség
+4306	r Beweis	igazolás, bizonyíték
+4307	s Gegenteil	ellentét
+4308	isolieren	elszigetel, izolál
+4309	somit	tehát, következésképp
+4310	verzichten	felad, lemond
+4311	versorgen	ellát, gondoskodik
+4312	mittels	vmi útján, vmi segítségével
+4313	klassisch	klasszikus
+4314	s Management	vezetés, menedzsment
+4315	technisch	műszaki, technikai
+4316	abschneiden	levág
+4317	verschieben	elhalaszt, eltol
+4318	bedecken	befed, beborít
+4319	s Entwicklungsland	fejlődő országok
+4320	r Vorgang	esemény, történés
+4321	r Lärm	zaj
+4322	tot	halott (mn)
+4323	fixieren	rögzít
+4324	verteidigen	véd
+4325	trocken	száraz
+4326	wohnen	lakik
+4327	r Landkreis	körzet
+4328	anrufen	felhív
+4329	e Anpassung	alkalmazkodás
+4330	r Osten	kelet
+4331	trösten	vigasztal
+4332	verletzen	megsebez, megsért
+4333	dazwischen	között
+4334	r Zweifel	kétely, kétség
+4335	wiegen	nyom vmennyit
+4336	behaupten	állít, kijelent
+4337	s Lebewesen	élőlény
+4338	untere	alsó
+4339	e Kanone	ágyú
+4340	r Feldzug	hadjárat, kampány
+4341	e Achse	tengely
+4342	e Eroberung	hódítás
+4343	r Vergleich	összehasonlítás
+4344	übertreiben	túloz, nagyít
+4345	erneut	újra, ismét
+4346	irgendetwas	valami
+4347	s Griechisch	görög nyelv
+4348	bewahren	megóv, megőriz
+4349	ansiedeln	letelepedik
+4350	andeuten	sejtet, céloz
+4351	r Betracht	figyelembe vevés, megfontolás
+4352	selbstständig	önálló
+4353	e Aussage	állítás, kijelentés
+4354	erfreuen	örül
+4355	mischen	kever
+4356	r Palästinenser	palesztin (fn)
+4357	s Gerücht	pletyka, szóbeszéd
+4358	vermeintlich	vélt, állítólagos
+4359	e Ahnung	sejtés
+4360	kriechen	mászik, kúszik
+4361	überlegen	gondolkodik, megfontol vmit
+4362	s Englisch	angol (fn)
+4363	literarisch	irodalmi
+4364	r Sinn	értelem, jelentés
+4365	stehlen	lop
+4366	scheitern	megbukik, kudarcot vall
+4367	s Regime	uralom, vezetés
+4368	e Bundesregierung	szövetségi kormány
+4369	bedingen	okoz, feltételez
+4370	zusammenhängen	összefügg
+4371	vorlesen	felolvas
+4372	r Bezug	vonatkozás, hivatkozás
+4373	überzeugen	meggyőz, rábeszél
+4374	besondere	sajátos, különleges
+4375	entstehen	keletkezik, létrejön
+4376	absolut	abszolút, teljes
+4377	r Schuss	lövés
+4378	maximal	maximális
+4379	vollkommen	tökéletes, teljes
+4380	locken	vonz, csábít
+4381	düster	homályos
+4382	e Arbeitszeit	munkaidő
+4383	solide	erős, tartós, megbízható
+4384	zusammensetzen	összeállít
+4385	r Christ	keresztény (fn)
+4386	r Helfer	segítő (fn)
+4387	verbleiben	megmarad
+4388	chronisch	krónikus, tartós
+4389	e Energie	energia
+4390	weitergeben	továbbad, továbbít
+4391	mehrere	több, többen
+4392	sofern	hogyha, hacsak
+4393	vernünftig	értelmes, ésszerű
+4394	s Ausland	külföld (fn)
+4395	bereitstellen	elkészít
+4396	starren	bámul
+4397	jenseits	túl vmin
+4398	scheiden	elválik, szétválaszt
+4399	jetzt	most
+4400	weiß	fehér
+4401	entwerfen	tervez
+4402	s Format	formátum
+4403	r Dirigent	karmester
+4404	r Italiener	olasz (fn)
+4405	e Partnerschaft	partnerség
+4406	vorbeugen	megelőz
+4407	e Beteiligung	részvétel
+4408	r Sachverhalt	tények, tényállás
+4409	menschlich	emberi
+4410	e Ansicht	vélemény, nézet
+4411	e Feststellung	megállapítás, megfigyelés
+4412	zutrauen	megbízik, feltételez
+4413	aufkommen	felnő, felemelkedik
+4414	sich verlieben	szerelmes lesz
+4415	aufregen	felizgat
+4416	r Kontext	kontextus, szövegkörnyezet
+4417	erkennbar	felismerhető
+4418	aufziehen	felnevel
+4419	ablenken	más irányba terel, figyelmét elvonja
+4420	r Zinssatz	kamat, kamatláb
+4421	r Einzelfall	egyedi eset
+4422	regelmäßig	szabályos, rendszeres
+4423	bereiten	elkészít, okoz
+4424	r Transport	szállítás, szállítmány
+4425	traditionell	hagyományos
+4426	absurd	abszurd, képtelen
+4427	anrichten	elkövet
+4428	r Parkplatz	parkolóhely
+4429	versagen	megbukik, kudarcot vall
+4430	linke	bal (mn)
+4431	umsonst	ingyen, hiába
+4432	zittern	remeg, reszket
+4433	zurückweisen	elutasít, visszautasít
+4434	nächste	következő
+4435	treiben	űz, hajt, folytat
+4436	schenken	ajándékoz
+4437	nackt	csupasz, meztelen
+4438	r Eindruck	benyomás
+4439	ausziehen	kivonul, levet
+4440	e Nutzung	használat
+4441	übereinstimmen	egyezik, összhangban van
+4442	trocknen	szárít, felszárad
+4443	beruhen	alapul, alapszik
+4444	s Café	kávézó
+4445	selbe	ugyanaz
+4446	e Anleihe	kölcsön (fn)
+4447	s Experiment	kísérlet
+4448	anstehen	fennáll, sorban áll
+4449	repräsentieren	képvisel, reprezentál
+4450	steil	meredek
+4451	außergewöhnlich	szokatlan, különös
+4452	e Aktion	cselekmény, akció
+4453	allerdings	valóban, természetesen
+4454	e Blüte	virág, virágzás
+4455	darum	ezért, ekörül
+4456	verbinden	összeköt, összekapcsol
+4457	abhalten	visszatart
+4458	r Zwang	kényszer
+4459	meinetwegen	tőlem, miattam
+4460	meiste	többnyire, legtöbbször
+4461	erleiden	szenved
+4462	r Kompromiss	kompromisszum, kiegyezés
+4463	e Erwachsene	felnőttek
+4464	versprechen	megígér
+4465	übrig	maradék, megmaradt (mn)
+4466	sowie	amint, mihelyt
+4467	s Gutachten	szakvélemény
+4468	unterstützen	támogat, alátámaszt
+4469	aufsteigen	felszáll, felemelkedik
+4470	spannen	kifeszít, megfeszít
+4471	mehr	több
+4472	s Volk	nép
+4473	zukünftig	jövő, jövőbeli (mn)
+4474	weitermachen	folytat
+4475	r Student	diák
+4476	umfassen	tartalmaz, magába foglal
+4477	zurückhalten	visszafog, visszatart
+4478	subjektiv	szubjektiv
+4479	insbesondere	különösen, kiváltképpen
+4480	e Position	pozíció, állapot
+4481	zeitlich	időbeli, korai
+4482	umsetzen	áthelyez, felvesz
+4483	enttäuschen	csalódást okoz
+4484	beobachten	megfigyel, észlel
+4485	bevor	mielőtt
+4486	nachhaltig	tartós, fenntartható
+4487	r Hass	gyűlölet
+4488	körperlich	testi
+4489	e Akte	akta, irat
+4490	e Bestimmung	elhatározás, rendelkezés
+4491	s Ufer	part
+4492	motorisch	motorikus
+4493	s Phänomen	jelenség
+4494	umbringen	megöl
+4495	e Oma	nagyi
+4496	e Beobachtung	megfigyelés
+4497	liegen	fekszik
+4498	zerreißen	széttép
+4499	ausdehnen	kitágít, kiterjeszt
+4500	s Militär	katonaság
+4501	beschaffen	megszerez, beszerez
+4502	intern	belső
+4503	zumeist	többnyire
+4504	zurücklegen	visszatesz
+4505	s Teilchen	részecske
+4506	sowieso	úgyis
+4507	finanziell	pénzügyi
+4508	r Vorwurf	vád, szemrehányás
+4509	nachts	éjszakánként
+4510	rücken	mozdul, költözik
+4511	tief	mély
+4512	übrigens	különben, egyébként
+4513	s Eigentum	tulajdon
+4514	r Verdacht	gyanú
+4515	konfrontieren	szembeszáll
+4516	andererseits	másrész
+4517	e Entschuldigung	bocsánatkérés
+4518	veröffentlichen	publikál, közzétesz
+4519	vorherrschen	túlsúlyban van, uralkodik
+4520	ansehen	ránéz, megnéz
+4521	sorgen	aggodik, gondoskodik
+4522	antreten	elindul, megkezd
+4523	unternehmen	vállal, vállalkozik
+4524	e Chefin	főnöknő
+4525	schwimmen	úszik
+4526	s Erlebnis	élmény
+4527	leiden	szenved
+4528	regelrecht	szabályos, valóságos
+4529	r Jäger	vadász
+4530	charakteristisch	jellemző, jellegzetes
+4531	berücksichtigen	figyelembe vesz
+4532	demokratisch	demokratikus
+4533	zugeben	bevall, elismer
+4534	s Netz	hálózat
+4535	setzen	leül, helyet foglal
+4536	steigern	növel, emel
+4537	strategisch	stratégiai
+4538	interessieren	érdekel (ig)
+4539	spät	késő
+4540	e Rüstung	fegyverzet
+4541	r Wirtschaftszweig	iparág
+4542	unheilbar	gyógyíthatatlan
+4543	e Tankstelle	benzinkút
+4544	feststellbar	megállapítható
+4545	s Bündnis	szövetség
+4546	s Heer	hadsereg
+4547	r Vermieter	bérbeadó
+4548	anfallen	megtámat
+4549	vereinen	egyesít
+4550	welch	melyik
+4551	r Täter	tettes, elkövető
+4552	vorläufig	átmeneti, ideiglenes
+4553	schleichen	mászik, oson, lopakodik
+4554	mangeln	hiányt szenved
+4555	beste	legjobb
+4556	verdächtig	gyanús
+4557	e Realität	valóság, realitás
+4558	behalten	megtart
+4559	zugänglich	elérhető
+4560	e Fakultät	képesség, egyetemi kar
+4561	s Betriebssystem	operációs rendszer
+4562	tauchen	búvárkodik, merül
+4563	ablösen	vált, felvált
+4564	s Mittel	eszköz, mód
+4565	verdanken	köszön
+4566	los	szabad, mentes vmitől
+4567	e Auflösung	felbontás, felbomlás
+4568	durch	át, keresztül
+4569	dicht	feszes, sűrű
+4570	besprechen	megvitat, megbeszél
+4571	r Russe	orosz (fn)
+4572	verweigern	megtagad
+4573	jemand	valaki
+4574	e Anlage	létesítmény
+4575	berufen	kinevez
+4576	kämpfen	harcol
+4577	anscheinend	látszólag
+4578	r Katalog	jegyzék, katalógus
+4579	e Ferne	távolság
+4580	zustehen	jár vkinek
+4581	r Schlag	ütés, csapás
+4582	e Beschwerde	panasz, teher
+4583	stoßen	meglök, taszít
+4584	berechnen	kiszámol
+4585	starten	indul
+4586	kennzeichnen	jellemez, megjelöl
+4587	ausweichen	elkerül, kikerül
+4588	unsicher	bizonytalan
+4589	e Erhöhung	növekedés
+4590	letztendlich	végső soron
+4591	r Ehegatte	férj
+4592	intelligent	intelligens
+4593	r Therapeut	kezelőorvos
+4594	steuern	vezet, irányít
+4595	aufgehen	felkel, felnyit
+4596	jegliche	minden egyes
+4597	e Erfüllung	teljesítés, teljesülés
+4598	aufwachen	felébred
+4599	beherrschen	ural, uralkodik
+4600	derart	úgy, annyira
+4601	womit	amivel
+4602	rennen	fut
+4603	r Mieter	bérlő, albérlő
+4604	vernachlässigen	elhanyagol
+4605	e Analyse	elemzés
+4606	e Beurteilung	megítélés
+4607	e Bemerkung	észrevétel, megjegyzés
+4608	s Darlehen	hitel, kölcsön
+4609	stören	zavar (ig)
+4610	aufrichten	felállít, felemel
+4611	anders	másképpen
+4612	bescheiden	szerény
+4613	dauerhaft	tartós
+4614	abwarten	kivár
+4615	beinhalten	tartalmaz
+4616	ausschließlich	kizárólag
+4617	r Hörer	hallgató
+4618	aufhalten	meggátol, feltartóztat
+4619	aufbringen	előteremt, felhajt
+4620	vereinigen	egyesít
+4621	automatisch	automatikus
+4622	r Sportler	sportoló
+4623	zufällig	véletlen (mn)
+4624	mühsam	nehéz, fáradtságos
+4625	ziemlich	egészen, meglehetősen
+4626	abreißen	letép, félbeszakad
+4627	erfüllen	teljesít, véghezvisz
+4628	sauber	tiszta
+4629	vorgeben	tettet, színlel
+4630	typisch	tipikus, jellemző
+4631	sich abspielen	lejátszódik, végbemegy
+4632	anwenden	alkalmaz, felhasznál
+4633	e Besonderheit	sajátosság
+4634	r Sieger	győztes, bajnok
+4635	r Tisch	asztal
+4636	nähern	közelít
+4637	dementsprechend	eszerint, ennek megfelelően
+4638	e Absicht	szándék
+4639	dynamisch	dinamikus
+4640	e Anforderung	követelmény, igény
+4641	stärken	erősít
+4642	sozusagen	úgymond, úgyszólván
+4643	r Durcheinander	zűrzavar
+4644	verfügen	elrendel
+4645	r Zusammenhang	kapcsolat, összefüggés
+4646	abstrakt	absztrakt, elvont
+4647	r Bulle	bika
+4648	überstehen	kiáll, elszenved
+4649	irren	téved
+4650	e Akademie	akadémia
+4651	beugen	hajlít
+4652	e Oper	opera
+4653	wertvoll	értékes
+4654	s Auftreten	fellépés
+4655	unterschiedlich	különféle, különböző
+4656	r Tipp	tipp
+4657	verstehen	megért
+4658	sonstig	más
+4659	weshalb	miért
+4660	teuer	drága
+4661	treu	hűséges
+4662	umarmen	megölel
+4663	sicherlich	biztosan
+4664	verständlich	érthetően
+4665	ausdrücken	kifejez
+4666	inwieweit	mennyire
+4667	schon	már
+4668	betreuen	gondoz, gondoskodik
+4669	s Gedächtnis	emlék, emlékezet
+4670	servieren	felszolgál
+4671	übergeben	átad
+4672	anstreben	törekszik, vágyakozik
+4673	e Orientierung	igazodás, tájékozódás
+4674	agieren	cselekszik, működik
+4675	jährlich	évenkénti
+4676	ahnen	gyanít, sejt
+4677	r Teilnehmer	résztvevő
+4678	aufgeben	felad
+4679	abziehen	levon, visszavon
+4680	männlich	hím (mn)
+4681	r Dolmetscher	tolmács
+4682	verpassen	lekésik, elmulaszt
+4683	jagen	vadászik
+4684	leuchten	világít
+4685	begeistern	ihlet, lelkesít
+4686	e Praxis	rendelés, praxis
+4687	e Droge	drog, kábítószer
+4688	vorsehen	tervbe vesz, előre lát
+4689	verfassen	megfogalmaz
+4690	ausmachen	alkot, kitesz
+4691	sachlich	tárgyilagos
+4692	vorbei	elmúlt (hat)
+4693	ablaufen	lejár, elmúlik
+4694	dokumentieren	dokumentál
+4695	dunkel	sötét (mn)
+4696	s Schweigen	csend, hallgatás
+4697	regnen	esik (eső)
+4698	r Konflikt	konfliktus
+4699	e Einheit	egység
+4700	erforderlich	szükséges
+4701	r Impuls	impulzus, ösztönzés
+4702	bisschen	kissé
+4703	dankbar	hálás
+4704	städtisch	városi
+4705	braten	süt, megsüt
+4706	e Bahn	vonat, vasút
+4707	informieren	informál, tájékoztat
+4708	r Terrorist	terrorista
+4709	r Papa	apu
+4710	blass	sápadt
+4711	christlich	keresztény (mn)
+4712	völlig	teljes
+4713	sobald	mihelyt
+4714	ausgeprägt	megkülönböztető, kifejezett
+4715	aufeinander	egymásra
+4716	nah	közel
+4717	e Ebene	sík, szint
+4718	s Protein	fehérje
+4719	e Produktion	termelés
+4720	entnehmen	kivesz, merít
+4721	erlassen	kiad, megenged
+4722	derartig	ilyen
+4723	ebenfalls	szintén, ugyancsak
+4724	s Schloss	lakat
+4725	beiseite	mellé
+4726	jeweilig	mindenkori
+4727	anpassen	igazít, hozzáilleszt
+4728	aneinander	egymáshoz
+4729	s Motto	mottó, jelmondat
+4730	s Italienisch	olasz nyelv
+4731	r Riese	óriás (fn)
+4732	s Zeug	eszköz, dolog
+4733	inszenieren	rendez
+4734	antun	ráad, felöltöztet
+4735	e Reflexion	visszaverődés
+4736	reflektieren	visszaver, visszatükröz
+4737	umgeben	körülvesz
+4738	sich vornehmen	elhatározza magát
+4739	losgehen	indul, elsül
+4740	individuell	egyéni, individuális
+4741	zur Verfügung stehen	rendelkezásre áll
+4742	strukturieren	szerkeszt, strukturál
+4743	e Bilanz	mérleg (közgazdaságban)
+4744	Schweiz	svájc
+4745	r Rang	rang, helyezés
+4746	stellvertretend	helyettes (mn)
+4747	widmen	vminek szentel, ráfordít
+4748	weisen	mutat, utasít
+4749	Japan	Japán
+4750	e Karte	térkép
+4751	e Hölle	pokol
+4752	e Immobilie	ingatlan
+4753	r Rauch	füst
