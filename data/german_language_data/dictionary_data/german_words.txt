@@ -3810,7 +3810,7 @@
 3809	zutreffen	igaznak bizonyul
 3810	s Motiv	motiváció, indíték
 3811	beträchtlich	jelentős
-3812	r Übersetzer	tolmács
+3812	r Übersetzer	tolmács, fordító
 3813	verlaufen	megtörténik, eltéved
 3814	r Veranstalter	rendező, szervező
 3815	zurückziehen	visszavonul
