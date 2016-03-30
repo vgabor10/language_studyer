@@ -28,7 +28,7 @@ public class GrammarAnswerDataStatisticsMaker {
 		int numberOfExamples = 0;
 		Set<Integer> grammarItemIndexes = grammarBook.getGrammarItemIndexes();
 		for (int index : grammarItemIndexes) {
-			numberOfExamples = numberOfExamples + grammarBook.getGrammarItem(index).numberOfExamples();
+			numberOfExamples = numberOfExamples + grammarBook.getGrammarItemByIndex(index).numberOfExamples();
 		}
 
 		System.out.println("number of examples: " + numberOfExamples);
@@ -92,12 +92,53 @@ public class GrammarAnswerDataStatisticsMaker {
 		}
 
 		DecimalFormat df = new DecimalFormat("#.00");
-		System.out.println("grammar item index | category | percentage (number of answers)");
-		for (int grammarItemIndex : numberOfRightAnswersByGrammarItems.keySet()) {
+		System.out.println("CATEGORY | PERCENTAGE (NUMBER OF ANSWERS)");
+		/*for (int grammarItemIndex : numberOfRightAnswersByGrammarItems.keySet()) {
 			double percentage = (double)(numberOfRightAnswersByGrammarItems.get(grammarItemIndex)) *100.0 /
 				(double)(numberOfAnswersByGrammarItems.get(grammarItemIndex));
-			System.out.println(grammarItemIndex + " | " + grammarBook.getGrammarItem(grammarItemIndex).title + " | "
+			System.out.println(grammarItemIndex + " | " + grammarBook.getGrammarItemByIndex(grammarItemIndex).title + " | "
 				+ df.format(percentage) + "%" + " (" + numberOfAnswersByGrammarItems.get(grammarItemIndex) + ")");
+		}*/
+		for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
+			GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(i);
+			if ( numberOfRightAnswersByGrammarItems.keySet().contains(grammarItem.index)) {
+				double percentage 
+					= (double)(numberOfRightAnswersByGrammarItems.get(grammarItem.index)) *100.0 /
+					(double)(numberOfAnswersByGrammarItems.get(grammarItem.index));
+
+				System.out.println(grammarBook.getGrammarItemByIndex(grammarItem.index).title + " | "
+					+ df.format(percentage) + "%" + " (" + numberOfAnswersByGrammarItems.get(grammarItem.index) + ")");
+			}
+		}
+	}
+
+	public int milisecToDay(long milisecTime) {	//TODO: take to an other class
+		int timeZone = 1;
+		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
+	}
+
+	public void toScreenNumberOfAnswersByDays() {
+		Map<Integer,Integer> numberOfAnswersByDays = new HashMap<Integer,Integer>();
+
+		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
+			long date = grammarAnswerDataContainer.getAnswerData(i).date;
+			int day = milisecToDay(date);
+			if (numberOfAnswersByDays.containsKey(day)) {
+				int numberOfAnswersAtDay = numberOfAnswersByDays.get(day);
+				numberOfAnswersAtDay++;
+				numberOfAnswersByDays.remove(day);
+				numberOfAnswersByDays.put(day, numberOfAnswersAtDay);
+			}
+			else {
+				numberOfAnswersByDays.put(day, 1);
+			}
+		}
+
+		Set<Integer> days = numberOfAnswersByDays.keySet();
+		SortedSet<Integer> sortedDays = new TreeSet<Integer>(days);
+		System.out.println("DAY - NUMBER OF ANSWERS AT DAY");
+		for (int day : sortedDays) {
+			System.out.println(day + " - " + numberOfAnswersByDays.get(day));
 		}
 	}
 

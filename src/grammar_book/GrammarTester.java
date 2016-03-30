@@ -61,33 +61,31 @@ public class GrammarTester {
 
 	public Vector<Integer> getRandomExampleIndexes(int grammarItemIndex, int numberOfExamples) {	// (grammarItemIndex,exampleIndex)
 
-		Set<Integer> exampleIndexes = grammarBook.getGrammarItem(grammarItemIndex).getExampleIndexes();
-		Vector<Integer> outSet = new Vector<Integer>();
+		Vector<Integer> idexesToAdd = new Vector<Integer>(grammarBook.getGrammarItemByIndex(grammarItemIndex).getExampleIndexes());
+		Vector<Integer> outVector = new Vector<Integer>();
 
-		while (outSet.size() != numberOfExamples) {
-			int r = randomGenerator.nextInt(grammarBook.getGrammarItem(grammarItemIndex).numberOfExamples());
-			int i=0;
-			for (int index : exampleIndexes) {
-				if (i == r) {
-					outSet.add(index);
-				}
-				i++;
-			}
+		while (outVector.size()<numberOfExamples) {
+			java.util.Collections.shuffle(idexesToAdd);
+			outVector.addAll(idexesToAdd);
 		}
 
-		System.out.println(outSet.toString());
+		while (!(outVector.size() == numberOfExamples)) {
+			outVector.removeElementAt(outVector.size()-1);
+		}
 
-		return outSet;
+		return outVector;
 	}
 
 	public void performTest(int orderIndex, int numberOfExamples) {
 
-		int grammarItemIndex = grammarBook.getGrammarItemByOrder(orderIndex).index;
+		GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
+
+		System.out.println("log: " + grammarItem.index);	//log
 
 		Console console = System.console();
 		GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
 
-		Vector<Integer> exampleIndexes = getRandomExampleIndexes(grammarItemIndex, numberOfExamples);
+		Vector<Integer> exampleIndexes = getRandomExampleIndexes(grammarItem.index, numberOfExamples);
 
 		long startTime = System.currentTimeMillis();
 
@@ -99,16 +97,16 @@ public class GrammarTester {
 			System.out.println(counter + "/" + numberOfExamples);
 			System.out.println("-------------------------------------------------");
 
-			Example example = grammarBook.getExample(grammarItemIndex, exampleIndex);
+			Example example = grammarItem.getExampleByIndex(exampleIndex);
 
-			System.out.println(grammarBook.getGrammarItem(grammarItemIndex).title);
+			System.out.println(grammarItem.title);
 			System.out.println(example.hun);
 			String answer = console.readLine();
 
 			Date date = new Date();
 			if (answer.equals(example.foreign)) {
 				System.out.print("RIGHT");
-				grammarAnswerDataContainer.addElement(grammarItemIndex, exampleIndex, true, date.getTime());
+				grammarAnswerDataContainer.addElement(grammarItem.index, exampleIndex, true, date.getTime());
 				console.readLine();
 			}
 			else {
@@ -116,7 +114,7 @@ public class GrammarTester {
 
 				System.out.println();
 				System.out.println("DESCRIPTION:");
-				System.out.println(grammarBook.getGrammarItem(grammarItemIndex).description.getInReadingForm());
+				System.out.println(grammarItem.description.getInReadingForm());
 				System.out.println();
 
 				System.out.println("seems to be wrong, what is your opinion?");
@@ -127,11 +125,11 @@ public class GrammarTester {
 				String choice = console.readLine();
 
 				if (choice.equals("0") || choice.equals("")) {
-					grammarAnswerDataContainer.addElement(grammarItemIndex, exampleIndex, false, date.getTime());
+					grammarAnswerDataContainer.addElement(grammarItem.index, exampleIndex, false, date.getTime());
 				}
 
 				if (choice.equals("1")) {
-					grammarAnswerDataContainer.addElement(grammarItemIndex, exampleIndex, true, date.getTime());
+					grammarAnswerDataContainer.addElement(grammarItem.index, exampleIndex, true, date.getTime());
 				}
 			}
 		}

@@ -267,7 +267,7 @@ public class AnswerDataStatisticsMaker {
 		System.out.println();
 	}
 
-	public int milisecToDay(long milisecTime) {
+	public int milisecToDay(long milisecTime) {	//TODO: take to an other class
 		int timeZone = 1;
 		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
 	}

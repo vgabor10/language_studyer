@@ -21,7 +21,7 @@ public class GrammarBook {
 		return grammarItems.size();
 	}
 
-	public GrammarItem getGrammarItem(int grammarItemIndex) {	//TODO: rename: getGrammarItemByIndex
+	public GrammarItem getGrammarItemByIndex(int grammarItemIndex) {
 		int i=0;
 		while (i<grammarItems.size() && grammarItems.get(i).index != grammarItemIndex) {
 			i++;
@@ -31,11 +31,11 @@ public class GrammarBook {
 			return null;
 		}
 		else {
-			return grammarItems.get(grammarItemIndex);
+			return grammarItems.get(i);
 		}
 	}
 
-	public GrammarItem getGrammarItemByOrder(int orderIndex) {	//TODO: rename: getGrammarItemByIndex
+	public GrammarItem getGrammarItemByOrder(int orderIndex) {
 		return grammarItems.get(orderIndex);
 	}
 
@@ -53,7 +53,7 @@ public class GrammarBook {
 	}
 
 	public Example getExample(int grammarItemIndex, int exampleIndex) {
-		return getGrammarItem(grammarItemIndex).getExampleByIndex(exampleIndex);
+		return getGrammarItemByIndex(grammarItemIndex).getExampleByIndex(exampleIndex);
 	}
 
 	public void deleteGrammarItem(int grammarItemIndex) {	//TODO: implement, think it over

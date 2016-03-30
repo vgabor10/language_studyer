@@ -51,6 +51,7 @@ public class LanguageStudyer {
 		System.out.println("14 - modificate grammar item on frame TODO: implemet");
 		System.out.println("15 - delete grammarItem");
 		System.out.println("16 - grammarItemChooser test");
+		System.out.println("17 - number of answers by days");
 		System.out.println();
 		System.out.println("SETTINGS");
 		System.out.println("20 - set language to study");
@@ -423,7 +424,7 @@ public class LanguageStudyer {
 				a = console.readLine();
 				if (!a.equals("")) {
 					System.out.print("\033[H\033[2J");
-					System.out.println(grammarBook.getGrammarItem(Integer.parseInt(a)).toString());
+					System.out.println(grammarBook.getGrammarItemByIndex(Integer.parseInt(a)).toString());
 					console.readLine();
 				}
 			} while (!a.equals(""));
@@ -475,7 +476,7 @@ public class LanguageStudyer {
 			int grammarItemIndex = Integer.parseInt(console.readLine());
 
 			System.out.println("are you sure you would like to delete this GrammarItem? (y/n)");
-			System.out.println(grammarBook.getGrammarItem(grammarItemIndex).title);
+			System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title);
 
 			/*if (console.readLine().equals("y")) {
 				/*GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
@@ -498,6 +499,20 @@ public class LanguageStudyer {
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
 			grammarItemChooser.setGrammarBook(grammarBook);
 			grammarItemChooser.chooseGrammarItem();
+			console.readLine();
+		}
+
+		if (choice.equals("17")) {
+			System.out.print("\033[H\033[2J");
+			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+			grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
+
 			console.readLine();
 		}
 
