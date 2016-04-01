@@ -19,8 +19,8 @@ public class LanguageStudyer {
 
 		GrammarBook grammarBook = new GrammarBook();
 		GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
-		GrammarBoofFileFormatChecker grammarBoofFileFormatChecker = new GrammarBoofFileFormatChecker();
-		boolean isCorrect = grammarBoofFileFormatChecker.generalCheck(settingsHandler.getStudiedLanguageGrammarBookPath());
+		GrammarBookFileFormatChecker grammarBookFileFormatChecker = new GrammarBookFileFormatChecker();
+		boolean isCorrect = grammarBookFileFormatChecker.generalCheck(settingsHandler.getStudiedLanguageGrammarBookPath());
 		if (isCorrect == false) {
 			System.out.println("grammar book format is wrong");
 			console.readLine();

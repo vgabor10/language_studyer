@@ -35,6 +35,13 @@ class GrammarItemTitle {
 		categoris.setElementAt(subsubsection,2);
 	}
 
+	public void setParagraph(String paragraph) {
+		while (categoris.size() < 4) {
+			categoris.add("-");
+		}
+		categoris.setElementAt(paragraph,3);
+	}
+
 	public String getSection() {
 		return categoris.get(0);
 	}

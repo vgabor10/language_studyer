@@ -92,6 +92,22 @@ public class GrammarBookLoader {
 					grammarItem.title.setSubsubsection(subsubsection);
 				}
 
+				if (strLine.startsWith("\\" + "paragraph")) {
+					if (!grammarItem.isEmptyExcludingTitle()) {
+						grammarBook.addGrammarItem(grammarItem);
+
+						GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
+						grammarItem = new GrammarItem();
+						grammarItem.title = title;
+					}
+
+					String s = strLine.substring(11);
+					String subsubsection = s.substring(0, s.indexOf("}"));
+
+					grammarItem.title.deleteCategoriesFromDebth(3);
+					grammarItem.title.setParagraph(subsubsection);
+				}
+
 				if (strLine.startsWith("%")) {
 					grammarItem.commentForExamples = strLine;
 				}
@@ -119,7 +135,7 @@ public class GrammarBookLoader {
 						Example example = new Example();
 
 						example.index = Integer.parseInt(strings[0]);
-						example.hun = strings[2].substring(0,strings[2].length()-2);
+						example.hun = strings[2];
 						example.foreign = strings[1];
 
 						grammarItem.addExample(example);
