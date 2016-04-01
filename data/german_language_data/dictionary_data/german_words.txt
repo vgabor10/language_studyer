@@ -3067,7 +3067,7 @@
 3066	e Ehre	tisztelet, becsület
 3067	r Nachteil	hátrány
 3068	aufspringen	felugrik
-3069	anderthalb	másfél
+3069	anderthalb	másfél (mn)
 3070	absetzen	elad, elhelyez
 3071	mögen	szeret
 3072	anstelle	helyett
@@ -3548,7 +3548,7 @@
 3547	vielfach	sokszor
 3548	virtuell	virtuális
 3549	s Maß	mérték, méret
-3550	r Deutsche	német
+3550	r Deutsche	német (fn)
 3551	e Region	tartomány, vidék
 3552	ausführlich	részletesen
 3553	zumal	különösen
@@ -4007,7 +4007,7 @@
 4006	befragen	megkérdez
 4007	riechen	szagol
 4008	tödlich	halálos
-4009	belgisch	belga
+4009	belgisch	belga (mn)
 4010	e Regelung	szabályozás
 4011	s Drittel	harmad
 4012	anfangen	elkezd, kezdődik
