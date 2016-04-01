@@ -52,6 +52,7 @@ public class LanguageStudyer {
 		System.out.println("15 - delete grammarItem");
 		System.out.println("16 - grammarItemChooser test");
 		System.out.println("17 - number of answers by days");
+		System.out.println("18 - grammarItems with at least 10 examples ordered by last sutdy time");
 		System.out.println();
 		System.out.println("SETTINGS");
 		System.out.println("20 - set language to study");
@@ -512,6 +513,20 @@ public class LanguageStudyer {
 			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 			grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
+
+			console.readLine();
+		}
+
+		if (choice.equals("18")) {
+			System.out.print("\033[H\033[2J");
+			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+			grammarAnswerDataStatisticsMaker.toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime();
 
 			console.readLine();
 		}

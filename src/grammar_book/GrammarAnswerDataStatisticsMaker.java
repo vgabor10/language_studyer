@@ -53,6 +53,44 @@ public class GrammarAnswerDataStatisticsMaker {
 		}
 	}
 
+	public long getLastStudyTimeOfGrammarItem(int grammarItemIndex) {
+		long lastStudyTime = 0;
+		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
+			GrammarAnswerData answerData = grammarAnswerDataContainer.getAnswerData(i);
+			if (answerData.grammarItemIndex == grammarItemIndex && lastStudyTime < answerData.date) {
+				lastStudyTime = answerData.date;
+			}
+		}
+
+		return lastStudyTime;
+	}
+
+	public void toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime() {
+		Map<Long,Integer> LastStudyTimeAndGrammarItemIndex = new HashMap<Long,Integer>();
+		for (int grammarItemIndex : grammarBook.getGrammarItemIndexes()) {
+			if (10 <= grammarBook.getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+				long lastStudyDate = getLastStudyTimeOfGrammarItem(grammarItemIndex);
+				LastStudyTimeAndGrammarItemIndex.put(lastStudyDate,grammarItemIndex);
+			}
+		}
+
+		Set<Long> SortedLastStudyTime = new TreeSet<Long>(LastStudyTimeAndGrammarItemIndex.keySet());
+
+		System.out.println("GRAMMAR ITEM TITLE - LAST TIME STUDYED");
+		for (long date : SortedLastStudyTime) {
+			int grammarItemIndex = LastStudyTimeAndGrammarItemIndex.get(date);
+			if (date == 0) {
+				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title.toString()
+					+ " | grammar item never been tested");
+			}
+			else {
+				Date date2 = new Date(date);
+				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title.toString()
+					+ " | " + date2);
+			}
+		}
+	}
+
 	public void toScreenPercentageOfRightAnswersByGrammarItems() {
 		Map<Integer,Integer> numberOfRightAnswersByGrammarItems = new HashMap<Integer,Integer>();
 		Map<Integer,Integer> numberOfAnswersByGrammarItems = new HashMap<Integer,Integer>();
