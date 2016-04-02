@@ -10,10 +10,6 @@
 
 \setlength\parindent{0pt}
 
-%\theoremstyle{definition}
-%\newtheorem*{exmp}{Példák}
-%\newtheorem*{desc}{Leírás}
-
 \usepackage{verbatim}
 \newenvironment{desc}{\verbatim}{\endverbatim}
 \newenvironment{exmp}{\verbatim}{\endverbatim}
@@ -118,13 +114,11 @@ többes szám  | der
 GrammarItemIndex = 1
 
 \begin{desc}
-\begin{tabular}{ccccc}
- & hímnem & nőnem & semleges nem & többes szám 
- Nominativ & ein & eine & ein & keine 
- Akkusativ & einen & eine & ein & keine 
- Dativ & einem & einer & einem & keinen -n 
- Genitiv & eines -s & einer & eines -s & keiner 
-\end{tabular}
+          | hímnem   | nőnem | semleges nem | többes szám
+Nominativ | ein      | eine  | ein          | keine
+Akkusativ | einen    | eine  | ein          | keine
+Dativ     | einem    | einer | einem        | keinen -n
+Genitiv   | eines -s | einer | eines -s     | keiner
 \end{desc}
 
 \begin{exmp}
@@ -250,35 +244,33 @@ GrammarItemIndex = 2
 
 \subsubsection{Személyes névmás tárgyesete}
 
-GrammarItemIndex = 20
+GrammarItemIndex = 206354
 
 \begin{desc}
-\begin{tabular}{cccc}
- nominativ/alany & akusativ/tárgy 
- ich & mich 
- du & dich 
- er & ihn 
- sie & sie 
- es & es 
- wir & uns 
- ihr & euch 
- sie & sie 
- Sie & Sie 
-\end{tabular} 
+nominativ/alany | akusativ/tárgy
+ich             | mich
+du              | dich
+er              | ihn
+sie             | sie
+es              | es
+wir             | uns
+ihr             | euch
+sie             | sie
+Sie             | Sie
 \end{desc}
 
 %Maklári: 38. oldal
 \begin{exmp}
 1 | Wir hören euch. | Hallgatunk titeket.
-2 | István siecht sie. | István nézi őt (nő).
+2 | István sieht sie. | István nézi őt (n).
 3 | Ich höre sie. | Hallom őket.
 4 | Sie suchen uns. | Keresnek minket.
-5 | Helga liebt ihn. | Helga szereti őt (ffi).
+5 | Helga liebt ihn. | Helga szereti őt (f).
 6 | Mich ruft Peter. | Engem hív Peter.
 7 | Wir fragen euch. | Titeket kérdezünk.
 8 | Der Lehrer frägt mich. | A tanár engem kérdez.
 9 | Ich bitte Sie. | Kérem Önt.
-10 | Wir bitten Sie | Kérjük Önöket.
+10 | Wir bitten Sie. | Kérjük Önöket.
 11 | Hört ihr sie? | Halljátok őket?
 12 | Mutter liebt ihn. | Anya szereti őt (ffi).
 \end{exmp}
@@ -332,18 +324,16 @@ GrammarItemIndex = 155
 GrammarItemIndex = 18
 
 \begin{desc}
-\begin{tabular}{cccc}
- nominativ/alany & dativ/részes 
- ich & mein
- du & dein
- er & sein
- sie & ihr
- es & sein
- wir & unser
- ihr & euer
- sie & ihr
- Sie & Ihr
-\end{tabular}
+nominativ/alany | dativ/részes 
+ich             | mein
+du              | dein
+er              | sein
+sie             | ihr
+es              | sein
+wir             | unser
+ihr             | euer
+sie             | ihr
+Sie             | Ihr
 
 Ha a birtok nőnemű vagy többes számú, akkor a birtokos névmáshoz
 egy -e betűt illesztünk.
@@ -393,20 +383,18 @@ egy -e betűt illesztünk.
 GrammarItemIndex = 40
 
 \begin{desc}
-\begin{tabular}{ccccc}
- & hímnem & nőnem & semleges nem & többes szám 
-nominativ & mein & meine & mein & meine 
-akusativ & meinen & meine & mein & meine 
-dativ & meinem & meiner & meinem & meinen -s 
-genitiv & meines -s & meiner & meines ~s & meiner 
-\end{tabular}
+          | hímnem    | nőnem  | semleges nem | többes szám 
+nominativ | mein      | meine  | mein         | meine 
+akusativ  | meinen    | meine  | mein         | meine 
+dativ     | meinem    | meiner | meinem       | meinen -n 
+genitiv   | meines -s | meiner | meines -s    | meiner 
 \end{desc}
 
 %Maklári: 45. oldal
 \begin{exmp}
 1 | meinen Vater | az apámat
 2 | deiner Mutter | az anyágnak
-3 | meiner Oma | a nagymamámnak
+3 | meiner Großmutter | a nagymamámnak
 4 | eueren Tisch | az asztalotokat
 5 | unseren Freundinnenen | a barátnőinknek
 6 | unserer Freundin | a barátnőnknek
@@ -419,7 +407,7 @@ genitiv & meines -s & meiner & meines ~s & meiner
 13 | euer Auto | au autótokat
 14 | sein Haus | a házát (f)
 15 | seiner Frau | a feleségének
-16 | unseren Kindernen | a gyerekeinknek
+16 | unseren Kindern | a gyerekeinknek
 17 | euerem Kind | a gyereketeknek
 18 | unsere Lampe | a lámpánkat
 19 | deinem Hund | a kutyádnak
@@ -470,36 +458,20 @@ GrammarItemIndex = 4234
 
 GrammarItemIndex = 4322
 
-\subsection{Birtokos szerkezet von + D-val}
-
-GrammarItemIndex = 4324
-
-\begin{desc}
-der Sohn von dem Vater | az apa fia
-\end{desc}
-
-\begin{exmp}
-1 | die Tochter von der Mutter | az anya lánya
-2 | der Schuch von dem Vater | az apa cipője
-3 | die Brille von den Kindern | a gyerekek szemüvege
-4 | die Lampe von dem Einbrecher | a betörő lámpája
-5 | das Zeugnis dem  Schüler | a tanuló bizonyítványa
-\end{exmp}
-
 \subsection{Személynevek birtokos szerkezete}
 
 GrammarItemIndex = 42345
 
 \begin{desc}
-Peters Freundin | Péter barátnője
+Peters Freundin - Péter barátnője
 \end{desc}
 
 \subsection{Birtokos szerkezet von + D-val}
 
-GrammarItemIndex = 117
+GrammarItemIndex = 117336
 
 \begin{desc}
-der Sohn von dem Vater | az apa fia
+Pl.: der Sohn von dem Vater - az apa fia
 \end{desc}
 
 %Maklári: 30. oldal
@@ -509,11 +481,11 @@ der Sohn von dem Vater | az apa fia
 3 | die Brille von den Kindern | a gyerekek szemüvege
 4 | die Lampe von dem Einbrecher | a betörő lámpája
 5 | das Zeugnis von dem Schüler | a tanuló bizonyítványa
-6 | die Prothese von der Großmutter | a nagymama protézise
+6 | die Torte von der Großmutter | a nagymama tortája
 7 | der Kuli von dem Schüler | a tanuló tolla
-8 | die Spielzeuge den Kindern | a gyerekek játékai
-9 | das Gewissen dem Kontrolleur | az ellenőr lelkiismerete
-10 | der Humer dem Kontrolleur | az ellenőr humora
+8 | die Spielzeuge von den Kindern | a gyerekek játékai
+9 | die Mütze dem Kontrolleur | az ellenőr sapkája
+10 | der Humor von dem Kontrolleur | az ellenőr humora
 \end{exmp}
 
 \section{Módbeli segédigék}
@@ -663,12 +635,10 @@ sie/Sie möchten
 GrammarItemIndex = 5433
 
 \begin{desc}
-\begin{enumerate}
 müssen - egész bitzos, kétségtelen
 dürfen - valószínűleg
-können - lehet lehetséges
+können - lehet, lehetséges
 mögen - talán
-\end{enumerate}
 \end{desc}
 
 \begin{exmp}
@@ -684,8 +654,8 @@ GrammarItemIndex = 4235
 
 \begin{desc}
 
-sollen | állítólag, szóbeszéd szerint
-wollen | azt állítja, hogy; állítása szerint
+sollen - állítólag, szóbeszéd szerint
+wollen - azt állítja, hogy; állítása szerint
 
 \end{desc}
 
@@ -874,7 +844,6 @@ um - -kor, körül (térben)
 GrammarItemIndex = 13
 
 \begin{desc}
-\begin{enumerate}
 aus = -ból, -ből
 bei = -nál, -nél
 mit = -val, -vel
@@ -883,7 +852,6 @@ von = -tól, -től, -ról, -ről
 zu = -hoz, -hez, -höz
 seit = óta
 gegenüber = szemben, átellenben
-\end{enumerate}
 \end{desc}
 
 %Maklári: 61. oldal
@@ -894,7 +862,7 @@ gegenüber = szemben, átellenben
 4 | mit dem Kuli | a tollal
 5 | nach der Frühstück | reggeli után
 6 | nach Budapest | Budapestre
-7 | nach Vien | Bécsbe
+7 | nach Wien | Bécsbe
 8 | zu dem Lehrer | a tanárhoz
 9 | vod dem Schrank | a szekrénytől
 10 | zu der Oma | a nagyihoz
@@ -1018,34 +986,32 @@ GrammarItemIndex = 7863
 
 \subsection{Kötőszavak egyenes szórenddel}
 
-GrammarItemIndex = 53
+GrammarItemIndex = 536812
 
 \begin{desc}
 A következő kötöszavak után van egyenes szórend (usoda):
-
-und - és
-sondern - hanem
-oder - vagy
-denn - mert
-aber  de
-
+* und - és
+* sondern - hanem
+* oder - vagy
+* denn - mert
+* aber  de
 \end{desc}
 
 %Maklári: 144. oldal
 \begin{exmp}
-1 | Wir kaufen und ihr kochen. | Mi vásárolunk és ti főztök.
-2 | Ich bin nervös, denn mein Freund kommt nicht. | Ideges vagyok, mert nem jön a barátom.
+1 | Wir kaufen und ihr kocht. | Mi vásárolunk és ti főztök.
+2 | Ich bin nervös, denn mein Freund kommt. | Ideges vagyok, mert jön a barátom.
 3 | Gehe ich, oder kommst du? | Én megyek, vagy te jössz?
-4 | Er ist schlecht, aber du bekommst die Ohrfeige. | Ö (f) rossz, de te lapod a pofont.
+4 | Er ist schlecht, aber du bekommst die Ohrfeige. | Ö (f) rossz, de te kapod a pofont.
 5 | Ich bleibe zu Hause, denn ich bin krank. | Otthon maradok, mert beteg vagyok.
-6 | Heute ich spüle und du kaufst ver. | Ma én mosogatok és te vásárolsz be.
+6 | Ich spüle heute und du kaufst ver. | Ma én mosogatok és te vásárolsz be.
 7 | Ich bin müde, aber ich gehe. | Fáradt vagyok, de megyek.
-8 | Peter esst die Suppe nicht, sondern er trinkt. | Peter nem eszi a levest, hanem issza.
+8 | Peter isst die Suppe nicht, sondern er trinkt. | Peter nem eszi a levest, hanem issza.
 9 | Wir besuchen sie nicht, denn sie sind nich zu Hause. | Nem látogatjuk, meg őket, mert nincsenek otthon.
 10 | Wir reisen nach Italien, aber wir bleiben nur zwei Tage. | Olaszországba utazunk, de csak két napot maradunk.
-11 | Jetzt wir bleiben hier nicht, sondern wir gehen zu Hause. | Most nem maradunk itt, hanem haza megyünk.
+11 | Wir bleiben hier nicht, sondern wir gehen zu Hause. | Nem maradunk itt, hanem haza megyünk.
 12 | Die Gäste steigen in den Bus ein und der Bus fährt ab. | A vendégek beszállnak a buszba és a busz elindul.
-13 | Ich arbeite und sie (n) hört Musik. | Én dolgozom és ő zenét hallgat.
+13 | Ich arbeite und sie hört Musik. | Én dolgozom és ő (n) zenét hallgat.
 \end{exmp}
 
 \subsection{Alany elhagyása und kötőszó esetén}
@@ -1064,22 +1030,19 @@ Ha mindkét tagmondatban ugyanaz az alany, akkor nem kell az und után újra ki�
 
 \subsection{Kötőszavak fordított szórenddel}
 
-GrammarItemIndex = 11
+GrammarItemIndex = 116354
 
 \begin{desc}
-
-kötőszó + ige + alany + többi mondatrész
+Képzése: kötőszó + ige + alany + többi mondatrész
 
 A következő kötöszavak után van fordított szórend:
+* trotzdem - mégis
+* dann - aztán, akkor
+* sonst - különben
+* darum - ezért
+* deshalb - ezért
 
-trotzdem | mégis
-dann | aztán, akkor
-sonst | különben
-darum | ezért
-deshalb | ezért
-
-
-Pl.: Sie ist krank, darum sucht sie einen Arzt. | Beteg, ezért keres egy orvost.
+Pl.: Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost.
 \end{desc}
 
 %Maklári: 147. oldal
@@ -1087,7 +1050,7 @@ Pl.: Sie ist krank, darum sucht sie einen Arzt. | Beteg, ezért keres egy orvost
 1 | Zuerst gehe ich zu Hause, dann esse ich. | Először haza megyek, aztán eszek.
 2 | Ich esse das Mittagessen, dann spazieren wir. | Megeszem az ebédet, aztán sétálunk.
 3 | Das Wetter ist schön, deshalb bleiben wir nicht Zu Hause. | Az idő szép, ezért nem maradhatunk otthon.
-4 | Du schreibst die Lektion, sonst bekommst du eine Eins! | Megírod a leckét, különben kapsz egy egyest!
+4 | Du schreibst die Lektion, sonst bekommst du eine Eins. | Megírod a leckét, különben kapsz egy egyest.
 5 | Wir lernen ein klein, dann spielen wir Fußball. | Tanulunk egy kicsit, aztán focizunk.
 6 | Wir arbeiten, dann gehen wir in Knepie. | Dolgozunk, aztán megyünk a kocsmába.
 7 | Er arbeitet viel, darum ist er reich. | Sokat dolgozik, ezért gazdag.
@@ -1311,9 +1274,7 @@ GrammarItemIndex = 543266
 \begin{exmp}
 \end{exmp}
 
-\section{Fontos igék}
-
-\subsection{haben}
+\subsubsection{haben}
 
 GrammarItemIndex = 42343
 
@@ -1344,39 +1305,45 @@ sie/Sie & haben
 9 | Hans und Gertrud haben einen Garten. | Hansnak és Gertrudnak van egy kertje.
 \end{exmp}
 
-\subsection{werden}
+\subsubsection{A werden}
 
-GrammarItemIndex = 54326
+GrammarItemIndex = 543264
 
 \begin{desc}
 A werden ige azt fejezi ki, hogy valaki vagy valami válik, lesz
-valamivé, tehát egy folyamatot jelöl azidőben:
-Ich werde Millionär.
+valamivé.
+Pl.: Ich werde Millionär.
 
-\begin{tabular}{cc}
- ich & werde 
- du & wirst 
- er/sie/es & wird 
- wir & werden 
- ihr & werdet 
- sie/Sie & werden 
-\end{tabular}
+werden ragozása:
+ich werde - leszek 
+du wirst - leszel
+er/sie/es wird - lesz
+wir werden - leszünk
+ihr werdet - lesztek
+sie/Sie werden - lesznek
 \end{desc}
 
+%Maklári: 22.oldal
 \begin{exmp}
-1 | Ich werde böse! | Mérges leszek!
+1 | Ich werde alt. | Öreg leszek.
 2 | Józsi wird Lehrer. | Tanár lesz Józsi.
 3 | Wir werden hungrig. | Éhesek leszünk.
-4 | Ihr werdet frisch. | Frissek lesztek.
-5 | Wirst du Lehrer? | Tanár leszel?
-6 | Ihr werdet durstig. | Szomjasak Lesznek.
-7 | Bözsi wird Hausfrau. | Bözsi házlasszony lesz.
-8 | Wir werden reich. | Gazdagok leszünk.
-9 | Anna wird müde. | Anna fáradt lesz.
+4 | Anna wird müde. | Anna fáradt lesz.
+5 | Ihr werdet frisch. | Frissek lesztek.
+6 | Wirst du Lehrer? | Tanár leszel?
+7 | Sie werden durstig. | Szomjasak lesznek.
+8 | Sie wird traurig. | Szomorú lesz (n).
+9 | Ich werde böse. | Mérges leszek.
 10 | Die Lehrerin wird gesund. | A tanárnő egészséges lesz.
+11 | Pista wird Ingenieur. | Pista mérnök lesz.
+12 | Wirst du Arst? | Orvos leszel?
+13 | Bözsi wird Hausfrau. | Bözsi házlasszony lesz.
+14 | Wir werden reich. | Gazdagok leszünk.
+15 | Ich werde stark und klug. | Erős és okos leszek.
+16 | Die Kinder werden hungrig. | Éhesek lesznek a gyerekek.
 \end{exmp}
 
-\subsection{wissen}
+\subsubsection{wissen}
 
 GrammarItemIndex = 7452
 
@@ -1405,7 +1372,7 @@ Tante Ancika weiß alles. | Ancika néni mindent tud.
 7 | Wir wissen das. | Azt tudjuk.
 \end{exmp}
 
-\subsection{tun}
+\subsubsection{tun}
 
 GrammarItemIndex = 54327
 
@@ -1443,7 +1410,7 @@ Pl.: Meine Oma tut alles für uns. - A nagyim mindent megtesz értünk.
 16 | Was tust du damit? | Mit csinálsz ezzel?
 \end{exmp}
 
-\subsubsection{A tun szélesebb felhasználási lehetőségei}
+\paragraph{A tun szélesebb felhasználási lehetőségei}
 
 GrammarItemIndex = 5223
 
@@ -1452,28 +1419,28 @@ GrammarItemIndex = 5223
 GrammarItemIndex = 6
 
 \begin{desc}
-Er wohnt hier. | Ő itt lakik.
+Er wohnt hier. - Ő itt lakik.
 \end{desc}
 
 \begin{exmp}
 1 | Ich trinke langsam. | Lassan iszok.
 2 | Ihr kommt schnell. | Gyorsan jöttök.
 3 | Wir trinken Wein. | Bort iszunk.
-4 | Sie kommet hier. | Itt jön (nő).
+4 | Sie kommt hier. | Itt jön (nő).
 5 | Der Bus kommt dort. | Ott jön a busz.
 6 | Tina arbeitet langsam. | Tina lassan dolgozik.
 7 | Sie trinkt Wasser. | Vizet iszik (nő).
 8 | Ihr lernt gut. | Jól tanultok.
-9 | Wir reden immer. | Mindi beszélünk.
+9 | Wir sprechen immer. | Mindig beszélünk.
 10 | Er geht nach Hause. | Hazamegy (ff).
 11 | Sie singen schön. | Szépen énekel. (Ön)
 12 | Wir arbeiten hier. | Itt dolgozunk.
 13 | Wir hören Musik. | Zenét hallgatunk.
-14 | Sie reden dort. | Ott beszélnek.
+14 | Sie sprechen dort. | Ott beszélnek.
 15 | Sie geht langsam. | Lassan megy. (nő)
 16 | Er kommt schnell. | Gyorsan jön. (ffi)
 17 | Der Zug steht. | A vonat áll.
-18 | Das Mädchen wohnen hier. | A lány itt lakik.
+18 | Das Mädchen wohnt hier. | A lány itt lakik.
 19 | Jörg arbeitet. | Jörg dolgozik.
 20 | Sie wohnen dort. | Ott laknak.
 \end{exmp}
@@ -1485,7 +1452,8 @@ GrammarItemIndex = 9
 \begin{desc}
 Ha valamit ki akarunk emelni a mondatból és felhívni rá a figyelmet,
 akkor azt az első helyre tesszük, az alany pedig az ige után a 3. helyre kerül.
-Pl.: Hier wohnt er. | Itt lakik.
+
+Pl.: Hier wohnt er. - Itt lakik.
 \end{desc}
 
 \begin{exmp}
@@ -1639,7 +1607,6 @@ Az alábbi igekötők nem válnak el az igétől:
 ge-, be-, er-, re-, ent-, emp-, ver-, zer-, miss-
 
 Néhány ilyen ige:
-
 gefallen - tetszik
 bezahlen - kifizet
 erzählen - elmesél
@@ -1648,7 +1615,6 @@ empfehlen - ajánl
 verstehen - megért
 zerstören - lerombol
 missverstehen - félreért
-
 \end{desc}
 
 \begin{exmp}
@@ -1658,17 +1624,17 @@ missverstehen - félreért
 4 | Warum kannst du nie entdecken? | Miért nem tudsz semmit sem felfedezni?
 5 | Ich empfehle dir diese Lösung. | Ezt a megoldást ajánlom neked.
 6 | Ich empfehle mich. | Ajánlom magamat.
-7 | Ich empfehle dir dieses Buch. | Ajánlom neked ezt a könyvet.
-8 | Verstähst du dass? | Érted azt?
-9 | Er zerstört immer. | Mindent lerombol (hím).
-10 | Sie missversteht mich immer. | Mindig félreért engem.
-11 | Kannst du verstehe nicht, dass ich kann nicht kommen. | Nem tudod megérteni, hogy nem tudok jönni? !!!
-12 | Ich empfehle dir ein gut Restaurant. | Ajánlok neked egy jó éttermet. !!!!
+7 | Ich empfehle dir diesen Buch. | Ajánlom neked ezt a könyvet.
+8 | Verstehst du das? | Érted azt?
+9 | Er zerstört immer. | Mindent lerombol (f).
+10 | Sie missversteht mich immer. | Mindig félreért (n) engem.
+11 | Kannst du den Satz verstehen? | Nem tudod megérteni a mondatot?
+12 | Ich empfehle dir eine Restaurant. | Ajánlok neked egy éttermet.
 13 | Der Kind zerstört seine Spielzeuge. | A gyerek összetöri a játékait.
 14 | Ich bezahle die Suppe und du bezählt die Süßigkeit. | Én fizetem a levest és te az édességet.
 15 | Gefallt den Eltern die Wohnung? | Tetszik a szülőknek a lakás?
-16 | Erzählt du mir die Geschichte der Ehre! | Meséld el neken a házasságod történetét! !!!!
-17 | Wann erzählst du die Geschichte? | Mikor meséled el azt a történetet? !!!!
+16 | Erzählst du mir die Geschichte deiner Ehre? | Elemséled neken a házasságod történetét!
+17 | Wann erzählst du die Geschichte? | Mikor meséled el a történetet?
 \end{exmp}
 
 \subsection{Hol elváló, hol nem elváló igekötős igék}
@@ -1723,34 +1689,61 @@ Pl: Wann kommst du nach Hause?
 GrammarItemIndex = 5253
 
 \begin{desc}
-nein: egész mondatot tagadunk vele
+A nein szóval egész mondatot tagadunk. A nein után mindig pont, vagy vessző áll.
 
-Pl.: Nein, ich liebe dich nicht. | Nem, én nem szeretlek téged.
+Pl.: Nein, ich liebe dich nicht. - Nem, én nem szeretlek téged.
 \end{desc}
 
-\subsection{nicht}
+\subsection{A nicht}
 
-GrammarItemIndex = 5335
+GrammarItemIndex = 533598
+
+Importance = 1
 
 \begin{desc}
-nicht: mondatrészt tagadunk vele
+A nicht szóval mondatrészt tagadunk.
 
-\begin{enumerate}
-Ha az állítmány egy tagú, akkor a mondat végén áll a nicht.
-
-Pl.: Mein Vater kommt heute nicht. | Apám ma nem jön.
-
-Ha az állítmány több tagú, akkor a nicht a mondat végére, az állítmány ragozatlan rész elé kerül.
-
-Pl.: Wir stehen heute nicht auf. | Mi nem kelünk fel ma.
-Pl.: Ich kann morgen nicht kommen. | Holnap nem tudok jönni.
-Pl.: Wir haben den Brief nicht gelesen. | Nem olvastuk a levelet.
-
-Ha egy bizonyos mondatrész tagadunk, akkor az elé tesszük.
-He prepozíciós alak van a mondatben, akkor az elé tesszük.
-Pl.: Wir fahren nicht nach Deutschland. | Nem utazunk Németországba.
-\end{enumerate}
+* Ha az állítmány egy tagú, akkor a mondat végén áll a nicht.
+  Pl.: Mein Vater kommt heute nicht. - Apám ma nem jön.
+* Ha az állítmány több tagú, akkor a nicht a mondat végére, az állítmány ragozatlan rész elé kerül.
+  Pl.: Wir stehen heute nicht auf. - Mi nem kelünk fel ma.
+       Ich kann morgen nicht kommen. - Holnap nem tudok jönni.
+       Wir haben den Brief nicht gelesen. - Nem olvastuk a levelet.
+* Ha egy bizonyos mondatrész tagadunk, akkor az elé tesszük.
+  Pl.: Ich suche nich dich, sondern ihn. - Nem téged kereslek, hanem őt.
+* Ha prepozíciós alak van a mondatban, akkor az elé tesszük.
+  Pl.: Wir fahren nicht nach Deutschland. - Nem utazunk Németországba.
 \end{desc}
+
+%Maklári: 130.oldal
+\begin{exmp}
+1 | Ich komme nicht. | Nem megyek.
+2 | Er kommt nicht. | Nem jön (f).
+3 | Sie schläft jetzt nicht. | Most nem alszik (n).
+4 | Wir lesen nicht. | Nem olvasunk.
+5 | Sie schreiben ihm nicht. | Nem írnak neki (f).
+6 | Ich trinke jetzt nicht. | Most nem iszok.
+7 | Vater geht jetzt nicht weg. | Apa most nem megy el.
+8 | Der Zug fährt nicht an. | A vonat nem indul el.
+9 | Sie schläft schnell nicht ein. | Nem alszik (n) el gyorsan.
+10 | Oma kann nicht gehen. | Nagyi nem tud menni.
+11 | Ich kann jetzt nicht laufen. | Nem tudok most futni.
+12 | Ich habe ihr nicht gesehen. | Nem láttam őt (n).
+13 | Wir haben nicht getrunken. | Nem ittunk.
+14 | Ich habe gestern nicht geschlafen. | Tegnap nem aludtam.
+15 | Ich suche nicht sie. | Nem őt (n) keresem.
+16 | Ich sehe nicht dich. | Nem téged nézlek.
+17 | Wir suchen nicht den Schlüssel. | Nem a kulcsot keressük.
+18 | Ich aß nicht deine Suppe. | Nem a te levesedet eszem.
+19 | Nicht seine Ferundin steht dort. | Nem az ő (f) barátnője áll ott.
+20 | Nicht unser Lehrer steht hier. | Nem a mi tanárunk áll itt.
+21 | Unsere Freunde sind nicht bei euch. | A barátaink nincsenek nálatok.
+22 | Sie kommt nich bei uns. | Nem jön (n) velünk.
+23 | Die Gäste gehen morgen nicht zu Hause. | A vendégek holnap nem mennek haza.
+24 | Wir schlafen jetzt nicht zu Hause. | Most nem alszunk otthon.
+25 | Wir essen heute nicht bei euch. | Ma nem eszünk nálatok.
+26 | Er ist nicht in seinem Zimmer. | Nincsa szobájában (f).
+\end{exmp}
 
 \subsection{kein}
 
@@ -1853,15 +1846,12 @@ Ich wasche mir die Hände. | Mosom a kezeimet.
 GrammarItemIndex = 5453
 
 \begin{desc}
-\begin{tabular}{ll}
- | mich & magam 
- | dich & magad 
- | sich & magát 
- | uns & magunkat 
- | euch & magatokat 
- | sich & magukat 
-\end{tabular}
-
+mich & magam 
+dich & magad 
+sich & magát 
+uns & magunkat 
+euch & magatokat 
+sich & magukat 
 
 sich waschen - mosakodik
 sich kämmen - fésülködik
@@ -1870,7 +1860,6 @@ sich anziehen - felöltözik
 sich ausziehen - levetkőzik
 sich fühlen - érzi magát valahogy
 sich freuen - örül
-
 \end{desc}
 
 \begin{exmp}
@@ -1927,7 +1916,7 @@ formája is, mely jelentésüket is módosítja.
 
 \subsection{Präteritum - elbeszélő múlt}
 
-\subsubsection{Attekintés}
+\subsubsection{Áttekintés}
 
 GrammarItemIndex = 54358
 
@@ -2058,7 +2047,7 @@ geben - gab
 
 \subsubsection{Vegyes igék}
 
-GrammarItemIndex = 54355
+GrammarItemIndex = 543558
 
 \begin{desc}
 Vegyes igéknél a tőhang megváltozik és -te végződést is kap.
@@ -2071,15 +2060,13 @@ ihr dachtet
 sie/Sie dachten
 
 Példák vegyes igékre:
-
-denken - dachte
-nennen - nannte
-kennen - kannte
-bringen - brachte
-rennen - rannte
-wissen - wusste
-brennen - brannte
-
+* denken -> dachte (gondol)
+* nennen -> nannte (nevez)
+* kennen -> kannte (ismer)
+* bringen -> brachte (hoz)
+* rennen -> rannte (rohan)
+* wissen -> wusste (tud)
+* brennen -> brannte (ég)
 \end{desc}
 
 %Maklári: 245. oldal
@@ -2144,7 +2131,7 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 11 | Wie war das Wetter? | Milyen volt az idő?
 12 | Wart ihr böse auf mich? | Mérgesek voltatok rám?
 13 | Waren Sie schon in dem Wald? | Volt (Ön) már az erdőben?
-14 | Wir waren in Vien. | Bécsben voltunk.
+14 | Wir waren in Wien. | Bécsben voltunk.
 15 | Ich war müde. | Fáradt voltam.
 16 | Wir waren bei ihnen nicht. | Nem voltunk náluk.
 17 | Wie war das Film? | Milyen volt a film?
@@ -2156,7 +2143,7 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 
 \subsubsection{A haben Präteriuma}
 
-GrammarItemIndex = 764
+GrammarItemIndex = 764658
 
 \begin{desc}
 ich hatte
@@ -2174,7 +2161,7 @@ Pl.: Ich hatte zwei Flöhe. - Kér bolhám volt.
 1 | Er hatte ein Haus. | Volt (f) egy háza.
 2 | Hatten sie zehn Kinder? | Volt tíz gyerekük?
 3 | Ich hatte Angst. | Féltem.
-4 | Sie hatte Kopfschmerzen. | Fájt a feje.
+4 | Sie hatte Kopfschmerzen. | Fájt (n) a feje.
 5 | Sie hatte Lust dazu. | Volt kedve (n) hozzá.
 6 | Hattet ihr Hausaufgabe? | Volt házitok?
 7 | Hattest du Zeit? | Volt időd?
@@ -2361,30 +2348,30 @@ können -> hat gekonnt
 
 \paragraph{Ha a módbeli segédige igével áll}
 
-GrammarItemIndex = 42352
+GrammarItemIndex = 423526
 
 \begin{desc}
-Pl.: Ich habe mit ihm nicht spielen wollen. - Nem akartam vele játszani.
-
 Képzése:
 alany + haben ragozott alakja + többi mondatrész + ige infinitivben + módbeli segédige infinitivben
+
+Pl.: Ich habe mit ihm nicht spielen wollen. - Nem akartam vele játszani.
 \end{desc}
 
-%Maklári: 241.oldal
+%Maklári: 240.oldal
 \begin{exmp}
-1 | Er hat nicht uns sehen wollen. | Nem akart látni bennünket.
+1 | Er hat nicht uns sehen wollen. | Nem akart (f) látni bennünket.
 2 | Ich habe nicht in dem Zimmer rauchen dürfen. | A szobában nem volt szabad dohányoznom.
 3 | Habt ihr in das Schwimmbad gehen dürfen? | Szabad volt az uszodába mennetek?
 4 | Ihr habt nicht spülen mögen. | Nem szerettek mosogatni.
 5 | Wann habt ihr zu Hause gehen müssen? | Mikor kellet hazamennetek?
-6 | Ich habe in der Stadt spazieren dürfen. | Szerettem sétálni a városban.
+6 | Ich habe in der Stadt spazieren möchten. | Szerettem sétálni a városban.
 7 | Ich habe mit Puskás Fußball spielen wollen. | Focizni akartam Puskással.
 8 | Sie hat mit mir sprechen wollen. | Beszélni akart (n) velem.
-9 | Er hat siene Hausaufgabe schreiben müssen. | Mek kellett írnia a házi feladatát.
+9 | Er hat seine Hausaufgabe schreiben müssen. | Meg kellett írnia a házi feladatát (f).
 10 | Ich habe von dir ewas fragen wollen. | Akartam kérdezni tőled valamit.
-11 | Ich habe früh ides Bett gehen müssen. | Korán ágyba kellet mennem.
+11 | Ich habe früh in das Bett gehen müssen. | Korán ágyba kellet mennem.
 12 | Wann hat er dich erwecken wollen? | Mikor akart (f) felébreszteni téged?
-13 | Wir haben ihr nicht helfen können. | Már nem tudtunk neki (n) segíteni.
+13 | Wir haben nicht ihr helfen können. | Nem tudtunk neki (n) segíteni.
 14 | Der Krank hat nicht aufstehen dürfen. | A beteg még nem kelt fel.
 15 | Ich habe nich gut antworten können. | Nem tudtam jól válaszolni.
 16 | Er hat seine Suppe essen müssen. | Meg kelett (f) ennie a levesét.
@@ -2654,7 +2641,7 @@ GrammarItemIndex = 423216
 Importance = 1
 
 \begin{desc}
-alany + wurden + többi mondatrész + ige befelyezett alakja
+Képzése: alany + wurden + többi mondatrész + ige befelyezett alakja
 
 Pl.: Ein Haus wurde von Peter gebaut. - "Egy ház péter által volt építve."
 
@@ -2676,10 +2663,10 @@ sie/Sie wurden
 5 | Die Tablette wurde nicht von den Kranken einnehmen. | A betegek nem vették be a tablettát.
 6 | Der Kranke wurde von dem Arzt geheilt. | A beteget meggyógyította az orvos.
 7 | Die Uhr wurde von dem Vater repariert. | Az apa megjavította az órát.
-8 | Meine Bücher wurden von Peter verkaufen. | A könyveimet Péeter vette meg.
+8 | Meine Bücher wurden von Peter gekauft. | A könyveimet Péter vette meg.
 9 | Die Tür wurde geklopft. | AZ ajtót kopogtatták.
 10 | Mein Buch wurde von meiner Freundin lesen. | A barátnőm olvasta a könyvemet.
-11 | Die Uhr wurde nich von der Mutter aufziehen. | Az anya nem húzta fel az órát.
+11 | Die Uhr wurde nich von der Mutter gesehen. | Az anya nem nézte meg az órát.
 12 | Das Tisch wurde nich von Józsi gedeckt. | Józsi nem terítette meg az asztalt.
 13 | Die Burg wurde durch den Wind zerstören. | A várat a szél lerombolta.
 14 | Mein Zimmer wurde gemalt. | A szobámat kifestették.
@@ -2708,17 +2695,17 @@ Das Auto must von dem Mechanicer repariert werden. - A szerelőnek meg kell jav�
 %Maklári: 334.oldal
 \begin{exmp}
 1 | Der Apfel darf nich gegessen werden. | Az almát nem szabad megenni.
-2 | Das Zimmer muss ausgeräumnt werden. | A szobát ki kell takarítani.
+2 | Das Zimmer muss ausgeräumt werden. | A szobát ki kell takarítani.
 3 | Das Fenster muss geöffnet werden. | Az ablakot ki kell nyitni.
 4 | Hier darf nich geparkt werden. | Itt nem szabad parkolni.
 5 | Das Brief muss gesandt werden. | A levelet el kell küldeni.
 6 | Die Bücher muss ausgeliehen werden. | A könyveket ki kell kölcsönözni.
 7 | Die Alten sollen geholfen werden. | Az öregeknek segíteni kell.
 8 | Dieses Motorrad muss repariert werden. | Ezt a motorbiciklit meg kell javítani.
-9 | Das Brief muss durch die Post gegeben werden. | A postának oda kell adni a levelet.
+9 | Das Brief muss für die Post gegeben werden. | A postának oda kell adni a levelet.
 10 | Die Suppe kann schon gegessen werden. | A levest már meg lehet enni.
 11 | Die Häuser dürfen gemietet werden. | A házakat ki lehet bérelni.
-12 | Geschänk musst für die Oma gekauft werden. | A nagyinak ajándékot kell venni.
+12 | Geschänk muss für die Oma gekauft werden. | A nagyinak ajándékot kell venni.
 13 | Der Kuchen darf nicht von den Kindern gegessen werden. | A gyerekek nem ehetik meg a süteményt.
 14 | Sie muss besucht werden. | Meg kell látogatni őt (n).
 15 | Das Auto darf von dir schnell gefahren werden. | Vezetheted gyorsan az autót.
@@ -2795,53 +2782,21 @@ Pl.: Die Tür ist geschlossen gewesen. - Az ajtó be volt zárva.
 
 \section{Melléknévfokozás}
 
-\subsection{Melléknévfokozás | Reguláris melléknevek}
+\subsection{Melléknévfokozás - Reguláris melléknevek}
 
 GrammarItemIndex = 534452
 
 \begin{desc}
 
 \begin{enumerate}
-Alapfok: szótári alak
-Középfok: melléknév + er
-
-Pl.: schöner | szebb
-
-Felsőfok:
-\begin{enumerate}
-határozószóként használt melléknév esetén: melléknév + sten
-
-Pl.: schönsten | legszebb
-
-jelzőként használt melléknév esetén: (névelő) + melléknév + ste + (főnév)
-
-Pl.: die schönste Frau | a legszebb nő
-\end{enumerate}
-
-Abszolút felsőfok:
-\end{enumerate}
+* Alapfok: szótári alak
+* Középfok: melléknév + er
+  Pl.: schöner - szebb
+* Felsőfok: melléknév + ste
+  Pl.: die schönste Frau - a legszebb nő
 \end{desc}
 
 \begin{exmp}
-1 | dicker | kövérebb
-2 | dickste | legkövérebb
-3 | magerer | soványabb
-4 | niedriger | alacsonyabb
-5 | billiger | olcsóbb
-6 | breiter | szélesebb
-7 | geschickter | ügyesebb
-8 | schneller | gyorsabb
-9 | langsamer | lassabb
-10 | teuer | drágább
-11 | dickste | legkövérebb
-12 | magerste | legsoványabb
-13 | niedrigste | legalacsonyabb
-14 | billigste | legolcsóbb
-15 | breiterste | legszélesebb
-16 | geschicktste | legügyesebb
-17 | schnellste | leggyorsabb
-18 | langsamte | leglassabb
-19 | teuerste | legdrágább
 \end{exmp}
 
 \subsection{Rendhagyó melléknevek}
@@ -2857,7 +2812,7 @@ hoch | höher | höchste
 groß | größer | größte
 \end{desc}
 
-\subsection{Melléknévfokozás | Umlautos melléknevek}
+\subsection{Melléknévfokozás - Umlautos melléknevek}
 
 GrammarItemIndex = 42342321
 
@@ -2879,19 +2834,6 @@ scharf
 \end{desc}
 
 \begin{exmp}
-1 | älter | öregebb
-2 | kälteste | leghidegebb
-3 | jünger | fiatalabb
-4 | stäreker | erősebb
-5 | länger | hosszabb
-6 | wärmeste | legmelegebb
-7 | kürzer | rövidebb
-8 | härter | keményebb
-9 | schwächer | gyengébb
-10 | dümmer | butább
-11 | klügeste | legokosabb
-12 | ärmer | szegényebb
-13 | schärfeste | legélesebb
 \end{exmp}
 
 \section{Az es gibt szerkezet}
@@ -2901,7 +2843,7 @@ GrammarItemIndex = 423424312
 \begin{desc}
 Az es gibt+A (= van) szerkezet használatáról: Az "es gibt" szerkezetet akkor használjuk, ha valaminek a létezését vagy a nem létezését hangsúlyozzuk.
 
-Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. -Sok látnivaló van Salzburgban.
+Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. - Sok látnivaló van Salzburgban.
 \end{desc}
 
 \begin{exmp}
@@ -2996,20 +2938,15 @@ GrammarItemIndex = 43242
 
 \begin{desc}
 Erős ragozás használatos, ha:
+* a főnévhez nem tartozik névelő (Gute nacht!),
+* tőszámnév tartozik a főnévhez (drei gute Bücher),
+* határozatlan tartozika főnévhez (viele gute Freunde).
 
-
-	a főnévhez nem tartozik névelő (Gute nacht!),
-	tőszámnév tartozik a főnévhez (drei gute Bücher),
-	határozatlan tartozika főnévhez (viele gute Freunde).
-
-
-\begin{tabular}{ccccc}
- |  & hímnem & nőnem & semleges nem & többes szám
- | N & guter Wein & warme Milch & frisches Brot & gute Bücher
- | A & guten Wein & warme Milch & frisches Brot & gure Bücher
- | D & gutem Wein & warmer Milch & frischem Brot & guten Büchern
- | G & guten Weines & warmer Milch & frischen Brotes & guter Bücher
-\end{tabular}
+  |hímnem & nőnem & semleges nem & többes szám
+N | guter Wein & warme Milch & frisches Brot & gute Bücher
+A | guten Wein & warme Milch & frisches Brot & gure Bücher
+D | gutem Wein & warmer Milch & frischem Brot & guten Büchern
+G | guten Weines & warmer Milch & frischen Brotes & guter Bücher
 \end{desc}
 
 \subsection{Gyenge ragozás}
@@ -3019,70 +2956,6 @@ GrammarItemIndex = 43242132
 \subsection{Vegyes ragozás}
 
 GrammarItemIndex = 43122
-
-\section{Passzív mondetszerkezet}
-
-\subsection{Passzív jelen időben}
-
-GrammarItemIndex = 13325
-
-\begin{desc}
-Képzése: werden ragozott alakja + ige Partizip Perfekt alakja
-Passziv mondat alanyát von + D (cselekvő alany), vagy durch + A (élettelen a cselekvés okozója) szószerkezettel fejezhetjük ki.
-\end{desc}
-
-\begin{exmp}
-1 | Ein Haus wird von Peter gebaut. | Péter épít egy házat.
-2 | Das Fleisch wird von Opa gebraten. | A húst nagyapa süti.
-3 | Oma wird durch das Heilwasser geheilt. | A gyógyvíz meggyógyítja nagyit.
-4 | Die Suppe wird von Mutti gekocht. | Anya levest főz.
-5 | Viele Motorraden werden von dem Verkäufer verkauft. | A vásárló sok motorkerékpárt vásárol.
-\end{exmp}
-
-\subsection{Passzív elbeszélő múlt időben}
-
-GrammarItemIndex = 43242321
-
-\begin{desc}
-Képzése: wurden ragozott alakja + ige Partizip Perfekt alakja
-\end{desc}
-
-\begin{exmp}
-1 | Das Haus wurde von Peter gebaut. | A házat Péter építette.
-2 | Die Suppe wurde von Oma gekocht. | A levest mama főzte.
-3 | Die Uhren wurden repariert. | Az órákat megjavították.
-4 | Wohin wurden die Regale gestellt? | Hová állították a polcokat?
-5 | Die Musik wurde von den Gästen gehört. | A vendégek zenét hallgattak.
-\end{exmp}
-
-\subsection{Passzív befelyezett múlt időben}
-
-GrammarItemIndex = 44232
-
-\begin{desc}
-Képzése: sein ragozott alakja + ige Partizip Perfekt alakja + worden
-\end{desc}
-
-\begin{exmp}
-1 | Das Haus ist von Peter gebaut worden. | A házat Péter építette.
-2 | Mein Fieber ist von dem Arzt gemessen worden. | Az orvos megmérte a lázamat.
-3 | Die Geschenke sind schon gekauft worden. | Az ajándékokat mevették már.
-\end{exmp}
-
-\subsection{Passzív jelen időben módbeli segédigével}
-
-GrammarItemIndex = 43242654
-
-\begin{desc}
-Képzése: módbeli segédige ragozott alakja + ige Partizip Perfekt alakja + werden
-\end{desc}
-
-\begin{exmp}
-1 | Das Auto muss von dem Mechaniker repariert werden. | Az autót meg kell javítania a szerelőnek.
-2 | Der Apfel darf nicht gegessen werden. | Az almát nem szabad megenni.
-3 | Das Zimmer muss aufgeräumt werden. | A szobát rendbe kell tenni.
-4 | Der Patient darf operiert werden. | A beteget meg szabad operálni.
-\end{exmp}
 
 \section{Az általános alany}
 
