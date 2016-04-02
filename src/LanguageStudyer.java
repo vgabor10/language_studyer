@@ -445,7 +445,7 @@ public class LanguageStudyer {
 				a = console.readLine();
 				if (!a.equals("")) {
 					System.out.print("\033[H\033[2J");
-					System.out.println(grammarBook.getGrammarItemByIndex(Integer.parseInt(a)).toString());
+					System.out.println(grammarBook.getGrammarItemByOrder(Integer.parseInt(a)).toString());
 					console.readLine();
 				}
 			} while (!a.equals(""));
