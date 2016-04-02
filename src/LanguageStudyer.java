@@ -47,13 +47,9 @@ public class LanguageStudyer {
 		System.out.println("10 - practicing");
 		System.out.println("11 - read grammar book");
 		System.out.println("12 - basic statistics");
-		System.out.println("13 - percentage of right answers by grammar items");
-		System.out.println("14 - modificate grammar item on frame TODO: implemet");
-		System.out.println("15 - delete grammarItem");
-		System.out.println("16 - grammarItemChooser test");
-		System.out.println("17 - number of answers by days");
-		System.out.println("18 - grammarItems with at least 10 examples ordered by last sutdy time");
-		System.out.println("19 - practising with the last studyed grammar item with at least 10 examples");
+		System.out.println("13 - additional statistics");
+		System.out.println("14 - modificate grammar item");
+		System.out.println("15 - grammarItemChooser test");
 		System.out.println();
 		System.out.println("SETTINGS");
 		System.out.println("20 - set language to study");
@@ -397,22 +393,45 @@ public class LanguageStudyer {
 
 		if (choice.equals("10")) {
 			System.out.print("\033[H\033[2J");
-			grammarBook.toScreenTableOfContents();
-			System.out.println();
-			System.out.println("index of gramarItem you would like to study:");
-			try{
-				int orderIndex = Integer.parseInt(console.readLine());
-				if (0 <= orderIndex && orderIndex < grammarBook.numberOfGrammarItems()) {
-					GrammarTester grammarTester = new GrammarTester();
-					grammarTester.setGrammarBook(grammarBook);
-					grammarTester.performTestByOrderIndex(orderIndex, 10);
+
+			System.out.println("1 - practising with given grammar item");
+			System.out.println("2 - practising with the last studyed grammar item with at least 10 examples");
+
+			String c = console.readLine();
+			if (c.equals("1")) {
+				System.out.print("\033[H\033[2J");
+				grammarBook.toScreenTableOfContents();
+				System.out.println();
+				System.out.println("index of gramarItem you would like to study:");
+				try{
+					int orderIndex = Integer.parseInt(console.readLine());
+					if (0 <= orderIndex && orderIndex < grammarBook.numberOfGrammarItems()) {
+						GrammarTester grammarTester = new GrammarTester();
+						grammarTester.setGrammarBook(grammarBook);
+						grammarTester.performTestByOrderIndex(orderIndex, 10);
+					}
+					else {
+						System.out.print("\033[H\033[2J");
+						System.out.println("there is not exists GrammarItem with given index");
+						console.readLine();
+					}
+				} catch (NumberFormatException e) {
 				}
-				else {
-					System.out.print("\033[H\033[2J");
-					System.out.println("there is not exists GrammarItem with given index");
-					console.readLine();
-				}
-			} catch (NumberFormatException e) {
+			}
+
+			if (c.equals("2")) {
+				System.out.print("\033[H\033[2J");
+				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
+				GrammarTester grammarTester = new GrammarTester();
+				grammarTester.setGrammarBook(grammarBook);
+				grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
 			}
 		}
 
@@ -442,6 +461,7 @@ public class LanguageStudyer {
 			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 			grammarAnswerDataStatisticsMaker.toScreenNumberOfGrammarItems();
+			grammarAnswerDataStatisticsMaker.toScreenNumberOfGrammarItemsWithAtLeast10Examples();
 			grammarAnswerDataStatisticsMaker.toScreenNumberOfExamples();
 			grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswers();
 			grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswers();
@@ -449,104 +469,111 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
-		if (choice.equals("13")) {		//percentage of right answers by grammar items	//TODO: debug
+		if (choice.equals("13")) {
+			String choice2;
+			do {
+
 			System.out.print("\033[H\033[2J");
-			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+			System.out.println("1 - percentage of right answers by grammar items");
+			System.out.println("2 - number of answers by days");
+			System.out.println("3 - grammarItems with at least 10 examples ordered by last sutdy time");
 
-			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+			choice2 = console.readLine();
 
-			grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswersByGrammarItems();
+			if (choice2.equals("1")) {	//percentage of right answers by grammar items	//TODO: debug
+				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 
-			console.readLine();
+				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswersByGrammarItems();
+
+				console.readLine();
+			}
+
+			if (choice2.equals("2")) {
+				System.out.print("\033[H\033[2J");
+				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
+
+				console.readLine();
+			}
+
+			if (choice2.equals("3")) {
+				System.out.print("\033[H\033[2J");
+				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				grammarAnswerDataStatisticsMaker.toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime();
+
+				console.readLine();
+			}
+
+			} while (!choice2.equals(""));
 		}
 
 		if (choice.equals("14")) {
-			System.out.println("type the index of grammar item, which you would like to modificate:");
+			String choice2;
+			do {
 
-			GrammarItemModificatorFrame grammarItemModificatorFrame = new GrammarItemModificatorFrame();
-			//grammarItemModificatorFrame.setGrammarItemTitle("aaa");
-			grammarItemModificatorFrame.createAndShowGUI();
+			System.out.print("\033[H\033[2J");
+			System.out.println("1 - modificate grammar item on frame TODO: implemet");
+			System.out.println("2 - delete grammarItem TODO: implement");
+
+			choice2 = console.readLine();
+
+			if (choice2.equals("1")) {
+				/*System.out.println("type the index of grammar item, which you would like to modificate:");
+
+				GrammarItemModificatorFrame grammarItemModificatorFrame = new GrammarItemModificatorFrame();
+				//grammarItemModificatorFrame.setGrammarItemTitle("aaa");
+				grammarItemModificatorFrame.createAndShowGUI();*/
+			}
+
+			if (choice2.equals("2")) {
+				/*System.out.print("\033[H\033[2J");
+				System.out.println("type the index of grammar item, which you would like to delete:");
+
+				int grammarItemIndex = Integer.parseInt(console.readLine());
+
+				System.out.println("are you sure you would like to delete this GrammarItem? (y/n)");
+				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title);*/
+
+				/*if (console.readLine().equals("y")) {
+					/*GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
+					grammarDataModificator.setGrammarBook(grammarBook);
+
+					GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+					grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+					grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+					//grammarDataModificator.
+
+					System.out.println("GrammarItem has been deleted");
+				}*/
+			}
+
+			} while (!choice2.equals(""));
 		}
 
 		if (choice.equals("15")) {
-			System.out.print("\033[H\033[2J");
-			System.out.println("type the index of grammar item, which you would like to delete:");
-
-			int grammarItemIndex = Integer.parseInt(console.readLine());
-
-			System.out.println("are you sure you would like to delete this GrammarItem? (y/n)");
-			System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title);
-
-			/*if (console.readLine().equals("y")) {
-				/*GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
-				grammarDataModificator.setGrammarBook(grammarBook);
-
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-				grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-				//grammarDataModificator.
-
-				System.out.println("GrammarItem has been deleted");
-			}*/
-
-			console.readLine();
-		}
-
-		if (choice.equals("16")) {
 			System.out.print("\033[H\033[2J");
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
 			grammarItemChooser.setGrammarBook(grammarBook);
 			grammarItemChooser.chooseGrammarItem();
 			console.readLine();
-		}
-
-		if (choice.equals("17")) {
-			System.out.print("\033[H\033[2J");
-			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-			grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
-
-			console.readLine();
-		}
-
-		if (choice.equals("18")) {
-			System.out.print("\033[H\033[2J");
-			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-			grammarAnswerDataStatisticsMaker.toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime();
-
-			console.readLine();
-		}
-
-		if (choice.equals("19")) {
-			System.out.print("\033[H\033[2J");
-			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-			int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
-			GrammarTester grammarTester = new GrammarTester();
-			grammarTester.setGrammarBook(grammarBook);
-			grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
-
-			System.out.println(grammarItemIndex);
 		}
 
 		if (choice.equals("20")) {

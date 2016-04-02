@@ -121,6 +121,16 @@ public class GrammarAnswerDataStatisticsMaker {
 		}
 	}
 
+	public void toScreenNumberOfGrammarItemsWithAtLeast10Examples() {
+		int numberOgGrammarItems = 0;
+		for (int grammarItemIndex : grammarBook.getGrammarItemIndexes()) {
+			if (10 <= grammarBook.getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+				numberOgGrammarItems++;
+			}
+		}
+		System.out.println("number of grammar items with at least 10 examples: " + numberOgGrammarItems);
+	}
+
 	public void toScreenPercentageOfRightAnswersByGrammarItems() {
 		Map<Integer,Integer> numberOfRightAnswersByGrammarItems = new HashMap<Integer,Integer>();
 		Map<Integer,Integer> numberOfAnswersByGrammarItems = new HashMap<Integer,Integer>();
