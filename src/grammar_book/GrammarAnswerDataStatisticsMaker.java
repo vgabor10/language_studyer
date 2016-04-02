@@ -65,11 +65,41 @@ public class GrammarAnswerDataStatisticsMaker {
 		return lastStudyTime;
 	}
 
+	public int getLastStudiedGrammarItemIndex() {
+
+		Map<Integer,Long> GrammarItemIndexAndLastStudyTime = new HashMap<Integer,Long>();
+
+		for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
+			GrammarItem grammarItem	=  grammarBook.getGrammarItemByOrder(i);
+
+			if (10 <= grammarItem.numberOfExamples()) {
+				long lastStudyTime = getLastStudyTimeOfGrammarItem(grammarItem.index);
+				GrammarItemIndexAndLastStudyTime.put(grammarItem.index, lastStudyTime);
+			}
+		}
+
+		int lastStudiedGrammarItemIndex = -1;
+		long lastStudiedGrammarItemDate = Long.MAX_VALUE;
+		for (int index : GrammarItemIndexAndLastStudyTime.keySet()) {
+			if (GrammarItemIndexAndLastStudyTime.get(index) < lastStudiedGrammarItemDate) {
+				lastStudiedGrammarItemDate = GrammarItemIndexAndLastStudyTime.get(index);
+				lastStudiedGrammarItemIndex = index;
+			}	
+		}
+
+		return lastStudiedGrammarItemIndex;
+	}
+
 	public void toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime() {
 		Map<Long,Integer> LastStudyTimeAndGrammarItemIndex = new HashMap<Long,Integer>();
+		int numberOfUntestedGrammarItems = 0;
 		for (int grammarItemIndex : grammarBook.getGrammarItemIndexes()) {
 			if (10 <= grammarBook.getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
 				long lastStudyDate = getLastStudyTimeOfGrammarItem(grammarItemIndex);
+				if (lastStudyDate == 0) {
+					numberOfUntestedGrammarItems++;
+					lastStudyDate = -1 * numberOfUntestedGrammarItems;
+				}
 				LastStudyTimeAndGrammarItemIndex.put(lastStudyDate,grammarItemIndex);
 			}
 		}
@@ -79,7 +109,7 @@ public class GrammarAnswerDataStatisticsMaker {
 		System.out.println("GRAMMAR ITEM TITLE - LAST TIME STUDYED");
 		for (long date : SortedLastStudyTime) {
 			int grammarItemIndex = LastStudyTimeAndGrammarItemIndex.get(date);
-			if (date == 0) {
+			if (date < 0) {
 				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title.toString()
 					+ " | grammar item never been tested");
 			}

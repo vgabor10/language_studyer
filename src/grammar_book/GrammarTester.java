@@ -76,9 +76,14 @@ public class GrammarTester {
 		return outVector;
 	}
 
-	public void performTest(int orderIndex, int numberOfExamples) {
+	public void performTestByOrderIndex(int orderIndex, int numberOfExamples) {
+		int grammarItemIndex = grammarBook.getGrammarItemByOrder(orderIndex).index;
+		performTestByGrammarItemIndex(grammarItemIndex, numberOfExamples);
+	}
 
-		GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
+	public void performTestByGrammarItemIndex(int grammarItemIndex, int numberOfExamples) {
+
+		GrammarItem grammarItem = grammarBook.getGrammarItemByIndex(grammarItemIndex);
 
 		System.out.println("log: " + grammarItem.index);	//log
 

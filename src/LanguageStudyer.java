@@ -53,6 +53,7 @@ public class LanguageStudyer {
 		System.out.println("16 - grammarItemChooser test");
 		System.out.println("17 - number of answers by days");
 		System.out.println("18 - grammarItems with at least 10 examples ordered by last sutdy time");
+		System.out.println("19 - practising with the last studyed grammar item with at least 10 examples");
 		System.out.println();
 		System.out.println("SETTINGS");
 		System.out.println("20 - set language to study");
@@ -404,7 +405,7 @@ public class LanguageStudyer {
 				if (0 <= orderIndex && orderIndex < grammarBook.numberOfGrammarItems()) {
 					GrammarTester grammarTester = new GrammarTester();
 					grammarTester.setGrammarBook(grammarBook);
-					grammarTester.performTest(orderIndex, 10);
+					grammarTester.performTestByOrderIndex(orderIndex, 10);
 				}
 				else {
 					System.out.print("\033[H\033[2J");
@@ -531,6 +532,22 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
+		if (choice.equals("19")) {
+			System.out.print("\033[H\033[2J");
+			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+			int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
+			GrammarTester grammarTester = new GrammarTester();
+			grammarTester.setGrammarBook(grammarBook);
+			grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
+
+			System.out.println(grammarItemIndex);
+		}
 
 		if (choice.equals("20")) {
 			System.out.print("\033[H\033[2J");
