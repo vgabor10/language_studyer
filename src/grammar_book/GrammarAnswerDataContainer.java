@@ -15,7 +15,7 @@ import java.text.DecimalFormat;
 
 public class GrammarAnswerDataContainer {
 
-	public Vector<GrammarAnswerData> data = new Vector<GrammarAnswerData>();
+	public Vector<GrammarAnswerData> data = new Vector<GrammarAnswerData>();	//TODO: make it private
 
 	public void addElement(int grammarItemIndex, int exampleIndex, boolean isRight, long date) {
 		GrammarAnswerData grammarAnswerData = new GrammarAnswerData(grammarItemIndex, exampleIndex, isRight, date);

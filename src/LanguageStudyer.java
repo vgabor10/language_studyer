@@ -531,6 +531,7 @@ public class LanguageStudyer {
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - modificate grammar item on frame TODO: implemet");
 			System.out.println("2 - delete grammarItem TODO: implement");
+			System.out.println("3 - check whether exists answer data with invalid grammar item index");
 
 			choice2 = console.readLine();
 
@@ -563,6 +564,19 @@ public class LanguageStudyer {
 
 					System.out.println("GrammarItem has been deleted");
 				}*/
+			}
+
+			if (choice2.equals("3")) {
+				grammarBookFileFormatChecker.setGrammarBook(grammarBook);
+
+				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+				grammarBookFileFormatChecker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				System.out.print("\033[H\033[2J");
+				grammarBookFileFormatChecker.isThereAnswerDataWithInvalidGrammarItemIndex();
+
+				console.readLine();
 			}
 
 			} while (!choice2.equals(""));

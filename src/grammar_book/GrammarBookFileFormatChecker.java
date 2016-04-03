@@ -14,62 +14,32 @@ import java.text.DecimalFormat;
 public class GrammarBookFileFormatChecker {
 
 	private GrammarBook grammarBook;
+	private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
 	public void setGrammarBook(GrammarBook g) {
 		grammarBook = g;
 	}
 
-	/*public void completeExamplesWithEnumeration(String inFilePath, String outFilePath) {	//TODO: using?, take to other class, safety
-		BufferedReader br = null;
-		String strLine = "";
+	public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer g) {
+		grammarAnswerDataContainer = g;
+	}
 
-		try {
+	public void isThereAnswerDataWithInvalidGrammarItemIndex() {	//TODO: take it to an other class
+		Set<Integer> GrammarItemIndexes = grammarBook.getGrammarItemIndexes();
 
-		FileWriter fw = new FileWriter(outFilePath);
-		br = new BufferedReader( new FileReader(inFilePath));
-		do {
-			strLine = br.readLine();
-
-			if (strLine != null) {
-
-				if (strLine.startsWith("\\" + "begin{exmp}")) {
-					fw.write(strLine + "\n");
-
-					strLine = br.readLine();
-					int exampleIndex = 1;
-					Set<Integer> exampleIndexes = new HashSet<Integer>();
-					while (!strLine.startsWith("\\" + "end{exmp}")) {
-						String[] strings = strLine.split(" - ");
-
-						if (strings.length != 3) {
-							strLine = Integer.toString(exampleIndex) + " - " + strLine;
-						}
-
-						if (!strLine.endsWith("\\" + "\\")) {
-							strLine = strLine + "\\" + "\\";
-						}
-
-						fw.write(strLine + "\n");
-
-						strLine = br.readLine();
-						exampleIndex++;
-					}
-					fw.write(strLine + "\n");
-				}
-				else {
-					fw.write(strLine + "\n");
-				}
-			}
-		} while (strLine != null);
-
-		fw.close();
-
-		} catch (FileNotFoundException e) {
-		    System.err.println("Unable to find the file: fileName");
-		} catch (IOException e) {
-		    System.err.println("Unable to read the file: fileName");
+		int i = 0;
+		while (i<grammarAnswerDataContainer.numberOfAnswers() 
+			&& GrammarItemIndexes.contains(grammarAnswerDataContainer.getAnswerData(i))) {
+			i++;
 		}
-	}*/
+
+		if (i == grammarAnswerDataContainer.numberOfAnswers()) {
+			System.out.println("answer data file contains answer data with invalid grammar item index");
+		}
+		else {
+			System.out.println("fortunately there is not answer data with invalid grammar item index");
+		}
+	}
 
 	public boolean checkGrammarItemIndexes(String filePath) {
 		BufferedReader br = null;
