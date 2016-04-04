@@ -1,5 +1,6 @@
 package dictionary;
 
+import common.*;
 import settings_handler.*;
 
 import java.io.File;
@@ -80,15 +81,15 @@ public class DictionaryDataModificator {
 					for (int i = index2 + 1; i < cardContainer.numberOfCards(); i++) {
 						cardContainer.getCard(i).index--;
 					}
-					cardContainer.data.remove(index2);
+					cardContainer.removeCardWithIndex(index2);
 
 					for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
-						if (answerDataContainer.data.get(i).index == index2) {
-							answerDataContainer.data.get(i).index = index1;
+						if (answerDataContainer.getAnswerData(i).index == index2) {
+							answerDataContainer.getAnswerData(i).index = index1;
 						}
 						else
-							if (answerDataContainer.data.get(i).index > index2) {
-							answerDataContainer.data.get(i).index--;
+							if (answerDataContainer.getAnswerData(i).index > index2) {
+							answerDataContainer.getAnswerData(i).index--;
 						}
 					}
 

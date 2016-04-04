@@ -1,6 +1,8 @@
 import grammar_book.*;
 import dictionary.*;
 import settings_handler.*;
+import common.*;
+import terminal_interface.*;
 
 import java.util.*;
 import java.io.Console;
@@ -13,6 +15,8 @@ public class LanguageStudyer {
 		Console console = System.console();
 		SettingsHandler settingsHandler = new SettingsHandler();
 		String choice = "";
+
+		////////////////////// start loading data ////////////////////// 
 
 		CardContainer cardContainer = new CardContainer();
 		cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
@@ -28,6 +32,14 @@ public class LanguageStudyer {
 
 		grammarBookLoader.setGrammarBook(grammarBook);
 		grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
+
+		AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+		answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+
+		GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+		grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+		////////////////////// end loading data ////////////////////// 
 
 		do {
 
@@ -61,8 +73,6 @@ public class LanguageStudyer {
 			CardTester cardTester = new CardTester();
 			cardTester.setCardContainer(cardContainer);
 
-			AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 			cardTester.setAnswerDataContainer(answerDataContainer);
 
 			System.out.print("\033[H\033[2J");
@@ -100,28 +110,12 @@ public class LanguageStudyer {
 		}
 
 		if (choice.equals("2")) {
-			DecimalFormat df = new DecimalFormat("#.00");
-			AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
-			answerDataStatisticsMaker.setCardContainer(cardContainer);
+			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
 			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-
-			System.out.print("\033[H\033[2J");
-			answerDataStatisticsMaker.toSreenNumberOfCards();
-			answerDataStatisticsMaker.toSreenNumberOfAnswers();
-			answerDataStatisticsMaker.toScreenNumberOfCardsQuestioned();
-			answerDataStatisticsMaker.toScreenNumberOfQuestionsOfLeastStudiedCard();
-			answerDataStatisticsMaker.toSreenLastQuestionedCardDate();
-			answerDataStatisticsMaker.toSreenNumberOfStudyingDays();
-			answerDataStatisticsMaker.toScreenPractisingTime();
-			answerDataStatisticsMaker.toScreenPercentageOfRightAnswers();
-			answerDataStatisticsMaker.toSreenAverageAnswerRateOfCards();
-			answerDataStatisticsMaker.toScreenProgress(10);
-			answerDataStatisticsMaker.toScreenNumberOfAnswersGivenLastDays(10);
-			answerDataStatisticsMaker.toScreenHistogram();
-
+			TerminalDictionaryStatisticsShower terminalDictionaryStatisticsShower = new TerminalDictionaryStatisticsShower();
+			terminalDictionaryStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker); 
+			terminalDictionaryStatisticsShower.toScreenDictionaryBasicStatistics();
 			console.readLine();
 		}
 
@@ -131,12 +125,10 @@ public class LanguageStudyer {
 
 			do {
 
-			AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 			System.out.print("\033[H\033[2J");
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-			answerDataStatisticsMaker.setCardContainer(cardContainer);
+			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
 
 			System.out.println("1 - progress by words");
 			System.out.println("2 - hardest words");
@@ -152,7 +144,7 @@ public class LanguageStudyer {
 
 			if (choice2.equals("1")) {
 				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenProgressByCards();
+				answerDataStatisticsMaker.toScreenProgressByStudyItems();
 				console.readLine();
 			}
 
@@ -164,13 +156,13 @@ public class LanguageStudyer {
 
 			if (choice2.equals("3")) {
 				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfCardsByNumberOfAnswers();
+				answerDataStatisticsMaker.toScreenHistogramOfStudyItemsByNumberOfAnswers();
 				console.readLine();
 			}
 
 			if (choice2.equals("4")) {
 				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfCardsByNumberOfAnswersConsideredLowCategories();
+				answerDataStatisticsMaker.toScreenHistogramOfStudyItemsByNumberOfAnswersConsideredLowCategories();
 				console.readLine();
 			}
 
@@ -188,7 +180,7 @@ public class LanguageStudyer {
 
 			if (choice2.equals("7")) {
 				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfCardAnswerRatesByDays();
+				answerDataStatisticsMaker.toScreenHistogramOfStudyItemAnswerRatesByDays();
 				console.readLine();
 			}
 
@@ -200,7 +192,7 @@ public class LanguageStudyer {
 
 			if (choice2.equals("9")) {
 				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toFileHistogramOfCardAnswerRatesByDays(
+				answerDataStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByDays(
 					"../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
 				System.out.print(
 					"data has benn saved to file: data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
@@ -267,9 +259,6 @@ public class LanguageStudyer {
 			}
 
 			if (choice2.equals("5")) {
-				AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-				answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
 				System.out.print("\033[H\033[2J");
 				System.out.println("type term prefix:");
 				String prefix = console.readLine();
@@ -293,8 +282,6 @@ public class LanguageStudyer {
 				System.out.print("\033[H\033[2J");
 				DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
 				dictionaryDataModificator.setCardContainer(cardContainer);
-				AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-				answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 				dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
 				dictionaryDataModificator.mergeCardsWithSameData();
 
@@ -373,9 +360,6 @@ public class LanguageStudyer {
 		}
 
 		if (choice.equals("7")) {
-			AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
 
 			String s = "";
 			do {
@@ -422,8 +406,6 @@ public class LanguageStudyer {
 			if (c.equals("2")) {
 				System.out.print("\033[H\033[2J");
 				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 
 				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
 				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
@@ -452,20 +434,12 @@ public class LanguageStudyer {
 		}
 
 		if (choice.equals("12")) {	//basic statistics	
-			System.out.print("\033[H\033[2J");
 			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
 			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
 			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-			grammarAnswerDataStatisticsMaker.toScreenNumberOfGrammarItems();
-			grammarAnswerDataStatisticsMaker.toScreenNumberOfGrammarItemsWithAtLeast10Examples();
-			grammarAnswerDataStatisticsMaker.toScreenNumberOfExamples();
-			grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswers();
-			grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswers();
-
+			TerminalGrammarStatisticsShower terminalGrammarStatisticsShower = new TerminalGrammarStatisticsShower();
+			terminalGrammarStatisticsShower.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker); 
+			terminalGrammarStatisticsShower.toScreenGrammarBookBasicStatistics();
 			console.readLine();
 		}
 
@@ -477,47 +451,36 @@ public class LanguageStudyer {
 			System.out.println("1 - percentage of right answers by grammar items");
 			System.out.println("2 - number of answers by days");
 			System.out.println("3 - grammarItems with at least 10 examples ordered by last sutdy time");
+			System.out.println("4 - histogram of grammar item answers rates by days");
+
+
+			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 			choice2 = console.readLine();
 
 			if (choice2.equals("1")) {	//percentage of right answers by grammar items	//TODO: debug
-				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
+				System.out.print("\033[H\033[2J");
 				grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswersByGrammarItems();
-
 				console.readLine();
 			}
 
 			if (choice2.equals("2")) {
 				System.out.print("\033[H\033[2J");
-				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
 				grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
-
 				console.readLine();
 			}
 
 			if (choice2.equals("3")) {
 				System.out.print("\033[H\033[2J");
-				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
 				grammarAnswerDataStatisticsMaker.toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime();
+				console.readLine();
+			}
 
+			if (choice2.equals("4")) {
+				System.out.print("\033[H\033[2J");
+				grammarAnswerDataStatisticsMaker.toScreenHistogramOfStudyItemAnswerRatesByDays();
 				console.readLine();
 			}
 
@@ -568,9 +531,6 @@ public class LanguageStudyer {
 
 			if (choice2.equals("3")) {
 				grammarBookFileFormatChecker.setGrammarBook(grammarBook);
-
-				GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 				grammarBookFileFormatChecker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 				System.out.print("\033[H\033[2J");

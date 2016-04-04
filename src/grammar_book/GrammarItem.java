@@ -1,17 +1,17 @@
 package grammar_book;
 
+import common.*;
+
 import java.util.*;
 
-public class GrammarItem {
+public class GrammarItem extends StudyItem {
 
-	public int index;
 	public GrammarItemTitle title = new GrammarItemTitle();
 	public Description description = new Description();
 	private Map<Integer, Example> examples = new TreeMap<Integer, Example>();
 	String commentForExamples;
 
 	GrammarItem() {
-		index = -1;
 		title.clear();
 		commentForExamples = "";
 	}
@@ -81,8 +81,6 @@ public class GrammarItem {
 	}
 
 }
-
-
 
 
 

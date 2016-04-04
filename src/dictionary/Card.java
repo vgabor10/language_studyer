@@ -1,12 +1,14 @@
 package dictionary;
 
-public class Card {
+import common.*;
 
-	public int index;
+public class Card extends StudyItem {
+
 	public String s1;	//TODO: should change the name to term
 	public String s2;	//TODO: should change the name to definition
 
 	public Card() {
+
 		index = -1;
 		s1 = "";
 		s2 = "";

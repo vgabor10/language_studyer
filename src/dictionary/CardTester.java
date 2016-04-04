@@ -1,5 +1,6 @@
 package dictionary;
 
+import common.*;
 import settings_handler.*;
 
 import java.util.*;
@@ -78,38 +79,38 @@ public class CardTester {
 	}
 
 	public int getRandomHardestCardIndex(double hardestWordRate) {		//TODO: implement it more efficiently, too slow
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-		Arrays.sort(datasToSort, new AnswerDataByCardComparatorByRateOfRightAnswers());
-		int r = randomGenerator.nextInt((int)Math.floor((double)answerDataByCardsContainer.numberOfCards() * hardestWordRate));
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
+		int r = randomGenerator.nextInt((int)Math.floor((double)answerDataByStudyItemsContainer.numberOfStudyItems() * hardestWordRate));
 		return datasToSort[datasToSort.length - 1 - r].getAnswer(0).index;
 	}
 
 	public int getRandomHardestCardIndex2(int numberOfHardestCards) {		//TODO: implement it more efficiently, too slow
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-		Arrays.sort(datasToSort, new AnswerDataByCardComparatorByRateOfRightAnswers());
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
 		int r = randomGenerator.nextInt(numberOfHardestCards);
 		return datasToSort[datasToSort.length - 1 - r].getAnswer(0).index;
 	}
 
 	public Set<Integer> getCardIndexesWithLestSignificantAnswerRate(int numberOfCards, Set<Integer> omitedCardIndexes) {
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-		Arrays.sort(datasToSort, new AnswerDataByCardComparatorByNumberOfAnswers());
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
 		Set<Integer> outCardIndexes = new HashSet<Integer>(); 
 
 		int i=0;
 		while (outCardIndexes.size() != numberOfCards && i<datasToSort.length) {
-			if (!omitedCardIndexes.contains(datasToSort[i].getCardIndex())) {
-				outCardIndexes.add(datasToSort[i].getCardIndex());
+			if (!omitedCardIndexes.contains(datasToSort[i].getStudyItemIndex())) {
+				outCardIndexes.add(datasToSort[i].getStudyItemIndex());
 			}
 			i++;
 		}
@@ -118,20 +119,20 @@ public class CardTester {
 	}
 
 	public Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(int numberOfCards, Set<Integer> omitedCardIndexes) {
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		if (answerDataByCardsContainer.numberOfCards() < 100) {
+		if (answerDataByStudyItemsContainer.numberOfStudyItems() < 100) {
 			return null;
 		}
 		else {
-			AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-			Arrays.sort(datasToSort, new AnswerDataByCardComparatorByNumberOfAnswers());
+			AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+			Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
 			Set<Integer> outCardIndexes = new HashSet<Integer>(); 
 
 			while (outCardIndexes.size() != numberOfCards) {
-				int cardIndex = datasToSort[randomGenerator.nextInt(100)].getCardIndex();
+				int cardIndex = datasToSort[randomGenerator.nextInt(100)].getStudyItemIndex();
 				if (!omitedCardIndexes.contains(cardIndex) && !outCardIndexes.contains(cardIndex)) {
 					outCardIndexes.add(cardIndex);
 				}
@@ -402,7 +403,7 @@ public class CardTester {
 
 		System.out.print("\033[H\033[2J");
 		for (int a : cardsToTestIndexes) {
-			System.out.println(cardContainer.data.elementAt(a).toStringReverse());
+			System.out.println(cardContainer.getCard(a).toStringReverse());
 		}
 
 		console.readLine();
@@ -423,7 +424,7 @@ public class CardTester {
 				i++;
 			}
 
-			Card card = cardContainer.data.elementAt(index);
+			Card card = cardContainer.getCard(index);
 			System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
 			System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
 			System.out.println("----------------------------------------------");
@@ -474,13 +475,13 @@ public class CardTester {
 		df = new DecimalFormat("#.000");
 
 		SettingsHandler settingsHandler = new SettingsHandler();
-		AnswerDataByCardsContainer answerDatasByCardsBeforeTest = new AnswerDataByCardsContainer();
-		answerDatasByCardsBeforeTest.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+		AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest = new AnswerDataByStudyItemsContainer();
+		answerDatasByStudyItemsBeforeTest.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 
 		answerDataContainer.appendToAnswerDataFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 
-		AnswerDataByCardsContainer answerDatasByCardsAfterTest = new AnswerDataByCardsContainer();
-		answerDatasByCardsAfterTest.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+		AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest = new AnswerDataByStudyItemsContainer();
+		answerDatasByStudyItemsAfterTest.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 
 		Set<Integer> cardIndexes = new HashSet<Integer>();
 
@@ -501,13 +502,13 @@ public class CardTester {
 		for (int cardIndex : cardIndexes) {
 
 			double percentageOfRightAnswersBeforeTest = -1;
-			if (answerDatasByCardsBeforeTest.getTestedCardIndexes().contains(cardIndex)) {
+			if (answerDatasByStudyItemsBeforeTest.getTestedStudyItemIndexes().contains(cardIndex)) {
 				percentageOfRightAnswersBeforeTest 
-					= answerDatasByCardsBeforeTest.getAnswerDataByCardByIndex(cardIndex).countRightAnswerRate() * 100.0;
+					= answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;
 			}
 
 			double percentageOfRightAnswersAfterTest
-				= answerDatasByCardsAfterTest.getAnswerDataByCardByIndex(cardIndex).countRightAnswerRate() * 100.0;
+				= answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;
 			
 			System.out.print(cardContainer.getCard(cardIndex).toString() + " | " 
 				+ df.format(percentageOfRightAnswersAfterTest) + "% | ");
@@ -570,7 +571,7 @@ public class CardTester {
 				categorySizeChanges[category]++;
 			}
 
-			System.out.println(answerDatasByCardsAfterTest.getAnswerDataByCardByIndex(cardIndex).numberOfAnswers());
+			System.out.println(answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).numberOfAnswers());
 		}
 
 		System.out.println("------------------------------------------------------------------");;
@@ -588,9 +589,9 @@ public class CardTester {
 		System.out.println("number of answers: " + answerDataContainer.numberOfAnswers());
 		System.out.println("percentage of right answers: " + df.format(answerDataContainer.percentageOfRightAnswers()) + "%");
 		System.out.println("average answer rate of cards before test: "
-			+ df.format(answerDatasByCardsBeforeTest.getAverageAnswerRateOfCards() * 100.0) + "%");
+			+ df.format(answerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems() * 100.0) + "%");
 		System.out.println("average answer rate of cards after test: "
-			+ df.format(answerDatasByCardsAfterTest.getAverageAnswerRateOfCards() * 100.0) + "%");
+			+ df.format(answerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems() * 100.0) + "%");
 
 		Date date = new Date(endTime - startTime);
 		DateFormat formatter = new SimpleDateFormat("mm:ss");

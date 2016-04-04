@@ -1,6 +1,4 @@
-package dictionary;
-
-import common.*;
+package common;
 
 import java.util.*;
 import java.io.File;
@@ -13,31 +11,67 @@ import java.io.FileNotFoundException;
 import java.lang.Math;
 import java.text.DecimalFormat;
 
-public class CardContainer extends StudyItemContainer {
+public class StudyItemContainer {
 
-	public int numberOfCards() {
-		return numberOfStudyItems();
+	private Vector<StudyItem> data = new Vector<StudyItem>();
+
+	public StudyItemContainer() {
 	}
 
-	public Card getCard(int i) {	//TODO: rename: getCardByIndex
-		return (Card)getStudyItemByOrder(i);
+	public int numberOfStudyItems() {
+		return data.size();
 	}
 
-	public void addCard(Card c) {
-		addStudyItem(c);
+	public StudyItem getStudyItemByOrder(int orderIndex) {
+		return data.get(orderIndex);
 	}
 
-	public void removeCardWithIndex(int index) {	//TODO: take to other class
-		removeStudyItemWithIndex(index);
+	public StudyItem getStudyItemByIndex(int index) {
+		int i=0;
+		while (i<data.size() && data.get(i).index != index) {
+			i++;
+		}
+
+		if (i == data.size()) {
+			return null;
+		}
+		else {
+			return data.get(i);
+		}
 	}
 
-	public void toScreenCardsWithSameTerm() {
+	public Set<Integer> getStudyItemIndexes() {
+		Set<Integer> studyItemIndexes = new HashSet<Integer>();
+
+		for (int i=0; i<data.size(); i++) {
+			studyItemIndexes.add(data.get(i).index);
+		}
+		return studyItemIndexes;
+	}
+
+	public void addStudyItem(StudyItem si) {
+		data.add(si);
+	}
+
+	public void removeStudyItemWithIndex(int index) {	//TODO: implement
+		int i=0;
+		while (i<data.size()) {
+			if (data.get(i).index == index) {
+				data.remove(index);
+			}
+			else {
+				i++;
+			}
+		}
+	}
+
+	/*public void toScreenCardsWithSameTerm() {	//TODO: move to other class
 		Set<String> termData = new HashSet<String>();
 
 		Card[] arrayToSort = new Card[numberOfCards()];
 
-		for (int i=0; i<numberOfCards(); i++) {
-			arrayToSort[i] = (Card)getCard(i);
+		for (int i=0; i<data.size(); i++) {
+			arrayToSort[i] = data.get(i);
 		}
 
 		Arrays.sort(arrayToSort, new CardComparatorByTerm());
@@ -64,8 +98,8 @@ public class CardContainer extends StudyItemContainer {
 		}
 	}
 
-	public void addCardToContainerAndAppenToDiscFile(Card card, String filePath) {
-		addStudyItem(card);
+	public void addCardToContainerAndAppenToDiscFile(Card card, String filePath) {	//TODO: think it over
+		data.add(card);
 
 		try {
 			FileWriter fw = new FileWriter(filePath,true);	//the true will append the new data
@@ -78,27 +112,27 @@ public class CardContainer extends StudyItemContainer {
 
 	}
 
-	public void toScreenCardsWithGivenTermPrefix(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
+	public void toScreenCardsWithGivenTermPrefix(String prefix, AnswerDataContainer answerDataContainer) {	//TODO: this function should be implemented in other cass
 		DecimalFormat df = new DecimalFormat("#.00");
-		for (int i=0; i < numberOfCards(); i++) {
-			if (getCard(i).s1.startsWith(prefix)) {
-				int cardIndex = getCard(i).index;
-				System.out.println(getCard(i).toStringData() + " | "
+		for (int i=0; i<data.size(); i++) {
+			if (data.get(i).s1.startsWith(prefix)) {
+				int cardIndex = data.get(i).index;
+				System.out.println(data.get(i).toStringData() + " | "
 					+ df.format(answerDataContainer.percentageOfRightAnswers(cardIndex)) + "% ("
 					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
 			}
 		}
 	}
 
-	public void toScreenCardsWithGivenTermPart(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
+	public void toScreenCardsWithGivenTermPart(String prefix, AnswerDataContainer answerDataContainer) {	//TODO: this function should be implemented in other cass
 		DecimalFormat df = new DecimalFormat("#.00");
 		int maxListedCards = 30;
 		Vector<Card> cardsToList = new Vector<Card>();
 
-		for (int i=0; i < numberOfCards() && cardsToList.size() < maxListedCards; i++) {
-			if (getCard(i).s1.toLowerCase().contains(prefix.toLowerCase())) {
-				int cardIndex = getCard(i).index;
-				cardsToList.add(getCard(i));
+		for (int i=0; i<data.size() && cardsToList.size() < maxListedCards; i++) {
+			if (data.get(i).s1.toLowerCase().contains(prefix.toLowerCase())) {
+				int cardIndex = data.get(i).index;
+				cardsToList.add(data.get(i));
 			}
 		}
 
@@ -114,21 +148,21 @@ public class CardContainer extends StudyItemContainer {
 		}
 	}
 
-	public void toScreenCardWithGivenCardIndex(int cardIndex) {	// this function should be implemented in other cass
+	public void toScreenCardWithGivenCardIndex(int cardIndex) {	//TODO: this function should be implemented in other cass
 		int i=0;
-		while (i < numberOfCards() && getCard(i).index != cardIndex) {
+		while (i < data.size() && data.get(i).index != cardIndex) {
 			i++;
 		}
 
-		if (i<numberOfCards()) {
-			System.out.println(getCard(i).toStringData());
+		if (i<data.size()) {
+			System.out.println(data.get(i).toStringData());
 		}
 		else {
 			System.out.println("there is not card with given cardIndex");
 		}
 	}
 
-	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {	// this function should be implemented in other cass
+	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {	//TODO: this function should be implemented in other cass
 		for (int i=0; i<numberOfCards(); i++) {
 			if (getCard(i).s2.contains(definitionPart)) {
 				System.out.println(getCard(i).toStringReverse());
@@ -136,17 +170,17 @@ public class CardContainer extends StudyItemContainer {
 		}
 	}
 
-	public Vector<Integer> findCardsByTerm(String term) {
+	public Vector<Integer> findCardsByTerm(String term) {	//TODO: this function should be implemented in other
 		Vector<Integer> cardIndexes = new Vector<Integer>();
-		for (int i=0; i<numberOfCards(); i++) {
-			if (getCard(i).s1.equals(term)) {
-				cardIndexes.add(getCard(i).index);
+		for (int i=0; i<data.size(); i++) {
+			if (data.get(i).s1.equals(term)) {
+				cardIndexes.add(data.get(i).index);
 			}
 		}
 		return cardIndexes;
 	}
 
-	public void loadDataFromFile(String filePath) {
+	public void loadDataFromFile(String filePath) {	//TODO: this function should be implemented in other
 		clear();
 		BufferedReader br = null;
 		String strLine = "";
@@ -156,7 +190,7 @@ public class CardContainer extends StudyItemContainer {
 				//System.out.println(strLine);
 				Card card = new Card();
 				card.setDataFromString(strLine);
-				addCard(card);
+				data.addElement(card);
 			}
 		} catch (FileNotFoundException e) {
 		    System.err.println("Unable to find the file: fileName");
@@ -165,7 +199,7 @@ public class CardContainer extends StudyItemContainer {
 		}
 	}
 
-	public void saveDataToFile(String filePath) {
+	public void saveDataToFile(String filePath) {	//TODO: this function should be implemented in other
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 			for (int i=0; i<numberOfCards(); i++) {
@@ -176,17 +210,21 @@ public class CardContainer extends StudyItemContainer {
 		catch(IOException ioe) {
 			System.err.println("IOException: " + ioe.getMessage());
 		}
+	}*/
+
+	public void clear() {
+		data.clear();
 	}
 
-	public void toScreen() {
-		for(int i=0; i<numberOfCards(); i++){
-			System.out.println(getCard(i).toString());
+	/*public void toScreen() {	//TODO: think it over
+		for(int i=0; i<data.size(); i++){
+			System.out.println(data.elementAt(i).toString());
 		}
 	}
 
-	public void toScreenData() {
-		for(int i=0; i<numberOfCards(); i++){
-			System.out.println(getCard(i).toStringData());
+	public void toScreenData() {	//TODO: think it over
+		for(int i=0; i<data.size(); i++){
+			System.out.println(data.elementAt(i).toStringData());
 		}
-	}
+	}*/
 }

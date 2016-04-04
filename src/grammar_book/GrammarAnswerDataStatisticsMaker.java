@@ -1,63 +1,43 @@
 package grammar_book;
 
+import common.*;
+
 import java.util.*;
 import java.text.DecimalFormat;
 
-public class GrammarAnswerDataStatisticsMaker {
-
-	private GrammarAnswerDataContainer grammarAnswerDataContainer;
-	private GrammarBook grammarBook;
+public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
 
 	public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
-		grammarAnswerDataContainer = gac;
+		setAnswerDataContainer(gac);
 	}
 
-	public void setGrammarBook(GrammarBook gb) {
-		grammarBook = gb;
+	public void setGrammarBook(GrammarBook grammarBook) {
+		studyItemContainer = grammarBook;
 	}
 
-	public void toScreenNumberOfGrammarItems() {
-		System.out.println("number of grammar items: " + grammarBook.numberOfGrammarItems());
+	public GrammarBook getGrammarBook() {
+		return (GrammarBook)studyItemContainer;
 	}
 
-	public void toScreenNumberOfAnswers() {
-		System.out.println("number of answers: " + grammarAnswerDataContainer.numberOfAnswers());
+	public int numberOfGrammarItems() {
+		return getGrammarBook().numberOfGrammarItems();
 	}
 
-	public void toScreenNumberOfExamples() {
+	public int numberOfExamples() {
 		int numberOfExamples = 0;
-		Set<Integer> grammarItemIndexes = grammarBook.getGrammarItemIndexes();
+		Set<Integer> grammarItemIndexes = getGrammarBook().getGrammarItemIndexes();
 		for (int index : grammarItemIndexes) {
-			numberOfExamples = numberOfExamples + grammarBook.getGrammarItemByIndex(index).numberOfExamples();
+			numberOfExamples = numberOfExamples + getGrammarBook().getGrammarItemByIndex(index).numberOfExamples();
 		}
 
-		System.out.println("number of examples: " + numberOfExamples);
-	}
-
-	public void toScreenPercentageOfRightAnswers() {
-		if (grammarAnswerDataContainer.numberOfAnswers() != 0) {
-			int sum = 0;
-			for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-				if (grammarAnswerDataContainer.getAnswerData(i).isRight) {
-					sum++;
-				}
-			}
-
-			double percentage = (double)sum/(double)grammarAnswerDataContainer.numberOfAnswers() * 100.0;
-
-			DecimalFormat df = new DecimalFormat("#.00");
-			System.out.println("percentage of right answers: " + df.format(percentage) + "%");
-		}
-		else {
-			System.out.println("percentage of right answers: there is no answer yet");
-		}
+		return numberOfExamples;
 	}
 
 	public long getLastStudyTimeOfGrammarItem(int grammarItemIndex) {
 		long lastStudyTime = 0;
-		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-			GrammarAnswerData answerData = grammarAnswerDataContainer.getAnswerData(i);
-			if (answerData.grammarItemIndex == grammarItemIndex && lastStudyTime < answerData.date) {
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			AnswerData answerData = answerDataContainer.getAnswerData(i);
+			if (answerData.index == grammarItemIndex && lastStudyTime < answerData.date) {
 				lastStudyTime = answerData.date;
 			}
 		}
@@ -69,8 +49,8 @@ public class GrammarAnswerDataStatisticsMaker {
 
 		Map<Integer,Long> GrammarItemIndexAndLastStudyTime = new HashMap<Integer,Long>();
 
-		for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
-			GrammarItem grammarItem	=  grammarBook.getGrammarItemByOrder(i);
+		for (int i=0; i<getGrammarBook().numberOfGrammarItems(); i++) {
+			GrammarItem grammarItem	=  getGrammarBook().getGrammarItemByOrder(i);
 
 			if (10 <= grammarItem.numberOfExamples()) {
 				long lastStudyTime = getLastStudyTimeOfGrammarItem(grammarItem.index);
@@ -93,8 +73,8 @@ public class GrammarAnswerDataStatisticsMaker {
 	public void toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime() {
 		Map<Long,Integer> LastStudyTimeAndGrammarItemIndex = new HashMap<Long,Integer>();
 		int numberOfUntestedGrammarItems = 0;
-		for (int grammarItemIndex : grammarBook.getGrammarItemIndexes()) {
-			if (10 <= grammarBook.getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+		for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
+			if (10 <= getGrammarBook().getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
 				long lastStudyDate = getLastStudyTimeOfGrammarItem(grammarItemIndex);
 				if (lastStudyDate == 0) {
 					numberOfUntestedGrammarItems++;
@@ -110,25 +90,25 @@ public class GrammarAnswerDataStatisticsMaker {
 		for (long date : SortedLastStudyTime) {
 			int grammarItemIndex = LastStudyTimeAndGrammarItemIndex.get(date);
 			if (date < 0) {
-				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title.toString()
+				System.out.println(getGrammarBook().getGrammarItemByIndex(grammarItemIndex).title.toString()
 					+ " | grammar item never been tested");
 			}
 			else {
 				Date date2 = new Date(date);
-				System.out.println(grammarBook.getGrammarItemByIndex(grammarItemIndex).title.toString()
+				System.out.println(getGrammarBook().getGrammarItemByIndex(grammarItemIndex).title.toString()
 					+ " | " + date2);
 			}
 		}
 	}
 
-	public void toScreenNumberOfGrammarItemsWithAtLeast10Examples() {
-		int numberOgGrammarItems = 0;
-		for (int grammarItemIndex : grammarBook.getGrammarItemIndexes()) {
-			if (10 <= grammarBook.getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
-				numberOgGrammarItems++;
+	public int numberOfGrammarItemsWithAtLeast10Examples() {
+		int numberOfGrammarItems = 0;
+		for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
+			if (10 <= getGrammarBook().getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+				numberOfGrammarItems++;
 			}
 		}
-		System.out.println("number of grammar items with at least 10 examples: " + numberOgGrammarItems);
+		return numberOfGrammarItems;
 	}
 
 	public void toScreenPercentageOfRightAnswersByGrammarItems() {
@@ -137,35 +117,35 @@ public class GrammarAnswerDataStatisticsMaker {
 
 		GrammarAnswerData grammarAnswerData;
 
-		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-			grammarAnswerData = grammarAnswerDataContainer.getAnswerData(i);
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			grammarAnswerData = (GrammarAnswerData)answerDataContainer.getAnswerData(i);
 
-			//System.out.println(grammarAnswerData.grammarItemIndex);	//debug
+			//System.out.println(grammarAnswerData.index);	//debug
 
-			if (numberOfAnswersByGrammarItems.containsKey(grammarAnswerData.grammarItemIndex)) {
+			if (numberOfAnswersByGrammarItems.containsKey(grammarAnswerData.index)) {
 
 				if (grammarAnswerData.isRight) {
-					int numberOfRightAnswers = numberOfRightAnswersByGrammarItems.get(grammarAnswerData.grammarItemIndex);
-					numberOfRightAnswersByGrammarItems.remove(grammarAnswerData.grammarItemIndex);
+					int numberOfRightAnswers = numberOfRightAnswersByGrammarItems.get(grammarAnswerData.index);
+					numberOfRightAnswersByGrammarItems.remove(grammarAnswerData.index);
 					numberOfRightAnswers++;
-					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.grammarItemIndex,numberOfRightAnswers);
+					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.index,numberOfRightAnswers);
 				}
 
-				int numberOfAnswers = numberOfAnswersByGrammarItems.get(grammarAnswerData.grammarItemIndex);
-				numberOfAnswersByGrammarItems.remove(grammarAnswerData.grammarItemIndex);
+				int numberOfAnswers = numberOfAnswersByGrammarItems.get(grammarAnswerData.index);
+				numberOfAnswersByGrammarItems.remove(grammarAnswerData.index);
 				numberOfAnswers++;
-				numberOfAnswersByGrammarItems.put(grammarAnswerData.grammarItemIndex,numberOfAnswers);
+				numberOfAnswersByGrammarItems.put(grammarAnswerData.index,numberOfAnswers);
 			}
 			else {
 
 				if (grammarAnswerData.isRight) {
-					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.grammarItemIndex,1);
+					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.index,1);
 				}
 				else {
-					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.grammarItemIndex,0);
+					numberOfRightAnswersByGrammarItems.put(grammarAnswerData.index,0);
 				}
 
-				numberOfAnswersByGrammarItems.put(grammarAnswerData.grammarItemIndex,1);
+				numberOfAnswersByGrammarItems.put(grammarAnswerData.index,1);
 			}
 		}
 
@@ -174,33 +154,29 @@ public class GrammarAnswerDataStatisticsMaker {
 		/*for (int grammarItemIndex : numberOfRightAnswersByGrammarItems.keySet()) {
 			double percentage = (double)(numberOfRightAnswersByGrammarItems.get(grammarItemIndex)) *100.0 /
 				(double)(numberOfAnswersByGrammarItems.get(grammarItemIndex));
-			System.out.println(grammarItemIndex + " | " + grammarBook.getGrammarItemByIndex(grammarItemIndex).title + " | "
+			System.out.println(grammarItemIndex + " | " + getGrammarBook().getGrammarItemByIndex(grammarItemIndex).title + " | "
 				+ df.format(percentage) + "%" + " (" + numberOfAnswersByGrammarItems.get(grammarItemIndex) + ")");
 		}*/
-		for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
-			GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(i);
+		for (int i=0; i<getGrammarBook().numberOfGrammarItems(); i++) {
+			GrammarItem grammarItem = getGrammarBook().getGrammarItemByOrder(i);
 			if ( numberOfRightAnswersByGrammarItems.keySet().contains(grammarItem.index)) {
 				double percentage 
 					= (double)(numberOfRightAnswersByGrammarItems.get(grammarItem.index)) *100.0 /
 					(double)(numberOfAnswersByGrammarItems.get(grammarItem.index));
 
-				System.out.println(grammarBook.getGrammarItemByIndex(grammarItem.index).title + " | "
+				System.out.println(getGrammarBook().getGrammarItemByIndex(grammarItem.index).title + " | "
 					+ df.format(percentage) + "%" + " (" + numberOfAnswersByGrammarItems.get(grammarItem.index) + ")");
 			}
 		}
 	}
 
-	public int milisecToDay(long milisecTime) {	//TODO: take to an other class
-		int timeZone = 1;
-		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
-	}
-
 	public void toScreenNumberOfAnswersByDays() {
 		Map<Integer,Integer> numberOfAnswersByDays = new HashMap<Integer,Integer>();
+		GeneralFunctions generalFunctions = new GeneralFunctions();
 
-		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-			long date = grammarAnswerDataContainer.getAnswerData(i).date;
-			int day = milisecToDay(date);
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			long date = answerDataContainer.getAnswerData(i).date;
+			int day = generalFunctions.milisecToDay(date);
 			if (numberOfAnswersByDays.containsKey(day)) {
 				int numberOfAnswersAtDay = numberOfAnswersByDays.get(day);
 				numberOfAnswersAtDay++;
@@ -219,53 +195,5 @@ public class GrammarAnswerDataStatisticsMaker {
 			System.out.println(day + " - " + numberOfAnswersByDays.get(day));
 		}
 	}
-
-	/*public void toScreenProgressByCards() {
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-		Arrays.sort(datasToSort, new AnswerDataByCardComparatorByRateOfRightAnswers());
-		String out = "";
-		for (int i=0; i<answerDataByCardsContainer.numberOfCards(); i++) {
-			out = datasToSort[i].toStringShowingPercentage(cardContainer);
-			System.out.println(out);
-		}
-	}
-
-	public int milisecToDay(long milisecTime) {
-		return (int)(milisecTime/(1000*3600*24));
-	}
-
-	public void toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {
-		int [] cardsStadiedLastDays = new int[numberOfDays];
-		Date date = new Date();
-		int today = milisecToDay(date.getTime());
-		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
-			if (today - numberOfDays < milisecToDay(answerDataContainer.data.get(i).date)) {
-				cardsStadiedLastDays[today - milisecToDay(answerDataContainer.data.get(i).date)]++;
-			}
-		}
-
-		for (int i=0; i<numberOfDays; i++) {
-			System.out.print(cardsStadiedLastDays[i] + " ");
-		}
-	}
-
-	public void toScreenHardestWords(int numberOfWords) {
-		AnswerDataByCardsContainer answerDataByCardsContainer = new AnswerDataByCardsContainer();
-		answerDataByCardsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		if (numberOfWords <= answerDataByCardsContainer.numberOfCards()) {
-			AnswerDataByCard[] datasToSort = answerDataByCardsContainer.toArray();
-			Arrays.sort(datasToSort, new AnswerDataByCardComparatorByRateOfRightAnswers());
-			String out = "";
-
-			for (int i=0; i<numberOfWords; i++) {
-				out = datasToSort[answerDataByCardsContainer.numberOfCards() - 1 - i].toStringShowingPercentage(cardContainer);
-				System.out.println(out);
-			}
-		}
-	}*/
 
 }
