@@ -7,13 +7,14 @@ import java.util.*;
 public class GrammarItem extends StudyItem {
 
 	public GrammarItemTitle title = new GrammarItemTitle();
-	public Description description = new Description();
+	public String description;
 	private Map<Integer, Example> examples = new TreeMap<Integer, Example>();
 	String commentForExamples;
 
 	GrammarItem() {
 		title.clear();
 		commentForExamples = "";
+		description = "";
 	}
 
 	public int numberOfExamples() {
@@ -21,7 +22,7 @@ public class GrammarItem extends StudyItem {
 	}
 
 	public boolean isEmptyExcludingTitle() {
-		return (index == -1) && (description.strData.equals("")) && (examples.size() == 0) && (commentForExamples.equals(""));
+		return (index == -1) && (description.equals("")) && (examples.size() == 0) && (commentForExamples.equals(""));
 	}
 
 	public Example getExampleByIndex(int index) {
@@ -38,7 +39,7 @@ public class GrammarItem extends StudyItem {
 
 	public String toString() {
 		String out;
-		out = title.toString().toUpperCase() + "\n\nDESCRIPTION:\n" + description.getInReadingForm() + "\n\nEXAMPLES:\n";
+		out = title.toString().toUpperCase() + "\n\nDESCRIPTION:\n" + description + "\n\nEXAMPLES:\n";
 
 		for (int index : examples.keySet()) {
 			out = out + getExampleByIndex(index).toString() + "\n";
@@ -66,7 +67,7 @@ public class GrammarItem extends StudyItem {
 
 		outString = outString + "GrammarItemIndex = " + Integer.toString(index) + "\n\n";
 
-		outString = outString + "\\begin{desc}\n" + description.strData + "\n\\end{desc}\n\n";
+		outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
 
 		if (commentForExamples.length() != 0) {
 			outString = outString + commentForExamples + "\n";

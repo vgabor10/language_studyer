@@ -17,7 +17,12 @@ import java.text.DecimalFormat;
 public class GrammarAnswerDataContainer extends AnswerDataContainer {
 
 	public void addElement(int grammarItemIndex, int exampleIndex, boolean isRight, long date) {
-		GrammarAnswerData grammarAnswerData = new GrammarAnswerData(exampleIndex, isRight, date);
+		GrammarAnswerData grammarAnswerData = new GrammarAnswerData();
+		grammarAnswerData.index = grammarItemIndex;
+		grammarAnswerData.exampleIndex = exampleIndex;
+		grammarAnswerData.isRight = isRight;
+		grammarAnswerData.date = date;
+
 		addAnswerData(grammarAnswerData);
 	}
 

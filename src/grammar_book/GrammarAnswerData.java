@@ -12,10 +12,6 @@ public class GrammarAnswerData extends AnswerData {
 		exampleIndex = -1;
 	}
 
-	GrammarAnswerData(int ei, boolean b, long d) {	//TODO: delata this construktor
-		exampleIndex = ei;
-	}
-
 	public void setDataFromString(String s) {
 		index = Integer.parseInt(s.split("\t")[0]);
 		exampleIndex = Integer.parseInt(s.split("\t")[1]);

@@ -116,13 +116,13 @@ public class GrammarBookLoader {
 					strLine = br.readLine();
 
 					while (!strLine.equals("\\" + "end{desc}")) {
-						grammarItem.description.strData = grammarItem.description.strData + strLine + "\n";
+						grammarItem.description = grammarItem.description + strLine + "\n";
 						strLine = br.readLine();
 					}
 
-					if (grammarItem.description.strData.endsWith("\n")) {
-						grammarItem.description.strData
-						= grammarItem.description.strData.substring(0, grammarItem.description.strData.length()-1);
+					if (grammarItem.description.endsWith("\n")) {
+						grammarItem.description
+						= grammarItem.description.substring(0, grammarItem.description.length()-1);
 						
 					}
 				}
