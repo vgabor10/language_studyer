@@ -286,10 +286,18 @@ public class AnswerDataStatisticsMaker {
 		return answerDataContainer.numberOfAnswers();
 	}
 
+	public int numberOfQuestionedStudyItems() {
+		Set<Integer> studyItemIndexes = new HashSet<Integer>();
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			studyItemIndexes.add(answerDataContainer.getAnswerData(i).index);
+		}
+		return studyItemIndexes.size();
+	}
+
 	public void toSreenLastQuestionedStudyItemDate() {
 		Set<Integer> StudyItemIndexes = new HashSet<Integer>();
 		int i = answerDataContainer.numberOfAnswers() - 1;
-		int numberOfQuestionedStudyItems = answerDataContainer.numberOfQuestionedStudyItems();
+		int numberOfQuestionedStudyItems = numberOfQuestionedStudyItems();
 		while ((int)StudyItemIndexes.size() < numberOfQuestionedStudyItems) {
 			StudyItemIndexes.add(answerDataContainer.getAnswerData(i).index);
 			i--;

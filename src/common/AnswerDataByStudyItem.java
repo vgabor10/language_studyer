@@ -49,14 +49,11 @@ public class AnswerDataByStudyItem {
 		return (double)numberOfRightAnswers/(double)k;
 	}
 
-	public int milisecToDay(long milisecTime) {	//TODO: code repeating
-		int timeZone = 1;
-		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
-	}
-
 	public double countRightAnswerRateAtDay(int day) {
+		GeneralFunctions generalFunctions = new GeneralFunctions();
+
 		int i=0;
-		while (i < numberOfAnswers() && milisecToDay(data.get(i).date) <= day) {
+		while (i < numberOfAnswers() && generalFunctions.milisecToDay(data.get(i).date) <= day) {
 			i++;
 		}
 

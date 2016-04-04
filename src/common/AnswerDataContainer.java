@@ -33,15 +33,6 @@ public class AnswerDataContainer {
 		return data.get(index);
 	}
 
-	public int numberOfQuestionedStudyItems() {	//TODO: take to answer statistics maker
-		Set<Integer> cardInexes = new HashSet<Integer>();
-		for (int i=0; i<numberOfAnswers(); i++) {
-			cardInexes.add(getAnswerData(i).index);
-		}
-		return cardInexes.size();
-	}
-
-
 	public double percentageOfRightAnswers() {	//TODO: move it to AnswerDataStatisticsMaker
 		if (data.size() != 0) {
 			int sum = 0;
@@ -150,6 +141,12 @@ public class AnswerDataContainer {
 		}
 		catch(IOException ioe) {
 			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
+	public void appendAnswerDataContainer(AnswerDataContainer answerDataContainer) {
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			addAnswerData(answerDataContainer.getAnswerData(i));
 		}
 	}
 

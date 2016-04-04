@@ -22,17 +22,13 @@ public class AnswerDataByStudyItemsContainer {
 		}
 	}
 
-	public int milisecToDay(long milisecTime) {	//TODO: code repeating with AnswerDataStatisticsMaker
-		int timeZone = 1;
-		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
-	}
-
 	public Set<Integer> getStudyingDays() {
+		GeneralFunctions generalFunctions = new GeneralFunctions();
 		Set<Integer> studyingDays = new HashSet<Integer>();
 		for (int index : data.keySet()) {
 			AnswerDataByStudyItem answerDataByStudyItem = getAnswerDataByStudyItemByIndex(index);
 			for (int j=0; j<answerDataByStudyItem.numberOfAnswers(); j++) {
-				studyingDays.add(milisecToDay(answerDataByStudyItem.getAnswer(j).date));
+				studyingDays.add(generalFunctions.milisecToDay(answerDataByStudyItem.getAnswer(j).date));
 			}
 		}
 		return studyingDays;
