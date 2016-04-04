@@ -71,9 +71,10 @@ public class LanguageStudyer {
 
 		if (choice.equals("1")) {
 			CardTester cardTester = new CardTester();
-			cardTester.setCardContainer(cardContainer);
 
+			cardTester.setCardContainer(cardContainer);
 			cardTester.setAnswerDataContainer(answerDataContainer);
+			cardTester.setCardChooser();
 
 			System.out.print("\033[H\033[2J");
 			System.out.println("practising with:");
@@ -119,7 +120,8 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
-		if (choice.equals("3")) {	//additional statistics
+		//additional statistics
+		if (choice.equals("3")) {
 
 			String choice2;
 
@@ -375,6 +377,7 @@ public class LanguageStudyer {
 			} while (!s.equals("x"));
 		}
 
+		//practising grammar items
 		if (choice.equals("10")) {
 			System.out.print("\033[H\033[2J");
 
@@ -392,6 +395,7 @@ public class LanguageStudyer {
 					if (0 <= orderIndex && orderIndex < grammarBook.numberOfGrammarItems()) {
 						GrammarTester grammarTester = new GrammarTester();
 						grammarTester.setGrammarBook(grammarBook);
+						grammarTester.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 						grammarTester.performTestByOrderIndex(orderIndex, 10);
 					}
 					else {
@@ -417,7 +421,8 @@ public class LanguageStudyer {
 			}
 		}
 
-		if (choice.equals("11")) {	//read grammar book
+		//read grammar book
+		if (choice.equals("11")) {
 			String a;
 			do {
 				System.out.print("\033[H\033[2J");
@@ -433,7 +438,8 @@ public class LanguageStudyer {
 			} while (!a.equals(""));
 		}
 
-		if (choice.equals("12")) {	//basic statistics	
+		//basic statistics
+		if (choice.equals("12")) {
 			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
 			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
 			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
@@ -443,6 +449,7 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
+		//additional statistics
 		if (choice.equals("13")) {
 			String choice2;
 			do {
@@ -487,26 +494,18 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
+		//modificate grammar item
 		if (choice.equals("14")) {
 			String choice2;
 			do {
 
 			System.out.print("\033[H\033[2J");
-			System.out.println("1 - modificate grammar item on frame TODO: implemet");
-			System.out.println("2 - delete grammarItem TODO: implement");
-			System.out.println("3 - check whether exists answer data with invalid grammar item index");
+			System.out.println("1 - delete grammarItem TODO: implement");
+			System.out.println("2 - check whether exists answer data with invalid grammar item index");
 
 			choice2 = console.readLine();
 
 			if (choice2.equals("1")) {
-				/*System.out.println("type the index of grammar item, which you would like to modificate:");
-
-				GrammarItemModificatorFrame grammarItemModificatorFrame = new GrammarItemModificatorFrame();
-				//grammarItemModificatorFrame.setGrammarItemTitle("aaa");
-				grammarItemModificatorFrame.createAndShowGUI();*/
-			}
-
-			if (choice2.equals("2")) {
 				/*System.out.print("\033[H\033[2J");
 				System.out.println("type the index of grammar item, which you would like to delete:");
 
@@ -529,7 +528,7 @@ public class LanguageStudyer {
 				}*/
 			}
 
-			if (choice2.equals("3")) {
+			if (choice2.equals("2")) {
 				grammarBookFileFormatChecker.setGrammarBook(grammarBook);
 				grammarBookFileFormatChecker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
