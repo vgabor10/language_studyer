@@ -4459,7 +4459,7 @@
 4458	r Zwang	kényszer
 4459	meinetwegen	tőlem, miattam
 4460	meiste	többnyire, legtöbbször
-4461	erleiden	szenved
+4461	erleiden	szenved, elszenved
 4462	r Kompromiss	kompromisszum, kiegyezés
 4463	e Erwachsene	felnőttek
 4464	versprechen	megígér
