@@ -37,12 +37,16 @@ public class TerminalDictionaryStatisticsShower {
 			+ answerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem());
 	}
 
+	public void toScreennumberOfCardsQuestioned() {
+		System.out.println("number of cards questioned: " + answerDataStatisticsMaker.numberOfStudyItemsQuestioned());
+	}	
+
 	public void toScreenDictionaryBasicStatistics() {
 		System.out.print("\033[H\033[2J");
 
 		System.out.println("number of cards: " + answerDataStatisticsMaker.numberOfStudyItems());
 		System.out.println("number of answers: " + answerDataStatisticsMaker.numberOfAnswers());
-		System.out.println("number of cards questioned: " + answerDataStatisticsMaker.numberOfStudyItemsQuestioned());
+		toScreennumberOfCardsQuestioned();
 		toScreenNumberOfQuestionsOfLeastStudiedCard();
 		answerDataStatisticsMaker.toSreenLastQuestionedStudyItemDate();
 		answerDataStatisticsMaker.toSreenNumberOfStudyingDays();
