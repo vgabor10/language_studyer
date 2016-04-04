@@ -105,20 +105,30 @@ public class GrammarTester {
 
 		long endTime = System.currentTimeMillis();
 
+		AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
+		answerDataByStudyItem.loadDataFromAnswerDataContainer(grammarItemIndex, grammarAnswerDataContainer);
+		double rightAnswerRateBeforeTest = answerDataByStudyItem.countRightAnswerRate();
+
 		SettingsHandler settingsHandler = new SettingsHandler();
 		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 		grammarAnswerDataContainer.appendAnswerDataContainer(testAnswers);
+
+		answerDataByStudyItem.loadDataFromAnswerDataContainer(grammarItemIndex, grammarAnswerDataContainer);
+		double rightAnswerRateAfterTest = answerDataByStudyItem.countRightAnswerRate();
 
 		System.out.print("\033[H\033[2J");
 		System.out.println("number of registered answers: " + testAnswers.numberOfAnswers());
 
 		int numberOfRightAnswers = 0;
-		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-			if (grammarAnswerDataContainer.getAnswerData(i).isRight) numberOfRightAnswers++;
+		for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
+			if (testAnswers.getAnswerData(i).isRight) numberOfRightAnswers++;
 		}
-		double percentage = (double)numberOfRightAnswers * 100.0 / (double)grammarAnswerDataContainer.numberOfAnswers();
+		double percentage = (double)numberOfRightAnswers * 100.0 / (double)testAnswers.numberOfAnswers();
 		DecimalFormat df = new DecimalFormat("#.00");
 		System.out.println("percentage of right answers: " + df.format(percentage) + "%");
+
+		System.out.println("grammar item right answer rate before test: " +  df.format(rightAnswerRateBeforeTest * 100) + "%");
+		System.out.println("grammar item right answer rate after test: " +  df.format(rightAnswerRateAfterTest * 100) + "%");
 
 		Date date = new Date(endTime - startTime);
 		DateFormat formatter = new SimpleDateFormat("mm:ss");

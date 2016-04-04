@@ -6,7 +6,9 @@ import java.text.DecimalFormat;
 public class AnswerDataByStudyItem {
 
 	private Vector<AnswerData> data = new Vector<AnswerData>();	//datas are sorted by date (growing)
-	private final int numberOfConsideredAnswersAtAnswerRate = 20;
+
+	private final int numberOfConsideredAnswersAtAnswerRateAtCard = 20;
+	private final int numberOfConsideredAnswersAtAnswerRateAtGrammarItem = 40;
 
 	public void addAnswer(AnswerData answerData) {
 		int i = 0;
@@ -33,20 +35,43 @@ public class AnswerDataByStudyItem {
 		return data.lastElement().date;
 	}
 
-	public double countRightAnswerRate() {	//TODO: maybe name more precisely ??? //TODO: more sophisticated definition ???
-		int numberOfRightAnswers = 0;
+	public int numberOfConsideredAnswersAtAnswerRate() {
+		String answerDataClassName = data.get(0).getClass().getSimpleName();
 
-		int i=data.size()-1;
-		int k = 0;
-		while (0 <= i && k < numberOfConsideredAnswersAtAnswerRate) {
-			if (data.get(i).isRight) {
-				numberOfRightAnswers++;
-			}
-			i--;
-			k++;
+		//System.out.println("LOG: answerDataClassName: " + answerDataClassName);		//log
+
+		int numberOfConsideredAnswers;
+		if (answerDataClassName.equals("GrammarAnswerData")) {
+			//System.out.println("LOG: grammar item branche");	//log
+			return numberOfConsideredAnswersAtAnswerRateAtGrammarItem;
 		}
+		else {
+			//System.out.println("LOG: card branche");	//log
+			return numberOfConsideredAnswersAtAnswerRateAtCard;
+		} 
+	}
 
-		return (double)numberOfRightAnswers/(double)k;
+	public double countRightAnswerRate() {
+
+		if (numberOfAnswers() != 0) {
+
+			int numberOfRightAnswers = 0;
+
+			int i=data.size()-1;
+			int k = 0;
+			while (0 <= i && k < numberOfConsideredAnswersAtAnswerRate()) {
+				if (data.get(i).isRight) {
+					numberOfRightAnswers++;
+				}
+				i--;
+				k++;
+			}
+
+			return (double)numberOfRightAnswers/(double)k;
+		}
+		else {
+			return -1;
+		}
 	}
 
 	public double countRightAnswerRateAtDay(int day) {
@@ -62,7 +87,7 @@ public class AnswerDataByStudyItem {
 		int numberOfAnswers = 0;
 
 		int j=i-1;
-		while (0<=j && numberOfAnswers < numberOfConsideredAnswersAtAnswerRate) {
+		while (0<=j && numberOfAnswers < numberOfConsideredAnswersAtAnswerRate()) {
 			if (data.get(j).isRight) {
 				numberOfRightAnswers++;
 			}
@@ -75,6 +100,14 @@ public class AnswerDataByStudyItem {
 		}
 		else {
 			return -1.0;
+		}
+	}
+
+	public void loadDataFromAnswerDataContainer(int index, AnswerDataContainer answerDataContainer) {
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			if (answerDataContainer.getAnswerData(i).index == index) {
+				addAnswer(answerDataContainer.getAnswerData(i));
+			}
 		}
 	}
 

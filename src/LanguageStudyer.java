@@ -384,6 +384,10 @@ public class LanguageStudyer {
 			System.out.println("1 - practising with given grammar item");
 			System.out.println("2 - practising with the last studyed grammar item with at least 10 examples");
 
+			GrammarTester grammarTester = new GrammarTester();
+			grammarTester.setGrammarBook(grammarBook);
+			grammarTester.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
 			String c = console.readLine();
 			if (c.equals("1")) {
 				System.out.print("\033[H\033[2J");
@@ -393,9 +397,6 @@ public class LanguageStudyer {
 				try{
 					int orderIndex = Integer.parseInt(console.readLine());
 					if (0 <= orderIndex && orderIndex < grammarBook.numberOfGrammarItems()) {
-						GrammarTester grammarTester = new GrammarTester();
-						grammarTester.setGrammarBook(grammarBook);
-						grammarTester.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 						grammarTester.performTestByOrderIndex(orderIndex, 10);
 					}
 					else {
@@ -415,8 +416,6 @@ public class LanguageStudyer {
 				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 				int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
-				GrammarTester grammarTester = new GrammarTester();
-				grammarTester.setGrammarBook(grammarBook);
 				grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
 			}
 		}
