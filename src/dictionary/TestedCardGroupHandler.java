@@ -19,17 +19,18 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 		for (int i=0; i<cardContainer.numberOfCards(); i++) {
 			Card card = cardContainer.getCardByOrder(i);
 			if (!isCardGroupsTested.containsKey(card.group)) {
-				if (card.group.equals("no group")) {
-					isCardGroupsTested.put("no group", true);
-				}
-				else {
-					isCardGroupsTested.put(card.group, false);
-				}
+				//if (card.group.equals("no group")) {
+				//	isCardGroupsTested.put("no group", true);
+				//}
+				//else {
+				//	isCardGroupsTested.put(card.group, false);
+				//}
+				isCardGroupsTested.put(card.group, true);
 			}
 
-			if (card.group.equals("no group")) {
+			//if (card.group.equals("no group")) {
 				cardsToTest.addCard(card);
-			}
+			//}
 		}
 	}
 

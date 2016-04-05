@@ -150,10 +150,19 @@ public class AnswerDataContainer {
 		}
 	}
 
-	public void toScreenData() {		//for log
+	public void toScreenData() {
 		for(int i=0; i<data.size(); i++){
 			System.out.println(data.elementAt(i).toStringData());
 		}
+	}
+
+	public String toString() {
+		String out = "";
+		for(int i=0; i<numberOfAnswers()-1; i++){
+			out = out + getAnswerData(i).toStringData() + "\n";
+		}
+		out = out + getAnswerData(numberOfAnswers()-1).toStringData();
+		return out;
 	}
 
 }

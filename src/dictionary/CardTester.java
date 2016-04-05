@@ -191,6 +191,8 @@ public class CardTester {
 		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 		answerDataContainer.appendAnswerDataContainer(testAnswers);
 
+		logger.debug("test asnswers:\n" + testAnswers.toString());
+
 		AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest = new AnswerDataByStudyItemsContainer();
 		answerDatasByStudyItemsAfterTest.loadDataFromAnswerDataContainer(answerDataContainer);
 

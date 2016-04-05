@@ -168,22 +168,28 @@ public class CardChooser {
 		}
 	}
 
-	public int getRandomCardIndex() {
-		int orderIndex = randomGenerator.nextInt(cardContainer.numberOfCards());
-		return cardContainer.getCardByOrder(orderIndex).index;
+	public Set<Integer> getRandomCardIndexes(int numberOfCards, Set<Integer> omittedCardIndexes) {
+		Set<Integer> outCardIndexes = new HashSet<Integer>(); 
+
+		while (outCardIndexes.size() != numberOfCards) {
+			int orderIndex = randomGenerator.nextInt(cardContainer.numberOfCards());
+			int cardIndex = cardContainer.getCardByOrder(orderIndex).index;
+			if (!omittedCardIndexes.contains(cardIndex) && !outCardIndexes.contains(cardIndex)) {
+				outCardIndexes.add(cardIndex);
+			}
+		}
+
+		return outCardIndexes;
 	}
 
 	public Set<Integer> chooseCardsToTestIndexesForTest1() {
 
 		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
 
-		int index = -1;
-		for (int i=0; i<20; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
@@ -199,13 +205,8 @@ public class CardChooser {
 		Set<Integer> indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		int index = -1;
-		for (int i=0; i<8; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
@@ -218,13 +219,10 @@ public class CardChooser {
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
-		int index = -1;
-		for (int i=0; i<8; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
@@ -237,16 +235,16 @@ public class CardChooser {
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
-		Set<Integer> indexesToAdd = getRandomHardestCardIndex2(100, 10, cardsToTestIndexes);
+		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomHardestCardIndex2(100, 10, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		int index = -1;
-		for (int i=0; i<6; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		indexesToAdd = getRandomCardIndexes(4, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
+
+		indexesToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
@@ -259,21 +257,16 @@ public class CardChooser {
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
-		Set<Integer> indexesToAdd = getRandomHardestCardIndexes(0.2, 8, cardsToTestIndexes);
+		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomHardestCardIndexes(0.2, 8, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		Set<Integer> cardsToAdd = getCardIndexesWithLestSignificantAnswerRate(4, cardsToTestIndexes);
-		for (int i : cardsToAdd) {
-			cardsToTestIndexes.add(i);
-		}
+		indexesToAdd = getCardIndexesWithLestSignificantAnswerRate(4, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
-		int index = -1;
-		for (int i=0; i<4; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		indexesToAdd = getRandomCardIndexes(4, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
@@ -289,25 +282,17 @@ public class CardChooser {
 		Set<Integer> indexesToAdd = getRandomHardestCardIndexes(0.2, 8, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		Set<Integer> cardsToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
-		for (int i : cardsToAdd) {
-			cardsToTestIndexes.add(i);
-		}
+		indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
-		int index = -1;
-		for (int i=0; i<6; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		Set<Integer> cardsToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;
 	}
 
 	public Set<Integer> chooseCardsToTestIndexesForTest7() {
 
-		logger.debugActualTime();
 		logger.debug("start evaluate card indexes for test7");
 
 		setAnswerDataByStudyItemsContainer();
@@ -324,20 +309,12 @@ public class CardChooser {
 		indexesToAdd = getRandomHardestCardIndex2(100, 4, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		Set<Integer> cardsToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
-		for (int i : cardsToAdd) {
-			cardsToTestIndexes.add(i);
-		}
+		indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
-		int index = -1;
-		for (int i=0; i<6; i++) {
-			do {
-				index = getRandomCardIndex();
-			} while (cardsToTestIndexes.contains(index));
-			cardsToTestIndexes.add(index);
-		}
+		indexesToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
-		logger.debugActualTime();
 		logger.debug("end evaluate card indexes for test7");
 
 		return cardsToTestIndexes;

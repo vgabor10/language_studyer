@@ -12,6 +12,10 @@ public class LanguageStudyer {
 
 	public static void main(String[] args) {
 
+		Logger logger = new Logger();
+		logger.setLogFile();
+		logger.debug("start program");
+
 		Console console = System.console();
 		SettingsHandler settingsHandler = new SettingsHandler();
 		String choice = "";
@@ -301,7 +305,7 @@ public class LanguageStudyer {
 				try {
 					int cardIndex = Integer.parseInt(console.readLine());
 					System.out.println("are you sure, that, you would like to remove the folloving card? (y/n)");
-					System.out.println(cardContainer.getCard(cardIndex).toStringData());
+					System.out.println(cardContainer.getCardByIndex(cardIndex).toStringData());
 					String a = console.readLine();
 					if (a.equals("y")) {
 						//TODO: implement
@@ -351,7 +355,7 @@ public class LanguageStudyer {
 						else {
 							System.out.println("cards found with the given term");
 				     		for (int i=0; i<foundCardIndexes.size(); i++) {
-					    		System.out.println(cardContainer.getCard(foundCardIndexes.get(i)).toStringData());
+					    		System.out.println(cardContainer.getCardByIndex(foundCardIndexes.get(i)).toStringData());
 				      		}
 
 					  		System.out.println("would you like to add the card to the data base? (y/n)");
