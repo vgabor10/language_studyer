@@ -20,6 +20,8 @@ public class CardTester {
 	private Map<Integer,Integer> testAdvance = new HashMap<Integer,Integer>();
 	private CardChooser cardChooser = new CardChooser();
 
+	private Logger logger = new Logger();
+
 	public void setCardsToTest(CardContainer ctt) {
 		cardsToTest = ctt;
 	}
@@ -59,47 +61,49 @@ public class CardTester {
 
 	//6 latest studyed cards, 6 among hardest cards, 8 random cards
 	public void performTest2() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest2();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 8 random cards
 	public void performTest3() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest3();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	//10 among the hardest 100, 4 latest studied, 6 random cards
 	public void performTest4() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest4();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 4 cards with least significant answer rate, 4 random cards
 	public void performTest5() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest5();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 2 cards among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest6() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest6();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	//4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest7() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
+		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest7();
 		initialiseTestAnvanceMap();
 		performTest();
 	}
 
 	private void performTest() { 
+
+		logger.debug("cardsToTestIndexes: " + cardsToTestIndexes.toString());
 
 		int numberOfCards = cardsToTestIndexes.size();
 
@@ -112,7 +116,7 @@ public class CardTester {
 
 		System.out.print("\033[H\033[2J");
 		for (int a : cardsToTestIndexes) {
-			System.out.println(cardsToTest.getCard(a).toStringReverse());
+			System.out.println(cardsToTest.getCardByIndex(a).toStringReverse());
 		}
 
 		console.readLine();
@@ -120,7 +124,7 @@ public class CardTester {
 		int numberOfCardsLearned = 0;
 		while (cardsToTestIndexes.size() != 0) {
 
-			System.out.print("\033[H\033[2J");	//clear terminal
+			System.out.print("\033[H\033[2J");
 
 			int r = randomGenerator.nextInt(cardsToTestIndexes.size());
 			int i = 0;
@@ -132,7 +136,7 @@ public class CardTester {
 				i++;
 			}
 
-			Card card = cardsToTest.getCard(index);
+			Card card = cardsToTest.getCardByIndex(index);
 			System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
 			System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
 			System.out.println("----------------------------------------------");

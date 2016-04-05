@@ -19,12 +19,25 @@ public class CardContainer extends StudyItemContainer {
 		return numberOfStudyItems();
 	}
 
-	public Card getCard(int i) {	//TODO: rename: getCardByIndex
-		return (Card)getStudyItemByOrder(i);
+	public Card getCardByIndex(int i) {
+		return (Card)getStudyItemByIndex(i);
+	}
+
+	public Card getCardByOrder(int orderIndex) {
+		return (Card)getStudyItemByOrder(orderIndex);
 	}
 
 	public void addCard(Card c) {
 		addStudyItem(c);
+	}
+
+	public Set<Integer> getCardIndexes() {	//TODO implement it in the anchestor class
+		Set<Integer> cardIndexes = new HashSet<Integer>();
+		for (int i=0; i<numberOfCards(); i++) {
+			cardIndexes.add(getCardByOrder(i).index);
+		}
+
+		return cardIndexes;
 	}
 
 	public void removeCardWithIndex(int index) {	//TODO: take to other class
@@ -37,7 +50,7 @@ public class CardContainer extends StudyItemContainer {
 		Card[] arrayToSort = new Card[numberOfCards()];
 
 		for (int i=0; i<numberOfCards(); i++) {
-			arrayToSort[i] = (Card)getCard(i);
+			arrayToSort[i] = getCardByOrder(i);
 		}
 
 		Arrays.sort(arrayToSort, new CardComparatorByTerm());
@@ -81,9 +94,9 @@ public class CardContainer extends StudyItemContainer {
 	public void toScreenCardsWithGivenTermPrefix(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
 		DecimalFormat df = new DecimalFormat("#.00");
 		for (int i=0; i < numberOfCards(); i++) {
-			if (getCard(i).term.startsWith(prefix)) {
-				int cardIndex = getCard(i).index;
-				System.out.println(getCard(i).toStringData() + " | "
+			if (getCardByOrder(i).term.startsWith(prefix)) {
+				int cardIndex = getCardByOrder(i).index;
+				System.out.println(getCardByOrder(i).toStringData() + " | "
 					+ df.format(answerDataContainer.percentageOfRightAnswers(cardIndex)) + "% ("
 					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
 			}
@@ -96,9 +109,9 @@ public class CardContainer extends StudyItemContainer {
 		Vector<Card> cardsToList = new Vector<Card>();
 
 		for (int i=0; i < numberOfCards() && cardsToList.size() < maxListedCards; i++) {
-			if (getCard(i).term.toLowerCase().contains(prefix.toLowerCase())) {
-				int cardIndex = getCard(i).index;
-				cardsToList.add(getCard(i));
+			if (getCardByOrder(i).term.toLowerCase().contains(prefix.toLowerCase())) {
+				int cardIndex = getCardByOrder(i).index;
+				cardsToList.add(getCardByOrder(i));
 			}
 		}
 
@@ -116,12 +129,12 @@ public class CardContainer extends StudyItemContainer {
 
 	public void toScreenCardWithGivenCardIndex(int cardIndex) {	// this function should be implemented in other cass
 		int i=0;
-		while (i < numberOfCards() && getCard(i).index != cardIndex) {
+		while (i < numberOfCards() && getCardByOrder(i).index != cardIndex) {
 			i++;
 		}
 
 		if (i<numberOfCards()) {
-			System.out.println(getCard(i).toStringData());
+			System.out.println(getCardByOrder(i).toStringData());
 		}
 		else {
 			System.out.println("there is not card with given cardIndex");
@@ -130,8 +143,8 @@ public class CardContainer extends StudyItemContainer {
 
 	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {	// this function should be implemented in other cass
 		for (int i=0; i<numberOfCards(); i++) {
-			if (getCard(i).definition.contains(definitionPart)) {
-				System.out.println(getCard(i).toStringReverse());
+			if (getCardByOrder(i).definition.contains(definitionPart)) {
+				System.out.println(getCardByOrder(i).toStringReverse());
 			}
 		}
 	}
@@ -139,8 +152,8 @@ public class CardContainer extends StudyItemContainer {
 	public Vector<Integer> findCardsByTerm(String term) {
 		Vector<Integer> cardIndexes = new Vector<Integer>();
 		for (int i=0; i<numberOfCards(); i++) {
-			if (getCard(i).term.equals(term)) {
-				cardIndexes.add(getCard(i).index);
+			if (getCardByOrder(i).term.equals(term)) {
+				cardIndexes.add(getCardByOrder(i).index);
 			}
 		}
 		return cardIndexes;
@@ -178,7 +191,7 @@ public class CardContainer extends StudyItemContainer {
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 			for (int i=0; i<numberOfCards(); i++) {
-				fw.write(getCard(i).toStringData() + "\n");	//appends the string to the file
+				fw.write(getCardByOrder(i).toStringData() + "\n");	//appends the string to the file
 			}
 			fw.close();
 		}
@@ -189,13 +202,13 @@ public class CardContainer extends StudyItemContainer {
 
 	public void toScreen() {
 		for(int i=0; i<numberOfCards(); i++){
-			System.out.println(getCard(i).toString());
+			System.out.println(getCardByOrder(i).toString());
 		}
 	}
 
 	public void toScreenData() {
 		for(int i=0; i<numberOfCards(); i++){
-			System.out.println(getCard(i).toStringData());
+			System.out.println(getCardByOrder(i).toStringData());
 		}
 	}
 }

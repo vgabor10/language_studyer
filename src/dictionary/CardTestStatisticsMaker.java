@@ -69,7 +69,7 @@ public class CardTestStatisticsMaker {
 			double percentageOfRightAnswersAfterTest
 				= answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;
 			
-			System.out.print(cardContainer.getCard(cardIndex).toString() + " | " 
+			System.out.print(cardContainer.getCardByIndex(cardIndex).toString() + " | " 
 				+ df.format(percentageOfRightAnswersAfterTest) + "% | ");
 			if (percentageOfRightAnswersBeforeTest != -1) {
 				System.out.print(df.format(percentageOfRightAnswersBeforeTest) + "% | ");

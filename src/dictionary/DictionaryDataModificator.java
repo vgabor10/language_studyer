@@ -75,11 +75,11 @@ public class DictionaryDataModificator {
 			index2 = index1 + 1;
 			while (index2 < cardContainer.numberOfCards()) {
 
-				if (cardContainer.getCard(index1).term.equals(cardContainer.getCard(index2).term)
-					&& cardContainer.getCard(index1).definition.equals(cardContainer.getCard(index2).definition)) {
+				if (cardContainer.getCardByOrder(index1).term.equals(cardContainer.getCardByOrder(index2).term)
+					&& cardContainer.getCardByOrder(index1).definition.equals(cardContainer.getCardByOrder(index2).definition)) {
 
 					for (int i = index2 + 1; i < cardContainer.numberOfCards(); i++) {
-						cardContainer.getCard(i).index--;
+						cardContainer.getCardByOrder(i).index--;
 					}
 					cardContainer.removeCardWithIndex(index2);
 
