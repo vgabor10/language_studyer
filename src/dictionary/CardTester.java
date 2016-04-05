@@ -14,14 +14,14 @@ import java.text.DecimalFormat;
 public class CardTester {
 
 	private Random randomGenerator = new Random();
-	private CardContainer cardContainer;
+	private CardContainer cardsToTest;
 	private AnswerDataContainer answerDataContainer;
 	private	Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
 	private Map<Integer,Integer> testAdvance = new HashMap<Integer,Integer>();
 	private CardChooser cardChooser = new CardChooser();
 
-	public void setCardContainer(CardContainer cc) {
-		cardContainer = cc;
+	public void setCardsToTest(CardContainer ctt) {
+		cardsToTest = ctt;
 	}
 
 	public void setAnswerDataContainer(AnswerDataContainer ac) {
@@ -30,7 +30,7 @@ public class CardTester {
 
 	//WARNING: use only after setAnswerDataContainer and setCardContainer functions
 	public void setCardChooser() {
-		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setCardContainer(cardsToTest);
 		cardChooser.setAnswerDataContainer(answerDataContainer);
 	}
 
@@ -112,7 +112,7 @@ public class CardTester {
 
 		System.out.print("\033[H\033[2J");
 		for (int a : cardsToTestIndexes) {
-			System.out.println(cardContainer.getCard(a).toStringReverse());
+			System.out.println(cardsToTest.getCard(a).toStringReverse());
 		}
 
 		console.readLine();
@@ -132,13 +132,13 @@ public class CardTester {
 				i++;
 			}
 
-			Card card = cardContainer.getCard(index);
+			Card card = cardsToTest.getCard(index);
 			System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
 			System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
 			System.out.println("----------------------------------------------");
-			System.out.println(card.s2);
+			System.out.println(card.definition);
 			String answer = console.readLine();
-			if (answer.equals(card.s1)) {	//right answer
+			if (answer.equals(card.term)) {	//right answer
 				//System.out.println("RIGHT");
 
 				if (testAdvance.get(index) == 0) {
@@ -168,10 +168,10 @@ public class CardTester {
 					System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
 					System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
 					System.out.println("----------------------------------------------");
-					System.out.println(card.s2);
-					System.out.println(card.s1);
+					System.out.println(card.definition);
+					System.out.println(card.term);
 					answer = console.readLine();
-				} while (!answer.equals(card.s1));
+				} while (!answer.equals(card.term));
 			}
 
 		}
@@ -191,7 +191,7 @@ public class CardTester {
 		answerDatasByStudyItemsAfterTest.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
-		cardTestStatisticsMaker.setCardContainer(cardContainer);
+		cardTestStatisticsMaker.setCardContainer(cardsToTest);
 		cardTestStatisticsMaker.setTestAnswers(testAnswers);
 		cardTestStatisticsMaker.setAnswerDatasByStudyItemsBeforeTest(answerDatasByStudyItemsBeforeTest);
 		cardTestStatisticsMaker.setAnswerDatasByStudyItemsAfterTest(answerDatasByStudyItemsAfterTest);

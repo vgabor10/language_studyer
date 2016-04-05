@@ -6,17 +6,17 @@ public class CardComparatorByTermForGermanLanguange implements Comparator<Card> 
 
 	@Override
 	public int compare(Card c1, Card c2) {
-		String s1 = c1.s1.toLowerCase();
-		if (s1.substring(0,2).equals("r ") || s1.substring(0,2).equals("e ") || s1.substring(0,2).equals("s ")) {
-			s1 = s1.substring(2);
+		String term = c1.term.toLowerCase();
+		if (term.substring(0,2).equals("r ") || term.substring(0,2).equals("e ") || term.substring(0,2).equals("s ")) {
+			term = term.substring(2);
 		}
 
-		String s2 = c2.s1.toLowerCase();
-		if (s2.substring(0,2).equals("r ") || s2.substring(0,2).equals("e ") || s2.substring(0,2).equals("s ")) {
-			s2 = s2.substring(2);
+		String definition = c2.term.toLowerCase();
+		if (definition.substring(0,2).equals("r ") || definition.substring(0,2).equals("e ") || definition.substring(0,2).equals("s ")) {
+			definition = definition.substring(2);
 		}
 
-		return s1.compareTo(s2);
+		return term.compareTo(definition);
 	}
 }
 

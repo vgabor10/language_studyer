@@ -23,8 +23,8 @@ public class DictionaryDataModificator {
 			System.out.println("card indexes need to be different");
 		}
 		else
-		if (!(cardContainer.getCard(cardIndex1).s1.equals(cardContainer.getCard(cardIndex2).s1) 
-			&& cardContainer.getCard(cardIndex1).s2.equals(cardContainer.getCard(cardIndex2).s2))) {
+		if (!(cardContainer.getCard(cardIndex1).term.equals(cardContainer.getCard(cardIndex2).term) 
+			&& cardContainer.getCard(cardIndex1).definition.equals(cardContainer.getCard(cardIndex2).definition))) {
 			System.out.println("cards have not the same data");
 		}
 		else {
@@ -75,8 +75,8 @@ public class DictionaryDataModificator {
 			index2 = index1 + 1;
 			while (index2 < cardContainer.numberOfCards()) {
 
-				if (cardContainer.getCard(index1).s1.equals(cardContainer.getCard(index2).s1)
-					&& cardContainer.getCard(index1).s2.equals(cardContainer.getCard(index2).s2)) {
+				if (cardContainer.getCard(index1).term.equals(cardContainer.getCard(index2).term)
+					&& cardContainer.getCard(index1).definition.equals(cardContainer.getCard(index2).definition)) {
 
 					for (int i = index2 + 1; i < cardContainer.numberOfCards(); i++) {
 						cardContainer.getCard(i).index--;

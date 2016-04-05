@@ -46,7 +46,7 @@ public class CardContainer extends StudyItemContainer {
 		String actualTerm = "";
 		int numberOfCases = 0;
 		for (int i=0; i<numberOfCards(); i++) {
-			actualTerm = arrayToSort[i].s1;
+			actualTerm = arrayToSort[i].term;
 			if (actualTerm.equals(lastTerm)) {
 				numberOfCases++;
 				if (numberOfCases == 1) {
@@ -81,7 +81,7 @@ public class CardContainer extends StudyItemContainer {
 	public void toScreenCardsWithGivenTermPrefix(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
 		DecimalFormat df = new DecimalFormat("#.00");
 		for (int i=0; i < numberOfCards(); i++) {
-			if (getCard(i).s1.startsWith(prefix)) {
+			if (getCard(i).term.startsWith(prefix)) {
 				int cardIndex = getCard(i).index;
 				System.out.println(getCard(i).toStringData() + " | "
 					+ df.format(answerDataContainer.percentageOfRightAnswers(cardIndex)) + "% ("
@@ -96,7 +96,7 @@ public class CardContainer extends StudyItemContainer {
 		Vector<Card> cardsToList = new Vector<Card>();
 
 		for (int i=0; i < numberOfCards() && cardsToList.size() < maxListedCards; i++) {
-			if (getCard(i).s1.toLowerCase().contains(prefix.toLowerCase())) {
+			if (getCard(i).term.toLowerCase().contains(prefix.toLowerCase())) {
 				int cardIndex = getCard(i).index;
 				cardsToList.add(getCard(i));
 			}
@@ -130,7 +130,7 @@ public class CardContainer extends StudyItemContainer {
 
 	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {	// this function should be implemented in other cass
 		for (int i=0; i<numberOfCards(); i++) {
-			if (getCard(i).s2.contains(definitionPart)) {
+			if (getCard(i).definition.contains(definitionPart)) {
 				System.out.println(getCard(i).toStringReverse());
 			}
 		}
@@ -139,7 +139,7 @@ public class CardContainer extends StudyItemContainer {
 	public Vector<Integer> findCardsByTerm(String term) {
 		Vector<Integer> cardIndexes = new Vector<Integer>();
 		for (int i=0; i<numberOfCards(); i++) {
-			if (getCard(i).s1.equals(term)) {
+			if (getCard(i).term.equals(term)) {
 				cardIndexes.add(getCard(i).index);
 			}
 		}
@@ -153,9 +153,18 @@ public class CardContainer extends StudyItemContainer {
 		try {
 			br = new BufferedReader( new FileReader(filePath));
 			while( (strLine = br.readLine()) != null){
-				//System.out.println(strLine);
+				//System.out.println(strLine);	//log
+
+				String[] cardVariables = strLine.split("\t");
+
 				Card card = new Card();
-				card.setDataFromString(strLine);
+				card.index = Integer.parseInt(cardVariables[0]);
+				card.term = cardVariables[1];
+				card.definition = cardVariables[2];
+				if (3 < cardVariables.length) {
+					card.group = cardVariables[3];
+				}
+
 				addCard(card);
 			}
 		} catch (FileNotFoundException e) {

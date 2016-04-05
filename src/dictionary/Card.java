@@ -4,37 +4,32 @@ import common.*;
 
 public class Card extends StudyItem {
 
-	public String s1;	//TODO: should change the name to term
-	public String s2;	//TODO: should change the name to definition
+	public String term;
+	public String definition;
+	public String group;
 
 	public Card() {
-
 		index = -1;
-		s1 = "";
-		s2 = "";
+		term = "";
+		definition = "";
+		group = "no group";
 	}
 
 	public Card(int i, String t, String d) {
 		index = i;
-		s1 = t;
-		s2 = d;
-	}
-
-	public void setDataFromString(String s) {
-		index = Integer.parseInt(s.split("\t")[0]);
-		s1 = s.split("\t")[1];
-		s2 = s.split("\t")[2];
+		term = t;
+		definition = d;
 	}
 
 	public String toStringData() {
-		return Integer.toString(index) + "\t" + s1 + "\t" + s2;
+		return Integer.toString(index) + "\t" + term + "\t" + definition;
 	}
 
 	public String toString() {
-		return s1 + " - " + s2;
+		return term + " - " + definition;
 	}
 
 	public String toStringReverse() {
-		return s2 + " - " + s1;
+		return definition + " - " + term;
 	}
 }

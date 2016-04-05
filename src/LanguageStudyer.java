@@ -21,6 +21,10 @@ public class LanguageStudyer {
 		CardContainer cardContainer = new CardContainer();
 		cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
 
+		TestedCardGroupHandler testedCardGroupHandler = new TestedCardGroupHandler();
+		testedCardGroupHandler.setCardContainer(cardContainer);
+		testedCardGroupHandler.setCardGroups();
+
 		GrammarBook grammarBook = new GrammarBook();
 		GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
 		GrammarBookFileFormatChecker grammarBookFileFormatChecker = new GrammarBookFileFormatChecker();
@@ -54,6 +58,7 @@ public class LanguageStudyer {
 		System.out.println("5 - modificate cards");
 		System.out.println("6 - add card");
 		System.out.println("7 - find cards according to term part");
+		System.out.println("8 - set card groups to test");
 		System.out.println();
 		System.out.println("GRAMMAR BOOK");
 		System.out.println("10 - practicing");
@@ -72,7 +77,7 @@ public class LanguageStudyer {
 		if (choice.equals("1")) {
 			CardTester cardTester = new CardTester();
 
-			cardTester.setCardContainer(cardContainer);
+			cardTester.setCardsToTest(testedCardGroupHandler.cardsToTest);
 			cardTester.setAnswerDataContainer(answerDataContainer);
 			cardTester.setCardChooser();
 
@@ -418,6 +423,10 @@ public class LanguageStudyer {
 				int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
 				grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
 			}
+		}
+
+		if (choice.equals("8")) {
+			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
 		}
 
 		//read grammar book
