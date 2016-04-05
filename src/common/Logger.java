@@ -1,0 +1,55 @@
+package common;
+
+import java.util.*;
+import java.io.*;
+
+public class Logger {
+
+	private final String logFilePath = "/home/varga/git/language_studyer/log_files/log_file.txt";
+
+	private final int logLevel = 1;
+	//debug - 1
+
+	public Logger() {
+	}
+
+	public void setLogFile() {
+		try {
+			FileWriter fw = new FileWriter(logFilePath,false);
+			fw.write("");
+			fw.close();
+		}
+		catch(IOException ioe) {
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
+	private void writeToLogFile(String str) {
+		try {
+			FileWriter fw = new FileWriter(logFilePath,true);
+			fw.write(str);
+			fw.close();
+		}
+		catch(IOException ioe) {
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
+	public void debugActualTime() {
+		if (1 <= logLevel) {
+			Date date = new Date();
+			long now = date.getTime();
+			writeToLogFile("actual time: " + now + "\n");
+		}
+	}
+
+	public void debug(String debugMassage) {
+		if (1 <= logLevel) {
+			Date date = new Date();
+			long now = date.getTime();
+
+			writeToLogFile(now + ": " + debugMassage + "\n");
+		}
+	}
+
+}

@@ -111,10 +111,10 @@ public class AnswerDataByStudyItem {
 		}
 	}
 
-	public String toStringShowingPercentage(StudyItemContainer studyItemContainer) {	//TODO: mi ez?????
+	public String toStringShowingPercentage(StudyItemContainer studyItemContainer) {	//TODO: it is for progress by words function and hardes words feature: make it to operate
 		DecimalFormat df = new DecimalFormat("#.00");
-		/*return studyItemContainer.getStudyItem(data.get(0).index).s2 + " - " 
-			+ studyItemContainer.getStudyItem(data.get(0).index).s1 + " | " 
+		/*return (Card)studyItemContainer.getStudyItemByIndex(data.get(0).index).definition + " - " 
+			+ studyItemContainer.getStudyItemByIndex(data.get(0).index).term + " | " 
 			+ df.format(countRightAnswerRate() * 100) + "%" + " (" + numberOfAnswers() + ")";*/
 		return "";
 	}

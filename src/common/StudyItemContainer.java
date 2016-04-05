@@ -15,6 +15,8 @@ public class StudyItemContainer {
 
 	private Vector<StudyItem> data = new Vector<StudyItem>();
 
+	private Map<Integer,Integer> studyItemIndexToOrderIndex = new HashMap<Integer,Integer>();
+
 	public StudyItemContainer() {
 	}
 
@@ -27,17 +29,7 @@ public class StudyItemContainer {
 	}
 
 	public StudyItem getStudyItemByIndex(int index) {
-		int i=0;
-		while (i<data.size() && data.get(i).index != index) {
-			i++;
-		}
-
-		if (i == data.size()) {
-			return null;
-		}
-		else {
-			return data.get(i);
-		}
+		return data.get(studyItemIndexToOrderIndex.get(index));
 	}
 
 	public Set<Integer> getStudyItemIndexes() {
@@ -51,6 +43,7 @@ public class StudyItemContainer {
 
 	public void addStudyItem(StudyItem si) {
 		data.add(si);
+		studyItemIndexToOrderIndex.put(si.index, numberOfStudyItems()-1);
 	}
 
 	public void removeStudyItemWithIndex(int index) {	//TODO: implement

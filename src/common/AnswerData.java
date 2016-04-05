@@ -2,7 +2,7 @@ package common;
 
 public class AnswerData {
 
-	public int index;
+	public int index;	//TODO: change name: studyItemIndex
 	public boolean isRight;
 	public long date;
 
