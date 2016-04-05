@@ -21,16 +21,20 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 			if (!isCardGroupsTested.containsKey(card.group)) {
 				if (card.group.equals("no group")) {
 					isCardGroupsTested.put("no group", true);
-					cardsToTest.addCard(card);
 				}
 				else {
 					isCardGroupsTested.put(cardContainer.getCard(i).group, false);
 				}
 			}
+
+			if (card.group.equals("no group")) {
+				cardsToTest.addCard(card);
+			}
 		}
 	}
 
 	private void refreshCardsToTestAccordingToMapVariable() {
+		cardsToTest.clear();
 		for (int i=0; i<cardContainer.numberOfCards(); i++) {
 			Card card = cardContainer.getCard(i);
 			if (isCardGroupsTested.get(card.group)) {
@@ -47,7 +51,7 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 		do {
 
 		System.out.print("\033[H\033[2J");
-		System.out.println("change card groups to test, or type x to go back");
+		System.out.println("change card groups to test, or type ENTER to go back");
 
 		int index = 0;
 		Vector<String> indexAndGroupName = new Vector<String>();
@@ -59,16 +63,15 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 
 		s = console.readLine();
 
-		if (!s.equals("x")) {
+		if (!s.equals("")) {
 			index = Integer.parseInt(s);
 			String groupName = indexAndGroupName.elementAt(index);
 			boolean isTested = isCardGroupsTested.get(groupName);
 			isCardGroupsTested.remove(groupName);
 			isCardGroupsTested.put(groupName,!isTested);
+			refreshCardsToTestAccordingToMapVariable();
 		}
 
-		refreshCardsToTestAccordingToMapVariable();
-
-		} while (!s.equals("x"));
+		} while (!s.equals(""));
 	}
 }
