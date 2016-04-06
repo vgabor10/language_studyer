@@ -4,6 +4,7 @@ import grammar_book.*;
 import settings_handler.*;
 import common.*;
 
+import java.util.*;
 import java.text.DecimalFormat;	
 
 public class TerminalGrammarStatisticsShower {
@@ -64,6 +65,43 @@ public class TerminalGrammarStatisticsShower {
 		System.out.println("number of grammar items questioned: " + grammarAnswerDataStatisticsMaker.numberOfStudyItemsQuestioned());
 	}
 
+	public void toSreenLastQuestionedGrammarItemDate() {
+		Date date=new Date(grammarAnswerDataStatisticsMaker.getLastQuestionedStudyItemDate());
+		System.out.println("date of last questioned grammar item: " + date);
+	}
+
+	public void toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {	//TODO: code repetition with TerminalGrammarStatisticsShower
+		Vector<Integer> numberOfAnswersGivenLastDays = grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersGivenLastDays(10);
+		DecimalFormat df = new DecimalFormat("#.00");
+
+		Date date = new Date();
+		GeneralFunctions generalFunctions = new GeneralFunctions();
+		int today = generalFunctions.milisecToDay(date.getTime());
+
+		for (int i=0; i<numberOfDays; i++) {
+			System.out.println(i + " - " +numberOfAnswersGivenLastDays.get(i) 
+				+ " (" + df.format(grammarAnswerDataStatisticsMaker.percentageOfRightAnswersAtDay(today-i)) + "%)");
+		}
+
+		System.out.println("number of answers given last days (number of days before today - number of answers (percentage of right answers)): ");
+	}
+
+	public void toScreenHistogramOfGrammarItemsByAnswerRate() {
+		System.out.println("histogram of grammar items by right answer rate (category ---> number of StudyItems in category (percentage of StudyItems)):");
+
+		int [] numberOfStudyItemsInCategory = grammarAnswerDataStatisticsMaker.getHistogramOfStudyItemsByAnswerRate();
+
+		DecimalFormat df = new DecimalFormat("#.00");
+		for (int i=9; 0<=i;i--) {
+			System.out.println(i*10 + "% - " + (i+1) * 10 + "% ---> " + numberOfStudyItemsInCategory[i] + " (" 
+				+ df.format((double)numberOfStudyItemsInCategory[i] * 100.0 / 							(double)grammarAnswerDataStatisticsMaker.numberOfStudyItems()) + "%)");
+		}
+	}
+
+	public void toSreenNumberOfStudyingDays() {	//TODO: code repetition with TerminalDictionaryStatisticsShower
+		System.out.println("number of studying days: " + grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays());
+	}
+
 	public void toScreenGrammarBookBasicStatistics() {
 		System.out.print("\033[H\033[2J");
 
@@ -73,13 +111,13 @@ public class TerminalGrammarStatisticsShower {
 		toScreenNumberOfAnswers();
 		toScreenNumberOfStudyItemsQuestioned();
 		toScreenNumberOfQuestionsOfLeastStudiedGrammarItem();
-		grammarAnswerDataStatisticsMaker.toSreenLastQuestionedStudyItemDate();
-		grammarAnswerDataStatisticsMaker.toSreenNumberOfStudyingDays();
+		toSreenLastQuestionedGrammarItemDate();
+		toSreenNumberOfStudyingDays();
 		toScreenPractisingTime();
 		toScreenPercentageOfRightAnswers();
 		toSreenAverageAnswerRateOfGrammarItems();
 		grammarAnswerDataStatisticsMaker.toScreenProgress(10);
-		grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersGivenLastDays(10);
-		grammarAnswerDataStatisticsMaker.toScreenHistogram();
+		toScreenNumberOfAnswersGivenLastDays(10);
+		toScreenHistogramOfGrammarItemsByAnswerRate();
 	}
 }

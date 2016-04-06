@@ -250,7 +250,8 @@ public class AnswerDataStatisticsMaker {
 		}
 	}
 
-	public void toScreenProgress(int numberOfMeasurementPoints) {	//suppose, that data is ordered by time
+	//suppose, that data is ordered by time
+	public void toScreenProgress(int numberOfMeasurementPoints) {	//TODO: not too informative statistics, should be deleted???
 		DecimalFormat df = new DecimalFormat("#.00");
 		System.out.print("progress of right answers: ");
 
@@ -294,7 +295,7 @@ public class AnswerDataStatisticsMaker {
 		return studyItemIndexes.size();
 	}
 
-	public void toSreenLastQuestionedStudyItemDate() {
+	public long getLastQuestionedStudyItemDate() {
 		Set<Integer> StudyItemIndexes = new HashSet<Integer>();
 		int i = answerDataContainer.numberOfAnswers() - 1;
 		int numberOfQuestionedStudyItems = numberOfQuestionedStudyItems();
@@ -302,29 +303,32 @@ public class AnswerDataStatisticsMaker {
 			StudyItemIndexes.add(answerDataContainer.getAnswerData(i).index);
 			i--;
 		}
-		Date date=new Date(answerDataContainer.getAnswerData(i+1).date);
-		System.out.println("date of last questioned StudyItem: " + date);
+		
+		return answerDataContainer.getAnswerData(i+1).date;
 	}
 
-	public void toSreenNumberOfStudyingDays() {
+	public int getNumberOfStudyingDays() {
 		Set<Integer> studyingDays = new HashSet<Integer>();
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 
 		for (int i=0; i < answerDataContainer.numberOfAnswers(); i++) {
 			studyingDays.add(generalFunctions.milisecToDay(answerDataContainer.getAnswerData(i).date));
 		}
-		System.out.println("number of studying days: " + studyingDays.size());
+
+		return studyingDays.size();
 	}
 
-	public void toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {
+	public Vector<Integer> toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {
 		Date date = new Date();
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 		int today = generalFunctions.milisecToDay(date.getTime());
-		System.out.println("number of answers given last days (number of days before today - number of answers (percentage of right answers)): ");
-		DecimalFormat df = new DecimalFormat("#.00");
+
+		Vector<Integer> out = new Vector<Integer>();
 		for (int i=0; i<numberOfDays; i++) {
-			System.out.println(i + " - " +numberOfAnswersAtDay(today-i) + " (" + df.format(percentageOfRightAnswersAtDay(today-i)) + "%)");
+			out.add(numberOfAnswersAtDay(today-i));
 		}
+
+		return out;
 	}
 
 	public void toScreenNumberOfGivenAnswersByHours() {
@@ -345,7 +349,7 @@ public class AnswerDataStatisticsMaker {
 		}
 	}
 
-	public void toScreenHistogram() {
+	public int[] getHistogramOfStudyItemsByAnswerRate() {
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
@@ -362,13 +366,15 @@ public class AnswerDataStatisticsMaker {
 			}
 		}
 
-		System.out.println("Histogram of StudyItems by right answer rate (category ---> number of StudyItems in category (percentage of StudyItems)):");
+		return numberOfStudyItemsInCategory;
+
+		/*System.out.println("Histogram of StudyItems by right answer rate (category ---> number of StudyItems in category (percentage of StudyItems)):");
 
 		for (int i=9; 0<=i;i--) {
 			DecimalFormat df = new DecimalFormat("#.00");
 			System.out.println(i*10 + "% - " + (i+1) * 10 + "% ---> " + numberOfStudyItemsInCategory[i] + " (" 
 				+ df.format((double)numberOfStudyItemsInCategory[i] * 100.0 / (double)answerDataByStudyItemsContainer.numberOfStudyItems()) 					+ "%)");
-		}
+		}*/
 	}
 
 	public void toScreenHistogramOfStudyItemAnswerRatesByDays() {
