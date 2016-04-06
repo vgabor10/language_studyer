@@ -223,6 +223,10 @@ public class LanguageStudyer {
 
 			String choice2;
 
+			CardFinder cardFinder = new CardFinder();
+			cardFinder.setCardContainer(cardContainer);
+			cardFinder.setAnswerDataContainer(answerDataContainer);
+
 			do {
 
 			System.out.print("\033[H\033[2J");
@@ -237,15 +241,14 @@ public class LanguageStudyer {
 			if (choice2.equals("1")) {
 				System.out.print("\033[H\033[2J");
 				System.out.println("cards with same terms:");
-				cardContainer.toScreenCardsWithSameTerm();
+				cardFinder.toScreenCardsWithSameTerm();
 
 				console.readLine();
 			}
 
 			if (choice2.equals("2")) {
 				System.out.print("\033[H\033[2J");
-				cardContainer.toScreenData();
-				cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
+				cardFinder.toScreenAllCards();
 				console.readLine();
 			}
 
@@ -254,8 +257,7 @@ public class LanguageStudyer {
 				System.out.println("type cardIndex:");
 				String inString = console.readLine();
 				int cardIndex = Integer.parseInt(inString);
-				cardContainer.toScreenCardWithGivenCardIndex(cardIndex);
-
+				cardFinder.toScreenCardWithGivenCardIndex(cardIndex);
 				console.readLine();
 			}
 
@@ -264,8 +266,7 @@ public class LanguageStudyer {
 				System.out.println("type definition part:");
 				String definitionPart = console.readLine();
 				System.out.println("results:");
-				cardContainer.toScreenCardsWithGivenDefinitionPart(definitionPart);
-			
+				cardFinder.toScreenCardsWithGivenDefinitionPart(definitionPart);
 				console.readLine();
 			}
 
@@ -274,8 +275,7 @@ public class LanguageStudyer {
 				System.out.println("type term prefix:");
 				String prefix = console.readLine();
 				System.out.println("cards with given term prefix /cardIndex term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
-				cardContainer.toScreenCardsWithGivenTermPrefix(prefix, answerDataContainer);
-
+				cardFinder.toScreenCardsWithGivenTermPrefix(prefix);
 				console.readLine();
 			}
 
@@ -372,6 +372,10 @@ public class LanguageStudyer {
 
 		if (choice.equals("7")) {
 
+			CardFinder cardFinder = new CardFinder();
+			cardFinder.setCardContainer(cardContainer);
+			cardFinder.setAnswerDataContainer(answerDataContainer);
+
 			String s = "";
 			do {
 				System.out.print("\033[H\033[2J");
@@ -379,7 +383,7 @@ public class LanguageStudyer {
 				s = console.readLine();
 				if (!s.equals("x")) {
 					System.out.println("cards with given term prefix /cardIndex term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
-					cardContainer.toScreenCardsWithGivenTermPart(s, answerDataContainer);
+					cardFinder.toScreenCardsWithGivenTermPart(s);
 
 					console.readLine();
 				}

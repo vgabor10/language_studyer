@@ -44,40 +44,7 @@ public class CardContainer extends StudyItemContainer {
 		removeStudyItemWithIndex(index);
 	}
 
-	public void toScreenCardsWithSameTerm() {
-		Set<String> termData = new HashSet<String>();
-
-		Card[] arrayToSort = new Card[numberOfCards()];
-
-		for (int i=0; i<numberOfCards(); i++) {
-			arrayToSort[i] = getCardByOrder(i);
-		}
-
-		Arrays.sort(arrayToSort, new CardComparatorByTerm());
-
-		String lastTerm = "";
-		String actualTerm = "";
-		int numberOfCases = 0;
-		for (int i=0; i<numberOfCards(); i++) {
-			actualTerm = arrayToSort[i].term;
-			if (actualTerm.equals(lastTerm)) {
-				numberOfCases++;
-				if (numberOfCases == 1) {
-					System.out.println(arrayToSort[i-1].toStringData());
-					System.out.println(arrayToSort[i].toStringData());
-				}
-				else {
-					System.out.println(arrayToSort[i].toStringData());
-				}
-			}
-			else {
-				numberOfCases = 0;
-			}
-			lastTerm = actualTerm;
-		}
-	}
-
-	public void addCardToContainerAndAppenToDiscFile(Card card, String filePath) {
+	public void addCardToContainerAndAppenToDiscFile(Card card, String filePath) {	//TODO: take to an other class
 		addStudyItem(card);
 
 		try {
@@ -91,65 +58,7 @@ public class CardContainer extends StudyItemContainer {
 
 	}
 
-	public void toScreenCardsWithGivenTermPrefix(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
-		DecimalFormat df = new DecimalFormat("#.00");
-		for (int i=0; i < numberOfCards(); i++) {
-			if (getCardByOrder(i).term.startsWith(prefix)) {
-				int cardIndex = getCardByOrder(i).index;
-				System.out.println(getCardByOrder(i).toStringData() + " | "
-					+ df.format(answerDataContainer.percentageOfRightAnswers(cardIndex)) + "% ("
-					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
-			}
-		}
-	}
-
-	public void toScreenCardsWithGivenTermPart(String prefix, AnswerDataContainer answerDataContainer) {	// this function should be implemented in other cass
-		DecimalFormat df = new DecimalFormat("#.00");
-		int maxListedCards = 30;
-		Vector<Card> cardsToList = new Vector<Card>();
-
-		for (int i=0; i < numberOfCards() && cardsToList.size() < maxListedCards; i++) {
-			if (getCardByOrder(i).term.toLowerCase().contains(prefix.toLowerCase())) {
-				int cardIndex = getCardByOrder(i).index;
-				cardsToList.add(getCardByOrder(i));
-			}
-		}
-
-		Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange());
-		for (int i=0; i < cardsToList.size(); i++) {
-			int cardIndex = cardsToList.get(i).index;
-			System.out.println(cardsToList.get(i).toStringData() + " | "
-					+ df.format(answerDataContainer.getAnswerRateOfCard(cardIndex) * 100) + "% ("
-					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
-		}
-		if (cardsToList.size() == maxListedCards) {
-			System.out.println("THERE CAN BE MORE CARDS FOUND");
-		}
-	}
-
-	public void toScreenCardWithGivenCardIndex(int cardIndex) {	// this function should be implemented in other cass
-		int i=0;
-		while (i < numberOfCards() && getCardByOrder(i).index != cardIndex) {
-			i++;
-		}
-
-		if (i<numberOfCards()) {
-			System.out.println(getCardByOrder(i).toStringData());
-		}
-		else {
-			System.out.println("there is not card with given cardIndex");
-		}
-	}
-
-	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {	// this function should be implemented in other cass
-		for (int i=0; i<numberOfCards(); i++) {
-			if (getCardByOrder(i).definition.contains(definitionPart)) {
-				System.out.println(getCardByOrder(i).toStringReverse());
-			}
-		}
-	}
-
-	public Vector<Integer> findCardsByTerm(String term) {
+	public Vector<Integer> findCardsByTerm(String term) {	//TODO: take to CardFinderClass
 		Vector<Integer> cardIndexes = new Vector<Integer>();
 		for (int i=0; i<numberOfCards(); i++) {
 			if (getCardByOrder(i).term.equals(term)) {
