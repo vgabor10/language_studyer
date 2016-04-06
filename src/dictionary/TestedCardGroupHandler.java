@@ -5,7 +5,7 @@ import common.*;
 import java.util.*;
 import java.io.Console;
 
-public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler 
+public class TestedCardGroupHandler {
 
 	private CardContainer cardContainer;
 	public CardContainer cardsToTest = new CardContainer();
@@ -44,7 +44,7 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 		}
 	}
 
-	public void toScreenTestedCardGroupsChooser() {
+	public void toScreenTestedCardGroupsChooser() {	//TODO: take to other class
 
 		Console console = System.console();
 		String s;
@@ -57,7 +57,12 @@ public class TestedCardGroupHandler {	//TODO: rename CardsToTestHandler
 		int index = 0;
 		Vector<String> indexAndGroupName = new Vector<String>();
 		for (String groupName: isCardGroupsTested.keySet()) {
-			System.out.println(index + " - " + groupName + " - " + isCardGroupsTested.get(groupName));
+			if (!groupName.equals("")) {
+				System.out.println(index + " - " + groupName + " - " + isCardGroupsTested.get(groupName));
+			}
+			else {
+				System.out.println(index + " - no group - " + isCardGroupsTested.get(groupName));
+			}
 			indexAndGroupName.add(groupName);
 			index++;
 		}

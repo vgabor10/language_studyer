@@ -2,7 +2,7 @@ package common;
 
 public class StudyItem {
 
-	public int index;	//TODO: rename: studyItemIndex
+	public int index;
 
 	public StudyItem() {
 		index = -1;

@@ -12,7 +12,7 @@ public class Card extends StudyItem {
 		index = -1;
 		term = "";
 		definition = "";
-		group = "no group";
+		group = "";
 	}
 
 	public Card(int i, String t, String d) {
@@ -22,7 +22,12 @@ public class Card extends StudyItem {
 	}
 
 	public String toStringData() {
-		return Integer.toString(index) + "\t" + term + "\t" + definition;
+		if (group.equals("")) {
+			return Integer.toString(index) + "\t" + term + "\t" + definition;
+		}
+		else {
+			return Integer.toString(index) + "\t" + term + "\t" + definition + "\t" + group;
+		}
 	}
 
 	public String toString() {

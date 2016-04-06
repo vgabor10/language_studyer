@@ -118,20 +118,7 @@ public class AnswerDataContainer {
 		}
 	}
 
-	public void saveDataToFile(String filePath) {		//TODO: delete: too specific
-		try {
-			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
-			for (int i=0; i<numberOfAnswers(); i++) {
-				fw.write(data.get(i).toStringData() + "\n");	//appends the string to the file
-			}
-			fw.close();
-		}
-		catch(IOException ioe) {
-			System.err.println("IOException: " + ioe.getMessage());
-		}
-	}
-
-	public void appendToAnswerDataFile(String filePath) {	//TODO: delete: too specific
+	public void appendToAnswerDataFile(String filePath) {	//TODO: take it to DictionaryDataModificator class
 		try {
 			FileWriter fw = new FileWriter(filePath,true);	//the true will append the new data
 			for (int i=0; i<data.size(); i++) {

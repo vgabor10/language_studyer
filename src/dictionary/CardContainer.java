@@ -31,13 +31,8 @@ public class CardContainer extends StudyItemContainer {
 		addStudyItem(c);
 	}
 
-	public Set<Integer> getCardIndexes() {	//TODO implement it in the anchestor class
-		Set<Integer> cardIndexes = new HashSet<Integer>();
-		for (int i=0; i<numberOfCards(); i++) {
-			cardIndexes.add(getCardByOrder(i).index);
-		}
-
-		return cardIndexes;
+	public Set<Integer> getCardIndexes() {
+		return getStudyItemIndexes();
 	}
 
 	public void removeCardWithIndex(int index) {	//TODO: take to other class
@@ -68,7 +63,7 @@ public class CardContainer extends StudyItemContainer {
 		return cardIndexes;
 	}
 
-	public void loadDataFromFile(String filePath) {
+	public void loadDataFromFile(String filePath) {	//TODO: take to other class
 		clear();
 		BufferedReader br = null;
 		String strLine = "";
@@ -93,19 +88,6 @@ public class CardContainer extends StudyItemContainer {
 		    System.err.println("Unable to find the file: fileName");
 		} catch (IOException e) {
 		    System.err.println("Unable to read the file: fileName");
-		}
-	}
-
-	public void saveDataToFile(String filePath) {
-		try {
-			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
-			for (int i=0; i<numberOfCards(); i++) {
-				fw.write(getCardByOrder(i).toStringData() + "\n");	//appends the string to the file
-			}
-			fw.close();
-		}
-		catch(IOException ioe) {
-			System.err.println("IOException: " + ioe.getMessage());
 		}
 	}
 

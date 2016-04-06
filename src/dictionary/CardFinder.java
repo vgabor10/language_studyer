@@ -3,9 +3,6 @@ package dictionary;
 import common.*;
 
 import java.util.*;
-//import java.io.File;
-//import java.io.IOException;
-//import java.lang.Math;
 import java.text.DecimalFormat;
 
 public class CardFinder {
@@ -84,10 +81,12 @@ public class CardFinder {
 			}
 		}
 
+		System.out.println("cards with given term prefix /term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
+
 		Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange());
 		for (int i=0; i < cardsToList.size(); i++) {
 			int cardIndex = cardsToList.get(i).index;
-			System.out.println(cardsToList.get(i).toStringData() + " | "
+			System.out.println(cardsToList.get(i).toString() + " | "
 					+ df.format(answerDataContainer.getAnswerRateOfCard(cardIndex) * 100) + "% ("
 					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
 		}

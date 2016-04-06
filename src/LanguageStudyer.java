@@ -289,13 +289,14 @@ public class LanguageStudyer {
 
 			String choice2 = console.readLine();
 
+			DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+			dictionaryDataModificator.setCardContainer(cardContainer);
+			dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+			dictionaryDataModificator.setSettingsHandler(settingsHandler);
+
 			if (choice2.equals("1")) {
 				System.out.print("\033[H\033[2J");
-				DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-				dictionaryDataModificator.setCardContainer(cardContainer);
-				dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
 				dictionaryDataModificator.mergeCardsWithSameData();
-
 				console.readLine();
 			}
 
@@ -382,7 +383,6 @@ public class LanguageStudyer {
 				System.out.println("type term part, or x to quit:");
 				s = console.readLine();
 				if (!s.equals("x")) {
-					System.out.println("cards with given term prefix /cardIndex term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
 					cardFinder.toScreenCardsWithGivenTermPart(s);
 
 					console.readLine();

@@ -63,12 +63,11 @@ public class TerminalDictionaryStatisticsShower {
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 		int today = generalFunctions.milisecToDay(date.getTime());
 
+		System.out.println("number of answers given last days (number of days before today - number of answers (percentage of right answers)): ");
 		for (int i=0; i<numberOfDays; i++) {
 			System.out.println(i + " - " +numberOfAnswersGivenLastDays.get(i) 
 				+ " (" + df.format(answerDataStatisticsMaker.percentageOfRightAnswersAtDay(today-i)) + "%)");
 		}
-
-		System.out.println("number of answers given last days (number of days before today - number of answers (percentage of right answers)): ");
 	}
 
 	public void toScreenHistogramOfCardsByAnswerRate() {

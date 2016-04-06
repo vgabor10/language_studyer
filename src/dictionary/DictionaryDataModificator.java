@@ -4,11 +4,14 @@ import common.*;
 import settings_handler.*;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
+	private SettingsHandler settingsHandler;
 
 	public void setCardContainer(CardContainer cc) {
 		cardContainer = cc;
@@ -16,6 +19,10 @@ public class DictionaryDataModificator {
 
 	public void setAnswerDataContainer(AnswerDataContainer ac) {
 		answerDataContainer = ac;
+	}
+
+	public void setSettingsHandler(SettingsHandler sh) {
+		settingsHandler = sh;
 	}
 
 	/*public void mergeCardsWithSameData(int cardIndex1, int cardIndex2) {	//for test
@@ -64,6 +71,43 @@ public class DictionaryDataModificator {
 		}
 	}*/
 
+	private void saveCardContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
+
+		String filePath = settingsHandler.getStudiedLanguageCardDataPath();
+		File oldFile;
+		oldFile = new File(filePath);
+		oldFile.delete();
+
+		try {
+			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+			for (int i=0; i<cardContainer.numberOfCards(); i++) {
+				fw.write(cardContainer.getCardByOrder(i).toStringData() + "\n");	//appends the string to the file
+			}
+			fw.close();
+		}
+		catch(IOException ioe) {
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
+	private void saveAnswerDataContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
+		String filePath = settingsHandler.getStudiedLanguageAnswerDataPath();
+		File oldFile;
+		oldFile = new File(filePath);
+		oldFile.delete();
+
+		try {
+			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+				fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+			}
+			fw.close();
+		}
+		catch(IOException ioe) {
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
 	public void mergeCardsWithSameData() {
 
 		int numberOfMergedCards = 0;
@@ -103,16 +147,8 @@ public class DictionaryDataModificator {
 			index1++;
 		}
 
-		SettingsHandler settingsHandler = new SettingsHandler();
-
-		File oldFile;
-		oldFile = new File(settingsHandler.getStudiedLanguageAnswerDataPath());
-		oldFile.delete();
-		answerDataContainer.saveDataToFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
-		oldFile = new File(settingsHandler.getStudiedLanguageCardDataPath());
-		oldFile.delete();
-		cardContainer.saveDataToFile(settingsHandler.getStudiedLanguageCardDataPath());
+		saveCardContainerDataToFile();
+		saveAnswerDataContainerDataToFile();
 
 		System.out.println(numberOfMergedCards + " cards have been merged");
 	}
