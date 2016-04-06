@@ -4752,3 +4752,451 @@
 4751	e Hölle	pokol
 4752	e Immobilie	ingatlan
 4753	r Rauch	füst
+4754	anbieten	megkínál, felkínál	rendhagyó igék
+4755	anrufen	felhív	rendhagyó igék
+4756	anfangen	elkezd, elkazdődik	rendhagyó igék
+4757	ankommen	megérkezik	rendhagyó igék
+4758	anziehen	felöltöztet	rendhagyó igék
+4759	aufstehen	felkel	rendhagyó igék
+4760	ausgehen	szórakozni megy	rendhagyó igék
+4761	aussteigen	kiszáll	rendhagyó igék
+4762	backen	süt	rendhagyó igék
+4763	befehlen	parancsol	rendhagyó igék
+4764	beginnen	elkezd, elkezdődik	rendhagyó igék
+4765	beißen	harap	rendhagyó igék
+4766	bekommen	kap	rendhagyó igék
+4767	bergen	elrejt	rendhagyó igék
+4768	betrügen	becsap	rendhagyó igék
+4769	bewegen	indít, vmire motivál	rendhagyó igék
+4770	biegen	hajlít	rendhagyó igék
+4771	bieten	nyújt, kínál	rendhagyó igék
+4772	binden	köt, megköt	rendhagyó igék
+4773	bitten	kér	rendhagyó igék
+4774	blasen	fújni	rendhagyó igék
+4775	bleiben	marad	rendhagyó igék
+4776	bringen	hoz	rendhagyó igék
+4777	brechen	eltör valamit	rendhagyó igék
+4778	brechen	valami eltörik	rendhagyó igék
+4779	brennen	ég	rendhagyó igék
+4780	denken	gondol	rendhagyó igék
+4781	eindringen	behatol	rendhagyó igék
+4782	dürfen	szabad	rendhagyó igék
+4783	einbiegen	bekanyarodik	rendhagyó igék
+4784	einladen	meghív	rendhagyó igék
+4785	einschlafen	elalszik	rendhagyó igék
+4786	einsteigen	beszáll vhová	rendhagyó igék
+4787	empfangen	fogad	rendhagyó igék
+4788	empfehlen	ajánl	rendhagyó igék
+4789	empfinden	érez, észlel vmit	rendhagyó igék
+4790	erlöschen	elalszik a tűz	rendhagyó igék
+4791	erschrecken	megijed	rendhagyó igék
+4792	essen	eszik	rendhagyó igék
+4793	fern|sehen (ie)	TV-t néz	rendhagyó igék
+4794	fahren	vezet	rendhagyó igék
+4795	fahren	utazik	rendhagyó igék
+4796	fallen	esik	rendhagyó igék
+4797	fangen	(meg)fog,(el)kap	rendhagyó igék
+4798	finden	talál	rendhagyó igék
+4799	fliegen	repül	rendhagyó igék
+4800	fliehen	menekül	rendhagyó igék
+4801	fließen	folyik	rendhagyó igék
+4802	fressen	zabál,állat eszik	rendhagyó igék
+4803	frieren	fázik, megfagy	rendhagyó igék
+4804	geben	ad	rendhagyó igék
+4805	gehen	megy	rendhagyó igék
+4806	gelingen	sikerül	rendhagyó igék
+4807	gelten	érvényes	rendhagyó igék
+4808	genesen	gyógyul	rendhagyó igék
+4809	genießen	élvez	rendhagyó igék
+4810	geschehen	történik	rendhagyó igék
+4811	gewinnen	nyer	rendhagyó igék
+4812	gießen	önt, tölt	rendhagyó igék
+4813	graben	ás	rendhagyó igék
+4814	greifen	megragad, (meg)fog	rendhagyó igék
+4815	haben	birtokol vmit, van neki	rendhagyó igék
+4816	halten	tart	rendhagyó igék
+4817	hängen	lóg, függ	rendhagyó igék
+4818	heben	emel	rendhagyó igék
+4819	heißen	hívják vhogyan	rendhagyó igék
+4820	helfen	segít	rendhagyó igék
+4821	kennen	ismer	rendhagyó igék
+4822	klingen	cseng, kong	rendhagyó igék
+4823	kommen	jön	rendhagyó igék
+4824	können (kann)	tud (csinálni), (csinál)hat,-het	rendhagyó igék
+4825	laden	megrak, megterhel 	rendhagyó igék
+4826	lesen	olvas	rendhagyó igék
+4827	liegen	fekszik	rendhagyó igék
+4828	lassen	hagy	rendhagyó igék
+4829	laufen	fut	rendhagyó igék
+4830	leiden	szenved	rendhagyó igék
+4831	leihen	kölcsönöz	rendhagyó igék
+4832	lügen	hazudik	rendhagyó igék
+4833	meiden 	kerül vkit/vmit	rendhagyó igék
+4834	messen	mér (távolságot)	rendhagyó igék
+4835	müssen	kell (csinálnia)	rendhagyó igék
+4836	mögen	szeret (csinálni)	rendhagyó igék
+4837	nehmen	fog, vesz	rendhagyó igék
+4838	nennen	nevez	rendhagyó igék
+4839	raten	tanácsol	rendhagyó igék
+4840	reiten	lovagol	rendhagyó igék
+4841	rennen	rohan	rendhagyó igék
+4842	rufen	kiált, hív	rendhagyó igék
+4843	schaffen	teremt	rendhagyó igék
+4844	scheinen	fénylik, süt(a Nap), úgy tűnik	rendhagyó igék
+4845	schieben	tol	rendhagyó igék
+4846	schießen	lő	rendhagyó igék
+4847	schlafen	alszik	rendhagyó igék
+4848	schlagen	üt, ver	rendhagyó igék
+4849	schließen	zár	rendhagyó igék
+4850	schmelzen	olvad	rendhagyó igék
+4851	schneiden	vág	rendhagyó igék
+4852	schreiben	ír	rendhagyó igék
+4853	schreien	kiabál	rendhagyó igék
+4854	schreiten	lép(ked)	rendhagyó igék
+4855	schweigen	hallgat	rendhagyó igék
+4856	schwimmen	úszik	rendhagyó igék
+4857	schwören	esküszik	rendhagyó igék
+4858	sehen	lát, néz	rendhagyó igék
+4859	sein	létige	rendhagyó igék
+4860	singen	énekel	rendhagyó igék
+4861	sinken	süllyed	rendhagyó igék
+4862	sitzen	ül	rendhagyó igék
+4863	sollen	kell (csinálni)	rendhagyó igék
+4864	sprechen	beszél	rendhagyó igék
+4865	stehen	áll	rendhagyó igék
+4866	springen	ugrik	rendhagyó igék
+4867	stechen	megcsíp	rendhagyó igék
+4868	stehlen	lop	rendhagyó igék
+4869	steigen	emelkedik	rendhagyó igék
+4870	sterben	meghal	rendhagyó igék
+4871	stinken	bűzlik	rendhagyó igék
+4872	stoßen	lök	rendhagyó igék
+4873	streichen	simít, mázol, kihúz, kitöröl	rendhagyó igék
+4874	streiten	veszekedik	rendhagyó igék
+4875	rufen	hív, kiabál	rendhagyó igék
+4876	tragen	hord, visel, cipel	rendhagyó igék
+4877	treffen	találkozik	rendhagyó igék
+4878	treiben	űz, hajt	rendhagyó igék
+4879	treten	tapos, tipor	rendhagyó igék
+4880	treten	lép, jár, megy	rendhagyó igék
+4881	trinken	iszik	rendhagyó igék
+4882	umsteigen	átszáll	rendhagyó igék
+4883	vergessen	elfelejt	rendhagyó igék
+4884	verlassen	elhagy vkit/vmit	rendhagyó igék
+4885	verlieren	elveszít vmit/vkit	rendhagyó igék
+4886	verstehen	ért, megért	rendhagyó igék
+4887	wachsen	nő	rendhagyó igék
+4888	waschen	mos	rendhagyó igék
+4889	wissen	tud vmit, vmiről	rendhagyó igék
+4890	wollen	akar	rendhagyó igék
+4891	ziehen	húz	rendhagyó igék
+4892	zwingen	kényszerít	rendhagyó igék
+4893	bot an	megkínál, felkínál (Präterium)	rendhagyó igék
+4894	rief an	felhív telefonon (Präterium)	rendhagyó igék
+4895	fing an	elkezd, elkezdődik (Präterium)	rendhagyó igék
+4896	kam an 	megérkezik (Präterium)	rendhagyó igék
+4897	zog an	felöltöztet (Präterium)	rendhagyó igék
+4898	stand auf	felkel (Präterium)	rendhagyó igék
+4899	ging aus	szórakozni megy (Präterium)	rendhagyó igék
+4900	stieg aus	kiszáll (Präterium)	rendhagyó igék
+4901	backte	süt (húst) (Präterium)	rendhagyó igék
+4902	befahl	parancsol (Präterium)	rendhagyó igék
+4903	begann	elkezd, elkezdődik (Präterium)	rendhagyó igék
+4904	biss	harap (Präterium)	rendhagyó igék
+4905	bekam	kap (Präterium)	rendhagyó igék
+4906	verbarg	elrejt (Präterium)	rendhagyó igék
+4907	betrog	becsap (Präterium)	rendhagyó igék
+4908	bewog	indít vmire,motivál (Präterium)	rendhagyó igék
+4909	bog	hajlít (Präterium)	rendhagyó igék
+4910	bot	nyújt, kínál (Präterium)	rendhagyó igék
+4911	band	köt, megköt (Präterium)	rendhagyó igék
+4912	bat	kér (Präterium)	rendhagyó igék
+4913	blies	fújni (Präterium)	rendhagyó igék
+4914	blieb	marad (Präterium)	rendhagyó igék
+4915	brachte	hoz (Präterium)	rendhagyó igék
+4916	brach	eltör valamit (Präterium)	rendhagyó igék
+4917	brach	valami eltörik (Präterium)	rendhagyó igék
+4918	brannte	ég (Präterium)	rendhagyó igék
+4919	dachte	gondol (Präterium)	rendhagyó igék
+4920	drang	behajol, áthatol (Präterium)	rendhagyó igék
+4921	durfte	szabad (Präterium)	rendhagyó igék
+4922	bog ein	bekanyarodik (Präterium)	rendhagyó igék
+4923	lud ein	meghív (Präterium)	rendhagyó igék
+4924	schlief ein	elalszik (Präterium)	rendhagyó igék
+4925	stieg ein	beszáll vhová (Präterium)	rendhagyó igék
+4926	empfing	fogad (Präterium)	rendhagyó igék
+4927	empfahl	ajánl (Präterium)	rendhagyó igék
+4928	empfand	érez, észlel vmit (Präterium)	rendhagyó igék
+4929	erlosch	elalszik a tűz (Präterium)	rendhagyó igék
+4930	erschrak	megijed (Präterium)	rendhagyó igék
+4931	aß	eszik (Präterium)	rendhagyó igék
+4932	sah fern	TV-t néz (Präterium)	rendhagyó igék
+4933	fuhr	vezet (Präterium)	rendhagyó igék
+4934	fuhr 	utazik (Präterium)	rendhagyó igék
+4935	fiel	esik (Präterium)	rendhagyó igék
+4936	fing	megfog, elkap (Präterium)	rendhagyó igék
+4937	fand	talál (Präterium)	rendhagyó igék
+4938	flog	repül (Präterium)	rendhagyó igék
+4939	foh	menekül (Präterium)	rendhagyó igék
+4940	floß	folyik (Präterium)	rendhagyó igék
+4941	fraß	zabál, állat eszik (Präterium)	rendhagyó igék
+4942	fror	fázik, megfagy (Präterium)	rendhagyó igék
+4943	gab	ad (Präterium)	rendhagyó igék
+4944	ging 	megy (Präterium)	rendhagyó igék
+4945	gelang	sikerül (Präterium)	rendhagyó igék
+4946	galt	érvényes (Präterium)	rendhagyó igék
+4947	genas	gyógyul (Präterium)	rendhagyó igék
+4948	genoß	élvez (Präterium)	rendhagyó igék
+4949	geschah	történik (Präterium)	rendhagyó igék
+4950	gewann	nyer (Präterium)	rendhagyó igék
+4951	goss	önt, tölt (Präterium)	rendhagyó igék
+4952	grub	ás (Präterium)	rendhagyó igék
+4953	griff	megragad, megfog (Präterium)	rendhagyó igék
+4954	hatte	birtokol vmit, van neki (Präterium)	rendhagyó igék
+4955	hielt	tart (Präterium)	rendhagyó igék
+4956	hing	lóg, függ (Präterium)	rendhagyó igék
+4957	hob	emel (Präterium)	rendhagyó igék
+4958	hieß	hívják vhogyan (Präterium)	rendhagyó igék
+4959	half	segít (Präterium)	rendhagyó igék
+4960	kannte	ismer (Präterium)	rendhagyó igék
+4961	klang	cseng, kong (Präterium)	rendhagyó igék
+4962	kam	jön (Präterium)	rendhagyó igék
+4963	konnte	tud (csinálni), (csinál)hat,-het (Präterium)	rendhagyó igék
+4964	lud	megrak, megterhel  (Präterium)	rendhagyó igék
+4965	las	olvas (Präterium)	rendhagyó igék
+4966	lag	fekszik (Präterium)	rendhagyó igék
+4967	ließ	hagy (Präterium)	rendhagyó igék
+4968	lief	fut (Präterium)	rendhagyó igék
+4969	litt	szenved (Präterium)	rendhagyó igék
+4970	lieh	kölcsönöz (Präterium)	rendhagyó igék
+4971	log	hazudik (Präterium)	rendhagyó igék
+4972	mied	kerül vkit/vmit (Präterium)	rendhagyó igék
+4973	maß	mér (távolságot) (Präterium)	rendhagyó igék
+4974	musste	kell (csinálnia) (Präterium)	rendhagyó igék
+4975	mochte	szeret (csinálni) (Präterium)	rendhagyó igék
+4976	nahm	fog, vesz (Präterium)	rendhagyó igék
+4977	nannte	nevez (Präterium)	rendhagyó igék
+4978	riet	tanácsol (Präterium)	rendhagyó igék
+4979	ritt	lovagol (Präterium)	rendhagyó igék
+4980	rannte 	rohan (Präterium)	rendhagyó igék
+4981	rief	kiált, hív (Präterium)	rendhagyó igék
+4982	schuf	teremt (Präterium)	rendhagyó igék
+4983	schien	fénylik, süt(a Nap), úgy tűnik (Präterium)	rendhagyó igék
+4984	schob	tol (Präterium)	rendhagyó igék
+4985	schoss	lő (Präterium)	rendhagyó igék
+4986	schlief	alszik (Präterium)	rendhagyó igék
+4987	schlug	üt, ver (Präterium)	rendhagyó igék
+4988	schloss	zár (Präterium)	rendhagyó igék
+4989	schmolz	olvad (Präterium)	rendhagyó igék
+4990	schnitt	vág (Präterium)	rendhagyó igék
+4991	schrieb	ír (Präterium)	rendhagyó igék
+4992	schrie	kiabál (Präterium)	rendhagyó igék
+4993	schritt	lép, lépked (Präterium)	rendhagyó igék
+4994	schwieg	hallgat (Präterium)	rendhagyó igék
+4995	schwamm	úszik (Präterium)	rendhagyó igék
+4996	schwor	esküszik (Präterium)	rendhagyó igék
+4997	sah	lát, néz (Präterium)	rendhagyó igék
+4998	war	létige (Präterium)	rendhagyó igék
+4999	sang	énekel (Präterium)	rendhagyó igék
+5000	sank	süllyed (Präterium)	rendhagyó igék
+5001	saß	ül (Präterium)	rendhagyó igék
+5002	sollte	kell (Präterium)	rendhagyó igék
+5003	sprach	beszél (Präterium)	rendhagyó igék
+5004	stand	áll (Präterium)	rendhagyó igék
+5005	sprang	ugrik (Präterium)	rendhagyó igék
+5006	stach	megcsíp (Präterium)	rendhagyó igék
+5007	stahl	lop (Präterium)	rendhagyó igék
+5008	stieg	emelkedik (Präterium)	rendhagyó igék
+5009	starb	meghal (Präterium)	rendhagyó igék
+5010	stank	bűzlik (Präterium)	rendhagyó igék
+5011	stieß	lök (Präterium)	rendhagyó igék
+5012	strich	simít, mázol, kihúz, kitöröl (Präterium)	rendhagyó igék
+5013	stritt	veszekedik (Präterium)	rendhagyó igék
+5014	rief	hív, kiabál (Präterium)	rendhagyó igék
+5015	trug	hord, visel, cipel (Präterium)	rendhagyó igék
+5016	traf	találkozik (Präterium)	rendhagyó igék
+5017	trieb	űz, hajt (Präterium)	rendhagyó igék
+5018	trat	tapos, tipor (Präterium)	rendhagyó igék
+5019	trat	lép, jár, megy (Präterium)	rendhagyó igék
+5020	trank	iszik (Präterium)	rendhagyó igék
+5021	stieg um	átszáll (Präterium)	rendhagyó igék
+5022	vergaß	elfelejt (Präterium)	rendhagyó igék
+5023	verließ	elhagy vkit/vmit (Präterium)	rendhagyó igék
+5024	verlor	elveszít vmit/vkit (Präterium)	rendhagyó igék
+5025	verstand	ért, megért (Präterium)	rendhagyó igék
+5026	wuchs	nő (Präterium)	rendhagyó igék
+5027	wusch	mos (Präterium)	rendhagyó igék
+5028	wusste	tud vmit, vmiről (Präterium)	rendhagyó igék
+5029	wollte	akar (Präterium)	rendhagyó igék
+5030	zog	húz (Präterium)	rendhagyó igék
+5031	zwang	kényszerít (Präterium)	rendhagyó igék
+5032	h. angeboten	megkínál, felkínál (Perfekt)	rendhagyó igék
+5033	h. angerufen	felhív telefonon (Perfekt)	rendhagyó igék
+5034	h. angefangen	elkezd(ődik) (Perfekt)	rendhagyó igék
+5035	i. angekommen	megérkezik (Perfekt)	rendhagyó igék
+5036	h. angezogen	felöltöztet (Perfekt)	rendhagyó igék
+5037	i. aufgestanden	felkel (Perfekt)	rendhagyó igék
+5038	i. ausgegangen	szórakozni megy (Perfekt)	rendhagyó igék
+5039	i. ausgestiegen	kiszáll (Perfekt)	rendhagyó igék
+5040	h. gebacken	süt (húst) (Perfekt)	rendhagyó igék
+5041	h. befohlen	parancsol (Perfekt)	rendhagyó igék
+5042	h. begonnen	elkezd(ődik) (Perfekt)	rendhagyó igék
+5043	h. gebissen	harap (Perfekt)	rendhagyó igék
+5044	h. bekommen	kap (Perfekt)	rendhagyó igék
+5045	h. borgen	rejt (Perfekt)	rendhagyó igék
+5046	h. betrogen	becsap (Perfekt)	rendhagyó igék
+5047	h. bewogen	indít vmire,motivál (Perfekt)	rendhagyó igék
+5048	h. gebogen	hajlít (Perfekt)	rendhagyó igék
+5049	h. geboten	nyújt, kínál (Perfekt)	rendhagyó igék
+5050	h. gebunden	(meg)köt (Perfekt)	rendhagyó igék
+5051	h. gebeten	kér (Perfekt)	rendhagyó igék
+5052	h. geblasen	fújni (Perfekt)	rendhagyó igék
+5053	i. geblieben	marad (Perfekt)	rendhagyó igék
+5054	h. gebracht	hoz (Perfekt)	rendhagyó igék
+5055	h. gebrochen	eltör valamit (Perfekt)	rendhagyó igék
+5056	i. gebrochen	valami eltörik (Perfekt)	rendhagyó igék
+5057	h. gebrannt	ég (Perfekt)	rendhagyó igék
+5058	h. gedacht	gondol (Perfekt)	rendhagyó igék
+5059	i. gedrungen	behatol, áthatol (Perfekt)	rendhagyó igék
+5060	h. gedurft	szabad (csinálni (Perfekt)	rendhagyó igék
+5061	i. eingebogen	bekanyarodik (Perfekt)	rendhagyó igék
+5062	h. eingeladen	meghív (Perfekt)	rendhagyó igék
+5063	i. eingeschlafen	elalszik (Perfekt)	rendhagyó igék
+5064	i. eingestiegen	beszáll vhová (Perfekt)	rendhagyó igék
+5065	h. empfangen	fogad (Perfekt)	rendhagyó igék
+5066	h. empfohlen	ajánl (Perfekt)	rendhagyó igék
+5067	h. empfunden	érez,észlel vmit (Perfekt)	rendhagyó igék
+5068	i. erloschen	elalszik a tűz (Perfekt)	rendhagyó igék
+5069	i. erschrocken	megijed (Perfekt)	rendhagyó igék
+5070	h. gegessen	eszik (Perfekt)	rendhagyó igék
+5071	h. ferngesehen	TV-t néz (Perfekt)	rendhagyó igék
+5072	h. gefahren	vezet (Perfekt)	rendhagyó igék
+5073	i. gefahren	utazik (Perfekt)	rendhagyó igék
+5074	i. gefallen	esik (Perfekt)	rendhagyó igék
+5075	h. gefangen	(meg)fog,(el)kap (Perfekt)	rendhagyó igék
+5076	h. gefunden	talál (Perfekt)	rendhagyó igék
+5077	i. geflogen	repül (Perfekt)	rendhagyó igék
+5078	i. geflohen	menekül (Perfekt)	rendhagyó igék
+5079	i. geflossen	folyik (Perfekt)	rendhagyó igék
+5080	h. gefressen	zabál, állat eszik (Perfekt)	rendhagyó igék
+5081	i. gefroren	megfagy (Perfekt)	rendhagyó igék
+5082	h. gegeben	ad (Perfekt)	rendhagyó igék
+5083	i. gegangen	megy (Perfekt)	rendhagyó igék
+5084	i. gelungen	sikerül (Perfekt)	rendhagyó igék
+5085	h. gegolten	érvényes (Perfekt)	rendhagyó igék
+5086	i. genesen	gyógyul (Perfekt)	rendhagyó igék
+5087	h. genossen	élvez (Perfekt)	rendhagyó igék
+5088	i. geschehen	történik (Perfekt)	rendhagyó igék
+5089	h. gewonnen	nyer (Perfekt)	rendhagyó igék
+5090	h. gegossen	önt, tölt (Perfekt)	rendhagyó igék
+5091	h. gegraben	ás (Perfekt)	rendhagyó igék
+5092	h. gegriffen	megragad, (meg)fog (Perfekt)	rendhagyó igék
+5093	h. gehabt	birtokol vmit, van neki (Perfekt)	rendhagyó igék
+5094	h. gehalten	tart (Perfekt)	rendhagyó igék
+5095	h. gehangen	lóg, függ (Perfekt)	rendhagyó igék
+5096	h. gehoben	emel (Perfekt)	rendhagyó igék
+5097	h. geheißen	hívják vhogyan (Perfekt)	rendhagyó igék
+5098	h. geholfen	segít (Perfekt)	rendhagyó igék
+5099	h. gekannt	ismer (Perfekt)	rendhagyó igék
+5100	h. geklungen	cseng, kong (Perfekt)	rendhagyó igék
+5101	i. gekommen	jön (Perfekt)	rendhagyó igék
+5102	h. gekonnt	tud (Perfekt)	rendhagyó igék
+5103	h. geladen	megrak, megterhel (Perfekt)	rendhagyó igék
+5104	h. gelesen	olvas (Perfekt)	rendhagyó igék
+5105	h. gelegen	fekszik (Perfekt)	rendhagyó igék
+5106	h. gelassen	hagy (Perfekt)	rendhagyó igék
+5107	i. gelaufen	fut (Perfekt)	rendhagyó igék
+5108	h. gelitten	szenved (Perfekt)	rendhagyó igék
+5109	h. geliehen	kölcsönöz (Perfekt)	rendhagyó igék
+5110	h. gelogen	hazudik (Perfekt)	rendhagyó igék
+5111	h. gemieden	kerül vkit/vmit (Perfekt)	rendhagyó igék
+5112	h. gemessen	mér (távolságot) (Perfekt)	rendhagyó igék
+5113	h. gemusst	kell (csinálnia) (Perfekt)	rendhagyó igék
+5114	h. gemocht	szeret (csinálni) (Perfekt)	rendhagyó igék
+5115	h. genommen	fog, vesz (Perfekt)	rendhagyó igék
+5116	h. genannt	nevez (Perfekt)	rendhagyó igék
+5117	h. geraten	tanácsol (Perfekt)	rendhagyó igék
+5118	i. geritten	lovagol (Perfekt)	rendhagyó igék
+5119	i. gerannt	rohan (Perfekt)	rendhagyó igék
+5120	h. gerufen	kiált, hív (Perfekt)	rendhagyó igék
+5121	h. geschaffen	teremt (Perfekt)	rendhagyó igék
+5122	h. geschienen	fénylik, süt(a Nap), úgy tűnik (Perfekt)	rendhagyó igék
+5123	h. geschoben	tol (Perfekt)	rendhagyó igék
+5124	h. geschossen	lő (Perfekt)	rendhagyó igék
+5125	h. geschlafen	alszik (Perfekt)	rendhagyó igék
+5126	h. geschlagen	üt, ver (Perfekt)	rendhagyó igék
+5127	h. geschlossen	zár (Perfekt)	rendhagyó igék
+5128	i. geschmolzen	olvad (Perfekt)	rendhagyó igék
+5129	h. geschnitten	vág (Perfekt)	rendhagyó igék
+5130	h. geschrieben	ír (Perfekt)	rendhagyó igék
+5131	h. geschrien	kiabál (Perfekt)	rendhagyó igék
+5132	i. geschritten	lép, lépked (Perfekt)	rendhagyó igék
+5133	h. geschwiegen	hallgat (Perfekt)	rendhagyó igék
+5134	i. geschwommen	úszik (Perfekt)	rendhagyó igék
+5135	h. geschworen	esküszik (Perfekt)	rendhagyó igék
+5136	h. gesehen	lát, néz (Perfekt)	rendhagyó igék
+5137	i. gewesen	van (=létige) (Perfekt)	rendhagyó igék
+5138	h. gesungen	énekel (Perfekt)	rendhagyó igék
+5139	i. gesunken	süllyed (Perfekt)	rendhagyó igék
+5140	h. gesessen	ül (Perfekt)	rendhagyó igék
+5141	h. gesollt	kell (csinálni) (Perfekt)	rendhagyó igék
+5142	h. gesprochen	beszél (Perfekt)	rendhagyó igék
+5143	h. gestanden	áll (Perfekt)	rendhagyó igék
+5144	i. gesprungen	ugrik (Perfekt)	rendhagyó igék
+5145	h. gestochen	megcsíp (Perfekt)	rendhagyó igék
+5146	h. gestohlen	lop (Perfekt)	rendhagyó igék
+5147	i. gestiegen	emelkedik (Perfekt)	rendhagyó igék
+5148	i. gestorben	meghal (Perfekt)	rendhagyó igék
+5149	h. gestunken	bűzlik (Perfekt)	rendhagyó igék
+5150	h. gestoßen	lök (Perfekt)	rendhagyó igék
+5151	h. gestrichen	simít, mázol, kihúz, kitöröl (Perfekt)	rendhagyó igék
+5152	h. gestritten	veszekedik (Perfekt)	rendhagyó igék
+5153	h. gerufen	hív, kiabál (Perfekt)	rendhagyó igék
+5154	h. getragen	hord, visel, cipel (Perfekt)	rendhagyó igék
+5155	h. getroffen	találkozik (Perfekt)	rendhagyó igék
+5156	h. getrieben	űz, hajt (Perfekt)	rendhagyó igék
+5157	h. getreten	tapos, tipor (Perfekt)	rendhagyó igék
+5158	i.  getreten	lép, jár, megy (Perfekt)	rendhagyó igék
+5159	h. getrunken	iszik (Perfekt)	rendhagyó igék
+5160	i. umgestiegen	átszáll (Perfekt)	rendhagyó igék
+5161	h. vergessen	elfelejt (Perfekt)	rendhagyó igék
+5162	h. verlassen	elhagy vkit/vmit (Perfekt)	rendhagyó igék
+5163	h. verloren	elveszít vmit/vkit (Perfekt)	rendhagyó igék
+5164	h. verstanden	ért, megért (Perfekt)	rendhagyó igék
+5165	i. gewachsen	nő (Perfekt)	rendhagyó igék
+5166	h. gewaschen	mos (Perfekt)	rendhagyó igék
+5167	h. gewusst	tud vmit, vmiről (Perfekt)	rendhagyó igék
+5168	h. gewollt	akar (Perfekt)	rendhagyó igék
+5169	h. gezogen	húz (Perfekt)	rendhagyó igék
+5170	h. gezwungen	kényszerít (Perfekt)	rendhagyó igék
+5171	null	nulla	számok
+5172	eins	egy	számok
+5173	zwei	kettő	számok
+5174	drei	három	számok
+5175	vier	négy	számok
+5176	fünf	öt	számok
+5177	sechs	hat	számok
+5178	sieben	hét	számok
+5179	acht	nyolc	számok
+5180	neun	kilenc	számok
+5181	zehn	tíz	számok
+5182	elf	tizenegy	számok
+5183	zwölf	tizenkettő	számok
+5184	dreizehn	tizenhárom	számok
+5185	vierzehn	tizennégy	számok
+5186	fünfzehn	tizenöt	számok
+5187	sechzehn	tizenhat	számok
+5188	siebzehn	tizenhét	számok
+5189	achtzehn	tizennyolc	számok
+5190	neunzehn	tizenkilenc	számok
+5191	zwanzig	húsz	számok
+5192	einundzwanzig	huszonegy	számok
+5193	zweiundzwanzig	huszonkettő	számok
+5194	dreiundzwanzig	huszonhárom	számok
+5195	vierundzwanzig	huszonnégy	számok
+5196	fünfundzwanzig	huszonöt	számok
+5197	sechsundzwanzig	huszonhat	számok
+5198	siebenundzwanzig	huszonhét	számok
+5199	achtundzwanzig	huszonnyolc	számok
+5200	neunundzwanzig	huszonkilenc	számok
+5201	dreißig	harminc	számok
