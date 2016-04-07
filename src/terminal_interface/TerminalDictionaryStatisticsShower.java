@@ -78,7 +78,7 @@ public class TerminalDictionaryStatisticsShower {
 		DecimalFormat df = new DecimalFormat("#.00");
 		for (int i=9; 0<=i;i--) {
 			System.out.println(i*10 + "% - " + (i+1) * 10 + "% ---> " + numberOfStudyItemsInCategory[i] + " (" 
-				+ df.format((double)numberOfStudyItemsInCategory[i] * 100.0 / 							(double)answerDataStatisticsMaker.numberOfStudyItems()) + "%)");
+				+ df.format((double)numberOfStudyItemsInCategory[i] * 100.0 / 							(double)answerDataStatisticsMaker.numberOfQuestionedStudyItems()) + "%)");
 		}
 	}
 
