@@ -2217,7 +2217,7 @@
 2216	e Phase	korszak, fázis
 2217	r Musiker	zenész
 2218	e Kunst	művészet
-2219	e Muster	minta
+2219	s Muster	minta
 2220	r Bildhauer	szobrász
 2221	e Architektur	építészet
 2222	tanzen	táncol
@@ -4894,7 +4894,7 @@
 4893	bot an	megkínál, felkínál (Präterium)	rendhagyó igék
 4894	rief an	felhív telefonon (Präterium)	rendhagyó igék
 4895	fing an	elkezd, elkezdődik (Präterium)	rendhagyó igék
-4896	kam an 	megérkezik (Präterium)	rendhagyó igék
+4896	kam an	megérkezik (Präterium)	rendhagyó igék
 4897	zog an	felöltöztet (Präterium)	rendhagyó igék
 4898	stand auf	felkel (Präterium)	rendhagyó igék
 4899	ging aus	szórakozni megy (Präterium)	rendhagyó igék
@@ -4906,7 +4906,7 @@
 4905	bekam	kap (Präterium)	rendhagyó igék
 4906	verbarg	elrejt (Präterium)	rendhagyó igék
 4907	betrog	becsap (Präterium)	rendhagyó igék
-4908	bewog	indít vmire,motivál (Präterium)	rendhagyó igék
+4908	bewog	indít vmire, motivál (Präterium)	rendhagyó igék
 4909	bog	hajlít (Präterium)	rendhagyó igék
 4910	bot	nyújt, kínál (Präterium)	rendhagyó igék
 4911	band	köt, megköt (Präterium)	rendhagyó igék
@@ -4932,7 +4932,7 @@
 4931	aß	eszik (Präterium)	rendhagyó igék
 4932	sah fern	TV-t néz (Präterium)	rendhagyó igék
 4933	fuhr	vezet (Präterium)	rendhagyó igék
-4934	fuhr 	utazik (Präterium)	rendhagyó igék
+4934	fuhr	utazik (Präterium)	rendhagyó igék
 4935	fiel	esik (Präterium)	rendhagyó igék
 4936	fing	megfog, elkap (Präterium)	rendhagyó igék
 4937	fand	talál (Präterium)	rendhagyó igék
@@ -4942,7 +4942,7 @@
 4941	fraß	zabál, állat eszik (Präterium)	rendhagyó igék
 4942	fror	fázik, megfagy (Präterium)	rendhagyó igék
 4943	gab	ad (Präterium)	rendhagyó igék
-4944	ging 	megy (Präterium)	rendhagyó igék
+4944	ging	megy (Präterium)	rendhagyó igék
 4945	gelang	sikerül (Präterium)	rendhagyó igék
 4946	galt	érvényes (Präterium)	rendhagyó igék
 4947	genas	gyógyul (Präterium)	rendhagyó igék
@@ -5045,7 +5045,7 @@
 5044	h. bekommen	kap (Perfekt)	rendhagyó igék
 5045	h. borgen	rejt (Perfekt)	rendhagyó igék
 5046	h. betrogen	becsap (Perfekt)	rendhagyó igék
-5047	h. bewogen	indít vmire,motivál (Perfekt)	rendhagyó igék
+5047	h. bewogen	indít vmire, motivál (Perfekt)	rendhagyó igék
 5048	h. gebogen	hajlít (Perfekt)	rendhagyó igék
 5049	h. geboten	nyújt, kínál (Perfekt)	rendhagyó igék
 5050	h. gebunden	(meg)köt (Perfekt)	rendhagyó igék
