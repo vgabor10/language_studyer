@@ -35,8 +35,8 @@ public class CardContainer extends StudyItemContainer {
 		return getStudyItemIndexes();
 	}
 
-	public void removeCardWithIndex(int index) {	//TODO: take to other class
-		removeStudyItemWithIndex(index);
+	public void removeCardWithOrderIndex(int orderIndex) {
+		removeStudyItemWithOrderIndex(orderIndex);
 	}
 
 	public void addCardToContainerAndAppenToDiscFile(Card card, String filePath) {	//TODO: take to an other class
