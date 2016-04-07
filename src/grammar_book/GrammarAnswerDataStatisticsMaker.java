@@ -111,7 +111,7 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
 		return numberOfGrammarItems;
 	}
 
-	public void toScreenPercentageOfRightAnswersByGrammarItems() {
+	public void toScreenPercentageOfRightAnswersByGrammarItems() {		//TODO: make it to toScreenPercentageOfRightAnswersByStudyItems
 		Map<Integer,Integer> numberOfRightAnswersByGrammarItems = new HashMap<Integer,Integer>();
 		Map<Integer,Integer> numberOfAnswersByGrammarItems = new HashMap<Integer,Integer>();
 

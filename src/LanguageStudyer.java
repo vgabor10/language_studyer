@@ -119,6 +119,7 @@ public class LanguageStudyer {
 			}
 		}
 
+		//basic statistics
 		if (choice.equals("2")) {
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
@@ -131,92 +132,12 @@ public class LanguageStudyer {
 
 		//additional statistics
 		if (choice.equals("3")) {
-
-			String choice2;
-
-			do {
-
-			System.out.print("\033[H\033[2J");
+			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
-
-			System.out.println("1 - progress by words");
-			System.out.println("2 - hardest words");
-			System.out.println("3 - histogram of cards by number of answers");
-			System.out.println("4 - histogram of cards by number of answers considered low categories");
-			System.out.println("5 - practising time by days");
-			System.out.println("6 - probability of right answer at first, second,... answers");
-			System.out.println("7 - histogram of card answers rates by days");
-			System.out.println("8 - number of given answers by hours");
-			System.out.println("9 - to file histogram of card answers rates by days");
-			System.out.println("10 - longest right answer intervall size");
-			choice2 = console.readLine();
-
-			if (choice2.equals("1")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenProgressByStudyItems();
-				console.readLine();
-			}
-
-			if (choice2.equals("2")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHardestWords(30);
-				console.readLine();
-			}
-
-			if (choice2.equals("3")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfStudyItemsByNumberOfAnswers();
-				console.readLine();
-			}
-
-			if (choice2.equals("4")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfStudyItemsByNumberOfAnswersConsideredLowCategories();
-				console.readLine();
-			}
-
-			if (choice2.equals("5")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenPractisingTimeByDays();
-				console.readLine();
-			}		
-
-			if (choice2.equals("6")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenProbabilityOfRightAnswerAtFirstSecondEtcAnswers();
-				console.readLine();
-			}
-
-			if (choice2.equals("7")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenHistogramOfStudyItemAnswerRatesByDays();
-				console.readLine();
-			}
-
-			if (choice2.equals("8")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toScreenNumberOfGivenAnswersByHours();
-				console.readLine();
-			}
-
-			if (choice2.equals("9")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByDays(
-					"../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
-				System.out.print(
-					"data has benn saved to file: data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
-				console.readLine();
-			}
-
-			if (choice2.equals("10")) {
-				System.out.print("\033[H\033[2J");
-				answerDataStatisticsMaker.toSreenLongestIntervallSizeOfRightAnswers();
-				console.readLine();
-			}
-
-			} while (!choice2.equals(""));
+			dictionaryAdditionalStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker);
+			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
 		}
 
 		if (choice.equals("4")) {
@@ -390,6 +311,11 @@ public class LanguageStudyer {
 			} while (!s.equals("x"));
 		}
 
+		//choose card groups to study
+		if (choice.equals("8")) {
+			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
+		}
+
 		//practising grammar items
 		if (choice.equals("10")) {
 			System.out.print("\033[H\033[2J");
@@ -433,10 +359,6 @@ public class LanguageStudyer {
 			}
 		}
 
-		if (choice.equals("8")) {
-			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
-		}
-
 		//read grammar book
 		if (choice.equals("11")) {
 			String a;
@@ -467,47 +389,12 @@ public class LanguageStudyer {
 
 		//additional statistics
 		if (choice.equals("13")) {
-			String choice2;
-			do {
-
-			System.out.print("\033[H\033[2J");
-			System.out.println("1 - percentage of right answers by grammar items");
-			System.out.println("2 - number of answers by days");
-			System.out.println("3 - grammarItems with at least 10 examples ordered by last sutdy time");
-			System.out.println("4 - histogram of grammar item answers rates by days");
-
-
+			GrammarAdditionalStatisticsShower grammarAdditionalStatisticsShower = new GrammarAdditionalStatisticsShower();
 			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-
-			choice2 = console.readLine();
-
-			if (choice2.equals("1")) {	//percentage of right answers by grammar items	//TODO: debug
-				System.out.print("\033[H\033[2J");
-				grammarAnswerDataStatisticsMaker.toScreenPercentageOfRightAnswersByGrammarItems();
-				console.readLine();
-			}
-
-			if (choice2.equals("2")) {
-				System.out.print("\033[H\033[2J");
-				grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersByDays();
-				console.readLine();
-			}
-
-			if (choice2.equals("3")) {
-				System.out.print("\033[H\033[2J");
-				grammarAnswerDataStatisticsMaker.toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime();
-				console.readLine();
-			}
-
-			if (choice2.equals("4")) {
-				System.out.print("\033[H\033[2J");
-				grammarAnswerDataStatisticsMaker.toScreenHistogramOfStudyItemAnswerRatesByDays();
-				console.readLine();
-			}
-
-			} while (!choice2.equals(""));
+			grammarAnswerDataStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
+			grammarAnswerDataStatisticsMaker.setStudyItemContainer(grammarBook);
+			grammarAdditionalStatisticsShower.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
+			grammarAdditionalStatisticsShower.showStatisticsChooser();
 		}
 
 		//modificate grammar item
@@ -581,5 +468,7 @@ public class LanguageStudyer {
 		}
 
 		} while (!choice.equals("x"));
+
+		logger.debug("close program");
 	}
 }
