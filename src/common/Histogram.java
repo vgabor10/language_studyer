@@ -23,10 +23,10 @@ public class Histogram {
 		}
 	}
 
-	public String toStringHorisontally() {
+	public String toStringHorisontally(String separatorString) {
 		String out = Integer.toString(data[0]);
 		for (int i=1; i<10; i++) {
-			out = out + "\t" + data[i];
+			out = out + separatorString + data[i];
 		}
 		return out;
 	}

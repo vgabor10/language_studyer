@@ -46,16 +46,8 @@ public class StudyItemContainer {
 		studyItemIndexToOrderIndex.put(si.index, numberOfStudyItems()-1);
 	}
 
-	public void removeStudyItemWithIndex(int index) {	//TODO: implement
-		int i=0;
-		while (i<data.size()) {
-			if (data.get(i).index == index) {
-				data.remove(index);
-			}
-			else {
-				i++;
-			}
-		}
+	public void removeStudyItemWithOrderIndex(int orderIndex) {
+		data.remove(orderIndex);
 	}
 
 	public void clear() {

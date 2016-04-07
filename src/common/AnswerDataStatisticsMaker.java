@@ -237,7 +237,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public void toScreenProgressByStudyItems() {
-		System.out.println("StudyItem | right answer percentage (number of answers)");
+		/*System.out.println("StudyItem | right answer percentage (number of answers)");
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
@@ -245,9 +245,9 @@ public class AnswerDataStatisticsMaker {
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
 		String out = "";
 		for (int i=0; i<answerDataByStudyItemsContainer.numberOfStudyItems(); i++) {
-			out = datasToSort[i].toStringShowingPercentage(studyItemContainer);
+			out = datasToSort[i].index;
 			System.out.println(out);
-		}
+		}*/
 	}
 
 	//suppose, that data is ordered by time
@@ -287,7 +287,7 @@ public class AnswerDataStatisticsMaker {
 		return answerDataContainer.numberOfAnswers();
 	}
 
-	public int numberOfQuestionedStudyItems() {
+	public int numberOfQuestionedStudyItems() {	//TODO: rename: getNumberOfQuestionedStudyItems()
 		Set<Integer> studyItemIndexes = new HashSet<Integer>();
 		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 			studyItemIndexes.add(answerDataContainer.getAnswerData(i).index);
@@ -377,7 +377,7 @@ public class AnswerDataStatisticsMaker {
 		}*/
 	}
 
-	public void toScreenHistogramOfStudyItemAnswerRatesByDays() {
+	public StringTabular getHistogramOfStudyItemAnswerRatesByDays() {
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
@@ -389,12 +389,16 @@ public class AnswerDataStatisticsMaker {
 			data.put(day, histogram);
 		}
 
+		StringTabular stringTabular = new StringTabular();
+		stringTabular.setSeparatorString(" \\| ");
 
 		Set<Integer> keys = data.keySet();
 		SortedSet<Integer> sortedDays = new TreeSet<Integer>(keys);
 		for (int day : sortedDays) {
-			System.out.println(day + "\t" + data.get(day).toStringHorisontally());
+			stringTabular.addRowInString(day + " | " + data.get(day).toStringHorisontally(" | "));
 		}
+
+		return stringTabular;
 	}
 
 	public void toFileHistogramOfStudyItemAnswerRatesByDays(String filePath) {
@@ -416,7 +420,7 @@ public class AnswerDataStatisticsMaker {
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 			for (int day : sortedDays) {
-				fw.write(day + "\t" + data.get(day).toStringHorisontally() + "\n");
+				fw.write(day + "\t" + data.get(day).toStringHorisontally("\t") + "\n");
 			}
 			fw.close();
 		}
@@ -436,7 +440,7 @@ public class AnswerDataStatisticsMaker {
 		return sum * 100.0/ (double)answerDataByStudyItemsContainer.numberOfStudyItems();
 	}
 
-	public void toSreenLongestIntervallSizeOfRightAnswers() {
+	public void toSreenLongestIntervallSizeOfRightAnswers() {	//TODO: to an other class
 		int longestIntervallSize = 0;
 		int actualIntervallSize = 0;
 		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
@@ -457,20 +461,18 @@ public class AnswerDataStatisticsMaker {
 		System.out.println("longest right answer intervall size: " + longestIntervallSize);
 	}
 
-	public void toScreenHardestWords(int numberOfWords) {
+	public Vector<Integer> getStudyItemIndexesOrderedByAnswerRate() {	//TODO: use it to determinate hardest words
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		if (numberOfWords <= answerDataByStudyItemsContainer.numberOfStudyItems()) {
-			AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
-			Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
-			String out = "";
-
-			for (int i=0; i<numberOfWords; i++) {
-				out = datasToSort[answerDataByStudyItemsContainer.numberOfStudyItems() - 1 - i].toStringShowingPercentage(studyItemContainer);
-				System.out.println(out);
-			}
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
+		
+		Vector<Integer> out = new Vector<Integer>();
+		for (int i=0; i<datasToSort.length; i++) {
+			out.add(datasToSort[i].getStudyItemIndex());
 		}
+
+		return out;
 	}
 
 }

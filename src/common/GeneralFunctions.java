@@ -18,7 +18,7 @@ public class GeneralFunctions {
 	}
 
 	public int milisecToDay(long milisecTime) {
-		int timeZone = 1;
+		int timeZone = 2;
 		return (int)((milisecTime + (long)(timeZone * 1000 * 3600))/(long)(1000*3600*24));
 	}
 
