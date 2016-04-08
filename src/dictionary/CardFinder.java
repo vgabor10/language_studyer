@@ -71,26 +71,31 @@ public class CardFinder {
 
 	public void toScreenCardsWithGivenTermPart(String prefix) {
 		DecimalFormat df = new DecimalFormat("#.00");
-		int maxListedCards = 30;
-		Vector<Card> cardsToList = new Vector<Card>();
+		int maxListedCards = 31;
+		//Vector<Card> cardsToList = new Vector<Card>();
 
-		for (int i=0; i < cardContainer.numberOfCards() && cardsToList.size() < maxListedCards; i++) {
+		StringTabular stringTabular = new StringTabular();
+		stringTabular.setSeparatorString(" \\| ");
+
+		stringTabular.addRowInString("TERM - DEFINITION | % OF RIGHT ANSWERS  (# OF ANSWERS)");
+		for (int i=0; i < cardContainer.numberOfCards() && stringTabular.numberOfRows() < maxListedCards; i++) {
 			if (cardContainer.getCardByOrder(i).term.toLowerCase().contains(prefix.toLowerCase())) {
-				int cardIndex = cardContainer.getCardByOrder(i).index;
-				cardsToList.add(cardContainer.getCardByOrder(i));
+				Card card = cardContainer.getCardByOrder(i);
+
+				String row = card.toString() + " | "
+					+ df.format(answerDataContainer.getAnswerRateOfCard(card.index) * 100) + "% ("
+					+ answerDataContainer.numberOfAnswersOfCard(card.index) + ")";
+
+				stringTabular.addRowInString(row);
 			}
 		}
 
-		System.out.println("cards with given term prefix /term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
-
-		Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange());
-		for (int i=0; i < cardsToList.size(); i++) {
-			int cardIndex = cardsToList.get(i).index;
-			System.out.println(cardsToList.get(i).toString() + " | "
-					+ df.format(answerDataContainer.getAnswerRateOfCard(cardIndex) * 100) + "% ("
-					+ answerDataContainer.numberOfAnswersOfCard(cardIndex) + ")");
+		System.out.println("cards with given term prefix:");
+		for (int i=0; i < stringTabular.numberOfRows(); i++) {
+			System.out.println(stringTabular.getNiceTabularRowInString(i));
 		}
-		if (cardsToList.size() == maxListedCards) {
+
+		if (stringTabular.numberOfRows() == maxListedCards) {
 			System.out.println("THERE CAN BE MORE CARDS FOUND");
 		}
 	}

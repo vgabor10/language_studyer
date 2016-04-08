@@ -29,7 +29,6 @@ public class DictionaryDataModificator {
 	}
 
 	private void saveCardContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
-
 		String filePath = settingsHandler.getStudiedLanguageCardDataPath();
 		File oldFile;
 		oldFile = new File(filePath);
@@ -65,11 +64,21 @@ public class DictionaryDataModificator {
 		}
 	}
 
-	public void mergeCardsWithSameData() {	//TODO: make lot of logs
+	public void mergeCardsWithSameData() {
 
-		//answerdataContainer and cardContainer to log file
+		/*if (logger.isDebug) {
+			logger.debug("cardContainer before merge");
+			for (int i=0; i<cardContainer.numberOfCards(); i++) {
+				logger.debug(cardContainer.getCardByOrder(i).toStringData());
+			}
 
-		/*logger.debug("start merging cards with same term, definition, group");
+			logger.debug("answerDataContainer before merge");
+			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+				logger.debug(answerDataContainer.getAnswerData(i).toStringData());
+			}
+		}*/
+
+		logger.debug("start merging cards with same term, definition, group");
 
 		int numberOfMergedCards = 0;
 
@@ -93,21 +102,13 @@ public class DictionaryDataModificator {
 					logger.debug(card1.toStringData());
 					logger.debug(card2.toStringData());
 
-
-					for (int i = orderIndex2 + 1; i < cardContainer.numberOfCards(); i++) {
-						cardContainer.getCardByOrder(i).index--;
-					}
 					cardContainer.removeCardWithOrderIndex(orderIndex2);
 
-					logger.debug("card with order index " + orderIndex2 + "is removed");
+					logger.debug("card with order index " + orderIndex2 + " is removed");
 
 					for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
-						if (answerDataContainer.getAnswerData(i).index == orderIndex2) {
-							answerDataContainer.getAnswerData(i).index = orderIndex1;
-						}
-						else
-							if (answerDataContainer.getAnswerData(i).index > orderIndex2) {
-							answerDataContainer.getAnswerData(i).index--;
+						if (answerDataContainer.getAnswerData(i).index == card2.index) {
+							answerDataContainer.getAnswerData(i).index = card1.index;
 						}
 					}
 
@@ -119,18 +120,30 @@ public class DictionaryDataModificator {
 			}
 
 			orderIndex1++;
+		}
+
+		if (numberOfMergedCards!=0) {
+			saveCardContainerDataToFile();
+			logger.debug("card container is saved to disc");
+			saveAnswerDataContainerDataToFile();
+			logger.debug("answerDataContainer is saved to disc");
+		}
+
+		System.out.println(numberOfMergedCards + " cards have been merged");
+
+		logger.debug("end merging cards with same term, definition, group");
+
+		/*if (logger.isDebug) {
+			logger.debug("cardContainer after merge");
+			for (int i=0; i<cardContainer.numberOfCards(); i++) {
+				logger.debug(cardContainer.getCardByOrder(i).toStringData());
+			}
+
+			logger.debug("answerDataContainer after merge");
+			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+				logger.debug(answerDataContainer.getAnswerData(i).toStringData());
+			}
 		}*/
-
-		//saveCardContainerDataToFile();
-		//logger.debug("card container is saved to disc");
-		//saveAnswerDataContainerDataToFile();
-		//logger.debug("answerDataContainer is saved to disc");
-
-		//System.out.println(numberOfMergedCards + " cards have been merged");
-
-		//logger.debug("end merging cards with same term, definition, group");
-
-		//answerdataContainer and cardContainer to log file
 
 	}
 }

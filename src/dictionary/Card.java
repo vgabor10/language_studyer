@@ -19,6 +19,7 @@ public class Card extends StudyItem {
 		index = i;
 		term = t;
 		definition = d;
+		group = "";
 	}
 
 	public String toStringData() {

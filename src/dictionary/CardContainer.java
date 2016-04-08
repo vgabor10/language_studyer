@@ -35,6 +35,15 @@ public class CardContainer extends StudyItemContainer {
 		return getStudyItemIndexes();
 	}
 
+	public int getEmptyCardIndex() {
+		int emptyCardIndex = 100000;
+		Set<Integer> cardIndexes = getStudyItemIndexes();
+		while (cardIndexes.contains(emptyCardIndex)) {
+			emptyCardIndex++;
+		}
+		return emptyCardIndex;
+	}
+
 	public void removeCardWithOrderIndex(int orderIndex) {
 		removeStudyItemWithOrderIndex(orderIndex);
 	}
