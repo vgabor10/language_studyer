@@ -3668,7 +3668,7 @@
 103693	unendlich	végtelen
 103694	versammeln	összegyűjt, gyülekezik
 103695	ausführen	végrehajt
-103696	sollen	kell	rendhagyó igék
+103696	sollen	kell (belső kényszer)	rendhagyó igék
 103697	r Januar	január
 103698	womöglich	talán
 103699	schwingen	leng
@@ -4735,7 +4735,7 @@
 104824	können	tud	rendhagyó igék
 104831	leihen	kölcsönöz	rendhagyó igék
 104833	meiden 	kerül vkit/vmit	rendhagyó igék
-104835	müssen	kell	rendhagyó igék
+104835	müssen	kell (külső kényszer)	rendhagyó igék
 104859	sein	létige	rendhagyó igék
 104861	sinken	süllyed	rendhagyó igék
 104867	stechen	megcsíp	rendhagyó igék
@@ -4748,7 +4748,7 @@
 104898	stand auf	felkel (Präterium)	rendhagyó igék
 104899	ging aus	szórakozni megy (Präterium)	rendhagyó igék
 104900	stieg aus	kiszáll (Präterium)	rendhagyó igék
-104901	backte	süt (húst) (Präterium)	rendhagyó igék
+104901	backte	süt (Präterium)	rendhagyó igék
 104902	befahl	parancsol (Präterium)	rendhagyó igék
 104903	begann	elkezd, elkezdődik (Präterium)	rendhagyó igék
 104904	biss	harap (Präterium)	rendhagyó igék
@@ -4819,7 +4819,7 @@
 104971	log	hazudik (Präterium)	rendhagyó igék
 104972	mied	kerül vkit/vmit (Präterium)	rendhagyó igék
 104973	maß	mér (Präterium)	rendhagyó igék
-104974	musste	kell (Präterium)	rendhagyó igék
+104974	musste	kell  (külső kényszer) (Präterium)	rendhagyó igék
 104975	mochte	szeret (Präterium)	rendhagyó igék
 104976	nahm	vesz (Präterium)	rendhagyó igék
 104977	nannte	nevez (Präterium)	rendhagyó igék
@@ -4847,7 +4847,7 @@
 104999	sang	énekel (Präterium)	rendhagyó igék
 105000	sank	süllyed (Präterium)	rendhagyó igék
 105001	saß	ül (Präterium)	rendhagyó igék
-105002	sollte	kell (Präterium)	rendhagyó igék
+105002	sollte	kell (belső kényszer) (Präterium)	rendhagyó igék
 105003	sprach	beszél (Präterium)	rendhagyó igék
 105004	stand	áll (Präterium)	rendhagyó igék
 105005	sprang	ugrik (Präterium)	rendhagyó igék
@@ -4909,7 +4909,7 @@
 105064	i. eingestiegen	beszáll vhová (Perfekt)	rendhagyó igék
 105065	h. empfangen	fogad (Perfekt)	rendhagyó igék
 105066	h. empfohlen	ajánl (Perfekt)	rendhagyó igék
-105067	h. empfunden	érez,észlel vmit (Perfekt)	rendhagyó igék
+105067	h. empfunden	érez, észlel vmit (Perfekt)	rendhagyó igék
 105068	i. erloschen	elalszik a tűz (Perfekt)	rendhagyó igék
 105069	i. erschrocken	megijed (Perfekt)	rendhagyó igék
 105070	h. gegessen	eszik (Perfekt)	rendhagyó igék
@@ -4954,7 +4954,7 @@
 105110	h. gelogen	hazudik (Perfekt)	rendhagyó igék
 105111	h. gemieden	kerül vkit/vmit (Perfekt)	rendhagyó igék
 105112	h. gemessen	mér (Perfekt)	rendhagyó igék
-105113	h. gemusst	kell (Perfekt)	rendhagyó igék
+105113	h. gemusst	kell (külső kényszer) (Perfekt)	rendhagyó igék
 105114	h. gemocht	szeret (Perfekt)	rendhagyó igék
 105115	h. genommen	vesz (Perfekt)	rendhagyó igék
 105116	h. genannt	nevez (Perfekt)	rendhagyó igék
@@ -4982,7 +4982,7 @@
 105138	h. gesungen	énekel (Perfekt)	rendhagyó igék
 105139	i. gesunken	süllyed (Perfekt)	rendhagyó igék
 105140	h. gesessen	ül (Perfekt)	rendhagyó igék
-105141	h. gesollt	kell (Perfekt)	rendhagyó igék
+105141	h. gesollt	kell (belső kényszer) (Perfekt)	rendhagyó igék
 105142	h. gesprochen	beszél (Perfekt)	rendhagyó igék
 105143	h. gestanden	áll (Perfekt)	rendhagyó igék
 105144	i. gesprungen	ugrik (Perfekt)	rendhagyó igék
@@ -5036,3 +5036,4 @@
 105199	achtundzwanzig	huszonnyolc	számok
 105200	neunundzwanzig	huszonkilenc	számok
 105201	dreißig	harminc	számok
+100555	Russland	Oroszország

@@ -1,3 +1,3 @@
 # language_studyer
 
-smart way to study words
+smart way to study languages
