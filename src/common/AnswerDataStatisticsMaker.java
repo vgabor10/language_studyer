@@ -461,7 +461,10 @@ public class AnswerDataStatisticsMaker {
 		System.out.println("longest right answer intervall size: " + longestIntervallSize);
 	}
 
-	public Vector<Integer> getStudyItemIndexesOrderedByAnswerRate() {	//TODO: use it to determinate hardest words
+	public Vector<Integer> getStudyItemIndexesOrderedByAnswerRate() {
+		Logger logger = new Logger();
+		logger.debug("run getStudyItemIndexesOrderedByAnswerRate function");
+
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
@@ -471,6 +474,8 @@ public class AnswerDataStatisticsMaker {
 		for (int i=0; i<datasToSort.length; i++) {
 			out.add(datasToSort[i].getStudyItemIndex());
 		}
+
+		//logger.debug("orderen study item indexes: " + out);
 
 		return out;
 	}

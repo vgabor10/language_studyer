@@ -1,15 +1,8 @@
 package common;
 
 import java.util.*;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedWriter;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.lang.Math;
-import java.text.DecimalFormat;
 
 public class StudyItemContainer {
 
@@ -46,8 +39,16 @@ public class StudyItemContainer {
 		studyItemIndexToOrderIndex.put(si.index, numberOfStudyItems()-1);
 	}
 
+	private void refreshMapVariable() {
+		studyItemIndexToOrderIndex.clear();
+		for (int i=0; i<data.size(); i++) {
+			studyItemIndexToOrderIndex.put(data.get(i).index, i);
+		}
+	}
+
 	public void removeStudyItemWithOrderIndex(int orderIndex) {
 		data.remove(orderIndex);
+		refreshMapVariable();
 	}
 
 	public void clear() {

@@ -7,10 +7,11 @@ public class Logger {
 
 	private final String logFilePath = "/home/varga/git/language_studyer/log_files/log_file.txt";
 
-	private final int logLevel = 1;
+	public final boolean isDebug;
 	//debug - 1
 
 	public Logger() {
+		isDebug = true;
 	}
 
 	public void setLogFile() {
@@ -36,7 +37,7 @@ public class Logger {
 	}
 
 	public void debugActualTime() {
-		if (1 <= logLevel) {
+		if (isDebug) {
 			Date date = new Date();
 			long now = date.getTime();
 			writeToLogFile("actual time: " + now + "\n");
@@ -44,7 +45,7 @@ public class Logger {
 	}
 
 	public void debug(String debugMassage) {
-		if (1 <= logLevel) {
+		if (isDebug) {
 			Date date = new Date();
 			long now = date.getTime();
 
