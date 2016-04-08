@@ -66,12 +66,6 @@ public class AdditionalStatisticsShower {
 		console.readLine();
 	}
 
-	/*public void toScreenHardestWords() {
-		System.out.print("\033[H\033[2J");
-		answerDataStatisticsMaker.toScreenHardestWords(30);
-		console.readLine();
-	}*/
-
 	public void toScreenHistogramOfStudyItemsByNumberOfAnswers() {
 		System.out.print("\033[H\033[2J");
 		answerDataStatisticsMaker.toScreenHistogramOfStudyItemsByNumberOfAnswers();

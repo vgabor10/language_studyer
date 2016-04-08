@@ -133,13 +133,14 @@ public class LanguageStudyer {
 		//additional statistics
 		if (choice.equals("3")) {
 			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
-			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
-			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
-			dictionaryAdditionalStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker);
+			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();
+			dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+			dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
+			dictionaryAdditionalStatisticsShower.setDictionaryAnswerDataStatisticsMaker(dictionaryAnswerDataStatisticsMaker);
 			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
 		}
 
+		//search cards
 		if (choice.equals("4")) {
 
 			String choice2;
@@ -203,10 +204,13 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
+		//modificate cards
 		if (choice.equals("5")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - merge cards with same data");
 			System.out.println("2 - remove card by index //TODO: implement");
+			System.out.println("3 - number of answers with invalid index");
+			System.out.println("4 - check about cards with same index");
 
 			String choice2 = console.readLine();
 
@@ -238,8 +242,27 @@ public class LanguageStudyer {
 				}
 				console.readLine();
 			}
+
+			if (choice2.equals("3")) {
+				System.out.print("\033[H\033[2J");
+				DictionaryDataFormatChecker dictionaryDataFormatChecker = new DictionaryDataFormatChecker();
+				dictionaryDataFormatChecker.setCardContainer(cardContainer);
+				dictionaryDataFormatChecker.setAnswerDataContainer(answerDataContainer);
+				dictionaryDataFormatChecker.toScreenNumberOfAnswersWithInvalidIndex();
+				console.readLine();
+			}
+
+			if (choice2.equals("4")) {
+				System.out.print("\033[H\033[2J");
+				DictionaryDataFormatChecker dictionaryDataFormatChecker = new DictionaryDataFormatChecker();
+				dictionaryDataFormatChecker.setCardContainer(cardContainer);
+				dictionaryDataFormatChecker.setAnswerDataContainer(answerDataContainer);
+				dictionaryDataFormatChecker.toScreenIfThereAreCardsWithSameIndex();
+				console.readLine();
+			}
 		}
 
+		//add card
 		if (choice.equals("6")) {
 
 			String in = "";
@@ -265,7 +288,7 @@ public class LanguageStudyer {
 					else {
 					String term = in.split("\t")[0];
 		       			String definition = in.split("\t")[1];
-		        		Card card = new Card(cardContainer.numberOfCards(), term, definition);
+		        		Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
 		       			Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
 
 		       			if (foundCardIndexes.size() == 0) {
@@ -292,6 +315,7 @@ public class LanguageStudyer {
 			} while(!in.equals("x"));
 		}
 
+		// fand card according to term part
 		if (choice.equals("7")) {
 
 			CardFinder cardFinder = new CardFinder();
@@ -305,7 +329,6 @@ public class LanguageStudyer {
 				s = console.readLine();
 				if (!s.equals("x")) {
 					cardFinder.toScreenCardsWithGivenTermPart(s);
-
 					console.readLine();
 				}
 			} while (!s.equals("x"));
