@@ -25,7 +25,7 @@
 100024	e Uhr	óra
 100025	treffen	találkozik	rendhagyó igék
 100026	brechen	eltör, eltörik	rendhagyó igék
-100027	sterben	meghal	rendhagyó igék
+100027	sterben	hal, meghal	rendhagyó igék
 100028	vergessen	elfelejt	rendhagyó igék
 100029	nehmen	fog, vesz	rendhagyó igék
 100030	s Brötchen	zsömle
