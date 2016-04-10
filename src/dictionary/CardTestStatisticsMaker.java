@@ -7,7 +7,7 @@ import java.text.DecimalFormat;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
-public class CardTestStatisticsMaker {
+public class CardTestStatisticsMaker {	//TODO: refactorate this class
 
 	private CardContainer cardContainer;
 	private AnswerDataContainer testAnswers;
@@ -56,6 +56,9 @@ public class CardTestStatisticsMaker {
 		int numberOfCategoryReducements = 0;
 		int[] categorySizeChanges = new int[10];
 
+		StringTabular stringTabular = new StringTabular();
+		stringTabular.setSeparatorString(" \\| ");
+
 		System.out.println("CARD | % OF RIGHT ANSWERS AFTER TEST | % OF RIGHT ANSWERS BEFORE TEST | # OF ANSWERS AFTER TEST");
 		System.out.println("------------------------------------------------------------------");
 		for (int cardIndex : cardIndexes) {
@@ -69,10 +72,11 @@ public class CardTestStatisticsMaker {
 			double percentageOfRightAnswersAfterTest
 				= answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;
 			
-			System.out.print(cardContainer.getCardByIndex(cardIndex).toString() + " | " 
-				+ df.format(percentageOfRightAnswersAfterTest) + "% | ");
+			String row = cardContainer.getCardByIndex(cardIndex).toString() + " | " 
+				+ df.format(percentageOfRightAnswersAfterTest) + "% | ";
+
 			if (percentageOfRightAnswersBeforeTest != -1) {
-				System.out.print(df.format(percentageOfRightAnswersBeforeTest) + "% | ");
+				row = row + df.format(percentageOfRightAnswersBeforeTest) + "% | ";
 
 				if (percentageOfRightAnswersBeforeTest < percentageOfRightAnswersAfterTest) {
 					numberOfCardsWithImprovement++;
@@ -117,7 +121,7 @@ public class CardTestStatisticsMaker {
 				///////////////// category statistics ////////////////
 			}
 			else {
-				System.out.print("- % | ");
+				row = row + "- | ";
 				numberOfNewCardsTested++;
 
 				int category;
@@ -130,7 +134,14 @@ public class CardTestStatisticsMaker {
 				categorySizeChanges[category]++;
 			}
 
-			System.out.println(answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).numberOfAnswers());
+			row = row + answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).numberOfAnswers();
+
+			stringTabular.addRowInString(row);
+
+		}
+
+		for (int i=0; i<stringTabular.numberOfRows(); i++) {
+			System.out.println(stringTabular.getNiceTabularRowInString(i));
 		}
 
 		System.out.println("------------------------------------------------------------------");;
