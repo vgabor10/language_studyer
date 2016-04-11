@@ -513,7 +513,7 @@
 100512	s Blut	vér
 100513	r Leiter	vezető
 100514	piksen	megszúr
-100515	empfinden	érez, észlel vmit	rendhagyó igék
+100515	empfinden	érez, észlel	rendhagyó igék
 100516	erleichtern	könnyít
 100517	e Behandlung	kezelés
 100518	betonen	hangsúlyoz
@@ -4728,13 +4728,13 @@
 104774	blasen	fújni	rendhagyó igék
 104783	einbiegen	bekanyarodik	rendhagyó igék
 104790	erlöschen	elalszik a tűz	rendhagyó igék
-104793	fern|sehen (ie)	TV-t néz	rendhagyó igék
+104793	fernsehen	TV-t néz (ige)	rendhagyó igék
 104807	gelten	érvényes	rendhagyó igék
 104808	genesen	gyógyul	rendhagyó igék
 104815	haben	birtokol vmit, van neki	rendhagyó igék
 104824	können	tud	rendhagyó igék
 104831	leihen	kölcsönöz	rendhagyó igék
-104833	meiden 	kerül vkit/vmit	rendhagyó igék
+104833	meiden	kerül vkit/vmit	rendhagyó igék
 104835	müssen	kell (külső kényszer)	rendhagyó igék
 104859	sein	létige	rendhagyó igék
 104861	sinken	süllyed	rendhagyó igék
@@ -4774,7 +4774,7 @@
 104925	stieg ein	beszáll vhová (Präterium)	rendhagyó igék
 104926	empfing	fogad (Präterium)	rendhagyó igék
 104927	empfahl	ajánl (Präterium)	rendhagyó igék
-104928	empfand	érez, észlel vmit (Präterium)	rendhagyó igék
+104928	empfand	érez, észlel (Präterium)	rendhagyó igék
 104929	erlosch	elalszik a tűz (Präterium)	rendhagyó igék
 104930	erschrak	megijed (Präterium)	rendhagyó igék
 104931	aß	eszik (Präterium)	rendhagyó igék
@@ -4808,7 +4808,7 @@
 104960	kannte	ismer (Präterium)	rendhagyó igék
 104961	klang	cseng, kong (Präterium)	rendhagyó igék
 104962	kam	jön (Präterium)	rendhagyó igék
-104963	konnte	tud (csinálni), (csinál)hat,-het (Präterium)	rendhagyó igék
+104963	konnte	tud (Präterium)	rendhagyó igék
 104964	lud	megrak, megterhel  (Präterium)	rendhagyó igék
 104965	las	olvas (Präterium)	rendhagyó igék
 104966	lag	fekszik (Präterium)	rendhagyó igék
@@ -4877,7 +4877,7 @@
 105031	zwang	kényszerít (Präterium)	rendhagyó igék
 105032	h. angeboten	megkínál, felkínál (Perfekt)	rendhagyó igék
 105033	h. angerufen	felhív telefonon (Perfekt)	rendhagyó igék
-105034	h. angefangen	elkezd(ődik) (Perfekt)	rendhagyó igék
+105034	h. angefangen	elkezd, elkezdődik (Perfekt)	rendhagyó igék
 105035	i. angekommen	megérkezik (Perfekt)	rendhagyó igék
 105036	h. angezogen	felöltöztet (Perfekt)	rendhagyó igék
 105037	i. aufgestanden	felkel (Perfekt)	rendhagyó igék
@@ -4885,15 +4885,15 @@
 105039	i. ausgestiegen	kiszáll (Perfekt)	rendhagyó igék
 105040	h. gebacken	süt (húst) (Perfekt)	rendhagyó igék
 105041	h. befohlen	parancsol (Perfekt)	rendhagyó igék
-105042	h. begonnen	elkezd(ődik) (Perfekt)	rendhagyó igék
+105042	h. begonnen	elkezd, elkezdődik (Perfekt)	rendhagyó igék
 105043	h. gebissen	harap (Perfekt)	rendhagyó igék
 105044	h. bekommen	kap (Perfekt)	rendhagyó igék
-105045	h. borgen	rejt (Perfekt)	rendhagyó igék
+105045	h. verborgen	elrejt, kiment (Perfekt)	rendhagyó igék
 105046	h. betrogen	becsap (Perfekt)	rendhagyó igék
 105047	h. bewogen	indít vmire, motivál (Perfekt)	rendhagyó igék
 105048	h. gebogen	hajlít (Perfekt)	rendhagyó igék
 105049	h. geboten	nyújt, kínál (Perfekt)	rendhagyó igék
-105050	h. gebunden	(meg)köt (Perfekt)	rendhagyó igék
+105050	h. gebunden	köt, megköt (Perfekt)	rendhagyó igék
 105051	h. gebeten	kér (Perfekt)	rendhagyó igék
 105052	h. geblasen	fújni (Perfekt)	rendhagyó igék
 105053	i. geblieben	marad (Perfekt)	rendhagyó igék
@@ -4902,21 +4902,21 @@
 105057	h. gebrannt	ég (Perfekt)	rendhagyó igék
 105058	h. gedacht	gondol (Perfekt)	rendhagyó igék
 105059	i. gedrungen	behatol, áthatol (Perfekt)	rendhagyó igék
-105060	h. gedurft	szabad (csinálni (Perfekt)	rendhagyó igék
+105060	h. gedurft	szabad (Perfekt)	rendhagyó igék
 105061	i. eingebogen	bekanyarodik (Perfekt)	rendhagyó igék
 105062	h. eingeladen	meghív (Perfekt)	rendhagyó igék
 105063	i. eingeschlafen	elalszik (Perfekt)	rendhagyó igék
 105064	i. eingestiegen	beszáll vhová (Perfekt)	rendhagyó igék
 105065	h. empfangen	fogad (Perfekt)	rendhagyó igék
 105066	h. empfohlen	ajánl (Perfekt)	rendhagyó igék
-105067	h. empfunden	érez, észlel vmit (Perfekt)	rendhagyó igék
+105067	h. empfunden	érez, észlel (Perfekt)	rendhagyó igék
 105068	i. erloschen	elalszik a tűz (Perfekt)	rendhagyó igék
 105069	i. erschrocken	megijed (Perfekt)	rendhagyó igék
 105070	h. gegessen	eszik (Perfekt)	rendhagyó igék
 105071	h. ferngesehen	TV-t néz (Perfekt)	rendhagyó igék
 105072	i. gefahren	vezet, utazik (Perfekt)	rendhagyó igék
 105074	i. gefallen	esik (Perfekt)	rendhagyó igék
-105075	h. gefangen	(meg)fog,(el)kap (Perfekt)	rendhagyó igék
+105075	h. gefangen	megfog, elkap (Perfekt)	rendhagyó igék
 105076	h. gefunden	talál (Perfekt)	rendhagyó igék
 105077	i. geflogen	repül (Perfekt)	rendhagyó igék
 105078	i. geflohen	menekül (Perfekt)	rendhagyó igék
@@ -4978,7 +4978,7 @@
 105134	i. geschwommen	úszik (Perfekt)	rendhagyó igék
 105135	h. geschworen	esküszik (Perfekt)	rendhagyó igék
 105136	h. gesehen	lát, néz (Perfekt)	rendhagyó igék
-105137	i. gewesen	van (=létige) (Perfekt)	rendhagyó igék
+105137	i. gewesen	van (Perfekt)	rendhagyó igék
 105138	h. gesungen	énekel (Perfekt)	rendhagyó igék
 105139	i. gesunken	süllyed (Perfekt)	rendhagyó igék
 105140	h. gesessen	ül (Perfekt)	rendhagyó igék
@@ -5016,7 +5016,7 @@
 105175	vier	négy	számok
 105176	fünf	öt	számok
 105177	sechs	hat	számok
-105178	sieben	hét	számok
+105178	sieben	hét (számnév)	számok
 105181	zehn	tíz	számok
 105182	elf	tizenegy	számok
 105184	dreizehn	tizenhárom	számok
