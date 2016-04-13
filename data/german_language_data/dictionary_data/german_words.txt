@@ -4731,7 +4731,7 @@
 104793	fernsehen	TV-t néz (ige)	rendhagyó igék
 104807	gelten	érvényes	rendhagyó igék
 104808	genesen	gyógyul	rendhagyó igék
-104815	haben	birtokol vmit, van neki	rendhagyó igék
+104815	haben	birtokol vmit	rendhagyó igék
 104824	können	tud	rendhagyó igék
 104831	leihen	kölcsönöz	rendhagyó igék
 104833	meiden	kerül vkit/vmit	rendhagyó igék
@@ -4799,7 +4799,7 @@
 104951	goss	önt, tölt (Präterium)	rendhagyó igék
 104952	grub	ás (Präterium)	rendhagyó igék
 104953	griff	megragad, megfog (Präterium)	rendhagyó igék
-104954	hatte	birtokol vmit, van neki (Präterium)	rendhagyó igék
+104954	hatte	birtokol vmit (Präterium)	rendhagyó igék
 104955	hielt	tart (Präterium)	rendhagyó igék
 104956	hing	lóg, függ (Präterium)	rendhagyó igék
 104957	hob	emel (Präterium)	rendhagyó igék
@@ -4934,7 +4934,7 @@
 105090	h. gegossen	önt, tölt (Perfekt)	rendhagyó igék
 105091	h. gegraben	ás (Perfekt)	rendhagyó igék
 105092	h. gegriffen	megragad, megfog (Perfekt)	rendhagyó igék
-105093	h. gehabt	birtokol vmit, van neki (Perfekt)	rendhagyó igék
+105093	h. gehabt	birtokol vmit (Perfekt)	rendhagyó igék
 105094	h. gehalten	tart (Perfekt)	rendhagyó igék
 105095	h. gehangen	lóg, függ (Perfekt)	rendhagyó igék
 105096	h. gehoben	emel (Perfekt)	rendhagyó igék
