@@ -111,11 +111,7 @@ public class AnswerDataByStudyItem {
 		}
 	}
 
-	/*public String toStringShowingPercentage(StudyItemContainer studyItemContainer) {	//TODO: delete
-		DecimalFormat df = new DecimalFormat("#.00");
-		/*return (Card)studyItemContainer.getStudyItemByIndex(data.get(0).index).definition + " - " 
-			+ studyItemContainer.getStudyItemByIndex(data.get(0).index).term + " | " 
-			+ df.format(countRightAnswerRate() * 100) + "%" + " (" + numberOfAnswers() + ")";*/
-	//	return "";
-	//}
+	public void clear() {
+		data.clear();
+	}
 }

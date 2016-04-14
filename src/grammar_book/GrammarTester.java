@@ -113,6 +113,7 @@ public class GrammarTester {
 		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 		grammarAnswerDataContainer.appendAnswerDataContainer(testAnswers);
 
+		answerDataByStudyItem.clear();
 		answerDataByStudyItem.loadDataFromAnswerDataContainer(grammarItemIndex, grammarAnswerDataContainer);
 		double rightAnswerRateAfterTest = answerDataByStudyItem.countRightAnswerRate();
 

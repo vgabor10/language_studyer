@@ -22,7 +22,7 @@ public class AnswerDataByStudyItemsContainer {
 		}
 	}
 
-	public Set<Integer> getStudyingDays() {
+	public Set<Integer> getStudyingDays() {	//TODO: other class
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 		Set<Integer> studyingDays = new HashSet<Integer>();
 		for (int index : data.keySet()) {
@@ -34,7 +34,7 @@ public class AnswerDataByStudyItemsContainer {
 		return studyingDays;
 	}
 
-	public Histogram getHistogramAtDay(int day) {
+	public Histogram getHistogramAtDay(int day) {	//TODO: other class
 
 		Histogram histogram = new Histogram();
 

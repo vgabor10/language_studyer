@@ -518,4 +518,18 @@ public class AnswerDataStatisticsMaker {
 		return out;
 	}
 
+	public Map<Integer, Double> getAnswerRatesByGrammarItems() {
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+
+		Map<Integer, Double> out = new HashMap<Integer, Double>();
+		for (int studyItemIndex : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
+			AnswerDataByStudyItem answerDataByStudyItem 
+				= answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(studyItemIndex);
+			out.put(studyItemIndex, answerDataByStudyItem.countRightAnswerRate());
+		}
+
+		return out;
+	}
+
 }
