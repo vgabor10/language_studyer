@@ -49,7 +49,9 @@ public class GrammarBookLoader {
 
 				if (strLine.startsWith("\\" + "section")) {
 					if (!grammarItem.isEmptyExcludingTitle()) {
-						grammarBook.addGrammarItem(grammarItem);
+						if (10 <= grammarItem.numberOfExamples()) {
+							grammarBook.addGrammarItem(grammarItem);
+						}
 						grammarItem = new GrammarItem();
 					}
 
@@ -62,7 +64,9 @@ public class GrammarBookLoader {
 
 				if (strLine.startsWith("\\" + "subsection")) {
 					if (!grammarItem.isEmptyExcludingTitle()) {
-						grammarBook.addGrammarItem(grammarItem);
+						if (10 <= grammarItem.numberOfExamples()) {
+							grammarBook.addGrammarItem(grammarItem);
+						}
 
 						GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
 						grammarItem = new GrammarItem();
@@ -78,7 +82,9 @@ public class GrammarBookLoader {
 
 				if (strLine.startsWith("\\" + "subsubsection")) {
 					if (!grammarItem.isEmptyExcludingTitle()) {
-						grammarBook.addGrammarItem(grammarItem);
+						if (10 <= grammarItem.numberOfExamples()) {
+							grammarBook.addGrammarItem(grammarItem);
+						}
 
 						GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
 						grammarItem = new GrammarItem();
@@ -94,7 +100,9 @@ public class GrammarBookLoader {
 
 				if (strLine.startsWith("\\" + "paragraph")) {
 					if (!grammarItem.isEmptyExcludingTitle()) {
-						grammarBook.addGrammarItem(grammarItem);
+						if (10 <= grammarItem.numberOfExamples()) {
+							grammarBook.addGrammarItem(grammarItem);
+						}
 
 						GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
 						grammarItem = new GrammarItem();

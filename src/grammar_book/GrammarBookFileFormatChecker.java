@@ -25,19 +25,20 @@ public class GrammarBookFileFormatChecker {
 	}
 
 	public void isThereAnswerDataWithInvalidGrammarItemIndex() {	//TODO: take it to an other class
-		Set<Integer> GrammarItemIndexes = grammarBook.getGrammarItemIndexes();
+		Set<Integer> grammarItemIndexes = grammarBook.getGrammarItemIndexes();
 
 		int i = 0;
 		while (i<grammarAnswerDataContainer.numberOfAnswers() 
-			&& GrammarItemIndexes.contains(grammarAnswerDataContainer.getAnswerData(i))) {
+			&& grammarItemIndexes.contains(grammarAnswerDataContainer.getAnswerData(i).index)) {
 			i++;
 		}
 
 		if (i == grammarAnswerDataContainer.numberOfAnswers()) {
-			System.out.println("answer data file contains answer data with invalid grammar item index");
+			System.out.println("fortunately there is not answer data with invalid grammar item index");
 		}
 		else {
-			System.out.println("fortunately there is not answer data with invalid grammar item index");
+			System.out.println("answer data file contains answer data with invalid grammar item index, an invalid index is: " 
+				+ grammarAnswerDataContainer.getAnswerData(i).index);
 		}
 	}
 
