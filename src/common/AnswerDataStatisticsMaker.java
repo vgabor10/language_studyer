@@ -480,4 +480,42 @@ public class AnswerDataStatisticsMaker {
 		return out;
 	}
 
+	public Vector<Integer> getStudyItemIndexesOrderedByLastStudyDate() {
+		Logger logger = new Logger();
+		logger.debug("run getStudyItemIndexesOrderedByLastStudyDate function");
+
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByLastStudyDate());
+		
+		Vector<Integer> out = new Vector<Integer>();
+		for (int i=0; i<datasToSort.length; i++) {
+			out.add(datasToSort[i].getStudyItemIndex());
+		}
+
+		//logger.debug("orderen study item indexes: " + out);
+
+		return out;
+	}
+
+	public Vector<Integer> getStudyItemIndexesOrderedByNumberOfAnswers() {
+		Logger logger = new Logger();
+		logger.debug("run getStudyItemIndexesOrderedByNumberOfAnswers function");
+
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
+		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
+		
+		Vector<Integer> out = new Vector<Integer>();
+		for (int i=0; i<datasToSort.length; i++) {
+			out.add(datasToSort[i].getStudyItemIndex());
+		}
+
+		//logger.debug("orderen study item indexes: " + out);
+
+		return out;
+	}
+
 }

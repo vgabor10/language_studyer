@@ -31,7 +31,7 @@ public class AnswerDataByStudyItem {
 		return data.get(0).index;
 	}
 
-	public long getLatestAnswerDate() {
+	public long getLatestAnswerDate() {	//TODO: rename: lastStudyDate()
 		return data.lastElement().date;
 	}
 

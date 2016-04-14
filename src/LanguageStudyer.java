@@ -343,8 +343,10 @@ public class LanguageStudyer {
 		if (choice.equals("10")) {
 			System.out.print("\033[H\033[2J");
 
-			System.out.println("1 - practising with given grammar item");
-			System.out.println("2 - practising with the last studyed grammar item with at least 10 examples");
+			System.out.println("practising with: ");
+			System.out.println("1 - given grammar item");
+			System.out.println("2 - the last studyed grammar item with at least 10 examples");
+			System.out.println("3 - random grammar item from a random, 5 least studied, 5 hardest, latest studyed item");
 
 			GrammarTester grammarTester = new GrammarTester();
 			grammarTester.setGrammarBook(grammarBook);
@@ -378,6 +380,19 @@ public class LanguageStudyer {
 				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
 
 				int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
+				grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
+			}
+
+			if (c.equals("3")) {
+				System.out.print("\033[H\033[2J");
+				GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
+				grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+				grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+
+				RandomGrammarItemChooser randomGrammarItemChooser = new RandomGrammarItemChooser();
+				randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
+
+				int grammarItemIndex = randomGrammarItemChooser.getGrammarItemIndexForTest3();
 				grammarTester.performTestByGrammarItemIndex(grammarItemIndex, 10);
 			}
 		}

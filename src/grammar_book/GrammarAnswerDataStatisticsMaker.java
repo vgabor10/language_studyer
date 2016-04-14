@@ -111,6 +111,7 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
 		return numberOfGrammarItems;
 	}
 
+	//TODO: is it use the right answer rate os study items???
 	public void toScreenPercentageOfRightAnswersByGrammarItems() {		//TODO: make it to toScreenPercentageOfRightAnswersByStudyItems
 		Map<Integer,Integer> numberOfRightAnswersByGrammarItems = new HashMap<Integer,Integer>();
 		Map<Integer,Integer> numberOfAnswersByGrammarItems = new HashMap<Integer,Integer>();

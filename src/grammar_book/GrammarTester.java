@@ -21,9 +21,9 @@ public class GrammarTester {
 
 	public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
 		grammarAnswerDataContainer = a;
-	}	
+	}
 
-	public Vector<Integer> getRandomExampleIndexes(int grammarItemIndex, int numberOfExamples) {
+	private Vector<Integer> getRandomExampleIndexes(int grammarItemIndex, int numberOfExamples) {
 
 		Vector<Integer> idexesToAdd = new Vector<Integer>(grammarBook.getGrammarItemByIndex(grammarItemIndex).getExampleIndexes());
 		Vector<Integer> outVector = new Vector<Integer>();
