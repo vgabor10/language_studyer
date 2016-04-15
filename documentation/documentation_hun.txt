@@ -1,0 +1,13 @@
+Két része van a programnak: a szótár és a nyelvtan könyv. A szótárral szavakat lehet tanulni, a nyelvtankönyvel pedig a nyelvtani szerkezeteket lehet gyakorolni.
+
+I. A szótár
+
+Kb 4-5 ezer szót kell tudni, ahhoz, hogy az ember elég jól tudjon egy nyelvet. Az a feladat, hogy tanuljunk meg ennyi szót. A program egy játék köré épül. Egy játékban a gép kiválaszt 20 szót a sok szót tartalmazó adatbázisból, ezeket a szavakat fogja használni a játékban. A program megkérdezi a szó jelentését magyarul és be kell írni a szót németül. Ha az ember egy szót egymás után kétszer eltalál, akkor ezt a szót nem kérdezi már meg a játékban többet. Addig tart a játék, amíg el nem fogynak a szavak. Egy játék kb 5 perc.
+
+A lényeg az, hogy a program adatokat tárol el arról, hogy az ember hogyan játszik. Minden kérdésre vonatkozóan eltárolja azt, hogy mi volt a kérdés, hogy helyesen válaszolt-e az ember és a kérdés időpontát. Mire jók ezek az adatok?
+
+Két dologra:
+1. Egyrészt statisztikákat számol belőlük a program. Ez szerintem nagyon fontos mert motívácót ad az embernek. Hagyományos tanulási mód esetében szerintem az a probléma, hogy az ember hamar elvesztheti a motivációját, mert nagyon lassú a haladás és nehéz ezt érzékelni. Itt pedig a statisztikákkal nyomon lehet követni a haladást. Tényleg az a tapasztalatom, hogy ezek a statisztikák nagyon lassan, de javulnak.
+2. Másik dolog, amire jók az adatok, hogy ezek alapján tanulási stratégiákat lehet definiálni. Tanulási stratégia alatt azt értem, hogy a sok ezer szót tartalmazó adatbázisból hogyan választja ki a program azt a 20 szót ami a játékba kerül. Például nagyobb valószínűséggel választ olyan szót, amit az ember a válaszokra vonatkozó adatok alapján kevésbé tud, vagy régen volt megkérdezve, vagy kevésszer volt megkérdezve stb. Ezzel szterintem sok időt meg lehet spórolni. Azt tapasztaltam, hogy ha hagyományos módon tanul az ember, akkor ahogy halad előre egyre inkább az energiái nem arra fordítódnak, hogy új dolgokat tanuljon, hanem arra, hogy megtalálja azt amit nem tud, vagy kevésbé tud. Ezt pedig ezzel a programmal ki lehet küszöbölni.
+
+II. Nyelvtan könyv

@@ -1,2 +1,3 @@
 - give log file path relatively
 - implement TabularShower class in common package
+- create average answer rates by days statistics
