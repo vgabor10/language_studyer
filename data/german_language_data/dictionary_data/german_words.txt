@@ -4729,7 +4729,7 @@
 104783	einbiegen	bekanyarodik	rendhagyó igék
 104790	erlöschen	elalszik a tűz	rendhagyó igék
 104793	fernsehen	TV-t néz (ige)	rendhagyó igék
-104807	gelten	érvényes	rendhagyó igék
+104807	gelten	érvényes (ige)	rendhagyó igék
 104808	genesen	gyógyul	rendhagyó igék
 104815	haben	birtokol vmit	rendhagyó igék
 104824	können	tud	rendhagyó igék
@@ -4867,7 +4867,7 @@
 105021	stieg um	átszáll (Präterium)	rendhagyó igék
 105022	vergaß	elfelejt (Präterium)	rendhagyó igék
 105023	verließ	elhagy vkit/vmit (Präterium)	rendhagyó igék
-105024	verlor	elveszít vmit/vkit (Präterium)	rendhagyó igék
+105024	verlor	elveszít (Präterium)	rendhagyó igék
 105025	verstand	ért, megért (Präterium)	rendhagyó igék
 105026	wuchs	nő (Präterium)	rendhagyó igék
 105027	wusch	mos (Präterium)	rendhagyó igék
