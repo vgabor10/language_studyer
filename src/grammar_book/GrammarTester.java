@@ -128,7 +128,12 @@ public class GrammarTester {
 		DecimalFormat df = new DecimalFormat("#.00");
 		System.out.println("percentage of right answers: " + df.format(percentage) + "%");
 
-		System.out.println("grammar item right answer rate before test: " +  df.format(rightAnswerRateBeforeTest * 100) + "%");
+		if (rightAnswerRateBeforeTest != -1) {
+			System.out.println("grammar item right answer rate before test: " +  df.format(rightAnswerRateBeforeTest * 100) + "%");
+		}
+		else {
+			System.out.println("grammar item right answer rate before test: -");
+		}
 		System.out.println("grammar item right answer rate after test: " +  df.format(rightAnswerRateAfterTest * 100) + "%");
 
 		Date date = new Date(endTime - startTime);
