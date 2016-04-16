@@ -20,7 +20,7 @@ public class LanguageStudyer {
 		SettingsHandler settingsHandler = new SettingsHandler();
 		String choice = "";
 
-		////////////////////// start loading data ////////////////////// 
+		////////////////////// start loading data //////////////////////	//TODO: create a DataLoader class
 
 		CardContainer cardContainer = new CardContainer();
 		cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
@@ -497,8 +497,35 @@ public class LanguageStudyer {
 			System.out.println("1 - german");
 			int languageToStudyIndex = Integer.parseInt(console.readLine());
 			settingsHandler.changeLanguageTostudy(languageToStudyIndex);
-			cardContainer.clear();
+
+			////////////////////// start loading data //////////////////////	//TODO: code repetition
+
+			cardContainer = new CardContainer();
 			cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
+
+			testedCardGroupHandler = new TestedCardGroupHandler();
+			testedCardGroupHandler.setCardContainer(cardContainer);
+			testedCardGroupHandler.setCardGroups();
+
+			grammarBook = new GrammarBook();
+			grammarBookLoader = new GrammarBookLoader();
+			grammarBookFileFormatChecker = new GrammarBookFileFormatChecker();
+			isCorrect = grammarBookFileFormatChecker.generalCheck(settingsHandler.getStudiedLanguageGrammarBookPath());
+			if (isCorrect == false) {
+				System.out.println("grammar book format is wrong");
+				console.readLine();
+			}
+
+			grammarBookLoader.setGrammarBook(grammarBook);
+			grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
+
+			answerDataContainer = new AnswerDataContainer();
+			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+
+			grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+			////////////////////// end loading data ////////////////////// 
 		}
 
 		if (choice.equals("x")) {
