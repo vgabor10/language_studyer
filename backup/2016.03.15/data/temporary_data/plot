@@ -1,0 +1,3 @@
+set key left box
+plot 'histogram_of_card_answer_rates_by_days.txt' using 1:2 with lines, '' using 1:3 with lines, '' using 1:4 with lines, '' using 1:5 with lines, '' using 1:6 with lines, '' using 1:7 with lines, '' using 1:8 with lines, '' using 1:9 with lines, '' using 1:10 with lines, '' using 1:11 with lines
+pause -1

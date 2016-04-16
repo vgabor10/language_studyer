@@ -1,0 +1,508 @@
+0
+
+Határozott névelő/Határozott névelő ragozása
+
+eset | hímnem | nőnem | semleges nem | többes szám
+alany | der | die | das | die
+tárgy | den | die | das | die
+részes | dem | die | dem | den ~n
+birtokos | des ~s | der | des ~s | der
+
+der	hím nem, alany eset
+die	nő nem, alany eset
+das	semleges nem, alany eset
+die	többes szám, alany eset
+den	hím nem, tárgy eset
+die	nő nem, tárgy eset
+das	semleges nem, tárgy eset
+die	többes szám, tárgy eset
+dem	hím nem, részes eset
+die	nő nem, részes eset
+dem	semleges nem, részes eset
+den ~n	többes szám, részes eset
+des ~s	hím nem, birtokos eset
+der	nő nem, birtokos eset
+des ~s	semleges nem, birtokos eset
+der	többes szám, birtokos eset
+
+1
+
+Határozott névelő/Birtokos eset
+
+hímnem | nönem | semleges nem | többes szám
+des ~s | der | des ~s | der
+
+der Sohn des Vaters	az apa fia
+das Fenster des Hauses	a ház ablaka
+das Madchen der Mutter	az anya lánya
+der Freund des Vaters	az apa barátja
+das Spielzeug des Kindes	a gyerek játéka
+die Scheibe des Wagens	a kocsi ablaka
+die Kleider der Kinder	a gyerekek ruhái
+der Bus der Lehrer	a tanárok busza
+die Freundin der Mutter	az anya barátnője
+
+2
+
+Határozatlan névelő/Határozatlan névelő ragozása
+
+eset | hímnem | nőnem | semleges nem
+alany | ein | eine | ein
+tárgy | einen | eine | ein
+részes | einem | einer | einem
+birtokos | eines ~s | einer | eines ~s
+
+ein	hím nem, alany eset
+eine	nő nem, alany eset
+ein	semleges nem, alany eset
+einen	hím nem, tárgy eset
+eine	nő nem, tárgy eset
+ein	semleges nem, tárgy eset
+einem	hím nem, részes eset
+einer	nő nem, részes eset
+einem	semleges nem, részes eset
+eines ~s	hím nem, birtokos eset
+einer	nő nem, birtokos eset
+eines ~s	semleges nem, birtokos eset
+
+3
+
+Határozatlan névelő/Határozatlan névelő ragozása - példák
+
+eset | hímnem | nőnem | semleges nem
+alany | ein | eine | ein
+tárgy | einen | eine | ein
+részes | einem | einer | einem
+birtokos | eines ~s | einer | eines ~s
+
+ein Mädchen	egy lány
+ein Kind	egy gyerek
+ein Vater	egy apa
+ein Wagen	egy autó
+einer Frau	egy nőnek
+enen	Garten	egy kertet
+einem Kind	egy gyereknek
+ein Auto	egy autót
+ein Buch	egy könyvet
+ein Mann	egy férfi
+ein Haus	egy ház
+einen Schrank	egy szekrényt
+einem Mädchen	egy lánynak
+einem Mann	egy férfinak
+eine Frau	egy nő
+einer Lehrerin	egy tanárnőnek
+eine Lampe	egy lámpa
+einen Stuhl	egy széket
+einem Gast	egy vendégnek
+ein Fenster	egy ablakot
+einen Tisch	egy asztalt
+ein Sohn	egy fiú
+ein Haus	egy házat
+ein Fenster	egy ablak
+einem Hund	egy kutyának
+ein Auto	egy autó
+einen Lehrer	egy tanárt
+ein Buch	egy könyv
+die Hose eines Mannes	egy férfi nadrágja
+die Feder eines Vogels	egy madár tolla
+das Fenster eines Hauses	egy ház ablaka
+der Rock einer Frau	egy nő szoknyája
+die Frau eines Lehrers	egy tanár felesége
+das Heft einer Schülerin	egy diáklány füzete
+die Seiten eines Buches	egy könyv oldalai
+der Kuli einer Lehrerin	egy tanárnő tolla
+der Ball eines Kindes	egy gyerek labdája
+
+4
+
+Személyes névmás esetei
+
+alany    | ich  | du   | er   | sie | es   | wir   | ihr  | sie   | Sie
+tárgy    | mich | dich | ihn  | sie | es   | uns   | euch | sie   | Sie
+részes   | mir  | dir  | ihm  | ihr | ihm  | uns   | euch | ihnen | Ihnen
+birtokos | mein | dein | sein | ihr | sein | unser | euer | ihr   | Ihr
+
+mich	engem
+dich	téged
+ihn	őt (himnem)
+sie	őt (nőnem)
+es	azt
+uns	minket
+euch	titeket
+sie	őket
+Sie	Önt, Önöket
+mir	nekem
+dir	neked
+ihm	neki (hímnem)
+ihr	neki (nőnem)
+ihm	neki (semleges nem)
+uns	nekünk
+euch	nektek
+ihnen	nekik
+Ihnen	Önnek, Önöknek
+mein	enyém
+dein	tiéd
+sein	övé (hímnem)
+ihr	övé (nőnem)
+sein	öve (semleges nem)
+unser	miénk
+euer	tiétek
+ihr	övék
+Ihr	Öné, Önöké
+
+5
+
+Módbeli segédigék/Módbeli segédigék ragozása
+
+E/1	kann	darf	mag	will	muss	soll
+E/2	kannst	darfst	magst	willst	musst	sollst
+E/3	kann	darf	mag	will	muss	soll
+T/1	können	dürfen	mögen	wollen	müssen	sollen
+T/2	könnt	dürft	mögt	wollt	müsst	sollt
+T/3	können	dürfen	mögen	wollen	müssen	sollen
+
+kann	tud, E/1
+kannst	tud, E/2
+kann	tud, E/3
+können	tud, T/1
+könnt	tud, T/2
+können	tud, T/3
+darf	szabad, E/1
+darfst	szabad, E/2
+darf	szabad, E/3
+dürfen	szabad, T/1
+dürft	szabad, T/2
+dürfen	szabad, T/3
+mag	szeret, E/1
+magst	szeret, E/2
+mag	szeret, E/3
+mögen	szeret, T/1
+mögt	szeret, T/2
+mögen	szeret, T/3
+will	akar, E/1
+willst	akar, E/2
+will	akar, E/3
+wollen	akar, T/1
+wollt	akar, T/2
+wollen	akar, T/3
+muss	kell (külső kényszer), E/1
+musst	kell (külső kényszer), E/2
+muss	kell (külső kényszer), E/3
+müssen	kell (külső kényszer), T/1
+müsst	kell (külső kényszer), T/2
+müssen	kell (külső kényszer), T/3
+soll	kell (belső kényszer), E/1
+sollst	kell (belső kényszer), E/2
+soll	kell (belső kényszer), E/3
+sollen	kell (belső kényszer), T/1
+sollt	kell (belső kényszer), T/2
+sollen	kell (belső kényszer), T/3
+
+6
+
+Módbeli segédigék/Módbeli segédigék használata
+
+können - tud
+dürfen - szabad
+mögen - szeret, kedvel
+müssen - kell
+sollen - kell
+wollen - akar
+Módbeli segédigék használata: alany + módbeli segédige ragozva+ többi mondatrész + ige főnévi igenév alakban 
+
+Ich will heute ins Kino gehen.	Ma moziba akarok menni.
+Ilona darf ins Theater gehen.	Ilonának szabad színházba mennie.
+Ich kann schnell Bier trinken.	Gyorsan tudok sört inni.
+Ich kann schwimmen.	Tudok úszni.
+Sie will kommen.	Akar jönni. (nő)
+Wir mögen Fußball spielen.	Szeretünk focizni.
+Er soll zu Hause gehen.	Haza kell mennie. (férfi)
+Du musst Blume kaufen.	Virágot kell venned.
+Wir darf spielen.	Szabad játszanunk.
+Wir wollen Fernsehen.	Akarunk tévézni.
+Wollt ihr ins Bett gehen?	Akartok ágyba menni?
+Er kann gut sprechen.	Jól tud beszélni. (férfi)
+Ihr dürft nach Hause gehen.	Haza mehettek.
+Mögt ihr Korbball spielen?	Szerettek kosárlabdázni?
+Er soll nett sind.	Kedvesnek kell lennie. (férfi)
+Mögt ihr Eis essen?	Szerettek fagyit enni?
+Ich muss lernen.	Tanulnom kell.
+Sie muss einkaufen.	Be kell vásárolnia.
+Wollt iht trinken?	Akartok inni?
+Sie mag Schach spielen.	Szeret sakkozni.
+Sie wolen nach Hause gehen.	Haza akarnak menni.
+Darfst du rauchen?	Szabad cigarettáznod?
+Sie wollen schlafen.	Aludni akarnak.
+Sie müssen lernen.	Tanulniuk kell.
+Gizi will Wasser trinken.	Gizi vizet akar inni.
+Ihr soll höflich sind.	Udvariasnak kell lennetek.
+
+7
+
+Prepozíciók/Prepozíciók tárgyesettel
+
+für - -ért, részére, számára
+ohne - nélkül
+gegen - ellen, körül (időben)
+bis - -ig
+durch - át, keresztül, által
+um - -kor, körül (térben)
+
+für den Vater	az apa részére
+für die Mutter	az anya részére
+ohne Geld	pénz nélkül
+ohne Tasche	táska nélkül
+gegen den Bruder	a barát ellen
+gegen den Feind	az ellenséggel szemben
+um das Haus	a ház körül
+durch meine Schwester	a nővérem által
+durch den Tunnel	keresztül az alagúton
+durch die Eltern	a szülőkön keresztül
+ohne Schuhe	cipő nélkül
+bis Budapest	Budapestig
+bis 5 Uhr	5 óráig
+um den Garten	a kert körül
+für das Mädchen	a lánynak
+für fünf Forint	öt forintért
+für einen Wagen	egy kocsiért
+ohne Lampe	lámpa nélkül
+um die Stadt	a város körül
+ohne Schweigermutter	anyós nélkül
+durch einen Freund	egy barát által
+um einen Tisch	egy asztal körül
+durch ein Haus	egy házon át
+durch meinen Vater	apám által
+ohne Heft	füzet nélkül
+für einen Apfel	egy almáért
+durch das Dorf	keresztül a falun
+durch den Park	keresztül a parkon
+bis zwei	kettőig
+um meinen Mann	a férjem körül
+gegen die Eltern	a szülőkkel szemben
+um einen Garten	egy kert körül
+durch den Weg	keresztül az úton
+gegen mich	ellenem
+für ihn	érte (hímnem)
+ohne uns	nélkülünk
+ohne sie	nélküle (nőnem)
+um euch	körülöttetek
+für uns	értünk
+für Sie	Önért
+um uns	körülöttünk
+durch mich	általam
+für sie	részükre
+gegen dich	ellened
+um uns	körülöttünk
+ohne sie	nélkülük
+gegen Sie	Ön ellen
+ohne dich	nélküled
+für uns	nekünk
+für euch	értetek
+durch Sie	Ön által
+für dich	érted
+ohne mich	nélkülem
+um mich	körülöttem
+für sie	számukra
+gegen euch	ellenetek
+gegen ihn	ellene (hímnem)
+um dich	körülötted
+um sie	körülötte (nőnem)
+durch	sie	általa (nőnem)
+gegen uns	ellenünk
+für mich	értem
+für euch	részetekre
+
+8
+
+Fordított szórend
+
+trotzdem - mégis
+dann - aztán, akkor
+sonst - különben
+darum - ezért
+deshalb - ezért
+
+Sie ist krank, darum sucht sie einen Arzt.	Beteg, ezért keres egy orvost. (nő)
+Zuletzt ich gehe zu Hause, dann esse ich.	Először haza megyek, aztán eszek.
+Das Wetter ist schön, deshalb können wir nicht zu Hause bleiben.	Az idő szép, ezért nem maradhatunk otthon.
+Du schreibst die Lektion, sonst bekommst du eine Eins.	Megírod a leckét, különben kapsz egy egyest.
+Wir lernen klein, dann spielen wir Fußball.	Tanulunk egy kicsit, aztán focizunk.
+Wir arbeiten, dann gehen wir in die Kneipe.	Dolgozunk, aztán megyünk a kocsmába.
+Er arbeitet viel, deshalb is er reich.	Sokat dolgozik, ezért gazdag.
+Er arbeitet viel, trotzdem is er arm.	Sokat dolgozik, mégis szegény.
+
+9
+
+Melléknévfokozás/Melléknévfokozás - Reguláris melléknevek
+
+alapfok | középfok | felsőfok
+schön | schöner | der/die/das schönste
+
+dicker	kövérebb
+dickste	legkövérebb
+magerer	soványabb
+niedriger	alacsonyabb
+billiger	olcsóbb
+breiter	szélesebb
+geschickter	ügyesebb
+schneller	gyorsabb
+langsamer	lassabb
+teuer	drágább
+dickste	legkövérebb
+magerste	legsoványabb
+niedrigste	legalacsonyabb
+billigste	legolcsóbb
+breiterste	legszélesebb
+geschicktste	legügyesebb
+schnellste	leggyorsabb
+langsamte	leglassabb
+teuerste	legdrágább
+
+10
+
+Melléknévfokozás/Melléknévfokozás - Umlautos melléknevek
+
+Az egyszótagos a, o, u tövű melléknevek umlautot kapnak.
+alt
+kalt
+jung
+stark
+lang
+warm
+kurz
+hart
+schwach
+dumm
+klug
+arm
+scharf
+
+älter	öregebb
+kälteste	leghidegebb
+jünger	fiatalabb
+stäreker	erősebb	
+länger	hosszabb
+wärmeste	legmelegebb
+kürzer	rövidebb
+härter	keményebb
+schwächer	gyengébb
+dümmer	butább
+klügeste	legokosabb
+ärmer	szegényebb
+schärfeste	legélesebb
+
+11
+
+Prepozíciók/Prepozíciók birtokos esettel
+
+statt - helyett
+trotz - ellenére
+wegen - miatt
+innerhalb - vmin belül (tér és idő)
+außerhalb - vmin kívül
+während - alatt (csak idő)
+
+wegen des Wetters	az időjárás miatt
+statt der Kaltheit	a hideg miatt
+außerhalb der Stadt	a városon kívül
+während der Deutschstunde	a németóra alatt
+innerhalb des Dorfes	a falun bellül
+trotz des Regens	az eső ellenére
+
+12
+
+Kérdőmondat/Kérdőmondat kérdőszó nélkül
+
+Képzése: állítmány + alany + többi mondatrész
+
+Kommst du morgen ins Kino?	Jössz holnap moziba?
+Gehen wir nach Hause?	Haza megyünk?
+Lesen Sie Zeitung?	Újságot olvas?
+Essen ihr Suppe?	Esztek levest?
+
+13
+
+Kérdőmondat/Kérdőmondat kérdőszóval
+
+Képzése: kérdőszó + állítmány + alany + többi mondatrész
+
+Wann kommst du nach Hause?	Mikor jössz haza?
+Wer seht hier?	Ki áll itt?
+Wer sind deine Eltern?	Kik a szüleid?
+Wem gibst du die Blume?	Kinek adod a virágot?
+Was siehst du dort?	Kit látsz ott?
+
+14
+
+Prepozíciók/Prepozíciók részes esettel
+
+aus - -ból/-ből
+bei - -nál/-nél
+mit - -val/-vel
+nach - után, -ba/-be
+von - -tól/-től, -ról/-ről
+zu - -hoz/-hez/-höz
+seit - óta
+gegenüber - szemben, átellenben
+
+aus der Küche	konyhából
+bei der Oma	nagymamánál
+mit dem Kuli	tollal
+nach dem Frühstück	reggeli után
+zu dem Lehrer	tanárhoz
+von dem Schrank	szekrénytől
+gegenüber der Tür	az ajtóval szemben
+seit vier Stunden	négy órája
+bei mir	nálam
+zu euch	hozzátok
+von dir	tőled
+aus ihm	belőle (nő)
+mit ihnen	velük
+nach dir	utánad
+
+15
+
+Kötőszavak/Kötőszavak KATI szórenddel
+
+Képzése: kötőszó + alany + többi mondatrész + ige ragozva
+Az alábbi kötöszavak esetében használatos a KATI szórend:
+dass - hogy
+ob - vajon
+als - amikor
+wenn - ha
+während - amíg
+weil - mert
+obwohl - habár
+összes kérdőnévmás
+
+Ich weiß, dass er heute kommt.	Tudom, hogy ma jön.
+Ich weiß, dass du das weißt.	Tudom, hogy tudod.
+Ich lese, während du schläfst.	Olvasok, amíg alszol.
+Sie ist traurig, weil seine Mutter nicht kommt.	Szomorú, mert nem jön az anyja.
+Ich verrate dir seine Name, wenn du zu mir kommst.	Elárulom a nevét, ha eljössz hozzám.
+Hörst du, als die Kindern sangen?	Hallottad, amikor a gyerekek énekeltek?
+Ich weiß nicht, wann der Boss kommt.	Nem tudom, mikor jön a főnök.
+
+16
+
+Igekötős igék/Elváló igekötős igék
+
+Képzése: alany + ige ragozva + többi mundatrész + igekötő
+Néhány igekötős ige:
+
+Ich stehe immer um 7 auf.	Mindig hétkor kelek.
+Dein Flugzeug kommt bald in Ferihegy an.	A repülőgéped hamarosan érkezik Ferihegyre.
+Wir gehen heute mit Tante Emma weg.	Ma elmegyünk Emma nagynénivel.
+Ervin ruft mich im Büro an.	Ervin felhívott a hivatalban.
+Kaufst du bitte für morgen alles?	Bevásárolnál mindent kérlek holnapra?
+
+17
+
+Igekötős igék/Nem elváló igekötős igék
+
+Az alábbi igekötők nem válnak el:
+ge-, be-, er-, re-, ent- emp-, ver-, zer-, miss-
+
+Gefällst du dem Madchen?	Tetszik neked a lány?
+Ich bezahle die Rechnung.	Kifizetem a számlát.
+Ich erzähle dich enine Geschichte.	Elmesélek neked egy történetet.

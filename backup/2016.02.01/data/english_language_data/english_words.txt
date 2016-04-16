@@ -1,0 +1,957 @@
+0	accumulate	felhalmoz
+1	attain	elér
+2	encourage	bíztat
+3	cater	ellát
+4	facility	képesség
+5	annotate	jegyzetel
+6	threaten	fenyeget
+7	standalone	független
+8	utilize	használ
+9	commodity	áru
+10	revise	javít
+11	queu	sorban áll
+12	manner	mód
+13	template	sablon
+14	lean	hajlik
+15	beware	óvakodik
+16	abuse	visszaél
+17	accurate	pontos
+18	accuse	vádol
+19	ensure	biztosít
+20	tussle	birkózás
+21	disproportion	egyenlőtlenség
+22	perform	elvégez
+23	ruler	vonalzó
+24	silk	selyem
+25	admit	beismer
+26	Don't get me wrong!	Ne érts félre!
+27	shed light on sg	rávilágít vmire
+28	vanish	eltűnik
+29	skull	koponya
+30	distinct	külön
+31	bound	ugrik
+32	adverb	határozószó
+33	after all	mégis
+34	tricky	bonyolult
+35	heal	meggyógyul
+36	carry out	végre hajt
+37	prosperity	jólét
+38	utility	hasznosság
+39	tough	erős
+40	austerity	szigorúság
+41	delusion	csalódás
+42	sprawl	terjeszkedik
+43	impetus	ösztönzés
+44	lease	bérel
+45	disrupt	szétválaszt
+46	jeopardise	veszélyeztet
+47	regardless	figyelmetlen
+48	abate	csökken
+49	meddle	beavatkozik
+50	day off	szabadnap
+51	ankle	boka
+52	underneath	alá
+53	knit	köt
+54	stretch	kiterjeszt
+55	lavish	pazarol
+56	restive	nyugtalan
+57	mice	egerek
+58	plateau	fennsík
+59	irk	bosszant
+60	assertive	önző
+61	facilitate	elősegít
+62	for the moment	pillanatnyilag
+63	calamity	szerencsétlenség
+64	venture	vállalkozás
+65	resolution	határozat
+66	vendor	kereskedő
+67	from top to toe	tetőtől talpig
+68	mine	akna
+69	digest	emészt
+70	inaguration	beiktatás
+71	suspicion	gyanú
+72	skirmish	összetűzés
+73	propose	ajánl
+74	persuade	meggyőz
+75	fall apart	szét esik
+76	make up one's mind	elhatározza magát
+77	apparently	nyilvánvalóan
+78	offend	bánt
+79	afford	nyújt, ad
+80	badge	jelvény
+81	assessment	értékelés
+82	advocate	támogat
+83	plausible	elfogadható
+84	besides	ezenkívül
+85	enhance	növel
+86	draw conclusion	következtet
+87	deserve	érdemel
+88	all the way	egész úton
+89	eventually	végülis
+90	be taken ill	megbetegedik
+91	deter	elriaszt
+92	dissipate	eloszlik
+93	spurn	elutasít
+94	departure	elindulás
+95	pursue	folytat
+96	vigorous	erőteljes
+97	so far	eddig
+98	asset	vagyon
+99	bold	bátor
+100	incorporate	keveredik
+101	overlap	átfedés
+102	constitute	alkot
+103	unlike	ellentétben
+104	tedious	fárasztó
+105	prone	elterül
+106	courtyard	udvar
+107	bend	hajlik
+108	fencer	vívó
+109	detach	elkülönít
+110	compliment	bókol
+111	bitter	keserű
+112	slap	üt
+113	thigh	comb
+114	utterly	teljesen
+115	affiliate	egyesít
+116	convince	meggyőz
+117	acquisition	vétel
+118	devote	szán
+119	interrupt	félbeszakít
+120	ultimately	végül
+121	feeble	gyenge
+122	momentous	fontos
+123	wisdom	bölcsesség
+124	diminish	csökken, fogy
+125	ascribe to sg	tulajdonít vminek
+126	dearth	hiány
+127	offset	ellensúlyoz
+128	bear out	igazol
+129	thrift	takarékosság
+130	absorb	felszív
+131	tepid	langyos
+132	burden	teher
+133	albeit	habár
+134	squeeze	összenyom
+135	dire	szörnyű
+136	maize	kukorica
+137	skew	ferdeség
+138	novel	szokatlan
+139	approve	jóváhagy
+140	retaliate	megtorol
+141	provision	gondoskodás, ellátás
+142	deliberate	megfontol
+143	slim	vékony
+144	cripple	megbénít
+145	abort	megszakít
+146	implore	könyörög
+147	humble	szerény
+148	soar	felszáll
+149	outsider	kívülálló
+150	compass	iránytű
+151	presumably	feltételezhetően
+152	obscure	sötét
+153	appease	megbékít
+154	constrain	kényszerít
+155	pay off	kifizet
+156	reluctant	vonakodó
+157	bailout	kisegítés
+158	frankly	őszintén
+159	merge	egyesít
+160	abound	bővelkedik
+161	enroll	beiratkozik
+162	track	követ
+163	remote	távoli
+164	keen	éles
+165	dwindle	fogy
+166	ignorance	tudatlanság
+167	bliss	boldogság
+168	rejoice	örül
+169	neutralise	semlegesít
+170	glide	siklik
+171	layout	alaprajz
+172	immense	óriási
+173	delicate	finom
+174	encounter	találkozik
+175	velocity	sebesség
+176	peeve	idegesít
+177	acknowledge	elismer
+178	dispatch	elküld
+179	woo	udvarol
+180	temptation	kísértés, csábítás
+181	contemplate	megfontol
+182	vocation	hivatás
+183	wrinkle	ötlet
+184	basement	pince
+185	intoxicated	részeg
+186	counterfeit	utánoz
+187	greedy	kapzsi
+188	blink	pislog
+189	confiscate	lefoglal
+190	surveillance	felügyelet
+191	courtroom	tárgyalóterem
+192	denominate	elnevez
+193	apprehend	letartóztat
+194	bogus	hamis
+195	bust	mell
+196	mutilate	megrongál
+197	bleak	kopár
+198	reveal	felfed
+199	delay	késedelem
+200	identical	azonos
+201	in the interim	ideiglenesen
+202	glow	izzik
+203	respire	lélegzik
+204	resolution	döntés, szándék
+205	screwdriver	csavarhúzó
+206	accomplish	végrehajt, teljesít
+207	set apart	félretesz
+208	deployment	bevetés
+209	sweep	söpör
+210	spine	gerinc
+211	rupture	repedés
+212	trap	csapda
+213	ridiculous	nevetséges
+214	overwhelm	megsemmisít
+215	obstackle	akadály
+216	capitalize	hasznosít
+217	overcome	legyőz
+218	exacerbate	súlyosbít
+219	sluggish	lomha
+220	contingency	lehetőség
+221	conspicuously	feltűnően
+222	allure	csábít
+223	catch up	utol ér
+224	shore	tengerpart
+225	plum	szilva
+226	crawl	csúszik
+227	definitely	határozottan
+228	resolve	elhatároz
+229	torch	elemlámpa
+230	descent	leszállás
+231	leap	ugrik
+232	verge	szegély
+233	crack up	összeomlik
+234	muddle	rendetlenség
+235	revive	feléled
+236	residual	megmaradó
+237	bear	elvisel
+238	feat	tett
+239	gloomy	homályos
+240	wrestle	birkózik
+241	divert	elterel
+242	hurry	siet
+243	thrive	növekszik
+244	tremendous	óriási
+245	cascade	vízesés
+246	abrasion	kopás
+247	drove	tömeg
+248	notorious	hírhedt
+249	barren	terméketlen
+250	tracer	másoló
+251	start from scratch	semmiből kezdi
+252	prescribe	felír (orvosságot)
+253	wrapper	burkolat
+254	adept	szakértő
+255	anticipate	előre lát
+256	pertinent	találó
+257	keep track of sg	nyomon követ vmit
+258	prohibit	tilt
+259	dismantle	lebont
+260	praise	dícsér
+261	shovel	lapát
+262	idle	lusta
+263	turnover	forgalom
+264	marvel	csoda
+265	canny	ravasz
+266	adversary	ellenfél
+267	in vain	hiába
+268	prosper	boldogul
+269	embrace	ölel
+270	imminent	közelgő
+271	latitude	szélesség
+272	precaution	óvatosság
+273	gear	felszerelés
+274	famed	híres
+275	rooftop	tető
+276	dome	kupola
+277	impact	ütközés
+278	subsidise	támogat (pénzzel)
+279	alter	változik
+280	breed	fajta
+281	coat	bevon
+282	dizzy	szédítő
+283	crane	daru
+284	tenant	lakó
+285	precious	értékes
+286	intact	ép
+287	shatter	összezúz
+288	ingenuity	találékonyság
+289	tangible	kézzelfogható
+290	door-step	küszöb
+291	favour	támogat
+292	easeful	nyugalmas
+293	gentle	gyengéd
+294	spare	takarékoskodik
+295	compel	kényszerít
+296	genuine	eredeti
+297	relief	enyhülés
+298	counsel	tanácsol
+299	carve	farag
+300	warranty	garancia
+301	veracity	igazság
+302	offshore	partmenti
+303	leap	ugrás
+304	profound	mély
+305	drill	fúr
+306	get round	megkerül
+307	insidious	alattomos
+308	obstruct	elzár, akadályoz
+309	state of the art	korszerű
+310	boast	dicsekszik
+311	promote	elősegít
+312	coincide with sg	egybeesik vmivel
+313	akin	hasonló
+314	vast	óriási
+315	steep	meredek
+316	3-fold	3-szoros
+317	salutary	hasznos
+318	pour	önt, ömlik
+319	rust	rozsdásodik
+320	formidable	félelmetes
+321	tow	vontat
+322	absorb	elnyel
+323	diligent	szorgalmas
+324	arch	ív
+325	dispel	eloszlat
+326	cardboard	karton
+327	pound	üt
+328	posterity	utókor
+329	passage	átkelés
+330	fierce	vad
+331	cumbersome	kényelmetlen
+332	slice	szelet
+333	offender	bűnös
+334	mighty	erős, hatalmas
+335	dig	ás
+336	handful	maroknyi
+337	smuggle	csempészik
+338	gloomy	borús
+339	contagion	fertőzés
+340	smashing	hatalmas
+341	pebble	kavics
+342	accustomed	szokásos
+343	inadequate	alkalmatlan
+344	adore	imád
+345	jealous	féltékeny
+346	nasty	kellemetlen
+347	awake	ébren
+348	envy	irigység
+349	pull	húz
+350	mire	pocsolya
+351	abstain	tartózkodik
+352	excuse	mentség
+353	take aback	meglep
+354	collide	összeütközik
+355	tie	kötés
+356	vague	bizonytalan
+357	fragile	törékeny
+358	proclivity	hajlam
+359	weaver	takács
+360	usher	bevezet
+361	swiftly	fürgén
+362	make sense of sg	megért vmit
+363	all the same	ennek ellenére
+364	reckon	számol
+365	fixture	tartozék
+366	steer	kormányoz
+367	I wonder, that	azon tűnődök, hogy
+368	pineapple	ananász
+369	skis	síléc
+370	owl	bagoly
+371	sack	elbocsát
+372	trait	jellegzetesség
+373	absence	távollét
+374	mend	kijavít
+375	incentive	ösztönzés
+376	hinder	meggátol
+377	reassure	megnyugtat
+378	choke	fojtogat
+379	roar	ordít
+380	be in charge of sg	meg van bízva vmivel
+381	blaze	láng
+382	escalator	mozgólépcső
+383	propulsion	hajtás
+384	caution	óvatosság
+385	retribution	büntetés
+386	owe	tartozik
+387	provided	feltéve
+388	decent	megfelelő
+389	firm	szilárd
+390	intention	szándék
+391	scar	heg
+392	even so	ennek ellenére
+393	public order	közrend
+394	demo	tüntetés
+395	ailment	gyengélkedés
+396	fabric	szerkezet
+397	underpin	alátámaszt
+398	devise	kigondol
+399	manifestation	megnyilvánulás
+400	allegedly	állítólag
+401	discern	észrevesz
+402	overthrow	megbuktat, megdönt
+403	attribute	tulajdonság
+404	deception	csalás
+405	mourn	gyászol
+406	foment	elősegít
+407	vicinity	környék
+408	clumsy	ügyetlen
+409	cast doubt on sg	kétségbe von vmit
+410	entangle	összezavar
+411	be bound to do sg	kötelessége megtenni vmit
+412	limp	sántít
+413	toll	vám
+414	linger	időzik
+415	shade	árnyék
+416	foolish	bolond
+417	intimidate	megfélemlít
+418	take over	átvesz
+419	doom	végzet
+420	stem from	származik
+421	upfront	nyílt
+422	treat	bánik, kezel
+423	fascinate	elbűvöl
+424	discontent	elégedetlenség
+425	mortgage	teher
+426	admission	elismerés
+427	moot	felvet
+428	casual work	alkalmi munka
+429	acquaintance	ismerős
+430	onset	támadás
+431	suppress	elnyom
+432	eminently	rendkívül
+433	amid	közepette
+434	thumping	óriási
+435	hapless	szerencsétlen
+436	grim	borzalmas
+437	laud	dícsér
+438	outrage	bánt
+439	indignation	felháborodás
+440	stout	szívós
+441	doom	ítél
+442	dawn	hajnal
+443	dismiss	elenged, elbocsát
+444	repeal	visszavon
+445	merely	csupán
+446	grumble	morog
+447	spark	szikra
+448	bullish	makacs
+449	streetcar	villamos
+450	be keen on sg	rajong vmiért
+451	propel	hajt
+452	cub	kölyök
+453	sibling	testvér
+454	rift	rés, repedés
+455	spectacularly	látványosan
+456	tumble	elesik
+457	vacancy	üresség
+458	excavate	kiás
+459	convey	szállít
+460	think-tank	kutató központ
+461	cheek by jowl	szorosan egymás melett
+462	amplify	erősít
+463	commute	ingázik
+464	root	gyökér
+465	nasty	csúnya
+466	nimble	mozgékony
+467	acquiesce	beleegyezik
+468	reliance	bizalom
+469	occasion	okoz
+470	inward	befelé
+471	amass	felhalmoz
+472	substitution	helyettesítés
+473	be ashamed	szégyelli magát
+474	drip	csöpög
+475	torrent	ár
+476	versatility	sokoldalúság
+477	genre	műfaj
+478	stick	nyél
+479	tailor	szabó
+480	graceful	elegáns
+481	predecessor	előd
+482	indispensable	nélkülözhetetlen
+483	absence	hiány
+484	inflict	kiró
+485	civic	polgári
+486	tense	feszes
+487	turmoil	nyugtalanság
+488	durable	tartós
+489	derision	gúnyolódás
+490	surmise	feltételez
+491	headway	előmenetel
+492	tack	taktika
+493	withold	elhallgat
+494	concert	összhang
+495	infidel	hitetlen
+496	might	erő
+497	foster	elősegít
+498	lament	siránkozik
+499	tentative	kísérlet, próba
+500	shove around	erőszakoskodik
+501	elaborate	kidolgoz
+502	lenient	elnéző
+503	backtrack	visszalép
+504	demeanor	viselkedés
+505	aloof	zárkózott
+506	enduring	tartós
+507	authoritative	irányadó
+508	hail	üdvözöl
+509	imperil	veszélyeztet
+510	posit	állít
+511	hurdle	akadály
+512	abruptly	hirtelen
+513	famine	éhinség
+514	inception	kezdet
+515	impairment	károsodás
+516	rumor	szóbeszéd
+517	razor	borotva
+518	confine	korlátoz
+519	frail	gyenge
+520	prominent	kiemelkedő
+521	pamper	kényeztet
+522	cushy	kényelmes
+523	parsimony	takarékosság
+524	paltry	jelentéktelen
+525	adjustment	beállítás
+526	corpus	test
+527	coerce	kényszerít
+528	dismay	félelem
+529	concede	elismer
+530	seductive	csábító
+531	intrude	behatol
+532	alleviate	enyhít
+533	ineligible	alkalmatlan
+534	rudimentary	alapvető
+535	obese	elhízott
+536	zealous	lelkes
+537	fade	fakul
+538	oppression	elnyomás
+539	savage	kegyetlen
+540	tempestuous	viharos
+541	decelerate	lassít
+542	forestall	megelőz
+543	perilous	veszélyes
+544	solitude	magány, egyedüllét
+545	perpetrate	elkövet
+546	compile	összeállít
+547	reprimand	rendreutasít, megfedd
+548	altercate	veszekszik
+549	commence	kezdődik
+550	endurance	állóképesség
+551	abduct	elrabol
+552	rivalry	vetélkedés
+553	deprive	megfoszt
+554	prospect	kilátás, távlat
+555	devotion	rajongás
+556	amend	módosít, helyesbít
+557	envious	irigy
+558	swan	hattyú
+559	deem	vminek gondol
+560	prosperous	virágzó, sikeres
+561	fiance	vőlegény
+562	verbatim	szó szerint
+563	merit	érdem
+564	ledge	párkány, szegély
+565	riddle	rejtvény
+566	insane	őrült
+567	neat	rendes, takaros, tiszta
+568	sober	józan
+569	grief	bánat, fájdalom
+570	deflect	elterel
+571	confidental	bizalmas, titkos
+572	realm	királyság, birodalom
+573	raven	holló
+574	bastard	törvénytelen
+575	ambush	rejtekhely
+576	dove	galamb
+577	abundance	bőség
+578	peril	veszély, veszedelem
+579	vow	eskü
+580	glove	kesztyű
+581	dwarf	törpe
+582	knack	ügyesség
+583	betray	elárul, cserbenhagy
+584	courtesy	udvariasság
+585	fool	bolond
+586	misgiving	kétség, kételkedés
+587	tremble	remeg, reszket
+588	wrath	harag, düh
+589	awful	szörnyű, rettenetes
+590	traitor	áruló
+591	treason	árulás
+592	paramount	legfőbb, kiemelkedő
+593	proclaim	kihirdet, kikiált
+594	confess	bevall, beismer
+595	saddle	nyereg
+596	bear	medve
+597	consent	beleegyezik, jóváhagy
+598	courage	bátorság
+599	obey	engedelmeskedik
+600	wheat	búza
+601	furious	dühös
+602	odd	különös, furcsa
+603	mitigate	enyhít, mérsékel
+604	at once	azonnal
+605	defy	szembeszáll, ellenszegül
+606	conceal	elrejt
+607	affection	vonzalom, szeretet
+608	token	jel, jelölés
+609	foe	ellenség
+610	retreat	visszavonul, hátrál
+611	debate	megvitat
+612	avenge	bosszút áll
+613	worship	imád, imádkozik
+614	flesh	hús
+615	concur	egyetért
+616	belly	has
+617	hasty	meggondolatlan, hirtelen
+618	orphan	árva
+619	lad	srác, fiú
+620	endure	eltűr, elvisel
+621	strangle	megfojt, fojtogat
+622	pursuit	üldözés
+623	disdain	lenéz, megvet
+624	excessive	túlzó
+625	drown	megfullad
+626	eternity	örökkévalóság
+627	slander	rágalmaz
+628	whisper	suttog
+629	assure	biztosít
+630	magnificent	nagyszerű, pompás
+631	penchant	hajlam
+632	mistreat	rosszul bánik
+633	confidence	bizalom, önbizalom
+634	torture	kínoz
+635	be ashamed of sg	szégyell vmit
+636	blade	penge
+637	purse	pénztárca
+638	merit	érdemel
+639	claw	karom
+640	distrust	nem bízik
+641	gut	bél
+642	suffice	elegendő
+643	bookkeeper	könyvelő
+644	kin	rokon
+645	mock	kigúnyol
+646	fist	ököl
+647	witch	boszorkány
+648	haggle	alkudozik
+649	restitution	visszaállítás, kárpótlás
+650	bride	menyasszony
+651	ladder	létra
+652	snore	horkol
+653	vomit	hányik
+654	invincible	legyőzhetetlen
+655	hospitality	vendéglátás
+656	dignity	méltóság
+657	feast	ünnepség
+658	amuse	szórakoztat
+659	bleed	vérzik
+660	timid	félénk
+661	tame	szelíd
+662	livestock	állatállomány
+663	carry on	kitart, folytat
+664	plot	tervez
+665	acquire	megszerez, szert tesz
+666	uphold	fenntart
+667	sin	bűn, vétek
+668	ash	hamu
+669	leftover	maradék
+670	consummate	végrehajt, teljesít
+671	curse	átok
+672	worry	aggódik
+673	hatred	győlölet
+674	categorical	határozott
+675	render	ad, nyújt
+676	verdict	ítélet
+677	preside	elnököl
+678	testify	bizonyít, tanúsít
+679	injustice	igazságtalanság
+680	reasonable	értelmes
+681	chivalry	lovagiasság
+682	get along	boldogul
+683	consolation	vigasz
+684	rashness	meggondolatlanság
+685	precarious	kétes, bizonytalan
+686	extricate	kiszabadít
+687	permit	enged, engedélyez
+688	comprise	tartalmaz
+689	after all	végül is
+690	midday	dél
+691	hardship	nehézség
+692	bounty	adomány, pénzjutalom
+693	obligation	kötelesség
+694	pardon	megbocsát
+695	plunder	kirabol, kifosz
+696	witness	tanú
+697	condemn	elítél
+698	grateful	hálás
+699	at least	legalább
+700	tempting	csábító
+701	perish	tönkretesz, elpusztít
+702	gratitude	hála
+703	conscience	lelkiismeret, tudat
+704	venom	méreg
+705	infant	csecsemő
+706	nightfall	alkony
+707	wade	gázol, átgázol
+708	wary	óvatos
+709	exile	száműz
+710	ripe	érett
+711	miller	molnár
+712	inquest	vizsgálat, nyomozás
+713	crop	termény
+714	sully	beszennyez
+715	clap	tapsol
+716	confront	szembeszáll
+717	humiliate	megaláz
+718	pathetic	szánalmas
+719	embarassing	kínos
+720	garbage	szemét, hulladék
+721	waist	derék
+722	cow	tehén
+723	infer	következtet
+724	adorable	imádni való
+725	persistence	kitartás
+726	weird	furcsa
+727	awesome	óriási, félelmetes
+728	charity	jótékonyság
+729	attorney	ügyvéd
+730	appealing	vonzó, rokonszenves
+731	meal	étkezés
+732	inventory	készlet, leltár
+733	needle	tű
+734	doable	megtehető, elvégezhető
+735	get rid of sg	megszabadul vmitől
+736	conjecture	sejt, gyanít
+737	ongoing	folyamatban levő
+738	moody	rosszkedvű
+739	associate	tag, munkatárs
+740	lucid	világos, érthető
+741	overdue	lejárt, megkésett
+742	likewise	szintén, hasonlóan
+743	presumption	feltételezés
+744	selfish	önző
+745	commitment	kötelezettség
+746	charge	támad, megrohamoz
+747	vend	kereskedik, árul
+748	on purpose	szándékosan, akarattal
+749	ignition	begyulladás, égés
+750	rupture	szakít
+751	nap	szunyókálás
+752	pertain	vonatkozik vmire
+753	blackmail	zsarol
+754	contribution	hozzájárulás, adomány
+755	foresee	előre lát
+756	margin	szegély, perem
+757	ease	enyhül, megnyugszik
+758	windshield	szélvédő
+759	notwithstanding	mégis
+760	decency	illendőség
+761	restrain	visszatart, korlátoz
+762	attentive	figyelmes, gondos
+763	adapt	alkalmazkodik
+764	harass	zaklat
+765	filthy	piszkos
+766	apprise	értesít
+767	contamination	szennyeződés
+768	fly	légy
+769	chase	üldöz, hajszol
+770	gorgeous	nagyszerű, pompás
+771	intervene	közbelép
+772	pointless	értelmetlen
+773	impressive	lenyűgöző
+774	screw	csavarodik, forog
+775	closure	bezárás, befelyezés
+776	mug	bögre
+777	reimburse	visszafizet, kártalanít
+778	deduction	levezetés
+779	cashier	pénztáros
+780	disease	betegség
+781	anxious	aggódó, nyugtalan
+782	fabulous	mesés, legendás
+783	bias	ferdeség
+784	untenable	tarthatatlan
+785	whine	nyafog
+786	inevitable	elkerülhetetlen
+787	scope	terület, hatály
+788	feasible	megvalósítható
+789	feedback	visszajelzés
+790	cede	átenged, felad
+791	upset	felfordulás, izgalom
+792	silly	buta, ostoba
+793	folk	nép
+794	haul	szállít
+795	legacy	hagyaték, örökség
+796	wave	integet
+797	binoculars	távcső
+798	custody	őrizet, felügyelet
+799	handcuff	bilincs
+800	immoral	erkölcstelen
+801	wind up	befelyeződik, végetér
+802	mount	beállít, felállít
+803	depreciate	elértéktelenedik
+804	obsolete	elavult
+805	axe	csökkent
+806	vie	verseng
+807	holidaymaker	nyaraló
+808	dissuade	eltántorít
+809	accession	csatlakozás
+810	stymie	megakaszt, megakadályoz
+811	equidistant	egyenlő távolságú
+812	commerce	kereskedelem
+813	expel	kiűz, kizár
+814	intercept	elfog, befog
+815	rebuke	leszid, megró
+816	covert	burkolt, rejtett
+817	ablaze	lángoló
+818	tap	csap (fn)
+819	staunch	rendíthetetlen, hűséges
+820	irrevocable	visszavonhatatlan
+821	impose	kivet, kiró
+822	reception	fogadtatás
+823	indigenous	őshonos, bennszülött
+824	wipe	töröl
+825	supplant	pótol, helyettesít
+826	perpetuate	fenntart
+827	embroil	belekever, összezavar
+828	palpable	kézzelfogható, érezhető
+829	stake	díj
+830	empower	feljogosít, felhatalmaz
+831	contentious	vitás
+832	deadlock	zsákutca
+833	secession	kiválás, elszakadás
+834	augur	jósol, jövendöl
+835	rickety	rozoga
+836	clash	összeütközés, nézeteltérés
+837	freight	teher, rakomány
+838	compliance	betartás, teljesítés
+839	waive	lemond valamiről
+840	comply	teljesít, engedelmeskedik
+841	aviation	repülés, légi közlekedés
+842	interfere	zavar, beavatkozik
+843	run aground	zátonyra fut
+844	defer	elhalaszt
+845	plunge	lemerül, alámerül
+846	serenity	higgandság, nyugalom
+847	felony	bűn
+848	impertinence	szemtelenség
+849	behoove	illik
+850	spare	megkímél
+851	league	mérföld
+852	abomination	utálat, undor
+853	decennial	tízévenkénti
+854	bustling	nyüzsgő
+855	strait	tenger szoros
+856	influx	beáramlás
+857	haulage	szállítás
+858	despair	kétségbeesés
+859	rampant	heves, féktelen
+860	stunning	meglepő
+861	alacrity	fürgeség
+862	allege	állít
+863	salvage	kiment, megment
+864	horrendous	borzasztó, iszonyú
+865	juvenile	fiatal, ifjú
+866	corroborate	megerősít, alátámaszt
+867	bright	világos, okos
+868	crucial	kritikus, döntő
+869	deposition	elmozdítás
+870	exonerate	felment
+871	recollection	emlék
+872	coffin	koporsó
+873	session	ülés, gyűlés
+874	deliberation	tanácskozás
+875	deaf	süket
+876	beware of sg	óvakodik vmitől
+877	abide	eltűr, elvisel
+878	tycoon	iparmágnás
+879	eager	lelkes, buzgó
+880	probity	becsületesség
+881	bless	megáld
+882	proximity	közelség
+883	discord	viszály
+884	evaporation	párolgás
+885	enrage	felbőszít
+886	fraudulence	csalás
+887	conduct	magatartás, viselkedés
+888	reprehensible	elítélendő
+889	infringe	megsért, megszeg
+890	queasy	kényes, finnyás
+891	agenda	napirend, tennivaló
+892	trigger	kivált, előidéz
+893	disingenuous	hamis, nem őszinte
+894	scrutiny	alapos vizsgálat
+895	hoax	megtévesztés, tréfa
+896	echo	visszhang
+897	quagmire	ingovány
+898	apprentice	gyakornok
+899	commemorate	megemlékezik
+900	naughty	szemtelen, csintalan
+901	wrist	csukló
+902	slap	ütés
+903	tribunal	bíróság
+904	strain	megterhelés, feszítés
+905	depict	ábrázol, lefest
+906	immunity	mentesség, védettség
+907	vigilant	éber
+908	fervent	buzgó, heves
+909	reckless	vakmerő
+910	omit	elmulaszt, kihagy
+911	repudiate	elutasít, megtagad
+912	bind	köt
+913	recalcitrance	makacsság
+914	resort	igénybe vesz, folyamodik
+915	menace	fenyegetés
+916	laudable	dícséretes, dícséretre méltó
+917	havoc	pusztítás, rombolás
+918	surge	hullám, roham
+919	thwart	keresztez, akadályoz, kijátszik
+920	deteriorate	romlik, rosszabbodik
+921	stance	állás, hozzáállás
+922	resilience	rugalmasság
+923	crave	könyörög, sóvárog
+924	accessory	kiegészítő, tartozék
+925	irresponsible	felelőtlen
+926	dilute	higít
+927	humility	alázatosság
+928	discard	eldob
+929	persuasive	meggyőző
+930	congent	hathatós, nyomós
+931	legislation	törvényhozás
+932	discharge	elbocsát
+933	generosity	nagylelkűség
+934	refrigerator	hűtőszekrény
+935	ruthless	könyörtelen
+936	blanket	takaró
+937	forthright	egyenes, őszinte
+938	obliterate	kitöröl, eltávolít
+939	pork	disznóhús
+940	hypocrite	képmutató, álszent
+941	adamant	hajthatatlan
+942	rib	borda
+943	consent	hozzájárulás, beleegyezés
+944	entitlement	jogosultság
+945	ceiling	mennyezet, plafon
+946	veil	fátyol, lepel
+947	stunt	attrakció, meglepő mutatvány
+948	bruise	zúzódás, horzsolás
+949	farce	komédia
+950	bypass	kikerül, megkerül
+951	ulterior	rejtett, távolabbi
+952	relay	továbbít, közvetít
+953	leverage	befolyás. hatalom
+954	drought	szály, szárazság
+955	stillness	nyugalom
+956	laggard	lusta, tunya
