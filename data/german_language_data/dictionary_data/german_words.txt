@@ -1281,7 +1281,7 @@
 101285	e Schülerin	diáklány
 101286	r Kuli	toll
 101287	r Ball	labda
-101288	fernsehen	TV-t néz
+101288	fernsehen	TV-t néz	rendhagyó igék
 101289	r Korbball	kosárlabda
 101290	s Eis	fagyi
 101291	e Bank	bank
@@ -4728,7 +4728,6 @@
 104774	blasen	fújni	rendhagyó igék
 104783	einbiegen	bekanyarodik	rendhagyó igék
 104790	erlöschen	elalszik a tűz	rendhagyó igék
-104793	fernsehen	TV-t néz	rendhagyó igék
 104807	gelten	érvényes (ige)	rendhagyó igék
 104808	genesen	gyógyul	rendhagyó igék
 104815	haben	birtokol vmit	rendhagyó igék
@@ -5037,3 +5036,4 @@
 105200	neunundzwanzig	huszonkilenc	számok
 105201	dreißig	harminc	számok
 100555	Russland	Oroszország
+100657	e Ente	kacsa
