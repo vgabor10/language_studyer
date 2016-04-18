@@ -98,7 +98,7 @@ public class TerminalGrammarStatisticsShower {
 	}
 
 	public void toSreenNumberOfStudyingDays() {	//TODO: code repetition with TerminalDictionaryStatisticsShower
-		System.out.println("number of studying days: " + grammarAnswerDataStatisticsMaker.numberOfQuestionedStudyItems());
+		System.out.println("number of studying days: " + grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays());
 	}
 
 	public void toScreenGrammarBookBasicStatistics() {
