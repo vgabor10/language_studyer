@@ -119,6 +119,7 @@ public class GrammarTester {
 
 		System.out.print("\033[H\033[2J");
 		System.out.println("number of registered answers: " + testAnswers.numberOfAnswers());
+		System.out.println("number of answers of grammar item after test: " + answerDataByStudyItem.numberOfAnswers());
 
 		int numberOfRightAnswers = 0;
 		for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
