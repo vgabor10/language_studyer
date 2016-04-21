@@ -202,7 +202,9 @@ public class CardChooser {
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(6);
 
-		Set<Integer> indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
+		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
 		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
@@ -220,6 +222,9 @@ public class CardChooser {
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
 		Set<Integer> indexesToAdd;
+
+		indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
+		cardsToTestIndexes.addAll(indexesToAdd);
 
 		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
