@@ -116,6 +116,14 @@ public class GrammarBookLoader {
 					grammarItem.title.setParagraph(subsubsection);
 				}
 
+				if (strLine.startsWith("\\" + "end{document}")) {
+					if (!grammarItem.isEmptyExcludingTitle()) {
+						if (10 <= grammarItem.numberOfExamples()) {
+							grammarBook.addGrammarItem(grammarItem);
+						}
+					}
+				}
+
 				if (strLine.startsWith("%")) {
 					grammarItem.commentForExamples = strLine;
 				}
