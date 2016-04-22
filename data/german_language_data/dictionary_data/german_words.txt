@@ -585,7 +585,7 @@
 100585	verlassen	elhagy	rendhagyó igék
 100586	r Weltraum	világűr
 100587	s Gleis	sín
-100588	s Bahnsteig	peron
+100588	r Bahnsteig	peron
 100589	r Donnerstag	csütörtök
 100590	s Fernsehen	televízió
 100591	e Richtung	irány
