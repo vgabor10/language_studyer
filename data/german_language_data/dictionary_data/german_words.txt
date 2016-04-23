@@ -643,7 +643,7 @@
 100643	e Menschheit	emberiség
 100644	vergehen	múlik
 100645	r Angriff	támadás
-100646	e Steuer	adó
+100646	e Steuer	adó (gazdaság)
 100647	ablehnen	elutasít, megtagad
 100648	r Held	hős
 100649	r Flieger	pilóta
@@ -1866,7 +1866,7 @@
 101876	s Kostüm	jelmez
 101877	altmodisch	régimódi
 101878	riesig	óriási
-101879	r Sender	adó
+101879	r Sender	küldő, adó
 101880	e Sendung	adás
 101881	r Moderator	műsorvezető
 101882	unterhaltsam	szórakoztató
@@ -3642,7 +3642,7 @@
 103667	loslassen	elenged
 103668	ausrichten	elrendez, sorbaáll, kiegyenesít
 103669	s Individuum	egyén
-103670	r Chinese	kínai
+103670	r Chinese	kínai (fn)
 103671	umstritten	vitás
 103672	achten	figyel, becsül
 103673	installieren	felszerel, beszerel
