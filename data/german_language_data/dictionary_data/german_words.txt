@@ -2796,7 +2796,7 @@
 102816	e Fraktion	frakció, párt
 102817	probieren	probál
 102818	plädieren	véd
-102819	warten	vár
+102819	warten	vár (ig)
 102820	r Dienstag	kedd
 102821	normal	normális
 102822	einigen	egyesít
@@ -3003,7 +3003,7 @@
 103025	vielfältig	sokoldalú, változatos
 103026	e Ehe	házasság
 103027	denn	mert
-103028	e Erkenntnis	észlelés, megismerés
+103028	s Erkenntnis	észlelés, megismerés
 103029	abweichen	eltér, különbözik
 103030	auffallen	feltűnik
 103031	e Anordnung	rendelet, rendelkezés
