@@ -1,0 +1,983 @@
+100000	accumulate	felhalmoz
+100001	attain	elér
+100002	encourage	bíztat
+100003	cater	ellát
+100004	facility	képesség
+100005	annotate	jegyzetel
+100006	threaten	fenyeget
+100007	standalone	független
+100008	utilize	használ
+100009	commodity	áru
+100010	revise	javít
+100011	queu	sorban áll
+100012	manner	mód
+100013	template	sablon
+100014	lean	hajlik
+100015	beware	óvakodik
+100016	abuse	visszaél
+100017	accurate	pontos
+100018	accuse	vádol
+100019	ensure	biztosít
+100020	tussle	birkózás
+100021	disproportion	egyenlőtlenség
+100022	perform	elvégez
+100023	ruler	vonalzó
+100024	silk	selyem
+100025	admit	beismer
+100026	Don't get me wrong!	Ne érts félre!
+100027	shed light on sg	rávilágít vmire
+100028	vanish	eltűnik
+100029	skull	koponya
+100030	distinct	külön
+100031	bound	ugrik
+100032	adverb	határozószó
+100033	after all	mégis
+100034	tricky	bonyolult
+100035	heal	meggyógyul
+100036	carry out	végre hajt
+100037	prosperity	jólét
+100038	utility	hasznosság
+100039	tough	erős
+100040	austerity	szigorúság
+100041	delusion	csalódás
+100042	sprawl	terjeszkedik
+100043	impetus	ösztönzés
+100044	lease	bérel
+100045	disrupt	szétválaszt
+100046	jeopardise	veszélyeztet
+100047	regardless	figyelmetlen
+100048	abate	csökken
+100049	meddle	beavatkozik
+100050	day off	szabadnap
+100051	ankle	boka
+100052	underneath	alá
+100053	knit	köt
+100054	stretch	kiterjeszt
+100055	lavish	pazarol
+100056	restive	nyugtalan
+100057	mice	egerek
+100058	plateau	fennsík
+100059	irk	bosszant
+100060	assertive	önző
+100061	facilitate	elősegít
+100062	for the moment	pillanatnyilag
+100063	calamity	szerencsétlenség
+100064	venture	vállalkozás
+100065	resolution	határozat
+100066	vendor	kereskedő
+100067	from top to toe	tetőtől talpig
+100068	mine	akna
+100069	digest	emészt
+100070	inaguration	beiktatás
+100071	suspicion	gyanú
+100072	skirmish	összetűzés
+100073	propose	ajánl
+100074	persuade	meggyőz
+100075	fall apart	szét esik
+100076	make up one's mind	elhatározza magát
+100077	apparently	nyilvánvalóan
+100078	offend	bánt
+100079	afford	nyújt, ad
+100080	badge	jelvény
+100081	assessment	értékelés
+100082	advocate	támogat
+100083	plausible	elfogadható
+100084	besides	ezenkívül
+100085	enhance	növel
+100086	draw conclusion	következtet
+100087	deserve	érdemel
+100088	all the way	egész úton
+100089	eventually	végülis
+100090	be taken ill	megbetegedik
+100091	deter	elriaszt
+100092	dissipate	eloszlik
+100093	spurn	elutasít
+100094	departure	elindulás
+100095	pursue	folytat
+100096	vigorous	erőteljes
+100097	so far	eddig
+100098	asset	vagyon
+100099	bold	bátor
+100100	incorporate	keveredik
+100101	overlap	átfedés
+100102	constitute	alkot
+100103	unlike	ellentétben
+100104	tedious	fárasztó
+100105	prone	elterül
+100106	courtyard	udvar
+100107	bend	hajlik
+100108	fencer	vívó
+100109	detach	elkülönít
+100110	compliment	bókol
+100111	bitter	keserű
+100112	slap	üt
+100113	thigh	comb
+100114	utterly	teljesen
+100115	affiliate	egyesít
+100116	convince	meggyőz
+100117	acquisition	vétel
+100118	devote	szán
+100119	interrupt	félbeszakít
+100120	ultimately	végül
+100121	feeble	gyenge
+100122	momentous	fontos
+100123	wisdom	bölcsesség
+100124	diminish	csökken, fogy
+100125	ascribe to sg	tulajdonít vminek
+100126	dearth	hiány
+100127	offset	ellensúlyoz
+100128	bear out	igazol
+100129	thrift	takarékosság
+100130	absorb	felszív
+100131	tepid	langyos
+100132	burden	teher
+100133	albeit	habár
+100134	squeeze	összenyom
+100135	dire	szörnyű
+100136	maize	kukorica
+100137	skew	ferdeség
+100138	novel	szokatlan
+100139	approve	jóváhagy
+100140	retaliate	megtorol
+100141	provision	gondoskodás, ellátás
+100142	deliberate	megfontol
+100143	slim	vékony
+100144	cripple	megbénít
+100145	abort	megszakít
+100146	implore	könyörög
+100147	humble	szerény
+100148	soar	felszáll
+100149	outsider	kívülálló
+100150	compass	iránytű
+100151	presumably	feltételezhetően
+100152	obscure	sötét
+100153	appease	megbékít
+100154	constrain	kényszerít
+100155	pay off	kifizet
+100156	reluctant	vonakodó
+100157	bailout	kisegítés
+100158	frankly	őszintén
+100159	merge	egyesít
+100160	abound	bővelkedik
+100161	enroll	beiratkozik
+100162	track	követ
+100163	remote	távoli
+100164	keen	éles
+100165	dwindle	fogy
+100166	ignorance	tudatlanság
+100167	bliss	boldogság
+100168	rejoice	örül
+100169	neutralise	semlegesít
+100170	glide	siklik
+100171	layout	alaprajz
+100172	immense	óriási
+100173	delicate	finom
+100174	encounter	találkozik
+100175	velocity	sebesség
+100176	peeve	idegesít
+100177	acknowledge	elismer
+100178	dispatch	elküld
+100179	woo	udvarol
+100180	temptation	kísértés, csábítás
+100181	contemplate	megfontol
+100182	vocation	hivatás
+100183	wrinkle	ötlet
+100184	basement	pince
+100185	intoxicated	részeg
+100186	counterfeit	utánoz
+100187	greedy	kapzsi
+100188	blink	pislog
+100189	confiscate	lefoglal
+100190	surveillance	felügyelet
+100191	courtroom	tárgyalóterem
+100192	denominate	elnevez
+100193	apprehend	letartóztat
+100194	bogus	hamis
+100195	bust	mell
+100196	mutilate	megrongál
+100197	bleak	kopár
+100198	reveal	felfed
+100199	delay	késedelem
+100200	identical	azonos
+100201	in the interim	ideiglenesen
+100202	glow	izzik
+100203	respire	lélegzik
+100204	resolution	döntés, szándék
+100205	screwdriver	csavarhúzó
+100206	accomplish	végrehajt, teljesít
+100207	set apart	félretesz
+100208	deployment	bevetés
+100209	sweep	söpör
+100210	spine	gerinc
+100211	rupture	repedés
+100212	trap	csapda
+100213	ridiculous	nevetséges
+100214	overwhelm	megsemmisít
+100215	obstackle	akadály
+100216	capitalize	hasznosít
+100217	overcome	legyőz
+100218	exacerbate	súlyosbít
+100219	sluggish	lomha
+100220	contingency	lehetőség
+100221	conspicuously	feltűnően
+100222	allure	csábít
+100223	catch up	utol ér
+100224	shore	tengerpart
+100225	plum	szilva
+100226	crawl	csúszik
+100227	definitely	határozottan
+100228	resolve	elhatároz
+100229	torch	elemlámpa
+100230	descent	leszállás
+100231	leap	ugrik
+100232	verge	szegély
+100233	crack up	összeomlik
+100234	muddle	rendetlenség
+100235	revive	feléled
+100236	residual	megmaradó
+100237	bear	elvisel
+100238	feat	tett
+100239	gloomy	homályos
+100240	wrestle	birkózik
+100241	divert	elterel
+100242	hurry	siet
+100243	thrive	növekszik
+100244	tremendous	óriási
+100245	cascade	vízesés
+100246	abrasion	kopás
+100247	drove	tömeg
+100248	notorious	hírhedt
+100249	barren	terméketlen
+100250	tracer	másoló
+100251	start from scratch	semmiből kezdi
+100252	prescribe	felír (orvosságot)
+100253	wrapper	burkolat
+100254	adept	szakértő
+100255	anticipate	előre lát
+100256	pertinent	találó
+100257	keep track of sg	nyomon követ vmit
+100258	prohibit	tilt
+100259	dismantle	lebont
+100260	praise	dícsér
+100261	shovel	lapát
+100262	idle	lusta
+100263	turnover	forgalom
+100264	marvel	csoda
+100265	canny	ravasz
+100266	adversary	ellenfél
+100267	in vain	hiába
+100268	prosper	boldogul
+100269	embrace	ölel
+100270	imminent	közelgő
+100271	latitude	szélesség
+100272	precaution	óvatosság
+100273	gear	felszerelés
+100274	famed	híres
+100275	rooftop	tető
+100276	dome	kupola
+100277	impact	ütközés
+100278	subsidise	támogat (pénzzel)
+100279	alter	változik
+100280	breed	fajta
+100281	coat	bevon
+100282	dizzy	szédítő
+100283	crane	daru
+100284	tenant	lakó
+100285	precious	értékes
+100286	intact	ép
+100287	shatter	összezúz
+100288	ingenuity	találékonyság
+100289	tangible	kézzelfogható
+100290	door-step	küszöb
+100291	favour	támogat
+100292	easeful	nyugalmas
+100293	gentle	gyengéd
+100294	spare	takarékoskodik
+100295	compel	kényszerít
+100296	genuine	eredeti
+100297	relief	enyhülés
+100298	counsel	tanácsol
+100299	carve	farag
+100300	warranty	garancia
+100301	veracity	igazság
+100302	offshore	partmenti
+100303	leap	ugrás
+100304	profound	mély
+100305	drill	fúr
+100306	get round	megkerül
+100307	insidious	alattomos
+100308	obstruct	elzár, akadályoz
+100309	state of the art	korszerű
+100310	boast	dicsekszik
+100311	promote	elősegít
+100312	coincide with sg	egybeesik vmivel
+100313	akin	hasonló
+100314	vast	óriási
+100315	steep	meredek
+100316	3-fold	3-szoros
+100317	salutary	hasznos
+100318	pour	önt, ömlik
+100319	rust	rozsdásodik
+100320	formidable	félelmetes
+100321	tow	vontat
+100322	absorb	elnyel
+100323	diligent	szorgalmas
+100324	arch	ív
+100325	dispel	eloszlat
+100326	cardboard	karton
+100327	pound	üt
+100328	posterity	utókor
+100329	passage	átkelés
+100330	fierce	vad
+100331	cumbersome	kényelmetlen
+100332	slice	szelet
+100333	offender	bűnös
+100334	mighty	erős, hatalmas
+100335	dig	ás
+100336	handful	maroknyi
+100337	smuggle	csempészik
+100338	gloomy	borús
+100339	contagion	fertőzés
+100340	smashing	hatalmas
+100341	pebble	kavics
+100342	accustomed	szokásos
+100343	inadequate	alkalmatlan
+100344	adore	imád
+100345	jealous	féltékeny
+100346	nasty	kellemetlen
+100347	awake	ébren
+100348	envy	irigység
+100349	pull	húz
+100350	mire	pocsolya
+100351	abstain	tartózkodik
+100352	excuse	mentség
+100353	take aback	meglep
+100354	collide	összeütközik
+100355	tie	kötés
+100356	vague	bizonytalan
+100357	fragile	törékeny
+100358	proclivity	hajlam
+100359	weaver	takács
+100360	usher	bevezet
+100361	swiftly	fürgén
+100362	make sense of sg	megért vmit
+100363	all the same	ennek ellenére
+100364	reckon	számol
+100365	fixture	tartozék
+100366	steer	kormányoz
+100367	I wonder, that	azon tűnődök, hogy
+100368	pineapple	ananász
+100369	skis	síléc
+100370	owl	bagoly
+100371	sack	elbocsát
+100372	trait	jellegzetesség
+100373	absence	távollét
+100374	mend	kijavít
+100375	incentive	ösztönzés
+100376	hinder	meggátol
+100377	reassure	megnyugtat
+100378	choke	fojtogat
+100379	roar	ordít
+100380	be in charge of sg	meg van bízva vmivel
+100381	blaze	láng
+100382	escalator	mozgólépcső
+100383	propulsion	hajtás
+100384	caution	óvatosság
+100385	retribution	büntetés
+100386	owe	tartozik
+100387	provided	feltéve
+100388	decent	megfelelő
+100389	firm	szilárd
+100390	intention	szándék
+100391	scar	heg
+100392	even so	ennek ellenére
+100393	public order	közrend
+100394	demo	tüntetés
+100395	ailment	gyengélkedés
+100396	fabric	szerkezet
+100397	underpin	alátámaszt
+100398	devise	kigondol
+100399	manifestation	megnyilvánulás
+100400	allegedly	állítólag
+100401	discern	észrevesz
+100402	overthrow	megbuktat, megdönt
+100403	attribute	tulajdonság
+100404	deception	csalás
+100405	mourn	gyászol
+100406	foment	elősegít
+100407	vicinity	környék
+100408	clumsy	ügyetlen
+100409	cast doubt on sg	kétségbe von vmit
+100410	entangle	összezavar
+100411	be bound to do sg	kötelessége megtenni vmit
+100412	limp	sántít
+100413	toll	vám
+100414	linger	időzik
+100415	shade	árnyék
+100416	foolish	bolond
+100417	intimidate	megfélemlít
+100418	take over	átvesz
+100419	doom	végzet
+100420	stem from	származik
+100421	upfront	nyílt
+100422	treat	bánik, kezel
+100423	fascinate	elbűvöl
+100424	discontent	elégedetlenség
+100425	mortgage	teher
+100426	admission	elismerés
+100427	moot	felvet
+100428	casual work	alkalmi munka
+100429	acquaintance	ismerős
+100430	onset	támadás
+100431	suppress	elnyom
+100432	eminently	rendkívül
+100433	amid	közepette
+100434	thumping	óriási
+100435	hapless	szerencsétlen
+100436	grim	borzalmas
+100437	laud	dícsér
+100438	outrage	bánt
+100439	indignation	felháborodás
+100440	stout	szívós
+100441	doom	ítél
+100442	dawn	hajnal
+100443	dismiss	elenged, elbocsát
+100444	repeal	visszavon
+100445	merely	csupán
+100446	grumble	morog
+100447	spark	szikra
+100448	bullish	makacs
+100449	streetcar	villamos
+100450	be keen on sg	rajong vmiért
+100451	propel	hajt
+100452	cub	kölyök
+100453	sibling	testvér
+100454	rift	rés, repedés
+100455	spectacularly	látványosan
+100456	tumble	elesik
+100457	vacancy	üresség
+100458	excavate	kiás
+100459	convey	szállít
+100460	think-tank	kutató központ
+100461	cheek by jowl	szorosan egymás melett
+100462	amplify	erősít
+100463	commute	ingázik
+100464	root	gyökér
+100465	nasty	csúnya
+100466	nimble	mozgékony
+100467	acquiesce	beleegyezik
+100468	reliance	bizalom
+100469	occasion	okoz
+100470	inward	befelé
+100471	amass	felhalmoz
+100472	substitution	helyettesítés
+100473	be ashamed	szégyelli magát
+100474	drip	csöpög
+100475	torrent	ár
+100476	versatility	sokoldalúság
+100477	genre	műfaj
+100478	stick	nyél
+100479	tailor	szabó
+100480	graceful	elegáns
+100481	predecessor	előd
+100482	indispensable	nélkülözhetetlen
+100483	absence	hiány
+100484	inflict	kiró
+100485	civic	polgári
+100486	tense	feszes
+100487	turmoil	nyugtalanság
+100488	durable	tartós
+100489	derision	gúnyolódás
+100490	surmise	feltételez
+100491	headway	előmenetel
+100492	tack	taktika
+100493	withold	elhallgat
+100494	concert	összhang
+100495	infidel	hitetlen
+100496	might	erő
+100497	foster	elősegít
+100498	lament	siránkozik
+100499	tentative	kísérlet, próba
+100500	shove around	erőszakoskodik
+100501	elaborate	kidolgoz
+100502	lenient	elnéző
+100503	backtrack	visszalép
+100504	demeanor	viselkedés
+100505	aloof	zárkózott
+100506	enduring	tartós
+100507	authoritative	irányadó
+100508	hail	üdvözöl
+100509	imperil	veszélyeztet
+100510	posit	állít
+100511	hurdle	akadály
+100512	abruptly	hirtelen
+100513	famine	éhinség
+100514	inception	kezdet
+100515	impairment	károsodás
+100516	rumor	szóbeszéd
+100517	razor	borotva
+100518	confine	korlátoz
+100519	frail	gyenge
+100520	prominent	kiemelkedő
+100521	pamper	kényeztet
+100522	cushy	kényelmes
+100523	parsimony	takarékosság
+100524	paltry	jelentéktelen
+100525	adjustment	beállítás
+100526	corpus	test
+100527	coerce	kényszerít
+100528	dismay	félelem
+100529	concede	elismer
+100530	seductive	csábító
+100531	intrude	behatol
+100532	alleviate	enyhít
+100533	ineligible	alkalmatlan
+100534	rudimentary	alapvető
+100535	obese	elhízott
+100536	zealous	lelkes
+100537	fade	fakul
+100538	oppression	elnyomás
+100539	savage	kegyetlen
+100540	tempestuous	viharos
+100541	decelerate	lassít
+100542	forestall	megelőz
+100543	perilous	veszélyes
+100544	solitude	magány, egyedüllét
+100545	perpetrate	elkövet
+100546	compile	összeállít
+100547	reprimand	rendreutasít, megfedd
+100548	altercate	veszekszik
+100549	commence	kezdődik
+100550	endurance	állóképesség
+100551	abduct	elrabol
+100552	rivalry	vetélkedés
+100553	deprive	megfoszt
+100554	prospect	kilátás, távlat
+100555	devotion	rajongás
+100556	amend	módosít, helyesbít
+100557	envious	irigy
+100558	swan	hattyú
+100559	deem	vminek gondol
+100560	prosperous	virágzó, sikeres
+100561	fiance	vőlegény
+100562	verbatim	szó szerint
+100563	merit	érdem
+100564	ledge	párkány, szegély
+100565	riddle	rejtvény
+100566	insane	őrült
+100567	neat	rendes, takaros, tiszta
+100568	sober	józan
+100569	grief	bánat, fájdalom
+100570	deflect	elterel
+100571	confidental	bizalmas, titkos
+100572	realm	királyság, birodalom
+100573	raven	holló
+100574	bastard	törvénytelen
+100575	ambush	rejtekhely
+100576	dove	galamb
+100577	abundance	bőség
+100578	peril	veszély, veszedelem
+100579	vow	eskü
+100580	glove	kesztyű
+100581	dwarf	törpe
+100582	knack	ügyesség
+100583	betray	elárul, cserbenhagy
+100584	courtesy	udvariasság
+100585	fool	bolond
+100586	misgiving	kétség, kételkedés
+100587	tremble	remeg, reszket
+100588	wrath	harag, düh
+100589	awful	szörnyű, rettenetes
+100590	traitor	áruló
+100591	treason	árulás
+100592	paramount	legfőbb, kiemelkedő
+100593	proclaim	kihirdet, kikiált
+100594	confess	bevall, beismer
+100595	saddle	nyereg
+100596	bear	medve
+100597	consent	beleegyezik, jóváhagy
+100598	courage	bátorság
+100599	obey	engedelmeskedik
+100600	wheat	búza
+100601	furious	dühös
+100602	odd	különös, furcsa
+100603	mitigate	enyhít, mérsékel
+100604	at once	azonnal
+100605	defy	szembeszáll, ellenszegül
+100606	conceal	elrejt
+100607	affection	vonzalom, szeretet
+100608	token	jel, jelölés
+100609	foe	ellenség
+100610	retreat	visszavonul, hátrál
+100611	debate	megvitat
+100612	avenge	bosszút áll
+100613	worship	imád, imádkozik
+100614	flesh	hús
+100615	concur	egyetért
+100616	belly	has
+100617	hasty	meggondolatlan, hirtelen
+100618	orphan	árva
+100619	lad	srác, fiú
+100620	endure	eltűr, elvisel
+100621	strangle	megfojt, fojtogat
+100622	pursuit	üldözés
+100623	disdain	lenéz, megvet
+100624	excessive	túlzó
+100625	drown	megfullad
+100626	eternity	örökkévalóság
+100627	slander	rágalmaz
+100628	whisper	suttog
+100629	assure	biztosít
+100630	magnificent	nagyszerű, pompás
+100631	penchant	hajlam
+100632	mistreat	rosszul bánik
+100633	confidence	bizalom, önbizalom
+100634	torture	kínoz
+100635	be ashamed of sg	szégyell vmit
+100636	blade	penge
+100637	purse	pénztárca
+100638	merit	érdemel
+100639	claw	karom
+100640	distrust	nem bízik
+100641	gut	bél
+100642	suffice	elegendő
+100643	bookkeeper	könyvelő
+100644	kin	rokon
+100645	mock	kigúnyol
+100646	fist	ököl
+100647	witch	boszorkány
+100648	haggle	alkudozik
+100649	restitution	visszaállítás, kárpótlás
+100650	bride	menyasszony
+100651	ladder	létra
+100652	snore	horkol
+100653	vomit	hányik
+100654	invincible	legyőzhetetlen
+100655	hospitality	vendéglátás
+100656	dignity	méltóság
+100657	feast	ünnepség
+100658	amuse	szórakoztat
+100659	bleed	vérzik
+100660	timid	félénk
+100661	tame	szelíd
+100662	livestock	állatállomány
+100663	carry on	kitart, folytat
+100664	plot	tervez
+100665	acquire	megszerez, szert tesz
+100666	uphold	fenntart
+100667	sin	bűn, vétek
+100668	ash	hamu
+100669	leftover	maradék
+100670	consummate	végrehajt, teljesít
+100671	curse	átok
+100672	worry	aggódik
+100673	hatred	győlölet
+100674	categorical	határozott
+100675	render	ad, nyújt
+100676	verdict	ítélet
+100677	preside	elnököl
+100678	testify	bizonyít, tanúsít
+100679	injustice	igazságtalanság
+100680	reasonable	értelmes
+100681	chivalry	lovagiasság
+100682	get along	boldogul
+100683	consolation	vigasz
+100684	rashness	meggondolatlanság
+100685	precarious	kétes, bizonytalan
+100686	extricate	kiszabadít
+100687	permit	enged, engedélyez
+100688	comprise	tartalmaz
+100689	after all	végül is
+100690	midday	dél
+100691	hardship	nehézség
+100692	bounty	adomány, pénzjutalom
+100693	obligation	kötelesség
+100694	pardon	megbocsát
+100695	plunder	kirabol, kifosz
+100696	witness	tanú
+100697	condemn	elítél
+100698	grateful	hálás
+100699	at least	legalább
+100700	tempting	csábító
+100701	perish	tönkretesz, elpusztít
+100702	gratitude	hála
+100703	conscience	lelkiismeret, tudat
+100704	venom	méreg
+100705	infant	csecsemő
+100706	nightfall	alkony
+100707	wade	gázol, átgázol
+100708	wary	óvatos
+100709	exile	száműz
+100710	ripe	érett
+100711	miller	molnár
+100712	inquest	vizsgálat, nyomozás
+100713	crop	termény
+100714	sully	beszennyez
+100715	clap	tapsol
+100716	confront	szembeszáll
+100717	humiliate	megaláz
+100718	pathetic	szánalmas
+100719	embarassing	kínos
+100720	garbage	szemét, hulladék
+100721	waist	derék
+100722	cow	tehén
+100723	infer	következtet
+100724	adorable	imádni való
+100725	persistence	kitartás
+100726	weird	furcsa
+100727	awesome	óriási, félelmetes
+100728	charity	jótékonyság
+100729	attorney	ügyvéd
+100730	appealing	vonzó, rokonszenves
+100731	meal	étkezés
+100732	inventory	készlet, leltár
+100733	needle	tű
+100734	doable	megtehető, elvégezhető
+100735	get rid of sg	megszabadul vmitől
+100736	conjecture	sejt, gyanít
+100737	ongoing	folyamatban levő
+100738	moody	rosszkedvű
+100739	associate	tag, munkatárs
+100740	lucid	világos, érthető
+100741	overdue	lejárt, megkésett
+100742	likewise	szintén, hasonlóan
+100743	presumption	feltételezés
+100744	selfish	önző
+100745	commitment	kötelezettség
+100746	charge	támad, megrohamoz
+100747	vend	kereskedik, árul
+100748	on purpose	szándékosan, akarattal
+100749	ignition	begyulladás, égés
+100750	rupture	szakít
+100751	nap	szunyókálás
+100752	pertain	vonatkozik vmire
+100753	blackmail	zsarol
+100754	contribution	hozzájárulás, adomány
+100755	foresee	előre lát
+100756	margin	szegély, perem
+100757	ease	enyhül, megnyugszik
+100758	windshield	szélvédő
+100759	notwithstanding	mégis
+100760	decency	illendőség
+100761	restrain	visszatart, korlátoz
+100762	attentive	figyelmes, gondos
+100763	adapt	alkalmazkodik
+100764	harass	zaklat
+100765	filthy	piszkos
+100766	apprise	értesít
+100767	contamination	szennyeződés
+100768	fly	légy
+100769	chase	üldöz, hajszol
+100770	gorgeous	nagyszerű, pompás
+100771	intervene	közbelép
+100772	pointless	értelmetlen
+100773	impressive	lenyűgöző
+100774	screw	csavarodik, forog
+100775	closure	bezárás, befelyezés
+100776	mug	bögre
+100777	reimburse	visszafizet, kártalanít
+100778	deduction	levezetés
+100779	cashier	pénztáros
+100780	disease	betegség
+100781	anxious	aggódó, nyugtalan
+100782	fabulous	mesés, legendás
+100783	bias	ferdeség
+100784	untenable	tarthatatlan
+100785	whine	nyafog
+100786	inevitable	elkerülhetetlen
+100787	scope	terület, hatály
+100788	feasible	megvalósítható
+100789	feedback	visszajelzés
+100790	cede	átenged, felad
+100791	upset	felfordulás, izgalom
+100792	silly	buta, ostoba
+100793	folk	nép
+100794	haul	szállít
+100795	legacy	hagyaték, örökség
+100796	wave	integet
+100797	binoculars	távcső
+100798	custody	őrizet, felügyelet
+100799	handcuff	bilincs
+100800	immoral	erkölcstelen
+100801	wind up	befelyeződik, végetér
+100802	mount	beállít, felállít
+100803	depreciate	elértéktelenedik
+100804	obsolete	elavult
+100805	axe	csökkent
+100806	vie	verseng
+100807	holidaymaker	nyaraló
+100808	dissuade	eltántorít
+100809	accession	csatlakozás
+100810	stymie	megakaszt, megakadályoz
+100811	equidistant	egyenlő távolságú
+100812	commerce	kereskedelem
+100813	expel	kiűz, kizár
+100814	intercept	elfog, befog
+100815	rebuke	leszid, megró
+100816	covert	burkolt, rejtett
+100817	ablaze	lángoló
+100818	tap	csap (fn)
+100819	staunch	rendíthetetlen, hűséges
+100820	irrevocable	visszavonhatatlan
+100821	impose	kivet, kiró
+100822	reception	fogadtatás
+100823	indigenous	őshonos, bennszülött
+100824	wipe	töröl
+100825	supplant	pótol, helyettesít
+100826	perpetuate	fenntart
+100827	embroil	belekever, összezavar
+100828	palpable	kézzelfogható, érezhető
+100829	stake	díj
+100830	empower	feljogosít, felhatalmaz
+100831	contentious	vitás
+100832	deadlock	zsákutca
+100833	secession	kiválás, elszakadás
+100834	augur	jósol, jövendöl
+100835	rickety	rozoga
+100836	clash	összeütközés, nézeteltérés
+100837	freight	teher, rakomány
+100838	compliance	betartás, teljesítés
+100839	waive	lemond valamiről
+100840	comply	teljesít, engedelmeskedik
+100841	aviation	repülés, légi közlekedés
+100842	interfere	zavar, beavatkozik
+100843	run aground	zátonyra fut
+100844	defer	elhalaszt
+100845	plunge	lemerül, alámerül
+100846	serenity	higgandság, nyugalom
+100847	felony	bűn
+100848	impertinence	szemtelenség
+100849	behoove	illik
+100850	spare	megkímél
+100851	league	mérföld
+100852	abomination	utálat, undor
+100853	decennial	tízévenkénti
+100854	bustling	nyüzsgő
+100855	strait	tenger szoros
+100856	influx	beáramlás
+100857	haulage	szállítás
+100858	despair	kétségbeesés
+100859	rampant	heves, féktelen
+100860	stunning	meglepő
+100861	alacrity	fürgeség
+100862	allege	állít
+100863	salvage	kiment, megment
+100864	horrendous	borzasztó, iszonyú
+100865	juvenile	fiatal, ifjú
+100866	corroborate	megerősít, alátámaszt
+100867	bright	világos, okos
+100868	crucial	kritikus, döntő
+100869	deposition	elmozdítás
+100870	exonerate	felment
+100871	recollection	emlék
+100872	coffin	koporsó
+100873	session	ülés, gyűlés
+100874	deliberation	tanácskozás
+100875	deaf	süket
+100876	beware of sg	óvakodik vmitől
+100877	abide	eltűr, elvisel
+100878	tycoon	iparmágnás
+100879	eager	lelkes, buzgó
+100880	probity	becsületesség
+100881	bless	megáld
+100882	proximity	közelség
+100883	discord	viszály
+100884	evaporation	párolgás
+100885	enrage	felbőszít
+100886	fraudulence	csalás
+100887	conduct	magatartás, viselkedés
+100888	reprehensible	elítélendő
+100889	infringe	megsért, megszeg
+100890	queasy	kényes, finnyás
+100891	agenda	napirend, tennivaló
+100892	trigger	kivált, előidéz
+100893	disingenuous	hamis, nem őszinte
+100894	scrutiny	alapos vizsgálat
+100895	hoax	megtévesztés, tréfa
+100896	echo	visszhang
+100897	quagmire	ingovány
+100898	apprentice	gyakornok
+100899	commemorate	megemlékezik
+100900	naughty	szemtelen, csintalan
+100901	wrist	csukló
+100902	slap	ütés
+100903	tribunal	bíróság
+100904	strain	megterhelés, feszítés
+100905	depict	ábrázol, lefest
+100906	immunity	mentesség, védettség
+100907	vigilant	éber
+100908	fervent	buzgó, heves
+100909	reckless	vakmerő
+100910	omit	elmulaszt, kihagy
+100911	repudiate	elutasít, megtagad
+100912	bind	köt
+100913	recalcitrance	makacsság
+100914	resort	igénybe vesz, folyamodik
+100915	menace	fenyegetés
+100916	laudable	dícséretes, dícséretre méltó
+100917	havoc	pusztítás, rombolás
+100918	surge	hullám, roham
+100919	thwart	keresztez, akadályoz, kijátszik
+100920	deteriorate	romlik, rosszabbodik
+100921	stance	állás, hozzáállás
+100922	resilience	rugalmasság
+100923	crave	könyörög, sóvárog
+100924	accessory	kiegészítő, tartozék
+100925	irresponsible	felelőtlen
+100926	dilute	higít
+100927	humility	alázatosság
+100928	discard	eldob
+100929	persuasive	meggyőző
+100930	congent	hathatós, nyomós
+100931	legislation	törvényhozás
+100932	discharge	elbocsát
+100933	generosity	nagylelkűség
+100934	refrigerator	hűtőszekrény
+100935	ruthless	könyörtelen
+100936	blanket	takaró
+100937	forthright	egyenes, őszinte
+100938	obliterate	kitöröl, eltávolít
+100939	pork	disznóhús
+100940	hypocrite	képmutató, álszent
+100941	adamant	hajthatatlan
+100942	rib	borda
+100943	consent	hozzájárulás, beleegyezés
+100944	entitlement	jogosultság
+100945	ceiling	mennyezet, plafon
+100946	veil	fátyol, lepel
+100947	stunt	attrakció, meglepő mutatvány
+100948	bruise	zúzódás, horzsolás
+100949	farce	komédia
+100950	bypass	kikerül, megkerül
+100951	ulterior	rejtett, távolabbi
+100952	relay	továbbít, közvetít
+100953	leverage	befolyás. hatalom
+100954	drought	szály, szárazság
+100955	stillness	nyugalom
+100956	laggard	lusta, tunya
+100957	disavow	tagad, megtagad
+100958	dissent	véleményeltérés
+100959	greed	kapzsiság
+100960	as for	ami azt illeti
+100961	heir	örökös
+100962	blow	virágzás
+100963	litigation	per
+100964	ample	tágas, bőséges
+100965	tie	döntetlen, holtverseny
+100966	deer	szarvas
+100967	jumpy	ideges, izgatott
+100968	concussion	rázkódás, agyrázkódás
+100969	ransom	kiváltás, váltságdíj
+100970	inherent	vele járó
+100971	spit	nyál, köpés
+100972	cabbage	káposzta
+100973	lifespan	élettartam
+100974	fissure	repedés, hasadás
+100975	actualize	megvalósít
+100976	scissors	olló
+100977	stubborn	makacs
+100978	disown	megtagad, nem ismer el
+100979	reservation	fenntartás
+100980	banish	száműz
+100981	virtually	szinte
+100982	infuriate	felbosszant
