@@ -20,13 +20,13 @@ public class SettingsHandler {
 		LanguageData languageData1 = new LanguageData();
 		languageData1.languageIndex = 0;
 		languageData1.languageName = "English";
-		languageData1.answerDataPath = "../data/english_language_data/english_answer_data_file.txt";
-		languageData1.cardDataPath = "../data/english_language_data/english_words.txt";
-		languageData1.grammarDataPath = "../data/english_language_data/english_grammar_data.txt";
-		languageData1.grammarAnswerDataPath = "../data/english_language_data/english_grammar_answer_data_file.txt";
+		languageData1.answerDataPath = "../data/english_language_data/dictionary_data/english_answer_data_file.txt";
+		languageData1.cardDataPath = "../data/english_language_data/dictionary_data/english_words.txt";
+		languageData1.grammarDataPath = "../data/english_language_data/grammar_book_data/english_grammar_book.tex";
+		languageData1.grammarAnswerDataPath = "../data/english_language_data/grammar_book_data/english_grammar_answer_data_file.txt";
 
 		LanguageData languageData2 = new LanguageData();
-		languageData2.languageIndex = 0;
+		languageData2.languageIndex = 1;
 		languageData2.languageName = "German";
 		languageData2.answerDataPath = "../data/german_language_data/dictionary_data/german_answer_data_file.txt";
 		languageData2.cardDataPath = "../data/german_language_data/dictionary_data/german_words.txt";
@@ -57,6 +57,16 @@ public class SettingsHandler {
 
 	public String getStudiedLanguageGrammarAnswerDataPath() {
 		return languageDatas.get(studyedLanguageIndex).grammarAnswerDataPath;
+	}
+
+	public Set<Integer> getLanguageIndexes() {
+		Set <Integer> languageIndexes = new HashSet<Integer>();
+
+		for (int i=0; i<languageDatas.size(); i++) {
+			languageIndexes.add(languageDatas.get(i).languageIndex);
+		}
+
+		return languageIndexes;
 	}
 
 	public void changeLanguageTostudy(int languageIndex) {

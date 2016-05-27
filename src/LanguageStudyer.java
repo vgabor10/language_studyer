@@ -496,36 +496,45 @@ public class LanguageStudyer {
 			System.out.println("0 - english");
 			System.out.println("1 - german");
 			int languageToStudyIndex = Integer.parseInt(console.readLine());
-			settingsHandler.changeLanguageTostudy(languageToStudyIndex);
 
-			////////////////////// start loading data //////////////////////	//TODO: code repetition
+			if (settingsHandler.getLanguageIndexes().contains(languageToStudyIndex)) {
 
-			cardContainer = new CardContainer();
-			cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
+				settingsHandler.changeLanguageTostudy(languageToStudyIndex);
 
-			testedCardGroupHandler = new TestedCardGroupHandler();
-			testedCardGroupHandler.setCardContainer(cardContainer);
-			testedCardGroupHandler.setCardGroups();
+				////////////////////// start loading data //////////////////////	//TODO: code repetition
 
-			grammarBook = new GrammarBook();
-			grammarBookLoader = new GrammarBookLoader();
-			grammarBookFileFormatChecker = new GrammarBookFileFormatChecker();
-			isCorrect = grammarBookFileFormatChecker.generalCheck(settingsHandler.getStudiedLanguageGrammarBookPath());
-			if (isCorrect == false) {
-				System.out.println("grammar book format is wrong");
+				cardContainer = new CardContainer();
+				cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
+
+				testedCardGroupHandler = new TestedCardGroupHandler();
+				testedCardGroupHandler.setCardContainer(cardContainer);
+				testedCardGroupHandler.setCardGroups();
+
+				grammarBook = new GrammarBook();
+				grammarBookLoader = new GrammarBookLoader();
+				grammarBookFileFormatChecker = new GrammarBookFileFormatChecker();
+				isCorrect = grammarBookFileFormatChecker.generalCheck(settingsHandler.getStudiedLanguageGrammarBookPath());
+				if (isCorrect == false) {
+					System.out.println("grammar book format is wrong");
+					console.readLine();
+				}
+
+				grammarBookLoader.setGrammarBook(grammarBook);
+				grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
+
+				answerDataContainer = new AnswerDataContainer();
+				answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+
+				grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+				grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
+
+				////////////////////// end loading data //////////////////////
+			}
+			else {
+				System.out.print("\033[H\033[2J");
+				System.out.println("there is no language with given index");
 				console.readLine();
 			}
-
-			grammarBookLoader.setGrammarBook(grammarBook);
-			grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
-
-			answerDataContainer = new AnswerDataContainer();
-			answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
-			grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-			grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-
-			////////////////////// end loading data ////////////////////// 
 		}
 
 		if (choice.equals("x")) {
