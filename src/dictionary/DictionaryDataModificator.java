@@ -28,6 +28,11 @@ public class DictionaryDataModificator {
 		settingsHandler = sh;
 	}
 
+	public void removeCardWithAnswersByCardIndex(int cardIndex) {	//TODO: implement
+		cardContainer.removeStudyItemWithIndex(cardIndex);
+		answerDataContainer.removeAnswersWithIndex(cardIndex);
+	}
+
 	private void saveCardContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
 		String filePath = settingsHandler.getStudiedLanguageCardDataPath();
 		File oldFile;

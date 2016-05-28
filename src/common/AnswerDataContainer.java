@@ -33,6 +33,18 @@ public class AnswerDataContainer {
 		return data.get(index);
 	}
 
+	public void removeAnswersWithIndex(int index) {
+		int i=0;
+		while (i<numberOfAnswers()) {
+			if (getAnswerData(i).index == index) {
+				data.remove(i);
+			}
+			else {
+				i++;
+			}
+		}
+	}
+
 	public double percentageOfRightAnswers() {	//TODO: move it to AnswerDataStatisticsMaker
 		if (data.size() != 0) {
 			int sum = 0;
