@@ -981,3 +981,7 @@
 100980	banish	száműz
 100981	virtually	szinte
 100982	infuriate	felbosszant
+100983	appeasement	megbékülés
+100984	appeal	folyamodik, fordul
+100985	summon	behív, beidéz
+100986	adjacent	szomszédos, határos, mellette fekvő
