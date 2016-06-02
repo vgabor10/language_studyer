@@ -58,11 +58,12 @@ public class LanguageStudyer {
 		System.out.println("1 - practicing");
 		System.out.println("2 - basic statistics");
 		System.out.println("3 - additional statistics");
-		System.out.println("4 - search cards");
-		System.out.println("5 - modificate cards");
+		System.out.println("4 - find cards according to term part");
+		System.out.println("5 - find cards according to definition part");
 		System.out.println("6 - add card");
-		System.out.println("7 - find cards according to term part");
-		System.out.println("8 - set card groups to test");
+		System.out.println("7 - additional ways to find cards");
+		System.out.println("8 - additional ways to modificate cards");
+		System.out.println("9 - set card groups to test");
 		System.out.println();
 		System.out.println("GRAMMAR BOOK");
 		System.out.println("10 - practicing");
@@ -140,8 +141,99 @@ public class LanguageStudyer {
 			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
 		}
 
-		//search cards
+		//find card according to term part
 		if (choice.equals("4")) {
+
+			CardFinder cardFinder = new CardFinder();
+			cardFinder.setCardContainer(cardContainer);
+			cardFinder.setAnswerDataContainer(answerDataContainer);
+
+			String s = "";
+			do {
+				System.out.print("\033[H\033[2J");
+				System.out.println("type term part, or x to quit:");
+				s = console.readLine();
+				if (!s.equals("x")) {
+					cardFinder.toScreenCardsWithGivenTermPart(s);
+					console.readLine();
+				}
+			} while (!s.equals("x"));
+		}
+
+		// find card according to definition part
+		if (choice.equals("5")) {
+
+			CardFinder cardFinder = new CardFinder();
+			cardFinder.setCardContainer(cardContainer);
+			cardFinder.setAnswerDataContainer(answerDataContainer);
+
+			String s = "";
+			do {
+				System.out.print("\033[H\033[2J");
+				System.out.println("type definition part, or x to quit:");
+				s = console.readLine();
+				if (!s.equals("x")) {
+				cardFinder.toScreenCardsWithGivenDefinitionPart(s);
+				console.readLine();
+				}
+			} while (!s.equals("x"));
+		}
+
+		//add card
+		if (choice.equals("6")) {
+
+			String in = "";
+
+			do {
+
+				System.out.print("\033[H\033[2J");
+				System.out.println("adding " + settingsHandler.getStudiedLanguageName().toUpperCase() + " language card to database");
+				System.out.println("type card to add (termTABdefinition) or x to back:");
+				in = console.readLine();
+
+				if (!in.equals("x")) {
+
+					int numberOfTabs = 0;       //check format
+					for (int i=0; i<in.length(); i++) {
+						if (in.charAt(i) == '\t') numberOfTabs++;
+					}
+
+					if (numberOfTabs !=1) {
+						System.out.println("format is not appropriate");
+						console.readLine();
+					}
+					else {
+					String term = in.split("\t")[0];
+		       			String definition = in.split("\t")[1];
+		        		Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
+		       			Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
+
+		       			if (foundCardIndexes.size() == 0) {
+							cardContainer.addCardToContainerAndAppenToDiscFile(card,
+								 settingsHandler.getStudiedLanguageCardDataPath());
+							System.out.println("card added to data base with index " + Integer.toString(card.index));
+							console.readLine();
+						}
+						else {
+							System.out.println("cards found with the given term");
+				     		for (int i=0; i<foundCardIndexes.size(); i++) {
+					    		System.out.println(cardContainer.getCardByIndex(foundCardIndexes.get(i)).toStringData());
+				      		}
+
+					  		System.out.println("would you like to add the card to the data base? (y/n)");
+	        				if (console.readLine().equals("y")) {
+		        				cardContainer.addCardToContainerAndAppenToDiscFile(card, 
+								settingsHandler.getStudiedLanguageCardDataPath());
+		        				System.out.println("card added to data base with index " + Integer.toString(card.index));     									console.readLine();
+			        		}
+						}
+					}
+				}
+			} while(!in.equals("x"));
+		}
+
+		//additional ways to find cards
+		if (choice.equals("7")) {
 
 			String choice2;
 
@@ -155,8 +247,7 @@ public class LanguageStudyer {
 			System.out.println("1 - list cards with same terms");
 			System.out.println("2 - list cards");
 			System.out.println("3 - search card by cardIndex");
-			System.out.println("4 - search card by definition part");
-			System.out.println("5 - search cards according to term prefix");
+			System.out.println("4 - search cards according to term prefix");
 
 			choice2 = console.readLine();
 
@@ -185,15 +276,6 @@ public class LanguageStudyer {
 
 			if (choice2.equals("4")) {
 				System.out.print("\033[H\033[2J");
-				System.out.println("type definition part:");
-				String definitionPart = console.readLine();
-				System.out.println("results:");
-				cardFinder.toScreenCardsWithGivenDefinitionPart(definitionPart);
-				console.readLine();
-			}
-
-			if (choice2.equals("5")) {
-				System.out.print("\033[H\033[2J");
 				System.out.println("type term prefix:");
 				String prefix = console.readLine();
 				System.out.println("cards with given term prefix /cardIndex term definition | percentageOfRightAnswers  (numberOfAnswers)/:");
@@ -204,8 +286,8 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
-		//modificate cards
-		if (choice.equals("5")) {
+		//additional ways to modificate cards
+		if (choice.equals("8")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - merge cards with same data");
 			System.out.println("2 - remove card by index //TODO: implement");
@@ -262,80 +344,8 @@ public class LanguageStudyer {
 			}
 		}
 
-		//add card
-		if (choice.equals("6")) {
-
-			String in = "";
-
-			do {
-
-				System.out.print("\033[H\033[2J");
-				System.out.println("adding " + settingsHandler.getStudiedLanguageName().toUpperCase() + " language card to database");
-				System.out.println("type card to add (termTABdefinition) or x to back:");
-				in = console.readLine();
-
-				if (!in.equals("x")) {
-
-					int numberOfTabs = 0;       //check format
-					for (int i=0; i<in.length(); i++) {
-						if (in.charAt(i) == '\t') numberOfTabs++;
-					}
-
-					if (numberOfTabs !=1) {
-						System.out.println("format is not appropriate");
-						console.readLine();
-					}
-					else {
-					String term = in.split("\t")[0];
-		       			String definition = in.split("\t")[1];
-		        		Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
-		       			Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
-
-		       			if (foundCardIndexes.size() == 0) {
-							cardContainer.addCardToContainerAndAppenToDiscFile(card,
-								 settingsHandler.getStudiedLanguageCardDataPath());
-							System.out.println("card added to data base with index " + Integer.toString(card.index));
-							console.readLine();
-						}
-						else {
-							System.out.println("cards found with the given term");
-				     		for (int i=0; i<foundCardIndexes.size(); i++) {
-					    		System.out.println(cardContainer.getCardByIndex(foundCardIndexes.get(i)).toStringData());
-				      		}
-
-					  		System.out.println("would you like to add the card to the data base? (y/n)");
-	        				if (console.readLine().equals("y")) {
-		        				cardContainer.addCardToContainerAndAppenToDiscFile(card, 
-								settingsHandler.getStudiedLanguageCardDataPath());
-		        				System.out.println("card added to data base with index " + Integer.toString(card.index));     									console.readLine();
-			        		}
-						}
-					}
-				}
-			} while(!in.equals("x"));
-		}
-
-		// fand card according to term part
-		if (choice.equals("7")) {
-
-			CardFinder cardFinder = new CardFinder();
-			cardFinder.setCardContainer(cardContainer);
-			cardFinder.setAnswerDataContainer(answerDataContainer);
-
-			String s = "";
-			do {
-				System.out.print("\033[H\033[2J");
-				System.out.println("type term part, or x to quit:");
-				s = console.readLine();
-				if (!s.equals("x")) {
-					cardFinder.toScreenCardsWithGivenTermPart(s);
-					console.readLine();
-				}
-			} while (!s.equals("x"));
-		}
-
 		//choose card groups to study
-		if (choice.equals("8")) {
+		if (choice.equals("9")) {
 			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
 		}
 

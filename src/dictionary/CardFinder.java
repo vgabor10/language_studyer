@@ -90,7 +90,7 @@ public class CardFinder {
 			}
 		}
 
-		System.out.println("cards with given term prefix:");
+		System.out.println();
 		for (int i=0; i < stringTabular.numberOfRows(); i++) {
 			System.out.println(stringTabular.getNiceTabularRowInString(i));
 		}
@@ -115,6 +115,8 @@ public class CardFinder {
 	}
 
 	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {
+		System.out.println();
+		System.out.println("DEFINITION - TERM");
 		for (int i=0; i<cardContainer.numberOfCards(); i++) {
 			if (cardContainer.getCardByOrder(i).definition.contains(definitionPart)) {
 				System.out.println(cardContainer.getCardByOrder(i).toStringReverse());
