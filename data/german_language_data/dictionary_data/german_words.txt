@@ -401,7 +401,7 @@
 100400	e Verpflegung	élelem, ellátás
 100401	s Feuilleton	novella
 100402	e Tragödie	tragédia
-100403	eintreffen	érkezik
+100403	eintreffen	megérkezik
 100404	s Boot	csónak
 100405	allein	egyedül
 100406	s Anstieg	növekedés
@@ -1516,7 +1516,7 @@
 101520	s Studentenheim	kollégium
 101521	e Arbeit	munka
 101522	arbeiten	dolgozik
-101523	r Kollege	munkatárs
+101523	r Kollege	kolléga, munkatárs
 101524	r Arbeitsplatz	munkahely
 101525	e Regel	szabály
 101526	unerträglich	elviselhetetlen
@@ -2827,7 +2827,7 @@
 102847	e Gewerkschaft	szakszervezet
 102848	e Initiative	kezdeményezés
 102849	e Herstellung	gyártás
-102850	niemals	soha
+102850	niemals	soha, sohasem
 102851	notwendig	szükséges
 102852	wagen	kockáztat
 102853	e Gerechtigkeit	igazságosság
@@ -5037,3 +5037,4 @@
 105201	dreißig	harminc	számok
 100555	Russland	Oroszország
 100657	e Ente	kacsa
+100861	s Seil	kötél
