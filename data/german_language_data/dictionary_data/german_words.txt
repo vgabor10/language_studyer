@@ -260,7 +260,7 @@
 100259	gewinnen	nyer	rendhagyó igék
 100260	bestimmen	meghatároz, megjelöl
 100261	r Kanzler	kancellár
-100262	versuchen	megprópál
+100262	versuchen	megpróbál
 100263	e Meinung	vélemény
 100264	e Regierung	kormány
 100265	r Einfluss	befolyás
@@ -1518,7 +1518,7 @@
 101522	arbeiten	dolgozik
 101523	r Kollege	kolléga, munkatárs
 101524	r Arbeitsplatz	munkahely
-101525	e Regel	szabály
+101525	e Regel	szabály, szokás
 101526	unerträglich	elviselhetetlen
 101527	ordnungsgemäß	rendesen
 101528	s Gehalt	fizetés
