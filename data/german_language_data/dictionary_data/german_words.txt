@@ -2055,7 +2055,6 @@
 102069	e Erkältung	megfázás
 102070	r Harn	vizelet
 102071	r Durchfall	hasmenés
-102072	e Kondome	óvszer
 102073	s Rezept	recept
 102074	verschreiben	felír
 102075	e Tablette	tabletta
