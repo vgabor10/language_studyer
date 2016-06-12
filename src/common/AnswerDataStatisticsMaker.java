@@ -102,7 +102,7 @@ public class AnswerDataStatisticsMaker {
 		int hours = (int)practisingTime / 3600000;
 		int minutes = (int)((practisingTime - 3600000 * hours)/60000);
 
-		int[] out = {hours,minutes}; 
+		int[] out = {hours,minutes};
 		return out;
 	}
 
@@ -177,9 +177,9 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public void toScreenHistogramOfStudyItemsByNumberOfAnswers() {
-		System.out.println("Histogram of StudyItems by number of answers (number of answers ---> number of StudyItems with given answers number)");
+		System.out.println("Histogram of study items by number of answers (number of answers ---> number of study items with given answers number)");
 		HashMap<Integer, Integer> histogramOfStudyItemsByNumberOfAnswers = evaluateHistogramOfStudyItemsByNumberOfAnswers();
-		
+
 		for (int i : histogramOfStudyItemsByNumberOfAnswers.keySet()) {
 			System.out.println(i + " ---> " +histogramOfStudyItemsByNumberOfAnswers.get(i));
 		}
