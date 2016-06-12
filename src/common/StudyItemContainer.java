@@ -52,8 +52,7 @@ public class StudyItemContainer {
 	}
 
 	public void removeStudyItemWithIndex(int studyItemIndex) {
-		data.remove(studyItemIndexToOrderIndex.get(studyItemIndex));
-		refreshMapVariable();
+		removeStudyItemWithOrderIndex(studyItemIndexToOrderIndex.get(studyItemIndex));
 	}
 
 	public void clear() {

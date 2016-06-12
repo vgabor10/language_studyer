@@ -290,7 +290,7 @@ public class LanguageStudyer {
 		if (choice.equals("8")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - merge cards with same data");
-			System.out.println("2 - remove card by index //TODO: implement");
+			System.out.println("2 - remove card by index");
 			System.out.println("3 - number of answers with invalid index");
 			System.out.println("4 - check about cards with same index");
 
@@ -316,9 +316,9 @@ public class LanguageStudyer {
 					System.out.println(cardContainer.getCardByIndex(cardIndex).toStringData());
 					String a = console.readLine();
 					if (a.equals("y")) {
-						//TODO: implement
+						dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardIndex);
 					}
-					System.out.println("card had been removed //not implemented");
+					System.out.println("card has been removed");
 				} catch (NumberFormatException e) {
 					System.out.println("given value is not an integer");
 				}

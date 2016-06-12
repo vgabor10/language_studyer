@@ -28,9 +28,12 @@ public class DictionaryDataModificator {
 		settingsHandler = sh;
 	}
 
-	public void removeCardWithAnswersByCardIndex(int cardIndex) {	//TODO: implement
+	public void removeCardWithAnswersByCardIndex(int cardIndex) {
 		cardContainer.removeStudyItemWithIndex(cardIndex);
 		answerDataContainer.removeAnswersWithIndex(cardIndex);
+
+		saveCardContainerDataToFile();
+		saveAnswerDataContainerDataToFile();
 	}
 
 	private void saveCardContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
