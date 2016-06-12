@@ -288,18 +288,23 @@ public class LanguageStudyer {
 
 		//additional ways to modificate cards
 		if (choice.equals("8")) {
+
+			String choice2;
+
+			DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+			dictionaryDataModificator.setCardContainer(cardContainer);
+			dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+			dictionaryDataModificator.setSettingsHandler(settingsHandler);
+
+			do {
+
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - merge cards with same data");
 			System.out.println("2 - remove card by index");
 			System.out.println("3 - number of answers with invalid index");
 			System.out.println("4 - check about cards with same index");
 
-			String choice2 = console.readLine();
-
-			DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-			dictionaryDataModificator.setCardContainer(cardContainer);
-			dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
-			dictionaryDataModificator.setSettingsHandler(settingsHandler);
+			choice2 = console.readLine();
 
 			if (choice2.equals("1")) {
 				System.out.print("\033[H\033[2J");
@@ -342,6 +347,9 @@ public class LanguageStudyer {
 				dictionaryDataFormatChecker.toScreenIfThereAreCardsWithSameIndex();
 				console.readLine();
 			}
+
+			} while (!choice2.equals(""));
+
 		}
 
 		//choose card groups to study

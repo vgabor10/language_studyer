@@ -73,22 +73,48 @@ public class CardFinder {
 		int maxListedCards = 31;
 		Vector<Card> cardsToList = new Vector<Card>();
 
-		for (int i=0; i < cardContainer.numberOfCards() && cardsToList.size() < maxListedCards; i++) {
+		for (int i=0; i < cardContainer.numberOfCards(); i++) {
 			if (cardContainer.getCardByOrder(i).term.toLowerCase().contains(prefix.toLowerCase())) {
 				Card card = cardContainer.getCardByOrder(i);
-
 				cardsToList.add(card);
 			}
 		}
 
+		Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange());
+
 		System.out.println();
 		System.out.println("TERM - DEFINITION");
-		for (int i=0; i < cardsToList.size(); i++) {
+		for (int i=0; i < cardsToList.size() && i < maxListedCards; i++) {
 			System.out.println(cardsToList.get(i).toString());
 		}
 
-		if (cardsToList.size() == maxListedCards) {
-			System.out.println("THERE CAN BE MORE CARDS FOUND");
+		if (cardsToList.size() > maxListedCards) {
+			System.out.println("MORE CARDS HAS BEEN FOUND");
+		}
+	}
+
+	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {
+
+		int maxListedCards = 31;
+		Vector<Card> cardsToList = new Vector<Card>();
+
+		for (int i=0; i < cardContainer.numberOfCards(); i++) {
+			if (cardContainer.getCardByOrder(i).definition.toLowerCase().contains(definitionPart.toLowerCase())) {
+				Card card = cardContainer.getCardByOrder(i);
+				cardsToList.add(card);
+			}
+		}
+
+		Collections.sort(cardsToList, new CardComparatorByDefinition());
+
+		System.out.println();
+		System.out.println("DEFINITION - TERM");
+		for (int i=0; i < cardsToList.size() && i < maxListedCards; i++) {
+			System.out.println(cardsToList.get(i).toStringReverse());
+		}
+
+		if (cardsToList.size() > maxListedCards) {
+			System.out.println("MORE CARDS HAS BEEN FOUND");
 		}
 	}
 
@@ -106,27 +132,4 @@ public class CardFinder {
 		}
 	}
 
-	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {
-
-		int maxListedCards = 31;
-		Vector<Card> cardsToList = new Vector<Card>();
-
-		for (int i=0; i < cardContainer.numberOfCards() && cardsToList.size() < maxListedCards; i++) {
-			if (cardContainer.getCardByOrder(i).definition.toLowerCase().contains(definitionPart.toLowerCase())) {
-				Card card = cardContainer.getCardByOrder(i);
-
-				cardsToList.add(card);
-			}
-		}
-
-		System.out.println();
-		System.out.println("DEFINITION - TERM");
-		for (int i=0; i < cardsToList.size(); i++) {
-			System.out.println(cardsToList.get(i).toStringReverse());
-		}
-
-		if (cardsToList.size() == maxListedCards) {
-			System.out.println("THERE CAN BE MORE CARDS FOUND");
-		}
-	}
 }
