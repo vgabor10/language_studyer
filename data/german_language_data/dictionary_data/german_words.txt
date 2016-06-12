@@ -340,7 +340,7 @@
 100339	s Gesetz	törvény
 100340	vollziehen	végrehajt
 100341	offiziell	hivatalos
-100342	beschließen	dönt
+100342	beschließen	eldönt, elhatároz
 100343	s Abgeordnetenhaus	képviselőház
 100344	e Klasse	osztály
 100345	s Wahlrecht	választójog
@@ -1150,7 +1150,7 @@
 101154	s Regelwerk	szabályzat
 101155	amtlich	hivatalos
 101156	e Religion	vallás
-101157	e Geminde	közösség
+101157	e Gemeinde	község, közösség
 101158	e Minderheit	kissebség
 101159	r Bergbau	bányászat
 101160	s Blei	ólom
@@ -2340,7 +2340,7 @@
 102356	gewohnt	szokásos
 102357	gießen	önt, tölt	rendhagyó igék
 102358	glänzend	ragyogó
-102359	gleichen	kiegyenlít
+102359	gleichen	simít, kiegyenlít
 102360	gleichmäßig	egyenletes
 102361	gleichzeitig	egyidejűleg
 102362	gleiten	csúszik
