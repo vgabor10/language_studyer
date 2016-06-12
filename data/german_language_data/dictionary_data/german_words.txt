@@ -404,7 +404,6 @@
 100403	eintreffen	megérkezik
 100404	s Boot	csónak
 100405	allein	egyedül
-100406	s Anstieg	növekedés
 100407	beinahe	majdnem
 100408	e Agentur	ügynükség
 100409	vergangen	múlt (mn)
