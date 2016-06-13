@@ -743,7 +743,7 @@
 100745	fertigstellen	elkészít
 100746	zuletzt	utóljára
 100747	gültig	érvényes
-100748	gelangen	megérkezik
+100748	gelangen	eljut, megérkezik
 100749	e Errichtung	kialakítás
 100750	sowie	továbbá
 100751	ausstatten	felszerel
@@ -1214,7 +1214,7 @@
 101219	grob	durva
 101220	erhöhen	növel
 101221	voraussagen	előre jelez
-101222	r Job	munka
+101222	r Job	munkam, állás
 101223	brauchen	igényel
 101224	e Freizügigkeit	liberalizmus
 101225	e Belastung	adósság, teher
@@ -1888,7 +1888,7 @@
 101899	inländisch	belföldi
 101900	ausländisch	külföldi (mn)
 101901	besetzt	foglalt
-101902	e Leitung	vezeték
+101902	e Leitung	vezeték, vezetés
 101903	r Anruf	hívás
 101904	s Handy	mobiltelefon
 101905	erreichbar	elérhető
@@ -4205,7 +4205,7 @@
 104235	r Eigentümer	tulajdonos
 104236	s Tuch	szövet, kendő
 104237	lauten	hangzik
-104238	vorschreiben	megszab
+104238	vorschreiben	előír, megszab
 104239	r Professor	professzor
 104240	ausschalten	kikapcsol
 104241	ausprobieren	kipróbál
@@ -4708,7 +4708,7 @@
 104738	sich vornehmen	elhatározza magát
 104739	losgehen	indul, elsül
 104740	individuell	egyéni, individuális
-104741	zur Verfügung stehen	rendelkezásre áll
+104741	zur Verfügung stehen	rendelkezásre áll	kifejezések
 104742	strukturieren	szerkeszt, strukturál
 104743	e Bilanz	mérleg (közgazdaságban)
 104744	Schweiz	svájc
@@ -5036,3 +5036,12 @@
 100555	Russland	Oroszország
 100657	e Ente	kacsa
 100861	s Seil	kötél
+100406	r Zwilling	iker
+100914	e Schaffung	létesítés, teremtés
+101028	gütlich	békés, barátságos
+101548	r Untergang	pusztulás, bukás
+101637	r Austritt	kilépés, távozás
+101647	falls	ha, amennyiben
+101690	r Krebs	rák
+101841	immens	óriási, hatalmas
+101858	nutzlos	haszontalan
