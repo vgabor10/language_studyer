@@ -1419,7 +1419,6 @@
 101424	r Obstbaum	gyümölcsfa
 101425	r Pfirsich	őszibarack
 101426	e Pflaume	szilva
-101427	e Walnuss	dió
 101428	e Himbeere	málna
 101429	e Weintraube	szőlő
 101430	e Banane	banán
@@ -3680,7 +3679,6 @@
 103707	akut	akut, sürgős
 103708	r Vorgänger	előd
 103709	zugehen	közelít
-103710	danke	köszönöm
 103711	zurückgeben	visszad
 103712	angucken	megnéz
 103713	r Schnitt	vágás, szelet
@@ -4323,7 +4321,6 @@
 104353	e Aussage	állítás, kijelentés
 104354	erfreuen	örül
 104355	mischen	kever
-104356	r Palästinenser	palesztin (fn)
 104357	s Gerücht	pletyka, szóbeszéd
 104358	vermeintlich	vélt, állítólagos
 104359	e Ahnung	sejtés
@@ -5045,3 +5042,7 @@
 101690	r Krebs	rák
 101841	immens	óriási, hatalmas
 101858	nutzlos	haszontalan
+101427	r Sarg	koporsó
+101923	r Abnehmer	vásárló, fogyasztó
+101934	e Güter	árucikkek (többesszám)
+101999	e Einkünfte	kereset, jövedelem
