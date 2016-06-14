@@ -11,7 +11,7 @@
 100010	immer	mindig
 100011	nach Hause	haza
 100012	zu Hause	otthon
-100013	in der Näche	közelben
+100013	in der Näche	közelben	kifejezések
 100014	sofort	rögtön, azonnal
 100015	e Strassenbahn	villamos
 100016	oft	gyakran, gyakori
@@ -280,7 +280,7 @@
 100279	erheblich	jelentős
 100280	beeinflussen	befolyásol
 100281	e Maß	mérték
-100282	s Kennzeichen	indikátor
+100282	s Kennzeichen	ismertetőjel, rendszám
 100283	fast	majdnem
 100284	r Übergang	átkelés, átalakulás
 100285	beschäftigen	foglalkoztat
@@ -351,7 +351,7 @@
 100350	r Befehl	parancs
 100351	r Aufstand	lázadás
 100352	abdanken	lemond
-100353	bekannt	ismerős
+100353	bekannt	ismerős (mn)
 100354	r Vorsitzende	elnök
 100355	r Nachmittag	délután
 100356	proklamieren	kinyilatkoztat
@@ -453,7 +453,7 @@
 100453	vordringlich	sürgős
 100454	e Münze	érme
 100455	s Silber	ezüst
-100456	tauschen	kicserél
+100456	tauschen	cserél
 100457	e Schande	szégyen
 100458	mächtig	nagyon, hatalmas
 100459	produzieren	termel
@@ -869,7 +869,7 @@
 100872	e Ausbildung	oktatás, kiképzés
 100873	erwägen	megfontol
 100874	schlagen	üt, ver	rendhagyó igék
-100875	nachdenken	gondolkodik
+100875	nachdenken	gondolkodik, elgondolkodig
 100876	ermöglichen	engedélyez
 100877	besorgen	aggódik
 100878	e Unterstützung	támogatás
@@ -3235,7 +3235,7 @@
 103262	s Gewebe	anyag, szövet
 103263	r Stress	stressz
 103264	lieb	kedves
-103265	verknüpfen	összefűz
+103265	verknüpfen	összekapcsol, összefűz
 103266	s Heim	haza
 103267	irgendwann	valamikor
 103268	aufsuchen	felkeres, meglátogat
@@ -3397,7 +3397,7 @@
 103424	telefonieren	telefonál
 103425	bedauern	sajnál
 103426	e Qualifikation	minősítés, kvalifikáció
-103427	zulassen	megenged
+103427	zulassen	odaenged, megenged
 103428	s Spanisch	spanyol
 103429	blühen	virágzik
 103430	erbringen	felhoz, előhoz
@@ -3557,7 +3557,6 @@
 103584	modern	modern, korszerű
 103585	relevant	releváns, lényeges
 103586	sämtlich	összes
-103587	r Deckel	fedél
 103588	r Dienst	szolgálat
 103589	s Talent	tehetség
 103590	e Durchführung	kivitelezés
@@ -4692,7 +4691,7 @@
 104725	beiseite	mellé
 104726	jeweilig	mindenkori
 104727	anpassen	igazít, hozzáilleszt
-104728	aneinander	egymáshoz
+104728	aneinander	egymáshoz, össze
 104729	s Motto	mottó, jelmondat
 104730	s Italienisch	olasz nyelv
 104731	r Riese	óriás (fn)
