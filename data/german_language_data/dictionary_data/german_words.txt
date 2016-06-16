@@ -100,7 +100,7 @@
 100099	r Kopf	fej
 100100	neben	mellé
 100101	r Hals	nyak, torok
-100102	zu tun haben	dolga van
+100102	zu tun haben	dolga van	kifejezések
 100103	besuchen	meglátogat
 100104	r Kuss	csók
 100105	e Sache	ügy, dolog
@@ -197,7 +197,6 @@
 100196	wo	hol
 100197	schmecken	ízlik
 100198	r Anzug	öltöny
-100199	r Schuch	cipő
 100200	e Aufgabe	feladat
 100201	r Spiegel	tükör
 100202	e Milch	tej
@@ -423,7 +422,7 @@
 100423	Frankreich	Franciaország
 100424	e Währung	valuta
 100425	erwachen	felébred
-100426	erwarten	vár (ig)
+100426	erwarten	vár, elvár
 100427	e Hoffnung	remény
 100428	s Quartal	negyedév
 100429	wachsen	nő (ige)	rendhagyó igék
@@ -845,7 +844,6 @@
 100847	ähnlich	hasonló
 100848	besetzen	elfoglal
 100849	anregen	javasol, ösztönöz
-100850	s Vorstandsmitglied	igazgatósági tag
 100851	lockern	lazít
 100852	gestatten	engedélyez
 100853	aufnehmen	folytat, bevesz
@@ -907,7 +905,7 @@
 100910	gewaltig	óriási
 100911	einsetzen	alkalmaz
 100912	zwar	noha
-100913	vor allem	mindenekelőtt
+100913	vor allem	mindenekelőtt	kifejezések
 100915	r Kreuzer	cirkáló
 100916	lautlose	néma
 100917	scheinen	tűnik, látszik	rendhagyó igék
@@ -1208,7 +1206,7 @@
 101213	r Riss	repedés
 101214	s Folgen	következmény
 101215	kritisch	kritikus
-101216	potentiell	lehetséges
+101216	potentiell	lehetséges, potenciális
 101217	r Vizepräsident	alelnök
 101218	r Überblick	áttekintés
 101219	grob	durva
@@ -1371,7 +1369,6 @@
 101376	e Vase	váza
 101377	e Lampe	lámpa
 101378	e Leuchte	csillár
-101379	s Möbelstück	bútor
 101380	vorteilhaft	előnyös
 101381	r Plan	terv
 101382	kontrollieren	ellenőriz
@@ -2685,7 +2682,7 @@
 102708	e Konzeption	koncepció
 102709	e Kooperation	együttműködés
 102710	e Koralle	korall
-102711	e Kosten	ár
+102711	e Kosten	költség, ár
 102712	e Kraft	erő
 102713	e Krankenkasse	egészség biztosítás
 102714	e Kreativität	kreativitás
@@ -4254,7 +4251,7 @@
 104287	vorher	előbb
 104288	s Nahrungsmittel	élelem, élelmiszer
 104289	dort	ott
-104290	vor kurzem	nemrég
+104290	vor kurzem	nemrég	kifejezések
 104291	amerikanisch	amerikai
 104292	r Umgang	bánásmód, kapcsolat
 104293	schwanger	várandós, állapotos
@@ -4364,7 +4361,7 @@
 104398	scheiden	elválik, szétválaszt
 104399	jetzt	most
 104400	weiß	fehér
-104401	entwerfen	tervez
+104401	entwerfen	eltervez
 104402	s Format	formátum
 104403	r Dirigent	karmester
 104404	r Italiener	olasz (fn)
@@ -5045,3 +5042,4 @@
 101923	r Abnehmer	vásárló, fogyasztó
 101934	e Güter	árucikkek (többesszám)
 101999	e Einkünfte	kereset, jövedelem
+102072	Sport treiben	sportol	kifejezések
