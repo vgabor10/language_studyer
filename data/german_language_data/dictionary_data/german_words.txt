@@ -497,7 +497,7 @@
 100498	knapp	alig, szűk
 100499	kooperieren	együttműködik
 100500	meinen	gondol
-100501	stecken	betesz
+100501	stecken	betesz, bedug
 100502	zusammen	együtt
 100503	e Daten	adat
 100504	sammeln	gyűjt
@@ -2164,7 +2164,7 @@
 102183	s Parlament	parlament
 102184	s Symbol	szimbólum
 102185	e Fahne	zászló
-102186	e Nationalhymne	nemzeti himnusz
+102186	e Hymne	himnusz
 102187	e Strophe	versszak
 102188	e Melodie	dallam
 102189	e Oberfläche	felszín
@@ -2578,7 +2578,7 @@
 102602	e Zahlung	fizetés
 102603	e Zeichnung	rajz
 102604	e Zeile	sor
-102605	e Zeitschrift	magazin
+102605	e Zeitschrift	folyóirat, magazin
 102606	e Zelle	sejt (fn)
 102607	e Zerstörung	rombolás
 102608	e Zielsetzung	célkitűzés
@@ -3730,7 +3730,7 @@
 103764	abschalten	lekapcsol
 103765	arabisch	arab (mn)
 103766	s Blatt	lap, levél (fáé)
-103767	dringen	behatol, zaklat
+103767	dringen	behatol, áthatol
 103768	bestehen	létezik, kibír, helytáll
 103769	mitbringen	magával hoz
 103770	kaufen	vásárol
@@ -3943,7 +3943,7 @@
 103979	r Protest	tiltakozás
 103980	zufrieden	elégedett
 103981	r Geheimdienst	titkosszolgálat
-103982	ansonsten	különben
+103982	ansonsten	különben, egyébként
 103983	e Betreuung	gondoskodás
 103984	r Verlauf	folyamat
 103985	vertiefen	mélyít
@@ -4105,7 +4105,6 @@
 104141	e Annahme	elfogadás, felvetés
 104142	daraufhin	ezért, ennek következtében
 104143	sich schämen	szégyelli magát
-104144	s Chinesisch	kinai (fn)
 104145	anwesend	jelenlévő
 104146	klären	tisztít, tisztáz
 104147	unterdessen	közben
@@ -4612,7 +4611,6 @@
 104649	irren	téved
 104650	e Akademie	akadémia
 104651	beugen	hajlít
-104652	e Oper	opera
 104653	wertvoll	értékes
 104654	s Auftreten	fellépés
 104655	unterschiedlich	különféle, különböző
@@ -4756,7 +4754,7 @@
 104916	brach	eltör, eltörik (Präterium)	rendhagyó igék
 104918	brannte	ég (Präterium)	rendhagyó igék
 104919	dachte	gondol (Präterium)	rendhagyó igék
-104920	drang	behajol, áthatol (Präterium)	rendhagyó igék
+104920	drang	behatol, áthatol (Präterium)	rendhagyó igék
 104921	durfte	szabad (Präterium)	rendhagyó igék
 104922	bog ein	bekanyarodik (Präterium)	rendhagyó igék
 104923	lud ein	meghív (Präterium)	rendhagyó igék

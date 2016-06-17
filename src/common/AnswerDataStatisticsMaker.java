@@ -377,7 +377,7 @@ public class AnswerDataStatisticsMaker {
 		}*/
 	}
 
-	public StringTabular getHistogramOfStudyItemAnswerRatesByDays() {
+	public StringTabular getHistogramOfStudyItemAnswerRatesByDays() {	//TODO: make it faster
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
