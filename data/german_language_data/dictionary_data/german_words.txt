@@ -3091,7 +3091,6 @@
 103120	verabschieden	elbocsát
 103121	e Rechtsprechung	igazságszolgáltatás
 103122	s Resultat	eredmény
-103123	letzte	utolsó
 103124	behandeln	kezel, bánik
 103125	r Block	tömb
 103126	zugrundelegen	alapul vesz
