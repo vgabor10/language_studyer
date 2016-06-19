@@ -26,4 +26,12 @@ public class GeneralFunctions {
 		return (int)Math.floor( (int)(milisec % (1000*3600*24)) / (int)(1000*3600));
 	}
 
+	public boolean isInteger() {	//TODO: implement
+		return false;
+	}
+
+	public boolean isDouble() {	//TODO: implement
+		return false;
+	}
+
 }
