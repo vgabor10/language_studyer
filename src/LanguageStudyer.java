@@ -317,13 +317,18 @@ public class LanguageStudyer {
 				System.out.println("type the cardIndex of card, which you would like to remove");
 				try {
 					int cardIndex = Integer.parseInt(console.readLine());
-					System.out.println("are you sure, that, you would like to remove the folloving card? (y/n)");
-					System.out.println(cardContainer.getCardByIndex(cardIndex).toStringData());
-					String a = console.readLine();
-					if (a.equals("y")) {
-						dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardIndex);
+					if (cardContainer.getCardIndexes().contains(cardIndex)) {
+						System.out.println("are you sure, that, you would like to remove the folloving card? (y/n)");
+						System.out.println(cardContainer.getCardByIndex(cardIndex).toStringData());
+						String a = console.readLine();
+						if (a.equals("y")) {
+							dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardIndex);
+						}
+						System.out.println("card has been removed");
 					}
-					System.out.println("card has been removed");
+					else {
+						System.out.println("card with given index does not exist");
+					}
 				} catch (NumberFormatException e) {
 					System.out.println("given value is not an integer");
 				}
