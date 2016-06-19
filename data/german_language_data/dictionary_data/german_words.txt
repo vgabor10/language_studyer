@@ -3795,7 +3795,6 @@
 103832	s Klavier	zongora
 103833	abzeichnen	lerajzol
 103834	r Dank	hála
-103835	schlimmer	rosszabb
 103836	bewerten	értékel, elbírál
 103837	flüstern	suttog
 103838	r Graf	gróf
