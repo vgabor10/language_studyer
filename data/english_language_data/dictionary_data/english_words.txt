@@ -987,3 +987,6 @@
 100986	adjacent	szomszédos, határos, mellette fekvő
 100987	unambiguous	egyértelmű
 100988	be at stake	kockán forog
+100989	repulsive	taszító, ellenszenves
+100990	conduct	vezényel, lefolytat
+100991	cease	megszüntet, abbahagy

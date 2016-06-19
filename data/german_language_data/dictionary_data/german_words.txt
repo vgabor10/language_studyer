@@ -2277,7 +2277,6 @@
 102297	formulieren	fogalmaz
 102298	fort	el, tovább
 102299	fortsetzen	folytat
-102300	r Frankfurter	frankfurti (fn)
 102301	französisch	francia (mn)
 102302	freigeben	felszabadít
 102303	r Freitag	péntek
@@ -2443,7 +2442,7 @@
 102465	erweisen	bebizonyít
 102466	erweitern	tágít, bővít
 102467	erwerben	megszerez
-102468	erwidern	válaszol
+102468	erwidern	viszonoz, válaszol
 102469	erwischen	elkap
 102470	erzeugen	termel
 102471	erziehen	nevel

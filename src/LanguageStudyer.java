@@ -3,6 +3,7 @@ import dictionary.*;
 import settings_handler.*;
 import common.*;
 import terminal_interface.*;
+import experimental_classes.*;
 
 import java.util.*;
 import java.io.Console;
@@ -71,10 +72,13 @@ public class LanguageStudyer {
 		System.out.println("12 - basic statistics");
 		System.out.println("13 - additional statistics");
 		System.out.println("14 - modificate grammar item");
-		System.out.println("15 - grammarItemChooser test");
+		System.out.println();
+		System.out.println("EXPERIMENTAL FEAUTURES");
+		System.out.println("20 - test cards other way");
+		System.out.println("21 - grammarItemChooser test");
 		System.out.println();
 		System.out.println("SETTINGS");
-		System.out.println("20 - set language to study");
+		System.out.println("30 - set language to study");
 		System.out.println();
 		System.out.println("x - quit");
 		choice = console.readLine();
@@ -505,7 +509,13 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
-		if (choice.equals("15")) {
+		if (choice.equals("20")) {
+			CardTester2 cardTester2 = new CardTester2();
+			cardTester2.setCardContainer(cardContainer);
+			cardTester2.performTest();
+		}
+
+		if (choice.equals("21")) {
 			System.out.print("\033[H\033[2J");
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
 			grammarItemChooser.setGrammarBook(grammarBook);
@@ -513,7 +523,7 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
-		if (choice.equals("20")) {
+		if (choice.equals("30")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("Which language would you like to study?");
 			System.out.println("0 - english");
