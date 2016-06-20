@@ -188,7 +188,7 @@ public class CardChooser {
 
 		Set<Integer> indexesToAdd;
 
-		indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
+		indexesToAdd = getRandomCardIndexes(20, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
 		return cardsToTestIndexes;

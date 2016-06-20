@@ -123,20 +123,24 @@ public class CardTester2 {
 			logger.debug("acceptabel answers: " + acceptabelAnswers.toString());
 
 			System.out.print("\033[H\033[2J");
+			System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+			System.out.println("-------------------------------");
 			System.out.println(card.definition);
 			String answer = console.readLine();
 
 			if (answer.equals(card.term)) {	//right answer
 				Date date = new Date();
-				answerDataContainer.addElement(card.index, true, date.getTime());
+				testAnswers.addElement(card.index, true, date.getTime());
 			}
 			else {				//wrong answer
 
 				if (acceptabelAnswers.contains(answer)) {
 					//Date date = new Date();
-					//answerDataContainer.addElement(-1, true, date.getTime());
+					//testAnswers.addElement(-1, true, date.getTime());
 					do {
 						System.out.print("\033[H\033[2J");
+						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+						System.out.println("-------------------------------");
 						System.out.println(card.definition);
 						System.out.println("RIGHT, but the following word was tought:");
 						System.out.println(card.term);
@@ -145,9 +149,11 @@ public class CardTester2 {
 				}
 				else {
 					Date date = new Date();
-					answerDataContainer.addElement(card.index, false, date.getTime());
+					testAnswers.addElement(card.index, false, date.getTime());
 					do {
 						System.out.print("\033[H\033[2J");
+						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+						System.out.println("-------------------------------");
 						System.out.println(card.definition);
 						System.out.println(card.term);
 						answer = console.readLine();
@@ -162,8 +168,6 @@ public class CardTester2 {
 
 		AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest = new AnswerDataByStudyItemsContainer();
 		answerDatasByStudyItemsBeforeTest.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		SettingsHandler settingsHandler = new SettingsHandler();
 		testAnswers.appendToAnswerDataFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
 		answerDataContainer.appendAnswerDataContainer(testAnswers);
 

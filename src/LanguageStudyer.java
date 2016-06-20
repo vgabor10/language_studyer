@@ -3,7 +3,6 @@ import dictionary.*;
 import settings_handler.*;
 import common.*;
 import terminal_interface.*;
-import experimental_card_tester.*;
 
 import java.util.*;
 import java.io.Console;
@@ -517,9 +516,47 @@ public class LanguageStudyer {
 
 		//perform test
 		if (choice.equals("20")) {
+			AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
+			answerDataContainer2.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
 			CardTester2 cardTester2 = new CardTester2();
+
 			cardTester2.setCardContainer(cardContainer);
-			//cardTester2.performTest();
+			cardTester2.setAnswerDataContainer(answerDataContainer2);
+			cardTester2.setCardChooser();
+
+			System.out.print("\033[H\033[2J");
+			System.out.println("practising with:");
+			System.out.println("1 - 20 random cards from data base");
+			System.out.println("2 - 6 latest studyed cards, 6 cards among the hardest 20%, 8 random cards");
+			System.out.println("3 - 4 latest studyed cards, 8 among the hardest 20%, 8 random cards");
+			System.out.println("4 - 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
+			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
+			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
+			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
+
+			String c = console.readLine();
+			if (c.equals("1")) {
+				cardTester2.performTest1();
+			}
+			if (c.equals("2")) {
+				cardTester2.performTest2();
+			}
+			if (c.equals("3")) {
+				cardTester2.performTest3();
+			}
+			if (c.equals("4")) {
+				cardTester2.performTest4();
+			}
+			if (c.equals("5")) {
+				cardTester2.performTest5();
+			}
+			if (c.equals("6")) {
+				cardTester2.performTest6();
+			}
+			if (c.equals("7")) {
+				cardTester2.performTest7();
+			}
 		}
 
 		//basic statistics
