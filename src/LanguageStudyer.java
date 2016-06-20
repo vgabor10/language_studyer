@@ -54,39 +54,44 @@ public class LanguageStudyer {
 		System.out.print("\033[H\033[2J");
 		System.out.println("LANGUAGE STUDYER - " + settingsHandler.getStudiedLanguageName().toUpperCase() + " LANGUAGE");
 		System.out.println();
+		System.out.println("CARD TESTER 1");
+		System.out.println("0 - practicing");
+		System.out.println("1 - basic statistics");
+		System.out.println("2 - additional statistics");
+		System.out.println("3 - set card groups to test");
+		System.out.println();
+		System.out.println("CARD TESTER 2");
+		System.out.println("4 - practicing");
+		System.out.println("5 - basic statistics");
+		System.out.println("6 - additional statistics");
+		System.out.println();
 		System.out.println("DICTIONARY");
-		System.out.println("1 - practicing");
-		System.out.println("2 - basic statistics");
-		System.out.println("3 - additional statistics");
-		System.out.println("4 - find cards according to term part");
-		System.out.println("5 - find cards according to definition part");
-		System.out.println("6 - add card");
-		System.out.println("7 - additional ways to find cards");
-		System.out.println("8 - additional ways to modificate cards");
-		System.out.println("9 - set card groups to test");
+		System.out.println("7 - find cards according to term part");
+		System.out.println("8 - find cards according to definition part");
+		System.out.println("9 - add card");
+		System.out.println("10 - additional ways to find cards");
+		System.out.println("11 - additional ways to modificate cards");
 		System.out.println();
 		System.out.println("GRAMMAR BOOK");
-		System.out.println("10 - practicing");
-		System.out.println("11 - read grammar book");
-		System.out.println("12 - basic statistics");
-		System.out.println("13 - additional statistics");
-		System.out.println("14 - modificate grammar item");
-		System.out.println();
-		System.out.println("EXPERIMENTAL CARD TESTER FOR GERMAN LANGUAGE");
 		System.out.println("20 - practicing");
-		System.out.println("21 - basic statistics");
-		System.out.println("22 - additional statistics");
+		System.out.println("21 - read grammar book");
+		System.out.println("22 - basic statistics");
+		System.out.println("23 - additional statistics");
+		System.out.println("24 - modificate grammar item");
 		System.out.println();
 		System.out.println("EXPERIMENTAL FEAUTURES");
-		System.out.println("25 - grammarItemChooser test");
+		System.out.println("30 - grammarItemChooser test");
 		System.out.println();
 		System.out.println("SETTINGS");
-		System.out.println("30 - set language to study");
+		System.out.println("40 - set language to study");
 		System.out.println();
 		System.out.println("x - quit");
 		choice = console.readLine();
 
-		if (choice.equals("1")) {
+		////////////////////// CARD TESTER 1 //////////////////////
+
+		//practising
+		if (choice.equals("0")) {
 			CardTester cardTester = new CardTester();
 
 			cardTester.setCardsToTest(testedCardGroupHandler.cardsToTest);
@@ -128,7 +133,7 @@ public class LanguageStudyer {
 		}
 
 		//basic statistics
-		if (choice.equals("2")) {
+		if (choice.equals("1")) {
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
 			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
@@ -139,7 +144,7 @@ public class LanguageStudyer {
 		}
 
 		//additional statistics
-		if (choice.equals("3")) {
+		if (choice.equals("2")) {
 			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
 			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();
 			dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
@@ -148,8 +153,89 @@ public class LanguageStudyer {
 			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
 		}
 
-		//find card according to term part
+		//choose card groups to study
+		if (choice.equals("3")) {
+			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
+		}
+
+		////////////////////// CARD TESTER 2 //////////////////////
+
+		//practising
 		if (choice.equals("4")) {
+			AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
+			answerDataContainer2.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
+			CardTester2 cardTester2 = new CardTester2();
+
+			cardTester2.setCardContainer(cardContainer);
+			cardTester2.setAnswerDataContainer(answerDataContainer2);
+			cardTester2.setCardChooser();
+
+			System.out.print("\033[H\033[2J");
+			System.out.println("practising with:");
+			System.out.println("1 - 20 random cards from data base");
+			System.out.println("2 - 6 latest studyed cards, 6 cards among the hardest 20%, 8 random cards");
+			System.out.println("3 - 4 latest studyed cards, 8 among the hardest 20%, 8 random cards");
+			System.out.println("4 - 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
+			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
+			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
+			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
+
+			String c = console.readLine();
+			if (c.equals("1")) {
+				cardTester2.performTest1();
+			}
+			if (c.equals("2")) {
+				cardTester2.performTest2();
+			}
+			if (c.equals("3")) {
+				cardTester2.performTest3();
+			}
+			if (c.equals("4")) {
+				cardTester2.performTest4();
+			}
+			if (c.equals("5")) {
+				cardTester2.performTest5();
+			}
+			if (c.equals("6")) {
+				cardTester2.performTest6();
+			}
+			if (c.equals("7")) {
+				cardTester2.performTest7();
+			}
+		}
+
+		//basic statistics
+		if (choice.equals("5")) {
+			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
+			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
+			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
+			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
+			answerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
+			TerminalDictionaryStatisticsShower terminalDictionaryStatisticsShower = new TerminalDictionaryStatisticsShower();
+			terminalDictionaryStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker); 
+			terminalDictionaryStatisticsShower.toScreenDictionaryBasicStatistics();
+			console.readLine();
+		}
+
+		//additional statistics
+		if (choice.equals("6")) {
+			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
+			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
+			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
+			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();
+			dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
+			dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
+			dictionaryAdditionalStatisticsShower.setDictionaryAnswerDataStatisticsMaker(dictionaryAnswerDataStatisticsMaker);
+			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
+		}
+
+		////////////////////// DICTIONARY //////////////////////
+
+		//find card according to term part
+		if (choice.equals("7")) {
 
 			CardFinder cardFinder = new CardFinder();
 			cardFinder.setCardContainer(cardContainer);
@@ -168,7 +254,7 @@ public class LanguageStudyer {
 		}
 
 		// find card according to definition part
-		if (choice.equals("5")) {
+		if (choice.equals("8")) {
 
 			CardFinder cardFinder = new CardFinder();
 			cardFinder.setCardContainer(cardContainer);
@@ -187,7 +273,7 @@ public class LanguageStudyer {
 		}
 
 		//add card
-		if (choice.equals("6")) {
+		if (choice.equals("9")) {
 
 			String in = "";
 
@@ -240,7 +326,7 @@ public class LanguageStudyer {
 		}
 
 		//additional ways to find cards
-		if (choice.equals("7")) {
+		if (choice.equals("10")) {
 
 			String choice2;
 
@@ -294,7 +380,7 @@ public class LanguageStudyer {
 		}
 
 		//additional ways to modificate cards
-		if (choice.equals("8")) {
+		if (choice.equals("11")) {
 
 			String choice2;
 
@@ -364,13 +450,10 @@ public class LanguageStudyer {
 
 		}
 
-		//choose card groups to study
-		if (choice.equals("9")) {
-			testedCardGroupHandler.toScreenTestedCardGroupsChooser();
-		}
+		////////////////////// GRAMMAR BOOK //////////////////////
 
 		//practising grammar items
-		if (choice.equals("10")) {
+		if (choice.equals("20")) {
 			System.out.print("\033[H\033[2J");
 
 			System.out.println("practising with: ");
@@ -428,7 +511,7 @@ public class LanguageStudyer {
 		}
 
 		//read grammar book
-		if (choice.equals("11")) {
+		if (choice.equals("21")) {
 			String a;
 			do {
 				System.out.print("\033[H\033[2J");
@@ -445,7 +528,7 @@ public class LanguageStudyer {
 		}
 
 		//basic statistics
-		if (choice.equals("12")) {
+		if (choice.equals("22")) {
 			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
 			grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
 			grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
@@ -456,7 +539,7 @@ public class LanguageStudyer {
 		}
 
 		//additional statistics
-		if (choice.equals("13")) {
+		if (choice.equals("23")) {
 			GrammarAdditionalStatisticsShower grammarAdditionalStatisticsShower = new GrammarAdditionalStatisticsShower();
 			GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
 			grammarAnswerDataStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
@@ -466,7 +549,7 @@ public class LanguageStudyer {
 		}
 
 		//modificate grammar item
-		if (choice.equals("14")) {
+		if (choice.equals("24")) {
 			String choice2;
 			do {
 
@@ -512,80 +595,9 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
-		/////////////////////// EXPERIMENTAL CARD TESTER ///////////////////////
+		////////////////////// EXPERIMENTAL FEATURES //////////////////////
 
-		//perform test
-		if (choice.equals("20")) {
-			AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
-			answerDataContainer2.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
-
-			CardTester2 cardTester2 = new CardTester2();
-
-			cardTester2.setCardContainer(cardContainer);
-			cardTester2.setAnswerDataContainer(answerDataContainer2);
-			cardTester2.setCardChooser();
-
-			System.out.print("\033[H\033[2J");
-			System.out.println("practising with:");
-			System.out.println("1 - 20 random cards from data base");
-			System.out.println("2 - 6 latest studyed cards, 6 cards among the hardest 20%, 8 random cards");
-			System.out.println("3 - 4 latest studyed cards, 8 among the hardest 20%, 8 random cards");
-			System.out.println("4 - 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
-			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
-			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
-			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
-
-			String c = console.readLine();
-			if (c.equals("1")) {
-				cardTester2.performTest1();
-			}
-			if (c.equals("2")) {
-				cardTester2.performTest2();
-			}
-			if (c.equals("3")) {
-				cardTester2.performTest3();
-			}
-			if (c.equals("4")) {
-				cardTester2.performTest4();
-			}
-			if (c.equals("5")) {
-				cardTester2.performTest5();
-			}
-			if (c.equals("6")) {
-				cardTester2.performTest6();
-			}
-			if (c.equals("7")) {
-				cardTester2.performTest7();
-			}
-		}
-
-		//basic statistics
-		if (choice.equals("21")) {
-			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
-			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
-
-			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
-			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
-			answerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
-			TerminalDictionaryStatisticsShower terminalDictionaryStatisticsShower = new TerminalDictionaryStatisticsShower();
-			terminalDictionaryStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker); 
-			terminalDictionaryStatisticsShower.toScreenDictionaryBasicStatistics();
-			console.readLine();
-		}
-
-		//additional statistics
-		if (choice.equals("22")) {
-			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
-			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
-
-			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
-			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();
-			dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
-			dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
-			dictionaryAdditionalStatisticsShower.setDictionaryAnswerDataStatisticsMaker(dictionaryAnswerDataStatisticsMaker);
-			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
-		}
-
+		//experimental feature: grammar item chooser
 		if (choice.equals("25")) {
 			System.out.print("\033[H\033[2J");
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
@@ -594,6 +606,9 @@ public class LanguageStudyer {
 			console.readLine();
 		}
 
+		////////////////////// SETTINGS //////////////////////
+
+		//set language to study
 		if (choice.equals("30")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("Which language would you like to study?");
