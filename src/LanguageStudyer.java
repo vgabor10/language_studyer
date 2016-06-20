@@ -3,7 +3,7 @@ import dictionary.*;
 import settings_handler.*;
 import common.*;
 import terminal_interface.*;
-import experimental_classes.*;
+import experimental_card_tester.*;
 
 import java.util.*;
 import java.io.Console;
@@ -73,9 +73,13 @@ public class LanguageStudyer {
 		System.out.println("13 - additional statistics");
 		System.out.println("14 - modificate grammar item");
 		System.out.println();
+		System.out.println("EXPERIMENTAL CARD TESTER FOR GERMAN LANGUAGE");
+		System.out.println("20 - practicing");
+		System.out.println("21 - basic statistics");
+		System.out.println("22 - additional statistics");
+		System.out.println();
 		System.out.println("EXPERIMENTAL FEAUTURES");
-		System.out.println("20 - test cards other way");
-		System.out.println("21 - grammarItemChooser test");
+		System.out.println("25 - grammarItemChooser test");
 		System.out.println();
 		System.out.println("SETTINGS");
 		System.out.println("30 - set language to study");
@@ -509,13 +513,43 @@ public class LanguageStudyer {
 			} while (!choice2.equals(""));
 		}
 
+		/////////////////////// EXPERIMENTAL CARD TESTER ///////////////////////
+
+		//perform test
 		if (choice.equals("20")) {
 			CardTester2 cardTester2 = new CardTester2();
 			cardTester2.setCardContainer(cardContainer);
-			cardTester2.performTest();
+			//cardTester2.performTest();
 		}
 
+		//basic statistics
 		if (choice.equals("21")) {
+			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
+			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
+			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
+			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
+			answerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
+			TerminalDictionaryStatisticsShower terminalDictionaryStatisticsShower = new TerminalDictionaryStatisticsShower();
+			terminalDictionaryStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker); 
+			terminalDictionaryStatisticsShower.toScreenDictionaryBasicStatistics();
+			console.readLine();
+		}
+
+		//additional statistics
+		if (choice.equals("22")) {
+			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
+			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+
+			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
+			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();
+			dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
+			dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
+			dictionaryAdditionalStatisticsShower.setDictionaryAnswerDataStatisticsMaker(dictionaryAnswerDataStatisticsMaker);
+			dictionaryAdditionalStatisticsShower.showStatisticsChooser();
+		}
+
+		if (choice.equals("25")) {
 			System.out.print("\033[H\033[2J");
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
 			grammarItemChooser.setGrammarBook(grammarBook);

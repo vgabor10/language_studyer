@@ -585,7 +585,6 @@
 100587	s Gleis	sín
 100588	r Bahnsteig	peron
 100589	r Donnerstag	csütörtök
-100590	s Fernsehen	televízió
 100591	e Richtung	irány
 100592	s Stürmen	vihar
 100593	räumen	kiürít
