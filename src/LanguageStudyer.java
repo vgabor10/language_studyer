@@ -207,12 +207,12 @@ public class LanguageStudyer {
 
 		//basic statistics
 		if (choice.equals("5")) {
-			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
-			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+			AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
+			answerDataContainer2.loadDataFromFile("../data/german_data/answer_data/german_card_tester_2_data.txt");
 
 			AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 			answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
-			answerDataStatisticsMaker.setAnswerDataContainer(exp_answerDataContainer);
+			answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer2);
 			TerminalDictionaryStatisticsShower terminalDictionaryStatisticsShower = new TerminalDictionaryStatisticsShower();
 			terminalDictionaryStatisticsShower.setAnswerDataStatisticsMaker(answerDataStatisticsMaker); 
 			terminalDictionaryStatisticsShower.toScreenDictionaryBasicStatistics();
@@ -222,7 +222,7 @@ public class LanguageStudyer {
 		//additional statistics
 		if (choice.equals("6")) {
 			AnswerDataContainer exp_answerDataContainer = new AnswerDataContainer();
-			exp_answerDataContainer.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+			exp_answerDataContainer.loadDataFromFile("../data/german_data/answer_data/german_card_tester_2_data.txt");
 
 			DictionaryAdditionalStatisticsShower dictionaryAdditionalStatisticsShower = new DictionaryAdditionalStatisticsShower();
 			DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker = new DictionaryAnswerDataStatisticsMaker();

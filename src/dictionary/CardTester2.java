@@ -168,7 +168,7 @@ public class CardTester2 {
 
 		AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest = new AnswerDataByStudyItemsContainer();
 		answerDatasByStudyItemsBeforeTest.loadDataFromAnswerDataContainer(answerDataContainer);
-		testAnswers.appendToAnswerDataFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+		testAnswers.appendToAnswerDataFile("../data/german_data/answer_data/german_card_tester_2_data.txt");
 		answerDataContainer.appendAnswerDataContainer(testAnswers);
 
 		logger.debug("test asnswers:\n" + testAnswers.toString());

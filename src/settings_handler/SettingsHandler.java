@@ -28,10 +28,10 @@ public class SettingsHandler {
 		LanguageData languageData2 = new LanguageData();
 		languageData2.languageIndex = 1;
 		languageData2.languageName = "German";
-		languageData2.answerDataPath = "../data/german_language_data/dictionary_data/german_answer_data_file.txt";
-		languageData2.cardDataPath = "../data/german_language_data/dictionary_data/german_words.txt";
-		languageData2.grammarDataPath = "../data/german_language_data/grammar_book_data/german_grammar_book.tex";
-		languageData2.grammarAnswerDataPath = "../data/german_language_data/grammar_book_data/german_grammar_answer_data_file.txt";
+		languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_1_data.txt";
+		languageData2.cardDataPath = "../data/german_data/language_data/german_words.txt";
+		languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.tex";
+		languageData2.grammarAnswerDataPath = "../data/german_data/answer_data/german_grammar_answer_data.txt";
 
 		languageDatas.add(languageData1);
 		languageDatas.add(languageData2);
