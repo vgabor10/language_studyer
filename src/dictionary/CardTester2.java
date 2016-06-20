@@ -83,7 +83,7 @@ public class CardTester2 {
 		performTest();
 	}
 
-	public Set<String> getAcceptabelAnswers(String definition) {
+	private Set<String> getAcceptabelAnswers(String definition) {
 		Set<String> out = new HashSet<String>();
 
 		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
@@ -103,6 +103,26 @@ public class CardTester2 {
 		return out;
 	}
 
+	private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
+		Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<String, Integer>();
+
+		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
+
+		for (int i=0; i<cardContainer.numberOfCards(); i++) {
+			Card card = cardContainer.getCardByOrder(i);
+
+			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+
+			definitionParts2.retainAll(definitionParts);
+
+			if (definitionParts2.size() != 0) {
+				acceptableAnswersAndCardIndexes.put(card.term, card.index);
+			}
+		}
+
+		return acceptableAnswersAndCardIndexes;
+	}
+
 	private void performTest() { 
 
 		logger.debug("cardsToTestIndexes: " + cardsToTestIndexes.toString());
@@ -117,10 +137,10 @@ public class CardTester2 {
 		for (int i=0; i<cardsToTestIndexes.size(); i++) {
 
 			Card card = cardContainer.getCardByIndex(cardsToTestIndexes.get(i));
-			Set<String> acceptabelAnswers = getAcceptabelAnswers(card.definition);
+			Map<String, Integer> acceptabelAnswersAndCardIndexes = getAcceptabelAnswersAndCardIndexes(card.definition);
 
 			logger.debug("questioned card: " + card.toString());
-			logger.debug("acceptabel answers: " + acceptabelAnswers.toString());
+			logger.debug("acceptabel answers and card indexes: " + acceptabelAnswersAndCardIndexes.toString());
 
 			System.out.print("\033[H\033[2J");
 			System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
@@ -128,15 +148,19 @@ public class CardTester2 {
 			System.out.println(card.definition);
 			String answer = console.readLine();
 
+			logger.debug("answer: " + answer);
+
 			if (answer.equals(card.term)) {	//right answer
 				Date date = new Date();
 				testAnswers.addElement(card.index, true, date.getTime());
+				logger.debug("added answer data: " + card.index + ", true");
 			}
 			else {				//wrong answer
 
-				if (acceptabelAnswers.contains(answer)) {
-					//Date date = new Date();
-					//testAnswers.addElement(-1, true, date.getTime());
+				if (acceptabelAnswersAndCardIndexes.keySet().contains(answer)) {
+					Date date = new Date();
+					testAnswers.addElement(acceptabelAnswersAndCardIndexes.get(answer), true, date.getTime());
+					logger.debug("added answer data: " + acceptabelAnswersAndCardIndexes.get(answer) + ", true");
 					do {
 						System.out.print("\033[H\033[2J");
 						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
@@ -150,6 +174,7 @@ public class CardTester2 {
 				else {
 					Date date = new Date();
 					testAnswers.addElement(card.index, false, date.getTime());
+					logger.debug("added answer data: " + card.index + ", false");
 					do {
 						System.out.print("\033[H\033[2J");
 						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());

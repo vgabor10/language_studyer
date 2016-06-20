@@ -163,7 +163,7 @@ public class LanguageStudyer {
 		//practising
 		if (choice.equals("4")) {
 			AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
-			answerDataContainer2.loadDataFromFile("../data/german_language_data/experimental_card_tester_data/answer_data.txt");
+			answerDataContainer2.loadDataFromFile("../data/german_data/answer_data/german_card_tester_2_data.txt");
 
 			CardTester2 cardTester2 = new CardTester2();
 
