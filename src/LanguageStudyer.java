@@ -598,7 +598,7 @@ public class LanguageStudyer {
 		////////////////////// EXPERIMENTAL FEATURES //////////////////////
 
 		//experimental feature: grammar item chooser
-		if (choice.equals("25")) {
+		if (choice.equals("30")) {
 			System.out.print("\033[H\033[2J");
 			GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
 			grammarItemChooser.setGrammarBook(grammarBook);
@@ -609,12 +609,17 @@ public class LanguageStudyer {
 		////////////////////// SETTINGS //////////////////////
 
 		//set language to study
-		if (choice.equals("30")) {
+		if (choice.equals("40")) {
 			System.out.print("\033[H\033[2J");
 			System.out.println("Which language would you like to study?");
 			System.out.println("0 - english");
 			System.out.println("1 - german");
-			int languageToStudyIndex = Integer.parseInt(console.readLine());
+
+			int languageToStudyIndex = -1;
+
+			try {
+				languageToStudyIndex = Integer.parseInt(console.readLine());
+			} catch (NumberFormatException e) {}
 
 			if (settingsHandler.getLanguageIndexes().contains(languageToStudyIndex)) {
 
@@ -649,7 +654,8 @@ public class LanguageStudyer {
 
 				////////////////////// end loading data //////////////////////
 			}
-			else {
+			
+			if (!settingsHandler.getLanguageIndexes().contains(languageToStudyIndex) && languageToStudyIndex != -1) {
 				System.out.print("\033[H\033[2J");
 				System.out.println("there is no language with given index");
 				console.readLine();
