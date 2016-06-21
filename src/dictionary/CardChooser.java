@@ -245,9 +245,6 @@ public class CardChooser {
 		indexesToAdd = getRandomHardestCardIndex2(100, 10, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 
-		indexesToAdd = getRandomCardIndexes(4, cardsToTestIndexes);
-		cardsToTestIndexes.addAll(indexesToAdd);
-
 		indexesToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
 		cardsToTestIndexes.addAll(indexesToAdd);
 

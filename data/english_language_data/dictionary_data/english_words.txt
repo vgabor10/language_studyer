@@ -990,3 +990,4 @@
 100989	repulsive	taszító, ellenszenves
 100990	conduct	vezényel, lefolytat
 100991	cease	megszüntet, abbahagy
+100992	slaughter	leöl, mészárol

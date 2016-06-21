@@ -4803,7 +4803,7 @@
 104971	log	hazudik (Präterium)	rendhagyó igék
 104972	mied	kerül vkit/vmit (Präterium)	rendhagyó igék
 104973	maß	mér (Präterium)	rendhagyó igék
-104974	musste	kell  (külső kényszer) (Präterium)	rendhagyó igék
+104974	musste	kell (külső kényszer) (Präterium)	rendhagyó igék
 104975	mochte	szeret (Präterium)	rendhagyó igék
 104976	nahm	vesz (Präterium)	rendhagyó igék
 104977	nannte	nevez (Präterium)	rendhagyó igék

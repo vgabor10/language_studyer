@@ -4,7 +4,6 @@ import common.*;
 import settings_handler.*;
 
 import java.util.*;
-import java.util.*;
 import java.io.Console;
 import java.text.DecimalFormat;
 import java.text.DateFormat;
@@ -14,16 +13,15 @@ import java.text.DecimalFormat;
 public class CardTester {
 
 	private Random randomGenerator = new Random();
-	private CardContainer cardsToTest;
+	private CardContainer cardContainer;
 	private AnswerDataContainer answerDataContainer;
-	private	Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
-	private Map<Integer,Integer> testAdvance = new HashMap<Integer,Integer>();
+	private	List<Integer> cardsToTestIndexes = new Vector<Integer>();
 	private CardChooser cardChooser = new CardChooser();
 
 	private Logger logger = new Logger();
 
-	public void setCardsToTest(CardContainer ctt) {
-		cardsToTest = ctt;
+	public void setCardContainer(CardContainer cc) {
+		cardContainer = cc;
 	}
 
 	public void setAnswerDataContainer(AnswerDataContainer ac) {
@@ -32,80 +30,102 @@ public class CardTester {
 
 	//WARNING: use only after setAnswerDataContainer and setCardContainer functions
 	public void setCardChooser() {
-		cardChooser.setCardContainer(cardsToTest);
+		cardChooser.setCardContainer(cardContainer);
 		cardChooser.setAnswerDataContainer(answerDataContainer);
-	}
-
-	public double countProgress(int numberOfCards) {
-		int sum = 0;
-		int num = 0;
-		for (int key : testAdvance.keySet()) {
-			sum = sum + testAdvance.get(key);
-			num++;
-		}
-		return (sum + (numberOfCards - num)*2 )/(double)(2*numberOfCards) * 100.0;
-	}
-
-	public void initialiseTestAnvanceMap() {
-		for (int index : cardsToTestIndexes) {
-			testAdvance.put(index,0);
-		}
 	}
 
 	//20 random cards
 	public void performTest1() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest1();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest1());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//6 latest studyed cards, 6 among hardest cards, 8 random cards
 	public void performTest2() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest2();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest2());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 8 random cards
 	public void performTest3() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest3();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest3());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//10 among the hardest 100, 4 latest studied, 6 random cards
 	public void performTest4() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest4();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest4());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 4 cards with least significant answer rate, 4 random cards
 	public void performTest5() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest5();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest5());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//4 latest studyed cards, 8 among hardest cards, 2 cards among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest6() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest6();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest6());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
 
 	//4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest7() {
-		cardsToTestIndexes = cardChooser.chooseCardsToTestIndexesForTest7();
-		initialiseTestAnvanceMap();
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest7());
+		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
+	}
+
+	private Set<String> getAcceptabelAnswers(String definition) {
+		Set<String> out = new HashSet<String>();
+
+		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
+
+		for (int i=0; i<cardContainer.numberOfCards(); i++) {
+			Card card = cardContainer.getCardByOrder(i);
+
+			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+
+			definitionParts2.retainAll(definitionParts);
+
+			if (definitionParts2.size() != 0) {
+				out.add(card.term);
+			}
+		}
+
+		return out;
+	}
+
+	private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
+		Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<String, Integer>();
+
+		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
+
+		for (int i=0; i<cardContainer.numberOfCards(); i++) {
+			Card card = cardContainer.getCardByOrder(i);
+
+			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+
+			definitionParts2.retainAll(definitionParts);
+
+			if (definitionParts2.size() != 0) {
+				acceptableAnswersAndCardIndexes.put(card.term, card.index);
+			}
+		}
+
+		return acceptableAnswersAndCardIndexes;
 	}
 
 	private void performTest() { 
 
 		logger.debug("cardsToTestIndexes: " + cardsToTestIndexes.toString());
-
-		int numberOfCards = cardsToTestIndexes.size();
 
 		Console console = System.console();
 		DecimalFormat df = new DecimalFormat("#.00");
@@ -114,70 +134,57 @@ public class CardTester {
 
 		AnswerDataContainer testAnswers = new AnswerDataContainer();
 
-		System.out.print("\033[H\033[2J");
-		for (int a : cardsToTestIndexes) {
-			System.out.println(cardsToTest.getCardByIndex(a).toStringReverse());
-		}
+		for (int i=0; i<cardsToTestIndexes.size(); i++) {
 
-		console.readLine();
+			Card card = cardContainer.getCardByIndex(cardsToTestIndexes.get(i));
+			Map<String, Integer> acceptabelAnswersAndCardIndexes = getAcceptabelAnswersAndCardIndexes(card.definition);
 
-		int numberOfCardsLearned = 0;
-		while (cardsToTestIndexes.size() != 0) {
+			logger.debug("questioned card: " + card.toString());
+			logger.debug("acceptabel answers and card indexes: " + acceptabelAnswersAndCardIndexes.toString());
 
 			System.out.print("\033[H\033[2J");
-
-			int r = randomGenerator.nextInt(cardsToTestIndexes.size());
-			int i = 0;
-			int index = 0;
-			for (int a : cardsToTestIndexes) {
-				if (i == r) {
-					index = a;
-				}
-				i++;
-			}
-
-			Card card = cardsToTest.getCardByIndex(index);
-			System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
-			System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
-			System.out.println("----------------------------------------------");
+			System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+			System.out.println("-------------------------------");
 			System.out.println(card.definition);
 			String answer = console.readLine();
+
+			logger.debug("answer: " + answer);
+
 			if (answer.equals(card.term)) {	//right answer
-				//System.out.println("RIGHT");
-
-				if (testAdvance.get(index) == 0) {
-					testAdvance.remove(index);
-					testAdvance.put(index,1);
-				} else
-				if (testAdvance.get(index) == 1) {
-					testAdvance.remove(index);
-					cardsToTestIndexes.remove(index);
-					numberOfCardsLearned++;
-				}
-
 				Date date = new Date();
-				testAnswers.addElement(index, true, date.getTime());
+				testAnswers.addElement(card.index, true, date.getTime());
+				logger.debug("added answer data: " + card.index + ", true");
 			}
 			else {				//wrong answer
-				if (testAdvance.get(index) == 1) {
-					testAdvance.remove(index);
-					testAdvance.put(index,0);
+
+				if (acceptabelAnswersAndCardIndexes.keySet().contains(answer)) {
+					Date date = new Date();
+					testAnswers.addElement(acceptabelAnswersAndCardIndexes.get(answer), true, date.getTime());
+					logger.debug("added answer data: " + acceptabelAnswersAndCardIndexes.get(answer) + ", true");
+					do {
+						System.out.print("\033[H\033[2J");
+						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+						System.out.println("-------------------------------");
+						System.out.println(card.definition);
+						System.out.println("RIGHT, but the following word was tought:");
+						System.out.println(card.term);
+						answer = console.readLine();
+					} while (!answer.equals(card.term));
 				}
-
-				Date date = new Date();
-				testAnswers.addElement(index, false, date.getTime());
-
-				do {
-					System.out.print("\033[H\033[2J");
-					System.out.println("progress: " + df.format(countProgress(numberOfCards)) + "%");
-					System.out.println("number of cards learned: " + Integer.toString(numberOfCardsLearned));
-					System.out.println("----------------------------------------------");
-					System.out.println(card.definition);
-					System.out.println(card.term);
-					answer = console.readLine();
-				} while (!answer.equals(card.term));
+				else {
+					Date date = new Date();
+					testAnswers.addElement(card.index, false, date.getTime());
+					logger.debug("added answer data: " + card.index + ", false");
+					do {
+						System.out.print("\033[H\033[2J");
+						System.out.println((i+1) + "\\" + cardsToTestIndexes.size());
+						System.out.println("-------------------------------");
+						System.out.println(card.definition);
+						System.out.println(card.term);
+						answer = console.readLine();
+					} while (!answer.equals(card.term));
+				}
 			}
-
 		}
 
 		long endTime = System.currentTimeMillis();
@@ -186,9 +193,7 @@ public class CardTester {
 
 		AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest = new AnswerDataByStudyItemsContainer();
 		answerDatasByStudyItemsBeforeTest.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		SettingsHandler settingsHandler = new SettingsHandler();
-		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+		testAnswers.appendToAnswerDataFile("../data/german_data/answer_data/german_card_tester_2_data.txt");
 		answerDataContainer.appendAnswerDataContainer(testAnswers);
 
 		logger.debug("test asnswers:\n" + testAnswers.toString());
@@ -197,7 +202,7 @@ public class CardTester {
 		answerDatasByStudyItemsAfterTest.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
-		cardTestStatisticsMaker.setCardContainer(cardsToTest);
+		cardTestStatisticsMaker.setCardContainer(cardContainer);
 		cardTestStatisticsMaker.setTestAnswers(testAnswers);
 		cardTestStatisticsMaker.setAnswerDatasByStudyItemsBeforeTest(answerDatasByStudyItemsBeforeTest);
 		cardTestStatisticsMaker.setAnswerDatasByStudyItemsAfterTest(answerDatasByStudyItemsAfterTest);
