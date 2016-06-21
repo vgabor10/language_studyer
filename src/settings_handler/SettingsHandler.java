@@ -20,10 +20,10 @@ public class SettingsHandler {
 		LanguageData languageData1 = new LanguageData();
 		languageData1.languageIndex = 0;
 		languageData1.languageName = "English";
-		languageData1.answerDataPath = "../data/english_language_data/dictionary_data/english_answer_data_file.txt";
-		languageData1.cardDataPath = "../data/english_language_data/dictionary_data/english_words.txt";
-		languageData1.grammarDataPath = "../data/english_language_data/grammar_book_data/english_grammar_book.tex";
-		languageData1.grammarAnswerDataPath = "../data/english_language_data/grammar_book_data/english_grammar_answer_data_file.txt";
+		languageData1.answerDataPath = "../data/english_data/answer_data/english_card_tester_data.txt";
+		languageData1.cardDataPath = "../data/english_data/language_data/english_words.txt";
+		languageData1.grammarDataPath = "../data/english_data/language_book_data/english_grammar_book.tex";
+		languageData1.grammarAnswerDataPath = "../data/english_data/answer_book_data/english_grammar_answer_data.txt";
 
 		LanguageData languageData2 = new LanguageData();
 		languageData2.languageIndex = 1;

@@ -513,6 +513,8 @@ public class LanguageStudyer {
 		//set language to study
 		if (choice.equals("40")) {
 			System.out.print("\033[H\033[2J");
+			System.out.println(settingsHandler.getStudiedLanguageName() + " language is studied");
+			System.out.println();
 			System.out.println("Which language would you like to study?");
 			System.out.println("0 - english");
 			System.out.println("1 - german");
