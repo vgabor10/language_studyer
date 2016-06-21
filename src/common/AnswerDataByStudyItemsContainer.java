@@ -81,7 +81,7 @@ public class AnswerDataByStudyItemsContainer {
 		return data.get(index);
 	}
 
-	public double getAverageAnswerRateOfStudyItems() {
+	public double getAverageAnswerRateOfStudyItems() {	//TODO: take to an other clas
 		double sum = 0;
 		for (int index : data.keySet()) {
 			sum = sum + data.get(index).countRightAnswerRate();
@@ -89,7 +89,7 @@ public class AnswerDataByStudyItemsContainer {
 		return sum / (double)numberOfStudyItems();
 	}
 
-	public int numberOfStudyItems() {
+	public int numberOfStudyItems() {	//TODO: rename: numberOfStudiedStudyItems()
 		return data.size();
 	}
 

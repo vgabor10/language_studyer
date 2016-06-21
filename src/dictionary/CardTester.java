@@ -28,14 +28,11 @@ public class CardTester {
 		answerDataContainer = ac;
 	}
 
-	//WARNING: use only after setAnswerDataContainer and setCardContainer functions
-	public void setCardChooser() {
-		cardChooser.setCardContainer(cardContainer);
-		cardChooser.setAnswerDataContainer(answerDataContainer);
-	}
-
 	//20 random cards
 	public void performTest1() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest1());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -43,6 +40,9 @@ public class CardTester {
 
 	//6 latest studyed cards, 6 among hardest cards, 8 random cards
 	public void performTest2() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest2());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -50,6 +50,9 @@ public class CardTester {
 
 	//4 latest studyed cards, 8 among hardest cards, 8 random cards
 	public void performTest3() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest3());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -57,6 +60,9 @@ public class CardTester {
 
 	//10 among the hardest 100, 4 latest studied, 6 random cards
 	public void performTest4() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest4());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -64,6 +70,9 @@ public class CardTester {
 
 	//4 latest studyed cards, 8 among hardest cards, 4 cards with least significant answer rate, 4 random cards
 	public void performTest5() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest5());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -71,6 +80,9 @@ public class CardTester {
 
 	//4 latest studyed cards, 8 among hardest cards, 2 cards among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest6() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest6());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
@@ -78,6 +90,68 @@ public class CardTester {
 
 	//4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest7() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
+
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest7());
+		java.util.Collections.shuffle(cardsToTestIndexes);
+		performTest();
+	}
+
+	public Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
+		Set<Integer> cardIndexes = new HashSet<Integer>();
+
+		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+
+		for (int index : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
+
+			AnswerDataByStudyItem answerDataByStudyItem 
+				= answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index);
+
+			if (0.5 <= answerDataByStudyItem.countRightAnswerRate()) {
+				cardIndexes.add(answerDataByStudyItem.getStudyItemIndex());
+			}
+		}
+
+		int plusNumberOfCardsAdded = 0;
+		int i=0;
+		while(i<cardContainer.numberOfCards() && plusNumberOfCardsAdded<100) {
+			Card card = cardContainer.getCardByOrder(i);
+			if (!cardIndexes.contains(card.index)) {
+				cardIndexes.add(card.index);
+				plusNumberOfCardsAdded++;
+			}
+			i++;
+		}
+
+		return cardIndexes;
+	}
+
+	public void performTest8() {
+
+		Set<Integer> cardIndexes = getCardIndexesWithMinAnswerRateAndPlusSome(0.5, 100);
+
+		logger.debug("performTest8: number of card indexes for choice: " + cardIndexes.size());
+
+		AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
+		CardContainer cardContainer2 = new CardContainer();
+
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			if (cardIndexes.contains(answerDataContainer.getAnswerData(i).index)) {
+				answerDataContainer2.addAnswerData(answerDataContainer.getAnswerData(i));
+			}
+		}
+
+		for (int i=0; i<cardContainer.numberOfCards(); i++) {
+			if (cardIndexes.contains(cardContainer.getCardByOrder(i).index)) {
+				cardContainer2.addCard(cardContainer.getCardByOrder(i));
+			}
+		}
+
+		cardChooser.setCardContainer(cardContainer2);
+		cardChooser.setAnswerDataContainer(answerDataContainer2);
+
 		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest7());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();

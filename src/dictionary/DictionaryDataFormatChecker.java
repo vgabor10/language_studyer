@@ -51,7 +51,7 @@ public class DictionaryDataFormatChecker {
 		}
 	}
 
-	public boolean isAnswerDataOrderebByDate() {
+	public boolean isAnswerDataOrderedByDate() {
 		int i=0;
 		while (i<answerDataContainer.numberOfAnswers()-1
 			&& answerDataContainer.getAnswerData(i).date < answerDataContainer.getAnswerData(i+1).date) {

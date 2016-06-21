@@ -92,7 +92,6 @@ public class LanguageStudyer {
 
 			cardTester.setCardContainer(testedCardGroupHandler.cardsToTest);
 			cardTester.setAnswerDataContainer(answerDataContainer);
-			cardTester.setCardChooser();
 
 			System.out.print("\033[H\033[2J");
 			System.out.println("practising with:");
@@ -103,6 +102,8 @@ public class LanguageStudyer {
 			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
 			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
 			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
+			System.out.println("8 - experimantal way of choosing cards");
+
 
 			String c = console.readLine();
 			if (c.equals("1")) {
@@ -125,6 +126,9 @@ public class LanguageStudyer {
 			}
 			if (c.equals("7")) {
 				cardTester.performTest7();
+			}
+			if (c.equals("8")) {
+				cardTester.performTest8();
 			}
 		}
 
@@ -581,7 +585,7 @@ public class LanguageStudyer {
 			System.out.print("\033[H\033[2J");
 			System.out.println("0 - number of answers with invalid index");
 			System.out.println("1 - check about cards with same index");
-			System.out.println("2 - check wehter dictionary answer data is ordereb by date");
+			System.out.println("2 - check wehter dictionary answer data is ordered by date");
 
 			choice2 = console.readLine();
 
@@ -599,7 +603,7 @@ public class LanguageStudyer {
 
 			if (choice2.equals("2")) {
 				System.out.print("\033[H\033[2J");
-				if (dictionaryDataFormatChecker.isAnswerDataOrderebByDate()) {
+				if (dictionaryDataFormatChecker.isAnswerDataOrderedByDate()) {
 					System.out.println("fortunately dictionary answer data is ordered by date");
 				}
 				else {
