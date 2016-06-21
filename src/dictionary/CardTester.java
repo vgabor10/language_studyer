@@ -193,7 +193,10 @@ public class CardTester {
 
 		AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest = new AnswerDataByStudyItemsContainer();
 		answerDatasByStudyItemsBeforeTest.loadDataFromAnswerDataContainer(answerDataContainer);
-		testAnswers.appendToAnswerDataFile("../data/german_data/answer_data/german_card_tester_data.txt");
+
+		SettingsHandler settingsHandler = new SettingsHandler();
+		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageAnswerDataPath());
+
 		answerDataContainer.appendAnswerDataContainer(testAnswers);
 
 		logger.debug("test asnswers:\n" + testAnswers.toString());

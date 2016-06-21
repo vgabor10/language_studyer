@@ -77,8 +77,9 @@ public class LanguageStudyer {
 		System.out.println("EXPERIMENTAL FEAUTURES");
 		System.out.println("30 - grammarItemChooser test");
 		System.out.println();
-		System.out.println("SETTINGS");
+		System.out.println("SETTINGS AND MAITENANCE");
 		System.out.println("40 - set language to study");
+		System.out.println("41 - check dictionary data format");
 		System.out.println();
 		System.out.println("x - quit");
 		choice = console.readLine();
@@ -315,8 +316,6 @@ public class LanguageStudyer {
 			System.out.print("\033[H\033[2J");
 			System.out.println("1 - merge cards with same data");
 			System.out.println("2 - remove card by index");
-			System.out.println("3 - number of answers with invalid index");
-			System.out.println("4 - check about cards with same index");
 
 			choice2 = console.readLine();
 
@@ -346,24 +345,6 @@ public class LanguageStudyer {
 				} catch (NumberFormatException e) {
 					System.out.println("given value is not an integer");
 				}
-				console.readLine();
-			}
-
-			if (choice2.equals("3")) {
-				System.out.print("\033[H\033[2J");
-				DictionaryDataFormatChecker dictionaryDataFormatChecker = new DictionaryDataFormatChecker();
-				dictionaryDataFormatChecker.setCardContainer(cardContainer);
-				dictionaryDataFormatChecker.setAnswerDataContainer(answerDataContainer);
-				dictionaryDataFormatChecker.toScreenNumberOfAnswersWithInvalidIndex();
-				console.readLine();
-			}
-
-			if (choice2.equals("4")) {
-				System.out.print("\033[H\033[2J");
-				DictionaryDataFormatChecker dictionaryDataFormatChecker = new DictionaryDataFormatChecker();
-				dictionaryDataFormatChecker.setCardContainer(cardContainer);
-				dictionaryDataFormatChecker.setAnswerDataContainer(answerDataContainer);
-				dictionaryDataFormatChecker.toScreenIfThereAreCardsWithSameIndex();
 				console.readLine();
 			}
 
@@ -581,6 +562,51 @@ public class LanguageStudyer {
 				System.out.println("there is no language with given index");
 				console.readLine();
 			}
+		}
+
+
+		//check dictionary data format
+		if (choice.equals("41")) {
+
+			DictionaryDataFormatChecker dictionaryDataFormatChecker = new DictionaryDataFormatChecker();
+			dictionaryDataFormatChecker.setCardContainer(cardContainer);
+			dictionaryDataFormatChecker.setAnswerDataContainer(answerDataContainer);
+
+			String choice2;
+
+			do {
+
+			System.out.print("\033[H\033[2J");
+			System.out.println("0 - number of answers with invalid index");
+			System.out.println("1 - check about cards with same index");
+			System.out.println("2 - check wehter dictionary answer data is ordereb by date");
+
+			choice2 = console.readLine();
+
+			if (choice2.equals("0")) {
+				System.out.print("\033[H\033[2J");
+				dictionaryDataFormatChecker.toScreenNumberOfAnswersWithInvalidIndex();
+				console.readLine();
+			}
+
+			if (choice2.equals("1")) {
+				System.out.print("\033[H\033[2J");
+				dictionaryDataFormatChecker.toScreenIfThereAreCardsWithSameIndex();
+				console.readLine();
+			}
+
+			if (choice2.equals("2")) {
+				System.out.print("\033[H\033[2J");
+				if (dictionaryDataFormatChecker.isAnswerDataOrderebByDate()) {
+					System.out.println("fortunately dictionary answer data is ordered by date");
+				}
+				else {
+					System.out.println("dictionary answer data is NOT ordered by date");
+				}
+				console.readLine();
+			}
+
+			} while (!choice2.equals(""));
 		}
 
 		if (choice.equals("x")) {

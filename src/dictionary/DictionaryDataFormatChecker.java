@@ -51,4 +51,19 @@ public class DictionaryDataFormatChecker {
 		}
 	}
 
+	public boolean isAnswerDataOrderebByDate() {
+		int i=0;
+		while (i<answerDataContainer.numberOfAnswers()-1
+			&& answerDataContainer.getAnswerData(i).date < answerDataContainer.getAnswerData(i+1).date) {
+			i++;
+		}
+
+		if (i == answerDataContainer.numberOfAnswers()-1) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 }
