@@ -61,11 +61,11 @@ public class LanguageStudyer {
 		System.out.println("3 - set card groups to test");
 		System.out.println();
 		System.out.println("DICTIONARY");
-		System.out.println("7 - find cards according to term part");
-		System.out.println("8 - find cards according to definition part");
-		System.out.println("9 - add card");
-		System.out.println("10 - additional ways to find cards");
-		System.out.println("11 - additional ways to modificate cards");
+		System.out.println("4 - find cards according to term part");
+		System.out.println("5 - find cards according to definition part");
+		System.out.println("6 - add card");
+		System.out.println("7 - additional ways to find cards");
+		System.out.println("8 - additional ways to modificate cards");
 		System.out.println();
 		System.out.println("GRAMMAR BOOK");
 		System.out.println("20 - practicing");
@@ -156,7 +156,7 @@ public class LanguageStudyer {
 		////////////////////// DICTIONARY //////////////////////
 
 		//find card according to term part
-		if (choice.equals("7")) {
+		if (choice.equals("4")) {
 
 			CardFinder cardFinder = new CardFinder();
 			cardFinder.setCardContainer(cardContainer);
@@ -175,7 +175,7 @@ public class LanguageStudyer {
 		}
 
 		// find card according to definition part
-		if (choice.equals("8")) {
+		if (choice.equals("5")) {
 
 			CardFinder cardFinder = new CardFinder();
 			cardFinder.setCardContainer(cardContainer);
@@ -194,7 +194,7 @@ public class LanguageStudyer {
 		}
 
 		//add card
-		if (choice.equals("9")) {
+		if (choice.equals("6")) {
 
 			String in = "";
 
@@ -247,7 +247,7 @@ public class LanguageStudyer {
 		}
 
 		//additional ways to find cards
-		if (choice.equals("10")) {
+		if (choice.equals("7")) {
 
 			String choice2;
 
@@ -301,7 +301,7 @@ public class LanguageStudyer {
 		}
 
 		//additional ways to modificate cards
-		if (choice.equals("11")) {
+		if (choice.equals("8")) {
 
 			String choice2;
 
