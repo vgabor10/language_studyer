@@ -1,14 +1,11 @@
 Modification ideas in src:
-- at testing cards consequtive questions should not be the same card
 - give log file path relatively
 - implement TabularShower class in common package
 - create average answer rates by days statistics
 - consider study vocabulary with sentences
 - delete grammar item feature
 - delete examples in grammar item feature
+- make study strategy editor
 
 german grammar items to add:
 - többesszámok
-
-thinks:
-- problem: at testing cards the values of right answers is not the same

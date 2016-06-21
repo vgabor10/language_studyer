@@ -16,7 +16,7 @@
 100015	e Strassenbahn	villamos
 100016	oft	gyakran, gyakori
 100017	richtig	helyes
-100018	r Schüler	tanuló
+100018	r Schüler	tanuló, diák
 100019	viel	sok
 100020	schrecklich	borzasztó
 100021	r Stuhl	szék
@@ -4476,7 +4476,7 @@
 104518	veröffentlichen	publikál, közzétesz
 104519	vorherrschen	túlsúlyban van, uralkodik
 104520	ansehen	ránéz, megnéz
-104521	sorgen	aggodik, gondoskodik
+104521	sorgen	aggódik, gondoskodik
 104522	antreten	elindul, megkezd
 104523	unternehmen	vállal, vállalkozik
 104524	e Chefin	főnöknő
@@ -4592,7 +4592,7 @@
 104634	r Sieger	győztes, bajnok
 104635	r Tisch	asztal
 104636	nähern	közelít
-104637	dementsprechend	eszerint, ennek megfelelően
+104637	dementsprechend	eszerint, megfelelően
 104638	e Absicht	szándék
 104639	dynamisch	dinamikus
 104640	e Anforderung	követelmény, igény
@@ -5037,3 +5037,4 @@
 101934	e Güter	árucikkek (többesszám)
 101999	e Einkünfte	kereset, jövedelem
 102072	Sport treiben	sportol	kifejezések
+100199	ausnehmen	kivesz, kiszed
