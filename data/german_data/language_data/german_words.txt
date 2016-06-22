@@ -52,7 +52,7 @@
 100051	faul	lusta
 100052	klein	kicsi
 100053	müde	fáradt
-100054	frei	szabad
+100054	frei	szabad (mn)
 100055	r Bus	busz
 100056	eben	éppen, épp most
 100057	deswegen	ezért
@@ -69,7 +69,7 @@
 100068	r Arzt	orvos
 100069	reich	gazdag
 100070	r Soldat	katona
-100071	wieder	megint, ismét
+100071	wieder	megint, újra, ismét
 100072	e Luft	levegő
 100073	hoffen	remél
 100074	r Weg	út
@@ -278,7 +278,6 @@
 100278	e Veränderung	változás
 100279	erheblich	jelentős
 100280	beeinflussen	befolyásol
-100281	e Maß	mérték
 100282	s Kennzeichen	ismertetőjel, rendszám
 100283	fast	majdnem
 100284	r Übergang	átkelés, átalakulás
@@ -312,7 +311,7 @@
 100312	letztlich	végül
 100313	stürzen	zuhan, elesik
 100314	endgültig	végérvényes
-100315	immer deutlicher	egyre nyílvánvalóbb
+100315	immer deutlicher	egyre nyílvánvalóbb	kifejezések
 100316	r Krieg	háború
 100317	s Reich	birodalom
 100318	r Teil	rész
@@ -343,7 +342,7 @@
 100343	s Abgeordnetenhaus	képviselőház
 100344	e Klasse	osztály
 100345	s Wahlrecht	választójog
-100346	zu spät	túl későn
+100346	zu spät	túl későn	kifejezések
 100347	freilich	tényleg
 100348	auslaufen	kifut
 100349	e Flotte	flotta
@@ -3622,7 +3621,7 @@
 103657	zwingen	kényszerít	rendhagyó igék
 103658	wer	ki, aki
 103659	zucken	von, rángatózik
-103660	bewegen	indít, vmire motivál	rendhagyó igék
+103660	bewegen	indít, motivál	rendhagyó igék
 103661	r Umsatz	forgalom (kereskedelemben) 
 103662	r Offizier	tiszt, tisztségviselő
 103663	westlich	nyugati
@@ -4428,7 +4427,7 @@
 104470	spannen	kifeszít, megfeszít
 104471	mehr	több
 104472	s Volk	nép
-104473	zukünftig	jövő, jövőbeli (mn)
+104473	zukünftig	jövő, jövőbeli
 104474	weitermachen	folytat
 104475	r Student	diák
 104476	umfassen	tartalmaz, magába foglal
@@ -4739,7 +4738,7 @@
 104905	bekam	kap (Präterium)	rendhagyó igék
 104906	verbarg	elrejt, kiment (Präterium)	rendhagyó igék
 104907	betrog	becsap (Präterium)	rendhagyó igék
-104908	bewog	indít vmire, motivál (Präterium)	rendhagyó igék
+104908	bewog	indít, motivál (Präterium)	rendhagyó igék
 104909	bog	hajlít (Präterium)	rendhagyó igék
 104910	bot	nyújt, kínál (Präterium)	rendhagyó igék
 104911	band	köt, megköt (Präterium)	rendhagyó igék
@@ -4874,7 +4873,7 @@
 105044	h. bekommen	kap (Perfekt)	rendhagyó igék
 105045	h. verborgen	elrejt, kiment (Perfekt)	rendhagyó igék
 105046	h. betrogen	becsap (Perfekt)	rendhagyó igék
-105047	h. bewogen	indít vmire, motivál (Perfekt)	rendhagyó igék
+105047	h. bewogen	indít, motivál (Perfekt)	rendhagyó igék
 105048	h. gebogen	hajlít (Perfekt)	rendhagyó igék
 105049	h. geboten	nyújt, kínál (Perfekt)	rendhagyó igék
 105050	h. gebunden	köt, megköt (Perfekt)	rendhagyó igék
@@ -5038,3 +5037,4 @@
 101999	e Einkünfte	kereset, jövedelem
 102072	Sport treiben	sportol	kifejezések
 100199	ausnehmen	kivesz, kiszed
+100281	und	és
