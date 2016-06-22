@@ -71,7 +71,7 @@ public class TerminalGrammarStatisticsShower {
 	}
 
 	public void toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {	//TODO: code repetition with TerminalGrammarStatisticsShower
-		Vector<Integer> numberOfAnswersGivenLastDays = grammarAnswerDataStatisticsMaker.toScreenNumberOfAnswersGivenLastDays(10);
+		Vector<Integer> numberOfAnswersGivenLastDays = grammarAnswerDataStatisticsMaker.getNumberOfAnswersGivenLastDays(10);
 		DecimalFormat df = new DecimalFormat("#.00");
 
 		Date date = new Date();

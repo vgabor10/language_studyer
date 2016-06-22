@@ -33,6 +33,10 @@ public class AdditionalStatisticsShower {
 			indexAndStatisticsMethods.add(method);
 			indexAndStatisticsCaption.add("histogram of study items by number of answers considered low categoris");
 
+			method = AdditionalStatisticsShower.class.getDeclaredMethod("toScreenNumberOfIndividualStudyItemsQuestionedByDays");
+			indexAndStatisticsMethods.add(method);
+			indexAndStatisticsCaption.add("number of individual study items questioned by days");
+
 			method = AdditionalStatisticsShower.class.getDeclaredMethod("toFileHistogramOfStudyItemAnswerRatesByDays");
 			indexAndStatisticsMethods.add(method);
 			indexAndStatisticsCaption.add("to file histogram of study items answers rates by days");
@@ -81,6 +85,17 @@ public class AdditionalStatisticsShower {
 	public void toScreenPractisingTimeByDays() {
 		System.out.print("\033[H\033[2J");
 		answerDataStatisticsMaker.toScreenPractisingTimeByDays();
+		console.readLine();
+	}
+
+	public void toScreenNumberOfIndividualStudyItemsQuestionedByDays() {
+		System.out.print("\033[H\033[2J");
+		Map<Integer,Integer> data = answerDataStatisticsMaker.numberOfIndividualStudyItemsQuestionedByDays();
+
+		for (int day : data.keySet()) {
+			System.out.println(day + "\t" + data.get(day));
+		}
+
 		console.readLine();
 	}
 

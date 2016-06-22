@@ -318,14 +318,75 @@ public class AnswerDataStatisticsMaker {
 		return studyingDays.size();
 	}
 
-	public Vector<Integer> toScreenNumberOfAnswersGivenLastDays(int numberOfDays) {
+	public Map<Integer,Integer> getNumberOfAnswersByDays() {
+		Map<Integer, Integer> out = new HashMap<Integer, Integer>();
+
+		GeneralFunctions generalFunctions = new GeneralFunctions();
+
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			int answerDataDay
+				= generalFunctions.milisecToDay(answerDataContainer.getAnswerData(i).date);
+
+			if (out.keySet().contains(answerDataDay)) {
+				int numberOfAnswersAtDay = out.get(answerDataDay);
+				out.remove(answerDataDay);
+				numberOfAnswersAtDay++;
+				out.put(answerDataDay,numberOfAnswersAtDay);
+			}
+			else {
+				out.put(answerDataDay,1);
+			}
+		}
+
+		return out;
+	}
+
+	public Vector<Integer> getNumberOfAnswersGivenLastDays(int numberOfDays) {
+
+		Vector<Integer> out = new Vector<Integer>();
+		Map<Integer, Integer> numberOfAnswersByDays = getNumberOfAnswersByDays();
+
 		Date date = new Date();
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 		int today = generalFunctions.milisecToDay(date.getTime());
 
-		Vector<Integer> out = new Vector<Integer>();
 		for (int i=0; i<numberOfDays; i++) {
-			out.add(numberOfAnswersAtDay(today-i));
+			if (numberOfAnswersByDays.keySet().contains(today-i)) {
+				out.add(numberOfAnswersByDays.get(today-i));
+			}
+			else {
+				out.add(0);
+			}
+		}
+
+		return out;
+	}
+
+	public Map<Integer,Integer> numberOfIndividualStudyItemsQuestionedByDays() {
+		Map<Integer, Set<Integer>> data = new HashMap<Integer, Set<Integer>>();
+
+		GeneralFunctions generalFunctions = new GeneralFunctions();
+
+		Set<Integer> questionedStudyItemIndexesAtDay = new HashSet<Integer>();
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			AnswerData answerData = answerDataContainer.getAnswerData(i);
+
+			int answerDataDay
+				= generalFunctions.milisecToDay(answerData.date);
+
+			if (data.keySet().contains(answerDataDay)) {
+				data.get(answerDataDay).add(answerData.index);
+			}
+			else {
+				Set<Integer> set = new HashSet<Integer>();
+				set.add(answerData.index);
+				data.put(answerDataDay,set);
+			}
+		}
+
+		Map<Integer, Integer> out = new HashMap<Integer, Integer>();
+		for (int day : data.keySet()) {
+			out.put(day, data.get(day).size());
 		}
 
 		return out;
@@ -428,7 +489,6 @@ public class AnswerDataStatisticsMaker {
 			System.err.println("IOException: " + ioe.getMessage());
 		}
 	}
-
 
 	public double averageAnswerRateOfStudyItems() {
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
