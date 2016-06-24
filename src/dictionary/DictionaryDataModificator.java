@@ -12,7 +12,7 @@ public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
-	private SettingsHandler settingsHandler;
+	private SettingsHandler settingsHandler = new SettingsHandler();
 
 	private Logger logger = new Logger();
 
@@ -22,10 +22,6 @@ public class DictionaryDataModificator {
 
 	public void setAnswerDataContainer(AnswerDataContainer ac) {
 		answerDataContainer = ac;
-	}
-
-	public void setSettingsHandler(SettingsHandler sh) {
-		settingsHandler = sh;
 	}
 
 	public void removeCardWithAnswersByCardIndex(int cardIndex) {
@@ -62,6 +58,20 @@ public class DictionaryDataModificator {
 
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+				fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+			}
+			fw.close();
+		}
+		catch(IOException ioe) {
+			System.err.println("IOException: " + ioe.getMessage());
+		}
+	}
+
+	public void appendToStudiedLanguageCardData(AnswerDataContainer answerDataContainer) {
+		try {
+			//the true will append the new data
+			FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageAnswerDataPath(),true);
 			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 				fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
 			}

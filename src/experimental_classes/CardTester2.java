@@ -2,38 +2,128 @@ package experimental_classes;
 
 import dictionary.*;
 import common.*;
+import experimental_classes.*;
 
 import java.util.*;
-import java.io.*;
-import java.text.SimpleDateFormat;
+import java.io.Console;
+import java.text.DecimalFormat;
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.text.DecimalFormat;
 
 public class CardTester2 {
 
-	private Random randomGenerator = new Random();
-	private CardContainer cardContainer;
-	private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+	private CardContainer allCard;	//TODO: rename
+	private CardContainer cardsToTest;
+	private int numberOfCardsQuestioned;
+	private AnswerDataContainer userAnswers = new AnswerDataContainer();
+	private Card actualQuestion;	//TODO: rename actualQuestionedCard
+	private String userAnswerToActualQuestion; 
+	private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
+	private boolean isGetAnswerToActualQuestion = false;
 
 	private Logger logger = new Logger();
 
-	public void setCardContainer(CardContainer cc) {
-		cardContainer = cc;
+	public CardTester2() {
+		numberOfCardsQuestioned = 0;
 	}
 
-	public Card getRandomCard() {
-		int orderIndex = randomGenerator.nextInt(cardContainer.numberOfCards());
-			
-		return cardContainer.getCardByOrder(orderIndex);
+	public void setAllCard(CardContainer cc) {
+		allCard = cc;
 	}
 
-	public Set<String> getAcceptabelAnswers(String definition) {
+	public void setCardsToTest(CardContainer cc) {
+		cardsToTest = cc;
+	}
+
+	public void moveToNextCardToQuestion() {
+		actualQuestion = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
+		numberOfCardsQuestioned++;
+
+		userAnswerToActualQuestion = "";
+		isGetAnswerToActualQuestion = false;
+
+		logger.debug("questioned card: " + actualQuestion.toString());
+
+		acceptabelAnswersAndCardIndexesForActualQuestion =
+			getAcceptabelAnswersAndCardIndexes(actualQuestion.definition);
+
+		logger.debug("acceptabel answers and card indexes: " + acceptabelAnswersAndCardIndexesForActualQuestion.toString());
+	}
+
+	public Card getActualQuestionedCard() {
+		return actualQuestion;
+	}
+
+	public void setUserAnswer(String answer) {
+		userAnswerToActualQuestion = answer;
+
+		isGetAnswerToActualQuestion = true;
+
+		logger.debug("user answer: " + answer);
+
+		if (answer.equals(actualQuestion.term)) {
+			Date date = new Date();
+			userAnswers.addElement(actualQuestion.index, true, date.getTime());
+			logger.debug("added answer data: " + actualQuestion.index + ", true");
+		}
+		else {
+
+			if (acceptabelAnswersAndCardIndexesForActualQuestion.keySet().contains(answer)) {
+				Date date = new Date();
+				userAnswers.addElement(acceptabelAnswersAndCardIndexesForActualQuestion.get(answer), true, date.getTime());
+
+				logger.debug("added answer data: " + acceptabelAnswersAndCardIndexesForActualQuestion.get(answer) + ", true");
+			}
+			else {
+				Date date = new Date();
+				userAnswers.addElement(actualQuestion.index, false, date.getTime());
+
+				logger.debug("added answer data: " + actualQuestion.index + ", false");
+			}
+		}
+
+	}
+
+	public boolean isGetAnswerToActualQuestion() {
+		return isGetAnswerToActualQuestion;
+	}
+
+	public String getUserActualAnswer() {
+		return userAnswerToActualQuestion;
+	}
+
+	public String getStandardAnswerToLastQuestion() {
+		return actualQuestion.term;
+	}
+
+	public boolean isUserAnswerRight() {
+		return acceptabelAnswersAndCardIndexesForActualQuestion.containsKey(userAnswerToActualQuestion);
+	}
+
+	public boolean isMoreCardToTest() {
+		return numberOfCardsQuestioned != cardsToTest.numberOfCards();
+	}
+
+	public AnswerDataContainer getUserAnswers() {
+		return userAnswers;
+	}
+
+	public int getNumberOfQuestions() {
+		return cardsToTest.numberOfCards();
+	}
+
+	public int numberOfCardsQuestioned() {
+		return numberOfCardsQuestioned;
+	}
+
+	private Set<String> getAcceptabelAnswers(String definition) {
 		Set<String> out = new HashSet<String>();
 
 		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
 
-		for (int i=0; i<cardContainer.numberOfCards(); i++) {
-			Card card = cardContainer.getCardByOrder(i);
+		for (int i=0; i<allCard.numberOfCards(); i++) {
+			Card card = allCard.getCardByOrder(i);
 
 			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
 
@@ -47,74 +137,24 @@ public class CardTester2 {
 		return out;
 	}
 
-	public void performTest() {
-		Console console = System.console();
-		String answer = "aaa";
+	private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
+		Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<String, Integer>();
 
-		long startTime = System.currentTimeMillis();
+		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
 
-		do {
+		for (int i=0; i<allCard.numberOfCards(); i++) {
+			Card card = allCard.getCardByOrder(i);
 
-			System.out.print("\033[H\033[2J");
+			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
 
-			Card card = getRandomCard();
-			Set<String> acceptabelAnswers = getAcceptabelAnswers(card.definition);
+			definitionParts2.retainAll(definitionParts);
 
-			logger.debug("questioned card: " + card.toString());
-			logger.debug("acceptabel answers: " + acceptabelAnswers.toString());
-
-			System.out.println(card.definition);
-			answer = console.readLine();
-
-			if (!answer.equals("x")) {
-
-				if (answer.equals(card.term)) {	//right answer
-					Date date = new Date();
-					answerDataContainer.addElement(card.index, true, date.getTime());
-				}
-				else {				//wrong answer
-
-					if (acceptabelAnswers.contains(answer)) {
-						Date date = new Date();
-						answerDataContainer.addElement(-1, true, date.getTime());
-						do {
-							System.out.print("\033[H\033[2J");
-							System.out.println(card.definition);
-							System.out.println("RIGHT, but I tought the following word:");
-							System.out.println(card.term);
-							answer = console.readLine();
-						} while (!answer.equals(card.term));
-					}
-					else {
-						Date date = new Date();
-						answerDataContainer.addElement(card.index, false, date.getTime());
-						do {
-							System.out.print("\033[H\033[2J");
-							System.out.println(card.definition);
-							System.out.println(card.term);
-							answer = console.readLine();
-						} while (!answer.equals(card.term));
-					}
-				}
+			if (definitionParts2.size() != 0) {
+				acceptableAnswersAndCardIndexes.put(card.term, card.index);
 			}
 		}
-		while (!answer.equals("x"));
 
-		long endTime = System.currentTimeMillis();
-
-		System.out.print("\033[H\033[2J");
-
-		Date date = new Date(endTime - startTime);
-		DateFormat formatter = new SimpleDateFormat("mm:ss");
-		String dateFormatted = formatter.format(date);
-
-		System.out.println("number of answers: " + answerDataContainer.numberOfAnswers());
-
-		DecimalFormat df = new DecimalFormat("#.000");
-		System.out.println("percentage of right answers: " + df.format(answerDataContainer.percentageOfRightAnswers()) + "%");
-		System.out.println("used time: " + dateFormatted);
-
-		console.readLine();
+		return acceptableAnswersAndCardIndexes;
 	}
 
 }

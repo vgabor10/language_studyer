@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 
 public class SettingsHandler {
 
-	private int studyedLanguageIndex = 0;
+	private int studyedLanguageIndex = 1;
 	public String settingsDataFilePath = "../data/settings_data/settings_data_file.txt";
 
 	private Vector<LanguageData> languageDatas = new Vector<LanguageData>();
