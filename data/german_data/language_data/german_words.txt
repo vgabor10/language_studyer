@@ -1,6 +1,6 @@
 100000	s Wort	szó
-100001	reden	beszélni
-100002	antworten	felelni
+100001	reden	beszél
+100002	antworten	felel, válaszol
 100003	baden	fürdik
 100004	binden	köt, megköt	rendhagyó igék
 100005	stellen	állít
@@ -35,7 +35,7 @@
 100034	r Kuchen	sütemény
 100035	s Kleid	ruha
 100036	wenig	kevés
-100037	Platz nehmen	helyet foglal
+100037	Platz nehmen	helyet foglal	kifejezések
 100038	s Brot	kenyér
 100039	nie	soha
 100040	s Lied	dal
@@ -61,7 +61,7 @@
 100060	e Wand	fal
 100061	s Fieber	láz
 100062	e Idee	ötlet
-100063	Angst haben	fél (ig)
+100063	Angst haben	fél (ig)	kifejezések
 100064	hungrig	éhes
 100065	durstig	szomjas
 100066	böse	gonosz
@@ -418,7 +418,7 @@
 100420	e Begründung	indoklás
 100421	e Spitze	csúcs
 100422	bekommen	kap	rendhagyó igék
-100423	Frankreich	Franciaország
+100423	Frankreich	Franciaország	országok
 100424	e Währung	valuta
 100425	erwachen	felébred
 100426	erwarten	vár, elvár
@@ -1112,7 +1112,7 @@
 101121	r Regen	eső
 101122	r Mund	száj
 101123	bedeutend	jelentős
-101124	unter anderem	többek között
+101124	unter anderem	többek között	kifejezések
 101125	üblich	szokásos
 101126	erben	örököl
 101127	r Ritter	lovag
@@ -1259,8 +1259,8 @@
 101268	rentabel	kifizetődő
 101269	stattfinden	megtörténik
 101270	e Not	baj, szükség
-101271	Ungarn	Magyarország
-101272	Italien	Olaszország
+101271	Ungarn	Magyarország	országok
+101272	Italien	Olaszország	országok
 101273	e Meisterschaft	bajnokság
 101274	feiern	ünnepel
 101275	registrieren	regsztrál
@@ -3363,7 +3363,7 @@
 103397	r Dezember	december
 103398	konventionell	hagyományos
 103399	israelisch	israeli (mn)
-103400	bemerken	megjegyez, megemlít
+103400	bemerken	megjegyez, megemlít, megjelöl
 103401	ausgleichen	kiegyenlít, ellensúlyoz
 103402	islamisch	iszlám (mn)
 103403	s Center	központ
@@ -5038,3 +5038,6 @@
 102072	Sport treiben	sportol	kifejezések
 100199	ausnehmen	kivesz, kiszed
 100281	und	és
+100590	eine Rolle spielen	szerepel	kifejezések
+100850	Spanien	Spanyolország	országok
+101379	forschen	kutat
