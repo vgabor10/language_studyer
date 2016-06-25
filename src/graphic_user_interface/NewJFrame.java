@@ -1,5 +1,7 @@
 package graphic_user_interface;
 
+import java.awt.event.KeyEvent;
+
 public class NewJFrame extends javax.swing.JFrame {
 
     /**
@@ -8,7 +10,12 @@ public class NewJFrame extends javax.swing.JFrame {
     
     public NewJFrame() {
         initComponents();
+        
         setLocationRelativeTo(null);
+        
+        jButton1.setMnemonic(KeyEvent.VK_P);
+        jButton2.setMnemonic(KeyEvent.VK_B);
+        jButton10.setMnemonic(KeyEvent.VK_X);
     }
 
     /**
@@ -45,6 +52,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
             }
         });
 
@@ -100,6 +112,11 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jButton6.setText("Basic statistics");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setText("Additional statistics");
 
@@ -136,7 +153,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton9.setText("Settings");
 
-        jButton10.setText("Quit");
+        jButton10.setText("Exit");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -186,12 +203,10 @@ public class NewJFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        NewJFrame4 newJFrame4 = new NewJFrame4();
-        
-        newJFrame4.setVisible(true);
-        
-        //setVisible(false);
-        
+        NewJDialog dialog = new NewJDialog(new javax.swing.JFrame(), true); 
+        setVisible(false);
+        dialog.setVisible(true);
+        setVisible(true);  
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -199,12 +214,25 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        this.dispose();
+        System.exit(0);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        new NewJFrame3().setVisible(true);
+        NewJDialog1 dialog = new NewJDialog1(new javax.swing.JFrame(), true); 
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+       if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+        NewJDialog dialog = new NewJDialog(new javax.swing.JFrame(), true); 
+        setVisible(false);
+        dialog.setVisible(true);
+        setVisible(true);  
+       }
+    }//GEN-LAST:event_jButton1KeyPressed
 
     /**
      * @param args the command line arguments

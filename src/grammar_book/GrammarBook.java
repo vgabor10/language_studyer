@@ -3,14 +3,6 @@ package grammar_book;
 import common.*;
 
 import java.util.*;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedWriter;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.text.DecimalFormat;
 
 public class GrammarBook extends StudyItemContainer {
 

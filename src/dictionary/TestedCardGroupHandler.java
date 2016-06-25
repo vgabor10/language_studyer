@@ -1,7 +1,5 @@
 package dictionary;
 
-import common.*;
-
 import java.util.*;
 import java.io.Console;
 

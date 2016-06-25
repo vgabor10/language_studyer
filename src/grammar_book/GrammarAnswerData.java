@@ -2,8 +2,6 @@ package grammar_book;
 
 import common.*;
 
-import java.util.*;
-
 public class GrammarAnswerData extends AnswerData {
 
 	public int exampleIndex;

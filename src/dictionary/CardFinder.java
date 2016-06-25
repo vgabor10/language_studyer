@@ -30,7 +30,7 @@ public class CardFinder {
 		Arrays.sort(arrayToSort, new CardComparatorByTerm());
 
 		String lastTerm = "";
-		String actualTerm = "";
+		String actualTerm;
 		int numberOfCases = 0;
 		for (int i=0; i<cardContainer.numberOfCards(); i++) {
 			actualTerm = arrayToSort[i].term;

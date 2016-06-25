@@ -4,16 +4,15 @@ import common.*;
 import dictionary.*;
 
 import java.util.*;
-import java.text.DecimalFormat;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.text.DecimalFormat;
 
-public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
+public class CardTestStatisticsMaker2 {
 
-	private CardContainer cardContainer;
+	private CardContainer cardContainer;    //TODO: rename: testedCards
 	private AnswerDataContainer testAnswers;
-	private AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest;
-	private AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest;
+        private AnswerDataContainer oldAnswers;
 
 	/////////////// STATISTICS ///////////
 
@@ -36,13 +35,9 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 	public void setTestAnswers(AnswerDataContainer ta) {
 		testAnswers = ta;
 	}
-
-	public void setAnswerDatasByStudyItemsBeforeTest(AnswerDataByStudyItemsContainer a) {
-		answerDatasByStudyItemsBeforeTest = a;
-	}
-
-	public void setAnswerDatasByStudyItemsAfterTest(AnswerDataByStudyItemsContainer a) {
-		answerDatasByStudyItemsAfterTest = a;
+        
+        public void setOldAnswers(AnswerDataContainer oa) {
+		oldAnswers = oa;
 	}
 
 	public void startMeasureTime() {
@@ -55,23 +50,25 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 		endTime = date.getTime();
 	}
 
-	public String getUsedTimeAsString() {
-		Date date = new Date(endTime - startTime);
-		DateFormat formatter = new SimpleDateFormat("mm:ss");
-		String dateFormatted = formatter.format(date);
-		return dateFormatted;
-	}
+	public void evaluateStatistics() {
 
-	/*public void toScreenStatistics() {
-
-		Set<Integer> cardIndexes = new HashSet<Integer>();
-
-		DecimalFormat df = new DecimalFormat("#.000");
-
+                Set<Integer> cardIndexes = new HashSet<Integer>();
 		for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
 			cardIndexes.add(testAnswers.getAnswerData(i).index);
 		}
 
+                AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest
+                        = new AnswerDataByStudyItemsContainer();
+                AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest
+                        = new AnswerDataByStudyItemsContainer();
+                 
+                answerDatasByStudyItemsBeforeTest.loadDataFromAnswerDataContainer(oldAnswers);
+                
+                AnswerDataContainer actualAnswers = new AnswerDataContainer();
+                actualAnswers.appendAnswerDataContainer(oldAnswers);
+                actualAnswers.appendAnswerDataContainer(testAnswers);
+                answerDatasByStudyItemsAfterTest.loadDataFromAnswerDataContainer(actualAnswers);
+                
 		for (int cardIndex : cardIndexes) {
 
 			double percentageOfRightAnswersBeforeTest = -1;
@@ -81,13 +78,9 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 			}
 
 			double percentageOfRightAnswersAfterTest
-				= answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;
-			
-			String row = cardContainer.getCardByIndex(cardIndex).toString() + " | " 
-				+ df.format(percentageOfRightAnswersAfterTest) + "% | ";
+				= answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate() * 100.0;		
 
 			if (percentageOfRightAnswersBeforeTest != -1) {
-				row = row + df.format(percentageOfRightAnswersBeforeTest) + "% | ";
 
 				if (percentageOfRightAnswersBeforeTest < percentageOfRightAnswersAfterTest) {
 					numberOfCardsWithImprovement++;
@@ -100,9 +93,8 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 					numberOfCardsWithNoChange++;
 				}
 
-
-				///////////////// category statistics ////////////////
-				double v1, v2;
+				double v1;
+                                double v2;
 				if (percentageOfRightAnswersAfterTest == 100.0) {
 					v1 = percentageOfRightAnswersAfterTest-0.001;
 				}
@@ -132,7 +124,6 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 				///////////////// category statistics ////////////////
 			}
 			else {
-				row = row + "- | ";
 				numberOfNewCardsTested++;
 
 				int category;
@@ -145,34 +136,61 @@ public class CardTestStatisticsMaker2 {	//TODO: refactorate this class
 				categorySizeChanges[category]++;
 			}
 
-			row = row + answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(cardIndex).numberOfAnswers();
-
-			stringTabular.addRowInString(row);
-
 		}
 
-		for (int i=0; i<stringTabular.numberOfRows(); i++) {
-			System.out.println(stringTabular.getNiceTabularRowInString(i));
-		}
-
-		System.out.println("------------------------------------------------------------------");;
-		System.out.println("number of cards whose answer rate improves: " + numberOfCardsWithImprovement);
-		System.out.println("number of cards whose answer rate does not change: " + numberOfCardsWithNoChange);
-		System.out.println("number of cards whose answer rate reduces: " + numberOfCardsWithReducement);
-		System.out.println("number of new cards tested: " + numberOfNewCardsTested);
-		System.out.println("number of category improvements: " + numberOfCategoryImprovements);
-		System.out.println("number of category reducements: " + numberOfCategoryReducements);
-		System.out.print("category size changes: ");
-		for (int i=0; i<9; i++) {
-			System.out.print((i) + ":" + categorySizeChanges[i] + ", ");
-		}
-		System.out.println("9:" + categorySizeChanges[9]);
-		System.out.println("number of answers: " + testAnswers.numberOfAnswers());
-		System.out.println("percentage of right answers: " + df.format(testAnswers.percentageOfRightAnswers()) + "%");
+		/*System.out.println("percentage of right answers: " + df.format(testAnswers.percentageOfRightAnswers()) + "%");
 		System.out.println("average answer rate of cards before test: "
 			+ df.format(answerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems() * 100.0) + "%");
 		System.out.println("average answer rate of cards after test: "
 			+ df.format(answerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems() * 100.0) + "%");
-	}*/
+       */ }
+
+        public String percentageOfRightAnswersAsString() {
+                DecimalFormat df = new DecimalFormat("#.000");
+		return df.format(testAnswers.percentageOfRightAnswers()) + "%";
+	}   
+        
+        public String numberOfUserAnswersAsString() {
+		return Integer.toString(testAnswers.numberOfAnswers());
+	}   
+        
+        public String categorySizeChangesAsString() {
+            String s = "";
+            for (int i=0; i<9; i++) {
+			s = s + ":" + categorySizeChanges[i] + ", ";
+		}
+		return s + "9:" + categorySizeChanges[9];
+	}           
+        
+        public String numberOfCategoryReducementsAsString() {
+		return Integer.toString(numberOfCategoryReducements);
+	}   
+        
+        public String numberOfCategoryImprovementsAsString() {
+		return Integer.toString(numberOfCategoryImprovements);
+	}        
+        
+        public String numberOfNewCardsTestedAsString() {
+		return Integer.toString(numberOfNewCardsTested);
+	}
+        
+        public String numberOfCardsWithReducementAsString() {
+		return Integer.toString(numberOfCardsWithReducement);
+	}
+        
+        public String numberOfCardsWithImprovementAsString() {
+		return Integer.toString(numberOfCardsWithImprovement);
+	}
+        
+        public String numberOfCardsWithNoChangeAsString() {
+		return Integer.toString(numberOfCardsWithNoChange);
+	}
+        
+        public String getUsedTimeAsString() {
+		Date date = new Date(endTime - startTime);
+		DateFormat formatter = new SimpleDateFormat("mm:ss");
+		String dateFormatted = formatter.format(date);
+		return dateFormatted;
+	}
 
 }

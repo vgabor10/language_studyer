@@ -10,6 +10,7 @@ public class Example {
 		index = -1;
 	}
 
+        @Override
 	public String toString() {
 		return Integer.toString(index) + "\t"  + foreign + " - " + hun;
 	}

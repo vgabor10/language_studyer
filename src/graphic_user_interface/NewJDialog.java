@@ -1,22 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package graphic_user_interface;
 
-import experimental_classes.*;
-import settings_handler.*;
-import dictionary.*;
-import common.*;
+import common.AnswerDataContainer;
+import common.Logger;
+import dictionary.CardContainer;
+import dictionary.DictionaryDataModificator;
+import experimental_classes.CardChooser2;
+import experimental_classes.CardTestStatisticsMaker2;
+import experimental_classes.CardTester2;
 import java.awt.event.KeyEvent;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
+import settings_handler.SettingsHandler;
 
-public class NewJFrame4 extends javax.swing.JFrame {
+/**
+ *
+ * @author varga
+ */
+public class NewJDialog extends javax.swing.JDialog {
 
     private CardTester2 cardTester2 = new CardTester2();
-    public CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
+    private CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
     private CardContainer cardContainer = new CardContainer();;
     private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     private Logger logger = new Logger();
     
-    public NewJFrame4() {
+    public NewJDialog(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
         initComponents();
+
         setLocationRelativeTo(null);
         
         jTextField1.requestFocus();
@@ -48,6 +64,8 @@ public class NewJFrame4 extends javax.swing.JFrame {
         jLabel1.setText("");
         jLabel2.setText(cardTester2.numberOfCardsQuestioned()+ "\\" + cardTester2.getNumberOfQuestions());
         
+        jButton1.setMnemonic(KeyEvent.VK_B);
+        
         cardTestStatisticsMaker.startMeasureTime();
     }
 
@@ -61,21 +79,14 @@ public class NewJFrame4 extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jTextField2 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosing(java.awt.event.WindowEvent evt) {
-                formWindowClosing(evt);
-            }
-            public void windowClosed(java.awt.event.WindowEvent evt) {
-                formWindowClosed(evt);
-            }
-        });
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jTextField1.setText("jTextField1");
@@ -90,6 +101,10 @@ public class NewJFrame4 extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setText("jLabel2");
+
+        jLabel1.setText("jLabel1");
+
         jTextField3.setEditable(false);
         jTextField3.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jTextField3.setText("jTextField3");
@@ -101,6 +116,13 @@ public class NewJFrame4 extends javax.swing.JFrame {
         jTextField3.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField3KeyPressed(evt);
+            }
+        });
+
+        jButton1.setText("Back");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -119,34 +141,34 @@ public class NewJFrame4 extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Back");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jButton2.setText("Inspect card");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jButton2ActionPerformed(evt);
             }
         });
-
-        jLabel1.setText("jLabel1");
-
-        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(33, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -162,70 +184,79 @@ public class NewJFrame4 extends javax.swing.JFrame {
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton2)
+                    .addComponent(jButton1))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             if (!cardTester2.isGetAnswerToActualQuestion()) {
-            
+
                 cardTester2.setUserAnswer(jTextField1.getText());
 
                 if (cardTester2.getActualQuestionedCard().term.equals(cardTester2.getUserActualAnswer())) {
                     if (cardTester2.isMoreCardToTest()) {
                         cardTester2.moveToNextCardToQuestion();
                         jLabel2.setText(cardTester2.numberOfCardsQuestioned()+ "\\" + cardTester2.getNumberOfQuestions());
-                        jTextField3.setText(cardTester2.getActualQuestionedCard().definition);
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-                        jLabel1.setText("");
+                            jTextField3.setText(cardTester2.getActualQuestionedCard().definition);
+                            jTextField1.setText("");
+                            jTextField2.setText("");
+                            jLabel1.setText("");
+                        }
+                        else {
+                            goToStatisticsFrameAndSaveData();
+                            dispose();
+                        }
                     }
                     else {
-                        goToStatisticsFrameAndSaveData();
-                        dispose();
+                        if (cardTester2.isUserAnswerRight()) {
+                            jTextField1.setText("");
+                            jTextField2.setText(cardTester2.getActualQuestionedCard().term);
+                            jTextField2.setForeground(new java.awt.Color(45, 107, 53));
+                            jLabel1.setText("RIGHT, but the above term was tought");
+                        }
+                        else {
+                            jTextField1.setText("");
+                            jTextField2.setText(cardTester2.getActualQuestionedCard().term);
+                            jTextField2.setForeground(new java.awt.Color(255, 0, 0));
+                            jLabel1.setText("wrong");
+                        }
                     }
                 }
                 else {
-                    if (cardTester2.isUserAnswerRight()) {
-                        jTextField1.setText("");
-                        jTextField2.setText(cardTester2.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(45, 107, 53));
-                        jLabel1.setText("RIGHT, but the above term was tought");
-                    }
-                    else {
-                        jTextField1.setText("");
-                        jTextField2.setText(cardTester2.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(255, 0, 0));
-                        jLabel1.setText("wrong");
-                    }
-                }
-            }
-            else {
-                if (cardTester2.getActualQuestionedCard().term.equals(jTextField1.getText())) {
-                    if (cardTester2.isMoreCardToTest()) {
-                        cardTester2.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester2.numberOfCardsQuestioned()+ "\\" + cardTester2.getNumberOfQuestions());
-                        jTextField3.setText(cardTester2.getActualQuestionedCard().definition);
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-                        jLabel1.setText("");
-                    }
-                    else {
-                        goToStatisticsFrameAndSaveData();
-                        dispose();
+                    if (cardTester2.getActualQuestionedCard().term.equals(jTextField1.getText())) {
+                        if (cardTester2.isMoreCardToTest()) {
+                            cardTester2.moveToNextCardToQuestion();
+                            jLabel2.setText(cardTester2.numberOfCardsQuestioned()+ "\\" + cardTester2.getNumberOfQuestions());
+                                jTextField3.setText(cardTester2.getActualQuestionedCard().definition);
+                                jTextField1.setText("");
+                                jTextField2.setText("");
+                                jLabel1.setText("");
+                            }
+                            else {
+                                goToStatisticsFrameAndSaveData();
+                                dispose();
+                            }
+                        }
                     }
                 }
-            }
-        }
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void goToStatisticsFrameAndSaveData() {
         cardTestStatisticsMaker.endMeasureTime();
+        cardTestStatisticsMaker.setTestAnswers(cardTester2.getUserAnswers());
+        cardTestStatisticsMaker.setCardContainer(cardContainer);
+        cardTestStatisticsMaker.setOldAnswers(answerDataContainer);
         
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
 	dictionaryDataModificator.setCardContainer(cardContainer);
@@ -236,16 +267,14 @@ public class NewJFrame4 extends javax.swing.JFrame {
 
         logger.debug("appended answers:\n" + userAnswers.toString());
         
-        NewJFrame2 newJFrame2 = new NewJFrame2();
-        newJFrame2.setCardTestStatisticsMaker(cardTestStatisticsMaker);
-        newJFrame2.setCardTestStatisticsDataToFrame();
-        newJFrame2.setVisible(true);
+        setVisible(false);
+        
+        NewJDialog2 dialog = new NewJDialog2(new javax.swing.JFrame(), true);
+        dialog.setCardTestStatisticsMaker(cardTestStatisticsMaker);
+        dialog.setCardTestStatisticsDataToFrame();
+        dialog.setVisible(true);
     }
     
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
@@ -253,6 +282,10 @@ public class NewJFrame4 extends javax.swing.JFrame {
     private void jTextField3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField3KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3KeyPressed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -262,17 +295,9 @@ public class NewJFrame4 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2KeyPressed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-
-    }//GEN-LAST:event_formWindowClosing
-
-    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
-
-    }//GEN-LAST:event_formWindowClosed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -291,26 +316,34 @@ public class NewJFrame4 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new NewJFrame4().setVisible(true);
+                NewJDialog dialog = new NewJDialog(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;

@@ -2,14 +2,8 @@ package experimental_classes;
 
 import dictionary.*;
 import common.*;
-import experimental_classes.*;
 
 import java.util.*;
-import java.io.Console;
-import java.text.DecimalFormat;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.text.DecimalFormat;
 
 public class CardTester2 {
 
@@ -17,7 +11,7 @@ public class CardTester2 {
 	private CardContainer cardsToTest;
 	private int numberOfCardsQuestioned;
 	private AnswerDataContainer userAnswers = new AnswerDataContainer();
-	private Card actualQuestion;	//TODO: rename actualQuestionedCard
+	private Card actualQuestionedCard;
 	private String userAnswerToActualQuestion; 
 	private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
 	private boolean isGetAnswerToActualQuestion = false;
@@ -37,22 +31,22 @@ public class CardTester2 {
 	}
 
 	public void moveToNextCardToQuestion() {
-		actualQuestion = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
+		actualQuestionedCard = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
 		numberOfCardsQuestioned++;
 
 		userAnswerToActualQuestion = "";
 		isGetAnswerToActualQuestion = false;
 
-		logger.debug("questioned card: " + actualQuestion.toString());
+		logger.debug("questioned card: " + actualQuestionedCard.toString());
 
 		acceptabelAnswersAndCardIndexesForActualQuestion =
-			getAcceptabelAnswersAndCardIndexes(actualQuestion.definition);
+			getAcceptabelAnswersAndCardIndexes(actualQuestionedCard.definition);
 
 		logger.debug("acceptabel answers and card indexes: " + acceptabelAnswersAndCardIndexesForActualQuestion.toString());
 	}
 
 	public Card getActualQuestionedCard() {
-		return actualQuestion;
+		return actualQuestionedCard;
 	}
 
 	public void setUserAnswer(String answer) {
@@ -62,10 +56,10 @@ public class CardTester2 {
 
 		logger.debug("user answer: " + answer);
 
-		if (answer.equals(actualQuestion.term)) {
+		if (answer.equals(actualQuestionedCard.term)) {
 			Date date = new Date();
-			userAnswers.addElement(actualQuestion.index, true, date.getTime());
-			logger.debug("added answer data: " + actualQuestion.index + ", true");
+			userAnswers.addElement(actualQuestionedCard.index, true, date.getTime());
+			logger.debug("added answer data: " + actualQuestionedCard.index + ", true");
 		}
 		else {
 
@@ -77,9 +71,9 @@ public class CardTester2 {
 			}
 			else {
 				Date date = new Date();
-				userAnswers.addElement(actualQuestion.index, false, date.getTime());
+				userAnswers.addElement(actualQuestionedCard.index, false, date.getTime());
 
-				logger.debug("added answer data: " + actualQuestion.index + ", false");
+				logger.debug("added answer data: " + actualQuestionedCard.index + ", false");
 			}
 		}
 
@@ -94,7 +88,7 @@ public class CardTester2 {
 	}
 
 	public String getStandardAnswerToLastQuestion() {
-		return actualQuestion.term;
+		return actualQuestionedCard.term;
 	}
 
 	public boolean isUserAnswerRight() {
@@ -129,7 +123,7 @@ public class CardTester2 {
 
 			definitionParts2.retainAll(definitionParts);
 
-			if (definitionParts2.size() != 0) {
+			if (!definitionParts2.isEmpty()) {
 				out.add(card.term);
 			}
 		}
@@ -149,7 +143,7 @@ public class CardTester2 {
 
 			definitionParts2.retainAll(definitionParts);
 
-			if (definitionParts2.size() != 0) {
+			if (!definitionParts2.isEmpty()) {
 				acceptableAnswersAndCardIndexes.put(card.term, card.index);
 			}
 		}

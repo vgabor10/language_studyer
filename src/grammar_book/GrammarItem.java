@@ -22,7 +22,7 @@ public class GrammarItem extends StudyItem {
 	}
 
 	public boolean isEmptyExcludingTitle() {
-		return (index == -1) && (description.equals("")) && (examples.size() == 0) && (commentForExamples.equals(""));
+		return (index == -1) && (description.equals("")) && (examples.isEmpty()) && (commentForExamples.equals(""));
 	}
 
 	public Example getExampleByIndex(int index) {
@@ -37,13 +37,14 @@ public class GrammarItem extends StudyItem {
 		return examples.keySet();
 	}
 
+        @Override
 	public String toString() {
 		String out;
 		out = title.toString().toUpperCase() + "\n\nDESCRIPTION:\n" + description + "\n\nEXAMPLES:\n";
 
-		for (int index : examples.keySet()) {
-			out = out + getExampleByIndex(index).toString() + "\n";
-		}
+            for (int ind : examples.keySet()) {
+                out = out + getExampleByIndex(ind).toString() + "\n";
+            }
 
 		if (out.endsWith("\n")) {
 			out = out.substring(0, out.length()-1);

@@ -3,15 +3,11 @@ package dictionary;
 import common.*;
 
 import java.util.*;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.lang.Math;
-import java.text.DecimalFormat;
 
 public class CardContainer extends StudyItemContainer {
 
@@ -74,8 +70,8 @@ public class CardContainer extends StudyItemContainer {
 
 	public void loadDataFromFile(String filePath) {	//TODO: take to other class
 		clear();
-		BufferedReader br = null;
-		String strLine = "";
+		BufferedReader br;
+		String strLine;
 		try {
 			br = new BufferedReader( new FileReader(filePath));
 			while( (strLine = br.readLine()) != null){
@@ -100,6 +96,7 @@ public class CardContainer extends StudyItemContainer {
 		}
 	}
 
+        @Override
 	public void toScreen() {
 		for(int i=0; i<numberOfCards(); i++){
 			System.out.println(getCardByOrder(i).toString());

@@ -31,6 +31,7 @@ public class Card extends StudyItem {
 		}
 	}
 
+        @Override
 	public String toString() {
 		return term + " - " + definition;
 	}
