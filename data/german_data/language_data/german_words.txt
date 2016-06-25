@@ -158,7 +158,7 @@
 100157	r Kaffee	kávé
 100158	r Teller	tányér
 100159	s Glas	üveg, pohár
-100160	r Führer	vezető
+100160	r Führer	vezér, vezető
 100161	s Mineralwasser	ásványvíz
 100162	dürfen	szabad	rendhagyó igék
 100163	r Salat	saláta
@@ -608,7 +608,7 @@
 100612	verhindern	akadályoz
 100613	s Interview	interjú
 100614	einladen	meghív	rendhagyó igék
-100615	s Tausend	ezer
+100615	s Tausend	ezer (fn)
 100616	verbessern	javít
 100617	s Essen	étel
 100618	wunderbar	csodálatos
@@ -721,7 +721,7 @@
 100726	darüber	erről
 100727	ob	hogy, vajon
 100728	bedrängen	szorongat
-100729	dazu	arra
+100729	dazu	ahhoz
 100730	r Jude	zsidó
 100731	teilnahmslos	érzéketlen
 100732	zusehen	szemlél

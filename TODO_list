@@ -6,6 +6,7 @@ Modification ideas in src:
 - delete grammar item feature
 - delete examples in grammar item feature
 - make study strategy editor
+- gui and terminal ui should use the same core classes
 
 german grammar items to add:
 - többesszámok
