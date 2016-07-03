@@ -14,8 +14,8 @@ import javax.swing.table.DefaultTableModel;
 public class NewJDialog2 extends javax.swing.JDialog {
 
     public CardTestStatisticsMaker2 cardTestStatisticsMaker;
-    private Logger logger = new Logger();
-    private DefaultTableModel model;
+    private final Logger logger = new Logger();
+    private final DefaultTableModel model;
 
     public NewJDialog2(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -48,8 +48,6 @@ public class NewJDialog2 extends javax.swing.JDialog {
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
         CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
-                
-        logger.debug(testedCards.toString());
         
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);

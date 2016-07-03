@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat;
 public class GrammarTester {
 
 	private GrammarAnswerDataContainer grammarAnswerDataContainer;
-	private Random randomGenerator = new Random();
+	private final Random randomGenerator = new Random();
 	private GrammarBook grammarBook;
 
 	public void setGrammarBook(GrammarBook gb) {
@@ -25,8 +25,8 @@ public class GrammarTester {
 
 	private Vector<Integer> getRandomExampleIndexes(int grammarItemIndex, int numberOfExamples) {
 
-		Vector<Integer> idexesToAdd = new Vector<Integer>(grammarBook.getGrammarItemByIndex(grammarItemIndex).getExampleIndexes());
-		Vector<Integer> outVector = new Vector<Integer>();
+		Vector<Integer> idexesToAdd = new Vector<>(grammarBook.getGrammarItemByIndex(grammarItemIndex).getExampleIndexes());
+		Vector<Integer> outVector = new Vector<>();
 
 		while (outVector.size()<numberOfExamples) {
 			java.util.Collections.shuffle(idexesToAdd);

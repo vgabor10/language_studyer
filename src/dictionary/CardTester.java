@@ -145,5 +145,25 @@ public class CardTester {
 
 		return acceptableAnswersAndCardIndexes;
 	}
+        
+        public Set<Integer> getAcceptableCardIndexes(String definition) {
+            	Set<Integer> acceptableCardIndexes = new HashSet<Integer>();
+
+		Set<String> definitionParts = new HashSet<>(Arrays.asList(definition.split(", ")));
+
+		for (int i=0; i<allCard.numberOfCards(); i++) {
+			Card card = allCard.getCardByOrder(i);
+
+			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+
+			definitionParts2.retainAll(definitionParts);
+
+			if (!definitionParts2.isEmpty()) {
+				acceptableCardIndexes.add(card.index);
+			}
+		}
+
+		return acceptableCardIndexes;
+        }
 
 }

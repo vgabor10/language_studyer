@@ -6,7 +6,7 @@ public class GrammarAnswerData extends AnswerData {
 
 	public int exampleIndex;
 
-	GrammarAnswerData() {
+	public GrammarAnswerData() {
 		exampleIndex = -1;
 	}
 

@@ -2,20 +2,16 @@ package grammar_book;
 
 import study_item_objects.AnswerDataContainer;
 
-import java.util.*;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.lang.Math;
-import java.text.DecimalFormat;
 
 
 public class GrammarAnswerDataContainer extends AnswerDataContainer {
 
+        //TODO: remove this function
 	public void addElement(int grammarItemIndex, int exampleIndex, boolean isRight, long date) {
 		GrammarAnswerData grammarAnswerData = new GrammarAnswerData();
 		grammarAnswerData.index = grammarItemIndex;

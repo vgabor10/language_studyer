@@ -5,10 +5,10 @@ import java.util.*;
 
 public class RandomGrammarItemChooser {
 
-	private Random randomGenerator = new Random();
+	private final Random randomGenerator = new Random();
 	private GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker;
 	private GrammarBook grammarBook;
-	private Logger logger = new Logger();
+	private final Logger logger = new Logger();
 
 	public void setGrammarAnswerDataStatisticsMaker(GrammarAnswerDataStatisticsMaker g) {
 		grammarAnswerDataStatisticsMaker = g;
@@ -67,7 +67,7 @@ public class RandomGrammarItemChooser {
 	public int getGrammarItemIndexForTest3() {
 		logger.debug("run getGrammarItemIndexForTest3 function");
 
-		Vector<Integer> grammarItemIndexses = new Vector<Integer>();
+		Vector<Integer> grammarItemIndexses = new Vector<>();
 
 		grammarItemIndexses.add(getRandomGrammarItemIndex());
 		grammarItemIndexses.add(getRandomIndexFromThe5LeastStudiedGrammarItem());
