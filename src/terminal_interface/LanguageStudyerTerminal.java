@@ -4,11 +4,10 @@ import grammar_book.*;
 import dictionary.*;
 import settings_handler.*;
 import common.*;
-import terminal_interface.*;
+import dictionary.CardTester;
 
 import java.util.*;
 import java.io.Console;
-import java.text.DecimalFormat;
 
 public class LanguageStudyerTerminal {
 
@@ -60,7 +59,7 @@ public class LanguageStudyerTerminal {
 		System.out.println("0 - practicing");
 		System.out.println("1 - basic statistics");
 		System.out.println("2 - additional statistics");
-		System.out.println("3 - set card groups to test");
+		System.out.println("3 - set card groups to test //TODO: implement");
 		System.out.println();
 		System.out.println("DICTIONARY");
 		System.out.println("4 - find cards according to term part");
@@ -90,48 +89,45 @@ public class LanguageStudyerTerminal {
 
 		//practising
 		if (choice.equals("0")) {
-			CardTester cardTester = new CardTester();
-
-			cardTester.setCardContainer(testedCardGroupHandler.cardsToTest);
-			cardTester.setAnswerDataContainer(answerDataContainer);
-
-			System.out.print("\033[H\033[2J");
-			System.out.println("practising with:");
-			System.out.println("1 - 20 random cards from data base");
-			System.out.println("2 - 6 latest studyed cards, 6 cards among the hardest 20%, 8 random cards");
-			System.out.println("3 - 4 latest studyed cards, 8 among the hardest 20%, 8 random cards");
-			System.out.println("4 - 10 cards from the hardest 100, 4 latest studied cards, 6 random cards");
-			System.out.println("5 - 4 latest studyed cards, 8 among hardest 20%, 4 cards with least significant answer rate, 4 random cards");
-			System.out.println("6 - 4 latest studyed cards, 8 among hardest 20%, 2 among cards with the 100 least significant answer rate, 6 random cards");
-			System.out.println("7 - 4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards");
-			System.out.println("8 - experimantal way of choosing cards");
-
-
-			String c = console.readLine();
-			if (c.equals("1")) {
-				cardTester.performTest1();
-			}
-			if (c.equals("2")) {
-				cardTester.performTest2();
-			}
-			if (c.equals("3")) {
-				cardTester.performTest3();
-			}
-			if (c.equals("4")) {
-				cardTester.performTest4();
-			}
-			if (c.equals("5")) {
-				cardTester.performTest5();
-			}
-			if (c.equals("6")) {
-				cardTester.performTest6();
-			}
-			if (c.equals("7")) {
-				cardTester.performTest7();
-			}
-			if (c.equals("8")) {
-				cardTester.performTest8();
-			}
+                    
+                        //TODO: implement card category chooser
+                    
+			//cardTester.setCardContainer(testedCardGroupHandler.cardsToTest);
+			//cardTester.setAnswerDataContainer(answerDataContainer);
+                        
+                        StudyStrategyChooserScreen studyStrategyChooserScreen
+                                = new StudyStrategyChooserScreen();
+                        studyStrategyChooserScreen.setAnswerDataContainer(answerDataContainer);
+                        studyStrategyChooserScreen.setCardContainer(cardContainer);
+                        studyStrategyChooserScreen.toScreenMenuAndEvaluateCardsToTestIndexes();
+                        Set<Integer> cardsToTestIndexes = studyStrategyChooserScreen.getCardsToTestIndexes();
+                        
+                        // performing test //
+                        CardTester cardTester = new CardTester();
+                        cardTester.setAllCard(cardContainer);
+                        cardTester.setCardsToTestFromCardIndexesSet(cardsToTestIndexes);
+                        
+                        CardTesterScreen cardTesterScreen = new CardTesterScreen();
+                        cardTesterScreen.setCardTester(cardTester);
+                        
+                        long startTime = new Date().getTime();
+                        cardTesterScreen.performTest();
+                        long finishTime = new Date().getTime();
+                        
+                        // showing statistics //
+                        
+                        CardTesterStatisticsScreen cardTesterStatisticsScreen
+                                = new CardTesterStatisticsScreen();
+                        cardTesterStatisticsScreen.setCardContainer(cardContainer);
+                        cardTesterStatisticsScreen.setOldAnswers(answerDataContainer);
+                        cardTesterStatisticsScreen.setUserAnswers(cardTester.getUserAnswers());
+                        cardTesterStatisticsScreen.setStartAndFinishTime(startTime, finishTime);
+                        cardTesterStatisticsScreen.toScreenStatistics();
+                        
+                        // update memory and disc database //
+                        
+                        //DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+                        //dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
 		}
 
 		//basic statistics

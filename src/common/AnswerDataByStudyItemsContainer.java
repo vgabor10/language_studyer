@@ -54,10 +54,9 @@ public class AnswerDataByStudyItemsContainer {
 	}
 
 	public void loadDataFromFile(String filePath) {	//TODO: take other class
-		BufferedReader br = null;
-		String strLine = "";
+		String strLine;
 		try {
-			br = new BufferedReader( new FileReader(filePath));
+			BufferedReader br = new BufferedReader( new FileReader(filePath));
 			while( (strLine = br.readLine()) != null){
 				AnswerData answerData = new AnswerData();
 				answerData.setDataFromString(strLine);
@@ -76,6 +75,12 @@ public class AnswerDataByStudyItemsContainer {
 			addAnswerData(answerDataContainer.getAnswerData(i));
 		}
 	}
+        
+	public void addDataFromAnswerDataContainer(AnswerDataContainer answerDataContainer) {
+		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+			addAnswerData(answerDataContainer.getAnswerData(i));
+		}
+	}        
 
 	public Set<Integer> getTestedStudyItemIndexes() {
 		return data.keySet();

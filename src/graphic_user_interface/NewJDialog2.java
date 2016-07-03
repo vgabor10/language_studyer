@@ -54,20 +54,22 @@ public class NewJDialog2 extends javax.swing.JDialog {
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
              
-            String afterTestRarAsString = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
+            String afterTestRarAsString = "*";
+            //afterTestRarAsString = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
             
-            int afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
+            int afterTestNumberOfAnswers = -1;
+            //afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
             
-            String beforeTestRarAsString = "-";
-            if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+            String beforeTestRarAsString = "*";
+            /*if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
                 beforeTestRarAsString
                         = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
-            }
+            }*/
              
              model.addRow(new Object[] {
                     card.term,
                     card.definition,
-                    "*",
+                    afterTestRarAsString,
                     beforeTestRarAsString,
                     afterTestNumberOfAnswers
             });

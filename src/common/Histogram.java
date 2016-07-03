@@ -1,12 +1,8 @@
 package common;
 
-import java.util.*;
-import java.text.DecimalFormat;
-import java.lang.Math;
-
 public class Histogram {
 
-	private int[] data = new int[10];
+	private final int[] data = new int[10];
 
 	Histogram() {
 		for (int i=0; i<10; i++) {

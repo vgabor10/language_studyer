@@ -58,6 +58,7 @@ public class CardTestStatisticsMaker {	//TODO: refactorate this class
 		StringTabular stringTabular = new StringTabular();
 		stringTabular.setSeparatorString(" \\| ");
 
+                System.out.print("\033[H\033[2J");
 		System.out.println("CARD | % OF RIGHT ANSWERS AFTER TEST | % OF RIGHT ANSWERS BEFORE TEST | # OF ANSWERS AFTER TEST");
 		System.out.println("------------------------------------------------------------------");
 		for (int cardIndex : cardIndexes) {

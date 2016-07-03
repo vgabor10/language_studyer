@@ -11,7 +11,7 @@ import dictionary.CardContainer;
 import dictionary.DictionaryDataModificator;
 import dictionary.CardChooser;
 import experimental_classes.CardTestStatisticsMaker2;
-import experimental_classes.CardTester2;
+import dictionary.CardTester;
 import java.awt.event.KeyEvent;
 import java.util.HashSet;
 import java.util.Set;
@@ -23,7 +23,7 @@ import settings_handler.SettingsHandler;
  */
 public class NewJDialog extends javax.swing.JDialog {
 
-    private CardTester2 cardTester2 = new CardTester2();
+    private CardTester cardTester2 = new CardTester();
     private CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
     private CardContainer cardContainer = new CardContainer();
     private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
@@ -48,12 +48,7 @@ public class NewJDialog extends javax.swing.JDialog {
         Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
         //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
         
-        CardContainer cardContainer2 = new CardContainer();
-        for (int index : cardIndexesToTest) {
-            cardContainer2.addCard(cardContainer.getCardByIndex(index));
-        }
-        
-        cardTester2.setCardsToTest(cardContainer2);
+        cardTester2.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
         cardTester2.setAllCard(cardContainer);
         
         cardTester2.moveToNextCardToQuestion();

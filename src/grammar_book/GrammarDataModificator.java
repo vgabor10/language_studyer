@@ -22,8 +22,8 @@ public class GrammarDataModificator {
 		grammarAnswerDataContainer = gac;
 	}
 
-	public void writeGrammarBookToDisk(String filePath) {
-		try {
+	public void writeGrammarBookToDisk(String filePath) {   //TODO: implement
+		/*try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 
 			fw.write(grammarBook.preambulum + "\n");
@@ -62,7 +62,7 @@ public class GrammarDataModificator {
 		}
 		catch(IOException ioe) {
 			System.err.println("IOException: " + ioe.getMessage());
-		}
+		}*/
 	}
 
 	public void writeGrammarAnswerDataToDisk() {
@@ -75,17 +75,17 @@ public class GrammarDataModificator {
 		grammarAnswerDataContainer.saveDataToFile(grammarBookSourcePath + "/temporary_grammar_book_file.txt");
 	}
 
-	public void deleteGrammarItem(int grammarItemIndex) {
-		grammarBook.deleteGrammarItem(grammarItemIndex);
+	public void deleteGrammarItem(int grammarItemIndex) {   //TODO: implement
+		/*grammarBook.deleteGrammarItem(grammarItemIndex);
 		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
 			if (grammarAnswerDataContainer.data.get(i).grammarItemIndex == grammarItemIndex) {
 				grammarAnswerDataContainer.data.remove(i);
 			}
 		}
 		writeGrammarBookToDisk();
-		writeGrammarAnswerDataToDisk();
+		writeGrammarAnswerDataToDisk();*/
 	}
 
-	public void deleteExample(int grammarItemIndex, int exampleIndex) {
+	public void deleteExample(int grammarItemIndex, int exampleIndex) { //TODO: implenet
 	}
 }

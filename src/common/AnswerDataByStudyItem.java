@@ -1,13 +1,12 @@
 package common;
 
 import java.util.*;
-import java.text.DecimalFormat;
 
 public class AnswerDataByStudyItem {
 
 	private Vector<AnswerData> data = new Vector<AnswerData>();	//datas are sorted by date (growing)
 
-	private final int numberOfConsideredAnswersAtAnswerRateAtCard = 20;
+	private final int numberOfConsideredAnswersAtAnswerRateAtCard = 10;
 	private final int numberOfConsideredAnswersAtAnswerRateAtGrammarItem = 40;
 
 	public void addAnswer(AnswerData answerData) {
