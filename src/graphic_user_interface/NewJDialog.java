@@ -9,7 +9,7 @@ import common.AnswerDataContainer;
 import common.Logger;
 import dictionary.CardContainer;
 import dictionary.DictionaryDataModificator;
-import experimental_classes.CardChooser2;
+import dictionary.CardChooser;
 import experimental_classes.CardTestStatisticsMaker2;
 import experimental_classes.CardTester2;
 import java.awt.event.KeyEvent;
@@ -42,7 +42,7 @@ public class NewJDialog extends javax.swing.JDialog {
         cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
         answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
         
-        CardChooser2 cardChooser = new CardChooser2();
+        CardChooser cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
         Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();

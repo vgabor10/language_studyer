@@ -1,7 +1,6 @@
 package dictionary;
 
 import common.*;
-import experimental_classes.CardChooser2;
 import settings_handler.*;
 
 import java.util.*;
@@ -14,7 +13,7 @@ public class CardTester {
 	private CardContainer cardContainer;
 	private AnswerDataContainer answerDataContainer;
 	private	List<Integer> cardsToTestIndexes = new Vector<Integer>();
-	private CardChooser2 cardChooser = new CardChooser2();
+	private CardChooser cardChooser = new CardChooser();
 
 	private Logger logger = new Logger();
 
