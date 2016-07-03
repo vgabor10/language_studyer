@@ -89,7 +89,7 @@ public class CardTestStatisticsMaker2 {
 		return Integer.toString(testAnswers.numberOfAnswers());
 	}      
         
-        public double aggragatedReducements() {
+        public String aggragatedReducementsAsString() {
             double aggragatedReducements = 0;
             for (int i=0; i<testedCards.numberOfCards(); i++) {
                 Card card = testedCards.getCardByOrder(i);
@@ -102,10 +102,12 @@ public class CardTestStatisticsMaker2 {
                     }
                 }
             }
-            return aggragatedReducements;
+            
+            DecimalFormat df = new DecimalFormat("#.000");
+            return df.format(aggragatedReducements);
 	}  
         
-        public double aggragatedImprovements() {
+        public String aggragatedImprovementsAsString() {
             double aggragatedImprovements = 0;
             for (int i=0; i<testedCards.numberOfCards(); i++) {
                 Card card = testedCards.getCardByOrder(i);
@@ -118,7 +120,9 @@ public class CardTestStatisticsMaker2 {
                     }
                 }
             }
-            return aggragatedImprovements;
+            
+            DecimalFormat df = new DecimalFormat("#.000");
+            return df.format(aggragatedImprovements);
 	}        
         
         public int numberOfNewCardsTested() {

@@ -30,6 +30,7 @@ public class CardTester {
 		cardsToTest = cc;
 	}
         
+        //before allCard need to be seted
         public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
             List<Integer> cardIndexesList = new Vector<Integer>(cardIndexes);
             java.util.Collections.shuffle(cardIndexesList);

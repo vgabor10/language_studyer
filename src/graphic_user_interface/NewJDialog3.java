@@ -25,10 +25,13 @@ public class NewJDialog3 extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
+        setLocationRelativeTo(null);
+        
         model = (DefaultTableModel)jTable1.getModel();
         
         jTextField1.setText("");
-        jLabel1.setText("");
+        jLabel1.setText("-");
+        jTextField1.requestFocus();
         
         jButton1.setMnemonic(KeyEvent.VK_B);
         
@@ -53,31 +56,13 @@ public class NewJDialog3 extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
+
             },
             new String [] {
                 "term", "definition"
@@ -91,6 +76,7 @@ public class NewJDialog3 extends javax.swing.JDialog {
                 return types [columnIndex];
             }
         });
+        jTable1.setEnabled(false);
         jScrollPane1.setViewportView(jTable1);
 
         jTextField1.setText("jTextField1");
@@ -119,6 +105,8 @@ public class NewJDialog3 extends javax.swing.JDialog {
 
         jLabel2.setText("number of results found:");
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "german -> hungarian", "hungarian -> german" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -126,23 +114,27 @@ public class NewJDialog3 extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel1))
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 375, Short.MAX_VALUE)
+                            .addComponent(jTextField1)
+                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(46, 46, 46)
+                .addContainerGap()
+                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -164,6 +156,33 @@ public class NewJDialog3 extends javax.swing.JDialog {
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
 
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
+                !jTextField1.getText().isEmpty()) {
+            
+            if (jTextField1.isEditable()) {                   
+                Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
+
+                for (int i=0; i<cardsToList.size(); i++) {
+
+                    model.addRow(new Object[] {
+                        cardsToList.get(i).term, 
+                        cardsToList.get(i).definition});
+                }
+                jLabel1.setText(Integer.toString(cardsToList.size()));
+
+                jTextField1.setEditable(false);   
+            }
+            else {
+                jTextField1.setText("");
+                jTextField1.setEditable(true);
+
+                for (int i=model.getRowCount()-1; 0<=i; i--) {
+                    model.removeRow(i);
+                }
+
+                jLabel1.setText("-");
+            }
+        }
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -171,23 +190,7 @@ public class NewJDialog3 extends javax.swing.JDialog {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
-       
-        for (int i=0; i<model.getRowCount(); i++) {   
-            model.removeRow(0);
-        }
 
-        if (!jTextField1.getText().equals("")) {
-            Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
-         
-            for (int i=0; i<cardsToList.size(); i++) {
-
-                model.addRow(new Object[] {
-                    cardsToList.get(i).term, 
-                    cardsToList.get(i).definition});
-            }
-        }
-        
-        jLabel1.setText(Integer.toString(model.getRowCount()));
     }//GEN-LAST:event_jTextField1KeyReleased
 
     /**
@@ -234,6 +237,7 @@ public class NewJDialog3 extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;

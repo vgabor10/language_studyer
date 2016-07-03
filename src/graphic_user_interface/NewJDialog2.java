@@ -38,8 +38,8 @@ public class NewJDialog2 extends javax.swing.JDialog {
         jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
         jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
         jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArReducement()));
-        jLabel19.setText(Double.toString(cardTestStatisticsMaker.aggragatedImprovements()));
-        jLabel20.setText(Double.toString(cardTestStatisticsMaker.aggragatedReducements()));
+        jLabel19.setText(cardTestStatisticsMaker.aggragatedImprovementsAsString());
+        jLabel20.setText(cardTestStatisticsMaker.aggragatedReducementsAsString());
         jLabel16.setText(cardTestStatisticsMaker.numberOfUserAnswersAsString());
         jLabel17.setText(Integer.toString(cardTestStatisticsMaker.numberOfNewCardsTested()));
         jLabel15.setText(cardTestStatisticsMaker.percentageOfRightAnswersAsString());

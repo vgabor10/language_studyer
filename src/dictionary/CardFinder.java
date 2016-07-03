@@ -94,7 +94,7 @@ public class CardFinder {
 	}
         
         public Vector<Card> getCardsWithGivenTermPart(String termPart) {
-		Vector<Card> foundCards = new Vector<Card>();
+		Vector<Card> foundCards = new Vector<>();
 
 		for (int i=0; i < cardContainer.numberOfCards(); i++) {
                         Card card = cardContainer.getCardByOrder(i);
@@ -102,18 +102,15 @@ public class CardFinder {
 				foundCards.add(card);
 			}
 		}
-
-                 
-                System.out.println(foundCards);
                 
-		//Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange());*/
+		Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange());
                 return foundCards;
         }
 
 	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {
 
 		int maxListedCards = 31;
-		Vector<Card> cardsToList = new Vector<Card>();
+		Vector<Card> cardsToList = new Vector<>();
 
 		for (int i=0; i < cardContainer.numberOfCards(); i++) {
 			if (cardContainer.getCardByOrder(i).definition.toLowerCase().contains(definitionPart.toLowerCase())) {
