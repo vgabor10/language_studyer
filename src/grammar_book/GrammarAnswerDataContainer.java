@@ -1,6 +1,6 @@
 package grammar_book;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
 
 import java.util.*;
 import java.io.File;

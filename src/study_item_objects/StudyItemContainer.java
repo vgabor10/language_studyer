@@ -1,4 +1,4 @@
-package common;
+package study_item_objects;
 
 import java.util.*;
 import java.io.IOException;

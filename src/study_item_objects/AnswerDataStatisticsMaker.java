@@ -1,5 +1,7 @@
-package common;
+package study_item_objects;
 
+import common.Logger;
+import common.GeneralFunctions;
 import java.util.*;
 import java.text.DecimalFormat;		//TODO: will not be nessessery in the future
 import java.lang.Math;

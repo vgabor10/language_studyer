@@ -1,6 +1,7 @@
 package graphic_user_interface;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
+import study_item_objects.AnswerDataStatisticsMaker;
 import settings_handler.*;
 import dictionary.*;
 

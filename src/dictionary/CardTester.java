@@ -1,6 +1,7 @@
 package dictionary;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
+import common.Logger;
 
 import java.util.*;
 

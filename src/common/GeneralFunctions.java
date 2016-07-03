@@ -4,9 +4,6 @@ import java.util.*;
 
 public class GeneralFunctions {
 
-	public GeneralFunctions() {
-	}
-
 	public void toScreenActualDateInFormat1() {	//for debug, date works according to timeZone GMT
 		Date date = new Date();
 		long now = date.getTime();

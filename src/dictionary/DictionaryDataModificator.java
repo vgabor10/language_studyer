@@ -1,9 +1,9 @@
 package dictionary;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
+import common.Logger;
 import settings_handler.*;
 
-import java.util.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,9 +12,9 @@ public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
-	private SettingsHandler settingsHandler = new SettingsHandler();
+	private final SettingsHandler settingsHandler = new SettingsHandler();
 
-	private Logger logger = new Logger();
+	private final Logger logger = new Logger();
 
 	public void setCardContainer(CardContainer cc) {
 		cardContainer = cc;
@@ -70,10 +70,14 @@ public class DictionaryDataModificator {
 
 	public void appendToStudiedLanguageCardData(AnswerDataContainer answerDataContainer) {
 		try {
+                        logger.debug("following rows have been added to card data file: "); 
+                    
 			//the true will append the new data
 			FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageAnswerDataPath(),true);
 			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 				fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+                                
+                                logger.debug(answerDataContainer.getAnswerData(i).toStringData());
 			}
 			fw.close();
 		}

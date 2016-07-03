@@ -1,5 +1,6 @@
-package common;
+package study_item_objects;
 
+import common.GeneralFunctions;
 import java.util.*;
 
 import java.io.BufferedReader;

@@ -1,5 +1,6 @@
-package common;
+package study_item_objects;
 
+import common.Logger;
 import java.util.*;
 
 public class StringTabular {	//TODO: take to terminal interface package

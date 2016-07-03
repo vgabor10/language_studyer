@@ -1,6 +1,6 @@
 package dictionary;
 
-import common.*;
+import study_item_objects.StudyItem;
 
 public class Card extends StudyItem {
 

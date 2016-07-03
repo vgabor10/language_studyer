@@ -1,6 +1,5 @@
 package terminal_interface;
 
-import common.*;
 import grammar_book.*;
 
 import java.util.*;

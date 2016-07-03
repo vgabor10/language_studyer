@@ -1,6 +1,8 @@
 package terminal_interface;
 
-import common.*;
+import study_item_objects.AnswerDataStatisticsMaker;
+import common.Logger;
+import study_item_objects.StringTabular;
 
 import java.util.*;
 import java.io.Console;

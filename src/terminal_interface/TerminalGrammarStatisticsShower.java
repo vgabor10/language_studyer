@@ -1,8 +1,8 @@
 package terminal_interface;
 
+import common.GeneralFunctions;
 import grammar_book.*;
 import settings_handler.*;
-import common.*;
 
 import java.util.*;
 import java.text.DecimalFormat;	

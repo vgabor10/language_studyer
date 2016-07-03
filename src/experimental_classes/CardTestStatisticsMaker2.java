@@ -1,6 +1,8 @@
 package experimental_classes;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
+import study_item_objects.AnswerDataByStudyItemsContainer;
+import common.Logger;
 import dictionary.*;
 
 import java.util.*;

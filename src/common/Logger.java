@@ -8,7 +8,6 @@ public class Logger {
 	private final String logFilePath = "/home/varga/git/language_studyer/log_files/log_file.txt";
 
 	public final boolean isDebug;
-	//debug - 1
 
 	public Logger() {
 		isDebug = true;

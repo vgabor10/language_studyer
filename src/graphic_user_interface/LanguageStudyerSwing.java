@@ -1,8 +1,8 @@
 package graphic_user_interface;
 
+import common.Logger;
 import graphic_user_interface.*;
 import experimental_classes.*;
-import common.*;
 import terminal_interface.*;
 
 public class LanguageStudyerSwing {

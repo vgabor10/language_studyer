@@ -1,6 +1,8 @@
 package dictionary;
 
-import common.*;
+import study_item_objects.AnswerDataContainer;
+import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.StringTabular;
 
 import java.util.*;
 import java.text.DecimalFormat;

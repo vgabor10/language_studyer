@@ -1,8 +1,9 @@
 package terminal_interface;
 
+import study_item_objects.AnswerDataStatisticsMaker;
+import common.GeneralFunctions;
 import grammar_book.*;
 import settings_handler.*;
-import common.*;
 
 import java.util.*;
 import java.text.DecimalFormat;	

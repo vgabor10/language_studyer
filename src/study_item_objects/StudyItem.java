@@ -1,4 +1,4 @@
-package common;
+package study_item_objects;
 
 public class StudyItem {
 

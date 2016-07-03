@@ -1,7 +1,12 @@
 package dictionary;
 
-import common.*;
-import dictionary.*;
+import study_item_objects.AnswerDataByStudyItemComparatorByNumberOfAnswers;
+import study_item_objects.AnswerData;
+import study_item_objects.AnswerDataContainer;
+import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.AnswerDataByStudyItem;
+import common.Logger;
+import study_item_objects.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 import java.util.*;
 
@@ -10,9 +15,9 @@ public class CardChooser {
 	private CardContainer cardContainer;
 	private AnswerDataContainer answerDataContainer;
 
-	private Random randomGenerator = new Random();
+	private final Random randomGenerator = new Random();
 	private AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer;
-	private Logger logger = new Logger();
+	private final Logger logger = new Logger();
 
 	public void setCardContainer(CardContainer cc) {
 		cardContainer = cc;

@@ -5,7 +5,7 @@
  */
 package graphic_user_interface;
 
-import common.AnswerDataContainer;
+import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import dictionary.CardContainer;
 import dictionary.DictionaryDataModificator;

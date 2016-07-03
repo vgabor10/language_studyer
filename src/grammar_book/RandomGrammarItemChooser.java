@@ -1,6 +1,6 @@
 package grammar_book;
 
-import common.*;
+import common.Logger;
 import java.util.*;
 
 public class RandomGrammarItemChooser {

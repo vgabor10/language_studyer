@@ -1,6 +1,6 @@
 package terminal_interface;
 
-import common.*;
+import common.Logger;
 import dictionary.*;
 
 import java.util.*;

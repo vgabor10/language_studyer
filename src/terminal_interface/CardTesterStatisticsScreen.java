@@ -1,7 +1,7 @@
 package terminal_interface;
 
-import common.AnswerDataByStudyItemsContainer;
-import common.AnswerDataContainer;
+import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.AnswerDataContainer;
 import dictionary.CardContainer;
 import dictionary.CardTestStatisticsMaker;
 import java.io.Console;

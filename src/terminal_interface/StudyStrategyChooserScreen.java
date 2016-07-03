@@ -1,16 +1,17 @@
 package terminal_interface;
 
-import common.AnswerDataContainer;
+import study_item_objects.AnswerDataContainer;
 import dictionary.CardChooser;
 import dictionary.CardContainer;
 import java.io.Console;
+import java.util.HashSet;
 import java.util.Set;
 
 public class StudyStrategyChooserScreen {
     
     private AnswerDataContainer answerDataContainer;
     private CardContainer cardContainer;
-    private Set<Integer> cardsToTestIndexes;
+    private Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
     
     Console console = System.console();
     

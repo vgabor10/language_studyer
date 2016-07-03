@@ -1,9 +1,11 @@
 package terminal_interface;
 
+import study_item_objects.AnswerDataContainer;
+import study_item_objects.AnswerDataStatisticsMaker;
+import common.Logger;
 import grammar_book.*;
 import dictionary.*;
 import settings_handler.*;
-import common.*;
 import dictionary.CardTester;
 
 import java.util.*;
@@ -89,33 +91,30 @@ public class LanguageStudyerTerminal {
 
 		//practising
 		if (choice.equals("0")) {
-                    
-                        //TODO: implement card category chooser
-                    
-			//cardTester.setCardContainer(testedCardGroupHandler.cardsToTest);
-			//cardTester.setAnswerDataContainer(answerDataContainer);
-                        
-                        StudyStrategyChooserScreen studyStrategyChooserScreen
-                                = new StudyStrategyChooserScreen();
-                        studyStrategyChooserScreen.setAnswerDataContainer(answerDataContainer);
-                        studyStrategyChooserScreen.setCardContainer(cardContainer);
-                        studyStrategyChooserScreen.toScreenMenuAndEvaluateCardsToTestIndexes();
-                        Set<Integer> cardsToTestIndexes = studyStrategyChooserScreen.getCardsToTestIndexes();
-                        
+
+                    StudyStrategyChooserScreen studyStrategyChooserScreen
+                            = new StudyStrategyChooserScreen();
+                    studyStrategyChooserScreen.setAnswerDataContainer(answerDataContainer);
+                    studyStrategyChooserScreen.setCardContainer(cardContainer);
+                    studyStrategyChooserScreen.toScreenMenuAndEvaluateCardsToTestIndexes();
+                    Set<Integer> cardsToTestIndexes = studyStrategyChooserScreen.getCardsToTestIndexes();
+
+                    if (!cardsToTestIndexes.isEmpty()) {
+
                         // performing test //
                         CardTester cardTester = new CardTester();
                         cardTester.setAllCard(cardContainer);
                         cardTester.setCardsToTestFromCardIndexesSet(cardsToTestIndexes);
-                        
+
                         CardTesterScreen cardTesterScreen = new CardTesterScreen();
                         cardTesterScreen.setCardTester(cardTester);
-                        
+
                         long startTime = new Date().getTime();
                         cardTesterScreen.performTest();
                         long finishTime = new Date().getTime();
-                        
+
                         // showing statistics //
-                        
+
                         CardTesterStatisticsScreen cardTesterStatisticsScreen
                                 = new CardTesterStatisticsScreen();
                         cardTesterStatisticsScreen.setCardContainer(cardContainer);
@@ -123,12 +122,15 @@ public class LanguageStudyerTerminal {
                         cardTesterStatisticsScreen.setUserAnswers(cardTester.getUserAnswers());
                         cardTesterStatisticsScreen.setStartAndFinishTime(startTime, finishTime);
                         cardTesterStatisticsScreen.toScreenStatistics();
-                        
+
                         // update memory and disc database //
-                        
-                        //DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-                        //dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
-		}
+
+                        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+                        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
+                        answerDataContainer.appendAnswerDataContainer(cardTester.getUserAnswers());
+
+                    }
+                }
 
 		//basic statistics
 		if (choice.equals("1")) {
@@ -184,7 +186,7 @@ public class LanguageStudyerTerminal {
 			cardFinder.setCardContainer(cardContainer);
 			cardFinder.setAnswerDataContainer(answerDataContainer);
 
-			String s = "";
+			String s;
 			do {
 				System.out.print("\033[H\033[2J");
 				System.out.println("type definition part, or x to quit:");
@@ -225,7 +227,7 @@ public class LanguageStudyerTerminal {
 		        		Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
 		       			Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
 
-		       			if (foundCardIndexes.size() == 0) {
+		       			if (foundCardIndexes.isEmpty()) {
 							cardContainer.addCardToContainerAndAppenToDiscFile(card,
 								 settingsHandler.getStudiedLanguageCardDataPath());
 							System.out.println("card added to data base with index " + Integer.toString(card.index));
