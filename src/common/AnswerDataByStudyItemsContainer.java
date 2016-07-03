@@ -18,7 +18,7 @@ public class AnswerDataByStudyItemsContainer {
 		else {
 			AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
 			answerDataByStudyItem.addAnswer(answerData);
-			data.put(answerData.index, answerDataByStudyItem);
+                        data.put(answerData.index,answerDataByStudyItem);
 		}
 	}
 
@@ -34,6 +34,10 @@ public class AnswerDataByStudyItemsContainer {
 		return studyingDays;
 	}
 
+        public boolean containsStudyItemWithIndex(int index) {
+            return data.keySet().contains(index);
+        }
+        
 	public Histogram getHistogramAtDay(int day) {	//TODO: other class
 
 		Histogram histogram = new Histogram();

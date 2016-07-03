@@ -1,13 +1,11 @@
 package dictionary;
 
 import common.*;
+import experimental_classes.CardChooser2;
 import settings_handler.*;
 
 import java.util.*;
 import java.io.Console;
-import java.text.DecimalFormat;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.text.DecimalFormat;
 
 public class CardTester {
@@ -16,7 +14,7 @@ public class CardTester {
 	private CardContainer cardContainer;
 	private AnswerDataContainer answerDataContainer;
 	private	List<Integer> cardsToTestIndexes = new Vector<Integer>();
-	private CardChooser cardChooser = new CardChooser();
+	private CardChooser2 cardChooser = new CardChooser2();
 
 	private Logger logger = new Logger();
 
@@ -98,85 +96,16 @@ public class CardTester {
 		performTest();
 	}
 
-	public Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
-		Set<Integer> cardIndexes = new HashSet<Integer>();
-
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
-		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
-
-		for (int index : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
-
-			AnswerDataByStudyItem answerDataByStudyItem 
-				= answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index);
-
-			if (0.5 <= answerDataByStudyItem.countRightAnswerRate()) {
-				cardIndexes.add(answerDataByStudyItem.getStudyItemIndex());
-			}
-		}
-
-		int plusNumberOfCardsAdded = 0;
-		int i=0;
-		while(i<cardContainer.numberOfCards() && plusNumberOfCardsAdded<100) {
-			Card card = cardContainer.getCardByOrder(i);
-			if (!cardIndexes.contains(card.index)) {
-				cardIndexes.add(card.index);
-				plusNumberOfCardsAdded++;
-			}
-			i++;
-		}
-
-		return cardIndexes;
-	}
-
+        //4 latest studyed cards, 4 among hardest 20%, 4 from the hardes 100, 2 among cards with the 100 lest significant answer rate, 6 random cards
 	public void performTest8() {
+		cardChooser.setCardContainer(cardContainer);
+		cardChooser.setAnswerDataContainer(answerDataContainer);
 
-		Set<Integer> cardIndexes = getCardIndexesWithMinAnswerRateAndPlusSome(0.5, 100);
-
-		logger.debug("performTest8: number of card indexes for choice: " + cardIndexes.size());
-
-		AnswerDataContainer answerDataContainer2 = new AnswerDataContainer();
-		CardContainer cardContainer2 = new CardContainer();
-
-		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
-			if (cardIndexes.contains(answerDataContainer.getAnswerData(i).index)) {
-				answerDataContainer2.addAnswerData(answerDataContainer.getAnswerData(i));
-			}
-		}
-
-		for (int i=0; i<cardContainer.numberOfCards(); i++) {
-			if (cardIndexes.contains(cardContainer.getCardByOrder(i).index)) {
-				cardContainer2.addCard(cardContainer.getCardByOrder(i));
-			}
-		}
-
-		cardChooser.setCardContainer(cardContainer2);
-		cardChooser.setAnswerDataContainer(answerDataContainer2);
-
-		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest7());
+		cardsToTestIndexes.addAll(cardChooser.chooseCardsToTestIndexesForTest8());
 		java.util.Collections.shuffle(cardsToTestIndexes);
 		performTest();
 	}
-
-	private Set<String> getAcceptabelAnswers(String definition) {
-		Set<String> out = new HashSet<String>();
-
-		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
-
-		for (int i=0; i<cardContainer.numberOfCards(); i++) {
-			Card card = cardContainer.getCardByOrder(i);
-
-			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
-
-			definitionParts2.retainAll(definitionParts);
-
-			if (definitionParts2.size() != 0) {
-				out.add(card.term);
-			}
-		}
-
-		return out;
-	}
-
+        
 	private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
 		Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<String, Integer>();
 

@@ -108,4 +108,13 @@ public class CardContainer extends StudyItemContainer {
 			System.out.println(getCardByOrder(i).toStringData());
 		}
 	}
+        
+        @Override
+        public String toString() {
+           String out = "";
+           for (int i=0; i<numberOfCards(); i++) {
+               out = out + getCardByOrder(i).toStringData() + "\n";
+           }
+           return out;
+        }
 }

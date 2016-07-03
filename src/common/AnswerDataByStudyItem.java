@@ -52,9 +52,7 @@ public class AnswerDataByStudyItem {
 	}
 
 	public double countRightAnswerRate() {
-
 		if (numberOfAnswers() != 0) {
-
 			int numberOfRightAnswers = 0;
 
 			int i=data.size()-1;

@@ -25,7 +25,7 @@ public class NewJDialog extends javax.swing.JDialog {
 
     private CardTester2 cardTester2 = new CardTester2();
     private CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
-    private CardContainer cardContainer = new CardContainer();;
+    private CardContainer cardContainer = new CardContainer();
     private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     private Logger logger = new Logger();
     
@@ -254,20 +254,20 @@ public class NewJDialog extends javax.swing.JDialog {
 
     private void goToStatisticsFrameAndSaveData() {
         cardTestStatisticsMaker.endMeasureTime();
-        cardTestStatisticsMaker.setTestAnswers(cardTester2.getUserAnswers());
-        cardTestStatisticsMaker.setCardContainer(cardContainer);
+        
+        AnswerDataContainer userAnswers = cardTester2.getUserAnswers();
+        
+        cardTestStatisticsMaker.setTestAnswers(userAnswers);
+        cardTestStatisticsMaker.setTestedCards(cardTester2.getCardsToTest());
         cardTestStatisticsMaker.setOldAnswers(answerDataContainer);
         
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
 	dictionaryDataModificator.setCardContainer(cardContainer);
 	dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
         
-        AnswerDataContainer userAnswers = cardTester2.getUserAnswers();
 	dictionaryDataModificator.appendToStudiedLanguageCardData(userAnswers);
 
         logger.debug("appended answers:\n" + userAnswers.toString());
-        
-        setVisible(false);
         
         NewJDialog2 dialog = new NewJDialog2(new javax.swing.JFrame(), true);
         dialog.setCardTestStatisticsMaker(cardTestStatisticsMaker);

@@ -7,7 +7,7 @@ import java.util.*;
 
 public class CardTester2 {
 
-	private CardContainer allCard;	//TODO: rename
+	private CardContainer allCard;
 	private CardContainer cardsToTest;
 	private int numberOfCardsQuestioned;
 	private AnswerDataContainer userAnswers = new AnswerDataContainer();
@@ -29,6 +29,10 @@ public class CardTester2 {
 	public void setCardsToTest(CardContainer cc) {
 		cardsToTest = cc;
 	}
+        
+        public CardContainer getCardsToTest() {
+            return cardsToTest;
+        }
 
 	public void moveToNextCardToQuestion() {
 		actualQuestionedCard = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
@@ -109,26 +113,6 @@ public class CardTester2 {
 
 	public int numberOfCardsQuestioned() {
 		return numberOfCardsQuestioned;
-	}
-
-	private Set<String> getAcceptabelAnswers(String definition) {
-		Set<String> out = new HashSet<String>();
-
-		Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
-
-		for (int i=0; i<allCard.numberOfCards(); i++) {
-			Card card = allCard.getCardByOrder(i);
-
-			Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
-
-			definitionParts2.retainAll(definitionParts);
-
-			if (!definitionParts2.isEmpty()) {
-				out.add(card.term);
-			}
-		}
-
-		return out;
 	}
 
 	private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {

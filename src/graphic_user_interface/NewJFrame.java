@@ -1,20 +1,27 @@
 package graphic_user_interface;
 
+import dictionary.CardContainer;
+import dictionary.CardFinder;
 import java.awt.event.KeyEvent;
+import settings_handler.SettingsHandler;
 
 public class NewJFrame extends javax.swing.JFrame {
 
-    /**
-     * Creates new form NewJFrame
-     */
+    private CardContainer cardContainer = new CardContainer();
     
     public NewJFrame() {
         initComponents();
+
+   
+        SettingsHandler settingsHandler = new SettingsHandler();
+        cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
+
         
         setLocationRelativeTo(null);
         
         jButton1.setMnemonic(KeyEvent.VK_P);
         jButton2.setMnemonic(KeyEvent.VK_B);
+        jButton4.setMnemonic(KeyEvent.VK_F);
         jButton10.setMnemonic(KeyEvent.VK_X);
     }
 
@@ -69,7 +76,12 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton3.setText("Additional statistics");
 
-        jButton4.setText("jButton4");
+        jButton4.setText("Find card");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -204,9 +216,7 @@ public class NewJFrame extends javax.swing.JFrame {
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         NewJDialog dialog = new NewJDialog(new javax.swing.JFrame(), true); 
-        setVisible(false);
         dialog.setVisible(true);
-        setVisible(true);  
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -228,11 +238,15 @@ public class NewJFrame extends javax.swing.JFrame {
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
         NewJDialog dialog = new NewJDialog(new javax.swing.JFrame(), true); 
-        setVisible(false);
         dialog.setVisible(true);
-        setVisible(true);  
        }
     }//GEN-LAST:event_jButton1KeyPressed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        NewJDialog3 dialog = new NewJDialog3(new javax.swing.JFrame(), true);
+        dialog.setCardContainer(cardContainer);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface;
 
+import common.Logger;
+import dictionary.Card;
+import dictionary.CardContainer;
 import experimental_classes.CardTestStatisticsMaker2;
 import java.awt.event.KeyEvent;
-import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -17,12 +14,17 @@ import javax.swing.table.DefaultTableModel;
 public class NewJDialog2 extends javax.swing.JDialog {
 
     public CardTestStatisticsMaker2 cardTestStatisticsMaker;
+    private Logger logger = new Logger();
+    private DefaultTableModel model;
 
     public NewJDialog2(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
+        
         jButton1.requestFocus();
+        
+        model = (DefaultTableModel)Title1.getModel();
      }
 
 
@@ -31,18 +33,45 @@ public class NewJDialog2 extends javax.swing.JDialog {
     }
 
     public void setCardTestStatisticsDataToFrame() {
-        cardTestStatisticsMaker.evaluateStatistics();
+        cardTestStatisticsMaker.fillAnserDataByStudyItemContainers();
 
-        jLabel13.setText(cardTestStatisticsMaker.numberOfCardsWithImprovementAsString());
-        jLabel14.setText(cardTestStatisticsMaker.numberOfCardsWithNoChangeAsString());        
-        jLabel18.setText(cardTestStatisticsMaker.numberOfCardsWithReducementAsString());
-        jLabel19.setText(cardTestStatisticsMaker.numberOfCategoryImprovementsAsString());
-        jLabel20.setText(cardTestStatisticsMaker.numberOfCategoryReducementsAsString());
+        jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
+        jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
+        jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArReducement()));
+        jLabel19.setText(Double.toString(cardTestStatisticsMaker.aggragatedImprovements()));
+        jLabel20.setText(Double.toString(cardTestStatisticsMaker.aggragatedReducements()));
         jLabel16.setText(cardTestStatisticsMaker.numberOfUserAnswersAsString());
-        jLabel17.setText(cardTestStatisticsMaker.numberOfNewCardsTestedAsString());
-        //jLabel18.setText(cardTestStatisticsMaker.numberOfCardsWithReducementAsString());*/
+        jLabel17.setText(Integer.toString(cardTestStatisticsMaker.numberOfNewCardsTested()));
         jLabel15.setText(cardTestStatisticsMaker.percentageOfRightAnswersAsString());
-        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());       
+        jLabel21.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsBeforeTestAsString());
+        jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsAfterTestAsString());
+        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
+        
+        CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
+                
+        logger.debug(testedCards.toString());
+        
+        for (int i=0; i<testedCards.numberOfCards(); i++) {
+            Card card = testedCards.getCardByOrder(i);
+             
+            String afterTestRarAsString = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
+            
+            int afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
+            
+            String beforeTestRarAsString = "-";
+            if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                beforeTestRarAsString
+                        = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
+            }
+             
+             model.addRow(new Object[] {
+                    card.term,
+                    card.definition,
+                    "*",
+                    beforeTestRarAsString,
+                    afterTestNumberOfAnswers
+            });
+        }
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -83,30 +112,12 @@ public class NewJDialog2 extends javax.swing.JDialog {
 
         Title1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "card", "before test answer rate", "after test answer rate", "# of answers after test"
+                "term", "definition", "after test answer rate", "before test answer rate", "# of answers after test"
             }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.String.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
+        ));
         jScrollPane1.setViewportView(Title1);
 
         jLabel13.setText("jLabel13");
@@ -139,13 +150,13 @@ public class NewJDialog2 extends javax.swing.JDialog {
 
         jLabel6.setText("number of answers:");
 
-        jLabel5.setText("number of category reducements:");
+        jLabel5.setText("aggregated reducements:");
 
         jLabel4.setText("number of cards whose answer rate reduces:");
 
         jLabel3.setText("number of new cards tested:");
 
-        jLabel8.setText("number of category improvements:");
+        jLabel8.setText("aggregated improvements:");
 
         jLabel7.setText("percentage of right answers:");
 
@@ -213,10 +224,10 @@ public class NewJDialog2 extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel22))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabel18))
                                     .addComponent(jLabel2))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

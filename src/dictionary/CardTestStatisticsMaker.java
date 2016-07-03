@@ -37,7 +37,6 @@ public class CardTestStatisticsMaker {	//TODO: refactorate this class
 		endTime = et;
 	}
 
-
 	public void toScreenStatistics() { 
 
 		Set<Integer> cardIndexes = new HashSet<Integer>();

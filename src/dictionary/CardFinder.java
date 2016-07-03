@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 public class CardFinder {
 
 	private CardContainer cardContainer;
-	private AnswerDataContainer answerDataContainer;
+	private AnswerDataContainer answerDataContainer;    //TODO: is necessery?
 
 	public void setCardContainer(CardContainer cc) {
 		cardContainer = cc;
@@ -69,7 +69,7 @@ public class CardFinder {
 		}
 	}
 
-	public void toScreenCardsWithGivenTermPart(String prefix) {
+	public void toScreenCardsWithGivenTermPart(String prefix) { //TODO: remove
 		int maxListedCards = 31;
 		Vector<Card> cardsToList = new Vector<Card>();
 
@@ -92,6 +92,23 @@ public class CardFinder {
 			System.out.println("MORE CARDS HAS BEEN FOUND");
 		}
 	}
+        
+        public Vector<Card> getCardsWithGivenTermPart(String termPart) {
+		Vector<Card> foundCards = new Vector<Card>();
+
+		for (int i=0; i < cardContainer.numberOfCards(); i++) {
+                        Card card = cardContainer.getCardByOrder(i);
+			if (card.term.contains(termPart)) {
+				foundCards.add(card);
+			}
+		}
+
+                 
+                System.out.println(foundCards);
+                
+		//Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange());*/
+                return foundCards;
+        }
 
 	public void toScreenCardsWithGivenDefinitionPart(String definitionPart) {
 
