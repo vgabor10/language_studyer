@@ -5,15 +5,22 @@ import dictionary.Card;
 import dictionary.CardContainer;
 import experimental_classes.CardTestStatisticsMaker2;
 import java.awt.event.KeyEvent;
+import java.text.DecimalFormat;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataContainer;
 
 /**
  *
  * @author varga
  */
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
-
-    public CardTestStatisticsMaker2 cardTestStatisticsMaker;
+    
+    public CardContainer allCard;
+    public AnswerDataContainer oldAnswers;
+    public AnswerDataContainer testAnswers;
+    public long startTime;
+    public long finishTime;
+    
     private final Logger logger = new Logger();
     private final DefaultTableModel model;
 
@@ -28,13 +35,16 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         model = (DefaultTableModel)Title1.getModel();
      }
 
-
-    public void setCardTestStatisticsMaker(CardTestStatisticsMaker2 ctsm) {
-        cardTestStatisticsMaker = ctsm;
-    }
-
     public void setCardTestStatisticsDataToFrame() {
+        CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
+        
+        cardTestStatisticsMaker.setAllCard(allCard);
+        cardTestStatisticsMaker.setOldAnswers(oldAnswers);
+        cardTestStatisticsMaker.setTestAnswers(testAnswers);
+        cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
+        
         cardTestStatisticsMaker.fillAnserDataByStudyItemContainers();
+        cardTestStatisticsMaker.evaluateTestedCards();
 
         jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
         jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
@@ -48,22 +58,22 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsAfterTestAsString());
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
-        
+        DecimalFormat df = new DecimalFormat("#.000");
+        CardContainer testedCards = cardTestStatisticsMaker.testedCards;
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
              
-            String afterTestRarAsString = "*";
-            //afterTestRarAsString = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
+            String afterTestRarAsString = "-";
+            afterTestRarAsString = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
             
             int afterTestNumberOfAnswers = -1;
-            //afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
+            afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
             
-            String beforeTestRarAsString = "*";
-            /*if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+            String beforeTestRarAsString = "-";
+            if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
                 beforeTestRarAsString
-                        = Double.toString(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
-            }*/
+                        = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
+            }
              
              model.addRow(new Object[] {
                     card.term,

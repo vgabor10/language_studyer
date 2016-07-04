@@ -10,9 +10,10 @@ import common.Logger;
 import dictionary.CardContainer;
 import dictionary.DictionaryDataModificator;
 import dictionary.CardChooser;
-import experimental_classes.CardTestStatisticsMaker2;
 import dictionary.CardTester;
 import java.awt.event.KeyEvent;
+import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 import settings_handler.SettingsHandler;
@@ -23,12 +24,13 @@ import settings_handler.SettingsHandler;
  */
 public class CardTesterDialog extends javax.swing.JDialog {
 
-    private CardTester cardTester = new CardTester();
-    private CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
-    private CardContainer cardContainer = new CardContainer();
-    private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-    private DefaultTableModel model;
+    private final CardTester cardTester = new CardTester();
+    private final CardContainer cardContainer = new CardContainer();
+    private final AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+    private final DefaultTableModel model;
     private final Logger logger = new Logger();
+    private long startTime;
+    private long finishTime;
     
     public CardTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -64,7 +66,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
         jButton1.setMnemonic(KeyEvent.VK_B);
         
-        cardTestStatisticsMaker.startMeasureTime();
+        startTime = new Date().getTime();
     }
 
     /**
@@ -233,50 +235,50 @@ public class CardTesterDialog extends javax.swing.JDialog {
                             jTextField1.setText("");
                             jTextField2.setText("");
                             jLabel1.setText("");
-                        }
-                        else {
-                            goToStatisticsFrameAndSaveData();
-                            dispose();
-                        }
                     }
                     else {
-                        if (cardTester.isUserAnswerRight()) {
-                            jTextField1.setText("");
-                            jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                            jTextField2.setForeground(new java.awt.Color(45, 107, 53));
-                            jLabel1.setText("RIGHT, but the above term was tought");
-                            
-                            showAcceptableCards();
-                        }
-                        else {
-                            jTextField1.setText("");
-                            jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                            jTextField2.setForeground(new java.awt.Color(255, 0, 0));
-                            jLabel1.setText("wrong");
-                            
-                            showAcceptableCards();
-                        }
+                        goToStatisticsFrameAndSaveData();
+                        dispose();
                     }
                 }
                 else {
-                    if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
-                        if (cardTester.isMoreCardToTest()) {
-                            cardTester.moveToNextCardToQuestion();
-                            jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
-                                jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                                jTextField1.setText("");
-                                jTextField2.setText("");
-                                jLabel1.setText("");
-                                
-                                clearTabular();
-                            }
-                            else {
-                                goToStatisticsFrameAndSaveData();
-                                dispose();
-                            }
-                        }
+                    if (cardTester.isUserAnswerRight()) {
+                        jTextField1.setText("");
+                        jTextField2.setText(cardTester.getActualQuestionedCard().term);
+                        jTextField2.setForeground(new java.awt.Color(45, 107, 53));
+                        jLabel1.setText("RIGHT, but the above term was tought");
+
+                        showAcceptableCards();
+                    }
+                    else {
+                        jTextField1.setText("");
+                        jTextField2.setText(cardTester.getActualQuestionedCard().term);
+                        jTextField2.setForeground(new java.awt.Color(255, 0, 0));
+                        jLabel1.setText("wrong");
+
+                        showAcceptableCards();
                     }
                 }
+            }
+            else {
+                if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
+                    if (cardTester.isMoreCardToTest()) {
+                        cardTester.moveToNextCardToQuestion();
+                        jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
+                        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
+                        jTextField1.setText("");
+                        jTextField2.setText("");
+                        jLabel1.setText("");
+
+                        clearTabular();
+                    }
+                    else {
+                        goToStatisticsFrameAndSaveData();
+                        dispose();
+                    }
+                }
+            }
+        }
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void showAcceptableCards() {
@@ -298,13 +300,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
     
     private void goToStatisticsFrameAndSaveData() {
-        cardTestStatisticsMaker.endMeasureTime();
+        finishTime = new Date().getTime();
         
         AnswerDataContainer userAnswers = cardTester.getUserAnswers();
-        
-        cardTestStatisticsMaker.setTestAnswers(userAnswers);
-        cardTestStatisticsMaker.setTestedCards(cardTester.getCardsToTest());
-        cardTestStatisticsMaker.setOldAnswers(answerDataContainer);
         
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
 	dictionaryDataModificator.setCardContainer(cardContainer);
@@ -312,8 +310,14 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
 	dictionaryDataModificator.appendToStudiedLanguageCardData(userAnswers);
         
+        
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
-        dialog.setCardTestStatisticsMaker(cardTestStatisticsMaker);
+        dialog.allCard = cardContainer;
+        dialog.testAnswers = cardTester.getUserAnswers();
+        dialog.oldAnswers = answerDataContainer;
+        dialog.finishTime = finishTime;
+        dialog.startTime = startTime;
+        
         dialog.setCardTestStatisticsDataToFrame();
         dialog.setVisible(true);
     }

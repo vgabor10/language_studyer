@@ -44,7 +44,7 @@ public class CardTester {
         public CardContainer getCardsToTest() {
             return cardsToTest;
         }
-
+        
 	public void moveToNextCardToQuestion() {
 		actualQuestionedCard = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
 		numberOfCardsQuestioned++;

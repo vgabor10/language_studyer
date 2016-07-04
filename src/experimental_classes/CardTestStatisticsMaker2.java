@@ -12,14 +12,15 @@ import java.text.DecimalFormat;
 
 public class CardTestStatisticsMaker2 {
 
-	private CardContainer testedCards;
+	public CardContainer testedCards;
+        private CardContainer allCard;
 	private AnswerDataContainer testAnswers;
         private AnswerDataContainer oldAnswers;
 
 	/////////////// STATISTICS ///////////
 
 	public long startTime;
-	public long endTime;
+	public long finishTime;
         public AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest 
                 = new AnswerDataByStudyItemsContainer();
 	public AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest
@@ -29,8 +30,8 @@ public class CardTestStatisticsMaker2 {
 
         private Logger logger = new Logger();
         
-	public void setTestedCards(CardContainer tc) {
-		testedCards = tc;
+	public void setAllCard(CardContainer ac) {
+		allCard = ac;
 	}
 
 	public void setTestAnswers(AnswerDataContainer ta) {
@@ -40,16 +41,19 @@ public class CardTestStatisticsMaker2 {
         public void setOldAnswers(AnswerDataContainer oa) {
 		oldAnswers = oa;
 	}
-
-	public void startMeasureTime() {
-		Date date = new Date();
-		startTime = date.getTime();
+        
+        public void setStartAndFinishTime(long st, long ft) {
+		startTime = st;
+                finishTime = ft;
 	}
 
-	public void endMeasureTime() {
-		Date date = new Date();
-		endTime = date.getTime();
-	}
+        public void evaluateTestedCards() {
+            testedCards = new CardContainer();
+            
+            for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
+                testedCards.addCard(allCard.getCardByIndex(testAnswers.getAnswerData(i).index));
+            }
+        }
 
         public CardContainer getTestedCards() {
             return testedCards;
@@ -185,7 +189,7 @@ public class CardTestStatisticsMaker2 {
 	}
         
         public String getUsedTimeAsString() {
-		Date date = new Date(endTime - startTime);
+		Date date = new Date(finishTime - startTime);
 		DateFormat formatter = new SimpleDateFormat("mm:ss");
 		String dateFormatted = formatter.format(date);
 		return dateFormatted;

@@ -19,7 +19,6 @@ public class CardTesterScreen {
     public void performTest() {
 
 	Console console = System.console();
-	DecimalFormat df = new DecimalFormat("#.00");
 
         while (cardTester.isMoreCardToTest()) {
 

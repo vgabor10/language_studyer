@@ -41,7 +41,7 @@ public class CardTestStatisticsMaker {	//TODO: refactorate this class
 
 	public void toScreenStatistics() { 
 
-		Set<Integer> cardIndexes = new HashSet<Integer>();
+		Set<Integer> cardIndexes = new HashSet<>();
 
 		DecimalFormat df = new DecimalFormat("#.000");
 
