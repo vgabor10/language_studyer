@@ -140,6 +140,11 @@ public class NewJFrame extends javax.swing.JFrame {
         jButton7.setText("Additional statistics");
 
         jButton8.setText("Read Grammar Book");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton12.setText("Grammar Item Tree");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -261,7 +266,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        NewJDialog3 dialog = new NewJDialog3(new javax.swing.JFrame(), true);
+        CardFinderDialog dialog = new CardFinderDialog(new javax.swing.JFrame(), true);
         dialog.setCardContainer(cardContainer);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -270,6 +275,11 @@ public class NewJFrame extends javax.swing.JFrame {
         GrammarItemTreeDialog dialog = new GrammarItemTreeDialog(new javax.swing.JFrame(), true);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton8ActionPerformed
 
     /**
      * @param args the command line arguments

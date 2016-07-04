@@ -41,15 +41,6 @@ public class GrammarItemTreeDialog extends javax.swing.JDialog {
 	grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
         
         fillTreeWithGrammarBookData();
-        
-        //add the child nodes to the root node
-        //root.add(vegetableNode);
-        //root.add(fruitNode);
-         
-        //create the tree by passing in the root node
-        //jTree1 = new JTree(root);
-        //add(jTree1);
-        
     }
     
     private void fillTreeWithGrammarBookData() {
@@ -163,6 +154,12 @@ public class GrammarItemTreeDialog extends javax.swing.JDialog {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(GrammarItemTreeDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 

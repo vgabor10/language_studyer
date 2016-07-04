@@ -11,7 +11,7 @@ public class GrammarItem extends StudyItem {
 	private Map<Integer, Example> examples = new TreeMap<Integer, Example>();
 	String commentForExamples;
 
-	GrammarItem() {
+	public GrammarItem() {
 		title.clear();
 		commentForExamples = "";
 		description = "";
