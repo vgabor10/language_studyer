@@ -1,6 +1,7 @@
-package study_item_objects;
+package study_item_objects.answer_data_by_study_item_comparators;
 
 import java.util.Comparator;
+import study_item_objects.AnswerDataByStudyItem;
 
 public class AnswerDataByStudyItemComparatorByLastStudyDate implements Comparator<AnswerDataByStudyItem> {
 

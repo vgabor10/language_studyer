@@ -1,5 +1,8 @@
 package study_item_objects;
 
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 import common.Logger;
 import common.GeneralFunctions;
 import java.util.*;

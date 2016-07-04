@@ -1,12 +1,12 @@
 package dictionary;
 
-import study_item_objects.AnswerDataByStudyItemComparatorByNumberOfAnswers;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataByStudyItemsContainer;
 import study_item_objects.AnswerDataByStudyItem;
 import common.Logger;
-import study_item_objects.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 import java.util.*;
 
@@ -35,7 +35,7 @@ public class CardChooser {
 
 	public Set<Integer> getLatestQuestionedCardIndexes(int numberOfCards) {
 
-		Map<Integer,Long> cardIndexesLastQuestionDate = new HashMap<Integer,Long>();
+		Map<Integer,Long> cardIndexesLastQuestionDate = new HashMap<>();
 
 		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 			AnswerData answerData = answerDataContainer.getAnswerData(i);
@@ -56,7 +56,7 @@ public class CardChooser {
 			}
 		}
 
-		Set<Integer> out = new HashSet<Integer>();
+		Set<Integer> out = new HashSet<>();
 
 		for (int j=0; j<numberOfCards; j++) {
 			long minDate = Long.MAX_VALUE;
@@ -85,7 +85,7 @@ public class CardChooser {
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
 
-		Set<Integer> out = new HashSet<Integer>();
+		Set<Integer> out = new HashSet<>();
 		while (out.size() != numberOfCards) {
 			int r = randomGenerator.nextInt((int)Math.floor((double)answerDataByStudyItemsContainer.numberOfStudyItems() * hardestWordRate));
 			int randomHardestCardIndex = datasToSort[datasToSort.length - 1 - r].getAnswer(0).index;

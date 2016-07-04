@@ -1,5 +1,8 @@
 package dictionary;
 
+import dictionary.card_comparators.CardComparatorByDefinition;
+import dictionary.card_comparators.CardComparatorByTerm;
+import dictionary.card_comparators.CardComparatorByTermForGermanLanguange;
 import study_item_objects.AnswerDataContainer;
 
 import java.util.*;
@@ -19,7 +22,7 @@ public class CardFinder {
 	}
 
 	public void toScreenCardsWithSameTerm() {	//TODO: should be implemented a FoundCardsSchover class
-		Set<String> termData = new HashSet<String>();
+		Set<String> termData = new HashSet<>();
 
 		Card[] arrayToSort = new Card[cardContainer.numberOfCards()];
 
@@ -98,7 +101,7 @@ public class CardFinder {
 
 		for (int i=0; i < cardContainer.numberOfCards(); i++) {
                         Card card = cardContainer.getCardByOrder(i);
-			if (card.term.contains(termPart)) {
+			if (card.term.toLowerCase().contains(termPart.toLowerCase())) {
 				foundCards.add(card);
 			}
 		}

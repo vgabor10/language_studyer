@@ -3,10 +3,9 @@ package dictionary;
 import study_item_objects.AnswerDataStatisticsMaker;
 import study_item_objects.AnswerDataContainer;
 
-import java.util.*;
+public class DictionaryAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
 
-public class DictionaryAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {	//TODO: rename: DictionaryStatisticsMaker
-
+        @Override
 	public void setAnswerDataContainer(AnswerDataContainer ac) {
 		answerDataContainer = ac;
 	}

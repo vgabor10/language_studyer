@@ -1,5 +1,6 @@
-package dictionary;
+package dictionary.card_comparators;
 
+import dictionary.Card;
 import java.util.Comparator;
 
 public class CardComparatorByTermForGermanLanguange implements Comparator<Card> {
