@@ -14,7 +14,7 @@ import grammar_book.RandomGrammarItemChooser;
 import java.util.Vector;
 import settings_handler.SettingsHandler;
 
-public class NewJDialog4 extends javax.swing.JDialog {
+public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
     private final SettingsHandler settingsHandler = new SettingsHandler();
     private final GrammarBook grammarBook = new GrammarBook();
@@ -22,7 +22,7 @@ public class NewJDialog4 extends javax.swing.JDialog {
     private int testedGrammarItemIndex = -1;
     GrammarTester2 grammarTester = new GrammarTester2();
     
-    public NewJDialog4(java.awt.Frame parent, boolean modal) {
+    public GrammarItemTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
        
@@ -195,20 +195,21 @@ public class NewJDialog4 extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJDialog4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJDialog4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJDialog4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJDialog4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                NewJDialog4 dialog = new NewJDialog4(new javax.swing.JFrame(), true);
+                GrammarItemTesterDialog dialog = new GrammarItemTesterDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

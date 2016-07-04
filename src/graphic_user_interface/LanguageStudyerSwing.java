@@ -13,7 +13,7 @@ public class LanguageStudyerSwing {
 		logger.setLogFile();
 
 		logger.debug("start program");
-		new NewJFrame().setVisible(true);
+		new MainFrame().setVisible(true);
 	}
     
 }
