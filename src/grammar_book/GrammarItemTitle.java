@@ -2,15 +2,14 @@ package grammar_book;
 
 import java.util.*;
 
-class GrammarItemTitle {
+public class GrammarItemTitle {
 
-	private Vector<String> categoris;
+	private Vector<String> categoris = new Vector<String>();;
 
-	GrammarItemTitle() {
-		categoris = new Vector<String>();
+	public GrammarItemTitle() {
 	}
 
-	GrammarItemTitle(GrammarItemTitle git) {
+	public GrammarItemTitle(GrammarItemTitle git) {
 		categoris = new Vector<String>(git.getCategorisInVector());
 	}
 

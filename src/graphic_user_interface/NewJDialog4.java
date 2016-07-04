@@ -16,8 +16,8 @@ import settings_handler.SettingsHandler;
 
 public class NewJDialog4 extends javax.swing.JDialog {
 
-    private SettingsHandler settingsHandler = new SettingsHandler();
-    private GrammarBook grammarBook = new GrammarBook();
+    private final SettingsHandler settingsHandler = new SettingsHandler();
+    private final GrammarBook grammarBook = new GrammarBook();
     private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     private int testedGrammarItemIndex = -1;
     GrammarTester2 grammarTester = new GrammarTester2();
