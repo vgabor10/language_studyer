@@ -50,8 +50,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         CardChooser cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
-        Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
-        //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
+        //Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
+        Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
         
         cardTester.setAllCard(cardContainer);
         cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);

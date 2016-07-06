@@ -1,7 +1,6 @@
 package graphic_user_interface;
 
 import dictionary.CardContainer;
-import dictionary.CardFinder;
 import java.awt.event.KeyEvent;
 import settings_handler.SettingsHandler;
 
@@ -315,8 +314,6 @@ public class MainFrame extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        
-         System.out.println("aaa");
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

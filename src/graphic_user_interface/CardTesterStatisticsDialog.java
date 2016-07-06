@@ -75,13 +75,16 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                         = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
             }
              
-             model.addRow(new Object[] {
+            model.addRow(new Object[] {
                     card.term,
                     card.definition,
                     afterTestRarAsString,
                     beforeTestRarAsString,
                     afterTestNumberOfAnswers
             });
+            
+            CardTestesStatisticsTableRenderer colorRenderer = new CardTestesStatisticsTableRenderer();
+	    Title1.setDefaultRenderer(Object.class, colorRenderer);
         }
     }
     /**

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface;
 
 import experimental_classes.GrammarTester2;
@@ -19,7 +14,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     private final SettingsHandler settingsHandler = new SettingsHandler();
     private final GrammarBook grammarBook = new GrammarBook();
     private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
-    private int testedGrammarItemIndex = -1;
+    private int grammarItemIndexToTest = -1;
     GrammarTester2 grammarTester = new GrammarTester2();
     
     public GrammarItemTesterDialog(java.awt.Frame parent, boolean modal) {
@@ -38,14 +33,15 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
         
         randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
-        testedGrammarItemIndex = randomGrammarItemChooser.getGrammarItemIndexForTest3();
+        grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest3();
         
-        grammarTester.setGrammarBook(grammarBook);
-        grammarTester.setPracticedGrammarItemIndex(testedGrammarItemIndex);
+        grammarTester.setActualTestedGrammarItem(grammarBook.getGrammarItemByIndex(grammarItemIndexToTest));
         grammarTester.setExampleIndexesToTest(10);
         
         grammarTester.moveToNextExampleToQuestion();
-        jTextField1.setText(grammarTester.getActualQuestionedExample().foreign);
+        jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
+        jTextField1.setText("");
+        jLabel2.setText("");
     }
 
     /**
@@ -68,6 +64,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -108,6 +105,8 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton5.setText("Inspect grammar item");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -134,7 +133,8 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                         .addComponent(jLabel3)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -159,7 +159,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton4)
+                    .addComponent(jButton5))
                 .addContainerGap())
         );
 
@@ -226,6 +228,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

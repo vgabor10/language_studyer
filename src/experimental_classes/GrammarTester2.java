@@ -1,46 +1,41 @@
 package experimental_classes;
 
-import dictionary.*;
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import grammar_book.Example;
 import grammar_book.GrammarAnswerData;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
+import grammar_book.GrammarItem;
 
 import java.util.*;
 
 public class GrammarTester2 {
 
-	private GrammarBook grammarBook;
 	private int numberOfExamplesQuestioned = 0;
 	private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
 	private Example actualQuestionedExample;
+        private GrammarItem actualTestedGrammarItem;
 	//private String userAnswerToActualQuestion; 
 	/*private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
 	private boolean isGetAnswerToActualQuestion = false;*/
     
-        private Vector<Integer> exampleIndexesToTest;
+        private Vector<Integer> exampleIndexesToTest = new Vector<>();;
 	private final Logger logger = new Logger();
-        private int practicedGrammarItemIndex;
         
-        public void setGrammarBook(GrammarBook gb) {
-            grammarBook = gb;
-        }
-        
-        public void setPracticedGrammarItemIndex(int a) {
-            practicedGrammarItemIndex = a;
+        public void setActualTestedGrammarItem(GrammarItem gi) {
+            actualTestedGrammarItem = gi;
         }
         
         public void setExampleIndexesToTest(int numberOfExamples) {
 
 		Vector<Integer> allExampleIndex 
-                        = new Vector<>(grammarBook.getGrammarItemByIndex(practicedGrammarItemIndex).getExampleIndexes());
-
+                        = new Vector<>(actualTestedGrammarItem.getExampleIndexes());
+                
                 java.util.Collections.shuffle(allExampleIndex);
 		
                 for (int i=0; i<numberOfExamples; i++) {
-                    exampleIndexesToTest.add(allExampleIndex.elementAt(i));
+                    exampleIndexesToTest.add(allExampleIndex.get(i));
                 }
 	}
 
@@ -72,8 +67,9 @@ public class GrammarTester2 {
         }*/
 
 	public void moveToNextExampleToQuestion() {
+                int actualExampleIndex = exampleIndexesToTest.get(numberOfExamplesQuestioned);
 		actualQuestionedExample 
-                        = grammarBook.getExample(practicedGrammarItemIndex, numberOfExamplesQuestioned);
+                        = actualTestedGrammarItem.getExampleByIndex(actualExampleIndex);
 
 		numberOfExamplesQuestioned++;
 
@@ -85,7 +81,7 @@ public class GrammarTester2 {
             
             GrammarAnswerData actualAnswerData = new GrammarAnswerData();
             actualAnswerData.date = date;
-            actualAnswerData.index = practicedGrammarItemIndex;
+            actualAnswerData.index = actualTestedGrammarItem.index;
             actualAnswerData.exampleIndex = actualQuestionedExample.index;
             actualAnswerData.isRight = true;
             
@@ -103,7 +99,7 @@ public class GrammarTester2 {
             
             GrammarAnswerData actualAnswerData = new GrammarAnswerData();
             actualAnswerData.date = date;
-            actualAnswerData.index = practicedGrammarItemIndex;
+            actualAnswerData.index = actualTestedGrammarItem.index;
             actualAnswerData.exampleIndex = actualQuestionedExample.index;
             actualAnswerData.isRight = true;
             
