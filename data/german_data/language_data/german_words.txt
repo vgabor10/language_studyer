@@ -160,7 +160,7 @@
 100159	s Glas	üveg, pohár
 100160	r Führer	vezér, vezető
 100161	s Mineralwasser	ásványvíz
-100162	dürfen	szabad	rendhagyó igék
+100162	dürfen	szabad (ige)	rendhagyó igék
 100163	r Salat	saláta
 100164	rechtzeitig	időben
 100165	r Hund	kutya
@@ -234,7 +234,7 @@
 100234	e Sehenswürdigkeit	látnivaló, nevezetesség
 100235	r Haushalt	háztartás
 100236	durchschnittlich	átlagos
-100237	s Viertel	negyed
+100237	s Viertel	negyed (fn)
 100238	r Unterschied	eltérés
 100239	stark	nagy, erős
 100240	niedrig	alacsony
@@ -3109,7 +3109,7 @@
 103141	e Einigung	egyezség
 103142	musikalisch	zenei
 103143	kurzfristig	rövid lejáratú
-103144	kriegen	megkap, háborúzik
+103144	kriegen	háborúzik
 103145	auswärtig	külső
 103146	vorsichtig	óvatos
 103147	längst	régen
