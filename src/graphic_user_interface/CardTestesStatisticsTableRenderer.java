@@ -20,26 +20,25 @@ public class CardTestesStatisticsTableRenderer implements TableCellRenderer {
             String rarAfter = (String)table.getModel().getValueAt(row,2);
             String rarBefore = (String)table.getModel().getValueAt(row,3);
             
-            double rarChange;
             if (rarBefore.equals("-")) {
-                rarChange = 0;
+                c.setBackground(new Color(51,194,242));
             }
             else {
-                rarChange = Double.parseDouble((String)rarAfter) 
+                double rarChange = Double.parseDouble((String)rarAfter) 
                     - Double.parseDouble((String)rarBefore);
-            }
-            
-            if (rarChange > 0) {
-                c.setBackground(Color.green);
-            }
-            
+                                    
+                if (rarChange > 0) {
+                    c.setBackground(Color.green);
+                }
 
-            if (rarChange == 0) {
-                c.setBackground(Color.lightGray);
-            }
-            
-            if (rarChange < 0) {
-                c.setBackground(Color.red);
+
+                if (rarChange == 0) {
+                    c.setBackground(Color.lightGray);
+                }
+
+                if (rarChange < 0) {
+                    c.setBackground(Color.red);
+                }
             }
             
             return c;

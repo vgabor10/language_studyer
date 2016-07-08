@@ -14,8 +14,8 @@ public class AdditionalStatisticsShower {
 	protected AnswerDataStatisticsMaker answerDataStatisticsMaker;
 	protected Console console = System.console();
 
-	protected Vector<Method> indexAndStatisticsMethods = new Vector<Method>();
-	protected Vector<String> indexAndStatisticsCaption = new Vector<String>();
+	protected Vector<Method> indexAndStatisticsMethods = new Vector<>();
+	protected Vector<String> indexAndStatisticsCaption = new Vector<>();
 
 	protected Logger logger = new Logger();
 

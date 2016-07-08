@@ -132,6 +132,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                 "term", "definition", "after test answer rate", "before test answer rate", "# of answers after test"
             }
         ));
+        Title1.setEnabled(false);
         jScrollPane1.setViewportView(Title1);
 
         jLabel13.setText("jLabel13");

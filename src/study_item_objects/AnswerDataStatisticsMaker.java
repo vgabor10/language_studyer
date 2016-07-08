@@ -6,8 +6,7 @@ import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStud
 import common.Logger;
 import common.GeneralFunctions;
 import java.util.*;
-import java.text.DecimalFormat;		//TODO: will not be nessessery in the future
-import java.lang.Math;
+import java.text.DecimalFormat;
 import java.io.*;
 
 public class AnswerDataStatisticsMaker {
@@ -71,9 +70,14 @@ public class AnswerDataStatisticsMaker {
 			return -1;
 		}
 	}
+        
+	public String getPercentageOfRightAnswersAsString() {
+            double p = percentageOfRightAnswers();
+            return Double.toString(p) + "%";
+	}        
 
 	public int numberOfStudyItemsQuestioned() {
-		Set<Integer> StudyItemInexes = new HashSet<Integer>();
+		Set<Integer> StudyItemInexes = new HashSet<>();
 		for (int i=0; i< answerDataContainer.numberOfAnswers(); i++) {
 			StudyItemInexes.add(answerDataContainer.getAnswerData(i).index);
 		}
@@ -98,7 +102,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public int[] practisingTime() {
-		Vector<Long> answerDates = new Vector<Long>();
+		Vector<Long> answerDates = new Vector<>();
 		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 			answerDates.add(answerDataContainer.getAnswerData(i).date);
 		}
@@ -110,10 +114,16 @@ public class AnswerDataStatisticsMaker {
 		int[] out = {hours,minutes};
 		return out;
 	}
+        
+        public String getPractisingTimeInString() {
+            int[] a = practisingTime();
+            return "practising time: " + Integer.toString(a[0]) 
+                    + " hours " + Integer.toString(a[1]) + " minutes";
+        }
 
 	public void toScreenPractisingTimeByDays() {
 		if (answerDataContainer.numberOfAnswers() != 0) {
-			Vector<Long> answerDates = new Vector<Long>();
+			Vector<Long> answerDates = new Vector<>();
 
 			GeneralFunctions generalFunctions = new GeneralFunctions();
 			int actualDay = generalFunctions.milisecToDay(answerDataContainer.getAnswerData(0).date);
@@ -162,10 +172,9 @@ public class AnswerDataStatisticsMaker {
 		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		HashMap<Integer, Integer> histogramOfStudyItemsByNumberOfAnswers = new HashMap<Integer, Integer>();
+		HashMap<Integer, Integer> histogramOfStudyItemsByNumberOfAnswers = new HashMap<>();
 
 		Set<Integer> testedStudyItemIndexes = answerDataByStudyItemsContainer.getTestedStudyItemIndexes();
-		int numberOfQuestionsOfLeastStudiedStudyItem = Integer.MAX_VALUE;
 		for (int index : testedStudyItemIndexes) {
 			int numberOfAnswers = answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index).numberOfAnswers();
 			if (histogramOfStudyItemsByNumberOfAnswers.containsKey(numberOfAnswers)) {
@@ -260,7 +269,7 @@ public class AnswerDataStatisticsMaker {
 		DecimalFormat df = new DecimalFormat("#.00");
 		System.out.print("progress of right answers: ");
 
-		Set<Integer> measurementPoints = new HashSet<Integer>();
+		Set<Integer> measurementPoints = new HashSet<>();
 		for (int i=1; i <= numberOfMeasurementPoints; i++) {
 			int a = (int)Math.floor(((double)i * (double)(answerDataContainer.numberOfAnswers()) )/ (double)(numberOfMeasurementPoints)) - 1;
 			measurementPoints.add(a);
@@ -293,7 +302,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public int numberOfQuestionedStudyItems() {	//TODO: rename: getNumberOfQuestionedStudyItems()
-		Set<Integer> studyItemIndexes = new HashSet<Integer>();
+		Set<Integer> studyItemIndexes = new HashSet<>();
 		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
 			studyItemIndexes.add(answerDataContainer.getAnswerData(i).index);
 		}
@@ -301,7 +310,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public long getLastQuestionedStudyItemDate() {
-		Set<Integer> StudyItemIndexes = new HashSet<Integer>();
+		Set<Integer> StudyItemIndexes = new HashSet<>();
 		int i = answerDataContainer.numberOfAnswers() - 1;
 		int numberOfQuestionedStudyItems = numberOfQuestionedStudyItems();
 		while ((int)StudyItemIndexes.size() < numberOfQuestionedStudyItems) {
@@ -324,7 +333,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public Map<Integer,Integer> getNumberOfAnswersByDays() {
-		Map<Integer, Integer> out = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> out = new HashMap<>();
 
 		GeneralFunctions generalFunctions = new GeneralFunctions();
 
