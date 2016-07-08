@@ -270,7 +270,7 @@
 100270	r Rückhalt	támasz
 100271	schließlich	végül
 100272	e Lage	helyzet, állapot
-100273	r Süden	dél
+100273	r Süden	dél (égtály)
 100274	insgesamt	összesen
 100275	bedrohen	veszélyeztet
 100276	e Gesellschaft	társadalom
