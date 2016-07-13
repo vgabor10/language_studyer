@@ -1,148 +1,139 @@
 package grammar_book;
 
-import study_item_objects.AnswerDataByStudyItem;
-import settings_handler.*;
+import study_item_objects.AnswerDataContainer;
+import common.Logger;
+import grammar_book.Example;
+import grammar_book.GrammarAnswerData;
+import grammar_book.GrammarAnswerDataContainer;
+import grammar_book.GrammarBook;
+import grammar_book.GrammarItem;
 
 import java.util.*;
-import java.io.Console;
-import java.text.DecimalFormat;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 
-public class GrammarTester {
+public class GrammarTester {   //TODO: use at terminal interface also
 
-	private GrammarAnswerDataContainer grammarAnswerDataContainer;
-	private final Random randomGenerator = new Random();
-	private GrammarBook grammarBook;
+	private int numberOfExamplesQuestioned = 0;
+	private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
+	private Example actualQuestionedExample;
+        private GrammarItem actualTestedGrammarItem;
+	//private String userAnswerToActualQuestion;
+	/*private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
+	private boolean isGetAnswerToActualQuestion = false;*/
+    
+        private Vector<Integer> exampleIndexesToTest = new Vector<>();;
+	private final Logger logger = new Logger();
+        
+        public void setActualTestedGrammarItem(GrammarItem gi) {
+            actualTestedGrammarItem = gi;
+        }
+        
+        public void setExampleIndexesToTest(int numberOfExamples) {
 
-	public void setGrammarBook(GrammarBook gb) {
-		grammarBook = gb;
+		Vector<Integer> allExampleIndex 
+                        = new Vector<>(actualTestedGrammarItem.getExampleIndexes());
+                
+                java.util.Collections.shuffle(allExampleIndex);
+		
+                for (int i=0; i<numberOfExamples; i++) {
+                    exampleIndexesToTest.add(allExampleIndex.get(i));
+                }
 	}
 
-	public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
-		grammarAnswerDataContainer = a;
+	/*public GrammarTester2() {
+		numberOfCardsQuestioned = 0;
+	}*/
+
+	/*public void setAllCard(CardContainer cc) {
+		allCard = cc;
 	}
 
-	private Vector<Integer> getRandomExampleIndexes(int grammarItemIndex, int numberOfExamples) {
+	public void setCardsToTest(CardContainer cc) {
+		cardsToTest = cc;
+	}*/
+        
+        //before allCard need to be seted
+        /*public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
+            List<Integer> cardIndexesList = new Vector<Integer>(cardIndexes);
+            java.util.Collections.shuffle(cardIndexesList);
+            
+            cardsToTest = new CardContainer();
+            for (int index : cardIndexesList) {
+                cardsToTest.addCard(allCard.getCardByIndex(index));
+            }
+        }*/
+        
+        /*public CardContainer getCardsToTest() {
+            return cardsToTest;
+        }*/
 
-		Vector<Integer> idexesToAdd = new Vector<>(grammarBook.getGrammarItemByIndex(grammarItemIndex).getExampleIndexes());
-		Vector<Integer> outVector = new Vector<>();
+	public void moveToNextExampleToQuestion() {
+                int actualExampleIndex = exampleIndexesToTest.get(numberOfExamplesQuestioned);
+		actualQuestionedExample 
+                        = actualTestedGrammarItem.getExampleByIndex(actualExampleIndex);
 
-		while (outVector.size()<numberOfExamples) {
-			java.util.Collections.shuffle(idexesToAdd);
-			outVector.addAll(idexesToAdd);
-		}
+		numberOfExamplesQuestioned++;
 
-		while (!(outVector.size() == numberOfExamples)) {
-			outVector.removeElementAt(outVector.size()-1);
-		}
+		logger.debug("questioned example: " + actualQuestionedExample.toString());
+	}
+        
+        public void userAnswerAccepted() {
+            long date = new Date().getTime();
+            
+            GrammarAnswerData actualAnswerData = new GrammarAnswerData();
+            actualAnswerData.date = date;
+            actualAnswerData.index = actualTestedGrammarItem.index;
+            actualAnswerData.exampleIndex = actualQuestionedExample.index;
+            actualAnswerData.isRight = true;
+            
+            userAnswers.addAnswerData(actualAnswerData);
+            
+            logger.debug("added answer data: " + actualAnswerData.toString());
+        }
 
-		return outVector;
+        public void userAnswerIgnored() {
+            logger.debug("user answer ignored");
+        }
+        
+        public void userAnswerRejected() {
+            long date = new Date().getTime();
+            
+            GrammarAnswerData actualAnswerData = new GrammarAnswerData();
+            actualAnswerData.date = date;
+            actualAnswerData.index = actualTestedGrammarItem.index;
+            actualAnswerData.exampleIndex = actualQuestionedExample.index;
+            actualAnswerData.isRight = true;
+            
+            userAnswers.addAnswerData(actualAnswerData);
+            
+            logger.debug("added answer data: " + actualAnswerData.toString());
+        }
+        
+	public Example getActualQuestionedExample() {
+		return actualQuestionedExample;
 	}
 
-	public void performTestByOrderIndex(int orderIndex, int numberOfExamples) {
-		int grammarItemIndex = grammarBook.getGrammarItemByOrder(orderIndex).index;
-		performTestByGrammarItemIndex(grammarItemIndex, numberOfExamples);
+        public GrammarItem getActualQuestionedGrammarItem() {
+		return actualTestedGrammarItem;
+	}
+        
+/*	public boolean isUserAnswerRight() {
+		return acceptabelAnswersAndCardIndexesForActualQuestion.containsKey(userAnswerToActualQuestion);
+	}*/
+
+	public boolean isMoreExamplesToQuestion() {
+		return numberOfExamplesQuestioned != getNumberOfQuestions();
 	}
 
-	public void performTestByGrammarItemIndex(int grammarItemIndex, int numberOfExamples) {
+	public AnswerDataContainer getUserAnswers() {
+		return userAnswers;
+	}
 
-		GrammarItem grammarItem = grammarBook.getGrammarItemByIndex(grammarItemIndex);
+	public int getNumberOfQuestions() {
+		return exampleIndexesToTest.size();
+	}
 
-		System.out.println("log: " + grammarItem.index);	//log
-
-		Console console = System.console();
-		GrammarAnswerDataContainer testAnswers = new GrammarAnswerDataContainer();
-
-		Vector<Integer> exampleIndexes = getRandomExampleIndexes(grammarItem.index, numberOfExamples);
-
-		long startTime = System.currentTimeMillis();
-
-		int counter = 0;
-		for (int exampleIndex : exampleIndexes) {
-			System.out.print("\033[H\033[2J");
-
-			counter++;
-			System.out.println(counter + "/" + numberOfExamples);
-			System.out.println("-------------------------------------------------");
-
-			Example example = grammarItem.getExampleByIndex(exampleIndex);
-
-			System.out.println(grammarItem.title);
-			System.out.println(example.hun);
-			String answer = console.readLine();
-
-			Date date = new Date();
-			if (answer.equals(example.foreign)) {
-				System.out.print("RIGHT");
-				testAnswers.addElement(grammarItem.index, exampleIndex, true, date.getTime());
-				console.readLine();
-			}
-			else {
-				System.out.println(example.foreign);
-
-				System.out.println();
-				System.out.println("DESCRIPTION:");
-				System.out.println(grammarItem.description);
-				System.out.println();
-
-				System.out.println("seems to be wrong, what is your opinion?");
-				System.out.println("0 or enter - wrong answer");
-				System.out.println("1 - accept answer");
-				System.out.println("2 - do not register the answer");
-
-				String choice = console.readLine();
-
-				if (choice.equals("0") || choice.equals("")) {
-					testAnswers.addElement(grammarItem.index, exampleIndex, false, date.getTime());
-				}
-
-				if (choice.equals("1")) {
-					testAnswers.addElement(grammarItem.index, exampleIndex, true, date.getTime());
-				}
-			}
-		}
-
-		long endTime = System.currentTimeMillis();
-
-		AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
-		answerDataByStudyItem.loadDataFromAnswerDataContainer(grammarItemIndex, grammarAnswerDataContainer);
-		double rightAnswerRateBeforeTest = answerDataByStudyItem.countRightAnswerRate();
-
-		SettingsHandler settingsHandler = new SettingsHandler();
-		testAnswers.appendToAnswerDataFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
-		grammarAnswerDataContainer.appendAnswerDataContainer(testAnswers);
-
-		answerDataByStudyItem.clear();
-		answerDataByStudyItem.loadDataFromAnswerDataContainer(grammarItemIndex, grammarAnswerDataContainer);
-		double rightAnswerRateAfterTest = answerDataByStudyItem.countRightAnswerRate();
-
-		System.out.print("\033[H\033[2J");
-		System.out.println("number of registered answers: " + testAnswers.numberOfAnswers());
-		System.out.println("number of answers of grammar item after test: " + answerDataByStudyItem.numberOfAnswers());
-
-		int numberOfRightAnswers = 0;
-		for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
-			if (testAnswers.getAnswerData(i).isRight) numberOfRightAnswers++;
-		}
-		double percentage = (double)numberOfRightAnswers * 100.0 / (double)testAnswers.numberOfAnswers();
-		DecimalFormat df = new DecimalFormat("#.00");
-		System.out.println("percentage of right answers: " + df.format(percentage) + "%");
-
-		if (rightAnswerRateBeforeTest != -1) {
-			System.out.println("grammar item right answer rate before test: " +  df.format(rightAnswerRateBeforeTest * 100) + "%");
-		}
-		else {
-			System.out.println("grammar item right answer rate before test: -");
-		}
-		System.out.println("grammar item right answer rate after test: " +  df.format(rightAnswerRateAfterTest * 100) + "%");
-
-		Date date = new Date(endTime - startTime);
-		DateFormat formatter = new SimpleDateFormat("mm:ss");
-		String dateFormatted = formatter.format(date);
-		System.out.println("used time: " + dateFormatted);
-
-		console.readLine();
+	public int numberOfCardsQuestioned() {
+		return numberOfExamplesQuestioned;
 	}
 
 }

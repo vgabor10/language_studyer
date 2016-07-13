@@ -1,11 +1,12 @@
 package study_item_objects;
 
 import common.GeneralFunctions;
-import java.util.*;
+import java.util.Vector;
 
 public class AnswerDataByStudyItem {
 
-	private Vector<AnswerData> data = new Vector<AnswerData>();	//datas are sorted by date (growing)
+    	//datas are sorted by date (growing)
+	private Vector<AnswerData> data = new Vector<AnswerData>();
 
 	private final int numberOfConsideredAnswersAtAnswerRateAtCard = 10;
 	private final int numberOfConsideredAnswersAtAnswerRateAtGrammarItem = 40;
@@ -31,7 +32,7 @@ public class AnswerDataByStudyItem {
 		return data.get(0).index;
 	}
 
-	public long getLatestAnswerDate() {	//TODO: rename: lastStudyDate()
+	public long getLastStudyDate() {
 		return data.lastElement().date;
 	}
 

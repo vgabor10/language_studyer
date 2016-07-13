@@ -2,10 +2,9 @@ package grammar_book;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
-import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class GrammarDataModificator {
 
@@ -23,46 +22,46 @@ public class GrammarDataModificator {
 	}
 
 	public void writeGrammarBookToDisk(String filePath) {   //TODO: implement
-		/*try {
-			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+            try {
+                FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 
-			fw.write(grammarBook.preambulum + "\n");
-			fw.write("\\begin{document}\n\n");
-			fw.write("\\maketitle\n\n");
-			fw.write("\\tableofcontents\n\n");
+                fw.write(grammarBook.preambulum + "\n");
+                fw.write("\\begin{document}\n\n");
+                fw.write("\\maketitle\n\n");
+                fw.write("\\tableofcontents\n\n");
 
-			int hierarcyDepth = 0;
+                int hierarcyDepth = 0;
 
-			List<Integer> sortedIndexes = new ArrayList<Integer>(grammarBook.getGrammarItemIndexes());
-			Collections.sort(sortedIndexes);
+                List<Integer> sortedIndexes = new ArrayList<>(grammarBook.getGrammarItemIndexes());
+                Collections.sort(sortedIndexes);
 
-			for (int index : sortedIndexes) {
+                for (int index : sortedIndexes) {
 
-				String categorys[] = grammarBook.getGrammarItem(index).title.split("/");
-				for (int i=hierarcyDepth; i<categorys.length-1; i++) {
-					if (i == 0) {
-						fw.write("\\section{" + categorys[i] + "}\n\n");
-					}
-					if (i == 1) {
-						fw.write("\\subsection{" + categorys[i] + "}\n\n");
-					}
-					if (i == 2) {
-						fw.write("\\subsubsection{" + categorys[i] + "}\n\n");
-					}
-				}
-				hierarcyDepth = categorys.length - 1;
+                    String categorys[] = grammarBook.getGrammarItem(index).title.split("/");
+                    for (int i=hierarcyDepth; i<categorys.length-1; i++) {
+                        if (i == 0) {
+                            fw.write("\\section{" + categorys[i] + "}\n\n");
+                        }
+                        if (i == 1) {
+                            fw.write("\\subsection{" + categorys[i] + "}\n\n");
+                        }
+                        if (i == 2) {
+                            fw.write("\\subsubsection{" + categorys[i] + "}\n\n");
+                        }
+                    }
+                    hierarcyDepth = categorys.length - 1;
 
-				fw.write(grammarBook.getGrammarItem(index).toStringInLatexFormat());
-				fw.write("\n");
-			}
+                    fw.write(grammarBook.getGrammarItem(index).toStringInLatexFormat());
+                    fw.write("\n");
+                }
 
-			fw.write("\\end{document}\n");
+                fw.write("\\end{document}\n");
 
-			fw.close();
-		}
-		catch(IOException ioe) {
-			System.err.println("IOException: " + ioe.getMessage());
-		}*/
+                fw.close();
+            }
+            catch(IOException ioe) {
+                System.err.println("IOException: " + ioe.getMessage());
+            }
 	}
 
 	public void writeGrammarAnswerDataToDisk() {

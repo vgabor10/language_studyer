@@ -490,7 +490,7 @@ public class AnswerDataStatisticsMaker {
 
 
 		Set<Integer> keys = data.keySet();
-		SortedSet<Integer> sortedDays = new TreeSet<Integer>(keys);
+		SortedSet<Integer> sortedDays = new TreeSet<>(keys);
 
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
@@ -511,7 +511,7 @@ public class AnswerDataStatisticsMaker {
 		for (int index : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
 			sum = sum + answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
 		}
-		return sum * 100.0/ (double)answerDataByStudyItemsContainer.numberOfStudyItems();
+		return sum / (double)answerDataByStudyItemsContainer.numberOfStudyItems();
 	}
 
 	public void toSreenLongestIntervallSizeOfRightAnswers() {	//TODO: to an other class

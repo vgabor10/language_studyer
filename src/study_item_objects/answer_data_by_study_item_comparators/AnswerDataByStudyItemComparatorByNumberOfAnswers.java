@@ -9,8 +9,8 @@ public class AnswerDataByStudyItemComparatorByNumberOfAnswers implements Compara
 	public int compare(AnswerDataByStudyItem a1, AnswerDataByStudyItem a2) {
 		int a1NumberOfAnswers = a1.numberOfAnswers();
 		int a2NumberOfAnswers = a2.numberOfAnswers();
-		long a1LatestAnswerDate = a1.getLatestAnswerDate();
-		long a2LatestAnswerDate = a2.getLatestAnswerDate();
+		long a1LatestAnswerDate = a1.getLastStudyDate();
+		long a2LatestAnswerDate = a2.getLastStudyDate();
 
 		if (a1NumberOfAnswers > a2NumberOfAnswers) {
 			return 1;

@@ -59,7 +59,7 @@ public class CardContainer extends StudyItemContainer {
 	}
 
 	public Vector<Integer> findCardsByTerm(String term) {	//TODO: take to CardFinderClass
-		Vector<Integer> cardIndexes = new Vector<Integer>();
+		Vector<Integer> cardIndexes = new Vector<>();
 		for (int i=0; i<numberOfCards(); i++) {
 			if (getCardByOrder(i).term.equals(term)) {
 				cardIndexes.add(getCardByOrder(i).index);

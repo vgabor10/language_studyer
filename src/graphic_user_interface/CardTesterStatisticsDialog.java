@@ -3,7 +3,7 @@ package graphic_user_interface;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
-import experimental_classes.CardTestStatisticsMaker2;
+import dictionary.CardTestStatisticsMaker;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import javax.swing.table.DefaultTableModel;
@@ -36,7 +36,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
      }
 
     public void setCardTestStatisticsDataToFrame() {
-        CardTestStatisticsMaker2 cardTestStatisticsMaker = new CardTestStatisticsMaker2();
+        CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
         
         cardTestStatisticsMaker.setAllCard(allCard);
         cardTestStatisticsMaker.setOldAnswers(oldAnswers);

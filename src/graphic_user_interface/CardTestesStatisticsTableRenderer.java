@@ -21,14 +21,14 @@ public class CardTestesStatisticsTableRenderer implements TableCellRenderer {
             String rarBefore = (String)table.getModel().getValueAt(row,3);
             
             if (rarBefore.equals("-")) {
-                c.setBackground(new Color(51,194,242));
+                c.setBackground(new Color(51,194,242)); //light blue
             }
             else {
                 double rarChange = Double.parseDouble((String)rarAfter) 
                     - Double.parseDouble((String)rarBefore);
                                     
                 if (rarChange > 0) {
-                    c.setBackground(Color.green);
+                    c.setBackground(new Color(0,255,89));   //light green
                 }
 
 
@@ -37,7 +37,7 @@ public class CardTestesStatisticsTableRenderer implements TableCellRenderer {
                 }
 
                 if (rarChange < 0) {
-                    c.setBackground(Color.red);
+                    c.setBackground(new Color(255,71,71));  //light red
                 }
             }
             

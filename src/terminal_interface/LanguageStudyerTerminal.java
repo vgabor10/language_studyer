@@ -1,5 +1,6 @@
 package terminal_interface;
 
+import terminal_interface_specific_classes.GrammarTester;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
 import common.Logger;
@@ -167,7 +168,7 @@ public class LanguageStudyerTerminal {
 			cardFinder.setCardContainer(cardContainer);
 			cardFinder.setAnswerDataContainer(answerDataContainer);
 
-			String s = "";
+			String s;
 			do {
 				System.out.print("\033[H\033[2J");
 				System.out.println("type term part, or x to quit:");
@@ -201,54 +202,54 @@ public class LanguageStudyerTerminal {
 		//add card
 		if (choice.equals("6")) {
 
-			String in = "";
+                    String in;
 
-			do {
+                    do {
 
-				System.out.print("\033[H\033[2J");
-				System.out.println("adding " + settingsHandler.getStudiedLanguageName().toUpperCase() + " language card to database");
-				System.out.println("type card to add (termTABdefinition) or x to back:");
-				in = console.readLine();
+                        System.out.print("\033[H\033[2J");
+                        System.out.println("adding " + settingsHandler.getStudiedLanguageName().toUpperCase() + " language card to database");
+                        System.out.println("type card to add (termTABdefinition) or x to back:");
+                        in = console.readLine();
 
-				if (!in.equals("x")) {
+                        if (!in.equals("x")) {
 
-					int numberOfTabs = 0;       //check format
-					for (int i=0; i<in.length(); i++) {
-						if (in.charAt(i) == '\t') numberOfTabs++;
-					}
+                            int numberOfTabs = 0;       //check format
+                            for (int i=0; i<in.length(); i++) {
+                                    if (in.charAt(i) == '\t') numberOfTabs++;
+                            }
 
-					if (numberOfTabs !=1) {
-						System.out.println("format is not appropriate");
-						console.readLine();
-					}
-					else {
-					String term = in.split("\t")[0];
-		       			String definition = in.split("\t")[1];
-		        		Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
-		       			Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
+                            if (numberOfTabs !=1) {
+                                    System.out.println("format is not appropriate");
+                                    console.readLine();
+                            }
+                            else {
+                                String term = in.split("\t")[0];
+                                String definition = in.split("\t")[1];
+                                Card card = new Card(cardContainer.getEmptyCardIndex(), term, definition);
+                                Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
 
-		       			if (foundCardIndexes.isEmpty()) {
-							cardContainer.addCardToContainerAndAppenToDiscFile(card,
-								 settingsHandler.getStudiedLanguageCardDataPath());
-							System.out.println("card added to data base with index " + Integer.toString(card.index));
-							console.readLine();
-						}
-						else {
-							System.out.println("cards found with the given term");
-				     		for (int i=0; i<foundCardIndexes.size(); i++) {
-					    		System.out.println(cardContainer.getCardByIndex(foundCardIndexes.get(i)).toStringData());
-				      		}
+                                if (foundCardIndexes.isEmpty()) {
+                                    cardContainer.addCardToContainerAndAppenToDiscFile(card,
+                                    settingsHandler.getStudiedLanguageCardDataPath());
+                                    System.out.println("card added to data base with index " + Integer.toString(card.index));
+                                    console.readLine();
+                                }
+                                else {
+                                    System.out.println("cards found with the given term");
+                                    for (int i=0; i<foundCardIndexes.size(); i++) {
+                                            System.out.println(cardContainer.getCardByIndex(foundCardIndexes.get(i)).toStringData());
+                                    }
 
-					  		System.out.println("would you like to add the card to the data base? (y/n)");
-	        				if (console.readLine().equals("y")) {
-		        				cardContainer.addCardToContainerAndAppenToDiscFile(card, 
-								settingsHandler.getStudiedLanguageCardDataPath());
-		        				System.out.println("card added to data base with index " + Integer.toString(card.index));     									console.readLine();
-			        		}
-						}
-					}
-				}
-			} while(!in.equals("x"));
+                                    System.out.println("would you like to add the card to the data base? (y/n)");
+                                    if (console.readLine().equals("y")) {
+                                        cardContainer.addCardToContainerAndAppenToDiscFile(card, 
+                                        settingsHandler.getStudiedLanguageCardDataPath());
+                                        System.out.println("card added to data base with index " + Integer.toString(card.index));     									console.readLine();
+                                    }
+                                }
+                            }
+                        }
+                    } while(!in.equals("x"));
 		}
 
 		//additional ways to find cards

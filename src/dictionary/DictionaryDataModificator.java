@@ -31,6 +31,11 @@ public class DictionaryDataModificator {
 		saveCardContainerDataToFile();
 		saveAnswerDataContainerDataToFile();
 	}
+        
+        public void addCard(Card card) {
+            cardContainer.addCard(card);
+            saveCardContainerDataToFile();
+        }
 
 	private void saveCardContainerDataToFile() {	//TODO: make it more safe: save new data to file, then delete old data, then rename new data
 		String filePath = settingsHandler.getStudiedLanguageCardDataPath();

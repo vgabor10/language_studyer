@@ -22,7 +22,8 @@ public class GrammarAnswerDataContainer extends AnswerDataContainer {
 		addAnswerData(grammarAnswerData);
 	}
 
-	/*public GrammarAnswerData getAnswerData(int index) {
+        /*@Override
+	public GrammarAnswerData getAnswerData(int index) {
 		return (GrammarAnswerData)getAnswerData(index);
 	}*/
 
@@ -44,7 +45,7 @@ public class GrammarAnswerDataContainer extends AnswerDataContainer {
 		}
 	}
 
-	public void saveDataToFile(String filePath) {
+	public void saveDataToFile(String filePath) {   //TODO: move to GrammarDataModificator
 		try {
 			FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 			for (int i=0; i<numberOfAnswers(); i++) {
@@ -57,7 +58,7 @@ public class GrammarAnswerDataContainer extends AnswerDataContainer {
 		}
 	}
 
-	public void appendToAnswerDataFile(String filePath) {
+	public void appendToAnswerDataFile(String filePath) {   //TODO: move to answerDataModificator
 		try {
 			FileWriter fw = new FileWriter(filePath,true);	//the true will append the new data
 			for (int i=0; i<numberOfAnswers(); i++) {

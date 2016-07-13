@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface;
 
 import study_item_objects.AnswerDataContainer;
@@ -241,7 +236,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     if (cardTester.isUserAnswerRight()) {
                         jTextField1.setText("");
                         jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(45, 107, 53));
+                        jTextField2.setForeground(new java.awt.Color(45, 107, 53)); //green
                         jLabel1.setText("RIGHT, but the above term was tought");
 
                         showAcceptableCards();
@@ -249,7 +244,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     else {
                         jTextField1.setText("");
                         jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(255, 0, 0));
+                        jTextField2.setForeground(new java.awt.Color(255, 0, 0));   //red
                         jLabel1.setText("wrong");
 
                         showAcceptableCards();

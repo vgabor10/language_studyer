@@ -3,7 +3,7 @@ package terminal_interface;
 import study_item_objects.AnswerDataByStudyItemsContainer;
 import study_item_objects.AnswerDataContainer;
 import dictionary.CardContainer;
-import dictionary.CardTestStatisticsMaker;
+import terminal_interface_specific_classes.CardTestStatisticsMaker;
 import java.io.Console;
 
 public class CardTesterStatisticsScreen {

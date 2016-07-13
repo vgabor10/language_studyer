@@ -1,11 +1,12 @@
 package graphic_user_interface;
 
-import experimental_classes.GrammarTester2;
+import grammar_book.GrammarTester;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarAnswerDataStatisticsMaker;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarBookLoader;
 import grammar_book.RandomGrammarItemChooser;
+import java.awt.event.KeyEvent;
 import java.util.Vector;
 import settings_handler.SettingsHandler;
 
@@ -15,11 +16,13 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     private final GrammarBook grammarBook = new GrammarBook();
     private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     private int grammarItemIndexToTest = -1;
-    GrammarTester2 grammarTester = new GrammarTester2();
+    GrammarTester grammarTester = new GrammarTester();
     
     public GrammarItemTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+        setLocationRelativeTo(null);
        
         GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
         grammarBookLoader.setGrammarBook(grammarBook);
@@ -35,13 +38,17 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
         grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest3();
         
+        //grammarItemIndexToTest = 0; //for test
+        
         grammarTester.setActualTestedGrammarItem(grammarBook.getGrammarItemByIndex(grammarItemIndexToTest));
         grammarTester.setExampleIndexesToTest(10);
         
-        grammarTester.moveToNextExampleToQuestion();
-        jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
-        jTextField1.setText("");
-        jLabel2.setText("");
+        moveToTheNextQuestion();
+        
+        jButton4.setMnemonic(KeyEvent.VK_B);
+        acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
+        wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
+        ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
     }
 
     /**
@@ -56,49 +63,73 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        ignoreAnswerButton = new javax.swing.JButton();
+        acceptAnswerButton = new javax.swing.JButton();
+        wrongAnswerButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
+        jTextField1.setEditable(false);
         jTextField1.setText("jTextField1");
 
         jTextField2.setText("jTextField2");
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField2KeyPressed(evt);
+            }
+        });
 
         jLabel1.setText("jLabel1");
 
-        jLabel2.setText("jLabel2");
-
-        jButton1.setText("Do not register the answer");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        ignoreAnswerButton.setText("Do not register the answer");
+        ignoreAnswerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                ignoreAnswerButtonActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Accept answer");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        acceptAnswerButton.setText("Accept answer");
+        acceptAnswerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                acceptAnswerButtonActionPerformed(evt);
+            }
+        });
+        acceptAnswerButton.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                acceptAnswerButtonKeyPressed(evt);
             }
         });
 
-        jButton3.setText("Wrong answer");
+        wrongAnswerButton.setText("Wrong answer");
+        wrongAnswerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                wrongAnswerButtonActionPerformed(evt);
+            }
+        });
+        wrongAnswerButton.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                wrongAnswerButtonKeyPressed(evt);
+            }
+        });
 
-        jLabel3.setText("jLabel3");
-
+        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Droid Sans Mono", 0, 15)); // NOI18N
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jButton4.setText("Close");
+        jButton4.setText("Back");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -107,6 +138,11 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
         jButton5.setText("Inspect grammar item");
 
+        jTextField3.setEditable(false);
+        jTextField3.setText("jTextField3");
+
+        jLabel2.setText("jLabel2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -114,28 +150,25 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField3)
                     .addComponent(jScrollPane1)
                     .addComponent(jTextField1)
                     .addComponent(jTextField2)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(wrongAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(acceptAnswerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ignoreAnswerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -143,43 +176,170 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addComponent(jLabel1)
-                .addGap(9, 9, 9)
-                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(wrongAnswerButton)
+                    .addComponent(ignoreAnswerButton)
+                    .addComponent(acceptAnswerButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 298, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
                     .addComponent(jButton5))
-                .addContainerGap())
+                .addGap(18, 18, 18))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void ignoreAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ignoreAnswerButtonActionPerformed
+        ignoreAnswer();
+    }//GEN-LAST:event_ignoreAnswerButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void acceptAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptAnswerButtonActionPerformed
+        acceptAnswer();
+    }//GEN-LAST:event_acceptAnswerButtonActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            
+            String expectedAnswer = grammarTester.getActualQuestionedExample().foreign;
+            
+            if (jTextField2.getText().equals(expectedAnswer)) {                
+                jLabel2.setForeground(new java.awt.Color(45, 107, 53)); //green
+                jLabel2.setText("answer seems to bee right, waht is your opinion?");
+                acceptAnswerButton.requestFocus();
+               
+                jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
+
+                ignoreAnswerButton.setEnabled(true);
+                acceptAnswerButton.setEnabled(true);
+                wrongAnswerButton.setEnabled(true);
+
+                jTextField2.setEnabled(false);
+            }
+            else {
+                jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+                jLabel2.setText("answer seems to bee wrong, waht is your opinion?");
+                wrongAnswerButton.requestFocus();
+                
+                jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
+                jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
+
+                ignoreAnswerButton.setEnabled(true);
+                acceptAnswerButton.setEnabled(true);
+                wrongAnswerButton.setEnabled(true);
+
+                jTextField2.setEnabled(false);
+            }
+            
+        }
+    }//GEN-LAST:event_jTextField2KeyPressed
+
+    private void wrongAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_wrongAnswerButtonActionPerformed
+        rejectAnswer();
+    }//GEN-LAST:event_wrongAnswerButtonActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        acceptAnswer();
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void acceptAnswer() {
+        grammarTester.userAnswerAccepted();
+        
+        ignoreAnswerButton.setEnabled(false);
+        acceptAnswerButton.setEnabled(false);
+        wrongAnswerButton.setEnabled(false);
+        
+        if (grammarTester.isMoreExamplesToQuestion()) {
+            moveToTheNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+            dispose();
+        }
+    }
+
+    private void rejectAnswer() { 
+        grammarTester.userAnswerRejected();
+
+        ignoreAnswerButton.setEnabled(false);
+        acceptAnswerButton.setEnabled(false);
+        wrongAnswerButton.setEnabled(false);
+
+        if (grammarTester.isMoreExamplesToQuestion()) {
+            moveToTheNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+            dispose();
+        }
+    }
+   
+    private void ignoreAnswer() {
+        grammarTester.userAnswerIgnored();
+        
+        ignoreAnswerButton.setEnabled(false);
+        acceptAnswerButton.setEnabled(false);
+        wrongAnswerButton.setEnabled(false);
+        
+        if (grammarTester.isMoreExamplesToQuestion()) {
+            moveToTheNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+            dispose();
+        }
+    }
+    
+    private void wrongAnswerButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_wrongAnswerButtonKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            rejectAnswer();
+        }
+    }//GEN-LAST:event_wrongAnswerButtonKeyPressed
+
+    private void acceptAnswerButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_acceptAnswerButtonKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            acceptAnswer();
+        }
+    }//GEN-LAST:event_acceptAnswerButtonKeyPressed
+
+    private void moveToTheNextQuestion() {
+        grammarTester.moveToNextExampleToQuestion();
+        jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
+        jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
+        jTextField2.setText("");
+        jLabel2.setText(" ");
+
+        jTextField2.setEnabled(true);
+        jTextField2.requestFocus();
+        
+        jTextField3.setText("");
+        jTextArea1.setText("");
+
+        ignoreAnswerButton.setEnabled(false);
+        acceptAnswerButton.setEnabled(false);
+        wrongAnswerButton.setEnabled(false);
+    }
+    
+    private void goToStatisticsFrameAndSaveData() { //TODO: implement
+        GrammarTesterStatisticsDialog dialog = new GrammarTesterStatisticsDialog(new javax.swing.JFrame(), true);
+        dialog.setVisible(true);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -224,17 +384,17 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton acceptAnswerButton;
+    private javax.swing.JButton ignoreAnswerButton;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton wrongAnswerButton;
     // End of variables declaration//GEN-END:variables
 }
