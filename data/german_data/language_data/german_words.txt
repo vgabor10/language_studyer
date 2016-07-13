@@ -5041,3 +5041,5 @@
 100590	eine Rolle spielen	szerepel	kifejezések
 100850	Spanien	Spanyolország	országok
 101379	forschen	kutat
+102232	auf keinen Fall	semmi esetre	kifejezések
+102300	in diesem Fall	ebben az esetben	kifejezések
