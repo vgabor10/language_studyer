@@ -42,7 +42,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
         grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest3();
         
-        grammarItemIndexToTest = 0; //for test
+        //grammarItemIndexToTest = 0; //for test
         
         grammarTester.setActualTestedGrammarItem(grammarBook.getGrammarItemByIndex(grammarItemIndexToTest));
         grammarTester.setExampleIndexesToTest(10);
