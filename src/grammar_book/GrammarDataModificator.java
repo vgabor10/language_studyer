@@ -22,7 +22,7 @@ public class GrammarDataModificator {
 	}
 
 	public void writeGrammarBookToDisk(String filePath) {   //TODO: implement
-            try {
+            /*try {
                 FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 
                 fw.write(grammarBook.preambulum + "\n");
@@ -32,12 +32,13 @@ public class GrammarDataModificator {
 
                 int hierarcyDepth = 0;
 
-                List<Integer> sortedIndexes = new ArrayList<>(grammarBook.getGrammarItemIndexes());
-                Collections.sort(sortedIndexes);
+                for (int orderIndex =0; orderIndex<grammarBook.numberOfGrammarItems(); orderIndex++) {
 
-                for (int index : sortedIndexes) {
-
-                    String categorys[] = grammarBook.getGrammarItem(index).title.split("/");
+                    GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
+                    
+                    
+                    
+                    /*String categorys[] = grammarBook.getGrammarItem(index).title.split("/");
                     for (int i=hierarcyDepth; i<categorys.length-1; i++) {
                         if (i == 0) {
                             fw.write("\\section{" + categorys[i] + "}\n\n");
@@ -61,7 +62,7 @@ public class GrammarDataModificator {
             }
             catch(IOException ioe) {
                 System.err.println("IOException: " + ioe.getMessage());
-            }
+            }*/
 	}
 
 	public void writeGrammarAnswerDataToDisk() {

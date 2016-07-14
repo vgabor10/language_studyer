@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
@@ -6,26 +6,25 @@ import settings_handler.*;
 import dictionary.*;
 import java.awt.event.KeyEvent;
 import java.util.Date;
-import java.util.Map;
-import java.util.SortedSet;
-import java.util.TreeSet;
-import javax.swing.table.DefaultTableModel;
 
-public class GeneralStatisticsDialog extends javax.swing.JDialog {
+public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
+    AnswerDataContainer answerDataContainer = new AnswerDataContainer();;
+    CardContainer cardContainer = new CardContainer();
+    
+    SettingsHandler settingsHandler = new SettingsHandler();
+    
     @SuppressWarnings("empty-statement")
-    public GeneralStatisticsDialog(java.awt.Frame parent, boolean modal) {
+    public DictionaryStatisticsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
         setLocationRelativeTo(null);
-
-	SettingsHandler settingsHandler = new SettingsHandler();
-
-	AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+        
+        //TODO: add it from main frame
 	answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
 
-	CardContainer cardContainer = new CardContainer();
+        //TODO: add it from main frame
 	cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
 
 	AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
@@ -41,20 +40,8 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
 	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeInString());
 	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
 	jLabel19.setText(Double.toString(answerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
-
         
-        DefaultTableModel model = (DefaultTableModel)jTable1.getModel();
-        Map<Integer,Integer> numberOfAnswersByDays = answerDataStatisticsMaker.getNumberOfAnswersByDays();
-        SortedSet<Integer> sortedDays = new TreeSet<>(numberOfAnswersByDays.keySet());
-        
-        for (int day : sortedDays) {
-            model.addRow(new Object[] {
-                Integer.toString(day),
-                numberOfAnswersByDays.get(day)
-            });
-        };
-        
-        jButton1.setMnemonic(KeyEvent.VK_B);
+        jButton1.setMnemonic(KeyEvent.VK_C);
     }
 
     /**
@@ -87,16 +74,13 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
         jLabel22 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jButton1.setText("Back");
+        jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -228,49 +212,19 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
 
         jTabbedPane1.addTab("basic", jPanel1);
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 585, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 375, Short.MAX_VALUE)
-        );
-
-        jTabbedPane1.addTab("histogram", jPanel3);
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "day", "number of answers"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(338, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        jTabbedPane1.addTab("number of answers by days", jPanel2);
-
         jButton2.setText("Number of answers by days");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Histogram of answer rates by days");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -278,15 +232,19 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton2)
-                .addContainerGap(371, Short.MAX_VALUE))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(324, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton2)
-                .addContainerGap(333, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3)
+                .addContainerGap(297, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("additional statistics", jPanel4);
@@ -299,16 +257,16 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTabbedPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 413, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addContainerGap())
@@ -320,6 +278,22 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = answerDataContainer;
+        dialog.cardContainer = cardContainer;
+        dialog.fillDialogWithData();
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = answerDataContainer;
+        dialog.cardContainer = cardContainer;
+        dialog.fillDialogWithData();
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -338,14 +312,18 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -354,7 +332,7 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GeneralStatisticsDialog dialog = new GeneralStatisticsDialog(new javax.swing.JFrame(), true);
+                DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -369,6 +347,7 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel14;
@@ -388,11 +367,7 @@ public class GeneralStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

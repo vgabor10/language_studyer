@@ -8,12 +8,12 @@ public class GrammarItem extends StudyItem {
 
 	public GrammarItemTitle title = new GrammarItemTitle();
 	public String description;
-	private Map<Integer, Example> examples = new TreeMap<Integer, Example>();
-	String commentForExamples;
+	private Map<Integer, Example> examples = new TreeMap<>();
+	String comments;
 
 	public GrammarItem() {
 		title.clear();
-		commentForExamples = "";
+		comments = "";
 		description = "";
 	}
 
@@ -22,7 +22,7 @@ public class GrammarItem extends StudyItem {
 	}
 
 	public boolean isEmptyExcludingTitle() {
-		return (index == -1) && (description.equals("")) && (examples.isEmpty()) && (commentForExamples.equals(""));
+		return (index == -1) && (description.equals("")) && (examples.isEmpty()) && (comments.equals(""));
 	}
 
 	public Example getExampleByIndex(int index) {
@@ -70,8 +70,8 @@ public class GrammarItem extends StudyItem {
 
 		outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
 
-		if (commentForExamples.length() != 0) {
-			outString = outString + commentForExamples + "\n";
+		if (comments.length() != 0) {
+			outString = outString + comments + "\n";
 		}
 		outString = outString + "\\begin{exmp}\n";
 		for (int i : getExampleIndexes()) {

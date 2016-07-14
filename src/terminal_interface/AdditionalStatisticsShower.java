@@ -1,8 +1,8 @@
 package terminal_interface;
 
+import terminal_interface_specific_classes.StringTabular;
 import study_item_objects.AnswerDataStatisticsMaker;
 import common.Logger;
-import study_item_objects.StringTabular;
 
 import java.util.*;
 import java.io.Console;
@@ -103,7 +103,7 @@ public class AdditionalStatisticsShower {
 
 	public void toScreenHistogramOfStudyItemAnswerRatesByDays() {
 		System.out.print("\033[H\033[2J");
-		StringTabular stringTabular = answerDataStatisticsMaker.getHistogramOfStudyItemAnswerRatesByDays();
+		StringTabular stringTabular = answerDataStatisticsMaker.getHistogramOfStudyItemAnswerRatesByDaysAsStringTabular();
 		for (int i=0; i<stringTabular.numberOfRows(); i++) {
 			System.out.println(stringTabular.getNiceTabularRowInString(i));
 		}

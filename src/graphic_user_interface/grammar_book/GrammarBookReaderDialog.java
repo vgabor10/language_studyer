@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.grammar_book;
 
 import grammar_book.Example;
 import grammar_book.GrammarBook;

@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import common.Logger;

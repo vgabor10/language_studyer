@@ -10,7 +10,7 @@ import grammar_book.GrammarItem;
 
 import java.util.*;
 
-public class GrammarTester {   //TODO: use at terminal interface also
+public class GrammarTester {
 
 	private int numberOfExamplesQuestioned = 0;
 	private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
@@ -87,7 +87,7 @@ public class GrammarTester {   //TODO: use at terminal interface also
             
             userAnswers.addAnswerData(actualAnswerData);
             
-            logger.debug("added answer data: " + actualAnswerData.toString());
+            logger.debug("added answer data: " + actualAnswerData.toStringData());
         }
 
         public void userAnswerIgnored() {
@@ -101,11 +101,11 @@ public class GrammarTester {   //TODO: use at terminal interface also
             actualAnswerData.date = date;
             actualAnswerData.index = actualTestedGrammarItem.index;
             actualAnswerData.exampleIndex = actualQuestionedExample.index;
-            actualAnswerData.isRight = true;
+            actualAnswerData.isRight = false;
             
             userAnswers.addAnswerData(actualAnswerData);
             
-            logger.debug("added answer data: " + actualAnswerData.toString());
+            logger.debug("added answer data: " + actualAnswerData.toStringData());
         }
         
 	public Example getActualQuestionedExample() {
@@ -132,7 +132,7 @@ public class GrammarTester {   //TODO: use at terminal interface also
 		return exampleIndexesToTest.size();
 	}
 
-	public int numberOfCardsQuestioned() {
+	public int numberOfExamplesQuestioned() {
 		return numberOfExamplesQuestioned;
 	}
 

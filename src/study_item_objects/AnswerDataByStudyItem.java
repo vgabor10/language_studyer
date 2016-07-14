@@ -103,11 +103,11 @@ public class AnswerDataByStudyItem {
 	}
 
 	public void loadDataFromAnswerDataContainer(int index, AnswerDataContainer answerDataContainer) {
-		for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
-			if (answerDataContainer.getAnswerData(i).index == index) {
-				addAnswer(answerDataContainer.getAnswerData(i));
-			}
-		}
+            for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+                if (answerDataContainer.getAnswerData(i).index == index) {
+                    addAnswer(answerDataContainer.getAnswerData(i));
+                }
+            }
 	}
 
 	public void clear() {

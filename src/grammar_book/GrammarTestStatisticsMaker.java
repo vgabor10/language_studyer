@@ -16,15 +16,31 @@ public class GrammarTestStatisticsMaker {
     public long startTime;
     public long finishTime;
     
-    public int getregisteredAnswers() {
+    private AnswerDataByStudyItem answerDataByStudyItemBeforeTest = new AnswerDataByStudyItem();
+    private AnswerDataByStudyItem answerDataByStudyItemAfterTest = new AnswerDataByStudyItem();
+    
+    public void makePreProcessing() {
+        AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+        answerDataContainer.appendAnswerDataContainer(oldAnswers);
+        
+        answerDataByStudyItemBeforeTest.loadDataFromAnswerDataContainer(
+                testedGrammarItem.index, answerDataContainer);
+        
+        answerDataContainer.appendAnswerDataContainer(testAnswers);
+        
+        answerDataByStudyItemAfterTest.loadDataFromAnswerDataContainer(
+                testedGrammarItem.index, answerDataContainer);
+    }
+    
+    public int getNumberOfRegisteredAnswers() {
         return testAnswers.numberOfAnswers();
     }
     
     public int getNumberOfAnswersAfterTest() {
-        return testAnswers.numberOfAnswers() + oldAnswers.numberOfAnswers();
+        return answerDataByStudyItemAfterTest.numberOfAnswers();
     }
     
-    public String getPercentageOfRightAnswers() {
+    public String getPercentageOfRightAnswersAsString() {
         int numberOfRightAnswers = 0;
         for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
                 if (testAnswers.getAnswerData(i).isRight) numberOfRightAnswers++;
@@ -35,21 +51,11 @@ public class GrammarTestStatisticsMaker {
     }
     
     public double getGrammarItemRightAnswerRateBeforeTest() {
-	AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
-        answerDataByStudyItem.loadDataFromAnswerDataContainer(testedGrammarItem.index, oldAnswers);
-        return answerDataByStudyItem.countRightAnswerRate();
+       return answerDataByStudyItemBeforeTest.countRightAnswerRate();
     }
     
     public double getGrammarItemRightAnswerRateAfterTest() {
-	AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
-        
-        AnswerDataContainer allAnswers = new AnswerDataContainer();
-        allAnswers.appendAnswerDataContainer(oldAnswers);
-        allAnswers.appendAnswerDataContainer(testAnswers);
-        
-        answerDataByStudyItem.loadDataFromAnswerDataContainer(testedGrammarItem.index, allAnswers);
-        
-        return answerDataByStudyItem.countRightAnswerRate();
+       return answerDataByStudyItemAfterTest.countRightAnswerRate();
     }   
     
     public String gesUsedTimeAsString() {

@@ -1,10 +1,8 @@
 package grammar_book;
 
+import java.util.*;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataStatisticsMaker;
-
-import java.util.*;
-import java.text.DecimalFormat;
 
 public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
 

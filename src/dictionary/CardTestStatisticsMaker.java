@@ -1,7 +1,7 @@
 package dictionary;
 
 import study_item_objects.AnswerDataContainer;
-import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.AnswerDataByStudyItemContainer;
 import common.Logger;
 import dictionary.*;
 
@@ -20,10 +20,10 @@ public class CardTestStatisticsMaker {
 	public long startTime;
 	public long finishTime;
         
-        public AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest 
-                = new AnswerDataByStudyItemsContainer();
-	public AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest
-                 = new AnswerDataByStudyItemsContainer();
+        public AnswerDataByStudyItemContainer answerDatasByStudyItemsBeforeTest 
+                = new AnswerDataByStudyItemContainer();
+	public AnswerDataByStudyItemContainer answerDatasByStudyItemsAfterTest
+                 = new AnswerDataByStudyItemContainer();
 
         private Logger logger = new Logger();
         

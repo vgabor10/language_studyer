@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.dictionary;
 
 import java.awt.Color;
 import java.awt.Component;

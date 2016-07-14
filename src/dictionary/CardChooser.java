@@ -3,7 +3,7 @@ package dictionary;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
-import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataByStudyItem;
 import common.Logger;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
@@ -16,7 +16,7 @@ public class CardChooser {
 	private AnswerDataContainer answerDataContainer;
 
 	private final Random randomGenerator = new Random();
-	private AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer;
+	private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer;
 	private final Logger logger = new Logger();
 
 	public void setCardContainer(CardContainer cc) {
@@ -29,7 +29,7 @@ public class CardChooser {
 
 	//WARNING: first need to be set answerDataContainer
 	public void evaluateAnswerDataByStudyItemsContainer() {
-		answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 	}
 
@@ -324,7 +324,7 @@ public class CardChooser {
 	public Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
 		Set<Integer> cardIndexes = new HashSet<Integer>();
 
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		for (int index : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {

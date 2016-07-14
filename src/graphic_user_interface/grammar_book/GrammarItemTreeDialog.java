@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package graphic_user_interface;
+package graphic_user_interface.grammar_book;
 
 import grammar_book.GrammarBook;
 import grammar_book.GrammarBookLoader;

@@ -119,7 +119,7 @@ public class GrammarBookLoader {
 				}
 
 				if (strLine.startsWith("%")) {
-					grammarItem.commentForExamples = strLine;
+					grammarItem.comments = strLine;
 				}
 
 				if (strLine.equals("\\" + "begin{desc}")) {

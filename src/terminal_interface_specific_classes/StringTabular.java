@@ -1,9 +1,9 @@
-package study_item_objects;
+package terminal_interface_specific_classes;
 
 import common.Logger;
 import java.util.*;
 
-public class StringTabular {	//TODO: take to terminal interface package
+public class StringTabular {
 
 	private Vector<String> tabularByRows = new Vector<String>();
 	private Vector<Integer> widestItemLengthByColumn =  new Vector<Integer>();

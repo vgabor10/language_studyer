@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.grammar_book;
 
 import grammar_book.GrammarTester;
 import grammar_book.GrammarAnswerDataContainer;
@@ -7,6 +7,7 @@ import grammar_book.GrammarBook;
 import grammar_book.GrammarBookLoader;
 import grammar_book.RandomGrammarItemChooser;
 import java.awt.event.KeyEvent;
+import java.util.Date;
 import java.util.Vector;
 import settings_handler.SettingsHandler;
 
@@ -14,9 +15,12 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
     private final SettingsHandler settingsHandler = new SettingsHandler();
     private final GrammarBook grammarBook = new GrammarBook();
-    private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+    private final GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     private int grammarItemIndexToTest = -1;
     GrammarTester grammarTester = new GrammarTester();
+    
+    private long startTime = -1;
+    private long finishTime = -1;
     
     public GrammarItemTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -38,7 +42,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
         grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest3();
         
-        //grammarItemIndexToTest = 0; //for test
+        grammarItemIndexToTest = 0; //for test
         
         grammarTester.setActualTestedGrammarItem(grammarBook.getGrammarItemByIndex(grammarItemIndexToTest));
         grammarTester.setExampleIndexesToTest(10);
@@ -49,6 +53,8 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
         wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
         ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
+        
+        startTime = new Date().getTime();
     }
 
     /**
@@ -72,6 +78,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jButton5 = new javax.swing.JButton();
         jTextField3 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -143,6 +150,8 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
         jLabel2.setText("jLabel2");
 
+        jLabel3.setText("jLabel3");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -150,14 +159,14 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField3)
                     .addComponent(jScrollPane1)
-                    .addComponent(jTextField1)
-                    .addComponent(jTextField2)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 453, Short.MAX_VALUE)
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField3)
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(wrongAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -167,6 +176,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
+                            .addComponent(jLabel3)
                             .addComponent(jLabel2))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -176,6 +186,8 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -190,7 +202,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                     .addComponent(ignoreAnswerButton)
                     .addComponent(acceptAnswerButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
@@ -323,7 +335,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
         jTextField2.setText("");
         jLabel2.setText(" ");
-
+        jLabel3.setText(Integer.toString(grammarTester.numberOfExamplesQuestioned()) 
+                + "\\" + Integer.toString(grammarTester.getNumberOfQuestions()));
+        
         jTextField2.setEnabled(true);
         jTextField2.requestFocus();
         
@@ -335,8 +349,18 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         wrongAnswerButton.setEnabled(false);
     }
     
-    private void goToStatisticsFrameAndSaveData() { //TODO: implement
+    private void goToStatisticsFrameAndSaveData() { //TODO: implement save data
+        finishTime = new Date().getTime();
+        
         GrammarTesterStatisticsDialog dialog = new GrammarTesterStatisticsDialog(new javax.swing.JFrame(), true);
+        
+        dialog.testedGrammarItem = grammarTester.getActualQuestionedGrammarItem();
+        dialog.testAnswers = grammarTester.getUserAnswers();
+        dialog.oldAnswers = grammarAnswerDataContainer;
+        dialog.startTime = startTime;
+        dialog.finishTime = finishTime;
+        dialog.toScreenStatistics();
+        
         dialog.setVisible(true);
     }
     
@@ -390,6 +414,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;

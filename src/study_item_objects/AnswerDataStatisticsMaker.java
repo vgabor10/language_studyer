@@ -1,5 +1,6 @@
 package study_item_objects;
 
+import terminal_interface_specific_classes.StringTabular;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
@@ -153,7 +154,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public int numberOfQuestionsOfLeastStudiedStudyItem() {		// it does not caunt the not studied StudyItems!!!???
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		Set<Integer> testedStudyItemIndexes = answerDataByStudyItemsContainer.getTestedStudyItemIndexes();
@@ -169,7 +170,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public HashMap<Integer, Integer> evaluateHistogramOfStudyItemsByNumberOfAnswers() {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		HashMap<Integer, Integer> histogramOfStudyItemsByNumberOfAnswers = new HashMap<>();
@@ -200,7 +201,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public double probabilityOfRightAnswerAtXthAnswer(int x) {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		int numberOfAnswers = 0;
@@ -425,7 +426,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public int[] getHistogramOfStudyItemsByAnswerRate() {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		int [] numberOfStudyItemsInCategory = new int[10];
@@ -452,23 +453,29 @@ public class AnswerDataStatisticsMaker {
 		}*/
 	}
 
-	public StringTabular getHistogramOfStudyItemAnswerRatesByDays() {	//TODO: make it faster
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+	public Map<Integer,Histogram> getHistogramOfStudyItemAnswerRatesByDays() {	//TODO: make it faster
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-		Map<Integer,Histogram> data = new HashMap<Integer,Histogram>();
+		Map<Integer,Histogram> out = new HashMap<>();
 
 		Set<Integer> studyingDays = answerDataByStudyItemsContainer.getStudyingDays();
 		for (int day : studyingDays) {
 			Histogram histogram = answerDataByStudyItemsContainer.getHistogramAtDay(day);
-			data.put(day, histogram);
+			out.put(day, histogram);
 		}
+                
+                return out;
+        }
+        
+	public StringTabular getHistogramOfStudyItemAnswerRatesByDaysAsStringTabular() {
+		Map<Integer,Histogram> data = getHistogramOfStudyItemAnswerRatesByDays();
 
 		StringTabular stringTabular = new StringTabular();
 		stringTabular.setSeparatorString(" \\| ");
 
 		Set<Integer> keys = data.keySet();
-		SortedSet<Integer> sortedDays = new TreeSet<Integer>(keys);
+		SortedSet<Integer> sortedDays = new TreeSet<>(keys);
 		for (int day : sortedDays) {
 			stringTabular.addRowInString(day + " | " + data.get(day).toStringHorisontally(" | "));
 		}
@@ -477,7 +484,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public void toFileHistogramOfStudyItemAnswerRatesByDays(String filePath) {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		Map<Integer,Histogram> data = new HashMap<Integer,Histogram>();
@@ -505,7 +512,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public double averageAnswerRateOfStudyItems() {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 		double sum = 0.0;
 		for (int index : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
@@ -539,7 +546,7 @@ public class AnswerDataStatisticsMaker {
 		Logger logger = new Logger();
 		logger.debug("run getStudyItemIndexesOrderedByAnswerRate function");
 
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
@@ -558,7 +565,7 @@ public class AnswerDataStatisticsMaker {
 		Logger logger = new Logger();
 		logger.debug("run getStudyItemIndexesOrderedByLastStudyDate function");
 
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByLastStudyDate());
@@ -577,7 +584,7 @@ public class AnswerDataStatisticsMaker {
 		Logger logger = new Logger();
 		logger.debug("run getStudyItemIndexesOrderedByNumberOfAnswers function");
 
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
@@ -593,7 +600,7 @@ public class AnswerDataStatisticsMaker {
 	}
 
 	public Map<Integer, Double> getAnswerRatesByGrammarItems() {
-		AnswerDataByStudyItemsContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemsContainer();
+		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
 		Map<Integer, Double> out = new HashMap<Integer, Double>();

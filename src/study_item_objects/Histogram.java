@@ -19,6 +19,10 @@ public class Histogram {
 		}
 	}
 
+        public int getNumberOfObjectsByCategory(int category) {
+            return data[category];
+        }
+        
 	public String toStringHorisontally(String separatorString) {
 		String out = Integer.toString(data[0]);
 		for (int i=1; i<10; i++) {

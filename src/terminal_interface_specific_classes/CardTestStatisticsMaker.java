@@ -2,8 +2,7 @@ package terminal_interface_specific_classes;
 
 import dictionary.CardContainer;
 import study_item_objects.AnswerDataContainer;
-import study_item_objects.AnswerDataByStudyItemsContainer;
-import study_item_objects.StringTabular;
+import study_item_objects.AnswerDataByStudyItemContainer;
 
 import java.util.*;
 import java.text.DecimalFormat;
@@ -14,8 +13,8 @@ public class CardTestStatisticsMaker {	//TODO: refactorate this class
 
 	private CardContainer cardContainer;
 	private AnswerDataContainer testAnswers;
-	private AnswerDataByStudyItemsContainer answerDatasByStudyItemsBeforeTest;
-	private AnswerDataByStudyItemsContainer answerDatasByStudyItemsAfterTest;
+	private AnswerDataByStudyItemContainer answerDatasByStudyItemsBeforeTest;
+	private AnswerDataByStudyItemContainer answerDatasByStudyItemsAfterTest;
 	private long startTime;
 	private long endTime;
 
@@ -27,11 +26,11 @@ public class CardTestStatisticsMaker {	//TODO: refactorate this class
 		testAnswers = ta;
 	}
 
-	public void setAnswerDatasByStudyItemsBeforeTest(AnswerDataByStudyItemsContainer a) {
+	public void setAnswerDatasByStudyItemsBeforeTest(AnswerDataByStudyItemContainer a) {
 		answerDatasByStudyItemsBeforeTest = a;
 	}
 
-	public void setAnswerDatasByStudyItemsAfterTest(AnswerDataByStudyItemsContainer a) {
+	public void setAnswerDatasByStudyItemsAfterTest(AnswerDataByStudyItemContainer a) {
 		answerDatasByStudyItemsAfterTest = a;
 	}
 

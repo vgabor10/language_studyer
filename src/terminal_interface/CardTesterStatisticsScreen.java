@@ -1,6 +1,6 @@
 package terminal_interface;
 
-import study_item_objects.AnswerDataByStudyItemsContainer;
+import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataContainer;
 import dictionary.CardContainer;
 import terminal_interface_specific_classes.CardTestStatisticsMaker;
@@ -35,13 +35,13 @@ public class CardTesterStatisticsScreen {
     
     public void toScreenStatistics() {
         
-        AnswerDataByStudyItemsContainer answerDataByStudyItemsContainerBeforeTest
-            = new AnswerDataByStudyItemsContainer();
+        AnswerDataByStudyItemContainer answerDataByStudyItemsContainerBeforeTest
+            = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainerBeforeTest.loadDataFromAnswerDataContainer(oldAnswers);
                         
         
-        AnswerDataByStudyItemsContainer answerDataByStudyItemsContainerAfterTest
-            = new AnswerDataByStudyItemsContainer();
+        AnswerDataByStudyItemContainer answerDataByStudyItemsContainerAfterTest
+            = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainerAfterTest.loadDataFromAnswerDataContainer(oldAnswers);
                         answerDataByStudyItemsContainerAfterTest.addDataFromAnswerDataContainer(userAnswers);
                         

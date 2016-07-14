@@ -12,7 +12,7 @@ public class GrammarItemChooser {
 	}
 
 	public int chooseSections() {
-		Set<String> sectionNames = new HashSet<String>();
+		Set<String> sectionNames = new HashSet<>();
 		int index = 0;
 
 		for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
@@ -45,7 +45,7 @@ public class GrammarItemChooser {
 
 		GrammarItemCategory grammarItemCategory = grammarItemHierarcyHandler.rootItemCategory;
 
-		while (grammarItemCategory.subCategoris.size() != 0) {
+		while (!grammarItemCategory.subCategoris.isEmpty()) {
 			System.out.print("\033[H\033[2J");
 			grammarItemCategory.toScreenSubCategoris();
 			int n = Integer.parseInt(console.readLine());
