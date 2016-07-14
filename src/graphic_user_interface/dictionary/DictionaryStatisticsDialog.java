@@ -1,18 +1,23 @@
 package graphic_user_interface.dictionary;
 
+import dictionary.CardContainer;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
-import settings_handler.*;
-import dictionary.*;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
-    public AnswerDataContainer answerDataContainer;
-    public CardContainer cardContainer;
+    private AnswerDataContainer answerDataContainer;
+    private CardContainer cardContainer;
     
-    SettingsHandler settingsHandler = new SettingsHandler();
+    public void setCardContainer(CardContainer cc) {
+        cardContainer = cc;
+    }
+    
+    public void setAnswerDataContainer(AnswerDataContainer adc) {
+        answerDataContainer = adc;
+    }
     
     @SuppressWarnings("empty-statement")
     public DictionaryStatisticsDialog(java.awt.Frame parent, boolean modal) {
@@ -20,23 +25,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         initComponents();
         
         setLocationRelativeTo(null);
-
-	AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
-	answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-	answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
-
-	jLabel4.setText(Integer.toString(answerDataStatisticsMaker.numberOfStudyItems()));
-        jLabel15.setText(Integer.toString(answerDataStatisticsMaker.numberOfAnswers()));
-        jLabel5.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfQuestionedStudyItems()));
-        jLabel16.setText(Integer.toString(answerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
-        jLabel22.setText(new Date(answerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
-	jLabel6.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeInString());
-	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(Double.toString(answerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
-        jLabel12.setText(Integer.toString(answerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
-        
-        jButton1.setMnemonic(KeyEvent.VK_C);
     }
 
     /**
@@ -295,6 +283,25 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void fillDialogWithData() {
+        AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
+	answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+	answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
+
+	jLabel4.setText(Integer.toString(answerDataStatisticsMaker.numberOfStudyItems()));
+        jLabel15.setText(Integer.toString(answerDataStatisticsMaker.numberOfAnswers()));
+        jLabel5.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfQuestionedStudyItems()));
+        jLabel16.setText(Integer.toString(answerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
+        jLabel22.setText(new Date(answerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
+	jLabel6.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfStudyingDays()));
+	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeInString());
+	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
+	jLabel19.setText(Double.toString(answerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
+        jLabel12.setText(Integer.toString(answerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+        
+        jButton1.setMnemonic(KeyEvent.VK_C);
+    }
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

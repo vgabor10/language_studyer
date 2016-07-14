@@ -24,7 +24,14 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         initComponents();
         
         setLocationRelativeTo(null);
-
+        
+        jButton4.setMnemonic(KeyEvent.VK_B);
+        acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
+        wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
+        ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
+    }
+    
+    public void initialisationAfterDataLoaded() {
         RandomGrammarItemChooser randomGrammarItemChooser = new RandomGrammarItemChooser();
         GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
         grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
@@ -39,12 +46,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         grammarTester.setExampleIndexesToTest(10);
         
         moveToTheNextQuestion();
-        
-        jButton4.setMnemonic(KeyEvent.VK_B);
-        acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
-        wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
-        ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
-        
+   
         startTime = new Date().getTime();
     }
 

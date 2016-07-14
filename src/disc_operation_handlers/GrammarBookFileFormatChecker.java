@@ -1,15 +1,12 @@
-package grammar_book;
+package disc_operation_handlers;
 
+import grammar_book.GrammarAnswerDataContainer;
+import grammar_book.GrammarBook;
 import java.util.*;
-
-import java.io.File;
-import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.text.DecimalFormat;
 
 public class GrammarBookFileFormatChecker {
 

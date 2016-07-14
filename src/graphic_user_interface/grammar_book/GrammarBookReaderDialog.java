@@ -26,13 +26,9 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
  
         treeModel = (DefaultTreeModel) jTree1.getModel();
         tableModel = (DefaultTableModel)jTable1.getModel();
-        
-        fillTreeWithGrammarBookData();
-        
-        fillWidgetsWithGrammarItemData(92);
     }
 
-    private void fillWidgetsWithGrammarItemData(int grammarItemOrderIndex) {
+    public void fillWidgetsWithGrammarItemData(int grammarItemOrderIndex) {
         GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(grammarItemOrderIndex);
         
         jTextArea1.setText(grammarItem.description);
@@ -52,7 +48,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         }
     }
     
-    private void fillTreeWithGrammarBookData() {
+    public void fillTreeWithGrammarBookData() {
         
         for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
             GrammarItemTitle grammarItemTitle = grammarBook.getGrammarItemByOrder(i).title;

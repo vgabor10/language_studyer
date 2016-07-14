@@ -1,6 +1,7 @@
 package graphic_user_interface;
 
-import data_operation_handlers.LanguageDataLoader;
+import common.Logger;
+import disc_operation_handlers.LanguageDataLoader;
 import graphic_user_interface.grammar_book.GrammarItemTreeDialog;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarItemTesterDialog;
@@ -21,6 +22,8 @@ public class MainFrame extends javax.swing.JFrame {
     
     private GrammarBook grammarBook = new GrammarBook();
     private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer(); 
+
+    private Logger logger = new Logger();
     
     public MainFrame() {
         initComponents();
@@ -293,6 +296,7 @@ public class MainFrame extends javax.swing.JFrame {
         CardTesterDialog dialog = new CardTesterDialog(new javax.swing.JFrame(), true);
         dialog.cardContainer = cardContainer;
         dialog.answerDataContainer = answerDataContainer;
+        dialog.initialiseAfterDataLoaded();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -300,6 +304,7 @@ public class MainFrame extends javax.swing.JFrame {
         GrammarItemTesterDialog dialog = new GrammarItemTesterDialog(new javax.swing.JFrame(), true); 
         dialog.grammarBook = grammarBook;
         dialog.grammarAnswerDataContainer = grammarAnswerDataContainer;
+        dialog.initialisationAfterDataLoaded();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -309,7 +314,9 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true); 
-        dialog.cardContainer = cardContainer;
+        dialog.setCardContainer(cardContainer);
+        dialog.setAnswerDataContainer(answerDataContainer);
+        dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -335,6 +342,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarBook;
+        dialog.fillTreeWithGrammarBookData();
+        dialog.fillWidgetsWithGrammarItemData(92);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton8ActionPerformed
 
@@ -357,6 +366,10 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         LanguageChooserDialog dialog = new LanguageChooserDialog(new javax.swing.JFrame(), true);
+        dialog.cardContainer = cardContainer;
+        dialog.answerDataContainer = answerDataContainer;
+        dialog.grammarBook = grammarBook;
+        dialog.grammarAnswerDataContainer = grammarAnswerDataContainer;
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
 

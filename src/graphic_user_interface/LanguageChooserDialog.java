@@ -1,22 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface;
 
-/**
- *
- * @author varga
- */
+import dictionary.CardContainer;
+import disc_operation_handlers.LanguageDataLoader;
+import grammar_book.GrammarAnswerDataContainer;
+import grammar_book.GrammarBook;
+import disc_operation_handlers.LanguageFilesDataHendler;
+import java.awt.event.KeyEvent;
+import study_item_objects.AnswerDataContainer;
+
 public class LanguageChooserDialog extends javax.swing.JDialog {
 
-    /**
-     * Creates new form LanguageChooserDialog
-     */
+    public CardContainer cardContainer;
+    public AnswerDataContainer answerDataContainer;
+    
+    public GrammarBook grammarBook;
+    public GrammarAnswerDataContainer grammarAnswerDataContainer;
+    
     public LanguageChooserDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+        buttonGroup1.add(jRadioButton1);
+        buttonGroup1.add(jRadioButton2);     
+        
+        setLocationRelativeTo(null);
+        
+        LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();
+        
+        if(settingsHandler.getStudiedLanguageIndex() == 0) {
+            jRadioButton1.setSelected(true);
+        }
+        
+        if(settingsHandler.getStudiedLanguageIndex() == 1) {
+            jRadioButton2.setSelected(true);
+        }
+            
+        jButton1.setMnemonic(KeyEvent.VK_O);
+        jButton2.setMnemonic(KeyEvent.VK_C);
     }
 
     /**
@@ -57,7 +77,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton2.setText("Back");
+        jButton2.setText("Close");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -99,6 +119,24 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        /*LanguageDataLoader languageDataLoader = new LanguageDataLoader();
+        
+        languageDataLoader.setCardContainer(cardContainer);
+        languageDataLoader.setAnswerDataContainer(answerDataContainer);
+        languageDataLoader.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+        languageDataLoader.setGrammarBook(grammarBook);        
+        
+        int languageIndexToLoad = 0;
+        
+        if (jRadioButton1.isSelected()) {
+            languageIndexToLoad = 0;
+        }
+        if (jRadioButton2.isSelected()) {
+            languageIndexToLoad = 1;
+        }
+        
+        languageDataLoader.loadLanguageDataWithIndex(languageIndexToLoad);*/
+        
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 

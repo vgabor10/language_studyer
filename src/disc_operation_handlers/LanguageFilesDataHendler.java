@@ -1,23 +1,21 @@
-package settings_handler;
+package disc_operation_handlers;
 
 import java.util.*;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
-public class SettingsHandler {
+public class LanguageFilesDataHendler {
 
 	private int studyedLanguageIndex = 1;
 	public String settingsDataFilePath = "../data/settings_data/settings_data_file.txt";
 
-	private Vector<LanguageData> languageDatas = new Vector<LanguageData>();
+	private Vector<LanguageFilesData> languageDatas = new Vector<LanguageFilesData>();
 
-	public SettingsHandler() {
-		LanguageData languageData1 = new LanguageData();
+	public LanguageFilesDataHendler() {
+		LanguageFilesData languageData1 = new LanguageFilesData();
 		languageData1.languageIndex = 0;
 		languageData1.languageName = "English";
 		languageData1.answerDataPath = "../data/english_data/answer_data/english_card_tester_data.txt";
@@ -25,7 +23,7 @@ public class SettingsHandler {
 		languageData1.grammarDataPath = "../data/english_data/language_book_data/english_grammar_book.tex";
 		languageData1.grammarAnswerDataPath = "../data/english_data/answer_book_data/english_grammar_answer_data.txt";
 
-		LanguageData languageData2 = new LanguageData();
+		LanguageFilesData languageData2 = new LanguageFilesData();
 		languageData2.languageIndex = 1;
 		languageData2.languageName = "German";
 		languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_data.txt";
@@ -59,6 +57,10 @@ public class SettingsHandler {
 		return languageDatas.get(studyedLanguageIndex).grammarAnswerDataPath;
 	}
 
+        public int getStudiedLanguageIndex() {
+            return studyedLanguageIndex;
+        }
+        
 	public Set<Integer> getLanguageIndexes() {
 		Set <Integer> languageIndexes = new HashSet<Integer>();
 
@@ -69,7 +71,7 @@ public class SettingsHandler {
 		return languageIndexes;
 	}
 
-	public void changeLanguageTostudy(int languageIndex) {
+	public void setStudyedLanguageIndex(int languageIndex) {
 		studyedLanguageIndex = languageIndex;
 		try {
 			FileWriter fw = new FileWriter(settingsDataFilePath,false);	//the true will append the new data

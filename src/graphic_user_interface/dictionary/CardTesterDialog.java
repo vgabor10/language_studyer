@@ -25,13 +25,22 @@ public class CardTesterDialog extends javax.swing.JDialog {
     public CardTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-
-        setLocationRelativeTo(null);
         
         jTextField1.requestFocus();
         
-        model = (DefaultTableModel)jTable1.getModel();
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jLabel1.setText("");
         
+        model = (DefaultTableModel)jTable1.getModel();
+          
+        setLocationRelativeTo(null);
+        
+        jButton1.setMnemonic(KeyEvent.VK_O);
+        jButton2.setMnemonic(KeyEvent.VK_C);
+    }
+
+    public void initialiseAfterDataLoaded() {
         CardChooser cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
@@ -44,16 +53,11 @@ public class CardTesterDialog extends javax.swing.JDialog {
         cardTester.moveToNextCardToQuestion();
   
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-        jTextField1.setText("");
-        jTextField2.setText("");
-        jLabel1.setText("");
         jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
-        
-        jButton1.setMnemonic(KeyEvent.VK_B);
-        
+ 
         startTime = new Date().getTime();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

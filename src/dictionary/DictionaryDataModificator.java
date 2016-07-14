@@ -1,8 +1,8 @@
 package dictionary;
 
+import disc_operation_handlers.LanguageFilesDataHendler;
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
-import settings_handler.*;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,7 +12,7 @@ public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
-	private final SettingsHandler settingsHandler = new SettingsHandler();
+	private final LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();
 
 	private final Logger logger = new Logger();
 

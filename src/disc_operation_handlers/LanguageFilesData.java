@@ -1,6 +1,6 @@
-package settings_handler;
+package disc_operation_handlers;
 
-public class LanguageData {
+public class LanguageFilesData {
 
 	public int languageIndex;
 	public String languageName;
@@ -9,6 +9,4 @@ public class LanguageData {
 	public String grammarDataPath;
 	public String grammarAnswerDataPath;
 
-	LanguageData() {
-	}
 }

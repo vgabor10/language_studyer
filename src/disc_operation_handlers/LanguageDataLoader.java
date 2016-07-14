@@ -1,4 +1,4 @@
-package data_operation_handlers;
+package disc_operation_handlers;
 
 import dictionary.Card;
 import dictionary.CardContainer;
@@ -12,7 +12,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import settings_handler.SettingsHandler;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 
@@ -24,7 +23,12 @@ public class LanguageDataLoader {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
     
-    private SettingsHandler settingsHandler = new SettingsHandler();
+    private LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();
+    
+    public void loadLanguageDataWithIndex(int languageIndex) {
+        settingsHandler.setStudyedLanguageIndex(languageIndex);
+        this.loadAllLanguageDataFromDisc();
+    }
     
     public void setCardContainer(CardContainer cc) {
         cardContainer = cc;
@@ -260,4 +264,5 @@ public class LanguageDataLoader {
         loadGrammarBookFromDisc();
         loadGrammarAnswerDataFromDisc();
     }
+    
 }
