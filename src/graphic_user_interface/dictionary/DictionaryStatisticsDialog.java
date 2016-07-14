@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
-    AnswerDataContainer answerDataContainer = new AnswerDataContainer();;
-    CardContainer cardContainer = new CardContainer();
+    public AnswerDataContainer answerDataContainer;
+    public CardContainer cardContainer;
     
     SettingsHandler settingsHandler = new SettingsHandler();
     
@@ -20,12 +20,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         initComponents();
         
         setLocationRelativeTo(null);
-        
-        //TODO: add it from main frame
-	answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
-
-        //TODO: add it from main frame
-	cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
 
 	AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 	answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);

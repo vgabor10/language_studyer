@@ -1,16 +1,11 @@
 package study_item_objects;
 
 import java.util.*;
-
-import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
-import java.io.BufferedWriter;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
-import java.lang.Math;
-
 
 public class AnswerDataContainer {
 
@@ -111,23 +106,6 @@ public class AnswerDataContainer {
 			}
 		}
 		return numberOfAnswers;
-	}
-
-	public void loadDataFromFile(String filePath) {	//TODO: delete: too specific
-		BufferedReader br = null;
-		String strLine = "";
-		try {
-			br = new BufferedReader( new FileReader(filePath));
-			while( (strLine = br.readLine()) != null){
-				AnswerData answerData = new AnswerData();
-				answerData.setDataFromString(strLine);
-				data.addElement(answerData);
-			}
-		} catch (FileNotFoundException e) {
-		    System.err.println("Unable to find the file: fileName");
-		} catch (IOException e) {
-		    System.err.println("Unable to read the file: fileName");
-		}
 	}
 
 	public void appendToAnswerDataFile(String filePath) {	//TODO: take it to DictionaryDataModificator class

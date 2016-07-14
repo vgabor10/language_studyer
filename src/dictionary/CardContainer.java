@@ -68,34 +68,6 @@ public class CardContainer extends StudyItemContainer {
 		return cardIndexes;
 	}
 
-	public void loadDataFromFile(String filePath) {	//TODO: take to other class
-		clear();
-		BufferedReader br;
-		String strLine;
-		try {
-			br = new BufferedReader( new FileReader(filePath));
-			while( (strLine = br.readLine()) != null){
-				//System.out.println(strLine);	//log
-
-				String[] cardVariables = strLine.split("\t");
-
-				Card card = new Card();
-				card.index = Integer.parseInt(cardVariables[0]);
-				card.term = cardVariables[1];
-				card.definition = cardVariables[2];
-				if (3 < cardVariables.length) {
-					card.group = cardVariables[3];
-				}
-
-				addCard(card);
-			}
-		} catch (FileNotFoundException e) {
-		    System.err.println("Unable to find the file: fileName");
-		} catch (IOException e) {
-		    System.err.println("Unable to read the file: fileName");
-		}
-	}
-
         @Override
 	public void toScreen() {
 		for(int i=0; i<numberOfCards(); i++){

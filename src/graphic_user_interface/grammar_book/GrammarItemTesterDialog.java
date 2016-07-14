@@ -4,18 +4,15 @@ import grammar_book.GrammarTester;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarAnswerDataStatisticsMaker;
 import grammar_book.GrammarBook;
-import grammar_book.GrammarBookLoader;
 import grammar_book.RandomGrammarItemChooser;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 import java.util.Vector;
-import settings_handler.SettingsHandler;
 
 public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
-    private final SettingsHandler settingsHandler = new SettingsHandler();
-    private final GrammarBook grammarBook = new GrammarBook();
-    private final GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+    public GrammarBook grammarBook;
+    public GrammarAnswerDataContainer grammarAnswerDataContainer;
     private int grammarItemIndexToTest = -1;
     GrammarTester grammarTester = new GrammarTester();
     
@@ -27,12 +24,6 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         initComponents();
         
         setLocationRelativeTo(null);
-       
-        GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
-        grammarBookLoader.setGrammarBook(grammarBook);
-	grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
-        
-	grammarAnswerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageGrammarAnswerDataPath());
 
         RandomGrammarItemChooser randomGrammarItemChooser = new RandomGrammarItemChooser();
         GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();

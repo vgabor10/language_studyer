@@ -3,11 +3,7 @@ package grammar_book;
 import study_item_objects.AnswerDataContainer;
 
 import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.FileNotFoundException;
-
 
 public class GrammarAnswerDataContainer extends AnswerDataContainer {
 
@@ -26,24 +22,6 @@ public class GrammarAnswerDataContainer extends AnswerDataContainer {
 	public GrammarAnswerData getAnswerData(int index) {
 		return (GrammarAnswerData)getAnswerData(index);
 	}*/
-
-	public void loadDataFromFile(String filePath) {
-
-		BufferedReader br = null;
-		String strLine = "";
-		try {
-			br = new BufferedReader( new FileReader(filePath));
-			while( (strLine = br.readLine()) != null){
-				GrammarAnswerData grammarAnswerData = new GrammarAnswerData();
-				grammarAnswerData.setDataFromString(strLine);
-				addAnswerData(grammarAnswerData);
-			}
-		} catch (FileNotFoundException e) {
-		    System.err.println("Unable to find the file: fileName");
-		} catch (IOException e) {
-		    System.err.println("Unable to read the file: fileName");
-		}
-	}
 
 	public void saveDataToFile(String filePath) {   //TODO: move to GrammarDataModificator
 		try {

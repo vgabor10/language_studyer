@@ -8,8 +8,8 @@ public class GrammarItem extends StudyItem {
 
 	public GrammarItemTitle title = new GrammarItemTitle();
 	public String description;
+        public String comments;
 	private Map<Integer, Example> examples = new TreeMap<>();
-	String comments;
 
 	public GrammarItem() {
 		title.clear();

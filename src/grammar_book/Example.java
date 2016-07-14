@@ -6,7 +6,7 @@ public class Example {
 	public String hun;
 	public String foreign;
 
-	Example() {
+	public Example() {
 		index = -1;
 	}
 

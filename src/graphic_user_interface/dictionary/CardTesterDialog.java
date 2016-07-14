@@ -11,13 +11,12 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
-import settings_handler.SettingsHandler;
 
 public class CardTesterDialog extends javax.swing.JDialog {
 
     private final CardTester cardTester = new CardTester();
-    private final CardContainer cardContainer = new CardContainer();
-    private final AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+    public CardContainer cardContainer;
+    public AnswerDataContainer answerDataContainer;
     private final DefaultTableModel model;
     private final Logger logger = new Logger();
     private long startTime;
@@ -32,11 +31,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
         
         model = (DefaultTableModel)jTable1.getModel();
-        
-        SettingsHandler settingsHandler = new SettingsHandler();
-        
-        cardContainer.loadDataFromFile(settingsHandler.getStudiedLanguageCardDataPath());
-        answerDataContainer.loadDataFromFile(settingsHandler.getStudiedLanguageAnswerDataPath());
         
         CardChooser cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);

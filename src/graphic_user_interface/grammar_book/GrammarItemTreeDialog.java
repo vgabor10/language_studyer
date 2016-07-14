@@ -1,30 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface.grammar_book;
 
 import grammar_book.GrammarBook;
-import grammar_book.GrammarBookLoader;
 import grammar_book.GrammarItemTitle;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
-import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.TreeModel;
-import settings_handler.SettingsHandler;
 
-/**
- *
- * @author varga
- */
 public class GrammarItemTreeDialog extends javax.swing.JDialog {
 
-    private final GrammarBook grammarBook = new GrammarBook();
-    private final SettingsHandler settingsHandler = new SettingsHandler();
-    DefaultTreeModel model;
+    public GrammarBook grammarBook;
+    
+    private final DefaultTreeModel model;
     
     public GrammarItemTreeDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -35,10 +22,6 @@ public class GrammarItemTreeDialog extends javax.swing.JDialog {
         jButton1.setMnemonic(KeyEvent.VK_B);
  
         model = (DefaultTreeModel) jTree1.getModel();
-        
-        GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
-        grammarBookLoader.setGrammarBook(grammarBook);
-	grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
         
         fillTreeWithGrammarBookData();
     }

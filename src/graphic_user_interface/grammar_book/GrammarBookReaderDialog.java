@@ -2,7 +2,6 @@ package graphic_user_interface.grammar_book;
 
 import grammar_book.Example;
 import grammar_book.GrammarBook;
-import grammar_book.GrammarBookLoader;
 import grammar_book.GrammarItem;
 import grammar_book.GrammarItemTitle;
 import java.awt.event.KeyEvent;
@@ -10,12 +9,11 @@ import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
-import settings_handler.SettingsHandler;
 
 public class GrammarBookReaderDialog extends javax.swing.JDialog {
 
-    private final GrammarBook grammarBook = new GrammarBook();
-    private final SettingsHandler settingsHandler = new SettingsHandler();
+    public GrammarBook grammarBook;
+    
     private final DefaultTreeModel treeModel;
     private final DefaultTableModel tableModel;
     
@@ -28,10 +26,6 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
  
         treeModel = (DefaultTreeModel) jTree1.getModel();
         tableModel = (DefaultTableModel)jTable1.getModel();
-        
-        GrammarBookLoader grammarBookLoader = new GrammarBookLoader();
-        grammarBookLoader.setGrammarBook(grammarBook);
-	grammarBookLoader.loadGrammarBookFromFile(settingsHandler.getStudiedLanguageGrammarBookPath());
         
         fillTreeWithGrammarBookData();
         
