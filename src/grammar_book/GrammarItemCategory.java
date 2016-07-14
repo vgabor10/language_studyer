@@ -1,7 +1,6 @@
 package grammar_book;
 
 import java.util.*;
-//import java.io.Console;
 
 public class GrammarItemCategory {
 

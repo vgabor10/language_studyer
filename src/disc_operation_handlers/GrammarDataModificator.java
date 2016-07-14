@@ -2,41 +2,39 @@ package disc_operation_handlers;
 
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
+import grammar_book.GrammarItem;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class GrammarDataModificator {
 
-	private GrammarBook grammarBook;
-	private	GrammarAnswerDataContainer grammarAnswerDataContainer;
-	public String grammarBookSourcePath = "";
-	public String grammarAnswerDataSourcePath = "";
+    private GrammarBook grammarBook;
+    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+        
+    public LanguageFilesDataHendler languageFilesDataHendler;
 
-	public void setGrammarBook(GrammarBook gb) {
-		grammarBook = gb;
-	}
+    public void setGrammarBook(GrammarBook gb) {
+            grammarBook = gb;
+    }
 
-	public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
-		grammarAnswerDataContainer = gac;
-	}
+    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
+            grammarAnswerDataContainer = gac;
+    }       
 
-	public void writeGrammarBookToDisk(String filePath) {   //TODO: implement
-            /*try {
-                FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+    public void writeGrammarBookToDisk(String filePath) {   //TODO: implement
+        try {
+            FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
 
-                fw.write(grammarBook.preambulum + "\n");
-                fw.write("\\begin{document}\n\n");
-                fw.write("\\maketitle\n\n");
-                fw.write("\\tableofcontents\n\n");
+            fw.write(grammarBook.preambulum + "\n");
+            fw.write("\\begin{document}\n\n");
+            fw.write("\\maketitle\n\n");
+            fw.write("\\tableofcontents\n\n");
 
-                int hierarcyDepth = 0;
+            //int hierarcyDepth = 0;
 
-                for (int orderIndex =0; orderIndex<grammarBook.numberOfGrammarItems(); orderIndex++) {
+            for (int orderIndex =0; orderIndex<grammarBook.numberOfGrammarItems(); orderIndex++) {
 
-                    GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
+                GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
                     
                     
                     
@@ -52,42 +50,64 @@ public class GrammarDataModificator {
                             fw.write("\\subsubsection{" + categorys[i] + "}\n\n");
                         }
                     }
-                    hierarcyDepth = categorys.length - 1;
+                    hierarcyDepth = categorys.length - 1;*/
 
-                    fw.write(grammarBook.getGrammarItem(index).toStringInLatexFormat());
-                    fw.write("\n");
-                }
-
-                fw.write("\\end{document}\n");
-
-                fw.close();
+                fw.write(grammarItem.toStringInLatexFormat());
+                fw.write("\n");
             }
-            catch(IOException ioe) {
-                System.err.println("IOException: " + ioe.getMessage());
-            }*/
-	}
 
-	public void writeGrammarAnswerDataToDisk() {
-		String answerdDataFolderPath = grammarAnswerDataSourcePath.substring(0,grammarAnswerDataSourcePath.lastIndexOf('/'));
-		grammarAnswerDataContainer.saveDataToFile(answerdDataFolderPath + "/temporary_answerd_data_file.txt");
-	}
+            fw.write("\\end{document}\n");
 
-	public void writeGrammarBookToDisk() {
-		String grammarBookSourcePath = grammarAnswerDataSourcePath.substring(0,grammarAnswerDataSourcePath.lastIndexOf('/'));
-		grammarAnswerDataContainer.saveDataToFile(grammarBookSourcePath + "/temporary_grammar_book_file.txt");
-	}
+            fw.close();
+        }
+        catch(IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
 
-	public void deleteGrammarItem(int grammarItemIndex) {   //TODO: implement
-		/*grammarBook.deleteGrammarItem(grammarItemIndex);
-		for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
-			if (grammarAnswerDataContainer.data.get(i).grammarItemIndex == grammarItemIndex) {
-				grammarAnswerDataContainer.data.remove(i);
-			}
-		}
-		writeGrammarBookToDisk();
-		writeGrammarAnswerDataToDisk();*/
-	}
+    public void writeGrammarAnswerDataToDisk() {
 
-	public void deleteExample(int grammarItemIndex, int exampleIndex) { //TODO: implenet
-	}
+        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+        
+        try {
+            FileWriter fw = new FileWriter(filePath,false);	//the true will append the new data
+            for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
+                fw.write(grammarAnswerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            }
+            fw.close();
+        }
+        catch(IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+    
+    public void appendGrammarAnswerDataToFile() {
+        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+        try {
+            FileWriter fw = new FileWriter(filePath,true);	//the true will append the new data
+            for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
+                fw.write(grammarAnswerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            }
+            fw.close();
+        }
+        catch(IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+
+    //TODO: implement
+    public void deleteGrammarItem(int grammarItemIndex) {
+            /*grammarBook.deleteGrammarItem(grammarItemIndex);
+            for (int i=0; i<grammarAnswerDataContainer.numberOfAnswers(); i++) {
+                    if (grammarAnswerDataContainer.data.get(i).grammarItemIndex == grammarItemIndex) {
+                            grammarAnswerDataContainer.data.remove(i);
+                    }
+            }
+            writeGrammarBookToDisk();
+            writeGrammarAnswerDataToDisk();*/
+    }
+
+    //TODO: implenet
+    public void deleteExample(int grammarItemIndex, int exampleIndex) {
+    }
 }

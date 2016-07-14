@@ -2,7 +2,7 @@ package study_item_objects;
 
 public class AnswerData {
 
-	public int index;	//TODO: change name: studyItemIndex
+	public int index;
 	public boolean isRight;
 	public long date;
 
@@ -11,13 +11,13 @@ public class AnswerData {
 		date = -1;
 	}
 
-	public AnswerData(int i, boolean b, long d) {	//TODO: remove this constructor
+	public AnswerData(int i, boolean b, long d) {
 		index = i;
 		isRight = b;
 		date = d;
 	}
 
-	public void setDataFromString(String s) {	//TODO: take to other class
+	public void setDataFromString(String s) {
 		index = Integer.parseInt(s.split(" ")[0]);
 
 		if (s.split(" ")[1].equals("1")) {

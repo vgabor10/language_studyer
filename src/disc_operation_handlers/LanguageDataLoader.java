@@ -23,10 +23,10 @@ public class LanguageDataLoader {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
     
-    private LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();
+    private LanguageFilesDataHendler languageFilesDataHendler = new LanguageFilesDataHendler();
     
     public void loadLanguageDataWithIndex(int languageIndex) {
-        settingsHandler.setStudyedLanguageIndex(languageIndex);
+        languageFilesDataHendler.setStudyedLanguageIndex(languageIndex);
         this.loadAllLanguageDataFromDisc();
     }
     
@@ -44,9 +44,12 @@ public class LanguageDataLoader {
     public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
         grammarAnswerDataContainer = a;
     }
+    public void setLanguageFilesDataHendler(LanguageFilesDataHendler a) {
+        languageFilesDataHendler = a;
+    }
     
     public void loadCardContainerFromDisc() {
-        String filePath = settingsHandler.getStudiedLanguageCardDataPath();
+        String filePath = languageFilesDataHendler.getStudiedLanguageCardDataPath();
         
         BufferedReader br;
         String strLine;
@@ -73,7 +76,7 @@ public class LanguageDataLoader {
     }
      
     public void loadAnswerDataFromDisc() {
-        String filePath = settingsHandler.getStudiedLanguageAnswerDataPath();
+        String filePath = languageFilesDataHendler.getStudiedLanguageAnswerDataPath();
         String strLine;
         try {
             BufferedReader br = new BufferedReader( new FileReader(filePath));
@@ -90,7 +93,7 @@ public class LanguageDataLoader {
     }
     
     public void loadGrammarBookFromDisc() {
-        String filePath = settingsHandler.getStudiedLanguageGrammarBookPath();
+        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
         
         String strLine;
         String str;
@@ -241,7 +244,7 @@ public class LanguageDataLoader {
     }
     
     public void loadGrammarAnswerDataFromDisc() {
-        String filePath = settingsHandler.getStudiedLanguageGrammarAnswerDataPath();
+        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
         
         String strLine;
         try {

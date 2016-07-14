@@ -3,7 +3,6 @@ package dictionary;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataByStudyItemContainer;
 import common.Logger;
-import dictionary.*;
 
 import java.util.*;
 import java.text.DateFormat;
@@ -71,24 +70,37 @@ public class CardTestStatisticsMaker {
             return answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
         }
         
-        public String averageAnswerRateOfCardsBeforeTestAsString() {
-                DecimalFormat df = new DecimalFormat("#.0000");
-		return df.format(answerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems());
-	}   
+    public String averageAnswerRateOfCardsBeforeTestAsString() {
+            DecimalFormat df = new DecimalFormat("#.0000");
+            return df.format(answerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems());
+    }   
+
+    public String averageAnswerRateOfCardsAfterTestAsString() {
+            DecimalFormat df = new DecimalFormat("#.0000");
+            return df.format(answerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems());
+    }   
+
+    public String percentageOfRightAnswersAsString() {
+        if (testAnswers.numberOfAnswers() != 0) {
+            int sum = 0;
+            for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
+                if (testAnswers.getAnswerData(i).isRight) {
+                    sum++;
+                }
+            }
+            double percentage = (double)sum/(double)testAnswers.numberOfAnswers() * 100.0;
+            
+            DecimalFormat df = new DecimalFormat("#.000");
+            return df.format(percentage) + "%";
+        }
+        else {
+                return "-";
+        }
+    }   
         
-        public String averageAnswerRateOfCardsAfterTestAsString() {
-                DecimalFormat df = new DecimalFormat("#.0000");
-		return df.format(answerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems());
-	}   
-        
-        public String percentageOfRightAnswersAsString() {
-                DecimalFormat df = new DecimalFormat("#.000");
-		return df.format(testAnswers.percentageOfRightAnswers()) + "%";
-	}   
-        
-        public String numberOfUserAnswersAsString() {
-		return Integer.toString(testAnswers.numberOfAnswers());
-	}      
+    public String numberOfUserAnswersAsString() {
+            return Integer.toString(testAnswers.numberOfAnswers());
+    }      
         
         public String aggragatedReducementsAsString() {
             double aggragatedReducements = 0;
