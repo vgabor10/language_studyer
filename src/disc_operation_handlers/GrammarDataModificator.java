@@ -89,7 +89,7 @@ public class GrammarDataModificator {
         }
     }
 
-    public void deleteGrammarItem(int grammarItemIndex) {
+    public void deleteGrammarItemByIndex(int grammarItemIndex) {
         grammarBook.removeByIndex(grammarItemIndex);
         grammarAnswerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
         
