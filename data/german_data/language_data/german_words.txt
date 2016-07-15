@@ -10,7 +10,7 @@
 100009	schön	szép
 100010	immer	mindig
 100011	nach Hause	haza
-100012	zu Hause	otthon
+100012	zu Hause	otthon (prepozícióval)
 100013	in der Näche	közelben	kifejezések
 100014	sofort	rögtön, azonnal
 100015	e Strassenbahn	villamos
