@@ -12,7 +12,7 @@ public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
-	private final LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();
+	private final LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();    //TODO: give it from manin frame
 
 	private final Logger logger = new Logger();
 

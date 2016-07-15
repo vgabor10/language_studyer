@@ -33,11 +33,11 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     
     public void initialisationAfterDataLoaded() {
         RandomGrammarItemChooser randomGrammarItemChooser = new RandomGrammarItemChooser();
-        GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-        grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-        grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
         
-        randomGrammarItemChooser.setGrammarAnswerDataStatisticsMaker(grammarAnswerDataStatisticsMaker);
+        randomGrammarItemChooser.setGrammarAnswerDataContainerWithAtLeast10Examples(grammarAnswerDataContainer);
+        randomGrammarItemChooser.setGrammarBookWithAtLeast10Examples(grammarBook);
+        randomGrammarItemChooser.initialise();
+        
         grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest3();
         
         //grammarItemIndexToTest = 0; //for test

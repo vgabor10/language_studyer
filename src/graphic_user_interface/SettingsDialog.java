@@ -5,18 +5,17 @@
  */
 package graphic_user_interface;
 
-/**
- *
- * @author varga
- */
+import java.awt.event.KeyEvent;
+
 public class SettingsDialog extends javax.swing.JDialog {
 
-    /**
-     * Creates new form SettingsDialog
-     */
     public SettingsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+        setLocationRelativeTo(null);
+        
+        jButton1.setMnemonic(KeyEvent.VK_C);
     }
 
     /**
@@ -73,7 +72,8 @@ public class SettingsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-
+        LanguageChooserDialog dialog = new LanguageChooserDialog(new javax.swing.JFrame(), true);
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
