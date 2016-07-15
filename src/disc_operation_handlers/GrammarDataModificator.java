@@ -89,10 +89,12 @@ public class GrammarDataModificator {
         }
     }
 
-    public void deleteGrammarItemByIndex(int grammarItemIndex) {
+    public void deleteGrammarItemByIndexFromMemory(int grammarItemIndex) {
         grammarBook.removeByIndex(grammarItemIndex);
         grammarAnswerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
-        
+    }
+    
+    public void writeDataToDisc() {
         writeGrammarBookToDisk();
         writeGrammarAnswerDataToDisk();
     }

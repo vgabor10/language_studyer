@@ -21,21 +21,21 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private final Logger logger = new Logger();
     private long startTime;
     private long finishTime;
-    
+
     public CardTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        
+
         jTextField1.requestFocus();
-        
+
         jTextField1.setText("");
         jTextField2.setText("");
         jLabel1.setText("");
-        
-        model = (DefaultTableModel)jTable1.getModel();
-          
+
+        model = (DefaultTableModel) jTable1.getModel();
+
         setLocationRelativeTo(null);
-        
+
         jButton1.setMnemonic(KeyEvent.VK_O);
         jButton2.setMnemonic(KeyEvent.VK_C);
     }
@@ -46,18 +46,18 @@ public class CardTesterDialog extends javax.swing.JDialog {
         cardChooser.setAnswerDataContainer(answerDataContainer);
         Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
         //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
-        
+
         cardTester.setAllCard(cardContainer);
         cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
-        
+
         cardTester.moveToNextCardToQuestion();
-  
+
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-        jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
- 
+        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+
         startTime = new Date().getTime();
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -219,98 +219,88 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
                     if (cardTester.isMoreCardToTest()) {
                         cardTester.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
-                            jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                            jTextField1.setText("");
-                            jTextField2.setText("");
-                            jLabel1.setText("");
-                    }
-                    else {
-                        goToStatisticsFrameAndSaveData();
-                        dispose();
-                    }
-                }
-                else {
-                    if (cardTester.isUserAnswerRight()) {
-                        jTextField1.setText("");
-                        jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(45, 107, 53)); //green
-                        jLabel1.setText("RIGHT, but the above term was tought");
-
-                        showAcceptableCards();
-                    }
-                    else {
-                        jTextField1.setText("");
-                        jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                        jTextField2.setForeground(new java.awt.Color(255, 0, 0));   //red
-                        jLabel1.setText("wrong");
-
-                        showAcceptableCards();
-                    }
-                }
-            }
-            else {
-                if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
-                    if (cardTester.isMoreCardToTest()) {
-                        cardTester.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester.numberOfCardsQuestioned()+ "\\" + cardTester.getNumberOfQuestions());
+                        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
                         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
                         jTextField1.setText("");
                         jTextField2.setText("");
                         jLabel1.setText("");
-
-                        clearTabular();
-                    }
-                    else {
+                    } else {
                         goToStatisticsFrameAndSaveData();
                         dispose();
                     }
+                } else if (cardTester.isUserAnswerRight()) {
+                    jTextField1.setText("");
+                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
+                    jTextField2.setForeground(new java.awt.Color(45, 107, 53)); //green
+                    jLabel1.setText("RIGHT, but the above term was tought");
+
+                    showAcceptableCards();
+                } else {
+                    jTextField1.setText("");
+                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
+                    jTextField2.setForeground(new java.awt.Color(255, 0, 0));   //red
+                    jLabel1.setText("wrong");
+
+                    showAcceptableCards();
+                }
+            } else if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
+                if (cardTester.isMoreCardToTest()) {
+                    cardTester.moveToNextCardToQuestion();
+                    jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+                    jTextField3.setText(cardTester.getActualQuestionedCard().definition);
+                    jTextField1.setText("");
+                    jTextField2.setText("");
+                    jLabel1.setText("");
+
+                    clearTabular();
+                } else {
+                    goToStatisticsFrameAndSaveData();
+                    dispose();
                 }
             }
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void showAcceptableCards() {
-        Set<Integer> acceptableCardIndexes 
+        Set<Integer> acceptableCardIndexes
                 = cardTester.getAcceptableCardIndexes(cardTester.getActualQuestionedCard().definition);
-        
+
         for (int index : acceptableCardIndexes) {
-            model.addRow(new Object[] {
-                        cardContainer.getCardByIndex(index).term, 
-                        cardContainer.getCardByIndex(index).definition
+            model.addRow(new Object[]{
+                cardContainer.getCardByIndex(index).term,
+                cardContainer.getCardByIndex(index).definition
             });
         }
     }
-    
+
     private void clearTabular() {
-        for (int i=model.getRowCount()-1; 0<=i; i--) {
+        for (int i = model.getRowCount() - 1; 0 <= i; i--) {
             model.removeRow(i);
         }
     }
-    
+
     private void goToStatisticsFrameAndSaveData() {
         finishTime = new Date().getTime();
-        
+
         AnswerDataContainer userAnswers = cardTester.getUserAnswers();
-        
+
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-	dictionaryDataModificator.setCardContainer(cardContainer);
-	dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
-        
-	dictionaryDataModificator.appendToStudiedLanguageCardData(userAnswers);
-        
-        
+        dictionaryDataModificator.setCardContainer(cardContainer);
+        dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+
+        dictionaryDataModificator.appendToStudiedLanguageCardData(userAnswers);
+
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
         dialog.allCard = cardContainer;
         dialog.testAnswers = cardTester.getUserAnswers();
         dialog.oldAnswers = answerDataContainer;
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
-        
+
         dialog.setCardTestStatisticsDataToFrame();
         dialog.setVisible(true);
     }
-    
+
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed

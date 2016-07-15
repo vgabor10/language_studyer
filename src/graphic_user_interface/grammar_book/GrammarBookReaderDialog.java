@@ -20,7 +20,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
     public GrammarBookReaderDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-         setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         
         jButton1.setMnemonic(KeyEvent.VK_B);
         jTextField1.setText("");

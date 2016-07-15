@@ -4,19 +4,18 @@ import grammar_book.Example;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarItem;
 import java.awt.event.KeyEvent;
-import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 
-public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
+public class GrammarItemModificatorDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
     
     private final DefaultTableModel tableModel;
     
-    public GrammarItemModificatorReaderDialog(java.awt.Frame parent, boolean modal) {
+    public GrammarItemModificatorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-         setLocationRelativeTo(null);
+        setLocationRelativeTo(null);
         
         jButton1.setMnemonic(KeyEvent.VK_B);
         jTextField1.setText("");
@@ -64,14 +63,13 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
+        addGrammarItemButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        insertExampleButton = new javax.swing.JButton();
+        deleteExampleButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("DejaVu Sans Mono", 0, 15)); // NOI18N
         jTextArea1.setRows(5);
@@ -85,10 +83,14 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
                 "term", "definition"
             }
         ));
-        jTable1.setEnabled(false);
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(jTable1);
 
-        jButton1.setText("Back");
+        jButton1.setText("Close without adding");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -98,13 +100,36 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
         jTextField1.setEditable(false);
         jTextField1.setText("jTextField1");
 
-        jButton2.setText("Save");
+        addGrammarItemButton.setText("Add grammar item");
+        addGrammarItemButton.setEnabled(false);
+        addGrammarItemButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addGrammarItemButtonActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Add examples");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("Insert examples");
+        insertExampleButton.setText("Insert before examples");
+        insertExampleButton.setEnabled(false);
+        insertExampleButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                insertExampleButtonActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("Delete example");
+        deleteExampleButton.setText("Delete example");
+        deleteExampleButton.setEnabled(false);
+        deleteExampleButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteExampleButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -118,14 +143,14 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(insertExampleButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(deleteExampleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(addGrammarItemButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 302, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -142,12 +167,12 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton3)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5))
+                    .addComponent(insertExampleButton)
+                    .addComponent(deleteExampleButton))
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(addGrammarItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -157,6 +182,48 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void addGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGrammarItemButtonActionPerformed
+        GrammarItem grammarItem = new GrammarItem();
+        
+        grammarItem.description = jTextArea1.getText();
+        
+        for (int i=0; i<jTable1.getRowCount(); i++) {
+            //TODO: implement
+        }
+    }//GEN-LAST:event_addGrammarItemButtonActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        InsertExampleDialog dialog 
+                = new InsertExampleDialog(new javax.swing.JFrame(), true);
+        dialog.tableModel = tableModel;
+        dialog.setVisible(true);
+        
+        addGrammarItemButton.setEnabled(true);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void insertExampleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertExampleButtonActionPerformed
+        InsertExampleDialog dialog 
+                = new InsertExampleDialog(new javax.swing.JFrame(), true);
+        dialog.tableModel = tableModel;
+        dialog.insertionPlace = jTable1.getSelectedRow();
+        dialog.setVisible(true);
+        
+        addGrammarItemButton.setEnabled(true);
+    }//GEN-LAST:event_insertExampleButtonActionPerformed
+
+    private void deleteExampleButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteExampleButtonActionPerformed
+        tableModel.removeRow(jTable1.getSelectedRow());
+        
+        addGrammarItemButton.setEnabled(true);
+        insertExampleButton.setEnabled(false);
+        deleteExampleButton.setEnabled(false);
+    }//GEN-LAST:event_deleteExampleButtonActionPerformed
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        insertExampleButton.setEnabled(true);
+        deleteExampleButton.setEnabled(true);
+    }//GEN-LAST:event_jTable1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -175,14 +242,18 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemModificatorReaderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemModificatorReaderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemModificatorReaderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemModificatorReaderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarItemModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -191,7 +262,7 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GrammarItemModificatorReaderDialog dialog = new GrammarItemModificatorReaderDialog(new javax.swing.JFrame(), true);
+                GrammarItemModificatorDialog dialog = new GrammarItemModificatorDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -204,11 +275,11 @@ public class GrammarItemModificatorReaderDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addGrammarItemButton;
+    private javax.swing.JButton deleteExampleButton;
+    private javax.swing.JButton insertExampleButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
