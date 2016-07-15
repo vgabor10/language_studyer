@@ -46,6 +46,14 @@ public class AnswerDataContainer {
         }
     }
 
+    public void removeAnswerDataWithIndex(int index) {
+        for (int i = 0; i < this.numberOfAnswers(); i++) {
+            if (this.data.get(i).index == index) {
+                data.remove(i);
+            }
+        }
+    }
+    
     public void toScreenData() {
         for(int i=0; i<data.size(); i++){
             System.out.println(data.get(i).toStringData());

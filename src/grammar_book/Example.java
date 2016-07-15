@@ -16,7 +16,7 @@ public class Example {
 	}
 
 	public String toStringInLatexFormat() {
-		return Integer.toString(index) + " | "  + foreign + " | " + hun + "\\\\";
+		return Integer.toString(index) + " | "  + foreign + " | " + hun;
 	}
 
 }

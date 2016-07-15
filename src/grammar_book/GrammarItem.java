@@ -52,24 +52,19 @@ public class GrammarItem extends StudyItem {
 
 		return out;
 	}
-
-	public String toStringInLatexFormat() {
+        
+        public String toStringInLatexFormatWithoutTitle() {
 		String outString = "";
-
-		if (title.getDebth() == 1) {
-			outString = "\\section{" + title.getSection() + "}\n\n";
-		}
-		if (title.getDebth() == 2) {
-			outString = "\\subsection{" + title.getSection() + "}\n\n";
-		}
-		if (title.getDebth() == 3) {
-			outString = "\\subsubsection{" + title.getSection() + "}\n\n";
-		}
 
 		outString = outString + "GrammarItemIndex = " + Integer.toString(index) + "\n\n";
 
-		outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
-
+                if (description.equals("")) {
+                    outString = outString + "\\begin{desc}\n\\end{desc}\n\n";
+                }
+                else {
+                    outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
+                }
+                
 		if (comments.length() != 0) {
 			outString = outString + comments + "\n";
 		}
@@ -81,6 +76,7 @@ public class GrammarItem extends StudyItem {
 
 		return outString;
 	}
+
 
 }
 

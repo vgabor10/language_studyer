@@ -32,10 +32,6 @@ public class GrammarBook extends StudyItemContainer {
 		return getGrammarItemByIndex(grammarItemIndex).getExampleByIndex(exampleIndex);
 	}
 
-/*	public void deleteGrammarItem(int grammarItemIndex) {	//TODO: implement, think it over
-		grammarItems.remove(grammarItemIndex);
-	}*/
-
 	public void toScreenTableOfContents() {
 		System.out.println("TABLE OF CONTENT");
 		System.out.println();

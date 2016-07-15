@@ -25,7 +25,7 @@ public class DictionaryDataModificator {
 	}
 
 	public void removeCardWithAnswersByCardIndex(int cardIndex) {
-		cardContainer.removeStudyItemWithIndex(cardIndex);
+		cardContainer.removeByIndex(cardIndex);
 		answerDataContainer.removeAnswersWithIndex(cardIndex);
 
 		saveCardContainerDataToFile();

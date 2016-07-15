@@ -16,46 +16,48 @@ import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 
 public class LanguageDataLoader {
-    
+
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
-    
+
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
-    
+
     private LanguageFilesDataHendler languageFilesDataHendler = new LanguageFilesDataHendler();
-    
+
     public void loadLanguageDataWithIndex(int languageIndex) {
         languageFilesDataHendler.setStudyedLanguageIndex(languageIndex);
         this.loadAllLanguageDataFromDisc();
     }
-    
+
     public void setCardContainer(CardContainer cc) {
         cardContainer = cc;
     }
-    
+
     public void setAnswerDataContainer(AnswerDataContainer a) {
         answerDataContainer = a;
     }
-    
+
     public void setGrammarBook(GrammarBook a) {
         grammarBook = a;
     }
+
     public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
         grammarAnswerDataContainer = a;
     }
+
     public void setLanguageFilesDataHendler(LanguageFilesDataHendler a) {
         languageFilesDataHendler = a;
     }
-    
+
     public void loadCardContainerFromDisc() {
         String filePath = languageFilesDataHendler.getStudiedLanguageCardDataPath();
-        
+
         BufferedReader br;
         String strLine;
         try {
-            br = new BufferedReader( new FileReader(filePath));
-            while( (strLine = br.readLine()) != null){
+            br = new BufferedReader(new FileReader(filePath));
+            while ((strLine = br.readLine()) != null) {
                 String[] cardVariables = strLine.split("\t");
 
                 Card card = new Card();
@@ -74,13 +76,13 @@ public class LanguageDataLoader {
             System.err.println("Unable to read the file: fileName");
         }
     }
-     
+
     public void loadAnswerDataFromDisc() {
         String filePath = languageFilesDataHendler.getStudiedLanguageAnswerDataPath();
         String strLine;
         try {
-            BufferedReader br = new BufferedReader( new FileReader(filePath));
-            while( (strLine = br.readLine()) != null){
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            while ((strLine = br.readLine()) != null) {
                 AnswerData answerData = new AnswerData();
                 answerData.setDataFromString(strLine);
                 answerDataContainer.addAnswerData(answerData);
@@ -91,23 +93,22 @@ public class LanguageDataLoader {
             System.err.println("Unable to read the file: fileName");
         }
     }
-    
+
     public void loadGrammarBookFromDisc() {
         String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
-        
+
         String strLine;
         String str;
 
         try {
-            BufferedReader br = new BufferedReader( new FileReader(filePath));
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
 
             strLine = br.readLine();
 
-            while(!strLine.equals("\\begin{document}")) {
+            while (!strLine.equals("\\begin{document}")) {
                 if (grammarBook.preambulum.length() == 0) {
                     grammarBook.preambulum = strLine;
-                }
-                else {
+                } else {
                     grammarBook.preambulum = grammarBook.preambulum + "\n" + strLine;
                 }
                 strLine = br.readLine();
@@ -115,7 +116,7 @@ public class LanguageDataLoader {
 
             GrammarItem grammarItem = new GrammarItem();;
 
-            while(strLine != null) {
+            while (strLine != null) {
 
                 if (strLine.startsWith("GrammarItemIndex")) {
                     grammarItem.index = Integer.parseInt(strLine.substring(strLine.indexOf("=") + 2));
@@ -123,9 +124,7 @@ public class LanguageDataLoader {
 
                 if (strLine.startsWith("\\" + "section")) {
                     if (!grammarItem.isEmptyExcludingTitle()) {
-                        if (10 <= grammarItem.numberOfExamples()) {
-                            grammarBook.addGrammarItem(grammarItem);
-                        }
+                        grammarBook.addGrammarItem(grammarItem);
                         grammarItem = new GrammarItem();
                     }
 
@@ -138,9 +137,7 @@ public class LanguageDataLoader {
 
                 if (strLine.startsWith("\\" + "subsection")) {
                     if (!grammarItem.isEmptyExcludingTitle()) {
-                        if (10 <= grammarItem.numberOfExamples()) {
-                            grammarBook.addGrammarItem(grammarItem);
-                        }
+                        grammarBook.addGrammarItem(grammarItem);
 
                         GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
                         grammarItem = new GrammarItem();
@@ -156,9 +153,7 @@ public class LanguageDataLoader {
 
                 if (strLine.startsWith("\\" + "subsubsection")) {
                     if (!grammarItem.isEmptyExcludingTitle()) {
-                        if (10 <= grammarItem.numberOfExamples()) {
-                            grammarBook.addGrammarItem(grammarItem);
-                        }
+                        grammarBook.addGrammarItem(grammarItem);
 
                         GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
                         grammarItem = new GrammarItem();
@@ -174,9 +169,7 @@ public class LanguageDataLoader {
 
                 if (strLine.startsWith("\\" + "paragraph")) {
                     if (!grammarItem.isEmptyExcludingTitle()) {
-                        if (10 <= grammarItem.numberOfExamples()) {
-                            grammarBook.addGrammarItem(grammarItem);
-                        }
+                        grammarBook.addGrammarItem(grammarItem);
 
                         GrammarItemTitle title = new GrammarItemTitle(grammarItem.title);
                         grammarItem = new GrammarItem();
@@ -192,9 +185,7 @@ public class LanguageDataLoader {
 
                 if (strLine.startsWith("\\" + "end{document}")) {
                     if (!grammarItem.isEmptyExcludingTitle()) {
-                        if (10 <= grammarItem.numberOfExamples()) {
-                            grammarBook.addGrammarItem(grammarItem);
-                        }
+                        grammarBook.addGrammarItem(grammarItem);
                     }
                 }
 
@@ -212,7 +203,7 @@ public class LanguageDataLoader {
 
                     if (grammarItem.description.endsWith("\n")) {
                         grammarItem.description
-                            = grammarItem.description.substring(0, grammarItem.description.length()-1);
+                                = grammarItem.description.substring(0, grammarItem.description.length() - 1);
                     }
                 }
 
@@ -240,16 +231,16 @@ public class LanguageDataLoader {
             System.err.println("Unable to find the file: fileName");
         } catch (IOException e) {
             System.err.println("Unable to read the file: fileName");
-        }   
+        }
     }
-    
+
     public void loadGrammarAnswerDataFromDisc() {
         String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
-        
+
         String strLine;
         try {
-            BufferedReader br = new BufferedReader( new FileReader(filePath));
-            while( (strLine = br.readLine()) != null){
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            while ((strLine = br.readLine()) != null) {
                 GrammarAnswerData grammarAnswerData = new GrammarAnswerData();
                 grammarAnswerData.setDataFromString(strLine);
                 grammarAnswerDataContainer.addAnswerData(grammarAnswerData);
@@ -260,12 +251,12 @@ public class LanguageDataLoader {
             System.err.println("Unable to read the file: fileName");
         }
     }
-    
+
     public void loadAllLanguageDataFromDisc() {
         loadCardContainerFromDisc();
         loadAnswerDataFromDisc();
         loadGrammarBookFromDisc();
         loadGrammarAnswerDataFromDisc();
     }
-    
+
 }

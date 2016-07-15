@@ -407,7 +407,9 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
         grammarDataModificator.setGrammarBook(grammarBook);
-        grammarDataModificator.writeGrammarBookToDisk("../../aaa.txt");
+        grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+        grammarDataModificator.setLanguageFilesDataHendler(languageFilesDataHendler);
+        grammarDataModificator.writeGrammarBookToDisk();
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
