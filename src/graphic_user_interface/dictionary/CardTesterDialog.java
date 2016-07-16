@@ -44,7 +44,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
         CardChooser cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
-        Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
+        
+        Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest7();
+        //Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
         //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
 
         cardTester.setAllCard(cardContainer);
@@ -282,15 +284,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     private void goToStatisticsFrameAndSaveData() {
         finishTime = new Date().getTime();
-
-        AnswerDataContainer userAnswers = cardTester.getUserAnswers();
-
-        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setCardContainer(cardContainer);
-        dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
-
-        dictionaryDataModificator.appendToStudiedLanguageCardData(userAnswers);
-
+        
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
         dialog.allCard = cardContainer;
         dialog.testAnswers = cardTester.getUserAnswers();
@@ -299,6 +293,14 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.startTime = startTime;
 
         dialog.setCardTestStatisticsDataToFrame();
+        
+        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+        dictionaryDataModificator.setCardContainer(cardContainer);
+        dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+
+        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
+
+        
         dialog.setVisible(true);
     }
 

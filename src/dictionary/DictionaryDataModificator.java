@@ -73,18 +73,20 @@ public class DictionaryDataModificator {
 		}
 	}
 
-	public void appendToStudiedLanguageCardData(AnswerDataContainer answerDataContainer) {
+	public void appendToStudiedLanguageCardData(AnswerDataContainer answersToAppend) {
 		try {
                         logger.debug("following rows have been added to card data file: "); 
                     
 			//the true will append the new data
 			FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageAnswerDataPath(),true);
-			for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
-				fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+			for (int i=0; i<answersToAppend.numberOfAnswers(); i++) {
+				fw.write(answersToAppend.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
                                 
-                                logger.debug(answerDataContainer.getAnswerData(i).toStringData());
+                                logger.debug(answersToAppend.getAnswerData(i).toStringData());
 			}
 			fw.close();
+                        
+                        answerDataContainer.appendAnswerDataContainer(answersToAppend);
 		}
 		catch(IOException ioe) {
 			System.err.println("IOException: " + ioe.getMessage());

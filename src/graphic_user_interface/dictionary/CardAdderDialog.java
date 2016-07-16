@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package graphic_user_interface.dictionary;
 
 import dictionary.Card;
 import dictionary.CardContainer;
+import dictionary.DictionaryDataModificator;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 
@@ -138,12 +134,13 @@ public class CardAdderDialog extends javax.swing.JDialog {
             else {
                 Card card = new Card();
         
-                //card.index = cardContainer.getEmptyCardIndex();
+                card.index = cardContainer.getEmptyCardIndex();
                 card.term = jTextField1.getText();
                 card.definition = jTextField2.getText();
 
-                //DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-                //dictionaryDataModificator.addCard(card);
+                DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+                dictionaryDataModificator.setCardContainer(cardContainer);
+                dictionaryDataModificator.addCard(card);
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed

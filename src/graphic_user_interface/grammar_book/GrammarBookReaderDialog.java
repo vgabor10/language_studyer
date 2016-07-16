@@ -22,7 +22,8 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         
-        jButton1.setMnemonic(KeyEvent.VK_B);
+        jButton1.setMnemonic(KeyEvent.VK_C);
+        
         jTextField1.setText("");
         
         jTextArea1.setLineWrap(true);
@@ -126,7 +127,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         jTable1.setEnabled(false);
         jScrollPane2.setViewportView(jTable1);
 
-        jButton1.setText("Back");
+        jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

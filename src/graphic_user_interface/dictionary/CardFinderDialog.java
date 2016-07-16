@@ -24,11 +24,9 @@ public class CardFinderDialog extends javax.swing.JDialog {
         
         model = (DefaultTableModel)jTable1.getModel();
         
-        jTextField1.setText("");
-        jLabel1.setText("-");
-        jTextField1.requestFocus();
+        setFormForNextQuery();
         
-        jButton1.setMnemonic(KeyEvent.VK_B);
+        jButton1.setMnemonic(KeyEvent.VK_C);
         
     }
 
@@ -60,7 +58,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
             },
             new String [] {
-                "term", "definition"
+                "", ""
             }
         ) {
             Class[] types = new Class [] {
@@ -89,7 +87,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton1.setText("Back");
+        jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -100,7 +98,12 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
         jLabel2.setText("number of results found:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "german -> hungarian", "hungarian -> german" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "foreign -> hungarian", "hungarian -> foreign" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,15 +112,13 @@ public class CardFinderDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 475, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel1)
-                        .addGap(0, 241, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField1)
                     .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -130,13 +131,13 @@ public class CardFinderDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel1)
+                        .addComponent(jLabel2))
+                    .addComponent(jButton1))
                 .addContainerGap())
         );
 
@@ -150,7 +151,8 @@ public class CardFinderDialog extends javax.swing.JDialog {
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
 
         if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
-                !jTextField1.getText().isEmpty()) {
+                !jTextField1.getText().isEmpty() &&
+                jComboBox1.getSelectedIndex() == 0) {
             
             if (jTextField1.isEditable()) {                   
                 Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
@@ -166,18 +168,45 @@ public class CardFinderDialog extends javax.swing.JDialog {
                 jTextField1.setEditable(false);   
             }
             else {
-                jTextField1.setText("");
-                jTextField1.setEditable(true);
+                setFormForNextQuery();
+            }
+        }
+        
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
+                !jTextField1.getText().isEmpty() &&
+                jComboBox1.getSelectedIndex() == 1) {
+            
+            if (jTextField1.isEditable()) {                   
+                Vector<Card> cardsToList = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
 
-                for (int i=model.getRowCount()-1; 0<=i; i--) {
-                    model.removeRow(i);
+                for (int i=0; i<cardsToList.size(); i++) {
+
+                    model.addRow(new Object[] {
+                        cardsToList.get(i).definition, 
+                        cardsToList.get(i).term});
                 }
+                jLabel1.setText(Integer.toString(cardsToList.size()));
 
-                jLabel1.setText("-");
+                jTextField1.setEditable(false);   
+            }
+            else {
+                setFormForNextQuery();
             }
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
+    private void setFormForNextQuery() {
+        jTextField1.setText("");
+        jTextField1.setEditable(true);
+        jTextField1.requestFocus();
+
+        for (int i=model.getRowCount()-1; 0<=i; i--) {
+            model.removeRow(i);
+        }
+
+        jLabel1.setText("-");
+    }
+    
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -185,6 +214,10 @@ public class CardFinderDialog extends javax.swing.JDialog {
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
 
     }//GEN-LAST:event_jTextField1KeyReleased
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        setFormForNextQuery();
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
