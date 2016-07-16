@@ -5043,3 +5043,4 @@
 101379	forschen	kutat
 102232	auf keinen Fall	semmi esetre	kifejezések
 102300	in diesem Fall	ebben az esetben	kifejezések
+102311	e Rache	bosszú
