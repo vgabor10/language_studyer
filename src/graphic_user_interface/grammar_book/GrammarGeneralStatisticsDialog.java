@@ -311,7 +311,7 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
 	jLabel6.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays()));
 	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeInString());
 	jLabel18.setText(grammarAnswerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(Double.toString(grammarAnswerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
+	jLabel19.setText(Double.toString(grammarAnswerDataStatisticsMaker.getAverageAnswerRateOfStudyItems()));
         jLabel12.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
         
         jButton1.setMnemonic(KeyEvent.VK_C);

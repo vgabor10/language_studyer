@@ -1,4 +1,4 @@
-package graphic_user_interface;
+package graphic_user_interface.common;
 
 import dictionary.CardContainer;
 import disc_operation_handlers.LanguageDataLoader;

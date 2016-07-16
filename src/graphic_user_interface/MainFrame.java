@@ -1,5 +1,7 @@
 package graphic_user_interface;
 
+import graphic_user_interface.common.LanguageChooserDialog;
+import graphic_user_interface.common.SettingsDialog;
 import common.Logger;
 import disc_operation_handlers.LanguageDataLoader;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;

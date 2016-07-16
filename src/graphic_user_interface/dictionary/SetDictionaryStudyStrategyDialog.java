@@ -35,8 +35,9 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
-        jRadioButton1.setText("jRadioButton1");
+        jRadioButton1.setText("20 random cards");
 
         jRadioButton2.setText("jRadioButton2");
 

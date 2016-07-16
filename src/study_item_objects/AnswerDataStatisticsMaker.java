@@ -7,6 +7,7 @@ import common.Logger;
 import common.GeneralFunctions;
 import java.util.*;
 import java.io.*;
+import java.text.DecimalFormat;
 
 public class AnswerDataStatisticsMaker {
 
@@ -72,7 +73,8 @@ public class AnswerDataStatisticsMaker {
 
     public String getPercentageOfRightAnswersAsString() {
         double p = percentageOfRightAnswers();
-        return Double.toString(p) + "%";
+        DecimalFormat df = new DecimalFormat("#.00");
+        return df.format(p) + "%";
     }        
 
     public int numberOfStudyItemsQuestioned() {
@@ -414,7 +416,7 @@ public class AnswerDataStatisticsMaker {
             }
     }
 
-    public double averageAnswerRateOfStudyItems() {
+    public double getAverageAnswerRateOfStudyItems() {
         AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
         double sum = 0.0;
@@ -422,6 +424,11 @@ public class AnswerDataStatisticsMaker {
             sum = sum + answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
         }
         return sum / (double)answerDataByStudyItemsContainer.numberOfStudyItems();
+    }
+    
+    public String getAverageAnswerRateOfStudyItemsAsString() {
+        DecimalFormat df = new DecimalFormat("#.0000");
+        return df.format(getAverageAnswerRateOfStudyItems());
     }
 
     public int getLongestIntervallSizeOfRightAnswers() {

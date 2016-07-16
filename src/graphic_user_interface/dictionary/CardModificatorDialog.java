@@ -205,6 +205,9 @@ public class CardModificatorDialog extends javax.swing.JDialog {
             jTextField1.setText("");
             jTextField1.setEditable(true);
 
+            modificateCardButton.setEnabled(false);
+            deleteCardButton.setEnabled(false);
+            
             for (int i = model.getRowCount() - 1; 0 <= i; i--) {
                 model.removeRow(i);
             }
