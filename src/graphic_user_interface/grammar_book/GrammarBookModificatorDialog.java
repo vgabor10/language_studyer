@@ -1,8 +1,9 @@
 package graphic_user_interface.grammar_book;
 
+import graphic_user_interface.common.DialogAnswer;
 import common.Logger;
 import disc_operation_handlers.GrammarDataModificator;
-import disc_operation_handlers.LanguageFilesDataHendler;
+import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarItemTitle;
@@ -15,7 +16,7 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
     public GrammarAnswerDataContainer grammarAnswerDataContainer;
-    public LanguageFilesDataHendler languageFilesDataHendler;
+    public LanguageFilesDataHandler languageFilesDataHendler;
     
     private final GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
     private final DefaultTreeModel treeModel;

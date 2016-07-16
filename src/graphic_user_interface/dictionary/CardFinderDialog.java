@@ -6,6 +6,9 @@ import dictionary.CardFinder;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 
 /**
  *
@@ -14,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 public class CardFinderDialog extends javax.swing.JDialog {
 
     private final CardFinder cardFinder = new CardFinder();
-    private final DefaultTableModel model;
+    private final DefaultTableModel tableModel;
     
     public CardFinderDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -22,7 +25,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
         
         setLocationRelativeTo(null);
         
-        model = (DefaultTableModel)jTable1.getModel();
+        tableModel = (DefaultTableModel)jTable1.getModel();
         
         setFormForNextQuery();
         
@@ -58,7 +61,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
             },
             new String [] {
-                "", ""
+                "term", "definition"
             }
         ) {
             Class[] types = new Class [] {
@@ -159,7 +162,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
                 for (int i=0; i<cardsToList.size(); i++) {
 
-                    model.addRow(new Object[] {
+                    tableModel.addRow(new Object[] {
                         cardsToList.get(i).term, 
                         cardsToList.get(i).definition});
                 }
@@ -181,7 +184,7 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
                 for (int i=0; i<cardsToList.size(); i++) {
 
-                    model.addRow(new Object[] {
+                    tableModel.addRow(new Object[] {
                         cardsToList.get(i).definition, 
                         cardsToList.get(i).term});
                 }
@@ -200,8 +203,8 @@ public class CardFinderDialog extends javax.swing.JDialog {
         jTextField1.setEditable(true);
         jTextField1.requestFocus();
 
-        for (int i=model.getRowCount()-1; 0<=i; i--) {
-            model.removeRow(i);
+        for (int i=tableModel.getRowCount()-1; 0<=i; i--) {
+            tableModel.removeRow(i);
         }
 
         jLabel1.setText("-");
@@ -217,6 +220,23 @@ public class CardFinderDialog extends javax.swing.JDialog {
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
         setFormForNextQuery();
+        
+        JTableHeader th = jTable1.getTableHeader();
+        TableColumnModel tcm = th.getColumnModel();
+        TableColumn tc0 = tcm.getColumn(0);
+        TableColumn tc1 = tcm.getColumn(1);
+        
+        if( jComboBox1.getSelectedIndex() == 0) {
+            tc0.setHeaderValue("term");
+            tc1.setHeaderValue("definition");
+        }
+        
+        if( jComboBox1.getSelectedIndex() == 1) {
+            tc0.setHeaderValue("definition");
+            tc1.setHeaderValue("term");
+        }       
+        
+        th.repaint();
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**

@@ -54,6 +54,10 @@ public class AnswerDataContainer {
         }
     }
     
+    public void clear() {
+        data.clear();
+    }
+    
     public void toScreenData() {
         for(int i=0; i<data.size(); i++){
             System.out.println(data.get(i).toStringData());

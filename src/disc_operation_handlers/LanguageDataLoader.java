@@ -23,7 +23,7 @@ public class LanguageDataLoader {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
-    private LanguageFilesDataHendler languageFilesDataHendler = new LanguageFilesDataHendler();
+    private LanguageFilesDataHandler languageFilesDataHendler;
 
     public void loadLanguageDataWithIndex(int languageIndex) {
         languageFilesDataHendler.setStudyedLanguageIndex(languageIndex);
@@ -41,22 +41,22 @@ public class LanguageDataLoader {
     public void setGrammarBook(GrammarBook a) {
         grammarBook = a;
     }
+    
+    public void setLanguageFilesDataHandler(LanguageFilesDataHandler a) {
+        languageFilesDataHendler = a;
+    }
 
     public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
         grammarAnswerDataContainer = a;
     }
 
-    public void setLanguageFilesDataHendler(LanguageFilesDataHendler a) {
-        languageFilesDataHendler = a;
-    }
-
     public void loadCardContainerFromDisc() {
-        String filePath = languageFilesDataHendler.getStudiedLanguageCardDataPath();
-
-        BufferedReader br;
-        String strLine;
-        try {
-            br = new BufferedReader(new FileReader(filePath));
+        try {        
+            cardContainer.clear();
+            
+            String filePath = languageFilesDataHendler.getStudiedLanguageCardDataPath();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] cardVariables = strLine.split("\t");
 
@@ -71,16 +71,18 @@ public class LanguageDataLoader {
                 cardContainer.addCard(card);
             }
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("unable to find card data file");
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("exception in loadCardContainer function");
         }
     }
 
     public void loadAnswerDataFromDisc() {
-        String filePath = languageFilesDataHendler.getStudiedLanguageAnswerDataPath();
-        String strLine;
         try {
+            answerDataContainer.clear();
+            
+            String filePath = languageFilesDataHendler.getStudiedLanguageAnswerDataPath();
+            String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {
                 AnswerData answerData = new AnswerData();
@@ -88,22 +90,19 @@ public class LanguageDataLoader {
                 answerDataContainer.addAnswerData(answerData);
             }
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("Unable to find answer data file");
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("exception loadAnswerDataFromDisc function");
         }
     }
 
     public void loadGrammarBookFromDisc() {
-        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
-
-        String strLine;
-        String str;
-
         try {
+            grammarBook.clear();
+            
+            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
-
-            strLine = br.readLine();
+            String strLine = br.readLine();
 
             while (!strLine.equals("\\begin{document}")) {
                 if (grammarBook.preambulum.length() == 0) {
@@ -228,17 +227,18 @@ public class LanguageDataLoader {
             }
 
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("unable to find grammar book file");
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("exception at loadGrammarBookFromDisc function");
         }
     }
 
     public void loadGrammarAnswerDataFromDisc() {
-        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
-
-        String strLine;
         try {
+            grammarAnswerDataContainer.clear();
+            
+            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+            String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {
                 GrammarAnswerData grammarAnswerData = new GrammarAnswerData();
@@ -246,9 +246,9 @@ public class LanguageDataLoader {
                 grammarAnswerDataContainer.addAnswerData(grammarAnswerData);
             }
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("unable to find grammar answer data file");
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("exception at loadGrammarAnswerDataFromDisc function");
         }
     }
 

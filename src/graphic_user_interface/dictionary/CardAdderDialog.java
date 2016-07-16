@@ -2,7 +2,7 @@ package graphic_user_interface.dictionary;
 
 import dictionary.Card;
 import dictionary.CardContainer;
-import dictionary.DictionaryDataModificator;
+import disc_operation_handlers.DictionaryDataModificator;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 
@@ -24,8 +24,9 @@ public class CardAdderDialog extends javax.swing.JDialog {
         
         jTextField1.setText("");
         jTextField2.setText("");  
+        jTextField1.requestFocus();
         
-        jButton1.setMnemonic(KeyEvent.VK_A);
+        addCardButton.setMnemonic(KeyEvent.VK_A);
         jButton3.setMnemonic(KeyEvent.VK_C);
         
         setLocationRelativeTo(null);
@@ -44,23 +45,39 @@ public class CardAdderDialog extends javax.swing.JDialog {
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        addCardButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jTextField1.setText("jTextField1");
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
 
         jTextField2.setText("jTextField2");
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField2KeyPressed(evt);
+            }
+        });
 
         jLabel1.setText("term:");
 
         jLabel2.setText("definition:");
 
-        jButton1.setText("Add card");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        addCardButton.setText("Add card");
+        addCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                addCardButtonActionPerformed(evt);
+            }
+        });
+        addCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                addCardButtonKeyPressed(evt);
             }
         });
 
@@ -87,7 +104,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                             .addComponent(jTextField2)
                             .addComponent(jTextField1)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(addCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -105,7 +122,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
+                    .addComponent(addCardButton)
                     .addComponent(jButton3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -113,8 +130,33 @@ public class CardAdderDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            jTextField2.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            addCardButton.requestFocus();
+        }
+    }//GEN-LAST:event_jTextField2KeyPressed
+
+    private void addCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addCardButtonKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            addCard();
+        }
+    }//GEN-LAST:event_addCardButtonKeyPressed
+
+    private void addCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCardButtonActionPerformed
+        addCard();
+    }//GEN-LAST:event_addCardButtonActionPerformed
+
+    public void addCard() {
         String term = jTextField1.getText();
         String definition = jTextField2.getText();
         
@@ -141,14 +183,14 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
                 dictionaryDataModificator.setCardContainer(cardContainer);
                 dictionaryDataModificator.addCard(card);
+                
+                jTextField1.setText("");
+                jTextField2.setText("");  
+                jTextField1.requestFocus();
             }
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
-
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -195,7 +237,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton addCardButton;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

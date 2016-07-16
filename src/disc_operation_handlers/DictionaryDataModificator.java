@@ -1,8 +1,9 @@
-package dictionary;
+package disc_operation_handlers;
 
-import disc_operation_handlers.LanguageFilesDataHendler;
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
+import dictionary.Card;
+import dictionary.CardContainer;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,7 +13,7 @@ public class DictionaryDataModificator {
 
 	private CardContainer cardContainer;
 	private	AnswerDataContainer answerDataContainer;
-	private final LanguageFilesDataHendler settingsHandler = new LanguageFilesDataHendler();    //TODO: give it from manin frame
+	private final LanguageFilesDataHandler settingsHandler = new LanguageFilesDataHandler();    //TODO: give it from manin frame
 
 	private final Logger logger = new Logger();
 

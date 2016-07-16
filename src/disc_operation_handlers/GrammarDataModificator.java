@@ -12,8 +12,8 @@ public class GrammarDataModificator {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
-    private LanguageFilesDataHendler languageFilesDataHendler
-            = new LanguageFilesDataHendler();
+    private LanguageFilesDataHandler languageFilesDataHendler
+            = new LanguageFilesDataHandler();
 
     public void setGrammarBook(GrammarBook gb) {
         grammarBook = gb;

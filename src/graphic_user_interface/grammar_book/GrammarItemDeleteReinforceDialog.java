@@ -5,6 +5,7 @@
  */
 package graphic_user_interface.grammar_book;
 
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 
 /**

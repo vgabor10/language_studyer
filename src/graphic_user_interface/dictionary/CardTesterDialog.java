@@ -3,7 +3,7 @@ package graphic_user_interface.dictionary;
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import dictionary.CardContainer;
-import dictionary.DictionaryDataModificator;
+import disc_operation_handlers.DictionaryDataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
 import java.awt.event.KeyEvent;

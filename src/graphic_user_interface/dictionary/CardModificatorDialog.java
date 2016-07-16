@@ -3,15 +3,13 @@ package graphic_user_interface.dictionary;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
+import disc_operation_handlers.DictionaryDataModificator;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataContainer;
 
-/**
- *
- * @author varga
- */
 public class CardModificatorDialog extends javax.swing.JDialog {
 
     private CardContainer cardContainer;
@@ -19,6 +17,8 @@ public class CardModificatorDialog extends javax.swing.JDialog {
     
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel model;
+    
+    private Vector<Card> listedCards;
     
     public CardModificatorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -31,8 +31,9 @@ public class CardModificatorDialog extends javax.swing.JDialog {
         jTextField1.setText("");
         jTextField1.requestFocus();
         
-        jButton1.setMnemonic(KeyEvent.VK_B);
-        
+        jButton1.setMnemonic(KeyEvent.VK_C);
+        jButton4.setMnemonic(KeyEvent.VK_A);
+        deleteCardButton.setMnemonic(KeyEvent.VK_D);
     }
 
     public void initialise() {
@@ -61,8 +62,8 @@ public class CardModificatorDialog extends javax.swing.JDialog {
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        modificateCardButton = new javax.swing.JButton();
+        deleteCardButton = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -83,7 +84,11 @@ public class CardModificatorDialog extends javax.swing.JDialog {
                 return types [columnIndex];
             }
         });
-        jTable1.setEnabled(false);
+        jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable1MouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jTable1);
 
         jTextField1.setText("jTextField1");
@@ -96,9 +101,6 @@ public class CardModificatorDialog extends javax.swing.JDialog {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField1KeyPressed(evt);
             }
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField1KeyReleased(evt);
-            }
         });
 
         jButton1.setText("Close");
@@ -110,14 +112,21 @@ public class CardModificatorDialog extends javax.swing.JDialog {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "german -> hungarian", "hungarian -> german" }));
 
-        jButton2.setText("Modificate selected card");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        modificateCardButton.setText("Modificate selected card");
+        modificateCardButton.setEnabled(false);
+        modificateCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                modificateCardButtonActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Delete card");
+        deleteCardButton.setText("Delete card");
+        deleteCardButton.setEnabled(false);
+        deleteCardButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteCardButtonActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Add new card");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -138,11 +147,11 @@ public class CardModificatorDialog extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(modificateCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                            .addComponent(deleteCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -158,9 +167,9 @@ public class CardModificatorDialog extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)
+                        .addComponent(modificateCardButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(deleteCardButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1)))
                 .addContainerGap())
@@ -174,51 +183,79 @@ public class CardModificatorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
-                !jTextField1.getText().isEmpty()) {
-            
-            if (jTextField1.isEditable()) {                   
-                Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
-
-                for (int i=0; i<cardsToList.size(); i++) {
-
-                    model.addRow(new Object[] {
-                        cardsToList.get(i).term, 
-                        cardsToList.get(i).definition});
-                }
-
-                jTextField1.setEditable(false);   
-            }
-            else {
-                jTextField1.setText("");
-                jTextField1.setEditable(true);
-
-                for (int i=model.getRowCount()-1; 0<=i; i--) {
-                    model.removeRow(i);
-                }
-
-            }
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER
+                && !jTextField1.getText().isEmpty()) {
+            searchForCards();
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
+    public void searchForCards() {
+        if (jTextField1.isEditable()) {
+            listedCards = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
+
+            for (int i = 0; i < listedCards.size(); i++) {
+
+                model.addRow(new Object[]{
+                    listedCards.get(i).term,
+                    listedCards.get(i).definition});
+            }
+
+            jTextField1.setEditable(false);
+        } else {
+            jTextField1.setText("");
+            jTextField1.setEditable(true);
+
+            for (int i = model.getRowCount() - 1; 0 <= i; i--) {
+                model.removeRow(i);
+            }
+
+        }
+    }
+    
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
-
-    }//GEN-LAST:event_jTextField1KeyReleased
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void modificateCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateCardButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_modificateCardButtonActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         CardAdderDialog dialog = new CardAdderDialog(new javax.swing.JFrame(), true);
         dialog.setCardContainer(cardContainer);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
+        int rowIndex = jTable1.getSelectedRow();
+        Card cardToDelete = listedCards.get(rowIndex);
+        
+        
+        CardDeleteReinforceDialog dialog 
+                = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
+        dialog.cardToDelete = cardToDelete;
+        dialog.initialise();
+        dialog.setVisible(true);
+        
+        if (dialogAnswer.answer) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setCardContainer(cardContainer);
+            dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToDelete.index);
+            
+            modificateCardButton.setEnabled(false);
+            deleteCardButton.setEnabled(false);
+            searchForCards();
+        }
+    }//GEN-LAST:event_deleteCardButtonActionPerformed
+
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+        modificateCardButton.setEnabled(true);
+        deleteCardButton.setEnabled(true);
+    }//GEN-LAST:event_jTable1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -266,13 +303,13 @@ public class CardModificatorDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton deleteCardButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JButton modificateCardButton;
     // End of variables declaration//GEN-END:variables
 }

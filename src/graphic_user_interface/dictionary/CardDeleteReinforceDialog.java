@@ -1,44 +1,26 @@
-package graphic_user_interface;
+package graphic_user_interface.dictionary;
 
-import dictionary.CardContainer;
-import disc_operation_handlers.LanguageDataLoader;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
-import disc_operation_handlers.LanguageFilesDataHandler;
+import dictionary.Card;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
-import study_item_objects.AnswerDataContainer;
 
-public class LanguageChooserDialog extends javax.swing.JDialog {
-
-    public CardContainer cardContainer;
-    public AnswerDataContainer answerDataContainer;
+public class CardDeleteReinforceDialog extends javax.swing.JDialog {
     
-    public GrammarBook grammarBook;
-    public GrammarAnswerDataContainer grammarAnswerDataContainer;
+    public DialogAnswer dialogAnswer;
+    public Card cardToDelete;
     
-    public LanguageFilesDataHandler languageFilesDataHandler;
-    
-    public LanguageChooserDialog(java.awt.Frame parent, boolean modal) {
+    public CardDeleteReinforceDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        buttonGroup1.add(jRadioButton1);
-        buttonGroup1.add(jRadioButton2);     
-        
         setLocationRelativeTo(null);
-            
+        
         jButton1.setMnemonic(KeyEvent.VK_O);
-        jButton2.setMnemonic(KeyEvent.VK_C);
+        jButton1.setMnemonic(KeyEvent.VK_N);
     }
 
     public void initialise() {
-        if (languageFilesDataHandler.getStudiedLanguageIndex() == 0) {
-            jRadioButton1.setSelected(true);
-        }
-
-        if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
-            jRadioButton2.setSelected(true);
-        }
+        jLabel2.setText(cardToDelete.toString());
     }
     
     /**
@@ -50,41 +32,32 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        buttonGroup3 = new javax.swing.ButtonGroup();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
-        jRadioButton1.setText("english");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Are you sure you would like to delete the card below?");
 
-        jRadioButton2.setText("german");
-
-        jLabel1.setText("Which language would you like to study?");
-
-        jButton1.setText("Ok");
+        jButton1.setText("Yes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Close");
+        jButton2.setText("No");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
+
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
+        jLabel2.setText("jLabel2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,13 +66,17 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addComponent(jRadioButton1)
-                        .addComponent(jRadioButton2)
-                        .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,9 +84,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
+                .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -121,35 +96,14 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        LanguageDataLoader languageDataLoader = new LanguageDataLoader();
-        
-        languageDataLoader.setCardContainer(cardContainer);
-        languageDataLoader.setAnswerDataContainer(answerDataContainer);
-        languageDataLoader.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-        languageDataLoader.setGrammarBook(grammarBook);
-        languageDataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
-        
-        int languageIndexToLoad = 0;
-        
-        if (jRadioButton1.isSelected()) {
-            languageIndexToLoad = 0;
-        }
-        if (jRadioButton2.isSelected()) {
-            languageIndexToLoad = 1;
-        }
-        
-        languageDataLoader.loadLanguageDataWithIndex(languageIndexToLoad);
-        
+        dialogAnswer.answer = true;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dialogAnswer.answer = false;
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -168,20 +122,21 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LanguageChooserDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardDeleteReinforceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LanguageChooserDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardDeleteReinforceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LanguageChooserDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardDeleteReinforceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LanguageChooserDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardDeleteReinforceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                LanguageChooserDialog dialog = new LanguageChooserDialog(new javax.swing.JFrame(), true);
+                CardDeleteReinforceDialog dialog = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -194,13 +149,9 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.ButtonGroup buttonGroup3;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
