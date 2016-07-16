@@ -1,14 +1,8 @@
 package grammar_book;
 
-import study_item_objects.AnswerDataContainer;
 import common.Logger;
-import grammar_book.Example;
-import grammar_book.GrammarAnswerData;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
-import grammar_book.GrammarItem;
-
-import java.util.*;
+import java.util.Date;
+import java.util.Vector;
 
 public class GrammarTester {
 
@@ -16,9 +10,6 @@ public class GrammarTester {
 	private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
 	private Example actualQuestionedExample;
         private GrammarItem actualTestedGrammarItem;
-	//private String userAnswerToActualQuestion;
-	/*private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
-	private boolean isGetAnswerToActualQuestion = false;*/
     
         private Vector<Integer> exampleIndexesToTest = new Vector<>();;
 	private final Logger logger = new Logger();
@@ -38,33 +29,6 @@ public class GrammarTester {
                     exampleIndexesToTest.add(allExampleIndex.get(i));
                 }
 	}
-
-	/*public GrammarTester2() {
-		numberOfCardsQuestioned = 0;
-	}*/
-
-	/*public void setAllCard(CardContainer cc) {
-		allCard = cc;
-	}
-
-	public void setCardsToTest(CardContainer cc) {
-		cardsToTest = cc;
-	}*/
-        
-        //before allCard need to be seted
-        /*public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
-            List<Integer> cardIndexesList = new Vector<Integer>(cardIndexes);
-            java.util.Collections.shuffle(cardIndexesList);
-            
-            cardsToTest = new CardContainer();
-            for (int index : cardIndexesList) {
-                cardsToTest.addCard(allCard.getCardByIndex(index));
-            }
-        }*/
-        
-        /*public CardContainer getCardsToTest() {
-            return cardsToTest;
-        }*/
 
 	public void moveToNextExampleToQuestion() {
                 int actualExampleIndex = exampleIndexesToTest.get(numberOfExamplesQuestioned);
@@ -115,16 +79,12 @@ public class GrammarTester {
         public GrammarItem getActualQuestionedGrammarItem() {
 		return actualTestedGrammarItem;
 	}
-        
-/*	public boolean isUserAnswerRight() {
-		return acceptabelAnswersAndCardIndexesForActualQuestion.containsKey(userAnswerToActualQuestion);
-	}*/
 
 	public boolean isMoreExamplesToQuestion() {
 		return numberOfExamplesQuestioned != getNumberOfQuestions();
 	}
 
-	public AnswerDataContainer getUserAnswers() {
+	public GrammarAnswerDataContainer getUserAnswers() {
 		return userAnswers;
 	}
 

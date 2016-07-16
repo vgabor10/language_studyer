@@ -54,9 +54,21 @@ public class GrammarTestStatisticsMaker {
        return answerDataByStudyItemBeforeTest.countRightAnswerRate();
     }
     
+    public String getGrammarItemRightAnswerRateBeforeTestAsString() {
+        DecimalFormat df = new DecimalFormat("#.0000");
+        double rar = getGrammarItemRightAnswerRateBeforeTest();
+        return df.format(rar);
+    }
+    
     public double getGrammarItemRightAnswerRateAfterTest() {
        return answerDataByStudyItemAfterTest.countRightAnswerRate();
-    }   
+    }
+    
+    public String getGrammarItemRightAnswerRateAfterTestAsString() {
+        DecimalFormat df = new DecimalFormat("#.0000");
+        double rar = getGrammarItemRightAnswerRateAfterTest();
+        return df.format(rar);
+    }
     
     public String gesUsedTimeAsString() {
         Date date = new Date(finishTime - startTime);

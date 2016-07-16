@@ -36,7 +36,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         setLocationRelativeTo(null);
 
-        jButton1.setMnemonic(KeyEvent.VK_O);
+        jButton1.setMnemonic(KeyEvent.VK_B);
         jButton2.setMnemonic(KeyEvent.VK_C);
     }
 
@@ -78,6 +78,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jTextField1.setText("jTextField1");

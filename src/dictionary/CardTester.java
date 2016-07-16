@@ -122,14 +122,14 @@ public class CardTester {
     }
 
     private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
-        Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<String, Integer>();
+        Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<>();
 
-        Set<String> definitionParts = new HashSet<String>(Arrays.asList(definition.split(", ")));
+        Set<String> definitionParts = new HashSet<>(Arrays.asList(definition.split(", ")));
 
         for (int i = 0; i < allCard.numberOfCards(); i++) {
             Card card = allCard.getCardByOrder(i);
 
-            Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+            Set<String> definitionParts2 = new HashSet<>(Arrays.asList(card.definition.split(", ")));
 
             definitionParts2.retainAll(definitionParts);
 
@@ -142,14 +142,14 @@ public class CardTester {
     }
 
     public Set<Integer> getAcceptableCardIndexes(String definition) {
-        Set<Integer> acceptableCardIndexes = new HashSet<Integer>();
+        Set<Integer> acceptableCardIndexes = new HashSet<>();
 
         Set<String> definitionParts = new HashSet<>(Arrays.asList(definition.split(", ")));
 
         for (int i = 0; i < allCard.numberOfCards(); i++) {
             Card card = allCard.getCardByOrder(i);
 
-            Set<String> definitionParts2 = new HashSet<String>(Arrays.asList(card.definition.split(", ")));
+            Set<String> definitionParts2 = new HashSet<>(Arrays.asList(card.definition.split(", ")));
 
             definitionParts2.retainAll(definitionParts);
 

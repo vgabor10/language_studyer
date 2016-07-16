@@ -3,6 +3,7 @@ package dictionary;
 import java.util.*;
 import java.io.Console;
 
+//TODO: needed???
 public class TestedCardGroupHandler {
 
 	private CardContainer cardContainer;

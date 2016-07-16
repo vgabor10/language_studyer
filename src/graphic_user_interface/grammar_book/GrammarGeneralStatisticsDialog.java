@@ -1,26 +1,26 @@
-package graphic_user_interface.dictionary;
+package graphic_user_interface.grammar_book;
 
-import dictionary.CardContainer;
-import study_item_objects.AnswerDataContainer;
-import study_item_objects.AnswerDataStatisticsMaker;
+import grammar_book.GrammarAnswerDataContainer;
+import grammar_book.GrammarAnswerDataStatisticsMaker;
+import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 
-public class DictionaryStatisticsDialog extends javax.swing.JDialog {
+public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
 
-    private AnswerDataContainer answerDataContainer;
-    private CardContainer cardContainer;
+    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+    private GrammarBook grammarBook;
     
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
+    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
+        grammarAnswerDataContainer = a;
     }
     
-    public void setAnswerDataContainer(AnswerDataContainer adc) {
-        answerDataContainer = adc;
+    public void setGrammarBook(GrammarBook a) {
+        grammarBook = a;
     }
     
     @SuppressWarnings("empty-statement")
-    public DictionaryStatisticsDialog(java.awt.Frame parent, boolean modal) {
+    public GrammarGeneralStatisticsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -74,19 +74,19 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel10.setText("number of questiones of least studied card:");
+        jLabel10.setText("number of questiones of least studied grammar item:");
 
         jLabel9.setText("percentage of right answers:");
 
-        jLabel2.setText("number of questioned cards:");
+        jLabel2.setText("number of questioned grammar items:");
 
         jLabel8.setText("number of answers");
 
-        jLabel14.setText("average answer rate of cards:");
+        jLabel14.setText("average answer rate of grammar items:");
 
         jLabel15.setText("jLabel15");
 
-        jLabel1.setText("number of cards:");
+        jLabel1.setText("number of grammar items:");
 
         jLabel3.setText("number of studying days:");
 
@@ -98,7 +98,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
         jLabel5.setText("jLabel5");
 
-        jLabel21.setText("date of last questioned card:");
+        jLabel21.setText("date of last questioned grammar item:");
 
         jLabel16.setText("jLabel16");
 
@@ -110,7 +110,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
         jLabel7.setText("practising time:");
 
-        jLabel11.setText("longest right answer interwall size:");
+        jLabel11.setText("longest right answer intervall size:");
 
         jLabel12.setText("jLabel12");
 
@@ -159,9 +159,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                         .addComponent(jLabel4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel12)))
-                .addContainerGap(209, Short.MAX_VALUE))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -298,20 +298,21 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void fillDialogWithData() {
-        AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
-	answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-	answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
+        GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker 
+                = new GrammarAnswerDataStatisticsMaker();
+	grammarAnswerDataStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
+        grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
 
-	jLabel4.setText(Integer.toString(answerDataStatisticsMaker.numberOfStudyItems()));
-        jLabel15.setText(Integer.toString(answerDataStatisticsMaker.numberOfAnswers()));
-        jLabel5.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfQuestionedStudyItems()));
-        jLabel16.setText(Integer.toString(answerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
-        jLabel22.setText(new Date(answerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
-	jLabel6.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeInString());
-	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(Double.toString(answerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
-        jLabel12.setText(Integer.toString(answerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+	jLabel4.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfStudyItems()));
+        jLabel15.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfAnswers()));
+        jLabel5.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfQuestionedStudyItems()));
+        jLabel16.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
+        jLabel22.setText(new Date(grammarAnswerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
+	jLabel6.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays()));
+	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeInString());
+	jLabel18.setText(grammarAnswerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
+	jLabel19.setText(Double.toString(grammarAnswerDataStatisticsMaker.averageAnswerRateOfStudyItems()));
+        jLabel12.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
         
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
@@ -321,27 +322,27 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
+        /*HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
         dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);
+        dialog.setVisible(true);*/
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
+        /*NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
         dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);
+        dialog.setVisible(true);*/
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
+        /*PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
         dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);
+        dialog.setVisible(true);*/
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -361,14 +362,38 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -381,7 +406,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true);
+                GrammarGeneralStatisticsDialog dialog = new GrammarGeneralStatisticsDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

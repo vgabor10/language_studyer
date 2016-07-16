@@ -4,10 +4,7 @@ import study_item_objects.StudyItemContainer;
 
 import java.util.*;
 import java.io.FileWriter;
-import java.io.FileReader;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.FileNotFoundException;
 
 public class CardContainer extends StudyItemContainer {
 
@@ -58,7 +55,8 @@ public class CardContainer extends StudyItemContainer {
 
 	}
 
-	public Vector<Integer> findCardsByTerm(String term) {	//TODO: take to CardFinderClass
+        //TODO: take to CardFinderClass
+	public Vector<Integer> findCardsByTerm(String term) {
 		Vector<Integer> cardIndexes = new Vector<>();
 		for (int i=0; i<numberOfCards(); i++) {
 			if (getCardByOrder(i).term.equals(term)) {

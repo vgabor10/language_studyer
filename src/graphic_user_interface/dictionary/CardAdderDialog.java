@@ -7,7 +7,7 @@ package graphic_user_interface.dictionary;
 
 import dictionary.Card;
 import dictionary.CardContainer;
-import dictionary.DictionaryDataModificator;
+import java.awt.event.KeyEvent;
 import java.util.Vector;
 
 /**
@@ -27,7 +27,12 @@ public class CardAdderDialog extends javax.swing.JDialog {
         initComponents();
         
         jTextField1.setText("");
-        jTextField2.setText("");        
+        jTextField2.setText("");  
+        
+        jButton1.setMnemonic(KeyEvent.VK_A);
+        jButton3.setMnemonic(KeyEvent.VK_C);
+        
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -83,12 +88,12 @@ public class CardAdderDialog extends javax.swing.JDialog {
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.DEFAULT_SIZE, 242, Short.MAX_VALUE)
+                            .addComponent(jTextField2)
                             .addComponent(jTextField1)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -139,9 +144,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
                 //DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
                 //dictionaryDataModificator.addCard(card);
-                
-                CardSuccesfullyAddedDialog dialog = new CardSuccesfullyAddedDialog(new javax.swing.JFrame(), true);
-                dialog.setVisible(true);
             }
         }
     }//GEN-LAST:event_jButton1ActionPerformed

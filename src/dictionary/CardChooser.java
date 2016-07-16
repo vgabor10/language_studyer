@@ -109,7 +109,7 @@ public class CardChooser {
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
 
-		Set<Integer> out = new HashSet<Integer>();
+		Set<Integer> out = new HashSet<>();
 		while (out.size() != numberOfCardsGet) {
 			int r = randomGenerator.nextInt(numberOfHardestCards);
 			int randomHardestCardIndex = datasToSort[datasToSort.length - 1 - r].getAnswer(0).index;
@@ -130,7 +130,7 @@ public class CardChooser {
 		AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 		Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
-		Set<Integer> outCardIndexes = new HashSet<Integer>(); 
+		Set<Integer> outCardIndexes = new HashSet<>(); 
 
 		int i=0;
 		while (outCardIndexes.size() != numberOfCards && i<datasToSort.length) {
@@ -152,7 +152,7 @@ public class CardChooser {
 			AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
 			Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
-			Set<Integer> outCardIndexes = new HashSet<Integer>(); 
+			Set<Integer> outCardIndexes = new HashSet<>(); 
 
 			while (outCardIndexes.size() != numberOfCards) {
 				int cardIndex = datasToSort[randomGenerator.nextInt(100)].getStudyItemIndex();
@@ -168,7 +168,7 @@ public class CardChooser {
 	}
 
 	public Set<Integer> getRandomCardIndexes(int numberOfCards, Set<Integer> omittedCardIndexes) {
-		Set<Integer> outCardIndexes = new HashSet<Integer>(); 
+		Set<Integer> outCardIndexes = new HashSet<>(); 
 
 		while (outCardIndexes.size() != numberOfCards) {
 			int orderIndex = randomGenerator.nextInt(cardContainer.numberOfCards());
@@ -183,7 +183,7 @@ public class CardChooser {
 
 	public Set<Integer> chooseCardsToTestIndexesForTest1() {
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes = new HashSet<>();
 
 		Set<Integer> indexesToAdd;
 
@@ -197,7 +197,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(6);
 
@@ -216,7 +216,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
@@ -235,7 +235,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
@@ -254,7 +254,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
@@ -276,7 +276,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
@@ -298,7 +298,7 @@ public class CardChooser {
 
 		evaluateAnswerDataByStudyItemsContainer();
 
-		Set<Integer> cardsToTestIndexes = new HashSet<Integer>();
+		Set<Integer> cardsToTestIndexes;
 
 		cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
 
@@ -321,8 +321,9 @@ public class CardChooser {
 		return cardsToTestIndexes;
 	}
 
+        //TODO: think it over
 	public Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
-		Set<Integer> cardIndexes = new HashSet<Integer>();
+		Set<Integer> cardIndexes = new HashSet<>();
 
 		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);

@@ -37,7 +37,6 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     public void initialise() {
         grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
         grammarDataModificator.setGrammarBook(grammarBook);
-        grammarDataModificator.setLanguageFilesDataHendler(languageFilesDataHendler);
         
         fillTreeWithGrammarBookData();
     }

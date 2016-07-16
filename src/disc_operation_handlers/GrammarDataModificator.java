@@ -12,7 +12,8 @@ public class GrammarDataModificator {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
-    private LanguageFilesDataHendler languageFilesDataHendler;
+    private LanguageFilesDataHendler languageFilesDataHendler
+            = new LanguageFilesDataHendler();
 
     public void setGrammarBook(GrammarBook gb) {
         grammarBook = gb;
@@ -22,10 +23,6 @@ public class GrammarDataModificator {
         grammarAnswerDataContainer = gac;
     }
 
-    public void setLanguageFilesDataHendler(LanguageFilesDataHendler a) {
-        languageFilesDataHendler = a;
-    }
-    
     //TODO: can be done more safe: first write new file, remove old file, rename new file
     public void writeGrammarBookToDisk() {
         try {
@@ -76,12 +73,12 @@ public class GrammarDataModificator {
         }
     }
 
-    public void appendGrammarAnswerDataToFile() {
-        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+    public void appendGrammarAnswerDataToFile(GrammarAnswerDataContainer gadc) {
         try {
+            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
             FileWriter fw = new FileWriter(filePath, true);	//the true will append the new data
-            for (int i = 0; i < grammarAnswerDataContainer.numberOfAnswers(); i++) {
-                fw.write(grammarAnswerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            for (int i = 0; i < gadc.numberOfAnswers(); i++) {
+                fw.write(gadc.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
             }
             fw.close();
         } catch (IOException ioe) {

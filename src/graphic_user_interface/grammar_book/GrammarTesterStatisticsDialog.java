@@ -36,8 +36,8 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
         
         jLabel6.setText(Integer.toString(grammarTestStatisticsMaker.getNumberOfRegisteredAnswers()));
         jLabel7.setText(grammarTestStatisticsMaker.getPercentageOfRightAnswersAsString());
-        jLabel8.setText(Double.toString(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateBeforeTest()));
-        jLabel9.setText(Double.toString(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateAfterTest()));
+        jLabel8.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateBeforeTestAsString());
+        jLabel9.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateAfterTestAsString());
         jLabel10.setText(grammarTestStatisticsMaker.gesUsedTimeAsString());
         jLabel12.setText(Integer.toString(grammarTestStatisticsMaker.getNumberOfAnswersAfterTest()));
     }
