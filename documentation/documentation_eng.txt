@@ -1,0 +1,13 @@
+There are two parts of the program, the dictionary and the grammar book. With dictionary man can improve his vocabulary knowledge, and with the grammar book the grammatical structure of the language can be practised.
+
+Let us consider the dictionary, because it is more advanced.
+
+I read, that for a good language skill man should learn around 5000 words. The exercise is to study this 5000 words (I used the most frequent 5000 words).
+
+The dictionary is built around a game. At one game the program choose 20 words from this database containing 5000 words. It questions the word in native language and the man should type the word in foreign language. The program does not question a word, if the user answers right to a question two consecutive times. The game holds, while there are words to question. One game holds approximately 5 minutes.
+
+The point is, that the program stores datas how the user plays. It stores for each question that whether the user answered right and the word what was questioned and the exact date of the answer. What are this datas good for? These are good for two things:
+
+1: The program evaluates statistics from this datas. I think, that the conventional language studying methods has a problem, that the advance is very slow, very hard to sense, and because of it the man can easily loss his motivation. Here the advance can follow by these statistics.
+
+2: Studying strategies can be implemented. I mean under studying strategies how the program choose these 20 words for the game from the database with around 5000 words. For example the program choose with bigger probability words what are known by the user less, or was questioned longer time ago, or was questioned less times... I think, that with these strategies a lot of time can be spared.
