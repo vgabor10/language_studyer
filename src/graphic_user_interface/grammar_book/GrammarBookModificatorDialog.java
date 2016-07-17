@@ -262,7 +262,9 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
 
     private void modificateGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateGrammarItemButtonActionPerformed
         GrammarItemModificatorDialog dialog 
-                = new GrammarItemModificatorDialog(new javax.swing.JFrame(), true);;
+                = new GrammarItemModificatorDialog(new javax.swing.JFrame(), true);
+        dialog.grammarItem = grammarBook.getGrammarItemByIndex(selectedGrammarItemIndex);
+        dialog.fillWidgetsWithGrammarItemData();
         dialog.setVisible(true);
     }//GEN-LAST:event_modificateGrammarItemButtonActionPerformed
 

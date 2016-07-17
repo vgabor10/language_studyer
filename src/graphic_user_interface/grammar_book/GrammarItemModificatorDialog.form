@@ -64,10 +64,10 @@
                   <Component id="insertExampleButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="deleteExampleButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
-                  <Component id="addGrammarItemButton" alignment="3" min="-2" pref="51" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addGrammarItemButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -131,7 +131,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="addGrammarItemButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Add grammar item"/>
+        <Property name="text" type="java.lang.String" value="Save grammar item"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>

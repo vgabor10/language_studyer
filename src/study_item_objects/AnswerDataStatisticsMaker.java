@@ -508,5 +508,33 @@ public class AnswerDataStatisticsMaker {
 
         return out;
     }
-
+    
+    public Map<Integer, Integer> numberOfNewStudyItemsTestedByDays() {
+        Map<Integer, Integer> out = new HashMap<>();
+        Set<Integer> questionedCardIndexes = new HashSet<>();
+        Set<Integer> actualDayQuestionedCardIndexes = new HashSet<>();
+        GeneralFunctions generalFunctions = new GeneralFunctions();
+        
+        AnswerData answerData = answerDataContainer.getAnswerData(0);
+        int lastDay = generalFunctions.milisecToDay(answerData.date);
+        int actualDay;
+        for (int i=0; i<numberOfAnswers(); i++) {
+            answerData = answerDataContainer.getAnswerData(i);
+            actualDay = generalFunctions.milisecToDay(answerData.date);
+            if (lastDay != actualDay) {
+                out.put(actualDay, actualDayQuestionedCardIndexes.size());
+                questionedCardIndexes.addAll(actualDayQuestionedCardIndexes);
+                actualDayQuestionedCardIndexes.clear();
+            }
+            else {
+                if (!questionedCardIndexes.contains(answerData.index)) {
+                    actualDayQuestionedCardIndexes.add(answerData.index);
+                }
+            }
+            lastDay = actualDay;
+        }
+        
+        return out;
+    }
+    
 }

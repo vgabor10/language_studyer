@@ -7,6 +7,7 @@ import grammar_book.GrammarItemTitle;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.DefaultCaret;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
@@ -26,9 +27,14 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         
         jTextField1.setText("");
         
+        //only vertical scrolling allowed
         jTextArea1.setLineWrap(true);
         jTextArea1.setWrapStyleWord(true);
  
+        //not scroll automatically to the bottom
+        DefaultCaret caret = (DefaultCaret)jTextArea1.getCaret();
+        caret.setUpdatePolicy(DefaultCaret.NEVER_UPDATE);
+        
         treeModel = (DefaultTreeModel) jTree1.getModel();
         tableModel = (DefaultTableModel)jTable1.getModel();
     }

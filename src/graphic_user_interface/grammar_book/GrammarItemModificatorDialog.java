@@ -1,14 +1,13 @@
 package graphic_user_interface.grammar_book;
 
 import grammar_book.Example;
-import grammar_book.GrammarBook;
 import grammar_book.GrammarItem;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
 
 public class GrammarItemModificatorDialog extends javax.swing.JDialog {
 
-    public GrammarBook grammarBook;
+    public GrammarItem grammarItem;
     
     private final DefaultTableModel tableModel;
     
@@ -26,9 +25,7 @@ public class GrammarItemModificatorDialog extends javax.swing.JDialog {
         tableModel = (DefaultTableModel)jTable1.getModel();
     }
 
-    public void fillWidgetsWithGrammarItemData(int grammarItemIndex) {
-        GrammarItem grammarItem = grammarBook.getGrammarItemByIndex(grammarItemIndex);
-
+    public void fillWidgetsWithGrammarItemData() {
         clearTabular();
         jTextField1.setText(grammarItem.title.toString());
         jTextArea1.setText(grammarItem.description);
@@ -100,7 +97,7 @@ public class GrammarItemModificatorDialog extends javax.swing.JDialog {
         jTextField1.setEditable(false);
         jTextField1.setText("jTextField1");
 
-        addGrammarItemButton.setText("Add grammar item");
+        addGrammarItemButton.setText("Save grammar item");
         addGrammarItemButton.setEnabled(false);
         addGrammarItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,10 +166,10 @@ public class GrammarItemModificatorDialog extends javax.swing.JDialog {
                     .addComponent(jButton3)
                     .addComponent(insertExampleButton)
                     .addComponent(deleteExampleButton))
-                .addGap(35, 35, 35)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addGrammarItemButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1)
+                    .addComponent(addGrammarItemButton))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 

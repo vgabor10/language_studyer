@@ -4,6 +4,7 @@ import graphic_user_interface.common.PractisingTimeByDaysDialog;
 import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
 import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
 import dictionary.CardContainer;
+import graphic_user_interface.common.NumberOfNewStudyItemsQuestionedByDaysDialog;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
 import java.awt.event.KeyEvent;
@@ -66,6 +67,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -235,6 +237,13 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton5.setText("Number of new cards tested by days");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -244,9 +253,13 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(324, Short.MAX_VALUE))
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(309, Short.MAX_VALUE))
         );
+
+        jPanel4Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton2, jButton3, jButton4, jButton5});
+
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
@@ -256,8 +269,12 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4)
-                .addContainerGap(261, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton5)
+                .addContainerGap(225, Short.MAX_VALUE))
         );
+
+        jPanel4Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton2, jButton3, jButton4, jButton5});
 
         jTabbedPane1.addTab("additional statistics", jPanel4);
 
@@ -331,18 +348,28 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
+        NumberOfAnswersByDaysDialog dialog 
+                = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
+        PractisingTimeByDaysDialog dialog 
+                = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        NumberOfNewStudyItemsQuestionedByDaysDialog dialog 
+                = new NumberOfNewStudyItemsQuestionedByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = answerDataContainer;
+        dialog.fillDialogWithData();
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -398,6 +425,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

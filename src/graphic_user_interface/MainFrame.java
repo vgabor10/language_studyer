@@ -212,7 +212,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        modificateGrammarBookButton.setText("Modificate Grammar Book");
+        modificateGrammarBookButton.setText("Modificate grammar Book");
         modificateGrammarBookButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 modificateGrammarBookButtonActionPerformed(evt);
