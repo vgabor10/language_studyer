@@ -5,7 +5,7 @@ import graphic_user_interface.common.SettingsDialog;
 import common.Logger;
 import disc_operation_handlers.LanguageDataLoader;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
-import graphic_user_interface.grammar_book.GrammarItemTesterDialog;
+import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
 import graphic_user_interface.dictionary.CardFinderDialog;
@@ -44,10 +44,11 @@ public class MainFrame extends javax.swing.JFrame {
         jButton4.setMnemonic(KeyEvent.VK_F);
         jButton10.setMnemonic(KeyEvent.VK_X);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_S);
-        jButton5.setMnemonic(KeyEvent.VK_R);
+        grammarPractisingButton.setMnemonic(KeyEvent.VK_R);
         grammarStatisticsButton.setMnemonic(KeyEvent.VK_T);
         modificateDictionaryDataButton.setMnemonic(KeyEvent.VK_M);
         setLanguageToStudyButton.setMnemonic(KeyEvent.VK_L);
+        readGrammarBookButton.setMnemonic(KeyEvent.VK_E);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
         
@@ -78,8 +79,8 @@ public class MainFrame extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        grammarPractisingButton = new javax.swing.JButton();
+        readGrammarBookButton = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         grammarStatisticsButton = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
@@ -179,17 +180,17 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel2.setToolTipText("");
         jPanel2.setName(""); // NOI18N
 
-        jButton5.setText("Practising");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        grammarPractisingButton.setText("Practising");
+        grammarPractisingButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                grammarPractisingButtonActionPerformed(evt);
             }
         });
 
-        jButton8.setText("Read grammar book");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        readGrammarBookButton.setText("Read grammar book");
+        readGrammarBookButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                readGrammarBookButtonActionPerformed(evt);
             }
         });
 
@@ -225,16 +226,16 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton5, javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(grammarPractisingButton, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(grammarStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(readGrammarBookButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {grammarStatisticsButton, jButton14, jButton5, jButton6, jButton8});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, jButton6, readGrammarBookButton});
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -242,11 +243,11 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5)
+                .addComponent(grammarPractisingButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(grammarStatisticsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton8)
+                .addComponent(readGrammarBookButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -254,7 +255,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {grammarStatisticsButton, jButton14, jButton5, jButton6, jButton8});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, jButton6, readGrammarBookButton});
 
         jButton10.setText("Exit");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -342,13 +343,13 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        GrammarItemTesterDialog dialog = new GrammarItemTesterDialog(new javax.swing.JFrame(), true); 
+    private void grammarPractisingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grammarPractisingButtonActionPerformed
+        GrammarTesterDialog dialog = new GrammarTesterDialog(new javax.swing.JFrame(), true); 
         dialog.grammarBook = grammarBook;
         dialog.grammarAnswerDataContainer = grammarAnswerDataContainer;
         dialog.initialisationAfterDataLoaded();
         dialog.setVisible(true);
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_grammarPractisingButtonActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         System.exit(0);
@@ -375,12 +376,12 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void readGrammarBookButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readGrammarBookButtonActionPerformed
         GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarBook;
         dialog.fillTreeWithGrammarBookData();
         dialog.setVisible(true);
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_readGrammarBookButtonActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         SetDictionaryStudyStrategyDialog dialog = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
@@ -478,6 +479,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dictionaryStatisticsButton;
+    private javax.swing.JButton grammarPractisingButton;
     private javax.swing.JButton grammarStatisticsButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -485,9 +487,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -495,6 +495,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton modificateDictionaryDataButton;
+    private javax.swing.JButton readGrammarBookButton;
     private javax.swing.JButton setLanguageToStudyButton;
     // End of variables declaration//GEN-END:variables
 }

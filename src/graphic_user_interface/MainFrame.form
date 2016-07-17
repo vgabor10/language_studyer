@@ -201,9 +201,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton5" linkSize="7" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="grammarPractisingButton" linkSize="7" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="grammarStatisticsButton" linkSize="7" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
-                          <Component id="jButton8" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
+                          <Component id="readGrammarBookButton" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
                           <Component id="jButton6" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
                           <Component id="jButton14" linkSize="7" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                       </Group>
@@ -219,11 +219,11 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jButton5" linkSize="4" min="-2" max="-2" attributes="0"/>
+                  <Component id="grammarPractisingButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="grammarStatisticsButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jButton8" linkSize="4" min="-2" max="-2" attributes="0"/>
+                  <Component id="readGrammarBookButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButton6" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -234,20 +234,20 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton5">
+        <Component class="javax.swing.JButton" name="grammarPractisingButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Practising"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="grammarPractisingButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton8">
+        <Component class="javax.swing.JButton" name="readGrammarBookButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Read grammar book"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="readGrammarBookButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">

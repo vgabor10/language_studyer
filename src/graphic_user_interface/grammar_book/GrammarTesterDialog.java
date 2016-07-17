@@ -5,11 +5,12 @@ import grammar_book.GrammarTester;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import grammar_book.RandomGrammarItemChooser;
+import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 import java.util.Vector;
 
-public class GrammarItemTesterDialog extends javax.swing.JDialog {
+public class GrammarTesterDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
     public GrammarAnswerDataContainer grammarAnswerDataContainer;
@@ -19,7 +20,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     private long startTime = -1;
     private long finishTime = -1;
     
-    public GrammarItemTesterDialog(java.awt.Frame parent, boolean modal) {
+    public GrammarTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -28,10 +29,13 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jTextArea1.setLineWrap(true);
         jTextArea1.setWrapStyleWord(true);
         
-        jButton4.setMnemonic(KeyEvent.VK_B);
+        closeButton.setMnemonic(KeyEvent.VK_C);
         acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
         wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
         ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
+        
+        acceptAnswerButton.setBackground(new Color(102,255,102));
+        acceptAnswerButton.setBackground(null);
     }
     
     public void initialisationAfterDataLoaded() {
@@ -70,23 +74,19 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         wrongAnswerButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
-        jButton4 = new javax.swing.JButton();
+        closeButton = new javax.swing.JButton();
         jTextField3 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setResizable(false);
 
         jTextField1.setEditable(false);
         jTextField1.setText("jTextField1");
 
         jTextField2.setText("jTextField2");
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField2KeyPressed(evt);
@@ -132,10 +132,10 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jButton4.setText("Back");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                closeButtonActionPerformed(evt);
             }
         });
 
@@ -159,7 +159,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jTextField3)
                     .addComponent(jTextField1)
                     .addComponent(jTextField2)
@@ -201,7 +201,7 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4)
+                    .addComponent(closeButton)
                     .addComponent(jButton1))
                 .addGap(18, 18, 18))
         );
@@ -217,9 +217,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         acceptAnswer();
     }//GEN-LAST:event_acceptAnswerButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        this.dispose();
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+        dispose();
+    }//GEN-LAST:event_closeButtonActionPerformed
 
     private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -228,8 +228,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             
             if (jTextField2.getText().equals(expectedAnswer)) {                
                 jLabel2.setForeground(new java.awt.Color(45, 107, 53)); //green
-                jLabel2.setText("answer seems to bee right, waht is your opinion?");
+                jLabel2.setText("answer seems to bee RIGHT, waht is your opinion?");
                 acceptAnswerButton.requestFocus();
+                acceptAnswerButton.setBackground(new Color(102,255,102));
                
                 jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
 
@@ -241,8 +242,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
             }
             else {
                 jLabel2.setForeground(new java.awt.Color(255, 0, 0));
-                jLabel2.setText("answer seems to bee wrong, waht is your opinion?");
+                jLabel2.setText("answer seems to bee WRONG, waht is your opinion?");
                 wrongAnswerButton.requestFocus();
+                wrongAnswerButton.setBackground(new Color(255,102,102));
                 
                 jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
                 jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
@@ -261,11 +263,10 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         rejectAnswer();
     }//GEN-LAST:event_wrongAnswerButtonActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        acceptAnswer();
-    }//GEN-LAST:event_jTextField2ActionPerformed
-
     private void acceptAnswer() {
+        wrongAnswerButton.setBackground(null);
+        acceptAnswerButton.setBackground(null);
+        
         grammarTester.userAnswerAccepted();
         
         ignoreAnswerButton.setEnabled(false);
@@ -281,7 +282,10 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
         }
     }
 
-    private void rejectAnswer() { 
+    private void rejectAnswer() {
+        wrongAnswerButton.setBackground(null);
+        acceptAnswerButton.setBackground(null);
+        
         grammarTester.userAnswerRejected();
 
         ignoreAnswerButton.setEnabled(false);
@@ -298,6 +302,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
     }
    
     private void ignoreAnswer() {
+        wrongAnswerButton.setBackground(null);
+        acceptAnswerButton.setBackground(null);
+        
         grammarTester.userAnswerIgnored();
         
         ignoreAnswerButton.setEnabled(false);
@@ -382,21 +389,23 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GrammarItemTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GrammarItemTesterDialog dialog = new GrammarItemTesterDialog(new javax.swing.JFrame(), true);
+                GrammarTesterDialog dialog = new GrammarTesterDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -410,9 +419,9 @@ public class GrammarItemTesterDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton acceptAnswerButton;
+    private javax.swing.JButton closeButton;
     private javax.swing.JButton ignoreAnswerButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

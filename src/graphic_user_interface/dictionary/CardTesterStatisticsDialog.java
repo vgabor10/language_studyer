@@ -30,7 +30,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         setLocationRelativeTo(null);
         
         jButton1.requestFocus();
-        jButton1.setMnemonic(KeyEvent.VK_B);
+        jButton1.setMnemonic(KeyEvent.VK_C);
         
         model = (DefaultTableModel)Title1.getModel();
      }
@@ -139,7 +139,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
         jLabel14.setText("jLabel14");
 
-        jButton1.setText("Back");
+        jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

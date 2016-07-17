@@ -87,7 +87,7 @@ public class CardChooser {
 
 		Set<Integer> out = new HashSet<>();
 		while (out.size() != numberOfCards) {
-			int r = randomGenerator.nextInt((int)Math.floor((double)answerDataByStudyItemsContainer.numberOfStudyItems() * hardestWordRate));
+			int r = randomGenerator.nextInt((int)Math.floor((double)answerDataByStudyItemsContainer.numberOfStudiedStudyItems() * hardestWordRate));
 			int randomHardestCardIndex = datasToSort[datasToSort.length - 1 - r].getAnswer(0).index;
 
 			if (!out.contains(randomHardestCardIndex) && !omittedCardIndexes.contains(randomHardestCardIndex)) {
@@ -145,7 +145,7 @@ public class CardChooser {
 
 	public Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(int numberOfCards, Set<Integer> omitedCardIndexes) {
 
-		if (answerDataByStudyItemsContainer.numberOfStudyItems() < 100) {
+		if (answerDataByStudyItemsContainer.numberOfStudiedStudyItems() < 100) {
 			return null;
 		}
 		else {
