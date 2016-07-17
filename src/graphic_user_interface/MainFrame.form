@@ -204,7 +204,7 @@
                           <Component id="grammarPractisingButton" linkSize="7" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="grammarStatisticsButton" linkSize="7" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                           <Component id="readGrammarBookButton" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
-                          <Component id="jButton6" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
+                          <Component id="modificateGrammarBookButton" linkSize="7" min="-2" pref="211" max="-2" attributes="0"/>
                           <Component id="jButton14" linkSize="7" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                       </Group>
                       <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -225,7 +225,7 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="readGrammarBookButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jButton6" linkSize="4" min="-2" max="-2" attributes="0"/>
+                  <Component id="modificateGrammarBookButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButton14" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
@@ -274,12 +274,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton6">
+        <Component class="javax.swing.JButton" name="modificateGrammarBookButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Modificate Grammar Book"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modificateGrammarBookButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

@@ -47,9 +47,13 @@ public class AnswerDataContainer {
     }
 
     public void removeAnswerDataWithIndex(int index) {
-        for (int i = 0; i < this.numberOfAnswers(); i++) {
+        int i=0;
+        while (i<numberOfAnswers()) {
             if (this.data.get(i).index == index) {
                 data.remove(i);
+            }
+            else {
+                i++;
             }
         }
     }

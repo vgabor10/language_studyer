@@ -49,6 +49,7 @@ public class MainFrame extends javax.swing.JFrame {
         modificateDictionaryDataButton.setMnemonic(KeyEvent.VK_M);
         setLanguageToStudyButton.setMnemonic(KeyEvent.VK_L);
         readGrammarBookButton.setMnemonic(KeyEvent.VK_E);
+        modificateGrammarBookButton.setMnemonic(KeyEvent.VK_O);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
         
@@ -84,7 +85,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         grammarStatisticsButton = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        modificateGrammarBookButton = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jButton17 = new javax.swing.JButton();
@@ -211,10 +212,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setText("Modificate Grammar Book");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        modificateGrammarBookButton.setText("Modificate Grammar Book");
+        modificateGrammarBookButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                modificateGrammarBookButtonActionPerformed(evt);
             }
         });
 
@@ -229,13 +230,13 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(grammarPractisingButton, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(grammarStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(readGrammarBookButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(modificateGrammarBookButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, jButton6, readGrammarBookButton});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, modificateGrammarBookButton, readGrammarBookButton});
 
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,13 +250,13 @@ public class MainFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(readGrammarBookButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
+                .addComponent(modificateGrammarBookButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton14)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, jButton6, readGrammarBookButton});
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {grammarPractisingButton, grammarStatisticsButton, jButton14, modificateGrammarBookButton, readGrammarBookButton});
 
         jButton10.setText("Exit");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -405,7 +406,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void modificateGrammarBookButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateGrammarBookButtonActionPerformed
         GrammarBookModificatorDialog dialog 
                 = new GrammarBookModificatorDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarBook;
@@ -413,7 +414,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.languageFilesDataHendler = languageFilesDataHandler;
         dialog.initialise();
         dialog.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_modificateGrammarBookButtonActionPerformed
 
     private void modificateDictionaryDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateDictionaryDataButtonActionPerformed
         CardModificatorDialog dialog 
@@ -487,7 +488,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -495,6 +495,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JButton modificateDictionaryDataButton;
+    private javax.swing.JButton modificateGrammarBookButton;
     private javax.swing.JButton readGrammarBookButton;
     private javax.swing.JButton setLanguageToStudyButton;
     // End of variables declaration//GEN-END:variables
