@@ -93,15 +93,13 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         jButton3 = new javax.swing.JButton();
         deleteGrammarItemButton = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        saveChangesButton = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jButton1.setText("Close without saving");
+        jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -144,14 +142,6 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         jButton5.setText("Move up in hierarchy");
         jButton5.setEnabled(false);
 
-        saveChangesButton.setText("Save changes");
-        saveChangesButton.setEnabled(false);
-        saveChangesButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveChangesButtonActionPerformed(evt);
-            }
-        });
-
         jButton7.setText("Move down in hierarchy");
         jButton7.setEnabled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -165,9 +155,6 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
 
         jButton9.setText("Move back in order");
         jButton9.setEnabled(false);
-
-        jButton4.setText("Reload data from disc");
-        jButton4.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -185,9 +172,7 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(saveChangesButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -211,10 +196,6 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(saveChangesButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
                 .addContainerGap())
         );
@@ -261,13 +242,13 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         DialogAnswer dialogAnswer = new DialogAnswer();
         
         dialog.dialogAnswer = dialogAnswer;
-        
+        dialog.grammarItem = grammarBook.getGrammarItemByIndex(selectedGrammarItemIndex);
+        dialog.initialise();
         dialog.setVisible(true);
 
         if (dialogAnswer.answer) {
-            grammarDataModificator.deleteGrammarItemByIndexFromMemory(selectedGrammarItemIndex);
+            grammarDataModificator.deleteGrammarItemByIndex(selectedGrammarItemIndex);
             treeModel.removeNodeFromParent(selectedNode);
-            saveChangesButton.setEnabled(true);
             deleteGrammarItemButton.setEnabled(false);
         }
     }//GEN-LAST:event_deleteGrammarItemButtonActionPerformed
@@ -275,11 +256,6 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void saveChangesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveChangesButtonActionPerformed
-        //grammarDataModificator.writeDataToDisc();
-        saveChangesButton.setEnabled(false);
-    }//GEN-LAST:event_saveChangesButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         GrammarItemModificatorDialog dialog 
@@ -337,13 +313,11 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTree jTree1;
-    private javax.swing.JButton saveChangesButton;
     // End of variables declaration//GEN-END:variables
 }

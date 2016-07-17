@@ -3,10 +3,13 @@ package graphic_user_interface.grammar_book;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarAnswerDataStatisticsMaker;
 import grammar_book.GrammarBook;
+import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
+import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
+import graphic_user_interface.common.PractisingTimeByDaysDialog;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 
-public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
+public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
 
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
     private GrammarBook grammarBook;
@@ -20,7 +23,7 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
     }
     
     @SuppressWarnings("empty-statement")
-    public GrammarGeneralStatisticsDialog(java.awt.Frame parent, boolean modal) {
+    public GrammarAnswerStatisticsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -311,7 +314,7 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
 	jLabel6.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays()));
 	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeInString());
 	jLabel18.setText(grammarAnswerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(Double.toString(grammarAnswerDataStatisticsMaker.getAverageAnswerRateOfStudyItems()));
+	jLabel19.setText(grammarAnswerDataStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
         jLabel12.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
         
         jButton1.setMnemonic(KeyEvent.VK_C);
@@ -322,27 +325,24 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        /*HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
+        HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = grammarAnswerDataContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);*/
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        /*NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
+        NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = grammarAnswerDataContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);*/
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        /*PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
+        PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
+        dialog.answerDataContainer = grammarAnswerDataContainer;
         dialog.fillDialogWithData();
-        dialog.setVisible(true);*/
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -362,14 +362,46 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarAnswerStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarAnswerStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarAnswerStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GrammarGeneralStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GrammarAnswerStatisticsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -406,7 +438,7 @@ public class GrammarGeneralStatisticsDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                GrammarGeneralStatisticsDialog dialog = new GrammarGeneralStatisticsDialog(new javax.swing.JFrame(), true);
+                GrammarAnswerStatisticsDialog dialog = new GrammarAnswerStatisticsDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

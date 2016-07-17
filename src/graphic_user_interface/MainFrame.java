@@ -15,7 +15,7 @@ import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import graphic_user_interface.dictionary.CardModificatorDialog;
 import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
-import graphic_user_interface.grammar_book.GrammarGeneralStatisticsDialog;
+import graphic_user_interface.grammar_book.GrammarAnswerStatisticsDialog;
 import graphic_user_interface.grammar_book.GrammarBookModificatorDialog;
 import java.awt.event.KeyEvent;
 import study_item_objects.AnswerDataContainer;
@@ -393,7 +393,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void grammarStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grammarStatisticsButtonActionPerformed
-        GrammarGeneralStatisticsDialog dialog = new GrammarGeneralStatisticsDialog(new javax.swing.JFrame(), true);
+        GrammarAnswerStatisticsDialog dialog = new GrammarAnswerStatisticsDialog(new javax.swing.JFrame(), true);
         dialog.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
         dialog.setGrammarBook(grammarBook);
         dialog.fillDialogWithData();

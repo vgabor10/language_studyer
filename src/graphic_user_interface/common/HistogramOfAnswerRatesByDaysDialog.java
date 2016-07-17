@@ -1,12 +1,10 @@
-package graphic_user_interface.dictionary;
+package graphic_user_interface.common;
 
-import dictionary.CardContainer;
 import dictionary.DictionaryAnswerDataStatisticsMaker;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import javax.swing.table.DefaultTableModel;
@@ -16,7 +14,6 @@ import study_item_objects.Histogram;
 public class HistogramOfAnswerRatesByDaysDialog extends javax.swing.JDialog {
 
     public AnswerDataContainer answerDataContainer;
-    public CardContainer cardContainer;
 
     public HistogramOfAnswerRatesByDaysDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -31,7 +28,6 @@ public class HistogramOfAnswerRatesByDaysDialog extends javax.swing.JDialog {
         DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker
                 = new DictionaryAnswerDataStatisticsMaker();
 
-        dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
         dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
         
         Map<Integer,Histogram> histogramOfStudyItemAnswerRatesByDays 
@@ -80,6 +76,7 @@ public class HistogramOfAnswerRatesByDaysDialog extends javax.swing.JDialog {
                 "day", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"
             }
         ));
+        jTable2.setEnabled(false);
         jScrollPane2.setViewportView(jTable2);
 
         jButton1.setText("Close");
@@ -106,10 +103,10 @@ public class HistogramOfAnswerRatesByDaysDialog extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();

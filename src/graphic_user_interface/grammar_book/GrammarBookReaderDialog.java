@@ -49,6 +49,12 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         }
     }
     
+    public void clearWidgets() {
+        clearTabular();
+        jTextField1.setText("");
+        jTextArea1.setText("");
+    }
+    
     private void clearTabular() {
         for (int i=tableModel.getRowCount()-1; 0<=i; i--) {
             tableModel.removeRow(i);
@@ -233,15 +239,21 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
 
     private void jTree1ValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_jTree1ValueChanged
 
-        DefaultMutableTreeNode node = (DefaultMutableTreeNode) jTree1.getLastSelectedPathComponent();
+        DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) jTree1.getLastSelectedPathComponent();
 
-        if (node.isLeaf()) {
-            GrammarBookReaderTreeNodeUSerObject nodeInfo 
-                = (GrammarBookReaderTreeNodeUSerObject)node.getUserObject();
-            
-            int selectedGrammarItemIndex = nodeInfo.grammarItemIndex;
-            
-            fillWidgetsWithGrammarItemData(selectedGrammarItemIndex);
+        if (selectedNode != null) {
+        
+            if (selectedNode.isLeaf()) {
+                GrammarBookReaderTreeNodeUSerObject nodeInfo 
+                    = (GrammarBookReaderTreeNodeUSerObject)selectedNode.getUserObject();
+
+                int selectedGrammarItemIndex = nodeInfo.grammarItemIndex;
+
+                fillWidgetsWithGrammarItemData(selectedGrammarItemIndex);
+            }
+            else {
+                clearWidgets();
+            }
         }
     }//GEN-LAST:event_jTree1ValueChanged
 

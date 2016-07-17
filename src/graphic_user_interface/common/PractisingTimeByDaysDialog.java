@@ -1,6 +1,5 @@
-package graphic_user_interface.dictionary;
+package graphic_user_interface.common;
 
-import dictionary.CardContainer;
 import dictionary.DictionaryAnswerDataStatisticsMaker;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -11,12 +10,11 @@ import java.util.Map;
 import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataContainer;
 
-public class NumberOfAnswersByDaysDialog extends javax.swing.JDialog {
+public class PractisingTimeByDaysDialog extends javax.swing.JDialog {
 
     public AnswerDataContainer answerDataContainer;
-    public CardContainer cardContainer;
 
-    public NumberOfAnswersByDaysDialog(java.awt.Frame parent, boolean modal) {
+    public PractisingTimeByDaysDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -31,11 +29,10 @@ public class NumberOfAnswersByDaysDialog extends javax.swing.JDialog {
         
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-	dictionaryAnswerDataStatisticsMaker.setStudyItemContainer(cardContainer);
 
-        Map<Integer,Integer> numberOfAnswersByDays = dictionaryAnswerDataStatisticsMaker.getNumberOfAnswersByDays();
+        Map<Integer,String> practisingTimeByDays = dictionaryAnswerDataStatisticsMaker.getPractisingTimeByDaysASString();
 
-        List<Integer> sortedDays = new ArrayList<>(numberOfAnswersByDays.keySet());
+        List<Integer> sortedDays = new ArrayList<>(practisingTimeByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();
         Collections.sort(sortedDays, comparator);
 
@@ -43,7 +40,7 @@ public class NumberOfAnswersByDaysDialog extends javax.swing.JDialog {
         for (int day : sortedDays) {
             model.addRow(new Object[] {
                 Integer.toString(day),
-                numberOfAnswersByDays.get(day)
+                practisingTimeByDays.get(day)
             });
         };
     }
@@ -93,10 +90,10 @@ public class NumberOfAnswersByDaysDialog extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -123,21 +120,23 @@ public class NumberOfAnswersByDaysDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NumberOfAnswersByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PractisingTimeByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NumberOfAnswersByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PractisingTimeByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NumberOfAnswersByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PractisingTimeByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NumberOfAnswersByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PractisingTimeByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
+                PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

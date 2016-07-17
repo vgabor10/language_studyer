@@ -1,5 +1,8 @@
 package graphic_user_interface.dictionary;
 
+import graphic_user_interface.common.PractisingTimeByDaysDialog;
+import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
+import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
 import dictionary.CardContainer;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
@@ -323,7 +326,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -331,7 +333,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -339,7 +340,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
         dialog.answerDataContainer = answerDataContainer;
-        dialog.cardContainer = cardContainer;
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed

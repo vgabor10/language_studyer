@@ -27,7 +27,6 @@ public class CardChooser {
 		answerDataContainer = ac;
 	}
 
-	//WARNING: first need to be set answerDataContainer
 	public void evaluateAnswerDataByStudyItemsContainer() {
 		answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
 		answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
@@ -292,6 +291,9 @@ public class CardChooser {
 		return cardsToTestIndexes;
 	}
 
+        //4 latest questioned, 4 hardest card from worst 20%, 
+        //4 hardest card from worst 100, 2 among with least significant ar
+        //6 random card
 	public Set<Integer> chooseCardsToTestIndexesForTest7() {
 
 		logger.debug("start evaluate card indexes for test7");
@@ -322,7 +324,7 @@ public class CardChooser {
 	}
 
         //TODO: think it over
-	public Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
+	private Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
 		Set<Integer> cardIndexes = new HashSet<>();
 
 		AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
