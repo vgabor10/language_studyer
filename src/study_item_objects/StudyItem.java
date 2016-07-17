@@ -2,10 +2,10 @@ package study_item_objects;
 
 public class StudyItem {
 
-	public int index;
+    public int index;
 
-	public StudyItem() {
-		index = -1;
-	}
+    public StudyItem() {
+        index = -1;
+    }
 
 }

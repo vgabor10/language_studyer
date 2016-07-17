@@ -84,7 +84,8 @@ public class AnswerDataStatisticsMaker {
         return StudyItemInexes.size();
     }
 
-    public long evaluatePractisingTime(Vector<Long> answerDates) {	//supposed, that dates are sorted
+    //supposed, that dates are sorted
+    public long evaluatePractisingTime(Vector<Long> answerDates) {
         long practisingTime = 0;
         long intervalStartTime = answerDates.get(0);
 
