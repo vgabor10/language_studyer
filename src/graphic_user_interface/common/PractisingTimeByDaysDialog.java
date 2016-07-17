@@ -30,7 +30,7 @@ public class PractisingTimeByDaysDialog extends javax.swing.JDialog {
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 
-        Map<Integer,String> practisingTimeByDays = dictionaryAnswerDataStatisticsMaker.getPractisingTimeByDaysASString();
+        Map<Integer,String> practisingTimeByDays = dictionaryAnswerDataStatisticsMaker.getPractisingTimeByDaysAsString();
 
         List<Integer> sortedDays = new ArrayList<>(practisingTimeByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();

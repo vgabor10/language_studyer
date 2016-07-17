@@ -6,80 +6,78 @@ import java.util.*;
 
 public class GrammarItem extends StudyItem {
 
-	public GrammarItemTitle title = new GrammarItemTitle();
-	public String description;
-        public String comments;
-	private Map<Integer, Example> examples = new TreeMap<>();
+    public GrammarItemTitle title = new GrammarItemTitle();
+    public String description;
+    public String comments;
+    private Map<Integer, Example> examples = new TreeMap<>();
 
-	public GrammarItem() {
-		title.clear();
-		comments = "";
-		description = "";
-	}
+    public GrammarItem() {
+        title.clear();
+        comments = "";
+        description = "";
+    }
 
-	public int numberOfExamples() {
-		return examples.size();
-	}
+    public int numberOfExamples() {
+        return examples.size();
+    }
 
-	public boolean isEmptyExcludingTitle() {
-		return (index == -1) && (description.equals("")) && (examples.isEmpty()) && (comments.equals(""));
-	}
+    public boolean isEmptyExcludingTitle() {
+        return (index == -1) && (description.equals("")) && (examples.isEmpty()) && (comments.equals(""));
+    }
 
-	public Example getExampleByIndex(int index) {
-		return examples.get(index);
-	}
+    public Example getExampleByIndex(int index) {
+        return examples.get(index);
+    }
 
-	public void addExample(Example e) {
-		examples.put(e.index ,e);
-	}
+    public void addExample(Example e) {
+        examples.put(e.index, e);
+    }
 
-	public Set<Integer> getExampleIndexes() {
-		return examples.keySet();
-	}
+    public Set<Integer> getExampleIndexes() {
+        return examples.keySet();
+    }
 
-        @Override
-	public String toString() {
-		String out;
-		out = title.toString().toUpperCase() + "\n\nDESCRIPTION:\n" + description + "\n\nEXAMPLES:\n";
+    public void clearExamples() {
+        examples.clear();
+    }
+    
+    @Override
+    public String toString() {
+        String out;
+        out = title.toString().toUpperCase() + "\n\nDESCRIPTION:\n" + description + "\n\nEXAMPLES:\n";
 
-            for (int ind : examples.keySet()) {
-                out = out + getExampleByIndex(ind).toString() + "\n";
-            }
+        for (int ind : examples.keySet()) {
+            out = out + getExampleByIndex(ind).toString() + "\n";
+        }
 
-		if (out.endsWith("\n")) {
-			out = out.substring(0, out.length()-1);
-		}
+        if (out.endsWith("\n")) {
+            out = out.substring(0, out.length() - 1);
+        }
 
-		return out;
-	}
-        
-        public String toStringInLatexFormatWithoutTitle() {
-		String outString = "";
+        return out;
+    }
 
-		outString = outString + "GrammarItemIndex = " + Integer.toString(index) + "\n\n";
+    public String toStringInLatexFormatWithoutTitle() {
+        String outString = "";
 
-                if (description.equals("")) {
-                    outString = outString + "\\begin{desc}\n\\end{desc}\n\n";
-                }
-                else {
-                    outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
-                }
-                
-		if (comments.length() != 0) {
-			outString = outString + comments + "\n";
-		}
-		outString = outString + "\\begin{exmp}\n";
-		for (int i : getExampleIndexes()) {
-			outString = outString + getExampleByIndex(i).toStringInLatexFormat() + "\n";
-		}
-		outString = outString + "\\end{exmp}\n";
+        outString = outString + "GrammarItemIndex = " + Integer.toString(index) + "\n\n";
 
-		return outString;
-	}
+        if (description.equals("")) {
+            outString = outString + "\\begin{desc}\n\\end{desc}\n\n";
+        } else {
+            outString = outString + "\\begin{desc}\n" + description + "\n\\end{desc}\n\n";
+        }
 
+        if (comments.length() != 0) {
+            outString = outString + comments + "\n";
+        }
+        outString = outString + "\\begin{exmp}\n";
+        for (int i : getExampleIndexes()) {
+            outString = outString + getExampleByIndex(i).toStringInLatexFormat() + "\n";
+        }
+        outString = outString + "\\end{exmp}\n";
+
+        return outString;
+    }
 
 }
-
-
-
-

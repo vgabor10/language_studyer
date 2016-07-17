@@ -328,7 +328,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jLabel16.setText(Integer.toString(answerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
         jLabel22.setText(new Date(answerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
 	jLabel6.setText(Integer.toString(answerDataStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeInString());
+	jLabel17.setText(answerDataStatisticsMaker.getPractisingTimeAsString());
 	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
 	jLabel19.setText(answerDataStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
         jLabel12.setText(Integer.toString(answerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));

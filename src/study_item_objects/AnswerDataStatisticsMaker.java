@@ -115,13 +115,13 @@ public class AnswerDataStatisticsMaker {
         return out;
     }
 
-    public String getPractisingTimeInString() {
+    public String getPractisingTimeAsString() {
         int[] a = practisingTime();
         return "practising time: " + Integer.toString(a[0])
                 + " hours " + Integer.toString(a[1]) + " minutes";
     }
 
-    public Map<Integer, String> getPractisingTimeByDaysASString() {
+    public Map<Integer, String> getPractisingTimeByDaysAsString() {
         if (answerDataContainer.numberOfAnswers() != 0) {
             Map<Integer, String> out = new HashMap<>();
 

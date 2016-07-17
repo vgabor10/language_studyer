@@ -312,7 +312,7 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
         jLabel16.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
         jLabel22.setText(new Date(grammarAnswerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
 	jLabel6.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeInString());
+	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeAsString());
 	jLabel18.setText(grammarAnswerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
 	jLabel19.setText(grammarAnswerDataStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
         jLabel12.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
