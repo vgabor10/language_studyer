@@ -150,6 +150,7 @@ public class AnswerDataStatisticsMaker {
             long practisingTime = evaluatePractisingTime(answerDates);
             int hours = (int) practisingTime / 3600000;
             int minutes = (int) ((practisingTime - 3600000 * hours) / 60000);
+            out.put(actualDay, Integer.toString(hours) + " hours " + Integer.toString(minutes) + " minutes");
 
             return out;
         } else {
@@ -157,7 +158,8 @@ public class AnswerDataStatisticsMaker {
         }
     }
 
-    public int numberOfQuestionsOfLeastStudiedStudyItem() {		// it does not caunt the not studied StudyItems!!!???
+    // it does not caunt the not studied StudyItems!!!???
+    public int numberOfQuestionsOfLeastStudiedStudyItem() {
         AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
@@ -451,7 +453,7 @@ public class AnswerDataStatisticsMaker {
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
         Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByRateOfRightAnswers());
 
-        Vector<Integer> out = new Vector<Integer>();
+        Vector<Integer> out = new Vector<>();
         for (int i = 0; i < datasToSort.length; i++) {
             out.add(datasToSort[i].getStudyItemIndex());
         }
@@ -487,7 +489,7 @@ public class AnswerDataStatisticsMaker {
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
         Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
-        Vector<Integer> out = new Vector<Integer>();
+        Vector<Integer> out = new Vector<>();
         for (int i = 0; i < datasToSort.length; i++) {
             out.add(datasToSort[i].getStudyItemIndex());
         }
@@ -500,7 +502,7 @@ public class AnswerDataStatisticsMaker {
         AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-        Map<Integer, Double> out = new HashMap<Integer, Double>();
+        Map<Integer, Double> out = new HashMap<>();
         for (int studyItemIndex : answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
             AnswerDataByStudyItem answerDataByStudyItem
                     = answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(studyItemIndex);
@@ -517,13 +519,13 @@ public class AnswerDataStatisticsMaker {
         GeneralFunctions generalFunctions = new GeneralFunctions();
         
         AnswerData answerData = answerDataContainer.getAnswerData(0);
-        int lastDay = generalFunctions.milisecToDay(answerData.date);
-        int actualDay;
+        int lastAnswerDay = generalFunctions.milisecToDay(answerData.date);
+        int actualAnswerDay = 0;
         for (int i=0; i<numberOfAnswers(); i++) {
             answerData = answerDataContainer.getAnswerData(i);
-            actualDay = generalFunctions.milisecToDay(answerData.date);
-            if (lastDay != actualDay) {
-                out.put(actualDay, actualDayQuestionedCardIndexes.size());
+            actualAnswerDay = generalFunctions.milisecToDay(answerData.date);
+            if (lastAnswerDay != actualAnswerDay) {
+                out.put(actualAnswerDay, actualDayQuestionedCardIndexes.size());
                 questionedCardIndexes.addAll(actualDayQuestionedCardIndexes);
                 actualDayQuestionedCardIndexes.clear();
             }
@@ -532,8 +534,9 @@ public class AnswerDataStatisticsMaker {
                     actualDayQuestionedCardIndexes.add(answerData.index);
                 }
             }
-            lastDay = actualDay;
+            lastAnswerDay = actualAnswerDay;
         }
+        out.put(actualAnswerDay,actualDayQuestionedCardIndexes.size());
         
         return out;
     }

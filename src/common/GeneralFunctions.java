@@ -1,10 +1,11 @@
 package common;
 
-import java.util.*;
+import java.util.Date;
 
 public class GeneralFunctions {
 
-	public void toScreenActualDateInFormat1() {	//for debug, date works according to timeZone GMT
+	//for debug, date works according to timeZone GMT    
+	public void toScreenActualDateInFormat1() {
 		Date date = new Date();
 		long now = date.getTime();
 		int numberOfDay = (int)(now/(long)(1000*3600*24));
