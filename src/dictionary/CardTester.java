@@ -9,7 +9,7 @@ public class CardTester {
 
     private CardContainer allCard;
     private CardContainer cardsToTest;
-    private int numberOfCardsQuestioned;
+    private int numberOfCardsQuestioned = 0;
     private final AnswerDataContainer userAnswers = new AnswerDataContainer();
     private Card actualQuestionedCard;
     private String userAnswerToActualQuestion;
@@ -17,10 +17,6 @@ public class CardTester {
     private boolean isGetAnswerToActualQuestion = false;
 
     private final Logger logger = new Logger();
-
-    public CardTester() {
-        numberOfCardsQuestioned = 0;
-    }
 
     public void setAllCard(CardContainer cc) {
         allCard = cc;
@@ -159,6 +155,17 @@ public class CardTester {
         }
 
         return acceptableCardIndexes;
+    }
+    
+    public void clear() {
+        allCard.clear();
+        cardsToTest.clear();
+        numberOfCardsQuestioned = 0;
+        userAnswers.clear();
+        actualQuestionedCard = null;
+        userAnswerToActualQuestion = null;
+        acceptabelAnswersAndCardIndexesForActualQuestion.clear();
+        isGetAnswerToActualQuestion = false;
     }
 
 }

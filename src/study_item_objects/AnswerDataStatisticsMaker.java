@@ -399,7 +399,8 @@ public class AnswerDataStatisticsMaker {
         SortedSet<Integer> sortedDays = new TreeSet<>(keys);
 
         try {
-            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+            //the true will append the new data
+            FileWriter fw = new FileWriter(filePath, false);
             for (int day : sortedDays) {
                 fw.write(day + "\t" + data.get(day).toStringHorisontally("\t") + "\n");
             }

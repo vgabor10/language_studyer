@@ -39,7 +39,7 @@ public class DictionaryDataModificator {
     }
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data
-    private void saveCardContainerDataToFile() {
+    public void saveCardContainerDataToFile() {
         String filePath = settingsHandler.getStudiedLanguageCardDataPath();
         File oldFile;
         oldFile = new File(filePath);

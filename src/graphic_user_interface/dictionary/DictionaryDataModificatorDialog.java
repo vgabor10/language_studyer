@@ -7,26 +7,36 @@ import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
+import javax.swing.DefaultCellEditor;
+import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataContainer;
 
-public class CardModificatorDialog extends javax.swing.JDialog {
+public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
 
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
     
     private final CardFinder cardFinder = new CardFinder();
-    private final DefaultTableModel model;
+    private final DefaultTableModel tableModel;
     
     private Vector<Card> listedCards;
+   
+    //TODO: table column order can be changed, it can cause errors at modification
     
-    public CardModificatorDialog(java.awt.Frame parent, boolean modal) {
+    public DictionaryDataModificatorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
         setLocationRelativeTo(null);
         
-        model = (DefaultTableModel)jTable1.getModel();
+        tableModel = (DefaultTableModel)jTable1.getModel();
+        
+        //table rows are not editable but can be selected
+        JTextField tf = new JTextField();
+        tf.setEditable(false);
+        DefaultCellEditor editor = new DefaultCellEditor( tf );
+        jTable1.setDefaultEditor(Object.class, editor);
         
         jTextField1.setText("");
         jTextField1.requestFocus();
@@ -92,11 +102,6 @@ public class CardModificatorDialog extends javax.swing.JDialog {
         jScrollPane1.setViewportView(jTable1);
 
         jTextField1.setText("jTextField1");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField1KeyPressed(evt);
@@ -110,7 +115,7 @@ public class CardModificatorDialog extends javax.swing.JDialog {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "german -> hungarian", "hungarian -> german" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "foreign -> hungarian", "hungarian -> foreign" }));
 
         modificateCardButton.setText("Modificate selected card");
         modificateCardButton.setEnabled(false);
@@ -183,44 +188,73 @@ public class CardModificatorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER
-                && !jTextField1.getText().isEmpty()) {
-            searchForCards();
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
+                !jTextField1.getText().isEmpty() &&
+                jComboBox1.getSelectedIndex() == 0) {
+            
+            if (jTextField1.isEditable()) {                   
+                Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
+
+                for (int i=0; i<cardsToList.size(); i++) {
+
+                    tableModel.addRow(new Object[] {
+                        cardsToList.get(i).term, 
+                        cardsToList.get(i).definition});
+                }
+
+                jTextField1.setEditable(false);   
+            }
+            else {
+                setFormForNextQuery();
+            }
+        }
+        
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
+                !jTextField1.getText().isEmpty() &&
+                jComboBox1.getSelectedIndex() == 1) {
+            
+            if (jTextField1.isEditable()) {                   
+                Vector<Card> cardsToList = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
+
+                for (int i=0; i<cardsToList.size(); i++) {
+
+                    tableModel.addRow(new Object[] {
+                        cardsToList.get(i).term, 
+                        cardsToList.get(i).definition});
+                }
+
+                jTextField1.setEditable(false);   
+            }
+            else {
+                setFormForNextQuery();
+            }
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
-    public void searchForCards() {
-        if (jTextField1.isEditable()) {
-            listedCards = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
+    private void setFormForNextQuery() {
+        jTextField1.setText("");
+        jTextField1.setEditable(true);
+        jTextField1.requestFocus();
 
-            for (int i = 0; i < listedCards.size(); i++) {
-
-                model.addRow(new Object[]{
-                    listedCards.get(i).term,
-                    listedCards.get(i).definition});
-            }
-
-            jTextField1.setEditable(false);
-        } else {
-            jTextField1.setText("");
-            jTextField1.setEditable(true);
-
-            modificateCardButton.setEnabled(false);
-            deleteCardButton.setEnabled(false);
-            
-            for (int i = model.getRowCount() - 1; 0 <= i; i--) {
-                model.removeRow(i);
-            }
-
+        for (int i=tableModel.getRowCount()-1; 0<=i; i--) {
+            tableModel.removeRow(i);
         }
     }
-    
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
 
+    
     private void modificateCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateCardButtonActionPerformed
-        // TODO add your handling code here:
+        int selectedTableRowIndex = jTable1.getSelectedRow();
+        Card cardToModificate = listedCards.get(selectedTableRowIndex);
+        
+        CardModificatorDialog dialog 
+                = new CardModificatorDialog(new javax.swing.JFrame(), true);
+        dialog.cardContainer = cardContainer;
+        dialog.cardToModificate = cardToModificate;
+        dialog.initialise();
+        dialog.setVisible(true);
+        
+        tableModel.setValueAt(cardToModificate.term, selectedTableRowIndex, 0);
+        tableModel.setValueAt(cardToModificate.definition, selectedTableRowIndex, 1);
     }//GEN-LAST:event_modificateCardButtonActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -230,8 +264,8 @@ public class CardModificatorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
-        int rowIndex = jTable1.getSelectedRow();
-        Card cardToDelete = listedCards.get(rowIndex);
+        int selectedTableRowIndex = jTable1.getSelectedRow();
+        Card cardToDelete = listedCards.get(selectedTableRowIndex);
         
         
         CardDeleteReinforceDialog dialog 
@@ -251,7 +285,8 @@ public class CardModificatorDialog extends javax.swing.JDialog {
             
             modificateCardButton.setEnabled(false);
             deleteCardButton.setEnabled(false);
-            searchForCards();
+            
+            tableModel.removeRow(selectedTableRowIndex);
         }
     }//GEN-LAST:event_deleteCardButtonActionPerformed
 
@@ -277,14 +312,18 @@ public class CardModificatorDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryDataModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryDataModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryDataModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryDataModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -293,7 +332,7 @@ public class CardModificatorDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                CardModificatorDialog dialog = new CardModificatorDialog(new javax.swing.JFrame(), true);
+                DictionaryDataModificatorDialog dialog = new DictionaryDataModificatorDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

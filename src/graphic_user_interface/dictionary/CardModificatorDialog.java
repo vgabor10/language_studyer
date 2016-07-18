@@ -6,30 +6,25 @@ import disc_operation_handlers.DictionaryDataModificator;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 
-/**
- *
- * @author varga
- */
-public class CardAdderDialog extends javax.swing.JDialog {
+public class CardModificatorDialog extends javax.swing.JDialog {
 
-    private CardContainer cardContainer;
+    public CardContainer cardContainer;
+    public Card cardToModificate;
     
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
-    
-    public CardAdderDialog(java.awt.Frame parent, boolean modal) {
+    public CardModificatorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        jTextField1.setText("");
-        jTextField2.setText("");  
-        jTextField1.requestFocus();
-        
-        addCardButton.setMnemonic(KeyEvent.VK_A);
+        saveCardButton.setMnemonic(KeyEvent.VK_S);
         jButton3.setMnemonic(KeyEvent.VK_C);
         
         setLocationRelativeTo(null);
+    }
+    
+    public void initialise() {
+        jTextField1.setText(cardToModificate.term);
+        jTextField2.setText(cardToModificate.definition);  
+        jTextField1.requestFocus();
     }
 
     /**
@@ -45,7 +40,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        addCardButton = new javax.swing.JButton();
+        saveCardButton = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -69,15 +64,15 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
         jLabel2.setText("definition:");
 
-        addCardButton.setText("Add card");
-        addCardButton.addActionListener(new java.awt.event.ActionListener() {
+        saveCardButton.setText("Save card");
+        saveCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addCardButtonActionPerformed(evt);
+                saveCardButtonActionPerformed(evt);
             }
         });
-        addCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
+        saveCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                addCardButtonKeyPressed(evt);
+                saveCardButtonKeyPressed(evt);
             }
         });
 
@@ -104,7 +99,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                             .addComponent(jTextField2)
                             .addComponent(jTextField1)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(addCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(saveCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -122,7 +117,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addCardButton)
+                    .addComponent(saveCardButton)
                     .addComponent(jButton3))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -142,53 +137,32 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
     private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            addCardButton.requestFocus();
+            saveCardButton.requestFocus();
         }
     }//GEN-LAST:event_jTextField2KeyPressed
 
-    private void addCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addCardButtonKeyPressed
+    private void saveCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveCardButtonKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            addCard();
+            saveCard();
         }
-    }//GEN-LAST:event_addCardButtonKeyPressed
+    }//GEN-LAST:event_saveCardButtonKeyPressed
 
-    private void addCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCardButtonActionPerformed
-        addCard();
-    }//GEN-LAST:event_addCardButtonActionPerformed
+    private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
+        saveCard();
+    }//GEN-LAST:event_saveCardButtonActionPerformed
 
-    public void addCard() {
+    public void saveCard() {
         String term = jTextField1.getText();
         String definition = jTextField2.getText();
-        
-        if (term.contains("\t") || definition.contains("\t") ||
-                term.equals("") || definition.equals("")) {
-            
-            NotApproprateFormatDialog dialog = new NotApproprateFormatDialog(new javax.swing.JFrame(), true);
-            dialog.setVisible(true);
-        }
-        else {
-            Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
-            
-            if (!foundCardIndexes.isEmpty()) {
-                NotApproprateFormatDialog dialog = new NotApproprateFormatDialog(new javax.swing.JFrame(), true);
-                dialog.setVisible(true);
-            }
-            else {
-                Card card = new Card();
-        
-                card.index = cardContainer.getEmptyCardIndex();
-                card.term = jTextField1.getText();
-                card.definition = jTextField2.getText();
 
-                DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-                dictionaryDataModificator.setCardContainer(cardContainer);
-                dictionaryDataModificator.addCard(card);
+        cardToModificate.term = term;
+        cardToModificate.definition = definition;
+
+        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+        dictionaryDataModificator.setCardContainer(cardContainer);
+        dictionaryDataModificator.saveCardContainerDataToFile();
                 
-                jTextField1.setText("");
-                jTextField2.setText("");  
-                jTextField1.requestFocus();
-            }
-        }
+        dispose();
     }
     
     /**
@@ -208,23 +182,20 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CardAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CardAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CardAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CardAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardModificatorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                CardAdderDialog dialog = new CardAdderDialog(new javax.swing.JFrame(), true);
+                CardModificatorDialog dialog = new CardModificatorDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -237,11 +208,11 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addCardButton;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JButton saveCardButton;
     // End of variables declaration//GEN-END:variables
 }

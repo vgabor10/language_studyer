@@ -10,10 +10,6 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-/**
- *
- * @author varga
- */
 public class CardFinderDialog extends javax.swing.JDialog {
 
     private final CardFinder cardFinder = new CardFinder();

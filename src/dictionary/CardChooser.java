@@ -377,4 +377,10 @@ public class CardChooser {
 
         return cardChooser2.chooseCardsToTestIndexesForTest7();
     }
+    
+    public void clear() {
+        cardContainer.clear();
+        answerDataContainer.clear();
+        answerDataByStudyItemsContainer.clear();     
+    }
 }

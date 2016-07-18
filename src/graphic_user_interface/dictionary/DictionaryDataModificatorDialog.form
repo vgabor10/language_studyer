@@ -96,7 +96,6 @@
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField1KeyPressed"/>
       </Events>
     </Component>
@@ -112,8 +111,8 @@
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
           <StringArray count="2">
-            <StringItem index="0" value="german -&gt; hungarian"/>
-            <StringItem index="1" value="hungarian -&gt; german"/>
+            <StringItem index="0" value="foreign -&gt; hungarian"/>
+            <StringItem index="1" value="hungarian -&gt; foreign"/>
           </StringArray>
         </Property>
       </Properties>

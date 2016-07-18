@@ -13,7 +13,7 @@ import dictionary.CardContainer;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
-import graphic_user_interface.dictionary.CardModificatorDialog;
+import graphic_user_interface.dictionary.DictionaryDataModificatorDialog;
 import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarAnswerStatisticsDialog;
 import graphic_user_interface.grammar_book.GrammarBookModificatorDialog;
@@ -342,7 +342,7 @@ public class MainFrame extends javax.swing.JFrame {
         CardTesterDialog dialog = new CardTesterDialog(new javax.swing.JFrame(), true);
         dialog.cardContainer = cardContainer;
         dialog.answerDataContainer = answerDataContainer;
-        dialog.initialiseAfterDataLoaded();
+        dialog.initialise();
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -419,8 +419,8 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_modificateGrammarBookButtonActionPerformed
 
     private void modificateDictionaryDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateDictionaryDataButtonActionPerformed
-        CardModificatorDialog dialog 
-                = new CardModificatorDialog(new javax.swing.JFrame(), true);
+        DictionaryDataModificatorDialog dialog 
+                = new DictionaryDataModificatorDialog(new javax.swing.JFrame(), true);
         dialog.setCardContainer(cardContainer);
         dialog.setAnswerDataContainer(answerDataContainer);
         dialog.initialise();

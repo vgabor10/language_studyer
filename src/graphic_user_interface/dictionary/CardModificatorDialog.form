@@ -39,7 +39,7 @@
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
-                      <Component id="addCardButton" min="-2" pref="233" max="-2" attributes="0"/>
+                      <Component id="saveCardButton" min="-2" pref="233" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton3" min="-2" pref="217" max="-2" attributes="0"/>
                   </Group>
@@ -63,7 +63,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="addCardButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="saveCardButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -98,13 +98,13 @@
         <Property name="text" type="java.lang.String" value="definition:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="addCardButton">
+    <Component class="javax.swing.JButton" name="saveCardButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Add card"/>
+        <Property name="text" type="java.lang.String" value="Save card"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addCardButtonActionPerformed"/>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="addCardButtonKeyPressed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="saveCardButtonActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="saveCardButtonKeyPressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">

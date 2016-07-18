@@ -6,6 +6,7 @@ import dictionary.CardContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.Date;
 import java.util.HashSet;
@@ -14,10 +15,11 @@ import javax.swing.table.DefaultTableModel;
 
 public class CardTesterDialog extends javax.swing.JDialog {
 
-    private final CardTester cardTester = new CardTester();
+    private CardTester cardTester;
+    private CardChooser cardChooser;
     public CardContainer cardContainer;
     public AnswerDataContainer answerDataContainer;
-    private final DefaultTableModel model;
+    private final DefaultTableModel tableModel;
     private final Logger logger = new Logger();
     private long startTime;
     private long finishTime;
@@ -26,21 +28,15 @@ public class CardTesterDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
 
-        jTextField1.requestFocus();
-
-        jTextField1.setText("");
-        jTextField2.setText("");
-        jLabel1.setText("");
-
-        model = (DefaultTableModel) jTable1.getModel();
+        tableModel = (DefaultTableModel) jTable1.getModel();
 
         setLocationRelativeTo(null);
 
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
 
-    public void initialiseAfterDataLoaded() {
-        CardChooser cardChooser = new CardChooser();
+    public void initialise() {  
+        cardChooser = new CardChooser();
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
         
@@ -48,11 +44,18 @@ public class CardTesterDialog extends javax.swing.JDialog {
         //Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
         //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
 
+        cardTester = new CardTester();
         cardTester.setAllCard(cardContainer);
         cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
 
         cardTester.moveToNextCardToQuestion();
 
+        jTextField1.requestFocus();
+
+        clearTabular();
+        jTextField1.setText("");
+        jTextField2.setText("");
+        jLabel1.setText("");
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
         jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
 
@@ -214,7 +217,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
                         jLabel1.setText("");
                     } else {
                         goToStatisticsFrameAndSaveData();
-                        dispose();
                     }
                 } else if (cardTester.isUserAnswerRight()) {
                     jTextField1.setText("");
@@ -243,7 +245,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     clearTabular();
                 } else {
                     goToStatisticsFrameAndSaveData();
-                    dispose();
                 }
             }
         }
@@ -254,7 +255,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 = cardTester.getAcceptableCardIndexes(cardTester.getActualQuestionedCard().definition);
 
         for (int index : acceptableCardIndexes) {
-            model.addRow(new Object[]{
+            tableModel.addRow(new Object[]{
                 cardContainer.getCardByIndex(index).term,
                 cardContainer.getCardByIndex(index).definition
             });
@@ -262,8 +263,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
 
     private void clearTabular() {
-        for (int i = model.getRowCount() - 1; 0 <= i; i--) {
-            model.removeRow(i);
+        for (int i = tableModel.getRowCount() - 1; 0 <= i; i--) {
+            tableModel.removeRow(i);
         }
     }
 
@@ -276,6 +277,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.oldAnswers = answerDataContainer;
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
+        dialog.dialogAnswer = new DialogAnswer();
 
         dialog.setCardTestStatisticsDataToFrame();
         
@@ -284,9 +286,14 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
 
         dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
-
         
         dialog.setVisible(true);
+        
+        if (dialog.dialogAnswer.answer) {
+            initialise();
+        } else {
+            dispose();
+        }
     }
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
