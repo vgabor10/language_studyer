@@ -353,6 +353,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.grammarBook = grammarBook;
         dialog.grammarAnswerDataContainer = grammarAnswerDataContainer;
         dialog.initialisationAfterDataLoaded();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_grammarPractisingButtonActionPerformed
 

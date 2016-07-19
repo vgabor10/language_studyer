@@ -38,7 +38,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
         
-        Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest7();
+        Set<Integer> cardIndexesToTest;
+        if (answerDataContainer.numberOfAnswers() > 100) {
+           cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest7();
+        }
+        else {
+            cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest1();
+        }
         //Set<Integer> cardIndexesToTest = cardChooser.chooseCardsToTestIndexesForTest8();
         //Set<Integer> cardIndexesToTest = cardChooser.getRandomCardIndexes(3, new HashSet<Integer>());    //for test
 
@@ -285,6 +291,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
         
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         if (dialog.dialogAnswer.answer) {

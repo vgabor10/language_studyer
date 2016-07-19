@@ -24,8 +24,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        setLocationRelativeTo(null);
-        
         jTextArea1.setLineWrap(true);
         jTextArea1.setWrapStyleWord(true);
         
@@ -81,7 +79,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setResizable(false);
 
         jTextField1.setEditable(false);
         jTextField1.setText("jTextField1");

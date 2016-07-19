@@ -29,7 +29,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     public CardTesterStatisticsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        setLocationRelativeTo(null);
         
         jButton1.requestFocus();
         jButton1.setMnemonic(KeyEvent.VK_C);

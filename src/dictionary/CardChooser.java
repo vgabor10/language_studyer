@@ -178,15 +178,7 @@ public class CardChooser {
     }
 
     public Set<Integer> chooseCardsToTestIndexesForTest1() {
-
-        Set<Integer> cardsToTestIndexes = new HashSet<>();
-
-        Set<Integer> indexesToAdd;
-
-        indexesToAdd = getRandomCardIndexes(20, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        return cardsToTestIndexes;
+        return getRandomCardIndexes(20, new HashSet<Integer>());
     }
 
     public Set<Integer> chooseCardsToTestIndexesForTest2() {

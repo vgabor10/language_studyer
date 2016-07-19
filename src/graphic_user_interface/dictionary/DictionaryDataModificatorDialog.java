@@ -10,6 +10,9 @@ import java.util.Vector;
 import javax.swing.DefaultCellEditor;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
+import javax.swing.table.TableColumnModel;
 import study_item_objects.AnswerDataContainer;
 
 public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
@@ -117,6 +120,11 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
         });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "foreign -> hungarian", "hungarian -> foreign" }));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
 
         modificateCardButton.setText("Modificate selected card");
         modificateCardButton.setEnabled(false);
@@ -294,6 +302,27 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
         modificateCardButton.setEnabled(true);
         deleteCardButton.setEnabled(true);
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        setFormForNextQuery();
+        
+        JTableHeader th = jTable1.getTableHeader();
+        TableColumnModel tcm = th.getColumnModel();
+        TableColumn tc0 = tcm.getColumn(0);
+        TableColumn tc1 = tcm.getColumn(1);
+        
+        if( jComboBox1.getSelectedIndex() == 0) {
+            tc0.setHeaderValue("term");
+            tc1.setHeaderValue("definition");
+        }
+        
+        if( jComboBox1.getSelectedIndex() == 1) {
+            tc0.setHeaderValue("definition");
+            tc1.setHeaderValue("term");
+        }       
+        
+        th.repaint();
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
