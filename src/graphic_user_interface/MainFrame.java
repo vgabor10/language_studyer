@@ -52,6 +52,7 @@ public class MainFrame extends javax.swing.JFrame {
         modificateGrammarBookButton.setMnemonic(KeyEvent.VK_O);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
+        this.setTitle("Language studyer");
         
         LanguageDataLoader languageDataLoader = new LanguageDataLoader();
         languageDataLoader.setCardContainer(cardContainer);
@@ -343,6 +344,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.cardContainer = cardContainer;
         dialog.answerDataContainer = answerDataContainer;
         dialog.initialise();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -405,6 +407,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         SettingsDialog dialog = new SettingsDialog(new javax.swing.JFrame(), true);
+        dialog.grammarBook = grammarBook;
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 

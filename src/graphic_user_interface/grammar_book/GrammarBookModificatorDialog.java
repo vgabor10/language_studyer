@@ -141,10 +141,10 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton5.setText("Move up in hierarchy");
+        jButton5.setText("Move grammar item to other categrory");
         jButton5.setEnabled(false);
 
-        jButton7.setText("Move down in hierarchy");
+        jButton7.setText("Add category as child");
         jButton7.setEnabled(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,10 +152,10 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton8.setText("Move ahead in order");
+        jButton8.setText("Delete category");
         jButton8.setEnabled(false);
 
-        jButton9.setText("Move back in order");
+        jButton9.setText("Move grammar item in category");
         jButton9.setEnabled(false);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -192,11 +192,11 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(closeButton)))
                 .addContainerGap())

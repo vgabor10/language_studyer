@@ -30,8 +30,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         tableModel = (DefaultTableModel) jTable1.getModel();
 
-        setLocationRelativeTo(null);
-
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
 

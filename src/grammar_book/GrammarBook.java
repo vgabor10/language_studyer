@@ -6,8 +6,6 @@ import java.util.*;
 
 public class GrammarBook extends StudyItemContainer {
 
-    public String preambulum = "";
-
     public int numberOfGrammarItems() {
         return numberOfStudyItems();
     }

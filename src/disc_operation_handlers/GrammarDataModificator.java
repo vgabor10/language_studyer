@@ -3,7 +3,6 @@ package disc_operation_handlers;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarItem;
-import grammar_book.GrammarItemTitle;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -28,29 +27,16 @@ public class GrammarDataModificator {
         try {
             String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
             
-            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-
-            fw.write(grammarBook.preambulum + "\n");
-            fw.write("\\begin{document}\n\n");
-            fw.write("\\maketitle\n\n");
-            fw.write("\\tableofcontents\n\n");
-
-            GrammarItemTitle lastGrammarItemTitle = new GrammarItemTitle();
-            GrammarItemTitle actualGrammarItemTitle;
+            //the true will append the new data
+            FileWriter fw = new FileWriter(filePath, false);
 
             for (int orderIndex = 0; orderIndex < grammarBook.numberOfGrammarItems(); orderIndex++) {
 
                 GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
-                actualGrammarItemTitle = grammarItem.title;
 
-                fw.write(actualGrammarItemTitle.getInLatexFormatAfterGivenTitle(lastGrammarItemTitle));
-                fw.write(grammarItem.toStringInLatexFormatWithoutTitle());
+                fw.write(grammarItem.toString());
                 fw.write("\n");
-
-                lastGrammarItemTitle = actualGrammarItemTitle;
             }
-
-            fw.write("\\end{document}\n");
 
             fw.close();
         } catch (IOException ioe) {

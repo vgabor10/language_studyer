@@ -43,6 +43,7 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
         
         jButton1.setMnemonic(KeyEvent.VK_C);
         jButton4.setMnemonic(KeyEvent.VK_A);
+        modificateCardButton.setMnemonic(KeyEvent.VK_M);
         deleteCardButton.setMnemonic(KeyEvent.VK_D);
     }
 
@@ -193,13 +194,13 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
                 jComboBox1.getSelectedIndex() == 0) {
             
             if (jTextField1.isEditable()) {                   
-                Vector<Card> cardsToList = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
+                listedCards = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
 
-                for (int i=0; i<cardsToList.size(); i++) {
+                for (int i=0; i<listedCards.size(); i++) {
 
                     tableModel.addRow(new Object[] {
-                        cardsToList.get(i).term, 
-                        cardsToList.get(i).definition});
+                        listedCards.get(i).term, 
+                        listedCards.get(i).definition});
                 }
 
                 jTextField1.setEditable(false);   
@@ -214,13 +215,13 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
                 jComboBox1.getSelectedIndex() == 1) {
             
             if (jTextField1.isEditable()) {                   
-                Vector<Card> cardsToList = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
+                listedCards = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
 
-                for (int i=0; i<cardsToList.size(); i++) {
+                for (int i=0; i<listedCards.size(); i++) {
 
                     tableModel.addRow(new Object[] {
-                        cardsToList.get(i).term, 
-                        cardsToList.get(i).definition});
+                        listedCards.get(i).term, 
+                        listedCards.get(i).definition});
                 }
 
                 jTextField1.setEditable(false);   
@@ -266,7 +267,6 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
     private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
         int selectedTableRowIndex = jTable1.getSelectedRow();
         Card cardToDelete = listedCards.get(selectedTableRowIndex);
-        
         
         CardDeleteReinforceDialog dialog 
                 = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
