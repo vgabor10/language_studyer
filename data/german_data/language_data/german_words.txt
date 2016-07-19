@@ -1366,7 +1366,6 @@
 101375	r Sessel	fotel
 101376	e Vase	váza
 101377	e Lampe	lámpa
-101378	e Leuchte	csillár
 101380	vorteilhaft	előnyös
 101381	r Plan	terv
 101382	kontrollieren	ellenőriz
