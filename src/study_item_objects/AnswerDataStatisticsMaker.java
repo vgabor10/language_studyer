@@ -158,21 +158,29 @@ public class AnswerDataStatisticsMaker {
         }
     }
 
-    // it does not caunt the not studied StudyItems!!!???
     public int numberOfQuestionsOfLeastStudiedStudyItem() {
+        int numberOfQuestionsOfLeastStudiedStudyItem;
+
         AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
 
-        Set<Integer> testedStudyItemIndexes = answerDataByStudyItemsContainer.getTestedStudyItemIndexes();
-        int numberOfQuestionsOfLeastStudiedStudyItem = Integer.MAX_VALUE;
-        for (int index : testedStudyItemIndexes) {
-            int numberOfAnswers = answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index).numberOfAnswers();
-            if (numberOfAnswers < numberOfQuestionsOfLeastStudiedStudyItem) {
-                numberOfQuestionsOfLeastStudiedStudyItem = numberOfAnswers;
-            }
-        }
+        if (answerDataByStudyItemsContainer.numberOfStudiedStudyItems() 
+                == studyItemContainer.numberOfStudyItems()) {
 
-        return numberOfQuestionsOfLeastStudiedStudyItem;
+            Set<Integer> testedStudyItemIndexes = answerDataByStudyItemsContainer.getTestedStudyItemIndexes();
+            numberOfQuestionsOfLeastStudiedStudyItem = Integer.MAX_VALUE;
+            for (int index : testedStudyItemIndexes) {
+                int numberOfAnswers = answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index).numberOfAnswers();
+                if (numberOfAnswers < numberOfQuestionsOfLeastStudiedStudyItem) {
+                    numberOfQuestionsOfLeastStudiedStudyItem = numberOfAnswers;
+                }
+            }
+
+            return numberOfQuestionsOfLeastStudiedStudyItem;
+        }
+        else {
+            return 0;
+        }
     }
 
     public HashMap<Integer, Integer> getHistogramOfStudyItemsByNumberOfAnswers() {
@@ -540,6 +548,23 @@ public class AnswerDataStatisticsMaker {
         out.put(actualAnswerDay,actualDayQuestionedCardIndexes.size());
         
         return out;
+    }
+    
+    public String getPointProgressAsString() {
+        AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
+        answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+
+        double userPoints = 0;
+        for (int testedStudyItemIndexes : 
+                answerDataByStudyItemsContainer.getTestedStudyItemIndexes()) {
+            userPoints = userPoints 
+                    + answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(testedStudyItemIndexes).countRightAnswerRate();
+        }
+        
+        int allPoints = studyItemContainer.numberOfStudyItems();
+        
+        DecimalFormat df = new DecimalFormat("#.00");
+        return df.format(userPoints) + "\\" + Integer.toString(allPoints);
     }
     
 }

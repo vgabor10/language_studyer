@@ -63,6 +63,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jLabel7 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -119,6 +121,10 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
         jLabel12.setText("jLabel12");
 
+        jLabel13.setText("jLabel13");
+
+        jLabel20.setText("user points:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -165,7 +171,11 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel12)))
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel20)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel13)))
                 .addContainerGap(209, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -211,7 +221,11 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel12))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel20))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("basic", jPanel1);
@@ -332,6 +346,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 	jLabel18.setText(answerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
 	jLabel19.setText(answerDataStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
         jLabel12.setText(Integer.toString(answerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+        jLabel13.setText(answerDataStatisticsMaker.getPointProgressAsString());
         
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
@@ -430,6 +445,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -437,6 +453,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
