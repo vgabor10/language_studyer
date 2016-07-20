@@ -2881,7 +2881,7 @@
 102911	e Gestaltung	alak, kialakítás
 102912	waschen	mos	rendhagyó igék
 102913	r Augenblick	pillanat
-102914	wahnsinnig	őrült
+102914	wahnsinnig	őrült (mn)
 102915	r Ärger	harag
 102916	r Antrag	kérvény
 102917	öffentlich	nyilvános
