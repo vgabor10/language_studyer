@@ -3234,7 +3234,7 @@
 103271	r Gegenstand	tárgy
 103272	r Dollar	dollár
 103273	möglicherweise	talán
-103274	weggehen	elmegy. eltávozik
+103274	weggehen	elmegy, eltávozik
 103275	spätestens	legkésőbb
 103276	ausbauen	kiterjeszt, kibővít
 103277	s Russisch	orosz (nyelv)
