@@ -1337,7 +1337,7 @@
 101346	e Terrasse	terasz
 101347	s Erdgeschoss	földszint
 101348	s Vorzimmer	előszoba
-101349	e Flur	folyosó
+101349	e Flur	előszoba, folyosó
 101350	s Wohnzimmer	nappali
 101351	s Kinderzimmer	gyerekszoba
 101352	s Schlafzimmer	hálószoba
@@ -2458,7 +2458,6 @@
 102484	e Seele	lélek
 102485	e Sehnsucht	vágy
 102486	e Sekunde	másodperc
-102487	r Esel	szamár
 102488	e Selbstständigkeit	függetlenség
 102489	e Sicherung	biztosítás
 102490	e Sicht	kilátás
@@ -3166,7 +3165,6 @@
 103200	r Grenzwert	határérték
 103201	r Terror	terror
 103202	dennoch	mégis
-103203	r Flur	előszoba, folyosó
 103204	r Bestand	állandóság, készlet
 103205	entweder	mindkét
 103206	wirksam	hatékony
