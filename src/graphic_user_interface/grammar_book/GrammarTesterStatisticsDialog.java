@@ -2,6 +2,7 @@ package graphic_user_interface.grammar_book;
 
 import grammar_book.GrammarItem;
 import grammar_book.GrammarTestStatisticsMaker;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import study_item_objects.AnswerDataContainer;
 
@@ -10,6 +11,7 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
     public GrammarItem testedGrammarItem;
     public AnswerDataContainer testAnswers;
     public AnswerDataContainer oldAnswers;
+    public DialogAnswer dialogAnswer = new DialogAnswer();
     
     public long startTime = -1;
     public long finishTime = -1;
@@ -18,10 +20,9 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        setLocationRelativeTo(null);
-        
         jButton1.requestFocus();
         jButton1.setMnemonic(KeyEvent.VK_C);
+        jButton2.setMnemonic(KeyEvent.VK_N);
     }
 
     public void toScreenStatistics() {
@@ -105,6 +106,11 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel12.setText("jLabel12");
 
         jButton2.setText("New test");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -189,8 +195,14 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dialogAnswer.answer = false;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dialogAnswer.answer = true;
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

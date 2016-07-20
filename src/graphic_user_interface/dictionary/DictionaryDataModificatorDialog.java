@@ -25,8 +25,6 @@ public class DictionaryDataModificatorDialog extends javax.swing.JDialog {
     
     private Vector<Card> listedCards;
    
-    //TODO: table column order can be changed, it can cause errors at modification
-    
     public DictionaryDataModificatorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

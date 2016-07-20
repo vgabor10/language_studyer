@@ -59,8 +59,10 @@ public class GrammarDataModificator {
         }
     }
 
-    public void appendGrammarAnswerDataToFile(GrammarAnswerDataContainer gadc) {
+    public void appendGrammarAnswerData(GrammarAnswerDataContainer gadc) {
         try {
+            grammarAnswerDataContainer.appendAnswerDataContainer(gadc);
+            
             String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
             FileWriter fw = new FileWriter(filePath, true);	//the true will append the new data
             for (int i = 0; i < gadc.numberOfAnswers(); i++) {

@@ -15,7 +15,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     public GrammarBook grammarBook;
     public GrammarAnswerDataContainer grammarAnswerDataContainer;
     private int grammarItemIndexToTest = -1;
-    GrammarTester grammarTester = new GrammarTester();
+    private GrammarTester grammarTester;
     
     private long startTime = -1;
     private long finishTime = -1;
@@ -31,12 +31,9 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
         wrongAnswerButton.setMnemonic(KeyEvent.VK_W);
         ignoreAnswerButton.setMnemonic(KeyEvent.VK_N);
-        
-        acceptAnswerButton.setBackground(new Color(102,255,102));
-        acceptAnswerButton.setBackground(null);
     }
     
-    public void initialisationAfterDataLoaded() {
+    public void initialise() {
         RandomGrammarItemChooser randomGrammarItemChooser = new RandomGrammarItemChooser();
         
         randomGrammarItemChooser.setGrammarAnswerDataContainerWithAtLeast10Examples(grammarAnswerDataContainer);
@@ -47,6 +44,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         
         //grammarItemIndexToTest = 0; //for test
         
+        grammarTester = new GrammarTester();
         grammarTester.setActualTestedGrammarItem(grammarBook.getGrammarItemByIndex(grammarItemIndexToTest));
         grammarTester.setExampleIndexesToTest(10);
         
@@ -81,8 +79,10 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTextField1.setEditable(false);
+        jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jTextField1.setText("jTextField1");
 
+        jTextField2.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jTextField2.setText("jTextField2");
         jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
@@ -137,6 +137,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         });
 
         jTextField3.setEditable(false);
+        jTextField3.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jTextField3.setText("jTextField3");
 
         jLabel2.setText("jLabel2");
@@ -195,7 +196,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
                     .addComponent(ignoreAnswerButton)
                     .addComponent(acceptAnswerButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(closeButton)
@@ -275,7 +276,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         }
         else {
             goToStatisticsFrameAndSaveData();
-            dispose();
         }
     }
 
@@ -294,7 +294,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         }
         else {
             goToStatisticsFrameAndSaveData();
-            dispose();
         }
     }
    
@@ -313,7 +312,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         }
         else {
             goToStatisticsFrameAndSaveData();
-            dispose();
         }
     }
     
@@ -353,7 +351,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         finishTime = new Date().getTime();
         
         GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
-        grammarDataModificator.appendGrammarAnswerDataToFile(grammarTester.getUserAnswers());
+        grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+        grammarDataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
         
         
         GrammarTesterStatisticsDialog dialog = new GrammarTesterStatisticsDialog(new javax.swing.JFrame(), true);
@@ -365,7 +364,14 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         dialog.finishTime = finishTime;
         dialog.toScreenStatistics();
         
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
+        
+        if (dialog.dialogAnswer.answer) {
+            initialise();
+        } else {
+            dispose();
+        }
         
     }
     
