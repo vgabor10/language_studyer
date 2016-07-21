@@ -8,12 +8,11 @@ import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
-import graphic_user_interface.dictionary.CardFinderDialog;
 import dictionary.CardContainer;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
-import graphic_user_interface.dictionary.DictionaryDataModificatorDialog;
+import graphic_user_interface.dictionary.DictionaryDialog;
 import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarAnswerStatisticsDialog;
 import graphic_user_interface.grammar_book.GrammarBookModificatorDialog;
@@ -41,7 +40,6 @@ public class MainFrame extends javax.swing.JFrame {
         
         jButton1.setMnemonic(KeyEvent.VK_P);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_B);
-        jButton4.setMnemonic(KeyEvent.VK_F);
         jButton10.setMnemonic(KeyEvent.VK_X);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_S);
         grammarPractisingButton.setMnemonic(KeyEvent.VK_R);
@@ -77,7 +75,6 @@ public class MainFrame extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         dictionaryStatisticsButton = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         modificateDictionaryDataButton = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -120,14 +117,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("Find card");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        modificateDictionaryDataButton.setText("Modificate dictionary data");
+        modificateDictionaryDataButton.setText("Dictionary");
         modificateDictionaryDataButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 modificateDictionaryDataButtonActionPerformed(evt);
@@ -156,7 +146,6 @@ public class MainFrame extends javax.swing.JFrame {
                         .addComponent(jLabel1)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(dictionaryStatisticsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(modificateDictionaryDataButton, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                     .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -171,15 +160,13 @@ public class MainFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dictionaryStatisticsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(modificateDictionaryDataButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton13)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {dictionaryStatisticsButton, jButton13, jButton4, modificateDictionaryDataButton});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {dictionaryStatisticsButton, jButton13, modificateDictionaryDataButton});
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setToolTipText("");
@@ -324,7 +311,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton17)
                     .addComponent(setLanguageToStudyButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -376,12 +363,6 @@ public class MainFrame extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_jButton1KeyPressed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        CardFinderDialog dialog = new CardFinderDialog(new javax.swing.JFrame(), true);
-        dialog.setCardContainer(cardContainer);
-        dialog.setVisible(true);
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void readGrammarBookButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readGrammarBookButtonActionPerformed
         GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarBook;
@@ -423,8 +404,8 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_modificateGrammarBookButtonActionPerformed
 
     private void modificateDictionaryDataButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateDictionaryDataButtonActionPerformed
-        DictionaryDataModificatorDialog dialog 
-                = new DictionaryDataModificatorDialog(new javax.swing.JFrame(), true);
+        DictionaryDialog dialog 
+                = new DictionaryDialog(new javax.swing.JFrame(), true);
         dialog.setCardContainer(cardContainer);
         dialog.setAnswerDataContainer(answerDataContainer);
         dialog.initialise();
@@ -493,7 +474,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
