@@ -5,19 +5,38 @@ import java.util.Comparator;
 
 public class CardComparatorByTermForGermanLanguange implements Comparator<Card> {
 
-	@Override
-	public int compare(Card c1, Card c2) {
-		String term = c1.term.toLowerCase();
-		if (term.substring(0,2).equals("r ") || term.substring(0,2).equals("e ") || term.substring(0,2).equals("s ")) {
-			term = term.substring(2);
-		}
+    private String cardTermToFind;
 
-		String definition = c2.term.toLowerCase();
-		if (definition.substring(0,2).equals("r ") || definition.substring(0,2).equals("e ") || definition.substring(0,2).equals("s ")) {
-			definition = definition.substring(2);
-		}
+    public CardComparatorByTermForGermanLanguange(String a) {
+        cardTermToFind = a;
+    }
 
-		return term.compareTo(definition);
-	}
+    @Override
+    public int compare(Card c1, Card c2) {
+        String term1 = c1.term.toLowerCase();
+        if (term1.substring(0, 2).equals("r ")
+                || term1.substring(0, 2).equals("e ")
+                || term1.substring(0, 2).equals("s ")) {
+            term1 = term1.substring(2);
+        }
+
+        String term2 = c2.term.toLowerCase();
+        if (term2.substring(0, 2).equals("r ")
+                || term2.substring(0, 2).equals("e ")
+                || term2.substring(0, 2).equals("s ")) {
+            term2 = term2.substring(2);
+        }
+
+        if (term1.startsWith(cardTermToFind)
+                && !term2.startsWith(cardTermToFind)) {
+            return -1;
+        } else {
+            if (!term1.startsWith(cardTermToFind)
+                    && term2.startsWith(cardTermToFind)) {
+                return 1;
+            } else {
+                return term1.compareTo(term2);
+            }
+        }
+    }
 }
-

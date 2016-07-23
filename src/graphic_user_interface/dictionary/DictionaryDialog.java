@@ -41,6 +41,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         jTextField1.setText("");
         jTextField1.requestFocus();
+        jLabel1.setText("-");
         
         jButton1.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
@@ -236,6 +237,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
             if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
                 jTextField1.getText().isEmpty()) {
                 clearTable();
+                modificateCardButton.setEnabled(false);
+                deleteCardButton.setEnabled(false);
             }
         }
     }//GEN-LAST:event_jTextField1KeyPressed

@@ -62,13 +62,13 @@
               </Group>
               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jPanel2" linkSize="12" max="32767" attributes="0"/>
-                  <Component id="jPanel1" linkSize="12" max="32767" attributes="0"/>
+                  <Component id="jPanel2" linkSize="16" max="32767" attributes="0"/>
+                  <Component id="jPanel1" linkSize="16" max="32767" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton17" linkSize="9" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="setLanguageToStudyButton" linkSize="9" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="setLanguageToStudyButton" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton17" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton10" min="-2" max="-2" attributes="0"/>
@@ -95,16 +95,13 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButton1" max="32767" attributes="0"/>
-                      <Group type="102" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Component id="dictionaryStatisticsButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="modificateDictionaryDataButton" alignment="0" pref="211" max="32767" attributes="0"/>
-                      <Component id="jButton13" max="32767" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="dictionaryButton" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="jButton13" linkSize="18" min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="dictionaryStatisticsButton" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="jButton1" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -113,15 +110,15 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jButton1" linkSize="11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="dictionaryStatisticsButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="modificateDictionaryDataButton" linkSize="11" min="-2" max="-2" attributes="0"/>
+                  <Component id="dictionaryButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButton13" linkSize="11" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="56" max="32767" attributes="0"/>
+                  <EmptySpace pref="54" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -144,12 +141,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dictionaryStatisticsButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="modificateDictionaryDataButton">
+        <Component class="javax.swing.JButton" name="dictionaryButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Dictionary"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modificateDictionaryDataButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dictionaryButtonActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton13">
@@ -187,12 +184,12 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                      <Component id="jButton14" max="32767" attributes="0"/>
+                      <Component id="jButton14" linkSize="17" max="32767" attributes="0"/>
                       <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="grammarStatisticsButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="grammarPractisingButton" alignment="0" max="32767" attributes="0"/>
-                      <Component id="modificateGrammarBookButton" alignment="0" pref="211" max="32767" attributes="0"/>
-                      <Component id="readGrammarBookButton" alignment="0" max="32767" attributes="0"/>
+                      <Component id="grammarStatisticsButton" linkSize="17" alignment="0" max="32767" attributes="0"/>
+                      <Component id="modificateGrammarBookButton" linkSize="17" alignment="0" pref="211" max="32767" attributes="0"/>
+                      <Component id="readGrammarBookButton" linkSize="17" alignment="0" max="32767" attributes="0"/>
+                      <Component id="grammarPractisingButton" linkSize="17" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -204,7 +201,7 @@
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="grammarPractisingButton" min="-2" max="-2" attributes="0"/>
+                  <Component id="grammarPractisingButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="grammarStatisticsButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -213,7 +210,7 @@
                   <Component id="modificateGrammarBookButton" linkSize="4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jButton14" linkSize="4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace pref="18" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

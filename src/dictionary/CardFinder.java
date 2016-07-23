@@ -59,7 +59,7 @@ public class CardFinder {
             }
         }
 
-        Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange());
+        Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(termPart));
         return foundCards;
     }
 
