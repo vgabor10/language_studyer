@@ -22,7 +22,7 @@ public class LanguageFilesDataHandler {
         languageData1.languageName = "English";
         languageData1.answerDataPath = "../data/english_data/answer_data/english_card_tester_data.txt";
         languageData1.cardDataPath = "../data/english_data/language_data/english_words.txt";
-        languageData1.grammarDataPath = "../data/english_data/language_data/english_grammar_book.tex";
+        languageData1.grammarDataPath = "../data/english_data/language_data/english_grammar_book.txt";
         languageData1.grammarAnswerDataPath = "../data/english_data/answer_data/english_grammar_answer_data.txt";
 
         LanguageFilesData languageData2 = new LanguageFilesData();
@@ -30,7 +30,7 @@ public class LanguageFilesDataHandler {
         languageData2.languageName = "German";
         languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_data.txt";
         languageData2.cardDataPath = "../data/german_data/language_data/german_words.txt";
-        languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.tex";
+        languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.txt";
         languageData2.grammarAnswerDataPath = "../data/german_data/answer_data/german_grammar_answer_data.txt";
 
         languageDatas.add(languageData1);
