@@ -3269,7 +3269,6 @@
 103306	wunderschön	gyönyörű
 103307	voraussichtlich	várhatóan
 103308	daneben	mellette
-103309	s Türkisch	török
 103310	wenigstens	legalább
 103311	übergehen	mellőz, behoz
 103312	e Begegnung	találkozás, összeütközés

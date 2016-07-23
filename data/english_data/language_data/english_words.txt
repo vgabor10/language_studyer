@@ -991,3 +991,24 @@
 100990	conduct	vezényel, lefolytat
 100991	cease	megszüntet, abbahagy
 100992	slaughter	leöl, mészárol
+100993	enmity	ellenségeskedés
+100994	allegation	állítás
+100995	downside	rossz oldala vminek
+100996	discourage	elcsüggeszt, elriaszt
+100997	basically	alapvetően
+100998	aspiration	törekvés, vágyakozás
+100999	punctual	pontos
+101000	periphery	perem, szegély, periféria
+101001	contemporary	kortárs
+101002	surrogate	helyettes
+101003	consciousness	tudat, öntudat
+101004	by the way	mellesleg
+101005	worthwile	érdemes, fáradstágot megérő
+101006	grudge	neheztelés, ellenszenv
+101007	viability	életképesség, megvalósíthatóság
+101008	impunity	bűntetlenség
+101009	infidelity	hűtlenség, hitetlenség
+101010	integrity	sértetlenség, tisztesség
+101011	sustain	tart, fenntart, kibír
+101012	avert	elfordít, eltérít, elhárít
+101013	sigh	sóhajt
