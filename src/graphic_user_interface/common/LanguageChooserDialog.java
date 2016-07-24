@@ -23,12 +23,12 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         initComponents();
         
         buttonGroup1.add(jRadioButton1);
-        buttonGroup1.add(jRadioButton2);     
-        
-        setLocationRelativeTo(null);
+        buttonGroup1.add(jRadioButton2);
             
         jButton1.setMnemonic(KeyEvent.VK_O);
         jButton2.setMnemonic(KeyEvent.VK_C);
+        jRadioButton1.setMnemonic(KeyEvent.VK_E);
+        jRadioButton2.setMnemonic(KeyEvent.VK_G);
     }
 
     public void initialise() {
@@ -193,6 +193,8 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         });
     }
 
+    //TODO: delete unused button groups
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;

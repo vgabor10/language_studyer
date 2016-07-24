@@ -13,11 +13,11 @@ public class CardContainer extends StudyItemContainer {
     }
 
     public Card getCardByIndex(int i) {
-        return (Card) getStudyItemByIndex(i);
+        return (Card) getByIndex(i);
     }
 
     public Card getCardByOrder(int orderIndex) {
-        return (Card) getStudyItemByOrder(orderIndex);
+        return (Card) getByOrder(orderIndex);
     }
 
     public void addCard(Card c) {

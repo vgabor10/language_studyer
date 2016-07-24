@@ -20,12 +20,11 @@ public class StudyItemContainer {
         return data.size();
     }
 
-    //TODO: make no accessable from CardContainer
-    public StudyItem getStudyItemByOrder(int orderIndex) {
+    public StudyItem getByOrder(int orderIndex) {
         return data.get(orderIndex);
     }
 
-    public StudyItem getStudyItemByIndex(int index) {
+    public StudyItem getByIndex(int index) {
             return data.get(studyItemIndexToOrderIndex.get(index));
     }
 

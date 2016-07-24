@@ -78,13 +78,4 @@ public class CardFinder {
         return cardsToList;
     }
 
-    public Card getCardWithGivenCardIndex(int cardIndex) {
-        int i = 0;
-        while (i < cardContainer.numberOfCards() && cardContainer.getCardByOrder(i).index != cardIndex) {
-            i++;
-        }
-
-        return cardContainer.getCardByOrder(i);
-    }
-
 }

@@ -4,6 +4,7 @@ import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
 import disc_operation_handlers.DictionaryDataModificator;
+import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
@@ -22,6 +23,9 @@ public class DictionaryDialog extends javax.swing.JDialog {
     
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel tableModel;
+    
+    private LanguageFilesDataHandler languageFilesDataHandler
+            = new LanguageFilesDataHandler();
     
     private Vector<Card> listedCards;
    
@@ -43,6 +47,12 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
         jLabel1.setText("-");
         
+        jComboBox1.removeAllItems();
+        jComboBox1.addItem(languageFilesDataHandler.getStudiedLanguageName().toLowerCase()
+                + " -> hungarian");
+        jComboBox1.addItem("hungarian -> " +
+                languageFilesDataHandler.getStudiedLanguageName().toLowerCase());
+
         jButton1.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         modificateCardButton.setMnemonic(KeyEvent.VK_M);
@@ -360,9 +370,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -385,37 +392,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(DictionaryDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */

@@ -424,6 +424,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.grammarBook = grammarBook;
         dialog.grammarAnswerDataContainer = grammarAnswerDataContainer;
         dialog.languageFilesDataHandler = languageFilesDataHandler;
+        dialog.setLocationRelativeTo(this);
         dialog.initialise();
         dialog.setVisible(true);
         

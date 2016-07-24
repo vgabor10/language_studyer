@@ -86,21 +86,37 @@ public class RandomGrammarItemChooser {
         return grammarItemIndex;
     }
 
+    //random grammar item from a random and the latest studyed item
+    public int getGrammarItemIndexForTest1() {
+
+        logger.debug("run getGrammarItemIndexForTest1 function");
+        
+        ArrayList<Integer> grammarItemIndexses = new ArrayList<>();
+        
+        grammarItemIndexses.add(getRandomGrammarItemIndex());
+        grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());
+
+        int grammarItemIndex = grammarItemIndexses.get(
+                randomGenerator.nextInt(grammarItemIndexses.size()));
+        
+        logger.debug("choosen grammar item index: " + grammarItemIndex);
+        
+        return grammarItemIndex;
+    }
+    
     //random grammar item from a random, 5 least studied, 5 hardest, latest studyed item
     public int getGrammarItemIndexForTest3() {
         logger.debug("run getGrammarItemIndexForTest3 function");
 
-        Vector<Integer> grammarItemIndexses = new Vector<>();
+        ArrayList<Integer> grammarItemIndexses = new ArrayList<>();
 
         grammarItemIndexses.add(getRandomGrammarItemIndex());
-                grammarItemIndexses.add(getRandomGrammarItemIndex());
-                        grammarItemIndexses.add(getRandomGrammarItemIndex());
-                                grammarItemIndexses.add(getRandomGrammarItemIndex());
-        /*grammarItemIndexses.add(getRandomIndexFromThe5LeastStudiedGrammarItem());
+        grammarItemIndexses.add(getRandomIndexFromThe5LeastStudiedGrammarItem());
         grammarItemIndexses.add(getIndexFromThe5HardestGrammarItem());
-        grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());*/
+        grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());
 
-        int grammarItemIndex = grammarItemIndexses.get(randomGenerator.nextInt(4));
+        int grammarItemIndex = grammarItemIndexses.get(
+                randomGenerator.nextInt(grammarItemIndexses.size()));
 
         logger.debug("choosen grammar item index: " + grammarItemIndex);
 
