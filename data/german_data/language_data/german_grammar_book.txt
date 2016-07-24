@@ -4173,18 +4173,18 @@ Pl.: * Man kann hier gut essen. - Itt jót lehet enni.
 1 | Man spricht hier Englisch. | Itt beszélnek angolul.
 2 | Man raucht hier nicht. | Itt nem dohányoznak.
 3 | Man kann hier billig einkaufen. | Itt olcsón lehet bevásárolni.
-4 | Man darf in der Restaurant singen. | Az étteremben szabad énekelni.
+4 | Man darf in dem Restaurant singen. | Az étteremben szabad énekelni.
 5 | Man arbeitet in Deutschland viel. | Németországban sokat dolgoznak.
 6 | Man lebt in diesem Land gut. | Ebben az országban jól élnek.
 7 | Man steht bei uns um 8 Uhr auf. | Nálunk 8-kor kelnek.
 8 | Man darf hier nicht rauchen. | Itt nem szabad dohányozni.
 9 | Wie sagt Man es in Deutsch? | Hogy mondják ezt németül?
 10 | Man trinkt nicht vor Autofahren. | Autó vezetés előtt nem iszunk. (s Autofahren)
-11 | Man isst vor Mittagessen Schokolade nicht. | Ebéd előtt nem eszünk csokit.
+11 | Man isst Schokolade nicht vor Mittagessen . | Nem eszünk csokit ebéd előtt.
 12 | Man spricht bei Essen nicht. | Étkezés közben nem beszélünk. (bei Essen)
 13 | Man darf hier nicht Fußball spielen. | Itt nem szabad focizni.
 14 | Man isst in Ungarn viel Fleisch. | Magyarországon sok húst esznek. (s Fleisch)
-15 | Man kann ohne Wasser nicht leben. | Víz nélkül nem lehet élni.
+15 | Man kann nicht ohne Wasser leben. | Víz nélkül nem lehet élni.
 16 | Man darf dorthin nicht treten. | Oda nem szabad lépni. (dorthin)
 17 | Was kann Man hier tun? | Mit lehet itt tenni?
 18 | Wie sagt Man es in Englisch? | Hogy mondják ezt angolul?
