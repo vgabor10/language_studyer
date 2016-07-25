@@ -48,6 +48,7 @@ public class MainFrame extends javax.swing.JFrame {
         setLanguageToStudyButton.setMnemonic(KeyEvent.VK_L);
         readGrammarBookButton.setMnemonic(KeyEvent.VK_E);
         modificateGrammarBookButton.setMnemonic(KeyEvent.VK_O);
+        jButton13.setMnemonic(KeyEvent.VK_U);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
         this.setTitle("Language studyer");
@@ -164,7 +165,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(dictionaryButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton13)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {dictionaryButton, dictionaryStatisticsButton, jButton1, jButton13});
@@ -311,9 +312,11 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jLabel3))
                 .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(setLanguageToStudyButton)
@@ -324,8 +327,6 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton17, setLanguageToStudyButton});
-
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jPanel1, jPanel2});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -375,7 +376,9 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_readGrammarBookButtonActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        SetDictionaryStudyStrategyDialog dialog = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
+        SetDictionaryStudyStrategyDialog dialog 
+                = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
 

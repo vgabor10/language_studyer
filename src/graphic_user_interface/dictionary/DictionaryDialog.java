@@ -242,6 +242,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
             toScreenListedCards();
             
             jTextField1.setText("");
+            modificateCardButton.setEnabled(false);
+            deleteCardButton.setEnabled(false);
         }
         else {
             if (evt.getKeyCode() == KeyEvent.VK_ENTER &&

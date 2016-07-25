@@ -1,14 +1,41 @@
 package graphic_user_interface.dictionary;
 
+import dictionary.StudyStrategyDataHandler;
 import java.awt.event.KeyEvent;
 
 public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
 
+    private StudyStrategyDataHandler studyStrategyDataHandler;
+
+    private int evaluateNumberOfCardsToTest() {
+        int numberOfCardsTotTest = 0;
+        
+        numberOfCardsTotTest = numberOfCardsTotTest + (Integer) jSpinner1.getValue();
+        numberOfCardsTotTest = numberOfCardsTotTest + (Integer) jSpinner2.getValue();
+        numberOfCardsTotTest = numberOfCardsTotTest + (Integer) jSpinner3.getValue();
+        numberOfCardsTotTest = numberOfCardsTotTest + (Integer) jSpinner4.getValue();
+        numberOfCardsTotTest = numberOfCardsTotTest + (Integer) jSpinner5.getValue();
+
+        return numberOfCardsTotTest;
+    }
+    
+    private void setStudyStrategyDataToDialog() {
+        jSpinner1.setValue(studyStrategyDataHandler.numberOfRandomCards);
+        jSpinner2.setValue(studyStrategyDataHandler.numberOfCardsFromTheLeastKnown20Percent);
+        jSpinner3.setValue(studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100);
+        jSpinner4.setValue(studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr);
+        jSpinner5.setValue(studyStrategyDataHandler.numberOfLatestQuestionedCards); 
+    }
+    
     public SetDictionaryStudyStrategyDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        setLocationRelativeTo(null);
+        this.studyStrategyDataHandler = new StudyStrategyDataHandler();
+        
+        setStudyStrategyDataToDialog();
+        
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest()));  
         
         jButton2.setMnemonic(KeyEvent.VK_C);
         jButton1.setMnemonic(KeyEvent.VK_S);
@@ -23,65 +50,225 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jLabel2 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
+        jLabel3 = new javax.swing.JLabel();
+        jSpinner3 = new javax.swing.JSpinner();
+        jLabel4 = new javax.swing.JLabel();
+        jSpinner4 = new javax.swing.JSpinner();
+        jSpinner5 = new javax.swing.JSpinner();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jRadioButton1.setText("20 random cards");
-
-        jRadioButton2.setText("4 latest questioned, 4 hardest card from worst 20%, 4 hardest card from worst 100, 2 among with least significant ar, 6 random card");
-
-        jRadioButton3.setText("jRadioButton3");
-
         jButton1.setText("Set study strategy");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Close");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
-        jRadioButton4.setText("3 random cards");
+        jLabel1.setText("random cards");
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner1StateChanged(evt);
+            }
+        });
+
+        jLabel2.setText("random cards from the least known 20%");
+
+        jSpinner2.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        jSpinner2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner2StateChanged(evt);
+            }
+        });
+
+        jLabel3.setText("random cards from the least known 100");
+
+        jSpinner3.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        jSpinner3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner3StateChanged(evt);
+            }
+        });
+
+        jLabel4.setText("random cards among with the 100 least significant answer rate");
+
+        jSpinner4.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        jSpinner4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner4StateChanged(evt);
+            }
+        });
+
+        jSpinner5.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        jSpinner5.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner5StateChanged(evt);
+            }
+        });
+
+        jLabel5.setText("latest questioned cards");
+
+        jLabel6.setText("number of questioned cards:");
+
+        jLabel7.setText("jLabel7");
+
+        jButton3.setText("Set data back to default values");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton3)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSpinner5, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                                    .addComponent(jSpinner4)
+                                    .addComponent(jSpinner3, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSpinner2, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel2)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel7)))
+                        .addGap(0, 111, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jRadioButton4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton1)
-                .addGap(8, 8, 8)
-                .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jRadioButton3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
-                    .addComponent(jButton1))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        studyStrategyDataHandler.numberOfRandomCards 
+                = (Integer)jSpinner1.getModel().getValue();
+        
+        studyStrategyDataHandler.numberOfCardsFromTheLeastKnown20Percent
+                = (Integer) jSpinner2.getModel().getValue();
+
+        studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100
+                = (Integer) jSpinner3.getModel().getValue();
+        
+        studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr 
+                = (Integer)jSpinner4.getModel().getValue();
+ 
+        studyStrategyDataHandler.numberOfLatestQuestionedCards 
+                = (Integer)jSpinner5.getModel().getValue();
+        
+        studyStrategyDataHandler.writeStudyStrategyDataToDisc();
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest())); 
+    }//GEN-LAST:event_jSpinner1StateChanged
+
+    private void jSpinner2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner2StateChanged
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest())); 
+    }//GEN-LAST:event_jSpinner2StateChanged
+
+    private void jSpinner3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner3StateChanged
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest())); 
+    }//GEN-LAST:event_jSpinner3StateChanged
+
+    private void jSpinner4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner4StateChanged
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest())); 
+    }//GEN-LAST:event_jSpinner4StateChanged
+
+    private void jSpinner5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner5StateChanged
+        jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest())); 
+    }//GEN-LAST:event_jSpinner5StateChanged
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        studyStrategyDataHandler.numberOfRandomCards = 6;
+        studyStrategyDataHandler.numberOfCardsFromTheLeastKnown20Percent = 4;
+        studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100 = 4;
+        studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr = 2;
+        studyStrategyDataHandler.numberOfLatestQuestionedCards = 4;
+        
+        setStudyStrategyDataToDialog();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -128,9 +315,18 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner5;
     // End of variables declaration//GEN-END:variables
 }

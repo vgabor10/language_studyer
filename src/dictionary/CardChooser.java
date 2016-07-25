@@ -6,9 +6,13 @@ import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataByStudyItem;
 import common.Logger;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
-
-import java.util.*;
 
 public class CardChooser {
 
@@ -19,6 +23,9 @@ public class CardChooser {
     private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer;
     private final Logger logger = new Logger();
 
+    private StudyStrategyDataHandler studyStrategyDataHandler
+            = new StudyStrategyDataHandler();
+        
     public void setCardContainer(CardContainer cc) {
         cardContainer = cc;
     }
@@ -32,6 +39,7 @@ public class CardChooser {
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
     }
 
+    //TODO: implement omitted indexes
     public Set<Integer> getLatestQuestionedCardIndexes(int numberOfCards) {
 
         Map<Integer, Long> cardIndexesLastQuestionDate = new HashMap<>();
@@ -123,7 +131,8 @@ public class CardChooser {
         return out;
     }
 
-    public Set<Integer> getCardIndexesWithLestSignificantAnswerRate(int numberOfCards, Set<Integer> omitedCardIndexes) {
+    public Set<Integer> getCardIndexesWithLestSignificantAnswerRate(
+            int numberOfCards, Set<Integer> omitedCardIndexes) {
 
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
         Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
@@ -141,7 +150,8 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(int numberOfCards, Set<Integer> omitedCardIndexes) {
+    public Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(
+            int numberOfCards, Set<Integer> omitedCardIndexes) {
 
         if (answerDataByStudyItemsContainer.numberOfStudiedStudyItems() < 100) {
             return null;
@@ -177,141 +187,39 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> chooseCardsToTestIndexesForTest1() {
-        return getRandomCardIndexes(20, new HashSet<Integer>());
-    }
+    public Set<Integer> getCardIndexes() {
 
-    public Set<Integer> chooseCardsToTestIndexesForTest2() {
+        logger.debug("start evaluate card indexes");
 
         evaluateAnswerDataByStudyItemsContainer();
 
         Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(6);
-
         Set<Integer> indexesToAdd;
+        
+        cardsToTestIndexes = getLatestQuestionedCardIndexes(
+                studyStrategyDataHandler.numberOfLatestQuestionedCards);
 
-        indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
+        indexesToAdd = getRandomHardestCardIndexes(
+                0.2, studyStrategyDataHandler.numberOfCardsFromTheLeastKnown20Percent, cardsToTestIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
-        indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
+        indexesToAdd = getRandomHardestCardIndex2(
+                100, studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100, cardsToTestIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
+
+        indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(
+                studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr, cardsToTestIndexes);
+        cardsToTestIndexes.addAll(indexesToAdd);
+
+        indexesToAdd = getRandomCardIndexes(
+                studyStrategyDataHandler.numberOfRandomCards, cardsToTestIndexes);
+        cardsToTestIndexes.addAll(indexesToAdd);
+
+        logger.debug("end evaluate card indexes");
 
         return cardsToTestIndexes;
     }
-
-    public Set<Integer> chooseCardsToTestIndexesForTest3() {
-
-        evaluateAnswerDataByStudyItemsContainer();
-
-        Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
-
-        Set<Integer> indexesToAdd;
-
-        indexesToAdd = getRandomHardestCardIndexes(0.2, 6, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getRandomCardIndexes(8, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        return cardsToTestIndexes;
-    }
-
-    public Set<Integer> chooseCardsToTestIndexesForTest4() {
-
-        evaluateAnswerDataByStudyItemsContainer();
-
-        Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
-
-        Set<Integer> indexesToAdd;
-
-        indexesToAdd = getRandomHardestCardIndex2(100, 10, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        return cardsToTestIndexes;
-    }
-
-    public Set<Integer> chooseCardsToTestIndexesForTest5() {
-
-        evaluateAnswerDataByStudyItemsContainer();
-
-        Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
-
-        Set<Integer> indexesToAdd;
-
-        indexesToAdd = getRandomHardestCardIndexes(0.2, 8, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getCardIndexesWithLestSignificantAnswerRate(4, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getRandomCardIndexes(4, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        return cardsToTestIndexes;
-    }
-
-    public Set<Integer> chooseCardsToTestIndexesForTest6() {
-
-        evaluateAnswerDataByStudyItemsContainer();
-
-        Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
-
-        Set<Integer> indexesToAdd = getRandomHardestCardIndexes(0.2, 8, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        Set<Integer> cardsToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        return cardsToTestIndexes;
-    }
-
-    //4 latest questioned, 4 hardest card from worst 20%, 
-    //4 hardest card from worst 100, 2 among with least significant ar
-    //6 random card
-    public Set<Integer> chooseCardsToTestIndexesForTest7() {
-
-        logger.debug("start evaluate card indexes for test7");
-
-        evaluateAnswerDataByStudyItemsContainer();
-
-        Set<Integer> cardsToTestIndexes;
-
-        cardsToTestIndexes = getLatestQuestionedCardIndexes(4);
-
-        Set<Integer> indexesToAdd;
-
-        indexesToAdd = getRandomHardestCardIndexes(0.2, 4, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getRandomHardestCardIndex2(100, 4, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(2, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        indexesToAdd = getRandomCardIndexes(6, cardsToTestIndexes);
-        cardsToTestIndexes.addAll(indexesToAdd);
-
-        logger.debug("end evaluate card indexes for test7");
-
-        return cardsToTestIndexes;
-    }
-
+    
     //TODO: think it over
     private Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome(double minAnswerRate, int plusNumberOfCards) {
         Set<Integer> cardIndexes = new HashSet<>();
@@ -367,7 +275,7 @@ public class CardChooser {
         cardChooser2.setCardContainer(cardContainer2);
         cardChooser2.setAnswerDataContainer(answerDataContainer2);
 
-        return cardChooser2.chooseCardsToTestIndexesForTest7();
+        return cardChooser2.getCardIndexes();
     }
     
     public void clear() {
