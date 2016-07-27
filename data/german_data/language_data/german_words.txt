@@ -3740,7 +3740,7 @@
 103782	vergrößern	nagyít, gyarapít
 103783	s Ticket	jegy
 103784	r Beschluss	döntés, elhatározás
-103785	e Plattform	platform. emelvény
+103785	e Plattform	platform, emelvény
 103786	r Widerstand	ellenállás, ellenszegülés
 103787	e Fähigkeit	adottság, képesség
 103788	dominieren	dominál
@@ -4298,7 +4298,6 @@
 104344	übertreiben	túloz, nagyít
 104345	erneut	újra, ismét
 104346	irgendetwas	valami
-104347	s Griechisch	görög nyelv
 104348	bewahren	megóv, megőriz
 104349	ansiedeln	letelepedik
 104350	andeuten	sejtet, céloz
@@ -5040,3 +5039,4 @@
 102232	auf keinen Fall	semmi esetre	kifejezések
 102300	in diesem Fall	ebben az esetben	kifejezések
 102311	e Rache	bosszú
+101378	r Treibstoff	üzemanyag

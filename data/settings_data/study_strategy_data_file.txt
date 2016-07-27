@@ -1,0 +1,5 @@
+numberOfRandomCards: 6
+numberOfCardsFromTheLeastKnown20Percent: 4
+numberOfCardsFromTheLeastKnown100: 4
+numberOfCardsWithLeastSignificantAr: 3
+numberOfLatestQuestionedCards: 3

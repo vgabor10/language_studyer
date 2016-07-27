@@ -3700,14 +3700,14 @@ scharf  | schärfer  | schärfste
 GrammarItemIndex = 132141
 
 \begin{desc}
-ALAPFOK         | KÖZÉPFOK | FELSŐFOK
-----------------+----------+----------
-gut (jó)        | besser   | beste
-sok (sok)       | mehr     | meiste
-gern (szívesen) | lieber   | liebste
-nah (közeli)    | näher    | nächste
-hoch (magas)    | höher    | höchste
-groß (nagy)     | größer   | größte
+         | ALAPFOK | KÖZÉPFOK | FELSŐFOK
+---------+---------+----------+----------
+jó       | gut     | besser   | beste
+sok      | viel    | mehr     | meiste
+szívesen | gern    | lieber   | liebste
+közeli   | nah     | näher    | nächste
+magas    | hoch    | höher    | höchste
+nagy     | groß    | größer   | größte
 \end{desc}
 
 %Maklári: 202. oldal

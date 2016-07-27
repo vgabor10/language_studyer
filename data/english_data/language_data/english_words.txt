@@ -1017,3 +1017,4 @@
 101016	succumb	megadja magát, összeroskad
 101017	infraction	megszegés, áthágás
 101018	sanity	józanság, józan ész
+101019	fancy	különleges, díszes
