@@ -51,7 +51,7 @@ public class MainFrame extends javax.swing.JFrame {
         jButton13.setMnemonic(KeyEvent.VK_U);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
-        this.setTitle("Language studyer");
+        setTitle("Language studyer");
         
         LanguageDataLoader languageDataLoader = new LanguageDataLoader();
         languageDataLoader.setCardContainer(cardContainer);
@@ -105,11 +105,6 @@ public class MainFrame extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jButton1KeyPressed(evt);
-            }
-        });
 
         dictionaryStatisticsButton.setText("Statistics");
         dictionaryStatisticsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -143,11 +138,14 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(dictionaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(dictionaryStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(dictionaryButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {dictionaryButton, dictionaryStatisticsButton, jButton1, jButton13});
@@ -162,9 +160,9 @@ public class MainFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dictionaryStatisticsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dictionaryButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dictionaryButton)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -267,7 +265,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        setLanguageToStudyButton.setText("Set language to study");
+        setLanguageToStudyButton.setText("Set language");
         setLanguageToStudyButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 setLanguageToStudyButtonActionPerformed(evt);
@@ -323,7 +321,7 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(jButton17))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton10)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton17, setLanguageToStudyButton});
@@ -360,13 +358,6 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.fillDialogWithData();
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryStatisticsButtonActionPerformed
-
-    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
-       if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-        CardTesterDialog dialog = new CardTesterDialog(new javax.swing.JFrame(), true); 
-        dialog.setVisible(true);
-       }
-    }//GEN-LAST:event_jButton1KeyPressed
 
     private void readGrammarBookButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readGrammarBookButtonActionPerformed
         GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);

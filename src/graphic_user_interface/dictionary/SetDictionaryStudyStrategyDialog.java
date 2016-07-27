@@ -25,13 +25,16 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jSpinner3.setValue(studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100);
         jSpinner4.setValue(studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr);
         jSpinner5.setValue(studyStrategyDataHandler.numberOfLatestQuestionedCards); 
+        jCheckBox1.setSelected(studyStrategyDataHandler.studyingGradually);
     }
     
     public SetDictionaryStudyStrategyDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        this.studyStrategyDataHandler = new StudyStrategyDataHandler();
+        setTitle("Study strategy editor");
+        
+        studyStrategyDataHandler = new StudyStrategyDataHandler();
         
         setStudyStrategyDataToDialog();
         
@@ -65,6 +68,15 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jSpinner6 = new javax.swing.JSpinner();
+        jLabel8 = new javax.swing.JLabel();
+        jSpinner7 = new javax.swing.JSpinner();
+        jLabel9 = new javax.swing.JLabel();
+        jSpinner8 = new javax.swing.JSpinner();
+        jSpinner9 = new javax.swing.JSpinner();
+        jLabel10 = new javax.swing.JLabel();
+        jSpinner10 = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
@@ -92,7 +104,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel2.setText("random cards from the least known 20%");
+        jLabel2.setText("random cards from the least known");
 
         jSpinner2.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner2.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -101,7 +113,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel3.setText("random cards from the least known 100");
+        jLabel3.setText("random cards from the least known");
 
         jSpinner3.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -110,7 +122,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel4.setText("random cards among with the 100 least significant answer rate");
+        jLabel4.setText("random cards from the");
 
         jSpinner4.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner4.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -139,6 +151,29 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
+        jCheckBox1.setText("question among cards above answer rate");
+
+        jSpinner6.setModel(new javax.swing.SpinnerNumberModel(20, null, null, 1));
+        jSpinner6.setEnabled(false);
+
+        jLabel8.setText("%");
+
+        jSpinner7.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
+        jSpinner7.setEnabled(false);
+
+        jLabel9.setText("least significant answer rate");
+
+        jSpinner8.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
+        jSpinner8.setEnabled(false);
+
+        jSpinner9.setModel(new javax.swing.SpinnerNumberModel(0.5d, null, null, 0.1d));
+        jSpinner9.setEnabled(false);
+
+        jLabel10.setText("and plus");
+
+        jSpinner10.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
+        jSpinner10.setEnabled(false);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -147,34 +182,54 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jSpinner5, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
-                                    .addComponent(jSpinner4)
-                                    .addComponent(jSpinner3, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jSpinner2, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel3)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jLabel2)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel7)))
-                        .addGap(0, 111, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
                             .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel7))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jSpinner1)
+                                    .addComponent(jSpinner5, javax.swing.GroupLayout.DEFAULT_SIZE, 49, Short.MAX_VALUE)
+                                    .addComponent(jSpinner4)
+                                    .addComponent(jSpinner3, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jSpinner2, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(8, 8, 8)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel5)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addGap(8, 8, 8)
+                                        .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(8, 8, 8)
+                                        .addComponent(jLabel9))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel2)
+                                            .addComponent(jLabel3))
+                                        .addGap(8, 8, 8)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(8, 8, 8)
+                                                .addComponent(jLabel8))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jCheckBox1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(8, 8, 8)
+                                .addComponent(jLabel10)
+                                .addGap(8, 8, 8)
+                                .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 87, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -182,20 +237,31 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCheckBox1)
+                    .addComponent(jSpinner9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10)
+                    .addComponent(jSpinner10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSpinner3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(jSpinner8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jSpinner5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -232,7 +298,10 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         studyStrategyDataHandler.numberOfLatestQuestionedCards 
                 = (Integer)jSpinner5.getModel().getValue();
         
+        studyStrategyDataHandler.studyingGradually = jCheckBox1.isSelected();
+        
         studyStrategyDataHandler.writeStudyStrategyDataToDisc();
+        
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -316,17 +385,26 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinner10;
     private javax.swing.JSpinner jSpinner2;
     private javax.swing.JSpinner jSpinner3;
     private javax.swing.JSpinner jSpinner4;
     private javax.swing.JSpinner jSpinner5;
+    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner7;
+    private javax.swing.JSpinner jSpinner8;
+    private javax.swing.JSpinner jSpinner9;
     // End of variables declaration//GEN-END:variables
 }

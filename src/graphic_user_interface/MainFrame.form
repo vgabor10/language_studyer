@@ -75,7 +75,7 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jButton10" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -95,16 +95,20 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Component id="dictionaryButton" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
-                      <Component id="jButton13" linkSize="18" min="-2" pref="211" max="-2" attributes="0"/>
                       <Component id="dictionaryStatisticsButton" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                       <Component id="jButton1" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="jButton13" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="dictionaryButton" linkSize="18" min="-2" pref="211" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -118,9 +122,9 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="dictionaryStatisticsButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="dictionaryButton" linkSize="11" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="jButton13" linkSize="11" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="dictionaryButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -133,7 +137,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jButton1KeyPressed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="dictionaryStatisticsButton">
@@ -295,7 +298,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="setLanguageToStudyButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Set language to study"/>
+        <Property name="text" type="java.lang.String" value="Set language"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="setLanguageToStudyButtonActionPerformed"/>

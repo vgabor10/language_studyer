@@ -40,10 +40,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
         Set<Integer> cardIndexesToTest;
         if (answerDataContainer.numberOfAnswers() > 100) {
-           cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
-        }
-        else {
             cardIndexesToTest = cardChooser.getCardIndexes();
+        } else {
+            cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
         }
 
         cardTester = new CardTester();

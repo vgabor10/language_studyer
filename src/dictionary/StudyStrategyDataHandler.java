@@ -16,6 +16,7 @@ public class StudyStrategyDataHandler {
     public int numberOfCardsFromTheLeastKnown100 = 0;    
     public int numberOfCardsAmongTheLeastSignificantAr = 0;
     public int numberOfLatestQuestionedCards = 0;
+    public boolean studyingGradually = false;
     
     
     public StudyStrategyDataHandler() {
@@ -58,6 +59,19 @@ public class StudyStrategyDataHandler {
                     //System.out.println(s);
                     numberOfLatestQuestionedCards = Integer.parseInt(s);
                 }
+                
+                if (line.startsWith("studyingGradually: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+
+                    if (s.equals("false")) {
+                        studyingGradually = false;
+                    }
+                    
+                    if (s.equals("true")) {
+                        studyingGradually = true;
+                    }
+                }
 
             }
             
@@ -88,6 +102,9 @@ public class StudyStrategyDataHandler {
 
             fw.write("numberOfLatestQuestionedCards: "
                     + Integer.toString(numberOfLatestQuestionedCards) + "\n");
+            
+            fw.write("studyingGradually: "
+                    + Boolean.toString(studyingGradually) + "\n");
             
             fw.close();
         } catch (IOException ioe) {

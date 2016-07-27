@@ -94,7 +94,7 @@ public class RandomGrammarItemChooser {
         ArrayList<Integer> grammarItemIndexses = new ArrayList<>();
         
         grammarItemIndexses.add(getRandomGrammarItemIndex());
-        grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());
+        //grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());
 
         int grammarItemIndex = grammarItemIndexses.get(
                 randomGenerator.nextInt(grammarItemIndexses.size()));
