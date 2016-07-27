@@ -195,6 +195,32 @@ public class CardTestStatisticsMaker {
         }
         return numberOfCardsWithNoArChange;
     }
+    
+    public double getAggregatedUserPointsChange() {
+        double aggregatedUserPoints = 0;
+        for (int i = 0; i < testedCards.numberOfCards(); i++) {
+            Card card = testedCards.getCardByOrder(i);
+            
+            double rightAnswerRateAfterTest = 
+                    answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            
+            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double rightAnswerRateBeforeTest = 
+                        answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                
+                aggregatedUserPoints = aggregatedUserPoints + rightAnswerRateAfterTest - rightAnswerRateBeforeTest; 
+            }
+            else {
+                aggregatedUserPoints = aggregatedUserPoints + rightAnswerRateAfterTest;
+            }
+        }
+        return aggregatedUserPoints;        
+    }
+    
+    public String getAggregatedUserPointsChangeAsString() {
+        DecimalFormat df = new DecimalFormat("#.000");
+        return df.format(getAggregatedUserPointsChange());
+    }
 
     public String getUsedTimeAsString() {
         Date date = new Date(finishTime - startTime);

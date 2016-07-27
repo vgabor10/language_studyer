@@ -184,7 +184,9 @@ public class CardChooser {
         }
     }
 
-    public Set<Integer> getRandomCardIndexes(int numberOfCards, Set<Integer> omittedCardIndexes) {
+    public Set<Integer> getRandomCardIndexes(
+            int numberOfCards, Set<Integer> omittedCardIndexes) {
+        
         Set<Integer> outCardIndexes = new HashSet<>();
 
         Set<Integer> cardIndexesFromChoose = cardContainer.getCardIndexes();
@@ -207,14 +209,14 @@ public class CardChooser {
             AnswerDataByStudyItem answerDataByStudyItem
                     = answerDataByStudyItemsContainer.getAnswerDataByStudyItemByIndex(index);
 
-            if (0.5 <= answerDataByStudyItem.countRightAnswerRate()) {
+            if (minAnswerRate <= answerDataByStudyItem.countRightAnswerRate()) {
                 cardIndexes.add(answerDataByStudyItem.getStudyItemIndex());
             }
         }
 
         int plusNumberOfCardsAdded = 0;
         int i = 0;
-        while (i < cardContainer.numberOfCards() && plusNumberOfCardsAdded < 100) {
+        while (i < cardContainer.numberOfCards() && plusNumberOfCardsAdded < plusNumberOfCards) {
             Card card = cardContainer.getCardByOrder(i);
             if (!cardIndexes.contains(card.index)) {
                 cardIndexes.add(card.index);
@@ -247,7 +249,7 @@ public class CardChooser {
                 studyStrategyDataHandler.numberOfLatestQuestionedCards, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
-        logger.debug("latest quastioned card indexes: " + indexesToAdd);
+        logger.debug("card indexes: " + indexesToAdd);
 
         ////////////////////////////////////////////////////
         
@@ -256,7 +258,7 @@ public class CardChooser {
                 0.2, studyStrategyDataHandler.numberOfCardsFromTheLeastKnown20Percent, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
         
-        logger.debug("random hardest card indexes: " + indexesToAdd);
+        logger.debug("card indexes: " + indexesToAdd);
 
         ////////////////////////////////////////////////////
         
@@ -266,7 +268,7 @@ public class CardChooser {
                 100, studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
-        logger.debug("random hardest card indexes 2: " + indexesToAdd);
+        logger.debug("card indexes: " + indexesToAdd);
         
         ////////////////////////////////////////////////////
         
