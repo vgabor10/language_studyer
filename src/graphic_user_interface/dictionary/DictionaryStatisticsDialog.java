@@ -172,7 +172,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                         .addComponent(jLabel4))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel12))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel20)

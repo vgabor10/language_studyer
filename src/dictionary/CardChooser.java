@@ -43,17 +43,23 @@ public class CardChooser {
 
         cardIndexesFromChoose.removeAll(omittedCardIndexes);
         
-        int r = randomGenerator.nextInt(cardIndexesFromChoose.size());
+        if (!cardIndexesFromChoose.isEmpty()) {
+        
+            int r = randomGenerator.nextInt(cardIndexesFromChoose.size());
 
-        int i = 0;
-        for (int cardIndex : cardIndexesFromChoose) {
-            if (i == r) {
-                return cardIndex;
+            int i = 0;
+            for (int cardIndex : cardIndexesFromChoose) {
+                if (i == r) {
+                    return cardIndex;
+                }
+                i++;
             }
-            i++;
         }
-
-        return -1;
+        else {
+            return -1;
+        }
+        
+        return -2;
     }
 
     public Set<Integer> getFormerlyQuestionedCardIndexes(
@@ -125,7 +131,7 @@ public class CardChooser {
         Arrays.sort(datasToSort,
                 Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
 
-        Set<Integer> cardIndexesFromChoose = cardContainer.getCardIndexes();
+        Set<Integer> cardIndexesFromChoose = new HashSet<>();
         for (int i = 0; i < 100; i++) {
             cardIndexesFromChoose.add(datasToSort[i].getStudyItemIndex());
         }
@@ -239,6 +245,8 @@ public class CardChooser {
             omittedCardIndexes = cardContainer.getCardIndexes();
             Set<Integer> cardIndexesToTest = getCardIndexesWithMinAnswerRateAndPlusSome(0.5, 100);
             omittedCardIndexes.removeAll(cardIndexesToTest);
+            
+            logger.debug("number of cards from choose: " + cardIndexesToTest.size());
         }
 
         Set<Integer> indexesToAdd;
