@@ -247,7 +247,7 @@ Sie             | Sie
 9 | Ich bitte Sie. | Kérem Önt.
 10 | Wir bitten Sie. | Kérjük Önöket.
 11 | Hört ihr sie? | Halljátok őket?
-12 | Mutter liebt ihn. | Anya szereti őt (f).
+12 | Mutter liebt ihn. | Anya szereti őt (f). (lieben)
 \end{exmp}
 
 \title{Névmások/Személyes névmás/Személyes névmás részes esete}

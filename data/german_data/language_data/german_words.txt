@@ -624,7 +624,6 @@
 100628	r Wald	erdő
 100629	r Ton	hang
 100630	r Bürger	polgár
-100631	bis zu	akár
 100632	erlauben	megenged
 100633	zu Fuß	gyalog
 100634	r Applaus	taps
@@ -1210,7 +1209,7 @@
 101219	grob	durva
 101220	erhöhen	növel
 101221	voraussagen	előre jelez
-101222	r Job	munkam, állás
+101222	r Job	munka, állás
 101223	brauchen	igényel
 101224	e Freizügigkeit	liberalizmus
 101225	e Belastung	adósság, teher
@@ -1462,7 +1461,6 @@
 101474	r Federhalter	tolltartó
 101475	e Schere	olló
 101476	r Klebstoff	ragasztó
-101477	e Büroklammer	gémkapocs
 101478	r Titel	cím
 101479	e Übung	gyakorlat
 101480	mündlich	szóbeli
@@ -1519,7 +1517,7 @@
 101531	r Angestellte	alkalmazott
 101532	e Bewerbung	pályázat
 101533	r Lebenslauf	életrajz
-101534	r Tag	nap
+101534	r Tag	nap (hét napja)
 101535	r Tagesablauf	napirend
 101536	r Morgen	reggel
 101537	r Wecker	ébresztőóra
@@ -1953,7 +1951,7 @@
 101973	r Schuster	cipész
 101974	r Schuh	cipő
 101975	r Stiefel	csizma
-101976	bequem	kényelmes
+101976	bequem	kellemes, kényelmes
 101977	weit	széles, bő
 101978	anprobieren	felpróbál
 101979	e Mode	divat
@@ -2046,7 +2044,6 @@
 102067	e Grippe	influenza
 102068	r Schnupfen	nátha
 102069	e Erkältung	megfázás
-102070	r Harn	vizelet
 102071	r Durchfall	hasmenés
 102073	s Rezept	recept
 102074	verschreiben	felír
@@ -2104,7 +2101,6 @@
 102126	e Demonstration	demonsráció
 102127	r Streik	sztrájk
 102128	e Reform	reform
-102129	e Wille	akarat
 102130	damalig	akkori
 102131	e Handschelle	bilincs
 102132	töten	megöl
@@ -2186,7 +2182,7 @@
 102208	r Räpresentant	képviselő
 102209	e Sammlung	gyűjtemény
 102210	parallel	párhuzamos
-102211	e Bedeutung	jelentés
+102211	e Bedeutung	jelentőség, jelentés
 102212	r Roman	regény
 102213	r Mittelpunkt	középpont
 102214	e Form	forma
@@ -2826,7 +2822,6 @@
 102857	r Alkohol	alkohol
 102858	nunmehr	immár
 102859	r Anteil	részesedés
-102860	r Austausch	csere
 102861	effizient	hatékony
 102862	e Folge	következmény
 102863	einmal	egyszer
@@ -4043,7 +4038,6 @@
 104088	vielleicht	talán
 104089	vermindern	csökkent
 104090	auffällig	feltűnő
-104091	s Französisch	francia (fn)
 104092	kümmern	törődik
 104093	ständig	állandó
 104094	e Erfindung	találmány
@@ -4059,7 +4053,6 @@
 104104	sich erholen	kipiheni magát
 104105	reißen	elszakít, letép
 104106	schneiden	vág	rendhagyó igék
-104107	r Zins	kamat
 104108	relativ	relatív, viszonylagos
 104109	südlich	déli
 104110	r Sprecher	szónok
@@ -4416,7 +4409,6 @@
 104464	versprechen	megígér
 104465	übrig	maradék, megmaradt (mn)
 104466	sowie	amint, mihelyt
-104467	s Gutachten	szakvélemény
 104468	unterstützen	támogat, alátámaszt
 104469	aufsteigen	felszáll, felemelkedik
 104470	spannen	kifeszít, megfeszít
@@ -4497,7 +4489,7 @@
 104545	s Bündnis	szövetség
 104546	s Heer	hadsereg
 104547	r Vermieter	bérbeadó
-104548	anfallen	megtámat
+104548	anfallen	megtámad
 104549	vereinen	egyesít
 104550	welch	melyik
 104551	r Täter	tettes, elkövető
@@ -5040,3 +5032,7 @@
 102300	in diesem Fall	ebben az esetben	kifejezések
 102311	e Rache	bosszú
 101378	r Treibstoff	üzemanyag
+102342	e Donau	Duna
+101477	lila	lila
+102070	r Tausch	csere
+102129	merklich	észrevehetően
