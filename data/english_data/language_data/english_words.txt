@@ -30,7 +30,7 @@
 100030	distinct	külön
 100031	bound	ugrik
 100032	adverb	határozószó
-100033	after all	mégis
+100033	after all	mégis, végül is
 100034	tricky	bonyolult
 100035	heal	meggyógyul
 100036	carry out	végre hajt
@@ -686,7 +686,6 @@
 100686	extricate	kiszabadít
 100687	permit	enged, engedélyez
 100688	comprise	tartalmaz
-100689	after all	végül is
 100690	midday	dél
 100691	hardship	nehézség
 100692	bounty	adomány, pénzjutalom
@@ -1018,3 +1017,16 @@
 101017	infraction	megszegés, áthágás
 101018	sanity	józanság, józan ész
 101019	fancy	különleges, díszes
+100689	bother	alkalmatlankodik, háborgat, terhel
+101020	hideaway	rejtekhely, búvóhely
+101021	crisp	ropogós
+101022	tear	szakadás
+101023	oblivious	feledékeny, hanyag
+101024	fugitive	menekült, menekülő
+101025	stutter	dadog
+101026	outstanding	kiemelkedő, kiváló
+101027	resentment	neheztelés, harag
+101028	crossroads	útkereszteződés
+101029	mandatory	kötelező
+101030	disclosure	felfed, leleplez
+101031	transparent	átlátszó
