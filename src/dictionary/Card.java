@@ -1,5 +1,7 @@
 package dictionary;
 
+import java.util.ArrayList;
+import java.util.List;
 import study_item_objects.StudyItem;
 
 public class Card extends StudyItem {
@@ -7,6 +9,7 @@ public class Card extends StudyItem {
     public String term;
     public String definition;
     public String group;
+    public List<String> exampleSentences = new ArrayList<>();
 
     public Card() {
         index = -1;

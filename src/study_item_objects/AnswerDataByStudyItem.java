@@ -33,7 +33,7 @@ public class AnswerDataByStudyItem {
     }
 
     public double countRightAnswerRate() {
-        if (numberOfAnswers() != 0) {
+        if (1 <= numberOfAnswers()) {
 
             String answerDataClassName = data.get(0).getClass().getSimpleName();
             
