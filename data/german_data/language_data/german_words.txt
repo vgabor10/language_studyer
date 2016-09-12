@@ -4171,7 +4171,7 @@
 104224	definieren	definiál
 104225	s Ehepaar	házaspár
 104226	stimmen	szavaz
-104227	einsam	magányosan
+104227	einsam	magányos
 104228	r Regierungschef	kormányfő
 104229	e Existenz	létezés
 104230	r Meter	méter
@@ -4263,7 +4263,7 @@
 104316	abschneiden	levág
 104317	verschieben	elhalaszt, eltol
 104318	bedecken	befed, beborít
-104319	s Entwicklungsland	fejlődő országok
+104319	s Entwicklungsland	fejlődő ország
 104320	r Vorgang	esemény, történés
 104321	r Lärm	zaj
 104322	tot	halott (mn)
@@ -5036,3 +5036,4 @@
 101477	lila	lila
 102070	r Tausch	csere
 102129	merklich	észrevehetően
+100631	r Schmuck	dísz, ékszer
