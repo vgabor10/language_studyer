@@ -563,7 +563,7 @@
 100566	e Probe	kísérlet, próba
 100567	r Volkswirt	közgazdász
 100568	e Klammer	zárójel
-100569	einstellen	alkalmaz, beállít
+100569	einstellen	alkalmaz, beállít, igazodik
 100570	außerdem	ezenkívül
 100571	e Stelle	állás
 100572	warnen	figyelmeztet
@@ -1399,7 +1399,7 @@
 101411	s Theater	színház
 101412	s Konzert	koncert
 101413	s Lokal	szórakozóhely
-101414	e Auswahl	kínálat, választék
+101414	e Auswahl	kínálat, választék, kiválaztás
 101415	s Geschäft	bolt, üzlet
 101416	e Konditorei	cukrászda
 101417	zweifellos	kétségkívül
@@ -2559,8 +2559,8 @@
 102592	e Woche	hét
 102593	e Wunde	seb
 102594	e Wut	düh
-102595	exakt	pontosan
-102596	flexibel	sokoldalú
+102595	exakt	pontos
+102596	flexibel	rugalmas, sokoldalú, flexibilis
 102597	existieren	létezik
 102598	experimentell	kísérleti
 102599	explizit	explicit
@@ -2597,7 +2597,7 @@
 102630	e Nation	nemzet
 102631	e Natur	természet
 102632	e Naturwissenschaft	természettudomány
-102633	enden	befelyez
+102633	enden	befelyez, végződik
 102634	endlich	végül
 102635	endlos	végtelen
 102636	engagieren	alkalmaz
@@ -4509,7 +4509,7 @@
 104565	verdanken	köszön
 104566	los	szabad, mentes vmitől
 104567	e Auflösung	felbontás, felbomlás
-104568	durch	át, keresztül
+104568	durch	át, keresztül, által
 104569	dicht	feszes, sűrű
 104570	besprechen	megvitat, megbeszél
 104571	r Russe	orosz (fn)

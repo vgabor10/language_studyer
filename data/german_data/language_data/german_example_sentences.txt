@@ -32,6 +32,8 @@
 103530	Die deutsche Nationalmannschaft feierte einen unglaublichen Erfolg.
 104227	Im Alter sind viele Menschen einsam.
 104580	Diese Auszeichnung steht ihm wirklich zu.
+102832	Der Sanitäter eilt dem Verletzten zu Hilfe.
+100153	Der Sanitäter eilt dem Verletzten zu Hilfe.
 102456	Das Ergebnis ist erstaunlich.
 104320	Ich habe den Vorgang genau beobachtet.
 104081	Wenn zwei Geraden parallel liegen, berühren sie sich nie.
@@ -205,3 +207,181 @@
 101900	Er spricht mit einem ausländischen Akzent.
 102537	Meine Überlegungen gehen dahin, dass ich bald umziehen muss.
 100542	Meine Überlegungen gehen dahin, dass ich bald umziehen muss.
+100264	Regierung und Opposition sind sich selten einig.
+101047	Regierung und Opposition sind sich selten einig.
+100660	Regierung und Opposition sind sich selten einig.
+102828	Regierung und Opposition sind sich selten einig.
+104164	Eine sorgfältige Auswahl der Zutaten ist wichtig.
+101414	Eine sorgfältige Auswahl der Zutaten ist wichtig.
+100790	Eine sorgfältige Auswahl der Zutaten ist wichtig.
+104434	An der nächsten Station müssen wir aussteigen.
+101703	An der nächsten Station müssen wir aussteigen.
+101715	An der nächsten Station müssen wir aussteigen.
+103408	Die Nähe zur Innenstadt macht die Wohnung attraktiv.
+102628	Die Nähe zur Innenstadt macht die Wohnung attraktiv.
+102960	Die Nähe zur Innenstadt macht die Wohnung attraktiv.
+100185	Die Nähe zur Innenstadt macht die Wohnung attraktiv.
+102893	Die nationale Einheit Deutschlands wurde 1990 wiederhergestellt.
+104699	Die nationale Einheit Deutschlands wurde 1990 wiederhergestellt.
+103230	An dem Wettbewerb nehmen Menschen aus allen Altersgruppen teil.
+100706	An dem Wettbewerb nehmen Menschen aus allen Altersgruppen teil.
+102596	Wir haben ﬂexibel Arbeitszeiten.
+101907	Im Text wird auf eine weitere Quelle verwiesen.
+104213	Im Text wird auf eine weitere Quelle verwiesen.
+100891	Im Text wird auf eine weitere Quelle verwiesen.
+103340	Im Text wird auf eine weitere Quelle verwiesen.
+103300	Du musst meine Entscheidung akzeptieren.
+100879	Du musst meine Entscheidung akzeptieren.
+103810	Was für ein Motiv hatte der Täter?
+104551	Was für ein Motiv hatte der Täter?
+104296	Das war eine ungewöhnliche Inszenierung von Hamlet.
+102746	Das war eine ungewöhnliche Inszenierung von Hamlet.
+100602	Die Einladung zum Mittagessen war eine nette Geste.
+101658	Die Einladung zum Mittagessen war eine nette Geste.
+100049	Die Einladung zum Mittagessen war eine nette Geste.
+102790	Die Einladung zum Mittagessen war eine nette Geste.
+100385	Nach einer langen Wanderung gelangten sie ans Ziel.
+102225	Nach einer langen Wanderung gelangten sie ans Ziel.
+100748	Nach einer langen Wanderung gelangten sie ans Ziel.
+100524	Nach einer langen Wanderung gelangten sie ans Ziel.
+102611	Die Zulassung zur Prüfung ist Voraussetzung für die Teilnahme an der Klausur.
+101130	Die Zulassung zur Prüfung ist Voraussetzung für die Teilnahme an der Klausur.
+100292	Die Zulassung zur Prüfung ist Voraussetzung für die Teilnahme an der Klausur.
+102523	Die Zulassung zur Prüfung ist Voraussetzung für die Teilnahme an der Klausur.
+104457	Sie können mich nicht davon abhalten, hier zu parken.
+102448	Der Jäger hat das Reh erschossen.
+104529	Der Jäger hat das Reh erschossen.
+101140	Unter der Herrschaft Herzog Ernsts wurde das Schloss gebaut.
+102118	Unter der Herrschaft Herzog Ernsts wurde das Schloss gebaut.
+100252	Unter der Herrschaft Herzog Ernsts wurde das Schloss gebaut.
+104470	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+100861	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+101422	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+102582	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+102387	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+104276	Sein Platz in der Firma ist schon vergeben.
+101515	Sein Platz in der Firma ist schon vergeben.
+104667	Sein Platz in der Firma ist schon vergeben.
+103952	Sein Platz in der Firma ist schon vergeben.
+104113	Ich vermag diese Frage nicht zu beantworten.
+102242	Ich vermag diese Frage nicht zu beantworten.
+103410	Ich vermag diese Frage nicht zu beantworten.
+101191	Der Wasserspiegel der Ozeane steigt beständig an.
+103623	Der Wasserspiegel der Ozeane steigt beständig an.
+100290	Ist es möglich, später zu bezahlen?
+104539	Ist es möglich, später zu bezahlen?
+100939	Ist es möglich, später zu bezahlen?
+102819	Warte noch einen Moment!
+100023	Warte noch einen Moment!
+103828	Warte noch einen Moment!
+102942	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+104298	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+102168	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+104516	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+100203	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+103457	Er ist einerseits sehr erfolgreich, andererseits aber auch sehr unglücklich.
+100281	Leonie und Max sind ein glückliches Paar.
+102364	Leonie und Max sind ein glückliches Paar.
+104175	Leonie und Max sind ein glückliches Paar.
+102796	Auch in Deutschland wird eine Gebühr zur Straßennutzung eingeführt.
+101891	Auch in Deutschland wird eine Gebühr zur Straßennutzung eingeführt.
+102385	Ich halte dieses Verbot für gerechtfertigt.
+104285	Ich halte dieses Verbot für gerechtfertigt.
+100019	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+104375	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+104568	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+100293	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+100216	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+101280	Der Wind weht aus östlichen Richtungen.
+100658	Der Wind weht aus östlichen Richtungen.
+102793	Der Wind weht aus östlichen Richtungen.
+100591	Der Wind weht aus östlichen Richtungen.
+103839	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
+104263	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
+102633	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
+102238	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
+103823	Mir ist unklar, wie das passieren konnte.
+102842	Mir ist unklar, wie das passieren konnte.
+102512	Auf dieser Straße passieren viele Unfälle.
+102842	Auf dieser Straße passieren viele Unfälle.
+101081	Auf dieser Straße passieren viele Unfälle.
+102788	Die Haustür ist zugeschlossen.
+103756	Im Westen ist die Arbeitslosigkeit niedriger als im Osten.
+103293	Im Westen ist die Arbeitslosigkeit niedriger als im Osten.
+100240	Im Westen ist die Arbeitslosigkeit niedriger als im Osten.
+104330	Im Westen ist die Arbeitslosigkeit niedriger als im Osten.
+103766	Das Blatt wendet sich.
+103159	Das Blatt wendet sich.
+100316	Im Hundertjährigen Krieg bekämpften sich Engländer und Franzosen.
+103603	Im Hundertjährigen Krieg bekämpften sich Engländer und Franzosen.
+104326	Nazar wohnt schon dreizehn Jahre in Deutschland.
+104667	Nazar wohnt schon dreizehn Jahre in Deutschland.
+102238	Nazar wohnt schon dreizehn Jahre in Deutschland.
+101381	Unser Plan ist gescheitert.
+104366	Unser Plan ist gescheitert.
+103364	Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.
+100263	Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.
+102345	Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.
+102819	Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.
+100879	Ich bin durchaus deiner Meinung, würde aber gerne noch etwas warten mit der Entscheidung.
+104577	Sie hatten uns anscheinend nicht gesehen.
+105136	Sie hatten uns anscheinend nicht gesehen.
+104315	Bei einer technischen Zeichnung müssen exakte Längenangaben gemacht werden.
+102603	Bei einer technischen Zeichnung müssen exakte Längenangaben gemacht werden.
+102595	Bei einer technischen Zeichnung müssen exakte Längenangaben gemacht werden.
+104157	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
+103171	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
+102857	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
+100852	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
+101614	Bier enthält fünf Prozent Alkohol.
+102644	Bier enthält fünf Prozent Alkohol.
+100226	Bier enthält fünf Prozent Alkohol.
+102857	Bier enthält fünf Prozent Alkohol.
+100071	Die Wettervorhersage traf mal wieder nicht zu.
+102026	Die Wettervorhersage traf mal wieder nicht zu.
+103809	Die Wettervorhersage traf mal wieder nicht zu.
+101408	Unsere Fabrik stellt Geschirr her.
+101093	Unsere Fabrik stellt Geschirr her.
+101546	Unsere Fabrik stellt Geschirr her.
+104106	Ich lasse mir heute meine Haare schneiden.
+100736	Ich lasse mir heute meine Haare schneiden.
+101566	Ich lasse mir heute meine Haare schneiden.
+100041	Ich lasse mir heute meine Haare schneiden.
+100002	Anna antwortet auf die Frage ihrer Lehrerin.
+102242	Anna antwortet auf die Frage ihrer Lehrerin.
+101462	Anna antwortet auf die Frage ihrer Lehrerin.
+101282	Die Kinder spielen miteinander im Sandkasten.
+101452	Die Kinder spielen miteinander im Sandkasten.
+101258	Die Kinder spielen miteinander im Sandkasten.
+102857	Alkohol hat keine große Wirkung auf mich.
+102371	Alkohol hat keine große Wirkung auf mich.
+100093	Alkohol hat keine große Wirkung auf mich.
+100278	Ich kann mich gut auf Veränderungen einstellen.
+100569	Ich kann mich gut auf Veränderungen einstellen.
+102256	Ich liebe Picknicks im Park.
+101399	Ich liebe Picknicks im Park.
+103362	Draußen wird es schon dunkel.
+104667	Draußen wird es schon dunkel.
+104695	Draußen wird es schon dunkel.
+103526	Die Presse ist die vierte Macht im Staate.
+100522	Die Presse ist die vierte Macht im Staate.
+100211	Die Presse ist die vierte Macht im Staate.
+100630	Die Bürger bauen die Kirche nach der Zerstörung wieder auf.
+103531	Die Bürger bauen die Kirche nach der Zerstörung wieder auf.
+101748	Die Bürger bauen die Kirche nach der Zerstörung wieder auf.
+102607	Die Bürger bauen die Kirche nach der Zerstörung wieder auf.
+100265	Der Einﬂuss der extremen Parteien nimmt zu.
+102601	Der Einﬂuss der extremen Parteien nimmt zu.
+101240	Der Einﬂuss der extremen Parteien nimmt zu.
+100267	Der Einﬂuss der extremen Parteien nimmt zu.
+100208	Zahlreiche Touristen verlassen das Land.
+104214	Zahlreiche Touristen verlassen das Land.
+100585	Zahlreiche Touristen verlassen das Land.
+100134	Zahlreiche Touristen verlassen das Land.
+101778	Sport ist gesund.
+100067	Sport ist gesund.
+103994	Weltweit steigt die Gefahr einer Klimakatastrophe.
+100227	Weltweit steigt die Gefahr einer Klimakatastrophe.
+100653	Weltweit steigt die Gefahr einer Klimakatastrophe.
+100113	Die neue Technik ist effektiver als die alte.
+102886	Die neue Technik ist effektiver als die alte.
