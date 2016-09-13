@@ -385,3 +385,515 @@
 100653	Weltweit steigt die Gefahr einer Klimakatastrophe.
 100113	Die neue Technik ist effektiver als die alte.
 102886	Die neue Technik ist effektiver als die alte.
+102706	Die Konstruktion ist stabil.
+104043	Die Konstruktion ist stabil.
+102534	Die Trauerrede hielt der langjährige Freund der Familie.
+104955	Die Trauerrede hielt der langjährige Freund der Familie.
+104192	Die Trauerrede hielt der langjährige Freund der Familie.
+104190	Die Trauerrede hielt der langjährige Freund der Familie.
+101310	Die Trauerrede hielt der langjährige Freund der Familie.
+102870	Das kann doch nicht wahr sein!
+100316	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
+103905	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
+102884	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
+102845	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
+100175	Die Menschen fliehen vor dem Bürgerkrieg ins Nachbarland.
+102444	Die Menschen fliehen vor dem Bürgerkrieg ins Nachbarland.
+104738	Rainer nimmt sich vor, seiner Angela endlich einen Heiratsantrag zu machen.
+102634	Rainer nimmt sich vor, seiner Angela endlich einen Heiratsantrag zu machen.
+102916	Rainer nimmt sich vor, seiner Angela endlich einen Heiratsantrag zu machen.
+100540	Ich habe am Sonntag nicht gewählt.
+101174	Ich habe am Sonntag nicht gewählt.
+104603	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+101196	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+102901	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+102616	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+104547	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+102385	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+101374	Sie haben ihre Buchhaltung auf Computer umgestellt.
+101086	Sie haben ihre Buchhaltung auf Computer umgestellt.
+104391	Mehrere Autos waren bei dem Unfall ineinander gefahren.
+101284	Mehrere Autos waren bei dem Unfall ineinander gefahren.
+101081	Mehrere Autos waren bei dem Unfall ineinander gefahren.
+102618	Mehrere Autos waren bei dem Unfall ineinander gefahren.
+103769	Maria bringt optimale Voraussetzungen für den Job mit.
+102907	Maria bringt optimale Voraussetzungen für den Job mit.
+100292	Maria bringt optimale Voraussetzungen für den Job mit.
+101222	Maria bringt optimale Voraussetzungen für den Job mit.
+104086	Der Geruch ist unerträglich.
+101526	Der Geruch ist unerträglich.
+101195	Diese Pflanze braucht viel Licht und Pflege.
+101223	Diese Pflanze braucht viel Licht und Pflege.
+100019	Diese Pflanze braucht viel Licht und Pflege.
+103882	Diese Pflanze braucht viel Licht und Pflege.
+103726	Diese Pflanze braucht viel Licht und Pflege.
+100307	Die Verhandlungen mit der Gewerkschaft verlaufen positiv.
+102847	Die Verhandlungen mit der Gewerkschaft verlaufen positiv.
+103813	Die Verhandlungen mit der Gewerkschaft verlaufen positiv.
+102948	Die Verhandlungen mit der Gewerkschaft verlaufen positiv.
+104678	Uwe gibt die Arbeit bei seiner alten Firma auf.
+101521	Uwe gibt die Arbeit bei seiner alten Firma auf.
+101515	Uwe gibt die Arbeit bei seiner alten Firma auf.
+103878	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+102791	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+104271	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+104712	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+102245	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+104298	Das war ein sehr emotionaler Film.
+102662	Das war ein sehr emotionaler Film.
+101845	Das war ein sehr emotionaler Film.
+102312	Sechs Uhr morgens? Das ist aber sehr früh!
+101311	Der Vater hält ihre Ideen für völlig absurd.
+102385	Der Vater hält ihre Ideen für völlig absurd.
+100062	Der Vater hält ihre Ideen für völlig absurd.
+104712	Der Vater hält ihre Ideen für völlig absurd.
+104426	Der Vater hält ihre Ideen für völlig absurd.
+101452	Spielen wir eine Runde Schach?
+102170	Spielen wir eine Runde Schach?
+101198	Spielen wir eine Runde Schach?
+102899	Wie finanzierst du dein Studium?
+103702	Wie finanzierst du dein Studium?
+101951	Die Methode wird ausführlich beschrieben.
+103552	Die Methode wird ausführlich beschrieben.
+103717	Die Methode wird ausführlich beschrieben.
+104062	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+101181	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+100422	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+104298	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+100192	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+100369	Sie haben die ganze Nacht getanzt.
+102627	Sie haben die ganze Nacht getanzt.
+102222	Sie haben die ganze Nacht getanzt.
+101282	Kinder essen gern Spaghetti.
+102498	Kinder essen gern Spaghetti.
+102345	Kinder essen gern Spaghetti.
+104276	Auf dem Platz sind viele Menschen versammelt.
+100019	Auf dem Platz sind viele Menschen versammelt.
+100175	Auf dem Platz sind viele Menschen versammelt.
+103694	Auf dem Platz sind viele Menschen versammelt.
+101747	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+101503	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+102245	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+101833	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+103351	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+103677	Aileen zeichnet gern Comics.
+102345	Aileen zeichnet gern Comics.
+101310	Familie Ittner pflanzt jedes Jahr einen Baum.
+103563	Familie Ittner pflanzt jedes Jahr einen Baum.
+102238	Familie Ittner pflanzt jedes Jahr einen Baum.
+101423	Familie Ittner pflanzt jedes Jahr einen Baum.
+101113	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+101228	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+100835	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+103967	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+103953	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+102590	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
+103267	Irgendwann werden wir uns wiedersehen.
+103153	Irgendwann werden wir uns wiedersehen.
+100147	Die Projektgruppe trägt ihre Ergebnisse vor.
+104163	Die Projektgruppe trägt ihre Ergebnisse vor.
+100435	Die Projektgruppe trägt ihre Ergebnisse vor.
+100420	Edgar hatte eine zweifelhafte Begründung für sein Fehlen.
+100642	Edgar hatte eine zweifelhafte Begründung für sein Fehlen.
+100105	Die Sache hat sich erledigt.
+101579	Die Sache hat sich erledigt.
+103127	Das war ein ausgezeichnetes Essen.
+100617	Das war ein ausgezeichnetes Essen.
+103591	Der Wahlsieg der Opposition hat niemanden erstaunt.
+101047	Der Wahlsieg der Opposition hat niemanden erstaunt.
+102976	Der Wahlsieg der Opposition hat niemanden erstaunt.
+102455	Der Wahlsieg der Opposition hat niemanden erstaunt.
+100450	Im Urlaub taucht Thomas immer.
+104562	Im Urlaub taucht Thomas immer.
+100010	Im Urlaub taucht Thomas immer.
+103734	Der Generator wandelt Bewegungsenergie in elektrische Energie um.
+100610	Der Generator wandelt Bewegungsenergie in elektrische Energie um.
+104389	Der Generator wandelt Bewegungsenergie in elektrische Energie um.
+102728	Der Generator wandelt Bewegungsenergie in elektrische Energie um.
+100264	Die Regierung leitet Reformen ein.
+102880	Die Regierung leitet Reformen ein.
+102128	Die Regierung leitet Reformen ein.
+104472	Wir sind das Volk!
+100074	Der Weg zur Burg ist sehr steil.
+101182	Der Weg zur Burg ist sehr steil.
+104298	Der Weg zur Burg ist sehr steil.
+104450	Der Weg zur Burg ist sehr steil.
+101444	Die Kartoffel wurde aus Amerika importiert.
+101397	Das Dorf entstand aus einer fränkischen Siedlung.
+104375	Das Dorf entstand aus einer fränkischen Siedlung.
+101205	Das Dorf entstand aus einer fränkischen Siedlung.
+101530	Der Arbeitgeber verweigert seinen Angestellten seit Monaten den Urlaub.
+104572	Der Arbeitgeber verweigert seinen Angestellten seit Monaten den Urlaub.
+101531	Der Arbeitgeber verweigert seinen Angestellten seit Monaten den Urlaub.
+102252	Der Arbeitgeber verweigert seinen Angestellten seit Monaten den Urlaub.
+100450	Der Arbeitgeber verweigert seinen Angestellten seit Monaten den Urlaub.
+100203	Diplomatie macht auch unpopuläre Allianzen möglich.
+104124	Diplomatie macht auch unpopuläre Allianzen möglich.
+100290	Diplomatie macht auch unpopuläre Allianzen möglich.
+103001	Radio grün sendet auf einer Frequenz von 92,4.
+102781	Radio grün sendet auf einer Frequenz von 92,4.
+102738	Gina ist das einzige Mädchen in der Klasse.
+104079	Gina ist das einzige Mädchen in der Klasse.
+100344	Gina ist das einzige Mädchen in der Klasse.
+102306	Ich freue mich auf die Ferien.
+103089	Ich freue mich auf die Ferien.
+103542	Außer ihm hat keiner hier gute Noten.
+102410	Außer ihm hat keiner hier gute Noten.
+102380	Außer ihm hat keiner hier gute Noten.
+100137	Außer ihm hat keiner hier gute Noten.
+100124	Unser Chef hat sich einen groben Fehler erlaubt.
+101219	Unser Chef hat sich einen groben Fehler erlaubt.
+100642	Unser Chef hat sich einen groben Fehler erlaubt.
+100632	Unser Chef hat sich einen groben Fehler erlaubt.
+102245	Es gibt verschiedene Meinungen innerhalb der Fraktion.
+100263	Es gibt verschiedene Meinungen innerhalb der Fraktion.
+103313	Es gibt verschiedene Meinungen innerhalb der Fraktion.
+102816	Es gibt verschiedene Meinungen innerhalb der Fraktion.
+103696	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+103244	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+104391	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+103259	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+102854	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+100029	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+103313	Innerhalb dieses Gebietes gibt es Landminen.
+100232	Innerhalb dieses Gebietes gibt es Landminen.
+102841	Mit welcher Fluggesellschaft fliegst du in den Urlaub?
+101755	Mit welcher Fluggesellschaft fliegst du in den Urlaub?
+100450	Mit welcher Fluggesellschaft fliegst du in den Urlaub?
+100642	Du kannst den Fehler ruhig zugeben.
+104533	Du kannst den Fehler ruhig zugeben.
+100029	Nimm einen größeren Topf!
+102371	Nimm einen größeren Topf!
+101678	Nimm einen größeren Topf!
+101282	Die Kinder sitzen um das Feuer herum.
+102250	Die Kinder sitzen um das Feuer herum.
+102275	Die Kinder sitzen um das Feuer herum.
+102404	Die Kinder sitzen um das Feuer herum.
+100018	Die Schüler verfassen einen offenen Brief an den Bürgermeister.
+104689	Die Schüler verfassen einen offenen Brief an den Bürgermeister.
+102953	Die Schüler verfassen einen offenen Brief an den Bürgermeister.
+100974	Die Schüler verfassen einen offenen Brief an den Bürgermeister.
+102772	Sein Name steht an der Tür.
+101705	Sein Name steht an der Tür.
+101366	Sein Name steht an der Tür.
+102622	Sie fasste seine Hand.
+101575	Sie fasste seine Hand.
+100327	Ihr Angebot gefällt mir.
+100107	Ihr Angebot gefällt mir.
+100433	Ich nehme an, er hat Recht.
+103440	Ich nehme an, er hat Recht.
+101314	Meine Mutter macht den besten Sauerbraten der Welt.
+104555	Meine Mutter macht den besten Sauerbraten der Welt.
+102587	Meine Mutter macht den besten Sauerbraten der Welt.
+103921	Die industrielle Revolution ließ die Städte schnell wachsen.
+100322	Die industrielle Revolution ließ die Städte schnell wachsen.
+100736	Die industrielle Revolution ließ die Städte schnell wachsen.
+100148	Die industrielle Revolution ließ die Städte schnell wachsen.
+100008	Die industrielle Revolution ließ die Städte schnell wachsen.
+100429	Die industrielle Revolution ließ die Städte schnell wachsen.
+101697	Am Bahnhof fahren Züge in alle Richtungen ab.
+100961	Am Bahnhof fahren Züge in alle Richtungen ab.
+100591	Am Bahnhof fahren Züge in alle Richtungen ab.
+100288	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+103753	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+102371	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+101225	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+100932	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+103279	Stellt euch bitte in einer Reihe auf!
+103342	Stellt euch bitte in einer Reihe auf!
+103033	Stellt euch bitte in einer Reihe auf!
+100700	In dem Verlag erscheinen sämtliche Werke von Hermann Hesse.
+101097	In dem Verlag erscheinen sämtliche Werke von Hermann Hesse.
+103586	In dem Verlag erscheinen sämtliche Werke von Hermann Hesse.
+101074	In dem Verlag erscheinen sämtliche Werke von Hermann Hesse.
+102858	Es ist nunmehr an der Zeit, Abschied zu nehmen.
+100181	Es ist nunmehr an der Zeit, Abschied zu nehmen.
+102823	Es ist nunmehr an der Zeit, Abschied zu nehmen.
+100029	Es ist nunmehr an der Zeit, Abschied zu nehmen.
+102835	Der Anbieter kann erst in drei Tagen liefern.
+102460	Der Anbieter kann erst in drei Tagen liefern.
+101534	Der Anbieter kann erst in drei Tagen liefern.
+103235	Wie bezeichnet man den östlichen Teil einer Kirche?
+102793	Wie bezeichnet man den östlichen Teil einer Kirche?
+100318	Wie bezeichnet man den östlichen Teil einer Kirche?
+101748	Wie bezeichnet man den östlichen Teil einer Kirche?
+101047	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+100262	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+104358	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+102481	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+100264	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+103339	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
+102250	Sie sitzen in der Schule nebeneinander.
+101262	Sie sitzen in der Schule nebeneinander.
+102947	Sie sitzen in der Schule nebeneinander.
+100208	Zahlreiche Verbraucher haben verschiedene Produkte beurteilt.
+101241	Zahlreiche Verbraucher haben verschiedene Produkte beurteilt.
+102245	Zahlreiche Verbraucher haben verschiedene Produkte beurteilt.
+100654	Zahlreiche Verbraucher haben verschiedene Produkte beurteilt.
+103596	Zahlreiche Verbraucher haben verschiedene Produkte beurteilt.
+103500	Wem kannst du dich anvertrauen?
+101647	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
+104611	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
+104361	Falls du es dir anders überlegt, kannst du mich jederzeit anrufen.
+103344	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
+104328	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
+100173	Ihnen gehört das Haus bereits in der dritten Generation.
+100109	Ihnen gehört das Haus bereits in der dritten Generation.
+100323	Ihnen gehört das Haus bereits in der dritten Generation.
+102789	Ihnen gehört das Haus bereits in der dritten Generation.
+101823	Wir bevorzugen konventionelle Methoden und Verfahren.
+103398	Wir bevorzugen konventionelle Methoden und Verfahren.
+101951	Wir bevorzugen konventionelle Methoden und Verfahren.
+104253	Wir bevorzugen konventionelle Methoden und Verfahren.
+104313	Wir haben einen klassischen Tanz gelernt.
+103290	Wir haben einen klassischen Tanz gelernt.
+102243	Wir haben einen klassischen Tanz gelernt.
+102660	In welcher Mission ist der Außenminister in Asien unterwegs?
+102769	In welcher Mission ist der Außenminister in Asien unterwegs?
+101759	In welcher Mission ist der Außenminister in Asien unterwegs?
+102241	Sprich leise, Maria schläft!
+101709	Sprich leise, Maria schläft!
+103578	Sprich leise, Maria schläft!
+103181	Das ist doch selbstverständlich.
+102675	In dieser ländlichen Idylle kann man sich wunderbar erholen.
+100618	In dieser ländlichen Idylle kann man sich wunderbar erholen.
+104104	In dieser ländlichen Idylle kann man sich wunderbar erholen.
+100879	Die Entscheidung wurde in Abstimmung mit der Personalabteilung getroffen.
+100887	Die Entscheidung wurde in Abstimmung mit der Personalabteilung getroffen.
+101585	Die Entscheidung wurde in Abstimmung mit der Personalabteilung getroffen.
+105155	Die Entscheidung wurde in Abstimmung mit der Personalabteilung getroffen.
+104399	Das ist jetzt nicht mehr notwendig.
+102851	Das ist jetzt nicht mehr notwendig.
+100019	Ingrid hat vier Geschwister.
+101319	Ingrid hat vier Geschwister.
+102801	Die Benutzer dieser Software werden gebeten, sich zu registrieren.
+105051	Die Benutzer dieser Software werden gebeten, sich zu registrieren.
+101275	Die Benutzer dieser Software werden gebeten, sich zu registrieren.
+101893	Das Telefon ist ein beliebtes Mittel zur Kommunikation.
+101980	Das Telefon ist ein beliebtes Mittel zur Kommunikation.
+104564	Das Telefon ist ein beliebtes Mittel zur Kommunikation.
+101889	Das Telefon ist ein beliebtes Mittel zur Kommunikation.
+100369	Die Wünsche sind ganz bescheiden.
+104612	Die Wünsche sind ganz bescheiden.
+100125	Wir haben Geschenke mitgebracht.
+103769	Wir haben Geschenke mitgebracht.
+103115	In diesem Bereich ist Frau Bitter Expertin.
+100122	In diesem Bereich ist Frau Bitter Expertin.
+103843	In diesem Bereich ist Frau Bitter Expertin.
+103254	Die äußeren Umstände verlangen eine Änderung der Taktik.
+103878	Die äußeren Umstände verlangen eine Änderung der Taktik.
+100735	Die äußeren Umstände verlangen eine Änderung der Taktik.
+103443	Die äußeren Umstände verlangen eine Änderung der Taktik.
+101804	Sie möchte eine Medaille gewinnen.
+100259	Sie möchte eine Medaille gewinnen.
+102242	Das ist alles eine Frage der Interpretation.
+102743	Das ist alles eine Frage der Interpretation.
+100015	In der Straßenbahn gibt es regelmäßig Kontrollen.
+104422	In der Straßenbahn gibt es regelmäßig Kontrollen.
+101727	In der Straßenbahn gibt es regelmäßig Kontrollen.
+100262	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
+103160	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
+103468	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
+100371	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
+103638	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
+100525	Wir sollten uns auf eine Strategie festlegen.
+100802	Wir sollten uns auf eine Strategie festlegen.
+102410	Hier ist ein rascher Entschluss nötig.
+101242	Hier ist ein rascher Entschluss nötig.
+101230	Hier ist ein rascher Entschluss nötig.
+103887	Sie streckte ihre Arme und Beine.
+100383	Sie streckte ihre Arme und Beine.
+101582	Sie streckte ihre Arme und Beine.
+103941	Aufgrund des Geschlechts darf keine Benachteiligung stattfinden.
+101139	Aufgrund des Geschlechts darf keine Benachteiligung stattfinden.
+101269	Aufgrund des Geschlechts darf keine Benachteiligung stattfinden.
+104102	Im Zweifelsfall wird zugunsten des Angeklagten entschieden.
+104334	Im Zweifelsfall wird zugunsten des Angeklagten entschieden.
+100519	Im Zweifelsfall wird zugunsten des Angeklagten entschieden.
+101510	Maria hat ein Praktikum in Italien gemacht.
+101272	Maria hat ein Praktikum in Italien gemacht.
+100570	Außerdem spiele ich Fußball.
+101452	Außerdem spiele ich Fußball.
+101780	Außerdem spiele ich Fußball.
+102550	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
+100353	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
+102901	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
+104166	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
+103124	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
+100989	Sie verfolgt ihr Ziel hartnäckig.
+100524	Sie verfolgt ihr Ziel hartnäckig.
+100759	Die Rede war gut formuliert.
+102380	Die Rede war gut formuliert.
+102297	Die Rede war gut formuliert.
+100536	Auf welches Konto soll ich das Geld überweisen?
+102249	Auf welches Konto soll ich das Geld überweisen?
+101014	Auf welches Konto soll ich das Geld überweisen?
+102345	Wir können Ihnen gerne auch noch einen kleinen Rabatt gewähren.
+100023	Wir können Ihnen gerne auch noch einen kleinen Rabatt gewähren.
+102353	Wir können Ihnen gerne auch noch einen kleinen Rabatt gewähren.
+101730	Dieser Ausweis ist zehn Jahre gültig.
+105181	Dieser Ausweis ist zehn Jahre gültig.
+102238	Dieser Ausweis ist zehn Jahre gültig.
+100747	Dieser Ausweis ist zehn Jahre gültig.
+100264	Die Regierung sitzt in Berlin.
+102250	Die Regierung sitzt in Berlin.
+100617	Essen und Trinken sind elementare Bedürfnisse.
+103497	Essen und Trinken sind elementare Bedürfnisse.
+102729	Essen und Trinken sind elementare Bedürfnisse.
+103128	Essen und Trinken sind elementare Bedürfnisse.
+100677	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
+102688	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
+102577	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
+104292	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
+102082	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+103333	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+103955	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+101609	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+101607	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+101282	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+103926	Zu Ostern versteckt man in Deutschland bunte Eier und Süßigkeiten, die die Kinder suchen müssen.
+100019	Zu viele Fakten verwirren die Zuhörer.
+103481	Zu viele Fakten verwirren die Zuhörer.
+103570	Zu viele Fakten verwirren die Zuhörer.
+103163	Zu viele Fakten verwirren die Zuhörer.
+104807	Ab 18 gilt man als Erwachsener.
+101210	Ab 18 gilt man als Erwachsener.
+102871	Die Gewalt unter Jugendlichen nimmt immer mehr zu.
+100267	Die Gewalt unter Jugendlichen nimmt immer mehr zu.
+101733	Bei dieser Geschwindigkeit kann man nicht mehr rechtzeitig bremsen.
+100164	Bei dieser Geschwindigkeit kann man nicht mehr rechtzeitig bremsen. 100949	Bei dieser Geschwindigkeit kann man nicht mehr rechtzeitig bremsen.
+101047	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
+102668	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
+104135	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
+103090	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
+102326	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
+102086	Die Geburt eines Kindes ist immer ein erfreuliches Ereignis.
+101282	Die Geburt eines Kindes ist immer ein erfreuliches Ereignis.
+100010	Die Geburt eines Kindes ist immer ein erfreuliches Ereignis.
+101545	Die Geburt eines Kindes ist immer ein erfreuliches Ereignis.
+101280	Der Wind wehte stetig aus Süden.
+100658	Der Wind wehte stetig aus Süden.
+103296	Der Wind wehte stetig aus Süden.
+100273	Der Wind wehte stetig aus Süden.
+100074	Du darfst nicht vom Weg abweichen, sonst verirrst du dich.
+103029	Du darfst nicht vom Weg abweichen, sonst verirrst du dich.
+104069	Du darfst nicht vom Weg abweichen, sonst verirrst du dich.
+104649	Du darfst nicht vom Weg abweichen, sonst verirrst du dich.
+103454	Immerhin müssen wir noch keine Studiengebühren zahlen.
+101304	Immerhin müssen wir noch keine Studiengebühren zahlen.
+101891	Immerhin müssen wir noch keine Studiengebühren zahlen.
+101702	Immerhin müssen wir noch keine Studiengebühren zahlen.
+102959	Ich ziehe es vor, zuhause zu bleiben.
+103247	Ich ziehe es vor, zuhause zu bleiben.
+101269	Wann findet das Training statt?
+103871	Wann findet das Training statt?
+101705	Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.
+104514	Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.
+104215	Es ist ein Verbrechen begangen worden.
+104266	Es ist ein Verbrechen begangen worden.
+100540	Am Sonntag machen wir einen Ausflug mit dem Fahrrad.
+101734	Am Sonntag machen wir einen Ausflug mit dem Fahrrad.
+100117	Am Sonntag machen wir einen Ausflug mit dem Fahrrad.
+103619	Beide Elternteile sind berufstätig.
+102200	Welche Funktion hat ein Antiblockiersystem?
+101455	Lucies Enttäuschung über die Absage ist groß.
+102371	Lucies Enttäuschung über die Absage ist groß.
+102672	Lachen ist gesund.
+100067	Lachen ist gesund.
+100413	Wir sollten die Wahlergebnisse abwarten.
+100435	Wir sollten die Wahlergebnisse abwarten.
+104614	Wir sollten die Wahlergebnisse abwarten.
+104464	Sie verspricht ihm, nicht mehr zu rauchen.
+101181	Sie verspricht ihm, nicht mehr zu rauchen.
+102961	Um zwölf essen wir Mittag.
+102498	Um zwölf essen wir Mittag.
+104187	Um zwölf essen wir Mittag.
+100107	Justus gefällt unser gelber Teppich nicht.
+102333	Justus gefällt unser gelber Teppich nicht.
+101371	Justus gefällt unser gelber Teppich nicht.
+102266	Dieses Problem muss man auf verschiedenen Ebenen betrachten.
+102245	Dieses Problem muss man auf verschiedenen Ebenen betrachten.
+104717	Dieses Problem muss man auf verschiedenen Ebenen betrachten.
+103604	Dieses Problem muss man auf verschiedenen Ebenen betrachten.
+101095	Mit Goethes Tod endet die Epoche der Weimarer Klassik.
+102633	Mit Goethes Tod endet die Epoche der Weimarer Klassik.
+101189	Mit Goethes Tod endet die Epoche der Weimarer Klassik.
+104724	Das Schloss wird von einem gefährlichen Riesen bewacht.
+102323	Das Schloss wird von einem gefährlichen Riesen bewacht.
+104731	Das Schloss wird von einem gefährlichen Riesen bewacht.
+104257	Der Bundeskanzler schweigt über diverse Probleme.
+104171	Der Bundeskanzler schweigt über diverse Probleme.
+103189	Der Bundeskanzler schweigt über diverse Probleme.
+102266	Der Bundeskanzler schweigt über diverse Probleme.
+100178	Der Conferencier begrüßt seine Gäste.
+100398	Der Conferencier begrüßt seine Gäste.
+102914	Diese Unordnung macht mich wahnsinnig!
+101368	Die Vorhänge sind schmutzig.
+102172	Die Vorhänge sind schmutzig.
+101120	Die Haut ist das größte Organ des Körpers.
+102371	Die Haut ist das größte Organ des Körpers.
+102064	Die Haut ist das größte Organ des Körpers.
+100830	Die Haut ist das größte Organ des Körpers.
+101369	Das Bett steht im Schlafzimmer.
+101705	Das Bett steht im Schlafzimmer.
+101352	Das Bett steht im Schlafzimmer.
+100195	Claudia ist traurig, weil ihr Hund gestorben ist.
+100291	Claudia ist traurig, weil ihr Hund gestorben ist.
+100165	Claudia ist traurig, weil ihr Hund gestorben ist.
+105148	Claudia ist traurig, weil ihr Hund gestorben ist.
+102499	Außenpolitische Stabilität ist sehr wichtig.
+104298	Außenpolitische Stabilität ist sehr wichtig.
+100790	Außenpolitische Stabilität ist sehr wichtig.
+102010	Die Sonne warf einen langen Schatten.
+104269	Die Sonne warf einen langen Schatten.
+100385	Die Sonne warf einen langen Schatten.
+101736	Die Sonne warf einen langen Schatten.
+103164	Vorige Woche war ich krank.
+102592	Vorige Woche war ich krank.
+103396	Vorige Woche war ich krank.
+103456	Der ursprüngliche Plan sah anders aus.
+101381	Der ursprüngliche Plan sah anders aus.
+100487	Der ursprüngliche Plan sah anders aus.
+104611	Der ursprüngliche Plan sah anders aus.
+100133	Sie haben ein Zimmer in einem kleinen Hotel gebucht.
+100052	Sie haben ein Zimmer in einem kleinen Hotel gebucht.
+101343	Sie haben ein Zimmer in einem kleinen Hotel gebucht.
+101765	Sie haben ein Zimmer in einem kleinen Hotel gebucht.
+103926	Ich suche eine bestimmte CD.
+100368	Ich suche eine bestimmte CD.
+103421	Ich habe den Einbrecher angezeigt.
+101366	Die Tür geht nicht auf.
+104595	Die Tür geht nicht auf.
+102085	Zur Hochzeit sind alle Verwandten eingeladen.
+101331	Zur Hochzeit sind alle Verwandten eingeladen.
+105062	Zur Hochzeit sind alle Verwandten eingeladen.
+100545	Es ist nicht so einfach, schlank zu bleiben.
+101107	Es ist nicht so einfach, schlank zu bleiben.
+103247	Es ist nicht so einfach, schlank zu bleiben.
+100353	Roman Polanski ist ein bekannter Regisseur.
+101873	Roman Polanski ist ein bekannter Regisseur.
+101739	Am Strand der Ostsee findet man viele Muscheln und Steine.
+102276	Am Strand der Ostsee findet man viele Muscheln und Steine.
+100019	Am Strand der Ostsee findet man viele Muscheln und Steine.
+100979	Am Strand der Ostsee findet man viele Muscheln und Steine.
+103012	Im Mittelalter starben viele Menschen an Seuchen.
+100027	Im Mittelalter starben viele Menschen an Seuchen.
+100019	Im Mittelalter starben viele Menschen an Seuchen.
+100175	Im Mittelalter starben viele Menschen an Seuchen.
+104187	Zum Mittag gab es Schnitzel, Kartoffeln und Gemüse.
+101444	Zum Mittag gab es Schnitzel, Kartoffeln und Gemüse.
+101620	Zum Mittag gab es Schnitzel, Kartoffeln und Gemüse.
+102380	Hast du eine gute Versicherung für dein Haus?
+102566	Hast du eine gute Versicherung für dein Haus?
+100109	Hast du eine gute Versicherung für dein Haus?
+103484	Die Bedrohung durch Computerviren ist nicht zu unterschätzen.
+100650	Die Bedrohung durch Computerviren ist nicht zu unterschätzen.
+102735	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
+100466	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
+101215	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
+104226	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
+102252	Sie ist im vierten Monat schwanger.
+104293	Sie ist im vierten Monat schwanger.
+104343	Im Vergleich zu dir geht es mir noch gut.
+102380	Im Vergleich zu dir geht es mir noch gut.

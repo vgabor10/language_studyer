@@ -120,7 +120,7 @@
 100119	glauben	hisz
 100120	r Verkäufer	eladó
 100121	r Sohn	fia vkinek
-100122	e Frau	feleség
+100122	e Frau	feleség, asszony
 100123	r Mantel	kabát
 100124	r Chef	főnök
 100125	s Geschenk	ajándék
@@ -270,7 +270,7 @@
 100270	r Rückhalt	támasz
 100271	schließlich	végül
 100272	e Lage	helyzet, állapot
-100273	r Süden	dél (égtály)
+100273	r Süden	dél (égtáj)
 100274	insgesamt	összesen
 100275	bedrohen	veszélyeztet
 100276	e Gesellschaft	társadalom
@@ -349,7 +349,7 @@
 100350	r Befehl	parancs
 100351	r Aufstand	lázadás
 100352	abdanken	lemond
-100353	bekannt	ismerős (mn)
+100353	bekannt	ismert, ismerős
 100354	r Vorsitzende	elnök
 100355	r Nachmittag	délután
 100356	proklamieren	kinyilatkoztat
@@ -364,7 +364,7 @@
 100365	formell	hivatalos
 100366	erhalten	megőriz, fenntart
 100367	ankreuzen	megjelöl
-100368	bestimmt	biztosan
+100368	bestimmt	biztosan, bizonyos
 100369	ganz	egész
 100370	gemeinsam	közös
 100371	s Thema	téma
@@ -610,7 +610,7 @@
 100614	einladen	meghív	rendhagyó igék
 100615	s Tausend	ezer (fn)
 100616	verbessern	javít
-100617	s Essen	étel
+100617	s Essen	étel, evés
 100618	wunderbar	csodálatos
 100619	handeln	cselekszik
 100620	gestern	tegnap
@@ -793,7 +793,7 @@
 100799	r Bewerber	pályázó
 100800	aussprechen	kimond
 100801	e Kommission	bizottság
-100802	festlegen	megállapít
+100802	festlegen	megállapít, meghatároz
 100803	e Entlastung	tehermentesítés
 100804	vorübergehend	átmenetileg
 100805	schutzbedürftige	veszélyeztetett
@@ -1117,7 +1117,7 @@
 101127	r Ritter	lovag
 101128	e Erziehung	nevelés
 101129	bewerben	megpályázik vmit
-101130	e Prüfung	próba
+101130	e Prüfung	vizsgálat, próba
 101131	profund	alapos
 101132	r Stil	stílus
 101133	s Zitat	idézet
@@ -2705,7 +2705,7 @@
 102740	jugendlich	fiatalos
 102741	e Jugend	fiatalság
 102742	eintragen	bejegyez
-102743	e Interpretation	magyarázat
+102743	e Interpretation	magyarázat, értelmezés
 102744	e Integration	integráció
 102745	e Intelligenz	intelligencia
 102746	e Inszenierung	rendezés
@@ -2920,7 +2920,7 @@
 102956	ehemalig	korábbi
 102957	e Formel	képlet, formula
 102958	wandern	kirándul
-102959	vorziehen	előhúz
+102959	vorziehen	előnyben részesít, preferál
 102960	e Innenstadt	belváros
 102961	zwölf	tizenkettő	számok
 102962	wandeln	megváltoztat
@@ -3074,7 +3074,7 @@
 103112	zusammenarbeiten	együttműködik
 103113	aufführen	előad
 103114	r Fortschritt	haladás
-103115	r Bereich	térség, körzet
+103115	r Bereich	térség, körzet, terület
 103116	untersuchen	kivizsgál
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van
@@ -3191,7 +3191,7 @@
 103232	unwahrscheinlich	valószínűtlen
 103233	auftreten	megjelenik, feltűnik
 103234	demnach	ennélfogva, ezért
-103235	bezeichnen	jelez, megjelöl
+103235	bezeichnen	jelez, megjelöl, nevez
 103236	erfordern	megkíván, követel
 103237	verfallen	hanyatlik, lejár
 103238	chemisch	vegyi
@@ -4213,7 +4213,7 @@
 104266	begehen	elkövet
 104267	r Nacken	nyak
 104268	ausnehmen	meglát, felismer
-104269	werfen	dob, hajít
+104269	werfen	dob, hajít, vet
 104270	täuschen	becsap, cselez
 104271	e Provinz	tartomány
 104272	beauftragen	megbíz vkit vmivel
