@@ -175,6 +175,11 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
         jScrollPane2.setViewportView(jTable2);
 
         jButton2.setText("Inspect Card");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -187,7 +192,7 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
                     .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -209,9 +214,9 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 129, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
@@ -237,40 +242,18 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
                         jTextField2.setForeground(new Color(45, 107, 53));   //green   
                     }
                     else {
-                         jTextField2.setForeground(new Color(51,194,242));   //light blue 
+                        jTextField2.setForeground(new Color(51,194,242));   //light blue
+                        jTextField1.setText("");
                     }
                 } else {
                     jTextField2.setForeground(new Color(255,71,71));  //light red
+                    jTextField1.setText("");
                 }
 
                 jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                jTextField1.setText("");
                 showAcceptableCards();
                 showExampleSentences();
                 
-                /*if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
-                    if (cardTester.isMoreCardToTest()) {
-                        cardTester.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
-                        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-                    } else {
-                        goToStatisticsFrameAndSaveData();
-                    }
-                } else if (cardTester.isUserAnswerRight()) {
-                    jTextField1.setText("");
-                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                    jTextField2.setForeground(new java.awt.Color(45, 107, 53)); //green
-
-                    showAcceptableCards();
-                } else {
-                    jTextField1.setText("");
-                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                    jTextField2.setForeground(new java.awt.Color(255, 0, 0));   //red
-
-                    showAcceptableCards();
-                }*/
             } else {
                 if (cardTester.getActualQuestionedCard().term.equals(
                     cardTester.getUserActualAnswer())) {
@@ -382,6 +365,14 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
     private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2KeyPressed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        CardInspectorDialog dialog = new CardInspectorDialog(new javax.swing.JFrame(), true);
+        dialog.inspectedCard = cardTester.getActualQuestionedCard();
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
