@@ -76,7 +76,9 @@
 102878	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
 100318	Im ersten Teil des Buches werden die Personen vorgestellt.
 104047	Ich vermisse meinen Teddy.
+100493	Die Nachfrage nach DVD-Spielern ist ebenfalls gesunken.
 104723	Die Nachfrage nach DVD-Spielern ist ebenfalls gesunken.
+105139	Die Nachfrage nach DVD-Spielern ist ebenfalls gesunken.
 100520	Nun gehe ich nach Hause.
 102521	Ich habe mich mit dieser Tatsache abgefunden.
 104704	Viele städtische Einrichtungen müssen geschlossen werden.
@@ -1129,3 +1131,12 @@
 105146	Hotzenplotz hat ein Fahrrad gestohlen.
 100235	Kinder sollten im Haushalt helfen.
 102395	Kinder sollten im Haushalt helfen.
+100493	Die Nachfrage treibt die Preise in die Höhe.
+104435	Die Nachfrage treibt die Preise in die Höhe.
+100938	Die Nachfrage treibt die Preise in die Höhe.
+100392	Die Nachfrage treibt die Preise in die Höhe.
+103133	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
+103351	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
+104073	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
+100175	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
+102587	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
