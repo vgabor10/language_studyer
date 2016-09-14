@@ -147,6 +147,7 @@
 101894	Leider habe ich meinen Anschluss nach Zürich verpasst.
 104682	Leider habe ich meinen Anschluss nach Zürich verpasst.
 101968	Dieser Knopf dient zum Auslösen des Alarms.
+103184	Dieser Knopf dient zum Auslösen des Alarms.
 102124	Die Unzufriedenheit der Bürger ist im Hinblick auf die politische Situation verständlich.
 100630	Die Unzufriedenheit der Bürger ist im Hinblick auf die politische Situation verständlich.
 101233	Die Unzufriedenheit der Bürger ist im Hinblick auf die politische Situation verständlich.
@@ -897,3 +898,210 @@
 104293	Sie ist im vierten Monat schwanger.
 104343	Im Vergleich zu dir geht es mir noch gut.
 102380	Im Vergleich zu dir geht es mir noch gut.
+100801	Die Kommission konnte keine Unregelmäßigkeiten bei der Wahl feststellen.
+100413	Die Kommission konnte keine Unregelmäßigkeiten bei der Wahl feststellen.
+102292	Die Kommission konnte keine Unregelmäßigkeiten bei der Wahl feststellen.
+100068	Mein Arzt verschrieb mir eine Salbe.
+102074	Mein Arzt verschrieb mir eine Salbe.
+103140	Die Benutzung der Toilette ist kostenpflichtig.
+101356	Die Benutzung der Toilette ist kostenpflichtig.
+103881	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
+102618	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
+100765	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
+100450	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
+102571	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+102243	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+102245	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+102865	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+101494	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+103861	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
+103118	Uns stehen schwere Zeiten bevor.
+104084	Uns stehen schwere Zeiten bevor.
+100181	Uns stehen schwere Zeiten bevor.
+101397	Das Dorf liegt in einem Tal.
+100006	Das Dorf liegt in einem Tal.
+103011	Das Dorf liegt in einem Tal.
+101282	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
+101487	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
+100008	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
+103541	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
+104463	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
+102437	Das ist eine hübsche Katze.
+102239	Das ist eine hübsche Katze.
+102561	Das Akademische Auslandsamt ist für die Vermittlung von Erasmusstudenten zuständig.
+102057	Das Akademische Auslandsamt ist für die Vermittlung von Erasmusstudenten zuständig.
+100595	Du hast rote Wangen.
+102580	Du hast rote Wangen.
+102020	Es war kühl im Schatten der Bäume.
+101736	Es war kühl im Schatten der Bäume.
+101423	Es war kühl im Schatten der Bäume.
+100673	Der Maler streicht die Wände.
+103100	Der Maler streicht die Wände.
+100060	Der Maler streicht die Wände.
+103676	Ich überlasse dir die Entscheidung.
+100879	Ich überlasse dir die Entscheidung.
+103347	Die Geschäftsführerin hat eine Versammlung für heute Nachmittag veranlasst.
+102565	Die Geschäftsführerin hat eine Versammlung für heute Nachmittag veranlasst.
+100041	Die Geschäftsführerin hat eine Versammlung für heute Nachmittag veranlasst.
+100355	Die Geschäftsführerin hat eine Versammlung für heute Nachmittag veranlasst.
+103516	Die Geschäftsführerin hat eine Versammlung für heute Nachmittag veranlasst.
+103618	Das Gehirn des Menschen besteht aus zwei Hälften.
+100175	Das Gehirn des Menschen besteht aus zwei Hälften.
+103768	Das Gehirn des Menschen besteht aus zwei Hälften.
+105173	Das Gehirn des Menschen besteht aus zwei Hälften.
+102866	Das Gehirn des Menschen besteht aus zwei Hälften.
+101839	Der Journalist schrieb einen sehr kritischen Artikel.
+104991	Der Journalist schrieb einen sehr kritischen Artikel.
+104298	Der Journalist schrieb einen sehr kritischen Artikel.
+101215	Der Journalist schrieb einen sehr kritischen Artikel.
+101498	Der Journalist schrieb einen sehr kritischen Artikel.
+101469	Moritz hat das Heft mit den Hausaufgaben zuhause vergessen.
+100028	Moritz hat das Heft mit den Hausaufgaben zuhause vergessen.
+103158	Was ist das für ein Geräusch?
+102528	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
+101191	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
+102436	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
+103874	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
+103158	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
+101757	Jeder hat einen anderen Geschmack.
+100012	Moritz hat das Heft mit den Hausaufgaben zuhause vergessen.
+100478	Das Niveau nimmt kontinuierlich ab.
+103917	Das Niveau nimmt kontinuierlich ab.
+104209	Das Niveau nimmt kontinuierlich ab.
+100263	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+101705	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+102030	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+103966	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+100435	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+101701	Ein Herr im schwarzen Anzug erschien auf der Bühne.
+100118	Ein Herr im schwarzen Anzug erschien auf der Bühne.
+100198	Ein Herr im schwarzen Anzug erschien auf der Bühne.
+100699	Ein Herr im schwarzen Anzug erschien auf der Bühne.
+101862	Ein Herr im schwarzen Anzug erschien auf der Bühne.
+103534	Disziplin ist im Sport sehr wichtig.
+101778	Disziplin ist im Sport sehr wichtig.
+104298	Disziplin ist im Sport sehr wichtig.
+100790	Disziplin ist im Sport sehr wichtig.
+103066	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
+100785	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
+102556	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
+102587	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
+103963	Sie änderten ihre Meinung.
+100263	Sie änderten ihre Meinung.
+100042	Welche Zeitung würden Sie vorziehen?
+102959	Welche Zeitung würden Sie vorziehen?
+100059	Ich habe nicht genug Geld.
+102249	Ich habe nicht genug Geld.
+103097	Das zentrale Problem sind die Kosten.
+102266	Das zentrale Problem sind die Kosten.
+102711	Das zentrale Problem sind die Kosten.
+101468	Die Bank ist frisch gestrichen.
+102308	Die Bank ist frisch gestrichen.
+105151	Die Bank ist frisch gestrichen.
+100741	Was bedeutet das?
+100443	Das momentane Wetter ist charakteristisch für diese Region.
+101177	Das momentane Wetter ist charakteristisch für diese Region.
+104530	Das momentane Wetter ist charakteristisch für diese Region.
+103551	Das momentane Wetter ist charakteristisch für diese Region.
+100645	Das ist ein Angriff auf den Präsidenten.
+104263	Das ist ein Angriff auf den Präsidenten.
+103551	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+100496	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+102380	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+102811	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+103408	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+103997	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
+101130	In der Prüfung hat er völlig versagt.
+104712	In der Prüfung hat er völlig versagt.
+104429	In der Prüfung hat er völlig versagt.
+101451	Anja singt seit vielen Jahren im Chor.
+100019	Anja singt seit vielen Jahren im Chor.
+103771	Anja singt seit vielen Jahren im Chor.
+102238	Anja singt seit vielen Jahren im Chor.
+104030	Anja singt seit vielen Jahren im Chor.
+100264	Die Regierung beschließt, die Entscheidung zu vertagen.
+100342	Die Regierung beschließt, die Entscheidung zu vertagen.
+100879	Die Regierung beschließt, die Entscheidung zu vertagen.
+102686	Das ist doch logisch.
+102715	Auch diese Krise wird vorübergehen.
+103789	Auch diese Krise wird vorübergehen.
+104033	Der Angeklagte wurde verurteilt.
+100701	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+103751	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+100658	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+100239	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+101280	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+100987	Es ist kalt, zugleich weht ein starker Wind aus Nord.
+100056	Ich habe eben eine E-Mail bekommen.
+100422	Ich habe eben eine E-Mail bekommen.
+101339	Vom Turm aus hat man eine gute Aussicht auf die Stadt.
+102380	Vom Turm aus hat man eine gute Aussicht auf die Stadt.
+100810	Vom Turm aus hat man eine gute Aussicht auf die Stadt.
+100148	Vom Turm aus hat man eine gute Aussicht auf die Stadt.
+100450	Der Urlaub mit den Kindern war für alle ein Genuss.
+101282	Der Urlaub mit den Kindern war für alle ein Genuss.
+101661	Der Urlaub mit den Kindern war für alle ein Genuss.
+102032	Bei Nebel muss man das Tempo verringern.
+103369	Bei Nebel muss man das Tempo verringern.
+104194	Bei Nebel muss man das Tempo verringern.
+102958	Wandern ist ein gesunder Sport.
+100067	Wandern ist ein gesunder Sport.
+101778	Wandern ist ein gesunder Sport.
+101651	Zu einem Opernball sollte man in angemessener Bekleidung erscheinen.
+101097	Zu einem Opernball sollte man in angemessener Bekleidung erscheinen.
+100188	Viele junge Männer melden sich freiwillig zum Militär.
+100753	Viele junge Männer melden sich freiwillig zum Militär.
+102304	Viele junge Männer melden sich freiwillig zum Militär.
+104500	Viele junge Männer melden sich freiwillig zum Militär.
+102452	Ein starker Wind erschwerte die Arbeit.
+101280	Ein starker Wind erschwerte die Arbeit.
+102452	Ein starker Wind erschwerte die Arbeit.
+101521	Ein starker Wind erschwerte die Arbeit.
+103331	Der Koch hat ein schmackhaftes Menu zusammengestellt.
+101662	Der Koch hat ein schmackhaftes Menu zusammengestellt.
+104099	Der Koch hat ein schmackhaftes Menu zusammengestellt.
+100961	Der Zug aus Dresden hatte zehn Minuten Verspätung.
+105181	Der Zug aus Dresden hatte zehn Minuten Verspätung.
+102658	Der Zug aus Dresden hatte zehn Minuten Verspätung.
+102635	Sie haben darüber endlose Diskussionen geführt.
+100726	Sie haben darüber endlose Diskussionen geführt.
+101847	Sie haben darüber endlose Diskussionen geführt.
+101177	Das Wetter stimmt mit der Vorhersage nicht überein.
+104441	Das Wetter stimmt mit der Vorhersage nicht überein.
+102026	Das Wetter stimmt mit der Vorhersage nicht überein.
+102478	Hat der Laptop eine USB-Schnittstelle?
+102075	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+102384	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+101459	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+100617	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+100244	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+101449	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
+100150	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
+103983	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
+101907	Den Text kann man unterschiedlich auslegen.
+104655	Den Text kann man unterschiedlich auslegen.
+104255	Den Text kann man unterschiedlich auslegen.
+104724	Das Schloss ist von einem kleinen Park umgeben.
+100052	Das Schloss ist von einem kleinen Park umgeben.
+101399	Das Schloss ist von einem kleinen Park umgeben.
+104737	Das Schloss ist von einem kleinen Park umgeben.
+100932	Man muss die Umwelt schützen.
+100508	Man muss die Umwelt schützen.
+100872	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
+103380	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
+104383	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
+103733	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
+100565	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
+104122	Der Bankräuber ergab sich der Polizei.
+103090	Der Bankräuber ergab sich der Polizei.
+102268	Sag mir die Wahrheit, ich werde dich schon nicht umbringen.
+100083	Sag mir die Wahrheit, ich werde dich schon nicht umbringen.
+104494	Sag mir die Wahrheit, ich werde dich schon nicht umbringen.
+101396	Die Zinsen werden am Jahresende fällig.
+102620	Die Zinsen werden am Jahresende fällig.
+102014	Mein Pulli ist nass.
+101709	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
+104553	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
+101282	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
+101369	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
+100183	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.

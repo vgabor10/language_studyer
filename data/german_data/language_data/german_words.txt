@@ -4,7 +4,7 @@
 100003	baden	fürdik
 100004	binden	köt, megköt	rendhagyó igék
 100005	stellen	állít
-100006	legen	lefekszik
+100006	legen	fekszik, lefekszik
 100007	holen	hoz
 100008	schnell	gyors
 100009	schön	szép
@@ -186,7 +186,7 @@
 100185	e Wohnung	lakás
 100186	e Börse	pénztárca
 100187	r Schlüssel	kulcs
-100188	r Mann	férj
+100188	r Mann	férfi, férj
 100189	morgen	holnap (mn)
 100190	s Möbel	bútor
 100191	verdienen	keres (pénzt)
@@ -241,7 +241,7 @@
 100241	aufweisen	felmutat
 100242	r Stand	állapot
 100243	r Einwohner	lakos
-100244	einnehmen	elfoglal
+100244	einnehmen	bevesz, elfoglal
 100245	e Bezeichnung	elnevezés
 100246	zwischen	között
 100247	während	alatt
@@ -756,7 +756,7 @@
 100762	aufgehalten	feltartóztat
 100763	dauern	tart
 100764	s Übel	betegség
-100765	packen	megragad
+100765	packen	megragad, megfog, csomagol
 100766	bereit	hajlandó
 100767	hauptsächlich	főleg
 100768	deutlich	érthető, érthetően
@@ -3077,7 +3077,7 @@
 103115	r Bereich	térség, körzet, terület
 103116	untersuchen	kivizsgál
 103117	e Fahrt	út, utazás
-103118	bevorstehen	közel van
+103118	bevorstehen	közel van, küszöbön áll
 103119	s Lager	tábor, raktár
 103120	verabschieden	elbocsát
 103121	e Rechtsprechung	igazságszolgáltatás
@@ -3470,7 +3470,7 @@
 103513	religiös	vallási
 103514	e Begeisterung	lelkesedés
 103515	wofür	amiért
-103516	veranlassen	rávesz
+103516	veranlassen	rávesz, elintéz
 103517	r Gott	isten
 103518	e Verfügung	intézkedés
 103519	r Empfang	átvétel, fogadás
@@ -3718,7 +3718,7 @@
 103765	arabisch	arab (mn)
 103766	s Blatt	lap, levél (fáé)
 103767	dringen	behatol, áthatol
-103768	bestehen	létezik, kibír, helytáll
+103768	bestehen	létezik, kibír, helytáll, áll vmiből
 103769	mitbringen	magával hoz
 103770	kaufen	vásárol
 103771	seit	óta
@@ -4153,7 +4153,7 @@
 104206	versetzen	áthelyez
 104207	r Terrorismus	terrorizmus
 104208	angehören	hozzátartozik
-104209	kontinuierlich	folyamatos
+104209	kontinuierlich	folyamatos, folyamatosan
 104210	s Krankenhaus	kórház
 104211	bohren	fúr
 104212	r Horizont	horizont, látóhatár
