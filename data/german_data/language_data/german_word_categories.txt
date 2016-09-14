@@ -1,0 +1,454 @@
+100013	kifejezések
+100037	kifejezések
+100063	kifejezések
+100102	kifejezések
+100315	kifejezések
+100346	kifejezések
+100913	kifejezések
+101124	kifejezések
+104290	kifejezések
+104741	kifejezések
+102072	kifejezések
+100590	kifejezések
+102232	kifejezések
+102300	kifejezések
+100423	országok
+101271	országok
+101272	országok
+100850	országok
+100004	rendhagyó igék
+100025	rendhagyó igék
+100026	rendhagyó igék
+100027	rendhagyó igék
+100028	rendhagyó igék
+100029	rendhagyó igék
+100031	rendhagyó igék
+100032	rendhagyó igék
+100033	rendhagyó igék
+100080	rendhagyó igék
+100088	rendhagyó igék
+100110	rendhagyó igék
+100145	rendhagyó igék
+100150	rendhagyó igék
+100162	rendhagyó igék
+100176	rendhagyó igék
+100227	rendhagyó igék
+100259	rendhagyó igék
+100266	rendhagyó igék
+100277	rendhagyó igék
+100422	rendhagyó igék
+100429	rendhagyó igék
+100506	rendhagyó igék
+100515	rendhagyó igék
+100585	rendhagyó igék
+100614	rendhagyó igék
+100659	rendhagyó igék
+100670	rendhagyó igék
+100736	rendhagyó igék
+100874	rendhagyó igék
+100917	rendhagyó igék
+100988	rendhagyó igék
+101019	rendhagyó igék
+101027	rendhagyó igék
+101055	rendhagyó igék
+101119	rendhagyó igék
+101288	rendhagyó igék
+101301	rendhagyó igék
+101451	rendhagyó igék
+101633	rendhagyó igék
+101705	rendhagyó igék
+101714	rendhagyó igék
+101715	rendhagyó igék
+101716	rendhagyó igék
+101755	rendhagyó igék
+101996	rendhagyó igék
+102034	rendhagyó igék
+102106	rendhagyó igék
+102229	rendhagyó igék
+102241	rendhagyó igék
+102246	rendhagyó igék
+102247	rendhagyó igék
+102250	rendhagyó igék
+102276	rendhagyó igék
+102305	rendhagyó igék
+102330	rendhagyó igék
+102335	rendhagyó igék
+102339	rendhagyó igék
+102357	rendhagyó igék
+102368	rendhagyó igék
+102385	rendhagyó igék
+102387	rendhagyó igék
+102390	rendhagyó igék
+102394	rendhagyó igék
+102395	rendhagyó igék
+102444	rendhagyó igék
+102446	rendhagyó igék
+102451	rendhagyó igék
+102498	rendhagyó igék
+102618	rendhagyó igék
+102664	rendhagyó igék
+102665	rendhagyó igék
+102677	rendhagyó igék
+102757	rendhagyó igék
+102802	rendhagyó igék
+102912	rendhagyó igék
+103002	rendhagyó igék
+103043	rendhagyó igék
+103071	rendhagyó igék
+103100	rendhagyó igék
+103185	rendhagyó igék
+103197	rendhagyó igék
+103247	rendhagyó igék
+103342	rendhagyó igék
+103349	rendhagyó igék
+103351	rendhagyó igék
+103372	rendhagyó igék
+103380	rendhagyó igék
+103451	rendhagyó igék
+103497	rendhagyó igék
+103578	rendhagyó igék
+103600	rendhagyó igék
+103657	rendhagyó igék
+103660	rendhagyó igék
+103696	rendhagyó igék
+103861	rendhagyó igék
+103896	rendhagyó igék
+103908	rendhagyó igék
+103927	rendhagyó igék
+103960	rendhagyó igék
+103986	rendhagyó igék
+104012	rendhagyó igék
+104023	rendhagyó igék
+104082	rendhagyó igék
+104106	rendhagyó igék
+104171	rendhagyó igék
+104220	rendhagyó igék
+104273	rendhagyó igék
+104278	rendhagyó igék
+104328	rendhagyó igék
+104365	rendhagyó igék
+104435	rendhagyó igék
+104497	rendhagyó igék
+104525	rendhagyó igék
+104527	rendhagyó igék
+104583	rendhagyó igék
+104602	rendhagyó igék
+104657	rendhagyó igék
+104763	rendhagyó igék
+104765	rendhagyó igék
+104768	rendhagyó igék
+104774	rendhagyó igék
+104783	rendhagyó igék
+104790	rendhagyó igék
+104807	rendhagyó igék
+104808	rendhagyó igék
+104815	rendhagyó igék
+104824	rendhagyó igék
+104831	rendhagyó igék
+104833	rendhagyó igék
+104835	rendhagyó igék
+104859	rendhagyó igék
+104861	rendhagyó igék
+104867	rendhagyó igék
+104871	rendhagyó igék
+104893	rendhagyó igék
+104894	rendhagyó igék
+104895	rendhagyó igék
+104896	rendhagyó igék
+104897	rendhagyó igék
+104898	rendhagyó igék
+104899	rendhagyó igék
+104900	rendhagyó igék
+104901	rendhagyó igék
+104902	rendhagyó igék
+104903	rendhagyó igék
+104904	rendhagyó igék
+104905	rendhagyó igék
+104906	rendhagyó igék
+104907	rendhagyó igék
+104908	rendhagyó igék
+104909	rendhagyó igék
+104910	rendhagyó igék
+104911	rendhagyó igék
+104912	rendhagyó igék
+104913	rendhagyó igék
+104914	rendhagyó igék
+104915	rendhagyó igék
+104916	rendhagyó igék
+104918	rendhagyó igék
+104919	rendhagyó igék
+104920	rendhagyó igék
+104921	rendhagyó igék
+104922	rendhagyó igék
+104923	rendhagyó igék
+104924	rendhagyó igék
+104925	rendhagyó igék
+104926	rendhagyó igék
+104927	rendhagyó igék
+104928	rendhagyó igék
+104929	rendhagyó igék
+104930	rendhagyó igék
+104931	rendhagyó igék
+104932	rendhagyó igék
+104933	rendhagyó igék
+104935	rendhagyó igék
+104936	rendhagyó igék
+104937	rendhagyó igék
+104938	rendhagyó igék
+104939	rendhagyó igék
+104940	rendhagyó igék
+104941	rendhagyó igék
+104942	rendhagyó igék
+104943	rendhagyó igék
+104944	rendhagyó igék
+104945	rendhagyó igék
+104946	rendhagyó igék
+104947	rendhagyó igék
+104948	rendhagyó igék
+104949	rendhagyó igék
+104950	rendhagyó igék
+104951	rendhagyó igék
+104952	rendhagyó igék
+104953	rendhagyó igék
+104954	rendhagyó igék
+104955	rendhagyó igék
+104956	rendhagyó igék
+104957	rendhagyó igék
+104958	rendhagyó igék
+104959	rendhagyó igék
+104960	rendhagyó igék
+104961	rendhagyó igék
+104962	rendhagyó igék
+104963	rendhagyó igék
+104964	rendhagyó igék
+104965	rendhagyó igék
+104966	rendhagyó igék
+104967	rendhagyó igék
+104968	rendhagyó igék
+104969	rendhagyó igék
+104970	rendhagyó igék
+104971	rendhagyó igék
+104972	rendhagyó igék
+104973	rendhagyó igék
+104974	rendhagyó igék
+104975	rendhagyó igék
+104976	rendhagyó igék
+104977	rendhagyó igék
+104978	rendhagyó igék
+104979	rendhagyó igék
+104980	rendhagyó igék
+104981	rendhagyó igék
+104982	rendhagyó igék
+104983	rendhagyó igék
+104984	rendhagyó igék
+104985	rendhagyó igék
+104986	rendhagyó igék
+104987	rendhagyó igék
+104988	rendhagyó igék
+104989	rendhagyó igék
+104990	rendhagyó igék
+104991	rendhagyó igék
+104992	rendhagyó igék
+104993	rendhagyó igék
+104994	rendhagyó igék
+104995	rendhagyó igék
+104996	rendhagyó igék
+104997	rendhagyó igék
+104998	rendhagyó igék
+104999	rendhagyó igék
+105000	rendhagyó igék
+105001	rendhagyó igék
+105002	rendhagyó igék
+105003	rendhagyó igék
+105004	rendhagyó igék
+105005	rendhagyó igék
+105006	rendhagyó igék
+105007	rendhagyó igék
+105008	rendhagyó igék
+105009	rendhagyó igék
+105010	rendhagyó igék
+105011	rendhagyó igék
+105012	rendhagyó igék
+105013	rendhagyó igék
+105015	rendhagyó igék
+105016	rendhagyó igék
+105017	rendhagyó igék
+105018	rendhagyó igék
+105020	rendhagyó igék
+105021	rendhagyó igék
+105022	rendhagyó igék
+105023	rendhagyó igék
+105024	rendhagyó igék
+105025	rendhagyó igék
+105026	rendhagyó igék
+105027	rendhagyó igék
+105028	rendhagyó igék
+105029	rendhagyó igék
+105030	rendhagyó igék
+105031	rendhagyó igék
+105032	rendhagyó igék
+105033	rendhagyó igék
+105034	rendhagyó igék
+105035	rendhagyó igék
+105036	rendhagyó igék
+105037	rendhagyó igék
+105038	rendhagyó igék
+105039	rendhagyó igék
+105040	rendhagyó igék
+105041	rendhagyó igék
+105042	rendhagyó igék
+105043	rendhagyó igék
+105044	rendhagyó igék
+105045	rendhagyó igék
+105046	rendhagyó igék
+105047	rendhagyó igék
+105048	rendhagyó igék
+105049	rendhagyó igék
+105050	rendhagyó igék
+105051	rendhagyó igék
+105052	rendhagyó igék
+105053	rendhagyó igék
+105054	rendhagyó igék
+105055	rendhagyó igék
+105057	rendhagyó igék
+105058	rendhagyó igék
+105059	rendhagyó igék
+105060	rendhagyó igék
+105061	rendhagyó igék
+105062	rendhagyó igék
+105063	rendhagyó igék
+105064	rendhagyó igék
+105065	rendhagyó igék
+105066	rendhagyó igék
+105067	rendhagyó igék
+105068	rendhagyó igék
+105069	rendhagyó igék
+105070	rendhagyó igék
+105071	rendhagyó igék
+105072	rendhagyó igék
+105074	rendhagyó igék
+105075	rendhagyó igék
+105076	rendhagyó igék
+105077	rendhagyó igék
+105078	rendhagyó igék
+105079	rendhagyó igék
+105080	rendhagyó igék
+105081	rendhagyó igék
+105082	rendhagyó igék
+105083	rendhagyó igék
+105084	rendhagyó igék
+105085	rendhagyó igék
+105086	rendhagyó igék
+105087	rendhagyó igék
+105088	rendhagyó igék
+105089	rendhagyó igék
+105090	rendhagyó igék
+105091	rendhagyó igék
+105092	rendhagyó igék
+105093	rendhagyó igék
+105094	rendhagyó igék
+105095	rendhagyó igék
+105096	rendhagyó igék
+105097	rendhagyó igék
+105098	rendhagyó igék
+105099	rendhagyó igék
+105100	rendhagyó igék
+105101	rendhagyó igék
+105102	rendhagyó igék
+105103	rendhagyó igék
+105104	rendhagyó igék
+105105	rendhagyó igék
+105106	rendhagyó igék
+105107	rendhagyó igék
+105108	rendhagyó igék
+105109	rendhagyó igék
+105110	rendhagyó igék
+105111	rendhagyó igék
+105112	rendhagyó igék
+105113	rendhagyó igék
+105114	rendhagyó igék
+105115	rendhagyó igék
+105116	rendhagyó igék
+105117	rendhagyó igék
+105118	rendhagyó igék
+105119	rendhagyó igék
+105120	rendhagyó igék
+105121	rendhagyó igék
+105122	rendhagyó igék
+105123	rendhagyó igék
+105124	rendhagyó igék
+105125	rendhagyó igék
+105126	rendhagyó igék
+105127	rendhagyó igék
+105128	rendhagyó igék
+105129	rendhagyó igék
+105130	rendhagyó igék
+105131	rendhagyó igék
+105132	rendhagyó igék
+105133	rendhagyó igék
+105134	rendhagyó igék
+105135	rendhagyó igék
+105136	rendhagyó igék
+105137	rendhagyó igék
+105138	rendhagyó igék
+105139	rendhagyó igék
+105140	rendhagyó igék
+105141	rendhagyó igék
+105142	rendhagyó igék
+105143	rendhagyó igék
+105144	rendhagyó igék
+105145	rendhagyó igék
+105146	rendhagyó igék
+105147	rendhagyó igék
+105148	rendhagyó igék
+105149	rendhagyó igék
+105150	rendhagyó igék
+105151	rendhagyó igék
+105152	rendhagyó igék
+105154	rendhagyó igék
+105155	rendhagyó igék
+105156	rendhagyó igék
+105157	rendhagyó igék
+105159	rendhagyó igék
+105160	rendhagyó igék
+105161	rendhagyó igék
+105162	rendhagyó igék
+105163	rendhagyó igék
+105164	rendhagyó igék
+105165	rendhagyó igék
+105166	rendhagyó igék
+105167	rendhagyó igék
+105168	rendhagyó igék
+105169	rendhagyó igék
+105170	rendhagyó igék
+102763	számok
+102774	számok
+102961	számok
+103282	számok
+103353	számok
+105172	számok
+105173	számok
+105174	számok
+105175	számok
+105176	számok
+105177	számok
+105178	számok
+105181	számok
+105182	számok
+105184	számok
+105185	számok
+105186	számok
+105187	számok
+105188	számok
+105189	számok
+105190	számok
+105192	számok
+105193	számok
+105194	számok
+105195	számok
+105196	számok
+105197	számok
+105198	számok
+105199	számok
+105200	számok
+105201	számok

@@ -1105,3 +1105,27 @@
 101282	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
 101369	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
 100183	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
+100397	Es ist allgemein bekannt, dass Paris in Frankreich liegt.
+100353	Es ist allgemein bekannt, dass Paris in Frankreich liegt.
+100423	Es ist allgemein bekannt, dass Paris in Frankreich liegt.
+104497	Es ist allgemein bekannt, dass Paris in Frankreich liegt.
+101707	Ohne meine Handtasche gehe ich nicht aus dem Haus.
+102260	Ohne meine Handtasche gehe ich nicht aus dem Haus.
+100109	Ohne meine Handtasche gehe ich nicht aus dem Haus.
+102306	Ich freue mich über die rege Teilnahme am Seminar.
+102523	Ich freue mich über die rege Teilnahme am Seminar.
+103083	Ich freue mich über die rege Teilnahme am Seminar.
+100299	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
+104692	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
+101865	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
+100585	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
+101411	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
+100536	Wir können über sein Konto verfügen.
+104644	Wir können über sein Konto verfügen.
+103353	Ich habe zwanzig Euro im Lotto gewonnen.
+105089	Ich habe zwanzig Euro im Lotto gewonnen.
+102253	Ich habe zwanzig Euro im Lotto gewonnen.
+100117	Hotzenplotz hat ein Fahrrad gestohlen.
+105146	Hotzenplotz hat ein Fahrrad gestohlen.
+100235	Kinder sollten im Haushalt helfen.
+102395	Kinder sollten im Haushalt helfen.

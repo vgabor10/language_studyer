@@ -2,7 +2,7 @@
 100001	reden	beszél
 100002	antworten	felel, válaszol
 100003	baden	fürdik
-100004	binden	köt, megköt	rendhagyó igék
+100004	binden	köt, megköt
 100005	stellen	állít
 100006	legen	fekszik, lefekszik
 100007	holen	hoz
@@ -11,7 +11,7 @@
 100010	immer	mindig
 100011	nach Hause	haza
 100012	zu Hause	otthon (prepozícióval)
-100013	in der Näche	közelben	kifejezések
+100013	in der Näche	közelben
 100014	sofort	rögtön, azonnal
 100015	e Strassenbahn	villamos
 100016	oft	gyakran, gyakori
@@ -23,19 +23,19 @@
 100022	langsam	lassú
 100023	noch	még
 100024	e Uhr	óra
-100025	treffen	találkozik	rendhagyó igék
-100026	brechen	eltör, eltörik	rendhagyó igék
-100027	sterben	hal, meghal	rendhagyó igék
-100028	vergessen	elfelejt	rendhagyó igék
-100029	nehmen	fog, vesz	rendhagyó igék
+100025	treffen	találkozik
+100026	brechen	eltör, eltörik
+100027	sterben	hal, meghal
+100028	vergessen	elfelejt
+100029	nehmen	fog, vesz
 100030	s Brötchen	zsömle
-100031	graben	ás	rendhagyó igék
-100032	fangen	megfog, elkap	rendhagyó igék
-100033	lesen	olvas	rendhagyó igék
+100031	graben	ás
+100032	fangen	megfog, elkap
+100033	lesen	olvas
 100034	r Kuchen	sütemény
 100035	s Kleid	ruha
 100036	wenig	kevés
-100037	Platz nehmen	helyet foglal	kifejezések
+100037	Platz nehmen	helyet foglal
 100038	s Brot	kenyér
 100039	nie	soha
 100040	s Lied	dal
@@ -61,7 +61,7 @@
 100060	e Wand	fal
 100061	s Fieber	láz
 100062	e Idee	ötlet
-100063	Angst haben	fél (ig)	kifejezések
+100063	Angst haben	fél (ig)
 100064	hungrig	éhes
 100065	durstig	szomjas
 100066	böse	gonosz
@@ -78,7 +78,7 @@
 100077	s Datum	dátum
 100078	alles	minden
 100079	woher	honnan
-100080	wissen	tud, ismer	rendhagyó igék
+100080	wissen	tud, ismer
 100081	e Nummer	szám
 100082	genau	pontos
 100083	e Wahrheit	igazság
@@ -86,7 +86,7 @@
 100085	e Nachricht	hír
 100086	s Salz	só
 100087	damit	ezzel
-100088	wollen	akar	rendhagyó igék
+100088	wollen	akar
 100089	e Tochter	lánya vkinek
 100090	tun	tesz
 100091	s Radio	rádió
@@ -100,7 +100,7 @@
 100099	r Kopf	fej
 100100	neben	mellé
 100101	r Hals	nyak, torok
-100102	zu tun haben	dolga van	kifejezések
+100102	zu tun haben	dolga van
 100103	besuchen	meglátogat
 100104	r Kuss	csók
 100105	e Sache	ügy, dolog
@@ -108,7 +108,7 @@
 100107	gefallen	tetszik
 100108	r Schrank	szekrény
 100109	s Haus	ház
-100110	geben	ad	rendhagyó igék
+100110	geben	ad
 100111	e Schokolade	csokoládé
 100112	s Fenster	ablak
 100113	neu	új
@@ -143,12 +143,12 @@
 100142	e Küche	konyha
 100143	zeigen	mutat
 100144	erklären	elmagyaráz
-100145	schließen	zár, becsuk	rendhagyó igék
+100145	schließen	zár, becsuk
 100146	s Wasser	víz
 100147	e Gruppe	csoport
 100148	e Stadt	város
 100149	e Dose	doboz, konzervdoboz
-100150	anbieten	megkínál, felkínál	rendhagyó igék
+100150	anbieten	megkínál, felkínál
 100151	r Rat	tanács
 100152	e Geduld	türelem
 100153	e Hilfe	segítség
@@ -160,7 +160,7 @@
 100159	s Glas	üveg, pohár
 100160	r Führer	vezér, vezető
 100161	s Mineralwasser	ásványvíz
-100162	dürfen	szabad (ige)	rendhagyó igék
+100162	dürfen	szabad (ige)
 100163	r Salat	saláta
 100164	rechtzeitig	időben
 100165	r Hund	kutya
@@ -174,7 +174,7 @@
 100173	gehören	tartozik vkihez
 100174	r Junge	fiú
 100175	r Mensch	ember
-100176	rufen	hív, kiabál	rendhagyó igék
+100176	rufen	hív, kiabál
 100177	fragen	kérdez
 100178	begrüßen	üdvözöl
 100179	putzen	tisztít
@@ -224,7 +224,7 @@
 100224	e Entwicklung	fejlődés
 100225	rund	nagyjából
 100226	s Prozent	százalék
-100227	steigen	emelkedik	rendhagyó igék
+100227	steigen	emelkedik
 100228	r Wert	érték
 100229	betragen	kitesz
 100230	r Ausländer	külföldi (fn)
@@ -256,14 +256,14 @@
 100256	letzt	utolsó
 100257	s Jahrhundert	évszázad
 100258	e Dienstleistung	szolgáltatás
-100259	gewinnen	nyer	rendhagyó igék
+100259	gewinnen	nyer
 100260	bestimmen	meghatároz, megjelöl
 100261	r Kanzler	kancellár
 100262	versuchen	megpróbál
 100263	e Meinung	vélemény
 100264	e Regierung	kormány
 100265	r Einfluss	befolyás
-100266	verlieren	veszít, elveszít	rendhagyó igék
+100266	verlieren	veszít, elveszít
 100267	zunehmen	nő (ige)
 100268	fördern	támogat
 100269	e See	tenger
@@ -274,7 +274,7 @@
 100274	insgesamt	összesen
 100275	bedrohen	veszélyeztet
 100276	e Gesellschaft	társadalom
-100277	fallen	esik	rendhagyó igék
+100277	fallen	esik
 100278	e Veränderung	változás
 100279	erheblich	jelentős
 100280	beeinflussen	befolyásol
@@ -311,7 +311,7 @@
 100312	letztlich	végül
 100313	stürzen	zuhan, elesik
 100314	endgültig	végérvényes
-100315	immer deutlicher	egyre nyílvánvalóbb	kifejezések
+100315	immer deutlicher	egyre nyílvánvalóbb
 100316	r Krieg	háború
 100317	s Reich	birodalom
 100318	r Teil	rész
@@ -342,7 +342,7 @@
 100343	s Abgeordnetenhaus	képviselőház
 100344	e Klasse	osztály
 100345	s Wahlrecht	választójog
-100346	zu spät	túl későn	kifejezések
+100346	zu spät	túl későn
 100347	freilich	tényleg
 100348	auslaufen	kifut
 100349	e Flotte	flotta
@@ -417,14 +417,14 @@
 100419	s Versprechen	ígéret
 100420	e Begründung	indoklás
 100421	e Spitze	csúcs
-100422	bekommen	kap	rendhagyó igék
-100423	Frankreich	Franciaország	országok
+100422	bekommen	kap
+100423	Frankreich	Franciaország
 100424	e Währung	valuta
 100425	erwachen	felébred
 100426	erwarten	vár, elvár
 100427	e Hoffnung	remény
 100428	s Quartal	negyedév
-100429	wachsen	nő (ige)	rendhagyó igék
+100429	wachsen	nő (ige)
 100430	überdenken	átgondol
 100431	r Hafen	kikötő
 100432	bislang	ezidáig
@@ -501,7 +501,7 @@
 100503	e Daten	adat
 100504	sammeln	gyűjt
 100505	s Wohl	jólét
-100506	geschehen	történik	rendhagyó igék
+100506	geschehen	történik
 100507	laut	szerint
 100508	schützen	véd
 100509	e Bedenken	aggály
@@ -510,7 +510,7 @@
 100512	s Blut	vér
 100513	r Leiter	vezető
 100514	piksen	megszúr
-100515	empfinden	érez, észlel	rendhagyó igék
+100515	empfinden	érez, észlel
 100516	erleichtern	könnyít
 100517	e Behandlung	kezelés
 100518	betonen	hangsúlyoz
@@ -579,7 +579,7 @@
 100582	e Küste	part
 100583	e Schlacht	csata
 100584	e Weise	mód
-100585	verlassen	elhagy	rendhagyó igék
+100585	verlassen	elhagy
 100586	r Weltraum	világűr
 100587	s Gleis	sín
 100588	r Bahnsteig	peron
@@ -607,7 +607,7 @@
 100611	e Eigenschaft	tulajdonság
 100612	verhindern	akadályoz
 100613	s Interview	interjú
-100614	einladen	meghív	rendhagyó igék
+100614	einladen	meghív
 100615	s Tausend	ezer (fn)
 100616	verbessern	javít
 100617	s Essen	étel, evés
@@ -650,7 +650,7 @@
 100655	r Umfang	méret
 100656	e Flasche	üveg
 100658	wehen	fúj
-100659	schießen	lő	rendhagyó igék
+100659	schießen	lő
 100660	selten	ritka, ritkán
 100661	e Investition	beruházás
 100662	wünschen	kíván
@@ -661,7 +661,7 @@
 100667	r Pensionär	nyugdíjas
 100668	erobern	elfoglal
 100669	zerstören	lerombol
-100670	messen	mér	rendhagyó igék
+100670	messen	mér
 100671	r Herbst	ősz
 100672	e Halbinsel	félsziget
 100673	r Maler	festő
@@ -727,7 +727,7 @@
 100733	r Appell	fellebezés
 100734	sicherstellen	biztosít
 100735	verlangen	kér, követel
-100736	lassen	hagy	rendhagyó igék
+100736	lassen	hagy
 100737	e Tat	tett
 100738	folgen	követ
 100739	e Baustelle	építkezés
@@ -863,7 +863,7 @@
 100871	s Mindestmaß	minimum
 100872	e Ausbildung	oktatás, kiképzés
 100873	erwägen	megfontol
-100874	schlagen	üt, ver	rendhagyó igék
+100874	schlagen	üt, ver
 100875	nachdenken	gondolkodik, elgondolkodig
 100876	ermöglichen	engedélyez
 100877	besorgen	aggódik
@@ -902,10 +902,10 @@
 100910	gewaltig	óriási
 100911	einsetzen	alkalmaz
 100912	zwar	noha
-100913	vor allem	mindenekelőtt	kifejezések
+100913	vor allem	mindenekelőtt
 100915	r Kreuzer	cirkáló
 100916	lautlose	néma
-100917	scheinen	tűnik, látszik	rendhagyó igék
+100917	scheinen	tűnik, látszik
 100918	machtlos	tehetelen
 100919	massenhaft	tömeges
 100920	eingehen	megérkezik, belép
@@ -976,7 +976,7 @@
 100985	r Gerichtshof	bíróság
 100986	s Gesicht	arc
 100987	r Nord	észak
-100988	eindringen	behatol	rendhagyó igék
+100988	eindringen	behatol
 100989	verfolgen	üldöz
 100990	r Vorschlag	javaslat
 100991	zuversichtlich	bizakodó
@@ -1007,7 +1007,7 @@
 101016	heimlich	titokban
 101017	s Meer	tenger
 101018	kürzlich	nemrég
-101019	laden	megrak, megterhel	rendhagyó igék
+101019	laden	megrak, megterhel
 101020	e Leiferung	szállítmány
 101021	vorrücken	előrenyomul
 101022	e Umgebung	vidék
@@ -1015,7 +1015,7 @@
 101024	unterhalten	fenntart, szórakoztat
 101025	klarkommen	boldogul
 101026	r Rücktritt	visszavonulás
-101027	bergen	elrejt, kiment	rendhagyó igék
+101027	bergen	elrejt, kiment
 101029	r Zustrom	beáramlás
 101030	spürbar	észrevehető
 101031	entkommen	szökik
@@ -1042,7 +1042,7 @@
 101052	e Behinderung	fogyatékosság
 101053	s Urteil	megítélés
 101054	s Handwerk	szakma
-101055	treten	lép, rúg, jár	rendhagyó igék
+101055	treten	lép, rúg, jár
 101056	e Empörung	lázadás
 101057	r Redakteur	szerkesztő
 101058	entlasten	tehermentesít
@@ -1106,12 +1106,12 @@
 101116	e Wissenschaft	tudomány
 101117	verdampfen	elpárolog
 101118	e Hitze	hőség
-101119	brennen	ég (ige)	rendhagyó igék
+101119	brennen	ég (ige)
 101120	e Haut	bőr
 101121	r Regen	eső
 101122	r Mund	száj
 101123	bedeutend	jelentős
-101124	unter anderem	többek között	kifejezések
+101124	unter anderem	többek között
 101125	üblich	szokásos
 101126	erben	örököl
 101127	r Ritter	lovag
@@ -1258,8 +1258,8 @@
 101268	rentabel	kifizetődő
 101269	stattfinden	megtörténik
 101270	e Not	baj, szükség
-101271	Ungarn	Magyarország	országok
-101272	Italien	Olaszország	országok
+101271	Ungarn	Magyarország
+101272	Italien	Olaszország
 101273	e Meisterschaft	bajnokság
 101274	feiern	ünnepel
 101275	registrieren	regsztrál
@@ -1275,7 +1275,7 @@
 101285	e Schülerin	diáklány
 101286	r Kuli	toll
 101287	r Ball	labda
-101288	fernsehen	TV-t néz	rendhagyó igék
+101288	fernsehen	TV-t néz
 101289	r Korbball	kosárlabda
 101290	s Eis	fagyi
 101291	e Bank	bank
@@ -1288,7 +1288,7 @@
 101298	e Apotheke	gyógyszertár
 101299	r Gang	menet, séta
 101300	kommerziell	kereskedelmi
-101301	raten	tanácsol	rendhagyó igék
+101301	raten	tanácsol
 101302	e Qualität	minőség
 101303	überragend	kiemelkedő
 101304	e Studie	tanulmány
@@ -1435,7 +1435,7 @@
 101448	s Alter	kor
 101449	r Kindergarten	óvoda
 101450	s Lebensjahr	életév
-101451	singen	énekel	rendhagyó igék
+101451	singen	énekel
 101452	spielen	játszik
 101453	s Gedicht	vers
 101454	s Märchen	mese
@@ -1615,7 +1615,7 @@
 101630	r Pfeffer	bors
 101631	r Pilz	gomba
 101632	e Aprikose	sárgabarack
-101633	backen	süt	rendhagyó igék
+101633	backen	süt
 101634	aufkochen	felforral
 101635	s Bügeleisen	vasaló
 101636	e Spülmaschine	mosogatógép
@@ -1684,7 +1684,7 @@
 101702	zahlen	fizet
 101703	e Station	állomás
 101704	e Dame	hölgy
-101705	stehen	áll	rendhagyó igék
+101705	stehen	áll
 101706	laut	hangos
 101707	ohne	nélkül
 101708	e Strafe	büntetés, bírság
@@ -1693,9 +1693,9 @@
 101711	s Verkehrsmittel	közlekedési eszköz
 101712	r Schaffner	kalauz
 101713	s Taxi	taxi
-101714	einsteigen	beszáll vhová	rendhagyó igék
-101715	aussteigen	kiszáll	rendhagyó igék
-101716	umsteigen	átszáll	rendhagyó igék
+101714	einsteigen	beszáll vhová
+101715	aussteigen	kiszáll
+101716	umsteigen	átszáll
 101717	e Adresse	cím
 101718	s Trinkgeld	borravaló
 101719	s Lenkrad	kormány
@@ -1734,7 +1734,7 @@
 101752	übernachten	éjszakázik
 101753	r Ring	gyűrű
 101754	s Reisebüro	utazási iroda
-101755	fliegen	repül	rendhagyó igék
+101755	fliegen	repül
 101756	s Fliegen	repülés
 101757	r Geschmack	íz
 101758	übermorgen	holnapután
@@ -1971,7 +1971,7 @@
 101993	e Tetovierung	tetoválás
 101994	ärgerlich	bosszantó
 101995	ungeschickt	ügyetlen
-101996	lügen	hazudik	rendhagyó igék
+101996	lügen	hazudik
 101997	reinigen	tisztít
 101998	färben	színez, fest
 102000	e Mühe	fáradság
@@ -2008,7 +2008,7 @@
 102031	r Niederschlag	csapadék
 102032	r Nebel	köd
 102033	r Frost	fagy (fn)
-102034	frieren	fázik, megfagy	rendhagyó igék
+102034	frieren	fázik, megfagy
 102035	tauen	olvad
 102036	r Blitz	villám
 102037	blitzen	villámlik
@@ -2078,7 +2078,7 @@
 102103	verschicken	elküld
 102104	r Zeuge	tanú
 102105	r Pfarrer	pap
-102106	schwören	esküszik	rendhagyó igék
+102106	schwören	esküszik
 102107	e Treue	hűség
 102108	ewig	örök
 102109	e Hochzeitsreise	nászút
@@ -2200,7 +2200,7 @@
 102226	r Odeur	illat
 102227	e Treppe	lépcső
 102228	kratzen	karcol
-102229	ausgehen	szórakozni megy	rendhagyó igék
+102229	ausgehen	szórakozni megy
 102230	r Fiskus	kincstár
 102231	r Vorteil	előny
 102233	beraten	tanácsot ad
@@ -2211,16 +2211,16 @@
 102238	s Jahr	év
 102239	e Katze	macska
 102240	s Pferd	ló
-102241	sprechen	beszél	rendhagyó igék
+102241	sprechen	beszél
 102242	e Frage	kérdés
 102243	lernen	tanul
 102244	s Ende	vég, végződés
 102245	verschieden	különböző
-102246	beginnen	elkezd, elkezdődik	rendhagyó igék
-102247	schreiben	ír	rendhagyó igék
+102246	beginnen	elkezd, elkezdődik
+102247	schreiben	ír
 102248	überhaupt	általában
 102249	s Geld	pénz
-102250	sitzen	ül	rendhagyó igék
+102250	sitzen	ül
 102251	r Abend	este
 102252	r Monat	hónap
 102253	r Euro	euró
@@ -2246,7 +2246,7 @@
 102273	r Becher	bögre
 102274	e Deutung	magyarázat
 102275	s Feuer	tűz
-102276	finden	talál	rendhagyó igék
+102276	finden	talál
 102277	s Ding	dolog
 102278	abbauen	lebont
 102279	abbilden	másol, ábrázol
@@ -2274,7 +2274,7 @@
 102302	freigeben	felszabadít
 102303	r Freitag	péntek
 102304	freiwillig	önként
-102305	fressen	zabál, állat eszik	rendhagyó igék
+102305	fressen	zabál, állat eszik
 102306	freuen	örül
 102307	friedlich	békés
 102308	frisch	friss
@@ -2298,16 +2298,16 @@
 102327	gegenseitig	kölcsönös
 102328	gegenwärtig	pillanatnyilag
 102329	geheim	titkos
-102330	gehen	megy	rendhagyó igék
+102330	gehen	megy
 102331	geistig	szellemi
 102332	geistlich	egyházi
 102333	gelb	sárga
 102334	gelegentlich	alkalmanként
-102335	gelingen	sikerül	rendhagyó igék
+102335	gelingen	sikerül
 102336	gemütlich	kényelmes
 102337	genauso	pontosan úgy
 102338	genetisch	genetikai
-102339	genießen	élvez	rendhagyó igék
+102339	genießen	élvez
 102340	genügen	eleget tesz vminek
 102341	geographisch	földrajzi
 102343	geradezu	éppen
@@ -2324,7 +2324,7 @@
 102354	gewährleisten	garantál
 102355	gewiss	biztosan
 102356	gewohnt	szokásos
-102357	gießen	önt, tölt	rendhagyó igék
+102357	gießen	önt, tölt
 102358	glänzend	ragyogó
 102359	gleichen	simít, kiegyenlít
 102360	gleichmäßig	egyenletes
@@ -2335,7 +2335,7 @@
 102365	golden	aranyszínű
 102366	s Gras	fű
 102367	grau	szürke
-102368	greifen	megragad, megfog	rendhagyó igék
+102368	greifen	megragad, megfog
 102369	griechisch	görög (mn)
 102370	großartig	nagyszerű
 102371	groß	nagy
@@ -2352,17 +2352,17 @@
 102382	haften	tapad
 102383	r Hahn	kakas
 102384	halb	fél (mn)
-102385	halten	tart	rendhagyó igék
+102385	halten	tart
 102386	r Hamster	hörcsög
-102387	hängen	lóg, függ	rendhagyó igék
+102387	hängen	lóg, függ
 102388	harmlos	ártalmatlan
 102389	hassen	gyűlöl
-102390	heben	emel	rendhagyó igék
+102390	heben	emel
 102391	heftig	heves
 102392	heilig	szent (mn)
 102393	heimisch	hazai
-102394	heißen	hívják vhogyan	rendhagyó igék
-102395	helfen	segít	rendhagyó igék
+102394	heißen	hívják vhogyan
+102395	helfen	segít
 102396	hell	tiszta
 102397	herausgeben	kiad
 102398	herausfinden	rájön
@@ -2411,14 +2411,14 @@
 102441	ideal	ideális
 102442	identisch	azonos
 102443	identifizieren	azonosít
-102444	fliehen	menekül	rendhagyó igék
+102444	fliehen	menekül
 102445	fließend	folyékonyan
-102446	fließen	folyik	rendhagyó igék
+102446	fließen	folyik
 102447	illegal	illegális
 102448	erschießen	lelő
 102449	erschließen	kinyit
 102450	erschöpfen	kimerül
-102451	erschrecken	megijed	rendhagyó igék
+102451	erschrecken	megijed
 102452	erschweren	megnehezít
 102453	ersetzen	pótol
 102454	ersparen	megtakarít
@@ -2464,7 +2464,7 @@
 102495	e Spalte	oszlop, repedés
 102496	e Sportart	sportág
 102497	e Spur	nyom, ösvény
-102498	essen	eszik	rendhagyó igék
+102498	essen	eszik
 102499	e Stabilität	stabilitás
 102500	e Statistik	statisztika
 102501	e Steckdose	konnektor
@@ -2582,7 +2582,7 @@
 102615	e Zusammensetzung	összetétel
 102616	e Zustimmung	helyeslés
 102617	fachlich	szakszerű
-102618	fahren	vezet, utazik	rendhagyó igék
+102618	fahren	vezet, utazik
 102619	r Fall	esés
 102620	fällig	esedékes
 102621	falsch	hamis
@@ -2626,8 +2626,8 @@
 102661	e Mitte	közép
 102662	emotional	érzelmi
 102663	e Motivation	motiváció
-102664	empfangen	fogad	rendhagyó igék
-102665	empfehlen	ajánl	rendhagyó igék
+102664	empfangen	fogad
+102665	empfehlen	ajánl
 102666	empirisch	tapasztalati
 102667	empfindlich	érzékeny
 102668	kritisieren	krizizál
@@ -2639,7 +2639,7 @@
 102674	künstlich	mesterséges
 102675	ländlich	vidéki
 102676	langweilig	unalmas
-102677	laufen	fut	rendhagyó igék
+102677	laufen	fut
 102678	lauschen	hallgat, fülel
 102679	lebendig	élő, eleven
 102680	leben	él
@@ -2719,13 +2719,13 @@
 102754	einschränken	korlátoz
 102755	einschließen	bezár
 102756	einschlagen	betör, bezúz
-102757	einschlafen	elalszik	rendhagyó igék
+102757	einschlafen	elalszik
 102758	einschätzen	felbecsül
 102759	einrichten	berendez, elrendez
 102760	weinen	sír (ig)
 102761	e Grenze	határ
 102762	e Nuss	dió
-102763	null	nulla	számok
+102763	null	nulla
 102764	r Angehörige	rokon
 102765	r Amerikaner	amerikai (ember)
 102766	r Planet	bolygó
@@ -2736,7 +2736,7 @@
 102771	e Gestalt	forma, alak
 102772	r Name	név
 102773	ehe	mielőtt
-102774	neun	kilenc	számok
+102774	neun	kilenc
 102775	praktisch	hasznos, praktikus
 102776	e Identität	identitás
 102777	obwohl	habár
@@ -2764,7 +2764,7 @@
 102799	r Backofen	sütő
 102800	r Bayer	bajor (fn)
 102801	r Benutzer	felhasználó
-102802	nennen	nevez	rendhagyó igék
+102802	nennen	nevez
 102803	öffnen	nyit
 102804	passen	passzol, illik
 102805	e Freiheit	szabadság
@@ -2873,7 +2873,7 @@
 102909	obere	felső
 102910	e Halle	előcsarnok
 102911	e Gestaltung	alak, kialakítás
-102912	waschen	mos	rendhagyó igék
+102912	waschen	mos
 102913	r Augenblick	pillanat
 102914	wahnsinnig	őrült (mn)
 102915	r Ärger	harag
@@ -2922,7 +2922,7 @@
 102958	wandern	kirándul
 102959	vorziehen	előnyben részesít, preferál
 102960	e Innenstadt	belváros
-102961	zwölf	tizenkettő	számok
+102961	zwölf	tizenkettő
 102962	wandeln	megváltoztat
 102963	r Pilot	pilóta
 102964	r Abbau	leépítés
@@ -2961,7 +2961,7 @@
 102999	davor	azelőtt
 103000	vereinfachen	egyszerűsít
 103001	senden	küld
-103002	schieben	tol	rendhagyó igék
+103002	schieben	tol
 103003	zuhören	hallgat, odafigyel
 103004	s Vorbild	példakép
 103005	r Senat	szenátus
@@ -3002,7 +3002,7 @@
 103040	s Ausmaß	terjedelem, méret
 103041	winken	int, integet
 103042	statistisch	statisztikai
-103043	ziehen	húz	rendhagyó igék
+103043	ziehen	húz
 103044	r Kilometer	kilóméter
 103045	übersehen	átnéz, áttekint
 103046	ablegen	lerak
@@ -3030,7 +3030,7 @@
 103068	aufspringen	felugrik
 103069	anderthalb	másfél (mn)
 103070	absetzen	elad, elhelyez
-103071	mögen	szeret	rendhagyó igék
+103071	mögen	szeret
 103072	anstelle	helyett
 103073	verdrängen	előz, kiszorít
 103074	scheinbar	látszólag
@@ -3059,7 +3059,7 @@
 103097	zentral	központi
 103098	r Koffer	bőrőnd
 103099	s Modell	modell
-103100	streichen	simít, kihúz, kitöröl	rendhagyó igék
+103100	streichen	simít, kihúz, kitöröl
 103101	zurückkommen	visszatér
 103102	bedenken	megfontol
 103103	keineswegs	semmiképpen
@@ -3142,7 +3142,7 @@
 103182	r Ursprung	eredet
 103183	aufwachsen	felnő
 103184	dienen	szolgál
-103185	bringen	hoz	rendhagyó igék
+103185	bringen	hoz
 103186	e Entdeckung	felfedezés
 103187	solange	ameddig
 103188	r Vorstand	elnök, elnőkség
@@ -3154,7 +3154,7 @@
 103194	s Gas	gáz
 103195	außerordentlich	rendkívül
 103196	weitgehend	messzemenően
-103197	streiten	veszekszik	rendhagyó igék
+103197	streiten	veszekszik
 103198	nachdem	miután
 103199	zufolge	szerint
 103200	r Grenzwert	határérték
@@ -3203,7 +3203,7 @@
 103244	täglich	naponta
 103245	entscheidend	meghatározó
 103246	s Forum	fórum
-103247	bleiben	marad	rendhagyó igék
+103247	bleiben	marad
 103248	schräg	ferde
 103249	verbrennen	eléget
 103250	s Mitglied	tag
@@ -3237,7 +3237,7 @@
 103279	aufstellen	feltesz, felállít
 103280	r Kritiker	bíráló, kritikus (fn)
 103281	decken	befed
-103282	acht	nyolc	számok
+103282	acht	nyolc
 103283	übertragen	átvisz, közvetít
 103284	lauter	valódi
 103285	intensiv	intenzív
@@ -3296,18 +3296,18 @@
 103339	ausnutzen	kihasznál
 103340	verweisen	utal
 103341	unterscheiden	megkülönböztet
-103342	bitten	kér	rendhagyó igék
+103342	bitten	kér
 103343	irgendwie	valahogyan
 103344	jederzeit	bármikor
 103345	r Bau	szerkezet, épület
 103346	e Auseinandersetzung	vita, veszekedés
 103347	r Geschäftsführer	ügyvezető igazgató
 103348	r Betrachter	néző, szemlélő
-103349	anziehen	felöltöztet	rendhagyó igék
+103349	anziehen	felöltöztet
 103350	r Ertrag	hozam
-103351	sehen	néz, lát	rendhagyó igék
+103351	sehen	néz, lát
 103352	außen	kint
-103353	zwanzig	húsz	számok
+103353	zwanzig	húsz
 103354	regeln	szabályoz, rendez
 103355	s Abkommen	megállapodás
 103356	verbreiten	terjeszt
@@ -3326,7 +3326,7 @@
 103369	s Tempo	tempó, sebesség
 103370	wohl	jól
 103371	beabsichtigen	szándékozik
-103372	schreiten	lép, lépked	rendhagyó igék
+103372	schreiten	lép, lépked
 103373	s Gewehr	puska
 103374	nachher	azután
 103375	wert	érdemes
@@ -3334,7 +3334,7 @@
 103377	indirekt	közvetett, indirekt
 103378	differenzieren	megkülönböztet
 103379	s Gramm	gramm
-103380	schaffen	teremt	rendhagyó igék
+103380	schaffen	teremt
 103381	verschließen	elzár
 103382	touristisch	túrisztikai
 103383	regieren	vezet, kormányoz
@@ -3405,7 +3405,7 @@
 103448	aushalten	elvisel, kibír
 103449	langfristig	hosszú távon
 103450	r Schutz	védelem
-103451	ankommen	megérkezik	rendhagyó igék
+103451	ankommen	megérkezik
 103452	wechseln	változtat, cserél
 103453	e Feier	ünnepség
 103454	immerhin	minden esetre
@@ -3451,7 +3451,7 @@
 103494	r Ersatz	pótlás, kárpótlás
 103495	verschaffen	beszerez, biztosít
 103496	e Auswirkung	hatás
-103497	trinken	iszik	rendhagyó igék
+103497	trinken	iszik
 103498	technologisch	technológiai
 103499	bedienen	kezel, kiszolgál
 103500	anvertrauen	rábíz
@@ -3532,7 +3532,7 @@
 103575	beeinträchtigen	korlátoz
 103576	anhalten	megáll, megmarad
 103577	wieso	hogyan
-103578	schlafen	alszik	rendhagyó igék
+103578	schlafen	alszik
 103579	s Merkmal	tulajdonság
 103580	s Konzept	elképzelés, koncepció
 103581	zuwenden	fordul vmi felé
@@ -3553,7 +3553,7 @@
 103597	daheim	otthon (mn)
 103598	zurück	vissza
 103599	meistens	többnyire
-103600	klingen	cseng, kong	rendhagyó igék
+103600	klingen	cseng, kong
 103601	schauen	tekint, néz
 103602	r Status	státusz, állapot
 103603	bekämpfen	harcol, szembeszáll
@@ -3609,10 +3609,10 @@
 103654	r Kreislauf	áramkör, vérkeringés
 103655	s Dunkel	sötétség
 103656	klappen	sikerül, lecsap
-103657	zwingen	kényszerít	rendhagyó igék
+103657	zwingen	kényszerít
 103658	wer	ki, aki
 103659	zucken	von, rángatózik
-103660	bewegen	indít, motivál	rendhagyó igék
+103660	bewegen	indít, motivál
 103661	r Umsatz	forgalom (kereskedelemben) 
 103662	r Offizier	tiszt, tisztségviselő
 103663	westlich	nyugati
@@ -3648,7 +3648,7 @@
 103693	unendlich	végtelen
 103694	versammeln	összegyűjt, gyülekezik
 103695	ausführen	végrehajt
-103696	sollen	kell (belső kényszer)	rendhagyó igék
+103696	sollen	kell (belső kényszer)
 103697	r Januar	január
 103698	womöglich	talán
 103699	schwingen	leng
@@ -3809,7 +3809,7 @@
 103858	aufschreiben	felír
 103859	verwirklichen	megvalósít
 103860	r Geliebte	szerető
-103861	kennen	ismer	rendhagyó igék
+103861	kennen	ismer
 103862	angehen	érint, vonatkozik
 103863	s Lächeln	mosoly
 103864	spiegeln	ragyog, tükröz
@@ -3844,7 +3844,7 @@
 103893	r Gruß	köszöntés
 103894	spontan	spontán
 103895	vertraglich	elfogadható, elviselhető
-103896	reiten	lovagol	rendhagyó igék
+103896	reiten	lovagol
 103897	begegnen	találkozik, történik
 103898	e Erscheinung	jelenség
 103899	süß	édes
@@ -3856,7 +3856,7 @@
 103905	s Verhältnis	viszony, kapcsolat
 103906	r Bergsteiger	hegymászó
 103907	r Hunger	éhség
-103908	schmelzen	olvad, megolvaszt	rendhagyó igék
+103908	schmelzen	olvad, megolvaszt
 103909	abschließen	bezár, befelyez
 103910	vorbeigehen	elmegy, elmúlik
 103911	r Wähler	szavazó
@@ -3874,7 +3874,7 @@
 103924	kommunikativ	kommunikatív, közlékeny
 103925	zuordnen	sorol, hozzárendel
 103926	suchen	keres
-103927	bieten	nyújt, kínál	rendhagyó igék
+103927	bieten	nyújt, kínál
 103928	beschränken	korlátoz, megszorít
 103929	e Abhängigkeit	függés
 103930	s Atom	atom
@@ -3907,7 +3907,7 @@
 103957	toll	remek, nagyszerű
 103958	spannend	izgalmas
 103959	ausüben	gyakorol, folytat
-103960	denken	gondol	rendhagyó igék
+103960	denken	gondol
 103961	s Riff	szirt
 103962	sich wehren	védekezik
 103963	ändern	változtat
@@ -3933,7 +3933,7 @@
 103983	e Betreuung	gondoskodás
 103984	r Verlauf	folyamat
 103985	vertiefen	mélyít
-103986	biegen	hajlít	rendhagyó igék
+103986	biegen	hajlít
 103987	vorerst	mindenekelőtt
 103988	landwirtschaftlich	mezőgazdasági
 103989	r Schweiß	izzadság, verejték
@@ -3959,7 +3959,7 @@
 104009	belgisch	belga (mn)
 104010	e Regelung	szabályozás
 104011	s Drittel	harmad
-104012	anfangen	elkezd, elkezdődik	rendhagyó igék
+104012	anfangen	elkezd, elkezdődik
 104013	beziehen	beszerez, bevon
 104014	still	halk, csendes
 104015	verpflichten	kötelez, szerződtet
@@ -3970,7 +3970,7 @@
 104020	unmöglich	lehetetlen
 104021	weiblich	női
 104022	zuverlässig	megbízható
-104023	tragen	hord, visel	rendhagyó igék
+104023	tragen	hord, visel
 104024	r Lastkraftwagen	teherautó
 104025	unterdrücken	elnyom
 104026	s Gelände	terep, vidék
@@ -4029,7 +4029,7 @@
 104079	s Mädchen	lány
 104080	bedanken	megköszön
 104081	berühren	megérint
-104082	kommen	jön	rendhagyó igék
+104082	kommen	jön
 104083	innere	belső
 104084	schwer	nehéz, súlyos
 104085	s Arbeitsamt	munkaügyi hivatal
@@ -4052,7 +4052,7 @@
 104103	e Aufwendung	költség, kiadás
 104104	sich erholen	kipiheni magát
 104105	reißen	elszakít, letép
-104106	schneiden	vág	rendhagyó igék
+104106	schneiden	vág
 104108	relativ	relatív, viszonylagos
 104109	südlich	déli
 104110	r Sprecher	szónok
@@ -4115,7 +4115,7 @@
 104168	systematisch	rendszeres, szisztematikus
 104169	verfügbar	elérhető
 104170	r Bord	fedélzet
-104171	schweigen	csendben van, hallgat	rendhagyó igék
+104171	schweigen	csendben van, hallgat
 104172	unterschreiben	aláír
 104173	r Träger	vivő, hordó, szállító (fn)
 104174	sich bemühen	igyekszik, fáradozik
@@ -4164,7 +4164,7 @@
 104217	bilden	alkot, művel
 104218	rechts	jobboldalt
 104219	drüben	odaát
-104220	springen	ugrik	rendhagyó igék
+104220	springen	ugrik
 104221	r Polizist	rendőr
 104222	r Winkel	szög (matematika)
 104223	diskutieren	megvitat, megbeszél
@@ -4217,12 +4217,12 @@
 104270	täuschen	becsap, cselez
 104271	e Provinz	tartomány
 104272	beauftragen	megbíz vkit vmivel
-104273	aufstehen	felkel	rendhagyó igék
+104273	aufstehen	felkel
 104274	stoppen	megáll
 104275	e Distanz	távolság
 104276	r Platz	hely
 104277	r Vortrag	előadás
-104278	schreien	kiabál	rendhagyó igék
+104278	schreien	kiabál
 104279	irgendwelche	valamilyen, akármilyen
 104280	r Kampf	harc, küzdelem
 104281	sich entschließen	elhatározza magát
@@ -4234,7 +4234,7 @@
 104287	vorher	előbb
 104288	s Nahrungsmittel	élelem, élelmiszer
 104289	dort	ott
-104290	vor kurzem	nemrég	kifejezések
+104290	vor kurzem	nemrég
 104291	amerikanisch	amerikai
 104292	r Umgang	bánásmód, kapcsolat
 104293	schwanger	várandós, állapotos
@@ -4272,7 +4272,7 @@
 104325	trocken	száraz
 104326	wohnen	lakik
 104327	r Landkreis	körzet
-104328	anrufen	felhív	rendhagyó igék
+104328	anrufen	felhív
 104329	e Anpassung	alkalmazkodás
 104330	r Osten	kelet
 104331	trösten	vigasztal
@@ -4307,7 +4307,7 @@
 104362	s Englisch	angol (fn)
 104363	literarisch	irodalmi
 104364	r Sinn	értelem, jelentés
-104365	stehlen	lop	rendhagyó igék
+104365	stehlen	lop
 104366	scheitern	megbukik, kudarcot vall
 104367	s Regime	uralom, vezetés
 104368	e Bundesregierung	szövetségi kormány
@@ -4377,7 +4377,7 @@
 104432	zittern	remeg, reszket
 104433	zurückweisen	elutasít, visszautasít
 104434	nächste	következő
-104435	treiben	űz, hajt	rendhagyó igék
+104435	treiben	űz, hajt
 104436	schenken	ajándékoz
 104437	nackt	csupasz, meztelen
 104438	r Eindruck	benyomás
@@ -4438,7 +4438,7 @@
 104494	umbringen	megöl
 104495	e Oma	nagyi
 104496	e Beobachtung	megfigyelés
-104497	liegen	fekszik	rendhagyó igék
+104497	liegen	fekszik
 104498	zerreißen	széttép
 104499	ausdehnen	kitágít, kiterjeszt
 104500	s Militär	katonaság
@@ -4466,9 +4466,9 @@
 104522	antreten	elindul, megkezd
 104523	unternehmen	vállal, vállalkozik
 104524	e Chefin	főnöknő
-104525	schwimmen	úszik	rendhagyó igék
+104525	schwimmen	úszik
 104526	s Erlebnis	élmény
-104527	leiden	szenved	rendhagyó igék
+104527	leiden	szenved
 104528	regelrecht	szabályos, valóságos
 104529	r Jäger	vadász
 104530	charakteristisch	jellemző, jellegzetes
@@ -4524,7 +4524,7 @@
 104580	zustehen	jár vkinek
 104581	r Schlag	ütés, csapás
 104582	e Beschwerde	panasz, teher
-104583	stoßen	lök, taszít	rendhagyó igék
+104583	stoßen	lök, taszít
 104584	berechnen	kiszámol
 104585	starten	indul
 104586	kennzeichnen	jellemez, megjelöl
@@ -4543,7 +4543,7 @@
 104599	beherrschen	ural, uralkodik
 104600	derart	úgy, annyira
 104601	womit	amivel
-104602	rennen	fut, rohan	rendhagyó igék
+104602	rennen	fut, rohan
 104603	r Mieter	bérlő, albérlő
 104604	vernachlässigen	elhanyagol
 104605	e Analyse	elemzés
@@ -4585,7 +4585,7 @@
 104641	stärken	erősít
 104642	sozusagen	úgymond, úgyszólván
 104643	r Durcheinander	zűrzavar
-104644	verfügen	elrendel
+104644	verfügen	elrendel, intézkedik
 104645	r Zusammenhang	kapcsolat, összefüggés
 104646	abstrakt	absztrakt, elvont
 104647	r Bulle	bika
@@ -4597,7 +4597,7 @@
 104654	s Auftreten	fellépés
 104655	unterschiedlich	különféle, különböző
 104656	r Tipp	tipp
-104657	verstehen	ért, megért	rendhagyó igék
+104657	verstehen	ért, megért
 104658	sonstig	más
 104659	weshalb	miért
 104660	teuer	drága
@@ -4681,7 +4681,7 @@
 104738	sich vornehmen	elhatározza magát
 104739	losgehen	indul, elsül
 104740	individuell	egyéni, individuális
-104741	zur Verfügung stehen	rendelkezásre áll	kifejezések
+104741	zur Verfügung stehen	rendelkezásre áll
 104742	strukturieren	szerkeszt, strukturál
 104743	e Bilanz	mérleg (közgazdaságban)
 104744	Schweiz	svájc
@@ -4693,319 +4693,319 @@
 104751	e Hölle	pokol
 104752	e Immobilie	ingatlan
 104753	r Rauch	füst
-104763	befehlen	parancsol	rendhagyó igék
-104765	beißen	harap	rendhagyó igék
-104768	betrügen	becsap	rendhagyó igék
-104774	blasen	fújni	rendhagyó igék
-104783	einbiegen	bekanyarodik	rendhagyó igék
-104790	erlöschen	elalszik a tűz	rendhagyó igék
-104807	gelten	érvényes (ige)	rendhagyó igék
-104808	genesen	gyógyul	rendhagyó igék
-104815	haben	birtokol vmit	rendhagyó igék
-104824	können	tud	rendhagyó igék
-104831	leihen	kölcsönöz	rendhagyó igék
-104833	meiden	kerül vkit/vmit	rendhagyó igék
-104835	müssen	kell (külső kényszer)	rendhagyó igék
-104859	sein	létige	rendhagyó igék
-104861	sinken	süllyed	rendhagyó igék
-104867	stechen	megcsíp	rendhagyó igék
-104871	stinken	bűzlik	rendhagyó igék
-104893	bot an	megkínál, felkínál (Präterium)	rendhagyó igék
-104894	rief an	felhív telefonon (Präterium)	rendhagyó igék
-104895	fing an	elkezd, elkezdődik (Präterium)	rendhagyó igék
-104896	kam an	megérkezik (Präterium)	rendhagyó igék
-104897	zog an	felöltöztet (Präterium)	rendhagyó igék
-104898	stand auf	felkel (Präterium)	rendhagyó igék
-104899	ging aus	szórakozni megy (Präterium)	rendhagyó igék
-104900	stieg aus	kiszáll (Präterium)	rendhagyó igék
-104901	backte	süt (Präterium)	rendhagyó igék
-104902	befahl	parancsol (Präterium)	rendhagyó igék
-104903	begann	elkezd, elkezdődik (Präterium)	rendhagyó igék
-104904	biss	harap (Präterium)	rendhagyó igék
-104905	bekam	kap (Präterium)	rendhagyó igék
-104906	verbarg	elrejt, kiment (Präterium)	rendhagyó igék
-104907	betrog	becsap (Präterium)	rendhagyó igék
-104908	bewog	indít, motivál (Präterium)	rendhagyó igék
-104909	bog	hajlít (Präterium)	rendhagyó igék
-104910	bot	nyújt, kínál (Präterium)	rendhagyó igék
-104911	band	köt, megköt (Präterium)	rendhagyó igék
-104912	bat	kér (Präterium)	rendhagyó igék
-104913	blies	fújni (Präterium)	rendhagyó igék
-104914	blieb	marad (Präterium)	rendhagyó igék
-104915	brachte	hoz (Präterium)	rendhagyó igék
-104916	brach	eltör, eltörik (Präterium)	rendhagyó igék
-104918	brannte	ég (Präterium)	rendhagyó igék
-104919	dachte	gondol (Präterium)	rendhagyó igék
-104920	drang	behatol, áthatol (Präterium)	rendhagyó igék
-104921	durfte	szabad (Präterium)	rendhagyó igék
-104922	bog ein	bekanyarodik (Präterium)	rendhagyó igék
-104923	lud ein	meghív (Präterium)	rendhagyó igék
-104924	schlief ein	elalszik (Präterium)	rendhagyó igék
-104925	stieg ein	beszáll vhová (Präterium)	rendhagyó igék
-104926	empfing	fogad (Präterium)	rendhagyó igék
-104927	empfahl	ajánl (Präterium)	rendhagyó igék
-104928	empfand	érez, észlel (Präterium)	rendhagyó igék
-104929	erlosch	elalszik a tűz (Präterium)	rendhagyó igék
-104930	erschrak	megijed (Präterium)	rendhagyó igék
-104931	aß	eszik (Präterium)	rendhagyó igék
-104932	sah fern	TV-t néz (Präterium)	rendhagyó igék
-104933	fuhr	vezet, utazik (Präterium)	rendhagyó igék
-104935	fiel	esik (Präterium)	rendhagyó igék
-104936	fing	megfog, elkap (Präterium)	rendhagyó igék
-104937	fand	talál (Präterium)	rendhagyó igék
-104938	flog	repül (Präterium)	rendhagyó igék
-104939	foh	menekül (Präterium)	rendhagyó igék
-104940	floß	folyik (Präterium)	rendhagyó igék
-104941	fraß	zabál, állat eszik (Präterium)	rendhagyó igék
-104942	fror	fázik, megfagy (Präterium)	rendhagyó igék
-104943	gab	ad (Präterium)	rendhagyó igék
-104944	ging	megy (Präterium)	rendhagyó igék
-104945	gelang	sikerül (Präterium)	rendhagyó igék
-104946	galt	érvényes (Präterium)	rendhagyó igék
-104947	genas	gyógyul (Präterium)	rendhagyó igék
-104948	genoß	élvez (Präterium)	rendhagyó igék
-104949	geschah	történik (Präterium)	rendhagyó igék
-104950	gewann	nyer (Präterium)	rendhagyó igék
-104951	goss	önt, tölt (Präterium)	rendhagyó igék
-104952	grub	ás (Präterium)	rendhagyó igék
-104953	griff	megragad, megfog (Präterium)	rendhagyó igék
-104954	hatte	birtokol vmit (Präterium)	rendhagyó igék
-104955	hielt	tart (Präterium)	rendhagyó igék
-104956	hing	lóg, függ (Präterium)	rendhagyó igék
-104957	hob	emel (Präterium)	rendhagyó igék
-104958	hieß	hívják vhogyan (Präterium)	rendhagyó igék
-104959	half	segít (Präterium)	rendhagyó igék
-104960	kannte	ismer (Präterium)	rendhagyó igék
-104961	klang	cseng, kong (Präterium)	rendhagyó igék
-104962	kam	jön (Präterium)	rendhagyó igék
-104963	konnte	tud (Präterium)	rendhagyó igék
-104964	lud	megrak, megterhel  (Präterium)	rendhagyó igék
-104965	las	olvas (Präterium)	rendhagyó igék
-104966	lag	fekszik (Präterium)	rendhagyó igék
-104967	ließ	hagy (Präterium)	rendhagyó igék
-104968	lief	fut (Präterium)	rendhagyó igék
-104969	litt	szenved (Präterium)	rendhagyó igék
-104970	lieh	kölcsönöz (Präterium)	rendhagyó igék
-104971	log	hazudik (Präterium)	rendhagyó igék
-104972	mied	kerül vkit/vmit (Präterium)	rendhagyó igék
-104973	maß	mér (Präterium)	rendhagyó igék
-104974	musste	kell (külső kényszer) (Präterium)	rendhagyó igék
-104975	mochte	szeret (Präterium)	rendhagyó igék
-104976	nahm	vesz (Präterium)	rendhagyó igék
-104977	nannte	nevez (Präterium)	rendhagyó igék
-104978	riet	tanácsol (Präterium)	rendhagyó igék
-104979	ritt	lovagol (Präterium)	rendhagyó igék
-104980	rannte	rohan (Präterium)	rendhagyó igék
-104981	rief	hív, kiabál (Präterium)	rendhagyó igék
-104982	schuf	teremt (Präterium)	rendhagyó igék
-104983	schien	tűnik, látszik (Präterium)	rendhagyó igék
-104984	schob	tol (Präterium)	rendhagyó igék
-104985	schoss	lő (Präterium)	rendhagyó igék
-104986	schlief	alszik (Präterium)	rendhagyó igék
-104987	schlug	üt, ver (Präterium)	rendhagyó igék
-104988	schloss	zár (Präterium)	rendhagyó igék
-104989	schmolz	olvad (Präterium)	rendhagyó igék
-104990	schnitt	vág (Präterium)	rendhagyó igék
-104991	schrieb	ír (Präterium)	rendhagyó igék
-104992	schrie	kiabál (Präterium)	rendhagyó igék
-104993	schritt	lép, lépked (Präterium)	rendhagyó igék
-104994	schwieg	hallgat (Präterium)	rendhagyó igék
-104995	schwamm	úszik (Präterium)	rendhagyó igék
-104996	schwor	esküszik (Präterium)	rendhagyó igék
-104997	sah	lát, néz (Präterium)	rendhagyó igék
-104998	war	létige (Präterium)	rendhagyó igék
-104999	sang	énekel (Präterium)	rendhagyó igék
-105000	sank	süllyed (Präterium)	rendhagyó igék
-105001	saß	ül (Präterium)	rendhagyó igék
-105002	sollte	kell (belső kényszer) (Präterium)	rendhagyó igék
-105003	sprach	beszél (Präterium)	rendhagyó igék
-105004	stand	áll (Präterium)	rendhagyó igék
-105005	sprang	ugrik (Präterium)	rendhagyó igék
-105006	stach	megcsíp (Präterium)	rendhagyó igék
-105007	stahl	lop (Präterium)	rendhagyó igék
-105008	stieg	emelkedik (Präterium)	rendhagyó igék
-105009	starb	meghal (Präterium)	rendhagyó igék
-105010	stank	bűzlik (Präterium)	rendhagyó igék
-105011	stieß	lök (Präterium)	rendhagyó igék
-105012	strich	simít, kihúz, kitöröl (Präterium)	rendhagyó igék
-105013	stritt	veszekszik (Präterium)	rendhagyó igék
-105015	trug	hord, visel, cipel (Präterium)	rendhagyó igék
-105016	traf	találkozik (Präterium)	rendhagyó igék
-105017	trieb	űz, hajt (Präterium)	rendhagyó igék
-105018	trat	lép, rúg, jár (Präterium)	rendhagyó igék
-105020	trank	iszik (Präterium)	rendhagyó igék
-105021	stieg um	átszáll (Präterium)	rendhagyó igék
-105022	vergaß	elfelejt (Präterium)	rendhagyó igék
-105023	verließ	elhagy vkit/vmit (Präterium)	rendhagyó igék
-105024	verlor	elveszít (Präterium)	rendhagyó igék
-105025	verstand	ért, megért (Präterium)	rendhagyó igék
-105026	wuchs	nő (Präterium)	rendhagyó igék
-105027	wusch	mos (Präterium)	rendhagyó igék
-105028	wusste	tud vmit, vmiről (Präterium)	rendhagyó igék
-105029	wollte	akar (Präterium)	rendhagyó igék
-105030	zog	húz (Präterium)	rendhagyó igék
-105031	zwang	kényszerít (Präterium)	rendhagyó igék
-105032	h. angeboten	megkínál, felkínál (Perfekt)	rendhagyó igék
-105033	h. angerufen	felhív telefonon (Perfekt)	rendhagyó igék
-105034	h. angefangen	elkezd, elkezdődik (Perfekt)	rendhagyó igék
-105035	i. angekommen	megérkezik (Perfekt)	rendhagyó igék
-105036	h. angezogen	felöltöztet (Perfekt)	rendhagyó igék
-105037	i. aufgestanden	felkel (Perfekt)	rendhagyó igék
-105038	i. ausgegangen	szórakozni megy (Perfekt)	rendhagyó igék
-105039	i. ausgestiegen	kiszáll (Perfekt)	rendhagyó igék
-105040	h. gebacken	süt (húst) (Perfekt)	rendhagyó igék
-105041	h. befohlen	parancsol (Perfekt)	rendhagyó igék
-105042	h. begonnen	elkezd, elkezdődik (Perfekt)	rendhagyó igék
-105043	h. gebissen	harap (Perfekt)	rendhagyó igék
-105044	h. bekommen	kap (Perfekt)	rendhagyó igék
-105045	h. verborgen	elrejt, kiment (Perfekt)	rendhagyó igék
-105046	h. betrogen	becsap (Perfekt)	rendhagyó igék
-105047	h. bewogen	indít, motivál (Perfekt)	rendhagyó igék
-105048	h. gebogen	hajlít (Perfekt)	rendhagyó igék
-105049	h. geboten	nyújt, kínál (Perfekt)	rendhagyó igék
-105050	h. gebunden	köt, megköt (Perfekt)	rendhagyó igék
-105051	h. gebeten	kér (Perfekt)	rendhagyó igék
-105052	h. geblasen	fújni (Perfekt)	rendhagyó igék
-105053	i. geblieben	marad (Perfekt)	rendhagyó igék
-105054	h. gebracht	hoz (Perfekt)	rendhagyó igék
-105055	h. gebrochen	eltör, eltörik (Perfekt)	rendhagyó igék
-105057	h. gebrannt	ég (Perfekt)	rendhagyó igék
-105058	h. gedacht	gondol (Perfekt)	rendhagyó igék
-105059	i. gedrungen	behatol, áthatol (Perfekt)	rendhagyó igék
-105060	h. gedurft	szabad (Perfekt)	rendhagyó igék
-105061	i. eingebogen	bekanyarodik (Perfekt)	rendhagyó igék
-105062	h. eingeladen	meghív (Perfekt)	rendhagyó igék
-105063	i. eingeschlafen	elalszik (Perfekt)	rendhagyó igék
-105064	i. eingestiegen	beszáll vhová (Perfekt)	rendhagyó igék
-105065	h. empfangen	fogad (Perfekt)	rendhagyó igék
-105066	h. empfohlen	ajánl (Perfekt)	rendhagyó igék
-105067	h. empfunden	érez, észlel (Perfekt)	rendhagyó igék
-105068	i. erloschen	elalszik a tűz (Perfekt)	rendhagyó igék
-105069	i. erschrocken	megijed (Perfekt)	rendhagyó igék
-105070	h. gegessen	eszik (Perfekt)	rendhagyó igék
-105071	h. ferngesehen	TV-t néz (Perfekt)	rendhagyó igék
-105072	i. gefahren	vezet, utazik (Perfekt)	rendhagyó igék
-105074	i. gefallen	esik (Perfekt)	rendhagyó igék
-105075	h. gefangen	megfog, elkap (Perfekt)	rendhagyó igék
-105076	h. gefunden	talál (Perfekt)	rendhagyó igék
-105077	i. geflogen	repül (Perfekt)	rendhagyó igék
-105078	i. geflohen	menekül (Perfekt)	rendhagyó igék
-105079	i. geflossen	folyik (Perfekt)	rendhagyó igék
-105080	h. gefressen	zabál, állat eszik (Perfekt)	rendhagyó igék
-105081	i. gefroren	megfagy (Perfekt)	rendhagyó igék
-105082	h. gegeben	ad (Perfekt)	rendhagyó igék
-105083	i. gegangen	megy (Perfekt)	rendhagyó igék
-105084	i. gelungen	sikerül (Perfekt)	rendhagyó igék
-105085	h. gegolten	érvényes (Perfekt)	rendhagyó igék
-105086	i. genesen	gyógyul (Perfekt)	rendhagyó igék
-105087	h. genossen	élvez (Perfekt)	rendhagyó igék
-105088	i. geschehen	történik (Perfekt)	rendhagyó igék
-105089	h. gewonnen	nyer (Perfekt)	rendhagyó igék
-105090	h. gegossen	önt, tölt (Perfekt)	rendhagyó igék
-105091	h. gegraben	ás (Perfekt)	rendhagyó igék
-105092	h. gegriffen	megragad, megfog (Perfekt)	rendhagyó igék
-105093	h. gehabt	birtokol vmit (Perfekt)	rendhagyó igék
-105094	h. gehalten	tart (Perfekt)	rendhagyó igék
-105095	h. gehangen	lóg, függ (Perfekt)	rendhagyó igék
-105096	h. gehoben	emel (Perfekt)	rendhagyó igék
-105097	h. geheißen	hívják vhogyan (Perfekt)	rendhagyó igék
-105098	h. geholfen	segít (Perfekt)	rendhagyó igék
-105099	h. gekannt	ismer (Perfekt)	rendhagyó igék
-105100	h. geklungen	cseng, kong (Perfekt)	rendhagyó igék
-105101	i. gekommen	jön (Perfekt)	rendhagyó igék
-105102	h. gekonnt	tud (Perfekt)	rendhagyó igék
-105103	h. geladen	megrak, megterhel (Perfekt)	rendhagyó igék
-105104	h. gelesen	olvas (Perfekt)	rendhagyó igék
-105105	h. gelegen	fekszik (Perfekt)	rendhagyó igék
-105106	h. gelassen	hagy (Perfekt)	rendhagyó igék
-105107	i. gelaufen	fut (Perfekt)	rendhagyó igék
-105108	h. gelitten	szenved (Perfekt)	rendhagyó igék
-105109	h. geliehen	kölcsönöz (Perfekt)	rendhagyó igék
-105110	h. gelogen	hazudik (Perfekt)	rendhagyó igék
-105111	h. gemieden	kerül vkit/vmit (Perfekt)	rendhagyó igék
-105112	h. gemessen	mér (Perfekt)	rendhagyó igék
-105113	h. gemusst	kell (külső kényszer) (Perfekt)	rendhagyó igék
-105114	h. gemocht	szeret (Perfekt)	rendhagyó igék
-105115	h. genommen	vesz (Perfekt)	rendhagyó igék
-105116	h. genannt	nevez (Perfekt)	rendhagyó igék
-105117	h. geraten	tanácsol (Perfekt)	rendhagyó igék
-105118	i. geritten	lovagol (Perfekt)	rendhagyó igék
-105119	i. gerannt	rohan (Perfekt)	rendhagyó igék
-105120	h. gerufen	hív, kiabál (Perfekt)	rendhagyó igék
-105121	h. geschaffen	teremt (Perfekt)	rendhagyó igék
-105122	h. geschienen	tűnik, látszik (Perfekt)	rendhagyó igék
-105123	h. geschoben	tol (Perfekt)	rendhagyó igék
-105124	h. geschossen	lő (Perfekt)	rendhagyó igék
-105125	h. geschlafen	alszik (Perfekt)	rendhagyó igék
-105126	h. geschlagen	üt, ver (Perfekt)	rendhagyó igék
-105127	h. geschlossen	zár (Perfekt)	rendhagyó igék
-105128	i. geschmolzen	olvad (Perfekt)	rendhagyó igék
-105129	h. geschnitten	vág (Perfekt)	rendhagyó igék
-105130	h. geschrieben	ír (Perfekt)	rendhagyó igék
-105131	h. geschrien	kiabál (Perfekt)	rendhagyó igék
-105132	i. geschritten	lép, lépked (Perfekt)	rendhagyó igék
-105133	h. geschwiegen	hallgat (Perfekt)	rendhagyó igék
-105134	i. geschwommen	úszik (Perfekt)	rendhagyó igék
-105135	h. geschworen	esküszik (Perfekt)	rendhagyó igék
-105136	h. gesehen	lát, néz (Perfekt)	rendhagyó igék
-105137	i. gewesen	van (Perfekt)	rendhagyó igék
-105138	h. gesungen	énekel (Perfekt)	rendhagyó igék
-105139	i. gesunken	süllyed (Perfekt)	rendhagyó igék
-105140	h. gesessen	ül (Perfekt)	rendhagyó igék
-105141	h. gesollt	kell (belső kényszer) (Perfekt)	rendhagyó igék
-105142	h. gesprochen	beszél (Perfekt)	rendhagyó igék
-105143	h. gestanden	áll (Perfekt)	rendhagyó igék
-105144	i. gesprungen	ugrik (Perfekt)	rendhagyó igék
-105145	h. gestochen	megcsíp (Perfekt)	rendhagyó igék
-105146	h. gestohlen	lop (Perfekt)	rendhagyó igék
-105147	i. gestiegen	emelkedik (Perfekt)	rendhagyó igék
-105148	i. gestorben	meghal (Perfekt)	rendhagyó igék
-105149	h. gestunken	bűzlik (Perfekt)	rendhagyó igék
-105150	h. gestoßen	lök (Perfekt)	rendhagyó igék
-105151	h. gestrichen	simít, kihúz, kitöröl (Perfekt)	rendhagyó igék
-105152	h. gestritten	veszekszik (Perfekt)	rendhagyó igék
-105154	h. getragen	hord, visel (Perfekt)	rendhagyó igék
-105155	h. getroffen	találkozik (Perfekt)	rendhagyó igék
-105156	h. getrieben	űz, hajt (Perfekt)	rendhagyó igék
-105157	i. getreten	lép, rúg, jár (Perfekt)	rendhagyó igék
-105159	h. getrunken	iszik (Perfekt)	rendhagyó igék
-105160	i. umgestiegen	átszáll (Perfekt)	rendhagyó igék
-105161	h. vergessen	elfelejt (Perfekt)	rendhagyó igék
-105162	h. verlassen	elhagy (Perfekt)	rendhagyó igék
-105163	h. verloren	elveszít (Perfekt)	rendhagyó igék
-105164	h. verstanden	ért, megért (Perfekt)	rendhagyó igék
-105165	i. gewachsen	nő (Perfekt)	rendhagyó igék
-105166	h. gewaschen	mos (Perfekt)	rendhagyó igék
-105167	h. gewusst	tud vmit, vmiről (Perfekt)	rendhagyó igék
-105168	h. gewollt	akar (Perfekt)	rendhagyó igék
-105169	h. gezogen	húz (Perfekt)	rendhagyó igék
-105170	h. gezwungen	kényszerít (Perfekt)	rendhagyó igék
-105172	eins	egy	számok
-105173	zwei	kettő	számok
-105174	drei	három	számok
-105175	vier	négy	számok
-105176	fünf	öt	számok
-105177	sechs	hat	számok
-105178	sieben	hét (számnév)	számok
-105181	zehn	tíz	számok
-105182	elf	tizenegy	számok
-105184	dreizehn	tizenhárom	számok
-105185	vierzehn	tizennégy	számok
-105186	fünfzehn	tizenöt	számok
-105187	sechzehn	tizenhat	számok
-105188	siebzehn	tizenhét	számok
-105189	achtzehn	tizennyolc	számok
-105190	neunzehn	tizenkilenc	számok
-105192	einundzwanzig	huszonegy	számok
-105193	zweiundzwanzig	huszonkettő	számok
-105194	dreiundzwanzig	huszonhárom	számok
-105195	vierundzwanzig	huszonnégy	számok
-105196	fünfundzwanzig	huszonöt	számok
-105197	sechsundzwanzig	huszonhat	számok
-105198	siebenundzwanzig	huszonhét	számok
-105199	achtundzwanzig	huszonnyolc	számok
-105200	neunundzwanzig	huszonkilenc	számok
-105201	dreißig	harminc	számok
+104763	befehlen	parancsol
+104765	beißen	harap
+104768	betrügen	becsap
+104774	blasen	fújni
+104783	einbiegen	bekanyarodik
+104790	erlöschen	elalszik a tűz
+104807	gelten	érvényes (ige)
+104808	genesen	gyógyul
+104815	haben	birtokol vmit
+104824	können	tud
+104831	leihen	kölcsönöz
+104833	meiden	kerül vkit/vmit
+104835	müssen	kell (külső kényszer)
+104859	sein	létige
+104861	sinken	süllyed
+104867	stechen	megcsíp
+104871	stinken	bűzlik
+104893	bot an	megkínál, felkínál (Präterium)
+104894	rief an	felhív telefonon (Präterium)
+104895	fing an	elkezd, elkezdődik (Präterium)
+104896	kam an	megérkezik (Präterium)
+104897	zog an	felöltöztet (Präterium)
+104898	stand auf	felkel (Präterium)
+104899	ging aus	szórakozni megy (Präterium)
+104900	stieg aus	kiszáll (Präterium)
+104901	backte	süt (Präterium)
+104902	befahl	parancsol (Präterium)
+104903	begann	elkezd, elkezdődik (Präterium)
+104904	biss	harap (Präterium)
+104905	bekam	kap (Präterium)
+104906	verbarg	elrejt, kiment (Präterium)
+104907	betrog	becsap (Präterium)
+104908	bewog	indít, motivál (Präterium)
+104909	bog	hajlít (Präterium)
+104910	bot	nyújt, kínál (Präterium)
+104911	band	köt, megköt (Präterium)
+104912	bat	kér (Präterium)
+104913	blies	fújni (Präterium)
+104914	blieb	marad (Präterium)
+104915	brachte	hoz (Präterium)
+104916	brach	eltör, eltörik (Präterium)
+104918	brannte	ég (Präterium)
+104919	dachte	gondol (Präterium)
+104920	drang	behatol, áthatol (Präterium)
+104921	durfte	szabad (Präterium)
+104922	bog ein	bekanyarodik (Präterium)
+104923	lud ein	meghív (Präterium)
+104924	schlief ein	elalszik (Präterium)
+104925	stieg ein	beszáll vhová (Präterium)
+104926	empfing	fogad (Präterium)
+104927	empfahl	ajánl (Präterium)
+104928	empfand	érez, észlel (Präterium)
+104929	erlosch	elalszik a tűz (Präterium)
+104930	erschrak	megijed (Präterium)
+104931	aß	eszik (Präterium)
+104932	sah fern	TV-t néz (Präterium)
+104933	fuhr	vezet, utazik (Präterium)
+104935	fiel	esik (Präterium)
+104936	fing	megfog, elkap (Präterium)
+104937	fand	talál (Präterium)
+104938	flog	repül (Präterium)
+104939	foh	menekül (Präterium)
+104940	floß	folyik (Präterium)
+104941	fraß	zabál, állat eszik (Präterium)
+104942	fror	fázik, megfagy (Präterium)
+104943	gab	ad (Präterium)
+104944	ging	megy (Präterium)
+104945	gelang	sikerül (Präterium)
+104946	galt	érvényes (Präterium)
+104947	genas	gyógyul (Präterium)
+104948	genoß	élvez (Präterium)
+104949	geschah	történik (Präterium)
+104950	gewann	nyer (Präterium)
+104951	goss	önt, tölt (Präterium)
+104952	grub	ás (Präterium)
+104953	griff	megragad, megfog (Präterium)
+104954	hatte	birtokol vmit (Präterium)
+104955	hielt	tart (Präterium)
+104956	hing	lóg, függ (Präterium)
+104957	hob	emel (Präterium)
+104958	hieß	hívják vhogyan (Präterium)
+104959	half	segít (Präterium)
+104960	kannte	ismer (Präterium)
+104961	klang	cseng, kong (Präterium)
+104962	kam	jön (Präterium)
+104963	konnte	tud (Präterium)
+104964	lud	megrak, megterhel  (Präterium)
+104965	las	olvas (Präterium)
+104966	lag	fekszik (Präterium)
+104967	ließ	hagy (Präterium)
+104968	lief	fut (Präterium)
+104969	litt	szenved (Präterium)
+104970	lieh	kölcsönöz (Präterium)
+104971	log	hazudik (Präterium)
+104972	mied	kerül vkit/vmit (Präterium)
+104973	maß	mér (Präterium)
+104974	musste	kell (külső kényszer) (Präterium)
+104975	mochte	szeret (Präterium)
+104976	nahm	vesz (Präterium)
+104977	nannte	nevez (Präterium)
+104978	riet	tanácsol (Präterium)
+104979	ritt	lovagol (Präterium)
+104980	rannte	rohan (Präterium)
+104981	rief	hív, kiabál (Präterium)
+104982	schuf	teremt (Präterium)
+104983	schien	tűnik, látszik (Präterium)
+104984	schob	tol (Präterium)
+104985	schoss	lő (Präterium)
+104986	schlief	alszik (Präterium)
+104987	schlug	üt, ver (Präterium)
+104988	schloss	zár (Präterium)
+104989	schmolz	olvad (Präterium)
+104990	schnitt	vág (Präterium)
+104991	schrieb	ír (Präterium)
+104992	schrie	kiabál (Präterium)
+104993	schritt	lép, lépked (Präterium)
+104994	schwieg	hallgat (Präterium)
+104995	schwamm	úszik (Präterium)
+104996	schwor	esküszik (Präterium)
+104997	sah	lát, néz (Präterium)
+104998	war	létige (Präterium)
+104999	sang	énekel (Präterium)
+105000	sank	süllyed (Präterium)
+105001	saß	ül (Präterium)
+105002	sollte	kell (belső kényszer) (Präterium)
+105003	sprach	beszél (Präterium)
+105004	stand	áll (Präterium)
+105005	sprang	ugrik (Präterium)
+105006	stach	megcsíp (Präterium)
+105007	stahl	lop (Präterium)
+105008	stieg	emelkedik (Präterium)
+105009	starb	meghal (Präterium)
+105010	stank	bűzlik (Präterium)
+105011	stieß	lök (Präterium)
+105012	strich	simít, kihúz, kitöröl (Präterium)
+105013	stritt	veszekszik (Präterium)
+105015	trug	hord, visel, cipel (Präterium)
+105016	traf	találkozik (Präterium)
+105017	trieb	űz, hajt (Präterium)
+105018	trat	lép, rúg, jár (Präterium)
+105020	trank	iszik (Präterium)
+105021	stieg um	átszáll (Präterium)
+105022	vergaß	elfelejt (Präterium)
+105023	verließ	elhagy vkit/vmit (Präterium)
+105024	verlor	elveszít (Präterium)
+105025	verstand	ért, megért (Präterium)
+105026	wuchs	nő (Präterium)
+105027	wusch	mos (Präterium)
+105028	wusste	tud vmit, vmiről (Präterium)
+105029	wollte	akar (Präterium)
+105030	zog	húz (Präterium)
+105031	zwang	kényszerít (Präterium)
+105032	h. angeboten	megkínál, felkínál (Perfekt)
+105033	h. angerufen	felhív telefonon (Perfekt)
+105034	h. angefangen	elkezd, elkezdődik (Perfekt)
+105035	i. angekommen	megérkezik (Perfekt)
+105036	h. angezogen	felöltöztet (Perfekt)
+105037	i. aufgestanden	felkel (Perfekt)
+105038	i. ausgegangen	szórakozni megy (Perfekt)
+105039	i. ausgestiegen	kiszáll (Perfekt)
+105040	h. gebacken	süt (húst) (Perfekt)
+105041	h. befohlen	parancsol (Perfekt)
+105042	h. begonnen	elkezd, elkezdődik (Perfekt)
+105043	h. gebissen	harap (Perfekt)
+105044	h. bekommen	kap (Perfekt)
+105045	h. verborgen	elrejt, kiment (Perfekt)
+105046	h. betrogen	becsap (Perfekt)
+105047	h. bewogen	indít, motivál (Perfekt)
+105048	h. gebogen	hajlít (Perfekt)
+105049	h. geboten	nyújt, kínál (Perfekt)
+105050	h. gebunden	köt, megköt (Perfekt)
+105051	h. gebeten	kér (Perfekt)
+105052	h. geblasen	fújni (Perfekt)
+105053	i. geblieben	marad (Perfekt)
+105054	h. gebracht	hoz (Perfekt)
+105055	h. gebrochen	eltör, eltörik (Perfekt)
+105057	h. gebrannt	ég (Perfekt)
+105058	h. gedacht	gondol (Perfekt)
+105059	i. gedrungen	behatol, áthatol (Perfekt)
+105060	h. gedurft	szabad (Perfekt)
+105061	i. eingebogen	bekanyarodik (Perfekt)
+105062	h. eingeladen	meghív (Perfekt)
+105063	i. eingeschlafen	elalszik (Perfekt)
+105064	i. eingestiegen	beszáll vhová (Perfekt)
+105065	h. empfangen	fogad (Perfekt)
+105066	h. empfohlen	ajánl (Perfekt)
+105067	h. empfunden	érez, észlel (Perfekt)
+105068	i. erloschen	elalszik a tűz (Perfekt)
+105069	i. erschrocken	megijed (Perfekt)
+105070	h. gegessen	eszik (Perfekt)
+105071	h. ferngesehen	TV-t néz (Perfekt)
+105072	i. gefahren	vezet, utazik (Perfekt)
+105074	i. gefallen	esik (Perfekt)
+105075	h. gefangen	megfog, elkap (Perfekt)
+105076	h. gefunden	talál (Perfekt)
+105077	i. geflogen	repül (Perfekt)
+105078	i. geflohen	menekül (Perfekt)
+105079	i. geflossen	folyik (Perfekt)
+105080	h. gefressen	zabál, állat eszik (Perfekt)
+105081	i. gefroren	megfagy (Perfekt)
+105082	h. gegeben	ad (Perfekt)
+105083	i. gegangen	megy (Perfekt)
+105084	i. gelungen	sikerül (Perfekt)
+105085	h. gegolten	érvényes (Perfekt)
+105086	i. genesen	gyógyul (Perfekt)
+105087	h. genossen	élvez (Perfekt)
+105088	i. geschehen	történik (Perfekt)
+105089	h. gewonnen	nyer (Perfekt)
+105090	h. gegossen	önt, tölt (Perfekt)
+105091	h. gegraben	ás (Perfekt)
+105092	h. gegriffen	megragad, megfog (Perfekt)
+105093	h. gehabt	birtokol vmit (Perfekt)
+105094	h. gehalten	tart (Perfekt)
+105095	h. gehangen	lóg, függ (Perfekt)
+105096	h. gehoben	emel (Perfekt)
+105097	h. geheißen	hívják vhogyan (Perfekt)
+105098	h. geholfen	segít (Perfekt)
+105099	h. gekannt	ismer (Perfekt)
+105100	h. geklungen	cseng, kong (Perfekt)
+105101	i. gekommen	jön (Perfekt)
+105102	h. gekonnt	tud (Perfekt)
+105103	h. geladen	megrak, megterhel (Perfekt)
+105104	h. gelesen	olvas (Perfekt)
+105105	h. gelegen	fekszik (Perfekt)
+105106	h. gelassen	hagy (Perfekt)
+105107	i. gelaufen	fut (Perfekt)
+105108	h. gelitten	szenved (Perfekt)
+105109	h. geliehen	kölcsönöz (Perfekt)
+105110	h. gelogen	hazudik (Perfekt)
+105111	h. gemieden	kerül vkit/vmit (Perfekt)
+105112	h. gemessen	mér (Perfekt)
+105113	h. gemusst	kell (külső kényszer) (Perfekt)
+105114	h. gemocht	szeret (Perfekt)
+105115	h. genommen	vesz (Perfekt)
+105116	h. genannt	nevez (Perfekt)
+105117	h. geraten	tanácsol (Perfekt)
+105118	i. geritten	lovagol (Perfekt)
+105119	i. gerannt	rohan (Perfekt)
+105120	h. gerufen	hív, kiabál (Perfekt)
+105121	h. geschaffen	teremt (Perfekt)
+105122	h. geschienen	tűnik, látszik (Perfekt)
+105123	h. geschoben	tol (Perfekt)
+105124	h. geschossen	lő (Perfekt)
+105125	h. geschlafen	alszik (Perfekt)
+105126	h. geschlagen	üt, ver (Perfekt)
+105127	h. geschlossen	zár (Perfekt)
+105128	i. geschmolzen	olvad (Perfekt)
+105129	h. geschnitten	vág (Perfekt)
+105130	h. geschrieben	ír (Perfekt)
+105131	h. geschrien	kiabál (Perfekt)
+105132	i. geschritten	lép, lépked (Perfekt)
+105133	h. geschwiegen	hallgat (Perfekt)
+105134	i. geschwommen	úszik (Perfekt)
+105135	h. geschworen	esküszik (Perfekt)
+105136	h. gesehen	lát, néz (Perfekt)
+105137	i. gewesen	van (Perfekt)
+105138	h. gesungen	énekel (Perfekt)
+105139	i. gesunken	süllyed (Perfekt)
+105140	h. gesessen	ül (Perfekt)
+105141	h. gesollt	kell (belső kényszer) (Perfekt)
+105142	h. gesprochen	beszél (Perfekt)
+105143	h. gestanden	áll (Perfekt)
+105144	i. gesprungen	ugrik (Perfekt)
+105145	h. gestochen	megcsíp (Perfekt)
+105146	h. gestohlen	lop (Perfekt)
+105147	i. gestiegen	emelkedik (Perfekt)
+105148	i. gestorben	meghal (Perfekt)
+105149	h. gestunken	bűzlik (Perfekt)
+105150	h. gestoßen	lök (Perfekt)
+105151	h. gestrichen	simít, kihúz, kitöröl (Perfekt)
+105152	h. gestritten	veszekszik (Perfekt)
+105154	h. getragen	hord, visel (Perfekt)
+105155	h. getroffen	találkozik (Perfekt)
+105156	h. getrieben	űz, hajt (Perfekt)
+105157	i. getreten	lép, rúg, jár (Perfekt)
+105159	h. getrunken	iszik (Perfekt)
+105160	i. umgestiegen	átszáll (Perfekt)
+105161	h. vergessen	elfelejt (Perfekt)
+105162	h. verlassen	elhagy (Perfekt)
+105163	h. verloren	elveszít (Perfekt)
+105164	h. verstanden	ért, megért (Perfekt)
+105165	i. gewachsen	nő (Perfekt)
+105166	h. gewaschen	mos (Perfekt)
+105167	h. gewusst	tud vmit, vmiről (Perfekt)
+105168	h. gewollt	akar (Perfekt)
+105169	h. gezogen	húz (Perfekt)
+105170	h. gezwungen	kényszerít (Perfekt)
+105172	eins	egy
+105173	zwei	kettő
+105174	drei	három
+105175	vier	négy
+105176	fünf	öt
+105177	sechs	hat
+105178	sieben	hét (számnév)
+105181	zehn	tíz
+105182	elf	tizenegy
+105184	dreizehn	tizenhárom
+105185	vierzehn	tizennégy
+105186	fünfzehn	tizenöt
+105187	sechzehn	tizenhat
+105188	siebzehn	tizenhét
+105189	achtzehn	tizennyolc
+105190	neunzehn	tizenkilenc
+105192	einundzwanzig	huszonegy
+105193	zweiundzwanzig	huszonkettő
+105194	dreiundzwanzig	huszonhárom
+105195	vierundzwanzig	huszonnégy
+105196	fünfundzwanzig	huszonöt
+105197	sechsundzwanzig	huszonhat
+105198	siebenundzwanzig	huszonhét
+105199	achtundzwanzig	huszonnyolc
+105200	neunundzwanzig	huszonkilenc
+105201	dreißig	harminc
 100555	Russland	Oroszország
 100657	e Ente	kacsa
 100861	s Seil	kötél
@@ -5022,14 +5022,14 @@
 101923	r Abnehmer	vásárló, fogyasztó
 101934	e Güter	árucikkek (többesszám)
 101999	e Einkünfte	kereset, jövedelem
-102072	Sport treiben	sportol	kifejezések
+102072	Sport treiben	sportol
 100199	ausnehmen	kivesz, kiszed
 100281	und	és
-100590	eine Rolle spielen	szerepel	kifejezések
-100850	Spanien	Spanyolország	országok
+100590	eine Rolle spielen	szerepel
+100850	Spanien	Spanyolország
 101379	forschen	kutat
-102232	auf keinen Fall	semmi esetre	kifejezések
-102300	in diesem Fall	ebben az esetben	kifejezések
+102232	auf keinen Fall	semmi esetre
+102300	in diesem Fall	ebben az esetben
 102311	e Rache	bosszú
 101378	r Treibstoff	üzemanyag
 102342	e Donau	Duna
