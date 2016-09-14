@@ -1554,7 +1554,6 @@
 101569	r Magen	gyomor
 101570	e Leber	máj
 101571	r Darm	bél
-101572	r Popo	fenék
 101573	r Rücken	hát
 101574	e Schulter	váll
 101575	e Hand	kéz
