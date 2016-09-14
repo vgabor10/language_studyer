@@ -21,6 +21,7 @@ public class LanguageFilesDataHandler {
         languageData1.languageIndex = 0;
         languageData1.languageName = "English";
         languageData1.answerDataPath = "../data/english_data/answer_data/english_card_tester_data.txt";
+        languageData1.exampleSentencesDataPath = "../data/english_data/language_data/english_example_sentences.txt";
         languageData1.cardDataPath = "../data/english_data/language_data/english_words.txt";
         languageData1.grammarDataPath = "../data/english_data/language_data/english_grammar_book.txt";
         languageData1.grammarAnswerDataPath = "../data/english_data/answer_data/english_grammar_answer_data.txt";
@@ -29,6 +30,7 @@ public class LanguageFilesDataHandler {
         languageData2.languageIndex = 1;
         languageData2.languageName = "German";
         languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_data.txt";
+        languageData2.exampleSentencesDataPath = "../data/english_data/language_data/german_example_sentences.txt";
         languageData2.cardDataPath = "../data/german_data/language_data/german_words.txt";
         languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.txt";
         languageData2.grammarAnswerDataPath = "../data/german_data/answer_data/german_grammar_answer_data.txt";
@@ -57,6 +59,10 @@ public class LanguageFilesDataHandler {
 
     public String getStudiedLanguageGrammarAnswerDataPath() {
         return languageDatas.get(studyedLanguageIndex).grammarAnswerDataPath;
+    }
+    
+    public String getStudiedLanguageExampleSentencesDataPath() {
+        return languageDatas.get(studyedLanguageIndex).exampleSentencesDataPath;
     }
 
     public int getStudiedLanguageIndex() {

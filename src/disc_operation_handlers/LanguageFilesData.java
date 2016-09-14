@@ -6,6 +6,7 @@ public class LanguageFilesData {
 	public String languageName;
 	public String answerDataPath;
 	public String cardDataPath;
+        public String exampleSentencesDataPath;
 	public String grammarDataPath;
 	public String grammarAnswerDataPath;
 

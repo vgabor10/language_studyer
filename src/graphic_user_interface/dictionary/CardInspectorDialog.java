@@ -3,13 +3,16 @@ package graphic_user_interface.dictionary;
 import dictionary.Card;
 import dictionary.CardContainer;
 import disc_operation_handlers.DictionaryDataModificator;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataContainer;
 
 public class CardInspectorDialog extends javax.swing.JDialog {
 
     public CardContainer cardContainer;
     public Card cardToInspect;
+    public AnswerDataContainer answerDataContainer;
     private final DefaultTableModel tableModel;
     
     public CardInspectorDialog(java.awt.Frame parent, boolean modal) {
@@ -106,10 +109,16 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         jScrollPane1.setViewportView(jTable1);
 
         jButton1.setText("Delete example sentence");
+        jButton1.setEnabled(false);
 
         jButton2.setText("Add example sentence");
 
         jButton4.setText("Delete Card");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -123,26 +132,25 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jTextField2)
-                                    .addComponent(jTextField1)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(saveCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jButton2)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton1))))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(12, 12, 12))))
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField2)
+                            .addComponent(jTextField1))
+                        .addGap(12, 12, 12))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(saveCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton2)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jButton1))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton4, saveCardButton});
@@ -203,16 +211,38 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         saveCard();
     }//GEN-LAST:event_saveCardButtonActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        CardDeleteReinforceDialog dialog 
+                = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
+        dialog.setVisible(true);
+        
+        if (dialogAnswer.answer) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setCardContainer(cardContainer);
+            dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
+        }
+        
+        jTextField1.requestFocus();
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     public void saveCard() {
         String term = jTextField1.getText();
         String definition = jTextField2.getText();
 
         cardToInspect.term = term;
         cardToInspect.definition = definition;
+        for (int i=0;i<tableModel.getRowCount();i++) {
+            cardToInspect.exampleSentences.add((String) tableModel.getValueAt(0, i));
+        }
 
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
         dictionaryDataModificator.setCardContainer(cardContainer);
         dictionaryDataModificator.saveCardContainerDataToFile();
+        dictionaryDataModificator.saveExampleSentencesDataToFile();
                 
         dispose();
     }

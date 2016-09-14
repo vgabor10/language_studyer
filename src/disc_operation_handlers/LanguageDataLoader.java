@@ -63,9 +63,6 @@ public class LanguageDataLoader {
                 card.index = Integer.parseInt(cardVariables[0]);
                 card.term = cardVariables[1];
                 card.definition = cardVariables[2];
-                if (3 < cardVariables.length) {
-                    card.group = cardVariables[3];
-                }
 
                 cardContainer.addCard(card);
             }

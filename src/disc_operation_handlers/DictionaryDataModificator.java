@@ -31,11 +31,13 @@ public class DictionaryDataModificator {
 
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
+        saveExampleSentencesDataToFile();
     }
 
     public void addCard(Card card) {
         cardContainer.addCard(card);
         saveCardContainerDataToFile();
+        saveExampleSentencesDataToFile();
     }
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data
@@ -55,6 +57,27 @@ public class DictionaryDataModificator {
             System.err.println("IOException: " + ioe.getMessage());
         }
     }
+
+    //TODO: make it more safe: save new data to file, then delete old data, then rename new data
+    public void saveExampleSentencesDataToFile() {
+        String filePath = settingsHandler.getStudiedLanguageExampleSentencesDataPath();
+        File oldFile;
+        oldFile = new File(filePath);
+        oldFile.delete();
+
+        try {
+            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
+                Card card = cardContainer.getCardByOrder(i);
+                for (String exampleSentence : card.exampleSentences) {
+                    fw.write(card.index + "\t" + exampleSentence + "\n");
+                }
+            }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }    
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data
     private void saveAnswerDataContainerDataToFile() {

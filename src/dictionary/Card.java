@@ -26,11 +26,7 @@ public class Card extends StudyItem {
     }
 
     public String toStringData() {
-        if (group.equals("")) {
-            return Integer.toString(index) + "\t" + term + "\t" + definition;
-        } else {
-            return Integer.toString(index) + "\t" + term + "\t" + definition + "\t" + group;
-        }
+        return Integer.toString(index) + "\t" + term + "\t" + definition;
     }
 
     @Override
