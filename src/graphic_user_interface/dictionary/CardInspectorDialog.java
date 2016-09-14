@@ -14,6 +14,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     public Card cardToInspect;
     public AnswerDataContainer answerDataContainer;
     private final DefaultTableModel tableModel;
+    public DialogAnswer dialogAnswer;
     
     public CardInspectorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -57,7 +58,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        deleteCardButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -113,10 +114,10 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         jButton2.setText("Add example sentence");
 
-        jButton4.setText("Delete Card");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        deleteCardButton.setText("Delete Card");
+        deleteCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                deleteCardButtonActionPerformed(evt);
             }
         });
 
@@ -143,7 +144,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(saveCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(deleteCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jButton2)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -153,7 +154,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addContainerGap())))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2, jButton4, saveCardButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {deleteCardButton, jButton1, jButton2, saveCardButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,17 +176,18 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(saveCardButton)
-                    .addComponent(jButton4)
+                    .addComponent(deleteCardButton)
                     .addComponent(jButton3))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton1, jButton2, jButton4, saveCardButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {deleteCardButton, jButton1, jButton2, saveCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        dialogAnswer.intAnswer = 0;
         dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -208,26 +210,28 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_saveCardButtonKeyPressed
 
     private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
+        dialogAnswer.intAnswer = 2;
         saveCard();
     }//GEN-LAST:event_saveCardButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
         CardDeleteReinforceDialog dialog 
                 = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
-        DialogAnswer dialogAnswer = new DialogAnswer();
-        dialog.dialogAnswer = dialogAnswer;
+        DialogAnswer dialogAnswer2 = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer2;
         dialog.setVisible(true);
         
-        if (dialogAnswer.answer) {
+        if (dialogAnswer2.boolAnswer) {
             DictionaryDataModificator dictionaryDataModificator 
                     = new DictionaryDataModificator();
             dictionaryDataModificator.setCardContainer(cardContainer);
             dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
             dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
+            dialogAnswer.intAnswer = 1;
         }
         
-        jTextField1.requestFocus();
-    }//GEN-LAST:event_jButton4ActionPerformed
+        dispose();
+    }//GEN-LAST:event_deleteCardButtonActionPerformed
 
     public void saveCard() {
         String term = jTextField1.getText();
@@ -291,10 +295,10 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton deleteCardButton;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;

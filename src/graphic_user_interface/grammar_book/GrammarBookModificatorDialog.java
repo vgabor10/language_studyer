@@ -248,7 +248,7 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         dialog.initialise();
         dialog.setVisible(true);
 
-        if (dialogAnswer.answer) {
+        if (dialogAnswer.boolAnswer) {
             grammarDataModificator.deleteGrammarItemByIndex(selectedGrammarItemIndex);
             treeModel.removeNodeFromParent(selectedNode);
             deleteGrammarItemButton.setEnabled(false);

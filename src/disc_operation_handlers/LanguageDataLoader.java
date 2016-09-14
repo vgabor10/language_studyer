@@ -73,20 +73,17 @@ public class LanguageDataLoader {
         }
     }
     
-    //TODO: works only for german language
     public void loadExampleSentencesFromDisc() {
         try {        
-            if (languageFilesDataHendler.getStudiedLanguageName().equals("German")) {   //TODO: make it work more general
-                String filePath = "../data/german_data/language_data/german_example_sentences.txt";
-                BufferedReader br = new BufferedReader(new FileReader(filePath));
-                String strLine;
-                while ((strLine = br.readLine()) != null) {
-                    int cardIndex = Integer.parseInt(strLine.split("\t")[0]);
-                    String exampleSentence = strLine.split("\t")[1];
+            String filePath = languageFilesDataHendler.getStudiedLanguageExampleSentencesDataPath();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                int cardIndex = Integer.parseInt(strLine.split("\t")[0]);
+                String exampleSentence = strLine.split("\t")[1];
 
-                    Card card = cardContainer.getCardByIndex(cardIndex);
-                    card.exampleSentences.add(exampleSentence);
-                }
+                Card card = cardContainer.getCardByIndex(cardIndex);
+                card.exampleSentences.add(exampleSentence);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find card data file");

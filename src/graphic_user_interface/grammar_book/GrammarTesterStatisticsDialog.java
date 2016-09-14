@@ -195,12 +195,12 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1KeyPressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dialogAnswer.answer = false;
+        dialogAnswer.boolAnswer = false;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        dialogAnswer.answer = true;
+        dialogAnswer.boolAnswer = true;
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

@@ -30,7 +30,7 @@ public class LanguageFilesDataHandler {
         languageData2.languageIndex = 1;
         languageData2.languageName = "German";
         languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_data.txt";
-        languageData2.exampleSentencesDataPath = "../data/english_data/language_data/german_example_sentences.txt";
+        languageData2.exampleSentencesDataPath = "../data/german_data/language_data/german_example_sentences.txt";
         languageData2.cardDataPath = "../data/german_data/language_data/german_words.txt";
         languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.txt";
         languageData2.grammarAnswerDataPath = "../data/german_data/answer_data/german_grammar_answer_data.txt";

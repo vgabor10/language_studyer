@@ -291,7 +291,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
-        if (dialog.dialogAnswer.answer) {
+        if (dialog.dialogAnswer.boolAnswer) {
             initialise();
         } else {
             dispose();

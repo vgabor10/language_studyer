@@ -1,6 +1,5 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.Card;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 
@@ -34,7 +33,7 @@ public class CardDeleteReinforceDialog extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
-        jLabel1.setText("Are you sure you would like to delete the card?");
+        jLabel1.setText("Are you sure you would like to delete the item?");
 
         jButton1.setText("Yes");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -80,12 +79,12 @@ public class CardDeleteReinforceDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dialogAnswer.answer = true;
+        dialogAnswer.boolAnswer = true;
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        dialogAnswer.answer = false;
+        dialogAnswer.boolAnswer = false;
         dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 

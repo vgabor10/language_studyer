@@ -176,7 +176,11 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
-        jTable2.setEnabled(false);
+        jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable2MouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(jTable2);
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "all category" }));
@@ -321,11 +325,17 @@ public class DictionaryDialog extends javax.swing.JDialog {
         dialog.cardContainer = cardContainer;
         dialog.cardToInspect = cardToModificate;
         dialog.answerDataContainer = answerDataContainer;
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
         dialog.initialise();
         dialog.setVisible(true);
         
-        tableModel.setValueAt(cardToModificate.term, selectedTableRowIndex, 0);
-        tableModel.setValueAt(cardToModificate.definition, selectedTableRowIndex, 1);
+        if (dialogAnswer.intAnswer == 1) {
+            deleteRowFromTable(selectedTableRowIndex);
+        }
+        if (dialogAnswer.intAnswer == 1) {
+            clearTable();
+        }
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_modificateCardButtonActionPerformed
@@ -368,6 +378,29 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jTable2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable2MouseClicked
+        int selectedTableRowIndex = jTable2.getSelectedRow();
+        String stringForSearch = (String) jTable2.getValueAt(selectedTableRowIndex, 0);
+        
+        jTable2.clearSelection();
+        clearTable();
+
+        if (jComboBox1.getSelectedIndex() == 0) {
+            listedCards
+                    = cardFinder.getCardsWithGivenTermPart(stringForSearch);
+        }
+
+        if (jComboBox1.getSelectedIndex() == 1) {
+            listedCards
+                    = cardFinder.getCardsWithGivenDefinitionPart(stringForSearch);
+        }
+
+        toScreenListedCards();
+
+        jTextField1.setText("");
+        modificateCardButton.setEnabled(false);
+    }//GEN-LAST:event_jTable2MouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
