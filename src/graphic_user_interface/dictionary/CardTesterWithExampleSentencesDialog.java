@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
-public class CardTesterDialog2 extends javax.swing.JDialog {
+public class CardTesterWithExampleSentencesDialog extends javax.swing.JDialog {
 
     private CardTester cardTester;
     private CardChooser cardChooser;
@@ -26,7 +26,7 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
     private long startTime;
     private long finishTime;
 
-    public CardTesterDialog2(java.awt.Frame parent, boolean modal) {
+    public CardTesterWithExampleSentencesDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
 
@@ -367,11 +367,7 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
     }//GEN-LAST:event_jTextField2KeyPressed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        CardInspectorDialog dialog = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.inspectedCard = cardTester.getActualQuestionedCard();
-        dialog.initialise();
-        dialog.setLocationRelativeTo(this);
-        dialog.setVisible(true);
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
@@ -391,14 +387,26 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CardTesterDialog2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardTesterWithExampleSentencesDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CardTesterDialog2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardTesterWithExampleSentencesDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CardTesterDialog2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardTesterWithExampleSentencesDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CardTesterDialog2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CardTesterWithExampleSentencesDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -407,7 +415,7 @@ public class CardTesterDialog2 extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                CardTesterDialog2 dialog = new CardTesterDialog2(new javax.swing.JFrame(), true);
+                CardTesterWithExampleSentencesDialog dialog = new CardTesterWithExampleSentencesDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

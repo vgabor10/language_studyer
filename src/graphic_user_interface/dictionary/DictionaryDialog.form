@@ -145,7 +145,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="modificateCardButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Modificate selected card"/>
+        <Property name="text" type="java.lang.String" value="Inspect selected card"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>

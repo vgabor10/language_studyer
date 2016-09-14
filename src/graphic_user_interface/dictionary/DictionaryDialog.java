@@ -142,7 +142,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         });
 
-        modificateCardButton.setText("Modificate selected card");
+        modificateCardButton.setText("Inspect selected card");
         modificateCardButton.setEnabled(false);
         modificateCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,10 +322,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
         int selectedTableRowIndex = jTable1.getSelectedRow();
         Card cardToModificate = listedCards.get(selectedTableRowIndex);
         
-        CardModificatorDialog dialog 
-                = new CardModificatorDialog(new javax.swing.JFrame(), true);
+        CardInspectorDialog dialog 
+                = new CardInspectorDialog(new javax.swing.JFrame(), true);
         dialog.cardContainer = cardContainer;
-        dialog.cardToModificate = cardToModificate;
+        dialog.cardToInspect = cardToModificate;
         dialog.initialise();
         dialog.setVisible(true);
         
