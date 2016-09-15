@@ -1,35 +1,40 @@
 package graphic_user_interface.dictionary;
 
+import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
 import disc_operation_handlers.DictionaryDataModificator;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
-import java.util.Vector;
+import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataContainer;
 
-/**
- *
- * @author varga
- */
 public class CardAdderDialog extends javax.swing.JDialog {
 
-    private CardContainer cardContainer;
+    public CardContainer cardContainer;
+    public AnswerDataContainer answerDataContainer;
+    private final DefaultTableModel tableModel;
+    public DialogAnswer dialogAnswer;
     
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
+    private Logger logger = new Logger();
     
     public CardAdderDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        jTextField1.setText("");
-        jTextField2.setText("");  
-        jTextField1.requestFocus();
+        tableModel = (DefaultTableModel)jTable1.getModel();
         
         addCardButton.setMnemonic(KeyEvent.VK_A);
-        jButton3.setMnemonic(KeyEvent.VK_C);
+        closeButton.setMnemonic(KeyEvent.VK_C);
+        addExampleSentenceButton.setMnemonic(KeyEvent.VK_A);
+        deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
         
         setLocationRelativeTo(null);
+        
+        jTextField1.setText("");
+        jTextField2.setText("");
+        
+        jTextField1.requestFocus();
     }
 
     /**
@@ -46,10 +51,17 @@ public class CardAdderDialog extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         addCardButton = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        closeButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        deleteExampleSentenceButton = new javax.swing.JButton();
+        addExampleSentenceButton = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        setResizable(false);
 
         jTextField1.setText("jTextField1");
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -81,12 +93,53 @@ public class CardAdderDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton3.setText("Cancel");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        closeButton.setText("Cancel");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                closeButtonActionPerformed(evt);
             }
         });
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Example sentences"
+            }
+        ));
+        jTable1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTable1FocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jTable1FocusLost(evt);
+            }
+        });
+        jScrollPane1.setViewportView(jTable1);
+
+        deleteExampleSentenceButton.setText("Delete example sentence");
+        deleteExampleSentenceButton.setEnabled(false);
+        deleteExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteExampleSentenceButtonActionPerformed(evt);
+            }
+        });
+
+        addExampleSentenceButton.setText("Add example sentence");
+        addExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addExampleSentenceButtonActionPerformed(evt);
+            }
+        });
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "categories" }));
+
+        jTextField3.setText("jTextField3");
+
+        jLabel3.setText("occurance:");
+
+        jLabel4.setText("categories:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,20 +148,36 @@ public class CardAdderDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 648, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(addExampleSentenceButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(deleteExampleSentenceButton))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(addCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(198, 198, 198)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(jLabel2))
+                            .addComponent(jLabel2)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel4)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextField2)
-                            .addComponent(jTextField1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(addCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jTextField1)
+                            .addComponent(jTextField3))))
                 .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addCardButton, closeButton, deleteExampleSentenceButton});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -122,17 +191,34 @@ public class CardAdderDialog extends javax.swing.JDialog {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(deleteExampleSentenceButton)
+                    .addComponent(addExampleSentenceButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addCardButton)
-                    .addComponent(jButton3))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(closeButton))
+                .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addCardButton, addExampleSentenceButton, closeButton, deleteExampleSentenceButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+        dialogAnswer.boolAnswer = false;
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_closeButtonActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -153,42 +239,52 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_addCardButtonKeyPressed
 
     private void addCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCardButtonActionPerformed
+        dialogAnswer.boolAnswer = true;
         addCard();
     }//GEN-LAST:event_addCardButtonActionPerformed
+
+    private void deleteExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteExampleSentenceButtonActionPerformed
+
+    }//GEN-LAST:event_deleteExampleSentenceButtonActionPerformed
+
+    private void jTable1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusGained
+        deleteExampleSentenceButton.setEnabled(true);
+    }//GEN-LAST:event_jTable1FocusGained
+
+    private void jTable1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusLost
+        deleteExampleSentenceButton.setEnabled(false);
+    }//GEN-LAST:event_jTable1FocusLost
+
+    private void addExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButtonActionPerformed
+        DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
+        ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
+        dialog.dialogAnswer = addSentenceDialogAnswer;
+        dialog.setVisible(true);
+        
+        if (addSentenceDialogAnswer.boolAnswer) {
+            logger.debug("add sentence");
+            tableModel.addRow(new Object[]{
+                addSentenceDialogAnswer.stringAnswer
+            });
+        }
+    }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
 
     public void addCard() {
         String term = jTextField1.getText();
         String definition = jTextField2.getText();
-        
-        if (term.contains("\t") || definition.contains("\t") ||
-                term.equals("") || definition.equals("")) {
-            
-            NotApproprateFormatDialog dialog = new NotApproprateFormatDialog(new javax.swing.JFrame(), true);
-            dialog.setVisible(true);
-        }
-        else {
-            Vector<Integer> foundCardIndexes = cardContainer.findCardsByTerm(term);
-            
-            if (!foundCardIndexes.isEmpty()) {
-                NotApproprateFormatDialog dialog = new NotApproprateFormatDialog(new javax.swing.JFrame(), true);
-                dialog.setVisible(true);
-            }
-            else {
-                Card card = new Card();
-        
-                card.index = cardContainer.getEmptyCardIndex();
-                card.term = jTextField1.getText();
-                card.definition = jTextField2.getText();
 
-                DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-                dictionaryDataModificator.setCardContainer(cardContainer);
-                dictionaryDataModificator.addCard(card);
-                
-                jTextField1.setText("");
-                jTextField2.setText("");  
-                jTextField1.requestFocus();
-            }
+        Card cardToAdd = new Card();
+        cardToAdd.term = term;
+        cardToAdd.definition = definition;
+        for (int i=0;i<tableModel.getRowCount();i++) {
+            cardToAdd.exampleSentences.add((String) tableModel.getValueAt(0, i));
         }
+
+        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+        dictionaryDataModificator.setCardContainer(cardContainer);
+        dictionaryDataModificator.addCard(cardToAdd);
+                
+        dispose();
     }
     
     /**
@@ -220,18 +316,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -250,10 +334,18 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addCardButton;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton addExampleSentenceButton;
+    private javax.swing.JButton closeButton;
+    private javax.swing.JButton deleteExampleSentenceButton;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

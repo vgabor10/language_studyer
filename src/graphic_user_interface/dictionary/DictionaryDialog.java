@@ -341,11 +341,18 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_modificateCardButtonActionPerformed
 
     private void addNewCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewCardButtonActionPerformed
-        clearTable();
         
-        CardAdderDialog dialog = new CardAdderDialog(new javax.swing.JFrame(), true);
-        dialog.setCardContainer(cardContainer);
+        CardAdderDialog dialog 
+                = new CardAdderDialog(new javax.swing.JFrame(), true);
+        dialog.cardContainer = cardContainer;
+        dialog.answerDataContainer = answerDataContainer;
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
         dialog.setVisible(true);
+        
+        if (dialog.dialogAnswer.boolAnswer) {
+                    clearTable();
+        }
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_addNewCardButtonActionPerformed
