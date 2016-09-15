@@ -120,7 +120,7 @@
 100119	glauben	hisz
 100120	r Verkäufer	eladó
 100121	r Sohn	fia vkinek
-100122	e Frau	feleség, asszony
+100122	e Frau	feleség, asszony, nő
 100123	r Mantel	kabát
 100124	r Chef	főnök
 100125	s Geschenk	ajándék
@@ -1132,7 +1132,7 @@
 101142	s Kaisertum	birodalom
 101143	dauernd	tartós
 101144	e Besatzung	megszállás
-101145	gering	alacsony
+101145	gering	alacsony, kicsi
 101146	fußen	alapul
 101147	r Jänner	január
 101148	s Wörterbuch	szótár
@@ -3302,7 +3302,7 @@
 103346	e Auseinandersetzung	vita, veszekedés
 103347	r Geschäftsführer	ügyvezető igazgató
 103348	r Betrachter	néző, szemlélő
-103349	anziehen	felöltöztet
+103349	anziehen	felvesz, felöltöztet
 103350	r Ertrag	hozam
 103351	sehen	néz, lát
 103352	außen	kint
@@ -5036,3 +5036,4 @@
 102070	r Tausch	csere
 102129	merklich	észrevehetően
 100631	r Schmuck	dísz, ékszer
+101572	China	Kína

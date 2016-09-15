@@ -1140,3 +1140,73 @@
 101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
 100281	Leonie und Max sind ein glückliches Paar.
 100631	Der Schmuck ist sehr wertvoll.
+101145	Das ist ein geringes Problem.
+102266	Das ist ein geringes Problem.
+104315	Die technische Ausstattung sollte noch verbessert werden.
+101638	Die technische Ausstattung sollte noch verbessert werden.
+100616	Die technische Ausstattung sollte noch verbessert werden.
+100226	Über fünfzig Prozent der Bevölkerung sind Frauen.
+100214	Über fünfzig Prozent der Bevölkerung sind Frauen.
+100122	Über fünfzig Prozent der Bevölkerung sind Frauen.
+100214	Die Bevölkerung Chiles litt unter dem diktatorischen Regime.
+104367	Die Bevölkerung Chiles litt unter dem diktatorischen Regime.
+104527	Die Bevölkerung Chiles litt unter dem diktatorischen Regime.
+102587	Die Weltbevölkerung beträgt 6,4 Milliarden.
+100214	Die Weltbevölkerung beträgt 6,4 Milliarden.
+100229	Die Weltbevölkerung beträgt 6,4 Milliarden.
+100735	Die Bevölkerung verlangt Reformen.
+100214	Die Bevölkerung verlangt Reformen.
+102128	Die Bevölkerung verlangt Reformen.
+101558	Sie hat eine angenehme Stimme.
+102157	Sie hat eine angenehme Stimme.
+100701	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
+104298	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
+102739	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
+103349	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
+103758	Der Käufer vertraut auf die Qualität des Produkts.
+103105	Der Käufer vertraut auf die Qualität des Produkts.
+101302	Der Käufer vertraut auf die Qualität des Produkts.
+100654	Der Käufer vertraut auf die Qualität des Produkts.
+101314	Die Mutter schleppt die schweren Einkaufstaschen nach Hause.
+103781	Die Mutter schleppt die schweren Einkaufstaschen nach Hause.
+104084	Die Mutter schleppt die schweren Einkaufstaschen nach Hause.
+102260	Die Mutter schleppt die schweren Einkaufstaschen nach Hause.
+100011	Die Mutter schleppt die schweren Einkaufstaschen nach Hause.
+100450	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
+100626	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
+104637	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
+101145	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
+103192	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
+100171	Auf diesem Boden bringen Kartoffeln gute Erträge.
+103185	Auf diesem Boden bringen Kartoffeln gute Erträge.
+101444	Auf diesem Boden bringen Kartoffeln gute Erträge.
+102380	Auf diesem Boden bringen Kartoffeln gute Erträge.
+103350	Auf diesem Boden bringen Kartoffeln gute Erträge.
+100398	Jeder Gast darf beliebig viele Freunde mitbringen.
+101980	Jeder Gast darf beliebig viele Freunde mitbringen.
+104190	Jeder Gast darf beliebig viele Freunde mitbringen.
+103769	Jeder Gast darf beliebig viele Freunde mitbringen.
+100450	Im Urlaub wollen sich die meisten entspannen.
+104460	Im Urlaub wollen sich die meisten entspannen.
+103892	Im Urlaub wollen sich die meisten entspannen.
+104430	Ich bin auf dem linken Ohr etwas taub.
+100097	Ich bin auf dem linken Ohr etwas taub.
+100304	Ich bin auf dem linken Ohr etwas taub.
+101255	Ich bin auf dem linken Ohr etwas taub.
+102669	Ich kündige meinen Arbeitsplatz zum nächsten Monat.
+101524	Ich kündige meinen Arbeitsplatz zum nächsten Monat.
+104434	Ich kündige meinen Arbeitsplatz zum nächsten Monat.
+102252	Ich kündige meinen Arbeitsplatz zum nächsten Monat.
+104237	Wie lautet der Titel des Spielfilms?
+101478	Wie lautet der Titel des Spielfilms?
+101845	Wie lautet der Titel des Spielfilms?
+101821	Die Verletzung des Postgeheimnisses ist ein Eingriff in die Privatsphäre.
+104300	Die Verletzung des Postgeheimnisses ist ein Eingriff in die Privatsphäre.
+100007	Der Wirt holt eine Flasche Wein aus dem Keller.
+100656	Der Wirt holt eine Flasche Wein aus dem Keller.
+101437	Der Wirt holt eine Flasche Wein aus dem Keller.
+101363	Der Wirt holt eine Flasche Wein aus dem Keller.
+101301	Ich rate dir, noch einmal darüber nachzudenken.
+102863	Ich rate dir, noch einmal darüber nachzudenken.
+100875	Ich rate dir, noch einmal darüber nachzudenken.
+100726	Ich rate dir, noch einmal darüber nachzudenken.
