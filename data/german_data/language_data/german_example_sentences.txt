@@ -631,6 +631,7 @@
 102456	Das Ergebnis ist erstaunlich.
 102460	Der Anbieter kann erst in drei Tagen liefern.
 102463	Im Lebenslauf kann man seine Hobbys und Interessen erwähnen.
+101826	Im Lebenslauf kann man seine Hobbys und Interessen erwähnen.
 102470	Dudelsäcke erzeugen einen sehr seltsamen Klang.
 102472	Es wurden nicht die erhofften Ergebnisse erzielt.
 102478	Hat der Laptop eine USB-Schnittstelle?
@@ -746,6 +747,9 @@
 102870	Das kann doch nicht wahr sein!
 102871	Die Gewalt unter Jugendlichen nimmt immer mehr zu.
 102878	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
+101109	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
+101223	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
+101155	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
 102880	Die Regierung leitet Reformen ein.
 102884	Markus ist politisch sehr interessiert.
 102884	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
@@ -1210,3 +1214,292 @@
 102863	Ich rate dir, noch einmal darüber nachzudenken.
 100875	Ich rate dir, noch einmal darüber nachzudenken.
 100726	Ich rate dir, noch einmal darüber nachzudenken.
+100018	Die Schüler hören ihrem Lehrer aufmerksam zu.
+103215	Die Schüler hören ihrem Lehrer aufmerksam zu.
+101461	Die Schüler hören ihrem Lehrer aufmerksam zu.
+101334	Die Schüler hören ihrem Lehrer aufmerksam zu.
+101521	Nach der Arbeit treffen wir uns in der Kneipe zum Bier.
+100025	Nach der Arbeit treffen wir uns in der Kneipe zum Bier.
+101306	Nach der Arbeit treffen wir uns in der Kneipe zum Bier.
+101614	Nach der Arbeit treffen wir uns in der Kneipe zum Bier.
+100581	Mit Schiffen kann man große Mengen billig transportieren.
+102371	Mit Schiffen kann man große Mengen billig transportieren.
+102654	Mit Schiffen kann man große Mengen billig transportieren.
+100971	Mit Schiffen kann man große Mengen billig transportieren.
+101915	Mit Schiffen kann man große Mengen billig transportieren.
+101079	Der Auftrag hat ein Volumen von ca. 50 000 Euro.
+103094	Der Auftrag hat ein Volumen von ca. 50 000 Euro.
+102253	Der Auftrag hat ein Volumen von ca. 50 000 Euro.
+100961	Ich muss den Zug unbedingt kriegen.
+100386	Ich muss den Zug unbedingt kriegen.
+103144	Ich muss den Zug unbedingt kriegen.
+103020	Wir sollten die Beziehungen zu diesem Verlag ausbauen.
+100700	Wir sollten die Beziehungen zu diesem Verlag ausbauen.
+103276	Wir sollten die Beziehungen zu diesem Verlag ausbauen.
+103696	Wir sollten die Beziehungen zu diesem Verlag ausbauen.
+100230	Kriminelle Ausländer werden ausgewiesen.
+103796	Kriminelle Ausländer werden ausgewiesen.
+103316	Wir begreifen einfach nicht, wie so etwas möglich ist.
+100545	Wir begreifen einfach nicht, wie so etwas möglich ist.
+100290	Wir begreifen einfach nicht, wie so etwas möglich ist.
+104623	Eine zufällige Begegnung veränderte ihr Leben.
+103312	Eine zufällige Begegnung veränderte ihr Leben.
+102553	Eine zufällige Begegnung veränderte ihr Leben.
+102267	Eine zufällige Begegnung veränderte ihr Leben.
+100540	Mary wird uns am Sonntag mit ihrer Anwesenheit beglücken.
+104046	Mary wird uns am Sonntag mit ihrer Anwesenheit beglücken.
+104013	Wir beziehen unser Gemüse aus der regionalen Landwirtschaft.
+101620	Wir beziehen unser Gemüse aus der regionalen Landwirtschaft.
+103953	Wir beziehen unser Gemüse aus der regionalen Landwirtschaft.
+100286	Wir beziehen unser Gemüse aus der regionalen Landwirtschaft.
+102581	Die Wärme entweicht durch schlecht isolierte Fenster.
+104568	Die Wärme entweicht durch schlecht isolierte Fenster.
+100131	Die Wärme entweicht durch schlecht isolierte Fenster.
+104308	Die Wärme entweicht durch schlecht isolierte Fenster.
+100112	Die Wärme entweicht durch schlecht isolierte Fenster.
+101517	Die Hochschule für Grafik und Buchkunst in Leipzig hat eine lange Tradition.
+100385	Die Hochschule für Grafik und Buchkunst in Leipzig hat eine lange Tradition.
+102532	Die Hochschule für Grafik und Buchkunst in Leipzig hat eine lange Tradition.
+100648	Die siegreichen Fußballer wurden wie Helden gefeiert.
+101274	Die siegreichen Fußballer wurden wie Helden gefeiert.
+101564	Dirk hat sich auf die Zunge gebissen.
+105043	Dirk hat sich auf die Zunge gebissen.
+103853	Ich danke Ihnen für Ihre Einladung.
+100602	Ich danke Ihnen für Ihre Einladung.
+103965	Werkzeuge sind in der unteren Schublade.
+103064	Der Schaden war groß.
+102371	Der Schaden war groß.
+100143	Der Stadtführer zeigt den Touristen die Stadt.
+104214	Der Stadtführer zeigt den Touristen die Stadt.
+100148	Der Stadtführer zeigt den Touristen die Stadt.
+100561	Er gewöhnt sich langsam an seinen neuen Tagesrhythmus.
+100022	Er gewöhnt sich langsam an seinen neuen Tagesrhythmus.
+100113	Er gewöhnt sich langsam an seinen neuen Tagesrhythmus.
+102345	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+102808	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+101784	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+103008	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+100706	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+100385	Wir haben lange vor dem Kino angestanden.
+101257	Wir haben lange vor dem Kino angestanden.
+104448	Wir haben lange vor dem Kino angestanden.
+103924	Hartmut ist ein kommunikativer Typ.
+101066	Hartmut ist ein kommunikativer Typ.
+104051	Die Klimaforscher zeichnen eine düstere Prognose.
+103677	Die Klimaforscher zeichnen eine düstere Prognose.
+104381	Die Klimaforscher zeichnen eine düstere Prognose.
+103477	Die Klimaforscher zeichnen eine düstere Prognose.
+102976	Niemand ist perfekt.
+102988	Niemand ist perfekt.
+100746	Zuletzt hat Bruno als Kellner gearbeitet.
+100126	Zuletzt hat Bruno als Kellner gearbeitet.
+101522	Zuletzt hat Bruno als Kellner gearbeitet.
+104835	Wir müssen die Akten schnellstmöglich vernichten.
+104489	Wir müssen die Akten schnellstmöglich vernichten.
+102145	Wir müssen die Akten schnellstmöglich vernichten.
+104190	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
+103072	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
+103261	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
+101130	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
+103046	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
+102122	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
+104291	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
+100070	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
+100653	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
+104178	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
+101194	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
+101192	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
+103917	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
+104568	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
+100557	Johanna reist in den Ferien nach Bulgarien.
+103089	Johanna reist in den Ferien nach Bulgarien.
+103167	Wir haben die schlimmste Zeit nun überstanden.
+100181	Wir haben die schlimmste Zeit nun überstanden.
+104648	Wir haben die schlimmste Zeit nun überstanden.
+102409	Hierfür gibt es eine Vielzahl an therapeutischen Möglichkeiten.
+100680	Hierfür gibt es eine Vielzahl an therapeutischen Möglichkeiten.
+100710	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
+102467	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
+103460	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
+101523	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
+100019	Viele Mädchen wollen sich die Brust vergrößern lassen.
+104079	Viele Mädchen wollen sich die Brust vergrößern lassen.
+100088	Viele Mädchen wollen sich die Brust vergrößern lassen.
+101567	Viele Mädchen wollen sich die Brust vergrößern lassen.
+103782	Viele Mädchen wollen sich die Brust vergrößern lassen.
+103467	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
+101256	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
+100113	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
+100683	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
+100719	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
+102542	Die Umsetzung der Menschenrechte bereitet selbst in Europa Schwierigkeiten.
+104423	Die Umsetzung der Menschenrechte bereitet selbst in Europa Schwierigkeiten.
+104423	Die Umsetzung der Menschenrechte bereitet selbst in Europa Schwierigkeiten.
+101065	Seine Eltern waren Bauern in Schlesien.
+103933	Seine Eltern waren Bauern in Schlesien.
+101296	Dieses Arzneimittel ist sehr teuer.
+104298	Dieses Arzneimittel ist sehr teuer.
+104660	Dieses Arzneimittel ist sehr teuer.
+103718	Georg ist schuld daran, dass wir zu spät kommen.
+100346	Georg ist schuld daran, dass wir zu spät kommen.
+104082	Georg ist schuld daran, dass wir zu spät kommen.
+102657	Die Miete ist sehr günstig.
+104298	Die Miete ist sehr günstig.
+101810	Die Miete ist sehr günstig.
+101366	Die Tür ist verschlossen.
+103381	Die Tür ist verschlossen.
+102169	Das Kreuz auf der Kirche ist vergoldet.
+101748	Das Kreuz auf der Kirche ist vergoldet.
+100975	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
+103696	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
+100018	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
+101453	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
+103555	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
+101532	Ich hatte mit meiner Bewerbung keinen Erfolg.
+100526	Ich hatte mit meiner Bewerbung keinen Erfolg.
+100119	Glaubst du, dass du es zeitlich schaffen wirst?
+104481	Glaubst du, dass du es zeitlich schaffen wirst?
+103380	Glaubst du, dass du es zeitlich schaffen wirst?
+104281	Wir haben uns entschlossen umzuziehen.
+101314	Sag deiner Mutter einen schönen Gruß von mir.
+100009	Sag deiner Mutter einen schönen Gruß von mir.
+103893	Sag deiner Mutter einen schönen Gruß von mir.
+102268	Sag deiner Mutter einen schönen Gruß von mir.
+102004	Der Sommer dauert nicht ewig.
+100763	Der Sommer dauert nicht ewig.
+102108	Der Sommer dauert nicht ewig.
+102849	Die Herstellung von Lebensmitteln wird streng überwacht.
+101587	Die Herstellung von Lebensmitteln wird streng überwacht.
+101493	Die Herstellung von Lebensmitteln wird streng überwacht.
+103687	Die Herstellung von Lebensmitteln wird streng überwacht.
+104490	Die Bestimmungen sind gesetzlich festgelegt.
+102347	Die Bestimmungen sind gesetzlich festgelegt.
+100802	Die Bestimmungen sind gesetzlich festgelegt.
+102402	Komm her, ich will mit dir reden.
+100001	Komm her, ich will mit dir reden.
+102512	Die Straßen sind glatt.
+102009	Die Straßen sind glatt.
+102861	Effizientes, schnelles Arbeiten ist wichtig.
+100008	Effizientes, schnelles Arbeiten ist wichtig.
+101522	Effizientes, schnelles Arbeiten ist wichtig.
+100790	Effizientes, schnelles Arbeiten ist wichtig.
+100435	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
+104156	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
+103889	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
+104223	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
+101181	Rauchen gefährdet die Gesundheit.
+102322	Rauchen gefährdet die Gesundheit.
+102351	Rauchen gefährdet die Gesundheit.
+100264	Die Regierung muss langfristige Entscheidungen treffen.
+104835	Die Regierung muss langfristige Entscheidungen treffen.
+103449	Die Regierung muss langfristige Entscheidungen treffen.
+100879	Die Regierung muss langfristige Entscheidungen treffen.
+100025	Die Regierung muss langfristige Entscheidungen treffen.
+100100	Neben der Demokratie gibt es noch andere politische Systeme.
+103255	Neben der Demokratie gibt es noch andere politische Systeme.
+100023	Neben der Demokratie gibt es noch andere politische Systeme.
+103468	Neben der Demokratie gibt es noch andere politische Systeme.
+102884	Neben der Demokratie gibt es noch andere politische Systeme.
+101817	Neben der Demokratie gibt es noch andere politische Systeme.
+102240	Pferde spüren ein nahendes Erdbeben.
+104019	Pferde spüren ein nahendes Erdbeben.
+101800	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+103357	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+104434	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+102473	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+103468	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+104304	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
+102465	Seine Verdächtigungen erwiesen sich als falsch.
+102621	Seine Verdächtigungen erwiesen sich als falsch.
+100460	Die Industrie will mehr Mitsprache in der Wirtschaftspolitik.
+104471	Die Industrie will mehr Mitsprache in der Wirtschaftspolitik.
+102591	Die Industrie will mehr Mitsprache in der Wirtschaftspolitik.
+101832	Die Politik sucht Wege aus der Rezession.
+103926	Die Politik sucht Wege aus der Rezession.
+100074	Die Politik sucht Wege aus der Rezession.
+104205	Die Politik sucht Wege aus der Rezession.
+104440	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
+102410	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
+102901	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
+100860	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
+100290	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
+102435	Hoffentlich dehnt er seine Rede nicht zu sehr aus!
+104499	Hoffentlich dehnt er seine Rede nicht zu sehr aus!
+100759	Hoffentlich dehnt er seine Rede nicht zu sehr aus!
+102477	Eine Schlange von 3 Metern Länge ist aus dem Zoo verschwunden.
+104230	Eine Schlange von 3 Metern Länge ist aus dem Zoo verschwunden.
+102721	Eine Schlange von 3 Metern Länge ist aus dem Zoo verschwunden.
+100692	Eine Schlange von 3 Metern Länge ist aus dem Zoo verschwunden.
+103719	Eine Schlange von 3 Metern Länge ist aus dem Zoo verschwunden.
+101816	Die Bewertung erfolgt unter unterschiedlichen Aspekten.
+100254	Die Bewertung erfolgt unter unterschiedlichen Aspekten.
+104655	Die Bewertung erfolgt unter unterschiedlichen Aspekten.
+102865	Die Bewertung erfolgt unter unterschiedlichen Aspekten.
+101569	Mein Magen tut weh.
+101723	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
+101044	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
+104587	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
+100721	Bisher habe ich nie viel vor Prüfungen gelernt.
+101130	Bisher habe ich nie viel vor Prüfungen gelernt.
+102243	Bisher habe ich nie viel vor Prüfungen gelernt.
+103218	Ein Wunder ist geschehen.
+105088	Ein Wunder ist geschehen.
+100156	Eine Tasse Kaffee pro Tag genügt mir.
+100157	Eine Tasse Kaffee pro Tag genügt mir.
+101534	Eine Tasse Kaffee pro Tag genügt mir.
+102340	Eine Tasse Kaffee pro Tag genügt mir.
+102364	Sie verbrachten eine glückliche Ehe.
+103026	Sie verbrachten eine glückliche Ehe.
+102916	Ihr Antrag liegt uns vollständig vor.
+103943	Ihr Antrag liegt uns vollständig vor.
+103943	Ihr Antrag liegt uns vollständig vor.
+101376	Lass die Vase bitte nicht fallen!
+103342	Lass die Vase bitte nicht fallen!
+100277	Lass die Vase bitte nicht fallen!
+104558	Alexander behält seine Süßigkeiten immer für sich.
+101607	Alexander behält seine Süßigkeiten immer für sich.
+100010	Alexander behält seine Süßigkeiten immer für sich.
+103920	Mörder können durch DNA-Analysen schnell gefunden werden.
+104824	Mörder können durch DNA-Analysen schnell gefunden werden.
+104568	Mörder können durch DNA-Analysen schnell gefunden werden.
+104605	Mörder können durch DNA-Analysen schnell gefunden werden.
+105076	Mörder können durch DNA-Analysen schnell gefunden werden.
+100256	Der letzte Winter war kalt und schneereich.
+102002	Der letzte Winter war kalt und schneereich.
+100701	Der letzte Winter war kalt und schneereich.
+103563	Jeder Gast darf beliebig viele Freunde mitbringen.
+100398	Jeder Gast darf beliebig viele Freunde mitbringen.
+100162	Jeder Gast darf beliebig viele Freunde mitbringen.
+103134	Jeder Gast darf beliebig viele Freunde mitbringen.
+104190	Jeder Gast darf beliebig viele Freunde mitbringen.
+103769	Jeder Gast darf beliebig viele Freunde mitbringen.
+101770	Die restlichen Kosten trägt die Stadt.
+102711	Die restlichen Kosten trägt die Stadt.
+104023	Die restlichen Kosten trägt die Stadt.
+100148	Die restlichen Kosten trägt die Stadt.
+104377	Der Schuss traf ihn an der Schulter.
+100025	Der Schuss traf ihn an der Schulter.
+101574	Der Schuss traf ihn an der Schulter.
+101302	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+100654	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+104568	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+104422	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+101727	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+102354	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
+104066	Johann Sebastian Bach war Komponist.
+100879	Diese Entscheidung hat weitreichende Konsequenzen.
+101153	Diese Entscheidung hat weitreichende Konsequenzen.
+102748	An welcher Institution findet der Sprachkurs statt?
+101269	An welcher Institution findet der Sprachkurs statt?
+104485	Bevor ich zu dir komme, rufe ich dich an.
+104082	Bevor ich zu dir komme, rufe ich dich an.
+104328	Bevor ich zu dir komme, rufe ich dich an.
+100175	Menschen zählen wir zu den hoch entwickelten Lebewesen.
+103757	Menschen zählen wir zu den hoch entwickelten Lebewesen.
+100192	Menschen zählen wir zu den hoch entwickelten Lebewesen.
+100207	Menschen zählen wir zu den hoch entwickelten Lebewesen.
+104337	Menschen zählen wir zu den hoch entwickelten Lebewesen.
+100381	Holz ist ein nachwachsender Rohstoff.
+103208	Holz ist ein nachwachsender Rohstoff.
+101820	Das Stadion hat 40 000 Plätze.
+104276	Das Stadion hat 40 000 Plätze.

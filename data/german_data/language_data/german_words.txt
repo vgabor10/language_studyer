@@ -98,7 +98,7 @@
 100097	s Ohr	fül
 100098	s Knie	térd
 100099	r Kopf	fej
-100100	neben	mellé
+100100	neben	mellé, mellett
 100101	r Hals	nyak, torok
 100102	zu tun haben	dolga van
 100103	besuchen	meglátogat
@@ -2368,7 +2368,7 @@
 102399	herausnehmen	kivesz
 102400	heraus	ki (hat)
 102401	herausstellen	kiemel vmit 
-102402	herkommen	ered, származik
+102402	herkommen	ide jön, származik
 102403	herrlich	gyönyörű
 102404	herum	körül
 102405	hervorgehen	származik, keletkezik
