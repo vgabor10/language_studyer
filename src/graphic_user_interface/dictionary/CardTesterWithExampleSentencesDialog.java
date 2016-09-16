@@ -9,8 +9,11 @@ import dictionary.CardTester;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
@@ -41,7 +44,7 @@ public class CardTesterWithExampleSentencesDialog extends javax.swing.JDialog {
         cardChooser.setCardContainer(cardContainer);
         cardChooser.setAnswerDataContainer(answerDataContainer);
         
-        Set<Integer> cardIndexesToTest = cardIndexesToTest = cardChooser.getRandomCardIndexes(1, new HashSet<Integer>());;
+        Set<Integer> cardIndexesToTest;
         if (answerDataContainer.numberOfAnswers() > 100) {
             cardIndexesToTest = cardChooser.getCardIndexes();
         } else {
@@ -302,9 +305,15 @@ public class CardTesterWithExampleSentencesDialog extends javax.swing.JDialog {
     }
     
     private void showExampleSentences() {
-        for (String exampleSentence : cardTester.getActualQuestionedCard().exampleSentences) {
+        List<Integer> exampleSentenceIndexes = new ArrayList<>();
+        for (int i=0; i<cardTester.getActualQuestionedCard().exampleSentences.size(); i++) {
+            exampleSentenceIndexes.add(i);
+        }
+        Collections.shuffle(exampleSentenceIndexes);
+        
+        for (int i : exampleSentenceIndexes) {
             exampleSentencesTableModel.addRow(new Object[]{
-                exampleSentence
+                cardTester.getActualQuestionedCard().exampleSentences.get(i)
             });
         }
     }
