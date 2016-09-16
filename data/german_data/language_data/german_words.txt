@@ -1549,7 +1549,7 @@
 101564	e Zunge	nyelv
 101565	r Zahn	fog (fn)
 101566	s Haar	haj
-101567	e Brust	mellkas
+101567	e Brust	mell, mellkas
 101568	r Busen	mell
 101569	r Magen	gyomor
 101570	e Leber	máj
@@ -3004,7 +3004,7 @@
 103043	ziehen	húz
 103044	r Kilometer	kilóméter
 103045	übersehen	átnéz, áttekint
-103046	ablegen	lerak
+103046	ablegen	lerak, letesz
 103047	r General	tábornok
 103048	s Olympia	olimpia
 103049	reichlich	gazdag, bőséges
@@ -3101,7 +3101,7 @@
 103141	e Einigung	egyezség
 103142	musikalisch	zenei
 103143	kurzfristig	rövid lejáratú
-103144	kriegen	háborúzik
+103144	kriegen	háborúzik, megfog, elfog
 103145	auswärtig	külső
 103146	vorsichtig	óvatos
 103147	längst	régen
@@ -3334,7 +3334,7 @@
 103378	differenzieren	megkülönböztet
 103379	s Gramm	gramm
 103380	schaffen	teremt
-103381	verschließen	elzár
+103381	verschließen	elzár, bezár
 103382	touristisch	túrisztikai
 103383	regieren	vezet, kormányoz
 103384	s Vitamin	vitamin
@@ -3638,7 +3638,7 @@
 103684	e Erweiterung	terjeszkedés, bővítés
 103685	außerhalb	kívül
 103686	beachten	vigyáz, törődik
-103687	überwachen	megfigyel, lehallgat
+103687	überwachen	felügyel, megfigyel
 103688	r Hang	lejtő, szenvedély
 103689	s Festival	fesztivál
 103690	sodass	azért, hogy
@@ -4588,7 +4588,7 @@
 104645	r Zusammenhang	kapcsolat, összefüggés
 104646	abstrakt	absztrakt, elvont
 104647	r Bulle	bika
-104648	überstehen	kiáll, elszenved
+104648	überstehen	kiáll, elszenved, túlél
 104649	irren	téved
 104650	e Akademie	akadémia
 104651	beugen	hajlít
