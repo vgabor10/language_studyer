@@ -2250,7 +2250,7 @@
 102278	abbauen	lebont
 102279	abbilden	másol, ábrázol
 102280	abbrechen	abbahagy
-102281	abdecken	betakar
+102281	abdecken	betakar, befed
 102282	aber	de
 102283	abhängen	függ vmitől
 102284	abhängig	függő (mn)
@@ -2585,7 +2585,7 @@
 102619	r Fall	esés
 102620	fällig	esedékes
 102621	falsch	hamis
-102622	fassen	megfog
+102622	fassen	megfog, befogad
 102623	faszinieren	lenyűgöz
 102624	r Februar	február
 102625	fehlen	hiányzik
@@ -3694,7 +3694,7 @@
 103741	einholen	elér, megszerez
 103742	r Handwerker	iparos (fn)
 103743	demonstrieren	demonstrál, bemutat
-103744	vertreiben	elűz, elad
+103744	vertreiben	elad, elűz
 103745	e Bindung	kötés
 103746	juristisch	jogi
 103747	erarbeiten	kidolgoz
@@ -3933,7 +3933,7 @@
 103984	r Verlauf	folyamat
 103985	vertiefen	mélyít
 103986	biegen	hajlít
-103987	vorerst	mindenekelőtt
+103987	vorerst	előbb, mindenekelőtt
 103988	landwirtschaftlich	mezőgazdasági
 103989	r Schweiß	izzadság, verejték
 103990	verzweifeln	kétségbeesik
@@ -5039,3 +5039,10 @@
 101572	China	Kína
 102487	marschieren	menetel, masíroz
 102509	r Speck	szalonna
+102544	Polen	Lengyelország
+102640	gerecht	igazságos
+102648	s Erdbeben	földrengés
+102860	e Verteidigung	védelem
+102969	etwas	valami
+102990	widersprüchlich	ellentmondásos
+103123	r Verfall	romlás, hanyatlás
