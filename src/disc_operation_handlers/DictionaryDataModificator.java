@@ -35,6 +35,7 @@ public class DictionaryDataModificator {
     }
 
     public void addCard(Card card) {
+        card.index = cardContainer.getEmptyCardIndex();
         cardContainer.addCard(card);
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();

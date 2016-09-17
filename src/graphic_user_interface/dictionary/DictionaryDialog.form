@@ -40,7 +40,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="addNewCardButton" linkSize="1" alignment="1" min="-2" pref="184" max="-2" attributes="0"/>
-                              <Component id="modificateCardButton" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="inspectCardButton" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jScrollPane2" linkSize="1" min="-2" pref="184" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jButton1" linkSize="1" alignment="1" min="-2" pref="184" max="-2" attributes="0"/>
@@ -71,7 +71,7 @@
                   <Group type="102" attributes="0">
                       <Component id="addNewCardButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="modificateCardButton" min="-2" max="-2" attributes="0"/>
+                      <Component id="inspectCardButton" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
                   </Group>
@@ -100,10 +100,13 @@
       <SubComponents>
         <Component class="javax.swing.JTable" name="jTable1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Ubuntu" size="18" style="0"/>
+            </Property>
             <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
               <Table columnCount="2" rowCount="0">
-                <Column editable="true" title="term" type="java.lang.String"/>
-                <Column editable="true" title="definition" type="java.lang.String"/>
+                <Column editable="false" title="term" type="java.lang.String"/>
+                <Column editable="false" title="definition" type="java.lang.String"/>
               </Table>
             </Property>
           </Properties>
@@ -148,13 +151,13 @@
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="modificateCardButton">
+    <Component class="javax.swing.JButton" name="inspectCardButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Inspect selected card"/>
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modificateCardButtonActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inspectCardButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="addNewCardButton">

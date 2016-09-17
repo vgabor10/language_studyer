@@ -28,11 +28,13 @@ public class CardAdderDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
         addExampleSentenceButton.setMnemonic(KeyEvent.VK_D);
         deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
+        modificateExampleSentenceButton.setMnemonic(KeyEvent.VK_M);
         
         setLocationRelativeTo(null);
         
         jTextField1.setText("");
         jTextField2.setText("");
+        jTextField3.setText("");
         
         jTextField1.requestFocus();
     }
@@ -60,7 +62,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         jTextField3 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        addExampleSentenceButton1 = new javax.swing.JButton();
+        modificateExampleSentenceButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -145,11 +147,11 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
         jLabel4.setText("categories:");
 
-        addExampleSentenceButton1.setText("Modificate example sentence");
-        addExampleSentenceButton1.setEnabled(false);
-        addExampleSentenceButton1.addActionListener(new java.awt.event.ActionListener() {
+        modificateExampleSentenceButton.setText("Modificate example sentence");
+        modificateExampleSentenceButton.setEnabled(false);
+        modificateExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addExampleSentenceButton1ActionPerformed(evt);
+                modificateExampleSentenceButtonActionPerformed(evt);
             }
         });
 
@@ -169,7 +171,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(addExampleSentenceButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(modificateExampleSentenceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(deleteExampleSentenceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
@@ -187,7 +189,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addCardButton, addExampleSentenceButton, addExampleSentenceButton1, closeButton, deleteExampleSentenceButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addCardButton, addExampleSentenceButton, closeButton, deleteExampleSentenceButton, modificateExampleSentenceButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -214,7 +216,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deleteExampleSentenceButton)
                     .addComponent(addExampleSentenceButton)
-                    .addComponent(addExampleSentenceButton1))
+                    .addComponent(modificateExampleSentenceButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addCardButton)
@@ -222,7 +224,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addCardButton, addExampleSentenceButton, addExampleSentenceButton1, closeButton, deleteExampleSentenceButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addCardButton, addExampleSentenceButton, closeButton, deleteExampleSentenceButton, modificateExampleSentenceButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -281,9 +283,9 @@ public class CardAdderDialog extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
 
-    private void addExampleSentenceButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButton1ActionPerformed
+    private void modificateExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateExampleSentenceButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addExampleSentenceButton1ActionPerformed
+    }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     public void addCard() {
         String term = jTextField1.getText();
@@ -351,7 +353,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addCardButton;
     private javax.swing.JButton addExampleSentenceButton;
-    private javax.swing.JButton addExampleSentenceButton1;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton deleteExampleSentenceButton;
     private javax.swing.JComboBox<String> jComboBox1;
@@ -364,5 +365,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton modificateExampleSentenceButton;
     // End of variables declaration//GEN-END:variables
 }
