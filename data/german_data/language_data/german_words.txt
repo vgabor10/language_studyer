@@ -15,7 +15,7 @@
 100014	sofort	rögtön, azonnal
 100015	e Strassenbahn	villamos
 100016	oft	gyakran, gyakori
-100017	richtig	helyes
+100017	richtig	helyes, igazi
 100018	r Schüler	tanuló, diák
 100019	viel	sok
 100020	schrecklich	borzasztó
@@ -1720,7 +1720,7 @@
 101739	r Strand	strand
 101740	s Schwimmbad	uszoda
 101741	faulenzen	lustálkodik
-101742	besorgen	beszerez
+101742	besorgen	ellát, gondoskodik, szerez
 101743	e Begrüßung	üdvözlés
 101744	s Museum	múzeum
 101745	e Galerie	galéria
@@ -3384,7 +3384,7 @@
 103428	s Spanisch	spanyol
 103429	blühen	virágzik
 103430	erbringen	felhoz, előhoz
-103431	e Eintragung	beiratkozás
+103431	e Eintragung	beiratkozás, bejegyzés
 103432	berechtigen	feljogosít
 103433	eröffnen	megnyit
 103434	r Zweck	cél
@@ -5038,3 +5038,4 @@
 100631	r Schmuck	dísz, ékszer
 101572	China	Kína
 102487	marschieren	menetel, masíroz
+102509	r Speck	szalonna
