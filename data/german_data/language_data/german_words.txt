@@ -5037,3 +5037,4 @@
 102129	merklich	észrevehetően
 100631	r Schmuck	dísz, ékszer
 101572	China	Kína
+102487	marschieren	menetel, masíroz
