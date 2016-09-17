@@ -1625,3 +1625,21 @@
 100281	Leonie und Max sind ein glückliches Paar.
 100631	Der Schmuck ist sehr wertvoll.
 102509	Möchtest du Spiegeleier mit Speck zum Frühstück?
+101656	Möchtest du Spiegeleier mit Speck zum Frühstück?
+100622	Möchtest du Spiegeleier mit Speck zum Frühstück?
+101313	Urgroßvater wird von allen Familienmitgliedern hoch geachtet.
+102088	Urgroßvater wird von allen Familienmitgliedern hoch geachtet.
+100192	Urgroßvater wird von allen Familienmitgliedern hoch geachtet.
+103672	Urgroßvater wird von allen Familienmitgliedern hoch geachtet.
+104948	Pettersson genoss die Stille.
+102508	Pettersson genoss die Stille.
+101659	Zum Abendessen müssen wir wieder daheim sein.
+104835	Zum Abendessen müssen wir wieder daheim sein.
+100071	Zum Abendessen müssen wir wieder daheim sein.
+103597	Zum Abendessen müssen wir wieder daheim sein.
+100327	Das Angebot beinhaltet Flug und Unterkunft.
+104615	Das Angebot beinhaltet Flug und Unterkunft.
+101775	Das Angebot beinhaltet Flug und Unterkunft.
+100834	Das Angebot beinhaltet Flug und Unterkunft.
+101311	Falks Vater ist Ingenieur.
+103778	Falks Vater ist Ingenieur.
