@@ -1503,3 +1503,37 @@
 103208	Holz ist ein nachwachsender Rohstoff.
 101820	Das Stadion hat 40 000 Plätze.
 104276	Das Stadion hat 40 000 Plätze.
+102247	Romeo schreibt Julia einen Liebesbrief.
+102730	Romeo schreibt Julia einen Liebesbrief.
+102953	Romeo schreibt Julia einen Liebesbrief.
+101825	Der Besitzer des Unfallwagens konnte noch nicht ermittelt werden.
+101081	Der Besitzer des Unfallwagens konnte noch nicht ermittelt werden.
+100141	Der Besitzer des Unfallwagens konnte noch nicht ermittelt werden.
+100023	Der Besitzer des Unfallwagens konnte noch nicht ermittelt werden.
+101172	Der Besitzer des Unfallwagens konnte noch nicht ermittelt werden.
+100544	Ich mache die Tür zu.
+101366	Ich mache die Tür zu.
+103487	Ich mache die Tür auf.
+101366	Ich mache die Tür auf.
+102238	Mit 35 Jahren wurde sie auf eine Professur für Alte Geschichte berufen.
+100128	Mit 35 Jahren wurde sie auf eine Professur für Alte Geschichte berufen.
+104575	Mit 35 Jahren wurde sie auf eine Professur für Alte Geschichte berufen.
+103677	Rubens zeichnete gerne nackte Frauen.
+102345	Rubens zeichnete gerne nackte Frauen.
+104437	Rubens zeichnete gerne nackte Frauen.
+100122	Rubens zeichnete gerne nackte Frauen.
+102741	In seiner Jugend genoss er eine strenge Erziehung.
+104948	In seiner Jugend genoss er eine strenge Erziehung.
+101493	In seiner Jugend genoss er eine strenge Erziehung.
+101128	In seiner Jugend genoss er eine strenge Erziehung.
+103464	Der Test dauert nur ein paar Minuten.
+100763	Der Test dauert nur ein paar Minuten.
+102901	Der Test dauert nur ein paar Minuten.
+102895	Der Test dauert nur ein paar Minuten.
+102658	Der Test dauert nur ein paar Minuten.
+100303	Karen beruhigt ihr Kind mit einem Keks.
+101282	Karen beruhigt ihr Kind mit einem Keks.
+101612	Karen beruhigt ihr Kind mit einem Keks.
+104430	Mein linker Schuh ist kaputt.
+101974	Mein linker Schuh ist kaputt.
+100130	Mein linker Schuh ist kaputt.
