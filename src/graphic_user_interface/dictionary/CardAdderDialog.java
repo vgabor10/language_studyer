@@ -115,9 +115,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTable1FocusGained(evt);
             }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTable1FocusLost(evt);
-            }
         });
         jScrollPane1.setViewportView(jTable1);
 
@@ -258,16 +255,17 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_addCardButtonActionPerformed
 
     private void deleteExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteExampleSentenceButtonActionPerformed
-
+        int selectedTableRowIndex = jTable1.getSelectedRow();
+        tableModel.removeRow(selectedTableRowIndex);
+        
+        deleteExampleSentenceButton.setEnabled(false);
+        modificateExampleSentenceButton.setEnabled(false);
     }//GEN-LAST:event_deleteExampleSentenceButtonActionPerformed
 
     private void jTable1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusGained
         deleteExampleSentenceButton.setEnabled(true);
+        modificateExampleSentenceButton.setEnabled(true);
     }//GEN-LAST:event_jTable1FocusGained
-
-    private void jTable1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusLost
-        deleteExampleSentenceButton.setEnabled(false);
-    }//GEN-LAST:event_jTable1FocusLost
 
     private void addExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButtonActionPerformed
         DialogAnswer addSentenceDialogAnswer = new DialogAnswer();

@@ -71,7 +71,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         jTextField3 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        addExampleSentenceButton1 = new javax.swing.JButton();
+        modificateExampleSentenceButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -124,9 +124,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 jTable1FocusGained(evt);
             }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                jTable1FocusLost(evt);
-            }
         });
         jScrollPane1.setViewportView(jTable1);
 
@@ -163,11 +160,11 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         jLabel4.setText("categories:");
 
-        addExampleSentenceButton1.setText("Modificate example sentence");
-        addExampleSentenceButton1.setEnabled(false);
-        addExampleSentenceButton1.addActionListener(new java.awt.event.ActionListener() {
+        modificateExampleSentenceButton.setText("Modificate example sentence");
+        modificateExampleSentenceButton.setEnabled(false);
+        modificateExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addExampleSentenceButton1ActionPerformed(evt);
+                modificateExampleSentenceButtonActionPerformed(evt);
             }
         });
 
@@ -202,7 +199,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(deleteCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(addExampleSentenceButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(modificateExampleSentenceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(deleteExampleSentenceButton)
@@ -211,7 +208,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addExampleSentenceButton, addExampleSentenceButton1, closeButton, deleteCardButton, deleteExampleSentenceButton, saveCardButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addExampleSentenceButton, closeButton, deleteCardButton, deleteExampleSentenceButton, modificateExampleSentenceButton, saveCardButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,7 +235,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(deleteExampleSentenceButton)
                     .addComponent(addExampleSentenceButton)
-                    .addComponent(addExampleSentenceButton1))
+                    .addComponent(modificateExampleSentenceButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(saveCardButton)
@@ -247,7 +244,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addExampleSentenceButton, addExampleSentenceButton1, closeButton, deleteCardButton, deleteExampleSentenceButton, saveCardButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addExampleSentenceButton, closeButton, deleteCardButton, deleteExampleSentenceButton, modificateExampleSentenceButton, saveCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -294,22 +291,23 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
             dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
             dialogAnswer.intAnswer = 1;
+            
+            dispose();
         }
-        
-        dispose();
     }//GEN-LAST:event_deleteCardButtonActionPerformed
 
     private void deleteExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteExampleSentenceButtonActionPerformed
-
+        int selectedTableRowIndex = jTable1.getSelectedRow();
+        tableModel.removeRow(selectedTableRowIndex);
+        
+        deleteExampleSentenceButton.setEnabled(false);
+        modificateExampleSentenceButton.setEnabled(false);
     }//GEN-LAST:event_deleteExampleSentenceButtonActionPerformed
 
     private void jTable1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusGained
         deleteExampleSentenceButton.setEnabled(true);
+        modificateExampleSentenceButton.setEnabled(true);
     }//GEN-LAST:event_jTable1FocusGained
-
-    private void jTable1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusLost
-        deleteExampleSentenceButton.setEnabled(false);
-    }//GEN-LAST:event_jTable1FocusLost
 
     private void addExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButtonActionPerformed
         DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
@@ -325,9 +323,9 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
 
-    private void addExampleSentenceButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButton1ActionPerformed
+    private void modificateExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateExampleSentenceButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_addExampleSentenceButton1ActionPerformed
+    }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     public void saveCard() {
         String term = jTextField1.getText();
@@ -335,8 +333,9 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         cardToInspect.term = term;
         cardToInspect.definition = definition;
+        cardToInspect.exampleSentences.clear();
         for (int i=0;i<tableModel.getRowCount();i++) {
-            cardToInspect.exampleSentences.add((String) tableModel.getValueAt(0, i));
+            cardToInspect.exampleSentences.add((String) tableModel.getValueAt(i, 0));
         }
 
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
@@ -392,7 +391,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addExampleSentenceButton;
-    private javax.swing.JButton addExampleSentenceButton1;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton deleteCardButton;
     private javax.swing.JButton deleteExampleSentenceButton;
@@ -406,6 +404,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton modificateExampleSentenceButton;
     private javax.swing.JButton saveCardButton;
     // End of variables declaration//GEN-END:variables
 }
