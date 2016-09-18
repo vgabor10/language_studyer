@@ -828,7 +828,7 @@
 100834	e Unterkunft	szállás
 100835	e Arbeitskraft	munkaerő
 100836	gezielt	szándékos
-100837	ankündigen	közöl
+100837	ankündigen	közöl, bejelent
 100838	anwerben	toboroz
 100839	vorstellen	elképzel
 100840	hinzufügen	hozzátesz
@@ -859,7 +859,7 @@
 100867	e Frist	határidő
 100868	zügig	gyors
 100869	e Erlaubnis	engedély
-100870	erteilen	adományoz
+100870	erteilen	ad, adományoz
 100871	s Mindestmaß	minimum
 100872	e Ausbildung	oktatás, kiképzés
 100873	erwägen	megfontol
@@ -2202,7 +2202,7 @@
 102229	ausgehen	szórakozni megy
 102230	r Fiskus	kincstár
 102231	r Vorteil	előny
-102233	beraten	tanácsot ad
+102233	beraten	tanácsot ad, megvotat
 102234	e Interaktion	kölcsönhatás
 102235	e Kuh	tehén
 102236	s Fett	zsír
@@ -3844,7 +3844,7 @@
 103894	spontan	spontán
 103895	vertraglich	elfogadható, elviselhető
 103896	reiten	lovagol
-103897	begegnen	találkozik, történik
+103897	begegnen	találkozik, történik, szembeszáll vmivel
 103898	e Erscheinung	jelenség
 103899	süß	édes
 103900	unterbringen	elhelyez
@@ -4490,7 +4490,7 @@
 104547	r Vermieter	bérbeadó
 104548	anfallen	megtámad
 104549	vereinen	egyesít
-104550	welch	melyik
+104550	welche	melyik
 104551	r Täter	tettes, elkövető
 104552	vorläufig	átmeneti, ideiglenes
 104553	schleichen	mászik, oson, lopakodik
@@ -5046,3 +5046,9 @@
 102969	etwas	valami
 102990	widersprüchlich	ellentmondásos
 103123	r Verfall	romlás, hanyatlás
+103150	sogenannt	úgynevezett
+103203	das Dreieck	háromszög
+103258	r Löwe	oroszlán
+103309	e Zitrone	citrom
+103587	r Sturz	esés
+103633	r Stall	istálló
