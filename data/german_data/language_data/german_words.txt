@@ -898,7 +898,7 @@
 100906	denkbar	elképzelhető
 100907	r Unmut	elégedetlenség, rosszkedv
 100908	herrschen	uralkodik
-100909	sogar	sőt
+100909	sogar	sőt, akár
 100910	gewaltig	óriási
 100911	einsetzen	alkalmaz
 100912	zwar	noha
@@ -1210,7 +1210,7 @@
 101220	erhöhen	növel
 101221	voraussagen	előre jelez
 101222	r Job	munka, állás
-101223	brauchen	igényel
+101223	brauchen	igényel, szüksége van vmire
 101224	e Freizügigkeit	liberalizmus
 101225	e Belastung	adósság, teher
 101226	permanent	állandó
@@ -1239,7 +1239,7 @@
 101249	e Ortschaft	helység
 101250	e Verhütung	megelőzés
 101251	s Schwein	disznó
-101252	e Angabe	közlés
+101252	e Angabe	közlés, adat
 101253	e Ablehnung	elutasítás
 101254	massiv	erőteljes
 101255	taub	süket
@@ -1663,7 +1663,6 @@
 101681	e Tomatensuppe	paradicsomleves
 101682	e Gulaschsuppe	gulyásleves
 101683	e Fischsuppe	halászlé
-101684	s Kürbisgemüse	tökfőzelék
 101685	s Spinatgemüse	spenót
 101686	r Reis	rizs
 101687	e Nudel	tészta
@@ -1928,7 +1927,6 @@
 101951	e Methode	módszer
 101952	r Alltag	hétköznap
 101953	hervorragend	kitűnő
-101954	r Friseursalon	fodrászüzlet
 101955	r Termin	időpont
 101956	e Prozedur	eljárás
 101957	r Wunsch	kívánság
@@ -2070,7 +2068,6 @@
 102096	auspacken	kicsomagol
 102097	s Neujahr	újév
 102098	staatlich	állami
-102099	e Bürgerrevolution	forradalom
 102100	r Freiheitskampf	szabadságharc
 102101	r Kreis	kör, körzet
 102102	e Party	buli, parti
@@ -2161,7 +2158,6 @@
 102188	e Melodie	dallam
 102189	e Oberfläche	felszín
 102190	r Fluss	folyó
-102191	s Industriegebiet	iparvidék
 102192	r Bodenschatz	ásványkincs
 102193	e Wiese	rét, mező
 102194	r Dichter	költő
@@ -2604,7 +2600,7 @@
 102638	enorm	óriási
 102639	e Norm	norma
 102641	entfalten	kibont
-102642	entgegenkommen	megfelel
+102642	entgegenkommen	elé jön, megfelel
 102643	entgehen	elmenekül
 102644	enthalten	tartalmaz
 102645	e Lust	öröm
@@ -2741,7 +2737,7 @@
 102777	obwohl	habár
 102778	e Gleichung	egyenlet
 102779	protestieren	tiltakozik
-102780	präzise	szabatos
+102780	präzise	precíz, szabatos
 102781	e Frequenz	frekvencia, gyakoriság
 102782	planen	tervez
 102783	einlegen	berak
@@ -3137,7 +3133,7 @@
 103178	links	balra
 103179	s Anliegen	kérés
 103180	winzig	pici
-103181	selbstverständlich	nyilvánvaló
+103181	selbstverständlich	nyilvánvaló, magától értetődő
 103182	r Ursprung	eredet
 103183	aufwachsen	felnő
 103184	dienen	szolgál
@@ -3425,7 +3421,7 @@
 103469	bürgerlich	polgári
 103470	dass	hogy
 103471	s Medium	médium
-103472	ärgern	bosszant
+103472	ärgern	bosszant, bosszankodik
 103473	allzu	túlzottan
 103474	sozial	szociális
 103475	e Bekämpfung	harc, leküzdés
@@ -4056,7 +4052,7 @@
 104109	südlich	déli
 104110	r Sprecher	szónok
 104111	betrieblich	üzemi
-104112	sich befinden	valamilyennek talál
+104112	sich befinden	vmilyennek talál, vhov van
 104113	vermögen	képes vmire, megtehet vmit
 104114	vernehmen	megtud, kihallgat
 104115	ausreichen	elég (ige)
@@ -4629,7 +4625,7 @@
 104687	e Droge	drog, kábítószer
 104688	vorsehen	tervbe vesz, előre lát
 104689	verfassen	megfogalmaz
-104690	ausmachen	alkot, kitesz
+104690	ausmachen	kitesz, megegyez
 104691	sachlich	tárgyilagos
 104692	vorbei	elmúlt (hat)
 104693	ablaufen	lejár, elmúlik
