@@ -38,6 +38,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         setLocationRelativeTo(null);
         
+        practisingButton.setMnemonic(KeyEvent.VK_P);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_B);
         exitButton.setMnemonic(KeyEvent.VK_X);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_S);

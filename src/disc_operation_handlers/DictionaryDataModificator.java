@@ -146,9 +146,8 @@ public class DictionaryDataModificator {
 
                 boolean equalTerm = card1.term.equals(card2.term);
                 boolean equalDefinition = card1.definition.equals(card2.definition);
-                boolean equalGroup = card1.group.equals(card2.group);
 
-                if (equalTerm && equalDefinition && equalGroup) {
+                if (equalTerm && equalDefinition) {
 
                     logger.debug("following cards has same term, definition, group:");
                     logger.debug(card1.toStringData());
