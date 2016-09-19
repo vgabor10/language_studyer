@@ -30,8 +30,6 @@ public class CardAdderDialog extends javax.swing.JDialog {
         deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
         modificateExampleSentenceButton.setMnemonic(KeyEvent.VK_M);
         
-        setLocationRelativeTo(null);
-        
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText("");
@@ -271,6 +269,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
         ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
         dialog.dialogAnswer = addSentenceDialogAnswer;
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         if (addSentenceDialogAnswer.boolAnswer) {

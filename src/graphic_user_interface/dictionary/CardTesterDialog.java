@@ -7,9 +7,13 @@ import disc_operation_handlers.DictionaryDataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
 import graphic_user_interface.common.DialogAnswer;
+import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
@@ -19,7 +23,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private CardChooser cardChooser;
     public CardContainer cardContainer;
     public AnswerDataContainer answerDataContainer;
-    private final DefaultTableModel tableModel;
+    private final DefaultTableModel acceptableAnswersTableModel;
+    private final DefaultTableModel exampleSentencesTableModel;
     private final Logger logger = new Logger();
     private long startTime;
     private long finishTime;
@@ -28,7 +33,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
 
-        tableModel = (DefaultTableModel) jTable1.getModel();
+        acceptableAnswersTableModel = (DefaultTableModel) jTable1.getModel();
+        exampleSentencesTableModel = (DefaultTableModel) jTable2.getModel();
 
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
@@ -44,7 +50,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         } else {
             cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
         }
-
+        
         cardTester = new CardTester();
         cardTester.setAllCard(cardContainer);
         cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
@@ -53,10 +59,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         jTextField1.requestFocus();
 
-        clearTabular();
+        clearTabulars();
         jTextField1.setText("");
         jTextField2.setText("");
-        jLabel1.setText("");
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
         jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
 
@@ -74,12 +79,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jTextField2 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -97,8 +103,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
         });
 
         jLabel2.setText("jLabel2");
-
-        jLabel1.setText("jLabel1");
 
         jTextField3.setEditable(false);
         jTextField3.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
@@ -145,34 +149,53 @@ public class CardTesterDialog extends javax.swing.JDialog {
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false
+                false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.setEnabled(false);
         jScrollPane1.setViewportView(jTable1);
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Example sentences"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable2.setEnabled(false);
+        jScrollPane2.setViewportView(jTable2);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addComponent(jTextField3, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                    .addComponent(jTextField1)
+                    .addComponent(jTextField2)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -187,9 +210,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 108, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 215, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addContainerGap())
@@ -207,45 +230,52 @@ public class CardTesterDialog extends javax.swing.JDialog {
             if (!cardTester.isGetAnswerToActualQuestion()) {
 
                 cardTester.setUserAnswer(jTextField1.getText());
+                
+                if (cardTester.isUserAnswerRight()) {
+                    if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
+                        jTextField2.setForeground(new Color(45, 107, 53));   //green   
+                    }
+                    else {
+                        jTextField2.setForeground(new Color(51,194,242));   //light blue
+                        jTextField1.setText("");
+                    }
+                } else {
+                    jTextField2.setForeground(new Color(255,71,71));  //light red
+                    jTextField1.setText("");
+                }
 
-                if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
+                jTextField2.setText(cardTester.getActualQuestionedCard().term);
+                showAcceptableCards();
+                showExampleSentences();
+                
+            } else {
+                if (cardTester.getActualQuestionedCard().term.equals(
+                    cardTester.getUserActualAnswer())) {
+                    
                     if (cardTester.isMoreCardToTest()) {
                         cardTester.moveToNextCardToQuestion();
                         jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
                         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
                         jTextField1.setText("");
                         jTextField2.setText("");
-                        jLabel1.setText("");
+
+                        clearTabulars();
                     } else {
                         goToStatisticsFrameAndSaveData();
                     }
-                } else if (cardTester.isUserAnswerRight()) {
-                    jTextField1.setText("");
-                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                    jTextField2.setForeground(new java.awt.Color(45, 107, 53)); //green
-                    jLabel1.setText("RIGHT, but the above term was tought");
-
-                    showAcceptableCards();
-                } else {
-                    jTextField1.setText("");
-                    jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                    jTextField2.setForeground(new java.awt.Color(255, 0, 0));   //red
-                    jLabel1.setText("wrong");
-
-                    showAcceptableCards();
                 }
-            } else if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
-                if (cardTester.isMoreCardToTest()) {
-                    cardTester.moveToNextCardToQuestion();
-                    jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
-                    jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                    jTextField1.setText("");
-                    jTextField2.setText("");
-                    jLabel1.setText("");
+                else if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
+                    if (cardTester.isMoreCardToTest()) {
+                        cardTester.moveToNextCardToQuestion();
+                        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+                        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
+                        jTextField1.setText("");
+                        jTextField2.setText("");
 
-                    clearTabular();
-                } else {
-                    goToStatisticsFrameAndSaveData();
+                        clearTabulars();
+                    } else {
+                        goToStatisticsFrameAndSaveData();
+                    }
                 }
             }
         }
@@ -256,16 +286,34 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 = cardTester.getAcceptableCardIndexes(cardTester.getActualQuestionedCard().definition);
 
         for (int index : acceptableCardIndexes) {
-            tableModel.addRow(new Object[]{
+            acceptableAnswersTableModel.addRow(new Object[]{
                 cardContainer.getCardByIndex(index).term,
                 cardContainer.getCardByIndex(index).definition
             });
         }
     }
+    
+    private void showExampleSentences() {
+        List<Integer> exampleSentenceIndexes = new ArrayList<>();
+        for (int i=0; i<cardTester.getActualQuestionedCard().exampleSentences.size(); i++) {
+            exampleSentenceIndexes.add(i);
+        }
+        Collections.shuffle(exampleSentenceIndexes);
+        
+        for (int i : exampleSentenceIndexes) {
+            exampleSentencesTableModel.addRow(new Object[]{
+                cardTester.getActualQuestionedCard().exampleSentences.get(i)
+            });
+        }
+    }
 
-    private void clearTabular() {
-        for (int i = tableModel.getRowCount() - 1; 0 <= i; i--) {
-            tableModel.removeRow(i);
+    private void clearTabulars() {
+        for (int i = acceptableAnswersTableModel.getRowCount() - 1; 0 <= i; i--) {
+            acceptableAnswersTableModel.removeRow(i);
+        }
+        
+        for (int i = exampleSentencesTableModel.getRowCount() - 1; 0 <= i; i--) {
+            exampleSentencesTableModel.removeRow(i);
         }
     }
 
@@ -345,6 +393,36 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -363,10 +441,11 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

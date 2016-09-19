@@ -30,8 +30,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         deleteCardButton.setMnemonic(KeyEvent.VK_E);
         addExampleSentenceButton.setMnemonic(KeyEvent.VK_A);
         deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
-        
-        setLocationRelativeTo(null);
     }
     
     public void initialise() {
@@ -313,6 +311,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
         ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
         dialog.dialogAnswer = addSentenceDialogAnswer;
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         if (addSentenceDialogAnswer.boolAnswer) {

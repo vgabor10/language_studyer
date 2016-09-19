@@ -11,8 +11,6 @@ public class ExampleSentenceAdderDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        setLocationRelativeTo(null);
-        
         jTextField1.setText("");
         jButton1.setMnemonic(KeyEvent.VK_A);
         jButton2.setMnemonic(KeyEvent.VK_C);

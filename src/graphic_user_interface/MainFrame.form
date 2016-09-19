@@ -46,7 +46,7 @@
                           <Component id="jButton17" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jButton10" max="32767" attributes="0"/>
+                  <Component id="exitButton" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -74,7 +74,7 @@
                   <Component id="jButton17" linkSize="9" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+              <Component id="exitButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -100,9 +100,8 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <Component id="dictionaryStatisticsButton" linkSize="18" alignment="0" pref="211" max="32767" attributes="0"/>
-                      <Component id="jButton1" linkSize="18" alignment="0" pref="211" max="32767" attributes="0"/>
                       <Component id="dictionaryButton" linkSize="18" alignment="0" pref="211" max="32767" attributes="0"/>
-                      <Component id="jButton2" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
+                      <Component id="practisingButton" linkSize="18" alignment="0" min="-2" pref="211" max="-2" attributes="0"/>
                       <Component id="jButton13" linkSize="18" alignment="0" pref="211" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -115,9 +114,7 @@
                   <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jButton1" linkSize="11" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jButton2" linkSize="11" min="-2" max="-2" attributes="0"/>
+                  <Component id="practisingButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="dictionaryStatisticsButton" linkSize="11" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -130,14 +127,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="jButton1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Practising"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="javax.swing.JButton" name="dictionaryStatisticsButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Statistics"/>
@@ -170,12 +159,12 @@
             <Property name="text" type="java.lang.String" value="Dictionary"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="practisingButton">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Practising with example sentences"/>
+            <Property name="text" type="java.lang.String" value="Practising"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="practisingButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
@@ -279,12 +268,12 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="exitButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Exit"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">

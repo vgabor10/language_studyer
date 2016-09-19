@@ -33,8 +33,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        setLocationRelativeTo(null);
-        
         tableModel = (DefaultTableModel)jTable1.getModel();
         lastSearchesTableModel = (DefaultTableModel)jTable2.getModel();
         
@@ -345,6 +343,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         dialog.answerDataContainer = answerDataContainer;
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         if (dialog.dialogAnswer.boolAnswer) {
@@ -374,6 +373,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
             DialogAnswer dialogAnswer = new DialogAnswer();
             dialog.dialogAnswer = dialogAnswer;
             dialog.initialise();
+            dialog.setLocationRelativeTo(this);
             dialog.setVisible(true);
 
             if (dialogAnswer.intAnswer == 1) {
