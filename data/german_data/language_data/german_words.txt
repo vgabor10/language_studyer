@@ -884,7 +884,7 @@
 100892	eng	szűk
 100893	anpacken	megragad
 100894	zermalmen	összezúz
-100895	einrichten	megold
+100895	einrichten	berendez, kialakít
 100896	r Abgeordnete	képviselő
 100897	e Wurzel	gyökér
 100898	damals	akkor
@@ -1277,7 +1277,7 @@
 101287	r Ball	labda
 101288	fernsehen	TV-t néz
 101289	r Korbball	kosárlabda
-101290	s Eis	fagyi
+101290	s Eis	jég, fagyi
 101291	e Bank	bank
 101292	motivieren	motivál
 101293	e Begrenzung	korlátozás
@@ -1959,7 +1959,6 @@
 101984	e Unterhose	alsónadrág, férfi alsó
 101985	r Jogging	melegítő
 101986	e Krawatte	nyakkendő
-101987	e Fliege	csokornyakkendő
 101988	e Mütze	sapka
 101989	r Schal	sál
 101990	r Handschuh	kesztyű
@@ -2154,7 +2153,6 @@
 102184	s Symbol	szimbólum
 102185	e Fahne	zászló
 102186	e Hymne	himnusz
-102187	e Strophe	versszak
 102188	e Melodie	dallam
 102189	e Oberfläche	felszín
 102190	r Fluss	folyó
@@ -5048,3 +5046,5 @@
 103309	e Zitrone	citrom
 103587	r Sturz	esés
 103633	r Stall	istálló
+101684	ruhig	nyugodt, békés, csendes
+101954	r Angeklagte	vádlott
