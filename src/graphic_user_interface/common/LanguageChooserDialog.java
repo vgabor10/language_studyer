@@ -1,20 +1,15 @@
 package graphic_user_interface.common;
 
-import dictionary.CardContainer;
-import disc_operation_handlers.LanguageDataLoader;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
+import dictionary.DictionaryDataContainer;
+import disc_operation_handlers.GrammarDataLoader;
 import disc_operation_handlers.LanguageFilesDataHandler;
+import grammar_book.GrammarDataContainer;
 import java.awt.event.KeyEvent;
-import study_item_objects.AnswerDataContainer;
 
 public class LanguageChooserDialog extends javax.swing.JDialog {
 
-    public CardContainer cardContainer;
-    public AnswerDataContainer answerDataContainer;
-    
-    public GrammarBook grammarBook;
-    public GrammarAnswerDataContainer grammarAnswerDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
+    public GrammarDataContainer grammarDataContainer;
     
     public LanguageFilesDataHandler languageFilesDataHandler;
     
@@ -121,13 +116,9 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        LanguageDataLoader languageDataLoader = new LanguageDataLoader();
+        GrammarDataLoader grammarBookLoader = new GrammarDataLoader();
         
-        languageDataLoader.setCardContainer(cardContainer);
-        languageDataLoader.setAnswerDataContainer(answerDataContainer);
-        languageDataLoader.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-        languageDataLoader.setGrammarBook(grammarBook);
-        languageDataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
+        grammarBookLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
         
         int languageIndexToLoad = 0;
         
@@ -138,7 +129,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
             languageIndexToLoad = 1;
         }
         
-        languageDataLoader.loadLanguageDataWithIndex(languageIndexToLoad);
+        grammarBookLoader.loadLanguageDataWithIndex(languageIndexToLoad);
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

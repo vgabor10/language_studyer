@@ -285,7 +285,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     public void addCard() {
-        String term = jTextField1.getText();
+        /*String term = jTextField1.getText();
         String definition = jTextField2.getText();
 
         Card cardToAdd = new Card();
@@ -299,7 +299,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         dictionaryDataModificator.setCardContainer(cardContainer);
         dictionaryDataModificator.addCard(cardToAdd);
                 
-        dispose();
+        dispose();*/
     }
     
     /**

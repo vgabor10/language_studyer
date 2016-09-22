@@ -4,6 +4,7 @@ import graphic_user_interface.common.PractisingTimeByDaysDialog;
 import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
 import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
 import dictionary.CardContainer;
+import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.HistogramOfStudyItemsByNumberOfAnswersDialog;
 import graphic_user_interface.common.NumberOfNewStudyItemsQuestionedByDaysDialog;
 import study_item_objects.AnswerDataContainer;
@@ -16,12 +17,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private AnswerDataContainer answerDataContainer;
     private CardContainer cardContainer;
     
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
-    
-    public void setAnswerDataContainer(AnswerDataContainer adc) {
-        answerDataContainer = adc;
+    public void setData(DictionaryDataContainer dictionaryDataContainer) {
+        cardContainer = dictionaryDataContainer.cardContainer;
+        answerDataContainer = dictionaryDataContainer.answerDataContainer;
     }
     
     @SuppressWarnings("empty-statement")

@@ -3,6 +3,7 @@ package graphic_user_interface.dictionary;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
+import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -19,6 +20,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
     
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel tableModel;
@@ -363,27 +365,28 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jTable1MouseClicked
     
     private void showCardInspectorDialog(int selectedTableRowIndex) {
-           Card cardToInspect = listedCards.get(selectedTableRowIndex);
+        Card cardToInspect = listedCards.get(selectedTableRowIndex);
 
-            CardInspectorDialog dialog 
-                    = new CardInspectorDialog(new javax.swing.JFrame(), true);
-            dialog.cardContainer = cardContainer;
-            dialog.cardToInspect = cardToInspect;
-            dialog.answerDataContainer = answerDataContainer;
-            DialogAnswer dialogAnswer = new DialogAnswer();
-            dialog.dialogAnswer = dialogAnswer;
-            dialog.initialise();
-            dialog.setLocationRelativeTo(this);
-            dialog.setVisible(true);
+        CardInspectorDialog dialog 
+                = new CardInspectorDialog(new javax.swing.JFrame(), true);
+        dialog.cardContainer = cardContainer;
+        dialog.cardToInspect = cardToInspect;
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.answerDataContainer = answerDataContainer;
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
 
-            if (dialogAnswer.intAnswer == 1) {
-                deleteRowFromTable(selectedTableRowIndex);
-            }
-            if (dialogAnswer.intAnswer == 1) {
-                clearTable();
-            }
-            
-            jTextField1.requestFocus();
+        if (dialogAnswer.intAnswer == 1) {
+            deleteRowFromTable(selectedTableRowIndex);
+        }
+        if (dialogAnswer.intAnswer == 1) {
+            clearTable();
+        }
+
+        jTextField1.requestFocus();
     }
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
@@ -439,7 +442,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         for (int i=0; i<cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
-            if (card.exampleSentences.isEmpty()) {
+            if (card.exampleSentenceIndexes.isEmpty()) {
                 listedCards.add(card);
             }
         }

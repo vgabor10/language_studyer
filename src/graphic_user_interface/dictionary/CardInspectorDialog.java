@@ -3,6 +3,8 @@ package graphic_user_interface.dictionary;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
+import dictionary.DictionaryDataContainer;
+import dictionary.ExampleSentenceContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -16,6 +18,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     public AnswerDataContainer answerDataContainer;
     private final DefaultTableModel tableModel;
     public DialogAnswer dialogAnswer;
+    public DictionaryDataContainer dictionaryDataContainer;
     
     private Logger logger = new Logger();
     
@@ -36,9 +39,12 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         jTextField1.setText(cardToInspect.term);
         jTextField2.setText(cardToInspect.definition);
         
-        for (String exampleSentence : cardToInspect.exampleSentences) {
+        ExampleSentenceContainer exampleSentenceContainer
+                = dictionaryDataContainer.exampleSentenceContainer;
+        
+        for (int exampleSentenceIndex : cardToInspect.exampleSentenceIndexes) {
             tableModel.addRow(new Object[]{
-                exampleSentence
+                exampleSentenceContainer.getByIndex(exampleSentenceIndex).sentence
             });
         }
         
@@ -177,7 +183,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 722, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
@@ -197,18 +202,18 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(deleteExampleSentenceButton)
-                            .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBox1, 0, 196, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(29, 29, 29)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1))
                 .addContainerGap())
         );
 
@@ -332,7 +337,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     public void saveCard() {
-        String term = jTextField1.getText();
+        /*String term = jTextField1.getText();
         String definition = jTextField2.getText();
 
         cardToInspect.term = term;
@@ -347,7 +352,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         dictionaryDataModificator.saveCardContainerDataToFile();
         dictionaryDataModificator.saveExampleSentencesDataToFile();
                 
-        dispose();
+        dispose();*/
     }
     
     /**

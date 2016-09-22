@@ -11,11 +11,11 @@ public class GrammarBook extends StudyItemContainer {
     }
 
     public GrammarItem getGrammarItemByIndex(int grammarItemIndex) {
-        return (GrammarItem) getByIndex(grammarItemIndex);
+        return (GrammarItem) getStudyItemByIndex(grammarItemIndex);
     }
 
     public GrammarItem getGrammarItemByOrder(int orderIndex) {
-        return (GrammarItem) getByOrder(orderIndex);
+        return (GrammarItem) getStudyItemByOrder(orderIndex);
     }
 
     public Set<Integer> getGrammarItemIndexes() {

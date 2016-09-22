@@ -1,12 +1,71 @@
 package graphic_user_interface.common;
 
+import dictionary.Card;
+import dictionary.CardContainer;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class SettingsDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
+    public CardContainer cardContainer;
+    public Map<Integer,String> exampeSentences = new HashMap<>();
+    public Map<Integer,Set<Integer>> exampeSentencesAndCards = new HashMap<>();
+    
+    public void loadExampleSentences() {
+        try {        
+            exampeSentences.clear();
+            
+            String filePath = "../data_to_integrate/example_sentences.txt";
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splittedRow = strLine.split("\t");
+                exampeSentences.put(Integer.parseInt(splittedRow[0]),splittedRow[1]);
+                exampeSentencesAndCards.put(
+                        Integer.parseInt(splittedRow[0]), new HashSet<Integer>());
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("unable to find example_sentences file");
+        } catch (IOException e) {
+            System.err.println("exception in loadCardContainer function");
+        }
+    }
+    
+    public void saveCardContainerDataToFile() {
+        String filePath = "../data_to_integrate/sentence_and_cards_assignations.tmp";
+        File oldFile;
+        oldFile = new File(filePath);
+        oldFile.delete();
+
+        try {
+            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+            for (int sentenceIndex : exampeSentencesAndCards.keySet()) {
+
+                fw.write(Integer.toString(sentenceIndex));
+                
+                for (int cardIndex : exampeSentencesAndCards.get(sentenceIndex)) {
+                      fw.write("\t" + cardIndex);
+                }
+                
+                fw.write("\n");
+            }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
     
     public SettingsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -31,6 +90,7 @@ public class SettingsDialog extends javax.swing.JDialog {
         jButton6 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -59,6 +119,13 @@ public class SettingsDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton4.setText("Example sentence assigner");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -70,7 +137,8 @@ public class SettingsDialog extends javax.swing.JDialog {
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -84,7 +152,9 @@ public class SettingsDialog extends javax.swing.JDialog {
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 126, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -108,6 +178,51 @@ public class SettingsDialog extends javax.swing.JDialog {
         
         grammarDataModificator.writeGrammarBookToDisk();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        loadExampleSentences();
+        
+        int numberOfAssignations = 0;
+        int numberOfCardWithExampleSentence = 0;
+        for (int i=0; i<cardContainer.numberOfCards(); i++) {
+            Card card = cardContainer.getCardByOrder(i);
+            
+            String cardTerm = cardContainer.getCardByOrder(i).term;
+            cardTerm = cardTerm.toLowerCase();
+            if (cardTerm.startsWith("r ") || cardTerm.startsWith("e ") || cardTerm.startsWith("s ")) {
+                cardTerm = cardTerm.substring(2);
+            }
+            
+            if (cardTerm.startsWith("h. ") || cardTerm.startsWith("i. ")) {
+                cardTerm = cardTerm.substring(3);
+            }
+            
+            for (int index : exampeSentences.keySet()) {
+                String exampleSentence = exampeSentences.get(index);
+                exampleSentence = exampleSentence.toLowerCase();
+                
+                if (exampleSentence.startsWith(cardTerm + " ") ||
+                    exampleSentence.contains(" " + cardTerm + " ") ||
+                        exampleSentence.endsWith(" " + cardTerm + ".")) {
+                    
+                    
+                    exampeSentencesAndCards.get(index).add(card.index);
+                    numberOfAssignations++;
+                    
+                    
+                    if (exampeSentencesAndCards.get(index).size() == 1) {
+                        numberOfCardWithExampleSentence++;
+                    }
+                }
+            }
+            
+        }
+        
+        System.out.println(numberOfAssignations);
+        System.out.println(numberOfCardWithExampleSentence);
+        
+        saveCardContainerDataToFile();
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,6 +271,7 @@ public class SettingsDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
     // End of variables declaration//GEN-END:variables
 }

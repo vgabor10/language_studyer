@@ -17,6 +17,9 @@ public class LanguageFilesDataHandler {
     private ArrayList<LanguageFilesData> languageDatas = new ArrayList<>();
 
     public LanguageFilesDataHandler() {
+        
+        /////////////////// ENGLISH ///////////////////
+        
         LanguageFilesData languageData1 = new LanguageFilesData();
         languageData1.languageIndex = 0;
         languageData1.languageName = "English";
@@ -26,14 +29,18 @@ public class LanguageFilesDataHandler {
         languageData1.grammarDataPath = "../data/english_data/language_data/english_grammar_book.txt";
         languageData1.grammarAnswerDataPath = "../data/english_data/answer_data/english_grammar_answer_data.txt";
 
+        /////////////////// GERMAN ///////////////////
+        
         LanguageFilesData languageData2 = new LanguageFilesData();
         languageData2.languageIndex = 1;
         languageData2.languageName = "German";
-        languageData2.answerDataPath = "../data/german_data/answer_data/german_card_tester_data.txt";
-        languageData2.exampleSentencesDataPath = "../data/german_data/language_data/german_example_sentences.txt";
-        languageData2.cardDataPath = "../data/german_data/language_data/german_words.txt";
-        languageData2.grammarDataPath = "../data/german_data/language_data/german_grammar_book.txt";
-        languageData2.grammarAnswerDataPath = "../data/german_data/answer_data/german_grammar_answer_data.txt";
+        
+        languageData2.cardDataPath = "../data/german_data/dictionary_data/words.txt";
+        languageData2.answerDataPath = "../data/german_data/dictionary_data/card_tester_data.txt";
+        languageData2.exampleSentencesDataPath = "../data/german_data/dictionary_data/example_sentences.txt";
+        
+        languageData2.grammarDataPath = "../data/german_data/grammar_data/grammar_book.txt";
+        languageData2.grammarAnswerDataPath = "../data/german_data/grammar_data/grammar_answer_data.txt";
 
         languageDatas.add(languageData1);
         languageDatas.add(languageData2);

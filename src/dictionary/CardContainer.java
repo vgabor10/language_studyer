@@ -13,11 +13,11 @@ public class CardContainer extends StudyItemContainer {
     }
 
     public Card getCardByIndex(int i) {
-        return (Card) getByIndex(i);
+        return (Card) getStudyItemByIndex(i);
     }
 
     public Card getCardByOrder(int orderIndex) {
-        return (Card) getByOrder(orderIndex);
+        return (Card) getStudyItemByOrder(orderIndex);
     }
 
     public void addCard(Card c) {
@@ -71,7 +71,7 @@ public class CardContainer extends StudyItemContainer {
             System.out.println(getCardByOrder(i).toString());
         }
     }
-
+    
     public void toScreenData() {
         for (int i = 0; i < numberOfCards(); i++) {
             System.out.println(getCardByOrder(i).toStringData());

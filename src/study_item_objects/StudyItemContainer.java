@@ -1,18 +1,18 @@
 package study_item_objects;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Vector;
 
 public class StudyItemContainer {
 
-    private final Vector<StudyItem> data;
+    private final List<StudyItem> data = new ArrayList<>();
     private final Map<Integer,Integer> studyItemIndexToOrderIndex;
 
     public StudyItemContainer() {
-        data = new Vector<>();
         studyItemIndexToOrderIndex = new HashMap<>();
     }
 
@@ -20,11 +20,11 @@ public class StudyItemContainer {
         return data.size();
     }
 
-    public StudyItem getByOrder(int orderIndex) {
+    public StudyItem getStudyItemByOrder(int orderIndex) {
         return data.get(orderIndex);
     }
 
-    public StudyItem getByIndex(int index) {
+    public StudyItem getStudyItemByIndex(int index) {
             return data.get(studyItemIndexToOrderIndex.get(index));
     }
 

@@ -8,7 +8,7 @@ public class Card extends StudyItem {
 
     public String term;
     public String definition;
-    public List<String> exampleSentences = new ArrayList<>();
+    public List<Integer> exampleSentenceIndexes = new ArrayList<>();
     public List<String> categories = new ArrayList<>();
 
     public Card() {
@@ -24,7 +24,8 @@ public class Card extends StudyItem {
     }
 
     public String toStringData() {
-        return Integer.toString(index) + "\t" + term + "\t" + definition;
+        return "Card[" + Integer.toString(index) + "," + term + "," + definition 
+                + "," + exampleSentenceIndexes.toString() + "]";
     }
 
     @Override

@@ -1,98 +1,34 @@
 package disc_operation_handlers;
 
-import dictionary.Card;
-import dictionary.CardContainer;
 import grammar_book.Example;
 import grammar_book.GrammarAnswerData;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
+import grammar_book.GrammarDataContainer;
 import grammar_book.GrammarItem;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import study_item_objects.AnswerData;
-import study_item_objects.AnswerDataContainer;
 
-public class LanguageDataLoader {
+public class GrammarDataLoader {
 
-    private CardContainer cardContainer;
-    private AnswerDataContainer answerDataContainer;
-
-    private GrammarBook grammarBook;
-    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+    public GrammarDataContainer grammarDataContainer;
 
     private LanguageFilesDataHandler languageFilesDataHendler;
 
     public void loadLanguageDataWithIndex(int languageIndex) {
         languageFilesDataHendler.setStudyedLanguageIndex(languageIndex);
-        this.loadAllLanguageDataFromDisc();
-    }
-
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
-
-    public void setAnswerDataContainer(AnswerDataContainer a) {
-        answerDataContainer = a;
-    }
-
-    public void setGrammarBook(GrammarBook a) {
-        grammarBook = a;
+        this.loadAllData();
     }
     
     public void setLanguageFilesDataHandler(LanguageFilesDataHandler a) {
         languageFilesDataHendler = a;
     }
 
-    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
-        grammarAnswerDataContainer = a;
-    }
 
-    public void loadCardContainerFromDisc() {
-        try {        
-            cardContainer.clear();
-            
-            String filePath = languageFilesDataHendler.getStudiedLanguageCardDataPath();
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                String[] cardVariables = strLine.split("\t");
-
-                Card card = new Card();
-                card.index = Integer.parseInt(cardVariables[0]);
-                card.term = cardVariables[1];
-                card.definition = cardVariables[2];
-
-                cardContainer.addCard(card);
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find card data file");
-        } catch (IOException e) {
-            System.err.println("exception in loadCardContainer function");
-        }
-    }
-    
-    public void loadExampleSentencesFromDisc() {
-        try {        
-            String filePath = languageFilesDataHendler.getStudiedLanguageExampleSentencesDataPath();
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                int cardIndex = Integer.parseInt(strLine.split("\t")[0]);
-                String exampleSentence = strLine.split("\t")[1];
-
-                Card card = cardContainer.getCardByIndex(cardIndex);
-                card.exampleSentences.add(exampleSentence);
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find card data file");
-        } catch (IOException e) {
-            System.err.println("exception in loadCardContainer function");
-        }
-    }
-
-    public void loadCardCategoriesFromDisc() {
+    //TODO
+    /*public void loadCardCategoriesFromDisc() {
         try {
             //TODO: make it more general
             if (languageFilesDataHendler.getStudiedLanguageIndex() == 1) {
@@ -114,30 +50,12 @@ public class LanguageDataLoader {
         } catch (IOException e) {
             System.err.println("exception in loadCardContainer function");
         }
-    }
-    
-    public void loadAnswerDataFromDisc() {
-        try {
-            answerDataContainer.clear();
-            
-            String filePath = languageFilesDataHendler.getStudiedLanguageAnswerDataPath();
-            String strLine;
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            while ((strLine = br.readLine()) != null) {
-                AnswerData answerData = new AnswerData();
-                answerData.setDataFromString(strLine);
-                answerDataContainer.addAnswerData(answerData);
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("Unable to find answer data file");
-        } catch (IOException e) {
-            System.err.println("exception loadAnswerDataFromDisc function");
-        }
-    }
+    }*/
+   
 
-    public void loadGrammarBookFromDisc() {
+    public void loadGrammarBook() {
         try {
-            grammarBook.clear();
+            GrammarBook grammarBook = grammarDataContainer.grammarBook;
             
             String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -212,9 +130,10 @@ public class LanguageDataLoader {
         }
     }
 
-    public void loadGrammarAnswerDataFromDisc() {
+    public void loadGrammarAnswerData() {
         try {
-            grammarAnswerDataContainer.clear();
+            GrammarAnswerDataContainer grammarAnswerDataContainer 
+                    = grammarDataContainer.grammarAnswerDataContainer;
             
             String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
             String strLine;
@@ -231,13 +150,9 @@ public class LanguageDataLoader {
         }
     }
 
-    public void loadAllLanguageDataFromDisc() {
-        loadCardContainerFromDisc();
-        loadAnswerDataFromDisc();
-        loadCardCategoriesFromDisc();
-        loadGrammarBookFromDisc();
-        loadGrammarAnswerDataFromDisc();
-        loadExampleSentencesFromDisc();
+    public void loadAllData() {
+        loadGrammarBook();
+        loadGrammarAnswerData();
     }
 
 }
