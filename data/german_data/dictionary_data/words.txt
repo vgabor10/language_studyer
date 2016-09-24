@@ -5041,7 +5041,7 @@
 102990	widersprüchlich	ellentmondásos
 103123	r Verfall	romlás, hanyatlás
 103150	sogenannt	úgynevezett
-103203	das Dreieck	háromszög
+103203	s Dreieck	háromszög
 103258	r Löwe	oroszlán
 103309	e Zitrone	citrom
 103587	r Sturz	esés
