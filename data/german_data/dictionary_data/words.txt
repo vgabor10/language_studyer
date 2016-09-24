@@ -926,7 +926,7 @@
 100935	e Herausforderung	kihívás
 100936	meistern	legyőz
 100937	robust	erős
-100938	r Preis	ár
+100938	r Preis	ár, díj
 100939	bezahlen	kifizet
 100940	s Fleisch	hús
 100941	e Freude	boldogság
@@ -1420,7 +1420,7 @@
 101433	r Kirsch	cseresznye
 101434	e Haselnuss	mogyoró
 101435	r Saft	lé
-101436	s Fass	hordó
+101436	s Fass	hordó (fn)
 101437	r Wein	bor
 101438	e Petersilie	petrezselyem
 101439	e Karotte	sárgarépa
@@ -4533,7 +4533,7 @@
 104596	jegliche	minden egyes
 104597	e Erfüllung	teljesítés, teljesülés
 104598	aufwachen	felébred
-104599	beherrschen	ural, uralkodik
+104599	beherrschen	tud, ural, uralkodik
 104600	derart	úgy, annyira
 104601	womit	amivel
 104602	rennen	fut, rohan
@@ -5048,3 +5048,5 @@
 103633	r Stall	istálló
 101684	ruhig	nyugodt, békés, csendes
 101954	r Angeklagte	vádlott
+101987	sondern	hanem
+102099	dabei	mellet, mellette

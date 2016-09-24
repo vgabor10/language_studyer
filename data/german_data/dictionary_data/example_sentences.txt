@@ -935,6 +935,7 @@
 100220	Selbst die Uniformen der Polizei sehen jetzt recht sportlich aus.
 100220	Sie haben beide Recht.
 100220	Wobei du nicht unbedingt Recht haben musst.
+100222	Ein typischer Tisch hat folgende Merkmale: Er hat vier Beine und oben eine Tischplatte.
 100223	Die Tabelle gibt eine Übersicht über Einnahmen und Ausgaben.
 100223	In der dritten Spalte der Tabelle steht der Preis.
 100224	Die Firma hat eine eigene Abteilung für Forschung und Entwicklung.
@@ -1411,6 +1412,7 @@
 100398	Der Conferencier begrüßt seine Gäste.
 100398	Er ist mein Gast.
 100398	Jeder Gast darf beliebig viele Freunde mitbringen.
+100399	Flüchtlinge sind Menschen, die aus ihrem Heimat-Land fliehen.
 100403	Das Päckchen wird im Verlauf des Tages eintreffen.
 100404	Ein Boot mit Flüchtlingen ging in der Nacht an Land.
 100405	Muriel erzieht ihren Sohn ganz allein.
@@ -2126,6 +2128,7 @@
 100747	Dieser Ausweis ist zehn Jahre gültig.
 100747	Voraussetzung für die Einreise ist ein gültiger Pass.
 100748	Nach einer langen Wanderung gelangten sie ans Ziel.
+100748	Zum Bahnhof gelangt man mit unterschiedlichen Verkehrsmitteln.
 100750	Ein Telefonanschluss sowie Internet steht Ihnen zur Verfügung.
 100750	In diesem Hotel gibt es Sauna sowie Whirlpool.
 100751	Das Büro ist mit modernster Technik ausgestattet.
@@ -2359,6 +2362,7 @@
 100908	Bei vielen Jugendlichen herrscht Unsicherheit hinsichtlich ihrer Berufswahl.
 100909	Käfer haben sechs Beine, Spinnen sogar acht.
 100909	Mittlerweile kann man auf Handys sogar Bilder und Videos empfangen.
+100909	Die Regierung könnte sogar die Verfassung ändern.
 100911	Ich werde mir demnächst eine künstliche Hüfte einsetzen lassen.
 100912	Er hat zwar Lust zu kommen, aber keine Zeit.
 100913	Der Verlag veröffentlicht vor allem unbekannte junge Autorinnen und Autoren.
@@ -2403,12 +2407,14 @@
 100933	Die Verfassung der Bundesrepublik heißt Grundgesetz.
 100933	Meine physische Verfassung ist zur Zeit nicht die stabilste.
 100933	Wann trat die Verfassung der Bundesrepublik in Kraft?
+100933	In einer Verfassung stehen die wichtigsten Regeln eines Landes.
 100934	Die Firma hat eine eigene Abteilung für Forschung und Entwicklung.
 100934	Ihnen wird die Abteilung für Forschung und Entwicklung unterstellt.
 100934	Sie präsentierten die neusten Ergebnisse ihrer Forschung.
 100935	Das Buch ist eine intellektuelle Herausforderung.
 100935	Die Arbeit ist eine echte Herausforderung.
 100935	Ich stelle mich gerne neuen Herausforderungen.
+100936	Die Leiterin des Instituts meistert die Krise.
 100938	Das Plus an dem Angebot ist der günstige Preis.
 100938	Der niedrige Ölpreis bremst Investitionen in der erneuerbare Energiebranche.
 100938	Der Preis beträgt einschließlich Flug, Übernachtung und Frühstück 250 Euro pro Person.
@@ -2429,6 +2435,8 @@
 100945	Am Vormittag sind die Geschäfte noch nicht so voll.
 100945	Die Flasche ist noch ganz voll.
 100946	Auf diesem Feld wird Mais angebaut.
+100948	Doktor Seydlitz praktiziert seinen Beruf mit Begeisterung.
+100948	St. Martin ist ein gutes Beispiel für praktizierte Nächstenliebe.
 100949	Bei dieser Geschwindigkeit kann man nicht mehr rechtzeitig bremsen.
 100949	Der niedrige Ölpreis bremst Investitionen in der erneuerbare Energiebranche.
 100949	Vor einer roten Ampel sollte man bremsen.
@@ -3496,6 +3504,7 @@
 101582	Beim Eislaufen habe ich mir mein Bein gebrochen.
 101582	Jens ist so unglücklich hingefallen, dass er sich das Bein gebrochen hat.
 101582	Sie streckte ihre Arme und Beine.
+101582	Ein typischer Tisch hat folgende Merkmale: Er hat vier Beine und oben eine Tischplatte.
 101584	Das Theater ist eines der schönsten Gebäude der Stadt.
 101584	Die Verwaltung der Universität beﬁndet sich in einem extra Gebäude.
 101584	Ferner sei darauf hingewiesen, dass das Gebäude um 22 Uhr geschlossen wird.
@@ -3675,6 +3684,7 @@
 101708	Er entging nur mit Müh und Not seiner gerechten Strafe.
 101709	Leise schleichen die Kinder aus dem Bett und zum Kühlschrank.
 101709	Sprich leise, Maria schläft!
+101711	Zum Bahnhof gelangt man mit unterschiedlichen Verkehrsmitteln.
 101713	Können Sie mir bitte ein Taxi rufen?
 101715	An der nächsten Station müssen wir aussteigen.
 101715	Während der Fahrt darf man nicht aussteigen.
@@ -3950,6 +3960,7 @@
 101927	Im Atomkraftwerk gab es erneut eine Störung.
 101929	Kleopatra hatte eine dunkle Vergangenheit.
 101929	Wie sah das Leben in der Vergangenheit aus?
+101930	Das Zimmer ist geräumig und hell.
 101932	Eine Schwangerschaft dauert gewöhnlich neun Monate.
 101932	Er kommt gewöhnlich zu spät.
 101932	Gewöhnlich versteckt man seinen Geliebten im Kleiderschrank.
@@ -4287,6 +4298,8 @@
 102231	Eine familienfreundliche Politik bietet auch ökonomische Vorteile.
 102233	Das sollten wir in der Kommission beraten.
 102233	Der Bundesrat muss über alle Gesetze, die aus dem Bundestag kommen, beraten.
+102235	Da stehen drei Kühe auf der Wiese.
+102235	Der Bauer hat eine Herde von vierzig Kühen.
 102238	Anja singt seit vielen Jahren im Chor.
 102238	Arbeitslose müssen dieses Jahr mit massiven Einschnitten rechnen.
 102238	Das Geschäftsjahr 2004 war ein erfolgreiches Jahr.
@@ -4481,6 +4494,7 @@
 102287	Das Konzept für den neuen Studiengang ist noch nicht fertig.
 102287	Ich warte, bis du fertig bist.
 102289	Die Polizei konnte den Dieb schnell ﬁnden und festnehmen.
+102289	Die Polizei hat einen Mann festgenommen.
 102292	Die Kommission konnte keine Unregelmäßigkeiten bei der Wahl feststellen.
 102293	Die Wäsche ist noch ganz feucht.
 102294	Da ich Iris nie Hoffnungen gemacht habe, kann ich sie ihr folglich auch nicht nehmen.
@@ -4591,6 +4605,7 @@
 102345	Sie trägt im Sommer gern Kleider.
 102345	Sofern es meine Zeit zulässt, komme ich gern zu der Auktion.
 102345	Wir können Ihnen gerne auch noch einen kleinen Rabatt gewähren.
+102346	Vereine übernehmen eine große gesellschaftliche Verantwortung.
 102347	Das Verfahren ist gesetzlich nicht zulässig.
 102347	Die Bestimmungen sind gesetzlich festgelegt.
 102348	Die Kinder hören gespannt zu.
@@ -4676,6 +4691,8 @@
 102387	Ihre Haare hängen tief in die Stirn.
 102387	Siehst du den Baum da? Es hängen immer noch Blätter daran.
 102387	Umweltverschmutzung und Klimaerwärmung hängen zusammen.
+102389	Er hasst seinen Beruf.
+102389	Ich hasse Glatteis.
 102392	Nichts ist ihm heilig.
 102393	Theo fühlt sich inzwischen hier heimisch.
 102394	Der Wahlkampf ist in seiner heißen Phase.
@@ -4697,6 +4714,8 @@
 102404	Du wolltest mir helfen. Stattdessen treibst du dich draußen herum.
 102406	Ich möchte die Gelegenheit ergreifen und mich ganz herzlich bei Ihnen bedanken.
 102407	Die Oma wird heuer schon 95.
+102408	Die Einnahmen des heutigen Abends decken nicht die Ausgaben.
+102408	Die heutige Situation ist völlig anders als die damalige.
 102409	Hierfür bedarf es einer Menge Geduld.
 102409	Hierfür gibt es eine Vielzahl an therapeutischen Möglichkeiten.
 102409	Hierfür habe ich keine Verwendung.
@@ -4721,6 +4740,7 @@
 102416	Er hat kein Geld und darüber hinaus noch eine Menge Schulden.
 102416	Quantenphysik geht über mein Vorstellungsvermögen hinaus.
 102417	Die Ausstellung wurde bis in den Herbst hinein organisiert.
+102418	Wo fahren wir dieses Jahr hin?
 102420	Das Wetter muss man hinnehmen, wie es ist.
 102421	Bei vielen Jugendlichen herrscht Unsicherheit hinsichtlich ihrer Berufswahl.
 102421	Hinsichtlich der Sicherheit von Zügen gibt es neue Bestimmungen.
@@ -4765,6 +4785,7 @@
 102442	Autor und Erzähler sind nicht identisch.
 102443	Der Sohn sollte die Leiche identiﬁzieren.
 102444	Die Menschen fliehen vor dem Bürgerkrieg ins Nachbarland.
+102444	Flüchtlinge sind Menschen, die aus ihrem Heimatland fliehen.
 102447	Drogenhandel ist illegal.
 102448	Der Jäger hat das Reh erschossen.
 102452	Ein starker Wind erschwerte die Arbeit.
@@ -4787,6 +4808,7 @@
 102465	Seine Verdächtigungen erwiesen sich als falsch.
 102467	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
 102468	Darauf kann ich nichts erwidern.
+102469	Jetzt hab ich dich erwischt.
 102470	Dudelsäcke erzeugen einen sehr seltsamen Klang.
 102471	Kinder erziehen ist keine leichte Aufgabe.
 102472	Es wurden nicht die erhofften Ergebnisse erzielt.
@@ -5657,6 +5679,7 @@
 102979	Es gibt eine Fülle an Möglichkeiten.
 102980	Der Bedarf an Fernsehgeräten ist gedeckt.
 102980	Hierfür bedarf es einer Menge Geduld.
+102981	Sie hat sich für den Wettbewerb qualifiziert.
 102983	Die Flasche ist schon offen.
 102983	Diese Option lasse ich mir offen.
 102985	Sport ist ein guter Ausgleich zu geistiger Tätigkeit.
@@ -5755,6 +5778,7 @@
 103064	Nicht alle Schäden werden von der Versicherung abgedeckt.
 103065	Wir warten noch auf die ärztliche Diagnose.
 103066	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
+103067	Schuluniformen haben Vor- und Nachteile.
 103069	Der Zug hatte anderthalb Stunden Verspätung.
 103071	Kinder mögen weiche Spielsachen wie Stofftiere.
 103072	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
@@ -5776,6 +5800,7 @@
 103083	In diesem Semester kann das Institut kein vergleichbares Seminar anbieten.
 103084	Das Medikament wurde klinisch getestet.
 103086	Christine studiert Mathematik, besucht aber auch Kurse in Philosophie.
+103088	Die Nationalmannschaft darf bei der nächsten Europameisterschaft mitmachen.
 103089	Die Ferien verbringen die Kinder bei ihrer Oma.
 103089	Ich freue mich auf die Ferien.
 103089	Im Dezember gibt es Ferien.
@@ -5850,6 +5875,11 @@
 103129	Ich habe doch ausdrücklich gesagt, dass ich deine CD nicht habe.
 103130	Irgendwo habe ich den Schlüssel hingelegt.
 103130	Jeder Mensch ist irgendwo ein Ausländer.
+103131	Das kann man mit naturwissenschaftlichen Verfahren untersuchen.
+103131	Eine andere wissenschaftliche Studie zeigt das genaue Gegenteil.
+103131	Einen wissenschaftlichen Aufsatz muss man gut strukturieren.
+103131	In einer wissenschaftlichen Arbeit müssen Quellen exakt angegeben werden.
+103131	Neue wissenschaftliche Erkenntnisse gibt es fast jeden Tag.
 103133	Den Fernseher bedient man mit einer Fernbedienung.
 103133	Ich schalte jetzt den Fernseher aus.
 103133	Im Fernsehen sieht man das Leid der Menschen in der dritten Welt.
@@ -6007,6 +6037,8 @@
 103233	Ihr Auftreten war höchst peinlich.
 103234	Es gibt demnach keine andere Möglichkeit.
 103235	Wie bezeichnet man den östlichen Teil einer Kirche?
+103238	Der Lehrer erklärt seinen Schülern eine chemische Formel.
+103238	Im Labor führt man chemische Experimente durch.
 103239	Viele kleine Kinder wollen ein Pferd besitzen.
 103240	In Leipzig wohnen weitaus mehr Menschen als in Erfurt.
 103241	Beim Fall Ötzi handelt es sich wahrscheinlich um Mord.
@@ -6046,6 +6078,8 @@
 103257	Ein Zeugnis ist ein wichtiges Dokument.
 103259	Man sollte jeden Tag mindestens zwei Liter Flüssigkeit trinken.
 103259	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
+103260	Ärzte müssen ihre ärztliche Schweigepflicht ernst nehmen.
+103260	Wir warten noch auf die ärztliche Diagnose.
 103261	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
 103262	Die Jacke war aus einem besonders festen Gewebe genäht.
 103263	Isabel hat in letzter Zeit viel Stress.
@@ -6235,6 +6269,7 @@
 103370	Es ist wohl besser, wenn du jetzt gehst.
 103370	Ich fühle mich nicht wohl.
 103370	Irgendwie fühle ich mich heute nicht besonders wohl.
+103371	Er beabsichtigt, ein Praktikum zu machen.
 103373	Der Jäger lehnt das Gewehr an einen Baum.
 103374	Nachher treffe ich mich mit einer Freundin zum Mittagessen.
 103375	Der Radiosender legt großen Wert auf die Meinung seiner Hörer.
@@ -6698,6 +6733,7 @@
 103704	Der Prinz küsste Dornröschen, und sie erwachte.
 103704	Dornröschen ﬁel in einen tiefen Schlaf. Der Prinz weckte sie auf.
 103705	Der Name ist mir gerade entfallen.
+103707	Mit einer akuten Bronchitis solltest du im Bett bleiben.
 103708	Ihr Vorgänger im Amt war sehr beliebt.
 103712	Guck mich nicht so komisch an!
 103713	Der Verkäufer trennt dem Fisch mit einem Schnitt den Kopf ab.
@@ -6866,6 +6902,7 @@
 103821	Wirst du Einsicht in deine Stasi-Akten nehmen?
 103822	Zur Premiere kamen nur geladene Gäste.
 103823	Mir ist unklar, wie das passieren konnte.
+103824	Behandeln Sie das Problem bitte diskret!
 103825	Da kam ihm ein richtig böser Gedanke.
 103825	Der bloße Gedanke daran macht mich nervös.
 103828	Im Moment habe ich keine Beschäftigung.
@@ -6881,6 +6918,7 @@
 103834	Gott sei Dank ist niemand ernsthaft verletzt.
 103834	Mein Dank ist dir gewiss.
 103834	Vielen Dank für Ihre Hilfe.
+103836	Die Arbeit ist gut bewertet worden.
 103837	Wir flüsterten, damit uns niemand hörte.
 103838	Der Graf wohnt auf einer Burg.
 103839	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
@@ -6920,6 +6958,7 @@
 103852	Ein erfolgreicher Manager leitet das Unternehmen.
 103852	Wirtschaftlich gesehen können wir uns das Unternehmen nicht leisten.
 103853	Ich danke Ihnen für Ihre Einladung.
+103854	Wir sind die Champions, olé!
 103855	Das alternative Kino zeigt auch ältere und unbekannte Filme.
 103855	Die Alternative zur Verkleinerung ist die Schließung der Fabrik.
 103855	Mehr und mehr Menschen informieren sich über alternative Heilmethoden.
@@ -6983,6 +7022,7 @@
 103905	Sie hatten kein gutes Verhältnis zueinander.
 103907	Ich jedenfalls habe Hunger.
 103907	Morgens habe ich immer großen Hunger.
+103909	Ich schließe mein Studium im Sommer ab.
 103911	Die Wähler warten auf die Umsetzung der Wahlversprechen.
 103912	Diese Straßenkarte ist im Maßstab 1:5000.
 103913	Der Erreger der Vogelgrippe ist jetzt bekannt.
@@ -7086,6 +7126,7 @@
 103974	Der Begriff hat inzwischen eine weite Verbreitung gefunden.
 103974	Inzwischen wurde es dunkel.
 103974	Theo fühlt sich inzwischen hier heimisch.
+103975	Unsere Schwierigkeiten lassen sich durch strukturelle Probleme erklären.
 103977	Wir traten in ein schlicht eingerichtetes Zimmer.
 103978	Seit langem träumt Antina von einem Ballonﬂug.
 103978	Stefan ist schon seit langem in dieser Branche tätig.
@@ -7471,7 +7512,9 @@
 104246	Der Einbruch ereignete sich am helllichten Tage.
 104247	Das Aufgabenfeld ist sehr komplex.
 104248	Die deutsche Sprache hat den Ruf, schwierig zu sein.
+104249	Im Labor führt man chemische Experimente durch.
 104251	Peter besorgt Steaks und Susanne die Kohle für den Grill.
+104251	Die Bundesregierung ist besorgt über den Hass gegen Fremde.
 104253	Das kann man mit naturwissenschaftlichen Verfahren untersuchen.
 104253	Das Verfahren ist gesetzlich nicht zulässig.
 104253	Dieses Verfahren ist am effektivsten.
@@ -7636,6 +7679,7 @@
 104352	Er hat nicht nach rechts geguckt.
 104352	Im Studium muss man selbstständig arbeiten können.
 104353	Der Angeklagte kann die Aussage verweigern.
+104354	Ich bin höchst erfreut, Sie kennen zu lernen.
 104355	Heute Abend möchte ich mich unter die Leute mischen.
 104358	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
 104359	Du hast scheinbar überhaupt keine Ahnung.
@@ -7688,6 +7732,7 @@
 104392	Sofern es meine Zeit zulässt, komme ich gern zu der Auktion.
 104394	Er möchte ein Jahr lang im Ausland studieren.
 104394	Zudem hat er jahrelang im Ausland gearbeitet.
+104396	Wladimir ist starr vor Kälte.
 104397	Das Dorf beﬁndet sich jenseits der Berge.
 104398	Das Ehepaar lässt sich scheiden.
 104399	Antina schläft jetzt schon zwei Stunden.
@@ -7714,9 +7759,12 @@
 104407	Die Beteiligung an der Wahl war gering.
 104409	Der menschliche Oberschenkelknochen ist stärker als Beton.
 104409	Irren ist menschlich.
+104410	Diese Ansichten sind mir zu liberal.
+104410	Er ist in seinen Ansichten gefangen.
 104413	Die Versicherung wird für den Schaden aufkommen.
 104416	Es ist wichtig, Vokabeln im Kontext zu lernen.
 104418	Mechanische Uhren muss man aufziehen.
+104419	Du lenkst schon wieder vom Thema ab.
 104420	Die Zentralbank hat den Zinssatz angehoben.
 104421	Es handelt sich hier um einen Einzelfall.
 104422	Die Firmenleitung schickt ihre Mitarbeiter regelmäßig auf Weiterbildungen.
@@ -7759,6 +7807,7 @@
 104447	Im nachfolgenden Kapitel wird das Experiment erklärt.
 104447	Sie nahm an einem psycholinguistischen Experiment teil.
 104447	Wir suchen Testpersonen für ein psychologisches Experiment.
+104447	Im Labor führt man chemische Experimente durch.
 104448	Wir haben lange vor dem Kino angestanden.
 104450	Der Aufstieg zur Burg ist sehr steil.
 104450	Der Weg zum Gipfel ist sehr steil.
@@ -7776,6 +7825,9 @@
 104458	Wenn ein Kind nicht gern musiziert, sollte kein Zwang ausgeübt werden.
 104459	Meinetwegen brauchst du dir keine Sorgen machen.
 104460	Im Urlaub wollen sich die meisten entspannen.
+104460	Die meisten Beamten werden gut bezahlt.
+104460	Die meisten Gummistiefel sind aus Kunststoff.
+104460	Die meisten Leute schauen abends fern.
 104462	Wir müssen einen Kompromiss finden.
 104463	Erwachsene brauchen ca. acht Stunden
 104463	Erwachsene brauchen ca. acht Stunden Schlaf pro Tag.
@@ -7818,6 +7870,7 @@
 104485	Uns stehen schwere Zeiten bevor.
 104486	Das Vertrauen in die Sicherheit wurde nachhaltig gestört.
 104487	Kriege provozieren Hass und Gewalt.
+104487	Die Bundesregierung ist besorgt über den Hass gegen Fremde.
 104488	Geistig ist sie noch völlig gesund, aber körperlich nicht.
 104489	Er bat darum, Einsicht in seine Akte zu bekommen.
 104489	Wir müssen die Akten schnellstmöglich vernichten.
@@ -7844,6 +7897,7 @@
 104500	Nach der Schule geht er zum Militär.
 104500	Viele junge Männer melden sich freiwillig zum Militär.
 104501	Ich muss mir noch eine Pistole beschaffen.
+104502	Wir hatten eine interne Absprache getroffen.
 104503	Bei den Tätern handelt es sich zumeist um Männer.
 104505	Ein Atom besteht aus verschiedenen Teilchen.
 104506	Das klappt sowieso nicht.
@@ -7871,6 +7925,7 @@
 104521	Ich mache mir ernsthafte Sorgen.
 104521	Meinetwegen brauchst du dir keine Sorgen machen.
 104521	Von den Noten her müsste sie sich eigentlich keine Sorgen machen.
+104522	Fünf Kandidaten treten gegeneinander an.
 104523	Am Ostersonntag unternehmen wir mit der Familie einen Ausﬂug in die Berge.
 104523	Das Unternehmen erzielte dieses Jahr nur minimalen Gewinn.
 104523	Das Unternehmen ging in Konkurs.
@@ -8002,6 +8057,7 @@
 104595	Die Tür geht nicht auf.
 104597	Ich hoffe, dein Wunsch geht in Erfüllung.
 104598	Wach auf, du musst zur Arbeit!
+104599	Susann beherrscht gut Karate.
 104600	Die Situation war derart komisch, dass wir einfach lachen mussten.
 104602	Nach dem Rennen ﬁndet die Siegerehrung statt.
 104603	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
@@ -8039,6 +8095,7 @@
 104625	In diesem Viertel sind die Mieten ziemlich teuer.
 104627	Die Vorgaben des Verlags sind nicht leicht zu erfüllen.
 104629	Sie gab vor, krank gewesen zu sein.
+104630	Ein typischer Tisch hat folgende Merkmale: Er hat vier Beine und oben eine Tischplatte.
 104633	Worin liegt die Besonderheit von Alternativschulen?
 104634	Der Sieger erhält einen Pokal.
 104635	Auf dem Tisch liegt eine Tischdecke.
@@ -8054,6 +8111,7 @@
 104636	Von Westen her nähert sich ein Tiefausläufer Deutschland.
 104637	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
 104638	Das war keine böse Absicht.
+104639	Fremdsprachenerwerb ist ein dynamischer Prozess.
 104641	Du musst dein Immunsystem stärken.
 104642	Wir haben kein Interesse an Ihrem Angebot, es ist sozusagen besser, wenn Sie gehen.
 104644	Wir können über sein Konto verfügen.
@@ -8073,6 +8131,7 @@
 104655	Die intellektuellen Fähigkeiten von Menschen sind oft sehr unterschiedlich.
 104655	Die Zusammensetzung der Gruppen war sehr unterschiedlich.
 104655	Gewitter ist ein Phänomen, das auftritt, wenn sich zwei unterschiedlich warme Luftmassen treffen.
+104655	Zum Bahnhof gelangt man mit unterschiedlichen Verkehrsmitteln.
 104656	Ich gebe dir einen Tipp.
 104657	Die Geschwister verstehen sich gut untereinander.
 104657	Ich habe das letzte Wort nicht verstanden.
@@ -8113,6 +8172,7 @@
 104671	Morgen übergeben wir Ihnen die Papiere.
 104673	In großen Städten verliere ich leicht die Orientierung.
 104674	Terroristen agieren meist unerwartet.
+104675	Sie einigten sich auf ein jährliches Treffen.
 104677	Der Kurs kam nicht zustande, weil sich zu wenige Teilnehmer anmeldeten.
 104677	Die Teilnehmer am Marathon treffen am späten Nachmittag im Stadion ein.
 104677	Die Teilnehmer haben eine sehr interessante Unterhaltung geführt.
@@ -8689,6 +8749,7 @@
 100281	Regierung und Opposition sind sich selten einig.
 100281	Start und Landung sind beim Fliegen besonders kritisch.
 100281	Tickets gibt es an der Abendkasse und an den bekannten Vorverkaufsstellen.
+100590	Beim Lernen von Fremdsprachen spielen viele Komponenten eine Rolle.
 100850	Das Reisebüro wirbt für Kurzreisen nach Spanien.
 100850	Wir haben eine Tour durch Spanien gemacht.
 102300	Die Polizei ermittelt bereits in diesem Fall.
@@ -8701,6 +8762,9 @@
 102509	Möchtest du Spiegeleier mit Speck zum Frühstück?
 102544	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
 102640	Wir demonstrieren für eine soziale und gerechte Welt.
+102640	Wir erwarten ein gerechtes Urteil.
+102640	Der Manager bemüht sich um eine gerechte Verteilung der Aufgaben.
+102640	Er entging nur mit Müh und Not seiner gerechten Strafe.
 102648	Das Erdbeben richtete großen Schaden an.
 102648	Das Erdbeben war eine furchtbare Katastrophe.
 102648	Durch das Erdbeben ist die Brücke in den Fluss gestürzt.
@@ -8736,3 +8800,9 @@
 101954	Der Angeklagte bekannte sich schuldig.
 101954	Der Angeklagte kann die Aussage verweigern.
 101954	Der Angeklagte wurde verurteilt.
+101987	Berlin ist nicht nur die Hauptstadt von Deutschland, sondern auch ein Bundesland.
+101987	Das ist kein Schrott, sondern ein modernes Kunstwerk.
+102099	Man ist gerade dabei, diese Software zu optimieren.
+102099	Das Unternehmen ist gerade dabei, ein internes Netzwerk einzurichten.
+102099	Ich habe kein gutes Gefühl dabei.
+102099	Ich möchte gern dabei sein.
