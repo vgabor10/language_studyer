@@ -46,7 +46,7 @@
 100045	dorthin	oda
 100046	klug	okos
 100047	dick	kövér
-100048	mager	sovány
+100048	mager	sovány, vékony
 100049	nett	kedves
 100050	höflich	udvarias
 100051	faul	lusta
@@ -806,7 +806,7 @@
 100812	besonders	különös
 100813	genehmigt	elfogadott
 100814	mindestens	legalább
-100815	berichten	beszámol
+100815	berichten	beszámol, tudósít
 100816	geltend	érvényes
 100817	leisten	nyújt, teljesít
 100818	hervorheben	hangsúlyoz, kiemel

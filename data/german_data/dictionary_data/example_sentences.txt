@@ -1531,6 +1531,7 @@
 100452	Die Begegnung war für beide vollkommen unerwartet.
 100452	Sie haben beide Recht.
 100454	Im Museum kann man eine Sammlung alter Münzen anschauen.
+100458	Mächtigen Worten folgen meist keine Taten.
 100460	Die Industrie will mehr Mitsprache in der Wirtschaftspolitik.
 100463	Der Abschluss des Studiums zog sich immer weiter hinaus.
 100463	Der Kampf zwischen Arbeitgebern und Arbeitnehmern geht weiter.
@@ -2127,6 +2128,7 @@
 100748	Nach einer langen Wanderung gelangten sie ans Ziel.
 100750	Ein Telefonanschluss sowie Internet steht Ihnen zur Verfügung.
 100750	In diesem Hotel gibt es Sauna sowie Whirlpool.
+100751	Das Büro ist mit modernster Technik ausgestattet.
 100752	Es waren etwa zwei Dutzend Leute da.
 100753	Hiermit gehen Sie die Verpﬂichtung ein, sich jede Woche bei uns zu melden.
 100753	Viele junge Männer melden sich freiwillig zum Militär.
@@ -3866,6 +3868,9 @@
 101873	Die positiven Reaktionen seitens des Publikums bestätigten den Regisseur.
 101873	Roman Polanski ist ein bekannter Regisseur.
 101875	Der Arzt stellt einen Schein aus.
+101878	Das ist ein riesiger Unterschied.
+101878	Das Seebeben sandte eine riesige Welle quer über den Ozean.
+101878	Durch Leipzig zieht sich ein riesiger Park.
 101879	Wir empfangen nur die öffentlich-rechtlichen Sender.
 101880	Gestern hat Luise eine interessante Sendung gesehen.
 101884	Danach hörte er Musik.
@@ -4056,6 +4061,7 @@
 102026	Die Wettervorhersage traf mal wieder nicht zu.
 102027	Der Fluss hat hier eine starke Strömung.
 102030	Ihre Meinung steht in klarem Widerspruch zu Ihren Ergebnissen.
+102031	Trotz der geringen Niederschläge erwarten wir eine gute Ernte.
 102032	Aus dem Nebel tauchte eine Gestalt auf.
 102032	Bei Nebel muss man das Tempo verringern.
 102032	Bei Nebel und Nässe sollte das Tempo beim Autofahren reduziert werden.
@@ -4601,8 +4607,12 @@
 102354	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
 102355	Mein Dank ist dir gewiss.
 102356	Er ist frühes Aufstehen nicht gewohnt.
+102357	Wer gießt meine Pflanzen, wenn ich weg bin?
+102357	Mein Nachbar gießt im Urlaub meine Blumen.
 102359	Wir treffen uns an der gleichen Stelle wie letzte Woche.
+102360	Atmen Sie ruhig und gleichmäßig!
 102361	Sie sprangen gleichzeitig von der Brücke.
+102363	Die globale Erwärmung beunruhigt nicht nur Wissenschaftler.
 102364	Leonie und Max sind ein glückliches Paar.
 102364	Sie verbrachten eine glückliche Ehe.
 102366	Das Gras ist grün.
@@ -4676,6 +4686,7 @@
 102395	Kinder sollten im Haushalt helfen.
 102395	Lieder können beim Sprachenlernen helfen.
 102396	Die Straßen sind hell erleuchtet.
+102398	Versucht herauszufinden, wie viele Erbsen in ein Glas passen.
 102399	Er nahm die Kette aus der Schachtel heraus.
 102400	Abgesehen von lauter Ärger kam nichts bei der Aktion heraus.
 102400	Die Kinder sind schon aus dem Gröbsten heraus.
@@ -5023,6 +5034,7 @@
 102616	Ich deute dein Schweigen als Zeichen deiner Zustimmung.
 102616	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
 102616	Sie haben meine volle Zustimmung.
+102617	Sie gab ihm einen fachlichen Rat.
 102618	Am Bahnhof fahren Züge in alle Richtungen ab.
 102618	Am Wochenende fahren wir aufs Land.
 102618	Aufs Land fährt nur zweimal täglich ein Bus.
@@ -5166,6 +5178,8 @@
 102681	Wenn man der Anzeige glaubt, ist der Tank leer.
 102682	Es handelt sich hier lediglich um eine statistische Erhebung.
 102682	Lediglich 30% der Bevölkerung beteiligten sich an der Wahl.
+102684	Am Institut für Linguistik lehrt ein Gastprofessor aus den USA.
+102684	Sie lehrt Deutsch im Goethe-Institut.
 102685	Professor Schmidt wird die Konferenz leiten.
 102686	Das ist doch logisch.
 102688	Auch der luxemburgische Ministerpräsident mahnte die Einheit der EU-27 an.
@@ -5461,12 +5475,15 @@
 102866	Das Gehirn des Menschen besteht aus zwei Hälften.
 102866	Die Hälfte der Bevölkerung ist täglich online.
 102866	Mindestens die Hälfte der Teilnehmer hat die Prüfung nicht bestanden.
+102867	Religion ist eine private Angelegenheit.
+102867	Das ist meine private Telefonnummer.
 102868	Die Fusion der beiden Unternehmen ist für nächstes Jahr geplant.
 102870	Computersüchtige sind in der virtuellen Realität mehr zuhause als im wahren Leben.
 102870	Das kann doch nicht wahr sein!
 102870	Kaum ein Passant nimmt die Obdachlosen in der Innenstadt wahr.
 102871	Die Gewalt unter Jugendlichen nimmt immer mehr zu.
 102871	Kriege provozieren Hass und Gewalt.
+102872	Das Theaterstück wird trotz des Ausfalls von drei Akteuren aufgeführt.
 102873	Es ist unwahrscheinlich, dass es in Deutschland im August schneit.
 102873	Im August habe ich Geburtstag.
 102873	Leute wie Ernst August sind für dich kein Umgang.
@@ -6372,10 +6389,12 @@
 103478	Diese Aufgabe überfordert ihn total.
 103478	Die Vorlesung ist total überlaufen.
 103478	Ich bin total müde nach dem langen Tag.
+103479	Die Mutter schimpft mit den frechen Kindern.
 103481	Olaf kann man nur mit harten Fakten überzeugen.
 103481	Zu viele Fakten verwirren die Zuhörer.
 103481	Zu viele Fakten verwirren die Zuhörer. 
 103482	Ich kann mich nicht beklagen.
+103483	Bayrisches Bier ist nicht nur in Deutschland sehr beliebt.
 103484	Die Bedrohung durch Computerviren ist nicht zu unterschätzen.
 103485	Von der staatlichen Rente kann man kaum leben.
 103487	Er klingelte. Es machte ihm jedoch niemand auf.
@@ -6413,6 +6432,7 @@
 103506	Die Bundesrepublik Deutschland wurde 1949 gegründet.
 103506	Die Verfassung der Bundesrepublik heißt Grundgesetz.
 103506	Wann trat die Verfassung der Bundesrepublik in Kraft?
+103508	Im Lebenslauf schildert sie ihren schulischen Werdegang.
 103510	Die Aktiengesellschaft wählt einen neuen Aufsichtsrat.
 103511	Der öffentliche Sektor leidet unter zu geringen Investitionen.
 103512	Die Mitglieder trafen sich zu einer Beratung.
@@ -6763,6 +6783,7 @@
 103768	Die Schwierigkeiten bestehen in der Übersetzung einiger Fachwörter.
 103768	Ich versuche, die Prüfung dieses Mal zu bestehen.
 103768	Menschliche Zellen bestehen zu einem Großteil aus Wasser.
+103768	Das Land Japan besteht aus vielen Inseln. 
 103769	Jeder Gast darf beliebig viele Freunde mitbringen.
 103769	Maria bringt optimale Voraussetzungen für den Job mit.
 103769	Wir haben Geschenke mitgebracht.
@@ -6797,6 +6818,7 @@
 103784	Die Kommission hat den Beschluss erneut geändert.
 103785	Es wurde eine Plattform zum Informationsaustausch im Internet eingerichtet.
 103786	Die Ureinwohner leisteten lange Zeit Widerstand gegen die Kolonialisten.
+103787	Die Mitarbeiter werden entsprechend ihren Fähigkeiten eingesetzt.
 103789	Auch diese Krise wird vorübergehen.
 103790	Der Angeklagte bekannte sich schuldig.
 103792	Sie hat eine blühende Phantasie.
@@ -6816,6 +6838,8 @@
 103804	Ich habe aus Versehen die falsche Taste gedrückt.
 103804	Wir müssen jede Datei mit einer Kodierung versehen.
 103805	Der Geschäftsführer ﬂiegt immer Business Class.
+103806	Von hundert rückwärts zählen, beruhigt die Nerven.
+103806	Meine Nerven sind sehr angespannt.
 103807	Das ist eine einmalige Chance.
 103807	Die Chancen bei dieser Bewerbung sind minimal.
 103807	Eigentlich haben wir keine reale Chance mehr.
@@ -6859,7 +6883,6 @@
 103834	Vielen Dank für Ihre Hilfe.
 103837	Wir flüsterten, damit uns niemand hörte.
 103838	Der Graf wohnt auf einer Burg.
-103838	Stefﬁ Graf hat lange, blonde Haare.
 103839	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
 103840	Früher war alles besser.
 103840	In einer ruhigen Umgebung lernt man besser.
@@ -7459,6 +7482,8 @@
 104257	Der Bundeskanzler schweigt über diverse Probleme.
 104257	Der einstige Bundeskanzler ist jetzt Privatmann.
 104257	Wer wird Gerhard Schröder im Amt des Bundeskanzlers nachfolgen?
+104260	Steffi Graf hat lange, blonde Haare.Steffi Graf hat lange, blonde Haare.
+104260	Der Junge mit den blonden Haaren ist ihr Sohn.
 104261	Die Chancen bei dieser Bewerbung sind minimal.
 104262	Es wird noch einiges auf uns zukommen.
 104263	Das ist ein Angriff auf den Präsidenten.
@@ -8026,6 +8051,7 @@
 104635	Ich beuge mich über den Tisch.
 104635	Ich stelle den Teller auf den Tisch.
 104635	In der Mitte des Zimmers steht ein großer Tisch.
+104636	Von Westen her nähert sich ein Tiefausläufer Deutschland.
 104637	Der Urlaub war nur kurz, dementsprechend gering war der Erholungseffekt.
 104638	Das war keine böse Absicht.
 104641	Du musst dein Immunsystem stärken.
@@ -8190,6 +8216,7 @@
 104746	Die Mutter nahm stellvertretend für den Sohn den Preis in Empfang.
 104748	Herkömmliche Tests weisen oft Mängel auf.
 104748	Wir weisen Sie darauf hin, dass Sie hier nicht parken dürfen.
+104749	Das Land Japan besteht aus vielen Inseln. 
 104751	Der Teufel lebt in der Hölle.
 104807	Ab 18 gilt man als Erwachsener.
 104807	Wir brauchen einheitliche Regeln, die für alle gelten.
@@ -8697,6 +8724,8 @@
 103203	Ein gleichseitiges Dreieck hat drei Winkel zu je 60 Grad.
 103258	Löwen sind eine Art Katzen.
 103258	Wir hatten ein schreckliches Erlebnis im Zoo, ein Löwe ist ausgebrochen.
+103258	Beobachten Sie die Löwen bei der Fütterung!
+103258	Löwen brüllen, um ihre Opfer einzuschüchtern.
 103309	Bananen und Zitronen sehen gelb aus.
 103587	Bei dem Sturz zog er sich eine schwere Verletzung zu.
 103587	Nach dem Sturz verlor sie das Bewusstsein.
