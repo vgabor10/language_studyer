@@ -2,23 +2,19 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.CardContainer;
 import dictionary.DictionaryDataContainer;
-import dictionary.ExampleSentenceContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
-import study_item_objects.AnswerDataContainer;
 
 public class CardInspectorDialog extends javax.swing.JDialog {
 
-    public CardContainer cardContainer;
     public Card cardToInspect;
-    public AnswerDataContainer answerDataContainer;
-    private final DefaultTableModel tableModel;
-    public DialogAnswer dialogAnswer;
     public DictionaryDataContainer dictionaryDataContainer;
+    public DialogAnswer dialogAnswer;
+        
+    private final DefaultTableModel tableModel;
     
     private Logger logger = new Logger();
     
@@ -39,12 +35,9 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         jTextField1.setText(cardToInspect.term);
         jTextField2.setText(cardToInspect.definition);
         
-        ExampleSentenceContainer exampleSentenceContainer
-                = dictionaryDataContainer.exampleSentenceContainer;
-        
-        for (int exampleSentenceIndex : cardToInspect.exampleSentenceIndexes) {
+        for (String exampleSentence : cardToInspect.exampleSentences) {
             tableModel.addRow(new Object[]{
-                exampleSentenceContainer.getByIndex(exampleSentenceIndex).sentence
+               exampleSentence
             });
         }
         
@@ -295,8 +288,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         if (dialogAnswer2.boolAnswer) {
             DictionaryDataModificator dictionaryDataModificator 
                     = new DictionaryDataModificator();
-            dictionaryDataModificator.setCardContainer(cardContainer);
-            dictionaryDataModificator.setAnswerDataContainer(answerDataContainer);
+            dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
             dialogAnswer.intAnswer = 1;
             
@@ -337,7 +329,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     public void saveCard() {
-        /*String term = jTextField1.getText();
+        String term = jTextField1.getText();
         String definition = jTextField2.getText();
 
         cardToInspect.term = term;
@@ -348,11 +340,11 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         }
 
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setCardContainer(cardContainer);
+        dictionaryDataModificator.setData(dictionaryDataContainer);
         dictionaryDataModificator.saveCardContainerDataToFile();
         dictionaryDataModificator.saveExampleSentencesDataToFile();
                 
-        dispose();*/
+        dispose();
     }
     
     /**

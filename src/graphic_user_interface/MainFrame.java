@@ -387,8 +387,6 @@ public class MainFrame extends javax.swing.JFrame {
     private void dictionaryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryButtonActionPerformed
         DictionaryDialog dialog 
                 = new DictionaryDialog(new javax.swing.JFrame(), true);
-        dialog.setCardContainer(dictionaryDataContainer.cardContainer); //TODO
-        dialog.setAnswerDataContainer(dictionaryDataContainer.answerDataContainer);
         dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.initialise();
         dialog.setLocationRelativeTo(this);

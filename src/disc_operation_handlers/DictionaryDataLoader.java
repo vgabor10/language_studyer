@@ -3,8 +3,6 @@ package disc_operation_handlers;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.DictionaryDataContainer;
-import dictionary.ExampleSentence;
-import dictionary.ExampleSentenceContainer;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -62,48 +60,19 @@ public class DictionaryDataLoader {
     }
     
     public void loadExampleSentences() {
-        try {        
-            ExampleSentenceContainer exampeSentenceContainer
-                    = dictionaryDataContainer.exampleSentenceContainer;
-            
-            String filePath = "../data_to_integrate/example_sentences.txt";
+        try {
+            String filePath = languageFilesDataHandler.getStudiedLanguageExampleSentencesDataPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] splittedRow = strLine.split("\t");
                 
-                ExampleSentence exampleSentence = new ExampleSentence();
-                exampleSentence.index = Integer.parseInt(splittedRow[0]);
-                exampleSentence.sentence = splittedRow[1];
+                int cardIndex = Integer.parseInt(splittedRow[0]);
+                String exampleSentence = splittedRow[1];
                 
-                exampeSentenceContainer.addStudyItem(exampleSentence);
+                dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
             }
             
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find example_sentences file");
-        } catch (IOException e) {
-            System.err.println("exception in loadCardContainer function");
-        }
-    }
-    
-    public void loadCardsToExampeSentencesAssignations() {
-        try {        
-            CardContainer cardContainer = dictionaryDataContainer.cardContainer;
-            
-            String filePath = "../data_to_integrate/exampe_sentences_and_cards_assignations.txt";
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                String[] splittedRow = strLine.split("\t");
-                
-                int exmpleSentenceIndex = Integer.parseInt(splittedRow[0]);
-                
-                for (int i=1; i<splittedRow.length; i++) {
-                    int cardIndex = Integer.parseInt(splittedRow[i]);
-
-                    cardContainer.getCardByIndex(cardIndex).exampleSentenceIndexes.add(exmpleSentenceIndex);
-                }
-            }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find example_sentences file");
         } catch (IOException e) {
@@ -114,7 +83,6 @@ public class DictionaryDataLoader {
     public void loadAllData() {
         loadCardContainer();
         loadAnswerData();
-        loadExampleSentences();
-        loadCardsToExampeSentencesAssignations();
+        loadExampleSentences();        
     }
 }

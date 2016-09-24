@@ -9,8 +9,11 @@ import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
@@ -84,6 +87,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -176,6 +180,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTable2.setEnabled(false);
         jScrollPane2.setViewportView(jTable2);
 
+        jButton2.setText("Inspect card");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -192,7 +203,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
                         .addComponent(jLabel2)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
@@ -212,7 +224,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 125, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -292,7 +306,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
     
     private void showExampleSentences() {
-        /*List<Integer> exampleSentenceIndexes = new ArrayList<>();
+        List<Integer> exampleSentenceIndexes = new ArrayList<>();
         for (int i=0; i<cardTester.getActualQuestionedCard().exampleSentences.size(); i++) {
             exampleSentenceIndexes.add(i);
         }
@@ -302,7 +316,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             exampleSentencesTableModel.addRow(new Object[]{
                 cardTester.getActualQuestionedCard().exampleSentences.get(i)
             });
-        }*/
+        }
     }
 
     private void clearTabulars() {
@@ -329,8 +343,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setCardTestStatisticsDataToFrame();
         
         DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setCardContainer(dictionaryDataContainer.cardContainer);
-        dictionaryDataModificator.setAnswerDataContainer(dictionaryDataContainer.answerDataContainer);
+        dictionaryDataModificator.setData(dictionaryDataContainer);
 
         dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
         
@@ -364,6 +377,20 @@ public class CardTesterDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2KeyPressed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        CardInspectorDialog dialog 
+                = new CardInspectorDialog(new javax.swing.JFrame(), true);
+        dialog.cardToInspect = cardTester.getActualQuestionedCard();
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer = dialogAnswer;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+        
+        jTextField1.requestFocus();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -390,37 +417,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(CardTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -439,6 +436,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;

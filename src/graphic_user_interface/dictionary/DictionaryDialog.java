@@ -18,9 +18,10 @@ import study_item_objects.AnswerDataContainer;
 
 public class DictionaryDialog extends javax.swing.JDialog {
 
+    public DictionaryDataContainer dictionaryDataContainer;
+    
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
-    public DictionaryDataContainer dictionaryDataContainer;
     
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel tableModel;
@@ -54,15 +55,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }
 
     public void initialise() {
+        cardContainer = dictionaryDataContainer.cardContainer;
+        answerDataContainer = dictionaryDataContainer.answerDataContainer;
+        
         cardFinder.setCardContainer(cardContainer);
-    }
-    
-    public void setCardContainer(CardContainer a) {
-        cardContainer = a;
-    }
-    
-    public void setAnswerDataContainer(AnswerDataContainer a) {
-        answerDataContainer = a;
     }
     
     /**
@@ -369,10 +365,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.cardContainer = cardContainer;
         dialog.cardToInspect = cardToInspect;
         dialog.dictionaryDataContainer = dictionaryDataContainer;
-        dialog.answerDataContainer = answerDataContainer;
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
         dialog.initialise();
@@ -442,7 +436,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         for (int i=0; i<cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
-            if (card.exampleSentenceIndexes.isEmpty()) {
+            if (card.exampleSentences.isEmpty()) {
                 listedCards.add(card);
             }
         }

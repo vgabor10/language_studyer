@@ -4,25 +4,23 @@ import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
+import dictionary.DictionaryDataContainer;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class DictionaryDataModificator {
-
+    
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
     private final LanguageFilesDataHandler settingsHandler = new LanguageFilesDataHandler();    //TODO: give it from manin frame
 
     private final Logger logger = new Logger();
 
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
-
-    public void setAnswerDataContainer(AnswerDataContainer ac) {
-        answerDataContainer = ac;
+    public void setData(DictionaryDataContainer dictionaryDataContainer) {
+        cardContainer = dictionaryDataContainer.cardContainer;
+        answerDataContainer = dictionaryDataContainer.answerDataContainer;
     }
 
     public void removeCardWithAnswersByCardIndex(int cardIndex) {
@@ -49,7 +47,9 @@ public class DictionaryDataModificator {
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
             for (int i = 0; i < cardContainer.numberOfCards(); i++) {
-                fw.write(cardContainer.getCardByOrder(i).toStringData() + "\n");	//appends the string to the file
+                Card card = cardContainer.getCardByOrder(i);
+                fw.write(Integer.toString(card.index) + "\t" +
+                    card.term + "\t" + card.definition + "\n");
             }
             fw.close();
         } catch (IOException ioe) {
@@ -68,6 +68,26 @@ public class DictionaryDataModificator {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
             for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
                 fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+    
+    public void saveExampleSentencesDataToFile() {
+        String filePath = settingsHandler.getStudiedLanguageExampleSentencesDataPath();
+        File oldFile;
+        oldFile = new File(filePath);
+        oldFile.delete();
+
+        try {
+            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
+                Card card = cardContainer.getCardByOrder(i);
+                for (String exampleSentence : card.exampleSentences) {
+                    fw.write(card.index + "\t" + exampleSentence  + "\n");	//appends the string to the file
+                }
             }
             fw.close();
         } catch (IOException ioe) {

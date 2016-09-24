@@ -20,21 +20,18 @@ public class SettingsDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
     public CardContainer cardContainer;
-    public Map<Integer,String> exampeSentences = new HashMap<>();
-    public Map<Integer,Set<Integer>> exampeSentencesAndCards = new HashMap<>();
+    public Set<String> exampeSentences = new HashSet<>();
+    public Map<Integer,Set<String>> exampeSentencesByCardIndexes = new HashMap<>();
     
     public void loadExampleSentences() {
         try {        
             exampeSentences.clear();
             
-            String filePath = "../data_to_integrate/example_sentences.txt";
+            String filePath = "../data_to_integrate/example_sentences2.txt";
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
-                String[] splittedRow = strLine.split("\t");
-                exampeSentences.put(Integer.parseInt(splittedRow[0]),splittedRow[1]);
-                exampeSentencesAndCards.put(
-                        Integer.parseInt(splittedRow[0]), new HashSet<Integer>());
+                exampeSentences.add(strLine);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find example_sentences file");
@@ -44,22 +41,18 @@ public class SettingsDialog extends javax.swing.JDialog {
     }
     
     public void saveCardContainerDataToFile() {
-        String filePath = "../data_to_integrate/sentence_and_cards_assignations.tmp";
+        String filePath = "../data_to_integrate/example_sentences.tmp";
         File oldFile;
         oldFile = new File(filePath);
         oldFile.delete();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int sentenceIndex : exampeSentencesAndCards.keySet()) {
-
-                fw.write(Integer.toString(sentenceIndex));
+            for (int cardIndex : exampeSentencesByCardIndexes.keySet()) {
                 
-                for (int cardIndex : exampeSentencesAndCards.get(sentenceIndex)) {
-                      fw.write("\t" + cardIndex);
+                for (String exampleSentence : exampeSentencesByCardIndexes.get(cardIndex)) {
+                      fw.write(cardIndex + "\t" + exampleSentence + "\n");
                 }
-                
-                fw.write("\n");
             }
             fw.close();
         } catch (IOException ioe) {
@@ -182,8 +175,9 @@ public class SettingsDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         loadExampleSentences();
         
+        exampeSentencesByCardIndexes.clear();
         int numberOfAssignations = 0;
-        int numberOfCardWithExampleSentence = 0;
+        
         for (int i=0; i<cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
             
@@ -197,30 +191,37 @@ public class SettingsDialog extends javax.swing.JDialog {
                 cardTerm = cardTerm.substring(3);
             }
             
-            for (int index : exampeSentences.keySet()) {
-                String exampleSentence = exampeSentences.get(index);
-                exampleSentence = exampleSentence.toLowerCase();
+            for (String exampleSentence : exampeSentences) {
+                String exampleSentenceForComparition = exampleSentence;
+                exampleSentenceForComparition = exampleSentenceForComparition.toLowerCase();
                 
-                if (exampleSentence.startsWith(cardTerm + " ") ||
-                    exampleSentence.contains(" " + cardTerm + " ") ||
-                        exampleSentence.endsWith(" " + cardTerm + ".")) {
-                    
-                    
-                    exampeSentencesAndCards.get(index).add(card.index);
-                    numberOfAssignations++;
-                    
-                    
-                    if (exampeSentencesAndCards.get(index).size() == 1) {
-                        numberOfCardWithExampleSentence++;
+                if (exampleSentenceForComparition.startsWith(cardTerm + " ") ||
+                    exampleSentenceForComparition.contains(" " + cardTerm + " ") ||
+                        exampleSentenceForComparition.endsWith(" " + cardTerm + ".")) {
+                
+                    if (!exampeSentencesByCardIndexes.containsKey(card.index)) {
+                        exampeSentencesByCardIndexes.put(card.index, new HashSet<String>());
+                        exampeSentencesByCardIndexes.get(card.index).add(exampleSentence);
+                        numberOfAssignations++;
+                    }
+                    else {
+                        if (exampeSentencesByCardIndexes.get(card.index).size() < 10) {
+                            
+                            if (exampeSentencesByCardIndexes.get(card.index).contains(exampleSentence)) {
+                                System.out.println(exampleSentence);
+                            }
+                            
+                            exampeSentencesByCardIndexes.get(card.index).add(exampleSentence);
+                            numberOfAssignations++;
+                        }
                     }
                 }
             }
             
         }
         
-        System.out.println(numberOfAssignations);
-        System.out.println(numberOfCardWithExampleSentence);
-        
+        System.out.println("number of assignations: " + numberOfAssignations);
+        System.out.println("number of cards with at least one example: " + exampeSentencesByCardIndexes.keySet().size());
         saveCardContainerDataToFile();
     }//GEN-LAST:event_jButton4ActionPerformed
 
