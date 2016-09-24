@@ -1102,17 +1102,6 @@
 100277	Rote Autos fallen im Straßenverkehr am meisten auf.
 100278	Eine radikale Veränderung steht uns bevor.
 100278	Ich kann mich gut auf Veränderungen einstellen.
-100281	Am Wochenende erwartet uns ein Mix aus Regen und Sonnenschein.
-100281	Das Semester beginnt im Oktober und endet im März.
-100281	Der Zug zwischen Halle und Leipzig verkehrt jetzt alle halbe Stunde.
-100281	Dieser Früchtetee ist eine Mischung aus Apfel-, Orangen- und Birnenstücken.
-100281	Erwin und Brigitte gehen heute Abend in den Auerbachkeller essen.
-100281	Ihre Darstellung der Ereignisse war detailliert und umfangreich.
-100281	Leonie und Max sind ein glückliches Paar.
-100281	Mehr und mehr Menschen informieren sich über alternative Heilmethoden.
-100281	Regierung und Opposition sind sich selten einig.
-100281	Start und Landung sind beim Fliegen besonders kritisch.
-100281	Tickets gibt es an der Abendkasse und an den bekannten Vorverkaufsstellen.
 100283	Der Eisregen machte die Straßen so glatt, dass ich mehrmals fast gestürzt wäre.
 100283	Es ist schon fast Mitternacht. Deshalb
 100283	Es ist schon fast Mitternacht. Deshalb sollten wir jetzt nach Hause gehen.
@@ -1770,8 +1759,6 @@
 100554	Bettina kocht manchmal Spaghetti für alle Kollegen.
 100554	Ich reise manchmal per Anhalter.
 100554	Westdeutsche Produkte konnte man manchmal auch in der DDR kaufen.
-100555	Russland erstreckt sich über elf Zeitzonen.
-100555	Streit zwischen Amerika und Russland gefährdet Waffenruhe.
 100556	Ich habe Sie explizit davor gewarnt, mein Grundstück zu betreten.
 100557	2015 waren rund 26 Millionen Touristen nach Griechenland gereist.
 100557	Johanna reist in den Ferien nach Bulgarien.
@@ -1932,7 +1919,6 @@
 100630	Die Bürger der Stadt versammeln sich auf dem Markt, um zu demonstrieren.
 100630	Die Unzufriedenheit der Bürger ist im Hinblick auf die politische Situation verständlich.
 100630	Ungefähr tausend Bürger nahmen an der Demonstration teil.
-100631	Der Schmuck ist sehr wertvoll.
 100632	Die Eltern erlauben ihren Kindern, bis um neun draußen zu bleiben.
 100632	Erlauben Sie mir die Feststellung, dass dies nicht zum ersten Mal passiert ist.
 100632	Unser Chef hat sich einen groben Fehler erlaubt.
@@ -2295,8 +2281,6 @@
 100844	Zeitungen beziehungsweise Zeitschriften gehören zu den meistgelesenen Printmedien.
 100846	Das letzte Jahrzehnt des 20. Jahrhunderts war relativ friedlich.
 100847	Bernd sieht seinem Bruder ähnlich.
-100850	Das Reisebüro wirbt für Kurzreisen nach Spanien.
-100850	Wir haben eine Tour durch Spanien gemacht.
 100852	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
 100853	Ich nehme die Talkshow auf, um sie später auszuwerten.
 100855	Hier ist es verboten zu rauchen.
@@ -2307,7 +2291,6 @@
 100859	Die Bücher stehen oben im Regal.
 100859	Ein typischer Tisch hat folgende Merkmale: Er hat vier Beine und oben eine Tischplatte.
 100860	Die Nutzung des Internets ist hier nur unter Einschränkungen möglich.
-100861	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
 100862	Die Agentur zitierten am Samstag einen Vertreter des Verteidigungsministeriums.
 100862	Ein Vertreter der Jugendinitiative ergriff das Wort.
 100862	Vertreter von Greenpeace verteilen Broschüren.
@@ -3480,8 +3463,6 @@
 101567	Das Herz schlägt in der Brust.
 101567	Viele Mädchen wollen sich die Brust vergrößern lassen.
 101569	Mein Magen tut weh.
-101572	Der Handel mit China boomt.
-101572	Im Fernsehen lief ein Bericht über China.
 101573	Das Problem wird wie immer auf dem Rücken der Armen ausgetragen.
 101573	Sie ist vom Stuhl gerutscht und auf den Rücken gefallen.
 101574	Der Schuss traf ihn an der Schulter.
@@ -3591,7 +3572,6 @@
 101644	Ich habe mir eine neue Kamera gekauft.
 101645	Die Maschine weist keinerlei Mängel auf.
 101646	Der Hersteller gibt eine Garantie von zwei Jahren.
-101647	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
 101651	Zu einem Opernball sollte man in angemessener Bekleidung erscheinen.
 101652	Der Gläubiger fordert zum Ersten des Monats eine Summe von 1000 Euro.
 101652	Die Summe aus zwölf plus drei ist fünfzehn.
@@ -3633,10 +3613,6 @@
 101679	Es ist nichts mehr von der Suppe übrig.
 101679	In der Suppe ist zu wenig Salz.
 101683	Der Chefkoch empfiehlt heute die Fischsuppe.
-101684	Atmen Sie ruhig und gleichmäßig!
-101684	Du kannst den Fehler ruhig zugeben.
-101684	Du kannst ruhig schon gehen, ich brauche dich hier nicht mehr.
-101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
 101693	Durch die Verarbeitung zu Konserven gehen dem Gemüse Vitamine verloren.
 101693	Je länger man Gemüse kocht, desto weniger Vitamine bleiben darin.
 101693	Obst enthält natürliche Vitamine.
@@ -3973,7 +3949,6 @@
 101932	Er kommt gewöhnlich zu spät.
 101932	Gewöhnlich versteckt man seinen Geliebten im Kleiderschrank.
 101933	Das Paket ist rechtzeitig angekommen.
-101934	Toleranz und Meinungsfreiheit sind wichtige Güter einer Demokratie.
 101935	Gibt es einen Anlass zum Feiern?
 101937	Der Brief erreicht in ca. zwei Tagen seinen Empfänger.
 101938	Die Marke klebt schief auf dem Umschlag.
@@ -3990,10 +3965,6 @@
 101951	Diese Methode ist absolut sicher.
 101951	Wir bevorzugen konventionelle Methoden und Verfahren.
 101952	Man muss immer wieder versuchen, dem Alltag zu entﬂiehen.
-101954	Der Angeklagte beantwortet die Frage des Richters mit Ja.
-101954	Der Angeklagte bekannte sich schuldig.
-101954	Der Angeklagte kann die Aussage verweigern.
-101954	Der Angeklagte wurde verurteilt.
 101955	Bis zu dem vereinbarten Termin muss die Arbeit fertig sein.
 101955	Für welche Uhrzeit sollen wir den Termin ansetzen?
 101955	Möglicherweise schaffen wir es doch bis zum vereinbarten Termin.
@@ -4504,8 +4475,6 @@
 102287	Das Konzept für den neuen Studiengang ist noch nicht fertig.
 102287	Ich warte, bis du fertig bist.
 102289	Die Polizei konnte den Dieb schnell ﬁnden und festnehmen.
-102290	Alle waren mit den Vorbereitungen auf das Fest beschäftigt.
-102290	Weihnachten ist das Fest der Familie.
 102292	Die Kommission konnte keine Unregelmäßigkeiten bei der Wahl feststellen.
 102293	Die Wäsche ist noch ganz feucht.
 102294	Da ich Iris nie Hoffnungen gemacht habe, kann ich sie ihr folglich auch nicht nehmen.
@@ -4513,7 +4482,6 @@
 102296	Aus dem Teig formen Sie ein kleines rundes Brot.
 102297	Die Rede war gut formuliert.
 102298	Weit fort von hier wohnt Schneewittchen bei den sieben Zwergen hinter den sieben Bergen.
-102300	Die Polizei ermittelt bereits in diesem Fall.
 102301	Ein Lehrer aus Frankreich unterrichtet Französisch.
 102301	Französisch habe ich in der Schule gelernt.
 102301	Frau Engelbert spricht ﬂießend Französisch.
@@ -4596,8 +4564,6 @@
 102338	Diabetes ist teilweise genetisch bedingt.
 102339	Man soll das Leben mit allen Sinnen genießen.
 102340	Eine Tasse Kaffee pro Tag genügt mir.
-102342	Die Donau hat ihren Ursprung im Schwarzwald.
-102342	Man kann mit dem Rad die Donau entlang fahren.
 102343	Die Lage ist geradezu prekär.
 102344	Das Schiff ist in Not geraten.
 102344	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
@@ -4870,8 +4836,6 @@
 102504	Er hat eine gute Stellung in dieser Firma.
 102506	Die Steuerung der Maschinen erfolgt von diesem Raum aus.
 102508	Pettersson genoss die Stille.
-102509	Mit Speck fängt man Mäuse.
-102509	Möchtest du Spiegeleier mit Speck zum Frühstück?
 102510	Die Stimmung im Team ist sehr gut.
 102510	Die Stimmung war auf dem Höhepunkt.
 102510	Im Büro herrscht gute Stimmung.
@@ -4943,7 +4907,6 @@
 102542	Die Wähler warten auf die Umsetzung der Wahlversprechen.
 102542	Wie soll die praktische Umsetzung aussehen?
 102543	Die Europäische Union wurde im Mai 2004 um zehn Länder erweitert.
-102544	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
 102545	Bei vielen Jugendlichen herrscht Unsicherheit hinsichtlich ihrer Berufswahl.
 102546	Die Teilnehmer haben eine sehr interessante Unterhaltung geführt.
 102548	Ich ﬁnde es wichtig, diese Unterscheidung zu machen.
@@ -5124,7 +5087,6 @@
 102637	Chris spricht britisches Englisch.
 102637	Sie lernen Englisch.
 102639	Abweichungen von der Norm gibt es immer wieder.
-102640	Wir demonstrieren für eine soziale und gerechte Welt.
 102644	Bier enthält fünf Prozent Alkohol.
 102644	Kiwis enthalten viel Vitamin C.
 102645	Er hat zwar Lust zu kommen, aber keine Zeit.
@@ -5132,11 +5094,6 @@
 102645	Ich habe heute einfach keine Lust.
 102645	Ich habe Lust auf ein Bier.
 102647	Die Marke klebt schief auf dem Umschlag.
-102648	Das Erdbeben richtete großen Schaden an.
-102648	Das Erdbeben war eine furchtbare Katastrophe.
-102648	Durch das Erdbeben ist die Brücke in den Fluss gestürzt.
-102648	Ein gewaltiges Erdbeben zerstörte die ganze Stadt.
-102648	Pferde spüren ein nahendes Erdbeben.
 102649	Das Gesetz von der Erhaltung der Masse wird im Physikunterricht gelehrt.
 102649	Die Masse ist eine physikalische Größe.
 102649	Die Temperatur ist unabhängig von der Masse einer Flüssigkeit.
@@ -5296,7 +5253,6 @@
 102735	Ich bin mit deinem Vorschlag einverstanden.
 102735	Ja, ich bin damit einverstanden.
 102735	Viele Menschen waren einverstanden.
-102735	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
 102736	Die Geburtstagsgäste kamen alle einzeln.
 102737	Nächste Woche können wir einziehen.
 102738	Gina ist das einzige Mädchen in der Klasse.
@@ -5487,8 +5443,6 @@
 102857	Mit Alkohol sollte man sich nicht ans Steuer setzen.
 102858	Es ist nunmehr an der Zeit, Abschied zu nehmen.
 102859	Der größte Anteil gehört seiner Schwester.
-102860	Die Agentur zitierten am Samstag einen Vertreter des Verteidigungsministeriums.
-102860	Die Verteidigung plädiert für Freispruch.
 102861	Effizientes, schnelles Arbeiten ist wichtig.
 102862	Die Folge davon war, dass er arbeitslos wurde.
 102862	Ich folge deinem Rat.
@@ -5669,17 +5623,6 @@
 102966	Wir müssen alle Faktoren mit einbeziehen.
 102967	Der Abschluss des Studiums zog sich immer weiter hinaus.
 102967	Jule strebt einen höheren Abschluss an.
-102969	Die Formulierung ist noch etwas steif.
-102969	Es handelt sich um eine etwas seltsame Gestalt.
-102969	Etwas hatte seine Aufmerksamkeit erregt.
-102969	Ich bin gleich weg, soll ich noch etwas mitbringen?
-102969	Ich habe geahnt, dass etwas passiert ist.
-102969	Ich habe gleich ein Seminar, zuvor muss ich noch etwas kopieren.
-102969	Nach der Knieoperation war er im Laufen noch etwas unsicher.
-102969	Richte ihm bitte aus, dass ich erst etwas später komme.
-102969	Sie gingen ins Kino und anschließend noch etwas essen.
-102969	Wir begreifen einfach nicht, wie so etwas möglich ist.
-102969	Zu Weihnachten schenken sich alle Familienmitglieder etwas.
 102970	Ein Anstieg der Steuern ist unvermeidlich.
 102973	Man unterscheidet organische und anorganische Verbindungen.
 102974	Wir sind ohnehin zu spät, da können wir uns jetzt auch Zeit lassen.
@@ -5706,7 +5649,6 @@
 102987	Im Oktober ist Erntedankfest.
 102988	Niemand ist perfekt.
 102989	Die Bauarbeiten wurden vorzeitig abgeschlossen.
-102990	Es gab widersprüchliche Meldungen aus dem Krisengebiet.
 102991	Die Schüler haben die Aufgabe bekommen, alle Verben im Text zu unterstreichen.
 102993	Dichter Nebel behindert den Verkehr.
 102993	Nach dem Unfall war er schwer geistig behindert.
@@ -5881,7 +5823,6 @@
 103119	Bitte hol neue Zeitschriften aus dem Lager.
 103121	Jurastudenten trainieren an Beispielen aus der deutschen Rechtsprechung.
 103122	Das Resultat konnte mich nicht überzeugen.
-103123	Auch Stützungskäufe können den Verfall der Aktie nicht stoppen.
 103124	Behandeln Sie das Problem bitte diskret!
 103124	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
 103125	Lass uns noch einmal um den Block fahren.
@@ -5996,7 +5937,6 @@
 103199	Den Umfragen zufolge sind 45% der Deutschen dagegen.
 103200	Die Luftverschmutzung darf einen bestimmten Grenzwert nicht überschreiten.
 103202	Gregor hat sich große Mühe gegeben, dennoch hat er die Prüfung nicht bestanden.
-103203	Ein gleichseitiges Dreieck hat drei Winkel zu je 60 Grad.
 103204	Die Bibliothek hat einen großen Bestand alter Bücher.
 103205	Entweder übernimmst du Verantwortung, oder du ﬂiegst raus.
 103205	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
@@ -6087,8 +6027,6 @@
 103255	Neben der Demokratie gibt es noch andere politische Systeme.
 103255	Toleranz und Meinungsfreiheit sind wichtige Güter einer Demokratie.
 103257	Ein Zeugnis ist ein wichtiges Dokument.
-103258	Löwen sind eine Art Katzen.
-103258	Wir hatten ein schreckliches Erlebnis im Zoo, ein Löwe ist ausgebrochen.
 103259	Man sollte jeden Tag mindestens zwei Liter Flüssigkeit trinken.
 103259	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
 103261	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
@@ -6171,7 +6109,6 @@
 103305	Das ist ja komisch.
 103305	Guck mich nicht so komisch an!
 103308	Wir haben ein Haus mit einem Garten, daneben beginnt gleich der Wald.
-103309	Bananen und Zitronen sehen gelb aus.
 103310	Marcus will wenigstens noch das Buch zu Ende lesen, bevor er schlafen geht.
 103311	Keine Angst, wir übergehen Sie nicht.
 103312	Die Begegnung war für beide vollkommen unerwartet.
@@ -6575,8 +6512,6 @@
 103583	Sie lässt sich den Schmerz nicht anmerken.
 103585	Das Thema ist für mich nicht relevant.
 103586	In dem Verlag erscheinen sämtliche Werke von Hermann Hesse.
-103587	Bei dem Sturz zog er sich eine schwere Verletzung zu.
-103587	Nach dem Sturz verlor sie das Bewusstsein.
 103588	Der Verkäufer steht im Dienst seiner Kunden.
 103589	Tina hat großes musikalisches Talent.
 103590	Die Durchführung der Wahlen verlief problemlos.
@@ -8710,3 +8645,65 @@
 105189	In achtzehn Tagen verreise ich.
 105196	Isabel ist fünfundzwanzig Jahre alt.
 105201	Dieses Hemd kostet dreißig Euro.
+100555	Russland erstreckt sich über elf Zeitzonen.
+100555	Streit zwischen Amerika und Russland gefährdet Waffenruhe.
+100861	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+101647	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
+101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
+101934	Toleranz und Meinungsfreiheit sind wichtige Güter einer Demokratie.
+100281	Am Wochenende erwartet uns ein Mix aus Regen und Sonnenschein.
+100281	Das Semester beginnt im Oktober und endet im März.
+100281	Der Zug zwischen Halle und Leipzig verkehrt jetzt alle halbe Stunde.
+100281	Dieser Früchtetee ist eine Mischung aus Apfel-, Orangen- und Birnenstücken.
+100281	Erwin und Brigitte gehen heute Abend in den Auerbachkeller essen.
+100281	Ihre Darstellung der Ereignisse war detailliert und umfangreich.
+100281	Leonie und Max sind ein glückliches Paar.
+100281	Mehr und mehr Menschen informieren sich über alternative Heilmethoden.
+100281	Regierung und Opposition sind sich selten einig.
+100281	Start und Landung sind beim Fliegen besonders kritisch.
+100281	Tickets gibt es an der Abendkasse und an den bekannten Vorverkaufsstellen.
+100850	Das Reisebüro wirbt für Kurzreisen nach Spanien.
+100850	Wir haben eine Tour durch Spanien gemacht.
+102300	Die Polizei ermittelt bereits in diesem Fall.
+102342	Die Donau hat ihren Ursprung im Schwarzwald.
+102342	Man kann mit dem Rad die Donau entlang fahren.
+100631	Der Schmuck ist sehr wertvoll.
+101572	Der Handel mit China boomt.
+101572	Im Fernsehen lief ein Bericht über China.
+102509	Mit Speck fängt man Mäuse.
+102509	Möchtest du Spiegeleier mit Speck zum Frühstück?
+102544	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
+102640	Wir demonstrieren für eine soziale und gerechte Welt.
+102648	Das Erdbeben richtete großen Schaden an.
+102648	Das Erdbeben war eine furchtbare Katastrophe.
+102648	Durch das Erdbeben ist die Brücke in den Fluss gestürzt.
+102648	Ein gewaltiges Erdbeben zerstörte die ganze Stadt.
+102648	Pferde spüren ein nahendes Erdbeben.
+102860	Die Agentur zitierten am Samstag einen Vertreter des Verteidigungsministeriums.
+102860	Die Verteidigung plädiert für Freispruch.
+102969	Die Formulierung ist noch etwas steif.
+102969	Es handelt sich um eine etwas seltsame Gestalt.
+102969	Etwas hatte seine Aufmerksamkeit erregt.
+102969	Ich bin gleich weg, soll ich noch etwas mitbringen?
+102969	Ich habe geahnt, dass etwas passiert ist.
+102969	Ich habe gleich ein Seminar, zuvor muss ich noch etwas kopieren.
+102969	Nach der Knieoperation war er im Laufen noch etwas unsicher.
+102969	Richte ihm bitte aus, dass ich erst etwas später komme.
+102969	Sie gingen ins Kino und anschließend noch etwas essen.
+102969	Wir begreifen einfach nicht, wie so etwas möglich ist.
+102969	Zu Weihnachten schenken sich alle Familienmitglieder etwas.
+102990	Es gab widersprüchliche Meldungen aus dem Krisengebiet.
+103123	Auch Stützungskäufe können den Verfall der Aktie nicht stoppen.
+103203	Ein gleichseitiges Dreieck hat drei Winkel zu je 60 Grad.
+103258	Löwen sind eine Art Katzen.
+103258	Wir hatten ein schreckliches Erlebnis im Zoo, ein Löwe ist ausgebrochen.
+103309	Bananen und Zitronen sehen gelb aus.
+103587	Bei dem Sturz zog er sich eine schwere Verletzung zu.
+103587	Nach dem Sturz verlor sie das Bewusstsein.
+101684	Atmen Sie ruhig und gleichmäßig!
+101684	Du kannst den Fehler ruhig zugeben.
+101684	Du kannst ruhig schon gehen, ich brauche dich hier nicht mehr.
+101954	Der Angeklagte beantwortet die Frage des Richters mit Ja.
+101954	Der Angeklagte bekannte sich schuldig.
+101954	Der Angeklagte kann die Aussage verweigern.
+101954	Der Angeklagte wurde verurteilt.
