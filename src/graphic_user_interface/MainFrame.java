@@ -1,7 +1,7 @@
 package graphic_user_interface;
 
 import graphic_user_interface.common.LanguageChooserDialog;
-import graphic_user_interface.common.SettingsDialog;
+import graphic_user_interface.common.AuxiliaryToolsDialog;
 import common.Logger;
 import disc_operation_handlers.GrammarDataLoader;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
@@ -250,7 +250,7 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Ubuntu", 1, 18)); // NOI18N
         jLabel4.setText("Language studier -");
 
-        jButton17.setText("Settings");
+        jButton17.setText("Auxiliary tools");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
@@ -337,7 +337,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void dictionaryStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryStatisticsButtonActionPerformed
         DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true); 
         dialog.setData(dictionaryDataContainer);
-        dialog.fillDialogWithData();
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryStatisticsButtonActionPerformed
 
@@ -368,7 +369,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_grammarStatisticsButtonActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        SettingsDialog dialog = new SettingsDialog(new javax.swing.JFrame(), true);
+        AuxiliaryToolsDialog dialog = new AuxiliaryToolsDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarDataContainer.grammarBook;
         dialog.cardContainer = dictionaryDataContainer.cardContainer;   //TODO
         dialog.setVisible(true);

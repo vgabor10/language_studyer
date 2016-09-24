@@ -35,6 +35,7 @@ public class DictionaryDataModificator {
         card.index = cardContainer.getEmptyCardIndex();
         cardContainer.addCard(card);
         saveCardContainerDataToFile();
+        saveExampleSentencesDataToFile();
     }
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data

@@ -4,6 +4,7 @@ import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
 import dictionary.DictionaryDataContainer;
+import disc_operation_handlers.DictionaryDataModificator;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -49,9 +50,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jComboBox1.addItem("hungarian -> " +
                 languageFilesDataHandler.getStudiedLanguageName().toLowerCase());
 
-        jButton1.setMnemonic(KeyEvent.VK_C);
+        closeButton.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         inspectCardButton.setMnemonic(KeyEvent.VK_M);
+        listCardsWithoutExampleSentenceButton.setMnemonic(KeyEvent.VK_L);
     }
 
     public void initialise() {
@@ -73,7 +75,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        closeButton = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
         inspectCardButton = new javax.swing.JButton();
         addNewCardButton = new javax.swing.JButton();
@@ -125,10 +127,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton1.setText("Close");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                closeButtonActionPerformed(evt);
             }
         });
 
@@ -211,7 +213,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                             .addComponent(addNewCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(listCardsWithoutExampleSentenceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -244,7 +246,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                    .addComponent(closeButton)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel2)
                         .addComponent(jLabel1)))
@@ -256,9 +258,9 @@ public class DictionaryDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_closeButtonActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
 
@@ -334,20 +336,28 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_inspectCardButtonActionPerformed
 
     private void addNewCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewCardButtonActionPerformed
-        
-        CardAdderDialog dialog 
-                = new CardAdderDialog(new javax.swing.JFrame(), true);
-        dialog.cardContainer = cardContainer;
-        dialog.answerDataContainer = answerDataContainer;
+        Card cardToInspect = new Card();
         DialogAnswer dialogAnswer = new DialogAnswer();
+
+        CardInspectorDialog dialog 
+                = new CardInspectorDialog(new javax.swing.JFrame(), true);
+        dialog.cardToInspect = cardToInspect;
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.dialogAnswer = dialogAnswer;
+        dialog.unableDeleteCardButton();
+        dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
-        
-        if (dialog.dialogAnswer.boolAnswer) {
-                    clearTable();
+
+        if (dialogAnswer.stringAnswer.equals("save_card")) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.addCard(cardToInspect);
+            
+            clearTable();
         }
-        
+
         jTextField1.requestFocus();
     }//GEN-LAST:event_addNewCardButtonActionPerformed
 
@@ -373,10 +383,13 @@ public class DictionaryDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
 
-        if (dialogAnswer.intAnswer == 1) {
+        if (dialogAnswer.stringAnswer.equals("delete_card")) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
+            
             deleteRowFromTable(selectedTableRowIndex);
-        }
-        if (dialogAnswer.intAnswer == 1) {
             clearTable();
         }
 
@@ -491,8 +504,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addNewCardButton;
+    private javax.swing.JButton closeButton;
     private javax.swing.JButton inspectCardButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;

@@ -42,7 +42,7 @@
                           <Component id="addNewCardButton" linkSize="2" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                           <Component id="inspectCardButton" linkSize="2" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                           <Component id="jScrollPane2" min="-2" pref="184" max="-2" attributes="0"/>
-                          <Component id="jButton1" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
+                          <Component id="closeButton" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                           <Component id="listCardsWithoutExampleSentenceButton" linkSize="2" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -81,7 +81,7 @@
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="closeButton" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -129,12 +129,12 @@
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField1KeyPressed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="closeButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Close"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JComboBox" name="jComboBox1">

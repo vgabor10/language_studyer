@@ -8,7 +8,6 @@ import grammar_book.RandomGrammarItemChooser;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.util.Date;
-import java.util.Vector;
 
 public class GrammarTesterDialog extends javax.swing.JDialog {
 

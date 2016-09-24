@@ -273,24 +273,24 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_saveCardButtonKeyPressed
 
+    public void unableDeleteCardButton() {
+        deleteCardButton.setEnabled(false);
+    }
+    
     private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
-        dialogAnswer.intAnswer = 2;
+        dialogAnswer.stringAnswer = "save_card";
         saveCard();
     }//GEN-LAST:event_saveCardButtonActionPerformed
 
     private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
         CardDeleteReinforceDialog dialog 
                 = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
-        DialogAnswer dialogAnswer2 = new DialogAnswer();
-        dialog.dialogAnswer = dialogAnswer2;
+        DialogAnswer reinforceAnswer = new DialogAnswer();
+        dialog.dialogAnswer = reinforceAnswer;
         dialog.setVisible(true);
         
-        if (dialogAnswer2.boolAnswer) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
-            dialogAnswer.intAnswer = 1;
+        if (reinforceAnswer.boolAnswer) {
+            dialogAnswer.stringAnswer = "delete_card";
             
             dispose();
         }

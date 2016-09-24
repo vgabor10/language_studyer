@@ -1,66 +1,16 @@
 package graphic_user_interface.common;
 
-import dictionary.Card;
 import dictionary.CardContainer;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
 
-public class SettingsDialog extends javax.swing.JDialog {
+public class AuxiliaryToolsDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
     public CardContainer cardContainer;
-    public Set<String> exampeSentences = new HashSet<>();
-    public Map<Integer,Set<String>> exampeSentencesByCardIndexes = new HashMap<>();
     
-    public void loadExampleSentences() {
-        try {        
-            exampeSentences.clear();
-            
-            String filePath = "../data_to_integrate/example_sentences2.txt";
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                exampeSentences.add(strLine);
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find example_sentences file");
-        } catch (IOException e) {
-            System.err.println("exception in loadCardContainer function");
-        }
-    }
-    
-    public void saveCardContainerDataToFile() {
-        String filePath = "../data_to_integrate/example_sentences.tmp";
-        File oldFile;
-        oldFile = new File(filePath);
-        oldFile.delete();
-
-        try {
-            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int cardIndex : exampeSentencesByCardIndexes.keySet()) {
-                
-                for (String exampleSentence : exampeSentencesByCardIndexes.get(cardIndex)) {
-                      fw.write(cardIndex + "\t" + exampleSentence + "\n");
-                }
-            }
-            fw.close();
-        } catch (IOException ioe) {
-            System.err.println("IOException: " + ioe.getMessage());
-        }
-    }
-    
-    public SettingsDialog(java.awt.Frame parent, boolean modal) {
+    public AuxiliaryToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -112,7 +62,7 @@ public class SettingsDialog extends javax.swing.JDialog {
             }
         });
 
-        jButton4.setText("Example sentence assigner");
+        jButton4.setText("Assign example sentences");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -173,56 +123,7 @@ public class SettingsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        loadExampleSentences();
-        
-        exampeSentencesByCardIndexes.clear();
-        int numberOfAssignations = 0;
-        
-        for (int i=0; i<cardContainer.numberOfCards(); i++) {
-            Card card = cardContainer.getCardByOrder(i);
-            
-            String cardTerm = cardContainer.getCardByOrder(i).term;
-            cardTerm = cardTerm.toLowerCase();
-            if (cardTerm.startsWith("r ") || cardTerm.startsWith("e ") || cardTerm.startsWith("s ")) {
-                cardTerm = cardTerm.substring(2);
-            }
-            
-            if (cardTerm.startsWith("h. ") || cardTerm.startsWith("i. ")) {
-                cardTerm = cardTerm.substring(3);
-            }
-            
-            for (String exampleSentence : exampeSentences) {
-                String exampleSentenceForComparition = exampleSentence;
-                exampleSentenceForComparition = exampleSentenceForComparition.toLowerCase();
-                
-                if (exampleSentenceForComparition.startsWith(cardTerm + " ") ||
-                    exampleSentenceForComparition.contains(" " + cardTerm + " ") ||
-                        exampleSentenceForComparition.endsWith(" " + cardTerm + ".")) {
-                
-                    if (!exampeSentencesByCardIndexes.containsKey(card.index)) {
-                        exampeSentencesByCardIndexes.put(card.index, new HashSet<String>());
-                        exampeSentencesByCardIndexes.get(card.index).add(exampleSentence);
-                        numberOfAssignations++;
-                    }
-                    else {
-                        if (exampeSentencesByCardIndexes.get(card.index).size() < 10) {
-                            
-                            if (exampeSentencesByCardIndexes.get(card.index).contains(exampleSentence)) {
-                                System.out.println(exampleSentence);
-                            }
-                            
-                            exampeSentencesByCardIndexes.get(card.index).add(exampleSentence);
-                            numberOfAssignations++;
-                        }
-                    }
-                }
-            }
-            
-        }
-        
-        System.out.println("number of assignations: " + numberOfAssignations);
-        System.out.println("number of cards with at least one example: " + exampeSentencesByCardIndexes.keySet().size());
-        saveCardContainerDataToFile();
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
@@ -242,20 +143,21 @@ public class SettingsDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SettingsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SettingsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SettingsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SettingsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                SettingsDialog dialog = new SettingsDialog(new javax.swing.JFrame(), true);
+                AuxiliaryToolsDialog dialog = new AuxiliaryToolsDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

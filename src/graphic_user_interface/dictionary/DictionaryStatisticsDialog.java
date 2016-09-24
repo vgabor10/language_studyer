@@ -341,7 +341,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void fillDialogWithData() {
+    public void initialise() {
         AnswerDataStatisticsMaker answerDataStatisticsMaker = new AnswerDataStatisticsMaker();
 	answerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 	answerDataStatisticsMaker.setStudyItemContainer(cardContainer);
