@@ -6,23 +6,77 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
 public class ExampleSentenceAssigner {
-
-    public CardContainer cardContainer;
+    
+    public DictionaryDataContainer dictionaryDataContainer ;
     
     public Set<String> exampeSentences = new HashSet<>();
     public Map<Integer, Set<String>> exampeSentencesByCardIndexes = new HashMap<>();
 
-    public void loadExampleSentences() {
+    public ArrayList<Integer> getCardIndexesWithNoExampleSentences() {
+        ArrayList<Integer> cardIndexes = new ArrayList<>();
+        
+        for (int i=0; i<dictionaryDataContainer.cardContainer.numberOfCards(); i++) {
+            Card card = dictionaryDataContainer.cardContainer.getCardByOrder(i);
+            if (card.exampleSentences.isEmpty()) {
+                cardIndexes.add(card.index);
+            }
+        }
+        
+        return cardIndexes;
+    }
+    
+    public void fillExampeSentencesFromDDC() {
+        CardContainer cardContainer = dictionaryDataContainer.cardContainer;
+        for (int i=0; i<cardContainer.numberOfCards(); i++) {
+            Card card = cardContainer.getCardByOrder(i);
+            
+            for (String exampleSentence : card.exampleSentences) {
+                exampeSentences.add(exampleSentence);
+            }
+        }
+    }
+    
+    public String getSuggestion(int cardIndex) {
+ 
+        String cardTermComparition = 
+                dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).term;
+        cardTermComparition = cardTermComparition.toLowerCase();
+        if (cardTermComparition.startsWith("r ") || cardTermComparition.startsWith("e ") || cardTermComparition.startsWith("s ")) {
+            cardTermComparition = cardTermComparition.substring(2);
+        }
+
+        if (cardTermComparition.startsWith("h. ") || cardTermComparition.startsWith("i. ")) {
+            cardTermComparition = cardTermComparition.substring(3);
+        }
+        
+        if (cardTermComparition.endsWith("en")) {
+            cardTermComparition 
+                    = cardTermComparition.substring(0,cardTermComparition.length()-2);
+        }
+
+        for (String exampleSentence : exampeSentences) {
+            String exampleSentenceForComparition = exampleSentence.toLowerCase();
+
+            if (exampleSentenceForComparition.contains(cardTermComparition)) {
+                return exampleSentence;
+            }
+        }
+        
+        return "";
+    }
+    
+    /*public void loadExampleSentencesFromFile(String filePath) {
         try {
             exampeSentences.clear();
 
-            String filePath = "../data_to_integrate/example_sentences2.txt";
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -33,9 +87,9 @@ public class ExampleSentenceAssigner {
         } catch (IOException e) {
             System.err.println("exception in loadCardContainer function");
         }
-    }
+    }*/
 
-    public void saveCardContainerDataToFile() {
+    /*public void saveCardContainerDataToFile() {
         String filePath = "../data_to_integrate/example_sentences.tmp";
         File oldFile;
         oldFile = new File(filePath);
@@ -53,10 +107,10 @@ public class ExampleSentenceAssigner {
         } catch (IOException ioe) {
             System.err.println("IOException: " + ioe.getMessage());
         }
-    }
+    }*/
 
-    public void assignCardsAndExampleSentences1() {
-        loadExampleSentences();
+    /*public void assignCardsAndExampleSentences1() {
+        loadExampleSentencesFromFile("../data_to_integrate/example_sentences.tmp");
 
         exampeSentencesByCardIndexes.clear();
         int numberOfAssignations = 0;
@@ -103,5 +157,5 @@ public class ExampleSentenceAssigner {
         System.out.println("number of assignations: " + numberOfAssignations);
         System.out.println("number of cards with at least one example: " + exampeSentencesByCardIndexes.keySet().size());
         saveCardContainerDataToFile();
-    }
+    }*/
 }

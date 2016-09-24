@@ -1,14 +1,18 @@
 package graphic_user_interface.common;
 
+import dictionary.Card;
 import dictionary.CardContainer;
+import dictionary.DictionaryDataContainer;
+import dictionary.ExampleSentenceAssigner;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 
 public class AuxiliaryToolsDialog extends javax.swing.JDialog {
 
+    public DictionaryDataContainer dictionaryDataContainer;
     public GrammarBook grammarBook;
-    public CardContainer cardContainer;
     
     public AuxiliaryToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -123,7 +127,11 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-
+        AssignExampleSentenceDialog dialog = new AssignExampleSentenceDialog(new javax.swing.JFrame(), true);
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);     
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

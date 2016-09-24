@@ -371,7 +371,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         AuxiliaryToolsDialog dialog = new AuxiliaryToolsDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarDataContainer.grammarBook;
-        dialog.cardContainer = dictionaryDataContainer.cardContainer;   //TODO
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 
