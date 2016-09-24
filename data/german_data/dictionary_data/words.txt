@@ -3375,7 +3375,7 @@
 103425	bedauern	sajnál
 103426	e Qualifikation	minősítés, kvalifikáció
 103427	zulassen	odaenged, megenged
-103428	s Spanisch	spanyol
+103428	s Spanisch	spanyol nyelv
 103429	blühen	virágzik
 103430	erbringen	felhoz, előhoz
 103431	e Eintragung	beiratkozás, bejegyzés
