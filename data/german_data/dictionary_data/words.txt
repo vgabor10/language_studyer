@@ -717,7 +717,7 @@
 100723	doch	de
 100724	strömen	árad, ömlik
 100725	e Debatte	vita
-100726	darüber	erről
+100726	darüber	erről, arról
 100727	ob	hogy, vajon
 100728	bedrängen	szorongat
 100729	dazu	ahhoz
@@ -1337,7 +1337,7 @@
 101347	s Erdgeschoss	földszint
 101348	s Vorzimmer	előszoba
 101349	e Flur	előszoba, folyosó
-101350	s Wohnzimmer	nappali
+101350	s Wohnzimmer	nappali szoba
 101351	s Kinderzimmer	gyerekszoba
 101352	s Schlafzimmer	hálószoba
 101353	s Arbeitszimmer	dolgozószoba
@@ -2304,7 +2304,7 @@
 102340	genügen	eleget tesz vminek
 102341	geographisch	földrajzi
 102343	geradezu	éppen
-102344	geraten	fejlődik
+102344	geraten	kerül, esik, fejlődik
 102345	gern	szívesen
 102346	gesellschaftlich	társadalmi
 102347	gesetzlich	törvényes
@@ -3078,7 +3078,7 @@
 103124	behandeln	kezel, bánik
 103125	r Block	tömb
 103126	zugrundelegen	alapul vesz
-103127	ausgezeichnet	kiváló
+103127	ausgezeichnet	kiváló, kitűnő
 103128	s Bedürfnis	szükséglet
 103129	ausdrücklich	kifejezetten
 103130	irgendwo	valahol
