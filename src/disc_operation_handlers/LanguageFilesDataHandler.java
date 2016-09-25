@@ -23,24 +23,22 @@ public class LanguageFilesDataHandler {
         LanguageFilesData languageData1 = new LanguageFilesData();
         languageData1.languageIndex = 0;
         languageData1.languageName = "English";
-        languageData1.answerDataPath = "../data/english_data/answer_data/english_card_tester_data.txt";
-        languageData1.exampleSentencesDataPath = "../data/english_data/language_data/english_example_sentences.txt";
-        languageData1.cardDataPath = "../data/english_data/language_data/english_words.txt";
-        languageData1.grammarDataPath = "../data/english_data/language_data/english_grammar_book.txt";
-        languageData1.grammarAnswerDataPath = "../data/english_data/answer_data/english_grammar_answer_data.txt";
+        languageData1.dataFilesPath = "../data/english_data/";
 
         /////////////////// GERMAN ///////////////////
         
         LanguageFilesData languageData2 = new LanguageFilesData();
         languageData2.languageIndex = 1;
         languageData2.languageName = "German";
+        languageData2.dataFilesPath = "../data/german_data/";
         
-        languageData2.cardDataPath = "../data/german_data/dictionary_data/words.txt";
+        
+        /*languageData2.cardDataPath = "../data/german_data/dictionary_data/words.txt";
         languageData2.answerDataPath = "../data/german_data/dictionary_data/card_tester_data.txt";
         languageData2.exampleSentencesDataPath = "../data/german_data/dictionary_data/example_sentences.txt";
         
         languageData2.grammarDataPath = "../data/german_data/grammar_data/grammar_book.txt";
-        languageData2.grammarAnswerDataPath = "../data/german_data/grammar_data/grammar_answer_data.txt";
+        languageData2.grammarAnswerDataPath = "../data/german_data/grammar_data/grammar_answer_data.txt";*/
 
         languageDatas.add(languageData1);
         languageDatas.add(languageData2);
@@ -52,24 +50,28 @@ public class LanguageFilesDataHandler {
         return languageDatas.get(studyedLanguageIndex).languageName;
     }
 
-    public String getStudiedLanguageAnswerDataPath() {
-        return languageDatas.get(studyedLanguageIndex).answerDataPath;
+    public String getStudiedLanguageDataPath() {
+        return languageDatas.get(studyedLanguageIndex).dataFilesPath;
     }
-
+    
     public String getStudiedLanguageCardDataPath() {
-        return languageDatas.get(studyedLanguageIndex).cardDataPath;
+        return getStudiedLanguageDataPath() + "dictionary_data/words.txt";
+    }
+    
+    public String getStudiedLanguageAnswerDataPath() {
+        return getStudiedLanguageDataPath() + "dictionary_data/card_tester_data.txt";
     }
 
+    public String getStudiedLanguageExampleSentencesDataPath() {
+        return getStudiedLanguageDataPath() + "dictionary_data/example_sentences.txt";
+    }
+    
     public String getStudiedLanguageGrammarBookPath() {
-        return languageDatas.get(studyedLanguageIndex).grammarDataPath;
+        return getStudiedLanguageDataPath() + "grammar_data/grammar_book.txt";
     }
 
     public String getStudiedLanguageGrammarAnswerDataPath() {
-        return languageDatas.get(studyedLanguageIndex).grammarAnswerDataPath;
-    }
-    
-    public String getStudiedLanguageExampleSentencesDataPath() {
-        return languageDatas.get(studyedLanguageIndex).exampleSentencesDataPath;
+        return getStudiedLanguageDataPath() + "grammar_data/grammar_answer_data.txt";
     }
 
     public int getStudiedLanguageIndex() {

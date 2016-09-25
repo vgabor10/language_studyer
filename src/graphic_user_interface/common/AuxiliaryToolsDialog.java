@@ -1,13 +1,9 @@
 package graphic_user_interface.common;
 
-import dictionary.Card;
-import dictionary.CardContainer;
 import dictionary.DictionaryDataContainer;
-import dictionary.ExampleSentenceAssigner;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
 
 public class AuxiliaryToolsDialog extends javax.swing.JDialog {
 
@@ -17,8 +13,6 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
     public AuxiliaryToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
-        
-        setLocationRelativeTo(null);
         
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
@@ -42,6 +36,11 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jButton16.setText("Check data format");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Close");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -133,6 +132,10 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);     
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
 
     /**
      * @param args the command line arguments

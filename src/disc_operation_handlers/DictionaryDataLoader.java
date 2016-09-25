@@ -14,7 +14,7 @@ public class DictionaryDataLoader {
     
     public DictionaryDataContainer dictionaryDataContainer;
     
-    private LanguageFilesDataHandler languageFilesDataHandler = new LanguageFilesDataHandler();
+    public LanguageFilesDataHandler languageFilesDataHandler;
     
     public void loadCardContainer() {
         try {        

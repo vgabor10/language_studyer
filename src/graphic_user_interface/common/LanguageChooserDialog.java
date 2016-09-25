@@ -1,6 +1,7 @@
 package graphic_user_interface.common;
 
 import dictionary.DictionaryDataContainer;
+import disc_operation_handlers.DictionaryDataLoader;
 import disc_operation_handlers.GrammarDataLoader;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
@@ -116,9 +117,8 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        GrammarDataLoader grammarBookLoader = new GrammarDataLoader();
-        
-        grammarBookLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
+        dictionaryDataContainer.clear();
+        grammarDataContainer.clear();
         
         int languageIndexToLoad = 0;
         
@@ -129,7 +129,17 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
             languageIndexToLoad = 1;
         }
         
-        grammarBookLoader.loadLanguageDataWithIndex(languageIndexToLoad);
+        languageFilesDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
+        
+        DictionaryDataLoader dictionaryDataLoader = new DictionaryDataLoader();
+        dictionaryDataLoader.dictionaryDataContainer = dictionaryDataContainer;
+        dictionaryDataLoader.languageFilesDataHandler = languageFilesDataHandler;
+        dictionaryDataLoader.loadAllData();
+        
+        GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
+        grammarDataLoader.grammarDataContainer = grammarDataContainer;
+        grammarDataLoader.languageFilesDataHandler = languageFilesDataHandler;
+        grammarDataLoader.loadAllData();
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

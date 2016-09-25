@@ -48,15 +48,15 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
         setTitle("Language studyer");
         
-        GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
-        grammarDataLoader.grammarDataContainer = grammarDataContainer;
-        grammarDataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
-        grammarDataLoader.loadAllData();
-        
         DictionaryDataLoader dictionaryDataLoader = new DictionaryDataLoader();
         dictionaryDataLoader.dictionaryDataContainer = dictionaryDataContainer;
+        dictionaryDataLoader.languageFilesDataHandler = languageFilesDataHandler;
         dictionaryDataLoader.loadAllData();
         
+        GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
+        grammarDataLoader.grammarDataContainer = grammarDataContainer;
+        grammarDataLoader.languageFilesDataHandler = languageFilesDataHandler;
+        grammarDataLoader.loadAllData();
     }
 
     /**
@@ -346,6 +346,7 @@ public class MainFrame extends javax.swing.JFrame {
         GrammarBookReaderDialog dialog = new GrammarBookReaderDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarDataContainer.grammarBook;
         dialog.fillTreeWithGrammarBookData();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_readGrammarBookButtonActionPerformed
 
@@ -365,6 +366,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.setGrammarAnswerDataContainer(grammarDataContainer.grammarAnswerDataContainer);
         dialog.setGrammarBook(grammarDataContainer.grammarBook);
         dialog.fillDialogWithData();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);        
     }//GEN-LAST:event_grammarStatisticsButtonActionPerformed
 
@@ -372,6 +374,7 @@ public class MainFrame extends javax.swing.JFrame {
         AuxiliaryToolsDialog dialog = new AuxiliaryToolsDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarDataContainer.grammarBook;
         dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton17ActionPerformed
 
@@ -382,6 +385,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.grammarAnswerDataContainer = grammarDataContainer.grammarAnswerDataContainer;
         dialog.languageFilesDataHendler = languageFilesDataHandler;
         dialog.initialise();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_modificateGrammarBookButtonActionPerformed
 
@@ -401,6 +405,7 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.grammarDataContainer = grammarDataContainer;
         dialog.setLocationRelativeTo(this);
         dialog.initialise();
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());

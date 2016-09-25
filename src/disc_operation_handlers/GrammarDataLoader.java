@@ -15,15 +15,11 @@ public class GrammarDataLoader {
 
     public GrammarDataContainer grammarDataContainer;
 
-    private LanguageFilesDataHandler languageFilesDataHendler;
+    public LanguageFilesDataHandler languageFilesDataHandler;
 
     public void loadLanguageDataWithIndex(int languageIndex) {
-        languageFilesDataHendler.setStudyedLanguageIndex(languageIndex);
+        languageFilesDataHandler.setStudyedLanguageIndex(languageIndex);
         this.loadAllData();
-    }
-    
-    public void setLanguageFilesDataHandler(LanguageFilesDataHandler a) {
-        languageFilesDataHendler = a;
     }
 
 
@@ -57,7 +53,7 @@ public class GrammarDataLoader {
         try {
             GrammarBook grammarBook = grammarDataContainer.grammarBook;
             
-            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
+            String filePath = languageFilesDataHandler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine = br.readLine();
             
@@ -135,7 +131,7 @@ public class GrammarDataLoader {
             GrammarAnswerDataContainer grammarAnswerDataContainer 
                     = grammarDataContainer.grammarAnswerDataContainer;
             
-            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+            String filePath = languageFilesDataHandler.getStudiedLanguageGrammarAnswerDataPath();
             String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {
