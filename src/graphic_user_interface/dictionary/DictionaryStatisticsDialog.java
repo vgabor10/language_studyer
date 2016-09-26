@@ -4,13 +4,18 @@ import graphic_user_interface.common.PractisingTimeByDaysDialog;
 import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
 import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
 import dictionary.CardContainer;
+import dictionary.DictionaryAnswerDataStatisticsMaker;
 import dictionary.DictionaryDataContainer;
+import graphic_user_interface.common.AuxiliaryToolsDialog;
 import graphic_user_interface.common.HistogramOfStudyItemsByNumberOfAnswersDialog;
 import graphic_user_interface.common.NumberOfNewStudyItemsQuestionedByDaysDialog;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
@@ -71,6 +76,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
+        jButton7 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -302,15 +308,28 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
         jTabbedPane1.addTab("additional statistics", jPanel4);
 
+        jButton7.setText("Number of answers by days");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 585, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(232, 232, 232))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 375, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton7)
+                .addContainerGap(333, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("diagrams", jPanel2);
@@ -404,6 +423,23 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+       Runtime commandPrompt = Runtime.getRuntime();
+        try {
+            DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker
+                    = new DictionaryAnswerDataStatisticsMaker();
+            dictionaryAnswerDataStatisticsMaker.setCardContainer(cardContainer);
+            dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+
+            dictionaryAnswerDataStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByDays(
+                "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
+            
+            commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
+        } catch (IOException ex) {
+            Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -460,6 +496,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

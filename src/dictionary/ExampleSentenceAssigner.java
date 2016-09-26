@@ -7,6 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -17,19 +18,22 @@ public class ExampleSentenceAssigner {
     
     public DictionaryDataContainer dictionaryDataContainer ;
     
-    public Set<String> exampeSentences = new HashSet<>();
+    public List<String> exampeSentences = new ArrayList<>();
     public Map<Integer, Set<String>> exampeSentencesByCardIndexes = new HashMap<>();
 
-    public ArrayList<Integer> getCardIndexesWithNoExampleSentences() {
+    public ArrayList<Integer> getCardIndexesWithLessExampleSentencesThen(
+            int maxNumberOfExampleSentences) {
+        
         ArrayList<Integer> cardIndexes = new ArrayList<>();
         
         for (int i=0; i<dictionaryDataContainer.cardContainer.numberOfCards(); i++) {
             Card card = dictionaryDataContainer.cardContainer.getCardByOrder(i);
-            if (card.exampleSentences.isEmpty()) {
+            if (card.exampleSentences.size() < maxNumberOfExampleSentences) {
                 cardIndexes.add(card.index);
             }
         }
         
+        System.out.println("number of cards with too few example sentences: " + cardIndexes.size());
         return cardIndexes;
     }
     
@@ -45,9 +49,9 @@ public class ExampleSentenceAssigner {
     }
     
     public String getSuggestion(int cardIndex) {
- 
-        String cardTermComparition = 
-                dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).term;
+        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+        
+        String cardTermComparition = card.term;
         cardTermComparition = cardTermComparition.toLowerCase();
         if (cardTermComparition.startsWith("r ") || cardTermComparition.startsWith("e ") || cardTermComparition.startsWith("s ")) {
             cardTermComparition = cardTermComparition.substring(2);
@@ -62,10 +66,12 @@ public class ExampleSentenceAssigner {
                     = cardTermComparition.substring(0,cardTermComparition.length()-2);
         }
 
+        Collections.shuffle(exampeSentences);
         for (String exampleSentence : exampeSentences) {
             String exampleSentenceForComparition = exampleSentence.toLowerCase();
 
-            if (exampleSentenceForComparition.contains(cardTermComparition)) {
+            if (exampleSentenceForComparition.contains(cardTermComparition)
+                    && !card.exampleSentences.contains(exampleSentence)) {
                 return exampleSentence;
             }
         }

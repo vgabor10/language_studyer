@@ -403,7 +403,7 @@ public class MainFrame extends javax.swing.JFrame {
                 = new LanguageChooserDialog(new javax.swing.JFrame(), true);
         dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.grammarDataContainer = grammarDataContainer;
-        dialog.setLocationRelativeTo(this);
+        dialog.languageFilesDataHandler = languageFilesDataHandler;
         dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);

@@ -19,6 +19,7 @@ public class DictionaryDataLoader {
     public void loadCardContainer() {
         try {        
             CardContainer cardContainer = dictionaryDataContainer.cardContainer;
+            cardContainer.clear();
             
             String filePath = languageFilesDataHandler.getStudiedLanguageCardDataPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -43,6 +44,7 @@ public class DictionaryDataLoader {
     public void loadAnswerData() {
         try {
             AnswerDataContainer answerDataContainer = dictionaryDataContainer.answerDataContainer;
+            answerDataContainer.clear();
             
             String filePath = languageFilesDataHandler.getStudiedLanguageAnswerDataPath();
             String strLine;

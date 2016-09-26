@@ -7,7 +7,6 @@ public class DictionaryDataContainer {
     public CardContainer cardContainer = new CardContainer();
     public AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     
-    
     public void clear() {
         cardContainer.clear();
         answerDataContainer.clear();
