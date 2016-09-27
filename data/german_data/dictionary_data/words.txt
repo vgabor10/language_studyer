@@ -966,7 +966,7 @@
 100975	r Unterricht	oktatás
 100976	entdecken	felfedez
 100977	r Wächter	őr
-100978	entfernen	eltávolít
+100978	entfernen	távozik, eltávolít
 100979	r Stein	kő
 100980	berühmt	híres
 100981	zaubern	varázsol
@@ -991,7 +991,7 @@
 101000	r Gegner	ellenség, ellenfél
 101001	alarmieren	riaszt
 101002	überraschen	meglep
-101003	ausfallen	késik
+101003	ausfallen	kiesik, elmarad
 101004	s Zeitalter	korszak
 101005	r Zustand	állapot
 101006	r Vormittag	délelőtt
@@ -3072,7 +3072,7 @@
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van, küszöbön áll
 103119	s Lager	tábor, raktár
-103120	verabschieden	elbocsát
+103120	verabschieden	elbocsát, elbúcsúzik
 103121	e Rechtsprechung	igazságszolgáltatás
 103122	s Resultat	eredmény
 103124	behandeln	kezel, bánik

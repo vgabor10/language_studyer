@@ -276,7 +276,7 @@ Sie             | Ihnen
 5 | Wir kaufen Ihnen das Radio. | Megvesszük Önnek a rádiót.
 6 | Pista schenkt ihr einen Rock. | Pista ajándékoz neki egy szoknyát.
 7 | Das Mädchen gefällt mir. | Tetszik nekem a lány.
-8 | Gefällst das Spielzeug dir? | Tetszik neked a játék?
+8 | Gefällt das Spielzeug dir? | Tetszik neked a játék?
 9 | Gefallen das Auto Ihnen? | Tetszik Önnek az autó?
 10 | Wir gratulieren ihnen. | Gratulálunk nekik.
 11 | Ich gebe dir den Wagen. | Odaadom neked a kocsit.
