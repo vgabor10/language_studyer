@@ -233,8 +233,8 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jTree1ValueChanged
 
     private void addGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGrammarItemButtonActionPerformed
-        GrammarItemModificatorDialog dialog 
-                = new GrammarItemModificatorDialog(new javax.swing.JFrame(), true);;
+        GrammarItemInspectorDialog dialog 
+                = new GrammarItemInspectorDialog(new javax.swing.JFrame(), true);;
         dialog.setVisible(true);
     }//GEN-LAST:event_addGrammarItemButtonActionPerformed
 
@@ -261,8 +261,8 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void modificateGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateGrammarItemButtonActionPerformed
-        GrammarItemModificatorDialog dialog 
-                = new GrammarItemModificatorDialog(new javax.swing.JFrame(), true);
+        GrammarItemInspectorDialog dialog 
+                = new GrammarItemInspectorDialog(new javax.swing.JFrame(), true);
         dialog.grammarItem = grammarBook.getGrammarItemByIndex(selectedGrammarItemIndex);
         dialog.fillWidgetsWithGrammarItemData();
         dialog.setVisible(true);

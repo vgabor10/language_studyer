@@ -323,8 +323,7 @@ public class MainFrame extends javax.swing.JFrame {
     
     private void grammarPractisingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grammarPractisingButtonActionPerformed
         GrammarTesterDialog dialog = new GrammarTesterDialog(new javax.swing.JFrame(), true); 
-        dialog.grammarBook = grammarDataContainer.grammarBook;
-        dialog.grammarAnswerDataContainer = grammarDataContainer.grammarAnswerDataContainer;
+        dialog.setData(grammarDataContainer);
         dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -478,4 +477,5 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton readGrammarBookButton;
     private javax.swing.JButton setLanguageToStudyButton;
     // End of variables declaration//GEN-END:variables
+
 }

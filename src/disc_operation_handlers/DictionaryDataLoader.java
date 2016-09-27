@@ -82,6 +82,31 @@ public class DictionaryDataLoader {
         }
     }
     
+    //TODO
+    /*public void loadCardCategories() {
+        try {
+            //TODO: make it more general
+            if (languageFilesDataHendler.getStudiedLanguageIndex() == 1) {
+                String filePath = "../data/german_data/language_data/german_word_categories.txt";
+                BufferedReader br = new BufferedReader(new FileReader(filePath));
+                String strLine;
+                while ((strLine = br.readLine()) != null) {
+                    String[] splittedRow = strLine.split("\t");
+                    String categoryName = strLine.split("\t")[0];
+                    
+                    for (int i=1; i<splittedRow.length; i++) {
+                        int cardIndex = Integer.parseInt(splittedRow[i]);
+                        cardContainer.getCardByIndex(cardIndex).categories.add(categoryName);
+                    }
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("unable to find card data file");
+        } catch (IOException e) {
+            System.err.println("exception in loadCardContainer function");
+        }
+    }*/
+    
     public void loadAllData() {
         loadCardContainer();
         loadAnswerData();
