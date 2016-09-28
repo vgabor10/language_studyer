@@ -3578,7 +3578,6 @@
 103629	bitter	keserű
 103630	e Pflegerin	ápolónő
 103631	s Bedauern	sajnálat, részvét
-103632	s Kloster	kolostor
 103634	r Fall	eset, ügy
 103635	verhalten	viselkedik, viszonyul
 103636	s Wesen	lét, teremtmény
