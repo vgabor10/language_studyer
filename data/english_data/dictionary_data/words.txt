@@ -803,7 +803,7 @@
 100804	obsolete	elavult
 100805	axe	csökkent
 100806	vie	verseng
-100807	holidaymaker	nyaraló
+100807	holidaymaker	nyaraló (személy)
 100808	dissuade	eltántorít
 100809	accession	csatlakozás
 100810	stymie	megakaszt, megakadályoz
@@ -1030,3 +1030,4 @@
 101029	mandatory	kötelező
 101030	disclosure	felfed, leleplez
 101031	transparent	átlátszó
+101032	irreparable	helyrehozhatatlan
