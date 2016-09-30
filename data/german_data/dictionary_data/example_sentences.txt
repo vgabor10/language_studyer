@@ -6910,14 +6910,12 @@
 103629	In diesem Bereich ist Frau Bitter Expertin.
 103631	Wir bedauern den Abbau von Arbeitsplätzen sehr.
 103631	Wir bedauern den Vorfall sehr.
-103632	Mönche und Nonnen leben im Kloster.
 103634	Beim Fall Ötzi handelt es sich wahrscheinlich um Mord.
 103634	Der schlimmste Fall ist nun eingetreten. Wir haben keinen Strom und kein Wasser mehr.
 103634	Derzeit liegen uns keine Daten zu diesem Fall vor.
 103634	Die Polizei ermittelt bereits in diesem Fall.
 103634	Ich habe so einen Fall noch nicht erlebt.
 103634	Im idealen Fall kommt das Päckchen schon am Montag an, im schlimmsten Fall erst Freitag.
-103635	Ihr Verhalten ist lobenswert.
 103636	Forscher gehen dem Wesen einer Sache auf den Grund.
 103637	Die Reformen sollen die Konjunktur beleben.
 103638	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.

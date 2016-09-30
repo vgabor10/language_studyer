@@ -387,7 +387,7 @@ genitiv   | meines -s | meiner | meines -s    | meiner
 21 | unseren Eltern | a szüleinknek
 22 | euere Kinder | a gyerekeiteket
 23 | Ihrem Mann | az Önök férjének
-24 | meinen Freun | a barátomat
+24 | meinen Freund | a barátomat
 \end{exmp}
 
 \title{Névmások/Birtokos névmás/Birtokos névmás birtokos esete}
@@ -614,7 +614,7 @@ GrammarItemIndex = 432275
 GrammarItemIndex = 234578
 
 \begin{desc}
-Peters Freundin - Péter barátnője
+Peters Freundin - Peter barátnője
 \end{desc}
 
 \begin{exmp}
@@ -812,8 +812,8 @@ wollen - azt állítja, hogy; állítása szerint
 
 %Maklári: 128. oldal
 \begin{exmp}
-1 | In Peter soll das ganze Dorf verliebt sein. | Péterbe állítólag az egész falu szerelmes.
-2 | In Peter will das ganze Dorf verliebt sein. | Péter azt állítja, hogy az egész falu belé szerelmes.
+1 | In Peter soll das ganze Dorf verliebt sein. | Peterbe állítólag az egész falu szerelmes.
+2 | In Peter will das ganze Dorf verliebt sein. | Peter azt állítja, hogy az egész falu belé szerelmes.
 \end{exmp}
 
 \title{Prepozíciók/Hol? kérdésre felelő prepozíciók}
@@ -1575,7 +1575,7 @@ sie, Sie    | nehmen | essen
 3 | Wir nehmen Käse. | Veszünk sajtot.
 4 | Ihr nehmt Mittagessen. | Vesztek Ebédet.
 5 | Ich esse Abendessen. | Eszek vacsorát.
-6 | Peter nimmt Brot. | Péter vesz kenyeret.
+6 | Peter nimmt Brot. | Peter vesz kenyeret.
 7 | Ági isst Torte. | Ági tortát eszik.
 8 | Wir essen Schinken. | Sonkát eszünk.
 9 | Ich nehme Gemüse. | Veszek zöldséget.
@@ -3319,7 +3319,7 @@ GrammarItemIndex = 52351
 \begin{desc}
 alany + werden ragozva + többi mondatrész + ige Partizip Perfekt alakja
 
-Pl.: Ein Haus wird von Peter gebaut. - "Egy ház péter által van építve."
+Pl.: Ein Haus wird von Peter gebaut. - Egy ház Peter által van építve.
 
 Az alanyt kifejezhetjük egy passzív mondatban a következő módon:
 * von + D: ha élő a cselekvés okozója,
@@ -3372,7 +3372,7 @@ wir wurden
 ihr wurdet
 sie/Sie wurden
 
-Pl.: Ein Haus wurde von Peter gebaut. - "Egy ház péter által volt építve."
+Pl.: Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 \end{desc}
 
 %Maklári: 330.oldal
@@ -3400,7 +3400,7 @@ GrammarItemIndex = 523523
 \begin{desc}
 alany + sein + többi mondatrész + ige + worden
 
-Das Haus ist von Peter gabaut worden. - "Egy ház Péter által lett építve."
+Das Haus ist von Peter gabaut worden. - Egy ház Peter által lett építve.
 \end{desc}
 
 \begin{exmp}
@@ -3470,7 +3470,7 @@ Pl.: Das Auto hat von dem Mechaniker repariert werden müssen.
 GrammarItemIndex = 523456
 
 \begin{desc}
-Pl.: Ich weiß, dass das Haus von Peter renoviert werden muss. - Tudom, hogy Péternek renoválnia kell a házat.
+Pl.: Ich weiß, dass das Haus von Peter renoviert werden muss. - Tudom, hogy Peternek renoválnia kell a házat.
 \end{desc}
 
 \begin{exmp}
@@ -3519,7 +3519,7 @@ Pl.: Die Vase wird in der Ence gestellt werden. - A váza a sarokba lesz állít
 8 | Der Platz wird von den Gästen besetzt werden. | A helyet a vendégek fogják lefoglalni. (r Platz, besetzen)
 9 | Interessante Vorstellung wird in dem Theater gespielt werden. | Érdekes előadást fognak játszani a színházban. (e Vorstellung)
 10 | Das Brief wird nicht unterschrieben werden. | A levél nem lesz aláírva. (unterschreiben)
-11 | Wird sie von Péter morgen eingeladen werden? | Meghívja őt (n) Péter holnap? (einladen)
+11 | Wird sie von Peter morgen eingeladen werden? | Meghívja őt (n) Peter holnap? (einladen)
 12 | Wird es von dir bestellt werden? | Meg fogod ezt rendelni? (bestellen)
 \end{exmp}
 
@@ -4436,7 +4436,7 @@ Pl.: Er geht von Hause weg, ohne die Tür zu schließen. - Elmegy otthonról, an
 
 2) Ha a főmondat és a mellékmodat alanya nem egyezik meg, akkor az ohne dass + KATI (= anélkül, hogy) szerkezetet használjuk.
 
-Pl.: Er fährt das Auto von Péter, ohne dass es ihm Péter erlaubt. - Péter kocsijával jár, anélkül, hogy Péter megengedné.
+Pl.: Er fährt das Auto von Peter, ohne dass es ihm Peter erlaubt. - Peter kocsijával jár, anélkül, hogy Peter megengedné.
 \end{desc}
 
 %Maklári: 316. oldal
@@ -4525,7 +4525,7 @@ GrammarItemIndex = 863524
 \begin{desc}
 gehören zu + D = tartozik vkihez/vmihez
 
-Pl.: Peter gehört auch zur Gesellschaft. - Péter is a társasághoz tartozik.
+Pl.: Peter gehört auch zur Gesellschaft. - Peter is a társasághoz tartozik.
 \end{desc}
 
 %Maklári: 33.oldal
@@ -4632,15 +4632,15 @@ Pl.: Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót.
 2) A lassen ige vonzata eltér a magyartól, ugyanis tárgyesetbe tesszük
 azt, akivel csináltatunk valamit.
 
-Pl.: Péter lässt seine Freundin das Auto waschen. - Péter a barátnőjével mosatja az autót.
+Pl.: Peter lässt seine Freundin das Auto waschen. - Peter a barátnőjével mosatja az autót.
 
 lassen ragozása:
-ich lasse
-du lässt
-er/sie/es lässt
-wir lassen
-ihr lasst
-sie/Sie lassen
+ich ------- lasse
+du -------- lässt
+er/sie/es - lässt
+wir ------- lassen
+ihr ------- lasst
+sie/Sie --- lassen
 \end{desc}
 
 %Maklári: 219. oldal
@@ -4648,7 +4648,7 @@ sie/Sie lassen
 1 | Ich lasse meinen Wagen reparieren. | Megjavíttatom a kocsimat.
 2 | Ihr lasst ihm zwei Torten backen. | Süttetnek neki (f) két tortát. (backen)
 3 | Ich lasse mich fotografieren. | Lefotóztatom magamat. (fotografieren)
-4 | Sie lassen euch ein Hause bilden. | Építtettek (ők) nektek egy házat.
+4 | Sie lassen euch ein Haus bilden. | Építtettek (ők) nektek egy házat.
 5 | Wir lassen die Koffer bringen. | Elhozatjuk a bőröndöket. (r Koffer)
 6 | Wir lassen uns Kleid machen. | Csináltatunk magunknak ruhát.
 7 | Du lässt den Teppich putzen. | Kitisztíttatod a szőnyeget. (r Teppich, putzen)
@@ -4656,11 +4656,11 @@ sie/Sie lassen
 9 | Ich lasse meine Wohnung malen. | Kifestem a lakásomat. (malen)
 10 | Béla lässt ein Haus renovieren. | Béla renováltat egy házat. (renovieren)
 11 | Ich lasse Józsi das Fenster waschen. | Józsival lemosatom az ablakot.
-12 | Ich lasse Péter meine Lektion schreiben. | Péterrel megíratom a leckémet. (e Lektion)
+12 | Ich lasse Peter meine Lektion schreiben. | Peterrel megíratom a leckémet. (e Lektion)
 13 | Er lässt den Dolmetscher zwei Briefe übersetzen. | A tolmáccsal két levelet fordíttat (f). (r Dolmetscher, übersetzen)
 14 | Warum lässt du mich deine Briefe schreiben? | Miért velem íratod a leveleidet?
 15 | Sie lässt seine Freundin einen Arzt rufen. | A barátnőjével hívat (f) egy orvost.
-16 | Sie lässt den Nachbar das Haus renovieren. | A szomszéddal renováltatja (n) a házát. (renovieren)
+16 | Sie lässt den Nachbar ihr Haus renovieren. | A szomszéddal renováltatja (n) a házát. (renovieren)
 17 | Der Lehrer lässt den Schüler die Tür öffnen. | A tanár a diákkal kinyittatja az ajtót.
 18 | Ich lasse meine Schwester mich fotografieren. | A húgommal fotóztatom le magamat. (e Schwester)
 19 | Du lässt den Monteur das Telefon montieren. | Megszerelteted a szerelővel a telefont. (montieren, r Monteur)
@@ -4753,7 +4753,7 @@ Pl.: * Alles ist in ordnung. - Minden rendben van.
 \begin{exmp}
 1 | Kauft Kati alles ein? | Mindent bevásárol Kati?
 2 | Alles kostet viel. | Minden sokba kerül.
-3 | Péter erledigt alles. | Péter mindent elintéz. (erledigen)
+3 | Peter erledigt alles. | Peter mindent elintéz. (erledigen)
 4 | Alles oder nichts! | Mindent vagy semmit!
 5 | Ist alles fertig? | Minden készen van?
 6 | Sie spricht von alles morgen. | Mindenről beszél (n) holnap.
