@@ -3388,7 +3388,7 @@ Pl.: Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 9 | Die Tür wurde geklopft. | Az ajtót kopogtatták. (klopfen)
 10 | Mein Buch wurde von meiner Freundin gelesen. | A barátnőm olvasta a könyvemet.
 11 | Die Uhr wurde nicht von der Mutter gesehen. | Az anya nem nézte meg az órát.
-12 | Der Tisch wurde von Józsi nicht gedeckt. | Józsi nem terítette meg az asztalt.
+12 | Der Tisch wurde nicht von Anna gedeckt. | Anna nem terítette meg az asztalt.
 13 | Die Burg wurde durch den Wind zerstört. | A várat a szél lerombolta. (r Wind)
 14 | Mein Zimmer wurde gemalt. | A szobámat kifestették.
 \end{exmp}

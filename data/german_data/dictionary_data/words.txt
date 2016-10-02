@@ -5049,3 +5049,4 @@
 101954	r Angeklagte	vádlott
 101987	sondern	hanem
 102099	dabei	mellet, mellette
+102187	e Maut	vám

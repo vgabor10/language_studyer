@@ -1300,6 +1300,7 @@
 100349	Deutschland durfte nach dem Ersten Weltkrieg nur eine kleine Flotte unterhalten.
 100350	Auch einem Befehl kann man widersprechen.
 100350	Der Offizier erteilt einen Befehl.
+100351	Der ungarische Aufstand 1956, wurde durch die Sowjetunion unterdrückt.
 100353	Das Mittlere Erzgebirge ist als Weihnachtsland bekannt.
 100353	Der Erreger der Vogelgrippe ist jetzt bekannt.
 100353	Die Herkunft des Namens ist nicht bekannt.
@@ -1657,13 +1658,6 @@
 100503	Kundenkarten dienen der Erfassung von Daten über den Käufer und sein Kaufverhalten.
 100503	Wenn man die Daten zueinander in Beziehung setzt, kommt man zu interessanten Ergebnissen.
 100504	Am Boden sammeln sich Staubﬂocken.
-100505	Arafat war wohl der berühmteste Palästinenser.
-100505	Dein Schreibtisch ist immer so ordentlich, du hast wohl keine Arbeit.
-100505	Die Ausrichtung der nächsten Olympischen Spiele wird wohl an Paris fallen.
-100505	Die Heimat ist da, wo man sich wohl fühlt.
-100505	Es ist wohl besser, wenn du jetzt gehst.
-100505	Ich fühle mich nicht wohl.
-100505	Irgendwie fühle ich mich heute nicht besonders wohl.
 100506	Eine Katastrophe ist geschehen.
 100506	Ein Wunder ist geschehen.
 100506	Was ist denn geschehen?
@@ -2040,6 +2034,7 @@
 100671	Bernd beginnt im Herbst sein Studium.
 100671	Die Ausstellung wurde bis in den Herbst hinein organisiert.
 100671	Dieses Jahr war der Herbst sehr regnerisch.
+100672	Das Haus steht an der Spitze der Halbinsel.
 100673	Der Maler steht auf dem Balkon.
 100673	Der Maler streicht die Wände.
 100673	Es handelt sich hier um eine Ausstellung zeitgenössischer Maler.
@@ -2557,6 +2552,7 @@
 100986	Sonjas Gesicht spiegelt sich im See.
 100987	Es ist kalt, zugleich weht ein starker Wind aus Nord.
 100989	Sie verfolgt ihr Ziel hartnäckig.
+100989	Früher sind Juden in vielen Ländern verfolgt worden.
 100990	Der Vorschlag entbehrt jeder Vernunft.
 100990	Der Vorschlag fand auf dem Parteitag breite Zustimmung.
 100990	Ich bin mit deinem Vorschlag einverstanden.
@@ -3271,6 +3267,7 @@
 101408	Die Alternative zur Verkleinerung ist die Schließung der Fabrik.
 101408	Die Fabrik stellt die Produktion ein.
 101408	Unsere Fabrik stellt Geschirr her.
+101408	Die Fabrik ersetzte die meisten Arbeiter durch Roboter.
 101409	Das Büro ist mit modernster Technik ausgestattet.
 101409	Im Büro herrscht gute Stimmung.
 101409	Im Büro trinken wir oft Kaffee und essen Kuchen.
@@ -3793,6 +3790,7 @@
 101706	Laut Fahrplan müsste der Zug jeden Moment kommen.
 101706	Laut Vorschrift darf man hier nicht parken.
 101706	Mein Nachbar in der Oper atmete sehr laut.
+101706	Ich kann den lauten Lärm nicht mehr ertragen.
 101707	Der Bus fährt ohne Halt bis Halle.
 101707	Er geht, ohne etwas zu sagen.
 101707	Ich kann keine endgültige Entscheidung treffen, ohne vorher meinen Chef zu fragen.
@@ -4981,6 +4979,7 @@
 102450	Die ﬁnanziellen Ressourcen des Unternehmens sind erschöpft.
 102451	Wer die Wahrheit sucht, darf nicht erschrecken, wenn er sie ﬁndet.
 102452	Ein starker Wind erschwerte die Arbeit.
+102453	Die Fabrik ersetzte die meisten Arbeiter durch Roboter.
 102454	Ich hätte dir diese unangenehme Situation gern erspart.
 102455	Der Wahlsieg der Opposition hat niemanden erstaunt.
 102456	Das Ergebnis ist erstaunlich.
@@ -4996,6 +4995,9 @@
 102460	Im idealen Fall kommt das Päckchen schon am Montag an, im schlimmsten Fall erst Freitag.
 102460	Seine Unschuld hat sich erst hinterher herausgestellt.
 102460	Wir sollten zuerst eine Konzeption erarbeiten und erst dann an die Öffentlichkeit gehen.
+102461	Ich kann den lauten Lärm nicht mehr ertragen.
+102461	Er konnte nicht ertragen, dass seine Freunde ihn auslachten.
+102461	Er konnte das schreckliche englische Klima nicht ertragen.
 102462	Du solltest Rücksicht auf deine Geschwister nehmen.
 102463	Im Lebenslauf kann man seine Hobbys und Interessen erwähnen.
 102464	Blumen können große Freude erwecken.
@@ -7051,6 +7053,7 @@
 103723	Die Situation ist unverändert schlecht.
 103724	Die Streitfrage ist durch den Gesetzgeber eindeutig entschieden.
 103725	Kannst du dich bitte diesmal anständig benehmen?
+103725	Er benimmt sich merklich kühl.
 103726	Diese Pflanze braucht viel Licht und Pflege.
 103727	Am Montag Abend ereignete sich ein Anschlag auf die Russische Botschaft.
 103727	Am Montag beginnt die Arbeitswoche.
@@ -7214,6 +7217,7 @@
 103824	Behandeln Sie das Problem bitte diskret!
 103825	Da kam ihm ein richtig böser Gedanke.
 103825	Der bloße Gedanke daran macht mich nervös.
+103825	Ich kann diesen Gedanken nicht ertragen.
 103828	Im Moment habe ich keine Beschäftigung.
 103828	Im Moment ist das ein unerfüllbarer Traum.
 103828	Laut Fahrplan müsste der Zug jeden Moment kommen.
@@ -7510,6 +7514,7 @@
 104023	Esel können schwere Lasten tragen.
 104023	Schotten tragen Röcke.
 104025	Sie konnte ein Lachen kaum unterdrücken.
+104025	Der ungarische Aufstand 1956, wurde durch die Sowjetunion unterdrückt.
 104026	Die Messe ﬁndet auf dem neuen Gelände außerhalb der Stadt statt.
 104026	In dem waldreichen Gelände konnte man selten weit sehen.
 104027	Sie hat einen Rock mit grünen Streifen.
@@ -8592,6 +8597,7 @@
 104696	Ich deute dein Schweigen als Zeichen deiner Zustimmung.
 104697	Es begann kräftig zu regnen, daraufhin wurden die Überschwemmungen noch schlimmer.
 104697	Plötzlich ﬁng es an zu regnen.
+104698	Das ist ein unversöhnlicher Konflikt.
 104699	Auch der luxemburgische Ministerpräsident mahnte die Einheit der EU-27 an.
 104699	Die Deutsche Einheit kam für viele überraschend.
 104699	Die nationale Einheit Deutschlands wurde 1990 wiederhergestellt.
@@ -9140,6 +9146,7 @@
 102300	Die Polizei ermittelt bereits in diesem Fall.
 102342	Die Donau hat ihren Ursprung im Schwarzwald.
 102342	Man kann mit dem Rad die Donau entlang fahren.
+102129	Er benimmt sich merklich kühl.
 100631	Der Schmuck ist sehr wertvoll.
 101572	Der Handel mit China boomt.
 101572	Im Fernsehen lief ein Bericht über China.
