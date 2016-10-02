@@ -392,6 +392,15 @@ public class DictionaryDialog extends javax.swing.JDialog {
             deleteRowFromTable(selectedTableRowIndex);
             clearTable();
         }
+        
+        if (dialogAnswer.stringAnswer.equals("save_card")) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.saveAllData();
+
+            clearTable();
+        }
 
         jTextField1.requestFocus();
     }

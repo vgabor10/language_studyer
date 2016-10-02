@@ -278,7 +278,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }
     
     private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
-        dialogAnswer.stringAnswer = "save_card";
         saveCard();
     }//GEN-LAST:event_saveCardButtonActionPerformed
 
@@ -338,12 +337,8 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         for (int i=0;i<tableModel.getRowCount();i++) {
             cardToInspect.exampleSentences.add((String) tableModel.getValueAt(i, 0));
         }
-
-        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setData(dictionaryDataContainer);
-        dictionaryDataModificator.saveCardContainerDataToFile();
-        dictionaryDataModificator.saveExampleSentencesDataToFile();
-                
+        
+        dialogAnswer.stringAnswer = "save_card";    
         dispose();
     }
     

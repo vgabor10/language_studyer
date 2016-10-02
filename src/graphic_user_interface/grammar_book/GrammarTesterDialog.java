@@ -6,6 +6,7 @@ import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarDataContainer;
 import grammar_book.RandomGrammarItemChooser;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.util.Date;
@@ -328,11 +329,27 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_acceptAnswerButtonKeyPressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DialogAnswer inspectGrammarItemDialogAnswer = new DialogAnswer();
         GrammarItemInspectorDialog dialog = new GrammarItemInspectorDialog(new javax.swing.JFrame(), true); 
         dialog.grammarItem = grammarTester.getActualQuestionedGrammarItem();
+        dialog.dialogAnswer = inspectGrammarItemDialogAnswer;
         dialog.fillWidgetsWithGrammarItemData();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
+        
+        if (inspectGrammarItemDialogAnswer.equals("save")) {
+            GrammarDataModificator grammarDataModificator 
+                    = new GrammarDataModificator();
+            
+            grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+            grammarDataModificator.setGrammarBook(grammarBook);
+            
+            grammarDataModificator.writeGrammarBookToDisk();
+        }
+        
+        if (inspectGrammarItemDialogAnswer.equals("delete")) {
+            //TODO
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void moveToTheNextQuestion() {

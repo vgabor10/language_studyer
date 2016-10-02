@@ -2,12 +2,14 @@ package graphic_user_interface.grammar_book;
 
 import grammar_book.Example;
 import grammar_book.GrammarItem;
+import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
 
 public class GrammarItemInspectorDialog extends javax.swing.JDialog {
 
     public GrammarItem grammarItem;
+    public DialogAnswer dialogAnswer;    
     
     private final DefaultTableModel tableModel;
     
@@ -100,7 +102,6 @@ public class GrammarItemInspectorDialog extends javax.swing.JDialog {
         jTextField1.setText("jTextField1");
 
         addGrammarItemButton.setText("Save grammar item");
-        addGrammarItemButton.setEnabled(false);
         addGrammarItemButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addGrammarItemButtonActionPerformed(evt);
@@ -132,6 +133,11 @@ public class GrammarItemInspectorDialog extends javax.swing.JDialog {
 
         jButton2.setText("Delete grammar item");
         jButton2.setEnabled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton4.setText("Change grammar item name");
 
@@ -193,17 +199,22 @@ public class GrammarItemInspectorDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        dialogAnswer.stringAnswer = "cancel";
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void addGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addGrammarItemButtonActionPerformed
-        //TODO: implement
         /*grammarItem.description = jTextArea1.getText();
         
         grammarItem.clearExamples();
         for (int i=0; i<jTable1.getRowCount(); i++) {
-            
+            Example exampleSentence = new Example();
+            exampleSentence.
+            grammarItem.addExample(exampleSentence);
         }*/
+        
+        dialogAnswer.stringAnswer = "save";
+        dispose();
     }//GEN-LAST:event_addGrammarItemButtonActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -238,6 +249,11 @@ public class GrammarItemInspectorDialog extends javax.swing.JDialog {
         deleteExampleButton.setEnabled(true);
     }//GEN-LAST:event_jTable1MouseClicked
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dialogAnswer.stringAnswer = "delete";
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -264,22 +280,6 @@ public class GrammarItemInspectorDialog extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(GrammarItemInspectorDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

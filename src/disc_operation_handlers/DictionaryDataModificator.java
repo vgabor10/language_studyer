@@ -29,6 +29,7 @@ public class DictionaryDataModificator {
 
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
+        saveExampleSentencesDataToFile();
     }
 
     public void addCard(Card card) {
@@ -96,6 +97,12 @@ public class DictionaryDataModificator {
         }
     }
 
+    public void saveAllData() {
+        saveCardContainerDataToFile();
+        saveAnswerDataContainerDataToFile();
+        saveExampleSentencesDataToFile();
+    }
+    
     public void appendToStudiedLanguageCardData(AnswerDataContainer answersToAppend) {
         try {
             logger.debug("following rows have been added to card data file: ");
@@ -115,7 +122,7 @@ public class DictionaryDataModificator {
         }
     }
 
-    public void mergeCardsWithSameData() {
+    private void mergeCardsWithSameData() {
 
         /*if (logger.isDebug) {
 			logger.debug("cardContainer before merge");

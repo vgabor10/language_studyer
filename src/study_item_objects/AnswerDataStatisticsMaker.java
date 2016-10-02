@@ -290,6 +290,24 @@ public class AnswerDataStatisticsMaker {
         return out;
     }
 
+    public void toFileNumberOfAnswersByDays(String filePath) {
+        Map<Integer, Integer> numberOfAnswersByDays = getNumberOfAnswersByDays();
+        
+        Set<Integer> keys = numberOfAnswersByDays.keySet();
+        SortedSet<Integer> sortedDays = new TreeSet<>(keys);
+
+        try {
+            //the true will append the new data
+            FileWriter fw = new FileWriter(filePath, false);
+            for (int day : sortedDays) {
+                fw.write(day + "\t" + numberOfAnswersByDays.get(day) + "\n");
+            }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+    
     public Vector<Integer> getNumberOfAnswersGivenLastDays(int numberOfDays) {
 
         Vector<Integer> out = new Vector<>();
