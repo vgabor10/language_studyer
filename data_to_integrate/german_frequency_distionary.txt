@@ -643,8 +643,7 @@ unter anderem, u.a. among other
 • Meine Katze ist weggelaufen.
 
 things
-• Im Kino läuft unter anderem gerade
-Casablanca.
+• Im Kino läuft unter anderem gerade Casablanca.
 128
 
 2,217
@@ -1103,57 +1102,6 @@ Mit der Zeit gewöhnt man sich an alles.
 
 18
 
-15
-
-Kinship terms (occurrences per million)
-Frau
-Kind
-Mann
-Vater
-Mutter
-Eltern
-Sohn
-Tochter
-Bruder
-Schwester
-Mama
-Tante
-Papa
-Verwandte
-Onkel
-
-878
-860
-710
-408
-391
-233
-181
-162
-125
-111
-64
-51
-36
-33
-26
-
-Großmutter
-Oma
-Geschwister
-Großvater
-Ehepaar
-Großeltern
-Ehefrau
-Gatte
-Ehemann
-Verwandtschaft
-Urgroßmutter
-Opa
-Schwiegertochter
-Schwiegervater
-Gattin
-
 101 drei num three
 • Der Wolf will die drei kleinen Schweinchen
 fressen.
@@ -1255,8 +1203,6 @@ so etwas such a thing
 • Neben dem Haus steht ein alter Baum.
 799
 
-16
-
 117 gegen prep against
 • Ich habe keine Chance gegen dich.
 798
@@ -1289,8 +1235,7 @@ so etwas such a thing
 740
 
 das heißt, d.h. that is, i.e.
-• Morgen Nachmittag muss ich zum Arzt,
-das heißt, ich habe keine Zeit.
+• Morgen Nachmittag muss ich zum Arzt, das heißt, ich habe keine Zeit.
 285
 
 131 Mann der man
@@ -1566,12 +1511,9 @@ geboten.
 
 37
 
-auf keinen Fall
+auf keinen Fall on no account, not at all
 
-on no account, not at all
-
-Bei einer Auslandsreise darf man auf
-keinen Fall seinen Pass vergessen.
+Bei einer Auslandsreise darf man auf keinen Fall seinen Pass vergessen.
 
 in jedem Fall
 
@@ -1809,8 +1751,7 @@ vor kurzem recently
 26
 
 206 Million, Mio. die million
-• Das Haus kostet mindestens eine Million
-Euro.
+• Das Haus kostet mindestens eine Million Euro.
 425
 
 207 stark adj strong
@@ -2042,8 +1983,7 @@ kein Geld damit.
 29
 
 eine halbe Stunde half an hour
-• Das Gespräch dauert nur eine halbe
-Stunde
+• Das Gespräch dauert nur eine halbe Stunde.
 17
 
 263 einzeln adj individual
@@ -2471,8 +2411,7 @@ university
 267
 
 321 Sinn der sense, meaning
-• Man soll das Leben mit allen Sinnen
-genießen.
+• Man soll das Leben mit allen Sinnen genießen.
 267
 
 im Sinne according to
@@ -3177,8 +3116,7 @@ framework
 177
 
 463 nutzen verb to use
-• Maik nutzt für seine Recherchen häuﬁg das
-Internet.
+• Maik nutzt für seine Recherchen häufig das Internet.
 176
 
 464 Programm das programme
@@ -3506,13 +3444,11 @@ Vorsprung von 12 Prozent.
 162
 
 514 Tochter die daughter
-• Die Tochter des Bürgermeisters eröffnete
-den Ball.
+• Die Tochter des Bürgermeisters eröffnete den Ball.
 162
 
 515 beﬁnden (sich) verb to be
-• Der Park beﬁndet sich außerhalb der
-Innenstadt.
+• Der Park befindet sich außerhalb der Innenstadt.
 161
 
 516 passieren verb to take place, happen
@@ -3840,8 +3776,7 @@ sieben Bergen.
 147
 
 580 jeweils adv each, each time
-• Jeweils ein Erwachsener kümmert sich um
-fünf Kinder.
+• Jeweils ein Erwachsener kümmert sich um fünf Kinder.
 146
 
 581 kaufen verb to buy
@@ -3903,7 +3838,7 @@ Karsten entscheiden.
 lag in den Steuervergünstigungen.
 145
 
-587 erfahren verb to experience, ﬁnd out
+587 erfahren verb to experience, find out
 • Er erfuhr davon aus dem Fernsehen.
 145
 
@@ -3924,8 +3859,7 @@ abwägen.
 33
 
 590 unten adv down
-• Unten im Keller lagern noch 20
-Weinﬂaschen.
+• Unten im Keller lagern noch 20 Weinflaschen.
 145
 
 591 eng adj narrow, close
@@ -4393,8 +4327,7 @@ gemacht.
 125
 
 686 bauen verb to build
-• Hier baut die Bundesregierung eine
-Autobahn.
+• Hier baut die Bundesregierung eine Autobahn.
 125
 
 687 Bruder der brother
@@ -4433,19 +4366,15 @@ Südhalbkugel.
 124
 
 694 Verfügung die disposal
-• Das Gericht hob die einstweilige Verfügung
-gegen die Veranstalter der Demonstration
-auf.
+• Das Gericht hob die einstweilige Verfügung gegen die Veranstalter der Demonstration auf.
 124
 
 zur Verfügung stehen to be available
-• Ein Telefonanschluss sowie Internet steht
-Ihnen zur Verfügung.
+• Ein Telefonanschluss sowie Internet steht Ihnen zur Verfügung.
 74
 
 zur Verfügung stellen to provide
-• Das Unternehmen stellt Ihnen einen
-Dienstwagen zur Verfügung.
+• Das Unternehmen stellt Ihnen einen Dienstwagen zur Verfügung.
 40
 
 695 bezahlen verb to pay
@@ -4524,8 +4453,7 @@ Menge.
 123
 
 702 stecken verb to put, be located
-• Der Schlüssel steckt im
-Schlüsselloch.
+• Der Schlüssel steckt im Schlüsselloch.
 123
 
 703 besuchen verb to visit
@@ -4711,8 +4639,7 @@ dieser Welt noch leben können.
 114
 
 745 vorkommen verb to happen, occur, seem
-• Fälle von Korruption kommen auch im
-Bundestag vor.
+• Fälle von Korruption kommen auch im Bundestag vor.
 114
 
 746 zuletzt adv last, in the end
@@ -5029,31 +4956,6 @@ arbeiten.
 
 105
 
-Days of the week (occurrences per million)
-Montag
-Sonntag
-Dienstag
-
-107
-104
-83
-
-Mittwoch
-Freitag
-Samstag
-
-79
-68
-66
-
-Donnerstag
-Sonnabend
-
-65
-15
-
-40
-
 807 lieb adj dear, kind
 • Alina ist ein liebes Kind.
 105
@@ -5205,8 +5107,7 @@ hinter sich.
 101
 
 842 konkret adj concrete
-• Nächste Woche ist keine sehr konkrete
-Zeitangabe.
+• Nächste Woche ist keine sehr konkrete Zeitangabe.
 101
 
 843 Liebe die love
@@ -5327,8 +5228,7 @@ interkulturellen Kommunikation.
 98
 
 867 staatlich adj state, government, national
-• Studenten erhalten eine staatliche
-Förderung.
+• Studenten erhalten eine staatliche Förderung.
 98
 
 868 Tätigkeit die activity
@@ -5449,8 +5349,7 @@ die damalige.
 95
 
 893 Konzept das draft, plan
-• Das Konzept für den neuen Studiengang
-ist noch nicht fertig.
+• Das Konzept für den neuen Studiengang ist noch nicht fertig.
 95
 
 894 kosten verb to cost
@@ -5575,8 +5474,7 @@ Firma.
 93
 
 916 Zelle die cell
-• Menschliche Zellen bestehen zu einem
-Großteil aus Wasser.
+• Menschliche Zellen bestehen zu einem Großteil aus Wasser.
 93
 
 917 Aussage die statement
@@ -5701,8 +5599,7 @@ schnelleren Internetzugang.
 90
 
 943 genauso adv just as
-• Mit dem Auto zu fahren dauert genauso
-lange wie mit dem Zug.
+• Mit dem Auto zu fahren dauert genauso lange wie mit dem Zug.
 90
 
 944 herstellen verb to produce
@@ -5738,8 +5635,7 @@ Papier.
 90
 
 951 schicken verb to send
-• Schicken Sie mir morgen die neuen
-Unterlagen.
+• Schicken Sie mir morgen die neuen Unterlagen.
 90
 
 952 Sekunde die second
@@ -5751,13 +5647,11 @@ Unterlagen.
 90
 
 954 Umstand der circumstance
-• Unter diesen Umständen muss ich leider
-absagen.
+• Unter diesen Umständen muss ich leider absagen.
 90
 
 unter Umständen possibly
-• Unter Umständen müssen wir die Kriterien
-nochmal ändern.
+• Unter Umständen müssen wir die Kriterien nochmal ändern.
 25
 
 955 vorne, vorn adv at the front
@@ -5765,8 +5659,7 @@ nochmal ändern.
 90
 
 956 wechseln verb to change
-• Der Fußballer wechselt zu einem anderen
-Verein.
+• Der Fußballer wechselt zu einem anderen Verein.
 90
 
 957 weg adv gone, vanished
@@ -5904,8 +5797,7 @@ Kunden.
 
 986 mittlerweile adv in the meantime, since
 then
-• Mittlerweile kann man auf Handys sogar
-Bilder und Videos empfangen.
+• Mittlerweile kann man auf Handys sogar Bilder und Videos empfangen.
 86
 
 987 Plan der plan
@@ -5913,8 +5805,7 @@ Bilder und Videos empfangen.
 86
 
 988 täglich adj daily
-• Das Fernsehen strahlt täglich unzählige
-Serien aus.
+• Das Fernsehen strahlt täglich unzählige Serien aus.
 86
 
 989 üblich adj usual
@@ -6059,8 +5950,7 @@ Abendsonne.
 84
 
 1018 einrichten verb to furnish
-• Die Wohnung ist bis jetzt nur provisorisch
-eingerichtet.
+• Die Wohnung ist bis jetzt nur provisorisch eingerichtet.
 84
 
 1019 festhalten verb to hold on to, detain
@@ -6068,8 +5958,7 @@ eingerichtet.
 84
 
 1020 Forschung die research
-• Sie präsentierten die neusten Ergebnisse
-ihrer Forschung.
+• Sie präsentierten die neusten Ergebnisse ihrer Forschung.
 84
 
 1021 geraten verb to get into
@@ -6276,8 +6165,7 @@ Schaden an.
 81
 
 1058 ernst adj serious
-• Es handelt sich um eine ernste
-Angelegenheit.
+• Es handelt sich um eine ernste Angelegenheit.
 81
 
 1059 feiern verb to celebrate
@@ -6315,72 +6203,16 @@ sb
 • Ein Regenbogen ist ein gutes Zeichen.
 81
 
-12
-
-Ochse
-
-2
-
-9
-
-Stute
-
-2
-
-8
-
-Sau
-
-1
-
-Kalb
-
-1
-
-Fohlen
-
-1
-
-4
-
-Küken
-
-1
-
-3
-
-Truthahn
-
-1
-
-3
-
-Wellensittich
-Hengst
-
-1
-
-6
-6
-4
-
-3
-
-1
-
 1067 berücksichtigen verb to consider
-• Wir sollten die Wünsche anderer
-berücksichtigen.
+• Wir sollten die Wünsche anderer berücksichtigen.
 80
 
 1068 Material das material
-• Aus welchem Material sind diese
-Strümpfe?
+• Aus welchem Material sind diese Strümpfe?
 80
 
 1069 Produktion die production
-• Die Produktion von Autos ist um 25%
-gestiegen.
+• Die Produktion von Autos ist um 25% gestiegen.
 80
 
 1070 Rest der rest, remains
@@ -6433,8 +6265,7 @@ Windes.
 80
 
 1081 Zweck der purpose
-• Zu welchem Zweck sind wir hier
-versammelt?
+• Zu welchem Zweck sind wir hier versammelt?
 80
 
 1082 Angriff der attack
@@ -6588,8 +6419,7 @@ durchzuführen.
 78
 
 1113 ablehnen verb to refuse, reject, turn down
-• Die Behörde lehnt seinen Antrag auf ein
-Visum ab.
+• Die Behörde lehnt seinen Antrag auf ein Visum ab.
 77
 
 1114 Amt das ofﬁce, department, function
@@ -6665,8 +6495,7 @@ lange.
 77
 
 1131 schwach adj weak
-• Die Klasse erzielt nur schwache
-Leistungen.
+• Die Klasse erzielt nur schwache Leistungen.
 77
 
 1132 Studie die study
@@ -7149,8 +6978,7 @@ der 60er Jahre.
 70
 
 1230 beitragen verb to contribute
-• Das Verbrennen von fossilen Rohstoffen
-trägt zur Umweltverschmutzung bei.
+• Das Verbrennen von fossilen Rohstoffen trägt zur Umweltverschmutzung bei.
 70
 
 1231 Bericht der report
@@ -7207,13 +7035,11 @@ minimalen Gewinn.
 70
 
 1243 obere (r, s) adj upper
-• Die oberen Fenster sind schon lange nicht
-mehr geputzt worden.
+• Die oberen Fenster sind schon lange nicht mehr geputzt worden.
 70
 
 1244 orientieren verb to orient
-• Orientiere dich einfach an der
-Kirchturmspitze!
+• Orientiere dich einfach an der Kirchturmspitze!
 70
 
 1245 schreien verb to cry out, scream
@@ -7221,8 +7047,7 @@ Kirchturmspitze!
 70
 
 1246 Sieg der victory
-• Sie errangen erneut einen unerwarteten
-Sieg.
+• Sie errangen erneut einen unerwarteten Sieg.
 70
 
 1258 erstmals adv for the ﬁrst time
@@ -7385,8 +7210,7 @@ der Patient nach ihr klingelte.
 68
 
 1279 geistig adj intellectual, mental
-• Geistig ist sie noch völlig gesund, aber
-körperlich nicht.
+• Geistig ist sie noch völlig gesund, aber körperlich nicht.
 68
 
 1280 hingegen adv on the other hand
@@ -7413,9 +7237,7 @@ bekannt.
 68
 
 1285 Verlust der loss
-• Das Unternehmen machte letztes Jahr
-keinen Gewinn, sondern einen hohen
-Verlust.
+• Das Unternehmen machte letztes Jahr keinen Gewinn, sondern einen hohen Verlust.
 68
 
 1286 verteilen verb to distribute
@@ -7518,8 +7340,6 @@ geöffnet.
 die Bevölkerung.
 67
 
-56
-
 1308 verbessern verb to improve, correct
 • Wir haben unseren Service verbessert.
 67
@@ -7613,8 +7433,7 @@ Behandlung.
 66
 
 1323 nachher adv afterwards
-• Nachher treffe ich mich mit einer Freundin
-zum Mittagessen.
+• Nachher treffe ich mich mit einer Freundin zum Mittagessen.
 66
 
 1329 automatisch adj automatic
@@ -7954,8 +7773,7 @@ reduzieren!
 62
 
 1389 auseinander adv apart
-• Ich kann Christianes vier Kinder nicht
-auseinander halten.
+• Ich kann Christianes vier Kinder nicht auseinander halten.
 62
 
 1406 teilnehmen verb to take part
@@ -8017,8 +7835,7 @@ ungeniert.
 61
 
 1416 einführen verb to introduce, import
-• Lebensmittel dürfen nicht eingeführt
-werden.
+• Lebensmittel dürfen nicht eingeführt werden.
 61
 
 1417 elf num eleven
@@ -8044,14 +7861,12 @@ Kuchen.
 61
 
 1422 kritisch adj critical
-• Der Journalist schrieb einen sehr kritischen
-Artikel.
+• Der Journalist schrieb einen sehr kritischen Artikel.
 61
 
 1423 Leitung die management, leadership,
 pipe
-• Katharina hat die Leitung des Projektes
-übernommen.
+• Katharina hat die Leitung des Projektes übernommen.
 61
 
 1424 Lust die desire
@@ -8305,8 +8120,7 @@ Fall.
 58
 
 1479 gegenwärtig adj present
-• Die gegenwärtige Situation ist nicht
-zufriedenstellend.
+• Die gegenwärtige Situation ist nicht zufriedenstellend.
 58
 
 1480 Industrie die industry
@@ -8567,8 +8381,7 @@ Studiengebühren geplant.
 endlich zu!
 
 1541 Ausgabe die distribution, edition, expenses
-• Das Wörterbuch erscheint in einer neuen
-Ausgabe.
+• Das Wörterbuch erscheint in einer neuen Ausgabe.
 55
 
 56
@@ -8752,8 +8565,7 @@ Blumen.
 55
 
 1576 auffallen verb to stand out, notice
-• Rote Autos fallen im Straßenverkehr am
-meisten auf.
+• Rote Autos fallen im Straßenverkehr am meisten auf.
 54
 
 1562 Software die software
@@ -8791,8 +8603,7 @@ außerhalb der Stadt statt.
 54
 
 1583 ohnehin adv anyway
-• Wir sind ohnehin zu spät, da können wir uns
-jetzt auch Zeit lassen.
+• Wir sind ohnehin zu spät, da können wir uns jetzt auch Zeit lassen.
 54
 
 1584 stolz adj proud
@@ -8825,13 +8636,11 @@ gegenüber Erschütterungen.
 53
 
 1590 ausüben verb to practise, exercise, exert
-• Frau Busse übt ihre Tätigkeit als Lektorin
-schon seit über sechs Jahren aus.
+• Frau Busse übt ihre Tätigkeit als Lektorin schon seit über sechs Jahren aus.
 53
 
 1591 betreten verb to enter, walk into, onto
-• Der Schauspieler betritt die Bühne und
-verneigt sich.
+• Der Schauspieler betritt die Bühne und verneigt sich.
 53
 
 1592 einst adv once, at one time, one day
@@ -8870,8 +8679,7 @@ zur Uni.
 53
 
 1599 künstlerisch adj artistic
-• Die Veranstaltung wird von einem
-künstlerischen Programm umrahmt.
+• Die Veranstaltung wird von einem künstlerischen Programm umrahmt.
 53
 
 1600 landen verb to land
@@ -8902,8 +8710,7 @@ Lichtwellen.
 53
 
 1606 sobald conj as soon as
-• Sobald ich Bescheid weiß, rufe ich dich
-an.
+• Sobald ich Bescheid weiß, rufe ich dich an.
 53
 
 1607 tausend num thousand
@@ -8926,8 +8733,7 @@ sich ein ganz persönliches Schicksal.
 53
 
 1611 verbreiten verb to spread
-• Nachrichten verbreiten sich sehr schnell
-über das Internet.
+• Nachrichten verbreiten sich sehr schnell über das Internet.
 53
 
 1612 Wiener adj Viennese
@@ -8950,8 +8756,7 @@ beschäftigt.
 53
 
 1613 abhängig adj dependent
-• Das Klima ist von der Nähe zum Meer
-abhängig.
+• Das Klima ist von der Nähe zum Meer abhängig.
 
 1629 packen verb to pack, grab
 • Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
@@ -9293,99 +9098,6 @@ schwieriger als heute.
 • Die Summe aus zwölf plus drei ist fünfzehn.
 50
 
-Articles of clothing (occurrences per million)
-Kleid
-Schuh
-Hose
-Mantel
-Hemd
-Hut
-Tuch
-Rock
-Anzug
-Jacke
-Pullover
-Kostüm
-Strumpf
-Fliege
-
-50
-38
-32
-30
-30
-28
-25
-22
-19
-17
-15
-11
-11
-11
-
-T-Shirt
-Mütze
-Stiefel
-Gürtel
-Ärmel
-Krawatte
-Bluse
-Jackett
-Sandale
-Socke
-Gummistiefel
-Unterhose
-Top
-Nachthemd
-
-10
-10
-10
-10
-10
-7
-7
-6
-6
-5
-4
-4
-3
-3
-
-Kopftuch
-Slip
-Bademantel
-Schürze
-Unterhemd
-Smoking
-Strumpfhose
-Schlafanzug
-Overall
-Kapuze
-Schlips
-Bikini
-Badeanzug
-Badehose
-
-3
-3
-3
-2
-2
-2
-2
-2
-1
-1
-1
-1
-1
-1
-
-68
-
 1695 Termin der appointment, date
 • Bis zu dem vereinbarten Termin muss die Arbeit fertig sein.
 50
@@ -9621,7 +9333,7 @@ Leid tun to be sorry
 49
 
 1739 Suche die search
-• Die Suche nach dem entﬂohenen Krokodil war erfolgreich.
+• Die Suche nach dem entflohenen Krokodil war erfolgreich.
 49
 
 1740 töten verb to kill
@@ -10098,8 +9810,7 @@ Millimeter.
 45
 
 1859 Minister der minister
-• In der Regierung sind sieben Minister und
-drei Ministerinnen.
+• In der Regierung sind sieben Minister und drei Ministerinnen.
 45
 
 1871 traurig adj sad
@@ -10379,8 +10090,7 @@ unbekannte junge Autorinnen und Autoren.
 
 1915 voraussetzen verb presuppose, take for
 granted
-• Sehr gute Englischkenntnisse werden
-vorausgesetzt.
+• Sehr gute Englischkenntnisse werden vorausgesetzt.
 44
 
 1916 zugeben verb to admit
@@ -10454,8 +10164,7 @@ langsam.
 43 –L
 
 1937 ordentlich adj neat, proper, orderly
-• Dein Schreibtisch ist immer so ordentlich,
-du hast wohl keine Arbeit.
+• Dein Schreibtisch ist immer so ordentlich, du hast wohl keine Arbeit.
 43
 
 1938 Park der park
@@ -10494,8 +10203,7 @@ nicht die Ausgaben.
 43
 
 1929 Erkrankung die illness, disease
-• Ältere Menschen leiden oft an Erkrankungen
-des Herzens und der Nieren.
+• Ältere Menschen leiden oft an Erkrankungen des Herzens und der Nieren.
 43
 
 1930 euer pron your
@@ -10580,8 +10288,7 @@ Bedingungen auf.
 42
 
 1956 Bundeskanzler der federal chancellor
-• Der Bundeskanzler hält jedes Jahr eine
-Neujahrsansprache.
+• Der Bundeskanzler hält jedes Jahr eine Neujahrsansprache.
 42
 
 1957 Demokratie die democracy
@@ -10706,8 +10413,7 @@ menschlichen Errungenschaften.
 77
 
 1982 sofern conj provided that, if
-• Sofern es meine Zeit zulässt, komme ich
-gern zu der Auktion.
+• Sofern es meine Zeit zulässt, komme ich gern zu der Auktion.
 42
 
 1983 Standort der site, location
@@ -10790,8 +10496,7 @@ unerwarteten Dimension auf.
 41
 
 1995 erledigen verb to settle, take care
-• Ich erledige meine Hausarbeiten am
-Wochenende.
+• Ich erledige meine Hausarbeiten am Wochenende.
 41
 
 1996 Forscher der researcher
@@ -10862,11 +10567,8 @@ Unfälle.
 Schwiegereltern, die obere wir.
 41
 
-78
-
 2014 Verbesserung die improvement
-• Das neue System stellt eine deutliche
-Verbesserung gegenüber dem alten dar.
+• Das neue System stellt eine deutliche Verbesserung gegenüber dem alten dar.
 41
 
 2015 vergleichbar adj comparable
@@ -11254,8 +10956,8 @@ Leute mischen.
 • Rubens zeichnete gerne nackte Frauen.
 38
 
-2107 Oberﬂäche die surface
-• Schleifpapier hat eine raue Oberﬂäche.
+2107 Oberfläche die surface
+• Schleifpapier hat eine raue Oberfläche.
 38
 
 2108 physikalisch adj physical
@@ -11347,13 +11049,11 @@ Film.
 38
 
 2120 Technologie die technology
-• Das Max-Planck-Institut arbeitet mit
-modernster Technologie.
+• Das Max-Planck-Institut arbeitet mit modernster Technologie.
 38
 
 2121 touristisch adj touristic
-• Der Harz ist eine bekannte touristische
-Region.
+• Der Harz ist eine bekannte touristische Region.
 38
 
 2122 Truppe die troops, unit
@@ -11388,8 +11088,7 @@ Untersuchungen.
 37
 
 2138 bewirken verb to cause
-• Das Medikament bewirkt eine baldige
-Besserung.
+• Das Medikament bewirkt eine baldige Besserung.
 37
 
 2139 Bilanz die balance sheet
@@ -11434,8 +11133,7 @@ teuer.
 38
 
 2129 Vorjahr das previous year
-• Wir haben bessere Ergebnisse erzielt als im
-Vorjahr.
+• Wir haben bessere Ergebnisse erzielt als im Vorjahr.
 38
 
 2130 wecken verb to wake up
@@ -11458,8 +11156,7 @@ mischief
 
 2144 herausstellen verb to emphasize, come to
 light
-• Seine Unschuld hat sich erst hinterher
-herausgestellt.
+• Seine Unschuld hat sich erst hinterher herausgestellt.
 37
 
 2145 Identität die identity
@@ -11720,8 +11417,7 @@ alt.
 36
 
 2208 statistisch adj statistical
-• Es handelt sich hier lediglich um eine
-statistische Erhebung.
+• Es handelt sich hier lediglich um eine statistische Erhebung.
 36
 
 2209 Sturm der storm
@@ -11935,12 +11631,11 @@ erkennbaren Erfolgen.
 35
 
 2247 erteilen verb to give
-• Der Ofﬁzier erteilt einen Befehl.
+• Der Offizier erteilt einen Befehl.
 35
 
 2248 Existenz die existence
-• Die Existenz vieler Tierarten ist
-gefährdet.
+• Die Existenz vieler Tierarten ist gefährdet.
 35
 
 2249 fern adj far, distant
@@ -11953,8 +11648,7 @@ Galaxien entdecken.
 35
 
 2251 Grundgesetz das basic law
-• Die Verfassung der Bundesrepublik heißt
-Grundgesetz.
+• Die Verfassung der Bundesrepublik heißt Grundgesetz.
 35 –L
 
 85
@@ -12335,8 +12029,7 @@ versehen.
 34
 
 2334 Wahrnehmung die perception
-• Bei Alkoholkonsum wird die Wahrnehmung
-verzerrt.
+• Bei Alkoholkonsum wird die Wahrnehmung verzerrt.
 34
 
 2335 winzig adj tiny
@@ -12391,8 +12084,7 @@ unerwartet.
 33 +A
 
 2347 Dienstleistung die service
-• Die kostenlose Lieferung nach Hause ist
-eine Dienstleistung des Unternehmens.
+• Die kostenlose Lieferung nach Hause ist eine Dienstleistung des Unternehmens.
 33
 
 2348 dorthin adv there
@@ -12510,8 +12202,7 @@ küssen.
 33
 
 2370 Sammlung die collection
-• Im Museum kann man eine Sammlung alter
-Münzen anschauen.
+• Im Museum kann man eine Sammlung alter Münzen anschauen.
 33
 
 2375 Tonne die ton, barrel
@@ -12519,8 +12210,7 @@ Münzen anschauen.
 33
 
 2376 Träger der holder, responsible body
-• Träger von Rechten und Pﬂichten ist jeder,
-der volljährig ist.
+• Träger von Rechten und Pflichten ist jeder, der volljährig ist.
 33
 
 2377 Trend der trend
@@ -12599,8 +12289,7 @@ stimulate
 32
 
 2393 ärgern verb to annoy
-• Über Kritik sollte man sich nicht
-ärgern.
+• Über Kritik sollte man sich nicht ärgern.
 32
 
 2394 aufregen verb to excite, upset, annoy
@@ -12938,8 +12627,7 @@ Unternehmen.
 31
 
 2467 herausﬁnden verb to ﬁnd out
-• Versucht herauszuﬁnden, wie viele Erbsen in
-ein Glas passen.
+• Versucht herauszuﬁnden, wie viele Erbsen in ein Glas passen.
 31
 
 2468 Hütte die hut, cabin
@@ -12947,13 +12635,11 @@ ein Glas passen.
 31
 
 2469 Kooperation die cooperation
-• Die Bereitschaft zur Kooperation ist
-vorhanden.
+• Die Bereitschaft zur Kooperation ist vorhanden.
 31
 
 2470 laden verb to load
-• Kräftige junge Männer laden die Möbel auf
-einen LKW.
+• Kräftige junge Männer laden die Möbel auf einen LKW.
 31
 
 2471 lehnen verb to lean
@@ -12962,8 +12648,7 @@ Fenster gelehnt.
 31
 
 2472 nochmals adv again
-• Die Krisenregion darf nicht nochmals sich
-selbst überlassen werden.
+• Die Krisenregion darf nicht nochmals sich selbst überlassen werden.
 31
 
 2473 ökologisch adj ecological, organic
@@ -13303,8 +12988,7 @@ zuständig.
 30 –L
 
 2546 mehrmals adv repeatedly
-• Das habe ich dir schon mehrmals
-gesagt.
+• Das habe ich dir schon mehrmals gesagt.
 30
 
 2547 Mister, Mr. der Mister, Mr.
@@ -13601,8 +13285,7 @@ geraucht.
 29
 
 2615 hinweg adv (be) over, for (many years)
-• Sie blieb über viele Jahre hinweg
-allein.
+• Sie blieb über viele Jahre hinweg allein.
 29
 
 2616 Höhepunkt der high point, peak
@@ -13686,8 +13369,7 @@ September.
 29 –L
 
 2630 nähern (sich) verb to approach
-• Von Westen her nähert sich ein Tiefausläufer
-Deutschland.
+• Von Westen her nähert sich ein Tiefausläufer Deutschland.
 29
 
 2631 Notwendigkeit die necessity
@@ -13713,7 +13395,7 @@ Skandal.
 29
 
 2636 problematisch adj problematic
-• Das ﬁnde ich problematisch.
+• Das finde ich problematisch.
 29
 
 2637 proﬁtieren verb to proﬁt
@@ -13742,8 +13424,7 @@ Berlin.
 29
 
 2646 überschreiten verb to exceed
-• Der Showmaster überschritt wieder seine
-Sendezeit.
+• Der Showmaster überschritt wieder seine Sendezeit.
 29 –L
 
 2647 Übung die exercise, practice
@@ -14172,8 +13853,7 @@ zur Größe.
 27
 
 2736 Arbeitsmarkt der labour market
-• Die Lage am Arbeitsmarkt ist unverändert
-schlecht.
+• Die Lage am Arbeitsmarkt ist unverändert schlecht.
 27 –L
 
 2737 Ärger der annoyance, trouble
@@ -14716,8 +14396,7 @@ Unvorhersehbarkeit.
 26
 
 2855 resultieren verb to result
-• Die guten Ergebnisse resultieren aus
-akribischer Forschungsarbeit.
+• Die guten Ergebnisse resultieren aus akribischer Forschungsarbeit.
 26 –L
 
 2856 Rohstoff der raw material
@@ -15216,8 +14895,7 @@ mal in echt gesehen?
 25 –A
 
 2968 wütend adj furious
-• Rumpelstilzchen stampfte wütend mit dem
-Fuß.
+• Rumpelstilzchen stampfte wütend mit dem Fuß.
 25 –A
 
 2969 Zelt das tent
@@ -15247,8 +14925,7 @@ abstellen.
 24
 
 2975 Anzeige die display, advertisement
-• Wenn man der Anzeige glaubt, ist der Tank
-leer.
+• Wenn man der Anzeige glaubt, ist der Tank leer.
 24
 
 2976 Aufklärung die enlightenment, solution
@@ -15527,7 +15204,7 @@ Wiedersehen das reunion
 24
 
 3051 abbilden verb to copy, portray
-• Die Pﬂanzen sind naturgetreu abgebildet.
+• Die Pflanzen sind naturgetreu abgebildet.
 23
 
 3036 übereinstimmen verb to accord, correspond, agree
@@ -15851,18 +15528,15 @@ Problemen.
 23 –A, –S
 
 3118 Rathaus das town hall
-• Der Stadtrat debattiert mittwochs im
-Rathaus.
+• Der Stadtrat debattiert mittwochs im Rathaus.
 23 –A
 
 3119 Reﬂexion die reﬂection
-• Eine genaue Reﬂexion des Problems ist
-dringend nötig.
+• Eine genaue Reﬂexion des Problems ist dringend nötig.
 23 +A
 
 3120 Rente die pension
-• Von der staatlichen Rente kann man kaum
-leben.
+• Von der staatlichen Rente kann man kaum leben.
 23 –L
 
 3121 ruhen verb to rest
@@ -15872,8 +15546,7 @@ leben.
 23 –N, –S
 
 3106 LKW, Lastkraftwagen der truck
-• Ich habe so viele Sachen, dass ich zum
-Umzug einen LKW brauche.
+• Ich habe so viele Sachen, dass ich zum Umzug einen LKW brauche.
 23
 
 3107 Lohn der wage, pay, reward
@@ -16373,13 +16046,11 @@ psychologisches Experiment.
 22 –A
 
 3226 Rücktritt der resignation
-• Der Direktor hat seinen baldigen Rücktritt
-angekündigt.
+• Der Direktor hat seinen baldigen Rücktritt angekündigt.
 22 –L, –S
 
 3227 Schrank der cabinet, wardrobe
-• Familie Laue hat sich einen neuen Schrank
-gekauft.
+• Familie Laue hat sich einen neuen Schrank gekauft.
 22 –A
 
 3228 schwanger adj pregnant
@@ -16559,8 +16230,7 @@ die man nicht erwartet.
 21
 
 3266 Armut die poverty
-• Armut ist auch ein Problem von reichen
-Ländern.
+• Armut ist auch ein Problem von reichen Ländern.
 21
 
 3279 charakteristisch adj characteristic
@@ -16933,8 +16603,7 @@ call
 21
 
 3354 trösten verb to comfort
-• Niemand konnte ihn in dieser Situation
-trösten.
+• Niemand konnte ihn in dieser Situation trösten.
 21 –A
 
 3355 überstehen verb to get over, survive
@@ -16942,8 +16611,7 @@ trösten.
 21
 
 3339 präzise adj precise
-• Bitte machen Sie Ihre Angaben so präzise
-wie möglich!
+• Bitte machen Sie Ihre Angaben so präzise wie möglich!
 21 –S
 
 3340 Rhythmus der rhythm
@@ -16960,9 +16628,7 @@ nehmen.
 Lehrern vertreten.
 21 –S
 
-3343 schweben verb to ﬂoat, hover, be in the
-balance
-
+3343 schweben verb to ﬂoat, hover, be in the balance
 • Die Feder schwebt zu Boden.
 21
 
@@ -17122,8 +16788,7 @@ vorgenommen werden.
 20 –L
 
 3388 allenfalls adv at most
-• Wir könnten Ihnen allenfalls eine
-Halbtagsstelle anbieten.
+• Wir könnten Ihnen allenfalls eine Halbtagsstelle anbieten.
 20 –S
 
 3389 alternativ adj alternative
@@ -17252,8 +16917,7 @@ Betriebssystem.
 20 –S
 
 3406 Bakterie die bacterium
-• Bakterien kann man mit Antibiotika
-bekämpfen.
+• Bakterien kann man mit Antibiotika bekämpfen.
 20 –L, –S
 
 3407 beabsichtigen verb to intend
@@ -17452,8 +17116,7 @@ Grundschule.
 20
 
 3461 hervorgehen verb to come from, follow
-• Das Projekt ging aus einer studentischen
-Veranstaltung hervor.
+• Das Projekt ging aus einer studentischen Veranstaltung hervor.
 20
 
 3462 hinüber adv over, across
@@ -17461,15 +17124,13 @@ Veranstaltung hervor.
 20 +L
 
 3463 Höhle die cave
-• Wir haben eine Höhle besichtigt, in der es
-Tropfsteine gibt.
+• Wir haben eine Höhle besichtigt, in der es Tropfsteine gibt.
 20 –A
 
 121
 
 3464 Innenstadt die town centre, downtown
-• Die Leipziger Innenstadt ist gut
-überschaubar.
+• Die Leipziger Innenstadt ist gut überschaubar.
 20 –A
 
 3465 intelligent adj intelligent
@@ -17826,8 +17487,7 @@ furnishings
 19 –L
 
 3550 auswerten verb to evaluate, analyse
-• Im Anschluss an die Datenerhebung werden
-die Ergebnisse ausgewertet.
+• Im Anschluss an die Datenerhebung werden die Ergebnisse ausgewertet.
 19
 
 3551 Bayer der Bavarian
@@ -18081,8 +17741,7 @@ bestimmten Grenzwert nicht überschreiten.
 19 –L
 
 3596 Handwerk das craft, trade
-• Im Erzgebirge ﬁndet man noch viel
-traditionelles Handwerk.
+• Im Erzgebirge findet man noch viel traditionelles Handwerk.
 19
 
 125
@@ -18162,7 +17821,7 @@ eigenen Handlungen.
 19 –S
 
 3614 Kompromiss der compromise
-• Wir müssen einen Kompromiss ﬁnden.
+• Wir müssen einen Kompromiss finden.
 19
 
 3615 Königin die queen
@@ -18309,13 +17968,11 @@ Rücken gefallen.
 19
 
 3646 Schauspielerin die actress
-• Sie ist Schauspielerin am Eisenacher
-Theater.
+• Sie ist Schauspielerin am Eisenacher Theater.
 19 –A
 
 3647 Schwangerschaft die pregnancy
-• Eine Schwangerschaft dauert gewöhnlich
-neun Monate.
+• Eine Schwangerschaft dauert gewöhnlich neun Monate.
 19
 
 3648 Schweiß der sweat
@@ -18327,8 +17984,7 @@ neun Monate.
 19 +L
 
 3650 Skala die scale, dial, range
-• Man kann den pH-Wert mit Hilfe einer Skala
-messen.
+• Man kann den pH-Wert mit Hilfe einer Skala messen.
 19 –S
 
 3651 sowjetisch adj Soviet
@@ -18342,8 +17998,7 @@ Preis.
 19 –N, –S
 
 3653 Spektrum das spectrum
-• Wir haben ein breites Spektrum an
-Möglichkeiten.
+• Wir haben ein breites Spektrum an Möglichkeiten.
 19 –L
 
 3654 spezialisieren verb to specialize
@@ -18395,8 +18050,6 @@ Autofahren reduziert werden.
 3664 tödlich adj fatal
 • Der Unfall hatte tödliche Folgen.
 19
-
-127
 
 3665 umarmen verb to embrace
 • Sie umarmen sich zum Abschied.
@@ -18472,8 +18125,7 @@ gesagt wurde.
 19
 
 3681 Verordnung die prescription, order
-• Es handelt sich hier um eine Verordnung
-meines Arztes.
+• Es handelt sich hier um eine Verordnung meines Arztes.
 19 –L, –S
 
 3682 verschärfen verb to intensify, make more rigorous
@@ -18481,8 +18133,7 @@ meines Arztes.
 19
 
 3683 vertraglich adj contractual
-• Der Kauf des Hauses muss noch vertraglich
-geregelt werden.
+• Der Kauf des Hauses muss noch vertraglich geregelt werden.
 19 –L, –S
 
 3684 Villa die villa
@@ -18646,8 +18297,7 @@ satt.
 
 3718 durchziehen verb to pull through, pass
 through
-• Zur Weihnachtszeit durchzieht die Straßen
-ein Duft von Glühwein und Zimt.
+• Zur Weihnachtszeit durchzieht die Straßen ein Duft von Glühwein und Zimt.
 18
 
 3719 Ehepaar das married couple
@@ -18782,8 +18432,7 @@ Kasten Bier.
 18 +A
 
 3754 Kommentar der comment, opinion
-• Auf deine Kommentare kann ich
-verzichten.
+• Auf deine Kommentare kann ich verzichten.
 18
 
 3755 Konzeption die concept, conception
@@ -18839,8 +18488,7 @@ geholt werden.
 18
 
 3760 Marktanteil der market share
-• Diese Zuschauerquote entspricht einem
-Marktanteil von 30 Prozent.
+• Diese Zuschauerquote entspricht einem Marktanteil von 30 Prozent.
 18 –L, –S
 
 3761 Maus die mouse
@@ -18866,8 +18514,7 @@ Marktanteil von 30 Prozent.
 18
 
 3766 minimal adj minimal
-• Die Chancen bei dieser Bewerbung sind
-minimal.
+• Die Chancen bei dieser Bewerbung sind minimal.
 18
 
 3767 Ministerium das ministry, department
@@ -18875,8 +18522,7 @@ minimal.
 18
 
 3768 mutmaßlich adj presumed, suspected
-• Die Polizei fasste den mutmaßlichen
-Mörder.
+• Die Polizei fasste den mutmaßlichen Mörder.
 18 –S
 
 3769 Mythos der myth, legend
@@ -19246,8 +18892,7 @@ Tischtuch.
 17
 
 3847 Bekämpfung die ﬁghting, controlling
-• Dieses Mittel eignet sich zur Bekämpfung
-von Blattläusen.
+• Dieses Mittel eignet sich zur Bekämpfung von Blattläusen.
 17
 
 3848 benehmen verb to behave
@@ -19387,13 +19032,11 @@ Welt.
 17 –A, –N
 
 3878 Gerechtigkeit die justice
-• Kinder haben ein starkes Empﬁnden für
-Gerechtigkeit.
+• Kinder haben ein starkes Empfinden für Gerechtigkeit.
 17
 
 3879 Gipfel der peak, summit
-• Die schneebedeckten Gipfel glitzerten in
-der Abendsonne.
+• Die schneebedeckten Gipfel glitzerten in der Abendsonne.
 17
 
 3880 glänzend adj shining, brilliant
@@ -19436,14 +19079,11 @@ Industrieländer.
 17 –L, –S
 
 3888 installieren verb to install
-• Dieses Programm kann kostenlos installiert
-werden.
+• Dieses Programm kann kostenlos installiert werden.
 17
 
 3889 interkulturell adj intercultural
-• In der interkulturellen Kommunikation
-kommt es immer wieder zu
-Missverständnissen.
+• In der interkulturellen Kommunikation kommt es immer wieder zu Missverständnissen.
 17 –L
 
 3890 Jacke die jacket
@@ -19540,8 +19180,7 @@ mit einer Pistole.
 17
 
 3910 Reichweite die reach, range
-• Die Wasserpistole hat eine Reichweite von
-fünf Metern.
+• Die Wasserpistole hat eine Reichweite von fünf Metern.
 17 –S
 
 3911 Reparatur die repair
@@ -19759,13 +19398,11 @@ nicht antun.
 16 –A, –S
 
 3957 Arbeitszeit die working hours
-• Die Gewerkschaften wollen die wöchentliche
-Arbeitszeit reduzieren.
+• Die Gewerkschaften wollen die wöchentliche Arbeitszeit reduzieren.
 16
 
 3958 aufräumen verb to tidy up, clear (up)
-• Am Wochenende müssen die Kinder ihr
-Zimmer aufräumen.
+• Am Wochenende müssen die Kinder ihr Zimmer aufräumen.
 16 –A
 
 3959 Aufsichtsrat der supervisory board
@@ -19895,8 +19532,7 @@ er ihr die Aufgabe nochmal erklärt.
 16
 
 3985 Kerze die candle
-• Die Kerzen auf dem Geburtstagskuchen
-muss man selbst auspusten.
+• Die Kerzen auf dem Geburtstagskuchen muss man selbst auspusten.
 16
 
 3986 Koch der cook
