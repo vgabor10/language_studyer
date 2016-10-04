@@ -5050,3 +5050,6 @@
 101987	sondern	hanem
 102099	dabei	mellet, mellette
 102187	e Maut	vám
+102191	e Versöhnung	kibékülés
+103632	r Honig	méz
+103710	hintereinander	egymásután

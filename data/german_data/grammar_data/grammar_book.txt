@@ -1718,15 +1718,15 @@ GrammarItemIndex = 54327
 \begin{desc}
 tun A, für + A = tesz, csinál vmit (vkiért/vmiért)
 
-Pl.: Meine Oma tut alles für uns. - A nagyim mindent megtesz értünk.
+a tun ige ragozása:
+ich ------- tue
+du -------- tust
+er/sie/es - tut
+wir ------- tun
+ihr ------- tut
+sie/Sie---- tun
 
-a Tun ige ragozása:
-ich tue
-du tust
-er/sie/es tut
-wir tun
-ihr tut
-sie/Sie tun
+Pl.: Meine Oma tut alles für uns. - A nagyim mindent megtesz értünk.
 \end{desc}
 
 %Maklári: 24. oldal

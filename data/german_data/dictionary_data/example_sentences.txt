@@ -3895,6 +3895,7 @@
 101780	Außerdem spiele ich Fußball.
 101780	Die Jungen spielen Fußball.
 101780	Fußball spielt man auf der ganzen Welt.
+101780	Alle 4 Jahre spielen die besten Mannschaften von Ländern gegeneinander Fußball.
 101781	Beim Basketball muss man gut zielen können.
 101784	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
 101791	Mittwochs geht Steffi zum Tennis.
@@ -3910,6 +3911,7 @@
 101801	Die Mannschaft verteidigte verbissen ihr Tor.
 101801	Die Stärke der Mannschaft besteht in ihrem Teamgeist.
 101801	Heute spielt die deutsche Mannschaft gegen die tschechische.
+101801	Alle 4 Jahre spielen die besten Mannschaften von Ländern gegeneinander Fußball.
 101802	Der Trainer kritisiert dauernd seine Sportler.
 101803	Das Spiel ist aus.
 101804	Sie möchte eine Medaille gewinnen.
@@ -6274,6 +6276,7 @@
 103230	An dem Wettbewerb nehmen Menschen aus allen Altersgruppen teil.
 103230	Der Wettbewerb stand unter dem Motto „Schöner unsere Städte und Dörfer“.
 103230	Sie hat sich für den Wettbewerb qualiﬁziert.
+103230	Die Bundes-Liga ist der wichtigste Wettbewerb im deutschen Fußball.
 103231	Die korrekte Antwort lautet anders.
 103231	Er hat noch keine Antwort darauf bekommen.
 103231	Ich habe ihm noch keine Antwort gegeben.
