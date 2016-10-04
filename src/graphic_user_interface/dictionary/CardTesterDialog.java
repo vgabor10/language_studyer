@@ -87,7 +87,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton2 = new javax.swing.JButton();
+        inspectCardButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -180,10 +180,10 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTable2.setEnabled(false);
         jScrollPane2.setViewportView(jTable2);
 
-        jButton2.setText("Inspect card");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        inspectCardButton.setText("Inspect card");
+        inspectCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                inspectCardButtonActionPerformed(evt);
             }
         });
 
@@ -200,7 +200,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
@@ -226,7 +226,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(inspectCardButton))
                 .addContainerGap())
         );
 
@@ -377,7 +377,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2KeyPressed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void inspectCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inspectCardButtonActionPerformed
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
         dialog.cardToInspect = cardTester.getActualQuestionedCard();
@@ -389,8 +389,15 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
+        if (dialogAnswer.stringAnswer.equals("save_card")) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.saveAllData();
+        }
+        
         jTextField1.requestFocus();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_inspectCardButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -436,8 +443,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton inspectCardButton;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
