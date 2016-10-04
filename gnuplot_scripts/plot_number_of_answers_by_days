@@ -1,3 +1,4 @@
 set style fill   solid 1.00 border lt -1
-plot '../data/temporary_data/number_of_answers_by_days.tmp' with boxes
+set datafile missing "0"
+plot '../data/temporary_data/number_of_answers_by_days.tmp' u 1:2:(1) with boxes
 pause -1
