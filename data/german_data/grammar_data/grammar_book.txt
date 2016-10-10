@@ -2297,7 +2297,7 @@ Pl: * Ich gehe noch nicht in die Schule. - Még nem megyek iskolába.
 25 | Ich habe keine Lust mehr. | Már nincs kedvem.
 26 | Sie lesen Keine Zeitung mehr. | Már nem olvasnak újságot.
 27 | Trinkt ihr keinen Wein mehr? | Nem isztok már bort?
-28 | Ich esse keinen Kuchen mehr. | Nem eszek már több sütit.
+28 | Ich esse keinen Kuchen mehr. | Nem eszek már több sütit. (r Kuchen)
 29 | Er hört nichts mehr. | Már semmit sem hall (f).
 30 | Wir kaufen nichts mehr. | Már semmit sem vásárolunk.
 31 | Sie trinkt nichts mehr. | Már semmit sem iszik (n).
@@ -3194,12 +3194,12 @@ Képzése:
 alany + wäre ragozva + többi mondatrész + gewesen
 
 wären ragozása:
-ich wäre
-du wärest
-er/sie/es wäre
-wir wären
-ihr wäret
-sie/Sie wären
+ich ------- wäre
+du -------- wärest
+er/sie/es - wäre
+wir ------- wären
+ihr ------- wäret
+sie/Sie --- wären
 
 Pl.: Er wäre nervös gewesen. - Ideges lett volna.
 \end{desc}
@@ -3755,7 +3755,7 @@ A fokozott mellékneveket egyeztetni is kell a főnévvel.
 17 | die feinste Suppe der Welt | a világ legfinommabb levese
 18 | der schnellste Schwimmer der Welt | a világ leggyorsabb úszója
 19 | der beste Schüler der Klasse | az osztály legjobb tanulója
-20 | die teuerste Kleid des Geschäfts | az üzlet legdrágább ruhája
+20 | das teuerste Kleid des Geschäfts | az üzlet legdrágább ruhája
 21 | das hübscheste Mädchen der Klasse | az osztály legcsinosabb lányát
 22 | die schönste Blume des Gartens | a kert legszebb virágát
 23 | das schönste Möbelstück der Wohnung | a lakás legszebb bútorát (s Möbelstück)
@@ -3776,7 +3776,7 @@ Ezen igék esetében az alanyt az es szóval fejezzük ki. Ilyenek az időjárá
 3 | Es blitzt. | Villámlik.
 4 | Es hagelt. | Jégeső esik. (hageln)
 5 | Es donnert. | Dörög.
-6 | Es dunkelt. | Sötétedik.
+6 | Es dunkelt. | Sötétedik. (dunkeln)
 7 | Es rieselt. | Szemerkél. (rieseln)
 8 | Es klopft. | Kopognak.
 9 | Es klingelt. | Csöngetnek.
@@ -4871,7 +4871,7 @@ Pl.: * Das sprechende Frau da ist meine Frau. - A beszélő nő ott a feleségem
 17 | mit dem sprechenden Kind | a beszélő gyerekkel
 18 | der schlafende Lehrer | az alvó tanár
 19 | die schriebende Mutter | az író anya
-20 | das lerenende Kind | a tanuló gyerek
+20 | das lehrende Kind | a tanuló gyerek
 21 | der pfeifende Schüler | a fütyülő diák (pfeifen)
 22 | das trinkende Mädchen | az ivó lány
 23 | das essende Kind | az evő gyerek

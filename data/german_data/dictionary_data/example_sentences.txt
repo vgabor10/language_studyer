@@ -1248,6 +1248,7 @@
 100323	Ihnen gehört das Haus bereits in der dritten Generation.
 100325	Waffen unterliegen in Deutschland strengen Gesetzen.
 100326	Es wird Waffenstillstand angeordnet.
+100326	Die Soldaten sollen aufpassen, dass der Waffenstillstand eingehalten wird.
 100327	Das Angebot beinhaltet Flug und Unterkunft.
 100327	Das Plus an dem Angebot ist der günstige Preis.
 100327	Der Vorstand hat dem Bewerber ein großzügiges Angebot gemacht.
@@ -1359,6 +1360,7 @@
 100371	Offensichtlich hast du mit dem Thema mehr Probleme, als du zugeben willst.
 100372	Ich habe keine Erfahrung mit Mikrowellen.
 100373	Wenn wir nicht aufpassen, geht alles zugrunde.
+100373	Die Soldaten sollen aufpassen, dass der Waffenstillstand eingehalten wird.
 100374	Ungefähr tausend Bürger nahmen an der Demonstration teil.
 100374	Von Leipzig nach Erfurt sind es ungefähr 120 Kilometer.
 100374	Zwei Mark sind ungefähr ein Euro.
@@ -7183,7 +7185,6 @@
 103800	Sie lehrt Deutsch im Goethe-Institut.
 103801	Die Verbrecher konnten durch den Hintereingang flüchten.
 103803	Selbst die Uniformen der Polizei sehen jetzt recht sportlich aus.
-103804	Ich habe aus Versehen die falsche Taste gedrückt.
 103804	Wir müssen jede Datei mit einer Kodierung versehen.
 103805	Der Geschäftsführer ﬂiegt immer Business Class.
 103806	Von hundert rückwärts zählen, beruhigt die Nerven.
@@ -7526,6 +7527,7 @@
 104029	Sie hat einen sehr ausgeprägten Charakter.
 104030	Anja singt seit vielen Jahren im Chor.
 104030	Ulrike singt im Chor.
+104031	Vereinte Nationen kann vermitteln und einen Waffen-Stillstand erreichen.
 104033	Der Angeklagte wurde verurteilt.
 104035	Auch fünfzehn Jahre nach der Wiedervereinigung sind die Lebensumstände in beiden Teilen Deutschlands noch sehr unterschiedlich.
 104036	Das Unternehmen verfügt nur über geringes Kapital.

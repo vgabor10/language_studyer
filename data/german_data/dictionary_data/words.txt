@@ -1777,7 +1777,7 @@
 101797	s Schwimmen	úszás
 101798	r Rekord	rekord
 101799	r Richter	bíró
-101800	r Spieler	játékos
+101800	r Spieler	játékos (fn)
 101801	e Mannschaft	csapat
 101802	r Trainer	edző
 101803	s Spiel	meccs
