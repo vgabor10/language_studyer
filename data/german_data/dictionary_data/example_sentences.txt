@@ -2908,6 +2908,7 @@
 101223	Wir brauchen einheitliche Regeln, die für alle gelten.
 101223	Wir brauchen für unser Vorgehen eine Richtlinie.
 101225	Der Autoverkehr stellt eine große Belastung für die Umwelt dar.
+101225	Die Belastung für die Fußballspieler ist zu hoch.
 101228	Der Mangel an qualiﬁzierten Arbeitskräften belastet die regionale Wirtschaft.
 101229	Man kann auch mit wenigen Mitteln einen großen Effekt erzielen.
 101230	Eine genaue Reﬂexion des Problems ist dringend nötig.

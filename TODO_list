@@ -1,10 +1,13 @@
 Modification ideas in src:
 - give log file path relatively
 - create average answer rates by days statistics
-- consider study vocabulary with sentences
-- make study strategy editor
+- consider study vocabulary with sentencesy
 - fix bugs when there is still no data
-- sliding modification menu in dictionary dialog
+- store card categories data in different file
+- consider making a DictionaryData class
+- create DictionaryEngine class, create GrammarBookEngine class
+- in gnuplot scripts the file path should be added be parameter
+- make synonim searcher
 
 german grammar items to add:
 - többesszámok
