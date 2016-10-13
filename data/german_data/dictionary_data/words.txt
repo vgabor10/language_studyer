@@ -118,7 +118,7 @@
 100117	s Fahrrad	kerékpár
 100118	schwarz	fekete
 100119	glauben	hisz
-100120	r Verkäufer	eladó
+100120	r Verkäufer	eladó (fn)
 100121	r Sohn	fia vkinek
 100122	e Frau	feleség, asszony, nő
 100123	r Mantel	kabát
@@ -5049,7 +5049,7 @@
 101954	r Angeklagte	vádlott
 101987	sondern	hanem
 102099	dabei	mellet, mellette
-102187	e Maut	vám
+102187	e Maut	vám, útdíj
 102191	e Versöhnung	kibékülés
 103632	r Honig	méz
 103710	hintereinander	egymásután
