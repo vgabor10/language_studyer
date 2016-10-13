@@ -3750,7 +3750,7 @@
 103805	s Business	üzlet
 103806	r Nerv	ideg
 103807	e Chance	esély
-103808	britisch	brit
+103808	britisch	brit (mn)
 103809	zutreffen	igaznak bizonyul
 103810	s Motiv	motiváció, indíték
 103811	beträchtlich	jelentős

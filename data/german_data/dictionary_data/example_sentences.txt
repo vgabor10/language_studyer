@@ -1227,17 +1227,11 @@
 100316	Während des Krieges war die Nahrung streng rationiert.
 100317	Dieses Land ist reich an Bodenschätzen.
 100317	Frankreich ist aus dem westfränkischen Reich entstanden.
-100318	An dem Wettbewerb nehmen Menschen aus allen Altersgruppen teil.
 100318	Der größte Teil der Erde ist mit Wasser bedeckt.
 100318	Der überwiegende Teil der Erstsemester fährt am Wochenende nach Hause.
-100318	Falk nimmt an der Sitzung teil.
-100318	Ich nehme regelmäßig an Fachtagungen teil.
 100318	Im ersten Teil des Buches werden die Personen vorgestellt.
-100318	Sie nahm an einem psycholinguistischen Experiment teil.
-100318	Ungefähr tausend Bürger nahmen an der Demonstration teil.
 100318	Wie bezeichnet man den östlichen Teil einer Kirche?
 100318	Wir haben die Arbeit nur zum Teil erledigen können.
-100318	Wissenschaftler aus verschiedenen Fachrichtungen nehmen an der Tagung teil.
 100319	Dafür besteht keine Notwendigkeit.
 100322	Die Französische Revolution begann 1789.
 100322	Die industrielle Revolution ließ die Städte schnell wachsen.
@@ -3327,12 +3321,9 @@
 101446	Obst enthält natürliche Vitamine.
 101448	Das Alter spielt für mich keine Rolle.
 101448	Der Schauspieler verstarb im Alter von 86 Jahren.
-101448	Die Bibliothek hat einen großen Bestand alter Bücher.
 101448	Im Alter sind viele Menschen einsam.
 101448	Im Alter von 6 Jahren gehen Kinder in die Grundschule.
-101448	Im Museum kann man eine Sammlung alter Münzen anschauen.
 101448	In welchem Alter machen Jugendliche ihre ersten sexuellen Erfahrungen?
-101448	Neben dem Haus steht ein alter Baum.
 101448	Sie starb im Alter von 75 Jahren.
 101449	Anna feiert ihren vierten Geburtstag im Kindergarten.
 101449	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
@@ -4041,12 +4032,6 @@
 101891	Auch in Deutschland wird eine Gebühr zur Straßennutzung eingeführt.
 101891	Immerhin müssen wir noch keine Studiengebühren zahlen.
 101892	Das Haus kostet mindestens eine Million Euro.
-101892	Das zentrale Problem sind die Kosten.
-101892	Die Differenz zwischen Umsatz und Kosten ist der Gewinn.
-101892	Die Einnahmen decken genau die Kosten.
-101892	Die Kosten für die Reise übernimmt die Firma.
-101892	Die operativen Kosten sind viel zu hoch.
-101892	Die restlichen Kosten trägt die Stadt.
 101893	Das Telefon ist ein beliebtes Mittel zur Kommunikation.
 101893	Eine weibliche Stimme meldete sich am Telefon.
 101893	Manche Leute haben gar kein Telefon mehr, sondern nur noch ein Handy.
@@ -6027,8 +6012,6 @@
 103071	Kinder mögen weiche Spielsachen wie Stofftiere.
 103072	Ein Freund hat anstelle des Kandidaten die Prüfung abgelegt.
 103074	Du hast scheinbar überhaupt keine Ahnung.
-103075	Ich hoffe, dass wir uns irgendwann mal wiedersehen.
-103075	Irgendwann werden wir uns wiedersehen.
 103075	Wir freuen uns auf ein baldiges Wiedersehen.
 103076	Christine hat im Oktober angefangen, Niederländisch zu lernen.
 103077	Der Teufel lebt in der Hölle.
@@ -8306,15 +8289,6 @@
 104521	Von den Noten her müsste sie sich eigentlich keine Sorgen machen.
 104522	Fünf Kandidaten treten gegeneinander an.
 104523	Am Ostersonntag unternehmen wir mit der Familie einen Ausﬂug in die Berge.
-104523	Das Unternehmen erzielte dieses Jahr nur minimalen Gewinn.
-104523	Das Unternehmen ging in Konkurs.
-104523	Das Unternehmen ist gerade dabei, ein internes Netzwerk einzurichten.
-104523	Das Unternehmen stellt Ihnen einen Dienstwagen zur Verfügung.
-104523	Das Unternehmen verfügt nur über geringes Kapital.
-104523	Das Unternehmen zieht in Betracht, weitere Ausbildungsplätze zu schaffen.
-104523	Die Fusion der beiden Unternehmen ist für nächstes Jahr geplant.
-104523	Ein erfolgreicher Manager leitet das Unternehmen.
-104523	Wirtschaftlich gesehen können wir uns das Unternehmen nicht leisten.
 104525	Dann gehen wir schwimmen.
 104525	Es muss auch Leute geben, die gegen den Strom schwimmen.
 104525	Sie kann besser schwimmen als wir.
