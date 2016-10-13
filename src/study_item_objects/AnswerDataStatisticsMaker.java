@@ -407,11 +407,11 @@ public class AnswerDataStatisticsMaker {
             actualDay = generalFunctions.milisecToDay(answerData.date);
 
             if (actualDay != lastDay) {
-                out.put(actualDay, answerDataByStudyItemsContainer.getHistogram());
+                out.put(lastDay, answerDataByStudyItemsContainer.getHistogram());
+                lastDay = actualDay;
             }
 
             answerDataByStudyItemsContainer.addAnswerData(answerData);
-            lastDay = actualDay;
         }
         out.put(actualDay, answerDataByStudyItemsContainer.getHistogram());
 
