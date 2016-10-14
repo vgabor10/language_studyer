@@ -854,8 +854,6 @@
 100192	Menschen zählen wir zu den hoch entwickelten Lebewesen.
 100192	Urgroßvater wird von allen Familienmitgliedern hoch geachtet.
 100193	Das ist ein ganz außergewöhnlich schönes Blau.
-100194	Ich habe mir meinen Arm gebrochen.
-100194	Ich habe sie am Arm festgehalten.
 100195	Claudia ist traurig, weil ihr Hund gestorben ist.
 100195	Das Ende des Films war traurig.
 100195	Einerseits freue ich mich über deine Entscheidung, nach Berlin zu ziehen, andererseits macht sie mich traurig.
@@ -1817,9 +1815,6 @@
 100571	An dieser Stelle möchte ich mich bei meiner Familie für ihre Unterstützung bedanken.
 100571	An dieser Stelle sollten wir die Arbeitskräfte bündeln.
 100571	Auf eine freie Stelle kommen zwanzig Bewerber.
-100571	Ich stelle den Teller auf den Tisch.
-100571	Ich stelle mein Fahrrad vor das Haus.
-100571	Ich stelle mich gerne neuen Herausforderungen.
 100571	Sie bewirbt sich um eine Stelle als Sekretärin.
 100571	Wir treffen uns an der gleichen Stelle wie letzte Woche.
 100572	Kritiker warnen indes vor möglichen Folgen.
@@ -8408,11 +8403,6 @@
 104590	Letztendlich muss sich jeder in sein Schicksal fügen.
 104590	Letztendlich hat es doch geklappt.
 104591	Bei der Preisverleihung erschien sie mit ihrem Ehegatten.
-104594	Die Autobahn wird aus Steuern ﬁnanziert.
-104594	Die Autobahn wird aus Steuern ﬁnanziert. 2 das steering wheel, helm
-104594	Die Regierung senkt die Steuern noch dieses Jahr.
-104594	Die Steuern bekommt der Staat.
-104594	Ein Anstieg der Steuern ist unvermeidlich.
 104595	Die Tür geht nicht auf.
 104596	Die Innenstadt ist für jeglichen Verkehr gesperrt.
 104597	Ich hoffe, dein Wunsch geht in Erfüllung.
