@@ -1031,3 +1031,7 @@
 101030	disclosure	felfed, leleplez
 101031	transparent	átlátszó
 101032	irreparable	helyrehozhatatlan
+101033	disarray	rendetlenség, zűrzavar
+101034	spectacular	látványos, mutatós
+101035	arbitrary	tetszőleges
+101036	affirmative	igenlő, megerősítő
