@@ -901,6 +901,7 @@
 100205	In ihren späten Jahren erwarb sie ein Stück Land und baute sich darauf ein Haus.
 100205	Zwischen den Fahrbahnen ist ein schmales Stück Rasen.
 100206	Dieser Knopf dient zum Auslösen des Alarms.
+100206	Der Ausspruch löste Schrecken aus.
 100207	Im ersten Lebensjahr entwickeln sich Kinder in einem rasanten Tempo.
 100207	Menschen zählen wir zu den hoch entwickelten Lebewesen.
 100207	Schmetterlinge entwickeln sich aus Raupen.
@@ -2029,6 +2030,8 @@
 100673	Der Maler steht auf dem Balkon.
 100673	Der Maler streicht die Wände.
 100673	Es handelt sich hier um eine Ausstellung zeitgenössischer Maler.
+100676	Toms Benehmen war nicht akzeptabel.
+100676	Die Entscheidung war für uns alle akzeptabel.
 100677	Die Behörde lehnt seinen Antrag auf ein Visum ab.
 100677	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
 100679	Ich habe gleich ein Seminar, zuvor muss ich noch etwas kopieren.
@@ -2195,6 +2198,9 @@
 100777	Der Manager bemüht sich um eine gerechte Verteilung der Aufgaben.
 100778	Trotz aller Bemühungen scheiterte unser Plan.
 100780	Das Reisebüro wirbt für Kurzreisen nach Spanien.
+100781	Er hat hart gearbeitet, andernfalls hätte er die Prüfung nicht bestanden.
+100781	Er hat die Wahrheit gesagt, andernfalls wäre er bestraft worden.
+100781	Er hat sein bestes gegeben, andernfalls hätte er nicht den ersten Preis gewonnen.
 100785	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
 100785	Er hat einen unpassenden Ausdruck verwendet.
 100785	Schwarze Kleidung ist ein Ausdruck für Trauer.
@@ -2748,6 +2754,7 @@
 101130	Mindestens die Hälfte der Teilnehmer hat die Prüfung nicht bestanden.
 101130	Silke hat in der Prüfung durchschnittliche Leistungen erzielt.
 101132	Die Kirche ist im romanischen Stil gebaut.
+101133	Diese Zitate sind meine Favoriten.
 101134	Nach dem Krieg begann die Rückkehr der Flüchtlinge.
 101135	Ein Verdächtiger wurde verhaftet.
 101137	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
@@ -2848,6 +2855,7 @@
 101201	Er entschuldigte sich bei ihr für seine Verspätung.
 101201	Er lässt sich entschuldigen, er kann nicht kommen.
 101201	Entschuldige meine Ausdrucksweise!
+101201	Entschuldigen Sie das Durcheinander!
 101202	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
 101202	Unser ursprüngliches Vorgehen erwies sich als ineffektiv.
 101202	Wenn ein Schuldner nicht zahlt, kann der Gläubiger gerichtlich gegen ihn vorgehen.
@@ -3562,6 +3570,7 @@
 101560	Rudolf, das Rentier, hat eine rote Nase.
 101562	Er seufzte tief und fasste sich an die Stirn.
 101562	Ihre Haare hängen tief in die Stirn.
+101563	Rote Lippen soll man küssen.
 101564	Dirk hat sich auf die Zunge gebissen.
 101565	Der Zahnarzt zieht mir einen Zahn.
 101566	Das Haar wächst jede Woche etwa drei Millimeter.
@@ -3903,6 +3912,7 @@
 101802	Der Trainer kritisiert dauernd seine Sportler.
 101803	Das Spiel ist aus.
 101804	Sie möchte eine Medaille gewinnen.
+101809	Toms Benehmen war nicht akzeptabel.
 101810	Die Miete ist sehr günstig.
 101811	Es ist empfehlenswert, regelmäßig zum Zahnarzt zu gehen.
 101811	Dieses Buch ist nicht sehr empfehlenswert.
@@ -4329,6 +4339,7 @@
 102128	Die Regierung leitet Reformen ein.
 102128	Es wird eine Reform angestrebt.
 102130	Die heutige Situation ist völlig anders als die damalige.
+102132	Er wurde mit einem gezielten Schuss getötet.
 102137	Heutzutage ist das alles ganz anders.
 102141	Bring bitte den Abfall hinaus!
 102142	In Nobelrestaurants fällt viel Müll an.
@@ -4789,6 +4800,7 @@
 102359	Wir treffen uns an der gleichen Stelle wie letzte Woche.
 102360	Atmen Sie ruhig und gleichmäßig!
 102361	Sie sprangen gleichzeitig von der Brücke.
+102362	Das Schiff gleitet durch die Wellen.
 102363	Die globale Erwärmung beunruhigt nicht nur Wissenschaftler.
 102364	Leonie und Max sind ein glückliches Paar.
 102364	Sie verbrachten eine glückliche Ehe.
@@ -5421,6 +5433,7 @@
 102691	Eine Kombination von dummen Zufällen hat zu dieser Katastrophe geführt.
 102691	Es droht eine Katastrophe.
 102692	Auf der Kassette sind alte Lieder aus meiner Jugendzeit.
+102694	A und B gehören zwei verschiedenen Kategorien an.
 102695	Anne Will hat Karriere beim Fernsehen gemacht.
 102695	Karriere und Familie sollte man gut kombinieren können.
 102696	Die Pubertät ist der Übergang von der Kindheit zum Erwachsensein.
@@ -6215,6 +6228,7 @@
 103204	Die Bibliothek hat einen großen Bestand alter Bücher.
 103205	Entweder übernimmst du Verantwortung, oder du ﬂiegst raus.
 103205	Sebastian geht nach dem Studium entweder nach Polen oder nach Tschechien.
+103206	Der Arzt hat mir eine wirksame Salbe verschrieben.
 103207	Was weiß man über die Entstehung der Erde?
 103208	Holz ist ein nachwachsender Rohstoff.
 103210	Bei vielen Jugendlichen herrscht Unsicherheit hinsichtlich ihrer Berufswahl.
@@ -6560,6 +6574,7 @@
 103414	Eine Kombination von dummen Zufällen hat zu dieser Katastrophe geführt.
 103415	Ihre Darstellung der Ereignisse war detailliert und umfangreich.
 103416	Naja, ich würde das nicht so dramatisch sehen.
+103417	Wir erwarten Ihre unverzügliche Antwort.
 103418	Das Ministerium teilt mit, dass Versicherungen bis zum Ende des Jahres steuerfrei sind.
 103418	Sie arbeitet am Ministerium für Finanzen.
 103419	Die Feder schwebt zu Boden.
@@ -6663,6 +6678,7 @@
 103478	Die Vorlesung ist total überlaufen.
 103478	Ich bin total müde nach dem langen Tag.
 103479	Die Mutter schimpft mit den frechen Kindern.
+103480	Lediglich 30% der Bevölkerung beteiligten sich an der Wahl.
 103481	Olaf kann man nur mit harten Fakten überzeugen.
 103481	Zu viele Fakten verwirren die Zuhörer.
 103481	Zu viele Fakten verwirren die Zuhörer. 
@@ -7149,6 +7165,7 @@
 103790	Der Angeklagte bekannte sich schuldig.
 103791	Das Akademische Auslandsamt ist für die Vermittlung von Erasmusstudenten zuständig.
 103792	Sie hat eine blühende Phantasie.
+103793	Der Ausspruch löste Schrecken aus.
 103794	Schmetterlinge entwickeln sich aus Raupen.
 103795	Ich gehe gern im Wald spazieren.
 103795	Jeden Sonntag gehen wir spazieren.
@@ -7261,6 +7278,7 @@
 103857	Ein Zeugnis ist ein wichtiges Dokument.
 103857	Mit ihrem Zeugnis hat sie sehr gute beruﬂiche Perspektiven.
 103859	Träume sollte man verwirklichen.
+103860	Gewöhnlich versteckt man seinen Geliebten im Kleiderschrank.
 103861	Ein Jurist muss das BGB kennen.
 103861	Ich bin höchst erfreut, Sie kennen zu lernen.
 103861	In der Vorlesung lernen wir verschiedene Aspekte von Sprache kennen.
@@ -7480,6 +7498,7 @@
 104012	Derjenige, der zuerst eine Sechs würfelt, darf anfangen.
 104013	Wir beziehen unser Gemüse aus der regionalen Landwirtschaft.
 104014	Der Verkehr stand durch die Demonstranten eine Stunde lang still.
+104015	Die Mitgliedstaaten verpflichten sich, ihre militärischen Fähigkeiten zu verbessern.
 104016	Auf dem Hügel steht eine kleine Kirche.
 104016	Die Kirche steht auf einem Hügel.
 104017	Es begann kräftig zu regnen, daraufhin wurden die Überschwemmungen noch schlimmer.
@@ -7898,6 +7917,7 @@
 104284	Die Schraube ist locker.
 104284	Viele Chefs gehen mit ihren Angestellten sehr locker um.
 104285	Ich halte dieses Verbot für gerechtfertigt.
+104286	Die Lehrerin verbietet ihren Schülern zu reden.
 104287	Ich kann keine endgültige Entscheidung treffen, ohne vorher meinen Chef zu fragen.
 104287	Sein Vater war Soldat, seine Mutter war vorher gestorben.
 104287	Vorher lese ich noch den Artikel zu Ende.
@@ -8104,7 +8124,6 @@
 104408	Erich kann komplexe Sachverhalte schnell erfassen.
 104409	Der menschliche Oberschenkelknochen ist stärker als Beton.
 104409	Irren ist menschlich.
-104409	Der menschliche Oberschenkelknochen ist stärker als Beton.
 104410	Diese Ansichten sind mir zu liberal.
 104410	Er ist in seinen Ansichten gefangen.
 104411	Erlauben Sie mir die Feststellung, dass dies nicht zum ersten Mal passiert ist.
@@ -8395,6 +8414,7 @@
 104584	Das Volumen eines Raumes berechnet sich aus Breite mal Tiefe mal Höhe.
 104585	Das Rathaus plant, eine Kampagne gegen das Rauchen zu starten.
 104585	Drücken Sie auf diesen Knopf, um die Maschine zu starten.
+104586	Gentechnisch veränderte Lebensmittel müssen gekennzeichnet werden.
 104587	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
 104587	Der Fußgänger weicht dem Auto aus.
 104588	Nach der Knieoperation war er im Laufen noch etwas unsicher.
@@ -8469,6 +8489,7 @@
 104640	Silke stellt an ihren Mann sehr hohe Anforderungen.
 104641	Du musst dein Immunsystem stärken.
 104642	Wir haben kein Interesse an Ihrem Angebot, es ist sozusagen besser, wenn Sie gehen.
+104643	Entschuldigen Sie das Durcheinander!
 104644	Wir können über sein Konto verfügen.
 104645	Da besteht bestimmt ein Zusammenhang.
 104645	In diesem Zusammenhang möchte ich auf eine weiteres Problem hinweisen.
@@ -8974,6 +8995,7 @@
 105142	Das Urteil über den Einbrecher wird am Montag gesprochen.
 105142	In Physik haben wir über Elektronen gesprochen.
 105143	Wir haben lange vor dem Kino angestanden.
+105144	Er ist aus dem Fenster gesprungen.
 105146	Hotzenplotz hat ein Fahrrad gestohlen.
 105147	Die Produktion von Autos ist um 25% gestiegen.
 105147	Im dritten Quartal sind die Verluste besonders gestiegen.
@@ -9098,6 +9120,7 @@
 101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
 101934	Toleranz und Meinungsfreiheit sind wichtige Güter einer Demokratie.
 102072	Tim hält sich gesund, indem er viel Sport treibt.
+100199	Erst muss man den Fisch ausnehmen, dann kann man ihn braten.
 100281	Am Wochenende erwartet uns ein Mix aus Regen und Sonnenschein.
 100281	Das Semester beginnt im Oktober und endet im März.
 100281	Der Zug zwischen Halle und Leipzig verkehrt jetzt alle halbe Stunde.
@@ -9113,6 +9136,7 @@
 100850	Das Reisebüro wirbt für Kurzreisen nach Spanien.
 100850	Wir haben eine Tour durch Spanien gemacht.
 102300	Die Polizei ermittelt bereits in diesem Fall.
+102311	Rache ist süß.
 102342	Die Donau hat ihren Ursprung im Schwarzwald.
 102342	Man kann mit dem Rad die Donau entlang fahren.
 102129	Er benimmt sich merklich kühl.
