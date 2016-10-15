@@ -555,13 +555,13 @@ public class AnswerDataStatisticsMaker {
                 out.put(actualAnswerDay, actualDayQuestionedCardIndexes.size());
                 questionedCardIndexes.addAll(actualDayQuestionedCardIndexes);
                 actualDayQuestionedCardIndexes.clear();
+                lastAnswerDay = actualAnswerDay;
             }
             else {
                 if (!questionedCardIndexes.contains(answerData.index)) {
                     actualDayQuestionedCardIndexes.add(answerData.index);
                 }
             }
-            lastAnswerDay = actualAnswerDay;
         }
         out.put(actualAnswerDay,actualDayQuestionedCardIndexes.size());
         
