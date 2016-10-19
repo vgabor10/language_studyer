@@ -389,6 +389,47 @@ public class AnswerDataStatisticsMaker {
         return numberOfStudyItemsInCategory;
     }
 
+    public Map<Integer, Histogram> getHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
+            int numberOfAnswers) {
+        
+        AnswerDataByStudyItemContainer answerDataByStudyItemsContainer
+                = new AnswerDataByStudyItemContainer();
+
+        Map<Integer, Histogram> out = new HashMap<>();
+
+        for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
+            AnswerData answerData = answerDataContainer.getAnswerData(i);
+            
+            if (i % numberOfAnswers == 0) {
+                out.put(i, answerDataByStudyItemsContainer.getHistogram());
+            }
+
+            answerDataByStudyItemsContainer.addAnswerData(answerData);
+        }
+
+        return out;
+    }
+
+    public void toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
+            String filePath, int numberOfAnswers) {
+        
+        Map<Integer, Histogram> data = getHistogramOfStudyItemAnswerRatesByNumberOfAnswers(numberOfAnswers);
+
+        Set<Integer> keys = data.keySet();
+        SortedSet<Integer> sortedDays = new TreeSet<>(keys);
+
+        try {
+            //the true will append the new data
+            FileWriter fw = new FileWriter(filePath, false);
+            for (int day : sortedDays) {
+                fw.write(day + "\t" + data.get(day).toStringHorisontally("\t") + "\n");
+            }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }
+    }
+    
     //TODO: make it faster: only the answerd study items answer rate should be reevaluated
     public Map<Integer, Histogram> getHistogramOfStudyItemAnswerRatesByDays() {
         AnswerDataByStudyItemContainer answerDataByStudyItemsContainer
@@ -583,6 +624,16 @@ public class AnswerDataStatisticsMaker {
         
         DecimalFormat df = new DecimalFormat("#.00");
         return df.format(userPoints) + "\\" + Integer.toString(allPoints);
+    }
+
+    public double averageNumberOfAnswersOfCards() {
+        return (double)(answerDataContainer.numberOfAnswers())
+                /((double)(studyItemContainer.numberOfStudyItems()));
+    }
+    
+    public String getAverageNumberOfAnswersOfCardsAsString() {
+        DecimalFormat df = new DecimalFormat("#.0000");
+        return df.format(averageNumberOfAnswersOfCards());
     }
     
 }
