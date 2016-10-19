@@ -9,7 +9,7 @@
 100008	schnell	gyors
 100009	schön	szép
 100010	immer	mindig
-100011	nach Hause	haza
+100011	nach Hause	haza (prepozícióval)
 100012	zu Hause	otthon (prepozícióval)
 100013	in der Näche	közelben
 100014	sofort	rögtön, azonnal
@@ -244,7 +244,7 @@
 100244	einnehmen	bevesz, elfoglal
 100245	e Bezeichnung	elnevezés
 100246	zwischen	között
-100247	während	alatt
+100247	während	alatt (időben)
 100248	r Zeitraum	időszak
 100249	r Bundesstaat	szövetségi állam
 100250	e Gründung	alapzat
@@ -1741,7 +1741,7 @@
 101761	riesengroß	óriási
 101762	e Landschaft	vidék
 101763	e Vorbereitung	előkészület
-101764	r Flugticket	repülőjegy
+101764	s Flugticket	repülőjegy
 101765	buchen	lefoglal
 101766	r Reisepass	útlevél
 101767	r Durchgang	átjáró, kapu
@@ -2112,7 +2112,6 @@
 102143	schaden	károsítani
 102144	e Vorschrift	előírás
 102145	vernichten	megsemmisít
-102146	e Kanalisation	csatornázás
 102147	s Taschentuch	zsebkendő
 102148	s Zeichen	jel
 102149	umweltschmutzig	környezetszennyező
@@ -3044,7 +3043,7 @@
 103089	e Ferien	ünnep, szabadság
 103090	e Polizei	rendőrség
 103091	erforschen	kutat
-103092	wohin	ahova
+103092	wohin	hova, ahova
 103093	s Glied	tag
 103094	s Volumen	térfogat
 103095	kommentieren	kommentál

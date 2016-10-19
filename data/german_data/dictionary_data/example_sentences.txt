@@ -521,7 +521,6 @@
 100118	Dort stand es schwarz auf weiß.
 100118	Ein Herr im schwarzen Anzug erschien auf der Bühne.
 100119	Anfangs glaubte ich noch, ich könnte ihn verändern.
-100119	Der christliche Glauben ist 2000 Jahre alt.
 100119	Glaubst du, dass du es zeitlich schaffen wirst?
 100119	Viele Menschen glauben nicht an das Schicksal.
 100120	Der Verkäufer steht im Dienst seiner Kunden.
@@ -1848,7 +1847,6 @@
 100584	Die Galerie präsentiert bekannte Bilder auf neue Art und Weise.
 100585	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
 100585	Wir verlassen das Haus um 8 Uhr.
-100585	Wir verlassen das Haus um 8 Uhr. 2 verlassen (sich) to depend, rely on
 100585	Zahlreiche Touristen verlassen das Land.
 100589	Am Donnerstag wollen wir indisch essen gehen.
 100589	Donnerstag Abend gehe ich ins Kabarett.
@@ -2098,7 +2096,7 @@
 100718	Du wolltest mir helfen. Stattdessen treibst du dich draußen herum.
 100719	Die jüdische Gemeinschaft in Leipzig will ein neues Zentrum errichten.
 100721	Bisher habe ich nie viel vor Prüfungen gelernt.
-100723	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn
+100723	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 100723	Das ist doch logisch.
 100723	Das ist doch selbstverständlich.
 100723	Er zögerte eine Weile, doch dann verließ er endgültig den Raum.
@@ -2270,6 +2268,8 @@
 100812	Im dritten Quartal sind die Verluste besonders gestiegen.
 100812	In welchen Lebensmitteln ist besonders viel Kalzium?
 100812	Start und Landung sind beim Fliegen besonders kritisch.
+100813	Der amerikanische Senat genehmigte den Vertrag zügig.
+100813	Der Manager genehmigte unseren Plan.
 100814	Das Haus kostet mindestens eine Million Euro.
 100814	Die Gründung eines Vereins erfordert mindestens sieben Mitglieder.
 100814	Für den Kuchen braucht man mindestens drei Eier.
@@ -2361,6 +2361,7 @@
 100875	Darüber muss ich erst mal nachdenken.
 100875	Ich rate dir, noch einmal darüber nachzudenken.
 100876	Der neue Computer ermöglicht einen schnelleren Internetzugang.
+100877	Peter besorgt Steaks und Susanne die Kohle für den Grill.
 100878	An dieser Stelle möchte ich mich bei meiner Familie für ihre Unterstützung bedanken.
 100878	Ohne staatliche Unterstützung könnten sie gar nicht leben.
 100878	Sie haben ein Abkommen zur gegenseitigen Unterstützung geschlossen.
@@ -2935,7 +2936,6 @@
 101248	Viele kulturelle Vereine haben kaum Geld.
 101248	Von der staatlichen Rente kann man kaum leben.
 101252	Ich hoffe, ich kann Ihnen bald detailliertere Angaben machen.
-101252	Nächste Woche ist keine sehr konkrete Zeitangabe.
 101253	Das Reformkonzept stieß auf Zurückhaltung und Ablehnung.
 101254	Arbeitslose müssen dieses Jahr mit massiven Einschnitten rechnen.
 101255	Ich bin auf dem linken Ohr etwas taub.
@@ -3550,7 +3550,7 @@
 101536	Morgen trifft das Päckchen bei dir ein.
 101542	Kann ich mal deinen Kakao probieren?
 101542	Tee, Kaffee, Kakao etc. sind beliebte
-101542	Tee, Kaffee, Kakao etc. sind beliebte Getränke, die Deutschland importieren
+101542	Tee, Kaffee, Kakao etc. sind beliebte Getränke, die Deutschland importieren muss.
 101545	Die Geburt eines Kindes ist immer ein erfreuliches Ereignis.
 101545	In jeder Generation kommt es zu historischen Ereignissen.
 101546	Unsere Fabrik stellt Geschirr her.
@@ -3719,6 +3719,7 @@
 101662	Der Koch hat ein schmackhaftes Menu zusammengestellt.
 101663	Arabischer Kaffee wird mit Gewürzen gekocht.
 101665	Dieses Restaurant hat eine Vielzahl von Speisen im Angebot.
+101666	Tee, Kaffee, Kakao etc. sind beliebte Getränke, die Deutschland importieren muss.
 101667	Dieses Restaurant hat eine Vielzahl von Speisen im Angebot.
 101667	Im Restaurant kostet das Bier etwa viermal so viel wie im Laden.
 101667	Nicht weit von hier gibt es ein gemütliches Restaurant.
@@ -3895,6 +3896,7 @@
 101780	Alle 4 Jahre spielen die besten Mannschaften von Ländern gegeneinander Fußball.
 101781	Beim Basketball muss man gut zielen können.
 101784	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
+101789	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 101791	Mittwochs geht Steffi zum Tennis.
 101795	Am Sonntag will mein Süßer mit mir segeln geh’n.
 101795	Weil das Wasser die Sonnenstrahlen reﬂektiert, bekommt man beim Segeln schnell Sonnenbrand.
@@ -4083,6 +4085,7 @@
 101925	Die Bibliothek hat 12 Stunden am Tag geöffnet.
 101925	Die Bibliothek hat einen großen Bestand alter Bücher.
 101925	In der Bibliothek stehen insgesamt 200.000 Bücher.
+101926	Jeder unkontrollierte Geheimdienst gefährdet die Demokratie.
 101927	Aufgrund einer Störung ﬁel der Strom für drei Stunden aus.
 101927	Die Störung im Atomkraftwerk verunsicherte die Bevölkerung.
 101927	Im Atomkraftwerk gab es erneut eine Störung.
@@ -4804,6 +4807,7 @@
 102363	Die globale Erwärmung beunruhigt nicht nur Wissenschaftler.
 102364	Leonie und Max sind ein glückliches Paar.
 102364	Sie verbrachten eine glückliche Ehe.
+102365	Sie trägt eine goldene Kette um den Hals.
 102366	Das Gras ist grün.
 102366	Die Bauern bekommen Subventionen dafür, dass sie auf ihren Feldern Gras statt Getreide wachsen lassen.
 102366	Gras wächst fast überall.
@@ -4823,6 +4827,7 @@
 102371	Mit Schiffen kann man große Mengen billig transportieren.
 102371	Nimm einen größeren Topf!
 102371	Ullas Trauer war sehr groß.
+102372	Der Vorstand hat dem Bewerber ein großzügiges Angebot gemacht.
 102373	Das Gras ist grün.
 102373	Die Bäume werden grün.
 102373	Laura hat ihr Zimmer grün gestrichen.
@@ -4980,7 +4985,7 @@
 102455	Der Wahlsieg der Opposition hat niemanden erstaunt.
 102456	Das Ergebnis ist erstaunlich.
 102458	Erstmals hatten sie keine Angst mehr, nicht satt zu werden.
-102460	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn
+102460	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 102460	Darüber muss ich erst mal nachdenken.
 102460	Der Anbieter kann erst in drei Tagen liefern.
 102460	Der Film kam erst kürzlich wieder im Fernsehen.
@@ -5935,7 +5940,7 @@
 103005	Die Debatte im Senat dauerte über vier Stunden.
 103006	Australien ist ein Kontinent.
 103007	Der ganze Schreibtisch liegt voller Zettel.
-103008	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn
+103008	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 103008	Das Turnier beginnt um drei.
 103008	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
 103009	Kinder erkennen die Autorität der Eltern oft nicht an.
@@ -6532,6 +6537,7 @@
 103380	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
 103380	Möglicherweise schaffen wir es doch bis zum vereinbarten Termin.
 103381	Die Tür ist verschlossen.
+103382	Der Harz ist eine bekannte touristische Region.
 103383	Wer regiert in Deutschland?
 103384	Der Körper braucht täglich 75 Milligramm Vitamin C.
 103384	Kiwis enthalten viel Vitamin C.
@@ -6927,6 +6933,7 @@
 103642	Einige Zeitschriften erscheinen monatlich.
 103642	Wir zahlen monatlich ungefähr 1000 Dollar an Nebenkosten.
 103642	Sie versuchte, ihr monatliches Budget unter 400 Dollar zu halten.
+103646	Diese Entwicklungen bewirkten eine radikale Veränderung im Sozialleben.
 103647	Die Eröffnung des neuen Museums fand vor drei Wochen statt.
 103648	Aus welchem Material sind diese Strümpfe?
 103648	Das Material wurde schon verarbeitet.
@@ -6977,6 +6984,7 @@
 103677	Rubens zeichnete gerne nackte Frauen.
 103678	Mit einer Tarnkappe kann man unsichtbar werden.
 103680	Die Verfassung der Bundesrepublik heißt Grundgesetz.
+103680	Im Grundgesetz steht zum Beispiel, dass alle Menschen die gleichen Rechte haben. 
 103681	Wir ﬂiegen mit einer schweizerischen Fluggesellschaft in den Urlaub.
 103682	Bei Spendenaktionen wird gern an das soziale Gewissen der Spender appelliert.
 103682	Esther hat ein reines Gewissen.
@@ -7457,7 +7465,6 @@
 103980	Vorerst müssen wir uns mit kleinen Fortschritten zufrieden geben.
 103980	Wir sind ganz zufrieden mit dem Ergebnis.
 103981	Der Geheimdienst hat vor Terroranschlägen gewarnt.
-103982	Bewerben Sie sich bis zum 20. November, ansonsten kann ihre Bewerbung nicht
 103982	Bewerben Sie sich bis zum 20. November, ansonsten kann ihre Bewerbung nicht berücksichtigt werden.
 103983	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
 103984	Das Päckchen wird im Verlauf des Tages eintreffen.
@@ -7662,6 +7669,7 @@
 104111	Wir haben mit betrieblichen Schwierigkeiten zu kämpfen.
 104113	Er hat ein Vermögen für den Hauskauf ausgegeben.
 104113	Ich vermag diese Frage nicht zu beantworten.
+104114	Die Polizei will Tom vernehmen.
 104115	Naturschutz ist eine Methode, mit der wir sicherstellen können, in Zukunft ausreichend Energie zu haben.
 104115	Unser Projekt ist ausreichend finanziert.
 104115	Der Fall war ausreichend ernst, um eine Untersuchung der Polizei berechtigt erscheinen zu lassen.
@@ -7735,6 +7743,7 @@
 104157	Er ist die richtige Person für diesen Posten.
 104158	Der überwiegende Teil der Erstsemester fährt am Wochenende nach Hause.
 104159	Wir werden Ihre Papiere überprüfen.
+104161	Irgendeine Frau war gestern da und hat nach dir gefragt.
 104162	Die meisten Menschen träumen im Schlaf, wissen am Morgen aber nichts mehr davon.
 104163	Die Projektgruppe trägt ihre Ergebnisse vor.
 104164	Eine sorgfältige Auswahl der Zutaten ist wichtig.
@@ -7812,6 +7821,8 @@
 104215	Die Polizei versucht, das Verbrechen aufzuklären.
 104215	Es ist ein Verbrechen begangen worden.
 104216	Das Flugzeug beﬁndet sich noch in einiger Entfernung vom Landeﬂughafen.
+104217	Atome bilden Moleküle.
+104217	Menschen bilden eine Gesellschaft.
 104218	Das Messer liegt rechts neben dem Teller.
 104218	Er hat nicht nach rechts geguckt.
 104218	Links sehen sie das Gewandhaus, rechts die Oper.
@@ -8150,6 +8161,7 @@
 104430	Meine linke Schulter tut weh.
 104430	Mein linker Schuh ist kaputt.
 104431	Alle Arbeit war umsonst.
+104433	Ich lasse mich nicht zurückweisen.
 104434	An der nächsten Station müssen wir aussteigen.
 104434	Das Seminar wird nächste Woche fortgesetzt.
 104434	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
@@ -8321,6 +8333,7 @@
 104531	Wir sollten die Wünsche anderer berücksichtigen.
 104533	Du kannst den Fehler ruhig zugeben.
 104533	Offensichtlich hast du mit dem Thema mehr Probleme, als du zugeben willst.
+104534	Die Fischer holen ihre Netze ein.
 104535	Autodidakten setzen eine Vielzahl von kognitiven Strategien ein.
 104535	Gewerkschaften setzen sich für die Arbeitnehmer ein.
 104535	Mit Alkohol sollte man sich nicht ans Steuer setzen.
@@ -8435,6 +8448,7 @@
 104605	Die Analyse der Ergebnisse wird uns noch lange beschäftigen.
 104605	Mörder können durch DNA-Analysen schnell gefunden werden.
 104606	Der Schüler bekam eine gute Beurteilung.
+104607	Dazu möchte ich einige Bemerkungen machen.
 104608	Sabine bekommt bei keiner Bank mehr ein Darlehen.
 104611	Der ursprüngliche Plan sah anders aus.
 104611	Die heutige Situation ist völlig anders als die damalige.
@@ -8743,6 +8757,7 @@
 104915	Vor Aufregung brachte sie kein Wort heraus.
 104919	Bowling ist schwieriger, als ich dachte.
 104921	Deutschland durfte nach dem Ersten Weltkrieg nur eine kleine Flotte unterhalten.
+104933	Wir fuhren eine Strecke von 200 Kilometern.
 104937	Der Vorschlag fand auf dem Parteitag breite Zustimmung.
 104937	Die Eröffnung des neuen Museums fand vor drei Wochen statt.
 104937	Faust fand sogleich Argumente, um Gretchen zu überzeugen.
@@ -8887,7 +8902,7 @@
 105024	Nach dem Sturz verlor sie das Bewusstsein.
 105028	Das richtige Ergebnis wusste niemand.
 105028	Plötzlich sprach sie mich an, und ich wusste nicht, was ich sagen sollte.
-105029	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn
+105029	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 105029	Er wollte immer einen Schritt voraus sein.
 105029	Gleich am nächsten Tag wollte Torsten mit dem Rauchen aufhören.
 105029	Ich wollte gerade eine Frage stellen, aber Hannes hat mich unterbrochen.
@@ -8921,9 +8936,6 @@
 105062	Am Wochenende bin ich zu einer Hochzeit eingeladen.
 105062	Zu der Feier am Sonnabend sind nur die Verwandten eingeladen.
 105062	Zur Hochzeit sind alle Verwandten eingeladen.
-105065	Mittlerweile kann man auf Handys sogar Bilder und Videos empfangen.
-105065	Wir empfangen heute Abend Gäste.
-105065	Wir empfangen nur die öffentlich-rechtlichen Sender.
 105070	Ich habe schon gegessen.
 105072	Dahin bin ich noch nie gefahren.
 105072	Mehrere Autos waren bei dem Unfall ineinander gefahren.
