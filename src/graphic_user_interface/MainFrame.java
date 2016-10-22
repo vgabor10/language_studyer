@@ -127,7 +127,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        dictionaryButton1.setText("Example sentence assigner");
+        dictionaryButton1.setText("Example sentence assigner under development...");
         dictionaryButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 dictionaryButton1ActionPerformed(evt);
