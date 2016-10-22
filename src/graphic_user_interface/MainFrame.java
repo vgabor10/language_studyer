@@ -13,6 +13,7 @@ import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
 import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryDialog;
+import graphic_user_interface.dictionary.ExampleSentenceAssignerDialog;
 import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarAnswerStatisticsDialog;
 import graphic_user_interface.grammar_book.GrammarBookModificatorDialog;
@@ -74,6 +75,7 @@ public class MainFrame extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         practisingButton = new javax.swing.JButton();
+        dictionaryButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         grammarPractisingButton = new javax.swing.JButton();
         readGrammarBookButton = new javax.swing.JButton();
@@ -125,22 +127,30 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        dictionaryButton1.setText("Example sentence assigner");
+        dictionaryButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dictionaryButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(dictionaryStatisticsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                     .addComponent(dictionaryButton, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                     .addComponent(practisingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE))
+                    .addComponent(jButton13, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
+                    .addComponent(dictionaryButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {dictionaryButton, dictionaryStatisticsButton, jButton13, practisingButton});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {dictionaryButton, dictionaryButton1, dictionaryStatisticsButton, jButton13, practisingButton});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,10 +165,12 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(jButton13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dictionaryButton)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(dictionaryButton1)
+                .addContainerGap())
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {dictionaryButton, dictionaryStatisticsButton, jButton13, practisingButton});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {dictionaryButton, dictionaryButton1, dictionaryStatisticsButton, jButton13, practisingButton});
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setToolTipText("");
@@ -304,9 +316,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(setLanguageToStudyButton)
@@ -418,6 +428,15 @@ public class MainFrame extends javax.swing.JFrame {
         dialog.setVisible(true);
     }//GEN-LAST:event_practisingButtonActionPerformed
 
+    private void dictionaryButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryButton1ActionPerformed
+        ExampleSentenceAssignerDialog dialog 
+                = new ExampleSentenceAssignerDialog(new javax.swing.JFrame(), true);
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_dictionaryButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -459,6 +478,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton dictionaryButton;
+    private javax.swing.JButton dictionaryButton1;
     private javax.swing.JButton dictionaryStatisticsButton;
     private javax.swing.JButton exitButton;
     private javax.swing.JButton grammarPractisingButton;

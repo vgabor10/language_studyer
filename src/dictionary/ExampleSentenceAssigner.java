@@ -79,6 +79,38 @@ public class ExampleSentenceAssigner {
         return "";
     }
     
+    public List<String> getSuggestions(int cardIndex) {
+        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+        
+        String cardTermComparition = card.term;
+        cardTermComparition = cardTermComparition.toLowerCase();
+        if (cardTermComparition.startsWith("r ") || cardTermComparition.startsWith("e ") || cardTermComparition.startsWith("s ")) {
+            cardTermComparition = cardTermComparition.substring(2);
+        }
+
+        if (cardTermComparition.startsWith("h. ") || cardTermComparition.startsWith("i. ")) {
+            cardTermComparition = cardTermComparition.substring(3);
+        }
+        
+        if (cardTermComparition.endsWith("en")) {
+            cardTermComparition 
+                    = cardTermComparition.substring(0,cardTermComparition.length()-2);
+        }
+
+        
+        List<String> out = new ArrayList<>();
+        for (String exampleSentence : exampeSentences) {
+            String exampleSentenceForComparition = exampleSentence.toLowerCase();
+
+            if (exampleSentenceForComparition.contains(cardTermComparition)
+                    && !card.exampleSentences.contains(exampleSentence)) {
+                 out.add(exampleSentence);
+            }
+        }
+        
+        return out;
+    }    
+    
     /*public void loadExampleSentencesFromFile(String filePath) {
         try {
             exampeSentences.clear();
