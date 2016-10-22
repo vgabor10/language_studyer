@@ -62,7 +62,6 @@
 100062	for the moment	pillanatnyilag
 100063	calamity	szerencsétlenség
 100064	venture	vállalkozás
-100065	resolution	határozat
 100066	vendor	kereskedő
 100067	from top to toe	tetőtől talpig
 100068	mine	akna
@@ -201,7 +200,7 @@
 100201	in the interim	ideiglenesen
 100202	glow	izzik
 100203	respire	lélegzik
-100204	resolution	döntés, szándék
+100204	resolution	határozat, szándék
 100205	screwdriver	csavarhúzó
 100206	accomplish	végrehajt, teljesít
 100207	set apart	félretesz
@@ -1035,3 +1034,4 @@
 101034	spectacular	látványos, mutatós
 101035	arbitrary	tetszőleges
 101036	affirmative	igenlő, megerősítő
+100065	unanimity	egyhangúság

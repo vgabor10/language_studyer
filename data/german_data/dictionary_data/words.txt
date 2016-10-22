@@ -692,7 +692,7 @@
 100698	r Tribun	vezér
 100699	erschien	megjelenik
 100700	r Verlag	kiadó
-100701	kalt	hideg
+100701	kalt	hideg (mn)
 100702	r Skandal	botrány
 100703	erreichen	elér
 100704	verlegen	áttesz, elhalaszt
@@ -1479,7 +1479,7 @@
 101493	streng	szigorú
 101494	e Sprache	nyelv
 101495	s Verb	ige
-101496	r Sunstantiv	főnév
+101496	r Substantiv	főnév
 101497	r Adjektiv	melléknév
 101498	r Artikel	cikk, névelő
 101499	s Adverb	határozószó
@@ -2171,7 +2171,7 @@
 102205	e Berührung	érintés
 102206	r Höhepunkt	tetőpont
 102207	e Lyrik	líra
-102208	r Räpresentant	képviselő
+102208	r Repräsentant	képviselő
 102209	e Sammlung	gyűjtemény
 102210	parallel	párhuzamos
 102211	e Bedeutung	jelentőség, jelentés
@@ -2398,7 +2398,7 @@
 102436	hören	hall
 102437	hübsch	csinos
 102438	s Huhn	tyúk
-102439	s Hundert	száz
+102439	s Hundert	száz (fn)
 102440	r Hut	kalap
 102441	ideal	ideális
 102442	identisch	azonos
@@ -4672,7 +4672,7 @@
 104738	sich vornehmen	elhatározza magát
 104739	losgehen	indul, elsül
 104740	individuell	egyéni, individuális
-104741	zur Verfügung stehen	rendelkezásre áll
+104741	zur Verfügung stehen	rendelkzésre áll
 104742	strukturieren	szerkeszt, strukturál
 104743	e Bilanz	mérleg (közgazdaságban)
 104744	Schweiz	svájc
