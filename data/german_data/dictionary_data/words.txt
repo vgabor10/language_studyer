@@ -785,7 +785,7 @@
 100791	e Freiwilligkeit	önkéntesség
 100792	hitzig	heves
 100793	bewähren	bizonyít
-100794	mahnen	emlékeztet
+100794	mahnen	emlékeztet, buzdít
 100795	erinnern	emlékezik
 100796	entsprechen	megfelel
 100797	ebenso	éppúgy
@@ -1040,7 +1040,7 @@
 101050	heiraten	házasodik
 101051	r Jurist	jogász
 101052	e Behinderung	fogyatékosság
-101053	s Urteil	megítélés
+101053	s Urteil	ítélet, megítélés
 101054	s Handwerk	szakma
 101055	treten	lép, rúg, jár
 101056	e Empörung	lázadás
@@ -1576,7 +1576,7 @@
 101592	r Korb	kosár
 101593	e Ware	áru
 101594	s Packpapier	csomagolópapír
-101595	e Gültigkeit	szavatosság
+101595	e Gültigkeit	érvényesség, szavatosság
 101596	e Tüte	tasak, zacskó
 101597	r Kasten	rekesz
 101598	r Jogurt	joghurt
@@ -2334,7 +2334,7 @@
 102372	großzügig	nagyvonalú
 102373	grün	zöld
 102374	grundlegend	alapvető
-102375	gründlich	alaposan
+102375	gründlich	alapvető, alapos
 102376	grundsätzlich	alapvetően
 102377	grüßen	üdvözöl
 102378	gucken	néz, kukucskál
@@ -3103,7 +3103,7 @@
 103151	dahinter	mögötte
 103152	unerwartet	váratlanul
 103153	wiedersehen	viszontlát
-103154	anlegen	rátesz, befektet
+103154	anlegen	befektet, kiköt
 103155	äußerst	rendkívül, nagyon
 103156	blicken	pillant, tekint
 103157	sinnvoll	ésszerű, értelmes
@@ -3393,7 +3393,7 @@
 103444	vielmehr	sokkal inkább
 103445	r Sand	homok
 103446	vorhin	nemrég
-103447	wozu	amiért
+103447	wozu	amihez, amelyhez
 103448	aushalten	elvisel, kibír
 103449	langfristig	hosszú távon
 103450	r Schutz	védelem
@@ -3652,7 +3652,6 @@
 103706	belegen	igazol, befed
 103707	akut	akut, sürgős
 103708	r Vorgänger	előd
-103709	zugehen	közelít
 103711	zurückgeben	visszad
 103712	angucken	megnéz
 103713	r Schnitt	vágás, szelet
@@ -4746,7 +4745,7 @@
 104937	fand	talál (Präterium)
 104938	flog	repül (Präterium)
 104939	foh	menekül (Präterium)
-104940	floß	folyik (Präterium)
+104940	floss	folyik (Präterium)
 104941	fraß	zabál, állat eszik (Präterium)
 104942	fror	fázik, megfagy (Präterium)
 104943	gab	ad (Präterium)
