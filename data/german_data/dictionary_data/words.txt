@@ -2024,7 +2024,7 @@
 102051	vorkommen	előfordul, látszik
 102052	husten	köhög
 102053	r Patient	páciens
-102054	erschöpft	kimerült
+102054	erschöpft	kimerült (mn)
 102055	s Medikament	gyógyszer
 102056	e Arznei	orvosság
 102057	zuständig	illetékes (mn)
@@ -2598,7 +2598,7 @@
 102639	e Norm	norma
 102641	entfalten	kibont
 102642	entgegenkommen	elé jön, megfelel
-102643	entgehen	elmenekül
+102643	entgehen	elkerül, elmenekül
 102644	enthalten	tartalmaz
 102645	e Lust	öröm
 102646	e Malerei	festmény

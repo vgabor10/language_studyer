@@ -1486,6 +1486,8 @@
 100423	Wir fahren nicht nach Spanien, sondern nach Frankreich.
 100424	Die gemeinsame europäische Währung ist der Euro.
 100425	Als ich heute erwachte, lag ich quer in meinem Bett.
+100425	Als ich erwachte, schien bereits die Sonne.
+100425	Tom erwachte mit Kopfschmerzen.
 100426	Bei dieser Investition kann man vier Prozent Zinsen erwarten.
 100426	Die Menschen erwarten eine positive Botschaft von ihrem Präsidenten.
 100426	Trotz der geringen Niederschläge erwarten wir eine gute Ernte.
@@ -3729,7 +3731,6 @@
 101627	Vorsicht, der Tee ist sehr heiß.
 101628	Wir haben keine Zwiebeln mehr.
 101630	Die Polizei setzte Pfefferspray und Schlagstöcke ein.
-101630	
 101630	Tu nicht so viel Pfeffer in die Suppe!
 101631	Die Kinder suchen Pilze und bringen sie nach Hause.
 101631	Viele Antibiotika stammen von Pilzen.
@@ -4296,6 +4297,8 @@
 102052	Bei starkem Husten hat man oft Schmerzen in der Brust.
 102053	Die Krankenschwester bemerkte nicht, wie der Patient nach ihr klingelte.
 102054	Die ﬁnanziellen Ressourcen des Unternehmens sind erschöpft.
+102054	Nach dem Wettlauf war ich erschöpft.
+102054	Ich war von der Arbeit total erschöpft.
 102055	Das Medikament bewirkt eine baldige Besserung.
 102055	Das Medikament wirkt schnell.
 102055	Das Medikament wurde klinisch getestet.
@@ -5421,6 +5424,9 @@
 102637	Sie lernen Englisch.
 102639	Abweichungen von der Norm gibt es immer wieder.
 102641	Rotwein entfaltet sein volles Aroma bei Zimmertemperatur.
+102643	Niemand kann dem Älterwerden entgehen.
+102643	Ich kann mir diese Chance nicht entgehen lassen.
+102643	Tom, das kannst du dir nicht entgehen lassen.
 102644	Bier enthält fünf Prozent Alkohol.
 102644	Kiwis enthalten viel Vitamin C.
 102645	Er hat zwar Lust zu kommen, aber keine Zeit.
@@ -6280,6 +6286,9 @@
 103169	Im Moment habe ich keine Beschäftigung.
 103170	Diese Messe ist für Laien und Fachleute gleichermaßen von Interesse.
 103171	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
+103172	Wir müssen früh aufbrechen.
+103172	Sie wird morgen nach Tokyo aufbrechen.
+103172	Wenn das Wetter gut ist, werde ich morgen aufbrechen.
 103173	Christoph ist ein komischer Kerl.
 103173	Mario ist so ein blöder Kerl.
 103175	Wir treiben in unserer Freizeit aktiv Sport.
@@ -6677,6 +6686,7 @@
 103403	Im Winter trainiere ich im Fitness-Center.
 103404	Auch an Fachhochschulen soll man zukünftig promovieren können.
 103405	Die Praxis ist medizinisch auf dem neuesten Stand.
+103406	Die Sonne wird in zwei Stunden untergehen.
 103408	Die Nähe zur Innenstadt macht die Wohnung attraktiv.
 103408	Die Region ist wegen ihrer guten Infrastruktur attraktiv für Investoren.
 103410	Diese Frage ist nicht einfach zu beantworten.
