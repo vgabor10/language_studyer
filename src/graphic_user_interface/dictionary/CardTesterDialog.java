@@ -38,6 +38,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         closeButton.setMnemonic(KeyEvent.VK_C);
         inspectCardButton.setMnemonic(KeyEvent.VK_I);
+        acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
+        rejectAnswerButton.setMnemonic(KeyEvent.VK_R);
+        ignoreAnswerButton.setMnemonic(KeyEvent.VK_G);
     }
 
     public void initialise() {  
@@ -89,16 +92,14 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         inspectCardButton = new javax.swing.JButton();
+        acceptAnswerButton = new javax.swing.JButton();
+        rejectAnswerButton = new javax.swing.JButton();
+        ignoreAnswerButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 36)); // NOI18N
         jTextField1.setText("jTextField1");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 jTextField1KeyPressed(evt);
@@ -182,9 +183,34 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jScrollPane2.setViewportView(jTable2);
 
         inspectCardButton.setText("Inspect card");
+        inspectCardButton.setEnabled(false);
         inspectCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inspectCardButtonActionPerformed(evt);
+            }
+        });
+
+        acceptAnswerButton.setText("Accept answer");
+        acceptAnswerButton.setEnabled(false);
+        acceptAnswerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                acceptAnswerButtonActionPerformed(evt);
+            }
+        });
+
+        rejectAnswerButton.setText("Reject answer");
+        rejectAnswerButton.setEnabled(false);
+        rejectAnswerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rejectAnswerButtonActionPerformed(evt);
+            }
+        });
+
+        ignoreAnswerButton.setText("Ignore answer");
+        ignoreAnswerButton.setEnabled(false);
+        ignoreAnswerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ignoreAnswerButtonActionPerformed(evt);
             }
         });
 
@@ -195,20 +221,29 @@ public class CardTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
+                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane2)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(acceptAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rejectAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ignoreAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {closeButton, inspectCardButton});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -221,7 +256,12 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(acceptAnswerButton)
+                    .addComponent(rejectAnswerButton)
+                    .addComponent(ignoreAnswerButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -231,69 +271,54 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {acceptAnswerButton, ignoreAnswerButton, rejectAnswerButton});
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {closeButton, inspectCardButton});
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            if (!cardTester.isGetAnswerToActualQuestion()) {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER 
+                && !cardTester.isGetAnswerToActualQuestion()) {
 
-                cardTester.setUserAnswer(jTextField1.getText());
-                
-                if (cardTester.isUserAnswerRight()) {
-                    if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
-                        jTextField2.setForeground(new Color(45, 107, 53));   //green   
-                    }
-                    else {
-                        jTextField2.setForeground(new Color(51,194,242));   //light blue
-                        jTextField1.setText("");
-                    }
-                } else {
-                    jTextField2.setForeground(new Color(255,71,71));  //light red
-                    jTextField1.setText("");
-                }
+            cardTester.setUserAnswer(jTextField1.getText());
 
-                jTextField2.setText(cardTester.getActualQuestionedCard().term);
-                showAcceptableCards();
-                showExampleSentences();
-                
-            } else {
-                if (cardTester.getActualQuestionedCard().term.equals(
-                    cardTester.getUserActualAnswer())) {
-                    
-                    if (cardTester.isMoreCardToTest()) {
-                        cardTester.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
-                        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                        jTextField1.setText("");
-                        jTextField2.setText("");
+            fillCardDatasToDialog();
 
-                        clearTabulars();
-                    } else {
-                        goToStatisticsFrameAndSaveData();
-                    }
-                }
-                else if (cardTester.getActualQuestionedCard().term.equals(jTextField1.getText())) {
-                    if (cardTester.isMoreCardToTest()) {
-                        cardTester.moveToNextCardToQuestion();
-                        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
-                        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-                        jTextField1.setText("");
-                        jTextField2.setText("");
-
-                        clearTabulars();
-                    } else {
-                        goToStatisticsFrameAndSaveData();
-                    }
-                }
-            }
+            acceptAnswerButton.setEnabled(true);
+            rejectAnswerButton.setEnabled(true);
+            ignoreAnswerButton.setEnabled(true);
+            inspectCardButton.setEnabled(true);
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
+    private void fillCardDatasToDialog() {
+        clearTabulars();
+        
+        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
+        
+        if (cardTester.isUserAnswerRightSuggestion()) {
+            acceptAnswerButton.requestFocus();
+            if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
+                jTextField2.setForeground(new Color(45, 107, 53));   //green 
+                acceptAnswerButton.setBackground(new Color(102,255,102));
+            }
+            else {
+                jTextField2.setForeground(new Color(51,194,242));   //light blue
+                acceptAnswerButton.setBackground(new Color(102,255,102));
+            }
+        } else {
+            jTextField2.setForeground(new Color(255,71,71));  //light red
+            rejectAnswerButton.setBackground(new Color(255,102,102));
+            rejectAnswerButton.requestFocus();
+        }
+
+        jTextField2.setText(cardTester.getActualQuestionedCard().term);
+        showAcceptableCards();
+        showExampleSentences();
+    }
+    
     private void showAcceptableCards() {
         Set<Integer> acceptableCardIndexes
                 = cardTester.getAcceptableCardIndexes(cardTester.getActualQuestionedCard().definition);
@@ -395,11 +420,91 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     = new DictionaryDataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.saveAllData();
+            
+            fillCardDatasToDialog();
         }
-        
-        jTextField1.requestFocus();
     }//GEN-LAST:event_inspectCardButtonActionPerformed
 
+    private void acceptAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptAnswerButtonActionPerformed
+        acceptAnswer();
+    }//GEN-LAST:event_acceptAnswerButtonActionPerformed
+
+    private void acceptAnswer() {
+        cardTester.acceptUserAnswer();
+        
+        acceptAnswerButton.setBackground(null);
+        rejectAnswerButton.setBackground(null);
+        acceptAnswerButton.setEnabled(false);
+        rejectAnswerButton.setEnabled(false);
+        ignoreAnswerButton.setEnabled(false);
+        inspectCardButton.setEnabled(false);
+        jTextField1.requestFocus();
+        
+        if (cardTester.isMoreCardToTest()) {
+            moveToNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+        }
+    }
+    
+    private void rejectAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rejectAnswerButtonActionPerformed
+        rejectAnswer();
+    }//GEN-LAST:event_rejectAnswerButtonActionPerformed
+
+    private void rejectAnswer() {
+        cardTester.rejectUserAnswer();
+        
+        acceptAnswerButton.setBackground(null);
+        rejectAnswerButton.setBackground(null);
+        acceptAnswerButton.setEnabled(false);
+        rejectAnswerButton.setEnabled(false);
+        ignoreAnswerButton.setEnabled(false);
+        inspectCardButton.setEnabled(false);
+        jTextField1.requestFocus();
+        
+        if (cardTester.isMoreCardToTest()) {
+            moveToNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+        }
+    }
+    
+    private void ignoreAnswerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ignoreAnswerButtonActionPerformed
+        ignoreAnswer();
+    }//GEN-LAST:event_ignoreAnswerButtonActionPerformed
+
+   
+    private void ignoreAnswer() {
+        cardTester.ignoreUserAnswer();
+        
+        acceptAnswerButton.setBackground(null);
+        rejectAnswerButton.setBackground(null);
+        acceptAnswerButton.setEnabled(false);
+        rejectAnswerButton.setEnabled(false);
+        ignoreAnswerButton.setEnabled(false);
+        inspectCardButton.setEnabled(false);
+        jTextField1.requestFocus();
+        
+        if (cardTester.isMoreCardToTest()) {
+            moveToNextQuestion();
+        }
+        else {
+            goToStatisticsFrameAndSaveData();
+        }
+    }
+    
+    private void moveToNextQuestion() {
+        cardTester.moveToNextCardToQuestion();
+        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+        jTextField3.setText(cardTester.getActualQuestionedCard().definition);
+        jTextField1.setText("");
+        jTextField2.setText("");
+
+        clearTabulars();
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -426,6 +531,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
             java.util.logging.Logger.getLogger(CardTesterDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
 
         /* Create and display the dialog */
@@ -444,7 +552,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton acceptAnswerButton;
     private javax.swing.JButton closeButton;
+    private javax.swing.JButton ignoreAnswerButton;
     private javax.swing.JButton inspectCardButton;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -454,5 +564,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JButton rejectAnswerButton;
     // End of variables declaration//GEN-END:variables
+
 }

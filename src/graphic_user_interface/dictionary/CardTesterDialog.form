@@ -26,19 +26,26 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
-                  <Component id="jTextField3" alignment="1" pref="522" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="1" pref="543" max="32767" attributes="0"/>
+                  <Component id="jTextField3" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextField1" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextField2" alignment="1" max="32767" attributes="0"/>
                   <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="inspectCardButton" min="-2" pref="154" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="closeButton" min="-2" pref="166" max="-2" attributes="0"/>
+                      <Component id="acceptAnswerButton" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="rejectAnswerButton" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="ignoreAnswerButton" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="inspectCardButton" linkSize="3" min="-2" pref="175" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="closeButton" linkSize="3" min="-2" pref="192" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -56,14 +63,20 @@
               <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="jTextField2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="jScrollPane2" pref="146" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="acceptAnswerButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="rejectAnswerButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ignoreAnswerButton" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane2" min="-2" pref="110" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" pref="132" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="closeButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="inspectCardButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="closeButton" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="inspectCardButton" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -79,7 +92,6 @@
         <Property name="text" type="java.lang.String" value="jTextField1"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextField1KeyPressed"/>
       </Events>
     </Component>
@@ -167,9 +179,37 @@
     <Component class="javax.swing.JButton" name="inspectCardButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Inspect card"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inspectCardButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="acceptAnswerButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Accept answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acceptAnswerButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="rejectAnswerButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reject answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="rejectAnswerButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ignoreAnswerButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ignore answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ignoreAnswerButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

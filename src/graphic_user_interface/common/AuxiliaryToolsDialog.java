@@ -37,6 +37,7 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        dictionaryButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -84,6 +85,13 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
             }
         });
 
+        dictionaryButton1.setText("Example sentence assigner under development...");
+        dictionaryButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dictionaryButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -97,7 +105,8 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(dictionaryButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -114,8 +123,10 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(dictionaryButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -155,6 +166,15 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void dictionaryButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryButton1ActionPerformed
+        ExampleSentenceAssignerDialog dialog
+        = new ExampleSentenceAssignerDialog(new javax.swing.JFrame(), true);
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_dictionaryButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,6 +220,7 @@ public class AuxiliaryToolsDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton dictionaryButton1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton2;

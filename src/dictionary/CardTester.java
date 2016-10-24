@@ -73,24 +73,39 @@ public class CardTester {
 
         logger.debug("user answer: " + answer);
 
-        if (answer.equals(actualQuestionedCard.term)) {
+    }
+
+    public void acceptUserAnswer() {
+        if (userAnswerToActualQuestion.equals(actualQuestionedCard.term)) {
             Date date = new Date();
             userAnswers.addElement(actualQuestionedCard.index, true, date.getTime());
             logger.debug("added answer data: " + actualQuestionedCard.index + ", true");
-        } else if (acceptabelAnswersAndCardIndexesForActualQuestion.keySet().contains(answer)) {
+        } else if (acceptabelAnswersAndCardIndexesForActualQuestion.keySet().contains(
+                userAnswerToActualQuestion)) {
             Date date = new Date();
-            userAnswers.addElement(acceptabelAnswersAndCardIndexesForActualQuestion.get(answer), true, date.getTime());
+            userAnswers.addElement(
+                    acceptabelAnswersAndCardIndexesForActualQuestion.get(userAnswerToActualQuestion), true, date.getTime());
 
-            logger.debug("added answer data: " + acceptabelAnswersAndCardIndexesForActualQuestion.get(answer) + ", true");
-        } else {
-            Date date = new Date();
-            userAnswers.addElement(actualQuestionedCard.index, false, date.getTime());
-
-            logger.debug("added answer data: " + actualQuestionedCard.index + ", false");
+            logger.debug("added answer data: " + acceptabelAnswersAndCardIndexesForActualQuestion.get(userAnswerToActualQuestion) + ", true");
         }
-
+        else {
+            Date date = new Date();
+            userAnswers.addElement(actualQuestionedCard.index, true, date.getTime());
+            logger.debug("added answer data: " + actualQuestionedCard.index + ", true");
+        }
     }
+    
+    public void rejectUserAnswer() {
+        Date date = new Date();
+        userAnswers.addElement(actualQuestionedCard.index, false, date.getTime());
 
+        logger.debug("added answer data: " + actualQuestionedCard.index + ", false");        
+    }
+    
+    public void ignoreUserAnswer() {
+        logger.debug("user answer ignored");  
+    }
+    
     public boolean isGetAnswerToActualQuestion() {
         return isGetAnswerToActualQuestion;
     }
@@ -103,7 +118,7 @@ public class CardTester {
         return actualQuestionedCard.term;
     }
 
-    public boolean isUserAnswerRight() {
+    public boolean isUserAnswerRightSuggestion() {
         return acceptabelAnswersAndCardIndexesForActualQuestion.containsKey(userAnswerToActualQuestion);
     }
 

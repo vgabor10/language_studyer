@@ -1,4 +1,4 @@
-package graphic_user_interface.dictionary;
+package graphic_user_interface.common;
 
 import dictionary.Card;
 import dictionary.CardContainer;
@@ -7,6 +7,7 @@ import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
+import graphic_user_interface.dictionary.ExampleSentenceSuggestionsDialog;
 import java.awt.event.KeyEvent;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
