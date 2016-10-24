@@ -230,7 +230,7 @@
 100230	r Ausländer	külföldi (fn)
 100231	gesamt	összes
 100232	s Gebiet	terület
-100233	dünn	vékony
+100233	dünn	híg, vékony
 100234	e Sehenswürdigkeit	látnivaló, nevezetesség
 100235	r Haushalt	háztartás
 100236	durchschnittlich	átlagos
@@ -746,7 +746,7 @@
 100752	s Dutzend	tucat
 100753	melden	közöl
 100754	e Absperrung	sorompó
-100755	verüben	véghezvisz
+100755	verüben	elkövet, véghezvisz
 100756	r Anschlag	merénylet
 100757	e Serie	sorozat
 100758	auftauchen	kialakul, kiderül
@@ -2116,7 +2116,6 @@
 102148	s Zeichen	jel
 102149	umweltschmutzig	környezetszennyező
 102150	umweltfreundlich	környezetbarát
-102151	umweltschädlich	környezetkárosító
 102152	e Folie	fólia
 102153	e Batterie	elem
 102154	s Filter	szűrő
@@ -2195,7 +2194,7 @@
 102229	ausgehen	szórakozni megy
 102230	r Fiskus	kincstár
 102231	r Vorteil	előny
-102233	beraten	tanácsot ad, megvotat
+102233	beraten	tanácsot ad, megvitat
 102234	e Interaktion	kölcsönhatás
 102235	e Kuh	tehén
 102236	s Fett	zsír
@@ -3400,7 +3399,7 @@
 103451	ankommen	megérkezik
 103452	wechseln	változtat, cserél
 103453	e Feier	ünnepség
-103454	immerhin	minden esetre
+103454	immerhin	legalább, minden esetre
 103455	strahlen	ragyog, sugárzik
 103456	ursprünglich	eredetileg
 103457	unglücklich	boldogtalan, szerencsétlen
@@ -3800,7 +3799,6 @@
 103859	verwirklichen	megvalósít
 103860	r Geliebte	szerető
 103861	kennen	ismer
-103862	angehen	érint, vonatkozik
 103863	s Lächeln	mosoly
 103864	spiegeln	ragyog, tükröz
 103865	s Umfeld	környezet
@@ -4375,7 +4373,7 @@
 104440	e Nutzung	használat
 104441	übereinstimmen	egyezik, összhangban van
 104442	trocknen	szárít, felszárad
-104443	beruhen	alapul, alapszik
+104443	beruhen	alapul, alapszik, nyugszik
 104444	s Café	kávézó
 104445	selbe	ugyanaz
 104446	e Anleihe	kölcsön (fn)
@@ -4385,7 +4383,7 @@
 104450	steil	meredek
 104451	außergewöhnlich	szokatlan, különös
 104452	e Aktion	cselekmény, akció
-104453	allerdings	valóban, természetesen
+104453	allerdings	azonban, viszont
 104454	e Blüte	virág, virágzás
 104455	darum	ezért, ekörül
 104456	verbinden	összeköt, összekapcsol
