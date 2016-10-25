@@ -1662,6 +1662,8 @@
 100503	Kundenkarten dienen der Erfassung von Daten über den Käufer und sein Kaufverhalten.
 100503	Wenn man die Daten zueinander in Beziehung setzt, kommt man zu interessanten Ergebnissen.
 100504	Am Boden sammeln sich Staubﬂocken.
+100504	Jean und Chantal sammeln Pilze.
+100504	Wir müssen Informationen sammeln.
 100506	Eine Katastrophe ist geschehen.
 100506	Ein Wunder ist geschehen.
 100506	Was ist denn geschehen?
@@ -1858,6 +1860,8 @@
 100585	Die Vorstellung ist vorbei, die Zuschauer verlassen das Theater.
 100585	Wir verlassen das Haus um 8 Uhr.
 100585	Zahlreiche Touristen verlassen das Land.
+100586	Wie findet man Nahrung im Weltraum?
+100586	Valentina Tereshkova war die erste Frau im Weltraum.
 100589	Am Donnerstag wollen wir indisch essen gehen.
 100589	Donnerstag Abend gehe ich ins Kabarett.
 100591	Am Bahnhof fahren Züge in alle Richtungen ab.
@@ -1959,6 +1963,8 @@
 100632	Erlauben Sie mir die Feststellung, dass dies nicht zum ersten Mal passiert ist.
 100632	Unser Chef hat sich einen groben Fehler erlaubt.
 100633	Wir legten zu Fuß eine Strecke von fünfzehn Kilometern zurück.
+100634	Die Musiker danken für den Applaus.
+100634	Die Menge schenkte dem Gewinner einen großen Applaus.
 100635	Der Mann, dessen Frau den Nobelpreis erhielt, ist sehr stolz.
 100635	Frau Wunderlich ist stolz auf ihren Sohn, denn er hat einem Freund das Leben gerettet.
 100635	Sie empﬁndet sehr viel Stolz für ihre Kinder.
@@ -2008,6 +2014,8 @@
 100658	Die Fahnen wehen im Sommerwind.
 100658	Es ist kalt, zugleich weht ein starker Wind aus Nord.
 100659	Robin Hood schießt mit Pfeil und Bogen.
+100659	Der Jäger erschießt einen Bären.
+100659	Keine Bewegung, oder ich schieße!
 100660	In dem waldreichen Gelände konnte man selten weit sehen.
 100660	Interessante Diplomarbeiten sind selten.
 100660	Jens schaut selten fern.
@@ -2429,6 +2437,7 @@
 100891	Im Text wird auf eine weitere Quelle verwiesen.
 100892	Anke trägt gern eng anliegende Tops.
 100892	Die betreuenden Ärzte müssen eng zusammenarbeiten.
+100894	Wir haben unsere Feinde zermalmt.
 100896	Die Abgeordnete verlässt den Plenarsaal.
 100897	Kiefern haben tiefe Wurzeln, Fichten dagegen ﬂache.
 100898	Damals wohnten oft mehrere Familien in einer Wohnung.
@@ -2821,7 +2830,11 @@
 101163	U-Bahnen fahren unter der Erde.
 101163	Ich fahre nicht gerne mit der U-Bahn.
 101164	Mein Nachbar betreibt ein kleines Lokal.
+101164	Seine Eltern betreiben ein Hotel.
+101164	Japan betreibt viel Handel mit Kanada.
 101165	Im Besitz der Familie beﬁnden sich drei Villen.
+101167	Alle Wappen müssen Gold oder Silber haben.
+101167	Das schönste Wappen auf der Welt ist der Pflug im Ackerfeld.
 101168	Er verhielt sich den Anweisungen gemäß.
 101169	Das Werksgelände erstreckt sich auf einer Fläche von 3 Quadratkilometern.
 101170	Am Montag Abend ereignete sich ein Anschlag auf die Russische Botschaft.
@@ -3796,6 +3809,8 @@
 101679	Es ist nichts mehr von der Suppe übrig.
 101679	In der Suppe ist zu wenig Salz.
 101683	Der Chefkoch empfiehlt heute die Fischsuppe.
+101687	Tom kann keine Nudeln kochen.
+101687	Kinder mögen gern Nudeln mit Tomatensoße.
 101693	Durch die Verarbeitung zu Konserven gehen dem Gemüse Vitamine verloren.
 101693	Je länger man Gemüse kocht, desto weniger Vitamine bleiben darin.
 101693	Obst enthält natürliche Vitamine.
@@ -3867,6 +3882,7 @@
 101720	Die Bremse geht nicht mehr richtig.
 101720	Er stieg plötzlich mit dem Fuß auf die Bremse.
 101720	Sie drückte auf die Bremse und das Auto stand still.
+101721	Tom drückte auf die Hupe.
 101722	Der Sitz der Vereinten Nationen ist in New York.
 101723	Der Fahrer des PKW war betrunken, als er den Unfall verursachte.
 101723	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
@@ -4018,6 +4034,8 @@
 101835	Unser letzter Urlaub war ein richtiges Abenteuer.
 101837	Kenntnisse in Geographie sind oft sehr nützlich.
 101839	Der Journalist schrieb einen sehr kritischen Artikel.
+101840	Wo befindet sich die Redaktion dieser Zeitung?
+101840	Die Redaktion behält sich das Recht vor, Kommentare zu kürzen.
 101842	Wir haben eine Bootstour auf dem Kanal gemacht.
 101843	Als nächstes steht eine Diskussion auf dem Programm.
 101843	Dieses Programm kann kostenlos installiert werden.
@@ -4185,6 +4203,8 @@
 101951	Wir bevorzugen konventionelle Methoden und Verfahren.
 101952	Man muss immer wieder versuchen, dem Alltag zu entﬂiehen.
 101953	Das war eine hervorragende Leistung.
+101953	Toms Französisch ist hervorragend.
+101953	Tom ist ein hervorragender Schifahrer.
 101955	Bis zu dem vereinbarten Termin muss die Arbeit fertig sein.
 101955	Für welche Uhrzeit sollen wir den Termin ansetzen?
 101955	Möglicherweise schaffen wir es doch bis zum vereinbarten Termin.
@@ -4297,6 +4317,9 @@
 102032	Dichter Nebel behindert den Verkehr.
 102033	Bei Frost darf die Heizung nicht dauerhaft abgestellt werden.
 102037	Wenn es nicht blitzt, kommt auch kein Donner.
+102040	In Kalifornien herrscht Dürre.
+102040	Viele Bauern sind während der Dürre gestorben.
+102040	Auf die lange Dürre folgte eine Hungersnot.
 102041	Der Temperaturregler hält die Temperatur konstant auf zwanzig Grad.
 102041	Die Temperatur ist unabhängig von der Masse einer Flüssigkeit.
 102041	In Deutschland wird die Temperatur in Grad Celsius gemessen.
@@ -4505,6 +4528,8 @@
 102202	Die Spannung steigt.
 102206	Den Höhepunkt des Festes bildet das abendliche Feuerwerk.
 102206	Die Stimmung war auf dem Höhepunkt.
+102207	Dieses Gedicht vermischt Prosa und Lyrik.
+102207	Ihre Lyrik ist thematisch bunt und variabel im Stil.
 102208	Wer ist Frankreichs aktueller Repräsentant?
 102208	Die Entfernung zwischen dem Volk und seinen Repräsentanten wird beständig größer.
 102209	Im Museum kann man eine Sammlung alter Münzen anschauen.
@@ -4842,6 +4867,7 @@
 102330	Wir sollten zuerst eine Konzeption erarbeiten und erst dann an die Öffentlichkeit gehen.
 102331	Geistig ist sie noch völlig gesund, aber körperlich nicht.
 102331	Nach dem Unfall war er schwer geistig behindert.
+102332	Der Pfarrer gab dem Paar seinen geistlichen Segen.
 102333	Bananen und Zitronen sehen gelb aus.
 102333	Justus gefällt unser gelber Teppich nicht.
 102334	In diesem Kino ﬁnden gelegentlich auch Konzerte statt.
@@ -5110,7 +5136,8 @@
 102465	Seine Verdächtigungen erwiesen sich als falsch.
 102467	Durch unermüdliches Engagement erwarb er sich die Anerkennung durch die Kollegen.
 102468	Darauf kann ich nichts erwidern.
-102469	Jetzt hab ich dich erwischt.
+102469	Er erwischte sie beim Äpfel stehlen.
+102469	Ich erwischte gerade noch den letzten Zug.
 102470	Dudelsäcke erzeugen einen sehr seltsamen Klang.
 102471	Kinder erziehen ist keine leichte Aufgabe.
 102472	Es wurden nicht die erhofften Ergebnisse erzielt.
@@ -5177,6 +5204,8 @@
 102506	Die Steuerung der Maschinen erfolgt von diesem Raum aus.
 102507	Stiftungen unterstützen gemeinnützige Projekte mit Geld.
 102508	Pettersson genoss die Stille.
+102508	Stille Wasser sind tief.
+102508	Das ist die Stille vor dem Sturm.
 102510	Die Stimmung im Team ist sehr gut.
 102510	Die Stimmung war auf dem Höhepunkt.
 102510	Im Büro herrscht gute Stimmung.
@@ -5795,6 +5824,8 @@
 102837	Eine chronologische Gliederung orientiert sich an der Zeit.
 102837	Zunächst stellt der Referent seine Gliederung vor.
 102840	Das Eierpecken ist eine alte österreichische Tradition zu Ostern.
+102840	Ich mag österreichische Musik.
+102840	Eine Schlammlawine zerstörte ein österreichisches Dorf.
 102841	Mit welcher Fluggesellschaft fliegst du in den Urlaub?
 102841	Wir ﬂiegen mit einer schweizerischen Fluggesellschaft in den Urlaub.
 102842	Auf dieser Straße passieren viele Unfälle.
@@ -6048,6 +6079,8 @@
 102988	Niemand ist perfekt.
 102989	Die Bauarbeiten wurden vorzeitig abgeschlossen.
 102991	Die Schüler haben die Aufgabe bekommen, alle Verben im Text zu unterstreichen.
+102992	Würden Sie bitte dieses Gepäck aufbewahren?
+102992	Man muss Milch bei relativ niedriger Temperatur aufbewahren.
 102993	Dichter Nebel behindert den Verkehr.
 102993	Nach dem Unfall war er schwer geistig behindert.
 102995	Bakterien kann man mit Antibiotika bekämpfen.
@@ -6269,6 +6302,8 @@
 103138	Es muss dringend jemand die Wasserleitung reparieren, sie ist defekt.
 103139	Meine Mutter beispielsweise nimmt zum Braten Butter.
 103140	Die Benutzung der Toilette ist kostenpflichtig.
+103140	Die Benutzung ist sehr einfach.
+103140	In der Prüfung war auch die Benutzung der Formelsammlung erlaubt.
 103141	 Die Streitenden kamen zu keiner Einigung.
 103141	Die Streitenden kamen zu keiner Einigung.
 103142	Amadeus ist sehr musikalisch.
@@ -6432,6 +6467,8 @@
 103233	Ihr Auftreten war höchst peinlich.
 103234	Es gibt demnach keine andere Möglichkeit.
 103235	Wie bezeichnet man den östlichen Teil einer Kirche?
+103237	Das ist kein Grund, in Panik zu verfallen.
+103237	Nach Marias Tod ist Tom wieder dem Alkohol verfallen.
 103238	Der Lehrer erklärt seinen Schülern eine chemische Formel.
 103238	Im Labor führt man chemische Experimente durch.
 103239	Viele kleine Kinder wollen ein Pferd besitzen.
@@ -6732,6 +6769,8 @@
 103415	Ihre Darstellung der Ereignisse war detailliert und umfangreich.
 103416	Naja, ich würde das nicht so dramatisch sehen.
 103417	Wir erwarten Ihre unverzügliche Antwort.
+103417	Wir müssen uns unverzüglich darum kümmern.
+103417	Du solltest unverzüglich einen Zahnarzt aufsuchen.
 103418	Das Ministerium teilt mit, dass Versicherungen bis zum Ende des Jahres steuerfrei sind.
 103418	Sie arbeitet am Ministerium für Finanzen.
 103419	Die Feder schwebt zu Boden.
@@ -6838,6 +6877,8 @@
 103473	Allzu viele Jugendliche rauchen.
 103474	Wir demonstrieren für eine soziale und gerechte Welt.
 103475	Dieses Mittel eignet sich zur Bekämpfung von Blattläusen.
+103476	Eine Tafel muss nicht zwangsläufig schwarz sein.
+103476	Deutsch zu sein bedeutet nicht zwangsläufig humorlos zu sein.
 103477	Die Klimaforscher zeichnen eine düstere Prognose.
 103478	Diese Aufgabe überfordert ihn total.
 103478	Die Vorlesung ist total überlaufen.
@@ -6849,6 +6890,8 @@
 103481	Zu viele Fakten verwirren die Zuhörer.
 103481	Zu viele Fakten verwirren die Zuhörer. 
 103482	Ich kann mich nicht beklagen.
+103482	Sie hatten den Tod ihres Vaters zu beklagen.
+103482	„Wie geht’s?“ – „Ich kann mich nicht beklagen.“
 103483	Bayrisches Bier ist nicht nur in Deutschland sehr beliebt.
 103484	Die Bedrohung durch Computerviren ist nicht zu unterschätzen.
 103484	Die globale Erwärmung ist eine Bedrohung für die Menschheit.
@@ -6884,6 +6927,8 @@
 103498	Der technologische Fortschritt hat die Kommunikation beschleunigt.
 103499	Den Fernseher bedient man mit einer Fernbedienung.
 103500	Wem kannst du dich anvertrauen?
+103500	Ich würde ihr mein Leben anvertrauen.
+103500	Darf ich dir ein kleines Geheimnis anvertrauen?
 103501	Das macht keinen Spaß mehr.
 103501	Sie haben heute nicht viel Spaß.
 103501	Spaß in der Partnerschaft ist eine ernste Angelegenheit.
@@ -7529,6 +7574,8 @@
 103908	Der Schnee wird vor der nächsten Woche schmelzen.
 103908	Die Gletscher schmelzen aufgrund der Erderwärmung.
 103909	Ich schließe mein Studium im Sommer ab.
+103909	Ich muss diese Tür abschließen.
+103909	Warum schließen Sie die Tür ab?
 103910	Er trat zur Seite, um mich vorbeigehen zu lassen.
 103911	Die Wähler warten auf die Umsetzung der Wahlversprechen.
 103912	Diese Straßenkarte ist im Maßstab 1:5000.
@@ -7712,6 +7759,8 @@
 104026	Die Messe ﬁndet auf dem neuen Gelände außerhalb der Stadt statt.
 104026	In dem waldreichen Gelände konnte man selten weit sehen.
 104027	Sie hat einen Rock mit grünen Streifen.
+104027	Das Fell des Zebras hat weiße und schwarze Streifen.
+104027	Die Bewohner des Gaza-Streifens trinken verschmutztes Wasser.
 104028	Die Bauern beten um Regen.
 104029	Heike hat einen schwierigen Charakter.
 104029	Sie hat einen sehr ausgeprägten Charakter.
@@ -7728,6 +7777,8 @@
 104042	Wir müssen uns mit diesem Problem bald befassen.
 104043	Die Konstruktion ist stabil.
 104046	Mary wird uns am Sonntag mit ihrer Anwesenheit beglücken.
+104046	Ich freue mich über deine Anwesenheit.
+104046	Deine Anwesenheit ist hier nicht erwünscht.
 104047	Ich vermisse meinen Teddy.
 104048	Zudem hat er jahrelang im Ausland gearbeitet.
 104049	Der Service im Hotel war sehr gut.
@@ -7782,7 +7833,6 @@
 104075	Alex ist Fan von Bayern München.
 104076	Fliegen können an der Decke laufen.
 104077	Wir können es noch nicht absehen.
-104077	Ein Ende ist nicht absehbar.
 104079	Brigitte ist ein fröhliches Mädchen.
 104079	Charly winkte dem kleinen rothaarigen Mädchen.
 104079	Das ist ein süßes kleines Mädchen.
@@ -7917,6 +7967,7 @@
 104150	Rumpelstilzchen stampfte wütend mit dem Fuß.
 104150	Wir legten zu Fuß eine Strecke von fünfzehn Kilometern zurück.
 104151	Dieses Getreide entzieht dem Boden viele Nährstoffe.
+104151	Versuchen Sie nicht, sich der Verantwortung zu entziehen!
 104152	Der Wetterbericht sagt ein allmähliches Ansteigen der Temperaturen voraus.
 104152	Er wollte immer einen Schritt voraus sein.
 104152	Ruben ist dir im Kopfrechnen voraus.
@@ -7933,6 +7984,8 @@
 104157	Er ist die richtige Person für diesen Posten.
 104158	Der überwiegende Teil der Erstsemester fährt am Wochenende nach Hause.
 104159	Wir werden Ihre Papiere überprüfen.
+104159	Bitte überprüfen Sie Ihre Antworten.
+104159	Können Sie das bitte noch einmal überprüfen?
 104161	Irgendeine Frau war gestern da und hat nach dir gefragt.
 104162	Die meisten Menschen träumen im Schlaf, wissen am Morgen aber nichts mehr davon.
 104163	Die Projektgruppe trägt ihre Ergebnisse vor.
@@ -8084,6 +8137,8 @@
 104257	Wer wird Gerhard Schröder im Amt des Bundeskanzlers nachfolgen?
 104258	Auf deine Kommentare kann ich verzichten.
 104259	Ich vermute, ihr habt keine Zeit, mir zu antworten.
+104259	Ich vermute, dass ihr Recht habt.
+104259	Ich vermute, dass Tom in Maria verliebt ist.
 104260	Steffi Graf hat lange, blonde Haare.Steffi Graf hat lange, blonde Haare.
 104260	Der Junge mit den blonden Haaren ist ihr Sohn.
 104261	Die Chancen bei dieser Bewerbung sind minimal.
@@ -8098,11 +8153,15 @@
 104264	Ich kann seine Reaktion gut verstehen.
 104265	Im Salon steht ein schwarzer Flügel.
 104266	Es ist ein Verbrechen begangen worden.
+104266	Warum konnte Tom diese Tat begehen?
+104266	Er versuchte, Selbstmord zu begehen.
 104267	Sie schlingt die Arme um meinen Nacken.
 104268	Erst muss man den Fisch ausnehmen, dann kann man ihn braten.
 104269	Die Sonne warf einen langen Schatten.
 104271	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
 104272	Herr Töpfer ist mit der Organisation des Festes beauftragt.
+104272	Tom beauftragte Mary mit der Aufgabe.
+104272	Ich bin mit einer wichtigen Mission beauftragt.
 104273	Am Wochenende müssen wir nicht so früh aufstehen.
 104273	Er ist frühes Aufstehen nicht gewohnt.
 104274	Auch Stützungskäufe können den Verfall der Aktie nicht stoppen.
@@ -8189,7 +8248,10 @@
 104307	Eine andere wissenschaftliche Studie zeigt das genaue Gegenteil.
 104308	Die Wärme entweicht durch schlecht isolierte Fenster.
 104309	A ist größer als B, und C ist größer als A. Somit ist C auch größer als B.
+104309	Meine Schwester hat zwei Söhne, somit habe ich zwei Neffen.
+104309	Dieser Kühlschrank ist nur 60 cm breit und somit perfekt für die kleine Wohnung geeignet.
 104310	Auf deine Kommentare kann ich verzichten.
+104310	Ich kann darauf verzichten, euch zu lieben.
 104311	Das Rote Kreuz versorgt die Krisenregionen mit Lebensmitteln.
 104312	Mittels neuester Technologien kann man jetzt auch vom Handy aus E-Mails schreiben.
 104313	Wir haben einen klassischen Tanz gelernt.
@@ -8392,6 +8454,7 @@
 104443	Das Gerücht beruht auf Tatsachen.
 104444	Ich muss nochmal zurück, ich habe meine Tasche im Café liegen lassen.
 104446	Manche Anleihen kann man bei fallenden Zinssätzen kündigen.
+104446	Anleihen wurden herausgegeben, um einen Krieg zu finanzieren.
 104447	Im nachfolgenden Kapitel wird das Experiment erklärt.
 104447	Sie nahm an einem psycholinguistischen Experiment teil.
 104447	Wir suchen Testpersonen für ein psychologisches Experiment.
@@ -9151,6 +9214,8 @@
 105044	Ich habe eine Einladung zur Hochzeit bekommen.
 105049	Beim Autofahren ist viel Vorsicht geboten.
 105051	Die Benutzer dieser Software werden gebeten, sich zu registrieren.
+105052	Vorgestern hat der Wind geblasen.
+105052	Der Wind war so stark, dass wir fast von der Straße geblasen wurden.
 105055	Beim Eislaufen habe ich mir mein Bein gebrochen.
 105055	Der Vogel hat sich den Flügel gebrochen.
 105055	Er hat das Gesetz gebrochen.

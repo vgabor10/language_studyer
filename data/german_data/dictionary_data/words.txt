@@ -3406,7 +3406,6 @@
 103458	r Strahl	sugár
 103459	r Wille	szándék, akarat
 103460	e Anerkennung	elismerés
-103461	aussetzen	kirak, kiűz
 103462	nämlich	nevezetesen, ugyanis
 103463	e Art	mód, fajta
 103464	r Test	teszt
@@ -3642,7 +3641,6 @@
 103697	r Januar	január
 103698	womöglich	talán
 103699	schwingen	leng
-103700	ausscheiden	kilép, felmond
 103701	symbolisch	szimbolikus, jelképes
 103702	s Studium	tanulmány
 103703	jeweils	mindig
@@ -4248,7 +4246,6 @@
 104313	klassisch	klasszikus
 104314	s Management	vezetés, menedzsment
 104315	technisch	műszaki, technikai
-104316	abschneiden	levág
 104317	verschieben	elhalaszt, eltol
 104318	bedecken	befed, beborít
 104319	s Entwicklungsland	fejlődő ország
