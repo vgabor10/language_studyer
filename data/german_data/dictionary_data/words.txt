@@ -3788,7 +3788,7 @@
 103850	e Aufführung	előadás
 103851	verwenden	felhasznál
 103852	s Unternehmen	vállalkozás
-103853	danken	megköszön
+103853	danken	köszön, megköszön
 103854	r Champion	bajnok
 103855	e Alternative	alternatíva
 103856	r Besucher	vendég
