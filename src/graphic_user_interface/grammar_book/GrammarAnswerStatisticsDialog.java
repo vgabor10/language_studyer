@@ -3,12 +3,12 @@ package graphic_user_interface.grammar_book;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarAnswerDataStatisticsMaker;
 import grammar_book.GrammarBook;
-import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
-import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
-import graphic_user_interface.common.PractisingTimeByDaysDialog;
+import graphic_user_interface.common.TableModelMaker;
+import graphic_user_interface.common.TabularDialog;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Date;
+import javax.swing.table.DefaultTableModel;
 
 public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
 
@@ -352,23 +352,38 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = grammarAnswerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.histogramOfAnswerRatesByDays(grammarAnswerDataContainer);
+        
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        NumberOfAnswersByDaysDialog dialog = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = grammarAnswerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.numberOfAnswersByDays(grammarAnswerDataContainer);
+        
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        PractisingTimeByDaysDialog dialog = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = grammarAnswerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.practisingTimeByDay(grammarAnswerDataContainer);
+                
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 

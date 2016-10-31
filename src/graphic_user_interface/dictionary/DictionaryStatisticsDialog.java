@@ -1,14 +1,11 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.common.PractisingTimeByDaysDialog;
-import graphic_user_interface.common.NumberOfAnswersByDaysDialog;
-import graphic_user_interface.common.HistogramOfAnswerRatesByDaysDialog;
 import dictionary.CardContainer;
 import dictionary.DictionaryAnswerDataStatisticsMaker;
 import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.AuxiliaryToolsDialog;
-import graphic_user_interface.common.HistogramOfStudyItemsByNumberOfAnswersDialog;
-import graphic_user_interface.common.NumberOfNewStudyItemsQuestionedByDaysDialog;
+import graphic_user_interface.common.TableModelMaker;
+import graphic_user_interface.common.TabularDialog;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
 import java.awt.event.KeyEvent;
@@ -16,6 +13,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.table.DefaultTableModel;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
@@ -77,6 +75,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
@@ -287,6 +286,13 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton10.setText("List cards ordered by answer rate");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
@@ -298,7 +304,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(244, Short.MAX_VALUE))
         );
 
@@ -317,7 +324,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addComponent(jButton5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton6)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton10)
+                .addContainerGap(153, Short.MAX_VALUE))
         );
 
         jPanel4Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {jButton2, jButton3, jButton4, jButton5, jButton6});
@@ -423,41 +432,62 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        HistogramOfAnswerRatesByDaysDialog dialog = new HistogramOfAnswerRatesByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.histogramOfAnswerRatesByDays(answerDataContainer);
+        
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        NumberOfAnswersByDaysDialog dialog 
-                = new NumberOfAnswersByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.numberOfAnswersByDays(answerDataContainer);
+        
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        PractisingTimeByDaysDialog dialog 
-                = new PractisingTimeByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.practisingTimeByDay(answerDataContainer);
+                
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        NumberOfNewStudyItemsQuestionedByDaysDialog dialog 
-                = new NumberOfNewStudyItemsQuestionedByDaysDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.numberOfNewStudyItemsQuestionedByDays(answerDataContainer);
+                
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        HistogramOfStudyItemsByNumberOfAnswersDialog dialog 
-                = new HistogramOfStudyItemsByNumberOfAnswersDialog(new javax.swing.JFrame(), true);
-        dialog.answerDataContainer = answerDataContainer;
-        dialog.fillDialogWithData();
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.histogramOfStudyItemsByNumberOfAnswers(answerDataContainer);
+                
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.setTableModel(model);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -512,6 +542,13 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_jButton9ActionPerformed
 
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        TabularDialog dialog 
+                = new TabularDialog(new javax.swing.JFrame(), true);
+        dialog.listCardsOrderedByAnswerRate(answerDataContainer, cardContainer);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton10ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -555,6 +592,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

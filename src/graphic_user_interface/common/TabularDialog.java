@@ -1,46 +1,61 @@
 package graphic_user_interface.common;
 
-import dictionary.DictionaryAnswerDataStatisticsMaker;
+import dictionary.Card;
+import dictionary.CardContainer;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
+import java.text.DecimalFormat;
+import java.util.Arrays;
 import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataByStudyItem;
+import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataContainer;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
-public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDialog {
+public class TabularDialog extends javax.swing.JDialog {
 
-    public AnswerDataContainer answerDataContainer;
-
-    public NumberOfNewStudyItemsQuestionedByDaysDialog(java.awt.Frame parent, boolean modal) {
+    //TODO: should this class be use more widely
+    
+    public TabularDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
         setLocationRelativeTo(null);
         
-        jButton1.setMnemonic(KeyEvent.VK_C);
+        closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
-    public void fillDialogWithData() {     
-        DictionaryAnswerDataStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryAnswerDataStatisticsMaker();
+    public void setTableModel(DefaultTableModel model) {
+        jTable2.setModel(model);
+    }
+    
+    public void listCardsOrderedByAnswerRate(AnswerDataContainer answerDataContainer,
+            CardContainer cardContainer) {    
         
-	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+        AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
+                = new AnswerDataByStudyItemContainer();
+        answerDataByStudyItemContainer.addDataFromAnswerDataContainer(answerDataContainer);
 
-        Map<Integer,Integer> numberOfNewStudyItemsQuestionedByDays 
-                = dictionaryAnswerDataStatisticsMaker.numberOfNewStudyItemsTestedByDays();
+        AnswerDataByStudyItem[] sortedDatas = answerDataByStudyItemContainer.toArray();
+        Arrays.sort(sortedDatas,
+                Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
 
-        List<Integer> sortedDays = new ArrayList<>(numberOfNewStudyItemsQuestionedByDays.keySet());
-        Comparator<Integer> comparator = Collections.reverseOrder();
-        Collections.sort(sortedDays, comparator);
-
-        DefaultTableModel model = (DefaultTableModel)jTable2.getModel();        
-        for (int day : sortedDays) {
+        DefaultTableModel model = (DefaultTableModel)jTable2.getModel();
+        model.addColumn("term");
+        model.addColumn("definition");
+        model.addColumn("answer rate");
+        model.addColumn("number of answers");
+        
+        for (AnswerDataByStudyItem answerDataByStudyItem : sortedDatas) {
+            Card card = cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
+                  
+            DecimalFormat df = new DecimalFormat("#.0000");
+            
             model.addRow(new Object[] {
-                Integer.toString(day),
-                numberOfNewStudyItemsQuestionedByDays.get(day)
+                card.term,
+                card.definition,
+                df.format(answerDataByStudyItem.countRightAnswerRate()),
+                answerDataByStudyItem.numberOfAnswers()
             });
         };
     }
@@ -51,7 +66,7 @@ public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDi
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        closeButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -60,16 +75,16 @@ public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDi
 
             },
             new String [] {
-                "day", "number of new study items tested"
+
             }
         ));
         jTable2.setEnabled(false);
         jScrollPane2.setViewportView(jTable2);
 
-        jButton1.setText("Close");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                closeButtonActionPerformed(evt);
             }
         });
 
@@ -80,28 +95,28 @@ public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDi
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 481, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 553, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(closeButton)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_closeButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -120,27 +135,20 @@ public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDi
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NumberOfNewStudyItemsQuestionedByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NumberOfNewStudyItemsQuestionedByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NumberOfNewStudyItemsQuestionedByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NumberOfNewStudyItemsQuestionedByDaysDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                NumberOfNewStudyItemsQuestionedByDaysDialog dialog = new NumberOfNewStudyItemsQuestionedByDaysDialog(new javax.swing.JFrame(), true);
+                TabularDialog dialog = new TabularDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -153,7 +161,7 @@ public class NumberOfNewStudyItemsQuestionedByDaysDialog extends javax.swing.JDi
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton closeButton;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
     // End of variables declaration//GEN-END:variables
