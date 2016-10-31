@@ -452,6 +452,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
         dialog.setTableModel(model);
+        
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -464,6 +466,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
         dialog.setTableModel(model);
+
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -476,6 +480,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
         dialog.setTableModel(model);
+        
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -488,6 +494,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
         dialog.setTableModel(model);
+        
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -543,9 +551,16 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        TableModelMaker tableModelMaker = new TableModelMaker();
+        
+        DefaultTableModel model =
+           tableModelMaker.cardsOrderedByAnswerRate(answerDataContainer, cardContainer);
+                
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
-        dialog.listCardsOrderedByAnswerRate(answerDataContainer, cardContainer);
+        dialog.setTableModel(model);
+        
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton10ActionPerformed
 

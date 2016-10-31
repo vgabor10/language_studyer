@@ -1,14 +1,21 @@
 package graphic_user_interface.common;
 
+import dictionary.Card;
+import dictionary.CardContainer;
 import dictionary.DictionaryAnswerDataStatisticsMaker;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataByStudyItem;
+import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.Histogram;
+import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class TableModelMaker {
     
@@ -160,6 +167,39 @@ public class TableModelMaker {
                 numberOfNewStudyItemsQuestionedByDays.get(day)
             });
         };       
+        
+        return model;
+    }
+   
+    public DefaultTableModel cardsOrderedByAnswerRate(AnswerDataContainer answerDataContainer,
+            CardContainer cardContainer) {
+
+        AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
+                = new AnswerDataByStudyItemContainer();
+        answerDataByStudyItemContainer.addDataFromAnswerDataContainer(answerDataContainer);
+
+        AnswerDataByStudyItem[] sortedDatas = answerDataByStudyItemContainer.toArray();
+        Arrays.sort(sortedDatas,
+                Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
+
+        DefaultTableModel model = new DefaultTableModel();
+        model.addColumn("term");
+        model.addColumn("definition");
+        model.addColumn("answer rate");
+        model.addColumn("number of answers");
+        
+        for (AnswerDataByStudyItem answerDataByStudyItem : sortedDatas) {
+            Card card = cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
+                  
+            DecimalFormat df = new DecimalFormat("#.0000");
+            
+            model.addRow(new Object[] {
+                card.term,
+                card.definition,
+                df.format(answerDataByStudyItem.countRightAnswerRate()),
+                answerDataByStudyItem.numberOfAnswers()
+            });
+        };
         
         return model;
     }

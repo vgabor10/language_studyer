@@ -1,16 +1,7 @@
 package graphic_user_interface.common;
 
-import dictionary.Card;
-import dictionary.CardContainer;
 import java.awt.event.KeyEvent;
-import java.text.DecimalFormat;
-import java.util.Arrays;
-import java.util.Collections;
 import javax.swing.table.DefaultTableModel;
-import study_item_objects.AnswerDataByStudyItem;
-import study_item_objects.AnswerDataByStudyItemContainer;
-import study_item_objects.AnswerDataContainer;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class TabularDialog extends javax.swing.JDialog {
 
@@ -27,37 +18,6 @@ public class TabularDialog extends javax.swing.JDialog {
     
     public void setTableModel(DefaultTableModel model) {
         jTable2.setModel(model);
-    }
-    
-    public void listCardsOrderedByAnswerRate(AnswerDataContainer answerDataContainer,
-            CardContainer cardContainer) {    
-        
-        AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
-                = new AnswerDataByStudyItemContainer();
-        answerDataByStudyItemContainer.addDataFromAnswerDataContainer(answerDataContainer);
-
-        AnswerDataByStudyItem[] sortedDatas = answerDataByStudyItemContainer.toArray();
-        Arrays.sort(sortedDatas,
-                Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
-
-        DefaultTableModel model = (DefaultTableModel)jTable2.getModel();
-        model.addColumn("term");
-        model.addColumn("definition");
-        model.addColumn("answer rate");
-        model.addColumn("number of answers");
-        
-        for (AnswerDataByStudyItem answerDataByStudyItem : sortedDatas) {
-            Card card = cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
-                  
-            DecimalFormat df = new DecimalFormat("#.0000");
-            
-            model.addRow(new Object[] {
-                card.term,
-                card.definition,
-                df.format(answerDataByStudyItem.countRightAnswerRate()),
-                answerDataByStudyItem.numberOfAnswers()
-            });
-        };
     }
     
     @SuppressWarnings("unchecked")
