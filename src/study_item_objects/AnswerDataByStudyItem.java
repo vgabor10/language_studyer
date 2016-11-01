@@ -28,8 +28,22 @@ public class AnswerDataByStudyItem {
         return data.get(0).index;
     }
 
+    public long getFirstStudyDate() {
+        if (!data.isEmpty()) {
+            return data.get(0).date;
+        }
+        else {
+            return -1;
+        }
+    }
+    
     public long getLastStudyDate() {
-        return data.get(data.size() - 1).date;
+        if (!data.isEmpty()) {
+            return data.get(data.size() - 1).date;
+        }
+        else {
+            return -1;
+        }
     }
 
     public double countRightAnswerRate() {
