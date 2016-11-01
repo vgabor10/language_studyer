@@ -3,11 +3,11 @@ package graphic_user_interface.dictionary;
 import dictionary.DictionaryDataContainer;
 import java.awt.event.KeyEvent;
 
-public class OtherToolsDialog extends javax.swing.JDialog {
+public class DictionaryOtherToolsDialog extends javax.swing.JDialog {
 
     public DictionaryDataContainer dictionaryDataContainer;
     
-    public OtherToolsDialog(java.awt.Frame parent, boolean modal) {
+    public DictionaryOtherToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -130,14 +130,18 @@ public class OtherToolsDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(OtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryOtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(OtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryOtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(OtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryOtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(OtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(DictionaryOtherToolsDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -146,7 +150,7 @@ public class OtherToolsDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                OtherToolsDialog dialog = new OtherToolsDialog(new javax.swing.JFrame(), true);
+                DictionaryOtherToolsDialog dialog = new DictionaryOtherToolsDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

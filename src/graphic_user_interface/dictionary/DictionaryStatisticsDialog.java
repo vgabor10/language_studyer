@@ -3,7 +3,7 @@ package graphic_user_interface.dictionary;
 import dictionary.CardContainer;
 import dictionary.DictionaryAnswerDataStatisticsMaker;
 import dictionary.DictionaryDataContainer;
-import graphic_user_interface.common.AuxiliaryToolsDialog;
+import graphic_user_interface.grammar_book.GrammarBookOtherToolsDialog;
 import graphic_user_interface.common.TableModelMaker;
 import graphic_user_interface.common.TabularDialog;
 import study_item_objects.AnswerDataContainer;
@@ -512,7 +512,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
         } catch (IOException ex) {
-            Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GrammarBookOtherToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -529,7 +529,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot_number_of_answers_by_days");
         } catch (IOException ex) {
-            Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GrammarBookOtherToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
@@ -546,7 +546,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
         } catch (IOException ex) {
-            Logger.getLogger(AuxiliaryToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GrammarBookOtherToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton9ActionPerformed
 
