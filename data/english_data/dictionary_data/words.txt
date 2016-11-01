@@ -865,7 +865,6 @@
 100867	bright	világos, okos
 100868	crucial	kritikus, döntő
 100869	deposition	elmozdítás
-100870	exonerate	felment
 100871	recollection	emlék
 100872	coffin	koporsó
 100873	session	ülés, gyűlés
@@ -1035,3 +1034,10 @@
 101035	arbitrary	tetszőleges
 101036	affirmative	igenlő, megerősítő
 100065	unanimity	egyhangúság
+101037	suddenly	hirtelen
+101038	despise	lenéz, megvet
+101039	faith	hit
+101040	salvation	megmentés
+101041	artifact	műalkotás
+101042	exonerate	felment, tisztáz, mentesít
+100870	yell	sikít, ordít

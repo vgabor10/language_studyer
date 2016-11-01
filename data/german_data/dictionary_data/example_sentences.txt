@@ -1243,6 +1243,8 @@
 100323	Er konnte das Angebot nicht mehr annehmen, zumal er bereits allen erzählt hatte, dass es nicht gut sei.
 100323	Ich habe den Flug bereits gebucht.
 100323	Ihnen gehört das Haus bereits in der dritten Generation.
+100324	Das ist ein aussichtsloses Unternehmen.
+100324	Gegen die Natur anzukämpfen, ist aussichtslos.
 100325	Waffen unterliegen in Deutschland strengen Gesetzen.
 100326	Es wird Waffenstillstand angeordnet.
 100326	Die Soldaten sollen aufpassen, dass der Waffenstillstand eingehalten wird.
@@ -3780,6 +3782,7 @@
 101645	Die Maschine weist keinerlei Mängel auf.
 101646	Der Hersteller gibt eine Garantie von zwei Jahren.
 101648	Viele Kaufhäuser haben sowohl Aufzüge als auch Rolltreppen.
+101649	Ich werde dir Pantoffeln geben.
 101650	Diese Schuhe sind wasserdicht.
 101650	Ich werde mein Dach reparieren lassen, um es wasserdicht zu machen.
 101651	Zu einem Opernball sollte man in angemessener Bekleidung erscheinen.
@@ -4740,6 +4743,8 @@
 102260	Ohne meine Handtasche gehe ich nicht aus dem Haus.
 102261	Auch künftige Generationen müssen auf dieser Welt noch leben können.
 102262	Alle Nutzer müssen eine Jahresgebühr von 30 Euro zahlen.
+102263	Sie brüstet sich damit, dass sie gut schwimmen kann.
+102263	Die Region brüstet sich mit den schönsten Frauen des Landes.
 102264	Im Laufe des heutigen Tages ist die Situation in der Ukraine weiter eskaliert.
 102264	Der Streit eskaliert zu einer öffentlichen Schlammschlacht.
 102264	Der Streit eskaliert zu einer öffentlichen Schlammschlacht. Der Konflikt zwischen Israel und Syrien eskaliert.
