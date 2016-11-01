@@ -9,7 +9,6 @@ import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
@@ -53,7 +52,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         inspectCardButton.setMnemonic(KeyEvent.VK_M);
-        listCardsWithoutExampleSentenceButton.setMnemonic(KeyEvent.VK_L);
     }
 
     public void initialise() {
@@ -83,7 +81,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        listCardsWithoutExampleSentenceButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -183,13 +180,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        listCardsWithoutExampleSentenceButton.setText("List cards without example sentence");
-        listCardsWithoutExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                listCardsWithoutExampleSentenceButtonActionPerformed(evt);
-            }
-        });
-
         jButton2.setText("Card group filter");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -213,8 +203,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                             .addComponent(addNewCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(listCardsWithoutExampleSentenceButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -222,7 +211,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addNewCardButton, inspectCardButton, listCardsWithoutExampleSentenceButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {addNewCardButton, inspectCardButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -240,8 +229,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(inspectCardButton)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(listCardsWithoutExampleSentenceButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 404, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -253,7 +240,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addNewCardButton, inspectCardButton, listCardsWithoutExampleSentenceButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addNewCardButton, inspectCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -453,22 +440,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         inspectCardButton.setEnabled(false);
     }//GEN-LAST:event_jTable2MouseClicked
 
-    private void listCardsWithoutExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listCardsWithoutExampleSentenceButtonActionPerformed
-        listedCards.clear();
-        
-        for (int i=0; i<cardContainer.numberOfCards(); i++) {
-            Card card = cardContainer.getCardByOrder(i);
-            if (card.exampleSentences.isEmpty()) {
-                listedCards.add(card);
-            }
-        }
-        
-        Collections.shuffle(listedCards);
-        
-        toScreenListedCards();
-        jTextField1.requestFocus();
-    }//GEN-LAST:event_listCardsWithoutExampleSentenceButtonActionPerformed
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -524,6 +495,5 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JButton listCardsWithoutExampleSentenceButton;
     // End of variables declaration//GEN-END:variables
 }

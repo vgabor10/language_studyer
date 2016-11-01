@@ -1,4 +1,4 @@
-package graphic_user_interface.common;
+package graphic_user_interface.dictionary;
 
 import dictionary.Card;
 import dictionary.DictionaryDataContainer;
@@ -6,11 +6,11 @@ import dictionary.ExampleSentenceAssigner;
 import disc_operation_handlers.DictionaryDataModificator;
 import java.util.ArrayList;
 
-public class AssignExampleSentenceDialog extends javax.swing.JDialog {
+public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
-    DictionaryDataContainer dictionaryDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
 
-    ExampleSentenceAssigner exampleSentenceAssigner
+    private ExampleSentenceAssigner exampleSentenceAssigner
             = new ExampleSentenceAssigner();
 
     private Card suggestedCard;
@@ -56,7 +56,7 @@ public class AssignExampleSentenceDialog extends javax.swing.JDialog {
         suggestedExampleSentence = exampleSentenceSuggestion;
     }
 
-    public AssignExampleSentenceDialog(java.awt.Frame parent, boolean modal) {
+    public ExampleSentenceAssigner1Dialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -192,20 +192,21 @@ public class AssignExampleSentenceDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AssignExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExampleSentenceAssigner1Dialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AssignExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExampleSentenceAssigner1Dialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AssignExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExampleSentenceAssigner1Dialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AssignExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ExampleSentenceAssigner1Dialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                AssignExampleSentenceDialog dialog = new AssignExampleSentenceDialog(new javax.swing.JFrame(), true);
+                ExampleSentenceAssigner1Dialog dialog = new ExampleSentenceAssigner1Dialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

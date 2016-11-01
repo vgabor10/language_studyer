@@ -43,7 +43,6 @@
                           <Component id="inspectCardButton" linkSize="2" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                           <Component id="jScrollPane2" min="-2" pref="184" max="-2" attributes="0"/>
                           <Component id="closeButton" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
-                          <Component id="listCardsWithoutExampleSentenceButton" linkSize="2" alignment="0" min="-2" pref="184" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -72,9 +71,7 @@
                       <Component id="addNewCardButton" linkSize="3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="inspectCardButton" linkSize="3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="listCardsWithoutExampleSentenceButton" linkSize="3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane1" pref="404" max="32767" attributes="0"/>
@@ -201,14 +198,6 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="listCardsWithoutExampleSentenceButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="List cards without example sentence"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listCardsWithoutExampleSentenceButtonActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Card group filter"/>
