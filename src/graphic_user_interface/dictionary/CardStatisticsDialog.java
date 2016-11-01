@@ -1,5 +1,6 @@
 package graphic_user_interface.dictionary;
 
+import java.text.DecimalFormat;
 import java.util.Date;
 import study_item_objects.AnswerDataByStudyItem;
 
@@ -13,8 +14,10 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
     }
 
     public void initialise() {
+        DecimalFormat df = new DecimalFormat("#.000");
+        
         jLabel4.setText(Integer.toString(answerDataByCard.numberOfAnswers()));
-        jLabel5.setText(Double.toString(answerDataByCard.countRightAnswerRate()));
+        jLabel5.setText(df.format(answerDataByCard.countRightAnswerRate()));
         jLabel8.setText(new Date(answerDataByCard.getLastStudyDate()).toString());
         jLabel9.setText(new Date(answerDataByCard.getFirstStudyDate()).toString());
     }
@@ -100,7 +103,7 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel9)))
-                        .addGap(0, 142, Short.MAX_VALUE)))
+                        .addGap(0, 198, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
