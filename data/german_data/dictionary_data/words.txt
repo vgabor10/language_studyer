@@ -755,7 +755,7 @@
 100761	e Infiltration	beszivárgás
 100762	aufgehalten	feltartóztat
 100763	dauern	tart
-100764	s Übel	betegség
+100764	s Übel	baj, gond, betegség
 100765	packen	megragad, megfog, csomagol
 100766	bereit	hajlandó
 100767	hauptsächlich	főleg
@@ -784,7 +784,7 @@
 100790	wichtig	fontos
 100791	e Freiwilligkeit	önkéntesség
 100792	hitzig	heves
-100793	bewähren	bizonyít
+100793	bewähren	bizonyít, megtart
 100794	mahnen	emlékeztet, buzdít
 100795	erinnern	emlékezik
 100796	entsprechen	megfelel
@@ -1669,7 +1669,6 @@
 101688	e Palatschinke	palacsinta
 101689	r Strudel	rétes
 101691	r Obstsaft	gyümölcslé
-101692	r Coctail	koktél
 101693	e Vitamine	vitamin
 101694	s Mineral	ásvány
 101695	s Raumschiff	űrhajó
@@ -3519,7 +3518,7 @@
 103572	befestigen	rőgzít, felszerel
 103573	versichern	biztosít, megerősít
 103574	schütteln	ráz
-103575	beeinträchtigen	korlátoz
+103575	beeinträchtigen	befolyásol, korlátoz
 103576	anhalten	megáll, megmarad
 103577	wieso	hogyan
 103578	schlafen	alszik
@@ -4030,7 +4029,7 @@
 104095	nachgehen	követ, utánajár
 104096	nachweisen	igazol, kimutat
 104097	r Posten	poszt, tisztség
-104098	abstellen	megszüntet
+104098	abstellen	leállít, megszüntet
 104099	zusammenstellen	összeállít
 104100	arbeitslos	munkanélküli (mn)
 104101	detailliert	részletes

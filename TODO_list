@@ -4,10 +4,11 @@ Modification ideas in src:
 - consider study vocabulary with sentencesy
 - fix bugs when there is still no data
 - store card categories data in different file
-- consider making a DictionaryData class
 - create DictionaryEngine class, create GrammarBookEngine class
 - in gnuplot scripts the file path should be added be parameter
 - make synonim searcher
+- make modificateEyampleSentenceButton work in CardInspectorDialog
+- make AddCardReinforceDialog at there are already card with the same term
 
 german grammar items to add:
 - többesszámok

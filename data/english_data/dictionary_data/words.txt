@@ -1041,3 +1041,11 @@
 101041	artifact	műalkotás
 101042	exonerate	felment, tisztáz, mentesít
 100870	yell	sikít, ordít
+101043	concierge	portás
+101044	deceive	becsap
+101045	atone	vezekel, jóvátesz
+101046	harmless	ártalmatlan
+101047	regret	sajnál, megbán
+101048	educate	oktat, nevel
+101049	whistle	síp, fütty
+101050	stage	előad, megrendez
