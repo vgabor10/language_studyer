@@ -1049,3 +1049,4 @@
 101048	educate	oktat, nevel
 101049	whistle	síp, fütty
 101050	stage	előad, megrendez
+101051	patronize	pártfogol, támogat

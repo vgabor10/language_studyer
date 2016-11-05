@@ -799,7 +799,6 @@
 100805	schutzbedürftige	veszélyeztetett
 100806	umsiedeln	áttelepít
 100807	e Öffentlichkeit	nyilvánosság
-100808	s Kontingent	részesedés
 100809	betreffen	érint
 100810	e Aussicht	kilátás, remény
 100811	hohe	magas
@@ -807,7 +806,7 @@
 100813	genehmigt	elfogadott
 100814	mindestens	legalább
 100815	berichten	beszámol, tudósít
-100816	geltend	érvényes
+100816	geltend	érvényes (mn)
 100817	leisten	nyújt, teljesít
 100818	hervorheben	hangsúlyoz, kiemel
 100819	r Einwand	ellenvetés
@@ -1195,7 +1194,7 @@
 101205	e Siedlung	település
 101206	e Welle	hullám
 101207	r Respekt	tisztelet
-101208	hart	erősen
+101208	hart	kemény, szigorú
 101209	fremd	idegen
 101210	r Erwachsene	felnőtt
 101211	e Stufe	szint
@@ -1726,7 +1725,7 @@
 101747	e Ausstellung	kiállítás
 101748	e Kirche	templom
 101749	s Brunnen	kút
-101750	eilig	sürgős
+101750	eilig	sürgős, sietős
 101751	e Reise	utazás
 101752	übernachten	éjszakázik
 101753	r Ring	gyűrű
@@ -1812,7 +1811,6 @@
 101833	r Künstler	művész
 101834	obligatorisch	kötelező
 101835	s Abenteuer	kaland
-101836	bebildert	képes
 101837	nützlich	hasznos
 101838	e Neuigkeit	újdonság
 101839	r Journalist	újságíró
@@ -1956,7 +1954,6 @@
 101982	elegant	elegáns
 101983	r Pullover	pulóver
 101984	e Unterhose	alsónadrág, férfi alsó
-101985	r Jogging	melegítő
 101986	e Krawatte	nyakkendő
 101988	e Mütze	sapka
 101989	r Schal	sál
@@ -1970,7 +1967,6 @@
 101997	reinigen	tisztít
 101998	färben	színez, fest
 102000	e Mühe	fáradság
-102001	massieren	masszíroz
 102002	r Winter	tél
 102003	r Frühling	tavasz
 102004	r Sommer	nyár
@@ -1982,7 +1978,7 @@
 102010	e Sonne	Nap
 102011	sonnig	napos
 102012	heiß	forró
-102013	warm	meleg
+102013	warm	meleg (mn)
 102014	nass	nedves
 102015	e Jahreszeit	évszak
 102016	r Sturm	vihar
@@ -2708,7 +2704,6 @@
 102753	einsehen	betekint
 102754	einschränken	korlátoz
 102755	einschließen	bezár
-102756	einschlagen	betör, bezúz
 102757	einschlafen	elalszik
 102758	einschätzen	felbecsül
 102759	einrichten	berendez, elrendez
@@ -3030,7 +3025,7 @@
 103078	rutschen	csúszik
 103079	r Klang	hang
 103080	r Berater	tanácsadó
-103081	r Ruf	hírnév, meghívás
+103081	r Ruf	hívás, hírnév
 103082	e Erwartung	elvárás, várakozás
 103083	s Seminar	szeminárium
 103084	klinisch	klinikai
@@ -3260,7 +3255,7 @@
 103313	innerhalb	belül
 103314	r Konkurrent	versenytárs
 103315	r Zuwachs	növekedés, gyarapodás
-103316	begreifen	megért
+103316	begreifen	megért, felfog
 103317	r Unternehmer	vállakozó
 103318	wesentlich	lényeges
 103319	richten	ítél, igazít
@@ -3319,7 +3314,7 @@
 103372	schreiten	lép, lépked
 103373	s Gewehr	puska
 103374	nachher	azután
-103375	wert	érdemes
+103375	wert	értékes, drága
 103376	weich	puha
 103377	indirekt	közvetett, indirekt
 103378	differenzieren	megkülönböztet
@@ -3967,7 +3962,7 @@
 104032	r Bezirk	körzet
 104033	verurteilen	elítél
 104034	unterrichten	tanít, oktat
-104035	teilen	feloszt, megoszt
+104035	teilen	oszt, megoszt, feloszt
 104036	s Kapital	tőke
 104037	e Richtlinie	irányelv
 104038	erkennen	elismer, felismer
@@ -4614,7 +4609,7 @@
 104687	e Droge	drog, kábítószer
 104688	vorsehen	tervbe vesz, előre lát
 104689	verfassen	megfogalmaz
-104690	ausmachen	kitesz, megegyez
+104690	ausmachen	kikapcsol, megegyez, kitesz
 104691	sachlich	tárgyilagos
 104692	vorbei	elmúlt (hat)
 104693	ablaufen	lejár, elmúlik
@@ -5045,3 +5040,4 @@
 102191	e Versöhnung	kibékülés
 103632	r Honig	méz
 103710	hintereinander	egymásután
+100808	beben	reng, remeg
