@@ -1,5 +1,6 @@
 package graphic_user_interface.dictionary;
 
+import graphic_user_interface.dictionary.TableRenderers.CardTestesStatisticsTableRenderer;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
@@ -34,7 +35,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jButton1.setMnemonic(KeyEvent.VK_C);
         jButton2.setMnemonic(KeyEvent.VK_N);
         
-        model = (DefaultTableModel)Title1.getModel();
+        model = (DefaultTableModel)Table.getModel();
      }
 
     public void setCardTestStatisticsDataToFrame() {
@@ -87,7 +88,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
             });
             
             CardTestesStatisticsTableRenderer colorRenderer = new CardTestesStatisticsTableRenderer();
-	    Title1.setDefaultRenderer(Object.class, colorRenderer);
+	    Table.setDefaultRenderer(Object.class, colorRenderer);
         }
     }
     /**
@@ -100,7 +101,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        Title1 = new javax.swing.JTable();
+        Table = new javax.swing.JTable();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -130,7 +131,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        Title1.setModel(new javax.swing.table.DefaultTableModel(
+        Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -138,8 +139,8 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                 "term", "definition", "after test answer rate", "before test answer rate", "# of answers after test"
             }
         ));
-        Title1.setEnabled(false);
-        jScrollPane1.setViewportView(Title1);
+        Table.setEnabled(false);
+        jScrollPane1.setViewportView(Table);
 
         jLabel13.setText("jLabel13");
 
@@ -396,7 +397,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTable Title1;
+    private javax.swing.JTable Table;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;

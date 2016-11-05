@@ -1,13 +1,14 @@
-package graphic_user_interface.common;
+package graphic_user_interface.dictionary;
 
+import graphic_user_interface.dictionary.TableRenderers.HistogramOfAnswerRatesByDaysTableRenderer;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
 
-public class TabularDialog extends javax.swing.JDialog {
+public class HistogramOfAnswerRatesByDaysTabularDialog extends javax.swing.JDialog {
 
     //TODO: should this class be use more widely
     
-    public TabularDialog(java.awt.Frame parent, boolean modal) {
+    public HistogramOfAnswerRatesByDaysTabularDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -15,7 +16,13 @@ public class TabularDialog extends javax.swing.JDialog {
     }
     
     public void setTableModel(DefaultTableModel model) {
-        jTable2.setModel(model);
+        jTable.setModel(model);
+    }
+    
+    public void renderTable() {
+        HistogramOfAnswerRatesByDaysTableRenderer colorRenderer 
+                = new HistogramOfAnswerRatesByDaysTableRenderer();
+	jTable.setDefaultRenderer(Object.class, colorRenderer);
     }
     
     @SuppressWarnings("unchecked")
@@ -23,12 +30,12 @@ public class TabularDialog extends javax.swing.JDialog {
     private void initComponents() {
 
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        jTable = new javax.swing.JTable();
         closeButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        jTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -36,8 +43,8 @@ public class TabularDialog extends javax.swing.JDialog {
 
             }
         ));
-        jTable2.setEnabled(false);
-        jScrollPane2.setViewportView(jTable2);
+        jTable.setEnabled(false);
+        jScrollPane2.setViewportView(jTable);
 
         closeButton.setText("Close");
         closeButton.addActionListener(new java.awt.event.ActionListener() {
@@ -93,20 +100,21 @@ public class TabularDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HistogramOfAnswerRatesByDaysTabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HistogramOfAnswerRatesByDaysTabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HistogramOfAnswerRatesByDaysTabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HistogramOfAnswerRatesByDaysTabularDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                TabularDialog dialog = new TabularDialog(new javax.swing.JFrame(), true);
+                HistogramOfAnswerRatesByDaysTabularDialog dialog = new HistogramOfAnswerRatesByDaysTabularDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
@@ -121,6 +129,6 @@ public class TabularDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton closeButton;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable;
     // End of variables declaration//GEN-END:variables
 }

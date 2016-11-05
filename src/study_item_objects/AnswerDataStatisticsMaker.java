@@ -117,8 +117,7 @@ public class AnswerDataStatisticsMaker {
 
     public String getPractisingTimeAsString() {
         int[] a = practisingTime();
-        return "practising time: " + Integer.toString(a[0])
-                + " hours " + Integer.toString(a[1]) + " minutes";
+        return Integer.toString(a[0]) + " hours " + Integer.toString(a[1]) + " minutes";
     }
 
     public Map<Integer, String> getPractisingTimeByDaysAsString() {

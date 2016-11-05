@@ -437,9 +437,12 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         DefaultTableModel model =
            tableModelMaker.histogramOfAnswerRatesByDays(answerDataContainer);
         
-        TabularDialog dialog 
-                = new TabularDialog(new javax.swing.JFrame(), true);
+        HistogramOfAnswerRatesByDaysTabularDialog dialog 
+                = new HistogramOfAnswerRatesByDaysTabularDialog(new javax.swing.JFrame(), true);
         dialog.setTableModel(model);
+        dialog.renderTable();
+        
+        dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
