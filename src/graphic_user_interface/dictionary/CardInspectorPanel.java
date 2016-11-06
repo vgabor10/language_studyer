@@ -109,6 +109,8 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             }
         });
 
+        jComboBox1.setEnabled(false);
+
         jLabel4.setText("categories:");
 
         modificateExampleSentenceButton.setText("Modificate sentence");
@@ -211,7 +213,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
      
     private void addExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButtonActionPerformed
         DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
-        ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
+        AddExampleSentenceDialog dialog = new AddExampleSentenceDialog(new javax.swing.JFrame(), true);
         dialog.dialogAnswer = addSentenceDialogAnswer;
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -225,7 +227,21 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
 
     private void modificateExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateExampleSentenceButtonActionPerformed
-        // TODO add your handling code here:
+        DialogAnswer modificateSentenceDialogAnswer = new DialogAnswer();
+        int selectedTableRowIndex = jTable1.getSelectedRow();
+        ModificateExampleSentenceDialog dialog 
+                = new ModificateExampleSentenceDialog(new javax.swing.JFrame(), true);
+        dialog.dialogAnswer = modificateSentenceDialogAnswer;
+        dialog.setExampleSentenceToModificate(
+                (String)tableModel.getValueAt(selectedTableRowIndex,0));
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+
+        if (modificateSentenceDialogAnswer.boolAnswer) {
+            tableModel.removeRow(selectedTableRowIndex);
+            tableModel.insertRow(selectedTableRowIndex, new Object[]{
+                    modificateSentenceDialogAnswer.stringAnswer});
+        }
     }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 
     private void jTable1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusGained

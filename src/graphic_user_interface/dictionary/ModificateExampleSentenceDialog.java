@@ -3,17 +3,21 @@ package graphic_user_interface.dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 
-public class ExampleSentenceAdderDialog extends javax.swing.JDialog {
+public class ModificateExampleSentenceDialog extends javax.swing.JDialog {
     
+    public int rowIndex = -1;
     public DialogAnswer dialogAnswer;
     
-    public ExampleSentenceAdderDialog(java.awt.Frame parent, boolean modal) {
+    public ModificateExampleSentenceDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        jTextField1.setText("");
-        jButton1.setMnemonic(KeyEvent.VK_A);
+        jButton1.setMnemonic(KeyEvent.VK_S);
         jButton2.setMnemonic(KeyEvent.VK_C);
+    }
+    
+    public void setExampleSentenceToModificate(String exampleSentenceToModificate) {
+        jTextField1.setText(exampleSentenceToModificate);
     }
     
     /**
@@ -35,7 +39,7 @@ public class ExampleSentenceAdderDialog extends javax.swing.JDialog {
 
         jLabel1.setText("Example sententce:");
 
-        jButton1.setText("Add sentence");
+        jButton1.setText("Save sentence");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -114,14 +118,18 @@ public class ExampleSentenceAdderDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ExampleSentenceAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModificateExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ExampleSentenceAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModificateExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ExampleSentenceAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModificateExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ExampleSentenceAdderDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ModificateExampleSentenceDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -130,7 +138,7 @@ public class ExampleSentenceAdderDialog extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
+                ModificateExampleSentenceDialog dialog = new ModificateExampleSentenceDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
