@@ -970,7 +970,7 @@
 100980	berühmt	híres
 100981	zaubern	varázsol
 100982	e Ruhe	pihenés
-100983	e Routine	jártasság
+100983	e Routine	gyakorlat, jártasság
 100984	einreichen	bead
 100985	r Gerichtshof	bíróság
 100986	s Gesicht	arc
@@ -1701,7 +1701,7 @@
 101723	r Fahrer	vezető, sofőr
 101724	funktionieren	működik
 101725	r Mechaniker	szerelő
-101726	reparieren	megjavít
+101726	reparieren	javít, megjavít
 101727	e Kontrolle	ellenőrzés
 101728	s Verkehrsschild	közlekedési tábla
 101729	überholen	megelőz
@@ -1783,7 +1783,6 @@
 101805	r Verlierer	vesztes (fn)
 101806	r Gewinner	nyertes
 101807	erfolglos	sikertelen
-101808	r Bummel	séta
 101809	s Benehmen	viselkedés
 101810	günstig	kedvező
 101811	empfehlenswert	ajánlatos
@@ -1820,7 +1819,7 @@
 101844	populär	népszerű
 101845	r Film	film
 101846	e Tagesschau	híradó
-101847	e Diskussion	vita
+101847	e Diskussion	megbeszélés, vita
 101848	e Rolle	szerep
 101849	übernehmen	elvállal
 101850	s Mikrofon	mikrofon
@@ -1920,7 +1919,7 @@
 101947	e Frisur	frizura
 101948	r Anblick	pillantás
 101949	unvorteilhaft	előnytelen
-101950	korrigieren	kijavít
+101950	korrigieren	javít, kijavít
 101951	e Methode	módszer
 101952	r Alltag	hétköznap
 101953	hervorragend	kitűnő
@@ -2074,7 +2073,6 @@
 102109	e Hochzeitsreise	nászút
 102110	e Veranstaltung	rendezvény
 102111	r Kosename	becenév
-102112	vertraut	bizalmas
 102113	r Politiker	politikus
 102114	e Gedenkfeier	visszaemlékezés
 102115	e Forderung	követelmény, követelés
@@ -2334,7 +2332,7 @@
 102378	gucken	néz, kukucskál
 102379	r Gürtel	öv
 102380	gut	jó
-102381	haften	szavatol
+102381	haften	szavatol, ragad
 102382	haften	tapad
 102383	r Hahn	kakas
 102384	halb	fél (mn)
@@ -2776,7 +2774,7 @@
 102826	ehrlich	őszinte
 102827	r Assistent	asszisztens
 102828	einig	egyetértő
-102829	r Aufbau	építés, építmény
+102829	r Aufbau	szerkezet, felépítés
 102830	objektiv	objektív
 102831	r Wahlkampf	választási kampány
 102832	eilen	siet
@@ -2850,7 +2848,6 @@
 102901	nur	csak
 102902	e Höhle	barlang
 102903	einhalten	betart, teljesít
-102904	einbringen	bevisz
 102905	vorwiegend	főleg
 102906	real	valós
 102907	optimal	optimális
@@ -2879,7 +2876,7 @@
 102930	e Figur	ábra
 102931	r Aufsatz	tanulmány
 102932	rauschen	zúg
-102933	realistisch	valószerű
+102933	realistisch	életszerű, valószerű
 102934	r Ablauf	folyamat
 102935	oftmals	gyakran
 102936	r Anspruch	követelés
@@ -3049,7 +3046,7 @@
 103102	bedenken	megfontol
 103103	keineswegs	semmiképpen
 103104	s Schicksal	sors
-103105	vertrauen	bízik
+103105	vertrauen	bízik, megbízik
 103106	e Äußerung	kifejezés, nyilatkozat
 103107	r Mythos	mítosz
 103108	zurückgreifen	visszanyúl
@@ -3424,7 +3421,6 @@
 103483	bayrisch	bajor (mn)
 103484	e Bedrohung	fenyegetés
 103485	e Rente	nyugdíj
-103486	abgrenzen	elhatárol
 103487	aufmachen	kinyit
 103488	r Erzähler	narrátor, elbeszélő
 103489	auseinander	szét, széjjel
@@ -3806,7 +3802,7 @@
 103875	voraussetzen	feltételez
 103876	s Design	forma
 103877	s Bad	kád, fürdő
-103878	r Umstand	körülmény
+103878	r Umstand	állapot, körülmény
 103879	r Philosoph	filozófus
 103880	s Gefängnis	börtön
 103881	r Rucksack	hátizsák
@@ -4322,7 +4318,7 @@
 104398	scheiden	elválik, szétválaszt
 104399	jetzt	most
 104400	weiß	fehér
-104401	entwerfen	eltervez
+104401	entwerfen	eltervez, vázlatot készít
 104402	s Format	formátum
 104403	r Dirigent	karmester
 104404	r Italiener	olasz (fn)
@@ -4333,7 +4329,6 @@
 104409	menschlich	emberi
 104410	e Ansicht	vélemény, nézet
 104411	e Feststellung	megállapítás, megfigyelés
-104412	zutrauen	megbízik, feltételez
 104413	aufkommen	felnő, felemelkedik
 104414	sich verlieben	szerelmes lesz
 104415	aufregen	felizgat

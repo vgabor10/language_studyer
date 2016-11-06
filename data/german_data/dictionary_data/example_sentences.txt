@@ -1167,6 +1167,9 @@
 100292	Maria bringt optimale Voraussetzungen für den Job mit.
 100292	Voraussetzung für die Einreise ist ein gültiger Pass.
 100293	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
+100293	Tom hatte nicht genügend Geld.
+100293	Wir haben nicht genügend Zeit.
+100293	Es gibt genügend Raum für Verbesserung.
 100295	Sie hat nahezu ihr ganzes Geld verspielt.
 100296	Eine Kombination von dummen Zufällen hat zu dieser Katastrophe geführt.
 100296	Meine Nachbarn führen eine sehr einseitige Beziehung.
@@ -1917,6 +1920,10 @@
 100610	Der Generator wandelt Bewegungsenergie in elektrische Energie um.
 100610	Er ist ständig in Bewegung.
 100611	Claudia hat eine Menge guter Eigenschaften.
+100614	Wolltet ihr Mary auch einladen?
+100614	Ich werde dich zum Sushi-Essen einladen.
+100614	Wir laden zum Essen ein.
+100614	Sie laden mich zum Kartenspielen ein.
 100615	Ein Kilogramm sind tausend Gramm.
 100615	Sie erzielten einen Umsatz in Höhe von mehreren tausend Euro.
 100615	Ungefähr tausend Bürger nahmen an der Demonstration teil.
@@ -2391,6 +2398,7 @@
 100844	Zeitungen beziehungsweise Zeitschriften gehören zu den meistgelesenen Printmedien.
 100846	Das letzte Jahrzehnt des 20. Jahrhunderts war relativ friedlich.
 100847	Bernd sieht seinem Bruder ähnlich.
+100848	Die Armee marschiert in das besetzte Gebiet ein.
 100852	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
 100853	Ich nehme die Talkshow auf, um sie später auszuwerten.
 100855	Hier ist es verboten zu rauchen.
@@ -2617,6 +2625,8 @@
 100982	Es ist wichtig, die Ruhe zu bewahren.
 100982	Junge Eltern brauchen Ruhe und Erholung.
 100983	Ist das jetzt Ihre tägliche Routine?
+100983	Eigentlich war es ein Routineflug.
+100983	Es gehört zu meiner täglichen Routine, vor dem Frühstück die Zeitung zu lesen.
 100984	Sie können Ihre Unterlagen bis nächsten Montag einreichen.
 100986	Sie hat ein rundes, immer freundliches Gesicht.
 100986	Sonjas Gesicht spiegelt sich im See.
@@ -3167,6 +3177,8 @@
 101302	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
 101302	Diese Seife ist von höchster Qualität.
 101302	Wir verkaufen nur hochwertige Produkte, von deren Qualität wir überzeugt sind.
+101303	Der Sportler war in allen Disziplinen überragend.
+101303	Margarete ist eine überragende Tennisspielerin.
 101304	Bei dieser Dissertation handelt es sich um eine quantitative Studie.
 101304	Eine andere wissenschaftliche Studie zeigt das genaue Gegenteil.
 101304	Immerhin müssen wir noch keine Studiengebühren zahlen.
@@ -3496,6 +3508,8 @@
 101464	Sie bewirbt sich um eine Stelle als Sekretärin.
 101466	Auf einem Klassentreffen treffen sich ehemalige Mitschüler.
 101467	Die Lehrerin schreibt Vokabeln an die Tafel.
+101467	Tom kaufte sich eine Tafel Schokolade.
+101467	Auf der Tafel war eine Tabelle zu sehen.
 101468	Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.
 101468	Die Bank hat dem jungen Ehepaar einen Kredit gewährt.
 101468	Die Bank ist frisch gestrichen.
@@ -3510,6 +3524,8 @@
 101479	Das Buch enthält viele Übungen zur Grammatik.
 101480	Mündliche Prüfungen sind anders als schriftliche.
 101481	Am nächsten Tag erhielt sie eine schriftliche Benachrichtigung.
+101483	Wo ist der Speisesaal?
+101483	Tom ging in den Speisesaal mit einem Tablett.
 101485	Elfriede Jelinek wurde der Literaturnobelpreis verliehen.
 101485	Literatur recherchiert man am besten im Internet.
 101486	Das Buch enthält viele Übungen zur Grammatik.
@@ -3550,6 +3566,7 @@
 101498	Vorher lese ich noch den Artikel zu Ende.
 101501	Ein Satz enthält mindestens ein Subjekt und ein Verb.
 101503	In der Ausstellung kann man 200 Objekte von verschiedenen Künstlern sehen.
+101504	Ist "Moe" ein Attribut oder doch etwas Anderes?
 101510	Er beabsichtigt, ein Praktikum zu machen.
 101510	Ich werde im Sommer ein Praktikum absolvieren.
 101510	Maria hat ein Praktikum in Italien gemacht.
@@ -3695,6 +3712,8 @@
 101567	Das Herz schlägt in der Brust.
 101567	Viele Mädchen wollen sich die Brust vergrößern lassen.
 101569	Mein Magen tut weh.
+101569	Trinke nicht auf leeren Magen!
+101569	Mein Magen ist voll.
 101573	Das Problem wird wie immer auf dem Rücken der Armen ausgetragen.
 101573	Sie ist vom Stuhl gerutscht und auf den Rücken gefallen.
 101574	Der Schuss traf ihn an der Schulter.
@@ -3819,6 +3838,8 @@
 101644	Bitte lächeln Sie in die Kamera!
 101644	Ich habe mir eine neue Kamera gekauft.
 101645	Die Maschine weist keinerlei Mängel auf.
+101645	Wer hat diese Maschine erfunden?
+101645	Diese Maschine läuft nicht gut.
 101646	Der Hersteller gibt eine Garantie von zwei Jahren.
 101648	Viele Kaufhäuser haben sowohl Aufzüge als auch Rolltreppen.
 101649	Ich werde dir Pantoffeln geben.
@@ -4200,6 +4221,8 @@
 101894	Die Politiker gaben im Anschluss an ihre Unterredung eine Stellungnahme ab.
 101894	Im Anschluss an die Datenerhebung werden die Ergebnisse ausgewertet.
 101894	Leider habe ich meinen Anschluss nach Zürich verpasst.
+101896	Euer Angebot ist lebensrettend!
+101896	Der Pharmakonzern hat den Preis eines lebensrettenden Medikamentes über Nacht angehoben.
 101898	Das Lokal schließt um Mitternacht.
 101898	Mein Nachbar betreibt ein kleines Lokal.
 101900	Er spricht mit einem ausländischen Akzent.
@@ -4500,8 +4523,6 @@
 102110	Die Veranstaltung wird von einem künstlerischen Programm umrahmt.
 102110	Es ﬁndet eine festliche Veranstaltung zu seinen Ehren statt.
 102111	Wir riefen sie bei ihrem Kosenamen „Ann“.
-102112	Der Käufer vertraut auf die Qualität des Produkts.
-102112	Sie sind einander sehr vertraut.
 102113	Die Politiker gaben im Anschluss an ihre Unterredung eine Stellungnahme ab.
 102113	Die Politiker haben eine neue Regelung getroffen.
 102113	Journalisten umlagern den Politiker und stellen ihm Fragen.
@@ -5081,6 +5102,9 @@
 102380	Vom Turm aus hat man eine gute Aussicht auf die Stadt.
 102380	Wir haben die Probleme gut bewältigt.
 102381	Eltern haften für ihre Kinder.
+102381	Der Topf ist nicht sauber geworden. Der Schmutz am Boden haftet zu fest.
+102381	Der Chef haftet mit seinem ganzen Vermögen.
+102381	Nasse Kleidung haftet an der Haut.
 102382	Eltern haften für ihre Kinder.
 102384	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
 102384	Wir gehen halb eins essen.
@@ -5916,6 +5940,9 @@
 102819	Ziehen Sie eine Nummer und warten Sie!
 102820	Am Dienstag habe ich wieder vier Stunden auf dem Arbeitsamt zugebracht.
 102820	Dienstag gehe ich ins Kino.
+102821	Dein Puls ist normal.
+102821	Es ist gesund und normal.
+102821	Das ist ein ganz normales Phänomen.
 102822	Es ist viel billiger, sich außergerichtlich zu einigen.
 102823	Es ist nunmehr an der Zeit, Abschied zu nehmen.
 102823	Es war ein tränenreicher Abschied.
@@ -5926,6 +5953,7 @@
 102828	Regierung und Opposition sind sich selten einig.
 102828	Wir sind uns einig.
 102829	Die Arbeit hat einen logischen Aufbau.
+102829	Wir lernen den Aufbau des Herzens in der Mittelschule.
 102830	Objektiv gesehen hat sie sicherlich Recht.
 102831	Der Wahlkampf ist in seiner heißen Phase.
 102832	Der Sanitäter eilt dem Verletzten zu Hilfe.
@@ -6107,6 +6135,8 @@
 102931	Wegen großer inhaltlicher Mängel bekommt der Aufsatz eine schlechte Note.
 102932	Die Bäume rauschen im Wind.
 102933	Diese Idee ist nicht realistisch.
+102933	Das Budget erscheint ungenau und unrealistisch.
+102933	Dein Argument ist nicht realistisch.
 102934	Herr Lothar plant den Ablauf seiner Silberhochzeit.
 102935	Oftmals wurde Dominique gefragt, ob er Mädchen oder Junge sei.
 102936	Die Universität hat einen internationalen Anspruch.
@@ -6369,8 +6399,9 @@
 103104	Hinter jedem einzelnen Namen verbirgt sich ein ganz persönliches Schicksal.
 103104	Letztendlich muss sich jeder in sein Schicksal fügen.
 103104	Viele Menschen glauben nicht an das Schicksal.
-103105	Das Vertrauen in die Sicherheit wurde nachhaltig gestört.
 103105	Der Käufer vertraut auf die Qualität des Produkts.
+103105	Warum vertraust du mir nicht?
+103105	Ich glaubte, ich könnte Tom vertrauen.
 103106	Deiner Äußerung kann ich nicht besonders viel entnehmen.
 103107	Bei der Behauptung, Frauen könnten schlechter einparken als Männer, handelt es sich um einen Mythos.
 103108	Hier sollten wir auf die guten Erfahrungen aus dem letzten Jahr zurückgreifen.
@@ -7674,7 +7705,7 @@
 103877	Abends nehme ich gern ein Bad.
 103877	Bad Harzburg ist ein kleiner Ort im Harz.
 103878	Die äußeren Umstände verlangen eine Änderung der Taktik.
-103878	Die Lebensumstände in der Hauptstadt und in der Provinz sind völlig verschieden.
+103878	Dieser Umstand zeigt uns, dass er unschuldig ist.
 103880	Dafür kann man ins Gefängnis kommen.
 103881	Im Rucksack trägt sie den Proviant und den Regenschirm.
 103881	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
@@ -7690,7 +7721,6 @@
 103889	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
 103891	Die globale Erwärmung beunruhigt nicht nur Wissenschaftler.
 103891	Wissenschaftler aus verschiedenen Fachrichtungen nehmen an der Tagung teil.
-103891	Wissenschaftler aus verschiedenen Fachrichtungen nehmen an der Tagung teil. 
 103892	Im Urlaub wollen sich die meisten entspannen.
 103892	Spazierengehen ist eine gute Methode, um sich zu entspannen.
 103893	Sag deiner Mutter einen schönen Gruß von mir.
@@ -7709,6 +7739,8 @@
 103902	Im Labor führt man chemische Experimente durch.
 103902	In einer Woche kommt der Befund aus dem Labor.
 103903	Theo möchte sein Auto gern loswerden.
+103903	Wie willst du dieses Problem loswerden?
+103903	Er möchte seine Bücher loswerden.
 103905	Nach dem Krieg werden die politischen Verhältnisse neu geordnet.
 103905	Sie hatten kein gutes Verhältnis zueinander.
 103906	Sie ist sowohl Ärztin als auch Bergsteigerin.
@@ -7842,6 +7874,8 @@
 103980	Vorerst müssen wir uns mit kleinen Fortschritten zufrieden geben.
 103980	Wir sind ganz zufrieden mit dem Ergebnis.
 103981	Der Geheimdienst hat vor Terroranschlägen gewarnt.
+103981	Sie arbeitet für den französischen Geheimdienst.
+103981	Maria hat Kontakte zu mehreren Geheimdiensten.
 103982	Bewerben Sie sich bis zum 20. November, ansonsten kann ihre Bewerbung nicht berücksichtigt werden.
 103983	Der Kindergarten bietet auch Betreuung in der Ferienzeit an.
 103984	Das Päckchen wird im Verlauf des Tages eintreffen.
@@ -7922,6 +7956,8 @@
 104037	Wir brauchen für unser Vorgehen eine Richtlinie.
 104038	Kinder erkennen die Autorität der Eltern oft nicht an.
 104040	Kritiker warnen indes vor möglichen Folgen.
+104040	Maria deckt indes den Tisch.
+104040	Ich fühle mich indes besser.
 104041	In diesem Heft ﬁnden Sie viele Anregungen für Bastelarbeiten.
 104042	Wir müssen uns mit diesem Problem bald befassen.
 104043	Die Konstruktion ist stabil.
@@ -8422,6 +8458,8 @@
 104317	Wir werden die Versammlung auf einen späteren Zeitpunkt verschieben.
 104318	Der größte Teil der Erde ist mit Wasser bedeckt.
 104319	Entwicklungsländer sind auf Hilfe angewiesen.
+104319	Indien ist ein Entwicklungsland.
+104319	Weil China ein Entwicklungsland ist, ist es in manchen Aspekten noch nicht so gut wie die westlichen Länder.
 104320	Ich habe den Vorgang genau beobachtet.
 104321	Das Müllauto macht morgens Lärm.
 104321	Der Lärm hallt durch die Flure.
@@ -8554,6 +8592,9 @@
 104400	Er weiß nicht, ob es möglich sein wird.
 104400	Schneewittchens Haut war weiß wie Schnee.
 104400	Was weiß man über die Entstehung der Erde?
+104401	Lassen Sie uns eine neue Strategie entwerfen!
+104401	Ich muss ein neues Plakat für den Film entwerfen.
+104401	Es sollte nicht so schwer sein, eine neue Website für Sie zu entwerfen.
 104402	Welches Format soll das Papier haben?
 104403	Kurt Masur ist Dirigent eines großen Orchesters.
 104404	Giovanni ist Italiener und kommt aus Palermo.
@@ -8735,6 +8776,8 @@
 104511	Ihre Haare hängen tief in die Stirn.
 104512	Ich komme übrigens auch mit nach Köln.
 104513	Das ist mein Eigentum.
+104513	Esperanto ist niemandes Eigentum.
+104513	Ich muss mein Eigentum fester im Griff haben.
 104514	Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.
 104515	Die Eltern wollten ihn nie mit der Realität konfrontieren.
 104516	Einerseits freue ich mich über deine Entscheidung, nach Berlin zu ziehen, andererseits macht sie mich traurig.
@@ -8880,6 +8923,7 @@
 104590	Letztendlich muss sich jeder in sein Schicksal fügen.
 104590	Letztendlich hat es doch geklappt.
 104591	Bei der Preisverleihung erschien sie mit ihrem Ehegatten.
+104592	Tina ist eine sehr intelligente Frau.
 104595	Die Tür geht nicht auf.
 104596	Die Innenstadt ist für jeglichen Verkehr gesperrt.
 104597	Ich hoffe, dein Wunsch geht in Erfüllung.
@@ -9074,6 +9118,7 @@
 104706	Ich fahre morgen mit der Bahn nach Weimar.
 104707	Die Tagesschau informiert über die aktuellen Geschehnisse.
 104707	Mehr und mehr Menschen informieren sich über alternative Heilmethoden.
+104708	Terroristen agieren meist unerwartet.
 104709	Papa kontrolliert jeden Abend, ob die Kinder die Hausaufgaben gemacht haben.
 104710	Bei Fieber sieht sie immer so blass aus.
 104711	Der christliche Glauben ist 2000 Jahre alt.
@@ -9124,6 +9169,8 @@
 104740	Die Absage an die Firma ist meine individuelle Entscheidung.
 104742	Einen wissenschaftlichen Aufsatz muss man gut strukturieren.
 104743	Alles in allem können wir eine positive Bilanz ziehen.
+104743	Die Bilanz der kommunistischen Länder ist in ihrer Gesamtheit positiv.
+104743	Tom glaubt, dass er eine niedrige CO2-Bilanz hat.
 104744	Die deutsche Sprache spricht man in Deutschland, Österreich und der Schweiz.
 104744	Die Schweiz besteht aus 26 Kantonen.
 104744	In der Schweiz bezahlt man mit Franken.
@@ -9457,6 +9504,9 @@
 105110	Du hast gelogen.
 105112	In Deutschland wird die Temperatur in Grad Celsius gemessen.
 105115	Es ist im Grunde genommen ganz einfach.
+105116	Sie hat ihre Katze Tatoeba genannt.
+105116	Ihr Sohn wurde Eduard genannt.
+105116	Er hat seinen Sohn James genannt.
 105117	Das Schiff ist in Not geraten.
 105117	Eine Truppe amerikanischer Soldaten war in Gefahr geraten.
 105117	Ich bin in einen Stau geraten.

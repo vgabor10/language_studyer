@@ -527,7 +527,7 @@
 100528	dismay	félelem
 100529	concede	elismer
 100530	seductive	csábító
-100531	intrude	behatol
+100531	intrude	tolakodik, behatol
 100532	alleviate	enyhít
 100533	ineligible	alkalmatlan
 100534	rudimentary	alapvető
@@ -1050,3 +1050,6 @@
 101049	whistle	síp, fütty
 101050	stage	előad, megrendez
 101051	patronize	pártfogol, támogat
+101052	most of all	leginkább, legfőképpen
+101053	guess	vél, hisz, tippel
+101054	debrief	kihallgat, kikérdez
