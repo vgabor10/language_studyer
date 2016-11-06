@@ -6430,6 +6430,7 @@
 103120	Karl und Till verabschiedeten sich am Bahnhof.
 103121	Jurastudenten trainieren an Beispielen aus der deutschen Rechtsprechung.
 103122	Das Resultat konnte mich nicht überzeugen.
+103122	Das Resultat wird nicht sehr gut ausfallen.
 103124	Behandeln Sie das Problem bitte diskret!
 103124	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
 103125	Lass uns noch einmal um den Block fahren.
@@ -8834,6 +8835,9 @@
 104545	Ein Bündnis mit dieser Partei ist ausgeschlossen.
 104547	Der Vermieter wohnt im nächsten Haus.
 104547	Mieter dürfen Haustiere nur mit Zustimmung des Vermieters halten.
+104549	Es ist wichtig möglichst viele Arbeiter zu vereinen.
+104549	Werden sich die beiden koreanischen Staaten bald vereinen?
+104549	Ozeane teilen die Welt nicht so sehr, wie sie sie vereinen.
 104550	Auf welche Weise lösen wir das Problem am schnellsten?
 104550	Aus welchem Material sind diese Strümpfe?
 104550	Für welche Uhrzeit sollen wir den Termin ansetzen?
@@ -9253,6 +9257,8 @@
 104905	Die Dolmetscherin bekam einen Strauß Blumen.
 104905	Maria bekam ihr Baby in Bethlehem.
 104905	Zum zehnten Hochzeitstag bekam sie zehn rote Rosen von ihrem Mann.
+104907	Er betrog seinen Freund.
+104907	Tom betrog seine Freundin monatelang.
 104910	Nach dem Bombenangriff bot die Stadt ein Bild der Zerstörung.
 104910	Plötzlich bot sich ihr eine sehr gute Gelegenheit für ihren Plan.
 104911	Bald erscheint der sechste Band der Enzyklopädie.
