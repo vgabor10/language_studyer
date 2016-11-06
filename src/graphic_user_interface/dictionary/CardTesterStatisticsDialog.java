@@ -1,6 +1,6 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.dictionary.TableRenderers.CardTestesStatisticsTableRenderer;
+import graphic_user_interface.dictionary.table_renderers.CardTestesStatisticsTableRenderer;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;

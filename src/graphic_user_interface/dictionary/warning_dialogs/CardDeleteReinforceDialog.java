@@ -1,4 +1,4 @@
-package graphic_user_interface.dictionary;
+package graphic_user_interface.dictionary.warning_dialogs;
 
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -13,7 +13,7 @@ public class CardDeleteReinforceDialog extends javax.swing.JDialog {
         
         setLocationRelativeTo(null);
         
-        jButton1.setMnemonic(KeyEvent.VK_O);
+        jButton1.setMnemonic(KeyEvent.VK_Y);
         jButton1.setMnemonic(KeyEvent.VK_N);
     }
     

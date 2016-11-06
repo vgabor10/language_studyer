@@ -335,25 +335,17 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_inspectCardButtonActionPerformed
 
     private void addNewCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewCardButtonActionPerformed
-        Card cardToInspect = new Card();
         DialogAnswer dialogAnswer = new DialogAnswer();
 
-        CardInspectorDialog dialog 
-                = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.cardToInspect = cardToInspect;
+        CardAdderDialog dialog 
+                = new CardAdderDialog(new javax.swing.JFrame(), true);
         dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.dialogAnswer = dialogAnswer;
-        dialog.unableDeleteCardButton();
-        dialog.initialise();
+        
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
 
-        if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.addCard(cardToInspect);
-            
+        if (dialogAnswer.stringAnswer.equals("save_card")) {           
             clearTable();
         }
 
@@ -374,30 +366,19 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.cardToInspect = cardToInspect;
+        dialog.setCardToInspect(cardToInspect);
         dialog.dictionaryDataContainer = dictionaryDataContainer;
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
-        dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
 
         if (dialogAnswer.stringAnswer.equals("delete_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
-            
             deleteRowFromTable(selectedTableRowIndex);
             clearTable();
         }
         
         if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.saveAllData();
-
             clearTable();
         }
 

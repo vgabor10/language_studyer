@@ -406,12 +406,11 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private void inspectCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inspectCardButtonActionPerformed
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.cardToInspect = cardTester.getActualQuestionedCard();
+        dialog.setCardToInspect(cardTester.getActualQuestionedCard());
         dialog.dictionaryDataContainer = dictionaryDataContainer;
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
         dialog.unableDeleteCardButton();
-        dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         

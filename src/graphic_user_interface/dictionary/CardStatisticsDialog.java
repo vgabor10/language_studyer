@@ -71,7 +71,7 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
 
         jLabel9.setText("jLabel9");
 
-        jLabel10.setText("jLabel10");
+        jLabel10.setText("-");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

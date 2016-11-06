@@ -1,20 +1,19 @@
 package graphic_user_interface.dictionary;
 
+import graphic_user_interface.dictionary.warning_dialogs.CardDeleteReinforceDialog;
 import common.Logger;
 import dictionary.Card;
 import dictionary.DictionaryDataContainer;
+import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
-import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataByStudyItem;
 
 public class CardInspectorDialog extends javax.swing.JDialog {
 
-    public Card cardToInspect;
+    private Card cardToInspect;
     public DictionaryDataContainer dictionaryDataContainer;
     public DialogAnswer dialogAnswer;
-        
-    private final DefaultTableModel tableModel;
     
     private Logger logger = new Logger();
     
@@ -22,32 +21,19 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        tableModel = (DefaultTableModel)jTable1.getModel();
-        
-        saveCardButton.setMnemonic(KeyEvent.VK_S);
+        addCardButton.setMnemonic(KeyEvent.VK_S);
         closeButton.setMnemonic(KeyEvent.VK_C);
-        deleteCardButton.setMnemonic(KeyEvent.VK_E);
-        addExampleSentenceButton.setMnemonic(KeyEvent.VK_A);
-        deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
     }
     
-    public void initialise() {
-        jTextField1.setText(cardToInspect.term);
-        jTextField2.setText(cardToInspect.definition);
-        
-        for (String exampleSentence : cardToInspect.exampleSentences) {
-            tableModel.addRow(new Object[]{
-               exampleSentence
-            });
-        }
-        
-        for (String category : cardToInspect.categories) {
-            jComboBox1.addItem(category);
-        }
-        
-        jTextField1.requestFocus();
+    public void setCardToInspect(Card card) {
+        cardToInspect = card;
+        cardInspectorPanel1.setDataFromCard(card);
     }
-
+    
+    public void unableDeleteCardButton() {
+        deleteCardButton.setEnabled(false);
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,52 +43,23 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        saveCardButton = new javax.swing.JButton();
+        addCardButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        deleteExampleSentenceButton = new javax.swing.JButton();
+        cardInspectorPanel1 = new graphic_user_interface.dictionary.CardInspectorPanel();
+        seeCardStatisticsButton = new javax.swing.JButton();
         deleteCardButton = new javax.swing.JButton();
-        addExampleSentenceButton = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        modificateExampleSentenceButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTextField1.setText("jTextField1");
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1KeyPressed(evt);
-            }
-        });
-
-        jTextField2.setText("jTextField2");
-        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField2KeyPressed(evt);
-            }
-        });
-
-        jLabel1.setText("term:");
-
-        jLabel2.setText("definition:");
-
-        saveCardButton.setText("Save card");
-        saveCardButton.addActionListener(new java.awt.event.ActionListener() {
+        addCardButton.setText("Save card");
+        addCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                saveCardButtonActionPerformed(evt);
+                addCardButtonActionPerformed(evt);
             }
         });
-        saveCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
+        addCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                saveCardButtonKeyPressed(evt);
+                addCardButtonKeyPressed(evt);
             }
         });
 
@@ -113,26 +70,10 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Example sentences"
-            }
-        ));
-        jTable1.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                jTable1FocusGained(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTable1);
-
-        deleteExampleSentenceButton.setText("Delete example sentence");
-        deleteExampleSentenceButton.setEnabled(false);
-        deleteExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
+        seeCardStatisticsButton.setText("See card statistics");
+        seeCardStatisticsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                deleteExampleSentenceButtonActionPerformed(evt);
+                seeCardStatisticsButtonActionPerformed(evt);
             }
         });
 
@@ -143,32 +84,6 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             }
         });
 
-        addExampleSentenceButton.setText("Add example sentence");
-        addExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addExampleSentenceButtonActionPerformed(evt);
-            }
-        });
-
-        jLabel4.setText("categories:");
-
-        modificateExampleSentenceButton.setText("Modificate example sentence");
-        modificateExampleSentenceButton.setEnabled(false);
-        modificateExampleSentenceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modificateExampleSentenceButtonActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("Set card group");
-
-        jButton2.setText("See card statistics");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -176,70 +91,32 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField2)
-                            .addComponent(jTextField1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(addExampleSentenceButton, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                            .addComponent(saveCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE))
+                    .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(addCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(modificateExampleSentenceButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(deleteCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(deleteCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(deleteExampleSentenceButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)
-                            .addComponent(closeButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 205, Short.MAX_VALUE)))
-                    .addComponent(jScrollPane1)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
+                    .addComponent(seeCardStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(seeCardStatisticsButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addGap(9, 9, 9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 204, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(deleteExampleSentenceButton)
-                    .addComponent(addExampleSentenceButton)
-                    .addComponent(modificateExampleSentenceButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(saveCardButton)
+                    .addComponent(addCardButton)
                     .addComponent(deleteCardButton)
                     .addComponent(closeButton))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addExampleSentenceButton, closeButton, deleteCardButton, deleteExampleSentenceButton, modificateExampleSentenceButton, saveCardButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addCardButton, closeButton, deleteCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -249,102 +126,59 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         dispose();
     }//GEN-LAST:event_closeButtonActionPerformed
 
-    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            jTextField2.requestFocus();
-        }
-    }//GEN-LAST:event_jTextField1KeyPressed
-
-    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            saveCardButton.requestFocus();
-        }
-    }//GEN-LAST:event_jTextField2KeyPressed
-
-    private void saveCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveCardButtonKeyPressed
+    private void addCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addCardButtonKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             saveCard();
         }
-    }//GEN-LAST:event_saveCardButtonKeyPressed
-
-    public void unableDeleteCardButton() {
-        deleteCardButton.setEnabled(false);
-    }
+    }//GEN-LAST:event_addCardButtonKeyPressed
     
-    private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
+    private void addCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCardButtonActionPerformed
         saveCard();
-    }//GEN-LAST:event_saveCardButtonActionPerformed
+    }//GEN-LAST:event_addCardButtonActionPerformed
+
+    private void seeCardStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seeCardStatisticsButtonActionPerformed
+        CardStatisticsDialog dialog
+        = new CardStatisticsDialog(new javax.swing.JFrame(), true);
+
+        AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
+        answerDataByStudyItem.loadDataFromAnswerDataContainer(cardToInspect.index,
+            dictionaryDataContainer.answerDataContainer);
+        dialog.answerDataByCard = answerDataByStudyItem;
+
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_seeCardStatisticsButtonActionPerformed
 
     private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
-        CardDeleteReinforceDialog dialog 
-                = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
+        CardDeleteReinforceDialog dialog
+        = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
         DialogAnswer reinforceAnswer = new DialogAnswer();
         dialog.dialogAnswer = reinforceAnswer;
         dialog.setVisible(true);
-        
+
         if (reinforceAnswer.boolAnswer) {
             dialogAnswer.stringAnswer = "delete_card";
+
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
             
             dispose();
         }
     }//GEN-LAST:event_deleteCardButtonActionPerformed
 
-    private void deleteExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteExampleSentenceButtonActionPerformed
-        int selectedTableRowIndex = jTable1.getSelectedRow();
-        tableModel.removeRow(selectedTableRowIndex);
-        
-        deleteExampleSentenceButton.setEnabled(false);
-        modificateExampleSentenceButton.setEnabled(false);
-    }//GEN-LAST:event_deleteExampleSentenceButtonActionPerformed
-
-    private void jTable1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTable1FocusGained
-        deleteExampleSentenceButton.setEnabled(true);
-        modificateExampleSentenceButton.setEnabled(true);
-    }//GEN-LAST:event_jTable1FocusGained
-
-    private void addExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addExampleSentenceButtonActionPerformed
-        DialogAnswer addSentenceDialogAnswer = new DialogAnswer();
-        ExampleSentenceAdderDialog dialog = new ExampleSentenceAdderDialog(new javax.swing.JFrame(), true);
-        dialog.dialogAnswer = addSentenceDialogAnswer;
-        dialog.setLocationRelativeTo(this);
-        dialog.setVisible(true);
-        
-        if (addSentenceDialogAnswer.boolAnswer) {
-            logger.debug("add sentence");
-            tableModel.addRow(new Object[]{
-                addSentenceDialogAnswer.stringAnswer
-            });
-        }
-    }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
-
-    private void modificateExampleSentenceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateExampleSentenceButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        CardStatisticsDialog dialog 
-                = new CardStatisticsDialog(new javax.swing.JFrame(), true);
-        
-        AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
-        answerDataByStudyItem.loadDataFromAnswerDataContainer(cardToInspect.index, 
-                dictionaryDataContainer.answerDataContainer);
-        dialog.answerDataByCard = answerDataByStudyItem;
-        
-        dialog.initialise();
-        dialog.setLocationRelativeTo(this);
-        dialog.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     public void saveCard() {
-        String term = jTextField1.getText();
-        String definition = jTextField2.getText();
-
-        cardToInspect.term = term;
-        cardToInspect.definition = definition;
-        cardToInspect.exampleSentences.clear();
-        for (int i=0;i<tableModel.getRowCount();i++) {
-            cardToInspect.exampleSentences.add((String) tableModel.getValueAt(i, 0));
-        }
+        cardToInspect.index = cardInspectorPanel1.cardIndex;
+        cardToInspect.term = cardInspectorPanel1.getTerm();
+        cardToInspect.definition = cardInspectorPanel1.getDefinition();
+        cardToInspect.exampleSentences = cardInspectorPanel1.getExampleSentences();
+ 
+        DictionaryDataModificator dictionaryDataModificator 
+                = new DictionaryDataModificator();
+        dictionaryDataModificator.setData(dictionaryDataContainer);
+        dictionaryDataModificator.saveAllData();
         
         dialogAnswer.stringAnswer = "save_card";    
         dispose();
@@ -377,6 +211,8 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         }
         //</editor-fold>
         //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -394,21 +230,10 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addExampleSentenceButton;
+    private javax.swing.JButton addCardButton;
+    private graphic_user_interface.dictionary.CardInspectorPanel cardInspectorPanel1;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton deleteCardButton;
-    private javax.swing.JButton deleteExampleSentenceButton;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JButton modificateExampleSentenceButton;
-    private javax.swing.JButton saveCardButton;
+    private javax.swing.JButton seeCardStatisticsButton;
     // End of variables declaration//GEN-END:variables
 }

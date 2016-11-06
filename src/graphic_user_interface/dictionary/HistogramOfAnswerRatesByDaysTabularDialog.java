@@ -1,6 +1,6 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.dictionary.TableRenderers.HistogramOfAnswerRatesByDaysTableRenderer;
+import graphic_user_interface.dictionary.table_renderers.HistogramOfAnswerRatesByDaysTableRenderer;
 import java.awt.event.KeyEvent;
 import javax.swing.table.DefaultTableModel;
 
