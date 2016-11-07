@@ -5,7 +5,7 @@ import dictionary.Card;
 import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
-import graphic_user_interface.dictionary.warning_dialogs.AddCardWithExistingTermReinforceDialog;
+import graphic_user_interface.dictionary.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
 
 public class CardAdderDialog extends javax.swing.JDialog {
@@ -19,7 +19,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         
-        addCardButton.setMnemonic(KeyEvent.VK_S);
+        saveCardButton.setMnemonic(KeyEvent.VK_S);
         closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
@@ -32,21 +32,21 @@ public class CardAdderDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        addCardButton = new javax.swing.JButton();
+        saveCardButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
         cardInspectorPanel1 = new graphic_user_interface.dictionary.CardInspectorPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        addCardButton.setText("Add card");
-        addCardButton.addActionListener(new java.awt.event.ActionListener() {
+        saveCardButton.setText("Save card");
+        saveCardButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addCardButtonActionPerformed(evt);
+                saveCardButtonActionPerformed(evt);
             }
         });
-        addCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
+        saveCardButton.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
-                addCardButtonKeyPressed(evt);
+                saveCardButtonKeyPressed(evt);
             }
         });
 
@@ -66,7 +66,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(addCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(saveCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -78,12 +78,12 @@ public class CardAdderDialog extends javax.swing.JDialog {
                 .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 317, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(addCardButton)
+                    .addComponent(saveCardButton)
                     .addComponent(closeButton))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addCardButton, closeButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {closeButton, saveCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -93,15 +93,15 @@ public class CardAdderDialog extends javax.swing.JDialog {
         dispose();
     }//GEN-LAST:event_closeButtonActionPerformed
 
-    private void addCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addCardButtonKeyPressed
+    private void saveCardButtonKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_saveCardButtonKeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             addCard();
         }
-    }//GEN-LAST:event_addCardButtonKeyPressed
+    }//GEN-LAST:event_saveCardButtonKeyPressed
     
-    private void addCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addCardButtonActionPerformed
+    private void saveCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveCardButtonActionPerformed
         addCard();
-    }//GEN-LAST:event_addCardButtonActionPerformed
+    }//GEN-LAST:event_saveCardButtonActionPerformed
 
     public void addCard() {
         Card cardToAdd = new Card();
@@ -116,8 +116,8 @@ public class CardAdderDialog extends javax.swing.JDialog {
         if (numberOfCardsFoundWithTheSameTerm != 0) {
             DialogAnswer addCardDialogAnswer = new DialogAnswer();
 
-            AddCardWithExistingTermReinforceDialog dialog 
-                = new AddCardWithExistingTermReinforceDialog(new javax.swing.JFrame(), true);
+            YesNoDialog dialog = new YesNoDialog(new javax.swing.JFrame(), true);
+            dialog.setDescription("Card with given term already exists. Would you like to add the card anyway?");
             dialog.dialogAnswer = addCardDialogAnswer;
         
             dialog.setLocationRelativeTo(this);
@@ -190,8 +190,8 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addCardButton;
     private graphic_user_interface.dictionary.CardInspectorPanel cardInspectorPanel1;
     private javax.swing.JButton closeButton;
+    private javax.swing.JButton saveCardButton;
     // End of variables declaration//GEN-END:variables
 }

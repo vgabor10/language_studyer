@@ -1,11 +1,11 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.dictionary.warning_dialogs.CardDeleteReinforceDialog;
 import common.Logger;
 import dictionary.Card;
 import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
+import graphic_user_interface.dictionary.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
 import study_item_objects.AnswerDataByStudyItem;
 
@@ -151,10 +151,12 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_seeCardStatisticsButtonActionPerformed
 
     private void deleteCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteCardButtonActionPerformed
-        CardDeleteReinforceDialog dialog
-        = new CardDeleteReinforceDialog(new javax.swing.JFrame(), true);
+        YesNoDialog dialog = new YesNoDialog(new javax.swing.JFrame(), true);
+        dialog.setDescription("Are you sure you would like to delete the item?");
         DialogAnswer reinforceAnswer = new DialogAnswer();
         dialog.dialogAnswer = reinforceAnswer;
+        
+        dialog.setLocationRelativeTo(this);        
         dialog.setVisible(true);
 
         if (reinforceAnswer.boolAnswer) {
