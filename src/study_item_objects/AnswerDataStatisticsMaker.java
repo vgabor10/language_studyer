@@ -635,4 +635,21 @@ public class AnswerDataStatisticsMaker {
         return df.format(averageNumberOfAnswersOfCards());
     }
     
+    public int getNumberOfAnswersToday() {
+        Map<Integer, Integer> numberOfAnswersByDays = getNumberOfAnswersByDays();
+        
+        Date date = new Date();
+        long actualTime = date.getTime();
+        
+        GeneralFunctions generalFunctions = new GeneralFunctions();
+        int actualDay = generalFunctions.milisecToDay(actualTime);
+        
+        if (numberOfAnswersByDays.containsKey(actualDay)) {
+            return numberOfAnswersByDays.get(actualDay);
+        }
+        else {
+            return 0;
+        }
+    }
+    
 }

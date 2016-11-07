@@ -13,7 +13,8 @@ public class AddExampleSentenceDialog extends javax.swing.JDialog {
         initComponents();
         
         jTextField1.setText("");
-        jButton1.setMnemonic(KeyEvent.VK_O);
+        jButton1.setMnemonic(KeyEvent.VK_A);
+        jButton2.setMnemonic(KeyEvent.VK_C);
     }
     
     /**
