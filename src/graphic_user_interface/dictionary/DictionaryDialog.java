@@ -52,7 +52,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         closeButton.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
-        inspectCardButton.setMnemonic(KeyEvent.VK_M);
+        inspectCardButton.setMnemonic(KeyEvent.VK_I);
+        listAllCardsButton.setMnemonic(KeyEvent.VK_L);
     }
 
     public void initialise() {

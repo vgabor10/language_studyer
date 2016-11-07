@@ -5,7 +5,7 @@ import dictionary.Card;
 import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
-import graphic_user_interface.dictionary.warning_error_dialogs.YesNoDialog;
+import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
 import study_item_objects.AnswerDataByStudyItem;
 

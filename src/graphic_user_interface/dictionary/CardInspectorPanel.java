@@ -227,10 +227,12 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         dialog.setVisible(true);
 
         if (addSentenceDialogAnswer.boolAnswer) {
-            logger.debug("add sentence");
             tableModel.addRow(new Object[]{
                 addSentenceDialogAnswer.stringAnswer
             });
+            
+            deleteExampleSentenceButton.setEnabled(false);
+            modificateExampleSentenceButton.setEnabled(false);
         }
     }//GEN-LAST:event_addExampleSentenceButtonActionPerformed
 
@@ -249,6 +251,9 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             tableModel.removeRow(selectedTableRowIndex);
             tableModel.insertRow(selectedTableRowIndex, new Object[]{
                     modificateSentenceDialogAnswer.stringAnswer});
+            
+            deleteExampleSentenceButton.setEnabled(false);
+            modificateExampleSentenceButton.setEnabled(false);
         }
     }//GEN-LAST:event_modificateExampleSentenceButtonActionPerformed
 

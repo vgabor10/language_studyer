@@ -1,6 +1,7 @@
 package graphic_user_interface.dictionary;
 
 import graphic_user_interface.common.DialogAnswer;
+import graphic_user_interface.warning_error_dialogs.ErrorDialog;
 import java.awt.event.KeyEvent;
 
 public class AddExampleSentenceDialog extends javax.swing.JDialog {
@@ -12,8 +13,7 @@ public class AddExampleSentenceDialog extends javax.swing.JDialog {
         initComponents();
         
         jTextField1.setText("");
-        jButton1.setMnemonic(KeyEvent.VK_A);
-        jButton2.setMnemonic(KeyEvent.VK_C);
+        jButton1.setMnemonic(KeyEvent.VK_O);
     }
     
     /**
@@ -61,14 +61,18 @@ public class AddExampleSentenceDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, jButton2});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
@@ -87,9 +91,21 @@ public class AddExampleSentenceDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dialogAnswer.boolAnswer = true;
-        dialogAnswer.stringAnswer = jTextField1.getText();
-        dispose();
+        
+        String exampleSentence = jTextField1.getText();
+        
+        if (!exampleSentence.equals("")) {
+            dialogAnswer.boolAnswer = true;
+            dialogAnswer.stringAnswer = jTextField1.getText();
+            dispose();            
+        }
+        else {
+            ErrorDialog dialog = new ErrorDialog(new javax.swing.JFrame(), true);
+            dialog.setDescription("Example sentence can not be an empty string!");
+            dialog.setLocationRelativeTo(this);
+            dialog.setVisible(true);
+        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

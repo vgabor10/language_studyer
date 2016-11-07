@@ -1,16 +1,15 @@
-package graphic_user_interface.dictionary.warning_error_dialogs;
+package graphic_user_interface.warning_error_dialogs;
 
 import java.awt.event.KeyEvent;
 import javax.swing.text.DefaultCaret;
 
 public class ErrorDialog extends javax.swing.JDialog {
 
-    /**
-     * Creates new form NotApproprateFormatDialog
-     */
     public ErrorDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        
+        setTitle("Error");
         
         //only vertical scrolling allowed
         jTextArea1.setLineWrap(true);

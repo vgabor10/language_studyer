@@ -1,4 +1,4 @@
-package graphic_user_interface.dictionary.warning_error_dialogs;
+package graphic_user_interface.warning_error_dialogs;
 
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
