@@ -7,6 +7,7 @@ import disc_operation_handlers.DictionaryDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 public class CardAdderDialog extends javax.swing.JDialog {
 
@@ -110,14 +111,22 @@ public class CardAdderDialog extends javax.swing.JDialog {
         cardToAdd.definition = cardInspectorPanel1.getDefinition();
         cardToAdd.exampleSentences = cardInspectorPanel1.getExampleSentences();
         
-        int numberOfCardsFoundWithTheSameTerm = 
-                dictionaryDataContainer.cardContainer.findCardsByTerm(cardToAdd.term).size();
+        List<Integer> cardIndexesWithTheSameTerm = 
+                dictionaryDataContainer.cardContainer.findCardsByTerm(cardToAdd.term);
         
-        if (numberOfCardsFoundWithTheSameTerm != 0) {
+        if (!cardIndexesWithTheSameTerm.isEmpty()) {
             DialogAnswer addCardDialogAnswer = new DialogAnswer();
 
             YesNoDialog dialog = new YesNoDialog(new javax.swing.JFrame(), true);
-            dialog.setDescription("Card with given term already exists. Would you like to add the card anyway?");
+            
+            String dialogDescription = "Following cards with given ter already exist:\n";
+            for (int cardIndex : cardIndexesWithTheSameTerm) {
+                Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+                dialogDescription = dialogDescription.concat(card.toString() + "\n");
+            }
+            dialogDescription = dialogDescription.concat("Would you like to add the card anyway?");
+            
+            dialog.setDescription(dialogDescription);
             dialog.dialogAnswer = addCardDialogAnswer;
         
             dialog.setLocationRelativeTo(this);
