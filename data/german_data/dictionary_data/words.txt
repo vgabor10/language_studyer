@@ -899,7 +899,7 @@
 100908	herrschen	uralkodik
 100909	sogar	sőt, akár
 100910	gewaltig	óriási
-100911	einsetzen	alkalmaz
+100911	einsetzen	alkalmaz, berak
 100912	zwar	noha
 100913	vor allem	mindenekelőtt
 100915	r Kreuzer	cirkáló
@@ -2506,7 +2506,7 @@
 102555	e Verbesserung	javítás
 102556	e Verbindlichkeit	kötelezettség
 102557	e Vereinbarung	megállapodás
-102558	e Vereinigung	szövetség
+102558	e Vereinigung	szövetség, egyesület, egyesülés
 102559	e Verhaltensweise	viselkedés
 102560	e Verknüpfung	kapcsolat
 102561	e Vermittlung	közvetítés, közbenjárás
@@ -2696,7 +2696,6 @@
 102747	einst	egykor, hajdan
 102748	e Institution	intézmény
 102749	einstig	egykori
-102750	einsetzen	berak
 102751	ein	egy
 102752	einseitig	egyoldalú
 102753	einsehen	betekint
@@ -3236,7 +3235,7 @@
 103296	stetig	egyenletes
 103297	seufzen	sóhajt
 103298	s Gericht	bíróság
-103299	vorliegen	előtte van
+103299	vorliegen	fennáll, előtte van
 103300	akzeptieren	elfogad
 103301	auswerten	kiértékel, elbírál
 103302	zuführen	odavezet

@@ -842,7 +842,7 @@
 100844	defer	elhalaszt
 100845	plunge	lemerül, alámerül
 100846	serenity	higgandság, nyugalom
-100847	felony	bűn
+100847	felony	bűn, bűncselekmény
 100848	impertinence	szemtelenség
 100849	behoove	illik
 100850	spare	megkímél
@@ -1053,3 +1053,9 @@
 101052	most of all	leginkább, legfőképpen
 101053	guess	vél, hisz, tippel
 101054	debrief	kihallgat, kikérdez
+101055	faithfull	hűséges
+101056	any more	többé nem
+101057	jaw	állkapocs
+101058	blast	robbanás
+101059	vest	mellény
+101060	venue	helyszín

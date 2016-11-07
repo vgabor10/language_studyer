@@ -1097,6 +1097,8 @@
 100269	Sonjas Gesicht spiegelt sich im See.
 100269	Vor uns lag ein kalter, tiefer See.
 100271	Wir kamen schließlich in Regensburg an.
+100271	Tom verlor schließlich die Geduld.
+100271	Die Ferien kamen schließlich zum Ende.
 100272	Der Kanzler hält eine Rede zur Lage der Nation.
 100272	Die Lage am Arbeitsmarkt ist unverändert schlecht.
 100272	Die Lage ist geradezu prekär.
@@ -1266,6 +1268,9 @@
 100329	Die Seite ist zerrissen.
 100330	Die Wirtschaft übt großen Druck auf die Regierung aus.
 100331	Angesichts der schlechten Straßenverhältnisse beschlossen wir, den Zug zu nehmen.
+100332	Die Ernennung des früheren Gutachters war äußerst dubios.
+100332	Er nahm seine Ernennung zum Vorsitzenden an.
+100332	Toms Ernennung zum Gott war längst überfällig.
 100333	Unmittelbar vor dem Haus führt die Buslinie entlang.
 100335	Die Armee marschiert in das besetzte Gebiet ein.
 100335	Wann bist du in die Armee eingetreten?
@@ -2100,6 +2105,8 @@
 100693	Wehr dich, wenn du ungerecht behandelt wirst!
 100695	Der Begriff hat inzwischen eine weite Verbreitung gefunden.
 100695	Freiheit ist ein komplizierter Begriff.
+100697	Tom und Mary versuchten John zu ermorden.
+100697	Er plante seinen Chef zu ermorden, tat es aber nicht.
 100699	Bei der Preisverleihung erschien sie mit ihrem Ehegatten.
 100699	Den Hirten erschien ein Engel.
 100699	Ein Herr im schwarzen Anzug erschien auf der Bühne.
@@ -2496,6 +2503,8 @@
 100909	Die Regierung könnte sogar die Verfassung ändern.
 100910	Ein gewaltiges Erdbeben zerstörte die ganze Stadt.
 100911	Ich werde mir demnächst eine künstliche Hüfte einsetzen lassen.
+100911	Ihr müsst Werkzeuge einsetzen.
+100911	Ich werde alle Mittel einsetzen, um zu gewinnen.
 100912	Er hat zwar Lust zu kommen, aber keine Zeit.
 100913	Der Verlag veröffentlicht vor allem unbekannte junge Autorinnen und Autoren.
 100913	Die Therapie hilft vor allem jüngeren Patienten.
@@ -2570,6 +2579,7 @@
 100945	Am Vormittag sind die Geschäfte noch nicht so voll.
 100945	Die Flasche ist noch ganz voll.
 100946	Auf diesem Feld wird Mais angebaut.
+100947	Im Oktober 1933 verkündete Hitler den Austritt Deutschlands aus dem Völkerbund.
 100948	Doktor Seydlitz praktiziert seinen Beruf mit Begeisterung.
 100948	St. Martin ist ein gutes Beispiel für praktizierte Nächstenliebe.
 100949	Bei dieser Geschwindigkeit kann man nicht mehr rechtzeitig bremsen.
@@ -2659,6 +2669,9 @@
 101012	Von einer inneren Unruhe getrieben, ging Ute zur Tür.
 101012	In der pakistanischen Hauptstadt kam es zu Unruhen.
 101014	Auf welches Konto soll ich das Geld überweisen?
+101015	Wer von Ihnen kann deren Idee dementieren?
+101015	Der Regierungssprecher hat dies dementiert.
+101015	Ich kann die Gerüchte weder bestätigen noch dementieren.
 101016	Wir haben heimlich auf der Schultoilette geraucht.
 101017	Abends sahen wir einen herrlichen Sonnenuntergang über dem Meer.
 101017	Auf den Felsen am Meer haben wir ein Picknick gemacht.
@@ -3294,6 +3307,8 @@
 101366	Sein Name steht an der Tür.
 101366	Von einer inneren Unruhe getrieben, ging Ute zur Tür.
 101368	Die Vorhänge sind schmutzig.
+101368	Der Vorhang ist gefallen.
+101368	Der Schauspieler kam hinter dem Vorhang vor.
 101369	Als ich heute erwachte, lag ich quer in meinem Bett.
 101369	Das Bett steht im Schlafzimmer.
 101369	Der Kranke liegt im Bett.
@@ -3673,6 +3688,8 @@
 101536	Je später ich ins Bett gehe, desto müder bin ich am Morgen.
 101536	Morgen besuche ich meine Schwiegereltern.
 101536	Morgen trifft das Päckchen bei dir ein.
+101539	Ich muss noch frühstücken.
+101539	Hast du gefrühstückt?
 101542	Kann ich mal deinen Kakao probieren?
 101542	Tee, Kaffee, Kakao etc. sind beliebte
 101542	Tee, Kaffee, Kakao etc. sind beliebte Getränke, die Deutschland importieren muss.
@@ -3894,6 +3911,9 @@
 101693	Durch die Verarbeitung zu Konserven gehen dem Gemüse Vitamine verloren.
 101693	Je länger man Gemüse kocht, desto weniger Vitamine bleiben darin.
 101693	Obst enthält natürliche Vitamine.
+101695	Das Raumschiff ist perfekt gelandet.
+101695	Das Raumschiff sollte nie wieder zur Erde zurückkehren.
+101695	Das Raumschiff unternimmt Reisen von Planet zu Planet.
 101697	Am Bahnhof fahren Züge in alle Richtungen ab.
 101697	Am Bahnhof wurden neue Fahrradständer aufgestellt.
 101697	Antina rannte, so schnell sie konnte, zum Bahnhof.
@@ -4066,6 +4086,9 @@
 101797	Dann gehen wir schwimmen.
 101797	Es muss auch Leute geben, die gegen den Strom schwimmen.
 101797	Sie kann besser schwimmen als wir.
+101798	Es ist ein olympischer Rekord.
+101798	Niemand kann seinen Rekord brechen.
+101798	Die Aktienpreise fielen auf ein Rekordtief.
 101799	Der Richter hört alle Zeugen an.
 101799	Der Richter verliest die Anklage.
 101800	Der Spieler wechselt in der nächsten Saison in einen anderen Verein.
@@ -4077,6 +4100,9 @@
 101802	Der Trainer kritisiert dauernd seine Sportler.
 101803	Das Spiel ist aus.
 101804	Sie möchte eine Medaille gewinnen.
+101806	Das Kasino ist immer der Gewinner.
+101806	Wir sind Gewinner.
+101806	Die Menge schenkte dem Gewinner einen großen Applaus.
 101809	Toms Benehmen war nicht akzeptabel.
 101810	Die Miete ist sehr günstig.
 101811	Es ist empfehlenswert, regelmäßig zum Zahnarzt zu gehen.
@@ -4430,6 +4456,8 @@
 102043	Der König von Frankreich ist kahl.
 102044	Es begann kräftig zu regnen, daraufhin wurden die Überschwemmungen noch schlimmer.
 102046	Zum zehnten Hochzeitstag bekam sie zehn rote Rosen von ihrem Mann.
+102050	Das Wartezimmer ist leer.
+102050	Im Wartezimmer waren fünf Patienten.
 102052	Bei starkem Husten hat man oft Schmerzen in der Brust.
 102053	Die Krankenschwester bemerkte nicht, wie der Patient nach ihr klingelte.
 102054	Die ﬁnanziellen Ressourcen des Unternehmens sind erschöpft.
@@ -5422,6 +5450,9 @@
 102556	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
 102557	Wir haben eine Vereinbarung getroffen.
 102558	Er wurde der Mitgliedschaft in einer kriminellen Vereinigung angeklagt.
+102558	Tom ist Mitglied einer geheimen Vereinigung.
+102558	Niemand darf gezwungen werden, einer Vereinigung anzugehören.
+102558	Die Vereinigung von Schottland und England wurde im Jahre 1706 beschlossen.
 102559	Diese Verhaltensweise ist Katzen angeboren.
 102560	Das Seminar ist eine gelungene Verknüpfung von Theorie und Praxis.
 102561	Das Akademische Auslandsamt ist für die Vermittlung von Erasmusstudenten zuständig.
@@ -5816,7 +5847,6 @@
 102748	Diese Institution ist nur ein leeres Schneckenhaus.
 102748	Die Ehe ist eine Institution, aber reichen die Mitarbeiter aus?
 102749	Der einstige Bundeskanzler ist jetzt Privatmann.
-102750	Ich werde mir demnächst eine künstliche Hüfte einsetzen lassen.
 102751	Am Wochenende erwartet uns ein Mix aus Regen und Sonnenschein.
 102751	Die Fischer holen ihre Netze ein.
 102751	Ein Boot mit Flüchtlingen ging in der Nacht an Land.
@@ -6021,6 +6051,7 @@
 102867	Religion ist eine private Angelegenheit.
 102867	Das ist meine private Telefonnummer.
 102868	Die Fusion der beiden Unternehmen ist für nächstes Jahr geplant.
+102868	Die Fusion löste bei den Mitarbeitern beider Firmen große Ängste aus.
 102869	Darauf würde ich mich nicht einlassen.
 102870	Computersüchtige sind in der virtuellen Realität mehr zuhause als im wahren Leben.
 102870	Das kann doch nicht wahr sein!
@@ -6741,6 +6772,9 @@
 103298	Das Gericht schlägt einen Vergleich vor.
 103298	Dieses Gericht ist eine Empfehlung des Hauses.
 103299	Der Antrag muss bis spätestens morgen beim Finanzamt vorliegen.
+103299	Es muss ein Missverständnis vorliegen.
+103299	Die hier vorliegende Münze ist ein Friedrich d’or von 1774.
+103299	Mir liegen nicht alle Fakten vor.
 103300	Du musst meine Entscheidung akzeptieren.
 103302	Wasser muss man Energie zuführen, um es zum Kochen zu bringen.
 103303	Bei der Betrachtung des Mondes fallen einem immer wieder neue Krater und Täler auf.
@@ -7544,6 +7578,7 @@
 103772	Das Kinoprogramm ﬁndet man stets aktuell im Internet.
 103772	Die Tagesschau informiert über die aktuellen Geschehnisse.
 103773	Die Broschüre will Schülern beruﬂiche Perspektiven aufzeigen.
+103773	Liebe deine Feinde, weil sie dir deine Fehler aufzeigen.
 103775	Bald werden die Universitäten Gebühren erheben.
 103776	Sie wird oft als selbstbewusst charakterisiert.
 103777	Die Veranstaltung wird von einem künstlerischen Programm umrahmt.
@@ -8206,7 +8241,9 @@
 104182	Das war eine verrückte Aktion.
 104183	Ein Großteil der Einnahmen ergibt sich aus Spenden.
 104183	Menschliche Zellen bestehen zu einem Großteil aus Wasser.
-104184	Das Mittlere Erzgebirge ist als Weihnachtsland bekannt.
+104184	Der mittlere Osten ist die Wiege der Zivilisation.
+104184	Sie war eine Frau mittleren Alters.
+104184	Eine große Portion Pommes frites und zwei mittlere Cola.
 104185	Johann sagte den Spruch immer wieder laut vor sich hin.
 104186	Ich habe den Bescheid noch nicht bekommen.
 104186	Sobald ich Bescheid weiß, rufe ich dich an.
@@ -9378,6 +9415,9 @@
 104991	Am Abend schrieb Anne stundenlang in ihr Tagebuch.
 104991	Der Journalist schrieb einen sehr kritischen Artikel.
 104993	Er wollte immer einen Schritt voraus sein.
+104995	Man sagt, er schwamm in Geld.
+104995	Nackte Jungen schwammen im Fluss.
+104995	Der Fisch schwamm im Wasser.
 104997	Der ursprüngliche Plan sah anders aus.
 104997	Er sah sie mit besorgter Miene an.
 104997	Sonnabend sah Sarah einen spannenden Film.
@@ -9671,6 +9711,7 @@
 100555	Streit zwischen Amerika und Russland gefährdet Waffenruhe.
 100555	Russland und die EU streiten sich schon länger darüber, zu wem die Ukraine gehört.
 100861	Ich spanne ein Seil im Garten, um Wäsche aufzuhängen.
+101637	Im Oktober 1933 verkündete Hitler den Austritt Deutschlands aus dem Völkerbund.
 101647	Falls du es dir anders überlegst, kannst du mich jederzeit anrufen.
 101690	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
 101934	Toleranz und Meinungsfreiheit sind wichtige Güter einer Demokratie.
