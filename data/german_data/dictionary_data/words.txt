@@ -20,7 +20,7 @@
 100019	viel	sok
 100020	schrecklich	borzasztó
 100021	r Stuhl	szék
-100022	langsam	lassú
+100022	langsam	lassú, lassan
 100023	noch	még
 100024	e Uhr	óra
 100025	treffen	találkozik
@@ -890,7 +890,7 @@
 100899	mehrfach	többször
 100900	seither	azóta
 100901	ansetzen	elkezd, illeszt
-100902	r Konsens	megegyezés
+100902	r Konsens	konszenzus, megegyezés
 100903	auswirken	kihat
 100904	weit	messze, távol
 100905	einstimmen	csatlakozik
@@ -2136,7 +2136,6 @@
 102176	wirtschaftlich	gazdasági
 102177	e Tiefebene	alföld
 102178	s Hochwasser	árvíz
-102179	nahelegen	közeli
 102180	prachtvoll	pompás
 102181	r Springbrunnen	szökőkút
 102182	e Wiedervereinigung	újraegyesítés
@@ -4320,7 +4319,7 @@
 104401	entwerfen	eltervez, vázlatot készít
 104402	s Format	formátum
 104403	r Dirigent	karmester
-104404	r Italiener	olasz (fn)
+104404	r Italiener	olasz (ember)
 104405	e Partnerschaft	partnerség
 104406	vorbeugen	megelőz
 104407	e Beteiligung	részvétel
@@ -5035,3 +5034,6 @@
 103632	r Honig	méz
 103710	hintereinander	egymásután
 100808	beben	reng, remeg
+101692	r Erwerb	megszerzés, szerzemény
+101808	e Sklaverei	rabszolgaság
+101836	abschaffen	kikapcsol, megszüntet

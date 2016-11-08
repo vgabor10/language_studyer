@@ -186,7 +186,7 @@
 100187	greedy	kapzsi
 100188	blink	pislog
 100189	confiscate	lefoglal
-100190	surveillance	felügyelet
+100190	surveillance	felügyelet, fekderítés
 100191	courtroom	tárgyalóterem
 100192	denominate	elnevez
 100193	apprehend	letartóztat
@@ -293,14 +293,14 @@
 100294	spare	takarékoskodik
 100295	compel	kényszerít
 100296	genuine	eredeti
-100297	relief	enyhülés
+100297	relief	enyhülés, megkönnyebbülés
 100298	counsel	tanácsol
 100299	carve	farag
 100300	warranty	garancia
 100301	veracity	igazság
 100302	offshore	partmenti
 100303	leap	ugrás
-100304	profound	mély
+100304	profound	mély, alapos
 100305	drill	fúr
 100306	get round	megkerül
 100307	insidious	alattomos
@@ -352,7 +352,7 @@
 100353	take aback	meglep
 100354	collide	összeütközik
 100355	tie	kötés
-100356	vague	bizonytalan
+100356	vague	bizonytalan, homályos
 100357	fragile	törékeny
 100358	proclivity	hajlam
 100359	weaver	takács
@@ -480,7 +480,7 @@
 100481	predecessor	előd
 100482	indispensable	nélkülözhetetlen
 100483	absence	hiány
-100484	inflict	kiró
+100484	inflict	kiró, okoz
 100485	civic	polgári
 100486	tense	feszes
 100487	turmoil	nyugtalanság
@@ -909,7 +909,7 @@
 100912	bind	köt
 100913	recalcitrance	makacsság
 100914	resort	igénybe vesz, folyamodik
-100915	menace	fenyegetés
+100915	menace	fenyegetés, veszély
 100916	laudable	dícséretes, dícséretre méltó
 100917	havoc	pusztítás, rombolás
 100918	surge	hullám, roham
@@ -1059,3 +1059,17 @@
 101058	blast	robbanás
 101059	vest	mellény
 101060	venue	helyszín
+101061	interrogate	kihallgat, kikérdez
+101062	in the first place	elsősorban, mindenekelőtt
+101063	garage	garázs
+101064	allegiance	hűség
+101065	annihilate	megsemmisít
+101066	deliberately	szándékosan, akarattal
+101067	assess	elbírál, megítél
+101068	reliability	megbízhatóság
+101069	disconcerting	nyugtalanító
+101070	harsh	durva, érdes, kíméletlen
+101071	detain	gátol, akadályoz, fogva tart
+101072	imperative	szükségszerű, elkerülhetetlen
+101073	misery	kín, szenvedés
+101074	suggest	javasol, felvet
