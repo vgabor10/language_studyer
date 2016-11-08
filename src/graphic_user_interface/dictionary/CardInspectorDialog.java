@@ -23,6 +23,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         
         addCardButton.setMnemonic(KeyEvent.VK_S);
         closeButton.setMnemonic(KeyEvent.VK_C);
+        deleteCardButton.setMnemonic(KeyEvent.VK_D);
     }
     
     public void setCardToInspect(Card card) {
