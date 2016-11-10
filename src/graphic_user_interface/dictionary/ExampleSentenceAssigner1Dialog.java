@@ -29,7 +29,7 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
     private void showASuggestion() {
         ArrayList<Integer> cardIndexesWithNoExampleSentences
-                = exampleSentenceAssigner.getCardIndexesWithLessExampleSentencesThen(1);
+                = exampleSentenceAssigner.getCardIndexesWithLessExampleSentencesThen(4);
         java.util.Collections.shuffle(cardIndexesWithNoExampleSentences);
 
         int i = 0;

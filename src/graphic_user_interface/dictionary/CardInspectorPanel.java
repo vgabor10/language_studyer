@@ -24,8 +24,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         
         jTextField1.setText("");
         jTextField2.setText("");
+        
         addExampleSentenceButton.setMnemonic(KeyEvent.VK_A);
         deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
+        modificateExampleSentenceButton.setMnemonic(KeyEvent.VK_M);
         
         jTextField1.requestFocus();
     }
