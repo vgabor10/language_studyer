@@ -105,6 +105,8 @@ public class AddExampleSentenceDialog extends javax.swing.JDialog {
             dialog.setDescription("Example sentence can not be an empty string!");
             dialog.setLocationRelativeTo(this);
             dialog.setVisible(true);
+            
+            jTextField1.requestFocus();
         }
 
     }//GEN-LAST:event_jButton1ActionPerformed
