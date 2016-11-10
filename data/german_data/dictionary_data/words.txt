@@ -226,7 +226,7 @@
 100226	s Prozent	százalék
 100227	steigen	emelkedik
 100228	r Wert	érték
-100229	betragen	kitesz
+100229	betragen	kitesz, viselkedik
 100230	r Ausländer	külföldi (fn)
 100231	gesamt	összes
 100232	s Gebiet	terület
@@ -3608,7 +3608,7 @@
 103676	überlassen	átad, rábíz
 103677	zeichnen	rajzol
 103678	unsichtbar	láthatatlan
-103679	begründen	igazol
+103679	begründen	megalapoz, igazol
 103680	s Grundgesetz	alkotmány
 103681	schweizerisch	svájci
 103682	s Gewissen	lelkiismeret
@@ -3822,7 +3822,7 @@
 103897	begegnen	találkozik, történik, szembeszáll vmivel
 103898	e Erscheinung	jelenség
 103899	süß	édes
-103900	unterbringen	elhelyez
+103900	unterbringen	elszállásol, elhelyez
 103901	e Beschreibung	leírás
 103902	s Labor	laboratórium
 103903	loswerden	megszabadul vmitől
@@ -5037,3 +5037,4 @@
 101692	r Erwerb	megszerzés, szerzemény
 101808	e Sklaverei	rabszolgaság
 101836	abschaffen	kikapcsol, megszüntet
+101985	anfragen	érdeklődik

@@ -2723,6 +2723,7 @@
 101041	Der Taxifahrer hat etwas mit dem Überfall zu tun gehabt.
 101043	Die Gewerkschaften wollen die wöchentliche Arbeitszeit reduzieren.
 101044	Der Fahrer konnte dem Hindernis nicht mehr ausweichen.
+101046	Tom steckte in einem wahr gewordenen Alptraum, aus dem es kein Erwachen gab.
 101047	Der Wahlsieg der Opposition hat niemanden erstaunt.
 101047	Die Opposition kritisiert das Vorgehen der Polizei gegen die Demonstranten.
 101047	Die Opposition versucht, vermeintliche Schwächen der Regierung auszunutzen.
@@ -3193,6 +3194,9 @@
 101297	Die Hose hab ich im Katalog bestellt.
 101299	Auf der Autobahn schalte ich in den fünften Gang.
 101299	Der ganze Gang steht voller Arbeitsloser.
+101300	Tatoeba ist kein kommerzielles Projekt.
+101300	Es ist verboten, diese Information kommerziell zu nutzen.
+101300	Ich meine, dass unsere Kultur sehr kommerziell und folglich sehr egozentrisch geworden ist.
 101301	Ich rate dir, noch einmal darüber nachzudenken.
 101302	Der Käufer vertraut auf die Qualität des Produkts.
 101302	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
@@ -4088,6 +4092,9 @@
 101780	Fußball spielt man auf der ganzen Welt.
 101780	Alle 4 Jahre spielen die besten Mannschaften von Ländern gegeneinander Fußball.
 101781	Beim Basketball muss man gut zielen können.
+101783	Handball ist ein schöner, aber anstrengender Sport.
+101783	Eine Gruppe Jugendlicher spielt auf dem Spielplatz Handball.
+101783	Tom ist gut in Handball.
 101784	Er möchte gern an einem olympischen Eishockey-Turnier teilnehmen.
 101789	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
 101791	Mittwochs geht Steffi zum Tennis.
@@ -4384,6 +4391,8 @@
 101980	Touristen sind oft nicht sehr beliebt bei den Einheimischen.
 101982	Der elegante Herr im Smoking heißt Charles.
 101986	Soll ich deine Krawatte binden?
+101989	Dein Schal gefällt mir.
+101989	Ich mag deinen Schal.
 101992	Digitale Armbanduhren sind aus der Mode gekommen.
 101994	Wir haben grade den Bus verpasst. Wie ärgerlich!
 101996	Es ist möglich, dass er lügt.
@@ -4442,6 +4451,9 @@
 102019	Sie grüßt mich immer sehr freundlich.
 102020	Es war kühl im Schatten der Bäume.
 102020	Wir gingen wieder ins Haus, denn es war draußen zu kühl geworden.
+102021	Langsam verschwand sie im nebligen Wald.
+102021	Von dem Panorama ist nicht viel zu sehen, da es heute sehr neblig ist.
+102021	Heute ist es neblig.
 102023	Du bist verrückt, in diesem stürmischen Wetter rauszugehen.
 102023	Das Schiff ging in der stürmischen See unter.
 102023	Sie trennten sich im letzten Jahr nach einer stürmischen Romanze.
@@ -4595,6 +4607,7 @@
 102137	Heutzutage ist das alles ganz anders.
 102140	Es ist nicht einfach, diese Verpackung zu entfernen.
 102141	Bring bitte den Abfall hinaus!
+102141	Der Abfall stinkt schrecklich.
 102142	In Nobelrestaurants fällt viel Müll an.
 102143	Autoabgase schaden der Umwelt.
 102143	Das Erdbeben richtete großen Schaden an.
@@ -7917,6 +7930,9 @@
 103960	Schriftsteller denken meist nicht zuerst an den Erfolg beim Publikum.
 103960	Wir denken an dich.
 103961	Im Riff leben verschiedene Korallenarten und bunte Fische.
+103962	Ich muss mich wehren.
+103962	Auch der Löwe muss sich vor der Mücke wehren.
+103962	Kleine Leute müssen sich mit dem Maul wehren.
 103963	Sie änderten ihre Meinung.
 103963	Unter Umständen müssen wir die Kriterien nochmal ändern.
 103965	Werkzeuge sind in der unteren Schublade.
@@ -9391,6 +9407,9 @@
 104948	In seiner Jugend genoss er eine strenge Erziehung.
 104948	Pettersson genoss die Stille.
 104950	Ein amerikanischer Physiker gewann den Nobelpreis.
+104952	Ich grub das Feld um.
+104952	Das Kind grub ein Grab für das tote Tier.
+104952	Die Piraten vergruben den Schatz in der Erde.
 104953	Du solltest das Messer nur am Griff anfassen.
 104954	Der Vater hatte zwei gänzlich verschiedene Füße.
 104954	Der Zug hatte zwei Stunden Verspätung.
