@@ -1224,7 +1224,7 @@
 101235	machbar	megvalósítható
 101236	komfortabel	kényelmes
 101237	e Kante	szegély
-101238	eher	előbb, inkább
+101238	eher	korábban, inkább
 101239	nähen	varr
 101240	e Partei	párt
 101241	r Verbraucher	fogyasztó
@@ -2305,7 +2305,7 @@
 102352	s Getreide	gabona
 102353	gewähren	ad, megad
 102354	gewährleisten	garantál
-102355	gewiss	biztosan
+102355	gewiss	biztos, biztosan
 102356	gewohnt	szokásos
 102357	gießen	önt, tölt
 102358	glänzend	ragyogó
@@ -2455,7 +2455,7 @@
 102503	e Stellungnahme	állásfoglalás
 102504	e Stellung	állás
 102505	s Sterben	halál
-102506	e Steuerung	kormányzás
+102506	e Steuerung	irányítás, vezérlés
 102507	e Stiftung	alapítás
 102508	e Stille	némaság
 102510	e Stimmung	kedv, hangulat
@@ -2681,7 +2681,7 @@
 102733	e Linse	lencse
 102734	e Liste	lista
 102735	einverstanden	egyetért
-102736	einzeln	egyenként
+102736	einzeln	egyenként, egyedüli
 102737	einziehen	beköltözik
 102738	einzig	egyedül
 102739	e Jacke	dzseki
@@ -2703,7 +2703,7 @@
 102757	einschlafen	elalszik
 102758	einschätzen	felbecsül
 102759	einrichten	berendez, elrendez
-102760	weinen	sír (ig)
+102760	weinen	sír (ige)
 102761	e Grenze	határ
 102762	e Nuss	dió
 102763	null	nulla
@@ -2991,7 +2991,7 @@
 103049	reichlich	gazdag, bőséges
 103050	rühren	kever, elmozdít
 103051	vergleichbar	összehasonlítható
-103052	verwandeln	átalakít
+103052	verwandeln	átváltoztat, átalakít
 103053	schmal	vékony
 103054	s Prinzip	elv, alapelv
 103055	r Verband	egyesület, kötés
@@ -3073,7 +3073,6 @@
 103132	verbergen	elrejt
 103133	r Fernseher	televízió
 103134	beliebig	tetszőleges
-103135	s Gen	gén
 103136	e Persönlichkeit	személyiség
 103137	kirchlich	egyházi
 103138	dringend	sürgős
@@ -3226,7 +3225,7 @@
 103288	r Rhythmus	ritmus
 103289	s Gut	vagyon, érték
 103290	r Tanz	tánc
-103291	eingehen	vállal
+103291	eingehen	vállal, bemegy
 103292	realisieren	megvalósít
 103293	e Arbeitslosigkeit	munkanélküliség
 103294	r Griff	nyél, fogás
@@ -3321,7 +3320,7 @@
 103384	s Vitamin	vitamin
 103385	zurückführen	származtat, visszavezet
 103386	alltäglich	mindennapos, megszokott
-103387	befürchten	fél (ig)
+103387	befürchten	fél (ige)
 103388	vorne	elöl
 103389	r Juli	július
 103390	zusammenkommen	összegyűlik
