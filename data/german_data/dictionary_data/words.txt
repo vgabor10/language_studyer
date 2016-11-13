@@ -624,7 +624,7 @@
 100628	r Wald	erdő
 100629	r Ton	hang
 100630	r Bürger	polgár
-100632	erlauben	megenged
+100632	erlauben	engedélyez, megenged
 100633	zu Fuß	gyalog
 100634	r Applaus	taps
 100635	stolz	büszke
@@ -1940,7 +1940,7 @@
 101969	geschickt	ügyes
 101970	sparen	spórol
 101971	s Loch	lyuk
-101972	r Gebrauch	használat
+101972	r Gebrauch	használat, szokás
 101973	r Schuster	cipész
 101974	r Schuh	cipő
 101975	r Stiefel	csizma
@@ -2498,7 +2498,6 @@
 102548	e Unterscheidung	megkülönböztetés
 102549	europäisch	európai
 102550	e Ursache	ok
-102551	e Evaluation	kiértékelés
 102552	e Variante	változat
 102553	verändern	megváltoztat
 102554	e Verarbeitung	feldolgozás
@@ -3371,7 +3370,7 @@
 103435	anstellen	alkalmaz, beállít
 103436	r Konzern	vállalatcsoport, konszern
 103437	bedeutsam	fontos, jelentős
-103438	vergeblich	hasztalan
+103438	vergeblich	haszontalan
 103439	e Anzahl	szám, mennyiség
 103440	recht	igaz, valódi
 103441	reizen	izgat, ingerel
@@ -3773,7 +3772,7 @@
 103848	tätig	tevékeny, aktív
 103849	r Zugriff	hozzáférés
 103850	e Aufführung	előadás
-103851	verwenden	felhasznál
+103851	verwenden	használ, felhasznál, alkalmaz
 103852	s Unternehmen	vállalkozás
 103853	danken	köszön, megköszön
 103854	r Champion	bajnok
@@ -4575,7 +4574,7 @@
 104661	treu	hűséges
 104662	umarmen	megölel
 104663	sicherlich	biztosan
-104664	verständlich	érthetően
+104664	verständlich	érthető, érthetően
 104665	ausdrücken	kifejez
 104666	inwieweit	mennyire
 104667	schon	már
@@ -5037,3 +5036,4 @@
 101808	e Sklaverei	rabszolgaság
 101836	abschaffen	kikapcsol, megszüntet
 101985	anfragen	érdeklődik
+102001	e Vorhersage	előrejelzés

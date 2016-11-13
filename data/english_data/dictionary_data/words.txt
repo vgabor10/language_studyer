@@ -94,7 +94,7 @@
 100095	pursue	folytat
 100096	vigorous	erőteljes
 100097	so far	eddig
-100098	asset	vagyon
+100098	asset	vagyon, birtok
 100099	bold	bátor
 100100	incorporate	keveredik
 100101	overlap	átfedés
@@ -342,7 +342,7 @@
 100343	inadequate	alkalmatlan
 100344	adore	imád
 100345	jealous	féltékeny
-100346	nasty	kellemetlen
+100346	nasty	kellemetlen, csúnya
 100347	awake	ébren
 100348	envy	irigység
 100349	pull	húz
@@ -358,7 +358,7 @@
 100359	weaver	takács
 100360	usher	bevezet
 100361	swiftly	fürgén
-100362	make sense of sg	megért vmit
+100362	make sense of sg	értelme van vminek
 100363	all the same	ennek ellenére
 100364	reckon	számol
 100365	fixture	tartozék
@@ -369,7 +369,7 @@
 100370	owl	bagoly
 100371	sack	elbocsát
 100372	trait	jellegzetesség
-100373	absence	távollét
+100373	absence	hiány, távollét
 100374	mend	kijavít
 100375	incentive	ösztönzés
 100376	hinder	meggátol
@@ -461,7 +461,6 @@
 100462	amplify	erősít
 100463	commute	ingázik
 100464	root	gyökér
-100465	nasty	csúnya
 100466	nimble	mozgékony
 100467	acquiesce	beleegyezik
 100468	reliance	bizalom
@@ -479,7 +478,6 @@
 100480	graceful	elegáns
 100481	predecessor	előd
 100482	indispensable	nélkülözhetetlen
-100483	absence	hiány
 100484	inflict	kiró, okoz
 100485	civic	polgári
 100486	tense	feszes
@@ -1073,3 +1071,24 @@
 101072	imperative	szükségszerű, elkerülhetetlen
 101073	misery	kín, szenvedés
 101074	suggest	javasol, felvet
+100465	tight	szűk, feszes
+101075	warden	őr, felügyelő
+101076	expedite	sürget, előmozdít
+101077	be accustomed to sg	hozzá van szokva vmihez
+101078	trail	sáv, ösvény
+101079	temper	enyhít, higít, mérsékel
+101080	stain	folt
+101081	embezzle	elsikkaszt
+101082	revenge	bosszú
+101083	right away	azonnal, rögtön
+101084	ominous	baljós, vészes
+101085	confirm	alátámaszt, megerősít
+101086	incline	hajlik
+100483	impediment	gát, akadály
+101087	tenure	hivatali idő, birtoklás
+101088	redemption	jóvátétel, helyrehozás
+101089	for one's sake	vki kedvéért
+101090	vet	átvizsgál, ellenőriz
+101091	vet	állatorvos
+101092	mortal	halálos, végzetes
+101093	antagonize	ellenszegül, szembeszáll
