@@ -132,7 +132,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
             dialog.setLocationRelativeTo(this);
             dialog.setVisible(true);
       
-            if (dialogAnswer.boolAnswer) {
+            if (addCardDialogAnswer.boolAnswer) {
                 DictionaryDataModificator dictionaryDataModificator 
                         = new DictionaryDataModificator();
                 dictionaryDataModificator.setData(dictionaryDataContainer);

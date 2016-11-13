@@ -4,7 +4,6 @@ import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
 import dictionary.DictionaryDataContainer;
-import disc_operation_handlers.DictionaryDataModificator;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -15,14 +14,12 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
-import study_item_objects.AnswerDataContainer;
 
 public class DictionaryDialog extends javax.swing.JDialog {
 
     public DictionaryDataContainer dictionaryDataContainer;
     
     private CardContainer cardContainer;
-    private AnswerDataContainer answerDataContainer;
     
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel tableModel;
@@ -58,7 +55,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     public void initialise() {
         cardContainer = dictionaryDataContainer.cardContainer;
-        answerDataContainer = dictionaryDataContainer.answerDataContainer;
         
         cardFinder.setCardContainer(cardContainer);
     }
@@ -184,6 +180,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jScrollPane2.setViewportView(jTable2);
 
         jButton2.setText("Card group filter");
+        jButton2.setEnabled(false);
 
         listAllCardsButton.setText("List all cards");
         listAllCardsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -387,7 +384,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }
     
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        //setFormForNextQuery();
         
         JTableHeader th = jTable1.getTableHeader();
         TableColumnModel tcm = th.getColumnModel();
@@ -405,8 +401,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
         }
         
         th.repaint();
-        
         clearTable();
+        inspectCardButton.setEnabled(false);
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_jComboBox1ActionPerformed

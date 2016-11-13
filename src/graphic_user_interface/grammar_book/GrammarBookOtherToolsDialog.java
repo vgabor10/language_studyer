@@ -1,15 +1,9 @@
 package graphic_user_interface.grammar_book;
 
-import graphic_user_interface.dictionary.ExampleSentenceAssigner1Dialog;
-import graphic_user_interface.dictionary.ExampleSentenceAssigner2Dialog;
-import dictionary.DictionaryAnswerDataStatisticsMaker;
 import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
@@ -38,6 +32,7 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        modificateGrammarBookButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -78,6 +73,13 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
             }
         });
 
+        modificateGrammarBookButton.setText("Modificate grammar Book");
+        modificateGrammarBookButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modificateGrammarBookButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -90,7 +92,8 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
                     .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(modificateGrammarBookButton, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -106,7 +109,9 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
                 .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(modificateGrammarBookButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
@@ -138,6 +143,17 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
 
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void modificateGrammarBookButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateGrammarBookButtonActionPerformed
+        GrammarBookModificatorDialog dialog
+        = new GrammarBookModificatorDialog(new javax.swing.JFrame(), true);
+        /*dialog.grammarBook = grammarDataContainer.grammarBook;
+        dialog.grammarAnswerDataContainer = grammarDataContainer.grammarAnswerDataContainer;
+        dialog.languageFilesDataHendler = languageFilesDataHandler;
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);*/
+    }//GEN-LAST:event_modificateGrammarBookButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,5 +211,6 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton modificateGrammarBookButton;
     // End of variables declaration//GEN-END:variables
 }
