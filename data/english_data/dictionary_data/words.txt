@@ -348,7 +348,7 @@
 100349	pull	húz
 100350	mire	pocsolya
 100351	abstain	tartózkodik
-100352	excuse	mentség
+100352	excuse	mentség, ürügy
 100353	take aback	meglep
 100354	collide	összeütközik
 100355	tie	kötés
