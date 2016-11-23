@@ -2433,6 +2433,9 @@
 100848	Die Armee marschiert in das besetzte Gebiet ein.
 100852	An Personen unter 16 ist der Verkauf von Alkohol nicht gestattet.
 100853	Ich nehme die Talkshow auf, um sie später auszuwerten.
+100853	Ich konnte keinen Kontakt mit ihm aufnehmen.
+100853	Diese Halle kann 2000 Menschen aufnehmen.
+100853	Könnt ihr mit Tom Kontakt aufnehmen?
 100855	Hier ist es verboten zu rauchen.
 100855	Nach europäischem Recht ist das verboten.
 100857	Danach erfolgt ein weiterer Arbeitsschritt.
@@ -7941,7 +7944,6 @@
 103865	Das soziale Umfeld war ihr nicht gut genug.
 103866	Armut ist auch ein Problem von reichen Ländern.
 103866	In Deutschland ist es üblich, sich zur Begrüßung die Hand zu reichen.
-103867	Die Ausrichtung der nächsten Olympischen Spiele wird wohl an Paris fallen.
 103868	Zumindest der Chef sollte davon wissen.
 103869	Die Fragen testen das räumliche Vorstellungsvermögen.
 103869	Sie wollen die Intelligenz ihres Kindes testen lassen.

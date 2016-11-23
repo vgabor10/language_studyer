@@ -842,7 +842,7 @@
 100849	anregen	javasol, ösztönöz
 100851	lockern	lazít
 100852	gestatten	engedélyez
-100853	aufnehmen	folytat, bevesz
+100853	aufnehmen	felvesz, bevesz, befogad
 100854	gedulden	türelemmel van
 100855	verboten	tilos
 100856	r Aufenthalts	tartózkódási hely
@@ -1158,7 +1158,7 @@
 101169	e Fläche	terület
 101170	e Botschaft	nagykövetség
 101171	e Krone	korona
-101172	ermitteln	kiderít
+101172	ermitteln	nyomoz
 101173	e Bedingung	feltétel
 101174	wählen	választ
 101175	e Liegenschaft	ingatlan
@@ -3787,7 +3787,6 @@
 103864	spiegeln	ragyog, tükröz
 103865	s Umfeld	környezet
 103866	reichen	elér
-103867	e Ausrichtung	irány
 103868	zumindest	legalább
 103869	testen	tesztel
 103870	wiederum	újra
@@ -4599,7 +4598,7 @@
 104686	e Praxis	rendelés, praxis
 104687	e Droge	drog, kábítószer
 104688	vorsehen	tervbe vesz, előre lát
-104689	verfassen	megfogalmaz
+104689	verfassen	fogalmaz, megfogalmaz
 104690	ausmachen	kikapcsol, megegyez, kitesz
 104691	sachlich	tárgyilagos
 104692	vorbei	elmúlt (hat)
@@ -5037,3 +5036,4 @@
 101836	abschaffen	kikapcsol, megszüntet
 101985	anfragen	érdeklődik
 102001	e Vorhersage	előrejelzés
+102112	r Spion	kém

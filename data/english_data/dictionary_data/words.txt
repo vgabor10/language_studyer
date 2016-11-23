@@ -1092,3 +1092,23 @@
 101091	vet	állatorvos
 101092	mortal	halálos, végzetes
 101093	antagonize	ellenszegül, szembeszáll
+101094	presume	feltételez
+101095	confide	bízik
+101096	exaggerate	túloz
+101097	commotion	felbolydulás, zűrzavar
+101098	breach	törés, hasadás
+101099	be fond of sg	szeret vmit, ragaszkodik vmihez
+101100	expendable	feláldozható
+101101	pushy	rámenős, törtető
+101102	backpack	hátizsák
+101103	deplore	szán, sajnál, helytelenít
+101104	dial	tárcsáz
+101105	nurse	ápolónő
+101106	abandon	elhagy, letesz vmiről
+101107	flatter	hízeleg
+101108	grip	nyél, markolat, fogás
+101109	kit	készlet, csomag
+101110	remnant	maradék, maradvány
+101111	overrate	túlértékel, túlbecsül
+101112	lake	tó
+101113	accomplice	bűntárs, cinkos
