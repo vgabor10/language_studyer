@@ -16,7 +16,6 @@ import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryOtherToolsDialog;
 import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarAnswerStatisticsDialog;
-import graphic_user_interface.grammar_book.GrammarBookModificatorDialog;
 import java.awt.event.KeyEvent;
 
 public class MainFrame extends javax.swing.JFrame {

@@ -652,4 +652,22 @@ public class AnswerDataStatisticsMaker {
         }
     }
     
+    public int getNumberOfAnswersOnTheLastDays(int numberOfDays) {
+        Map<Integer, Integer> numberOfAnswersByDays = getNumberOfAnswersByDays();
+
+        Date date = new Date();
+        GeneralFunctions generalFunctions = new GeneralFunctions();
+        int today = generalFunctions.milisecToDay(date.getTime());
+
+        int out = 0;
+        
+        for (int i = 0; i < numberOfDays; i++) {
+            if (numberOfAnswersByDays.keySet().contains(today - i)) {
+                out = out + numberOfAnswersByDays.get(today - i);
+            }
+        }
+
+        return out;
+    }
+    
 }

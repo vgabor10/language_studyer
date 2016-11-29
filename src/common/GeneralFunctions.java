@@ -23,7 +23,7 @@ public class GeneralFunctions {
 	public int milisecToHour(long milisec) {
 		return (int)Math.floor( (int)(milisec % (1000*3600*24)) / (int)(1000*3600));
 	}
-
+        
 	public boolean isInteger(String s) {
 		try {
 			int cardIndex = Integer.parseInt(s);
