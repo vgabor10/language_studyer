@@ -2211,7 +2211,7 @@
 102255	r Hirsch	szarvas
 102256	lieben	szeret
 102257	r Wolf	farkas
-102258	ramponieren	tönkretesz
+102258	ramponieren	tönkretesz, megkárosít
 102259	r Beton	beton
 102260	e Tasche	táska
 102261	künftig	jövőbeli
@@ -4180,7 +4180,6 @@
 104262	zukommen	eljut, odaérkezik
 104263	r Präsident	elnök
 104264	e Reaktion	reagálás, reakció
-104265	r Salon	szalon
 104266	begehen	elkövet
 104267	r Nacken	nyak
 104268	ausnehmen	meglát, felismer

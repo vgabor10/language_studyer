@@ -8627,7 +8627,6 @@
 104263	Die Amtsperiode des derzeitigen Präsidenten endet in vier Jahren.
 104263	In seiner Position als Stellvertreter des Präsidenten hat er zu wenig Einﬂuss auf die Politik.
 104264	Ich kann seine Reaktion gut verstehen.
-104265	Im Salon steht ein schwarzer Flügel.
 104266	Es ist ein Verbrechen begangen worden.
 104266	Warum konnte Tom diese Tat begehen?
 104266	Er versuchte, Selbstmord zu begehen.
