@@ -3792,7 +3792,7 @@
 103870	wiederum	újra
 103871	s Training	edzés
 103872	übel	beteg, rossz
-103873	jetzig	jelenlegi
+103873	jetzig	mostani, jelenlegi
 103874	seltsam	furcsa, különös
 103875	voraussetzen	feltételez
 103876	s Design	forma
@@ -5036,3 +5036,4 @@
 101985	anfragen	érdeklődik
 102001	e Vorhersage	előrejelzés
 102112	r Spion	kém
+102146	deshalb	ezért

@@ -7441,7 +7441,6 @@
 103567	Wir werden die Versammlung auf einen späteren Zeitpunkt verschieben.
 103569	Rechtlich gesehen gibt es ein Problem.
 103570	Zu viele Fakten verwirren die Zuhörer.
-103570	Zu viele Fakten verwirren die Zuhörer. 
 103572	Außen am Haus ist eine Leiter befestigt.
 103572	Die Stadt war gut befestigt mit Ausnahme dieser Seite.
 103572	Roy befestigte den Orden mit einer Nadel.
