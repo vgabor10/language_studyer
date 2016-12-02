@@ -1270,7 +1270,6 @@
 100327	Unser Angebot wurde kürzlich erweitert.
 100327	Wir haben ihr ein günstiges Angebot gemacht.
 100327	Wir müssen unser Angebot erhöhen.
-100328	Der Bundesrat muss diesem Gesetz noch zustimmen.
 100328	Der Bundestag wird diesem Gesetz nicht zustimmen.
 100329	Auf der anderen Seite muss man auch bedenken, dass die Zeit schon knapp ist.
 100329	Die Seite ist zerrissen.
@@ -1338,6 +1337,7 @@
 100355	Morgen Nachmittag muss ich zum Arzt, das heißt, ich habe keine Zeit.
 100359	Nächste Woche gibt es in dem Werk eventuell einen Streik.
 100360	Er wollte immer einen Schritt voraus sein.
+100362	Tom will sich auf Arbeitssuche begeben.
 100364	Ein schnelles Auto verbraucht auch meist viel Benzin.
 100364	Es regnet meist gegen Abend.
 100364	Mächtigen Worten folgen meist keine Taten.
@@ -2273,6 +2273,8 @@
 100764	Armut ist die Mutter allen Übels.
 100764	Jedes Übel hat auch sein Gutes.
 100765	Jan packt seinen Rucksack, er fährt nach Norwegen in den Urlaub.
+100765	Tom packte seine Koffer.
+100765	Maria packte Tom am Kragen.
 100766	Die Recyclingﬁrma stellt Müllcontainer bereit.
 100768	Auch fünfzehn Jahre nach der Wende liegen ostdeutsche Löhne deutlich unter Westniveau.
 100770	Die Aufklärung des Mordfalls dauerte mehrere Jahre.
@@ -3503,6 +3505,8 @@
 101423	Neben dem Haus steht ein alter Baum.
 101423	Siehst du den Baum da? Es hängen immer noch Blätter daran.
 101423	Weshalb fällt ein Apfel vom Baum zum Boden und nicht in den Himmel?
+101426	Diese Pflaumen sind reif.
+101426	Die Pflaumenbäume blühen im März.
 101430	Bananen und Zitronen sehen gelb aus.
 101431	Dieser Früchtetee ist eine Mischung aus Apfel-, Orangen- und Birnenstücken.
 101433	Vergiftete Kirschen bringen einen Herzog um.
@@ -5191,9 +5195,9 @@
 102353	Die Bank hat dem jungen Ehepaar einen Kredit gewährt.
 102353	Wir können Ihnen gerne auch noch einen kleinen Rabatt gewähren.
 102354	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
-102355	Mein Dank ist dir gewiss.
-102355	Die Mutter ist immer gewiss.
 102355	Das ist nicht absolut gewiss.
+102355	Die Frage ist gewiss nicht einfach.
+102355	In diesem Punkt hat sie ganz gewiss recht.
 102356	Er ist frühes Aufstehen nicht gewohnt.
 102357	Wer gießt meine Pflanzen, wenn ich weg bin?
 102357	Mein Nachbar gießt im Urlaub meine Blumen.
@@ -6767,6 +6771,8 @@
 103206	Es ist wirksam gegen bakterielle Infektionen.
 103207	Was weiß man über die Entstehung der Erde?
 103208	Holz ist ein nachwachsender Rohstoff.
+103209	Du darfst nicht zulassen, dass sie mir meine Kinder wegnehmen!
+103209	Ich protestierte, als der Kellner meinen Teller wegnehmen wollte.
 103210	Bei vielen Jugendlichen herrscht Unsicherheit hinsichtlich ihrer Berufswahl.
 103210	Doktor Seydlitz praktiziert seinen Beruf mit Begeisterung.
 103210	Er hasst seinen Beruf.
@@ -7050,6 +7056,9 @@
 103359	Das Kinoprogramm ﬁndet man stets aktuell im Internet.
 103359	Die großen Tiere fressen stets die kleinen.
 103359	Sie erhoffte stets das Beste.
+103360	Viele Studenten erleben Prüfungsangst.
+103360	So böse habe ich Tom noch nie erlebt.
+103360	Sie hat viele Schwierigkeiten erlebt.
 103361	Das Unternehmen erzielte dieses Jahr nur minimalen Gewinn.
 103361	Das Unternehmen machte letztes Jahr keinen Gewinn, sondern einen hohen Verlust.
 103361	Die Differenz zwischen Umsatz und Kosten ist der Gewinn.
@@ -7701,6 +7710,8 @@
 103727	Im idealen Fall kommt das Päckchen schon am Montag an, im schlimmsten Fall erst Freitag.
 103727	Sie können Ihre Unterlagen bis nächsten Montag einreichen.
 103728	Vor Aufregung brachte sie kein Wort heraus.
+103728	Aufregung ist für einen Mann in meinem Alter nicht gut.
+103728	Vor Aufregung hat sie einen roten Kopf bekommen.
 103729	Dahin bin ich noch nie gefahren.
 103731	Der Täter ist bislang unbekannt.
 103732	Jule strebt einen höheren Abschluss an.
@@ -7955,6 +7966,7 @@
 103874	Aus der Tiefe des Ozeans hörten sie ein seltsames Geräusch.
 103874	Es handelt sich um eine etwas seltsame Gestalt.
 103874	Vor einiger Zeit hatte ich eine seltsame Begegnung.
+103875	Beachte, dass das Theorem nicht die Existenz eines solchen Objekts voraussetzt.
 103876	Wenn die Stühle unbequem sind, nützt auch das beste Design nichts.
 103876	Welche Vorstellungen haben Sie in Bezug auf das Design?
 103877	Abends nehme ich gern ein Bad.
@@ -8058,6 +8070,8 @@
 103937	Die Gäste bleiben stumm.
 103937	Sie ist von Geburt an stumm.
 103938	Faust fand sogleich Argumente, um Gretchen zu überzeugen.
+103938	Ich kann mich sogleich darum kümmern.
+103938	Romeo verliebte sich sogleich in Julia.
 103939	Der Anbieter kann erst in drei Tagen liefern.
 103940	Das Semester beginnt im Oktober und endet im März.
 103940	Der Beginn der Sommerzeit ist Ende März.

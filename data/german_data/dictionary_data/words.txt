@@ -756,7 +756,7 @@
 100762	aufgehalten	feltartóztat
 100763	dauern	tart
 100764	s Übel	baj, gond, betegség
-100765	packen	megragad, megfog, csomagol
+100765	packen	csomagol, megragad, megfog
 100766	bereit	hajlandó
 100767	hauptsächlich	főleg
 100768	deutlich	érthető, érthetően
@@ -4133,7 +4133,7 @@
 104215	s Verbrechen	bűntett
 104216	e Entfernung	távolság
 104217	bilden	alkot, művel
-104218	rechts	jobboldalt
+104218	rechts	jobboldalt (mn)
 104219	drüben	odaát
 104220	springen	ugrik
 104221	r Polizist	rendőr
