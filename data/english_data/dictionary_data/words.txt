@@ -1114,3 +1114,4 @@
 101113	accomplice	bűntárs, cinkos
 101114	contrary	ellentét
 101115	precede	megelőz, elsőbbsége van
+101116	cash register	kassza

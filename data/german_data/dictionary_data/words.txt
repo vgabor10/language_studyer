@@ -500,7 +500,7 @@
 100502	zusammen	együtt
 100503	e Daten	adat
 100504	sammeln	gyűjt
-100505	s Wohl	jólét
+100505	s Wohl	boldogság, jólét
 100506	geschehen	történik
 100507	laut	szerint
 100508	schützen	véd

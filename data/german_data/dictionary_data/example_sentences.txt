@@ -284,6 +284,9 @@
 100062	Diese Idee ﬁnde ich super.
 100063	Ich habe Angst zu sterben.
 100063	Ich habe überhaupt keine Angst.
+100065	Der Junge ist durstig.
+100065	Ich bin hungrig und durstig.
+100065	Ihr Hund scheint durstig zu sein.
 100066	Das war keine böse Absicht.
 100066	Du hast keinen Grund, böse zu sein.
 100067	Äpfel sind gesund.
@@ -1700,6 +1703,7 @@
 100504	Am Boden sammeln sich Staubﬂocken.
 100504	Jean und Chantal sammeln Pilze.
 100504	Wir müssen Informationen sammeln.
+100505	Das Wohl der Nation ist die Pflicht der Regierung.
 100506	Eine Katastrophe ist geschehen.
 100506	Ein Wunder ist geschehen.
 100506	Was ist denn geschehen?
@@ -2256,6 +2260,9 @@
 100756	Am Montag Abend ereignete sich ein Anschlag auf die Russische Botschaft.
 100757	Derzeit wiederholt das Fernsehen eine Serie aus den 80er Jahren.
 100757	Die Serie von Einbrüchen im Stadtzentrum reißt nicht ab.
+100758	Falls Probleme auftauchen, ruf mich an.
+100758	Ich hatte eine Stunde gewartet, als er auftauchte.
+100758	Ich bin mir sicher, dass sie bald auftauchen wird.
 100759	Auf der CD ist eine historische Aufnahme einer Rede Willy Brandts zu hören.
 100759	Der Generalsekretär hält eine Rede.
 100759	Der Kanzler hält eine Rede zur Lage der Nation.
@@ -3791,6 +3798,8 @@
 101560	Rudolf, das Rentier, hat eine rote Nase.
 101560	Tom putzt sich die Nase.
 101560	Sie hat eine lange Nase.
+101561	Ich schlug ihm auf das Kinn.
+101561	Der Junge streichelte das Mädchen ums Kinn und küsste es auf die Wangen.
 101562	Er seufzte tief und fasste sich an die Stirn.
 101562	Ihre Haare hängen tief in die Stirn.
 101563	Rote Lippen soll man küssen.
@@ -5524,6 +5533,8 @@
 102517	Für den Tangokurs suche ich noch einen Partner.
 102517	Ich suche eine bestimmte CD.
 102518	Das Produkt hat sich am Markt etabliert.
+102518	Dieser Brauch hat sich bei den Japanern fest etabliert.
+102518	Eine Massenproduktion von Margarine wurde erstmals in Frankreich etabliert.
 102519	Die Tageszeitung ist um sechs Uhr morgens im Briefkasten.
 102519	Leser einer Tageszeitung sind immer gut informiert.
 102520	Ich habe aus Versehen die falsche Taste gedrückt.
@@ -6990,6 +7001,8 @@
 103324	Ich habe so viele Sachen, dass ich zum Umzug einen LKW brauche.
 103324	Nach dem Umzug stand die neue Wohnung voller Kisten.
 103325	Der Wetterbericht sagt ein allmähliches Ansteigen der Temperaturen voraus.
+103325	Es wird allmählich kälter.
+103325	Die Tage werden allmählich kürzer.
 103326	Der Motor ist kaputt.
 103329	Der Fachbereich Informatik bekommt einen neuen Leiter.
 103329	In der Facharztausbildung müssen sich junge Ärzte auf einen Fachbereich spezialisieren.
@@ -7102,6 +7115,7 @@
 103380	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
 103380	Möglicherweise schaffen wir es doch bis zum vereinbarten Termin.
 103381	Die Tür ist verschlossen.
+103381	Bitte verschließe den Geldschrank.
 103382	Der Harz ist eine bekannte touristische Region.
 103383	Wer regiert in Deutschland?
 103384	Der Körper braucht täglich 75 Milligramm Vitamin C.
@@ -8406,7 +8420,7 @@
 104120	Ärzte unterliegen der Schweigepﬂicht.
 104120	Waffen unterliegen in Deutschland strengen Gesetzen.
 104121	Es hat sich eine kurzfristige Änderung ergeben.
-104121	Vier plus vier ergibt acht. 2 ergeben (sich) to yield, surrender
+104121	Vier plus vier ergibt acht.
 104122	Der Bankräuber ergab sich der Polizei.
 104123	Wir haben bessere Ergebnisse erzielt als im Vorjahr.
 104124	Diplomatie macht auch unpopuläre Allianzen möglich.
@@ -8473,6 +8487,8 @@
 104162	Gute Nacht und träume schön!
 104163	Die Projektgruppe trägt ihre Ergebnisse vor.
 104164	Eine sorgfältige Auswahl der Zutaten ist wichtig.
+104164	Tom machte es sehr sorgfältig.
+104164	Dieses Buch muss man sorgfältig lesen.
 104165	Es geht vor allem um die soziale Differenzierung der Gesellschaft.
 104166	Wenn die Ursachen nicht bekannt sind, werden nur die Symptome behandelt.
 104168	Du musst systematisch alle Punkte abarbeiten.
@@ -8720,6 +8736,7 @@
 104298	Tut es noch sehr weh? Nein, nicht so sehr.
 104298	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
 104299	Das ist der entscheidende Faktor.
+104299	Bildung ist ein wichtiger Faktor.
 104300	Die Verletzung des Postgeheimnisses ist ein Eingriff in die Privatsphäre.
 104301	Diese Methode besitzt großes Potenzial.
 104301	Verona hat ein großes Potenzial.
@@ -8926,6 +8943,8 @@
 104418	Mechanische Uhren muss man aufziehen.
 104419	Du lenkst schon wieder vom Thema ab.
 104420	Die Zentralbank hat den Zinssatz angehoben.
+104420	Das Darlehen hat einen Zinssatz von 5,5%.
+104420	Da der Zinssatz gesunken ist, steigt die Anzahl der Bankdarlehen.
 104421	Es handelt sich hier um einen Einzelfall.
 104422	Die Firmenleitung schickt ihre Mitarbeiter regelmäßig auf Weiterbildungen.
 104422	Die gleichbleibende Qualität des Produktes wird durch regelmäßige Kontrollen gewährleistet.
@@ -8934,6 +8953,8 @@
 104422	Ich nehme regelmäßig an Fachtagungen teil.
 104422	In der Straßenbahn gibt es regelmäßig Kontrollen.
 104423	Die Umsetzung der Menschenrechte bereitet selbst in Europa Schwierigkeiten.
+104423	Das kann große Probleme bereiten.
+104423	Bücher bereiten uns viel Vergnügen.
 104424	Wir übernehmen den Transport Ihrer Möbel.
 104425	Er hat eine sehr traditionelle Meinung.
 104426	Der Vater hält ihre Ideen für völlig absurd.
