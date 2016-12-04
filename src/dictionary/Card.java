@@ -1,7 +1,9 @@
 package dictionary;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import study_item_objects.StudyItem;
 
 public class Card extends StudyItem {
@@ -9,7 +11,7 @@ public class Card extends StudyItem {
     public String term;
     public String definition;
     public List<String> exampleSentences = new ArrayList<>();
-    public List<String> categories = new ArrayList<>();
+    public Set<Integer> categories = new HashSet<>();
 
     public Card() {
         index = -1;

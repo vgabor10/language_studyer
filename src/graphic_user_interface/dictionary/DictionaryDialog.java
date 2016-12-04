@@ -179,8 +179,12 @@ public class DictionaryDialog extends javax.swing.JDialog {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        jButton2.setText("Card group filter");
-        jButton2.setEnabled(false);
+        jButton2.setText("Card category filter");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         listAllCardsButton.setText("List all cards");
         listAllCardsButton.addActionListener(new java.awt.event.ActionListener() {
@@ -261,20 +265,13 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
 
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
-                !jTextField1.getText().isEmpty()) {
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER && !jTextField1.getText().isEmpty()) {
             
             clearTable();
 
-            if (jComboBox1.getSelectedIndex() == 0) {
-                listedCards
-                        = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
-            }
-
-            if (jComboBox1.getSelectedIndex() == 1) {
-                listedCards
-                        = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
-            }
+            cardFinder.setStringToSearch(jTextField1.getText());
+            
+            listedCards = cardFinder.getCards();
 
             toScreenListedCards();
             
@@ -393,11 +390,15 @@ public class DictionaryDialog extends javax.swing.JDialog {
         if( jComboBox1.getSelectedIndex() == 0) {
             tc0.setHeaderValue("term");
             tc1.setHeaderValue("definition");
+            
+            cardFinder.setSearchAccordingToTerm();
         }
         
         if( jComboBox1.getSelectedIndex() == 1) {
             tc0.setHeaderValue("definition");
             tc1.setHeaderValue("term");
+            
+            cardFinder.setSearchAccordingToDefinition();
         }
         
         th.repaint();
@@ -414,15 +415,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTable2.clearSelection();
         clearTable();
 
-        if (jComboBox1.getSelectedIndex() == 0) {
-            listedCards
-                    = cardFinder.getCardsWithGivenTermPart(stringForSearch);
-        }
-
-        if (jComboBox1.getSelectedIndex() == 1) {
-            listedCards
-                    = cardFinder.getCardsWithGivenDefinitionPart(stringForSearch);
-        }
+        cardFinder.setStringToSearch(stringForSearch);
+        cardFinder.getCards();
 
         toScreenListedCards();
 
@@ -433,17 +427,21 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private void listAllCardsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listAllCardsButtonActionPerformed
         listedCards.clear();
         
-        for (int i=0; i<cardContainer.numberOfCards(); i++) {
-            Card card = cardContainer.getCardByOrder(i);
-            listedCards.add(card);
-        }
-        
-        Collections.shuffle(listedCards);
+        listedCards = cardFinder.getCards();
         
         toScreenListedCards();
         jTextField1.requestFocus();
         inspectCardButton.setEnabled(false);
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SelectCardCategoryDialog dialog 
+                = new SelectCardCategoryDialog(new javax.swing.JFrame(), true);
+        dialog.cardFinder = cardFinder;
+        
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

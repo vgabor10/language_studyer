@@ -259,17 +259,12 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
                 !jTextField1.getText().isEmpty()) {
             
+            
             clearTable();
 
-            if (jComboBox1.getSelectedIndex() == 0) {
-                listedCards
-                        = cardFinder.getCardsWithGivenTermPart(jTextField1.getText());
-            }
-
-            if (jComboBox1.getSelectedIndex() == 1) {
-                listedCards
-                        = cardFinder.getCardsWithGivenDefinitionPart(jTextField1.getText());
-            }
+            cardFinder.setStringToSearch(jTextField1.getText());
+            
+            listedCards = cardFinder.getCards();
 
             toScreenListedCards();
             
@@ -397,15 +392,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         jTable2.clearSelection();
         clearTable();
 
-        if (jComboBox1.getSelectedIndex() == 0) {
-            listedCards
-                    = cardFinder.getCardsWithGivenTermPart(stringForSearch);
-        }
-
-        if (jComboBox1.getSelectedIndex() == 1) {
-            listedCards
-                    = cardFinder.getCardsWithGivenDefinitionPart(stringForSearch);
-        }
+        cardFinder.setStringToSearch(stringForSearch);
+        cardFinder.getCards();
 
         toScreenListedCards();
 

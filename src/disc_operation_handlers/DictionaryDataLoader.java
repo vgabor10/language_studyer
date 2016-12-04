@@ -82,34 +82,34 @@ public class DictionaryDataLoader {
         }
     }
     
-    //TODO
-    /*public void loadCardCategories() {
+    public void loadCardCategories() {
         try {
             //TODO: make it more general
-            if (languageFilesDataHendler.getStudiedLanguageIndex() == 1) {
-                String filePath = "../data/german_data/language_data/german_word_categories.txt";
+            if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
+                String filePath = "../data/german_data/dictionary_data/card_indexes_to_category_indexes.txt";
                 BufferedReader br = new BufferedReader(new FileReader(filePath));
                 String strLine;
                 while ((strLine = br.readLine()) != null) {
                     String[] splittedRow = strLine.split("\t");
-                    String categoryName = strLine.split("\t")[0];
+                    int cardIndex = Integer.parseInt(splittedRow[0]);
                     
                     for (int i=1; i<splittedRow.length; i++) {
-                        int cardIndex = Integer.parseInt(splittedRow[i]);
-                        cardContainer.getCardByIndex(cardIndex).categories.add(categoryName);
+                        int categoryIndex = Integer.parseInt(splittedRow[i]);
+                        dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categories.add(categoryIndex);
                     }
                 }
             }
         } catch (FileNotFoundException e) {
-            System.err.println("unable to find card data file");
+            System.err.println("unable to find card categories file");
         } catch (IOException e) {
-            System.err.println("exception in loadCardContainer function");
+            System.err.println("exception in loadCardCategories function");
         }
-    }*/
+    }
     
     public void loadAllData() {
         loadCardContainer();
         loadAnswerData();
-        loadExampleSentences();        
+        loadExampleSentences();
+        loadCardCategories();
     }
 }

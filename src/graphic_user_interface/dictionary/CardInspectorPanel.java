@@ -40,6 +40,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         for (String exampleSentence : card.exampleSentences) {
             tableModel.addRow(new Object[]{exampleSentence});
         }
+        
+        /*for (String category : card.categories) {
+            jComboBox1.addItem(category);
+        }*/
     }
     
     public Card getCardData() {
@@ -52,7 +56,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             String exampleSentence = (String)tableModel.getValueAt(i, 0);
             card.exampleSentences.add(exampleSentence);
         }
-        
+
         return card;
     }
     
@@ -110,8 +114,6 @@ public class CardInspectorPanel extends javax.swing.JPanel {
                 addExampleSentenceButtonActionPerformed(evt);
             }
         });
-
-        jComboBox1.setEnabled(false);
 
         jLabel4.setText("categories:");
 
@@ -265,7 +267,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jTable1FocusGained
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        SelectCardCategoryDialog dialog 
+                = new SelectCardCategoryDialog(new javax.swing.JFrame(), true);
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
