@@ -1,0 +1,8 @@
+0	főnevek
+1	igék
+2	melléknevek
+3	határozószavak
+4	számnevek
+5	kérdőszavak
+6	prepozíciók
+7	kifejezések
