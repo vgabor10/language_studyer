@@ -8,6 +8,7 @@ import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
 import dictionary.DictionaryDataContainer;
+import dictionary.StudyStrategyDataHandler;
 import disc_operation_handlers.DictionaryDataLoader;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
@@ -315,8 +316,11 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_exitButtonActionPerformed
 
     private void dictionaryStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryStatisticsButtonActionPerformed
+        StudyStrategyDataHandler studyStrategyDataHandler = new StudyStrategyDataHandler();
+
         DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true); 
-        dialog.setData(dictionaryDataContainer);
+        dialog.setData(dictionaryDataContainer, 
+                studyStrategyDataHandler.cardCategoryRestrictions);
         dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
