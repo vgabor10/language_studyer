@@ -6037,11 +6037,7 @@
 102772	Mein Name ist Charlotte.
 102772	Sein Name steht an der Tür.
 102772	Wie der Name schon andeutet, findet der Musiksommer im Sommer statt.
-102773	Die Ehe ist ein Ausdruck der Verbindlichkeit in einer unverbindlichen Welt.
-102773	Die Ehe wurde noch nicht vollzogen.
 102773	Ehe ich ihn aufhalten konnte, war er verschwunden.
-102773	Sie gehen den Bund der Ehe ein.
-102773	Sie verbrachten eine glückliche Ehe.
 102774	Die Eltern erlauben ihren Kindern, bis um neun draußen zu bleiben.
 102774	Drei mal drei ist neun.
 102774	Eine Schwangerschaft dauert gewöhnlich neun Monate.

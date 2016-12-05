@@ -605,7 +605,7 @@
 100609	e Anwendung	alkalmazás
 100610	e Bewegung	mozgás
 100611	e Eigenschaft	tulajdonság
-100612	verhindern	akadályoz
+100612	verhindern	akadályoz, megakadályoz
 100613	s Interview	interjú
 100614	einladen	meghív
 100615	s Tausend	ezer (fn)
@@ -2715,7 +2715,7 @@
 102770	prüfen	megvizsgál
 102771	e Gestalt	forma, alak
 102772	r Name	név
-102773	ehe	mielőtt
+102773	ehe	mielőtt, amíg
 102774	neun	kilenc
 102775	praktisch	hasznos, praktikus
 102776	e Identität	identitás
@@ -5055,3 +5055,5 @@
 103922	spalten	reped, hasad
 104091	r Flugzeugträger	repülőgéphordozó
 104107	s Gen	gén
+103275	hindern	gátol, akadályoz
+104144	abonnieren	előfizet, bérel
