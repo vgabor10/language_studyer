@@ -350,6 +350,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         studyStrategyDataHandler.numberOfCardsFromTheLeastKnown100 = 4;
         studyStrategyDataHandler.numberOfCardsAmongTheLeastSignificantAr = 2;
         studyStrategyDataHandler.numberOfLatestQuestionedCards = 4;
+        studyStrategyDataHandler.cardCategoryRestrictions.clear();
         
         setStudyStrategyDataToDialog();
     }//GEN-LAST:event_jButton3ActionPerformed

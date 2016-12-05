@@ -11,10 +11,6 @@ import java.text.DecimalFormat;
 import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataContainer;
 
-/**
- *
- * @author varga
- */
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
     public CardContainer allCard;
