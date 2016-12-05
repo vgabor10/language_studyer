@@ -6,3 +6,4 @@
 5	kérdőszavak
 6	prepozíciók
 7	kifejezések
+9	tanulandó_szavak

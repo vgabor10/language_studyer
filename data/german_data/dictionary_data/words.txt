@@ -2995,7 +2995,7 @@
 103054	s Prinzip	elv, alapelv
 103055	r Verband	egyesület, kötés
 103056	e Auffassung	szemlélet, felfogás
-103057	wodurch	amitől
+103057	wodurch	ami által, amitől
 103058	flüssig	folyékony
 103059	r Nachwuchs	új nemzedék
 103060	schalten	kapcsol, bekapcsol
@@ -5037,3 +5037,20 @@
 102001	e Vorhersage	előrejelzés
 102112	r Spion	kém
 102146	deshalb	ezért
+102151	s Referendum	népszavazás
+102179	e Rage	düh
+102551	schwinden	eltűnik, elenyészik
+102750	r Stich	szűrás, ölés
+102756	e Niederlage	vereség
+102904	kühn	merész, vakmerő
+103135	tragisch	tragikus
+103461	eingestehen	bevall, beismer
+103486	r Befürworter	támogató, javasló
+103700	dunkle	gonos, sötét
+103709	e Kalamität	viszontagság, nehéz helyzet
+103754	anstecken	felgyújt, megfertőz
+103826	e Schlappe	vereség
+103835	egal	mindegy
+103862	wittern	szimatol
+103867	s Verdienst	érdem, kereset
+103922	spalten	reped, hasad

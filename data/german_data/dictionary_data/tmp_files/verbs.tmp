@@ -1,0 +1,1293 @@
+100001	reden	beszél
+100002	antworten	felel, válaszol
+100003	baden	fürdik
+100004	binden	köt, megköt
+100005	stellen	állít
+100006	legen	fekszik, lefekszik
+100007	holen	hoz
+100025	treffen	találkozik
+100026	brechen	eltör, eltörik
+100027	sterben	hal, meghal
+100028	vergessen	elfelejt
+100029	nehmen	fog, vesz
+100031	graben	ás
+100032	fangen	megfog, elkap
+100033	lesen	olvas
+100073	hoffen	remél
+100080	wissen	tud, ismer
+100088	wollen	akar
+100103	besuchen	meglátogat
+100107	gefallen	tetszik
+100110	geben	ad
+100119	glauben	hisz
+100127	erzählen	mesél
+100143	zeigen	mutat
+100144	erklären	elmagyaráz
+100145	schließen	zár, becsuk
+100150	anbieten	megkínál, felkínál
+100162	dürfen	szabad (ige)
+100173	gehören	tartozik vkihez
+100176	rufen	hív, kiabál
+100177	fragen	kérdez
+100178	begrüßen	üdvözöl
+100179	putzen	tisztít
+100180	verkaufen	elad
+100191	verdienen	keres (pénzt)
+100197	schmecken	ízlik
+100204	bellen	ugat
+100206	auslösen	okoz, kivált
+100209	gründen	alapít
+100210	ausrufen	kikiált
+100212	erfassen	felvesz, megfog
+100219	verteilen	szétoszt, eloszt
+100227	steigen	emelkedik
+100229	betragen	kitesz, viselkedik
+100241	aufweisen	felmutat
+100244	einnehmen	bevesz, elfoglal
+100246	zwischen	között
+100254	erfolgen	bekövetkezik
+100259	gewinnen	nyer
+100260	bestimmen	meghatároz, megjelöl
+100262	versuchen	megpróbál
+100266	verlieren	veszít, elveszít
+100267	zunehmen	nő (ige)
+100273	r Süden	dél (égtáj)
+100275	bedrohen	veszélyeztet
+100277	fallen	esik
+100280	beeinflussen	befolyásol
+100285	beschäftigen	foglalkoztat
+100296	führen	vezet, tart
+100303	beruhigen	megnyugtat
+100308	streiken	sztrájkol
+100309	eintreten	belép
+100310	hervorrufen	előidéz
+100313	stürzen	zuhan, elesik
+100321	zuvorkommen	megelőz
+100328	zustimmen	belegyezik
+100334	retten	megment
+100338	entlassen	kirúg, elenged
+100340	vollziehen	végrehajt
+100342	beschließen	eldönt, elhatároz
+100348	auslaufen	kifut
+100352	abdanken	lemond
+100356	proklamieren	kinyilatkoztat
+100362	sich begeben	lemond
+100366	erhalten	megőriz, fenntart
+100367	ankreuzen	megjelöl
+100373	aufpassen	vigyáz
+100375	benützen	használ
+100390	beibringen	oktat
+100396	wirken	hatást gyakorol
+100403	eintreffen	megérkezik
+100409	vergangen	múlt (mn)
+100414	kandidieren	jelöl, kandidál
+100417	austreten	kilép
+100422	bekommen	kap
+100425	erwachen	felébred
+100426	erwarten	vár, elvár
+100429	wachsen	nő (ige)
+100430	überdenken	átgondol
+100433	annehmen	feltételez, elfogad
+100434	mitteilen	közöl
+100436	schrumpfen	zsugorodik
+100441	dagegen	viszont
+100444	abheben	levesz
+100446	vergeben	megbocsát
+100449	senken	csökkent
+100456	tauschen	cserél
+100459	produzieren	termel
+100465	reagieren	reagál
+100473	beenden	befelyez
+100485	bauen	épít
+100486	Vereinigten Staaten	Egyesült Államok
+100487	aussehen	kinéz, látszik
+100489	rechnen	számol
+100492	begünstigen	kedvez
+100496	wegen	vmi miatt
+100499	kooperieren	együttműködik
+100500	meinen	gondol
+100501	stecken	betesz, bedug
+100502	zusammen	együtt
+100506	geschehen	történik
+100508	schützen	véd
+100510	vereinbaren	megállapodik
+100514	piksen	megszúr
+100515	empfinden	érez, észlel
+100518	betonen	hangsúlyoz
+100519	entscheiden	eldönt
+100527	weitergehen	folytat
+100528	zitieren	idéz
+100530	entlarven	leleplez
+100535	löschen	töröl
+100541	drohen	fenyeget
+100543	merken	megjelöl, észre vesz
+100544	zumachen	becsuk
+100552	schrecken	ijeszt
+100553	regulieren	szabályoz
+100556	betreten	belép
+100557	reisen	utazik
+100561	gewöhnen	hozzászokik
+100564	aussuchen	választ
+100569	einstellen	alkalmaz, beállít, igazodik
+100572	warnen	figyelmeztet
+100577	bestätigen	igazol
+100585	verlassen	elhagy
+100593	räumen	kiürít
+100596	rollen	gurul
+100597	übersetzen	fordít
+100601	schicken	küld
+100606	schätzen	becsül
+100614	einladen	meghív
+100623	abstimmen	szavaz
+100624	duschen	zuhanyozik
+100632	erlauben	engedélyez, megenged
+100641	überleben	túlél
+100644	vergehen	múlik
+100647	ablehnen	elutasít, megtagad
+100650	unterschätzen	alábecsül
+100652	versenken	elsüllyeszt
+100658	wehen	fúj
+100659	schießen	lő
+100662	wünschen	kíván
+100669	zerstören	lerombol
+100670	messen	mér
+100674	antragen	javasol
+100681	verbrauchen	fogyaszt
+100685	abverlangen	követel
+100687	aufholen	utolér
+100688	erfahren	megtud
+100689	abfangen	elkap
+100691	erzwingen	kikényszerít
+100697	morden	gyilkol
+100699	erschien	megjelenik
+100703	erreichen	elér
+100704	verlegen	áttesz, elhalaszt
+100705	abschrecken	elilyeszt
+100706	teilnehmen	résztvesz
+100718	stattdessen	ehelyett
+100719	errichten	felállít
+100722	verschonen	megkímél
+100724	strömen	árad, ömlik
+100728	bedrängen	szorongat
+100732	zusehen	szemlél
+100734	sicherstellen	biztosít
+100735	verlangen	kér, követel
+100736	lassen	hagy
+100738	folgen	követ
+100741	bedeuten	jelent
+100745	fertigstellen	elkészít
+100748	gelangen	eljut, megérkezik
+100751	ausstatten	felszerel
+100753	melden	közöl
+100755	verüben	elkövet, véghezvisz
+100758	auftauchen	kialakul, kiderül
+100762	aufgehalten	feltartóztat
+100765	packen	csomagol, megragad, megfog
+100769	eingreifen	beavatkozik
+100771	hingegen	viszont
+100772	schwächen	gyengít
+100775	bombardieren	bombáz
+100779	beilegen	mellékel
+100780	werben	reklámoz
+100783	verstärken	erősít
+100786	widersprechen	ellentmond
+100789	durchsetzen	érvényesít
+100793	bewähren	bizonyít, megtart
+100794	mahnen	emlékeztet, buzdít
+100796	entsprechen	megfelel
+100798	ausgewogen	kiegyensúlyozott
+100800	aussprechen	kimond
+100802	festlegen	megállapít, meghatároz
+100809	betreffen	érint
+100815	berichten	beszámol, tudósít
+100817	leisten	nyújt, teljesít
+100818	hervorheben	hangsúlyoz, kiemel
+100820	beantragen	indítványoz
+100829	schmerzen	fáj
+100831	verursachen	okoz
+100837	ankündigen	közöl, bejelent
+100838	anwerben	toboroz
+100839	vorstellen	elképzel
+100840	hinzufügen	hozzátesz
+100842	erhalten	megkap
+100843	vermehren	növel
+100848	besetzen	elfoglal
+100849	anregen	javasol, ösztönöz
+100852	gestatten	engedélyez
+100853	aufnehmen	felvesz, bevesz, befogad
+100854	gedulden	türelemmel van
+100855	verboten	tilos
+100858	bevorrechten	előjogot ad
+100859	oben	fennt
+100870	erteilen	ad, adományoz
+100873	erwägen	megfontol
+100874	schlagen	üt, ver
+100875	nachdenken	gondolkodik, elgondolkodig
+100876	ermöglichen	engedélyez
+100877	besorgen	aggódik
+100883	befürworten	javasol
+100886	vorbereiten	előkészít
+100893	anpacken	megragad
+100894	zermalmen	összezúz
+100895	einrichten	berendez, kialakít
+100901	ansetzen	elkezd, illeszt
+100903	auswirken	kihat
+100905	einstimmen	csatlakozik
+100908	herrschen	uralkodik
+100911	einsetzen	alkalmaz, berak
+100917	scheinen	tűnik, látszik
+100920	eingehen	megérkezik, belép
+100926	einräumen	elismer
+100929	debattieren	vitatkozik
+100939	bezahlen	kifizet
+100947	verkünden	kihírdet
+100948	praktizieren	gyakorol
+100949	bremsen	fékez
+100950	wahren	megóv
+100954	entworfen	megalkot
+100962	investieren	befektet
+100965	buhlen	vetélkedik
+100969	unbestritten	vitathatatlan
+100970	vergleichen	összehasonlít
+100976	entdecken	felfedez
+100978	entfernen	távozik, eltávolít
+100984	einreichen	bead
+100988	eindringen	behatol
+100989	verfolgen	üldöz
+100995	beitragen	hozzájárul
+101001	alarmieren	riaszt
+101002	überraschen	meglep
+101003	ausfallen	kiesik, elmarad
+101009	eintreiben	behajt
+101010	klagen	panaszkodik
+101013	riskieren	kockáztat
+101014	überweisen	átutal
+101015	dementieren	tagad
+101019	laden	megrak, megterhel
+101021	vorrücken	előrenyomul
+101024	unterhalten	fenntart, szórakoztat
+101025	klarkommen	boldogul
+101027	bergen	elrejt, kiment
+101031	entkommen	szökik
+101032	präsentieren	bemutat, prezentál
+101033	erkundigen	érdeklődik
+101036	beschleunigen	gyorsít
+101038	zurücktreten	lemond
+101042	intensivieren	felerősít
+101043	reduzieren	csökkent
+101050	heiraten	házasodik
+101055	treten	lép, rúg, jár
+101058	entlasten	tehermentesít
+101061	sperren	bezár
+101068	überwinden	legyőz
+101072	erfinden	feltalál
+101082	übrigbleiben	megmarad
+101086	umstellen	átalakít, átrendez
+101090	ausschlachten	szétszed
+101092	demontieren	lerombol
+101093	herstellen	gyárt
+101096	balancieren	egyensúlyoz
+101097	erscheinen	látszik
+101100	begleiten	kísér
+101101	kehren	söpör
+101110	explodieren	felrobban
+101112	stammen	származik
+101117	verdampfen	elpárolog
+101119	brennen	ég (ige)
+101126	erben	örököl
+101129	bewerben	megpályázik vmit
+101135	verhaften	letartóztat
+101136	weiterbilden	továbbképez
+101137	Tschechien	Csehország
+101141	konstituieren	alapít
+101146	fußen	alapul
+101152	initiieren	elindít
+101164	betreiben	üzemeltet
+101166	zerfallen	felbomlik
+101174	wählen	választ
+101181	rauchen	dohányzik
+101201	entschuldigen	megbocsát, bocsánatot kér
+101202	vorgehen	eljár
+101220	erhöhen	növel
+101221	voraussagen	előre jelez
+101223	brauchen	igényel, szüksége van vmire
+101227	vorantreiben	elősegít
+101234	ausbilden	kiképez
+101239	nähen	varr
+101259	lohnen	díjaz
+101266	operieren	operál
+101269	stattfinden	megtörténik
+101272	Italien	Olaszország
+101275	registrieren	regsztrál
+101279	organisieren	szervez
+101288	fernsehen	TV-t néz
+101292	motivieren	motivál
+101297	bestellen	rendel
+101301	raten	tanácsol
+101382	kontrollieren	ellenőriz
+101418	entfremden	elidegenít
+101451	singen	énekel
+101452	spielen	játszik
+101508	deklinieren	ragozni
+101519	gelungen	sikerül
+101522	arbeiten	dolgozik
+101538	rasieren	borotválkozik
+101539	frühstücken	reggelizik
+101547	kochen	főz
+101578	lösen	megold
+101579	erledigen	elintézni vmit
+101580	aufräumen	kitakarít
+101626	verdorben	romlott
+101633	backen	süt
+101634	aufkochen	felforral
+101651	angemessen	megfelelő
+101702	zahlen	fizet
+101705	stehen	áll
+101714	einsteigen	beszáll vhová
+101715	aussteigen	kiszáll
+101716	umsteigen	átszáll
+101724	funktionieren	működik
+101726	reparieren	javít, megjavít
+101729	überholen	megelőz
+101741	faulenzen	lustálkodik
+101742	besorgen	ellát, gondoskodik, szerez
+101752	übernachten	éjszakázik
+101755	fliegen	repülrepülés
+101758	übermorgen	holnapután
+101765	buchen	lefoglal
+101776	landen	leszáll
+101812	unentschieden	döntetlen
+101814	trainieren	edz
+101823	bevorzugen	előnyben részesít
+101824	fotografieren	fényképez
+101849	übernehmen	elvállal
+101867	applaudieren	tapsol
+101872	klatschen	tapsol
+101888	einschalten	bekapcsol
+101892	kosten	kerül vmennyibe
+101915	transportieren	szállít
+101916	überspielen	átmásol
+101917	benutzen	használ
+101922	abschicken	elküld
+101950	korrigieren	javít, kijavít
+101963	imponieren	tetszik, imponál
+101970	sparen	spórol
+101978	anprobieren	felpróbál
+101981	eigen	saját
+101996	lügen	hazudik
+101997	reinigen	tisztít
+101998	färben	színez, fest
+102034	frieren	fázik, megfagy
+102035	tauen	olvad
+102037	blitzen	villámlik
+102051	vorkommen	előfordul, látszik
+102052	husten	köhög
+102074	verschreiben	felír
+102090	anzünden	meggyújt
+102093	schmücken	feldíszíteni vmit
+102095	einpacken	becsomagol
+102096	auspacken	kicsomagol
+102103	verschicken	elküld
+102106	schwören	esküszik
+102116	zusammenfassen	összefoglalni
+102123	stationieren	állomásoztat
+102132	töten	megöl
+102143	schaden	károsítani
+102145	vernichten	megsemmisít
+102222	tanzen	táncol
+102224	fischen	halászik
+102228	kratzen	karcol
+102229	ausgehen	szórakozni megy
+102233	beraten	tanácsot ad, megvitat
+102237	wahrnehmen	észlel
+102241	sprechen	beszél
+102243	lernen	tanul
+102245	verschieden	különböző
+102246	beginnen	elkezd, elkezdődik
+102247	schreiben	ír
+102250	sitzen	ül
+102256	lieben	szeret
+102258	ramponieren	tönkretesz, megkárosít
+102263	brüsten	dicsekszik
+102264	eskalieren	kiterjed, erősödik
+102268	sagen	mond
+102269	umrüsten	átalakít
+102270	kauen	rág
+102276	finden	talál
+102278	abbauen	lebont
+102279	abbilden	másol, ábrázol
+102280	abbrechen	abbahagy
+102281	abdecken	betakar, befed
+102283	abhängen	függ vmitől
+102288	festhalten	visszatart
+102289	festnehmen	elfog
+102291	festsetzen	megállapít
+102292	feststellen	megállapít
+102296	formen	alakít
+102297	formulieren	fogalmaz
+102299	fortsetzen	folytat
+102302	freigeben	felszabadít
+102305	fressen	zabál, állat eszik
+102306	freuen	örül
+102313	fügen	illesz, hozzátesz
+102314	fühlen	érez
+102315	füllen	tölt
+102317	fürchten	fél (ige)
+102319	garantieren	garantál
+102321	geboren	születik
+102322	gefährden	veszélyeztet
+102324	gefangen	bebörtönzött
+102326	gegen	ellen
+102330	gehen	megy
+102335	gelingen	sikerül
+102339	genießen	élvez
+102340	genügen	eleget tesz vminek
+102344	geraten	kerül, esik, fejlődik
+102349	gestalten	formál, alakít
+102350	gestehen	bevall, elismer
+102353	gewähren	ad, megad
+102354	gewährleisten	garantál
+102357	gießen	önt, tölt
+102359	gleichen	simít, kiegyenlít
+102362	gleiten	csúszik
+102365	golden	aranyszínű
+102368	greifen	megragad, megfog
+102377	grüßen	üdvözöl
+102378	gucken	néz, kukucskál
+102381	haften	szavatol, ragad
+102382	haften	tapad
+102385	halten	tart
+102387	hängen	lóg, függ
+102389	hassen	gyűlöl
+102390	heben	emel
+102394	heißen	hívják vhogyan
+102395	helfen	segít
+102397	herausgeben	kiad
+102398	herausfinden	rájön
+102399	herausnehmen	kivesz
+102401	herausstellen	kiemel vmit 
+102402	herkommen	ide jön, származik
+102405	hervorgehen	származik, keletkezik
+102415	hinausgehen	kimegy
+102418	hinfahren	odautazik
+102419	hingehen	odamegy
+102420	hinnehmen	elfogad
+102422	hinten	hátul
+102425	hinterlassen	hátrahagy
+102429	hinweisen	rámutat
+102434	hocken	guggol
+102436	hören	hall
+102443	identifizieren	azonosít
+102444	fliehen	menekül
+102446	fließen	folyik
+102448	erschießen	lelő
+102449	erschließen	kinyit
+102450	erschöpfen	kimerül
+102451	erschrecken	megijed
+102452	erschweren	megnehezít
+102453	ersetzen	pótol
+102454	ersparen	megtakarít
+102455	erstaunen	csodálkozik
+102457	erstellen	előállít, megalkot
+102459	erstrecken	terjed
+102461	ertragen	elvisel
+102463	erwähnen	megemlít
+102464	erwecken	felébreszt
+102465	erweisen	bebizonyít
+102467	erwerben	megszerez
+102469	erwischen	elkap
+102470	erzeugen	termel
+102471	erziehen	nevel
+102472	erzielen	elér
+102498	essen	eszik
+102518	etablieren	alapít
+102597	existieren	létezik
+102618	fahren	vezet, utazik
+102622	fassen	megfog, befogad
+102623	faszinieren	lenyűgöz
+102625	fehlen	hiányzik
+102626	fehlen	elhibáz
+102633	enden	befelyez, végződik
+102636	engagieren	alkalmaz
+102641	entfalten	kibont
+102642	entgegenkommen	elé jön, megfelel
+102643	entgehen	elkerül, elmenekül
+102644	enthalten	tartalmaz
+102664	empfangen	fogad
+102665	empfehlen	ajánl
+102668	kritisieren	krizizál
+102669	kündigen	kirúg, felmond
+102670	küssen	csókol
+102672	lachen	nevet
+102677	laufen	fut
+102678	lauschen	hallgat, fülel
+102680	leben	él
+102683	lehnen	támaszkodik
+102684	lehren	tanít
+102685	leiten	vezet, irányít
+102688	mahnen	buzdít, figyelmeztet
+102689	malen	fest
+102735	einverstanden	egyetért
+102737	einziehen	beköltözik
+102742	eintragen	bejegyez
+102753	einsehen	betekint
+102754	einschränken	korlátoz
+102755	einschließen	bezár
+102757	einschlafen	elalszik
+102758	einschätzen	felbecsül
+102759	einrichten	berendez, elrendez
+102760	weinen	sír (ige)
+102770	prüfen	megvizsgál
+102779	protestieren	tiltakozik
+102782	planen	tervez
+102783	einlegen	berak
+102796	einführen	behoz, bevezet
+102802	nennen	nevez
+102803	öffnen	nyit
+102804	passen	passzol, illik
+102810	notieren	feljegyez
+102812	einigermaßen	valamelyest
+102817	probieren	probál
+102818	plädieren	véd
+102819	warten	vár (ig)
+102822	einigen	egyesít
+102832	eilen	siet
+102839	eignen	illik
+102842	passieren	történik
+102845	ordnen	rendez
+102852	wagen	kockáztat
+102869	einlassen	belemegy, beilleszt
+102880	einleiten	bevezet, megkezd
+102887	pressen	présel, összeszorít
+102888	orientieren	tájol
+102899	finanzieren	finanszíroz
+102903	einhalten	betart, teljesít
+102912	waschen	mos
+102918	prägen	alkot
+102920	einbauen	beszerel
+102922	ableiten	elterel
+102932	rauschen	zúg
+102937	nutzen	használ
+102939	profitieren	profitál
+102949	neigen	meghajol
+102951	einfallen	összeomlik
+102952	einkaufen	bevásárol
+102959	vorziehen	előnyben részesít, preferál
+102966	einbeziehen	tartalmaz
+102968	pflegen	gondoz
+102981	qualifizieren	minősít
+102983	offen	nyitva
+102991	unterstreichen	aláhúz, hangsúlyoz
+102992	aufbewahren	eltesz, megőriz
+102997	aktivieren	aktivál
+102998	üben	gyakorol
+103000	vereinfachen	egyszerűsít
+103001	senden	küld
+103002	schieben	tol
+103003	zuhören	hallgat, odafigyel
+103009	anerkennen	elismer
+103010	vertreten	képvisel
+103014	klopfen	kopog, üt
+103015	vorschlagen	javasol, indítványoz
+103016	abgeben	lead, hiányzik
+103023	zusammenleben	együtt él
+103024	ausschließen	kizár, kinyit
+103029	abweichen	eltér, különbözik
+103030	auffallen	feltűnik
+103041	winken	int, integet
+103043	ziehen	húz
+103045	übersehen	átnéz, áttekint
+103046	ablegen	lerak, letesz
+103050	rühren	kever, elmozdít
+103060	schalten	kapcsol, bekapcsol
+103062	überschreiten	átlép, túllép
+103063	erlangen	megszerez
+103068	aufspringen	felugrik
+103070	absetzen	elad, elhelyez
+103071	mögen	szeret
+103073	verdrängen	előz, kiszorít
+103078	rutschen	csúszik
+103087	dastehen	ott áll
+103088	mitmachen	csatlakozik, részt vesz
+103091	erforschen	kutat
+103095	kommentieren	kommentál
+103100	streichen	simít, kihúz, kitöröl
+103101	zurückkommen	visszatér
+103102	bedenken	megfontol
+103105	vertrauen	bízik, megbízik
+103108	zurückgreifen	visszanyúl
+103109	erhoffen	remél
+103112	zusammenarbeiten	együttműködik
+103113	aufführen	előad
+103116	untersuchen	kivizsgál
+103118	bevorstehen	közel van, küszöbön áll
+103120	verabschieden	elbocsát, elbúcsúzik
+103126	zugrundelegen	alapul vesz
+103132	verbergen	elrejt
+103144	kriegen	háborúzik, megfog, elfog
+103153	wiedersehen	viszontlát
+103154	anlegen	befektet, kiköt
+103156	blicken	pillant, tekint
+103159	wenden	elfordít
+103172	aufbrechen	elindul, feltör
+103177	studieren	tanul
+103183	aufwachsen	felnő
+103184	dienen	szolgál
+103185	bringen	hoz
+103197	streiten	veszekszik
+103209	wegnehmen	elvesz
+103212	vorlegen	bemutat, terjeszt
+103215	anhören	meghallgat
+103228	angewiesen	vmire rászoruló
+103229	auftragen	felrak, megbíz
+103233	auftreten	megjelenik, feltűnik
+103235	bezeichnen	jelez, megjelöl, nevez
+103237	verfallen	hanyatlik, lejár
+103239	besitzen	birtokol
+103247	bleiben	marad
+103249	verbrennen	eléget
+103253	benötigen	szükséges, kell (ig)
+103265	verknüpfen	összekapcsol, összefűz
+103268	aufsuchen	felkeres, meglátogat
+103269	ausgeben	kiad, kibocsát
+103274	weggehen	elmegy, eltávozik
+103276	ausbauen	kiterjeszt, kibővít
+103279	aufstellen	feltesz, felállít
+103281	decken	befed
+103283	übertragen	átvisz, közvetít
+103286	setzen	tesz, helyez
+103291	eingehen	vállal, bemegy
+103292	realisieren	megvalósít
+103297	seufzen	sóhajt
+103299	vorliegen	fennáll, előtte van
+103300	akzeptieren	elfogad
+103301	auswerten	kiértékel, elbírál
+103302	zuführen	odavezet
+103311	übergehen	mellőz, behoz
+103316	begreifen	megért, felfog
+103319	richten	ítél, igazít
+103320	verraten	elárul
+103323	verzeichnen	feljegyez
+103327	stützen	támogat
+103328	spionieren	kémkedik
+103333	verstecken	elrejt
+103337	ausbrechen	kitör
+103338	aufhören	abbahagy
+103339	ausnutzen	kihasznál
+103340	verweisen	utal
+103341	unterscheiden	megkülönböztet
+103342	bitten	kér
+103349	anziehen	felvesz, felöltöztet
+103351	sehen	néz, lát
+103356	verbreiten	terjeszt
+103360	erleben	átél, megél
+103362	draußen	kint
+103368	aufklären	felderít, felvilágosít
+103371	beabsichtigen	szándékozik
+103372	schreiten	lép, lépked
+103378	differenzieren	megkülönböztet
+103380	schaffen	teremt
+103381	verschließen	elzár, bezár
+103383	regieren	vezet, kormányoz
+103385	zurückführen	származtat, visszavezet
+103387	befürchten	fél (ige)
+103390	zusammenkommen	összegyűlik
+103391	durchgehen	keresztülmegy
+103400	bemerken	megjegyez, megemlít, megjelöl
+103401	ausgleichen	kiegyenlít, ellensúlyoz
+103406	untergehen	lemegy, tönkremegy
+103410	beantworten	válaszol
+103413	auflegen	kiad, feltesz
+103419	schweben	lebeg
+103421	anzeigen	közöl, bejelent
+103424	telefonieren	telefonál
+103427	zulassen	odaenged, megenged
+103429	blühen	virágzik
+103430	erbringen	felhoz, előhoz
+103432	berechtigen	feljogosít
+103433	eröffnen	megnyit
+103435	anstellen	alkalmaz, beállít
+103441	reizen	izgat, ingerel
+103448	aushalten	elvisel, kibír
+103451	ankommen	megérkezik
+103455	strahlen	ragyog, sugárzik
+103479	schimpfen	szid
+103480	beteiligen	részt vesz
+103482	beklagen	panaszkodik, sajnál
+103487	aufmachen	kinyit
+103495	verschaffen	beszerez, biztosít
+103497	trinken	iszik
+103499	bedienen	kezel, kiszolgál
+103500	anvertrauen	rábíz
+103502	anklagen	vádol
+103507	aufschlagen	felnyit, feltör
+103516	veranlassen	rávesz, elintéz
+103522	konzipieren	kigondol, kidolgoz
+103529	anbringen	elhelyez
+103531	aufbauen	felépít
+103533	beweisen	igazol, bizonyít
+103536	ansprechen	megszólít
+103541	erlernen	megtanul
+103554	drehen	forog, forgat
+103555	interpretieren	előad, értelmez
+103557	anschließen	csatol, mellékel
+103558	anmerken	megjelöl, megjegyzést tesz
+103570	verwirren	összezavar
+103571	zurückgehen	visszamegy, hátrál
+103572	befestigen	rőgzít, felszerel
+103575	beeinträchtigen	befolyásol, korlátoz
+103576	anhalten	megáll, megmarad
+103578	schlafen	alszik
+103581	zuwenden	fordul vmi felé
+103595	begrenzen	korlátoz
+103596	beurteilen	megítél, elbírál
+103600	klingen	cseng, kong
+103601	schauen	tekint, néz
+103603	bekämpfen	harcol, szembeszáll
+103604	betrachten	figyel, szemlél
+103605	durchziehen	végigcsinál
+103609	infizieren	megfertőz
+103610	bedürfen	rászorul
+103611	ausbreiten	kiterít, elterjeszt
+103612	auswählen	kiválaszt
+103613	verarbeiten	kidolgoz, feldolgoz
+103616	rechtfertigen	igazol, indokol
+103620	unterstellen	alávet, alárendel
+103621	befriedigen	kielégít, megelégszik
+103623	ansteigen	emelkedik
+103626	vorhanden	létező, meglévő
+103627	benennen	elnevez
+103635	verhalten	viselkedik, viszonyul
+103637	beleben	lelkesít, élénkít
+103638	lenken	vezet, irányít
+103640	bestreiten	vitat
+103641	aufsetzen	felrak
+103643	befreien	kiszabadít, felszabadít
+103646	bewirken	okoz
+103651	erregen	ébreszt
+103656	klappen	sikerül, lecsap
+103657	zwingen	kényszerít
+103659	zucken	von, rángatózik
+103660	bewegen	indít, motivál
+103665	drücken	tol, nyom
+103667	loslassen	elenged
+103668	ausrichten	elrendez, sorbaáll, kiegyenesít
+103671	umstritten	vitás
+103672	achten	figyel, becsül
+103673	installieren	felszerel, beszerel
+103674	integrieren	integrál, egyesít
+103675	nachfolgen	követ, következik
+103676	überlassen	átad, rábíz
+103677	zeichnen	rajzol
+103679	begründen	megalapoz, igazol
+103686	beachten	vigyáz, törődik
+103687	überwachen	felügyel, megfigyel
+103695	ausführen	végrehajt
+103696	sollen	kell (belső kényszer)
+103699	schwingen	leng
+103705	entfallen	elesik, kiesik
+103706	belegen	igazol, befed
+103711	zurückgeben	visszad
+103712	angucken	megnéz
+103714	anführen	vezet, idéz
+103715	anschauen	ránéz, megnéz
+103717	beschreiben	leír, jellemez
+103719	verschwinden	eltűnik
+103720	anordnen	rendez, elrendez
+103722	atmen	lélegzik
+103725	benehmen	viselkedik
+103730	mitnehmen	elvisz
+103732	streben	törekszik
+103735	wecken	felébresz
+103736	aufheben	felemel, eltesz
+103737	vermeiden	elkerül
+103738	absolvieren	elvégez, abszolvál
+103741	einholen	elér, megszerez
+103743	demonstrieren	demonstrál, bemutat
+103744	vertreiben	elad, elűz
+103747	erarbeiten	kidolgoz
+103753	darstellen	ábrázol, vázol
+103757	zählen	számol
+103764	abschalten	lekapcsol
+103767	dringen	behatol, áthatol
+103768	bestehen	létezik, kibír, helytáll, áll vmiből
+103769	mitbringen	magával hoz
+103770	kaufen	vásárol
+103773	aufzeigen	fölmutat
+103775	erheben	felemel
+103776	charakterisieren	jellemez
+103781	schleppen	húz, cipel
+103788	dominieren	dominál
+103789	vorübergehen	múlik
+103795	spazieren	sétál
+103796	ausweisen	igazolja magát, kiutasít
+103797	überziehen	bevon, túlterhel
+103801	flüchten	szökik, menekül
+103802	bewältigen	legyőz
+103804	versehen	teljesít, ellát
+103809	zutreffen	igaznak bizonyul
+103813	verlaufen	megtörténik, eltéved
+103815	zurückziehen	visszavonul
+103816	ausfüllen	kitölt
+103817	basieren	alapul vmin
+103818	verbringen	eltölt (időt)
+103833	abzeichnen	lerajzol
+103836	bewerten	értékel, elbírál
+103842	ruhen	pihen
+103845	willkommen	üdvözöl
+103851	verwenden	használ, felhasznál, alkalmaz
+103853	danken	köszön, megköszön
+103858	aufschreiben	felír
+103859	verwirklichen	megvalósít
+103861	kennen	ismer
+103866	reichen	elér
+103869	testen	tesztel
+103875	voraussetzen	feltételez
+103884	konzentrieren	koncentrál, összpontosít
+103887	strecken	kinyújt, kiterjeszt
+103890	versterben	meghal, elhuny
+103892	entspannen	pihen
+103896	reiten	lovagol
+103897	begegnen	találkozik, történik, szembeszáll vmivel
+103900	unterbringen	elszállásol, elhelyez
+103903	loswerden	megszabadul vmitől
+103908	schmelzen	olvad, megolvaszt
+103909	abschließen	bezár, befelyez
+103910	vorbeigehen	elmegy, elmúlik
+103915	anmelden	jelentkezik, bejelentkezik
+103917	abnehmen	fogy, csökken
+103918	spezialisieren	specializálódik
+103925	zuordnen	sorol, hozzárendel
+103926	suchen	keres
+103927	bieten	nyújt, kínál
+103928	beschränken	korlátoz, megszorít
+103945	zusagen	megígér
+103948	ergänzen	pótol, kiegészít
+103952	vergeben	odaítél
+103959	ausüben	gyakorol, folytat
+103960	denken	gondol
+103962	sich wehren	védekezik
+103967	belasten	terhel, megterhel
+103968	resultieren	eredményez
+103970	austauschen	kicserél
+103974	inzwischen	közben, időközben
+103980	zufrieden	elégedett
+103982	ansonsten	különben, egyébként
+103985	vertiefen	mélyít
+103986	biegen	hajlít
+103993	ausstellen	kiállít, kitölt
+103996	ergreifen	megfog, megragad
+103998	beschädigen	megrongál, károsít
+103999	zurückkehren	visszatér
+104003	innen	belül
+104004	bearbeiten	kidolgoz, feldolgoz
+104005	verleihen	kölcsönad, adományoz
+104006	befragen	megkérdez
+104007	riechen	szagol
+104012	anfangen	elkezd, elkezdődik
+104013	beziehen	beszerez, bevon
+104015	verpflichten	kötelez, szerződtet
+104018	angeben	megad
+104019	spüren	érzékel
+104023	tragen	hord, visel
+104025	unterdrücken	elnyom
+104028	beten	imádkozik
+104033	verurteilen	elítél
+104034	unterrichten	tanít, oktat
+104035	teilen	oszt, megoszt, feloszt
+104038	erkennen	elismer, felismer
+104039	auskommen	boldogul, gazdálkodik
+104042	befassen	foglalkozik vmivel
+104044	angreifen	megtámad
+104045	vorangehen	előremegy, megelőz
+104047	vermissen	nélkülöz, hiányol
+104050	verdeutlichen	megvilágít, megmagyaráz
+104052	trennen	szétválaszt, felbont
+104059	kleben	ragad, ragaszt
+104060	kombinieren	kombinál
+104064	markieren	megjelöl
+104070	deuten	mutat, magyaráz, értelmez
+104074	auflösen	felold, megold
+104077	absehen	előrelát
+104078	abholen	elhoz, elvisz
+104080	bedanken	megköszön
+104081	berühren	megérint
+104082	kommen	jön
+104087	unterbrechen	megszakít
+104095	nachgehen	követ, utánajár
+104096	nachweisen	igazol, kimutat
+104098	abstellen	leállít, megszüntet
+104099	zusammenstellen	összeállít
+104102	zugunsten	vkinek a javára
+104104	sich erholen	kipiheni magát
+104105	reißen	elszakít, letép
+104106	schneiden	vág
+104112	sich befinden	vmilyennek talál, vhov van
+104113	vermögen	képes vmire, megtehet vmit
+104114	vernehmen	megtud, kihallgat
+104115	ausreichen	elég (ige)
+104117	abwenden	elfordít
+104120	unterliegen	veszít, vereséget szenved
+104121	ergeben	eredményez
+104122	sich ergeben	megadja magát
+104125	vorwerfen	megvádol, felró
+104128	beeindrucken	benyomást kelt
+104134	verschärfen	fokoz, kiélez
+104137	zielen	céloz
+104143	sich schämen	szégyelli magát
+104146	klären	tisztít, tisztáz
+104147	unterdessen	közben
+104149	wiederholen	ismétel
+104151	entziehen	visszavon, megvon
+104159	überprüfen	átvizsgál
+104160	zulegen	beszerez, növel
+104162	träumen	álmodik
+104163	vortragen	előad
+104171	schweigen	csendben van, hallgat
+104172	unterschreiben	aláír
+104174	sich bemühen	igyekszik, fáradozik
+104177	aufrufen	felhív, felszólít
+104189	loben	dícsér
+104191	analysieren	elemez
+104199	veranstalten	rendez, megrendez
+104206	versetzen	áthelyez
+104208	angehören	hozzátartozik
+104211	bohren	fúr
+104217	bilden	alkot, művel
+104219	drüben	odaát
+104220	springen	ugrik
+104223	diskutieren	megvitat, megbeszél
+104224	definieren	definiál
+104226	stimmen	szavaz
+104232	mitten	közepén
+104234	trauen	bízik
+104237	lauten	hangzik
+104238	vorschreiben	előír, megszab
+104240	ausschalten	kikapcsol
+104241	ausprobieren	kipróbál
+104242	vorhaben	tervez
+104243	verkehren	eljár, érintkezik
+104249	durchführen	elvégez, végrehajt
+104252	aufreißen	feltép, felszakít
+104254	umdrehen	elfordít, megfordít
+104255	auslegen	kiad, értelmez
+104256	dulden	eltűr, elvisel
+104259	vermuten	gyanít, sejt
+104262	zukommen	eljut, odaérkezik
+104266	begehen	elkövet
+104268	ausnehmen	meglát, felismer
+104269	werfen	dob, hajít, vet
+104270	täuschen	becsap, cselez
+104272	beauftragen	megbíz vkit vmivel
+104273	aufstehen	felkel
+104274	stoppen	megáll
+104278	schreien	kiabál
+104281	sich entschließen	elhatározza magát
+104282	beseitigen	eltávolít, megsemmisít
+104286	verbieten	tilt, megtilt
+104308	isolieren	elszigetel, izolál
+104310	verzichten	felad, lemond
+104311	versorgen	ellát, gondoskodik
+104317	verschieben	elhalaszt, eltol
+104318	bedecken	befed, beborít
+104323	fixieren	rögzít
+104324	verteidigen	véd
+104325	trocken	száraz
+104326	wohnen	lakik
+104328	anrufen	felhív
+104331	trösten	vigasztal
+104332	verletzen	megsebez, megsért
+104335	wiegen	nyom vmennyit
+104336	behaupten	állít, kijelent
+104344	übertreiben	túloz, nagyít
+104348	bewahren	megóv, megőriz
+104350	andeuten	sejtet, céloz
+104354	erfreuen	örül
+104355	mischen	kever
+104360	kriechen	mászik, kúszik
+104361	überlegen	gondolkodik, megfontol vmit
+104365	stehlen	lop
+104369	bedingen	okoz, feltételez
+104370	zusammenhängen	összefügg
+104371	vorlesen	felolvas
+104373	überzeugen	meggyőz, rábeszél
+104375	entstehen	keletkezik, létrejön
+104379	vollkommen	tökéletes, teljes
+104380	locken	vonz, csábít
+104384	zusammensetzen	összeállít
+104387	verbleiben	megmarad
+104390	weitergeben	továbbad, továbbít
+104395	bereitstellen	elkészít
+104396	starren	bámul
+104398	scheiden	elválik, szétválaszt
+104401	entwerfen	eltervez, vázlatot készít
+104406	vorbeugen	megelőz
+104413	aufkommen	felnő, felemelkedik
+104414	sich verlieben	szerelmes lesz
+104415	aufregen	felizgat
+104418	aufziehen	felnevel
+104419	ablenken	más irányba terel, figyelmét elvonja
+104423	bereiten	elkészít, okoz
+104427	anrichten	elkövet
+104429	versagen	megbukik, kudarcot vall
+104433	zurückweisen	elutasít, visszautasít
+104435	treiben	űz, hajt
+104436	schenken	ajándékoz
+104439	ausziehen	kivonul, levet
+104441	übereinstimmen	egyezik, összhangban van
+104442	trocknen	szárít, felszárad
+104443	beruhen	alapul, alapszik, nyugszik
+104448	anstehen	fennáll, sorban áll
+104449	repräsentieren	képvisel, reprezentál
+104456	verbinden	összeköt, összekapcsol
+104457	abhalten	visszatart
+104459	meinetwegen	tőlem, miattam
+104461	erleiden	szenved, elszenved
+104464	versprechen	megígér
+104468	unterstützen	támogat, alátámaszt
+104469	aufsteigen	felszáll, felemelkedik
+104470	spannen	kifeszít, megfeszít
+104474	weitermachen	folytat
+104476	umfassen	tartalmaz, magába foglal
+104477	zurückhalten	visszafog, visszatart
+104482	umsetzen	áthelyez, felvesz
+104483	enttäuschen	csalódást okoz
+104484	beobachten	megfigyel, észlel
+104494	umbringen	megöl
+104497	liegen	fekszik
+104498	zerreißen	széttép
+104499	ausdehnen	kitágít, kiterjeszt
+104501	beschaffen	megszerez, beszerez
+104504	zurücklegen	visszatesz
+104510	rücken	mozdul, költözik
+104515	konfrontieren	szembeszáll
+104518	veröffentlichen	publikál, közzétesz
+104519	vorherrschen	túlsúlyban van, uralkodik
+104520	ansehen	ránéz, megnéz
+104521	sorgen	aggódik, gondoskodik
+104522	antreten	elindul, megkezd
+104523	unternehmen	vállal, vállalkozik
+104525	schwimmen	úszik
+104527	leiden	szenved
+104531	berücksichtigen	figyelembe vesz
+104533	zugeben	bevall, elismer
+104535	setzen	leül, helyet foglal
+104538	interessieren	érdekel (ig)
+104548	anfallen	megtámad
+104549	vereinen	egyesít
+104553	schleichen	mászik, oson, lopakodik
+104558	behalten	megtart
+104562	tauchen	búvárkodik, merül
+104563	ablösen	vált, felvált
+104565	verdanken	köszön
+104570	besprechen	megvitat, megbeszél
+104575	berufen	kinevez
+104576	kämpfen	harcol
+104580	zustehen	jár vkinek
+104583	stoßen	lök, taszít
+104584	berechnen	kiszámol
+104585	starten	indul
+104586	kennzeichnen	jellemez, megjelöl
+104587	ausweichen	elkerül, kikerül
+104595	aufgehen	felkel, felnyit
+104598	aufwachen	felébred
+104599	beherrschen	tud, ural, uralkodik
+104602	rennen	fut, rohan
+104604	vernachlässigen	elhanyagol
+104609	stören	zavar (ig)
+104610	aufrichten	felállít, felemel
+104612	bescheiden	szerény
+104614	abwarten	kivár
+104615	beinhalten	tartalmaz
+104618	aufhalten	meggátol, feltartóztat
+104619	aufbringen	előteremt, felhajt
+104620	vereinigen	egyesít
+104626	abreißen	letép, félbeszakad
+104627	erfüllen	teljesít, véghezvisz
+104629	vorgeben	tettet, színlel
+104631	sich abspielen	lejátszódik, végbemegy
+104632	anwenden	alkalmaz, felhasznál
+104641	stärken	erősít
+104642	sozusagen	úgymond, úgyszólván
+104644	verfügen	elrendel, intézkedik
+104648	überstehen	kiáll, elszenved, túlél
+104649	irren	téved
+104651	beugen	hajlít
+104657	verstehen	ért, megért
+104662	umarmen	megölel
+104665	ausdrücken	kifejez
+104668	betreuen	gondoz, gondoskodik
+104670	servieren	felszolgál
+104671	übergeben	átad
+104672	anstreben	törekszik, vágyakozik
+104674	agieren	cselekszik, működik
+104676	ahnen	gyanít, sejt
+104678	aufgeben	felad
+104679	abziehen	levon, visszavon
+104682	verpassen	lekésik, elmulaszt
+104683	jagen	vadászik
+104684	leuchten	világít
+104688	vorsehen	tervbe vesz, előre lát
+104689	verfassen	fogalmaz, megfogalmaz
+104690	ausmachen	kikapcsol, megegyez, kitesz
+104693	ablaufen	lejár, elmúlik
+104694	dokumentieren	dokumentál
+104697	regnen	esik (eső)
+104702	bisschen	kissé
+104705	braten	süt, megsüt
+104707	informieren	informál, tájékoztat
+104720	entnehmen	kivesz, merít
+104721	erlassen	kiad, megenged
+104727	anpassen	igazít, hozzáilleszt
+104733	inszenieren	rendez
+104736	reflektieren	visszaver, visszatükröz
+104737	umgeben	körülvesz
+104738	sich vornehmen	elhatározza magát
+104739	losgehen	indul, elsül
+104742	strukturieren	szerkeszt, strukturál
+104747	widmen	vminek szentel, ráfordít
+104748	weisen	mutat, utasít
+104763	befehlen	parancsol
+104765	beißen	harap
+104768	betrügen	becsap
+104774	blasen	fújni
+104783	einbiegen	bekanyarodik
+104790	erlöschen	elalszik a tűz
+104807	gelten	érvényes (ige)
+104808	genesen	gyógyul
+104815	haben	birtokol vmit
+104824	können	tud
+104831	leihen	kölcsönöz
+104833	meiden	kerül vkit/vmit
+104835	müssen	kell (külső kényszer)
+104861	sinken	süllyed
+104867	stechen	megcsíp
+104871	stinken	bűzlik
+104983	schien	tűnik, látszik (Präterium)
+105032	h. angeboten	megkínál, felkínál (Perfekt)
+105033	h. angerufen	felhív telefonon (Perfekt)
+105034	h. angefangen	elkezd, elkezdődik (Perfekt)
+105035	i. angekommen	megérkezik (Perfekt)
+105036	h. angezogen	felöltöztet (Perfekt)
+105037	i. aufgestanden	felkel (Perfekt)
+105038	i. ausgegangen	szórakozni megy (Perfekt)
+105039	i. ausgestiegen	kiszáll (Perfekt)
+105040	h. gebacken	süt (húst) (Perfekt)
+105041	h. befohlen	parancsol (Perfekt)
+105042	h. begonnen	elkezd, elkezdődik (Perfekt)
+105043	h. gebissen	harap (Perfekt)
+105044	h. bekommen	kap (Perfekt)
+105045	h. verborgen	elrejt, kiment (Perfekt)
+105046	h. betrogen	becsap (Perfekt)
+105047	h. bewogen	indít, motivál (Perfekt)
+105048	h. gebogen	hajlít (Perfekt)
+105049	h. geboten	nyújt, kínál (Perfekt)
+105050	h. gebunden	köt, megköt (Perfekt)
+105051	h. gebeten	kér (Perfekt)
+105052	h. geblasen	fújni (Perfekt)
+105053	i. geblieben	marad (Perfekt)
+105055	h. gebrochen	eltör, eltörik (Perfekt)
+105059	i. gedrungen	behatol, áthatol (Perfekt)
+105061	i. eingebogen	bekanyarodik (Perfekt)
+105062	h. eingeladen	meghív (Perfekt)
+105063	i. eingeschlafen	elalszik (Perfekt)
+105064	i. eingestiegen	beszáll vhová (Perfekt)
+105065	h. empfangen	fogad (Perfekt)
+105066	h. empfohlen	ajánl (Perfekt)
+105067	h. empfunden	érez, észlel (Perfekt)
+105068	i. erloschen	elalszik a tűz (Perfekt)
+105069	i. erschrocken	megijed (Perfekt)
+105070	h. gegessen	eszik (Perfekt)
+105071	h. ferngesehen	TV-t néz (Perfekt)
+105072	i. gefahren	vezet, utazik (Perfekt)
+105074	i. gefallen	esik (Perfekt)
+105075	h. gefangen	megfog, elkap (Perfekt)
+105076	h. gefunden	talál (Perfekt)
+105077	i. geflogen	repül (Perfekt)
+105078	i. geflohen	menekül (Perfekt)
+105079	i. geflossen	folyik (Perfekt)
+105080	h. gefressen	zabál, állat eszik (Perfekt)
+105081	i. gefroren	megfagy (Perfekt)
+105082	h. gegeben	ad (Perfekt)
+105083	i. gegangen	megy (Perfekt)
+105084	i. gelungen	sikerül (Perfekt)
+105085	h. gegolten	érvényes (Perfekt)
+105086	i. genesen	gyógyul (Perfekt)
+105087	h. genossen	élvez (Perfekt)
+105088	i. geschehen	történik (Perfekt)
+105089	h. gewonnen	nyer (Perfekt)
+105090	h. gegossen	önt, tölt (Perfekt)
+105091	h. gegraben	ás (Perfekt)
+105092	h. gegriffen	megragad, megfog (Perfekt)
+105094	h. gehalten	tart (Perfekt)
+105095	h. gehangen	lóg, függ (Perfekt)
+105096	h. gehoben	emel (Perfekt)
+105097	h. geheißen	hívják vhogyan (Perfekt)
+105098	h. geholfen	segít (Perfekt)
+105100	h. geklungen	cseng, kong (Perfekt)
+105101	i. gekommen	jön (Perfekt)
+105103	h. geladen	megrak, megterhel (Perfekt)
+105104	h. gelesen	olvas (Perfekt)
+105105	h. gelegen	fekszik (Perfekt)
+105106	h. gelassen	hagy (Perfekt)
+105107	i. gelaufen	fut (Perfekt)
+105108	h. gelitten	szenved (Perfekt)
+105109	h. geliehen	kölcsönöz (Perfekt)
+105110	h. gelogen	hazudik (Perfekt)
+105111	h. gemieden	kerül vkit/vmit (Perfekt)
+105112	h. gemessen	mér (Perfekt)
+105115	h. genommen	vesz (Perfekt)
+105117	h. geraten	tanácsol (Perfekt)
+105118	i. geritten	lovagol (Perfekt)
+105120	h. gerufen	hív, kiabál (Perfekt)
+105121	h. geschaffen	teremt (Perfekt)
+105122	h. geschienen	tűnik, látszik (Perfekt)
+105123	h. geschoben	tol (Perfekt)
+105124	h. geschossen	lő (Perfekt)
+105125	h. geschlafen	alszik (Perfekt)
+105126	h. geschlagen	üt, ver (Perfekt)
+105127	h. geschlossen	zár (Perfekt)
+105128	i. geschmolzen	olvad (Perfekt)
+105129	h. geschnitten	vág (Perfekt)
+105130	h. geschrieben	ír (Perfekt)
+105131	h. geschrien	kiabál (Perfekt)
+105132	i. geschritten	lép, lépked (Perfekt)
+105133	h. geschwiegen	hallgat (Perfekt)
+105134	i. geschwommen	úszik (Perfekt)
+105135	h. geschworen	esküszik (Perfekt)
+105136	h. gesehen	lát, néz (Perfekt)
+105137	i. gewesen	van (Perfekt)
+105138	h. gesungen	énekel (Perfekt)
+105139	i. gesunken	süllyed (Perfekt)
+105140	h. gesessen	ül (Perfekt)
+105142	h. gesprochen	beszél (Perfekt)
+105143	h. gestanden	áll (Perfekt)
+105144	i. gesprungen	ugrik (Perfekt)
+105145	h. gestochen	megcsíp (Perfekt)
+105146	h. gestohlen	lop (Perfekt)
+105147	i. gestiegen	emelkedik (Perfekt)
+105148	i. gestorben	meghal (Perfekt)
+105149	h. gestunken	bűzlik (Perfekt)
+105150	h. gestoßen	lök (Perfekt)
+105151	h. gestrichen	simít, kihúz, kitöröl (Perfekt)
+105152	h. gestritten	veszekszik (Perfekt)
+105154	h. getragen	hord, visel (Perfekt)
+105155	h. getroffen	találkozik (Perfekt)
+105156	h. getrieben	űz, hajt (Perfekt)
+105157	i. getreten	lép, rúg, jár (Perfekt)
+105159	h. getrunken	iszik (Perfekt)
+105160	i. umgestiegen	átszáll (Perfekt)
+105161	h. vergessen	elfelejt (Perfekt)
+105162	h. verlassen	elhagy (Perfekt)
+105163	h. verloren	elveszít (Perfekt)
+105164	h. verstanden	ért, megért (Perfekt)
+105165	i. gewachsen	nő (Perfekt)
+105166	h. gewaschen	mos (Perfekt)
+105169	h. gezogen	húz (Perfekt)
+105170	h. gezwungen	kényszerít (Perfekt)
+100199	ausnehmen	kivesz, kiszed
+101379	forschen	kutat
+102487	marschieren	menetel, masíroz
+100808	beben	reng, remeg
+101836	abschaffen	kikapcsol, megszüntet
+101985	anfragen	érdeklődik

@@ -2574,6 +2574,7 @@
 100924	Die Versammlung ﬁndet erst morgen statt.
 100924	Die Versammlung ﬁndet in der Aula statt.
 100924	Wie der Name schon andeutet, findet der Musiksommer im Sommer statt.
+100926	Der Ministerpräsident hat seine Niederlage bei dem Verfassungsreferendum eingeräumt.
 100928	Die Bank hat dem jungen Ehepaar einen Kredit gewährt.
 100929	Der Stadtrat debattiert mittwochs im Rathaus.
 100930	Eltern tragen Verantwortung für ihre Kinder.
@@ -8082,7 +8083,6 @@
 103936	Vor einem Jahr hatte ich einen Unfall. Seitdem habe ich Angst beim Autofahren.
 103937	Sie ist von Geburt an stumm.
 103937	Die Gäste bleiben stumm.
-103937	Sie ist von Geburt an stumm.
 103938	Faust fand sogleich Argumente, um Gretchen zu überzeugen.
 103938	Ich kann mich sogleich darum kümmern.
 103938	Romeo verliebte sich sogleich in Julia.
