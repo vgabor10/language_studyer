@@ -104,7 +104,7 @@
 100103	besuchen	meglátogat
 100104	r Kuss	csók
 100105	e Sache	ügy, dolog
-100106	wirklich	igazi
+100106	wirklich	valóban, tényleg, igazán
 100107	gefallen	tetszik
 100108	r Schrank	szekrény
 100109	s Haus	ház
@@ -720,7 +720,7 @@
 100726	darüber	erről, arról
 100727	ob	hogy, vajon
 100728	bedrängen	szorongat
-100729	dazu	ahhoz
+100729	dazu	ehhez, ahhoz
 100730	r Jude	zsidó
 100731	teilnahmslos	érzéketlen
 100732	zusehen	szemlél
@@ -3208,7 +3208,6 @@
 103272	r Dollar	dollár
 103273	möglicherweise	talán
 103274	weggehen	elmegy, eltávozik
-103275	spätestens	legkésőbb
 103276	ausbauen	kiterjeszt, kibővít
 103277	s Russisch	orosz (nyelv)
 103278	r Spezialist	szakember, specialista
@@ -3480,7 +3479,7 @@
 103547	vielfach	sokszor
 103548	virtuell	virtuális
 103549	s Maß	mérték, méret
-103550	r Deutsche	német (fn)
+103550	r Deutsche	német (ember)
 103551	e Region	tartomány, vidék
 103552	ausführlich	részletesen
 103553	zumal	különösen
@@ -5054,3 +5053,5 @@
 103862	wittern	szimatol
 103867	s Verdienst	érdem, kereset
 103922	spalten	reped, hasad
+104091	r Flugzeugträger	repülőgéphordozó
+104107	s Gen	gén

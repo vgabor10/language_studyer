@@ -6663,6 +6663,7 @@
 103142	Amadeus ist sehr musikalisch.
 103143	Es hat sich eine kurzfristige Änderung ergeben.
 103144	Ich muss den Zug unbedingt kriegen.
+103145	Während der Pressekonferenz sprach der Präsident die auswärtigen Beziehungen an.
 103146	Bei Schnee und Eis muss man vorsichtig fahren.
 103146	Du musst vorsichtig sein.
 103146	Versprich mir, vorsichtig zu sein!
@@ -6906,7 +6907,6 @@
 103274	Ich gehe eine Nacht früher weg.
 103274	Du willst von hier weggehen, nicht wahr?
 103274	Vielleicht solltest du nicht weggehen.
-103275	Der Antrag muss bis spätestens morgen beim Finanzamt vorliegen.
 103276	Wir sollten die Beziehungen zu diesem Verlag ausbauen.
 103277	Sein Russisch konnte er während eines Auslandsaufenthaltes in Moskau verbessern.
 103277	Am Montag Abend ereignete sich ein Anschlag auf die Russische Botschaft.
@@ -7419,16 +7419,9 @@
 103548	Computersüchtige sind in der virtuellen Realität mehr zuhause als im wahren Leben.
 103549	Auf dem Oktoberfest kostet die Maß Bier sieben Euro.
 103549	Der Mensch ist das Maß aller Dinge.
-103550	Der deutsche Außenminister ist auf dem Weg nach Kasachstan.
 103550	Der Deutsche trinkt jeden Tag sein Bier.
 103550	Die Deutsche Einheit kam für viele überraschend.
-103550	Die deutsche Landwirtschaft kann nicht mehr so vielen Menschen Arbeit geben wie noch vor 40 Jahren.
-103550	Die deutsche Mannschaft ist schon im Achtelﬁnale ausgeschieden.
-103550	Die deutsche Nationalmannschaft feierte einen unglaublichen Erfolg.
-103550	Die deutsche Sprache spricht man in Deutschland, Österreich und der Schweiz.
-103550	Heike Makatsch ist eine bekannte deutsche Schauspielerin.
 103550	Sowohl Deutsche als auch Amerikaner trinken gerne Bier.
-103550	Wie viele Buchstaben hat das deutsche Alphabet?
 103551	Das momentane Wetter ist charakteristisch für diese Region.
 103551	Der Harz ist eine bekannte touristische Region.
 103551	Die ganze Region ist radioaktiv verseucht.

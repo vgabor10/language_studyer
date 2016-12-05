@@ -7,6 +7,9 @@ Modification ideas in src:
 - create DictionaryEngine class, create GrammarBookEngine class
 - in gnuplot scripts the file path should be added be parameter
 - make synonim searcher
+- german grammar items to add: többesszámok
+- make refreshing tabular nicer after action
+- create card categroy tree
 
 New class structure:
 
@@ -17,5 +20,21 @@ DictionaryEngine
 	CardFinder
 	StudyStrategySetter
 
-german grammar items to add:
-- többesszámok
+Card category suggestions:
+- szófajok
+	- főnevek
+		- hímnemő
+		- nőnemű
+		- semleges nemű
+	- igék
+		- sich-es igék
+		- igekötős igék
+		- rendhagyó múltidejű igék		
+	- melléknevek
+	- határozószavak
+	- kérdőszavak
+	- kötőszavak
+	- prepozíciók
+- kifejezések
+- tanulandó szavak
+- országok

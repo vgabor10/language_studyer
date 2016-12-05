@@ -6,5 +6,6 @@
 5	kérdőszavak
 6	kötőszavak
 7	prepozíciók
+10	országok
 8	kifejezések
 9	tanulandó_szavak
