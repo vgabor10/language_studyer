@@ -28,8 +28,8 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     
     public void setCardToInspect(Card card) {
         cardToInspect = card;
-        cardInspectorPanel1.dictionaryDataContainer = dictionaryDataContainer;
-        cardInspectorPanel1.setDataFromCard(card);
+        cardInspectorPanel.dictionaryDataContainer = dictionaryDataContainer;
+        cardInspectorPanel.setDataFromCard(card);
     }
     
     public void unableDeleteCardButton() {
@@ -47,7 +47,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         addCardButton = new javax.swing.JButton();
         closeButton = new javax.swing.JButton();
-        cardInspectorPanel1 = new graphic_user_interface.dictionary.CardInspectorPanel();
+        cardInspectorPanel = new graphic_user_interface.dictionary.CardInspectorPanel();
         seeCardStatisticsButton = new javax.swing.JButton();
         deleteCardButton = new javax.swing.JButton();
 
@@ -93,7 +93,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(cardInspectorPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(addCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -109,7 +109,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(seeCardStatisticsButton)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cardInspectorPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
+                .addComponent(cardInspectorPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addCardButton)
@@ -174,10 +174,11 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_deleteCardButtonActionPerformed
 
     public void saveCard() {
-        cardToInspect.index = cardInspectorPanel1.cardIndex;
-        cardToInspect.term = cardInspectorPanel1.getTerm();
-        cardToInspect.definition = cardInspectorPanel1.getDefinition();
-        cardToInspect.exampleSentences = cardInspectorPanel1.getExampleSentences();
+        cardToInspect.index = cardInspectorPanel.cardIndex;
+        cardToInspect.term = cardInspectorPanel.getTerm();
+        cardToInspect.definition = cardInspectorPanel.getDefinition();
+        cardToInspect.exampleSentences = cardInspectorPanel.getExampleSentences();
+        cardToInspect.categories = cardInspectorPanel.getCategories();
  
         DictionaryDataModificator dictionaryDataModificator 
                 = new DictionaryDataModificator();
@@ -235,7 +236,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addCardButton;
-    private graphic_user_interface.dictionary.CardInspectorPanel cardInspectorPanel1;
+    private graphic_user_interface.dictionary.CardInspectorPanel cardInspectorPanel;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton deleteCardButton;
     private javax.swing.JButton seeCardStatisticsButton;

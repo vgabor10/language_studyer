@@ -6,12 +6,16 @@ import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
 public class CardInspectorPanel extends javax.swing.JPanel {
 
     public Integer cardIndex = -1;
+    private Set<Integer> categories = new HashSet<>();
+    
     public DictionaryDataContainer dictionaryDataContainer;
     
     private final DefaultTableModel tableModel;
@@ -43,7 +47,8 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             tableModel.addRow(new Object[]{exampleSentence});
         }
         
-        for (int categoryIndex : card.categories) {     
+        for (int categoryIndex : card.categories) { 
+            categories.add(categoryIndex);
             jComboBox1.addItem(
                     dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
         }
@@ -80,6 +85,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         
         return out;
     }
+    
+    public Set<Integer> getCategories() {
+        return categories;
+    }    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -269,15 +278,18 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jTable1FocusGained
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(this.cardIndex);
-        
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
         dialog.setDictionaryData(dictionaryDataContainer);
-        dialog.selectedCategoryIndexes = card.categories;
-        dialog.setSelectedCategoriesFromCard(card);
+        dialog.setSelectedCategories(categories);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
+        
+        jComboBox1.removeAllItems();
+        for (int categoryIndex : categories) {
+            jComboBox1.addItem(
+                    dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

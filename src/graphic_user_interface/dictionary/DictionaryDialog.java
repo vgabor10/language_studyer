@@ -7,7 +7,9 @@ import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
@@ -423,12 +425,15 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
 
     private void categoryFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryFilterButtonActionPerformed
-        SelectCardCategoryDialog dialog 
-                = new SelectCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.cardFinder = cardFinder;
-        
+        SetCardCategoryDialog dialog 
+                = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
+        dialog.setDictionaryData(dictionaryDataContainer);
+        dialog.setSelectedCategories(cardFinder.getCardCategoryRestrictions());
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
+        
+        //TODO: if ok button pressed
+        clearTable();
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_categoryFilterButtonActionPerformed

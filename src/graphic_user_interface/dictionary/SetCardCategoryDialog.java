@@ -1,7 +1,7 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.Card;
 import dictionary.DictionaryDataContainer;
+import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class SetCardCategoryDialog extends javax.swing.JDialog {
 
-    public Set<Integer> selectedCategoryIndexes = new HashSet<>();
+    private Set<Integer> selectedCategoryIndexes = new HashSet<>();
     
     private Map<Integer, String> categoryIndexesAndNames = new HashMap<>();
     private Map<String, Integer> categoryNamesAndIndexes = new HashMap<>();
@@ -26,6 +26,9 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
                 = (DefaultTableModel)selectedCategoriesTable.getModel();
         allCategoriesTableModel
                 = (DefaultTableModel)allCategoriesTable.getModel();
+        
+        okButton.setMnemonic(KeyEvent.VK_O);
+        closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
     public void setDictionaryData(DictionaryDataContainer ddc) {
@@ -39,12 +42,12 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         }
     }
     
-    public void setSelectedCategoriesFromCard(Card card) {
-        for (int categoryIndex : card.categories) {
+    public void setSelectedCategories(Set<Integer> categories) {
+        selectedCategoryIndexes = categories;
+        
+        for (int categoryIndex : categories) {
             String categoryName = categoryIndexesAndNames.get(categoryIndex);
-            
             selectedCategoriesTableModel.addRow(new Object[]{categoryName});
-            selectedCategoryIndexes.add(categoryIndex);
         }
     }
     
@@ -57,8 +60,8 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        okButton = new javax.swing.JButton();
+        closeButton = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         selectedCategoriesTable = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
@@ -68,17 +71,17 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jButton1.setText("Ok");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        okButton.setText("Ok");
+        okButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                okButtonActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Close");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        closeButton.setText("Close");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                closeButtonActionPerformed(evt);
             }
         });
 
@@ -143,7 +146,7 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(okButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -152,7 +155,7 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))
+                    .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -168,8 +171,8 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(okButton)
+                    .addComponent(closeButton))
                 .addContainerGap())
         );
 
@@ -207,17 +210,19 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         selectedCategoryIndexes.remove(categoryIndex);
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_closeButtonActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         for (int i=0; i<selectedCategoriesTableModel.getRowCount(); i++) {
             String categoryName = (String)selectedCategoriesTableModel.getValueAt(i, 0);
  
             selectedCategoryIndexes.add(categoryNamesAndIndexes.get(categoryName));
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+        
+        dispose();
+    }//GEN-LAST:event_okButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -264,12 +269,12 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable allCategoriesTable;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton closeButton;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JButton okButton;
     private javax.swing.JTable selectedCategoriesTable;
     // End of variables declaration//GEN-END:variables
 }

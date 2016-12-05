@@ -96,11 +96,38 @@ public class DictionaryDataModificator {
             System.err.println("IOException: " + ioe.getMessage());
         }
     }
+    
+    public void saveCardIndexesAndCategoryIndexesDataToFile() {
+        if (settingsHandler.getStudiedLanguageIndex() == 1) {
+            String filePath = "../data/german_data/dictionary_data/card_indexes_to_category_indexes.txt";
+            File oldFile;
+            oldFile = new File(filePath);
+            oldFile.delete();
+
+            try {
+                FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+                for (int i = 0; i < cardContainer.numberOfCards(); i++) {
+                    Card card = cardContainer.getCardByOrder(i);
+                    if (!card.categories.isEmpty()) {
+                        String outString = Integer.toString(card.index);
+                        for (int categoryIndex : card.categories) {
+                            outString = outString + "\t" + Integer.toString(categoryIndex);
+                        }
+                        fw.write(outString  + "\n");
+                    }
+                }
+                fw.close();
+            } catch (IOException ioe) {
+                System.err.println("IOException: " + ioe.getMessage());
+            }
+        }
+    }
 
     public void saveAllData() {
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
         saveExampleSentencesDataToFile();
+        saveCardIndexesAndCategoryIndexesDataToFile();
     }
     
     public void appendToStudiedLanguageCardData(AnswerDataContainer answersToAppend) {

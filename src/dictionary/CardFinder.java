@@ -13,7 +13,7 @@ public class CardFinder {
 
     private CardContainer cardContainer;
     
-    private Set<Integer> cardCategoriesForSearch  = new HashSet<>();
+    private Set<Integer> cardCategoriesrestriction  = new HashSet<>();
     private String stringToSearch = "";
     private boolean searchAccordingToTerm = true;
     
@@ -24,7 +24,11 @@ public class CardFinder {
     }
 
     public void setCardCategoryRestrictions(Set<Integer> ccfs) {
-        cardCategoriesForSearch = ccfs;
+        cardCategoriesrestriction = ccfs;
+    }
+
+    public Set<Integer> getCardCategoryRestrictions() {
+        return cardCategoriesrestriction;
     }
     
     public void setStringToSearch(String s) {
@@ -102,22 +106,22 @@ public class CardFinder {
         foundCards.clear();
         
         if (searchAccordingToTerm) {
-            if (cardCategoriesForSearch.isEmpty()) {
+            if (cardCategoriesrestriction.isEmpty()) {
                 foundCards = getCardsWithGivenTermPart(stringToSearch);
                 Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(stringToSearch));
             }
             else {
-                foundCards = getCardsWithGivenTermPart(stringToSearch, cardCategoriesForSearch);
+                foundCards = getCardsWithGivenTermPart(stringToSearch, cardCategoriesrestriction);
                 Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(stringToSearch));
             }
         }
         else {
-            if (cardCategoriesForSearch.isEmpty()) {
+            if (cardCategoriesrestriction.isEmpty()) {
                 foundCards = getCardsWithGivenDefinitionPart(stringToSearch);
                 Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(stringToSearch));
             }
             else {
-                foundCards = getCardsWithGivenDefinitionPart(stringToSearch, cardCategoriesForSearch);
+                foundCards = getCardsWithGivenDefinitionPart(stringToSearch, cardCategoriesrestriction);
                 Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(stringToSearch));
             }
         }
