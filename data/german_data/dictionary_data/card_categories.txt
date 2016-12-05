@@ -4,6 +4,7 @@
 3	határozószavak
 4	számnevek
 5	kérdőszavak
-6	prepozíciók
-7	kifejezések
+6	kötőszavak
+7	prepozíciók
+8	kifejezések
 9	tanulandó_szavak
