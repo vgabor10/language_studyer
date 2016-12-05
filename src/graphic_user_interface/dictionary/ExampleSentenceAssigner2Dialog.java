@@ -264,7 +264,7 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
 
             cardFinder.setStringToSearch(jTextField1.getText());
             
-            listedCards = cardFinder.getCards();
+            //listedCards = cardFinder.makeSearch();
 
             toScreenListedCards();
             
@@ -393,7 +393,7 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         clearTable();
 
         cardFinder.setStringToSearch(stringForSearch);
-        cardFinder.getCards();
+        cardFinder.makeSearch();
 
         toScreenListedCards();
 

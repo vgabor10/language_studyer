@@ -2,6 +2,7 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
+import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -11,7 +12,8 @@ import javax.swing.table.DefaultTableModel;
 public class CardInspectorPanel extends javax.swing.JPanel {
 
     public Integer cardIndex = -1;
-        
+    public DictionaryDataContainer dictionaryDataContainer;
+    
     private final DefaultTableModel tableModel;
     
     private Logger logger = new Logger();    
@@ -41,9 +43,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             tableModel.addRow(new Object[]{exampleSentence});
         }
         
-        /*for (String category : card.categories) {
-            jComboBox1.addItem(category);
-        }*/
+        for (int categoryIndex : card.categories) {     
+            jComboBox1.addItem(
+                    dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
+        }
     }
     
     public Card getCardData() {

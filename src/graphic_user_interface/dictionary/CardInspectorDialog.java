@@ -28,6 +28,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     
     public void setCardToInspect(Card card) {
         cardToInspect = card;
+        cardInspectorPanel1.dictionaryDataContainer = dictionaryDataContainer;
         cardInspectorPanel1.setDataFromCard(card);
     }
     

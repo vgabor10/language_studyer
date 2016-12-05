@@ -82,7 +82,7 @@ public class DictionaryDataLoader {
         }
     }
     
-    public void loadCardCategories() {
+    public void loadCardIndexesAndCategoryIndexes() {
         try {
             //TODO: make it more general
             if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
@@ -106,10 +106,33 @@ public class DictionaryDataLoader {
         }
     }
     
+    public void loadCategoryIndexesAndCategoryNames() {
+        try {
+            //TODO: make it more general
+            if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
+                String filePath = "../data/german_data/dictionary_data/card_categories.txt";
+                BufferedReader br = new BufferedReader(new FileReader(filePath));
+                String strLine;
+                while ((strLine = br.readLine()) != null) {
+                    String[] splittedRow = strLine.split("\t");
+                    int categoryIndex = Integer.parseInt(splittedRow[0]);
+                    String categoryName = splittedRow[1];
+                    
+                    dictionaryDataContainer.categoryIndexesAndCategoryNames.put(categoryIndex, categoryName);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("unable to find file");
+        } catch (IOException e) {
+            System.err.println("exception in load file function");
+        }
+    }    
+    
     public void loadAllData() {
         loadCardContainer();
         loadAnswerData();
         loadExampleSentences();
-        loadCardCategories();
+        loadCardIndexesAndCategoryIndexes();
+        loadCategoryIndexesAndCategoryNames();
     }
 }

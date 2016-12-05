@@ -45,8 +45,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     public void initialise() {  
         cardChooser = new CardChooser();
-        cardChooser.setCardContainer(dictionaryDataContainer.cardContainer);
-        cardChooser.setAnswerDataContainer(dictionaryDataContainer.answerDataContainer);
+        cardChooser.setData(dictionaryDataContainer, 9);
         
         AnswerDataContainer answerDataContainer = dictionaryDataContainer.answerDataContainer;
         

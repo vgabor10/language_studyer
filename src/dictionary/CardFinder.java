@@ -1,6 +1,7 @@
 package dictionary;
 
 import dictionary.card_comparators.CardComparatorByDefinition;
+import dictionary.card_comparators.CardComparatorByDefinitionForGermanLanguage;
 import dictionary.card_comparators.CardComparatorByTermForGermanLanguange;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,12 +16,14 @@ public class CardFinder {
     private Set<Integer> cardCategoriesForSearch  = new HashSet<>();
     private String stringToSearch = "";
     private boolean searchAccordingToTerm = true;
+    
+    public List<Card> foundCards = new ArrayList<>();
 
     public void setCardContainer(CardContainer cc) {
         cardContainer = cc;
     }
 
-    public void setCardCategoriesForSearch(Set<Integer> ccfs) {
+    public void setCardCategoryRestrictions(Set<Integer> ccfs) {
         cardCategoriesForSearch = ccfs;
     }
     
@@ -33,7 +36,7 @@ public class CardFinder {
     }
 
     public void setSearchAccordingToDefinition() {
-        searchAccordingToTerm = true;
+        searchAccordingToTerm = false;
     }
     
     private List<Card> getCardsWithGivenTermPart(String termPart) {
@@ -95,31 +98,29 @@ public class CardFinder {
         return cardsToList;
     }
 
-    public List<Card> getCards() {
-        List<Card> cardsToList = new ArrayList<>();
+    public void makeSearch() {
+        foundCards.clear();
         
         if (searchAccordingToTerm) {
             if (cardCategoriesForSearch.isEmpty()) {
-                cardsToList = getCardsWithGivenTermPart(stringToSearch);
-                Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange(stringToSearch));
+                foundCards = getCardsWithGivenTermPart(stringToSearch);
+                Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(stringToSearch));
             }
             else {
-                cardsToList = getCardsWithGivenTermPart(stringToSearch, cardCategoriesForSearch);
-                Collections.sort(cardsToList, new CardComparatorByTermForGermanLanguange(stringToSearch));
+                foundCards = getCardsWithGivenTermPart(stringToSearch, cardCategoriesForSearch);
+                Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(stringToSearch));
             }
         }
         else {
             if (cardCategoriesForSearch.isEmpty()) {
-                getCardsWithGivenDefinitionPart(stringToSearch);
-                Collections.sort(cardsToList, new CardComparatorByDefinition());
+                foundCards = getCardsWithGivenDefinitionPart(stringToSearch);
+                Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(stringToSearch));
             }
             else {
-                getCardsWithGivenDefinitionPart(stringToSearch, cardCategoriesForSearch);
-                Collections.sort(cardsToList, new CardComparatorByDefinition());
+                foundCards = getCardsWithGivenDefinitionPart(stringToSearch, cardCategoriesForSearch);
+                Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(stringToSearch));
             }
         }
-        
-        return cardsToList;
     }
     
 }

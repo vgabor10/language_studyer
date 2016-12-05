@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
+import study_item_objects.AnswerData;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
@@ -19,27 +20,43 @@ public class CardChooser {
     private AnswerDataContainer answerDataContainer;
 
     private final Random randomGenerator = new Random();
-    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer;
+    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
     private final Logger logger = new Logger();
 
     private StudyStrategyDataHandler studyStrategyDataHandler
             = new StudyStrategyDataHandler();
-
-    public void setCardContainer(CardContainer cc) {
-        cardContainer = cc;
-    }
-
-    public void setAnswerDataContainer(AnswerDataContainer ac) {
-        answerDataContainer = ac;
-    }
-
-    public void evaluateAnswerDataByStudyItemsContainer() {
-        answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();
+    
+    public void setData(DictionaryDataContainer ddc) {
+        cardContainer = ddc.cardContainer;
+        answerDataContainer = ddc.answerDataContainer;
+        
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
     }
 
+    public void setData(DictionaryDataContainer ddc, int cardCategory) {
+        cardContainer = new CardContainer();
+        answerDataContainer = new AnswerDataContainer();
+        
+        for (int i=0; i<ddc.cardContainer.numberOfCards(); i++) {
+            Card card = ddc.cardContainer.getCardByOrder(i);
+            if (card.categories.contains(cardCategory)) {
+                cardContainer.addCard(card);
+            }
+        }
+        
+        Set<Integer> cardIndexes = cardContainer.getCardIndexes();
+        for (int i=0; i<ddc.answerDataContainer.numberOfAnswers(); i++) {
+            AnswerData answerData = ddc.answerDataContainer.getAnswerData(i);
+            if (cardIndexes.contains(answerData.index)) {
+                answerDataContainer.addAnswerData(answerData);
+            }
+        }
+
+        answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
+    }
+    
     private int getRandomCardIndex(
-            Set<Integer> cardIndexesFromChoose, Set<Integer> omittedCardIndexes) {
+       Set<Integer> cardIndexesFromChoose, Set<Integer> omittedCardIndexes) {
 
         cardIndexesFromChoose.removeAll(omittedCardIndexes);
         
@@ -235,9 +252,6 @@ public class CardChooser {
     }
 
     public Set<Integer> getCardIndexes() {
-
-        evaluateAnswerDataByStudyItemsContainer();
-
         Set<Integer> cardsToTestIndexes = new HashSet<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 
