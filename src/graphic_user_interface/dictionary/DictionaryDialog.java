@@ -47,6 +47,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         inspectCardButton.setMnemonic(KeyEvent.VK_I);
         listAllCardsButton.setMnemonic(KeyEvent.VK_L);
+        categoryFilterButton.setMnemonic(KeyEvent.VK_F);
     }
 
     public void initialise() {
@@ -75,7 +76,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jButton2 = new javax.swing.JButton();
+        categoryFilterButton = new javax.swing.JButton();
         listAllCardsButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -175,14 +176,14 @@ public class DictionaryDialog extends javax.swing.JDialog {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        jButton2.setText("Card category filter");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        categoryFilterButton.setText("Category filter");
+        categoryFilterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                categoryFilterButtonActionPerformed(evt);
             }
         });
 
-        listAllCardsButton.setText("List all cards");
+        listAllCardsButton.setText("List all");
         listAllCardsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listAllCardsButtonActionPerformed(evt);
@@ -216,7 +217,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(listAllCardsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)))
+                        .addComponent(categoryFilterButton, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -228,7 +229,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2)
+                    .addComponent(categoryFilterButton)
                     .addComponent(listAllCardsButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -421,7 +422,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         inspectCardButton.setEnabled(false);
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void categoryFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryFilterButtonActionPerformed
         SelectCardCategoryDialog dialog 
                 = new SelectCardCategoryDialog(new javax.swing.JFrame(), true);
         dialog.cardFinder = cardFinder;
@@ -430,7 +431,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
         
         jTextField1.requestFocus();
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_categoryFilterButtonActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -476,9 +477,9 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addNewCardButton;
+    private javax.swing.JButton categoryFilterButton;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton inspectCardButton;
-    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

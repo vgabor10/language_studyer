@@ -128,8 +128,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setText("Set card group");
-        jButton1.setEnabled(false);
+        jButton1.setText("Set card categories");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -270,8 +269,13 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_jTable1FocusGained
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        SelectCardCategoryDialog dialog 
-                = new SelectCardCategoryDialog(new javax.swing.JFrame(), true);
+        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(this.cardIndex);
+        
+        SetCardCategoryDialog dialog 
+                = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
+        dialog.setDictionaryData(dictionaryDataContainer);
+        dialog.selectedCategoryIndexes = card.categories;
+        dialog.setSelectedCategoriesFromCard(card);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed

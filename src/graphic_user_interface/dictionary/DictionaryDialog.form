@@ -50,7 +50,7 @@
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="listAllCardsButton" pref="133" max="32767" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton2" pref="157" max="32767" attributes="0"/>
+                      <Component id="categoryFilterButton" pref="157" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -63,7 +63,7 @@
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="categoryFilterButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="listAllCardsButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -201,17 +201,17 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="categoryFilterButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Card category filter"/>
+        <Property name="text" type="java.lang.String" value="Category filter"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="categoryFilterButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="listAllCardsButton">
       <Properties>
-        <Property name="text" type="java.lang.String" value="List all cards"/>
+        <Property name="text" type="java.lang.String" value="List all"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="listAllCardsButtonActionPerformed"/>
