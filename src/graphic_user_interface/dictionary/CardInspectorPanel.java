@@ -34,6 +34,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         addExampleSentenceButton.setMnemonic(KeyEvent.VK_A);
         deleteExampleSentenceButton.setMnemonic(KeyEvent.VK_E);
         modificateExampleSentenceButton.setMnemonic(KeyEvent.VK_M);
+        setCardCategoriesButton.setMnemonic(KeyEvent.VK_T);
         
         jTextField1.requestFocus();
     }
@@ -104,7 +105,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel4 = new javax.swing.JLabel();
         modificateExampleSentenceButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        setCardCategoriesButton = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -137,10 +138,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setText("Set card categories");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        setCardCategoriesButton.setText("Set card categories");
+        setCardCategoriesButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                setCardCategoriesButtonActionPerformed(evt);
             }
         });
 
@@ -192,7 +193,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addComponent(setCardCategoriesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
             .addGroup(layout.createSequentialGroup()
                 .addComponent(addExampleSentenceButton, javax.swing.GroupLayout.DEFAULT_SIZE, 197, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -214,7 +215,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
-                    .addComponent(jButton1))
+                    .addComponent(setCardCategoriesButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -277,7 +278,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         modificateExampleSentenceButton.setEnabled(true);
     }//GEN-LAST:event_jTable1FocusGained
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void setCardCategoriesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setCardCategoriesButtonActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
         dialog.setDictionaryData(dictionaryDataContainer);
@@ -290,13 +291,12 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             jComboBox1.addItem(
                     dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_setCardCategoriesButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addExampleSentenceButton;
     private javax.swing.JButton deleteExampleSentenceButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -306,5 +306,6 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JButton modificateExampleSentenceButton;
+    private javax.swing.JButton setCardCategoriesButton;
     // End of variables declaration//GEN-END:variables
 }

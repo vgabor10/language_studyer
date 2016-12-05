@@ -1,6 +1,5 @@
 package dictionary;
 
-import dictionary.card_comparators.CardComparatorByDefinition;
 import dictionary.card_comparators.CardComparatorByDefinitionForGermanLanguage;
 import dictionary.card_comparators.CardComparatorByTermForGermanLanguange;
 import java.util.ArrayList;
@@ -44,33 +43,33 @@ public class CardFinder {
     }
     
     private List<Card> getCardsWithGivenTermPart(String termPart) {
-        List<Card> foundCards = new ArrayList<>();
+        List<Card> cardsToList = new ArrayList<>();
 
         for (int i = 0; i < cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
             if (card.term.toLowerCase().contains(termPart.toLowerCase())) {
-                foundCards.add(card);
+                cardsToList.add(card);
             }
         }
 
-        return foundCards;
+        return cardsToList;
     }
     
     private List<Card> getCardsWithGivenTermPart(String termPart,
             Set<Integer> cardCategoriesInSearch) {
         
-        List<Card> foundCards = new ArrayList<>();
+        List<Card> cardsToList = new ArrayList<>();
 
         for (int i = 0; i < cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
             
             if (!Collections.disjoint(card.categories, cardCategoriesInSearch) &&
                     card.term.toLowerCase().contains(termPart.toLowerCase())) {
-                foundCards.add(card);
+                cardsToList.add(card);
             }
         }
         
-        return foundCards;
+        return cardsToList;
     }
 
     private List<Card> getCardsWithGivenDefinitionPart(String definitionPart) {

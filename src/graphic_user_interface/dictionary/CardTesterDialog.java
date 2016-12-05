@@ -6,6 +6,7 @@ import disc_operation_handlers.DictionaryDataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
 import dictionary.DictionaryDataContainer;
+import dictionary.StudyStrategyDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -21,6 +22,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     private CardTester cardTester;
     private CardChooser cardChooser;
+    private StudyStrategyDataHandler studyStrategyDataHandler
+            = new StudyStrategyDataHandler();
+    
     public DictionaryDataContainer dictionaryDataContainer;
     
     private final DefaultTableModel acceptableAnswersTableModel;
@@ -45,13 +49,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     public void initialise() {  
         cardChooser = new CardChooser();
-        cardChooser.setData(dictionaryDataContainer, 9);
+        cardChooser.setData(dictionaryDataContainer, studyStrategyDataHandler.cardCategoryRestrictions);
         
         AnswerDataContainer answerDataContainer = dictionaryDataContainer.answerDataContainer;
         
         Set<Integer> cardIndexesToTest;
         if (answerDataContainer.numberOfAnswers() > 100) {
-            cardIndexesToTest = cardChooser.getCardIndexes();
+            cardIndexesToTest = cardChooser.getCardIndexes(studyStrategyDataHandler);
         } else {
             cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
         }

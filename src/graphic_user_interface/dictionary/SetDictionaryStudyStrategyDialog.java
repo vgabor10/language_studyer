@@ -1,5 +1,6 @@
 package graphic_user_interface.dictionary;
 
+import dictionary.DictionaryDataContainer;
 import dictionary.StudyStrategyDataHandler;
 import java.awt.event.KeyEvent;
 
@@ -7,6 +8,8 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
 
     private StudyStrategyDataHandler studyStrategyDataHandler;
 
+    public DictionaryDataContainer dictionaryDataContainer;
+            
     private int evaluateNumberOfCardsToTest() {
         int numberOfCardsTotTest = 0;
         
@@ -176,6 +179,11 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jSpinner10.setEnabled(false);
 
         jButton4.setText("Card category filter");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -345,6 +353,15 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         
         setStudyStrategyDataToDialog();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        SetCardCategoryDialog dialog 
+                = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
+        dialog.setDictionaryData(dictionaryDataContainer);
+        dialog.setSelectedCategories(studyStrategyDataHandler.cardCategoryRestrictions);
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments

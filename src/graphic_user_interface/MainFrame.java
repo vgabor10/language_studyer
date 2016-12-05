@@ -333,6 +333,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         SetDictionaryStudyStrategyDialog dialog 
                 = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed

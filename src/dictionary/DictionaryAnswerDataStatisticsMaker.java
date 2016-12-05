@@ -1,5 +1,6 @@
 package dictionary;
 
+import java.util.Set;
 import study_item_objects.AnswerDataStatisticsMaker;
 import study_item_objects.AnswerDataContainer;
 
@@ -13,8 +14,9 @@ public class DictionaryAnswerDataStatisticsMaker extends AnswerDataStatisticsMak
 	public void setCardContainer(CardContainer cc) {
 		this.studyItemContainer = cc;
 	}
-
-	public CardContainer getCardContainer() {
-		return (CardContainer)this.studyItemContainer;
-	}
+        
+        public void setData(DictionaryDataContainer dictionaryDataContainer,
+                Set<Integer> cardCategoryRestrictions) {
+            
+        }
 }

@@ -22,9 +22,6 @@ public class CardChooser {
     private final Random randomGenerator = new Random();
     private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
     private final Logger logger = new Logger();
-
-    private StudyStrategyDataHandler studyStrategyDataHandler
-            = new StudyStrategyDataHandler();
     
     public void setData(DictionaryDataContainer ddc) {
         cardContainer = ddc.cardContainer;
@@ -33,13 +30,13 @@ public class CardChooser {
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
     }
 
-    public void setData(DictionaryDataContainer ddc, int cardCategory) {
+    public void setData(DictionaryDataContainer ddc, Set<Integer> cardCategoris) {
         cardContainer = new CardContainer();
         answerDataContainer = new AnswerDataContainer();
         
         for (int i=0; i<ddc.cardContainer.numberOfCards(); i++) {
             Card card = ddc.cardContainer.getCardByOrder(i);
-            if (card.categories.contains(cardCategory)) {
+            if (!Collections.disjoint(cardCategoris, card.categories)) {
                 cardContainer.addCard(card);
             }
         }
@@ -251,7 +248,7 @@ public class CardChooser {
         return cardIndexes;
     }
 
-    public Set<Integer> getCardIndexes() {
+    public Set<Integer> getCardIndexes(StudyStrategyDataHandler studyStrategyDataHandler) {
         Set<Integer> cardsToTestIndexes = new HashSet<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 

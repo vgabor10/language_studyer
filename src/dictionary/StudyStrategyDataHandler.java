@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 public class StudyStrategyDataHandler {
     
@@ -17,7 +19,7 @@ public class StudyStrategyDataHandler {
     public int numberOfCardsAmongTheLeastSignificantAr = 0;
     public int numberOfLatestQuestionedCards = 0;
     public boolean studyingGradually = false;
-    
+    public Set<Integer> cardCategoryRestrictions = new HashSet<>();
     
     public StudyStrategyDataHandler() {
         loadStudyStrategyDataFromDisc();
@@ -72,6 +74,16 @@ public class StudyStrategyDataHandler {
                         studyingGradually = true;
                     }
                 }
+                
+                 if (line.startsWith("cardCategoryRestrictions: ")) {
+                     String s = line.substring(line.lastIndexOf(":") + 2);
+                     String[] stringCategoryIndexes = s.split(" ");
+                     
+                     for (String stringCategoryIndes : stringCategoryIndexes) {
+                         int categoryIndex = Integer.parseInt(stringCategoryIndes);
+                         cardCategoryRestrictions.add(categoryIndex);
+                     }
+                }
 
             }
             
@@ -105,6 +117,12 @@ public class StudyStrategyDataHandler {
             
             fw.write("studyingGradually: "
                     + Boolean.toString(studyingGradually) + "\n");
+            
+            fw.write("cardCategoryRestrictions:");
+            for (int categoryIndex : cardCategoryRestrictions) {
+                fw.write(" " + categoryIndex);
+            }
+            fw.write("\n");
             
             fw.close();
         } catch (IOException ioe) {
