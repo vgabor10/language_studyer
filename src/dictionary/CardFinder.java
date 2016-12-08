@@ -63,7 +63,7 @@ public class CardFinder {
         for (int i = 0; i < cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
             
-            if (!Collections.disjoint(card.categories, cardCategoriesInSearch) &&
+            if (!Collections.disjoint(card.categoryIndexes, cardCategoriesInSearch) &&
                     card.term.toLowerCase().contains(termPart.toLowerCase())) {
                 cardsToList.add(card);
             }
@@ -92,7 +92,7 @@ public class CardFinder {
 
         for (int i = 0; i < cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
-            if (!Collections.disjoint(card.categories, cardCategoriesInSearch) &&
+            if (!Collections.disjoint(card.categoryIndexes, cardCategoriesInSearch) &&
                     card.definition.toLowerCase().contains(definitionPart.toLowerCase())) {
                 cardsToList.add(card);
             }

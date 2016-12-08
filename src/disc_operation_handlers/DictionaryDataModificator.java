@@ -108,9 +108,9 @@ public class DictionaryDataModificator {
                 FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
                 for (int i = 0; i < cardContainer.numberOfCards(); i++) {
                     Card card = cardContainer.getCardByOrder(i);
-                    if (!card.categories.isEmpty()) {
+                    if (!card.categoryIndexes.isEmpty()) {
                         String outString = Integer.toString(card.index);
-                        for (int categoryIndex : card.categories) {
+                        for (int categoryIndex : card.categoryIndexes) {
                             outString = outString + "\t" + Integer.toString(categoryIndex);
                         }
                         fw.write(outString  + "\n");

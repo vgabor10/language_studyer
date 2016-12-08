@@ -19,7 +19,7 @@ public class DictionaryStatisticsMaker extends AnswerDataStatisticsMaker {
             this.studyItemContainer = new CardContainer();
             for (int i=0; i<dictionaryDataContainer.cardContainer.numberOfCards(); i++) {
                 Card card = dictionaryDataContainer.cardContainer.getCardByOrder(i);
-                if (!Collections.disjoint(card.categories, cardCategoryRestrictions)) {
+                if (!Collections.disjoint(card.categoryIndexes, cardCategoryRestrictions)) {
                     this.studyItemContainer.addStudyItem(card);
                 }
             }

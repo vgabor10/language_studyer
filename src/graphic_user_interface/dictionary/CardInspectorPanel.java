@@ -48,10 +48,10 @@ public class CardInspectorPanel extends javax.swing.JPanel {
             tableModel.addRow(new Object[]{exampleSentence});
         }
         
-        for (int categoryIndex : card.categories) { 
+        for (int categoryIndex : card.categoryIndexes) { 
             categories.add(categoryIndex);
             jComboBox1.addItem(
-                    dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
+                    dictionaryDataContainer.categoryContainer.getCategoryNameByIndex(categoryIndex));
         }
     }
     
@@ -281,7 +281,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     private void setCardCategoriesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setCardCategoriesButtonActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryData(dictionaryDataContainer);
+        dialog.setAllCategories(dictionaryDataContainer.categoryContainer);
         dialog.setSelectedCategories(categories);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -289,7 +289,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         jComboBox1.removeAllItems();
         for (int categoryIndex : categories) {
             jComboBox1.addItem(
-                    dictionaryDataContainer.categoryIndexesAndCategoryNames.get(categoryIndex));
+                    dictionaryDataContainer.categoryContainer.getCategoryNameByIndex(categoryIndex));
         }
     }//GEN-LAST:event_setCardCategoriesButtonActionPerformed
 

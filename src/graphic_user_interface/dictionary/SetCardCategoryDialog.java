@@ -1,19 +1,17 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.DictionaryDataContainer;
+import dictionary.CardCategory;
+import dictionary.CategoryContainer;
 import java.awt.event.KeyEvent;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
 public class SetCardCategoryDialog extends javax.swing.JDialog {
-
-    private Set<Integer> selectedCategoryIndexes = new HashSet<>();
     
-    private Map<Integer, String> categoryIndexesAndNames = new HashMap<>();
-    private Map<String, Integer> categoryNamesAndIndexes = new HashMap<>();
+    private Set<Integer> outCategoryIndexes;
+    
+    private CategoryContainer allCategoryContainer;
+    private CategoryContainer selectedCategoryContainer = new CategoryContainer();
     
     private final DefaultTableModel allCategoriesTableModel;
     private final DefaultTableModel selectedCategoriesTableModel;
@@ -31,24 +29,23 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
-    public void setDictionaryData(DictionaryDataContainer ddc) {
-        categoryIndexesAndNames = ddc.categoryIndexesAndCategoryNames;
+    public void setAllCategories(CategoryContainer cc) {
+        allCategoryContainer = cc;
         
-        for (int categoryIndex : categoryIndexesAndNames.keySet()) {
-            String categoryName = categoryIndexesAndNames.get(categoryIndex);
+        for (int i=0; i<allCategoryContainer.numberOfItems(); i++) {
+            String categoryName = allCategoryContainer.getCategoryNameByOrder(i);
             allCategoriesTableModel.addRow(new Object[]{categoryName});
-            
-            categoryNamesAndIndexes.put(categoryName, categoryIndex);
         }
     }
     
-    public void setSelectedCategories(Set<Integer> categories) {
-        selectedCategoryIndexes = categories;
-        
-        for (int categoryIndex : categories) {
-            String categoryName = categoryIndexesAndNames.get(categoryIndex);
-            selectedCategoriesTableModel.addRow(new Object[]{categoryName});
+    public void setSelectedCategories(Set<Integer> categoryIndexes) {
+        for (int categoryIndex : categoryIndexes) {
+            CardCategory cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
+            selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
+            selectedCategoryContainer.add(cardCategory);
         }
+        
+        outCategoryIndexes = categoryIndexes;
     }
     
     /**
@@ -182,12 +179,11 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         if (allCategoriesTable.getSelectedRowCount() == 1) {
             int selectedTableRowIndex = allCategoriesTable.getSelectedRow();
-            String categoryName = (String)allCategoriesTableModel.getValueAt(selectedTableRowIndex, 0);
-            int categoryIndex = categoryNamesAndIndexes.get(categoryName);
+            CardCategory cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
 
-            if (!selectedCategoryIndexes.contains(categoryIndex)) {
-                selectedCategoriesTableModel.addRow(new Object[]{categoryName});
-                selectedCategoryIndexes.add(categoryIndex);
+            if (!selectedCategoryContainer.containsCategoryWithIndex(cardCategory.index)) {
+                selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
+                selectedCategoryContainer.add(cardCategory);
             }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -195,11 +191,8 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         if (selectedCategoriesTable.getSelectedRowCount() == 1) {
             int selectedTableRowIndex = selectedCategoriesTable.getSelectedRow();
-            String categoryName = (String)selectedCategoriesTableModel.getValueAt(selectedTableRowIndex, 0);
-            int categoryIndex = categoryNamesAndIndexes.get(categoryName);
-
             selectedCategoriesTableModel.removeRow(selectedTableRowIndex);
-            selectedCategoryIndexes.remove(categoryIndex);
+            selectedCategoryContainer.removeCategoryByOrder(selectedTableRowIndex);
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -208,10 +201,10 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_closeButtonActionPerformed
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
-        for (int i=0; i<selectedCategoriesTableModel.getRowCount(); i++) {
-            String categoryName = (String)selectedCategoriesTableModel.getValueAt(i, 0);
- 
-            selectedCategoryIndexes.add(categoryNamesAndIndexes.get(categoryName));
+        outCategoryIndexes.clear();
+        
+        for (int i=0; i<selectedCategoryContainer.numberOfItems(); i++) {
+            outCategoryIndexes.add(selectedCategoryContainer.getCategoryByOrder(i).index);
         }
         
         dispose();

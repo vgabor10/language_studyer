@@ -1,12 +1,14 @@
 package disc_operation_handlers;
 
 import dictionary.Card;
+import dictionary.CardCategory;
 import dictionary.CardContainer;
 import dictionary.DictionaryDataContainer;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Locale.Category;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 
@@ -95,7 +97,7 @@ public class DictionaryDataLoader {
                     
                     for (int i=1; i<splittedRow.length; i++) {
                         int categoryIndex = Integer.parseInt(splittedRow[i]);
-                        dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categories.add(categoryIndex);
+                        dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
                     }
                 }
             }
@@ -118,7 +120,11 @@ public class DictionaryDataLoader {
                     int categoryIndex = Integer.parseInt(splittedRow[0]);
                     String categoryName = splittedRow[1];
                     
-                    dictionaryDataContainer.categoryIndexesAndCategoryNames.put(categoryIndex, categoryName);
+                    CardCategory category = new CardCategory();
+                    category.index = categoryIndex;
+                    category.name = categoryName;
+                    
+                    dictionaryDataContainer.categoryContainer.add(category);
                 }
             }
         } catch (FileNotFoundException e) {

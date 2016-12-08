@@ -11,7 +11,7 @@ public class Card extends StudyItem {
     public String term;
     public String definition;
     public List<String> exampleSentences = new ArrayList<>();
-    public Set<Integer> categories = new HashSet<>();
+    public Set<Integer> categoryIndexes = new HashSet<>();
 
     public Card() {
         index = -1;

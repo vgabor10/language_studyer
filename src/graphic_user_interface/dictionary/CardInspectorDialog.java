@@ -25,6 +25,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         addCardButton.setMnemonic(KeyEvent.VK_S);
         closeButton.setMnemonic(KeyEvent.VK_C);
         deleteCardButton.setMnemonic(KeyEvent.VK_D);
+        seeCardStatisticsButton.setMnemonic(KeyEvent.VK_I);
     }
     
     public void setDictionaryDataContainer(DictionaryDataContainer ddc) {
@@ -183,7 +184,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         cardToInspect.term = cardInspectorPanel.getTerm();
         cardToInspect.definition = cardInspectorPanel.getDefinition();
         cardToInspect.exampleSentences = cardInspectorPanel.getExampleSentences();
-        cardToInspect.categories = cardInspectorPanel.getCategories();
+        cardToInspect.categoryIndexes = cardInspectorPanel.getCategories();
  
         DictionaryDataModificator dictionaryDataModificator 
                 = new DictionaryDataModificator();

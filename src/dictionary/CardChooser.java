@@ -36,7 +36,7 @@ public class CardChooser {
         
         for (int i=0; i<ddc.cardContainer.numberOfCards(); i++) {
             Card card = ddc.cardContainer.getCardByOrder(i);
-            if (!Collections.disjoint(cardCategoris, card.categories)) {
+            if (!Collections.disjoint(cardCategoris, card.categoryIndexes)) {
                 cardContainer.addCard(card);
             }
         }
