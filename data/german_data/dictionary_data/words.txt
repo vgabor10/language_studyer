@@ -1282,7 +1282,7 @@
 101293	e Begrenzung	korlátozás
 101294	e Ermittlung	nyomozás
 101295	r Schatz	kincs
-101296	s Arzneimittel	gyógyszer
+101296	s Arzneimittel	orvosság, gyógyszer
 101297	bestellen	rendel
 101298	e Apotheke	gyógyszertár
 101299	r Gang	menet, séta
