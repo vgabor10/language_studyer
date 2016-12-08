@@ -12,7 +12,8 @@ import study_item_objects.AnswerDataByStudyItem;
 public class CardInspectorDialog extends javax.swing.JDialog {
 
     private Card cardToInspect;
-    public DictionaryDataContainer dictionaryDataContainer;
+    private DictionaryDataContainer dictionaryDataContainer;
+    
     public DialogAnswer dialogAnswer;
     
     private Logger logger = new Logger();
@@ -26,9 +27,13 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         deleteCardButton.setMnemonic(KeyEvent.VK_D);
     }
     
+    public void setDictionaryDataContainer(DictionaryDataContainer ddc) {
+        dictionaryDataContainer = ddc;
+        cardInspectorPanel.dictionaryDataContainer = ddc;
+    }
+    
     public void setCardToInspect(Card card) {
         cardToInspect = card;
-        cardInspectorPanel.dictionaryDataContainer = dictionaryDataContainer;
         cardInspectorPanel.setDataFromCard(card);
     }
     

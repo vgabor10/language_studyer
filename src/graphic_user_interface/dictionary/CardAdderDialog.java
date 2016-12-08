@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CardAdderDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    private DictionaryDataContainer dictionaryDataContainer;
     public DialogAnswer dialogAnswer;
     
     private Logger logger = new Logger();
@@ -22,6 +22,11 @@ public class CardAdderDialog extends javax.swing.JDialog {
         
         saveCardButton.setMnemonic(KeyEvent.VK_S);
         closeButton.setMnemonic(KeyEvent.VK_C);
+    }
+    
+    public void setDictionaryDataContainer(DictionaryDataContainer ddc) {
+        dictionaryDataContainer = ddc;
+        cardInspectorPanel1.dictionaryDataContainer = ddc;
     }
     
     /**
