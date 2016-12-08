@@ -1,5 +1,6 @@
 0	főnevek
 1	igék
+11	  igekötős_igék
 2	melléknevek
 3	határozószavak
 4	számnevek

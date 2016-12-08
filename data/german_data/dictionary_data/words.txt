@@ -2745,7 +2745,7 @@
 102800	r Bayer	bajor (fn)
 102801	r Benutzer	felhasználó
 102802	nennen	nevez
-102803	öffnen	nyit
+102803	öffnen	nyit, kinyit
 102804	passen	passzol, illik
 102805	e Freiheit	szabadság
 102806	niederländisch	holland (mn)
@@ -4157,7 +4157,7 @@
 104240	ausschalten	kikapcsol
 104241	ausprobieren	kipróbál
 104242	vorhaben	tervez
-104243	verkehren	eljár, érintkezik
+104243	verkehren	közlekedik, eljár
 104244	lieber	inkább
 104245	intellektuell	szellemi, intellektuális
 104246	r Einbruch	betörés
@@ -5057,3 +5057,30 @@
 104107	s Gen	gén
 103275	hindern	gátol, akadályoz
 104144	abonnieren	előfizet, bérel
+104265	blockieren	elzár, gátol
+104316	r Ruin	csőd, összeomlás
+104347	e Resolution	határozat
+104356	r Botschafter	nagykövet
+104412	sowohl	is
+104467	entgegnen	válaszol
+104652	derzeit	jelenleg, most
+104750	r Abzug	visszavonás, levonás
+104754	e Haft	őrizet, elzárás
+104755	dämlich	ostoba
+104756	s Rohr	cső
+104757	herbergen	elszállásol
+104758	erwirken	elér
+104759	argumentieren	érvel
+104760	bescheinigen	igazol, tanúsít
+104761	gravierend	fontos, jelentős
+104762	r Ausstieg	kiszállás
+104764	folgenschwere	jelentős következményekkel járó
+104766	s Kraftwerk	erőmű
+104767	Deutschland	Németország
+104769	e Staatsbürgerschaft	állampolgárság
+104770	r Verstoß	vétség
+104771	e Kluft	szakadék
+104772	e Abschaffung	megszüntetés
+104773	s Misstrauen	gyanakvás, bizalmatlanság
+104775	ausgrenzen	kihagy, leválaszt
+104776	einbringen	behoz, bevisz

@@ -835,16 +835,12 @@
 100188	Silke stellt an ihren Mann sehr hohe Anforderungen.
 100188	Viele junge Männer melden sich freiwillig zum Militär.
 100188	Zum zehnten Hochzeitstag bekam sie zehn rote Rosen von ihrem Mann.
-100189	Am Morgen scheint die Sonne ins Schlafzimmer.
 100189	Dann machen wir es eben morgen.
 100189	Der Marathon ﬁndet morgen statt.
-100189	Die meisten Menschen träumen im Schlaf, wissen am Morgen aber nichts mehr davon.
 100189	Die Versammlung ﬁndet erst morgen statt.
 100189	Du kannst bis morgen bleiben.
 100189	Ich fahre morgen mit der Bahn nach Weimar.
-100189	Je später ich ins Bett gehe, desto müder bin ich am Morgen.
 100189	Morgen besuche ich meine Schwiegereltern.
-100189	Morgen trifft das Päckchen bei dir ein.
 100189	Schicken Sie mir morgen die neuen Unterlagen.
 100190	Kräftige junge Männer laden die Möbel auf einen LKW.
 100190	Wir kaufen uns neue Möbel.
@@ -7684,6 +7680,7 @@
 103708	Ihr Vorgänger im Amt war sehr beliebt.
 103712	Guck mich nicht so komisch an!
 103713	Der Verkäufer trennt dem Fisch mit einem Schnitt den Kopf ab.
+103714	Für die Legalisierung der Droge lassen sich gute Argumente anführen.
 103715	Du musst dir diesen Film unbedingt anschauen.
 103715	Im Museum kann man eine Sammlung alter Münzen anschauen.
 103716	Robin Hood schießt mit Pfeil und Bogen.
@@ -8606,6 +8603,7 @@
 104242	Für Ihr Vorhaben brauchen Sie eine amtliche Genehmigung.
 104242	Sie sprechen über ihre Vorhaben.
 104243	Der Zug zwischen Halle und Leipzig verkehrt jetzt alle halbe Stunde.
+104243	Diese Züge verkehren alle drei Minuten.
 104244	Da drüben steht die Polizei, fahr lieber langsam!
 104244	Ich esse lieber Birnen als Äpfel.
 104244	Möchtest du lieber Spaghetti oder Tortellini?
