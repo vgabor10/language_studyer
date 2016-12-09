@@ -124,7 +124,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
 
             YesNoDialog dialog = new YesNoDialog(new javax.swing.JFrame(), true);
             
-            String dialogDescription = "Following cards with given ter already exist:\n";
+            String dialogDescription = "Following cards with given term already exist:\n";
             for (int cardIndex : cardIndexesWithTheSameTerm) {
                 Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
                 dialogDescription = dialogDescription.concat(card.toString() + "\n");

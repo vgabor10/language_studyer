@@ -185,6 +185,8 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
                 selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
                 selectedCategoryContainer.add(cardCategory);
             }
+            
+            allCategoriesTable.clearSelection();
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -193,6 +195,8 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
             int selectedTableRowIndex = selectedCategoriesTable.getSelectedRow();
             selectedCategoriesTableModel.removeRow(selectedTableRowIndex);
             selectedCategoryContainer.removeCategoryByOrder(selectedTableRowIndex);
+            
+            selectedCategoriesTable.clearSelection();
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
