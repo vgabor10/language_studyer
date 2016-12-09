@@ -4308,7 +4308,6 @@
 101866	Heike Makatsch ist eine bekannte deutsche Schauspielerin.
 101866	Sie ist Schauspielerin am Eisenacher Theater.
 101867	Das Publikum applaudierte sehr lange.
-101868	Der dritte Akt des Stückes geﬁel mir am besten.
 101869	Die Schüler gehen nach der Pause in ihre jeweiligen Zimmer zurück.
 101869	In der Pause esse ich mein belegtes Brötchen.
 101871	Kurt Masur ist Dirigent eines großen Orchesters.

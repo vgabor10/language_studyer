@@ -886,7 +886,7 @@
 100895	einrichten	berendez, kialakít
 100896	r Abgeordnete	képviselő
 100897	e Wurzel	gyökér
-100898	damals	akkor
+100898	damals	akkor, akkoriban
 100899	mehrfach	többször
 100900	seither	azóta
 100901	ansetzen	elkezd, illeszt
@@ -931,7 +931,7 @@
 100941	e Freude	boldogság
 100942	s Unterfangen	vállalkozás
 100943	e Zuversicht	bizalom
-100944	r Stellvertreter	helyettes
+100944	r Stellvertreter	helyettes (fn)
 100945	voll	teljes, teli
 100946	s Feld	tér
 100947	verkünden	kihírdet
@@ -1839,7 +1839,6 @@
 101865	r Zuschauer	néző
 101866	e Schauspielerin	színésznő
 101867	applaudieren	tapsol
-101868	e Akt	felvonás
 101869	e Pause	szünet
 101870	plaudern	társalog
 101871	s Orchester	zenekar
@@ -2021,7 +2020,7 @@
 102054	erschöpft	kimerült (mn)
 102055	s Medikament	gyógyszer
 102056	e Arznei	orvosság
-102057	zuständig	illetékes (mn)
+102057	zuständig	illetékes, felelős
 102058	schmerzhaft	fájdalmas
 102059	e Untersuchung	vizsgálat
 102060	r Chirurg	sebész
@@ -2318,7 +2317,7 @@
 102365	golden	aranyszínű
 102366	s Gras	fű
 102367	grau	szürke
-102368	greifen	megragad, megfog
+102368	greifen	megfog, elkap, nyúl
 102369	griechisch	görög (mn)
 102370	großartig	nagyszerű
 102371	groß	nagy
@@ -2885,7 +2884,7 @@
 102942	einerseits	egyrészt
 102943	e Hinsicht	szempont
 102944	r Durchmesser	átmérő
-102945	r Akt	tett
+102945	r Akt	tett, felvonás
 102946	eindeutig	egyértelmű
 102947	nebeneinander	egymás mellett
 102948	positiv	pozitív
@@ -5163,3 +5162,13 @@
 104864	e Linie	vonal
 104865	zuspitzen	kélez
 104866	e Seuche	járvány
+104868	schreuben	csavar, csavaroz
+104869	unbedeutend	jelentéktelen
+104870	s Rudel	falka, csapat
+104872	bespitzeln	megfigyel
+104873	ertrunken	vízbe fullad
+104874	Estland	Észtország
+104875	e Entschädigung	kárpótlás, kártérítés
+104876	entschädigen	kárpotol
+104877	durchgehend	folyamatosan
+104878	um	-kor
