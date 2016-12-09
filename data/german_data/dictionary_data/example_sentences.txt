@@ -916,6 +916,8 @@
 100211	Die Presse ist die vierte Macht im Staate.
 100211	Die Steuern bekommt der Staat.
 100212	Erich kann komplexe Sachverhalte schnell erfassen.
+100212	Du hast es erfasst.
+100212	Ich erfasse den Sinn nicht.
 100213	Deine Sorge ist überﬂüssig.
 100213	Ich sorge für meine Schwester.
 100213	Meinetwegen brauchst du dir keine Sorgen machen.
@@ -1317,6 +1319,8 @@
 100350	Auch einem Befehl kann man widersprechen.
 100350	Der Offizier erteilt einen Befehl.
 100351	Der ungarische Aufstand 1956, wurde durch die Sowjetunion unterdrückt.
+100352	Der König muss abdanken.
+100352	Wer hat 1908 vermutet, dass zehn Jahre später der deutsche Kaiser abdanken würde?
 100353	Das Mittlere Erzgebirge ist als Weihnachtsland bekannt.
 100353	Der Erreger der Vogelgrippe ist jetzt bekannt.
 100353	Die Herkunft des Namens ist nicht bekannt.
@@ -1532,6 +1536,8 @@
 100432	Bislang haben wir geschwiegen, aber jetzt werden wir uns einmischen.
 100432	Der Täter ist bislang unbekannt.
 100433	Ich nehme an, er hat Recht.
+100433	Das kann ich unmöglich annehmen.
+100433	Er wird dein Angebot annehmen.
 100435	Das Ergebnis ist erstaunlich.
 100435	Das richtige Ergebnis wusste niemand.
 100435	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
@@ -2333,6 +2339,7 @@
 100796	Diese Zuschauerquote entspricht einem Marktanteil von 30 Prozent.
 100797	Haribo macht Kinder froh, und Erwachsne ebenso.
 100797	Margarine ist zum Braten ebenso gut geeignet wie Butter.
+100798	Tom ernährt sich nicht ausgewogen.
 100799	Auf eine freie Stelle kommen zwanzig Bewerber.
 100799	Der Vorstand hat dem Bewerber ein großzügiges Angebot gemacht.
 100799	Die Firma bevorzugt bei der Stellenbesetzung Bewerber mit guten Französischkenntnissen.
@@ -7316,7 +7323,6 @@
 103489	Theorie und Praxis klaffen oft auseinander.
 103491	Das Geschäftsjahr 2004 war ein erfolgreiches Jahr.
 103492	Praktika bieten einen Einblick ins Berufsleben.
-103493	Nahe der Stadt gibt es eine Burg.
 103494	Ich fordere Ersatz für den entstandenen Schaden.
 103495	Thomas verschafft dem Freund eine Wohnung und einen Job.
 103496	Die Katastrophe wird noch jahrelange Auswirkungen haben.
@@ -7556,11 +7562,15 @@
 103634	Die Polizei ermittelt bereits in diesem Fall.
 103634	Ich habe so einen Fall noch nicht erlebt.
 103634	Im idealen Fall kommt das Päckchen schon am Montag an, im schlimmsten Fall erst Freitag.
+103635	Ich verhalte mich nicht wie du.
+103635	Wir sollten uns ruhig verhalten.
 103636	Forscher gehen dem Wesen einer Sache auf den Grund.
 103637	Die Reformen sollen die Konjunktur beleben.
 103638	Der Prüfling versuchte, das Gespräch auf ein anderes Thema zu lenken.
 103638	Ich sah dich dein neues Auto lenken.
 103639	Diese Option lasse ich mir offen.
+103640	Niemand konnte das bestreiten.
+103640	Tom bestreitet, dort gewesen zu sein.
 103642	Ich werde monatlich bezahlt.
 103642	Die Miete für seine Wohnung war seine größte monatliche Ausgabe.
 103642	Einige Zeitschriften erscheinen monatlich.
@@ -7609,6 +7619,8 @@
 103664	Die Mitarbeiter werden entsprechend ihren Fähigkeiten eingesetzt.
 103665	In dem Gedicht drückt der Dichter seine Gefühle aus.
 103666	Mein Gepäck ist sehr schwer.
+103667	Das Kind wollte nicht die Hand seiner Mutter loslassen.
+103667	Der Polizist wollte den Verdächtigen einfach nicht loslassen.
 103669	Ein unbekanntes Individuum wurde gesichtet.
 103671	Dieser Ansatz ist in der Wissenschaft umstritten.
 103671	Diese These ist sehr umstritten.
@@ -8243,6 +8255,8 @@
 104041	In diesem Heft ﬁnden Sie viele Anregungen für Bastelarbeiten.
 104042	Wir müssen uns mit diesem Problem bald befassen.
 104043	Die Konstruktion ist stabil.
+104045	Der beste Wanderer muss vorangehen.
+104045	Darf ich vorangehen?
 104046	Mary wird uns am Sonntag mit ihrer Anwesenheit beglücken.
 104046	Ich freue mich über deine Anwesenheit.
 104046	Deine Anwesenheit ist hier nicht erwünscht.
@@ -8387,6 +8401,10 @@
 104110	Heute hält der Sprecher des StudentInnenrates eine Rede.
 104110	Heute hält der Sprecher eine Rede.
 104111	Wir haben mit betrieblichen Schwierigkeiten zu kämpfen.
+104112	Auf dem Baum befinden sich viele Vögel.
+104112	Rund um das Haus befinden sich Rosen.
+104112	Wie viele Bäume befinden sich im Park?
+104112	Wir befinden uns auf einer Rettungsmission.
 104113	Er hat ein Vermögen für den Hauskauf ausgegeben.
 104113	Ich vermag diese Frage nicht zu beantworten.
 104114	Die Polizei will Tom vernehmen.
@@ -8925,6 +8943,8 @@
 104410	Er ist in seinen Ansichten gefangen.
 104411	Erlauben Sie mir die Feststellung, dass dies nicht zum ersten Mal passiert ist.
 104413	Die Versicherung wird für den Schaden aufkommen.
+104415	Fußball ist ein aufregender Sport.
+104415	Tom fragte sich, worüber Mary sich so aufregte.
 104416	Es ist wichtig, Vokabeln im Kontext zu lernen.
 104417	Seine strikte Diät führt zu ersten erkennbaren Erfolgen.
 104418	Mechanische Uhren muss man aufziehen.
@@ -9489,6 +9509,8 @@
 104715	Leg die Bücher einfach aufeinander.
 104715	Wir müssen unsere Arbeitszeiten besser aufeinander abstimmen.
 104716	Warum in die Ferne schweifen, wenn das Gute liegt so nah.
+104716	Das Ende ist nahe.
+104716	Sie wohnt nahe am See.
 104717	Dieses Problem muss man auf verschiedenen Ebenen betrachten.
 104718	Zehn Prozent des Eiklars sind Proteine, der Rest ist Wasser.
 104719	Die Fabrik stellt die Produktion ein.
@@ -10167,3 +10189,4 @@
 101808	Der Junge wurde in die Sklaverei verkauft.
 101836	Wie können wir Krieg abschaffen?
 101836	Wir sollten diese alten Regeln abschaffen.
+104838	Ist der Preis annehmbar?

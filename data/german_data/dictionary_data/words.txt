@@ -209,7 +209,7 @@
 100209	gründen	alapít
 100210	ausrufen	kikiált
 100211	r Staat	állam
-100212	erfassen	felvesz, megfog
+100212	erfassen	felfog, megért
 100213	e Sorge	aggodalom
 100214	e Bevölkerung	lakosság
 100215	e Dichte	sűrűség
@@ -222,7 +222,7 @@
 100222	folgend	következő
 100223	e Tabelle	táblázat
 100224	e Entwicklung	fejlődés
-100225	rund	nagyjából
+100225	rund	körül, körülbelül
 100226	s Prozent	százalék
 100227	steigen	emelkedik
 100228	r Wert	érték
@@ -259,7 +259,7 @@
 100259	gewinnen	nyer
 100260	bestimmen	meghatároz, megjelöl
 100261	r Kanzler	kancellár
-100262	versuchen	megpróbál
+100262	versuchen	próbál, megpróbál
 100263	e Meinung	vélemény
 100264	e Regierung	kormány
 100265	r Einfluss	befolyás
@@ -274,7 +274,7 @@
 100274	insgesamt	összesen
 100275	bedrohen	veszélyeztet
 100276	e Gesellschaft	társadalom
-100277	fallen	esik
+100277	fallen	esik, zuhan
 100278	e Veränderung	változás
 100279	erheblich	jelentős
 100280	beeinflussen	befolyásol
@@ -428,7 +428,7 @@
 100430	überdenken	átgondol
 100431	r Hafen	kikötő
 100432	bislang	ezidáig
-100433	annehmen	feltételez, elfogad
+100433	annehmen	elfogad
 100434	mitteilen	közöl
 100435	s Ergebnis	eredmény
 100436	schrumpfen	zsugorodik
@@ -1935,7 +1935,7 @@
 101964	r Schneider	szabó
 101965	kompliziert	bonyolult, komplikált
 101966	kostspielig	költséges
-101967	r Stoff	szövet
+101967	r Stoff	anyag, szövet
 101968	r Knopf	gomb
 101969	geschickt	ügyes
 101970	sparen	spórol
@@ -2312,7 +2312,7 @@
 102359	gleichen	simít, kiegyenlít
 102360	gleichmäßig	egyenletes
 102361	gleichzeitig	egyidejűleg
-102362	gleiten	csúszik
+102362	gleiten	lebeg, siklik, csúszik
 102363	global	globális
 102364	glücklich	boldog, szerencsés
 102365	golden	aranyszínű
@@ -2568,7 +2568,7 @@
 102619	r Fall	esés
 102620	fällig	esedékes
 102621	falsch	hamis
-102622	fassen	megfog, befogad
+102622	fassen	megfog, megragad, megért, befogad
 102623	faszinieren	lenyűgöz
 102624	r Februar	február
 102625	fehlen	hiányzik
@@ -3422,7 +3422,6 @@
 103490	katholisch	katolikus
 103491	s Geschäftsjahr	üzleti év
 103492	r Einblick	betekintés
-103493	nahe	közel
 103494	r Ersatz	pótlás, kárpótlás
 103495	verschaffen	beszerez, biztosít
 103496	e Auswirkung	hatás
@@ -3566,7 +3565,7 @@
 103637	beleben	lelkesít, élénkít
 103638	lenken	vezet, irányít
 103639	e Option	opció, választási jog
-103640	bestreiten	vitat
+103640	bestreiten	vitat, megvitat, kétségbe von
 103641	aufsetzen	felrak
 103642	monatlich	havonta
 103643	befreien	kiszabadít, felszabadít
@@ -3593,7 +3592,7 @@
 103664	entsprechend	vmi szerint, vminek megfelelően
 103665	drücken	tol, nyom
 103666	s Gepäck	csomag, poggyász
-103667	loslassen	elenged
+103667	loslassen	elenged, elereszt
 103668	ausrichten	elrendez, sorbaáll, kiegyenesít
 103669	s Individuum	egyén
 103670	r Chinese	kínai (fn)
@@ -3641,7 +3640,7 @@
 103715	anschauen	ránéz, megnéz
 103716	r Bogen	ív, íj
 103717	beschreiben	leír, jellemez
-103718	schuld	bűnös (mn)
+103718	schuld	bűnös
 103719	verschwinden	eltűnik
 103720	anordnen	rendez, elrendez
 103721	s Semester	szemeszter
@@ -3695,14 +3694,14 @@
 103770	kaufen	vásárol
 103771	seit	óta
 103772	aktuell	aktuális
-103773	aufzeigen	fölmutat
+103773	aufzeigen	felmutat
 103774	kreativ	kreatív
 103775	erheben	felemel
 103776	charakterisieren	jellemez
 103777	künstlerisch	művészi
 103778	r Ingenieur	mérnök
 103779	bewusst	tudatos
-103780	speziell	különösen
+103780	speziell	speciális, különleges
 103781	schleppen	húz, cipel
 103782	vergrößern	nagyít, gyarapít
 103783	s Ticket	jegy
@@ -3944,7 +3943,7 @@
 104024	r Lastkraftwagen	teherautó
 104025	unterdrücken	elnyom
 104026	s Gelände	terep, vidék
-104027	r Streifen	csík, sáv
+104027	r Streifen	csík, sáv, szalag
 104028	beten	imádkozik
 104029	r Charakter	jellem, karakter
 104030	r Chor	kórus
@@ -3952,7 +3951,7 @@
 104032	r Bezirk	körzet
 104033	verurteilen	elítél
 104034	unterrichten	tanít, oktat
-104035	teilen	oszt, megoszt, feloszt
+104035	teilen	oszt, elgoszt, megoszt
 104036	s Kapital	tőke
 104037	e Richtlinie	irányelv
 104038	erkennen	elismer, felismer
@@ -4623,7 +4622,7 @@
 104713	sobald	mihelyt
 104714	ausgeprägt	megkülönböztető, kifejezett
 104715	aufeinander	egymásra
-104716	nah	közel
+104716	nah	közel, közeli
 104717	e Ebene	sík, szint
 104718	s Protein	fehérje
 104719	e Produktion	termelés
@@ -4671,7 +4670,7 @@
 104815	haben	birtokol vmit
 104824	können	tud
 104831	leihen	kölcsönöz
-104833	meiden	kerül vkit/vmit
+104833	meiden	kerül, elkerül
 104835	müssen	kell (külső kényszer)
 104859	sein	létige
 104861	sinken	süllyed
@@ -5084,3 +5083,83 @@
 104773	s Misstrauen	gyanakvás, bizalmatlanság
 104775	ausgrenzen	kihagy, leválaszt
 104776	einbringen	behoz, bevisz
+104777	e Mühle	malom
+104778	r Müller	molnár
+104779	e Säure	sav
+104780	r Brei	pép, kása
+104781	absichtlich	tudatosan, szándékosan
+104782	sabotieren	szabotál
+104784	unschätzbar	felbecsülhetetlen
+104785	beitreten	belép, csatlakozik
+104786	r Gau	megye, terület
+104787	r Genosse	társ, elvtárs
+104788	r Sumpf	mocsár, ingovány
+104789	umbenennen	átnevez
+104791	r Haufen	tömeg, sokaság
+104792	schwellen	dagad, duzzad
+104793	r Hagel	jégeső
+104794	hageln	zuhog
+104795	rasant	gyors, nagyon gyors
+104796	e Entlassung	felmentés, elbocsátás
+104797	e Zäsur	fordulópont
+104798	e Sperre	sorompó, gát, lezárás
+104799	verhängen	kiszab, elrendel
+104800	binnen	alatt, folyamán
+104801	verdreifachen	megháromszorozódik
+104802	r Brechreiz	hányinger
+104803	e Aufhebung	eltörlés
+104804	ehrgeizige	törekvő, ambíciózus
+104805	e Schließung	bezárás
+104806	fortan	ezentúl
+104809	Prag	Prága
+104810	r Inbegrif	lényeg, megtestesülés
+104811	r Bart	szakáll
+104812	wirren	összezavar, összekuszál
+104813	r Thron	trón
+104814	schubsen	lök, taszít
+104816	s Erz	érc
+104817	unsterblich	halhatatlan
+104818	im Gegenteil	ellenkezőleg
+104819	zerfurcht	ráncos, barázdás
+104820	e Erwerbung	megszerzés, vétel
+104821	r Zünder	gyufa
+104822	r Nimbus	hírnév
+104823	ungeheuer	hatalmas, rengeteg
+104825	e Verehrung	tisztelet
+104826	betagt	idős
+104827	r Einzug	beköltözés, bevonulás
+104828	öfter	többször, gyakrabban
+104829	e Stube	szoba
+104830	Wien	Bécs
+104832	aus	-ból, -ből
+104834	aus	ki
+104836	hundert	száz
+104837	weiichen	enged, kitér, lazít
+104838	annehmbar	ekfogadható
+103493	zu	-hoz, -hez, höz
+104839	vor	elé, előtt
+104840	von	-tól, től
+104841	von	által
+104842	aufregend	izgalmas
+104843	auf	-on, -en, -ön
+104844	auf	fel
+104845	e Behauptung	állítás
+104846	bis	-ig
+104847	am	-kor
+104848	dadurch	azáltal
+104849	annahernd	megközelítőleg
+104850	e Führung	vezetés
+104851	e Sprengung	robbantás
+104852	gegnerisch	ellenséges, szembenálló
+104853	breiten	kitágít, keterít
+104854	e Zange	fogó, harapófogó
+104855	r Durchbruch	áttörés
+104856	r Rückzug	visszavonulás, hátrálás
+104857	isofern	eddig
+104858	e Aufteilung	felosztás, elosztás
+104860	unter	alá, alatt
+104862	e Infanteire	gyalogság
+104863	bezogen	viszonyítva
+104864	e Linie	vonal
+104865	zuspitzen	kélez
+104866	e Seuche	járvány
