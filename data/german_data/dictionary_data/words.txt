@@ -247,7 +247,7 @@
 100247	während	alatt (időben)
 100248	r Zeitraum	időszak
 100249	r Bundesstaat	szövetségi állam
-100250	e Gründung	alapzat
+100250	e Gründung	alapzat, alapítás
 100251	r König	király
 100252	s Schloss	kastély, palota
 100253	r Saal	terem
@@ -3282,7 +3282,7 @@
 103349	anziehen	felvesz, felöltöztet
 103350	r Ertrag	hozam
 103351	sehen	néz, lát
-103352	außen	kint
+103352	außen	kint, kívül
 103353	zwanzig	húsz
 103354	regeln	szabályoz, rendez
 103355	s Abkommen	megállapodás
@@ -3340,7 +3340,7 @@
 103407	voneinander	egymástól
 103408	attraktiv	vonzó, csinos
 103409	schildern	leír
-103410	beantworten	válaszol
+103410	beantworten	válaszol, megválaszol
 103411	e Abgrenzung	elhatárolás
 103412	r Kauf	vásárlás
 103413	auflegen	kiad, feltesz
@@ -4631,7 +4631,7 @@
 104723	ebenfalls	szintén, ugyancsak
 104724	s Schloss	lakat
 104725	beiseite	mellé
-104726	jeweilig	mindenkori
+104726	jeweilig	mindenkor, mindenkori
 104727	anpassen	igazít, hozzáilleszt
 104728	aneinander	egymáshoz, össze
 104729	s Motto	mottó, jelmondat
@@ -5172,3 +5172,22 @@
 104876	entschädigen	kárpotol
 104877	durchgehend	folyamatosan
 104878	um	-kor
+101868	s Geschütz	ágyú
+104879	r Sicherstellung	garancia, biztosítás
+104880	s Korps	hadtest
+104881	r Stützpunkt	támaszpont
+104882	gegen	körül
+104883	bedrohlich	veszélyes, fenyegető
+104884	in	-ba, -be, ban, -ben
+104885	bei	-nál, -nél
+104886	e Schätzung	becslés
+104887	Warschau	Varsó
+104888	ausbleiben	elmarad, kimarad
+104889	s Triebwerk	hajtómű
+104890	s Inventar	leltár
+104891	es tut mir leid	sajnálom
+104892	e Belastbarkeit	terhelhetőség
+104917	erneuerbare Energie	megújuló energia
+104934	kein Problem	semmi gond
+105014	gern geschehen	szívesen
+105019	saugen	szopik, szív
