@@ -60,6 +60,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         card.index = cardIndex;
         card.term = jTextField1.getText();
         card.definition = jTextField1.getText();
+        card.categoryIndexes = categories;
         
         for (int i=0; i<tableModel.getRowCount(); i++) {
             String exampleSentence = (String)tableModel.getValueAt(i, 0);

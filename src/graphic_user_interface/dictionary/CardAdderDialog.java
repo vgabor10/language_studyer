@@ -110,11 +110,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_saveCardButtonActionPerformed
 
     public void addCard() {
-        Card cardToAdd = new Card();
-        
-        cardToAdd.term = cardInspectorPanel1.getTerm();
-        cardToAdd.definition = cardInspectorPanel1.getDefinition();
-        cardToAdd.exampleSentences = cardInspectorPanel1.getExampleSentences();
+        Card cardToAdd = cardInspectorPanel1.getCardData();
         
         List<Integer> cardIndexesWithTheSameTerm = 
                 dictionaryDataContainer.cardContainer.findCardsByTerm(cardToAdd.term);
