@@ -4985,7 +4985,7 @@
 101858	nutzlos	haszontalan
 101427	r Sarg	koporsó
 101923	r Abnehmer	vásárló, fogyasztó
-101934	e Güter	árucikkek (többesszám)
+101934	e Güter	árucikkek
 101999	e Einkünfte	kereset, jövedelem
 102072	Sport treiben	sportol
 100199	ausnehmen	kivesz, kiszed
@@ -5191,3 +5191,30 @@
 104934	kein Problem	semmi gond
 105014	gern geschehen	szívesen
 105019	saugen	szopik, szív
+105056	e Unterwerfung	leigázás
+105073	widersetzen	ellenáll, ellenszegül
+105153	importieren	importál
+105158	e Notlage	szükségállapot, szorult helyzet
+105171	e Reserve	készlet
+105179	was	mi, ami
+105180	e Intervention	beavatkozás
+105183	e Museen	múzeumok
+105191	residieren	lakik
+105202	r Binnenmarkt	belső piac
+105203	schneidern	varr, szab
+105204	Moskau	Moszkva
+105205	e Etage	emelet
+105206	s Erbe	örökség
+105207	zweifelhaft	kétes, gyanús
+105208	umkehrbar	visszafordítható, megfordítható
+105209	r Konkurs	csőd, bukás
+105210	e Befürchtung	félelem, aggodalom
+105211	s Scheitern	sikertelenség
+105212	unaufhaltsam	feltartózhatatlan, meggátolhatatlan
+105213	übermächtig	nagyhatalmú
+105214	strittig	vitás
+105215	bändigen	megfékez, megszelidít
+105216	stiften	alapít, előidéz
+105217	oberflächlich	felszínes, feületes
+105218	Finnland	Finnország
+105219	Portugal	Portugália

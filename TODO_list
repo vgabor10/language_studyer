@@ -6,9 +6,8 @@ Modification ideas in src:
 - store card categories data in different file
 - create DictionaryEngine class, create GrammarBookEngine class
 - in gnuplot scripts the file path should be added be parameter
-- make synonim searcher
+- consider to make synonim searcher
 - german grammar items to add: többesszámok
-- make refreshing tabular nicer after action
 - create card categroy tree
 
 New class structure:
@@ -26,6 +25,7 @@ Card category suggestions:
 		- hímnemő
 		- nőnemű
 		- semleges nemű
+		- többesszámú_főnevek
 	- igék
 		- sich-es igék
 		- igekötős igék
