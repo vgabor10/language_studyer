@@ -100,6 +100,11 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         });
         selectedCategoriesTable.setToolTipText("");
         selectedCategoriesTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        selectedCategoriesTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                selectedCategoriesTableMouseClicked(evt);
+            }
+        });
         jScrollPane3.setViewportView(selectedCategoriesTable);
 
         jButton3.setText(">");
@@ -134,6 +139,11 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         });
         allCategoriesTable.setToolTipText("");
         allCategoriesTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        allCategoriesTable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                allCategoriesTableMouseClicked(evt);
+            }
+        });
         jScrollPane4.setViewportView(allCategoriesTable);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -177,6 +187,10 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        addCategoryToCard();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void addCategoryToCard() {
         if (allCategoriesTable.getSelectedRowCount() == 1) {
             int selectedTableRowIndex = allCategoriesTable.getSelectedRow();
             CardCategory cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
@@ -188,9 +202,9 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
             
             allCategoriesTable.clearSelection();
         }
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    }
+    
+    private void removeCategoryFromCard() {
         if (selectedCategoriesTable.getSelectedRowCount() == 1) {
             int selectedTableRowIndex = selectedCategoriesTable.getSelectedRow();
             selectedCategoriesTableModel.removeRow(selectedTableRowIndex);
@@ -198,6 +212,10 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
             
             selectedCategoriesTable.clearSelection();
         }
+    }
+    
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        removeCategoryFromCard();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
@@ -213,6 +231,18 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
         
         dispose();
     }//GEN-LAST:event_okButtonActionPerformed
+
+    private void allCategoriesTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_allCategoriesTableMouseClicked
+        if (evt.getClickCount() == 2) {
+            addCategoryToCard();   
+        }
+    }//GEN-LAST:event_allCategoriesTableMouseClicked
+
+    private void selectedCategoriesTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selectedCategoriesTableMouseClicked
+        if (evt.getClickCount() == 2) {
+            removeCategoryFromCard();   
+        }
+    }//GEN-LAST:event_selectedCategoriesTableMouseClicked
 
     /**
      * @param args the command line arguments

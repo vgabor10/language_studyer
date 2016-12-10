@@ -102,6 +102,9 @@
               <JTableSelectionModel selectionMode="0"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="selectedCategoriesTableMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
@@ -140,6 +143,9 @@
               <JTableSelectionModel selectionMode="0"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="allCategoriesTableMouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
