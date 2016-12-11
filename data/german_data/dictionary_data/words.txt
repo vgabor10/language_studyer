@@ -3039,7 +3039,7 @@
 103099	s Modell	modell
 103100	streichen	simít, kihúz, kitöröl
 103101	zurückkommen	visszatér
-103102	bedenken	megfontol
+103102	bedenken	meggondol, megfontol
 103103	keineswegs	semmiképpen
 103104	s Schicksal	sors
 103105	vertrauen	bízik, megbízik
@@ -4179,7 +4179,7 @@
 104264	e Reaktion	reagálás, reakció
 104266	begehen	elkövet
 104267	r Nacken	nyak
-104268	ausnehmen	meglát, felismer
+104268	ausnehmen	kivesz, meglát, felismer
 104269	werfen	dob, hajít, vet
 104270	täuschen	becsap, cselez
 104271	e Provinz	tartomány
@@ -4243,7 +4243,7 @@
 104330	r Osten	kelet
 104331	trösten	vigasztal
 104332	verletzen	megsebez, megsért
-104333	dazwischen	között
+104333	dazwischen	között, közé
 104334	r Zweifel	kétely, kétség
 104335	wiegen	nyom vmennyit
 104336	behaupten	állít, kijelent
@@ -4648,7 +4648,7 @@
 104740	individuell	egyéni, individuális
 104741	zur Verfügung stehen	rendelkzésre áll
 104742	strukturieren	szerkeszt, strukturál
-104743	e Bilanz	mérleg (közgazdaságban)
+104743	e Bilanz	mérleg
 104744	Schweiz	svájc
 104745	r Rang	rang, helyezés
 104746	stellvertretend	helyettes (mn)
@@ -4945,7 +4945,6 @@
 105168	h. gewollt	akar (Perfekt)
 105169	h. gezogen	húz (Perfekt)
 105170	h. gezwungen	kényszerít (Perfekt)
-105172	eins	egy
 105173	zwei	kettő
 105174	drei	három
 105175	vier	négy
@@ -5000,7 +4999,7 @@
 102342	e Donau	Duna
 101477	lila	lila
 102070	r Tausch	csere
-102129	merklich	észrevehetően
+102129	merklich	észrevehető
 100631	r Schmuck	dísz, ékszer
 101572	China	Kína
 102487	marschieren	menetel, masíroz
@@ -5182,7 +5181,7 @@
 104885	bei	-nál, -nél
 104886	e Schätzung	becslés
 104887	Warschau	Varsó
-104888	ausbleiben	elmarad, kimarad
+104888	ausbleiben	kimarad, elmarad
 104889	s Triebwerk	hajtómű
 104890	s Inventar	leltár
 104891	es tut mir leid	sajnálom
@@ -5218,3 +5217,45 @@
 105217	oberflächlich	felszínes, feületes
 105218	Finnland	Finnország
 105219	Portugal	Portugália
+105172	e Kavallerie	lovasság
+105220	r Angreifer	támadó
+105221	e Recherche	kutatás
+105222	r Mathematiker	matematikus
+105223	s Gegengewicht	ellensúly
+105224	e Kapitulation	kapituláció
+105225	ums Leben kommen	életét veszti
+105226	ethisch	etikus
+105227	einsatzfähig	használható, bevethető
+105228	nominieren	jelöl, kinevez
+105229	prominent	ismert, kiváló
+105230	s Parkett	parketta
+105231	e Bohrung	fúrás
+105232	e Erschließung	feltárás, hasznosítás
+105233	ehren	tisztel, becsül
+105234	e Auszeichnung	díj, kitüntetés
+105235	zweifach	kettős, kétszeres
+105236	koordinieren	koordinál
+105237	e Drohung	fenyegetés
+105238	e Explosion	robbanás
+105239	e Metropole	világváros, metropolisz
+105240	r Innenminister	belügyminiszter
+105241	e Festnahme	letartóztatás
+105242	r Tatort	tetthely
+105243	nach	után, múlva
+105244	rekrutieren	toboroz
+105245	r Rekrut	újonc
+105246	gleichfalls	szintén, éppúgy
+105247	e Hoheit	méltóság
+105248	verwüsten	letarol, lerombol
+105249	schöpfen	kinyer, merít
+105250	s Potential	lehetőség
+105251	e Präsenz	jelenlét
+105252	Großbritannien	Nagy-Britannia
+105253	beteuern	bizonygat
+105254	Australien	Ausztrália
+105255	s Gebet	ima
+105256	köpfen	lefejez
+105257	e Rakete	rakéta
+105258	e Amtszeit	hivatali idő
+105259	feststecken	vesztegel
+105260	zufügen	okoz, kiró

@@ -5969,8 +5969,7 @@
 102734	Die Kriminalpolizei erstellt eine Liste der möglichen Täter.
 102735	Ich bin mit deinem Vorschlag einverstanden.
 102735	Ja, ich bin damit einverstanden.
-102735	Viele Menschen waren einverstanden.
-102735	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
+102735	Viele Menschen waren einverstanden, gleichwohl gab es auch kritische Stimmen.
 102736	Die Geburtstagsgäste kamen alle einzeln.
 102736	Bitte treten Sie einzeln ein.
 102736	Beantworten Sie bitte jede einzelne Frage.
@@ -8513,6 +8512,8 @@
 104176	Die Temperatur ist unabhängig von der Masse einer Flüssigkeit.
 104178	Die biologische Vielfalt auf der Erde nimmt durch die Umweltverschmutzung ab.
 104178	Ich benutze nur biologisch abbaubares Waschmittel.
+104179	Glück ist flüchtig.
+104179	Er ist nur eine flüchtige Bekanntschaft.
 104181	Die Bewohner dieses Hauses mussten alle umziehen.
 104182	Das war eine verrückte Aktion.
 104183	Ein Großteil der Einnahmen ergibt sich aus Spenden.
@@ -9997,9 +9998,6 @@
 105164	Ich habe das letzte Wort nicht verstanden.
 105165	Die Volkswirtschaft ist letztes Jahr nur unwesentlich gewachsen.
 105167	Ich habe das nicht gewusst.
-105172	Artikel eins des Grundgesetzes lautet: Die Würde des Menschen ist unantastbar.
-105172	Ihr Lied ist auf Platz eins der Hitliste.
-105172	Wir gehen halb eins essen.
 105173	A und B gehören zwei verschiedenen Kategorien an.
 105173	Das Gehirn des Menschen besteht aus zwei Hälften.
 105173	Der Euro verzeichnet seit zwei Monaten ein kräftiges Wachstum.
