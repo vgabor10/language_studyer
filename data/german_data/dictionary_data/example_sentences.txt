@@ -234,9 +234,6 @@
 100041	Heute hält der Sprecher eine Rede.
 100041	Heute ist keine Wolke am Himmel.
 100041	Heute spielt ein berühmtes Ensemble aus Österreich.
-100041	Ich lasse mir heute meine Haare schneiden.
-100041	Im Club nebenan ist heute ein Livekonzert.
-100041	Sie kommen heute nicht. 2 Sie pron you
 100042	Beim Frühstück lese ich immer die Zeitung.
 100042	Welche Zeitung würden Sie vorziehen?
 100043	Dieses Hemd kostet dreißig Euro.
@@ -7548,8 +7545,6 @@
 103627	Manche Männer begehen den Fehler, ihr Boot nach der Freundin zu benennen.
 103627	Damit eine Sprache zur Weltsprache werde, genügt es nicht, sie so zu benennen.
 103628	Judith lernt Polnisch und Tschechisch.
-103628	Zbigniew ist polnischer Staatsbürger. 2 Polnisch das Polish
-103628	Judith lernt Polnisch und Tschechisch.
 103629	Die Schokolade ist mir zu bitter.
 103629	In diesem Bereich ist Frau Bitter Expertin.
 103631	Wir bedauern den Abbau von Arbeitsplätzen sehr.
@@ -8406,9 +8401,7 @@
 104113	Er hat ein Vermögen für den Hauskauf ausgegeben.
 104113	Ich vermag diese Frage nicht zu beantworten.
 104114	Die Polizei will Tom vernehmen.
-104115	Naturschutz ist eine Methode, mit der wir sicherstellen können, in Zukunft ausreichend Energie zu haben.
 104115	Unser Projekt ist ausreichend finanziert.
-104115	Der Fall war ausreichend ernst, um eine Untersuchung der Polizei berechtigt erscheinen zu lassen.
 104116	Das Klima hängt von Relief und Meeresnähe ab.
 104116	Das Klima ist von der Nähe zum Meer abhängig.
 104116	Der Wechsel der Jahreszeiten kennzeichnet das Klima in der gemäßigten Zone.
@@ -10187,3 +10180,5 @@
 101836	Wie können wir Krieg abschaffen?
 101836	Wir sollten diese alten Regeln abschaffen.
 104838	Ist der Preis annehmbar?
+101916	Unser Projekt ist ausreichend finanziert.
+101916	Naturschutz ist eine Methode, mit der wir sicherstellen können, in Zukunft ausreichend Energie zu haben.

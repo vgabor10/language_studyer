@@ -467,7 +467,7 @@
 100469	s Festland	szárazföld
 100470	e Börse	tőzsde
 100471	r Beobachter	mefigyelő
-100472	vornehmlich	főként
+100472	vornehmlich	főként, főleg
 100473	beenden	befelyez
 100474	r Handel	kereskedelem
 100475	s Öl	olaj
@@ -1886,7 +1886,6 @@
 101913	e Platte	tál, lemez
 101914	speichern	tárol
 101915	transportieren	szállít
-101916	überspielen	átmásol
 101917	benutzen	használ
 101918	s Internet	internet
 101919	r Provider	szolgáltató
@@ -2127,7 +2126,7 @@
 102168	erfolgreich	sikeres
 102169	s Kreuz	kereszt
 102170	e Runde	forduló
-102171	e Kenntnis	ismeret
+102171	e Kenntnis	tudás, ismeret
 102172	schmutzig	koszos
 102173	e Hemmung	gátlás
 102174	s Ackerland	szántóföld
@@ -3554,7 +3553,7 @@
 103625	anfangs	kezdetben
 103626	vorhanden	létező, meglévő
 103627	benennen	elnevez
-103628	s Polnisch	lengyel (fn)
+103628	s Polnisch	lengyel nyelv
 103629	bitter	keserű
 103630	e Pflegerin	ápolónő
 103631	s Bedauern	sajnálat, részvét
@@ -4028,7 +4027,7 @@
 104112	sich befinden	vmilyennek talál, vhov van
 104113	vermögen	képes vmire, megtehet vmit
 104114	vernehmen	megtud, kihallgat
-104115	ausreichen	elég (ige)
+104115	ausreichen	elég
 104116	s Klima	klíma, éghajlat
 104117	abwenden	elfordít
 104118	e Faust	ököl
@@ -4256,11 +4255,11 @@
 104343	r Vergleich	összehasonlítás
 104344	übertreiben	túloz, nagyít
 104345	erneut	újra, ismét
-104346	irgendetwas	valami
+104346	irgendetwas	valami, akármi
 104348	bewahren	megóv, megőriz
 104349	ansiedeln	letelepedik
 104350	andeuten	sejtet, céloz
-104351	r Betracht	figyelembe vevés, megfontolás
+104351	r Betracht	figyelembevétel, megfontolás
 104352	selbstständig	önálló
 104353	e Aussage	állítás, kijelentés
 104354	erfreuen	örül
@@ -4460,7 +4459,7 @@
 104551	r Täter	tettes, elkövető
 104552	vorläufig	átmeneti, ideiglenes
 104553	schleichen	mászik, oson, lopakodik
-104554	mangeln	hiányt szenved
+104554	mangeln	hiányt szenved, szűkölködik
 104555	beste	legjobb
 104556	verdächtig	gyanús
 104557	e Realität	valóság, realitás
@@ -5226,7 +5225,7 @@
 105225	ums Leben kommen	életét veszti
 105226	ethisch	etikus
 105227	einsatzfähig	használható, bevethető
-105228	nominieren	jelöl, kinevez
+105228	nominieren	jelöl, kinevez, nominál
 105229	prominent	ismert, kiváló
 105230	s Parkett	parketta
 105231	e Bohrung	fúrás
@@ -5289,3 +5288,13 @@
 105288	r Vormarsch	előrenyomulás
 105289	skrupellos	gátlástalan
 105290	zurückschrecken	visszariad
+105291	e Einmischung	beavatkozás
+105292	e Dreistigkeit	pimasság
+105293	empören	fellázít, felháborít
+105294	e Brühe	leves
+101916	ausreichend	elég
+105295	e Errungenschaft	vívmány
+105296	e Prägung	alkotás, jellemzés
+105297	e Weste	mellény
+105298	verbannen	elűz, száműz
+105299	spezial	speciális
