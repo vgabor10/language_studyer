@@ -2362,7 +2362,7 @@
 102410	hier	itt
 102411	hierher	ide
 102412	hierzu	ehhez
-102413	hilflos	gyámoltalan
+102413	hilflos	tehetetlen, gyámoltalan
 102414	hinauf	felfelé
 102415	hinausgehen	kimegy
 102416	hinaus	kifelé
@@ -2518,7 +2518,7 @@
 102570	e Verwaltung	ügyintézés
 102571	e Vorlesung	előadás
 102572	e Verwendung	használat
-102573	vielzahl	számos
+102573	e Vielzahl	sok
 102574	e Volkswirtschaft	nemzetgazdaság
 102575	e Vorgabe	előny
 102576	e Vorlage	javaslat
@@ -2703,7 +2703,7 @@
 102759	einrichten	berendez, elrendez
 102760	weinen	sír (ige)
 102761	e Grenze	határ
-102762	e Nuss	dió
+102762	e Nuss	dió, mogyoró
 102763	null	nulla
 102764	r Angehörige	rokon
 102765	r Amerikaner	amerikai (ember)
@@ -3053,7 +3053,7 @@
 103113	aufführen	előad
 103114	r Fortschritt	haladás
 103115	r Bereich	térség, körzet, terület
-103116	untersuchen	kivizsgál
+103116	untersuchen	kivizsgál, átvizsgál
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van, küszöbön áll
 103119	s Lager	tábor, raktár
@@ -5259,3 +5259,33 @@
 105258	e Amtszeit	hivatali idő
 105259	feststecken	vesztegel
 105260	zufügen	okoz, kiró
+105261	s Zusammenspiel	csapatjáték
+105262	größtenteils	túnyomórészt, zömmel
+105263	s Territorium	territórium, terület
+105264	e Geisel	túsz
+105265	provozieren	provokál
+105266	e Rhetorik	retorika
+105267	stornieren	töröl
+105268	signalisieren	jelez
+105269	s Unheil	baj, vész
+105270	ausgerechnet	pont, éppen
+105271	e Lockerung	lazítás
+105272	s Embargo	embargó
+105273	r Neuling	újonc, kezdő
+105274	abtrünnig	hűtlen
+105275	gewaltsam	erőszakos
+105276	untrennbar	elválaszthatatlan
+105277	verhandelbar	tárgyalható
+105278	bekräftigen	megerősít
+105279	e Festung	erőd
+105280	e Ambition	ambíció
+105281	s Telefonat	telefonbeszélgetés
+105282	gratulieren	gratulál
+105283	entgegennehmen	elfogad, átvesz
+105284	respektvoll	tiszteletteljes
+105285	kontern	visszavág, válaszol
+105286	redigieren	szerkeszt, átdolgoz
+105287	abwegig	helytelen, elítélendő
+105288	r Vormarsch	előrenyomulás
+105289	skrupellos	gátlástalan
+105290	zurückschrecken	visszariad
