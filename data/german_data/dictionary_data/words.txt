@@ -244,7 +244,7 @@
 100244	einnehmen	bevesz, elfoglal
 100245	e Bezeichnung	elnevezés
 100246	zwischen	között
-100247	während	alatt (időben)
+100247	während	közben, alatt (időben)
 100248	r Zeitraum	időszak
 100249	r Bundesstaat	szövetségi állam
 100250	e Gründung	alapzat, alapítás
@@ -307,7 +307,7 @@
 100308	streiken	sztrájkol
 100309	eintreten	belép
 100310	hervorrufen	előidéz
-100311	fordern	követel
+100311	fordern	követel, elvár
 100312	letztlich	végül
 100313	stürzen	zuhan, elesik
 100314	endgültig	végérvényes
@@ -571,7 +571,7 @@
 100574	e Flut	árvíz
 100575	r Freiwillige	önkéntes
 100576	fleißig	szorgalmas
-100577	bestätigen	igazol
+100577	bestätigen	igazol, megerősít
 100578	r Feiertag	ünnep, ünnepnap
 100579	r Stahl	acél
 100580	r Passagier	utas
@@ -612,7 +612,7 @@
 100616	verbessern	javít
 100617	s Essen	étel, evés
 100618	wunderbar	csodálatos
-100619	handeln	cselekszik
+100619	handeln	cselekszik, kereskedik
 100620	gestern	tegnap
 100621	s Geheimnis	titok
 100622	s Frühstück	reggeli
@@ -1718,7 +1718,7 @@
 101740	s Schwimmbad	uszoda
 101741	faulenzen	lustálkodik
 101742	besorgen	ellát, gondoskodik, szerez
-101743	e Begrüßung	üdvözlés
+101743	e Begrüßung	köszönés, üdvözlés
 101744	s Museum	múzeum
 101745	e Galerie	galéria
 101746	e Statue	szobor
@@ -2371,7 +2371,7 @@
 102420	hinnehmen	elfogad
 102421	hinsichtlich	tekintettel vmire
 102422	hinten	hátul
-102423	hinter	mögé
+102423	hinter	mögé, mögött
 102424	hinterher	utána
 102425	hinterlassen	hátrahagy
 102426	hin	felé
@@ -3084,7 +3084,7 @@
 103147	längst	régen
 103148	sechzig	hatvan
 103149	r Halt	megállás
-103151	dahinter	mögötte
+103151	dahinter	mögé, mögötte
 103152	unerwartet	váratlanul
 103153	wiedersehen	viszontlát
 103154	anlegen	befektet, kiköt
@@ -3213,7 +3213,7 @@
 103280	r Kritiker	bíráló, kritikus (fn)
 103281	decken	befed
 103282	acht	nyolc
-103283	übertragen	átvisz, közvetít
+103283	übertragen	átvisz, átruház
 103284	lauter	valódi
 103285	intensiv	intenzív
 103286	setzen	tesz, helyez
@@ -3498,7 +3498,7 @@
 103569	rechtlich	törvényes
 103570	verwirren	összezavar
 103571	zurückgehen	visszamegy, hátrál
-103572	befestigen	rőgzít, felszerel
+103572	befestigen	felszerel, rögzít
 103573	versichern	biztosít, megerősít
 103574	schütteln	ráz
 103575	beeinträchtigen	befolyásol, korlátoz
@@ -3563,7 +3563,7 @@
 103637	beleben	lelkesít, élénkít
 103638	lenken	vezet, irányít
 103639	e Option	opció, választási jog
-103640	bestreiten	vitat, megvitat, kétségbe von
+103640	bestreiten	tagad, kétségbe von, vitat
 103641	aufsetzen	felrak
 103642	monatlich	havonta
 103643	befreien	kiszabadít, felszabadít
@@ -3808,7 +3808,7 @@
 103890	versterben	meghal, elhuny
 103891	r Wissenschaftler	természettudós
 103892	entspannen	pihen
-103893	r Gruß	köszöntés
+103893	r Gruß	köszöntés, üdvözlés
 103894	spontan	spontán
 103895	vertraglich	elfogadható, elviselhető
 103896	reiten	lovagol
@@ -3849,7 +3849,7 @@
 103932	e Aufmerksamkeit	figyelem
 103933	r Bauer	földműves
 103934	worauf	amin
-103935	e Öffnung	nyílás, megnyitás
+103935	e Öffnung	nyílás, kinyitás
 103936	e Angst	félelem, izgalom
 103937	stumm	néma, szótlan
 103938	sogleich	azonnal
@@ -4476,7 +4476,7 @@
 104568	durch	át, keresztül, által
 104569	dicht	feszes, sűrű
 104570	besprechen	megvitat, megbeszél
-104571	r Russe	orosz (fn)
+104571	r Russe	orosz (ember)
 104572	verweigern	megtagad
 104573	jemand	valaki
 104574	e Anlage	létesítmény
@@ -5298,3 +5298,31 @@
 105297	e Weste	mellény
 105298	verbannen	elűz, száműz
 105299	spezial	speciális
+105300	Türkei	Törökország
+105301	kippen	billen
+105302	weder ... noch	sem ... sem
+105303	designieren	kijelöl
+105304	e Sanierung	tatrozás
+105305	r Überschuss	felesleg
+105306	untragbar	elviselhetetlen
+105307	hemmen	akadályoz, gátol
+105308	s Weingut	szőlőbirtok
+105309	s Imperium	birodalom
+105310	e Beute	zsákmány
+105311	e Erwähnung	említés, megemlítés
+105312	unterbreiten	javasol, terjeszt
+105313	wachsam	éber
+105314	immerzu	folyton, szakadatlanul
+105315	r Zivilist	civil
+105316	glaubwürdig	hihető, szavahihető
+105317	e Bestätigung	igazolás, megerősítés
+105318	r Rebell	lázadó, fekelő
+105319	r Reporter	riporter, tudósító
+105320	s Menschenrecht	emberi jog
+105321	r Gräuel	borzalom, rémség
+105322	schutzlos	védtelen
+105323	r Beschuss	támadás, bombázás
+105324	e Erstickung	fulladás
+105325	ernennen	kinevez
+105326	auszeichnen	kitüntet
+105327	hinter	hátra
