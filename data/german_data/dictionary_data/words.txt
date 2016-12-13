@@ -1377,7 +1377,7 @@
 101390	r Installateur	szerelő
 101391	s Dach	tető
 101392	klingeln	csenget
-101393	e Rechnung	számla
+101393	e Rechnung	számla, számítás
 101394	restlos	maradéktalanul
 101395	gerade	éppen, egyenesen
 101396	e Zins	kamat
@@ -1737,7 +1737,7 @@
 101759	unterwegs	útközben
 101760	anstrengend	megerőltető
 101761	riesengroß	óriási
-101762	e Landschaft	vidék
+101762	e Landschaft	táj, vidék
 101763	e Vorbereitung	előkészület
 101764	s Flugticket	repülőjegy
 101765	buchen	lefoglal
@@ -2684,7 +2684,7 @@
 102739	e Jacke	dzseki
 102740	jugendlich	fiatalos
 102741	e Jugend	fiatalság
-102742	eintragen	bejegyez
+102742	eintragen	beír, bejegyez
 102743	e Interpretation	magyarázat, értelmezés
 102744	e Integration	integráció
 102745	e Intelligenz	intelligencia
@@ -3478,7 +3478,7 @@
 103549	s Maß	mérték, méret
 103550	r Deutsche	német (ember)
 103551	e Region	tartomány, vidék
-103552	ausführlich	részletesen
+103552	ausführlich	részletes, részletesen
 103553	zumal	különösen
 103554	drehen	forog, forgat
 103555	interpretieren	előad, értelmez
@@ -4062,7 +4062,7 @@
 104148	dumm	buta, hülye
 104149	wiederholen	ismétel
 104150	r Fuß	láb
-104151	entziehen	visszavon, megvon
+104151	entziehen	visszavon, bevon
 104152	voraus	előre
 104153	untereinander	egymásközt
 104154	samt	vkivel együtt
@@ -5326,3 +5326,4 @@
 105325	ernennen	kinevez
 105326	auszeichnen	kitüntet
 105327	hinter	hátra
+105328	e Absendung	elküldés
