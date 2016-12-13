@@ -17,6 +17,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.AnswerDataByStudyItem;
 
 public class CardTesterDialog extends javax.swing.JDialog {
 
@@ -45,6 +46,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setMnemonic(KeyEvent.VK_A);
         rejectAnswerButton.setMnemonic(KeyEvent.VK_R);
         ignoreAnswerButton.setMnemonic(KeyEvent.VK_G);
+        cardStatisticsButton.setMnemonic(KeyEvent.VK_S);
     }
 
     public void initialise() {  
@@ -98,6 +100,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton = new javax.swing.JButton();
         rejectAnswerButton = new javax.swing.JButton();
         ignoreAnswerButton = new javax.swing.JButton();
+        cardStatisticsButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -217,6 +220,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
             }
         });
 
+        cardStatisticsButton.setText("Card statistics");
+        cardStatisticsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cardStatisticsButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -224,7 +234,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -235,17 +245,17 @@ public class CardTesterDialog extends javax.swing.JDialog {
                         .addComponent(rejectAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ignoreAnswerButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel2)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(inspectCardButton, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cardStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(closeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {closeButton, inspectCardButton});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {cardStatisticsButton, closeButton, inspectCardButton});
 
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -266,17 +276,18 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(closeButton)
-                    .addComponent(inspectCardButton))
+                    .addComponent(inspectCardButton)
+                    .addComponent(cardStatisticsButton))
                 .addContainerGap())
         );
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {acceptAnswerButton, ignoreAnswerButton, rejectAnswerButton});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {closeButton, inspectCardButton});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {cardStatisticsButton, closeButton, inspectCardButton});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -293,6 +304,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             rejectAnswerButton.setEnabled(true);
             ignoreAnswerButton.setEnabled(true);
             inspectCardButton.setEnabled(true);
+            cardStatisticsButton.setEnabled(true);
         }
     }//GEN-LAST:event_jTextField1KeyPressed
 
@@ -440,6 +452,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         rejectAnswerButton.setEnabled(false);
         ignoreAnswerButton.setEnabled(false);
         inspectCardButton.setEnabled(false);
+        cardStatisticsButton.setEnabled(false);
+        
         jTextField1.requestFocus();
         
         if (cardTester.isMoreCardToTest()) {
@@ -463,6 +477,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         rejectAnswerButton.setEnabled(false);
         ignoreAnswerButton.setEnabled(false);
         inspectCardButton.setEnabled(false);
+        cardStatisticsButton.setEnabled(false);
+                
         jTextField1.requestFocus();
         
         if (cardTester.isMoreCardToTest()) {
@@ -477,6 +493,21 @@ public class CardTesterDialog extends javax.swing.JDialog {
         ignoreAnswer();
     }//GEN-LAST:event_ignoreAnswerButtonActionPerformed
 
+    private void cardStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cardStatisticsButtonActionPerformed
+        CardStatisticsDialog dialog
+        = new CardStatisticsDialog(new javax.swing.JFrame(), true);
+
+        AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
+        answerDataByStudyItem.loadDataFromAnswerDataContainer(
+                cardTester.getActualQuestionedCard().index,
+                dictionaryDataContainer.answerDataContainer);
+        dialog.answerDataByCard = answerDataByStudyItem;
+
+        dialog.initialise();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }//GEN-LAST:event_cardStatisticsButtonActionPerformed
+
    
     private void ignoreAnswer() {
         cardTester.ignoreUserAnswer();
@@ -487,6 +518,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         rejectAnswerButton.setEnabled(false);
         ignoreAnswerButton.setEnabled(false);
         inspectCardButton.setEnabled(false);
+        cardStatisticsButton.setEnabled(false);
+        
         jTextField1.requestFocus();
         
         if (cardTester.isMoreCardToTest()) {
@@ -555,6 +588,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton acceptAnswerButton;
+    private javax.swing.JButton cardStatisticsButton;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton ignoreAnswerButton;
     private javax.swing.JButton inspectCardButton;

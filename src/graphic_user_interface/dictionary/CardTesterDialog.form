@@ -26,7 +26,7 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" alignment="1" pref="543" max="32767" attributes="0"/>
+                  <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextField3" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextField1" alignment="1" max="32767" attributes="0"/>
                   <Component id="jTextField2" alignment="1" max="32767" attributes="0"/>
@@ -38,14 +38,13 @@
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Component id="ignoreAnswerButton" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="inspectCardButton" linkSize="3" min="-2" pref="175" max="-2" attributes="0"/>
+                      <Component id="inspectCardButton" linkSize="7" min="-2" pref="173" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="cardStatisticsButton" linkSize="7" min="-2" pref="185" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="closeButton" linkSize="3" min="-2" pref="192" max="-2" attributes="0"/>
+                      <Component id="closeButton" linkSize="7" min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -72,11 +71,12 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane2" min="-2" pref="110" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="132" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="142" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="closeButton" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="inspectCardButton" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cardStatisticsButton" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -210,6 +210,14 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ignoreAnswerButtonActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="cardStatisticsButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Card statistics"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cardStatisticsButtonActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
