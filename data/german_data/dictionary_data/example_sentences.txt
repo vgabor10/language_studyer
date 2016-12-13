@@ -9595,14 +9595,6 @@
 104835	Sie müssen diesen Antrag ausfüllen.
 104835	Vorerst müssen wir uns mit kleinen Fortschritten zufrieden geben.
 104835	Wegen starker Zunahme der Studierenden müssen Zulassungsbeschränkungen vorgenommen werden.
-104835	Wir müssen den Kontakt herstellen.
-104835	Wir müssen den Umsatz steigern.
-104835	Wir müssen die Akten schnellstmöglich vernichten.
-104835	Wir müssen die Öffnung des Safes veranlassen.
-104835	Wir müssen eine klare Entscheidung treffen.
-104835	Wir müssen einen Kompromiss finden.
-104835	Wir müssen noch deutlicher zwischen Können und Wollen differenzieren.
-104835	Zum Abendessen müssen wir wieder daheim sein.
 104859	Der Deutsche trinkt jeden Tag sein Bier.
 104859	Der Job scheint sehr lukrativ zu sein.
 104859	Du hast keinen Grund, böse zu sein.

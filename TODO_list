@@ -9,6 +9,7 @@ Modification ideas in src:
 - consider to make synonim searcher
 - german grammar items to add: többesszámok
 - create card categroy tree
+- create CategoryFilterDialog with "select all cards" and "select complement" feature
 
 New class structure:
 

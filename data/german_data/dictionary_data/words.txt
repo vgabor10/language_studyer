@@ -1821,7 +1821,7 @@
 101846	e Tagesschau	híradó
 101847	e Diskussion	megbeszélés, vita
 101848	e Rolle	szerep
-101849	übernehmen	elvállal
+101849	übernehmen	átvesz, elvállal
 101850	s Mikrofon	mikrofon
 101851	e Szene	jelenet
 101852	r Trick	trükk
@@ -3098,7 +3098,7 @@
 103162	e Planung	terv
 103163	r Zuhörer	hallgató
 103164	vorig	előző
-103165	darunter	alatta
+103165	darunter	alatta, közötte
 103166	r Durchschnitt	átlag
 103167	schlimm	rossz, végzetes
 103168	sprachlich	nyelvi
@@ -5327,3 +5327,23 @@
 105326	auszeichnen	kitüntet
 105327	hinter	hátra
 105328	e Absendung	elküldés
+105329	Österreich	Ausztria
+105330	Schweden	Svédország
+105331	e Hegemonie	hegemónia, uralom
+105332	r Heißluftballon	hőlégballon
+105333	r Anschein	látszat
+105334	schwanken	ingadozik
+105335	sich einigen	megegyezik
+105336	e Evakuierung	evakuálás, kiürítés
+105337	r Jubel	ujjongás, üdvrivalgás
+105338	r Eroberer	hódító
+105339	belagern	ostromol
+105340	dringlich	sürgős
+105341	ereignen	történik, előfordul
+105342	e Trümmer	törmelék, romok
+105343	harren	vár
+105344	r Draht	drót, huzal
+105345	e Brauerei	sörfőzde
+105346	etlich	néhány
+105347	Rumänien	Románia
+105348	stagnieren	stagnál
