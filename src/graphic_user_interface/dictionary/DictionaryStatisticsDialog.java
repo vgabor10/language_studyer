@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.StatisticsToFileWriter;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
@@ -87,6 +88,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -399,16 +401,24 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton11.setText("Big right intervall sizes by days");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -420,7 +430,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addComponent(jButton8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton9)
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton11)
+                .addContainerGap(231, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("diagrams", jPanel2);
@@ -557,7 +569,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
        Runtime commandPrompt = Runtime.getRuntime();
         try {
-            dictionaryStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByDays(
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByDays(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
@@ -569,7 +583,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
        Runtime commandPrompt = Runtime.getRuntime();
         try {
-            dictionaryStatisticsMaker.toFileNumberOfAnswersByDays(
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.toFileNumberOfAnswersByDays(
                 "../data/temporary_data/number_of_answers_by_days.tmp");
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot_number_of_answers_by_days");
@@ -579,9 +595,11 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       Runtime commandPrompt = Runtime.getRuntime();
+        Runtime commandPrompt = Runtime.getRuntime();
         try {
-            dictionaryStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt", 10);
             
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
@@ -609,6 +627,20 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
          toScreenNumberOfAnswersOnTheLastDays((int) jSpinner1.getModel().getValue());
     }//GEN-LAST:event_jSpinner1StateChanged
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        Runtime commandPrompt = Runtime.getRuntime();
+        try {
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.toFileBigRightIntervallSizesOrderedByDays(
+                "../data/temporary_data/data.tmp");
+            
+            commandPrompt.exec("gnuplot ../gnuplot_scripts/plot_big_right_intervall_sizes_by_days");
+        } catch (IOException ex) {
+            Logger.getLogger(GrammarBookOtherToolsDialog.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -654,6 +686,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;

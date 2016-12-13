@@ -9,6 +9,7 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Date;
 import javax.swing.table.DefaultTableModel;
+import study_item_objects.StatisticsToFileWriter;
 
 public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
 
@@ -394,8 +395,11 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
             = new GrammarAnswerDataStatisticsMaker();
             grammarStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
 
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = grammarStatisticsMaker;
+            
             //TODO: rename temporary file
-            grammarStatisticsMaker.toFileHistogramOfStudyItemAnswerRatesByDays(
+            statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByDays(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
 
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot");
@@ -410,7 +414,10 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
             = new GrammarAnswerDataStatisticsMaker();
             grammarStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
 
-            grammarStatisticsMaker.toFileNumberOfAnswersByDays(
+            StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
+            statisticsToFileWriter.answerDataStatisticsMaker = grammarStatisticsMaker;
+            
+            statisticsToFileWriter.toFileNumberOfAnswersByDays(
                 "../data/temporary_data/number_of_answers_by_days.tmp");
 
             commandPrompt.exec("gnuplot ../gnuplot_scripts/plot_number_of_answers_by_days");

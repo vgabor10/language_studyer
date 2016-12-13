@@ -5,9 +5,16 @@ import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStud
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 import common.Logger;
 import common.GeneralFunctions;
-import java.util.*;
-import java.io.*;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Vector;
 
 public class AnswerDataStatisticsMaker {
 
@@ -289,24 +296,6 @@ public class AnswerDataStatisticsMaker {
         return out;
     }
 
-    public void toFileNumberOfAnswersByDays(String filePath) {
-        Map<Integer, Integer> numberOfAnswersByDays = getNumberOfAnswersByDays();
-        
-        Set<Integer> keys = numberOfAnswersByDays.keySet();
-        SortedSet<Integer> sortedDays = new TreeSet<>(keys);
-
-        try {
-            //the true will append the new data
-            FileWriter fw = new FileWriter(filePath, false);
-            for (int day : sortedDays) {
-                fw.write(day + "\t" + numberOfAnswersByDays.get(day) + "\n");
-            }
-            fw.close();
-        } catch (IOException ioe) {
-            System.err.println("IOException: " + ioe.getMessage());
-        }
-    }
-    
     public Vector<Integer> getNumberOfAnswersGivenLastDays(int numberOfDays) {
 
         Vector<Integer> out = new Vector<>();
@@ -408,26 +397,6 @@ public class AnswerDataStatisticsMaker {
 
         return out;
     }
-
-    public void toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
-            String filePath, int numberOfAnswers) {
-        
-        Map<Integer, Histogram> data = getHistogramOfStudyItemAnswerRatesByNumberOfAnswers(numberOfAnswers);
-
-        Set<Integer> keys = data.keySet();
-        SortedSet<Integer> sortedDays = new TreeSet<>(keys);
-
-        try {
-            //the true will append the new data
-            FileWriter fw = new FileWriter(filePath, false);
-            for (int day : sortedDays) {
-                fw.write(day + "\t" + data.get(day).toStringHorisontally("\t") + "\n");
-            }
-            fw.close();
-        } catch (IOException ioe) {
-            System.err.println("IOException: " + ioe.getMessage());
-        }
-    }
     
     //TODO: make it faster: only the answerd study items answer rate should be reevaluated
     public Map<Integer, Histogram> getHistogramOfStudyItemAnswerRatesByDays() {
@@ -456,24 +425,6 @@ public class AnswerDataStatisticsMaker {
         out.put(actualDay, answerDataByStudyItemsContainer.getHistogram());
 
         return out;
-    }
-
-    public void toFileHistogramOfStudyItemAnswerRatesByDays(String filePath) {
-        Map<Integer, Histogram> data = getHistogramOfStudyItemAnswerRatesByDays();
-
-        Set<Integer> keys = data.keySet();
-        SortedSet<Integer> sortedDays = new TreeSet<>(keys);
-
-        try {
-            //the true will append the new data
-            FileWriter fw = new FileWriter(filePath, false);
-            for (int day : sortedDays) {
-                fw.write(day + "\t" + data.get(day).toStringHorisontally("\t") + "\n");
-            }
-            fw.close();
-        } catch (IOException ioe) {
-            System.err.println("IOException: " + ioe.getMessage());
-        }
     }
 
     public double getAverageAnswerRateOfStudyItems() {
@@ -668,6 +619,30 @@ public class AnswerDataStatisticsMaker {
         }
 
         return out;
+    }
+    
+    public List<Integer> getBigRightIntervallSizesOrderedByDays(int intervallSizeTreshold) {
+        List<Integer> dayAndBigRightIntervallSize = new ArrayList<>();
+        GeneralFunctions generalFunctions = new GeneralFunctions();
+        
+        int actualRightIntervallSize = 0;
+        
+        for (int i=0; i<numberOfAnswers(); i++) {
+            AnswerData answerData = answerDataContainer.getAnswerData(i);
+            
+            if (answerData.isRight) {
+                actualRightIntervallSize++;
+            }
+            else {
+                if (actualRightIntervallSize > intervallSizeTreshold) {
+                    dayAndBigRightIntervallSize.add(generalFunctions.milisecToDay(answerData.date));
+                    dayAndBigRightIntervallSize.add(actualRightIntervallSize);
+                }
+                actualRightIntervallSize = 0;
+            }
+        }
+        
+        return dayAndBigRightIntervallSize;
     }
     
 }
