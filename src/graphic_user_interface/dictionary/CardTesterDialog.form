@@ -40,11 +40,11 @@
                   </Group>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="inspectCardButton" linkSize="7" min="-2" pref="173" max="-2" attributes="0"/>
+                      <Component id="inspectCardButton" pref="185" max="32767" attributes="0"/>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="cardStatisticsButton" linkSize="7" min="-2" pref="185" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="closeButton" linkSize="7" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="cardStatisticsButton" pref="185" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="closeButton" pref="185" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>

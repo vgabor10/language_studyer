@@ -31,6 +31,11 @@ public class DictionaryDataModificator {
         saveAnswerDataContainerDataToFile();
         saveExampleSentencesDataToFile();
     }
+    
+    public void removeCardAnswerDataByCardIndex(int cardIndex) {
+        answerDataContainer.removeAnswersWithIndex(cardIndex);
+        saveAnswerDataContainerDataToFile();
+    }    
 
     public void addCard(Card card) {
         card.index = cardContainer.getEmptyCardIndex();

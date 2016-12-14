@@ -56,6 +56,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         cardInspectorPanel = new graphic_user_interface.dictionary.CardInspectorPanel();
         seeCardStatisticsButton = new javax.swing.JButton();
         deleteCardButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -92,6 +93,13 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             }
         });
 
+        jButton1.setText("Delete card answer data");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -106,14 +114,20 @@ public class CardInspectorDialog extends javax.swing.JDialog {
                         .addComponent(deleteCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
-                    .addComponent(seeCardStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(seeCardStatisticsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(seeCardStatisticsButton)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(seeCardStatisticsButton)
+                    .addComponent(jButton1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cardInspectorPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 322, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -178,6 +192,24 @@ public class CardInspectorDialog extends javax.swing.JDialog {
             dispose();
         }
     }//GEN-LAST:event_deleteCardButtonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        YesNoDialog dialog = new YesNoDialog(new javax.swing.JFrame(), true);
+        dialog.setDescription(
+                "Are you sure you would like to delete all answer datas for the card?");
+        DialogAnswer reinforceAnswer = new DialogAnswer();
+        dialog.dialogAnswer = reinforceAnswer;
+        
+        dialog.setLocationRelativeTo(this);        
+        dialog.setVisible(true);
+
+        if (reinforceAnswer.boolAnswer) {
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
+            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.removeCardAnswerDataByCardIndex(cardToInspect.index);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public void saveCard() {
         cardToInspect.index = cardInspectorPanel.cardIndex;
@@ -245,6 +277,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
     private graphic_user_interface.dictionary.CardInspectorPanel cardInspectorPanel;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton deleteCardButton;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton seeCardStatisticsButton;
     // End of variables declaration//GEN-END:variables
 }
