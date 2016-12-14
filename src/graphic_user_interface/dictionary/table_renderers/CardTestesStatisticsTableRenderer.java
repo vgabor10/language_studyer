@@ -2,12 +2,15 @@ package graphic_user_interface.dictionary.table_renderers;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.util.Set;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
 public class CardTestesStatisticsTableRenderer implements TableCellRenderer {
 
+    public Set<Integer> rowIndexesNotToColor;
+    
     public static final DefaultTableCellRenderer DEFAULT_RENDERER = new DefaultTableCellRenderer();
 
 	@Override
@@ -20,6 +23,9 @@ public class CardTestesStatisticsTableRenderer implements TableCellRenderer {
             String rarAfter = (String)table.getModel().getValueAt(row,2);
             String rarBefore = (String)table.getModel().getValueAt(row,3);
             
+            if (rowIndexesNotToColor.contains(row)) {
+                return c;
+            } else
             if (rarBefore.equals("-")) {
                 c.setBackground(new Color(51,194,242)); //light blue
             }

@@ -367,15 +367,16 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
     }
 
-    private void goToStatisticsFrameAndSaveData() {
+    private void showStatisticsDialogAndSaveData() {
         finishTime = new Date().getTime();
         
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
         dialog.allCard = dictionaryDataContainer.cardContainer;
-        dialog.testAnswers = cardTester.getUserAnswers();
+        dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.oldAnswers = dictionaryDataContainer.answerDataContainer;
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
+        dialog.categoryConstrains = studyStrategyDataHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
         dialog.setCardTestStatisticsDataToFrame();
@@ -457,7 +458,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            goToStatisticsFrameAndSaveData();
+            showStatisticsDialogAndSaveData();
         }
     }
     
@@ -482,7 +483,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            goToStatisticsFrameAndSaveData();
+            showStatisticsDialogAndSaveData();
         }
     }
     
@@ -523,7 +524,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            goToStatisticsFrameAndSaveData();
+            showStatisticsDialogAndSaveData();
         }
     }
     

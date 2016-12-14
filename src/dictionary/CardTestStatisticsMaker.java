@@ -4,10 +4,12 @@ import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataByStudyItemContainer;
 import common.Logger;
 
-import java.util.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.text.DecimalFormat;
+import java.util.Date;
+import java.util.Set;
+import study_item_objects.AnswerData;
 
 public class CardTestStatisticsMaker {
 
@@ -34,6 +36,20 @@ public class CardTestStatisticsMaker {
         testAnswers = ta;
     }
 
+    public void setTestAnswersWithCategoryConstrains(
+            AnswerDataContainer ta, Set<Integer> categoryConstrains) {
+        
+        testAnswers = new AnswerDataContainer();
+        
+        for (int i=0; i<ta.numberOfAnswers(); i++) {
+            AnswerData answerData = ta.getAnswerData(i);
+            if (allCard.getCardByIndex(answerData.index).containsAnyCategoryIndex(
+                    categoryConstrains)) {
+                testAnswers.addAnswerData(answerData);
+            }
+        }
+    }
+    
     public void setOldAnswers(AnswerDataContainer oa) {
         oldAnswers = oa;
     }
