@@ -3525,7 +3525,7 @@
 103597	daheim	otthon (mn)
 103598	zurück	vissza
 103599	meistens	többnyire
-103600	klingen	cseng, kong
+103600	klingen	cseng, hangzik
 103601	schauen	tekint, néz
 103602	r Status	státusz, állapot
 103603	bekämpfen	harcol, szembeszáll
