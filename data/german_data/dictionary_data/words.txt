@@ -1647,7 +1647,7 @@
 101666	s Getränk	ital
 101667	s Restaurant	étterem
 101668	r Gasthof	vendéglő
-101669	e Bedienung	kiszolgálás
+101669	e Bedienung	kezelés, kiszolgálás
 101670	e Speisekarte	étlap
 101671	s Service	étkészlet
 101672	s Dessert	desszert
@@ -2757,7 +2757,7 @@
 102814	r Absolvent	végzős
 102815	e Gegend	vidék, környék
 102816	e Fraktion	frakció, párt
-102817	probieren	probál
+102817	probieren	próbál
 102818	plädieren	véd
 102819	warten	vár (ig)
 102820	r Dienstag	kedd
@@ -5347,3 +5347,6 @@
 105346	etlich	néhány
 105347	Rumänien	Románia
 105348	stagnieren	stagnál
+105349	e Verstimmung	harag, neheztelés
+105350	verzögern	halogat, késleltet
+105351	wie	hogyan
