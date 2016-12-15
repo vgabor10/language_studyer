@@ -5384,3 +5384,8 @@
 105383	unterhandeln	tárgyal
 105384	dämpfen	tompít, csillapít
 105385	e Sanktion	szankció
+105386	r Grat	perem
+105387	e Annexion	annexió, bekebelezés
+105388	annähern	közelít, közeledik
+105389	je ... desto ...	minél ... annál ...
+105390	entbehrlich	nélkülözhető

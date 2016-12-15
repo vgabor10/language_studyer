@@ -7546,8 +7546,6 @@
 103628	Judith lernt Polnisch und Tschechisch.
 103629	Die Schokolade ist mir zu bitter.
 103629	In diesem Bereich ist Frau Bitter Expertin.
-103631	Wir bedauern den Abbau von Arbeitsplätzen sehr.
-103631	Wir bedauern den Vorfall sehr.
 103634	Beim Fall Ötzi handelt es sich wahrscheinlich um Mord.
 103634	Der schlimmste Fall ist nun eingetreten. Wir haben keinen Strom und kein Wasser mehr.
 103634	Derzeit liegen uns keine Daten zu diesem Fall vor.
