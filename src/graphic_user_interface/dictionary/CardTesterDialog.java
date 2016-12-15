@@ -221,6 +221,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         });
 
         cardStatisticsButton.setText("Card statistics");
+        cardStatisticsButton.setEnabled(false);
         cardStatisticsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cardStatisticsButtonActionPerformed(evt);

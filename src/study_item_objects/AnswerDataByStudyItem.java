@@ -42,7 +42,7 @@ public class AnswerDataByStudyItem {
             return data.get(data.size() - 1).date;
         }
         else {
-            return -1;
+            return Long.MIN_VALUE;
         }
     }
 

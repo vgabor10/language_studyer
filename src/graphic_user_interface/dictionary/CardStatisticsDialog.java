@@ -17,12 +17,46 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
     }
 
     public void initialise() {
-        DecimalFormat df = new DecimalFormat("#.000");
-        
+        toScreenNumberOfAnswers();
+        toScreenRightAnswerRate();
+        toScreenLastStudyDate();
+        toScreenFirstStudyDate();
+    }
+    
+    private void toScreenNumberOfAnswers() {
         jLabel4.setText(Integer.toString(answerDataByCard.numberOfAnswers()));
-        jLabel5.setText(df.format(answerDataByCard.countRightAnswerRate()));
-        jLabel8.setText(new Date(answerDataByCard.getLastStudyDate()).toString());
-        jLabel9.setText(new Date(answerDataByCard.getFirstStudyDate()).toString());
+    }
+    
+    private void toScreenRightAnswerRate() {
+        if (answerDataByCard.countRightAnswerRate() != -1) {
+            DecimalFormat df = new DecimalFormat("#.000");
+            jLabel5.setText(df.format(answerDataByCard.countRightAnswerRate()));
+        }
+        else {
+            jLabel5.setText("-");
+        }
+    }
+
+    private void toScreenFirstStudyDate() {
+        long firstStudyDate = answerDataByCard.getFirstStudyDate();
+        
+        if (firstStudyDate != Long.MIN_VALUE) {
+            jLabel9.setText(new Date(firstStudyDate).toString());
+        }
+        else {
+            jLabel9.setText("-");
+        }
+    }
+    
+    private void toScreenLastStudyDate() {
+        long lastStudyDate = answerDataByCard.getFirstStudyDate();
+        
+        if (lastStudyDate != Long.MIN_VALUE) {
+            jLabel8.setText(new Date(lastStudyDate).toString());
+        }
+        else {
+            jLabel8.setText("-");
+        }
     }
     
     /**
