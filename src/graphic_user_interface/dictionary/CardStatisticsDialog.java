@@ -40,7 +40,7 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
     private void toScreenFirstStudyDate() {
         long firstStudyDate = answerDataByCard.getFirstStudyDate();
         
-        if (firstStudyDate != Long.MIN_VALUE) {
+        if (firstStudyDate > 0) {
             jLabel9.setText(new Date(firstStudyDate).toString());
         }
         else {
@@ -49,9 +49,9 @@ public class CardStatisticsDialog extends javax.swing.JDialog {
     }
     
     private void toScreenLastStudyDate() {
-        long lastStudyDate = answerDataByCard.getFirstStudyDate();
+        long lastStudyDate = answerDataByCard.getLastStudyDate();
         
-        if (lastStudyDate != Long.MIN_VALUE) {
+        if (lastStudyDate > 0) {
             jLabel8.setText(new Date(lastStudyDate).toString());
         }
         else {
