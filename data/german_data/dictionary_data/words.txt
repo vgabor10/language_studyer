@@ -404,7 +404,7 @@
 100405	allein	egyedül
 100407	beinahe	majdnem
 100408	e Agentur	ügynükség
-100409	vergangen	múlt (mn)
+100409	vergangen	múlt, elmúlt
 100410	r Tote	halott (fn)
 100411	r Lastwagen	teherautó
 100412	weiterhin	továbbá, továbbra
@@ -703,7 +703,7 @@
 100709	e Entschlossenheit	elszántáság
 100710	s Engagement	kötelezettség
 100711	e Sicherheit	biztonság
-100712	e Einrichtung	intézmény
+100712	e Einrichtung	bevezetés, berendezés
 100713	e Verlegung	átköltöztetés
 100714	beziffern	becsül
 100715	e Wartung	karbantartás
@@ -883,7 +883,6 @@
 100892	eng	szűk
 100893	anpacken	megragad
 100894	zermalmen	összezúz
-100895	einrichten	berendez, kialakít
 100896	r Abgeordnete	képviselő
 100897	e Wurzel	gyökér
 100898	damals	akkor, akkoriban
@@ -2699,7 +2698,7 @@
 102755	einschließen	bezár
 102757	einschlafen	elalszik
 102758	einschätzen	felbecsül
-102759	einrichten	berendez, elrendez
+102759	einrichten	berendez, kialakít
 102760	weinen	sír (ige)
 102761	e Grenze	határ
 102762	e Nuss	dió, mogyoró
@@ -2776,7 +2775,7 @@
 102833	e Gunst	jóindulat, pártfogás
 102834	e Grundlage	alap
 102835	r Anbieter	ellátó
-102836	offensichtlich	nyilván
+102836	offensichtlich	nyilvánvaló
 102837	e Gliederung	szerkezet
 102838	einheimisch	hazai
 102839	eignen	illik
@@ -3052,7 +3051,7 @@
 103113	aufführen	előad
 103114	r Fortschritt	haladás
 103115	r Bereich	térség, körzet, terület
-103116	untersuchen	kivizsgál, átvizsgál
+103116	untersuchen	kivizsgál, megvizsgál
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van, küszöbön áll
 103119	s Lager	tábor, raktár
@@ -3316,7 +3315,7 @@
 103384	s Vitamin	vitamin
 103385	zurückführen	származtat, visszavezet
 103386	alltäglich	mindennapos, megszokott
-103387	befürchten	fél (ige)
+103387	befürchten	fél vmitől, tart vmitől
 103388	vorne	elöl
 103389	r Juli	július
 103390	zusammenkommen	összegyűlik
@@ -5350,3 +5349,38 @@
 105349	e Verstimmung	harag, neheztelés
 105350	verzögern	halogat, késleltet
 105351	wie	hogyan
+105352	über	felett
+105353	e Ächtung	megvetés
+105354	e Achtung	figyelem, tisztelet
+105355	Asien	Ázsia
+105356	faktisch	tényleges
+105357	infolge	folytán, következtében
+105358	e Spaltung	hasadás, osztódás
+105359	e Überlegenheit	fölény
+105360	r Panzer	harcokcsi
+105361	e Abwesenheit	távollét, hiányzás
+105362	r Breitengrad	szélasségi fok
+105363	e Flagge	zászló
+105364	festigen	erősít, rögzít
+105365	unterzeichnen	aláír
+100895	e Sympatie	szimpátia, rokonszenv
+105366	r Panzer	páncél, vért
+105367	e Annäherung	közeledés, közelítés
+105368	ethnisch	etnikai, néprajzi
+105369	r Hammer	kalapács
+105370	r Vorfall	eset, esemény
+105371	e Artillerie	tüzérség
+105372	wobei	amelynél
+105373	hinrichten	kivégez
+105374	e Folter	kínzás
+105375	s Vergehen	vétség
+105376	s Denkmal	emlék, emlékmű
+105377	e Tagesordnung	napirend
+105378	bloß	csupán, pusztán
+105379	heimelig	otthonias
+105380	e Neigung	hajlandóság
+105381	beharren	ragaszkodik, kitart
+105382	bedauerlich	sajnálatos
+105383	unterhandeln	tárgyal
+105384	dämpfen	tompít, csillapít
+105385	e Sanktion	szankció

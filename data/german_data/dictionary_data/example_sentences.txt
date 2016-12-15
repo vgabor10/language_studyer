@@ -2519,7 +2519,6 @@
 100892	Anke trägt gern eng anliegende Tops.
 100892	Die betreuenden Ärzte müssen eng zusammenarbeiten.
 100894	Wir haben unsere Feinde zermalmt.
-100895	Wie werden wir die neue Wohnung einrichten?
 100896	Die Abgeordnete verlässt den Plenarsaal.
 100897	Kiefern haben tiefe Wurzeln, Fichten dagegen ﬂache.
 100898	Damals wohnten oft mehrere Familien in einer Wohnung.
