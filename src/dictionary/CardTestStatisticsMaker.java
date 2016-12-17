@@ -16,15 +16,16 @@ public class CardTestStatisticsMaker {
     private DictionaryDataContainer dictionaryDataContainer;
     private AnswerDataContainer testAnswers;
     
-    private AnswerDataContainer relevantTestAnswers;
-    private CardContainer relevantTestedCards;
+    private AnswerDataContainer relevantOldAnswers = new AnswerDataContainer();
+    private AnswerDataContainer relevantTestAnswers = new AnswerDataContainer();
+    private CardContainer relevantTestedCards = new CardContainer();
 
     private long startTime;
     private long finishTime;
 
-    private AnswerDataByStudyItemContainer answerDatasByStudyItemsBeforeTest
+    private AnswerDataByStudyItemContainer relevantAnswerDatasByStudyItemsBeforeTest
             = new AnswerDataByStudyItemContainer();
-    private AnswerDataByStudyItemContainer answerDatasByStudyItemsAfterTest
+    private AnswerDataByStudyItemContainer relevantAnswerDatasByStudyItemsAfterTest
             = new AnswerDataByStudyItemContainer();
 
     private boolean categoryRestrictionUsage = false;
@@ -58,6 +59,16 @@ public class CardTestStatisticsMaker {
                         dictionaryDataContainer.cardContainer.getCardByIndex(answerData.index));
                 }
             }
+            
+            Set<Integer> relevantTestedCardIndexes = relevantTestedCards.getCardIndexes();
+            
+            for (int j = 0; j < allOldAnswers.numberOfAnswers(); j++) {
+                AnswerData answerData = allOldAnswers.getAnswerData(j);
+                Card card = allCards.getCardByIndex(answerData.index);
+                if (card.containsAnyCategoryIndex(categoryRestrictions)) {
+                    relevantOldAnswers.addAnswerData(answerData);
+                }
+            }
         }
         else {
             this.relevantTestAnswers = testAnswers;
@@ -69,38 +80,42 @@ public class CardTestStatisticsMaker {
             }
         }
         
-        Set<Integer> relevantTestedCardIndexes = relevantTestedCards.getCardIndexes();
-            
-        for (int i = 0; i < allOldAnswers.numberOfAnswers(); i++) {
-            AnswerData answerData = allOldAnswers.getAnswerData(i);
-            if (relevantTestedCardIndexes.contains(answerData.index)) {
-                answerDatasByStudyItemsBeforeTest.addAnswerData(answerData);
-                answerDatasByStudyItemsAfterTest.addAnswerData(answerData);
-            }
-        }
+        relevantAnswerDatasByStudyItemsBeforeTest.addDataFromAnswerDataContainer(relevantOldAnswers);
         
-        for (int i = 0; i < relevantTestAnswers.numberOfAnswers(); i++) {
-            answerDatasByStudyItemsAfterTest.addAnswerData(relevantTestAnswers.getAnswerData(i));
-        }
+        relevantAnswerDatasByStudyItemsAfterTest.addDataFromAnswerDataContainer(relevantOldAnswers);
+        relevantAnswerDatasByStudyItemsAfterTest.addDataFromAnswerDataContainer(relevantTestAnswers);
+        
     }
 
     public void setStartAndFinishTime(long st, long ft) {
         startTime = st;
         finishTime = ft;
     }
+    
+    public CardContainer getTestedCards() {
+        CardContainer out = new CardContainer();
+        
+        for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
+            AnswerData answerData = testAnswers.getAnswerData(i);
+            Card card = dictionaryDataContainer.cardContainer.getCardByIndex(answerData.index);
+            out.addCard(card);
+        } 
+        
+        return out;
+    }
 
     public Double getAfterTestArOfCardWithIndex(int index) {
-        return answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
+        return relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
     }
 
     public String averageAnswerRateOfCardsBeforeTestAsString() {
         DecimalFormat df = new DecimalFormat("#.0000");
-        return df.format(answerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems());
+        return df.format(relevantAnswerDatasByStudyItemsBeforeTest.getAverageAnswerRateOfStudyItems());
     }
 
     public String averageAnswerRateOfCardsAfterTestAsString() {
         DecimalFormat df = new DecimalFormat("#.0000");
-        return df.format(answerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems());
+        return df.format(relevantAnswerDatasByStudyItemsAfterTest.getAverageAnswerRateOfStudyItems());
     }
 
     public String percentageOfRightAnswersAsString() {
@@ -128,9 +143,9 @@ public class CardTestStatisticsMaker {
         double aggragatedReducements = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                double d1 = answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
-                double d2 = answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double d1 = relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                double d2 = relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
 
                 if (d1 > d2) {
                     aggragatedReducements = aggragatedReducements + d1 - d2;
@@ -146,9 +161,9 @@ public class CardTestStatisticsMaker {
         double aggragatedImprovements = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                double d1 = answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
-                double d2 = answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double d1 = relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                double d2 = relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
 
                 if (d1 < d2) {
                     aggragatedImprovements = aggragatedImprovements + d2 - d1;
@@ -164,7 +179,7 @@ public class CardTestStatisticsMaker {
         int numberOfNewCardsTested = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (!answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+            if (!relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
                 numberOfNewCardsTested++;
             }
         }
@@ -175,9 +190,9 @@ public class CardTestStatisticsMaker {
         int numberOfCardsWithArReducement = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                double d1 = answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
-                double d2 = answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double d1 = relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                double d2 = relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
 
                 if (d1 > d2) {
                     numberOfCardsWithArReducement++;
@@ -191,9 +206,9 @@ public class CardTestStatisticsMaker {
         int numberOfCardsWithImprovement = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                double d1 = answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
-                double d2 = answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double d1 = relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                double d2 = relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
 
                 if (d1 < d2) {
                     numberOfCardsWithImprovement++;
@@ -207,9 +222,9 @@ public class CardTestStatisticsMaker {
         int numberOfCardsWithNoArChange = 0;
         for (int i = 0; i < relevantTestedCards.numberOfCards(); i++) {
             Card card = relevantTestedCards.getCardByOrder(i);
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                double d1 = answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
-                double d2 = answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+                double d1 = relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                double d2 = relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
 
                 if (d1 == d2) {
                     numberOfCardsWithNoArChange++;
@@ -225,11 +240,11 @@ public class CardTestStatisticsMaker {
             Card card = relevantTestedCards.getCardByOrder(i);
             
             double rightAnswerRateAfterTest = 
-                    answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                    relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
             
-            if (answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+            if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
                 double rightAnswerRateBeforeTest = 
-                        answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
+                        relevantAnswerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate();
                 
                 aggregatedUserPoints = aggregatedUserPoints + rightAnswerRateAfterTest - rightAnswerRateBeforeTest; 
             }

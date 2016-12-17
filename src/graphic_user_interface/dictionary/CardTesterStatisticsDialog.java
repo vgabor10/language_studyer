@@ -38,15 +38,15 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         model = (DefaultTableModel)Table.getModel();
      }
 
-    public void setCardTestStatisticsDataToFrame() {
+    public void initialise() {
         CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
         cardTestStatisticsMaker.setData(dictionaryDataContainer, testAnswers);
         cardTestStatisticsMaker.setCategoryRestrictions(categoryConstrains);
         cardTestStatisticsMaker.initialise();
         
-        //cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
+        cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
 
-        /*jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
+        jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
         jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
         jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArReducement()));
         jLabel19.setText(cardTestStatisticsMaker.aggragatedImprovementsAsString());
@@ -57,25 +57,25 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel21.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsBeforeTestAsString());
         jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsAfterTestAsString());
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
-        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());*/
+        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        /*DecimalFormat df = new DecimalFormat("#.000");
-        CardContainer testedCards = cardTestStatisticsMaker.testedCards;
+        DecimalFormat df = new DecimalFormat("#.000");
+        CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
         Set<Integer> rowIndexesNotToColor = new HashSet<>();
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
              
             String afterTestRarAsString = "-";
-            afterTestRarAsString = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
+            //afterTestRarAsString = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
             
             int afterTestNumberOfAnswers = -1;
-            afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
+            //afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
             
             String beforeTestRarAsString = "-";
-            if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
+            /*if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
                 beforeTestRarAsString
                         = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
-            }
+            }*/
              
             model.addRow(new Object[] {
                     card.term,
@@ -85,7 +85,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                     afterTestNumberOfAnswers
             });
             
-        }*/
+        }
         
         /*for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);

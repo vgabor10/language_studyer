@@ -1,7 +1,6 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Card;
-import dictionary.CardContainer;
 import dictionary.CardFinder;
 import dictionary.DictionaryDataContainer;
 import disc_operation_handlers.LanguageFilesDataHandler;
@@ -15,9 +14,9 @@ import javax.swing.table.TableColumnModel;
 
 public class DictionaryDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
-    
+    private DictionaryDataContainer dictionaryDataContainer;
     private final CardFinder cardFinder = new CardFinder();
+    
     private final DefaultTableModel tableModel;
     private final DefaultTableModel lastSearchesTableModel;
     
@@ -250,6 +249,11 @@ public class DictionaryDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public void setDictionaryDataContainer(DictionaryDataContainer dictionaryDataContainer) {
+        this.dictionaryDataContainer = dictionaryDataContainer;
+        cardFinder.setCardContainer(dictionaryDataContainer.cardContainer);
+    }
+    
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         dispose();
     }//GEN-LAST:event_closeButtonActionPerformed

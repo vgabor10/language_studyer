@@ -372,13 +372,14 @@ public class CardTesterDialog extends javax.swing.JDialog {
         finishTime = new Date().getTime();
         
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
+        dialog.dictionaryDataContainer = dictionaryDataContainer;
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
         dialog.categoryConstrains = studyStrategyDataHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
-        dialog.setCardTestStatisticsDataToFrame();
+        dialog.initialise();
         
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);

@@ -359,7 +359,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void dictionaryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryButtonActionPerformed
         DictionaryDialog dialog 
                 = new DictionaryDialog(new javax.swing.JFrame(), true);
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.setDictionaryDataContainer(dictionaryDataContainer);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryButtonActionPerformed
