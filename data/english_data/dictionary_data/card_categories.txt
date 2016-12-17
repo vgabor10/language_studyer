@@ -1,0 +1,14 @@
+0	főnevek
+14	főnevek_többesszámban
+1	igék
+15	rendhagyó_múltidejű_igék
+2	melléknevek
+13	melléknévi igenevek
+3	határozószavak
+4	számnevek
+5	kérdőszavak
+6	kötőszavak
+7	prepozíciók
+10	földrajzi_nevek
+8	kifejezések
+9	tanulandó_szavak
