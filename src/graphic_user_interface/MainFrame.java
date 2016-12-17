@@ -360,7 +360,6 @@ public class MainFrame extends javax.swing.JFrame {
         DictionaryDialog dialog 
                 = new DictionaryDialog(new javax.swing.JFrame(), true);
         dialog.dictionaryDataContainer = dictionaryDataContainer;
-        dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryButtonActionPerformed

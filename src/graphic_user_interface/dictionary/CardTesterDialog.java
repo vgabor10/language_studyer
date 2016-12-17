@@ -368,24 +368,17 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
     }
 
-    private void showStatisticsDialogAndSaveData() {
+    private void showStatisticsDialog() {
         finishTime = new Date().getTime();
         
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
-        dialog.allCard = dictionaryDataContainer.cardContainer;
         dialog.testAnswers = cardTester.getUserAnswers();        
-        dialog.oldAnswers = dictionaryDataContainer.answerDataContainer;
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
         dialog.categoryConstrains = studyStrategyDataHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
         dialog.setCardTestStatisticsDataToFrame();
-        
-        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setData(dictionaryDataContainer);
-
-        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
         
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -395,6 +388,13 @@ public class CardTesterDialog extends javax.swing.JDialog {
         } else {
             dispose();
         }
+    }
+    
+    private void saveTestData() {
+        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
+        dictionaryDataModificator.setData(dictionaryDataContainer);
+
+        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
     }
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -459,7 +459,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialogAndSaveData();
+            saveTestData();
+            showStatisticsDialog();
         }
     }
     
@@ -484,7 +485,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialogAndSaveData();
+            saveTestData();
+            showStatisticsDialog();
         }
     }
     
@@ -525,7 +527,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialogAndSaveData();
+            saveTestData();
+            showStatisticsDialog();
         }
     }
     

@@ -15,7 +15,7 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     
     private final DefaultTableModel allCategoriesTableModel;
     private final DefaultTableModel selectedCategoriesTableModel;
-
+    
     public SetCardCategoryDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();

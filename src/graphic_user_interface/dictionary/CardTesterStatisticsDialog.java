@@ -5,6 +5,7 @@ import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardTestStatisticsMaker;
+import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
@@ -15,12 +16,12 @@ import study_item_objects.AnswerDataContainer;
 
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
-    public CardContainer allCard;
-    public AnswerDataContainer oldAnswers;
+    public DictionaryDataContainer dictionaryDataContainer;
+    public Set<Integer> categoryConstrains;
+    
     public AnswerDataContainer testAnswers;
     public long startTime;
     public long finishTime;
-    public Set<Integer> categoryConstrains;
     public DialogAnswer dialogAnswer;
     
     private final Logger logger = new Logger();
@@ -39,22 +40,13 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
     public void setCardTestStatisticsDataToFrame() {
         CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
+        cardTestStatisticsMaker.setData(dictionaryDataContainer, testAnswers);
+        cardTestStatisticsMaker.setCategoryRestrictions(categoryConstrains);
+        cardTestStatisticsMaker.initialise();
         
-        cardTestStatisticsMaker.setAllCard(allCard);
-        cardTestStatisticsMaker.setOldAnswers(oldAnswers);
-        if (categoryConstrains.isEmpty()) {
-            cardTestStatisticsMaker.setTestAnswers(testAnswers);
-        }
-        else {
-            cardTestStatisticsMaker.setTestAnswersWithCategoryConstrains(
-                    testAnswers, categoryConstrains);
-        }
-        cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
-        
-        cardTestStatisticsMaker.fillAnserDataByStudyItemContainers();
-        cardTestStatisticsMaker.evaluateTestedCards();
+        //cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
 
-        jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
+        /*jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
         jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
         jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArReducement()));
         jLabel19.setText(cardTestStatisticsMaker.aggragatedImprovementsAsString());
@@ -65,9 +57,9 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel21.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsBeforeTestAsString());
         jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsAfterTestAsString());
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
-        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
+        jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());*/
         
-        DecimalFormat df = new DecimalFormat("#.000");
+        /*DecimalFormat df = new DecimalFormat("#.000");
         CardContainer testedCards = cardTestStatisticsMaker.testedCards;
         Set<Integer> rowIndexesNotToColor = new HashSet<>();
         for (int i=0; i<testedCards.numberOfCards(); i++) {
@@ -93,9 +85,9 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                     afterTestNumberOfAnswers
             });
             
-        }
+        }*/
         
-        for (int i=0; i<testedCards.numberOfCards(); i++) {
+        /*for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
             if (!card.containsAnyCategoryIndex(categoryConstrains)) {
                 rowIndexesNotToColor.add(i);
@@ -104,7 +96,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         
         CardTestesStatisticsTableRenderer colorRenderer = new CardTestesStatisticsTableRenderer();
         colorRenderer.rowIndexesNotToColor = rowIndexesNotToColor;
-        Table.setDefaultRenderer(Object.class, colorRenderer);
+        Table.setDefaultRenderer(Object.class, colorRenderer);*/
     }
     /**
      * This method is called from within the constructor to initialize the form.

@@ -46,10 +46,9 @@ public class CardChooser {
             AnswerData answerData = ddc.answerDataContainer.getAnswerData(i);
             if (cardIndexes.contains(answerData.index)) {
                 answerDataContainer.addAnswerData(answerData);
+                answerDataByStudyItemsContainer.addAnswerData(answerData);
             }
         }
-
-        answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
     }
     
     private int getRandomCardIndex(

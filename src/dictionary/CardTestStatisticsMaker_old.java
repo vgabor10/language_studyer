@@ -11,16 +11,17 @@ import java.util.Date;
 import java.util.Set;
 import study_item_objects.AnswerData;
 
-public class CardTestStatisticsMaker {
+public class CardTestStatisticsMaker_old {
 
     public CardContainer testedCards;
     private CardContainer allCard;
     private AnswerDataContainer testAnswers;
     private AnswerDataContainer oldAnswers;
 
-    public long startTime;
-    public long finishTime;
+    private long startTime;
+    private long finishTime;
 
+    //make these private
     public AnswerDataByStudyItemContainer answerDatasByStudyItemsBeforeTest
             = new AnswerDataByStudyItemContainer();
     public AnswerDataByStudyItemContainer answerDatasByStudyItemsAfterTest

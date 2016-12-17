@@ -17,8 +17,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
     public DictionaryDataContainer dictionaryDataContainer;
     
-    private CardContainer cardContainer;
-    
     private final CardFinder cardFinder = new CardFinder();
     private final DefaultTableModel tableModel;
     private final DefaultTableModel lastSearchesTableModel;
@@ -48,12 +46,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         inspectCardButton.setMnemonic(KeyEvent.VK_I);
         listAllCardsButton.setMnemonic(KeyEvent.VK_L);
         categoryFilterButton.setMnemonic(KeyEvent.VK_F);
-    }
-
-    public void initialise() {
-        cardContainer = dictionaryDataContainer.cardContainer;
-        
-        cardFinder.setCardContainer(cardContainer);
     }
     
     /**
@@ -105,6 +97,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
+        jTable1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -169,6 +162,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 return canEdit [columnIndex];
             }
         });
+        jTable2.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         jTable2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable2MouseClicked(evt);
@@ -423,15 +417,25 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
 
     private void categoryFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryFilterButtonActionPerformed
-        SetCardCategoryDialog dialog 
-                = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        
+        CardCategoryFilterDialog dialog 
+                = new CardCategoryFilterDialog(new javax.swing.JFrame(), true);
         dialog.setAllCategories(dictionaryDataContainer.categoryContainer);
+        dialog.dialogAnswer = dialogAnswer;
         dialog.setSelectedCategories(cardFinder.getCardCategoryRestrictions());
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
-        //TODO: if ok button pressed
-        clearTable();
+        if (dialogAnswer.stringAnswer.equals("ok_button_pressed")) {
+            clearTable();
+            if (!cardFinder.getCardCategoryRestrictions().contains(-1)) {
+                cardFinder.setCategoryRestrictionUsage(true);
+            }
+            else {
+                cardFinder.setCategoryRestrictionUsage(false);
+            }
+        }
         
         jTextField1.requestFocus();
     }//GEN-LAST:event_categoryFilterButtonActionPerformed
