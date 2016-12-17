@@ -2330,6 +2330,7 @@
 100793	In der Theorie klingt es gut, doch wird es sich auch in der Praxis bewähren?
 100793	Glück macht Freunde, aber Not bewährt sie.
 100794	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
+100794	StraßenzügeStraßenzAuch der luxemburgische Ministerpräsident mahnte die Einheit der EU-27 an.üge
 100795	Ich kann mich nicht daran erinnern.
 100795	Ich kann mich nicht mehr an die Handlung des Films erinnern.
 100795	Ich werde dich daran erinnern.
@@ -5877,8 +5878,6 @@
 102685	Professor Schmidt wird die Konferenz leiten.
 102686	Das ist doch logisch.
 102687	Je mehr Leute kommen, umso lustiger wird es.
-102688	Auch der luxemburgische Ministerpräsident mahnte die Einheit der EU-27 an.
-102688	Die Behörden mahnen zur Vorsicht beim Umgang mit Mobilfunk.
 102689	Kinder malen gern mit bunten Farben.
 102690	Auf manche Leute reagiert mein Hund aggressiv.
 102690	Manche Anleihen kann man bei fallenden Zinssätzen kündigen.

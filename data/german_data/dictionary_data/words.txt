@@ -1509,7 +1509,7 @@
 101525	e Regel	szabály, szokás
 101526	unerträglich	elviselhetetlen
 101527	ordnungsgemäß	rendesen
-101528	s Gehalt	fizetés
+101528	s Gehalt	fizetés, tartalom
 101529	r Lohn	bér
 101530	r Arbeitgeber	munkaadó
 101531	r Angestellte	alkalmazott
@@ -2629,7 +2629,6 @@
 102685	leiten	vezet, irányít
 102686	logisch	logikus
 102687	lustig	vidám, vicces
-102688	mahnen	buzdít, figyelmeztet
 102689	malen	fest
 102690	manche	néhány
 102691	e Katastrophe	katasztrófa
@@ -2795,7 +2794,7 @@
 102853	e Gerechtigkeit	igazságosság
 102854	e Flüssigkeit	folyadék
 102855	e Freizeit	szabadidő
-102856	r Ansatz	kezdet
+102856	r Ansatz	kezdet, hajlam
 102857	r Alkohol	alkohol
 102858	nunmehr	immár
 102859	r Anteil	részesedés
@@ -5416,3 +5415,19 @@
 105415	dann	azután
 105416	e Häuser	házak
 105417	missachten	figyelmen kívül hagy
+105418	e Demut	alázat
+105419	demütig	alázatos
+105420	pochen	kitart vmi mellet
+105421	e Korrektur	helyesbítés
+102688	beschlagnehmen	elkoboz, lefoglal
+105422	abermals	újra, ismét
+105423	Brasilien	Brazília
+105424	Europa	Európa
+105425	Afrika	Afrika
+105426	entschlossen	elhatároz
+105427	e Einfuhr	behozatal, import
+105428	r Zwischenfall	incidens
+105429	r Salzgehalt	sótartalom
+105430	e Vorherrschaft	uralkodás
+105431	s Vorkommen	előfordulás
+105432	r Zusammenstoß	össztűzés
