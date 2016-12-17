@@ -2268,7 +2268,7 @@
 102317	fürchten	fél (ige)
 102318	gänzlich	teljesen
 102319	garantieren	garantál
-102320	gar	talán
+102320	gar	sőt, talán
 102321	geboren	születik
 102322	gefährden	veszélyeztet
 102323	gefährlich	veszélyes
@@ -2583,7 +2583,7 @@
 102637	englisch	angol (mn)
 102638	enorm	óriási
 102639	e Norm	norma
-102641	entfalten	kibont
+102641	entfalten	kibont, kifejt
 102642	entgegenkommen	elé jön, megfelel
 102643	entgehen	elkerül, elmenekül
 102644	enthalten	tartalmaz
@@ -2888,7 +2888,7 @@
 102948	positiv	pozitív
 102949	neigen	meghajol
 102950	ordentlich	alapos, gondos
-102951	einfallen	összeomlik
+102951	einfallen	összeomlik, bedől
 102952	einkaufen	bevásárol
 102953	r Brief	levél
 102954	r Anhänger	szurkoló
@@ -5389,3 +5389,30 @@
 105388	annähern	közelít, közeledik
 105389	je ... desto ...	minél ... annál ...
 105390	entbehrlich	nélkülözhető
+105391	e Fischerei	halászat
+105392	e Erwägung	megfontolás, szempont, tényező
+105393	r Schub	lökés
+105394	s Heimweh	honvágy
+105395	symbolisieren	szimbolizál, jelképez
+105396	ragen	emelkedik
+105397	hingehören	odatartozik, hozzátartozik
+105398	e Notenbank	jegybank
+105399	r Notruf	segélyhívás
+105400	Ägypten	Egyiptom
+105401	r Krankenwagen	mentőautó
+105402	vollbesetzt	zsúfolt
+105403	e Berufung	meghívás, hivatkozás
+105404	s Gespenst	kísértet
+105405	e Wucht	súly, lendület
+105406	Niederlanden	Hollandia
+105407	e Ungleichheit	egyenlőtlenség
+105408	ermorden	megöl, lemészárol
+105409	Südkorea	Dél-Korea
+105410	s Drama	dráma
+105411	katastrophal	katasztrofális
+105412	s Elend	nyomorúság
+105413	abschieben	kiutasít
+105414	e Abschiebung	kiutasítás, kitoloncolás
+105415	dann	azután
+105416	e Häuser	házak
+105417	missachten	figyelmen kívül hagy
