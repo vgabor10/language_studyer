@@ -1979,7 +1979,7 @@
 102015	e Jahreszeit	évszak
 102016	r Sturm	vihar
 102017	mild	enyhe
-102018	veränderlich	változékony
+102018	veränderlich	változó, változékony
 102019	freundlich	barátságos
 102020	kühl	hűvös
 102021	neblig	ködös
