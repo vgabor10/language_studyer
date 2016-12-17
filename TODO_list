@@ -10,6 +10,8 @@ Modification ideas in src:
 - create card categroy tree
 - create CategoryFilterDialog with "select all cards" and "select complement" feature
 - make right CardTesterStatisticsDialog
+- consider to restrict stored number of answers for a card (at least 20 answer)
+- consider to store AnswerDataContainer (orderer data by date) and AnswerDataByCard also in DictionaryDataContainer
 
 New class structure:
 
