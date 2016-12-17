@@ -1,0 +1,5 @@
+set xlabel "date"
+set ylabel "intervall length"
+
+plot '../data/temporary_data/data.tmp' using 1:2 notitle with points
+pause -1
