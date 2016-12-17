@@ -66,14 +66,24 @@ public class LanguageFilesDataHandler {
         return getStudiedLanguageDataPath() + "dictionary_data/example_sentences.txt";
     }
     
+    public String getStudiedLanguageCardAndCategoryIndexesPath() {
+        return getStudiedLanguageDataPath() + "dictionary_data/card_indexes_to_category_indexes.txt";
+    }
+    
+    public String getStudiedLanguageCategoryIndexesAndCategoryNames() {
+        return getStudiedLanguageDataPath() + "dictionary_data/card_categories.txt";
+    }
+    
     public String getStudiedLanguageGrammarBookPath() {
         return getStudiedLanguageDataPath() + "grammar_data/grammar_book.txt";
     }
-
+    
     public String getStudiedLanguageGrammarAnswerDataPath() {
         return getStudiedLanguageDataPath() + "grammar_data/grammar_answer_data.txt";
     }
-
+   
+            
+            
     public int getStudiedLanguageIndex() {
         return studyedLanguageIndex;
     }

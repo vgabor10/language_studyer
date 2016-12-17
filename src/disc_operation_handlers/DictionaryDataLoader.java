@@ -8,7 +8,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Locale.Category;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 
@@ -86,19 +85,16 @@ public class DictionaryDataLoader {
     
     public void loadCardIndexesAndCategoryIndexes() {
         try {
-            //TODO: make it more general
-            if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
-                String filePath = "../data/german_data/dictionary_data/card_indexes_to_category_indexes.txt";
-                BufferedReader br = new BufferedReader(new FileReader(filePath));
-                String strLine;
-                while ((strLine = br.readLine()) != null) {
-                    String[] splittedRow = strLine.split("\t");
-                    int cardIndex = Integer.parseInt(splittedRow[0]);
-                    
-                    for (int i=1; i<splittedRow.length; i++) {
-                        int categoryIndex = Integer.parseInt(splittedRow[i]);
-                        dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
-                    }
+            String filePath = languageFilesDataHandler.getStudiedLanguageCardAndCategoryIndexesPath();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splittedRow = strLine.split("\t");
+                int cardIndex = Integer.parseInt(splittedRow[0]);
+
+                for (int i=1; i<splittedRow.length; i++) {
+                    int categoryIndex = Integer.parseInt(splittedRow[i]);
+                    dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -110,22 +106,19 @@ public class DictionaryDataLoader {
     
     public void loadCategoryIndexesAndCategoryNames() {
         try {
-            //TODO: make it more general
-            if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
-                String filePath = "../data/german_data/dictionary_data/card_categories.txt";
-                BufferedReader br = new BufferedReader(new FileReader(filePath));
-                String strLine;
-                while ((strLine = br.readLine()) != null) {
-                    String[] splittedRow = strLine.split("\t");
-                    int categoryIndex = Integer.parseInt(splittedRow[0]);
-                    String categoryName = splittedRow[1];
-                    
-                    CardCategory category = new CardCategory();
-                    category.index = categoryIndex;
-                    category.name = categoryName;
-                    
-                    dictionaryDataContainer.categoryContainer.add(category);
-                }
+            String filePath = languageFilesDataHandler.getStudiedLanguageCategoryIndexesAndCategoryNames();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splittedRow = strLine.split("\t");
+                int categoryIndex = Integer.parseInt(splittedRow[0]);
+                String categoryName = splittedRow[1];
+
+                CardCategory category = new CardCategory();
+                category.index = categoryIndex;
+                category.name = categoryName;
+
+                dictionaryDataContainer.categoryContainer.add(category);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find file");
