@@ -92,7 +92,11 @@ public class AnswerDataStatisticsMaker {
     }
 
     //supposed, that dates are sorted
-    public long evaluatePractisingTime(Vector<Long> answerDates) {
+    public long evaluatePractisingTime(List<Long> answerDates) {
+        if (answerDates.isEmpty()) {
+            return 0;
+        }
+            
         long practisingTime = 0;
         long intervalStartTime = answerDates.get(0);
 
@@ -103,13 +107,13 @@ public class AnswerDataStatisticsMaker {
             }
         }
 
-        practisingTime = practisingTime + (answerDates.lastElement() - intervalStartTime) + 5000;
+        practisingTime = practisingTime + (answerDates.get(answerDates.size()-1) - intervalStartTime) + 5000;
 
         return practisingTime;
     }
 
     public int[] practisingTime() {
-        Vector<Long> answerDates = new Vector<>();
+        List<Long> answerDates = new ArrayList<>();
         for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
             answerDates.add(answerDataContainer.getAnswerData(i).date);
         }
@@ -252,6 +256,10 @@ public class AnswerDataStatisticsMaker {
     }
 
     public long getLastQuestionedStudyItemDate() {
+        if (answerDataContainer.numberOfAnswers() == 0) {
+             return 0;
+        }
+        
         Set<Integer> StudyItemIndexes = new HashSet<>();
         int i = answerDataContainer.numberOfAnswers() - 1;
         int numberOfQuestionedStudyItems = getNumberOfQuestionedStudyItems();

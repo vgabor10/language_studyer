@@ -103,28 +103,26 @@ public class DictionaryDataModificator {
     }
     
     public void saveCardIndexesAndCategoryIndexesDataToFile() {
-        if (settingsHandler.getStudiedLanguageIndex() == 1) {
-            String filePath = settingsHandler.getStudiedLanguageCardAndCategoryIndexesPath();
-            File oldFile;
-            oldFile = new File(filePath);
-            oldFile.delete();
+        String filePath = settingsHandler.getStudiedLanguageCardAndCategoryIndexesPath();
+        File oldFile;
+        oldFile = new File(filePath);
+        oldFile.delete();
 
-            try {
-                FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-                for (int i = 0; i < cardContainer.numberOfCards(); i++) {
-                    Card card = cardContainer.getCardByOrder(i);
-                    if (!card.categoryIndexes.isEmpty()) {
-                        String outString = Integer.toString(card.index);
-                        for (int categoryIndex : card.categoryIndexes) {
-                            outString = outString + "\t" + Integer.toString(categoryIndex);
-                        }
-                        fw.write(outString  + "\n");
+        try {
+            FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
+            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
+                Card card = cardContainer.getCardByOrder(i);
+                if (!card.categoryIndexes.isEmpty()) {
+                    String outString = Integer.toString(card.index);
+                    for (int categoryIndex : card.categoryIndexes) {
+                        outString = outString + "\t" + Integer.toString(categoryIndex);
                     }
+                    fw.write(outString  + "\n");
                 }
-                fw.close();
-            } catch (IOException ioe) {
-                System.err.println("IOException: " + ioe.getMessage());
             }
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
         }
     }
 
