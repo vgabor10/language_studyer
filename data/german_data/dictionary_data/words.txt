@@ -2891,7 +2891,7 @@
 102952	einkaufen	bevásárol
 102953	r Brief	levél
 102954	r Anhänger	szurkoló
-102955	r Anwalt	ügyvéd
+102955	r Anwalt	ügyvéd, ügyész
 102956	ehemalig	korábbi
 102957	e Formel	képlet, formula
 102958	wandern	kirándul
@@ -5439,3 +5439,19 @@
 105438	angehend	leendő
 105439	klauen	ellop, elemel
 105440	verlauten	ismertet, közöl
+105441	r Pfeiler	oszlop, pillér
+105442	e Vergeltung	viszonzás
+105443	e Konstellation	csillagnkép
+105444	ignorieren	mellőz, ignorál
+105445	hämmern	kalapál
+105446	konkurrieren	versenyez, konkurál
+105447	e Zölle	vámok
+105448	e Arterie	artéria
+105449	heiter	derűs, vidám
+105450	pumpen	pumpál, szivattyúz
+105451	skizzieren	vázol
+105452	opfern	feláldoz
+105453	r Mittelsmann	közvetítő
+105454	mobilisieren	mozgósít
+105455	e Anklage	vád
+105456	Bulgarien	Bulgária
