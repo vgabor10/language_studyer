@@ -109,9 +109,36 @@ public class CardFinder {
         return cardsToList;
     }
 
+    public void listAllCard() {
+        foundCards.clear();
+
+        if (searchAccordingToTerm) {
+            if (!useCategoryRestrictions) {
+                foundCards = getCardsWithGivenTermPart("");
+                Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(""));
+            }
+            else {
+                foundCards = getCardsWithGivenTermPart("", cardCategoriesRestriction);
+                Collections.sort(foundCards, new CardComparatorByTermForGermanLanguange(""));
+            }
+        }
+        else {
+            if (!useCategoryRestrictions) {
+                foundCards = getCardsWithGivenDefinitionPart("");
+                Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(""));
+            }
+            else {
+                foundCards = getCardsWithGivenDefinitionPart("", cardCategoriesRestriction);
+                Collections.sort(foundCards, new CardComparatorByDefinitionForGermanLanguage(""));
+            }
+        }
+    }
+    
     public void makeSearch() {
         foundCards.clear();
         
+        if (stringToSearch.equals("")) {}
+        else
         if (searchAccordingToTerm) {
             if (!useCategoryRestrictions) {
                 foundCards = getCardsWithGivenTermPart(stringToSearch);
