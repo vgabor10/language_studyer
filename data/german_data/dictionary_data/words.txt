@@ -382,7 +382,7 @@
 100383	r Arm	kar
 100384	gleich	egyenlő, azonos
 100385	lang	hosszú
-100386	unbedingt	szüksészerűen
+100386	unbedingt	feltétlenül
 100387	r Flügel	szárny
 100388	s Flugzeug	repülőgép
 100389	r Gegensatz	ellentét
@@ -4419,7 +4419,7 @@
 104513	s Eigentum	tulajdon
 104514	r Verdacht	gyanú
 104515	konfrontieren	szembeszáll
-104516	andererseits	másrész
+104516	andererseits	másrészt, másfelől
 104517	e Entschuldigung	bocsánatkérés
 104518	veröffentlichen	publikál, közzétesz
 104519	vorherrschen	túlsúlyban van, uralkodik
@@ -5431,3 +5431,11 @@
 105430	e Vorherrschaft	uralkodás
 105431	s Vorkommen	előfordulás
 105432	r Zusammenstoß	össztűzés
+105433	r Import	import, behozatal
+105434	r Disput	vita
+105435	e Rückgabe	visszaadás
+105436	reibungslos	zavarmentes, zökkenőmentes
+105437	s Vorkommnis	eset, esemény
+105438	angehend	leendő
+105439	klauen	ellop, elemel
+105440	verlauten	ismertet, közöl

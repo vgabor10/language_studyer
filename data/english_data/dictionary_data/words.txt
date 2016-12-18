@@ -843,7 +843,7 @@
 100847	felony	bűn, bűncselekmény
 100848	impertinence	szemtelenség
 100849	behoove	illik
-100850	spare	megkímél
+100850	spare	spórol, megkímél
 100851	league	mérföld
 100852	abomination	utálat, undor
 100853	decennial	tízévenkénti

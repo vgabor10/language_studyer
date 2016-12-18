@@ -5412,17 +5412,12 @@
 102457	Warum haben sie keine Passagierliste erstellt?
 102457	Er erstellte einen präzisen Bericht über den Vorfall.
 102458	Erstmals hatten sie keine Angst mehr, nicht satt zu werden.
-102460	Boris wollte erst nicht am Turnier teilnehmen, doch dann haben sie ihn überredet.
-102460	Darüber muss ich erst mal nachdenken.
 102460	Der Anbieter kann erst in drei Tagen liefern.
 102460	Der Film kam erst kürzlich wieder im Fernsehen.
 102460	Die Versammlung ﬁndet erst morgen statt.
 102460	Er ist erst siebzehn Jahre alt.
 102460	Erst ältere Kinder können Geheimnisse bewahren.
 102460	Erst die Arbeit, dann das Vergnügen.
-102460	Im idealen Fall kommt das Päckchen schon am Montag an, im schlimmsten Fall erst Freitag.
-102460	Seine Unschuld hat sich erst hinterher herausgestellt.
-102460	Wir sollten zuerst eine Konzeption erarbeiten und erst dann an die Öffentlichkeit gehen.
 102461	Ich kann den lauten Lärm nicht mehr ertragen.
 102461	Er konnte nicht ertragen, dass seine Freunde ihn auslachten.
 102461	Er konnte das schreckliche englische Klima nicht ertragen.
