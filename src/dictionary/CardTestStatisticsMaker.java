@@ -39,57 +39,93 @@ public class CardTestStatisticsMaker {
         this.testAnswers = testAnswers;
     }
     
-    public void setCategoryRestrictions(Set<Integer> cr) {
-        categoryRestrictions = cr;
-        categoryRestrictionUsage = true;
-    }
-
     public void initialise() {
         CardContainer allCards = dictionaryDataContainer.cardContainer;
         AnswerDataContainer allOldAnswers = dictionaryDataContainer.answerDataContainer;
         
         if (categoryRestrictionUsage) {
+            for (int i = 0; i < allOldAnswers.numberOfAnswers(); i++) {
+                AnswerData answerData = allOldAnswers.getAnswerData(i);
+                Card card = allCards.getCardByIndex(answerData.index);
+                if (card.containsAnyCategoryIndex(categoryRestrictions)) {
+                    relevantOldAnswers.addAnswerData(answerData);
+                }
+            }
+            
             for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
                 AnswerData answerData = testAnswers.getAnswerData(i);
                 Card card = allCards.getCardByIndex(answerData.index);
                 
                 if (card.containsAnyCategoryIndex(categoryRestrictions)) {
                     relevantTestAnswers.addAnswerData(answerData);
-                    relevantTestedCards.addCard(
-                        dictionaryDataContainer.cardContainer.getCardByIndex(answerData.index));
-                }
-            }
-            
-            Set<Integer> relevantTestedCardIndexes = relevantTestedCards.getCardIndexes();
-            
-            for (int j = 0; j < allOldAnswers.numberOfAnswers(); j++) {
-                AnswerData answerData = allOldAnswers.getAnswerData(j);
-                Card card = allCards.getCardByIndex(answerData.index);
-                if (card.containsAnyCategoryIndex(categoryRestrictions)) {
-                    relevantOldAnswers.addAnswerData(answerData);
+                    relevantTestedCards.addCard(card);
                 }
             }
         }
         else {
+            this.relevantOldAnswers = allOldAnswers;
             this.relevantTestAnswers = testAnswers;
             for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
                 AnswerData answerData = testAnswers.getAnswerData(i);
                 Card card = allCards.getCardByIndex(answerData.index);
-                relevantTestedCards.addCard(
-                    dictionaryDataContainer.cardContainer.getCardByIndex(answerData.index));
+                relevantTestedCards.addCard(card);
             }
         }
-        
-        relevantAnswerDatasByStudyItemsBeforeTest.addDataFromAnswerDataContainer(relevantOldAnswers);
-        
-        relevantAnswerDatasByStudyItemsAfterTest.addDataFromAnswerDataContainer(relevantOldAnswers);
-        relevantAnswerDatasByStudyItemsAfterTest.addDataFromAnswerDataContainer(relevantTestAnswers);
-        
+
+        for (int i=0;i<relevantOldAnswers.numberOfAnswers();i++) {
+            AnswerData answerData = relevantOldAnswers.getAnswerData(i);
+            relevantAnswerDatasByStudyItemsBeforeTest.addAnswerData(answerData);
+            relevantAnswerDatasByStudyItemsAfterTest.addAnswerData(answerData);
+        }
+
+        for (int i=0;i<relevantTestAnswers.numberOfAnswers();i++) {
+            AnswerData answerData = relevantTestAnswers.getAnswerData(i);
+            relevantAnswerDatasByStudyItemsAfterTest.addAnswerData(answerData);
+        }     
     }
 
+    public void setCategoryRestrictions(Set<Integer> cr) {
+        categoryRestrictions = cr;
+        categoryRestrictionUsage = true;
+    }
+
+    public boolean isCategoryConstrainsUsed() {
+        return categoryRestrictionUsage;
+    } 
+    
     public void setStartAndFinishTime(long st, long ft) {
         startTime = st;
         finishTime = ft;
+    }
+    
+    public double getAnswerRateOfCardBeforeTest(int cardIndex) {
+        if (relevantAnswerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(cardIndex)) {
+            return relevantAnswerDatasByStudyItemsBeforeTest.
+                    getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate();
+        }
+        else {
+            return -1;
+        }
+    }
+    
+    public double getAnswerRateOfCardAfterTest(int cardIndex) {
+        if (relevantAnswerDatasByStudyItemsAfterTest.containsStudyItemWithIndex(cardIndex)) {
+            return relevantAnswerDatasByStudyItemsAfterTest.
+                    getAnswerDataByStudyItemByIndex(cardIndex).countRightAnswerRate();
+        }
+        else {
+            return -1;
+        }
+    }
+    
+    public int getAfterTestNumberOfAnswers(int cardIndex) {
+        if (relevantAnswerDatasByStudyItemsAfterTest.containsStudyItemWithIndex(cardIndex)) {
+            return relevantAnswerDatasByStudyItemsAfterTest.
+                    getAnswerDataByStudyItemByIndex(cardIndex).numberOfAnswers();
+        }
+        else {
+            return 0;
+        }
     }
     
     public CardContainer getTestedCards() {
@@ -102,10 +138,6 @@ public class CardTestStatisticsMaker {
         } 
         
         return out;
-    }
-
-    public Double getAfterTestArOfCardWithIndex(int index) {
-        return relevantAnswerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(index).countRightAnswerRate();
     }
 
     public String averageAnswerRateOfCardsBeforeTestAsString() {

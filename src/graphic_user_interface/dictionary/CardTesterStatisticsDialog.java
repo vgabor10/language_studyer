@@ -1,6 +1,6 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.dictionary.table_renderers.CardTestesStatisticsTableRenderer;
+import graphic_user_interface.dictionary.table_renderers.CardTesterStatisticsTableRenderer;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
@@ -9,13 +9,14 @@ import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
-import java.util.HashSet;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 import study_item_objects.AnswerDataContainer;
 
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
+    private CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
+
     public DictionaryDataContainer dictionaryDataContainer;
     public Set<Integer> categoryConstrains;
     
@@ -39,7 +40,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
      }
 
     public void initialise() {
-        CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
         cardTestStatisticsMaker.setData(dictionaryDataContainer, testAnswers);
         cardTestStatisticsMaker.setCategoryRestrictions(categoryConstrains);
         cardTestStatisticsMaker.initialise();
@@ -59,45 +59,64 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        DecimalFormat df = new DecimalFormat("#.000");
+        if (!cardTestStatisticsMaker.isCategoryConstrainsUsed()) {
+            jLabel25.setVisible(false);
+        }
+        
         CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
-        Set<Integer> rowIndexesNotToColor = new HashSet<>();
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
-             
-            String afterTestRarAsString = "-";
-            //afterTestRarAsString = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());
             
-            int afterTestNumberOfAnswers = -1;
-            //afterTestNumberOfAnswers = cardTestStatisticsMaker.answerDatasByStudyItemsAfterTest.getAnswerDataByStudyItemByIndex(card.index).numberOfAnswers();
-            
-            String beforeTestRarAsString = "-";
-            /*if (cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.containsStudyItemWithIndex(card.index)) {
-                beforeTestRarAsString
-                        = df.format(cardTestStatisticsMaker.answerDatasByStudyItemsBeforeTest.getAnswerDataByStudyItemByIndex(card.index).countRightAnswerRate());       
-            }*/
+            String afterTestRarAsString = getAfterTestRarAsString(card);
+            String afterTestNumberOfAnswersAsString = getAfterTestNumberOfAnswersAsString(card);
+            String beforeTestRarAsString = getBeforeTestRarAsString(card);
              
             model.addRow(new Object[] {
                     card.term,
                     card.definition,
                     afterTestRarAsString,
                     beforeTestRarAsString,
-                    afterTestNumberOfAnswers
+                    afterTestNumberOfAnswersAsString
             });
             
         }
         
-        /*for (int i=0; i<testedCards.numberOfCards(); i++) {
-            Card card = testedCards.getCardByOrder(i);
-            if (!card.containsAnyCategoryIndex(categoryConstrains)) {
-                rowIndexesNotToColor.add(i);
-            }
-        }
-        
-        CardTestesStatisticsTableRenderer colorRenderer = new CardTestesStatisticsTableRenderer();
-        colorRenderer.rowIndexesNotToColor = rowIndexesNotToColor;
-        Table.setDefaultRenderer(Object.class, colorRenderer);*/
+        CardTesterStatisticsTableRenderer colorRenderer = new CardTesterStatisticsTableRenderer();
+        Table.setDefaultRenderer(Object.class, colorRenderer);
     }
+  
+    private String getBeforeTestRarAsString(Card card) {
+        DecimalFormat df = new DecimalFormat("#.000");
+        double beforeTestRar = cardTestStatisticsMaker.getAnswerRateOfCardBeforeTest(card.index);
+        if (beforeTestRar != -1) {
+            return df.format(beforeTestRar);
+        }
+        else {
+            return "-";
+        }
+    }
+    
+    private String getAfterTestRarAsString(Card card) {
+        DecimalFormat df = new DecimalFormat("#.000");
+        double afterTestRar = cardTestStatisticsMaker.getAnswerRateOfCardAfterTest(card.index);
+        if (afterTestRar != -1) {
+            return df.format(afterTestRar);
+        }
+        else {
+            return "-";
+        }
+    }
+    
+    private String getAfterTestNumberOfAnswersAsString(Card card) {
+        int afterTestNumberOfAnswers = cardTestStatisticsMaker.getAfterTestNumberOfAnswers(card.index);
+        if (afterTestNumberOfAnswers != 0) {
+            return Integer.toString(afterTestNumberOfAnswers);
+        }
+        else {
+            return "-";
+        }
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -135,6 +154,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -216,6 +236,9 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
         jLabel24.setText("jLabel24");
 
+        jLabel25.setForeground(new java.awt.Color(224, 40, 40));
+        jLabel25.setText("card category constrains are used!");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -230,54 +253,58 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel17))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel20))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel19))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel16))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel21))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel22))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
+                                .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel18))
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel23)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel24))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel12)))
+                                .addComponent(jLabel13))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel17))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel20))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel19))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel16))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel15))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel10)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel21))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel22))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel4)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jLabel18))
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel14))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel23)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel24))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel12))
+                            .addComponent(jLabel25))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -334,6 +361,8 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
                             .addComponent(jLabel12))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton1)
@@ -424,6 +453,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

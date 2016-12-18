@@ -460,8 +460,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            saveTestData();
             showStatisticsDialog();
+            saveTestData();
         }
     }
     
@@ -486,8 +486,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            saveTestData();
             showStatisticsDialog();
+            saveTestData();
         }
     }
     
@@ -528,8 +528,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            saveTestData();
             showStatisticsDialog();
+            saveTestData();
         }
     }
     

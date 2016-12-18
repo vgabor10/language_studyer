@@ -57,7 +57,7 @@ public class AnswerDataByStudyItemContainer {
     //TODO: think it over: not studyed studyItems is not seen here
     public void addDataFromAnswerDataContainer(AnswerDataContainer answerDataContainer) {
         for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
-            addAnswerData(answerDataContainer.getAnswerData(i));
+            this.addAnswerData(answerDataContainer.getAnswerData(i));
         }
     }
 

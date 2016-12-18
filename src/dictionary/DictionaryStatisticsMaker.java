@@ -8,6 +8,8 @@ import study_item_objects.AnswerDataStatisticsMaker;
 
 public class DictionaryStatisticsMaker extends AnswerDataStatisticsMaker {
         
+        private boolean isCategoryRestrictionsUsed = false;
+    
         public void setData(DictionaryDataContainer dictionaryDataContainer) {
             this.answerDataContainer = dictionaryDataContainer.answerDataContainer;
             this.studyItemContainer = dictionaryDataContainer.cardContainer;
@@ -32,6 +34,12 @@ public class DictionaryStatisticsMaker extends AnswerDataStatisticsMaker {
                     this.answerDataContainer.addAnswerData(answerData);
                 }
             }
+            
+            isCategoryRestrictionsUsed = true;
+        }
+        
+        public boolean isCategoryRestrictionsUsed() {
+            return isCategoryRestrictionsUsed;
         }
         
         public CardContainer getCardContontainer() {
