@@ -2,11 +2,11 @@ package graphic_user_interface.dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
-import disc_operation_handlers.DictionaryDataModificator;
+import dictionary.DataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
-import dictionary.DictionaryDataContainer;
-import dictionary.StudyStrategyDataHandler;
+import dictionary.Dictionary;
+import dictionary.StudyStrategyHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -23,10 +23,10 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     private CardTester cardTester;
     private CardChooser cardChooser;
-    private StudyStrategyDataHandler studyStrategyDataHandler
-            = new StudyStrategyDataHandler();
+    private StudyStrategyHandler studyStrategyDataHandler
+            = new StudyStrategyHandler();
     
-    public DictionaryDataContainer dictionaryDataContainer;
+    private Dictionary dictionary;
     
     private final DefaultTableModel acceptableAnswersTableModel;
     private final DefaultTableModel exampleSentencesTableModel;
@@ -51,9 +51,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     public void initialise() {  
         cardChooser = new CardChooser();
-        cardChooser.setData(dictionaryDataContainer, studyStrategyDataHandler.cardCategoryRestrictions);
+        cardChooser.setData(dictionary.dataContainer, studyStrategyDataHandler.cardCategoryRestrictions);
         
-        AnswerDataContainer answerDataContainer = dictionaryDataContainer.answerDataContainer;
+        AnswerDataContainer answerDataContainer = dictionary.dataContainer.answerDataContainer;
         
         Set<Integer> cardIndexesToTest;
         if (answerDataContainer.numberOfAnswers() > 100) {
@@ -63,7 +63,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
         
         cardTester = new CardTester();
-        cardTester.setAllCard(dictionaryDataContainer.cardContainer);
+        cardTester.setAllCard(dictionary.dataContainer.cardContainer);
         cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
 
         cardTester.moveToNextCardToQuestion();
@@ -79,8 +79,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         startTime = new Date().getTime();
     }
 
-    public void setData(DictionaryDataContainer ddc) {
-        dictionaryDataContainer = ddc;
+    public void setDictionary(Dictionary dictionary) {
+        this.dictionary = dictionary;
     }
     
     @SuppressWarnings("unchecked")
@@ -338,8 +338,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         for (int index : acceptableCardIndexes) {
             acceptableAnswersTableModel.addRow(new Object[]{
-                dictionaryDataContainer.cardContainer.getCardByIndex(index).term,
-                dictionaryDataContainer.cardContainer.getCardByIndex(index).definition
+                dictionary.dataContainer.cardContainer.getCardByIndex(index).term,
+                dictionary.dataContainer.cardContainer.getCardByIndex(index).definition
             });
         }
     }
@@ -372,7 +372,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         finishTime = new Date().getTime();
         
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.dictionaryDataContainer = dictionary.dataContainer;
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
@@ -392,8 +392,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
     
     private void saveTestData() {
-        DictionaryDataModificator dictionaryDataModificator = new DictionaryDataModificator();
-        dictionaryDataModificator.setData(dictionaryDataContainer);
+        DataModificator dictionaryDataModificator = new DataModificator();
+        dictionaryDataModificator.setData(dictionary.dataContainer);
 
         dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
     }
@@ -421,7 +421,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private void inspectCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inspectCardButtonActionPerformed
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionaryDataContainer);
+        dialog.setDictionaryDataContainer(dictionary.dataContainer);
         dialog.setCardToInspect(cardTester.getActualQuestionedCard());
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
@@ -430,9 +430,9 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
         
         if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
+            DataModificator dictionaryDataModificator 
+                    = new DataModificator();
+            dictionaryDataModificator.setData(dictionary.dataContainer);
             dictionaryDataModificator.saveAllData();
             
             fillCardDatasToDialog();
@@ -502,7 +502,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
         answerDataByStudyItem.loadDataFromAnswerDataContainer(
                 cardTester.getActualQuestionedCard().index,
-                dictionaryDataContainer.answerDataContainer);
+                dictionary.dataContainer.answerDataContainer);
         dialog.answerDataByCard = answerDataByStudyItem;
 
         dialog.initialise();

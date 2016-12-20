@@ -5,7 +5,7 @@ import java.util.Set;
 import study_item_objects.AnswerDataContainer;
 
 //TODO: create gui dialog
-public class DictionaryDataFormatChecker {
+public class DataFormatChecker {
 
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;

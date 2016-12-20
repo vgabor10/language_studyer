@@ -3,8 +3,8 @@ package graphic_user_interface.dictionary;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
-import dictionary.DictionaryDataContainer;
-import disc_operation_handlers.DictionaryDataModificator;
+import dictionary.DataContainer;
+import dictionary.DataModificator;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.common.DialogAnswer;
@@ -25,7 +25,7 @@ import study_item_objects.AnswerDataContainer;
 
 public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    public DataContainer dictionaryDataContainer;
     
     private List<String> exampleSentenceDepot = new ArrayList<>();
     private CardContainer cardContainer;
@@ -339,8 +339,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         dialog.setVisible(true);
 
         if (dialogAnswer.stringAnswer.equals("delete_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
+            DataModificator dictionaryDataModificator 
+                    = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToSuggestSentence.index);
             
@@ -349,8 +349,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         }
         
         if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DictionaryDataModificator dictionaryDataModificator 
-                    = new DictionaryDataModificator();
+            DataModificator dictionaryDataModificator 
+                    = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.saveAllData();
 

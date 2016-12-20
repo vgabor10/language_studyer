@@ -1,13 +1,13 @@
 package graphic_user_interface.grammar_book;
 
-import dictionary.DictionaryDataContainer;
+import dictionary.DataContainer;
 import disc_operation_handlers.GrammarDataModificator;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
 
 public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    public DataContainer dictionaryDataContainer;
     public GrammarBook grammarBook;
     
     public GrammarBookOtherToolsDialog(java.awt.Frame parent, boolean modal) {

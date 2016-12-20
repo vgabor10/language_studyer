@@ -2,7 +2,7 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DictionaryDataContainer;
+import dictionary.DataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     public Integer cardIndex = -1;
     private Set<Integer> categories = new HashSet<>();
     
-    public DictionaryDataContainer dictionaryDataContainer;
+    public DataContainer dictionaryDataContainer;
     
     private final DefaultTableModel tableModel;
     

@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class StudyStrategyDataHandler {
+public class StudyStrategyHandler {
     
     private String dataFilePath 
             = "../data/settings_data/study_strategy_data_file.txt";
@@ -21,11 +21,7 @@ public class StudyStrategyDataHandler {
     public boolean studyingGradually = false;
     public Set<Integer> cardCategoryRestrictions = new HashSet<>();
     
-    public StudyStrategyDataHandler() {
-        loadStudyStrategyDataFromDisc();
-    }
-    
-    private void loadStudyStrategyDataFromDisc() {
+    public void loadStudyStrategyDataFromDisc() {
         try {
             BufferedReader br = new BufferedReader(new FileReader(dataFilePath));
             

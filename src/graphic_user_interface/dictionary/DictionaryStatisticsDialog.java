@@ -1,7 +1,8 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.DictionaryStatisticsMaker;
-import dictionary.DictionaryDataContainer;
+import dictionary.StatisticsMaker;
+import dictionary.DataContainer;
+import dictionary.Dictionary;
 import graphic_user_interface.grammar_book.GrammarBookOtherToolsDialog;
 import graphic_user_interface.common.TableModelMaker;
 import graphic_user_interface.common.TabularDialog;
@@ -16,15 +17,16 @@ import study_item_objects.StatisticsToFileWriter;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
-    private DictionaryStatisticsMaker dictionaryStatisticsMaker = new DictionaryStatisticsMaker();
+    private StatisticsMaker dictionaryStatisticsMaker = new StatisticsMaker();
     
-    public void setData(DictionaryDataContainer dictionaryDataContainer) {
+    public void setData(DataContainer dictionaryDataContainer) {
         dictionaryStatisticsMaker.setData(dictionaryDataContainer);
     }
     
-    public void setData(DictionaryDataContainer dictionaryDataContainer, 
-            Set<Integer> cardCategoryRestrictions) {
-        dictionaryStatisticsMaker.setData(dictionaryDataContainer, cardCategoryRestrictions);
+    public void setDictionary(Dictionary dictionary) {
+        dictionaryStatisticsMaker.setData(
+                dictionary.dataContainer,
+                dictionary.studyStrategyHandler.cardCategoryRestrictions);
     }
     
     @SuppressWarnings("empty-statement")

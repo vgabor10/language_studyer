@@ -2,8 +2,8 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DictionaryDataContainer;
-import disc_operation_handlers.DictionaryDataModificator;
+import dictionary.DataContainer;
+import dictionary.DataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CardAdderDialog extends javax.swing.JDialog {
 
-    private DictionaryDataContainer dictionaryDataContainer;
+    private DataContainer dictionaryDataContainer;
     public DialogAnswer dialogAnswer;
     
     private Logger logger = new Logger();
@@ -24,7 +24,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
-    public void setDictionaryDataContainer(DictionaryDataContainer ddc) {
+    public void setDictionaryDataContainer(DataContainer ddc) {
         dictionaryDataContainer = ddc;
         cardInspectorPanel1.dictionaryDataContainer = ddc;
     }
@@ -134,8 +134,8 @@ public class CardAdderDialog extends javax.swing.JDialog {
             dialog.setVisible(true);
       
             if (addCardDialogAnswer.boolAnswer) {
-                DictionaryDataModificator dictionaryDataModificator 
-                        = new DictionaryDataModificator();
+                DataModificator dictionaryDataModificator 
+                        = new DataModificator();
                 dictionaryDataModificator.setData(dictionaryDataContainer);
                 dictionaryDataModificator.addCard(cardToAdd);
 
@@ -146,8 +146,8 @@ public class CardAdderDialog extends javax.swing.JDialog {
                     
         }
         else {
-            DictionaryDataModificator dictionaryDataModificator 
-                = new DictionaryDataModificator();
+            DataModificator dictionaryDataModificator 
+                = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.addCard(cardToAdd);
 

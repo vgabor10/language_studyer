@@ -23,14 +23,14 @@ public class CardChooser {
     private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
     private final Logger logger = new Logger();
     
-    public void setData(DictionaryDataContainer ddc) {
+    public void setData(DataContainer ddc) {
         cardContainer = ddc.cardContainer;
         answerDataContainer = ddc.answerDataContainer;
         
         answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);
     }
 
-    public void setData(DictionaryDataContainer ddc, Set<Integer> cardCategoris) {
+    public void setData(DataContainer ddc, Set<Integer> cardCategoris) {
         cardContainer = new CardContainer();
         answerDataContainer = new AnswerDataContainer();
         
@@ -247,7 +247,7 @@ public class CardChooser {
         return cardIndexes;
     }
 
-    public Set<Integer> getCardIndexes(StudyStrategyDataHandler studyStrategyDataHandler) {
+    public Set<Integer> getCardIndexes(StudyStrategyHandler studyStrategyDataHandler) {
         Set<Integer> cardsToTestIndexes = new HashSet<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 

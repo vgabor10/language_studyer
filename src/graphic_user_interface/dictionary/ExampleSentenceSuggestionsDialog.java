@@ -1,15 +1,15 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Card;
-import dictionary.DictionaryDataContainer;
+import dictionary.DataContainer;
 import dictionary.ExampleSentenceAssigner;
-import disc_operation_handlers.DictionaryDataModificator;
+import dictionary.DataModificator;
 import java.util.List;
 import javax.swing.table.DefaultTableModel;
 
 public class ExampleSentenceSuggestionsDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    public DataContainer dictionaryDataContainer;
 
     private ExampleSentenceAssigner exampleSentenceAssigner
             = new ExampleSentenceAssigner();
@@ -18,7 +18,7 @@ public class ExampleSentenceSuggestionsDialog extends javax.swing.JDialog {
     
     private final DefaultTableModel tableModel;
     
-    public void setData(DictionaryDataContainer ddc) {
+    public void setData(DataContainer ddc) {
         dictionaryDataContainer = ddc;
     }
 
@@ -150,8 +150,8 @@ public class ExampleSentenceSuggestionsDialog extends javax.swing.JDialog {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        DictionaryDataModificator dictionaryDataModificator
-                = new DictionaryDataModificator();
+        DataModificator dictionaryDataModificator
+                = new DataModificator();
         dictionaryDataModificator.setData(dictionaryDataContainer);
         dictionaryDataModificator.saveExampleSentencesDataToFile();
         

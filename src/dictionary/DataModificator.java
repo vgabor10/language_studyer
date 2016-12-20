@@ -1,16 +1,17 @@
-package disc_operation_handlers;
+package dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
-import dictionary.DictionaryDataContainer;
+import dictionary.DataContainer;
+import disc_operation_handlers.LanguageFilesDataHandler;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class DictionaryDataModificator {
+public class DataModificator {
     
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
@@ -18,7 +19,7 @@ public class DictionaryDataModificator {
 
     private final Logger logger = new Logger();
 
-    public void setData(DictionaryDataContainer dictionaryDataContainer) {
+    public void setData(DataContainer dictionaryDataContainer) {
         cardContainer = dictionaryDataContainer.cardContainer;
         answerDataContainer = dictionaryDataContainer.answerDataContainer;
     }

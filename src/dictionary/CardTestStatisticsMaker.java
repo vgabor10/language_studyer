@@ -13,7 +13,7 @@ import study_item_objects.AnswerData;
 
 public class CardTestStatisticsMaker {
 
-    private DictionaryDataContainer dictionaryDataContainer;
+    private DataContainer dictionaryDataContainer;
     private AnswerDataContainer testAnswers;
     
     private AnswerDataContainer relevantOldAnswers = new AnswerDataContainer();
@@ -33,7 +33,7 @@ public class CardTestStatisticsMaker {
     
     private Logger logger = new Logger();
     
-    public void setData(DictionaryDataContainer dictionaryDataContainer,
+    public void setData(DataContainer dictionaryDataContainer,
             AnswerDataContainer testAnswers) {
         this.dictionaryDataContainer = dictionaryDataContainer;
         this.testAnswers = testAnswers;

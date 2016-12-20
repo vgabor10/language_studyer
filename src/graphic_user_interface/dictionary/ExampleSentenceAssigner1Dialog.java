@@ -1,14 +1,14 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Card;
-import dictionary.DictionaryDataContainer;
+import dictionary.DataContainer;
 import dictionary.ExampleSentenceAssigner;
-import disc_operation_handlers.DictionaryDataModificator;
+import dictionary.DataModificator;
 import java.util.ArrayList;
 
 public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    public DataContainer dictionaryDataContainer;
 
     private ExampleSentenceAssigner exampleSentenceAssigner
             = new ExampleSentenceAssigner();
@@ -16,7 +16,7 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
     private Card suggestedCard;
     private String suggestedExampleSentence;
     
-    public void setData(DictionaryDataContainer ddc) {
+    public void setData(DataContainer ddc) {
         dictionaryDataContainer = ddc;
     }
 
@@ -163,8 +163,8 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
         suggestedCard.exampleSentences.add(suggestedExampleSentence);
         
-        DictionaryDataModificator dictionaryDataModificator
-                = new DictionaryDataModificator();
+        DataModificator dictionaryDataModificator
+                = new DataModificator();
         dictionaryDataModificator.setData(dictionaryDataContainer);
         dictionaryDataModificator.saveExampleSentencesDataToFile();
         

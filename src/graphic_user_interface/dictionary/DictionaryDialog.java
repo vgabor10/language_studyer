@@ -2,8 +2,7 @@ package graphic_user_interface.dictionary;
 
 import dictionary.Card;
 import dictionary.CardFinder;
-import dictionary.DictionaryDataContainer;
-import disc_operation_handlers.LanguageFilesDataHandler;
+import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.List;
@@ -14,14 +13,11 @@ import javax.swing.table.TableColumnModel;
 
 public class DictionaryDialog extends javax.swing.JDialog {
 
-    private DictionaryDataContainer dictionaryDataContainer;
-    private final CardFinder cardFinder = new CardFinder();
+    private Dictionary dictionary;
+    private CardFinder cardFinder;
     
     private final DefaultTableModel tableModel;
     private final DefaultTableModel lastSearchesTableModel;
-    
-    private LanguageFilesDataHandler languageFilesDataHandler
-            = new LanguageFilesDataHandler();
    
     public DictionaryDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -30,16 +26,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         tableModel = (DefaultTableModel)jTable1.getModel();
         lastSearchesTableModel = (DefaultTableModel)jTable2.getModel();
         
-        jTextField1.setText("");
-        jTextField1.requestFocus();
-        jLabel1.setText("-");
-        
-        jComboBox1.removeAllItems();
-        jComboBox1.addItem(languageFilesDataHandler.getStudiedLanguageName().toLowerCase()
-                + " -> hungarian");
-        jComboBox1.addItem("hungarian -> " +
-                languageFilesDataHandler.getStudiedLanguageName().toLowerCase());
-
         closeButton.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         inspectCardButton.setMnemonic(KeyEvent.VK_I);
@@ -249,9 +235,19 @@ public class DictionaryDialog extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void setDictionaryDataContainer(DictionaryDataContainer dictionaryDataContainer) {
-        this.dictionaryDataContainer = dictionaryDataContainer;
-        cardFinder.setCardContainer(dictionaryDataContainer.cardContainer);
+    public void setDictionary(Dictionary dictionary) {
+        this.dictionary = dictionary;
+        cardFinder = dictionary.cardFinder;
+        
+        jTextField1.setText("");
+        jTextField1.requestFocus();
+        jLabel1.setText("-");
+        
+        jComboBox1.removeAllItems();
+        jComboBox1.addItem(dictionary.languageFilesDataHandler.getStudiedLanguageName().toLowerCase()
+                + " -> hungarian");
+        jComboBox1.addItem("hungarian -> " +
+        dictionary.languageFilesDataHandler.getStudiedLanguageName().toLowerCase());
     }
     
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
@@ -321,7 +317,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         CardAdderDialog dialog 
                 = new CardAdderDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionaryDataContainer);
+        dialog.setDictionaryDataContainer(dictionary.dataContainer);
         dialog.dialogAnswer = dialogAnswer;
         
         dialog.setLocationRelativeTo(this);
@@ -350,7 +346,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionaryDataContainer);
+        dialog.setDictionaryDataContainer(dictionary.dataContainer);
         dialog.setCardToInspect(cardToInspect);
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
@@ -424,7 +420,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         CardCategoryFilterDialog dialog 
                 = new CardCategoryFilterDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dictionaryDataContainer.categoryContainer);
+        dialog.setAllCategories(dictionary.dataContainer.categoryContainer);
         dialog.dialogAnswer = dialogAnswer;
         dialog.setSelectedCategories(cardFinder.getCardCategoryRestrictions());
         dialog.setLocationRelativeTo(this);

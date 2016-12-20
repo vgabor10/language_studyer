@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class ExampleSentenceAssigner {
     
-    public DictionaryDataContainer dictionaryDataContainer ;
+    public DataContainer dictionaryDataContainer ;
     
     public List<String> exampeSentences = new ArrayList<>();
     public Map<Integer, Set<String>> exampeSentencesByCardIndexes = new HashMap<>();

@@ -1,7 +1,7 @@
 package graphic_user_interface.common;
 
-import dictionary.DictionaryDataContainer;
-import disc_operation_handlers.DictionaryDataLoader;
+import dictionary.DataLoader;
+import dictionary.Dictionary;
 import disc_operation_handlers.GrammarDataLoader;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 
 public class LanguageChooserDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
+    public Dictionary dictionary;
     public GrammarDataContainer grammarDataContainer;
     
     public LanguageFilesDataHandler languageFilesDataHandler;
@@ -27,6 +27,10 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         jRadioButton2.setMnemonic(KeyEvent.VK_G);
     }
 
+    public void setDictionary(Dictionary dictionary) {
+        this.dictionary = dictionary;
+    }
+    
     public void initialise() {
         if (languageFilesDataHandler.getStudiedLanguageIndex() == 0) {
             jRadioButton1.setSelected(true);
@@ -117,7 +121,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dictionaryDataContainer.clear();
+        dictionary.dataContainer.clear();
         grammarDataContainer.clear();
         
         int languageIndexToLoad = 0;
@@ -131,9 +135,9 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         
         languageFilesDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
         
-        DictionaryDataLoader dictionaryDataLoader = new DictionaryDataLoader();
-        dictionaryDataLoader.dictionaryDataContainer = dictionaryDataContainer;
-        dictionaryDataLoader.languageFilesDataHandler = languageFilesDataHandler;
+        DataLoader dictionaryDataLoader = new DataLoader();
+        dictionary.dataLoader.loadAllData();
+        dictionary.languageFilesDataHandler = languageFilesDataHandler;
         dictionaryDataLoader.loadAllData();
         
         GrammarDataLoader grammarDataLoader = new GrammarDataLoader();

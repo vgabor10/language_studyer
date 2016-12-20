@@ -6,16 +6,16 @@ import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataStatisticsMaker;
 
-public class DictionaryStatisticsMaker extends AnswerDataStatisticsMaker {
+public class StatisticsMaker extends AnswerDataStatisticsMaker {
         
         private boolean isCategoryRestrictionsUsed = false;
     
-        public void setData(DictionaryDataContainer dictionaryDataContainer) {
+        public void setData(DataContainer dictionaryDataContainer) {
             this.answerDataContainer = dictionaryDataContainer.answerDataContainer;
             this.studyItemContainer = dictionaryDataContainer.cardContainer;
         }
         
-        public void setData(DictionaryDataContainer dictionaryDataContainer,
+        public void setData(DataContainer dictionaryDataContainer,
                 Set<Integer> cardCategoryRestrictions) {
             
             this.studyItemContainer = new CardContainer();

@@ -7,9 +7,9 @@ import disc_operation_handlers.GrammarDataLoader;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
-import dictionary.DictionaryDataContainer;
-import dictionary.StudyStrategyDataHandler;
-import disc_operation_handlers.DictionaryDataLoader;
+import dictionary.StudyStrategyHandler;
+import dictionary.DataLoader;
+import dictionary.Dictionary;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
 import graphic_user_interface.dictionary.DictionaryDialog;
@@ -21,7 +21,8 @@ import java.awt.event.KeyEvent;
 
 public class MainFrame extends javax.swing.JFrame {
 
-    private DictionaryDataContainer dictionaryDataContainer = new DictionaryDataContainer();
+    public Dictionary dictionary = new Dictionary();
+    
     private GrammarDataContainer grammarDataContainer = new GrammarDataContainer();
     
     private final LanguageFilesDataHandler languageFilesDataHandler 
@@ -48,11 +49,6 @@ public class MainFrame extends javax.swing.JFrame {
         
         jLabel3.setText(languageFilesDataHandler.getStudiedLanguageName());
         setTitle("Language studyer");
-        
-        DictionaryDataLoader dictionaryDataLoader = new DictionaryDataLoader();
-        dictionaryDataLoader.dictionaryDataContainer = dictionaryDataContainer;
-        dictionaryDataLoader.languageFilesDataHandler = languageFilesDataHandler;
-        dictionaryDataLoader.loadAllData();
         
         GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
         grammarDataLoader.grammarDataContainer = grammarDataContainer;
@@ -317,11 +313,8 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_exitButtonActionPerformed
 
     private void dictionaryStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryStatisticsButtonActionPerformed
-        StudyStrategyDataHandler studyStrategyDataHandler = new StudyStrategyDataHandler();
-
         DictionaryStatisticsDialog dialog = new DictionaryStatisticsDialog(new javax.swing.JFrame(), true); 
-        dialog.setData(dictionaryDataContainer, 
-                studyStrategyDataHandler.cardCategoryRestrictions);
+        dialog.setDictionary(dictionary);
         dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -338,7 +331,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         SetDictionaryStudyStrategyDialog dialog 
                 = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.setDictionary(dictionary);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
@@ -359,7 +352,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void dictionaryButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryButtonActionPerformed
         DictionaryDialog dialog 
                 = new DictionaryDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionaryDataContainer);
+        dialog.setDictionary(dictionary);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryButtonActionPerformed
@@ -367,7 +360,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void setLanguageToStudyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setLanguageToStudyButtonActionPerformed
         LanguageChooserDialog dialog 
                 = new LanguageChooserDialog(new javax.swing.JFrame(), true);
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.setDictionary(dictionary);
         dialog.grammarDataContainer = grammarDataContainer;
         dialog.languageFilesDataHandler = languageFilesDataHandler;
         dialog.initialise();
@@ -379,7 +372,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void practisingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_practisingButtonActionPerformed
         CardTesterDialog dialog = new CardTesterDialog(new javax.swing.JFrame(), true);
-        dialog.setData(dictionaryDataContainer);
+        dialog.setDictionary(dictionary);
         dialog.initialise();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -387,7 +380,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void dictionaryOtherToolsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dictionaryOtherToolsButtonActionPerformed
         DictionaryOtherToolsDialog dialog = new DictionaryOtherToolsDialog(new javax.swing.JFrame(), true);
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.dictionaryDataContainer = dictionary.dataContainer;
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_dictionaryOtherToolsButtonActionPerformed
@@ -395,7 +388,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         GrammarBookOtherToolsDialog dialog = new GrammarBookOtherToolsDialog(new javax.swing.JFrame(), true);
         dialog.grammarBook = grammarDataContainer.grammarBook;
-        dialog.dictionaryDataContainer = dictionaryDataContainer;
+        dialog.dictionaryDataContainer = dictionary.dataContainer;
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed

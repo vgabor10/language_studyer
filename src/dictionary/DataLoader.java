@@ -1,9 +1,6 @@
-package disc_operation_handlers;
+package dictionary;
 
-import dictionary.Card;
-import dictionary.CardCategory;
-import dictionary.CardContainer;
-import dictionary.DictionaryDataContainer;
+import disc_operation_handlers.LanguageFilesDataHandler;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -11,15 +8,23 @@ import java.io.IOException;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataContainer;
 
-public class DictionaryDataLoader {
+public class DataLoader {
     
-    public DictionaryDataContainer dictionaryDataContainer;
+    private DataContainer dataContainer;
     
-    public LanguageFilesDataHandler languageFilesDataHandler;
+    private LanguageFilesDataHandler languageFilesDataHandler;
+    
+    public void setDataContainer(DataContainer dc) {
+        this.dataContainer = dc;
+    }
+
+    public void setLanguageFilesDataHandler(LanguageFilesDataHandler languageFilesDataHandler) {
+        this.languageFilesDataHandler = languageFilesDataHandler;
+    }
     
     public void loadCardContainer() {
         try {        
-            CardContainer cardContainer = dictionaryDataContainer.cardContainer;
+            CardContainer cardContainer = dataContainer.cardContainer;
             cardContainer.clear();
             
             String filePath = languageFilesDataHandler.getStudiedLanguageCardDataPath();
@@ -44,7 +49,7 @@ public class DictionaryDataLoader {
     
     public void loadAnswerData() {
         try {
-            AnswerDataContainer answerDataContainer = dictionaryDataContainer.answerDataContainer;
+            AnswerDataContainer answerDataContainer = dataContainer.answerDataContainer;
             answerDataContainer.clear();
             
             String filePath = languageFilesDataHandler.getStudiedLanguageAnswerDataPath();
@@ -73,7 +78,7 @@ public class DictionaryDataLoader {
                 int cardIndex = Integer.parseInt(splittedRow[0]);
                 String exampleSentence = splittedRow[1];
                 
-                dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
+                dataContainer.cardContainer.getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
             }
             
         } catch (FileNotFoundException e) {
@@ -94,7 +99,7 @@ public class DictionaryDataLoader {
 
                 for (int i=1; i<splittedRow.length; i++) {
                     int categoryIndex = Integer.parseInt(splittedRow[i]);
-                    dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
+                    dataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -118,7 +123,7 @@ public class DictionaryDataLoader {
                 category.index = categoryIndex;
                 category.name = categoryName;
 
-                dictionaryDataContainer.categoryContainer.add(category);
+                dataContainer.categoryContainer.add(category);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find file");

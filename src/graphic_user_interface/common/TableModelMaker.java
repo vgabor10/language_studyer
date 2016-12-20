@@ -2,7 +2,7 @@ package graphic_user_interface.common;
 
 import dictionary.Card;
 import dictionary.CardContainer;
-import dictionary.DictionaryStatisticsMaker;
+import dictionary.StatisticsMaker;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,8 +20,8 @@ import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStud
 public class TableModelMaker {
     
     public DefaultTableModel numberOfAnswersByDays(AnswerDataContainer answerDataContainer) {
-        DictionaryStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryStatisticsMaker();
+        StatisticsMaker dictionaryAnswerDataStatisticsMaker
+                = new StatisticsMaker();
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 
@@ -46,8 +46,8 @@ public class TableModelMaker {
     }
     
     public DefaultTableModel histogramOfAnswerRatesByDays(AnswerDataContainer answerDataContainer) {
-        DictionaryStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryStatisticsMaker();
+        StatisticsMaker dictionaryAnswerDataStatisticsMaker
+                = new StatisticsMaker();
 
         dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
         
@@ -92,8 +92,8 @@ public class TableModelMaker {
     }
     
     public DefaultTableModel practisingTimeByDay(AnswerDataContainer answerDataContainer) {
-        DictionaryStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryStatisticsMaker();
+        StatisticsMaker dictionaryAnswerDataStatisticsMaker
+                = new StatisticsMaker();
         
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
@@ -119,8 +119,8 @@ public class TableModelMaker {
     }
     
     public DefaultTableModel histogramOfStudyItemsByNumberOfAnswers(AnswerDataContainer answerDataContainer) {
-        DictionaryStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryStatisticsMaker();
+        StatisticsMaker dictionaryAnswerDataStatisticsMaker
+                = new StatisticsMaker();
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 
@@ -145,8 +145,8 @@ public class TableModelMaker {
     }
     
     public DefaultTableModel numberOfNewStudyItemsQuestionedByDays(AnswerDataContainer answerDataContainer) {
-        DictionaryStatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new DictionaryStatisticsMaker();
+        StatisticsMaker dictionaryAnswerDataStatisticsMaker
+                = new StatisticsMaker();
         
 	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
 
