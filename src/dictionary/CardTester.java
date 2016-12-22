@@ -32,6 +32,19 @@ public class CardTester {
         cardsToTest = cc;
     }
 
+    public void startNewTest() {
+        allCard.clear();
+        cardsToTest.clear();
+        numberOfCardsQuestioned = 0;
+        userAnswers.clear();
+        actualQuestionedCard = null;
+        userAnswerToActualQuestion = null;
+        acceptabelAnswersAndCardIndexesForActualQuestion.clear();
+        isGetAnswerToActualQuestion = false;
+        
+        moveToNextCardToQuestion();
+    }
+    
     //before allCard need to be seted
     public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
         List<Integer> cardIndexesList = new Vector<Integer>(cardIndexes);
@@ -176,17 +189,6 @@ public class CardTester {
         }
 
         return acceptableCardIndexes;
-    }
-    
-    public void clear() {
-        allCard.clear();
-        cardsToTest.clear();
-        numberOfCardsQuestioned = 0;
-        userAnswers.clear();
-        actualQuestionedCard = null;
-        userAnswerToActualQuestion = null;
-        acceptabelAnswersAndCardIndexesForActualQuestion.clear();
-        isGetAnswerToActualQuestion = false;
     }
 
 }

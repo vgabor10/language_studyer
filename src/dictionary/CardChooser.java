@@ -33,7 +33,7 @@ public class CardChooser {
     public void setData(DataContainer ddc, Set<Integer> cardCategoris) {
         cardContainer = new CardContainer();
         answerDataContainer = new AnswerDataContainer();
-        
+
         for (int i=0; i<ddc.cardContainer.numberOfCards(); i++) {
             Card card = ddc.cardContainer.getCardByOrder(i);
             if (!Collections.disjoint(cardCategoris, card.categoryIndexes)) {

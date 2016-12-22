@@ -7,8 +7,6 @@ import disc_operation_handlers.GrammarDataLoader;
 import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
-import dictionary.StudyStrategyHandler;
-import dictionary.DataLoader;
 import dictionary.Dictionary;
 import disc_operation_handlers.LanguageFilesDataHandler;
 import grammar_book.GrammarDataContainer;
@@ -373,7 +371,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void practisingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_practisingButtonActionPerformed
         CardTesterDialog dialog = new CardTesterDialog(new javax.swing.JFrame(), true);
         dialog.setDictionary(dictionary);
-        dialog.initialise();
+        dialog.startNewTest();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_practisingButtonActionPerformed

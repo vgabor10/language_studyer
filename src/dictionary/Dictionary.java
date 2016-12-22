@@ -5,6 +5,7 @@ import disc_operation_handlers.LanguageFilesDataHandler;
 public class Dictionary {
     
     public CardTester cardTester = new CardTester();
+    public CardChooser cardChooser = new CardChooser();
     public CardFinder cardFinder = new CardFinder();
     public DataContainer dataContainer = new DataContainer();
     public StatisticsMaker statisticsMaker = new StatisticsMaker();
@@ -17,10 +18,17 @@ public class Dictionary {
         dataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
         dataLoader.setDataContainer(dataContainer);
         dataLoader.loadAllData();
+        
         dataModificator.setData(dataContainer);
+        
         statisticsMaker.setData(dataContainer);
+        
         cardFinder.setCardContainer(dataContainer.cardContainer);
+        
         cardTester.setAllCard(dataContainer.cardContainer);
+        
         studyStrategyHandler.loadStudyStrategyDataFromDisc();
+        
+        cardChooser.setData(dataContainer, studyStrategyHandler.cardCategoryRestrictions);
     }
 }

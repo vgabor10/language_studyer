@@ -1,19 +1,16 @@
 package graphic_user_interface.dictionary;
 
-import study_item_objects.AnswerDataContainer;
 import common.Logger;
 import dictionary.DataModificator;
 import dictionary.CardChooser;
 import dictionary.CardTester;
 import dictionary.Dictionary;
-import dictionary.StudyStrategyHandler;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
@@ -21,12 +18,10 @@ import study_item_objects.AnswerDataByStudyItem;
 
 public class CardTesterDialog extends javax.swing.JDialog {
 
+    private Dictionary dictionary;
+    
     private CardTester cardTester;
     private CardChooser cardChooser;
-    private StudyStrategyHandler studyStrategyDataHandler
-            = new StudyStrategyHandler();
-    
-    private Dictionary dictionary;
     
     private final DefaultTableModel acceptableAnswersTableModel;
     private final DefaultTableModel exampleSentencesTableModel;
@@ -49,28 +44,18 @@ public class CardTesterDialog extends javax.swing.JDialog {
         cardStatisticsButton.setMnemonic(KeyEvent.VK_S);
     }
 
-    public void initialise() {  
-        cardChooser = new CardChooser();
-        cardChooser.setData(dictionary.dataContainer, studyStrategyDataHandler.cardCategoryRestrictions);
-        
-        AnswerDataContainer answerDataContainer = dictionary.dataContainer.answerDataContainer;
-        
-        Set<Integer> cardIndexesToTest;
-        if (answerDataContainer.numberOfAnswers() > 100) {
-            cardIndexesToTest = cardChooser.getCardIndexes(studyStrategyDataHandler);
-        } else {
-            cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
-        }
-        
-        cardTester = new CardTester();
-        cardTester.setAllCard(dictionary.dataContainer.cardContainer);
-        cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
+    public void startNewTest() {
 
-        cardTester.moveToNextCardToQuestion();
+        Set<Integer> cardIndexesToTest;
+        cardIndexesToTest = cardChooser.getCardIndexes(dictionary.studyStrategyHandler);
+        //cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
+        
+        cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
+        cardTester.startNewTest();
 
         jTextField1.requestFocus();
 
-        clearTabulars();
+        clearTabels();
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
@@ -81,6 +66,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
+        cardTester = dictionary.cardTester;
+        cardChooser = dictionary.cardChooser;
     }
     
     @SuppressWarnings("unchecked")
@@ -307,7 +294,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void fillCardDatasToDialog() {
-        clearTabulars();
+        clearTabels();
         
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
         
@@ -331,7 +318,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         showAcceptableCards();
         showExampleSentences();
     }
-    
+
     private void showAcceptableCards() {
         Set<Integer> acceptableCardIndexes
                 = cardTester.getAcceptableCardIndexes(cardTester.getActualQuestionedCard().definition);
@@ -358,7 +345,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
     }
 
-    private void clearTabulars() {
+    private void clearTabels() {
         for (int i = acceptableAnswersTableModel.getRowCount() - 1; 0 <= i; i--) {
             acceptableAnswersTableModel.removeRow(i);
         }
@@ -376,7 +363,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
-        dialog.categoryConstrains = studyStrategyDataHandler.cardCategoryRestrictions;
+        dialog.categoryConstrains = dictionary.studyStrategyHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
         dialog.initialise();
@@ -385,7 +372,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
         
         if (dialog.dialogAnswer.boolAnswer) {
-            initialise();
+            startNewTest();
         } else {
             dispose();
         }
@@ -540,7 +527,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTextField1.setText("");
         jTextField2.setText("");
 
-        clearTabulars();
+        clearTabels();
     }
     
     /**

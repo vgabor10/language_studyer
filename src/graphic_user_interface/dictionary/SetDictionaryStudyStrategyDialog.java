@@ -15,8 +15,6 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         
         setTitle("Study strategy editor");
         
-        setStudyStrategyDataToDialog();
-        
         jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest()));  
         
         jButton2.setMnemonic(KeyEvent.VK_C);
@@ -26,6 +24,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
         studyStrategyHandler = dictionary.studyStrategyHandler;
+        setStudyStrategyDataToDialog();
     }
     
     private int evaluateNumberOfCardsToTest() {
