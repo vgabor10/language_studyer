@@ -5,7 +5,7 @@
 12	sich-es igék
 15	rendhagyó_múltidejű_igék
 2	melléknevek
-13	melléknévi igenevek
+13	melléknévi_igenevek
 3	határozószavak
 4	számnevek
 5	kérdőszavak
