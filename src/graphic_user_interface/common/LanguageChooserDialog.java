@@ -137,7 +137,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         
         DataLoader dictionaryDataLoader = new DataLoader();
         dictionary.dataLoader.loadAllData();
-        dictionary.languageFilesDataHandler = languageFilesDataHandler;
+        dictionary.discFilesMetaDataHandler = languageFilesDataHandler;
         dictionaryDataLoader.loadAllData();
         
         GrammarDataLoader grammarDataLoader = new GrammarDataLoader();

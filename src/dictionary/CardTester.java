@@ -17,12 +17,13 @@ public class CardTester {
     private DataContainer dataContainer;      
     
     private CardContainer allCard;
-    private CardContainer cardsToTest;
+    private CardContainer cardsToTest = new CardContainer();
     private int numberOfCardsQuestioned = 0;
     private final AnswerDataContainer userAnswers = new AnswerDataContainer();
     private Card actualQuestionedCard;
     private String userAnswerToActualQuestion;
-    private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
+    private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion
+            = new HashMap<>();
     private boolean isGetAnswerToActualQuestion = false;
     
     private final Logger logger = new Logger();
@@ -30,15 +31,22 @@ public class CardTester {
     public void setData(DataContainer dataContainer) {
         allCard = dataContainer.cardContainer;
         this.dataContainer = dataContainer;
+        this.cardChooser.setData(dataContainer);
     }
 
     public void startNewTest() {
         numberOfCardsQuestioned = 0;
         userAnswers.clear();
+        cardsToTest.clear();
         actualQuestionedCard = null;
         userAnswerToActualQuestion = null;
         acceptabelAnswersAndCardIndexesForActualQuestion.clear();
         isGetAnswerToActualQuestion = false;
+        
+        Set<Integer> cardIndexesToTest = cardChooser.getCardIndexes(dataContainer.studyStrategy);
+        for (int cardIndex : cardIndexesToTest) {
+            cardsToTest.addCard(allCard.getCardByIndex(cardIndex));
+        }
         
         moveToNextCardToQuestion();
     }

@@ -8,10 +8,10 @@ public class Dictionary {
     public StatisticsMaker statisticsMaker = new StatisticsMaker();
     public DataLoader dataLoader = new DataLoader();
     public DataModificator dataModificator = new DataModificator();
-    public DiscFilesMetaDataHandler languageFilesDataHandler = new DiscFilesMetaDataHandler();
+    public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
     
     public Dictionary() {
-        dataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
+        dataLoader.setLanguageFilesDataHandler(discFilesMetaDataHandler);
         dataLoader.setDataContainer(dataContainer);
         dataLoader.loadAllData();
         

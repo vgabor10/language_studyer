@@ -41,8 +41,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
     public void initialise() {
         cardTestStatisticsMaker.setData(dictionaryDataContainer, testAnswers);
-        cardTestStatisticsMaker.setCategoryRestrictions(categoryConstrains);
-        cardTestStatisticsMaker.initialise();
         
         cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
 

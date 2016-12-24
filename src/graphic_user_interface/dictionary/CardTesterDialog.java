@@ -2,7 +2,6 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.DataModificator;
-import dictionary.CardChooser;
 import dictionary.CardTester;
 import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
@@ -21,7 +20,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private Dictionary dictionary;
     
     private CardTester cardTester;
-    private CardChooser cardChooser;
     
     private final DefaultTableModel acceptableAnswersTableModel;
     private final DefaultTableModel exampleSentencesTableModel;
@@ -46,11 +44,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
     public void startNewTest() {
 
-        Set<Integer> cardIndexesToTest;
-        //cardIndexesToTest = cardChooser.getCardIndexes(dictionary.studyStrategyHandler);
-        //cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
-        
-        //cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
         cardTester.startNewTest();
 
         jTextField1.requestFocus();
@@ -355,7 +348,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         }
     }
 
-    private void showStatisticsDialog() {
+    private void showStatisticsDialogAndSaveTestData() {
         finishTime = new Date().getTime();
         
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
@@ -363,7 +356,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
-        //dialog.categoryConstrains = dictionary.studyStrategyHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
         dialog.initialise();
@@ -371,18 +363,16 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
+        DataModificator dictionaryDataModificator = new DataModificator();
+        dictionaryDataModificator.setData(dictionary.dataContainer);
+
+        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
+        
         if (dialog.dialogAnswer.boolAnswer) {
             startNewTest();
         } else {
             dispose();
         }
-    }
-    
-    private void saveTestData() {
-        DataModificator dictionaryDataModificator = new DataModificator();
-        dictionaryDataModificator.setData(dictionary.dataContainer);
-
-        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
     }
 
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
@@ -447,8 +437,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialog();
-            saveTestData();
+            showStatisticsDialogAndSaveTestData();
         }
     }
     
@@ -473,8 +462,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialog();
-            saveTestData();
+            showStatisticsDialogAndSaveTestData();
         }
     }
     
@@ -515,8 +503,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             moveToNextQuestion();
         }
         else {
-            showStatisticsDialog();
-            saveTestData();
+            showStatisticsDialogAndSaveTestData();
         }
     }
     

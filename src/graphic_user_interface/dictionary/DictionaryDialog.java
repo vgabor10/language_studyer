@@ -244,10 +244,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jLabel1.setText("-");
         
         jComboBox1.removeAllItems();
-        jComboBox1.addItem(dictionary.languageFilesDataHandler.getStudiedLanguageName().toLowerCase()
+        jComboBox1.addItem(dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase()
                 + " -> hungarian");
         jComboBox1.addItem("hungarian -> " +
-        dictionary.languageFilesDataHandler.getStudiedLanguageName().toLowerCase());
+        dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase());
     }
     
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed

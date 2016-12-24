@@ -13,7 +13,7 @@ import study_item_objects.AnswerData;
 
 public class CardTestStatisticsMaker {
 
-    private DataContainer dictionaryDataContainer;
+    private DataContainer dataContainer;
     private AnswerDataContainer testAnswers;
     
     private AnswerDataContainer relevantOldAnswers = new AnswerDataContainer();
@@ -33,15 +33,21 @@ public class CardTestStatisticsMaker {
     
     private Logger logger = new Logger();
     
-    public void setData(DataContainer dictionaryDataContainer,
+    public void setData(DataContainer dataContainer,
             AnswerDataContainer testAnswers) {
-        this.dictionaryDataContainer = dictionaryDataContainer;
+        this.dataContainer = dataContainer;
         this.testAnswers = testAnswers;
-    }
-    
-    public void initialise() {
-        CardContainer allCards = dictionaryDataContainer.cardContainer;
-        AnswerDataContainer allOldAnswers = dictionaryDataContainer.answerDataContainer;
+        this.categoryRestrictions = dataContainer.studyStrategy.cardCategoryRestrictions;
+        
+        if (!categoryRestrictions.contains(-1)) {
+            categoryRestrictionUsage = true;
+        }
+        else {
+            categoryRestrictionUsage = false;
+        }
+        
+        CardContainer allCards = dataContainer.cardContainer;
+        AnswerDataContainer allOldAnswers = dataContainer.answerDataContainer;
         
         if (categoryRestrictionUsage) {
             for (int i = 0; i < allOldAnswers.numberOfAnswers(); i++) {
@@ -82,11 +88,6 @@ public class CardTestStatisticsMaker {
             AnswerData answerData = relevantTestAnswers.getAnswerData(i);
             relevantAnswerDatasByStudyItemsAfterTest.addAnswerData(answerData);
         }     
-    }
-
-    public void setCategoryRestrictions(Set<Integer> cr) {
-        categoryRestrictions = cr;
-        categoryRestrictionUsage = true;
     }
 
     public boolean isCategoryConstrainsUsed() {
@@ -133,7 +134,7 @@ public class CardTestStatisticsMaker {
         
         for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
             AnswerData answerData = testAnswers.getAnswerData(i);
-            Card card = dictionaryDataContainer.cardContainer.getCardByIndex(answerData.index);
+            Card card = dataContainer.cardContainer.getCardByIndex(answerData.index);
             out.addCard(card);
         } 
         
