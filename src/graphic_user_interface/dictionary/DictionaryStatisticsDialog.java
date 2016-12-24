@@ -9,7 +9,6 @@ import graphic_user_interface.common.TabularDialog;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Date;
-import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
@@ -26,7 +25,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     public void setDictionary(Dictionary dictionary) {
         dictionaryStatisticsMaker.setData(
                 dictionary.dataContainer,
-                dictionary.studyStrategyHandler.cardCategoryRestrictions);
+                dictionary.dataContainer.studyStrategy.cardCategoryRestrictions);
     }
     
     @SuppressWarnings("empty-statement")

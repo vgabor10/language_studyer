@@ -8,7 +8,7 @@ import graphic_user_interface.grammar_book.GrammarBookReaderDialog;
 import graphic_user_interface.grammar_book.GrammarTesterDialog;
 import graphic_user_interface.dictionary.DictionaryStatisticsDialog;
 import dictionary.Dictionary;
-import disc_operation_handlers.LanguageFilesDataHandler;
+import dictionary.DiscFilesMetaDataHandler;
 import grammar_book.GrammarDataContainer;
 import graphic_user_interface.dictionary.DictionaryDialog;
 import graphic_user_interface.dictionary.CardTesterDialog;
@@ -23,8 +23,8 @@ public class MainFrame extends javax.swing.JFrame {
     
     private GrammarDataContainer grammarDataContainer = new GrammarDataContainer();
     
-    private final LanguageFilesDataHandler languageFilesDataHandler 
-            = new LanguageFilesDataHandler();
+    private final DiscFilesMetaDataHandler languageFilesDataHandler 
+            = new DiscFilesMetaDataHandler();
     
     private Logger logger = new Logger();
     

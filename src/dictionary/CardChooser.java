@@ -247,7 +247,7 @@ public class CardChooser {
         return cardIndexes;
     }
 
-    public Set<Integer> getCardIndexes(StudyStrategyHandler studyStrategyDataHandler) {
+    public Set<Integer> getCardIndexes(StudyStrategy studyStrategyDataHandler) {
         Set<Integer> cardsToTestIndexes = new HashSet<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 

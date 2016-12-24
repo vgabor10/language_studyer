@@ -3,7 +3,7 @@ package graphic_user_interface.common;
 import dictionary.DataLoader;
 import dictionary.Dictionary;
 import disc_operation_handlers.GrammarDataLoader;
-import disc_operation_handlers.LanguageFilesDataHandler;
+import dictionary.DiscFilesMetaDataHandler;
 import grammar_book.GrammarDataContainer;
 import java.awt.event.KeyEvent;
 
@@ -12,7 +12,7 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     public Dictionary dictionary;
     public GrammarDataContainer grammarDataContainer;
     
-    public LanguageFilesDataHandler languageFilesDataHandler;
+    public DiscFilesMetaDataHandler languageFilesDataHandler;
     
     public LanguageChooserDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

@@ -7,6 +7,7 @@ public class DataContainer {
     public CardContainer cardContainer = new CardContainer();
     public AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     public CategoryContainer categoryContainer = new CategoryContainer();
+    public StudyStrategy studyStrategy = new StudyStrategy();
     
     public void checkDataHelath() {
         DataFormatChecker dataFormatChecker = new DataFormatChecker();

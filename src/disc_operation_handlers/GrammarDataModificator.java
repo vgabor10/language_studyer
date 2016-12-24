@@ -1,5 +1,6 @@
 package disc_operation_handlers;
 
+import dictionary.DiscFilesMetaDataHandler;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarItem;
@@ -11,8 +12,8 @@ public class GrammarDataModificator {
     private GrammarBook grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
-    private LanguageFilesDataHandler languageFilesDataHendler
-            = new LanguageFilesDataHandler();
+    private DiscFilesMetaDataHandler languageFilesDataHendler
+            = new DiscFilesMetaDataHandler();
 
     public void setGrammarBook(GrammarBook gb) {
         grammarBook = gb;

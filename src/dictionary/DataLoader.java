@@ -1,6 +1,5 @@
 package dictionary;
 
-import disc_operation_handlers.LanguageFilesDataHandler;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -12,13 +11,13 @@ public class DataLoader {
     
     private DataContainer dataContainer;
     
-    private LanguageFilesDataHandler languageFilesDataHandler;
+    private DiscFilesMetaDataHandler languageFilesDataHandler;
     
     public void setDataContainer(DataContainer dc) {
         this.dataContainer = dc;
     }
 
-    public void setLanguageFilesDataHandler(LanguageFilesDataHandler languageFilesDataHandler) {
+    public void setLanguageFilesDataHandler(DiscFilesMetaDataHandler languageFilesDataHandler) {
         this.languageFilesDataHandler = languageFilesDataHandler;
     }
     
@@ -132,11 +131,86 @@ public class DataLoader {
         }
     }    
     
+    public void loadStudyStrategyDataFromDisc() {
+        try {
+            String filePath = languageFilesDataHandler.getStudiedLanguageDictionaryStudyStrategy();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            
+            StudyStrategy studyStrategy = dataContainer.studyStrategy;
+            
+            String line;
+            while ((line = br.readLine()) != null) {
+
+                if (line.startsWith("numberOfRandomCards: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+                    studyStrategy.numberOfRandomCards = Integer.parseInt(s);
+                }
+                
+                if (line.startsWith("numberOfCardsFromTheLeastKnown20Percent: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+                    studyStrategy.numberOfCardsFromTheLeastKnown20Percent = Integer.parseInt(s);
+                }
+                
+                if (line.startsWith("numberOfCardsFromTheLeastKnown100: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+                    studyStrategy.numberOfCardsFromTheLeastKnown100 = Integer.parseInt(s);
+                }
+
+                if (line.startsWith("numberOfCardsWithLeastSignificantAr: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+                    studyStrategy.numberOfCardsAmongTheLeastSignificantAr = Integer.parseInt(s);
+                }
+
+                if (line.startsWith("numberOfLatestQuestionedCards: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+                    studyStrategy.numberOfLatestQuestionedCards = Integer.parseInt(s);
+                }
+                
+                if (line.startsWith("studyingGradually: ")) {
+                    String s = line.substring(line.lastIndexOf(":") + 2);
+                    //System.out.println(s);
+
+                    if (s.equals("false")) {
+                        studyStrategy.studyingGradually = false;
+                    }
+                    
+                    if (s.equals("true")) {
+                        studyStrategy.studyingGradually = true;
+                    }
+                }
+                
+                 if (line.startsWith("cardCategoryRestrictions: ")) {
+                     String s = line.substring(line.lastIndexOf(":") + 2);
+                     String[] stringCategoryIndexes = s.split(" ");
+                     
+                     for (String stringCategoryIndes : stringCategoryIndexes) {
+                         int categoryIndex = Integer.parseInt(stringCategoryIndes);
+                         studyStrategy.cardCategoryRestrictions.add(categoryIndex);
+                     }
+                }
+
+            }
+            
+            //studyStrategyIndex = Integer.parseInt(br.readLine());
+        } catch (FileNotFoundException e) {
+            System.err.println("Unable to find the file: fileName");
+        } catch (IOException e) {
+            System.err.println("Unable to read the file: fileName");
+        }   
+    }
+
+    
     public void loadAllData() {
         loadCardContainer();
         loadAnswerData();
         loadExampleSentences();
         loadCardIndexesAndCategoryIndexes();
         loadCategoryIndexesAndCategoryNames();
+        loadStudyStrategyDataFromDisc();
     }
 }

@@ -13,6 +13,9 @@ import java.util.Vector;
 
 public class CardTester {
 
+    private CardChooser cardChooser = new CardChooser();
+    private DataContainer dataContainer;      
+    
     private CardContainer allCard;
     private CardContainer cardsToTest;
     private int numberOfCardsQuestioned = 0;
@@ -21,20 +24,15 @@ public class CardTester {
     private String userAnswerToActualQuestion;
     private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion;
     private boolean isGetAnswerToActualQuestion = false;
-
+    
     private final Logger logger = new Logger();
 
-    public void setAllCard(CardContainer cc) {
-        allCard = cc;
-    }
-
-    public void setCardsToTest(CardContainer cc) {
-        cardsToTest = cc;
+    public void setData(DataContainer dataContainer) {
+        allCard = dataContainer.cardContainer;
+        this.dataContainer = dataContainer;
     }
 
     public void startNewTest() {
-        allCard.clear();
-        cardsToTest.clear();
         numberOfCardsQuestioned = 0;
         userAnswers.clear();
         actualQuestionedCard = null;

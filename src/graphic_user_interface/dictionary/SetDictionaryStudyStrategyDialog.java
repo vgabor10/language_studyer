@@ -1,13 +1,13 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Dictionary;
-import dictionary.StudyStrategyHandler;
+import dictionary.StudyStrategy;
 import java.awt.event.KeyEvent;
 
 public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
 
     private Dictionary dictionary;
-    private StudyStrategyHandler studyStrategyHandler;
+    private StudyStrategy studyStrategyHandler;
  
     public SetDictionaryStudyStrategyDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -23,7 +23,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
     
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
-        studyStrategyHandler = dictionary.studyStrategyHandler;
+        //studyStrategyHandler = dictionary.studyStrategyHandler;
         setStudyStrategyDataToDialog();
     }
     
@@ -316,7 +316,7 @@ public class SetDictionaryStudyStrategyDialog extends javax.swing.JDialog {
         
         studyStrategyHandler.studyingGradually = jCheckBox1.isSelected();
         
-        studyStrategyHandler.writeStudyStrategyDataToDisc();
+        //studyStrategyHandler.writeStudyStrategyDataToDisc();
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

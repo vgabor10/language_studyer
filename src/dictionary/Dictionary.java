@@ -1,18 +1,14 @@
 package dictionary;
 
-import disc_operation_handlers.LanguageFilesDataHandler;
-
 public class Dictionary {
     
     public CardTester cardTester = new CardTester();
-    public CardChooser cardChooser = new CardChooser();
     public CardFinder cardFinder = new CardFinder();
     public DataContainer dataContainer = new DataContainer();
     public StatisticsMaker statisticsMaker = new StatisticsMaker();
     public DataLoader dataLoader = new DataLoader();
     public DataModificator dataModificator = new DataModificator();
-    public StudyStrategyHandler studyStrategyHandler = new StudyStrategyHandler();
-    public LanguageFilesDataHandler languageFilesDataHandler = new LanguageFilesDataHandler();
+    public DiscFilesMetaDataHandler languageFilesDataHandler = new DiscFilesMetaDataHandler();
     
     public Dictionary() {
         dataLoader.setLanguageFilesDataHandler(languageFilesDataHandler);
@@ -25,10 +21,6 @@ public class Dictionary {
         
         cardFinder.setCardContainer(dataContainer.cardContainer);
         
-        cardTester.setAllCard(dataContainer.cardContainer);
-        
-        studyStrategyHandler.loadStudyStrategyDataFromDisc();
-        
-        cardChooser.setData(dataContainer, studyStrategyHandler.cardCategoryRestrictions);
+        cardTester.setData(dataContainer);
     }
 }

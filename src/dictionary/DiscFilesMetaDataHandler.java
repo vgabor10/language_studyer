@@ -1,5 +1,6 @@
-package disc_operation_handlers;
+package dictionary;
 
+import disc_operation_handlers.LanguageFilesData;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -9,14 +10,14 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-public class LanguageFilesDataHandler {
+public class DiscFilesMetaDataHandler {
 
     private int studyedLanguageIndex = 1;
     public String settingsDataFilePath = "../data/settings_data/settings_data_file.txt";
 
     private ArrayList<LanguageFilesData> languageDatas = new ArrayList<>();
 
-    public LanguageFilesDataHandler() {
+    public DiscFilesMetaDataHandler() {
         
         /////////////////// ENGLISH ///////////////////
         
@@ -72,6 +73,10 @@ public class LanguageFilesDataHandler {
     
     public String getStudiedLanguageCategoryIndexesAndCategoryNames() {
         return getStudiedLanguageDataPath() + "dictionary_data/card_categories.txt";
+    }
+    
+    public String getStudiedLanguageDictionaryStudyStrategy() {
+        return getStudiedLanguageDataPath() + "dictionary_data/study_strategy_data_file.txt";
     }
     
     public String getStudiedLanguageGrammarBookPath() {

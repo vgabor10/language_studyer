@@ -1,5 +1,6 @@
 package disc_operation_handlers;
 
+import dictionary.DiscFilesMetaDataHandler;
 import grammar_book.Example;
 import grammar_book.GrammarAnswerData;
 import grammar_book.GrammarAnswerDataContainer;
@@ -15,7 +16,7 @@ public class GrammarDataLoader {
 
     public GrammarDataContainer grammarDataContainer;
 
-    public LanguageFilesDataHandler languageFilesDataHandler;
+    public DiscFilesMetaDataHandler languageFilesDataHandler;
 
     public void loadLanguageDataWithIndex(int languageIndex) {
         languageFilesDataHandler.setStudyedLanguageIndex(languageIndex);

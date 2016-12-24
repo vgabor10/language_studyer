@@ -47,10 +47,10 @@ public class CardTesterDialog extends javax.swing.JDialog {
     public void startNewTest() {
 
         Set<Integer> cardIndexesToTest;
-        cardIndexesToTest = cardChooser.getCardIndexes(dictionary.studyStrategyHandler);
+        //cardIndexesToTest = cardChooser.getCardIndexes(dictionary.studyStrategyHandler);
         //cardIndexesToTest = cardChooser.getRandomCardIndexes(20, new HashSet<Integer>());
         
-        cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
+        //cardTester.setCardsToTestFromCardIndexesSet(cardIndexesToTest);
         cardTester.startNewTest();
 
         jTextField1.requestFocus();
@@ -67,7 +67,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
         cardTester = dictionary.cardTester;
-        cardChooser = dictionary.cardChooser;
+        //cardChooser = dictionary.cardChooser;
     }
     
     @SuppressWarnings("unchecked")
@@ -363,7 +363,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
-        dialog.categoryConstrains = dictionary.studyStrategyHandler.cardCategoryRestrictions;
+        //dialog.categoryConstrains = dictionary.studyStrategyHandler.cardCategoryRestrictions;
         dialog.dialogAnswer = new DialogAnswer();
 
         dialog.initialise();
@@ -420,7 +420,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             DataModificator dictionaryDataModificator 
                     = new DataModificator();
             dictionaryDataModificator.setData(dictionary.dataContainer);
-            dictionaryDataModificator.saveAllData();
+            dictionaryDataModificator.writeLanguageDataToFile();
             
             fillCardDatasToDialog();
         }

@@ -220,7 +220,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         DataModificator dictionaryDataModificator 
                 = new DataModificator();
         dictionaryDataModificator.setData(dictionaryDataContainer);
-        dictionaryDataModificator.saveAllData();
+        dictionaryDataModificator.writeLanguageDataToFile();
         
         dialogAnswer.stringAnswer = "save_card";    
         dispose();

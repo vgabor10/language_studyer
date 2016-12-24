@@ -2,10 +2,6 @@ package dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
-import dictionary.Card;
-import dictionary.CardContainer;
-import dictionary.DataContainer;
-import disc_operation_handlers.LanguageFilesDataHandler;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -15,13 +11,16 @@ public class DataModificator {
     
     private CardContainer cardContainer;
     private AnswerDataContainer answerDataContainer;
-    private final LanguageFilesDataHandler settingsHandler = new LanguageFilesDataHandler();    //TODO: give it from manin frame
+    private StudyStrategy studyStrategy;
+    
+    private final DiscFilesMetaDataHandler settingsHandler = new DiscFilesMetaDataHandler();    //TODO: give it from manin frame
 
     private final Logger logger = new Logger();
 
-    public void setData(DataContainer dictionaryDataContainer) {
-        cardContainer = dictionaryDataContainer.cardContainer;
-        answerDataContainer = dictionaryDataContainer.answerDataContainer;
+    public void setData(DataContainer dataContainer) {
+        this.cardContainer = dataContainer.cardContainer;
+        this.answerDataContainer = dataContainer.answerDataContainer;
+        this.studyStrategy = dataContainer.studyStrategy;
     }
 
     public void removeCardWithAnswersByCardIndex(int cardIndex) {
@@ -126,8 +125,44 @@ public class DataModificator {
             System.err.println("IOException: " + ioe.getMessage());
         }
     }
+    
+    public void writeStudyStrategyDataToDisc() {
+        try {
+            
+            //the true will append the new data
+            FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageDictionaryStudyStrategy(), false);
+            
+            fw.write("numberOfRandomCards: " +
+                    Integer.toString(studyStrategy.numberOfRandomCards) + "\n");
 
-    public void saveAllData() {
+            fw.write("numberOfCardsFromTheLeastKnown20Percent: "
+                    + Integer.toString(studyStrategy.numberOfCardsFromTheLeastKnown20Percent) + "\n");
+
+            fw.write("numberOfCardsFromTheLeastKnown100: "
+                    + Integer.toString(studyStrategy.numberOfCardsFromTheLeastKnown100) + "\n");
+            
+            fw.write("numberOfCardsWithLeastSignificantAr: "
+                    + Integer.toString(studyStrategy.numberOfCardsAmongTheLeastSignificantAr) + "\n");
+
+            fw.write("numberOfLatestQuestionedCards: "
+                    + Integer.toString(studyStrategy.numberOfLatestQuestionedCards) + "\n");
+            
+            fw.write("studyingGradually: "
+                    + Boolean.toString(studyStrategy.studyingGradually) + "\n");
+            
+            fw.write("cardCategoryRestrictions:");
+            for (int categoryIndex : studyStrategy.cardCategoryRestrictions) {
+                fw.write(" " + categoryIndex);
+            }
+            fw.write("\n");
+            
+            fw.close();
+        } catch (IOException ioe) {
+            System.err.println("IOException: " + ioe.getMessage());
+        }           
+    }
+
+    public void writeLanguageDataToFile() {
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
         saveExampleSentencesDataToFile();

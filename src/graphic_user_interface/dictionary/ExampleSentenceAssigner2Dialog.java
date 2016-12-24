@@ -5,7 +5,7 @@ import dictionary.CardContainer;
 import dictionary.CardFinder;
 import dictionary.DataContainer;
 import dictionary.DataModificator;
-import disc_operation_handlers.LanguageFilesDataHandler;
+import dictionary.DiscFilesMetaDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.dictionary.ExampleSentenceSuggestionsDialog;
@@ -35,8 +35,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
     private final DefaultTableModel tableModel;
     private final DefaultTableModel lastSearchesTableModel;
     
-    private LanguageFilesDataHandler languageFilesDataHandler
-            = new LanguageFilesDataHandler();
+    private DiscFilesMetaDataHandler languageFilesDataHandler
+            = new DiscFilesMetaDataHandler();
     
     private List<Card> listedCards = new ArrayList<>();
    
@@ -352,7 +352,7 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
             DataModificator dictionaryDataModificator 
                     = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.saveAllData();
+            dictionaryDataModificator.writeLanguageDataToFile();
 
             clearTable();
         }
