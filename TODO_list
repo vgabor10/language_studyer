@@ -20,7 +20,8 @@ Dictionary
 	DataLoader
 	DataModificator
 	CardTester
-	CardChooser
+		CardChooser
+		CardTestStatisticsMaker
 	CardFinder
 	StudyStrategySetter
 

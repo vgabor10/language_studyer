@@ -775,7 +775,7 @@
 100781	andernfalls	különben
 100782	r Drang	tömeg
 100783	verstärken	erősít
-100784	weigern	megtagad
+100784	weigern	tiltakozik, megtagad
 100785	r Ausdruck	kifejezés
 100786	widersprechen	ellentmond
 100787	s Recht	törvény
@@ -5455,3 +5455,6 @@
 105454	mobilisieren	mozgósít
 105455	e Anklage	vád
 105456	Bulgarien	Bulgária
+105457	e Tücke	árulás, nehézség
+105458	e Weigerung	visszautasítás
+105459	r Anreiz	csábítás
