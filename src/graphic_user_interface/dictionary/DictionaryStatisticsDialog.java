@@ -16,16 +16,10 @@ import study_item_objects.StatisticsToFileWriter;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
-    private StatisticsMaker dictionaryStatisticsMaker = new StatisticsMaker();
-    
-    public void setData(DataContainer dictionaryDataContainer) {
-        dictionaryStatisticsMaker.setData(dictionaryDataContainer);
-    }
+    private StatisticsMaker statisticsMaker;
     
     public void setDictionary(Dictionary dictionary) {
-        dictionaryStatisticsMaker.setData(
-                dictionary.dataContainer,
-                dictionary.dataContainer.studyStrategy.cardCategoryRestrictions);
+        statisticsMaker = dictionary.statisticsMaker;
     }
     
     @SuppressWarnings("empty-statement")
@@ -78,7 +72,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         jLabel28 = new javax.swing.JLabel();
         jSpinner1 = new javax.swing.JSpinner();
         jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -113,7 +106,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
         jLabel15.setText("jLabel15");
 
-        jLabel1.setText("number of cards:");
+        jLabel1.setText("number of studied card:");
 
         jLabel3.setText("number of studying days:");
 
@@ -165,9 +158,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         });
 
         jLabel29.setText("days:");
-
-        jLabel30.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel30.setText("category restrictions are used!");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -237,8 +227,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                         .addGap(6, 6, 6)
                         .addComponent(jLabel29)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel28))
-                    .addComponent(jLabel30))
+                        .addComponent(jLabel28)))
                 .addContainerGap(133, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -302,9 +291,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(jLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel30)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("basic", jPanel1);
@@ -472,30 +459,26 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void initialise() {
-	jLabel4.setText(Integer.toString(dictionaryStatisticsMaker.numberOfStudyItems()));
-        jLabel15.setText(Integer.toString(dictionaryStatisticsMaker.numberOfAnswers()));
-        jLabel5.setText(Integer.toString(dictionaryStatisticsMaker.getNumberOfQuestionedStudyItems()));
-        jLabel16.setText(Integer.toString(dictionaryStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
-        jLabel22.setText(new Date(dictionaryStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
-	jLabel6.setText(Integer.toString(dictionaryStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(dictionaryStatisticsMaker.getPractisingTimeAsString());
-	jLabel18.setText(dictionaryStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(dictionaryStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
-        jLabel12.setText(Integer.toString(dictionaryStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
-        jLabel13.setText(dictionaryStatisticsMaker.getPointProgressAsString());
-        jLabel24.setText(dictionaryStatisticsMaker.getAverageNumberOfAnswersOfCardsAsString());
-        jLabel26.setText(Integer.toString(dictionaryStatisticsMaker.getNumberOfAnswersToday()));
+	jLabel4.setText(Integer.toString(statisticsMaker.numberOfStudyItems()));
+        jLabel15.setText(Integer.toString(statisticsMaker.numberOfAnswers()));
+        jLabel5.setText(Integer.toString(statisticsMaker.getNumberOfQuestionedStudyItems()));
+        jLabel16.setText(Integer.toString(statisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
+        jLabel22.setText(new Date(statisticsMaker.getLastQuestionedStudyItemDate()).toString());
+	jLabel6.setText(Integer.toString(statisticsMaker.getNumberOfStudyingDays()));
+	jLabel17.setText(statisticsMaker.getPractisingTimeAsString());
+	jLabel18.setText(statisticsMaker.getPercentageOfRightAnswersAsString());
+	jLabel19.setText(statisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
+        jLabel12.setText(Integer.toString(statisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+        jLabel13.setText(statisticsMaker.getPointProgressAsString());
+        jLabel24.setText(statisticsMaker.getAverageNumberOfAnswersOfCardsAsString());
+        jLabel26.setText(Integer.toString(statisticsMaker.getNumberOfAnswersToday()));
         toScreenNumberOfAnswersOnTheLastDays((int) jSpinner1.getModel().getValue());
-        
-        if (!dictionaryStatisticsMaker.isCategoryRestrictionsUsed()) {
-            jLabel30.setVisible(false);
-        }
         
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
     
     private void toScreenNumberOfAnswersOnTheLastDays(int numberOfDays) {
-        jLabel28.setText(Integer.toString(dictionaryStatisticsMaker.getNumberOfAnswersOnTheLastDays(numberOfDays)));
+        jLabel28.setText(Integer.toString(statisticsMaker.getNumberOfAnswersOnTheLastDays(numberOfDays)));
     }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -506,8 +489,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.histogramOfAnswerRatesByDays(
-                   dictionaryStatisticsMaker.getAnswerDataContainer());
+           tableModelMaker.histogramOfAnswerRatesByDays(statisticsMaker.getAnswerDataContainer());
         
         HistogramOfAnswerRatesByDaysTabularDialog dialog 
                 = new HistogramOfAnswerRatesByDaysTabularDialog(new javax.swing.JFrame(), true);
@@ -522,8 +504,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.numberOfAnswersByDays(
-           dictionaryStatisticsMaker.getAnswerDataContainer());
+           tableModelMaker.numberOfAnswersByDays(statisticsMaker.getAnswerDataContainer());
         
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -537,8 +518,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.practisingTimeByDay(
-            dictionaryStatisticsMaker.getAnswerDataContainer());
+           tableModelMaker.practisingTimeByDay(statisticsMaker.getAnswerDataContainer());
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -552,8 +532,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.numberOfNewStudyItemsQuestionedByDays(
-            dictionaryStatisticsMaker.getAnswerDataContainer());
+           tableModelMaker.numberOfNewStudyItemsQuestionedByDays(statisticsMaker.getAnswerDataContainer());
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -567,8 +546,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.histogramOfStudyItemsByNumberOfAnswers(
-                   dictionaryStatisticsMaker.getAnswerDataContainer());
+           tableModelMaker.histogramOfStudyItemsByNumberOfAnswers(statisticsMaker.getAnswerDataContainer());
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -582,7 +560,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
        Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
             statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByDays(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
             
@@ -596,7 +574,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
        Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
             statisticsToFileWriter.toFileNumberOfAnswersByDays(
                 "../data/temporary_data/number_of_answers_by_days.tmp");
             
@@ -610,7 +588,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
             statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt", 10);
             
@@ -624,9 +602,8 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.cardsOrderedByAnswerRate(
-                   dictionaryStatisticsMaker.getAnswerDataContainer(),
-                   dictionaryStatisticsMaker.getCardContontainer());
+           tableModelMaker.cardsOrderedByAnswerRate(statisticsMaker.getAnswerDataContainer(),
+                   statisticsMaker.getCardContontainer());
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -644,7 +621,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = dictionaryStatisticsMaker;
+            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
             statisticsToFileWriter.toFileBigRightIntervallSizesOrderedByDays(
                 "../data/temporary_data/data.tmp");
             
@@ -730,7 +707,6 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

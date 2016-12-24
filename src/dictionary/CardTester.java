@@ -2,6 +2,7 @@ package dictionary;
 
 import study_item_objects.AnswerDataContainer;
 import common.Logger;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
@@ -9,12 +10,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Vector;
 
 public class CardTester {
 
-    private CardChooser cardChooser = new CardChooser();
-    private DataContainer dataContainer;      
+    private CardChooser cardChooser = new CardChooser();   
     
     private CardContainer allCard;
     private CardContainer cardsToTest = new CardContainer();
@@ -29,8 +28,7 @@ public class CardTester {
     private final Logger logger = new Logger();
 
     public void setData(DataContainer dataContainer) {
-        allCard = dataContainer.cardContainer;
-        this.dataContainer = dataContainer;
+        this.allCard = dataContainer.cardContainer;
         this.cardChooser.setData(dataContainer);
     }
 
@@ -43,7 +41,7 @@ public class CardTester {
         acceptabelAnswersAndCardIndexesForActualQuestion.clear();
         isGetAnswerToActualQuestion = false;
         
-        Set<Integer> cardIndexesToTest = cardChooser.getCardIndexes(dataContainer.studyStrategy);
+        Set<Integer> cardIndexesToTest = cardChooser.getCardIndexes();
         for (int cardIndex : cardIndexesToTest) {
             cardsToTest.addCard(allCard.getCardByIndex(cardIndex));
         }
@@ -53,7 +51,7 @@ public class CardTester {
     
     //before allCard need to be seted
     public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
-        List<Integer> cardIndexesList = new Vector<Integer>(cardIndexes);
+        List<Integer> cardIndexesList = new ArrayList<>(cardIndexes);
         java.util.Collections.shuffle(cardIndexesList);
 
         cardsToTest = new CardContainer();

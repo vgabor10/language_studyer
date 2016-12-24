@@ -17,7 +17,7 @@ public class Dictionary {
         
         dataModificator.setData(dataContainer);
         
-        statisticsMaker.setData(dataContainer);
+        statisticsMaker.setData(dataContainer, dataContainer.studyStrategy.cardCategoryRestrictions);
         
         cardFinder.setCardContainer(dataContainer.cardContainer);
         
