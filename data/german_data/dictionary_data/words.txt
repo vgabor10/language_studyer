@@ -2609,7 +2609,7 @@
 102665	empfehlen	ajánl
 102666	empirisch	tapasztalati
 102667	empfindlich	érzékeny
-102668	kritisieren	krizizál
+102668	kritisieren	kritizál
 102669	kündigen	kirúg, felmond
 102670	küssen	csókol
 102671	lächeln	mosolyog
