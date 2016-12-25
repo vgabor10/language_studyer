@@ -35,5 +35,7 @@ public class DataContainer {
         cardContainer.clear();
         answerDataContainer.clear();
         categoryContainer.clear();
+        studyStrategy.clear();
+        auxiliaryDataContainer.clear();
     }
 }

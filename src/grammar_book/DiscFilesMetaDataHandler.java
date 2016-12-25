@@ -1,4 +1,4 @@
-package dictionary;
+package grammar_book;
 
 import disc_operation_handlers.LanguageFilesData;
 import java.io.FileWriter;
@@ -24,27 +24,17 @@ public class DiscFilesMetaDataHandler {
         LanguageFilesData languageData1 = new LanguageFilesData();
         languageData1.languageIndex = 0;
         languageData1.languageName = "English";
-        languageData1.dataFilesPath = "../data/english_data/";
+        languageData1.dataFilesPath = "../data/english_data/grammar_data/";
 
         /////////////////// GERMAN ///////////////////
         
         LanguageFilesData languageData2 = new LanguageFilesData();
         languageData2.languageIndex = 1;
         languageData2.languageName = "German";
-        languageData2.dataFilesPath = "../data/german_data/";
-        
-        
-        /*languageData2.cardDataPath = "../data/german_data/dictionary_data/words.txt";
-        languageData2.answerDataPath = "../data/german_data/dictionary_data/card_tester_data.txt";
-        languageData2.exampleSentencesDataPath = "../data/german_data/dictionary_data/example_sentences.txt";
-        
-        languageData2.grammarDataPath = "../data/german_data/grammar_data/grammar_book.txt";
-        languageData2.grammarAnswerDataPath = "../data/german_data/grammar_data/grammar_answer_data.txt";*/
+        languageData2.dataFilesPath = "../data/german_data/grammar_data/";
 
         languageDatas.add(languageData1);
         languageDatas.add(languageData2);
-
-        loadSettingsData();
     }
 
     public String getStudiedLanguageName() {
@@ -55,29 +45,15 @@ public class DiscFilesMetaDataHandler {
         return languageDatas.get(studyedLanguageIndex).dataFilesPath;
     }
     
-    public String getStudiedLanguageCardDataPath() {
-        return getStudiedLanguageDataPath() + "dictionary_data/words.txt";
+    public String getStudiedLanguageGrammarBookPath() {
+        return getStudiedLanguageDataPath() + "grammar_book.txt";
     }
     
-    public String getStudiedLanguageAnswerDataPath() {
-        return getStudiedLanguageDataPath() + "dictionary_data/card_tester_data.txt";
+    public String getStudiedLanguageGrammarAnswerDataPath() {
+        return getStudiedLanguageDataPath() + "grammar_answer_data.txt";
     }
-
-    public String getStudiedLanguageExampleSentencesDataPath() {
-        return getStudiedLanguageDataPath() + "dictionary_data/example_sentences.txt";
-    }
-    
-    public String getStudiedLanguageCardAndCategoryIndexesPath() {
-        return getStudiedLanguageDataPath() + "dictionary_data/card_indexes_to_category_indexes.txt";
-    }
-    
-    public String getStudiedLanguageCategoryIndexesAndCategoryNames() {
-        return getStudiedLanguageDataPath() + "dictionary_data/card_categories.txt";
-    }
-    
-    public String getStudiedLanguageDictionaryStudyStrategy() {
-        return getStudiedLanguageDataPath() + "dictionary_data/study_strategy_data_file.txt";
-    }       
+   
+            
             
     public int getStudiedLanguageIndex() {
         return studyedLanguageIndex;

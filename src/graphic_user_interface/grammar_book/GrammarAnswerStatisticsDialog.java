@@ -1,27 +1,18 @@
 package graphic_user_interface.grammar_book;
 
-import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarAnswerDataStatisticsMaker;
 import grammar_book.GrammarBook;
-import graphic_user_interface.common.TableModelMaker;
-import graphic_user_interface.common.TabularDialog;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.Date;
-import javax.swing.table.DefaultTableModel;
 import study_item_objects.StatisticsToFileWriter;
 
 public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
 
-    private GrammarAnswerDataContainer grammarAnswerDataContainer;
     private GrammarBook grammarBook;
     
-    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer a) {
-        grammarAnswerDataContainer = a;
-    }
-    
-    public void setGrammarBook(GrammarBook a) {
-        grammarBook = a;
+    public void setGrammarBook(GrammarBook grammarBook) {
+        this.grammarBook = grammarBook;
     }
     
     @SuppressWarnings("empty-statement")
@@ -330,9 +321,7 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
 
     public void fillDialogWithData() {
         GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker 
-                = new GrammarAnswerDataStatisticsMaker();
-	grammarAnswerDataStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
-        grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
+                = grammarBook.statisticsMaker;
 
 	jLabel4.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfStudyItems()));
         jLabel15.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfAnswers()));
@@ -392,8 +381,7 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             GrammarAnswerDataStatisticsMaker grammarStatisticsMaker
-            = new GrammarAnswerDataStatisticsMaker();
-            grammarStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
+            = grammarBook.statisticsMaker;
 
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
             statisticsToFileWriter.answerDataStatisticsMaker = grammarStatisticsMaker;
@@ -411,8 +399,7 @@ public class GrammarAnswerStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             GrammarAnswerDataStatisticsMaker grammarStatisticsMaker
-            = new GrammarAnswerDataStatisticsMaker();
-            grammarStatisticsMaker.setAnswerDataContainer(grammarAnswerDataContainer);
+            = grammarBook.statisticsMaker;
 
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
             statisticsToFileWriter.answerDataStatisticsMaker = grammarStatisticsMaker;

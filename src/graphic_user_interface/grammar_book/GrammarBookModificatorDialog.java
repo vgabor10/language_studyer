@@ -2,11 +2,7 @@ package graphic_user_interface.grammar_book;
 
 import graphic_user_interface.common.DialogAnswer;
 import common.Logger;
-import disc_operation_handlers.GrammarDataModificator;
-import dictionary.DiscFilesMetaDataHandler;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
-import grammar_book.GrammarItemTitle;
+import grammar_book.*;
 import java.awt.event.KeyEvent;
 import java.util.Vector;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -15,10 +11,7 @@ import javax.swing.tree.DefaultTreeModel;
 public class GrammarBookModificatorDialog extends javax.swing.JDialog {
 
     public GrammarBook grammarBook;
-    public GrammarAnswerDataContainer grammarAnswerDataContainer;
-    public DiscFilesMetaDataHandler languageFilesDataHendler;
     
-    private final GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
     private final DefaultTreeModel treeModel;
     private Logger logger = new Logger();
     
@@ -37,17 +30,16 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         treeModel = (DefaultTreeModel) jTree1.getModel();
     }
 
-    public void initialise() {
-        grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-        grammarDataModificator.setGrammarBook(grammarBook);
-        
-        fillTreeWithGrammarBookData();
+    public void setGrammarBook(GrammarBook grammarBook) {
+        this.grammarBook = grammarBook;
     }
     
     private void fillTreeWithGrammarBookData() {
         
-        for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
-            GrammarItemTitle grammarItemTitle = grammarBook.getGrammarItemByOrder(i).title;
+        GrammarItemContainer grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
+        
+        for (int i=0; i<grammarItemContainer.numberOfGrammarItems(); i++) {
+            GrammarItemTitle grammarItemTitle = grammarItemContainer.getGrammarItemByOrder(i).title;
             Vector<String> categoris = grammarItemTitle.getCategorisInVector();
             
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeModel.getRoot();
@@ -58,7 +50,7 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
                         = new GrammarBookReaderTreeNodeUSerObject();
                 
                 nodeUserObj.caption = categoris.get(j);
-                nodeUserObj.grammarItemIndex = grammarBook.getGrammarItemByOrder(i).index;
+                nodeUserObj.grammarItemIndex = grammarItemContainer.getGrammarItemByOrder(i).index;
                 
                 DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(nodeUserObj);
                 
@@ -244,12 +236,12 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
         DialogAnswer dialogAnswer = new DialogAnswer();
         
         dialog.dialogAnswer = dialogAnswer;
-        dialog.grammarItem = grammarBook.getGrammarItemByIndex(selectedGrammarItemIndex);
+        dialog.grammarItem = grammarBook.dataContainer.grammarItemContainer.getGrammarItemByIndex(selectedGrammarItemIndex);
         dialog.initialise();
         dialog.setVisible(true);
 
         if (dialogAnswer.boolAnswer) {
-            grammarDataModificator.deleteGrammarItemByIndex(selectedGrammarItemIndex);
+            grammarBook.dataModificator.deleteGrammarItemByIndex(selectedGrammarItemIndex);
             treeModel.removeNodeFromParent(selectedNode);
             deleteGrammarItemButton.setEnabled(false);
             modificateGrammarItemButton.setEnabled(false);
@@ -263,7 +255,7 @@ public class GrammarBookModificatorDialog extends javax.swing.JDialog {
     private void modificateGrammarItemButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_modificateGrammarItemButtonActionPerformed
         GrammarItemInspectorDialog dialog 
                 = new GrammarItemInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.grammarItem = grammarBook.getGrammarItemByIndex(selectedGrammarItemIndex);
+        dialog.grammarItem = grammarBook.dataContainer.grammarItemContainer.getGrammarItemByIndex(selectedGrammarItemIndex);
         dialog.fillWidgetsWithGrammarItemData();
         dialog.setVisible(true);
     }//GEN-LAST:event_modificateGrammarItemButtonActionPerformed

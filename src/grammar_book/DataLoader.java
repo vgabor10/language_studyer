@@ -1,33 +1,30 @@
-package disc_operation_handlers;
+package grammar_book;
 
-import dictionary.DiscFilesMetaDataHandler;
-import grammar_book.Example;
-import grammar_book.GrammarAnswerData;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
-import grammar_book.GrammarDataContainer;
-import grammar_book.GrammarItem;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class GrammarDataLoader {
+public class DataLoader {
 
-    public GrammarDataContainer grammarDataContainer;
+    private DataContainer dataContainer;
 
-    public DiscFilesMetaDataHandler languageFilesDataHandler;
+    public DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
+    public void setDataContainer(DataContainer dataContainer) {
+        this.dataContainer = dataContainer;
+    }
+    
     public void loadLanguageDataWithIndex(int languageIndex) {
-        languageFilesDataHandler.setStudyedLanguageIndex(languageIndex);
+        discFilesMetaDataHandler.setStudyedLanguageIndex(languageIndex);
         this.loadAllData();
     }
 
     public void loadGrammarBook() {
         try {
-            GrammarBook grammarBook = grammarDataContainer.grammarBook;
+            GrammarItemContainer grammarBook = dataContainer.grammarItemContainer;
             
-            String filePath = languageFilesDataHandler.getStudiedLanguageGrammarBookPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine = br.readLine();
             
@@ -103,9 +100,9 @@ public class GrammarDataLoader {
     public void loadGrammarAnswerData() {
         try {
             GrammarAnswerDataContainer grammarAnswerDataContainer 
-                    = grammarDataContainer.grammarAnswerDataContainer;
+                    = dataContainer.grammarAnswerDataContainer;
             
-            String filePath = languageFilesDataHandler.getStudiedLanguageGrammarAnswerDataPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
             String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {

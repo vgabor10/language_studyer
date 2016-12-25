@@ -1,7 +1,7 @@
-package disc_operation_handlers;
+package grammar_book;
 
 import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
+import grammar_book.GrammarItemContainer;
 import java.util.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -10,10 +10,10 @@ import java.io.FileNotFoundException;
 
 public class GrammarBookFileFormatChecker {
 
-    private GrammarBook grammarBook;
+    private GrammarItemContainer grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
-    public void setGrammarBook(GrammarBook g) {
+    public void setGrammarBook(GrammarItemContainer g) {
         grammarBook = g;
     }
 

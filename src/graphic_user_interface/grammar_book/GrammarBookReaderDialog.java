@@ -2,10 +2,11 @@ package graphic_user_interface.grammar_book;
 
 import grammar_book.Example;
 import grammar_book.GrammarBook;
+import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarItem;
 import grammar_book.GrammarItemTitle;
 import java.awt.event.KeyEvent;
-import java.util.Vector;
+import java.util.List;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.DefaultCaret;
 import javax.swing.tree.DefaultMutableTreeNode;
@@ -13,7 +14,7 @@ import javax.swing.tree.DefaultTreeModel;
 
 public class GrammarBookReaderDialog extends javax.swing.JDialog {
 
-    public GrammarBook grammarBook;
+    private GrammarItemContainer grammarItemContainer;
     
     private final DefaultTreeModel treeModel;
     private final DefaultTableModel tableModel;
@@ -41,8 +42,14 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
         jPopupMenu1.add("aaa");
     }
 
+    public void setGrammarBook(GrammarBook grammarBook) {
+        grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
+        
+        fillTreeWithGrammarBookData();
+    }
+    
     public void fillWidgetsWithGrammarItemData(int grammarItemIndex) {
-        GrammarItem grammarItem = grammarBook.getGrammarItemByIndex(grammarItemIndex);
+        GrammarItem grammarItem = grammarItemContainer.getGrammarItemByIndex(grammarItemIndex);
 
         clearTabular();
         jTextField1.setText(grammarItem.title.toString());
@@ -71,9 +78,9 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
     
     public void fillTreeWithGrammarBookData() {
         
-        for (int i=0; i<grammarBook.numberOfGrammarItems(); i++) {
-            GrammarItemTitle grammarItemTitle = grammarBook.getGrammarItemByOrder(i).title;
-            Vector<String> categoris = grammarItemTitle.getCategorisInVector();
+        for (int i=0; i<grammarItemContainer.numberOfGrammarItems(); i++) {
+            GrammarItemTitle grammarItemTitle = grammarItemContainer.getGrammarItemByOrder(i).title;
+            List<String> categoris = grammarItemTitle.getCategorisInVector();
             
             DefaultMutableTreeNode node = (DefaultMutableTreeNode) treeModel.getRoot();
                         
@@ -83,7 +90,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
                         = new GrammarBookReaderTreeNodeUSerObject();
                 
                 nodeUserObj.caption = categoris.get(j);
-                nodeUserObj.grammarItemIndex = grammarBook.getGrammarItemByOrder(i).index;
+                nodeUserObj.grammarItemIndex = grammarItemContainer.getGrammarItemByOrder(i).index;
                 
                 DefaultMutableTreeNode childNode = new DefaultMutableTreeNode(nodeUserObj);
                 

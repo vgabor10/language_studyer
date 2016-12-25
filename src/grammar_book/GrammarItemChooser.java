@@ -4,24 +4,24 @@ import common.Logger;
 import java.util.*;
 import study_item_objects.AnswerData;
 
-public class RandomGrammarItemChooser {
+public class GrammarItemChooser {
 
     private final Random randomGenerator = new Random();
-    private GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker = new GrammarAnswerDataStatisticsMaker();
-    private GrammarBook grammarBook = new GrammarBook();
+    private GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
+    private GrammarItemContainer grammarItemContainer = new GrammarItemContainer();
     private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     private final Logger logger = new Logger();
 
-    public void setGrammarBookWithAtLeast10Examples(GrammarBook gb) {
+    public void setGrammarBookWithAtLeast10Examples(GrammarItemContainer gb) {
         for (int i = 0; i < gb.numberOfGrammarItems(); i++) {
             if (10 <= gb.getGrammarItemByOrder(i).numberOfExamples()) {
-                grammarBook.addGrammarItem(gb.getGrammarItemByOrder(i));
+                grammarItemContainer.addGrammarItem(gb.getGrammarItemByOrder(i));
             }
         }
     }
 
     public void setGrammarAnswerDataContainerWithAtLeast10Examples(GrammarAnswerDataContainer gadc) {
-        Set<Integer> grammarItemIndexes = grammarBook.getGrammarItemIndexes();
+        Set<Integer> grammarItemIndexes = grammarItemContainer.getGrammarItemIndexes();
 
         for (int i = 0; i < gadc.numberOfAnswers(); i++) {
             AnswerData answerData = gadc.getAnswerData(i);
@@ -32,17 +32,17 @@ public class RandomGrammarItemChooser {
     }
 
     public void initialise() {
-        grammarAnswerDataStatisticsMaker.setGrammarBook(grammarBook);
-        grammarAnswerDataStatisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+        //statisticsMaker.setData(grammarItemContainer);
+        statisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
         
-        logger.debug("aaa: " + grammarBook.numberOfGrammarItems());
+        logger.debug("aaa: " + grammarItemContainer.numberOfGrammarItems());
     }
 
     public int getRandomGrammarItemIndex() {
         logger.debug("run getRandomGrammarItemIndex function");
 
-        int orderIndex = randomGenerator.nextInt(grammarBook.numberOfGrammarItems());
-        int grammarItemIndex = grammarBook.getGrammarItemByOrder(orderIndex).index;
+        int orderIndex = randomGenerator.nextInt(grammarItemContainer.numberOfGrammarItems());
+        int grammarItemIndex = grammarItemContainer.getGrammarItemByOrder(orderIndex).index;
 
         logger.debug("choosen grammar item index: " + grammarItemIndex);
 
@@ -53,7 +53,7 @@ public class RandomGrammarItemChooser {
         logger.debug("run getRandomIndexFromThe5LeastStudiedGrammarItem function");
 
         Vector<Integer> grammarItemIndexesOrderedByNumberOfAnswers
-                = grammarAnswerDataStatisticsMaker.getStudyItemIndexesOrderedByNumberOfAnswers();
+                = statisticsMaker.getStudyItemIndexesOrderedByNumberOfAnswers();
 
         int r = randomGenerator.nextInt(5);
         int grammarItemIndex = grammarItemIndexesOrderedByNumberOfAnswers.get(r);
@@ -67,7 +67,7 @@ public class RandomGrammarItemChooser {
         logger.debug("run getIndexFromThe5HardestGrammarItem function");
 
         Vector<Integer> grammarItemIndexesOrderedByAnswerRate
-                = grammarAnswerDataStatisticsMaker.getStudyItemIndexesOrderedByAnswerRate();
+                = statisticsMaker.getStudyItemIndexesOrderedByAnswerRate();
         int r = grammarItemIndexesOrderedByAnswerRate.size() - 1 - randomGenerator.nextInt(5);
         int grammarItemIndex = grammarItemIndexesOrderedByAnswerRate.get(r);
 
@@ -79,7 +79,7 @@ public class RandomGrammarItemChooser {
     public int getIndexOfLatestStudiedGrammarItem() {
         logger.debug("run getIndexOfLatestStudiedGrammarItem function");
 
-        int grammarItemIndex = grammarAnswerDataStatisticsMaker.getLastStudiedGrammarItemIndex();
+        int grammarItemIndex = statisticsMaker.getLastStudiedGrammarItemIndex();
 
         logger.debug("choosen grammar item index: " + grammarItemIndex);
 

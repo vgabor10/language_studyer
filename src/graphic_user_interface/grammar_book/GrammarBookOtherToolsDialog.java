@@ -1,14 +1,14 @@
 package graphic_user_interface.grammar_book;
 
 import dictionary.DataContainer;
-import disc_operation_handlers.GrammarDataModificator;
-import grammar_book.GrammarBook;
+import grammar_book.DataModificator;
+import grammar_book.GrammarItemContainer;
 import java.awt.event.KeyEvent;
 
 public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
     public DataContainer dictionaryDataContainer;
-    public GrammarBook grammarBook;
+    public GrammarItemContainer grammarBook;
     
     public GrammarBookOtherToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -128,10 +128,10 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        GrammarDataModificator grammarDataModificator 
-                = new GrammarDataModificator();
+        DataModificator grammarDataModificator 
+                = new DataModificator();
         
-        grammarDataModificator.setGrammarBook(grammarBook);
+        grammarDataModificator.setData(grammarBook);
         
         grammarDataModificator.writeGrammarBookToDisk();
     }//GEN-LAST:event_jButton3ActionPerformed

@@ -11,14 +11,14 @@ public class DataLoader {
     
     private DataContainer dataContainer;
     
-    private DiscFilesMetaDataHandler languageFilesDataHandler;
+    private DiscFilesMetaDataHandler discFilesMetaDataHandler;
     
     public void setDataContainer(DataContainer dc) {
         this.dataContainer = dc;
     }
 
-    public void setLanguageFilesDataHandler(DiscFilesMetaDataHandler languageFilesDataHandler) {
-        this.languageFilesDataHandler = languageFilesDataHandler;
+    public void setLanguageFilesDataHandler(DiscFilesMetaDataHandler discFilesMetaDataHandler) {
+        this.discFilesMetaDataHandler = discFilesMetaDataHandler;
     }
     
     public void loadCardContainer() {
@@ -26,7 +26,7 @@ public class DataLoader {
             CardContainer cardContainer = dataContainer.cardContainer;
             cardContainer.clear();
             
-            String filePath = languageFilesDataHandler.getStudiedLanguageCardDataPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageCardDataPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -51,7 +51,7 @@ public class DataLoader {
             AnswerDataContainer answerDataContainer = dataContainer.answerDataContainer;
             answerDataContainer.clear();
             
-            String filePath = languageFilesDataHandler.getStudiedLanguageAnswerDataPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageAnswerDataPath();
             String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {
@@ -68,7 +68,7 @@ public class DataLoader {
     
     public void loadExampleSentences() {
         try {
-            String filePath = languageFilesDataHandler.getStudiedLanguageExampleSentencesDataPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageExampleSentencesDataPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -89,7 +89,7 @@ public class DataLoader {
     
     public void loadCardIndexesAndCategoryIndexes() {
         try {
-            String filePath = languageFilesDataHandler.getStudiedLanguageCardAndCategoryIndexesPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageCardAndCategoryIndexesPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -110,7 +110,7 @@ public class DataLoader {
     
     public void loadCategoryIndexesAndCategoryNames() {
         try {
-            String filePath = languageFilesDataHandler.getStudiedLanguageCategoryIndexesAndCategoryNames();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageCategoryIndexesAndCategoryNames();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             String strLine;
             while ((strLine = br.readLine()) != null) {
@@ -133,7 +133,7 @@ public class DataLoader {
     
     public void loadStudyStrategyDataFromDisc() {
         try {
-            String filePath = languageFilesDataHandler.getStudiedLanguageDictionaryStudyStrategy();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategy();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             
             StudyStrategy studyStrategy = dataContainer.studyStrategy;
@@ -206,6 +206,8 @@ public class DataLoader {
 
     
     public void loadAllData() {
+        dataContainer.clear();
+        
         loadCardContainer();
         loadAnswerData();
         loadExampleSentences();

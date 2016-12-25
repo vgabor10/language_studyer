@@ -1,12 +1,14 @@
 package grammar_book;
 
-public class GrammarDataContainer {
+public class DataContainer {
 
-    public GrammarBook grammarBook = new GrammarBook();
+    //TODO: implement
+    
+    public GrammarItemContainer grammarItemContainer = new GrammarItemContainer();
     public GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     
     public void clear() {
-        grammarBook.clear();
+        grammarItemContainer.clear();
         grammarAnswerDataContainer.clear();
     }
     

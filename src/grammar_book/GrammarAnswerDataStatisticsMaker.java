@@ -1,6 +1,10 @@
 package grammar_book;
 
-import java.util.*;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeSet;
 import study_item_objects.AnswerData;
 import study_item_objects.AnswerDataStatisticsMaker;
 
@@ -10,12 +14,12 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
             setAnswerDataContainer(gac);
     }
 
-    public void setGrammarBook(GrammarBook grammarBook) {
-            studyItemContainer = grammarBook;
+    public void setData(DataContainer dataContainer) {
+            studyItemContainer = dataContainer.grammarItemContainer;
     }
 
-    public GrammarBook getGrammarBook() {
-            return (GrammarBook)studyItemContainer;
+    public GrammarItemContainer getGrammarBook() {
+            return (GrammarItemContainer)studyItemContainer;
     }
 
     public int numberOfGrammarItems() {

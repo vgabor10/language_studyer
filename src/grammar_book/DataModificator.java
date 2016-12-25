@@ -1,21 +1,17 @@
-package disc_operation_handlers;
+package grammar_book;
 
-import dictionary.DiscFilesMetaDataHandler;
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarBook;
-import grammar_book.GrammarItem;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class GrammarDataModificator {
+public class DataModificator {
 
-    private GrammarBook grammarBook;
+    private GrammarItemContainer grammarBook;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
 
     private DiscFilesMetaDataHandler languageFilesDataHendler
             = new DiscFilesMetaDataHandler();
 
-    public void setGrammarBook(GrammarBook gb) {
+    public void setData(GrammarItemContainer gb) {
         grammarBook = gb;
     }
 

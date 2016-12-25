@@ -13,4 +13,14 @@ public class StudyStrategy {
     public boolean studyingGradually = false;
     public Set<Integer> cardCategoryRestrictions = new HashSet<>();
 
+    public void clear() {
+        numberOfRandomCards = 0;
+        numberOfCardsFromTheLeastKnown20Percent = 0;
+        numberOfCardsFromTheLeastKnown100 = 0;    
+        numberOfCardsAmongTheLeastSignificantAr = 0;
+        numberOfLatestQuestionedCards = 0;
+        studyingGradually = false;
+        cardCategoryRestrictions.clear();
+    }
+    
 }

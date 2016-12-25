@@ -1,18 +1,13 @@
 package graphic_user_interface.common;
 
-import dictionary.DataLoader;
 import dictionary.Dictionary;
-import disc_operation_handlers.GrammarDataLoader;
-import dictionary.DiscFilesMetaDataHandler;
-import grammar_book.GrammarDataContainer;
+import grammar_book.DataContainer;
 import java.awt.event.KeyEvent;
 
 public class LanguageChooserDialog extends javax.swing.JDialog {
 
     public Dictionary dictionary;
-    public GrammarDataContainer grammarDataContainer;
-    
-    public DiscFilesMetaDataHandler languageFilesDataHandler;
+    public DataContainer grammarDataContainer;
     
     public LanguageChooserDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -32,11 +27,11 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }
     
     public void initialise() {
-        if (languageFilesDataHandler.getStudiedLanguageIndex() == 0) {
+        if (dictionary.discFilesMetaDataHandler.getStudiedLanguageIndex() == 0) {
             jRadioButton1.setSelected(true);
         }
 
-        if (languageFilesDataHandler.getStudiedLanguageIndex() == 1) {
+        if (dictionary.discFilesMetaDataHandler.getStudiedLanguageIndex() == 1) {
             jRadioButton2.setSelected(true);
         }
     }
@@ -121,7 +116,6 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dictionary.dataContainer.clear();
         grammarDataContainer.clear();
         
         int languageIndexToLoad = 0;
@@ -133,17 +127,12 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
             languageIndexToLoad = 1;
         }
         
-        languageFilesDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
-        
-        DataLoader dictionaryDataLoader = new DataLoader();
+        dictionary.discFilesMetaDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
         dictionary.dataLoader.loadAllData();
-        dictionary.discFilesMetaDataHandler = languageFilesDataHandler;
-        dictionaryDataLoader.loadAllData();
         
-        GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
+        /*GrammarDataLoader grammarDataLoader = new GrammarDataLoader();
         grammarDataLoader.grammarDataContainer = grammarDataContainer;
-        grammarDataLoader.languageFilesDataHandler = languageFilesDataHandler;
-        grammarDataLoader.loadAllData();
+        grammarDataLoader.loadAllData();*/
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed

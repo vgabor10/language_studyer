@@ -1,51 +1,18 @@
 package grammar_book;
 
-import study_item_objects.StudyItemContainer;
-
-import java.util.*;
-
-public class GrammarBook extends StudyItemContainer {
-
-    public int numberOfGrammarItems() {
-        return numberOfStudyItems();
+public class GrammarBook {
+    
+    public DataContainer dataContainer = new DataContainer();
+    public GrammarTester grammartester = new GrammarTester();
+    public DataLoader dataLoader = new DataLoader();
+    public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
+    public GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
+    public DataModificator dataModificator = new DataModificator();
+    
+    public GrammarBook() {
+        dataLoader.discFilesMetaDataHandler = discFilesMetaDataHandler;
+        dataLoader.setDataContainer(dataContainer);
+        dataLoader.loadAllData();
     }
-
-    public GrammarItem getGrammarItemByIndex(int grammarItemIndex) {
-        return (GrammarItem) getStudyItemByIndex(grammarItemIndex);
-    }
-
-    public GrammarItem getGrammarItemByOrder(int orderIndex) {
-        return (GrammarItem) getStudyItemByOrder(orderIndex);
-    }
-
-    public Set<Integer> getGrammarItemIndexes() {
-        return getStudyItemIndexes();
-    }
-
-    public void addGrammarItem(GrammarItem gi) {
-        addStudyItem(gi);
-    }
-
-    public Example getExample(int grammarItemIndex, int exampleIndex) {
-        return getGrammarItemByIndex(grammarItemIndex).getExampleByIndex(exampleIndex);
-    }
-
-    public void toScreenTableOfContents() {
-        System.out.println("TABLE OF CONTENT");
-        System.out.println();
-        for (int i = 0; i < numberOfStudyItems(); i++) {
-            System.out.println(i + " - "
-                    + getGrammarItemByOrder(i).title + " (" + getGrammarItemByOrder(i).numberOfExamples() + ")");
-        }
-
-        System.out.println();
-        System.out.println("note: index - title (number of examples)");
-    }
-
-    @Override
-    public void toScreen() {
-        for (int i = 0; i < numberOfStudyItems(); i++) {
-            System.out.println(getGrammarItemByOrder(i).toString());
-        }
-    }
+    
 }

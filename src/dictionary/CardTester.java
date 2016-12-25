@@ -12,8 +12,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class CardTester {
-
-    private DataContainer dataContainer;
     
     private CardChooser cardChooser = new CardChooser();
     
