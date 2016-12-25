@@ -9252,7 +9252,6 @@
 104589	Der Angestellte forderte eine Erhöhung seines Gehalts.
 104590	Letztendlich hat es doch geklappt.
 104590	Letztendlich muss sich jeder in sein Schicksal fügen.
-104590	Letztendlich hat es doch geklappt.
 104591	Bei der Preisverleihung erschien sie mit ihrem Ehegatten.
 104592	Tina ist eine sehr intelligente Frau.
 104594	Wir steuern auf ein Desaster zu.

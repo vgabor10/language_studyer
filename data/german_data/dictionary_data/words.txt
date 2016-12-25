@@ -2692,7 +2692,7 @@
 102749	einstig	egykori
 102751	ein	egy
 102752	einseitig	egyoldalú
-102753	einsehen	betekint
+102753	einsehen	belát, betekint
 102754	einschränken	korlátoz
 102755	einschließen	bezár
 102757	einschlafen	elalszik
@@ -2977,7 +2977,7 @@
 103040	s Ausmaß	terjedelem, méret
 103041	winken	int, integet
 103042	statistisch	statisztikai
-103043	ziehen	húz
+103043	ziehen	húz, von, költözik
 103044	r Kilometer	kilóméter
 103045	übersehen	átnéz, áttekint
 103046	ablegen	lerak, letesz
@@ -3993,7 +3993,7 @@
 104078	abholen	elhoz, elvisz
 104079	s Mädchen	lány
 104080	bedanken	megköszön
-104081	berühren	megérint
+104081	berühren	hozzáér, megérint
 104082	kommen	jön
 104083	innere	belső
 104084	schwer	nehéz, súlyos
@@ -5356,7 +5356,7 @@
 105357	infolge	folytán, következtében
 105358	e Spaltung	hasadás, osztódás
 105359	e Überlegenheit	fölény
-105360	r Panzer	harcokcsi
+105360	r Panzer	harcokcsi, tank
 105361	e Abwesenheit	távollét, hiányzás
 105362	r Breitengrad	szélasségi fok
 105363	e Flagge	zászló
@@ -5458,3 +5458,32 @@
 105457	e Tücke	árulás, nehézség
 105458	e Weigerung	visszautasítás
 105459	r Anreiz	csábítás
+105460	s Unglück	szerencsétlenség, balszerencse
+105461	r Absturz	zuhanás
+105462	abstürzen	lezuhan
+105463	r Ferienort	nyaralóhely, üdülőhely
+105464	fürchterlich	rettenetes, borzalmas
+105465	s Beileid	részvét, részvétnyilvánítás
+105466	r Adler	sas
+105467	einbestellen	berendel
+105468	sich erkälten	megfázik
+105469	e Absage	visszautasítás, lemondás
+105470	absagen	visszautasít, lemond
+105471	r Gottesdienst	istentisztelet
+105472	e Feierlichkeit	ünnepély
+105473	e Ehefrau	feleség
+105474	e Grafschaft	grófság
+105475	e Anreise	odautazás
+105476	r Urenkel	dédunoka
+105477	r Heiligabend	szenteste
+105478	r Luftangriff	légitámadás
+105479	Syrien	Szíria
+105480	r Segler	vitorláshajó
+105481	r Sensation	szenzáció
+105482	plausibel	hihető, valószínű
+105483	s Wrack	roncs
+105484	r Leutnant	hadnagy
+105485	s Mitgefühl	együttérzés
+105486	sprengen	robbant
+105487	e Knappheit	szűkösség
+105488	schätzungsweise	hozzávetőlegesen
