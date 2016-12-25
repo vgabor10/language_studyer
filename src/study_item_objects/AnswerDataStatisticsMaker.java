@@ -135,7 +135,7 @@ public class AnswerDataStatisticsMaker {
         if (answerDataContainer.numberOfAnswers() != 0) {
             Map<Integer, String> out = new HashMap<>();
 
-            Vector<Long> answerDates = new Vector<>();
+            List<Long> answerDates = new ArrayList<>();
 
             GeneralFunctions generalFunctions = new GeneralFunctions();
             int actualDay = generalFunctions.milisecToDay(answerDataContainer.getAnswerData(0).date);

@@ -212,5 +212,7 @@ public class DataLoader {
         loadCardIndexesAndCategoryIndexes();
         loadCategoryIndexesAndCategoryNames();
         loadStudyStrategyDataFromDisc();
+        
+        dataContainer.fillAuxiliaryDataContainer();
     }
 }

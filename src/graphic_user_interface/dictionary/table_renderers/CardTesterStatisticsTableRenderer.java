@@ -23,6 +23,7 @@ public class CardTesterStatisticsTableRenderer implements TableCellRenderer {
             if (rarAfter.equals("-")) {
                 c.setBackground(new Color(255,255,255));  //white
             }
+            else
             if (rarBefore.equals("-")) {
                 c.setBackground(new Color(51,194,242)); //light blue
             }

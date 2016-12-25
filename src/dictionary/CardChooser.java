@@ -1,23 +1,22 @@
 package dictionary;
 
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
-import study_item_objects.AnswerDataContainer;
 import study_item_objects.AnswerDataByStudyItemContainer;
 import study_item_objects.AnswerDataByStudyItem;
 import common.Logger;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
-import study_item_objects.AnswerData;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
 import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class CardChooser {
 
-    private CardContainer cardContainer;
-    private AnswerDataContainer answerDataContainer;
+    private Set<Integer> cardIndexesFromChoose;
     private StudyStrategy studyStrategy;
     
     private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
@@ -27,32 +26,8 @@ public class CardChooser {
     
     public void setData(DataContainer dataContainer) {
         studyStrategy = dataContainer.studyStrategy;
-        if (studyStrategy.cardCategoryRestrictions.contains(-1)) {
-            cardContainer = dataContainer.cardContainer;
-            answerDataContainer = dataContainer.answerDataContainer;
-            answerDataByStudyItemsContainer.loadDataFromAnswerDataContainer(answerDataContainer);      
-        }
-        else {
-            cardContainer = new CardContainer();
-            answerDataContainer = new AnswerDataContainer();
-
-            for (int i=0; i<dataContainer.cardContainer.numberOfCards(); i++) {
-                Card card = dataContainer.cardContainer.getCardByOrder(i);
-                if (!Collections.disjoint(studyStrategy.cardCategoryRestrictions,
-                        card.categoryIndexes)) {
-                    cardContainer.addCard(card);
-                }
-            }
-
-            Set<Integer> cardIndexes = cardContainer.getCardIndexes();
-            for (int i=0; i<dataContainer.answerDataContainer.numberOfAnswers(); i++) {
-                AnswerData answerData = dataContainer.answerDataContainer.getAnswerData(i);
-                if (cardIndexes.contains(answerData.index)) {
-                    answerDataContainer.addAnswerData(answerData);
-                    answerDataByStudyItemsContainer.addAnswerData(answerData);
-                }
-            }
-        }
+        cardIndexesFromChoose = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
+        answerDataByStudyItemsContainer = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
     }
     
     private int getRandomCardIndex(
@@ -82,7 +57,7 @@ public class CardChooser {
     public Set<Integer> getFormerlyQuestionedCardIndexes(
         int numberOfCards, Set<Integer> omittedCardIndexes) {
         
-        Set<Integer> notQuestionedCardIndexes = cardContainer.getCardIndexes();
+        Set<Integer> notQuestionedCardIndexes = new HashSet<>(cardIndexesFromChoose);
         notQuestionedCardIndexes.removeAll(answerDataByStudyItemsContainer.getTestedStudyItemIndexes());
         
         Set<Integer> outCardIndexes = new HashSet<>();        
@@ -212,9 +187,8 @@ public class CardChooser {
         
         Set<Integer> outCardIndexes = new HashSet<>();
 
-        Set<Integer> cardIndexesFromChoose = cardContainer.getCardIndexes();
         for (int i = 0; i < numberOfCards; i++) {
-            int cardIndex = getRandomCardIndex(cardIndexesFromChoose, omittedCardIndexes);
+            int cardIndex = getRandomCardIndex(this.cardIndexesFromChoose, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -222,7 +196,7 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    private Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome (
+    /*private Set<Integer> getCardIndexesWithMinAnswerRateAndPlusSome (
             double minAnswerRate, int plusNumberOfCards) {
 
         Set<Integer> cardIndexes = new HashSet<>();
@@ -239,7 +213,7 @@ public class CardChooser {
 
         int plusNumberOfCardsAdded = 0;
         int i = 0;
-        while (i < cardContainer.numberOfCards() && plusNumberOfCardsAdded < plusNumberOfCards) {
+        while (i < this.cardIndexesFromChoose.size() && plusNumberOfCardsAdded < plusNumberOfCards) {
             Card card = cardContainer.getCardByOrder(i);
             if (!cardIndexes.contains(card.index)) {
                 cardIndexes.add(card.index);
@@ -249,19 +223,19 @@ public class CardChooser {
         }
 
         return cardIndexes;
-    }
+    }*/
 
-    public Set<Integer> getCardIndexes() {
-        Set<Integer> cardsToTestIndexes = new HashSet<>();
+    public List<Integer> getCardIndexes() {
+        List<Integer> cardsToTestIndexes = new ArrayList<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 
-        if (studyStrategy.studyingGradually) {
-            omittedCardIndexes = cardContainer.getCardIndexes();
+        /*if (studyStrategy.studyingGradually) {
+            omittedCardIndexes = new HashSet<>(cardIndexesFromChoose);
             Set<Integer> cardIndexesToTest = getCardIndexesWithMinAnswerRateAndPlusSome(0.5, 100);
             omittedCardIndexes.removeAll(cardIndexesToTest);
             
             logger.debug("number of cards from choose: " + cardIndexesToTest.size());
-        }
+        }*/
 
         Set<Integer> indexesToAdd;
 
@@ -307,6 +281,8 @@ public class CardChooser {
 
         logger.debug("card indexes: " + indexesToAdd);
 
+        java.util.Collections.shuffle(cardsToTestIndexes);
+        
         return cardsToTestIndexes;
     }
 

@@ -13,7 +13,9 @@ import java.util.Set;
 
 public class CardTester {
 
-    private CardChooser cardChooser = new CardChooser();   
+    private DataContainer dataContainer;
+    
+    private CardChooser cardChooser = new CardChooser();
     
     private CardContainer allCard;
     private CardContainer cardsToTest = new CardContainer();
@@ -29,6 +31,8 @@ public class CardTester {
 
     public void setData(DataContainer dataContainer) {
         this.allCard = dataContainer.cardContainer;
+        
+        dataContainer.fillAuxiliaryDataContainer();
         this.cardChooser.setData(dataContainer);
     }
 
@@ -41,7 +45,7 @@ public class CardTester {
         acceptabelAnswersAndCardIndexesForActualQuestion.clear();
         isGetAnswerToActualQuestion = false;
         
-        Set<Integer> cardIndexesToTest = cardChooser.getCardIndexes();
+        List<Integer> cardIndexesToTest = cardChooser.getCardIndexes();
         for (int cardIndex : cardIndexesToTest) {
             cardsToTest.addCard(allCard.getCardByIndex(cardIndex));
         }

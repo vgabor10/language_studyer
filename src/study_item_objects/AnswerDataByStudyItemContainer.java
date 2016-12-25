@@ -33,6 +33,10 @@ public class AnswerDataByStudyItemContainer {
         return data.keySet().contains(index);
     }
 
+    public void removeAnswerDataByStudyItemByIndex(int index) {
+        data.remove(index);
+    }
+    
     public Histogram getHistogram() {
 
         Histogram histogram = new Histogram();

@@ -2,6 +2,7 @@ package graphic_user_interface.common;
 
 import dictionary.Card;
 import dictionary.CardContainer;
+import dictionary.DataContainer;
 import dictionary.StatisticsMaker;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -19,13 +20,8 @@ import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStud
 
 public class TableModelMaker {
     
-    public DefaultTableModel numberOfAnswersByDays(AnswerDataContainer answerDataContainer) {
-        StatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new StatisticsMaker();
-        
-	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-
-        Map<Integer,Integer> numberOfAnswersByDays = dictionaryAnswerDataStatisticsMaker.getNumberOfAnswersByDays();
+    public DefaultTableModel numberOfAnswersByDays(StatisticsMaker statisticsMaker) {
+        Map<Integer,Integer> numberOfAnswersByDays = statisticsMaker.getNumberOfAnswersByDays();
 
         List<Integer> sortedDays = new ArrayList<>(numberOfAnswersByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();
@@ -45,14 +41,9 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel histogramOfAnswerRatesByDays(AnswerDataContainer answerDataContainer) {
-        StatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new StatisticsMaker();
-
-        dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
-        
+    public DefaultTableModel histogramOfAnswerRatesByDays(StatisticsMaker statisticsMaker) {        
         Map<Integer,Histogram> histogramOfStudyItemAnswerRatesByDays 
-                = dictionaryAnswerDataStatisticsMaker.getHistogramOfStudyItemAnswerRatesByDays();
+                = statisticsMaker.getHistogramOfStudyItemAnswerRatesByDays();
         
         List<Integer> sortedDays = new ArrayList<>(histogramOfStudyItemAnswerRatesByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();
@@ -91,14 +82,9 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel practisingTimeByDay(AnswerDataContainer answerDataContainer) {
-        StatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new StatisticsMaker();
-        
-        
-	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+    public DefaultTableModel practisingTimeByDay(StatisticsMaker statisticsMaker) {
 
-        Map<Integer,String> practisingTimeByDays = dictionaryAnswerDataStatisticsMaker.getPractisingTimeByDaysAsString();
+        Map<Integer,String> practisingTimeByDays = statisticsMaker.getPractisingTimeByDaysAsString();
 
         List<Integer> sortedDays = new ArrayList<>(practisingTimeByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();
@@ -118,14 +104,10 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel histogramOfStudyItemsByNumberOfAnswers(AnswerDataContainer answerDataContainer) {
-        StatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new StatisticsMaker();
-        
-	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+    public DefaultTableModel histogramOfStudyItemsByNumberOfAnswers(StatisticsMaker statisticsMaker) {
 
         Map<Integer,Integer> histogramOfStudyItemsByNumberOfAnswers 
-                = dictionaryAnswerDataStatisticsMaker.getHistogramOfStudyItemsByNumberOfAnswers();
+                = statisticsMaker.getHistogramOfStudyItemsByNumberOfAnswers();
 
         List<Integer> sortedDays = new ArrayList<>(histogramOfStudyItemsByNumberOfAnswers.keySet());
         Collections.sort(sortedDays);
@@ -144,14 +126,10 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel numberOfNewStudyItemsQuestionedByDays(AnswerDataContainer answerDataContainer) {
-        StatisticsMaker dictionaryAnswerDataStatisticsMaker
-                = new StatisticsMaker();
-        
-	dictionaryAnswerDataStatisticsMaker.setAnswerDataContainer(answerDataContainer);
+    public DefaultTableModel numberOfNewStudyItemsQuestionedByDays(StatisticsMaker statisticsMaker) {
 
         Map<Integer,Integer> numberOfNewStudyItemsQuestionedByDays 
-                = dictionaryAnswerDataStatisticsMaker.numberOfNewStudyItemsTestedByDays();
+                = statisticsMaker.numberOfNewStudyItemsTestedByDays();
 
         List<Integer> sortedDays = new ArrayList<>(numberOfNewStudyItemsQuestionedByDays.keySet());
         Comparator<Integer> comparator = Collections.reverseOrder();
@@ -166,18 +144,16 @@ public class TableModelMaker {
                 Integer.toString(day),
                 numberOfNewStudyItemsQuestionedByDays.get(day)
             });
-        };       
+        };    
         
         return model;
     }
    
-    public DefaultTableModel cardsOrderedByAnswerRate(AnswerDataContainer answerDataContainer,
-            CardContainer cardContainer) {
+    public DefaultTableModel cardsOrderedByAnswerRate(DataContainer dataContainer) {
 
         AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
-                = new AnswerDataByStudyItemContainer();
-        answerDataByStudyItemContainer.addDataFromAnswerDataContainer(answerDataContainer);
-
+                = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+                
         AnswerDataByStudyItem[] sortedDatas = answerDataByStudyItemContainer.toArray();
         Arrays.sort(sortedDatas,
                 Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
@@ -189,7 +165,7 @@ public class TableModelMaker {
         model.addColumn("number of answers");
         
         for (AnswerDataByStudyItem answerDataByStudyItem : sortedDatas) {
-            Card card = cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
+            Card card = dataContainer.cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
                   
             DecimalFormat df = new DecimalFormat("#.0000");
             

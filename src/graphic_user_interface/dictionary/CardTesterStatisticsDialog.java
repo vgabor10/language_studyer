@@ -17,7 +17,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
     private CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
 
-    public DataContainer dictionaryDataContainer;
+    public DataContainer dataContainer;
     public Set<Integer> categoryConstrains;
     
     public AnswerDataContainer testAnswers;
@@ -40,7 +40,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
      }
 
     public void initialise() {
-        cardTestStatisticsMaker.setData(dictionaryDataContainer, testAnswers);
+        cardTestStatisticsMaker.setData(dataContainer, testAnswers);
         
         cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
 
@@ -57,8 +57,11 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        if (!cardTestStatisticsMaker.isCategoryConstrainsUsed()) {
-            jLabel25.setVisible(false);
+        if (dataContainer.studyStrategy.cardCategoryRestrictions.contains(-1)) {
+            jLabel25.setText("");
+        }
+        else {
+            jLabel25.setText("card category constrains are used!");
         }
         
         CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();

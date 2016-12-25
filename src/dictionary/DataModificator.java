@@ -9,23 +9,19 @@ import java.io.IOException;
 
 public class DataModificator {
     
-    private CardContainer cardContainer;
-    private AnswerDataContainer answerDataContainer;
-    private StudyStrategy studyStrategy;
+    private DataContainer dataContainer;
     
-    private final DiscFilesMetaDataHandler settingsHandler = new DiscFilesMetaDataHandler();    //TODO: give it from manin frame
+    private final DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();    //TODO: give it from manin frame
 
     private final Logger logger = new Logger();
 
     public void setData(DataContainer dataContainer) {
-        this.cardContainer = dataContainer.cardContainer;
-        this.answerDataContainer = dataContainer.answerDataContainer;
-        this.studyStrategy = dataContainer.studyStrategy;
+        this.dataContainer = dataContainer;
     }
 
     public void removeCardWithAnswersByCardIndex(int cardIndex) {
-        cardContainer.removeByIndex(cardIndex);
-        answerDataContainer.removeAnswersWithIndex(cardIndex);
+        dataContainer.cardContainer.removeByIndex(cardIndex);
+        dataContainer.answerDataContainer.removeAnswersWithIndex(cardIndex);
 
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
@@ -33,28 +29,28 @@ public class DataModificator {
     }
     
     public void removeCardAnswerDataByCardIndex(int cardIndex) {
-        answerDataContainer.removeAnswersWithIndex(cardIndex);
+        dataContainer.answerDataContainer.removeAnswersWithIndex(cardIndex);
         saveAnswerDataContainerDataToFile();
     }    
 
     public void addCard(Card card) {
-        card.index = cardContainer.getEmptyCardIndex();
-        cardContainer.addCard(card);
+        card.index = dataContainer.cardContainer.getEmptyCardIndex();
+        dataContainer.cardContainer.addCard(card);
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();
     }
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data
     public void saveCardContainerDataToFile() {
-        String filePath = settingsHandler.getStudiedLanguageCardDataPath();
+        String filePath = discFilesMetaDataHandler.getStudiedLanguageCardDataPath();
         File oldFile;
         oldFile = new File(filePath);
         oldFile.delete();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
-                Card card = cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
+                Card card = dataContainer.cardContainer.getCardByOrder(i);
                 fw.write(Integer.toString(card.index) + "\t" +
                     card.term + "\t" + card.definition + "\n");
             }
@@ -66,15 +62,15 @@ public class DataModificator {
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data
     private void saveAnswerDataContainerDataToFile() {
-        String filePath = settingsHandler.getStudiedLanguageAnswerDataPath();
+        String filePath = discFilesMetaDataHandler.getStudiedLanguageAnswerDataPath();
         File oldFile;
         oldFile = new File(filePath);
         oldFile.delete();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
-                fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            for (int i = 0; i < dataContainer.answerDataContainer.numberOfAnswers(); i++) {
+                fw.write(dataContainer.answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
             }
             fw.close();
         } catch (IOException ioe) {
@@ -83,15 +79,15 @@ public class DataModificator {
     }
     
     public void saveExampleSentencesDataToFile() {
-        String filePath = settingsHandler.getStudiedLanguageExampleSentencesDataPath();
+        String filePath = discFilesMetaDataHandler.getStudiedLanguageExampleSentencesDataPath();
         File oldFile;
         oldFile = new File(filePath);
         oldFile.delete();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
-                Card card = cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
+                Card card = dataContainer.cardContainer.getCardByOrder(i);
                 for (String exampleSentence : card.exampleSentences) {
                     fw.write(card.index + "\t" + exampleSentence  + "\n");	//appends the string to the file
                 }
@@ -103,15 +99,15 @@ public class DataModificator {
     }
     
     public void saveCardIndexesAndCategoryIndexesDataToFile() {
-        String filePath = settingsHandler.getStudiedLanguageCardAndCategoryIndexesPath();
+        String filePath = discFilesMetaDataHandler.getStudiedLanguageCardAndCategoryIndexesPath();
         File oldFile;
         oldFile = new File(filePath);
         oldFile.delete();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < cardContainer.numberOfCards(); i++) {
-                Card card = cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
+                Card card = dataContainer.cardContainer.getCardByOrder(i);
                 if (!card.categoryIndexes.isEmpty()) {
                     String outString = Integer.toString(card.index);
                     for (int categoryIndex : card.categoryIndexes) {
@@ -129,8 +125,10 @@ public class DataModificator {
     public void writeStudyStrategyDataToDisc() {
         try {
             
+            StudyStrategy studyStrategy = dataContainer.studyStrategy;
+            
             //the true will append the new data
-            FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageDictionaryStudyStrategy(), false);
+            FileWriter fw = new FileWriter(discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategy(), false);
             
             fw.write("numberOfRandomCards: " +
                     Integer.toString(studyStrategy.numberOfRandomCards) + "\n");
@@ -174,7 +172,7 @@ public class DataModificator {
             logger.debug("following rows have been added to card data file: ");
 
             //the true will append the new data
-            FileWriter fw = new FileWriter(settingsHandler.getStudiedLanguageAnswerDataPath(), true);
+            FileWriter fw = new FileWriter(discFilesMetaDataHandler.getStudiedLanguageAnswerDataPath(), true);
             for (int i = 0; i < answersToAppend.numberOfAnswers(); i++) {
                 fw.write(answersToAppend.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
 
@@ -182,7 +180,7 @@ public class DataModificator {
             }
             fw.close();
 
-            answerDataContainer.appendAnswerDataContainer(answersToAppend);
+            dataContainer.answerDataContainer.appendAnswerDataContainer(answersToAppend);
         } catch (IOException ioe) {
             System.err.println("IOException: " + ioe.getMessage());
         }

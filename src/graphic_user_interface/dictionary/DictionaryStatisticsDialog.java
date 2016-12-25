@@ -1,8 +1,8 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.StatisticsMaker;
-import dictionary.DataContainer;
 import dictionary.Dictionary;
+import dictionary.StatisticsToFileWriter;
 import graphic_user_interface.grammar_book.GrammarBookOtherToolsDialog;
 import graphic_user_interface.common.TableModelMaker;
 import graphic_user_interface.common.TabularDialog;
@@ -12,14 +12,13 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
-import study_item_objects.StatisticsToFileWriter;
 
 public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
-    private StatisticsMaker statisticsMaker;
+    private Dictionary dictionary;
     
     public void setDictionary(Dictionary dictionary) {
-        statisticsMaker = dictionary.statisticsMaker;
+        this.dictionary = dictionary;
     }
     
     @SuppressWarnings("empty-statement")
@@ -459,6 +458,9 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void initialise() {
+        dictionary.dataContainer.fillAuxiliaryDataContainer();
+        StatisticsMaker statisticsMaker = dictionary.statisticsMaker;
+        
 	jLabel4.setText(Integer.toString(statisticsMaker.numberOfStudyItems()));
         jLabel15.setText(Integer.toString(statisticsMaker.numberOfAnswers()));
         jLabel5.setText(Integer.toString(statisticsMaker.getNumberOfQuestionedStudyItems()));
@@ -478,7 +480,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }
     
     private void toScreenNumberOfAnswersOnTheLastDays(int numberOfDays) {
-        jLabel28.setText(Integer.toString(statisticsMaker.getNumberOfAnswersOnTheLastDays(numberOfDays)));
+        jLabel28.setText(Integer.toString(dictionary.statisticsMaker.getNumberOfAnswersOnTheLastDays(numberOfDays)));
     }
     
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -489,7 +491,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.histogramOfAnswerRatesByDays(statisticsMaker.getAnswerDataContainer());
+           tableModelMaker.histogramOfAnswerRatesByDays(dictionary.statisticsMaker);
         
         HistogramOfAnswerRatesByDaysTabularDialog dialog 
                 = new HistogramOfAnswerRatesByDaysTabularDialog(new javax.swing.JFrame(), true);
@@ -504,7 +506,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.numberOfAnswersByDays(statisticsMaker.getAnswerDataContainer());
+           tableModelMaker.numberOfAnswersByDays(dictionary.statisticsMaker);
         
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -518,7 +520,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.practisingTimeByDay(statisticsMaker.getAnswerDataContainer());
+           tableModelMaker.practisingTimeByDay(dictionary.statisticsMaker);
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -532,7 +534,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.numberOfNewStudyItemsQuestionedByDays(statisticsMaker.getAnswerDataContainer());
+           tableModelMaker.numberOfNewStudyItemsQuestionedByDays(dictionary.statisticsMaker);
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -546,7 +548,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.histogramOfStudyItemsByNumberOfAnswers(statisticsMaker.getAnswerDataContainer());
+           tableModelMaker.histogramOfStudyItemsByNumberOfAnswers(dictionary.statisticsMaker);
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -560,7 +562,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
        Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
+            statisticsToFileWriter.statisticsMaker = dictionary.statisticsMaker;
             statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByDays(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt");
             
@@ -574,7 +576,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
        Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
+            statisticsToFileWriter.statisticsMaker = dictionary.statisticsMaker;
             statisticsToFileWriter.toFileNumberOfAnswersByDays(
                 "../data/temporary_data/number_of_answers_by_days.tmp");
             
@@ -588,7 +590,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
+            statisticsToFileWriter.statisticsMaker = dictionary.statisticsMaker;
             statisticsToFileWriter.toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
                 "../data/temporary_data/histogram_of_card_answer_rates_by_days.txt", 10);
             
@@ -602,8 +604,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         TableModelMaker tableModelMaker = new TableModelMaker();
         
         DefaultTableModel model =
-           tableModelMaker.cardsOrderedByAnswerRate(statisticsMaker.getAnswerDataContainer(),
-                   statisticsMaker.getCardContontainer());
+           tableModelMaker.cardsOrderedByAnswerRate(dictionary.dataContainer);
                 
         TabularDialog dialog 
                 = new TabularDialog(new javax.swing.JFrame(), true);
@@ -621,7 +622,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
         Runtime commandPrompt = Runtime.getRuntime();
         try {
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
-            statisticsToFileWriter.answerDataStatisticsMaker = statisticsMaker;
+            statisticsToFileWriter.statisticsMaker = dictionary.statisticsMaker;
             statisticsToFileWriter.toFileBigRightIntervallSizesOrderedByDays(
                 "../data/temporary_data/data.tmp");
             
