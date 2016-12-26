@@ -3,7 +3,7 @@ package graphic_user_interface.dictionary;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.util.Date;
-import study_item_objects.AnswerDataByStudyItem;
+import language_studyer.AnswerDataByStudyItem;
 
 public class CardStatisticsDialog extends javax.swing.JDialog {
 

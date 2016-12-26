@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
-import study_item_objects.Histogram;
+import language_studyer.Histogram;
 
 public class StatisticsToFileWriter {
     

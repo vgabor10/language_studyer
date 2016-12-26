@@ -12,14 +12,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
-import study_item_objects.AnswerData;
-import study_item_objects.AnswerDataByStudyItem;
-import study_item_objects.AnswerDataByStudyItemContainer;
-import study_item_objects.AnswerDataContainer;
-import study_item_objects.Histogram;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
+import language_studyer.AnswerData;
+import language_studyer.AnswerDataByStudyItem;
+import language_studyer.AnswerDataByStudyItemContainer;
+import language_studyer.AnswerDataContainer;
+import language_studyer.Histogram;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class StatisticsMaker {
         

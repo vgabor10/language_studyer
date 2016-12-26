@@ -1,6 +1,6 @@
 package grammar_book;
 
-import study_item_objects.StudyItemContainer;
+import language_studyer.StudyItemContainer;
 
 import java.util.*;
 

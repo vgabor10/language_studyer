@@ -2,8 +2,8 @@ package dictionary;
 
 import java.util.HashSet;
 import java.util.Set;
-import study_item_objects.AnswerDataByStudyItemContainer;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataByStudyItemContainer;
+import language_studyer.AnswerDataContainer;
 
 public class AuxiliaryDataContainer {
     

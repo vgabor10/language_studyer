@@ -1,6 +1,6 @@
 package dictionary;
 
-import disc_operation_handlers.LanguageFilesData;
+import language_studyer.LanguageFilesData;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.BufferedReader;

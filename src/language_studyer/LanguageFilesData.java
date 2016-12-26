@@ -1,4 +1,4 @@
-package disc_operation_handlers;
+package language_studyer;
 
 public class LanguageFilesData {
 

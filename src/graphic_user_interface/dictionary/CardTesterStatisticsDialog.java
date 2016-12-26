@@ -11,7 +11,7 @@ import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataContainer;
 
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     

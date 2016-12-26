@@ -1,7 +1,7 @@
 package dictionary;
 
-import study_item_objects.AnswerData;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerData;
+import language_studyer.AnswerDataContainer;
 
 public class DataContainer {
     

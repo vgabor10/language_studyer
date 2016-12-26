@@ -1,4 +1,4 @@
-package study_item_objects;
+package language_studyer;
 
 import common.GeneralFunctions;
 import java.util.*;

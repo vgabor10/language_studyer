@@ -4,8 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import study_item_objects.AnswerData;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerData;
+import language_studyer.AnswerDataContainer;
 
 public class DataLoader {
     

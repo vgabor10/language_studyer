@@ -2,7 +2,7 @@ package dictionary;
 
 import java.util.HashSet;
 import java.util.Set;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataContainer;
 
 //TODO: create gui dialog
 public class DataFormatChecker {

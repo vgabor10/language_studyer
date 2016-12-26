@@ -4,7 +4,7 @@ import grammar_book.GrammarItem;
 import grammar_book.GrammarTestStatisticsMaker;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataContainer;
 
 public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
 

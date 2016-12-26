@@ -1,7 +1,7 @@
 package dictionary;
 
-import study_item_objects.AnswerDataContainer;
-import study_item_objects.AnswerDataByStudyItemContainer;
+import language_studyer.AnswerDataContainer;
+import language_studyer.AnswerDataByStudyItemContainer;
 import common.Logger;
 
 import java.text.DateFormat;
@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.Set;
-import study_item_objects.AnswerData;
+import language_studyer.AnswerData;
 
 public class CardTestStatisticsMaker {
 

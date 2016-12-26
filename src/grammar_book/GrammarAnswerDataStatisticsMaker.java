@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
-import study_item_objects.AnswerData;
-import study_item_objects.AnswerDataStatisticsMaker;
+import language_studyer.AnswerData;
+import language_studyer.AnswerDataStatisticsMaker;
 
 public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
 

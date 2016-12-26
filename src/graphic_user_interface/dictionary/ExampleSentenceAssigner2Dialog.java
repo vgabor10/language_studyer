@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataContainer;
 
 public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
 

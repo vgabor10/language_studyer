@@ -1,6 +1,6 @@
 package grammar_book;
 
-import study_item_objects.AnswerData;
+import language_studyer.AnswerData;
 
 public class GrammarAnswerData extends AnswerData {
 

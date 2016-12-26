@@ -7,7 +7,7 @@ import dictionary.DataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
-import study_item_objects.AnswerDataByStudyItem;
+import language_studyer.AnswerDataByStudyItem;
 
 public class CardInspectorDialog extends javax.swing.JDialog {
 

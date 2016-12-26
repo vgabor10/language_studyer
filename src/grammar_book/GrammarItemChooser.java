@@ -2,7 +2,7 @@ package grammar_book;
 
 import common.Logger;
 import java.util.*;
-import study_item_objects.AnswerData;
+import language_studyer.AnswerData;
 
 public class GrammarItemChooser {
 

@@ -1,4 +1,4 @@
-package study_item_objects;
+package language_studyer;
 
 import java.io.FileWriter;
 import java.io.IOException;

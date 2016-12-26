@@ -4,8 +4,8 @@ import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import study_item_objects.AnswerDataByStudyItem;
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataByStudyItem;
+import language_studyer.AnswerDataContainer;
 
 public class GrammarTestStatisticsMaker {
     

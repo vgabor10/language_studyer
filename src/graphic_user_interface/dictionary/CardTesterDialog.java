@@ -13,7 +13,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
-import study_item_objects.AnswerDataByStudyItem;
+import language_studyer.AnswerDataByStudyItem;
 
 public class CardTesterDialog extends javax.swing.JDialog {
 
@@ -252,7 +252,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                     .addComponent(rejectAnswerButton)
                     .addComponent(ignoreAnswerButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

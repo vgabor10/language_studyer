@@ -1,6 +1,6 @@
 package dictionary;
 
-import study_item_objects.StudyItemContainer;
+import language_studyer.StudyItemContainer;
 
 import java.util.*;
 import java.io.FileWriter;

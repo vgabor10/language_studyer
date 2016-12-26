@@ -1,4 +1,4 @@
-package study_item_objects;
+package language_studyer;
 
 public class StudyItem {
 

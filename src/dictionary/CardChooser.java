@@ -1,8 +1,8 @@
 package dictionary;
 
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
-import study_item_objects.AnswerDataByStudyItemContainer;
-import study_item_objects.AnswerDataByStudyItem;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
+import language_studyer.AnswerDataByStudyItemContainer;
+import language_studyer.AnswerDataByStudyItem;
 import common.Logger;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,8 +11,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
-import study_item_objects.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class CardChooser {
 
@@ -101,14 +101,14 @@ public class CardChooser {
         Arrays.sort(datasToSort,
                 Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
 
-        Set<Integer> cardIndexesFromChoose = new HashSet<>();
+        Set<Integer> hardestCardIndexes = new HashSet<>();
         for (int i = 0; i < Math.floor((double) answerDataByStudyItemsContainer.numberOfStudiedStudyItems() * hardestWordRate); i++) {
-            cardIndexesFromChoose.add(datasToSort[i].getStudyItemIndex());
+            hardestCardIndexes.add(datasToSort[i].getStudyItemIndex());
         }
 
         Set<Integer> outCardIndexes = new HashSet<>();
         for (int i = 0; i < numberOfCards; i++) {
-            int cardIndex = getRandomCardIndex(cardIndexesFromChoose, omittedCardIndexes);
+            int cardIndex = getRandomCardIndex(hardestCardIndexes, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -123,14 +123,14 @@ public class CardChooser {
         Arrays.sort(datasToSort,
                 Collections.reverseOrder(new AnswerDataByStudyItemComparatorByRateOfRightAnswers()));
 
-        Set<Integer> cardIndexesFromChoose = new HashSet<>();
+        Set<Integer> hardestCardIndexes = new HashSet<>();
         for (int i = 0; i < 100; i++) {
-            cardIndexesFromChoose.add(datasToSort[i].getStudyItemIndex());
+            hardestCardIndexes.add(datasToSort[i].getStudyItemIndex());
         }
 
         Set<Integer> outCardIndexes = new HashSet<>();
         for (int i = 0; i < numberOfCardsGet; i++) {
-            int cardIndex = getRandomCardIndex(cardIndexesFromChoose, omittedCardIndexes);
+            int cardIndex = getRandomCardIndex(hardestCardIndexes, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -166,14 +166,14 @@ public class CardChooser {
             AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
             Arrays.sort(datasToSort, new AnswerDataByStudyItemComparatorByNumberOfAnswers());
 
-            Set<Integer> cardIndexesFromChoose = new HashSet<>();
+            Set<Integer> cardIndexesWithFewAnswers = new HashSet<>();
             for (int i = 0; i < 100; i++) {
-                cardIndexesFromChoose.add(datasToSort[i].getStudyItemIndex());
+                cardIndexesWithFewAnswers.add(datasToSort[i].getStudyItemIndex());
             }
             
             Set<Integer> outCardIndexes = new HashSet<>();
             for (int i = 0; i < numberOfCards; i++) {
-                int cardIndex = getRandomCardIndex(cardIndexesFromChoose, omittedCardIndexes);
+                int cardIndex = getRandomCardIndex(cardIndexesWithFewAnswers, omittedCardIndexes);
                 outCardIndexes.add(cardIndex);
                 omittedCardIndexes.add(cardIndex);
             }

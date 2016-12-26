@@ -1,7 +1,7 @@
-package study_item_objects.answer_data_by_study_item_comparators;
+package language_studyer.answer_data_by_study_item_comparators;
 
 import java.util.Comparator;
-import study_item_objects.AnswerDataByStudyItem;
+import language_studyer.AnswerDataByStudyItem;
 
 public class AnswerDataByStudyItemComparatorByRateOfRightAnswers implements Comparator<AnswerDataByStudyItem> {
 

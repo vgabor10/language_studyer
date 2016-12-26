@@ -1,6 +1,6 @@
 package dictionary;
 
-import study_item_objects.AnswerDataContainer;
+import language_studyer.AnswerDataContainer;
 import common.Logger;
 import java.util.ArrayList;
 import java.util.Arrays;

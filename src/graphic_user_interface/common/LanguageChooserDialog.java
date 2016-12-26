@@ -1,13 +1,13 @@
 package graphic_user_interface.common;
 
 import dictionary.Dictionary;
-import grammar_book.DataContainer;
+import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
 
 public class LanguageChooserDialog extends javax.swing.JDialog {
 
-    public Dictionary dictionary;
-    public DataContainer grammarDataContainer;
+    private Dictionary dictionary;
+    private GrammarBook grammarBook;
     
     public LanguageChooserDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -22,8 +22,9 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         jRadioButton2.setMnemonic(KeyEvent.VK_G);
     }
 
-    public void setDictionary(Dictionary dictionary) {
+    public void setData(Dictionary dictionary, GrammarBook grammarBook) {
         this.dictionary = dictionary;
+        this.grammarBook = grammarBook;
     }
     
     public void initialise() {
@@ -116,8 +117,6 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        grammarDataContainer.clear();
-        
         int languageIndexToLoad = 0;
         
         if (jRadioButton1.isSelected()) {
