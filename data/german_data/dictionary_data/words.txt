@@ -5487,3 +5487,23 @@
 105486	sprengen	robbant
 105487	e Knappheit	szűkösség
 105488	schätzungsweise	hozzávetőlegesen
+105489	r Glocke	harang
+105490	ersuchen	kér, folyamodik
+105491	beschweren	panaszt tesz
+105492	hochhalten	nagyra becsül
+105493	feig	gyáva
+105494	blendend	ragyogóan, vakítóan
+105495	blenden	vakít, elkápráztat
+105496	r Einzelhandel	kiskereskedelem
+105497	skeptisch	szkeptikus, kétkedő
+105498	von heute auf morgen	egyik napról a másikra
+105499	amtieren	hivatalban van
+105500	e Aussöhnung	kibékülés
+105501	e Verwirrung	zűrzavar
+105502	e Kriegserklärung	hadüzenet
+105503	gewichtig	súlyos
+105504	vergnügen	szórakozik, szórakoztat
+105505	e Kehrtwendung	megfordulás
+105506	unwirksam	hatástalan
+105507	freimachen	felszabadít, szabaddá tesz
+105508	tolerant	toleráns, türelmes

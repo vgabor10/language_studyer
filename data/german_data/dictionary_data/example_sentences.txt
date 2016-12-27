@@ -1173,7 +1173,6 @@
 100292	Eine solide Ausbildung ist die beste Voraussetzung für einen erfolgreichen Berufseinstieg.
 100292	Maria bringt optimale Voraussetzungen für den Job mit.
 100292	Voraussetzung für die Einreise ist ein gültiger Pass.
-100293	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
 100293	Tom hatte nicht genügend Geld.
 100293	Wir haben nicht genügend Zeit.
 100293	Es gibt genügend Raum für Verbesserung.
@@ -1798,15 +1797,9 @@
 100540	Sonntag ist der schönste Tag der Woche.
 100540	Wir bekommen Sonntag Besuch.
 100541	Es droht eine Katastrophe.
-100542	Bald erscheint der sechste Band der Enzyklopädie.
-100542	Bald werden die Universitäten Gebühren erheben.
-100542	Der Direktor hat seinen baldigen Rücktritt angekündigt.
 100542	Die Königin von England kommt bald zu Besuch.
 100542	Hoffentlich wirst du bald wieder gesund.
-100542	Ich hoffe, ich kann Ihnen bald detailliertere Angaben machen.
 100542	Meine Tochter kommt bald in die Schule.
-100542	Meine Überlegungen gehen dahin, dass ich bald umziehen muss.
-100542	Nachdem sie geheiratet hatten, bekamen sie auch bald Kinder.
 100542	Wir müssen uns mit diesem Problem bald befassen.
 100543	Ich kann mir seinen Namen nicht merken.
 100544	Ich mache die Tür zu.
@@ -1861,11 +1854,9 @@
 100563	Ich hoffe aber trotzdem, verstanden zu werden.
 100563	Es regnet gerade, aber wir gehen trotzdem.
 100564	Die Farbe kann man sich aussuchen.
-100565	Eine hohe Anzahl von Jugendlichen sieht pessimistisch in die Zukunft.
 100565	In Zukunft werde ich weniger rauchen.
 100565	Kinder sind eine Investition in die Zukunft.
 100565	Mit Blick auf die Zukunft eröffnen sich traumhafte Perspektiven.
-100565	Mit einer guten Ausbildung schafft man sich eine solide Basis für die Zukunft.
 100566	Die Probe für das Theaterstück beginnt um acht.
 100569	Ab nächsten Monat können wir neues Personal einstellen.
 100569	Ich kann mich gut auf Veränderungen einstellen.
@@ -5853,16 +5844,8 @@
 102677	Im Kino läuft unter anderem gerade Casablanca.
 102677	Nach der Knieoperation war er im Laufen noch etwas unsicher.
 102679	Doris ist ein sehr lebendiges Mädchen.
-102680	Am Grunde des Ozeans leben noch viele unerforschte Organismen.
-102680	Auch künftige Generationen müssen auf dieser Welt noch leben können.
-102680	Bettina genießt ihr neues Leben in Karlsruhe.
-102680	Computersüchtige sind in der virtuellen Realität mehr zuhause als im wahren Leben.
-102680	Das Leben ist hart.
-102680	Die neuen Informationstechnologien verändern die Art, wie Menschen arbeiten, leben und sich vergnügen.
-102680	Du musst dein Leben selbst in die Hand nehmen.
 102680	Mönche und Nonnen leben im Kloster.
 102680	Ohne staatliche Unterstützung könnten sie gar nicht leben.
-102680	Sie hat in ihrem Leben viel geleistet.
 102680	Sie leben in einem winzigen Dorf.
 102681	Die Flasche Wein ist schon leer.
 102681	Wenn man der Anzeige glaubt, ist der Tank leer.

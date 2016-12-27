@@ -1116,3 +1116,9 @@
 101115	precede	megelőz, elsőbbsége van
 101116	cash register	kassza
 101117	deviate	eltér
+101118	chimney	kémény
+101119	dreadful	szörnyű, borzasztó
+101120	next of kin	legközelebbi rokon
+101121	cuddle	ölelés
+101122	tsunami	cunami, szökőár
+101123	void	üresség, hézag
