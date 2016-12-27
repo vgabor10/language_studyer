@@ -12,8 +12,9 @@ import grammar_book.GrammarBook;
 import graphic_user_interface.dictionary.DictionaryDialog;
 import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryOtherToolsDialog;
-import graphic_user_interface.dictionary.SetDictionaryStudyStrategyDialog;
+import graphic_user_interface.dictionary.DictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarBookStatisticsDialog;
+import graphic_user_interface.grammar_book.GrammarStudyStrategyDialog;
 import java.awt.event.KeyEvent;
 
 public class MainFrame extends javax.swing.JFrame {
@@ -180,7 +181,6 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         jButton14.setText("Set study strategy");
-        jButton14.setEnabled(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -318,15 +318,18 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_readGrammarBookButtonActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        SetDictionaryStudyStrategyDialog dialog 
-                = new SetDictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
+        DictionaryStudyStrategyDialog dialog 
+                = new DictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
         dialog.setDictionary(dictionary);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        // TODO add your handling code here:
+        GrammarStudyStrategyDialog dialog = new GrammarStudyStrategyDialog(new javax.swing.JFrame(), true);
+        dialog.setGrammarBook(grammarBook);
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void grammarStatisticsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grammarStatisticsButtonActionPerformed
