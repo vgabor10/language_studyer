@@ -266,7 +266,7 @@
 100266	verlieren	veszít, elveszít
 100267	zunehmen	nő (ige)
 100268	fördern	támogat
-100269	e See	tenger
+100269	e See	tenger, tó
 100270	r Rückhalt	támasz
 100271	schließlich	végül
 100272	e Lage	helyzet, állapot
@@ -5507,3 +5507,11 @@
 105506	unwirksam	hatástalan
 105507	freimachen	felszabadít, szabaddá tesz
 105508	tolerant	toleráns, türelmes
+105509	e Schar	raj, sereg
+105510	r Gutshof	tanya
+105511	stattlich	kiváló, tekintélyes
+105512	schläfrig	álmos
+105513	e Weide	legelő
+105514	erschüttern	megráz
+105515	zweitens	másodszor
+105516	drittens	harmadszor
