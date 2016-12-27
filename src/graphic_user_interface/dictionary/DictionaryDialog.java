@@ -26,6 +26,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
         tableModel = (DefaultTableModel)jTable1.getModel();
         lastSearchesTableModel = (DefaultTableModel)jTable2.getModel();
         
+        searchModeComboBox.setSelectedIndex(1);
+        
         closeButton.setMnemonic(KeyEvent.VK_C);
         addNewCardButton.setMnemonic(KeyEvent.VK_A);
         inspectCardButton.setMnemonic(KeyEvent.VK_I);
@@ -55,7 +57,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTable2 = new javax.swing.JTable();
         categoryFilterButton = new javax.swing.JButton();
         listAllCardsButton = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        searchModeComboBox = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -170,10 +172,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "usage 1", "usage 2" }));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        searchModeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "usage 1", "usage 2" }));
+        searchModeComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                searchModeComboBoxActionPerformed(evt);
             }
         });
 
@@ -207,7 +209,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jTextField1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(searchModeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -224,7 +226,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jTextField1)
-                    .addComponent(jComboBox2))
+                    .addComponent(searchModeComboBox))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -429,7 +431,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_categoryFilterButtonActionPerformed
 
     private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
-        if (jComboBox2.getSelectedIndex() == 0) {
+        if (searchModeComboBox.getSelectedIndex() == 0) {
             if (evt.getKeyCode() == KeyEvent.VK_ENTER 
                     && !jTextField1.getText().isEmpty()) {
 
@@ -464,19 +466,21 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 inspectCardButton.setEnabled(false);
             }
             if (evt.getKeyCode() == KeyEvent.VK_ENTER ) {
-                clearTable();
-                inspectCardButton.setEnabled(false);
-                lastSearchesTableModel.insertRow(0,new Object[]{
+                if (!jTextField1.getText().isEmpty()) {
+                    lastSearchesTableModel.insertRow(0,new Object[]{
                         jTextField1.getText()});
+                }
+                
+                inspectCardButton.setEnabled(false);
                 jTextField1.setText("");
             }
         }
     }//GEN-LAST:event_jTextField1KeyReleased
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+    private void searchModeComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchModeComboBoxActionPerformed
         jTextField1.setText("");
         jTextField1.requestFocus();
-    }//GEN-LAST:event_jComboBox2ActionPerformed
+    }//GEN-LAST:event_searchModeComboBoxActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -526,7 +530,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private javax.swing.JButton closeButton;
     private javax.swing.JButton inspectCardButton;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
@@ -535,5 +538,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private javax.swing.JTable jTable2;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton listAllCardsButton;
+    private javax.swing.JComboBox<String> searchModeComboBox;
     // End of variables declaration//GEN-END:variables
 }
