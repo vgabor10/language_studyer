@@ -55,6 +55,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTable2 = new javax.swing.JTable();
         categoryFilterButton = new javax.swing.JButton();
         listAllCardsButton = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -93,8 +94,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.setFont(new java.awt.Font("Ubuntu", 0, 18)); // NOI18N
         jTextField1.setText("jTextField1");
         jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextField1KeyPressed(evt);
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField1KeyReleased(evt);
             }
         });
 
@@ -169,6 +170,13 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         });
 
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "usage 1", "usage 2" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -176,14 +184,13 @@ public class DictionaryDialog extends javax.swing.JDialog {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel1)
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                .addGap(0, 115, Short.MAX_VALUE))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -192,11 +199,15 @@ public class DictionaryDialog extends javax.swing.JDialog {
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jComboBox1, 0, 231, Short.MAX_VALUE)
+                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(listAllCardsButton, javax.swing.GroupLayout.DEFAULT_SIZE, 133, Short.MAX_VALUE)
+                        .addComponent(listAllCardsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(categoryFilterButton, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE)))
+                        .addComponent(categoryFilterButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addComponent(jTextField1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -211,7 +222,9 @@ public class DictionaryDialog extends javax.swing.JDialog {
                     .addComponent(categoryFilterButton)
                     .addComponent(listAllCardsButton))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextField1)
+                    .addComponent(jComboBox2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -253,30 +266,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
         dispose();
     }//GEN-LAST:event_closeButtonActionPerformed
-
-    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
-
-        if (evt.getKeyCode() == KeyEvent.VK_ENTER && !jTextField1.getText().isEmpty()) {
-            clearTable();
-
-            cardFinder.setStringToSearch(jTextField1.getText());
-            cardFinder.makeSearch();
-            toScreenCards(cardFinder.foundCards);
-            
-            lastSearchesTableModel.insertRow(0,new Object[]{
-                    jTextField1.getText()});
-            
-            jTextField1.setText("");
-            inspectCardButton.setEnabled(false);
-        }
-        else {
-            if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
-                jTextField1.getText().isEmpty()) {
-                clearTable();
-                inspectCardButton.setEnabled(false);
-            }
-        }
-    }//GEN-LAST:event_jTextField1KeyPressed
 
     private void clearTable() {
         for (int i=tableModel.getRowCount()-1; 0<=i; i--) {
@@ -439,6 +428,56 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
     }//GEN-LAST:event_categoryFilterButtonActionPerformed
 
+    private void jTextField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyReleased
+        if (jComboBox2.getSelectedIndex() == 0) {
+            if (evt.getKeyCode() == KeyEvent.VK_ENTER 
+                    && !jTextField1.getText().isEmpty()) {
+
+                clearTable();
+
+                cardFinder.setStringToSearch(jTextField1.getText());
+                cardFinder.makeSearch();
+                toScreenCards(cardFinder.foundCards);
+
+                lastSearchesTableModel.insertRow(0,new Object[]{
+                        jTextField1.getText()});
+
+                jTextField1.setText("");
+                inspectCardButton.setEnabled(false);
+            }
+            else {
+                if (evt.getKeyCode() == KeyEvent.VK_ENTER &&
+                    jTextField1.getText().isEmpty()) {
+                    clearTable();
+                    inspectCardButton.setEnabled(false);
+                }
+            }
+        }
+        else {
+            if (!jTextField1.getText().isEmpty()) {
+                clearTable();
+
+                cardFinder.setStringToSearch(jTextField1.getText());
+                cardFinder.makeSearch();
+                toScreenCards(cardFinder.foundCards);
+
+                inspectCardButton.setEnabled(false);
+            }
+            if (evt.getKeyCode() == KeyEvent.VK_ENTER ) {
+                clearTable();
+                inspectCardButton.setEnabled(false);
+                lastSearchesTableModel.insertRow(0,new Object[]{
+                        jTextField1.getText()});
+                jTextField1.setText("");
+            }
+        }
+    }//GEN-LAST:event_jTextField1KeyReleased
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        jTextField1.setText("");
+        jTextField1.requestFocus();
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -487,6 +526,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private javax.swing.JButton closeButton;
     private javax.swing.JButton inspectCardButton;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
