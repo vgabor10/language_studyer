@@ -7244,14 +7244,9 @@
 103468	Sie werden in eine andere Abteilung versetzt.
 103468	Vielleicht gibt es noch eine andere Lösung.
 103469	Er ging seinen bürgerlichen Pflichten nach.
-103470	Die Wahrscheinlichkeit, dass er kommt, ist sehr gering.
-103470	Es ist unwahrscheinlich, dass es in Deutschland im August schneit.
-103470	Ich bin der Auffassung, dass hier noch viel verbessert werden muss.
 103470	Ich bin nach wie vor der Meinung, dass wir mehr sparen müssen.
-103470	Ich habe doch ausdrücklich gesagt, dass ich deine CD nicht habe.
 103470	Ich habe so viele Sachen, dass ich zum Umzug einen LKW brauche.
 103470	Ich sage Ihnen zu, dass ich mich um diese Sache kümmern werde.
-103470	Ihre Freude war sehr groß, als sie hörte, dass sie die Prüfung bestanden hatte.
 103470	Schade, dass du am Wochenende arbeiten musst!
 103470	Sie versicherte, dass sie sich darum kümmern würde.
 103471	Das Internet ist ein relativ neues Medium.
@@ -7899,16 +7894,10 @@
 103849	Auf diese Daten hat nur der Administrator Zugriff.
 103850	Die Schüler planen eine Aufführung von Schillers “Don Carlos”.
 103851	Wir verwenden lieber chlorfrei gebleichtes Papier.
-103852	Am Ostersonntag unternehmen wir mit der Familie einen Ausﬂug in die Berge.
 103852	Das Unternehmen erzielte dieses Jahr nur minimalen Gewinn.
-103852	Das Unternehmen ging in Konkurs.
-103852	Das Unternehmen ist gerade dabei, ein internes Netzwerk einzurichten.
-103852	Das Unternehmen machte letztes Jahr keinen Gewinn, sondern einen hohen Verlust.
 103852	Das Unternehmen stellt Ihnen einen Dienstwagen zur Verfügung.
 103852	Das Unternehmen verfügt nur über geringes Kapital.
-103852	Das Unternehmen zieht in Betracht, weitere Ausbildungsplätze zu schaffen.
 103852	Die Fusion der beiden Unternehmen ist für nächstes Jahr geplant.
-103852	Die kostenlose Lieferung nach Hause ist eine Dienstleistung des Unternehmens.
 103852	Ein erfolgreicher Manager leitet das Unternehmen.
 103852	Wirtschaftlich gesehen können wir uns das Unternehmen nicht leisten.
 103853	Ich danke Ihnen für Ihre Einladung.

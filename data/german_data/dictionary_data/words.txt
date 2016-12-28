@@ -550,7 +550,7 @@
 100552	schrecken	ijeszt
 100553	regulieren	szabályoz
 100554	manchmal	néha
-100556	betreten	belép
+100556	betreten	belép, rálép
 100557	reisen	utazik
 100558	umgehend	azonnal
 100559	s Argument	érv
@@ -1750,7 +1750,7 @@
 101773	r Kapitän	kapitány
 101774	r Start	kezdet
 101775	r Flug	repülés
-101776	landen	leszáll
+101776	landen	leszáll, partra száll, kiköt
 101777	ausgeliefert	kiszolgáltatott
 101778	e Sport	sport
 101779	r Wettkampf	verseny
@@ -2124,7 +2124,7 @@
 102167	r Wahlbürger	választópolgár
 102168	erfolgreich	sikeres
 102169	s Kreuz	kereszt
-102170	e Runde	forduló
+102170	e Runde	kör, környezet, forduló
 102171	e Kenntnis	tudás, ismeret
 102172	schmutzig	koszos
 102173	e Hemmung	gátlás
@@ -2850,7 +2850,7 @@
 102911	e Gestaltung	alak, kialakítás
 102912	waschen	mos
 102913	r Augenblick	pillanat
-102914	wahnsinnig	őrült (mn)
+102914	wahnsinnig	őrült
 102915	r Ärger	harag
 102916	r Antrag	kérvény
 102917	öffentlich	nyilvános
@@ -5515,3 +5515,22 @@
 105514	erschüttern	megráz
 105515	zweitens	másodszor
 105516	drittens	harmadszor
+105517	r Zerfall	bomlás, feloszlás
+105518	s Anzeichen	előjel
+105519	s Fiasko	kudarc
+105520	s Versagen	kudarc
+105521	wahrnehmbar	észrevehető, észlelhető
+105522	s Erzeugnis	termék, termény
+105523	e Umgestaltun	átalakítás
+105524	ab	-tól, -től
+105525	ermutigen	buzdít, bátorít
+105526	r Anstand	aggály
+105527	r Morast	mocsár, ingovány
+105528	unvollendet	befejezetlen
+105529	erneuern	felújít, megújít
+105530	r Zuschlag	felár, pótdíj
+105531	entgegen	ellenére
+105532	e Werft	hajógyár
+105533	bestücken	felszerel
+105534	r Prozess	folyamat, eljárás
+105535	s Möbelstück	bútordarab
