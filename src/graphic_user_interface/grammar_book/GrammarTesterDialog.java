@@ -5,7 +5,6 @@ import grammar_book.GrammarTester;
 import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarBook;
-import grammar_book.GrammarItemChooser;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -13,6 +12,7 @@ import java.util.Date;
 
 public class GrammarTesterDialog extends javax.swing.JDialog {
 
+    private GrammarBook grammarBook;
     private GrammarItemContainer grammarItemContainer;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
     private int grammarItemIndexToTest = -1;
@@ -35,26 +35,14 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }
     
     public void initialise() {
-        GrammarItemChooser randomGrammarItemChooser = new GrammarItemChooser();
-        
-        randomGrammarItemChooser.setGrammarAnswerDataContainerWithAtLeast10Examples(grammarAnswerDataContainer);
-        randomGrammarItemChooser.setGrammarBookWithAtLeast10Examples(grammarItemContainer);
-        randomGrammarItemChooser.initialise();
-        
-        grammarItemIndexToTest = randomGrammarItemChooser.getGrammarItemIndexForTest1();
-        
-        //grammarItemIndexToTest = 0; //for test
-        
-        grammarTester = new GrammarTester();
-        grammarTester.setActualTestedGrammarItem(grammarItemContainer.getGrammarItemByIndex(grammarItemIndexToTest));
-        grammarTester.setExampleIndexesToTest(10);
-        
+        grammarTester.startNewTest();
         moveToTheNextQuestion();
    
         startTime = new Date().getTime();
     }
 
     public void setGrammarBook(GrammarBook grammarBook) {
+        this.grammarBook = grammarBook;
         grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
         grammarAnswerDataContainer = grammarBook.dataContainer.grammarAnswerDataContainer; 
     }

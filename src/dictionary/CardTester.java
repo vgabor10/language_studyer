@@ -50,17 +50,6 @@ public class CardTester {
         
         moveToNextCardToQuestion();
     }
-    
-    //before allCard need to be seted
-    public void setCardsToTestFromCardIndexesSet(Set<Integer> cardIndexes) {
-        List<Integer> cardIndexesList = new ArrayList<>(cardIndexes);
-        java.util.Collections.shuffle(cardIndexesList);
-
-        cardsToTest = new CardContainer();
-        for (int index : cardIndexesList) {
-            cardsToTest.addCard(allCard.getCardByIndex(index));
-        }
-    }
 
     public CardContainer getCardsToTest() {
         return cardsToTest;

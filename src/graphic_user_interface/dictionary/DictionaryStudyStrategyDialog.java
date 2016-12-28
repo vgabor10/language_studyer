@@ -157,6 +157,7 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
         });
 
         jCheckBox1.setText("question among cards above answer rate");
+        jCheckBox1.setEnabled(false);
 
         jSpinner6.setModel(new javax.swing.SpinnerNumberModel(20, null, null, 1));
         jSpinner6.setEnabled(false);

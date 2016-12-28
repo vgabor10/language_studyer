@@ -10,7 +10,7 @@ public class GrammarItemContainer extends StudyItemContainer {
         return numberOfStudyItems();
     }
 
-    public GrammarItem getGrammarItemByIndex(int grammarItemIndex) {
+    public GrammarItem getByIndex(int grammarItemIndex) {
         return (GrammarItem) getStudyItemByIndex(grammarItemIndex);
     }
 
@@ -27,7 +27,7 @@ public class GrammarItemContainer extends StudyItemContainer {
     }
 
     public Example getExample(int grammarItemIndex, int exampleIndex) {
-        return getGrammarItemByIndex(grammarItemIndex).getExampleByIndex(exampleIndex);
+        return getByIndex(grammarItemIndex).getExampleByIndex(exampleIndex);
     }
 
     public void toScreenTableOfContents() {

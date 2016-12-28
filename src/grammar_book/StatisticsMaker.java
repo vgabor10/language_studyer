@@ -8,7 +8,7 @@ import java.util.TreeSet;
 import language_studyer.AnswerData;
 import language_studyer.AnswerDataStatisticsMaker;
 
-public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
+public class StatisticsMaker extends AnswerDataStatisticsMaker {
 
     public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
             setAnswerDataContainer(gac);
@@ -30,7 +30,7 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
             int numberOfExamples = 0;
             Set<Integer> grammarItemIndexes = getGrammarBook().getGrammarItemIndexes();
             for (int index : grammarItemIndexes) {
-                    numberOfExamples = numberOfExamples + getGrammarBook().getGrammarItemByIndex(index).numberOfExamples();
+                    numberOfExamples = numberOfExamples + getGrammarBook().getByIndex(index).numberOfExamples();
             }
 
             return numberOfExamples;
@@ -77,7 +77,7 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
             Map<Long,Integer> LastStudyTimeAndGrammarItemIndex = new HashMap<Long,Integer>();
             int numberOfUntestedGrammarItems = 0;
             for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
-                    if (10 <= getGrammarBook().getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+                    if (10 <= getGrammarBook().getByIndex(grammarItemIndex).numberOfExamples()) {
                             long lastStudyDate = getLastStudyTimeOfGrammarItem(grammarItemIndex);
                             if (lastStudyDate == 0) {
                                     numberOfUntestedGrammarItems++;
@@ -93,12 +93,12 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
             for (long date : SortedLastStudyTime) {
                     int grammarItemIndex = LastStudyTimeAndGrammarItemIndex.get(date);
                     if (date < 0) {
-                            System.out.println(getGrammarBook().getGrammarItemByIndex(grammarItemIndex).title.toString()
+                            System.out.println(getGrammarBook().getByIndex(grammarItemIndex).title.toString()
                                     + " | grammar item never been tested");
                     }
                     else {
                             Date date2 = new Date(date);
-                            System.out.println(getGrammarBook().getGrammarItemByIndex(grammarItemIndex).title.toString()
+                            System.out.println(getGrammarBook().getByIndex(grammarItemIndex).title.toString()
                                     + " | " + date2);
                     }
             }
@@ -107,7 +107,7 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
     public int numberOfGrammarItemsWithAtLeast10Examples() {
             int numberOfGrammarItems = 0;
             for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
-                    if (10 <= getGrammarBook().getGrammarItemByIndex(grammarItemIndex).numberOfExamples()) {
+                    if (10 <= getGrammarBook().getByIndex(grammarItemIndex).numberOfExamples()) {
                             numberOfGrammarItems++;
                     }
             }

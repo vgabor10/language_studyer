@@ -90,4 +90,8 @@ public class DiscFilesMetaDataHandler {
             System.err.println("Unable to read the file: fileName");
         }
     }
+
+    String getStudiedLanguageStudyItemAndCategoryIndexesPath() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

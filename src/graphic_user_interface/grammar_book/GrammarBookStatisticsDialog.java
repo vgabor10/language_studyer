@@ -1,6 +1,6 @@
 package graphic_user_interface.grammar_book;
 
-import grammar_book.GrammarAnswerDataStatisticsMaker;
+import grammar_book.StatisticsMaker;
 import grammar_book.GrammarBook;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -320,7 +320,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void fillDialogWithData() {
-        GrammarAnswerDataStatisticsMaker grammarAnswerDataStatisticsMaker 
+        StatisticsMaker grammarAnswerDataStatisticsMaker 
                 = grammarBook.statisticsMaker;
 
 	jLabel4.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfStudyItems()));
@@ -380,7 +380,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         Runtime commandPrompt = Runtime.getRuntime();
         try {
-            GrammarAnswerDataStatisticsMaker grammarStatisticsMaker
+            StatisticsMaker grammarStatisticsMaker
             = grammarBook.statisticsMaker;
 
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();
@@ -398,7 +398,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         Runtime commandPrompt = Runtime.getRuntime();
         try {
-            GrammarAnswerDataStatisticsMaker grammarStatisticsMaker
+            StatisticsMaker grammarStatisticsMaker
             = grammarBook.statisticsMaker;
 
             StatisticsToFileWriter statisticsToFileWriter = new StatisticsToFileWriter();

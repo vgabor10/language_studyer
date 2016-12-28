@@ -15,12 +15,12 @@ public class DataLoader {
         this.dataContainer = dataContainer;
     }
     
-    public void loadLanguageDataWithIndex(int languageIndex) {
+    public void loadLanguageDataWithIndex(int languageIndex) {  //TODO: is it used anywehere?
         discFilesMetaDataHandler.setStudyedLanguageIndex(languageIndex);
         this.loadAllData();
     }
 
-    public void loadGrammarBook() {
+    public void loadStudyItemContainer() {
         try {
             GrammarItemContainer grammarBook = dataContainer.grammarItemContainer;
             
@@ -97,7 +97,7 @@ public class DataLoader {
         }
     }
 
-    public void loadGrammarAnswerData() {
+    public void loadAnswerData() {
         try {
             GrammarAnswerDataContainer grammarAnswerDataContainer 
                     = dataContainer.grammarAnswerDataContainer;
@@ -117,9 +117,32 @@ public class DataLoader {
         }
     }
 
+    public void loadStudyItemIndexesAndCategoryIndexes() {
+        /*try {
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageStudyItemAndCategoryIndexesPath();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splittedRow = strLine.split("\t");
+                int cardIndex = Integer.parseInt(splittedRow[0]);
+
+                for (int i=1; i<splittedRow.length; i++) {
+                    int categoryIndex = Integer.parseInt(splittedRow[i]);
+                    dataContainer.grammarItemContainer.getByIndex(cardIndex).categoryIndexes.add(categoryIndex);
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("unable to find study item categories file");
+        } catch (IOException e) {
+            System.err.println("exception in loadStudyItemIndexesAndCategoryIndexes function");
+        }*/
+    }
+    
+    
     public void loadAllData() {
-        loadGrammarBook();
-        loadGrammarAnswerData();
+        loadStudyItemContainer();
+        loadAnswerData();
+        loadStudyItemIndexesAndCategoryIndexes();
     }
 
 }

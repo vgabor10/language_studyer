@@ -49,7 +49,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
     }
     
     public void fillWidgetsWithGrammarItemData(int grammarItemIndex) {
-        GrammarItem grammarItem = grammarItemContainer.getGrammarItemByIndex(grammarItemIndex);
+        GrammarItem grammarItem = grammarItemContainer.getByIndex(grammarItemIndex);
 
         clearTabular();
         jTextField1.setText(grammarItem.title.toString());

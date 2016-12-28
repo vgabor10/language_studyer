@@ -1,48 +1,20 @@
 package grammar_book;
 
 import common.Logger;
-import java.util.*;
-import language_studyer.AnswerData;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
-public class GrammarItemChooser {
+public class GrammarItemChooser extends StudyItemChooser {
 
     private final Random randomGenerator = new Random();
-    private GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
-    private GrammarItemContainer grammarItemContainer = new GrammarItemContainer();
-    private GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
+    private StatisticsMaker statisticsMaker = new StatisticsMaker();
     private final Logger logger = new Logger();
-
-    public void setGrammarBookWithAtLeast10Examples(GrammarItemContainer gb) {
-        for (int i = 0; i < gb.numberOfGrammarItems(); i++) {
-            if (10 <= gb.getGrammarItemByOrder(i).numberOfExamples()) {
-                grammarItemContainer.addGrammarItem(gb.getGrammarItemByOrder(i));
-            }
-        }
-    }
-
-    public void setGrammarAnswerDataContainerWithAtLeast10Examples(GrammarAnswerDataContainer gadc) {
-        Set<Integer> grammarItemIndexes = grammarItemContainer.getGrammarItemIndexes();
-
-        for (int i = 0; i < gadc.numberOfAnswers(); i++) {
-            AnswerData answerData = gadc.getAnswerData(i);
-            if (grammarItemIndexes.contains(answerData.index)) {
-                grammarAnswerDataContainer.addAnswerData(answerData);
-            }
-        }
-    }
-
-    public void initialise() {
-        //statisticsMaker.setData(grammarItemContainer);
-        statisticsMaker.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
-        
-        logger.debug("aaa: " + grammarItemContainer.numberOfGrammarItems());
-    }
 
     public int getRandomGrammarItemIndex() {
         logger.debug("run getRandomGrammarItemIndex function");
 
-        int orderIndex = randomGenerator.nextInt(grammarItemContainer.numberOfGrammarItems());
-        int grammarItemIndex = grammarItemContainer.getGrammarItemByOrder(orderIndex).index;
+        int grammarItemIndex = randomGenerator.nextInt(this.studyItemIndexesFromChoose.size());
 
         logger.debug("choosen grammar item index: " + grammarItemIndex);
 
@@ -52,7 +24,7 @@ public class GrammarItemChooser {
     public int getRandomIndexFromThe5LeastStudiedGrammarItem() {
         logger.debug("run getRandomIndexFromThe5LeastStudiedGrammarItem function");
 
-        Vector<Integer> grammarItemIndexesOrderedByNumberOfAnswers
+        List<Integer> grammarItemIndexesOrderedByNumberOfAnswers
                 = statisticsMaker.getStudyItemIndexesOrderedByNumberOfAnswers();
 
         int r = randomGenerator.nextInt(5);
@@ -66,7 +38,7 @@ public class GrammarItemChooser {
     public int getIndexFromThe5HardestGrammarItem() {
         logger.debug("run getIndexFromThe5HardestGrammarItem function");
 
-        Vector<Integer> grammarItemIndexesOrderedByAnswerRate
+        List<Integer> grammarItemIndexesOrderedByAnswerRate
                 = statisticsMaker.getStudyItemIndexesOrderedByAnswerRate();
         int r = grammarItemIndexesOrderedByAnswerRate.size() - 1 - randomGenerator.nextInt(5);
         int grammarItemIndex = grammarItemIndexesOrderedByAnswerRate.get(r);
@@ -91,7 +63,7 @@ public class GrammarItemChooser {
 
         logger.debug("run getGrammarItemIndexForTest1 function");
         
-        ArrayList<Integer> grammarItemIndexses = new ArrayList<>();
+        List<Integer> grammarItemIndexses = new ArrayList<>();
         
         grammarItemIndexses.add(getRandomGrammarItemIndex());
         //grammarItemIndexses.add(getIndexOfLatestStudiedGrammarItem());

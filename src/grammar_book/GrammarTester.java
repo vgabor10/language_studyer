@@ -1,34 +1,40 @@
 package grammar_book;
 
 import common.Logger;
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.Vector;
+import java.util.List;
 
-public class GrammarTester {
+public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
 
+    private DataContainer dataContainer;
+    
+    private GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
+    
     private int numberOfExamplesQuestioned = 0;
     private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
     private Example actualQuestionedExample;
     private GrammarItem actualTestedGrammarItem;
 
-    private Vector<Integer> exampleIndexesToTest = new Vector<>();
+    private List<Integer> exampleIndexesToTest = new ArrayList<>();
     
     private final Logger logger = new Logger();
 
-    public void setActualTestedGrammarItem(GrammarItem gi) {
-        actualTestedGrammarItem = gi;
+    public void setData(DataContainer dataContainer) {
+        this.dataContainer = dataContainer;
+        dataContainer.fillAuxiliaryDataContainer();
+        this.grammarItemChooser.setData(dataContainer);
     }
-
-    public void setExampleIndexesToTest(int numberOfExamples) {
-
-        Vector<Integer> allExampleIndex
-                = new Vector<>(actualTestedGrammarItem.getExampleIndexes());
-
-        java.util.Collections.shuffle(allExampleIndex);
-
-        for (int i = 0; i < numberOfExamples; i++) {
-            exampleIndexesToTest.add(allExampleIndex.get(i));
-        }
+    
+    public void startNewTest() {
+        numberOfExamplesQuestioned = 0;
+        userAnswers.clear();
+        exampleIndexesToTest.clear();
+        actualQuestionedExample = null;
+        
+        int testedGrammarItemIndex = grammarItemChooser.getGrammarItemIndexForTest1();
+        actualTestedGrammarItem = dataContainer.grammarItemContainer.getByIndex(testedGrammarItemIndex);
+        exampleIndexesToTest = new ArrayList(actualTestedGrammarItem.getExampleIndexes()); 
     }
 
     public void moveToNextExampleToQuestion() {

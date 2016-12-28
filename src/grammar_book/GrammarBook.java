@@ -6,7 +6,7 @@ public class GrammarBook {
     public GrammarTester grammartester = new GrammarTester();
     public DataLoader dataLoader = new DataLoader();
     public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
-    public GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
+    public StatisticsMaker statisticsMaker = new StatisticsMaker();
     public DataModificator dataModificator = new DataModificator();
     
     public GrammarBook() {

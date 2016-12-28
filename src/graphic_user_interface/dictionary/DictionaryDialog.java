@@ -397,7 +397,6 @@ public class DictionaryDialog extends javax.swing.JDialog {
         cardFinder.listAllCard();
         toScreenCards(cardFinder.foundCards);
         
-        jTextField1.requestFocus();
         inspectCardButton.setEnabled(false);
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
 
