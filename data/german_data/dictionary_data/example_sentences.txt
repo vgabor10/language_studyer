@@ -5904,7 +5904,6 @@
 102711	Die Einnahmen decken genau die Kosten.
 102711	Die Kosten für die Reise übernimmt die Firma.
 102711	Die operativen Kosten sind viel zu hoch.
-102711	Die restlichen Kosten trägt die Stadt.
 102712	Ich hab keine Kraft mehr.
 102712	Drei Dinge braucht man zu allem: Kraft, Verstand und Willen.
 102712	Die Kraft der Strömung hat die Brücke mitgerissen.

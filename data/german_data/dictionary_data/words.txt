@@ -391,7 +391,7 @@
 100392	e Höhe	magasság
 100393	anderswo	máshol
 100394	herkömmlich	szokásos
-100395	s Interesse	érdeklődés
+100395	s Interesse	érdek, érdeklődés
 100396	wirken	hatást gyakorol
 100397	allgemein	általában
 100398	r Gast	vendég
@@ -3897,7 +3897,7 @@
 103982	ansonsten	különben, egyébként
 103983	e Betreuung	gondoskodás
 103984	r Verlauf	folyamat
-103985	vertiefen	mélyít
+103985	vertiefen	elmélyít, elmélyül
 103986	biegen	hajlít
 103987	vorerst	előbb, mindenekelőtt
 103988	landwirtschaftlich	mezőgazdasági
@@ -5534,3 +5534,20 @@
 105533	bestücken	felszerel
 105534	r Prozess	folyamat, eljárás
 105535	s Möbelstück	bútordarab
+105536	e Luftwaffe	légierő
+105537	r Garant	kezes
+105538	r Bruch	törés
+105539	r Aufsichtsrat	felügyelőbizottság
+105540	inspirieren	inspirál, ihlet
+105541	uneins	nem egységes
+105542	abwickeln	lebonyolít
+105543	konsultieren	konzultál, tanácskozik
+105544	r Kompass	iránytű
+105545	r Standpunkt	álláspont
+105546	derselb	ugyanaz
+105547	e Schlüsselfrage	kulcskérdés
+105548	wenn	ha
+105549	entgegengesetzt	ellenkező, ellentétes
+105550	Slowakei	Szlovákia
+105551	einmischen	beavatkozik
+105552	r Obdachlose	hajléktalan
