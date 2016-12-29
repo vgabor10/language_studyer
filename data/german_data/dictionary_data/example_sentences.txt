@@ -1494,15 +1494,10 @@
 100420	Edgar hatte eine zweifelhafte Begründung für sein Fehlen.
 100421	Nach jahrelangen Anstrengungen hatte sie es geschafft, auch international an der Spitze zu stehen.
 100421	Orientiere dich einfach an der Kirchturmspitze!
-100422	Das Risiko, vom Rauchen Lungenkrebs zu bekommen, ist sehr hoch.
-100422	Die Bauern bekommen Subventionen dafür, dass sie auf ihren Feldern Gras statt Getreide wachsen lassen.
-100422	Er bat darum, Einsicht in seine Akte zu bekommen.
 100422	Er hat noch keine Antwort darauf bekommen.
 100422	Ich habe den Bescheid noch nicht bekommen.
 100422	Ich habe eben eine E-Mail bekommen.
 100422	Ich habe eine Einladung zur Hochzeit bekommen.
-100422	Ich werde darauf dringen, dass Sie mehr Geld bekommen.
-100422	Sie bekommen ihre Bestellung in mehreren Lieferungen.
 100422	Wir bekommen selten Post.
 100422	Wir bekommen Sonntag Besuch.
 100423	Ein Lehrer aus Frankreich unterrichtet Französisch.

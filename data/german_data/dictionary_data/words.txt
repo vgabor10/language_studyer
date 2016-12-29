@@ -61,7 +61,7 @@
 100060	e Wand	fal
 100061	s Fieber	láz
 100062	e Idee	ötlet
-100063	Angst haben	fél (ig)
+100063	Angst haben	fél (kefejezés)
 100064	hungrig	éhes
 100065	durstig	szomjas
 100066	böse	gonosz
@@ -1297,7 +1297,7 @@
 101309	r Plattensee	Balaton
 101310	e Familie	család
 101311	r Vater	apa
-101312	r Großvater	nagypapa
+101312	r Großvater	nagyapa
 101313	r Urgroßvater	dédapa
 101314	e Mutter	anya
 101315	e Großmutter	nagymama
@@ -1777,7 +1777,7 @@
 101800	r Spieler	játékos (fn)
 101801	e Mannschaft	csapat
 101802	r Trainer	edző
-101803	s Spiel	meccs
+101803	s Spiel	játék, meccs
 101804	e Medaille	érem
 101805	r Verlierer	vesztes (fn)
 101806	r Gewinner	nyertes
@@ -5551,3 +5551,10 @@
 105550	Slowakei	Szlovákia
 105551	einmischen	beavatkozik
 105552	r Obdachlose	hajléktalan
+105553	festmachen	erősít, megerősít
+105554	e Ausfuhr	kivitel, export
+105555	mutmaßen	feltételez, sejt
+105556	e Einbuße	veszteség
+105557	s Minimum	minimum
+105558	über	át
+105559	e Mündung	torkolat
