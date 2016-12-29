@@ -1122,3 +1122,22 @@
 101121	cuddle	ölelés
 101122	tsunami	cunami, szökőár
 101123	void	üresség, hézag
+101124	wail	sír
+101125	notify	közöl, értesít
+101126	prosecutor	ügyész, vádló
+101127	vicious	gonosz, bűnös
+101128	outrageous	borzalmas, szörnyű
+101129	bat	ütő
+101130	impolite	udvariatlan
+101131	capable	alkalmas, hozzáértő
+101132	hideout	búvóhely, rejtekhely
+101133	decline	visszautasít
+101134	will	végrendelet
+101135	moron	idióta, hülye
+101136	villain	gazember
+101137	inquire	érdeklődik
+101138	elbow	könyök
+101139	lane	sáv
+101140	impair	elront, megrongál
+101141	remiss	hanyag
+101142	magnitude	jelentőség, terjedelem
