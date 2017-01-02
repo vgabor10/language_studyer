@@ -101,8 +101,6 @@
 100018	Im Deutschunterricht sollen die Schüler ein Gedicht interpretieren.
 100018	Im Russischunterricht müssen die Schüler Zeitungsartikel übersetzen.
 100018	Zirka ein Drittel aller Schüler besucht das Gymnasium.
-100019	Am Schluss der Veranstaltung wurde noch viel diskutiert.
-100019	Am Strand der Ostsee findet man viele Muscheln und Steine.
 100019	Anja singt seit vielen Jahren im Chor.
 100019	Auf dem Platz sind viele Menschen versammelt.
 100019	Bisher habe ich nie viel vor Prüfungen gelernt.
@@ -110,15 +108,9 @@
 100019	Die operativen Kosten sind viel zu hoch.
 100019	Diese Pflanze braucht viel Licht und Pflege.
 100019	Es ist viel billiger, sich außergerichtlich zu einigen.
-100019	Im Erzgebirge findet man noch viel traditionelles Handwerk.
-100019	Im Hinblick auf die Weltmeisterschaft muss noch viel trainiert werden.
-100019	Im Mittelalter starben viele Menschen an Seuchen.
 100019	Ingrid hat vier Geschwister.
 100019	Kinder muss man viel loben.
-100019	Meine Augen sind ganz schlecht geworden, weil ich so viel am PC arbeite.
 100019	Sie hat in ihrem Leben viel geleistet.
-100019	Viele Autounfälle entstehen dadurch, dass nicht genügend Abstand gehalten wird.
-100019	Viele Mädchen wollen sich die Brust vergrößern lassen.
 100019	Zu viele Fakten verwirren die Zuhörer.
 100020	Wir hatten ein schreckliches Erlebnis im Zoo, ein Löwe ist ausgebrochen.
 100021	Der Stuhl ist nicht sehr bequem.
@@ -487,10 +479,8 @@
 100112	Carla macht das Fenster weit auf.
 100112	Der General schaute aus dem Fenster.
 100112	Der Mann hatte sich zu weit aus dem Fenster gelehnt.
-100112	Die oberen Fenster sind schon lange nicht mehr geputzt worden.
 100112	Die Wärme entweicht durch schlecht isolierte Fenster.
 100112	Er öffnet das Fenster.
-100112	In dem Moment, als die Tür aufging, klappte das Fenster zu.
 100112	Martin schaut aus dem Fenster.
 100112	Nächste Woche putze ich die Fenster.
 100112	Um die Fenster zu putzen, brauche ich eine Leiter.
@@ -606,7 +596,6 @@
 100134	Dieses Land war lange Zeit sozialistisch.
 100134	Ein Boot mit Flüchtlingen ging in der Nacht an Land.
 100134	Im Land herrscht Unruhe.
-100134	In ihren späten Jahren erwarb sie ein Stück Land und baute sich darauf ein Haus.
 100134	Zahlreiche Touristen verlassen das Land.
 100135	Das bekannteste optische Gerät ist zweifellos die Brille.
 100135	Ich habe meine Brille verlegt.
@@ -1001,13 +990,7 @@
 100240	Der niedrige Ölpreis bremst Investitionen in der erneuerbare Energiebranche.
 100240	Im Westen ist die Arbeitslosigkeit niedriger als im Osten.
 100240	Im August hatten Deutschland die niedrigste Arbeitslosenzahl seit 25 Jahren.
-100242	Da stand ein junger Mann vor der Tür.
-100242	Der Anfang des 21. Jahrhunderts stand ganz im Zeichen des Terrors.
-100242	Der Verkehr stand durch die Demonstranten eine Stunde lang still.
-100242	Der Wettbewerb stand unter dem Motto „Schöner unsere Städte und Dörfer“.
 100242	Die Praxis ist medizinisch auf dem neuesten Stand.
-100242	Dort stand es schwarz auf weiß.
-100242	Nach dem Umzug stand die neue Wohnung voller Kisten.
 100242	Sie war auf dem neuesten Stand der Entwicklungen.
 100243	Das Dorf hat nur sechzig Einwohner.
 100243	Wie viele Einwohner hat Berlin?
@@ -2176,11 +2159,9 @@
 100723	Letztlich hat er doch zugestimmt.
 100723	Möglicherweise schaffen wir es doch bis zum vereinbarten Termin.
 100725	Die Debatte im Senat dauerte über vier Stunden.
-100726	Danke für das Geld zum Geburtstag. Ich habe mich sehr darüber gefreut.
 100726	Darüber hinaus gibt es nichts zu berichten.
 100726	Darüber muss ich erst mal nachdenken.
 100726	Darüber wurden keine Angaben gemacht.
-100726	Er hat kein Geld und darüber hinaus noch eine Menge Schulden.
 100726	Ich möchte jetzt nicht darüber reden.
 100726	Ich rate dir, noch einmal darüber nachzudenken.
 100726	In der arabischen Kultur denkt man anders darüber.
@@ -2621,14 +2602,11 @@
 100960	Beim Fall Ötzi handelt es sich wahrscheinlich um Mord.
 100960	Es wird wahrscheinlich eine Stunde dauern.
 100961	Am Bahnhof fahren Züge in alle Richtungen ab.
-100961	Angesichts der schlechten Straßenverhältnisse beschlossen wir, den Zug zu nehmen.
 100961	Berlin ist von Leipzig gut mit dem Zug erreichbar.
 100961	Der erste Zug fährt um sechs Uhr ab.
 100961	Der Zug aus Dresden hatte zehn Minuten Verspätung.
 100961	Der Zug hatte zwei Stunden Verspätung.
-100961	Der Zug kam eine halbe Stunde zu spät an, obwohl er ganz pünktlich losgefahren war.
 100961	Der Zug kam etliche Minuten zu spät im Bahnhof an.
-100961	Der Zug zwischen Halle und Leipzig verkehrt jetzt alle halbe Stunde.
 100961	Ich habe den Zug verpasst.
 100961	Ich muss den Zug unbedingt kriegen.
 100961	Ich vermute, der Zug kommt zu spät.
@@ -3774,7 +3752,6 @@
 101551	Alte Traditionen müssen gepflegt werden.
 101551	Der Garten wird mit großer Sorgfalt gepflegt.
 101552	Diese Seife ist von höchster Qualität.
-101554	Vor dem Duschen setzt man besser die Brille ab.
 101555	Das Wasser ist zu kalt zum Baden.
 101555	Baden ist hier gefährlich.
 101555	Ich bin mit dem Baden fertig.
@@ -4615,10 +4592,7 @@
 102083	Ich wünsche mir ein Buch zu Weihnachten.
 102083	Weihnachten ist das Fest der Familie.
 102083	Weihnachten rückt immer näher.
-102083	Weihnachten rückt immer näher. 2 prep near, close to
-102083	Zu Weihnachten habe ich Karten für die Oper bekommen.
 102083	Zu Weihnachten lag leider kein Schnee.
-102083	Zu Weihnachten schenken sich alle Familienmitglieder etwas.
 102084	Anna feiert ihren vierten Geburtstag im Kindergarten.
 102084	Daniel feiert seinen Geburtstag im Kreise seiner Familie.
 102084	Ich gratuliere dir nachträglich zum Geburtstag.
@@ -5033,11 +5007,7 @@
 102282	Christine studiert Mathematik, besucht aber auch Kurse in Philosophie.
 102282	Das ist aber schön.
 102282	Das ist mir aber peinlich.
-102282	Die meisten Menschen träumen im Schlaf, wissen am Morgen aber nichts mehr davon.
-102282	Einerseits liebe ich ihn, aber andererseits möchte ich mich nicht binden.
 102282	Er hat zwar Lust zu kommen, aber keine Zeit.
-102282	Es mangelt ihm an vielen Sachen, vor allem aber an Geld.
-102282	Ich wollte gerade eine Frage stellen, aber Hannes hat mich unterbrochen.
 102282	Sechs Uhr morgens? Das ist aber sehr früh!
 102282	Viele Leute beobachteten den Unfall, aber keiner half.
 102283	Das Klima ist von der Nähe zum Meer abhängig.
@@ -7262,7 +7232,6 @@
 103480	Lediglich 30% der Bevölkerung beteiligten sich an der Wahl.
 103481	Olaf kann man nur mit harten Fakten überzeugen.
 103481	Zu viele Fakten verwirren die Zuhörer.
-103481	Zu viele Fakten verwirren die Zuhörer. 
 103482	Ich kann mich nicht beklagen.
 103482	Sie hatten den Tod ihres Vaters zu beklagen.
 103482	„Wie geht’s?“ – „Ich kann mich nicht beklagen.“

@@ -169,7 +169,7 @@
 100170	glide	siklik
 100171	layout	alaprajz
 100172	immense	óriási
-100173	delicate	finom
+100173	delicate	finom, kényes
 100174	encounter	találkozik
 100175	velocity	sebesség
 100176	peeve	idegesít
@@ -832,7 +832,7 @@
 100836	clash	összeütközés, nézeteltérés
 100837	freight	teher, rakomány
 100838	compliance	betartás, teljesítés
-100839	waive	lemond valamiről
+100839	waive	felad, lemond
 100840	comply	teljesít, engedelmeskedik
 100841	aviation	repülés, légi közlekedés
 100842	interfere	zavar, beavatkozik
@@ -1141,3 +1141,19 @@
 101140	impair	elront, megrongál
 101141	remiss	hanyag
 101142	magnitude	jelentőség, terjedelem
+101143	narrative	elbeszélés, elmesélés
+101144	assault	támad, megtámad
+101145	frame	hamisan megvádol
+101146	forensic	bírósági
+101147	contempt	lenézés, szégyen
+101148	adultery	házasságtörés
+101149	scuffle	dulakodik, viaskodik
+101150	subpoena	bírósági idézés
+101151	seal	pecsét
+101152	utter	kiejt, kimond
+101153	expose	megvilágít, leleplez
+101154	assert	követel
+101155	curtail	rövidít
+101156	rage	harag, düh
+101157	acquit	felment
+101158	waiter	pincér

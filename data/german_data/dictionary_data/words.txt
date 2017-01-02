@@ -609,7 +609,7 @@
 100613	s Interview	interjú
 100614	einladen	meghív
 100615	s Tausend	ezer (fn)
-100616	verbessern	javít
+100616	verbessern	javít, megjavít
 100617	s Essen	étel, evés
 100618	wunderbar	csodálatos
 100619	handeln	cselekszik, kereskedik
@@ -729,7 +729,7 @@
 100735	verlangen	kér, követel
 100736	lassen	hagy
 100737	e Tat	tett
-100738	folgen	követ
+100738	folgen	követ, következik
 100739	e Baustelle	építkezés
 100740	entlang	mellett, mentén
 100741	bedeuten	jelent
@@ -1039,7 +1039,7 @@
 101051	r Jurist	jogász
 101052	e Behinderung	fogyatékosság
 101053	s Urteil	ítélet, megítélés
-101054	s Handwerk	szakma
+101054	s Handwerk	szakma, mesterség
 101055	treten	lép, rúg, jár
 101056	e Empörung	lázadás
 101057	r Redakteur	szerkesztő
@@ -1085,7 +1085,7 @@
 101097	erscheinen	látszik
 101098	klettern	mászik
 101099	r Rundblick	panoráma
-101100	begleiten	kísér
+101100	begleiten	elkísér, kísér
 101101	kehren	söpör
 101102	r Stock	emelet
 101103	s Gewitter	vihar
@@ -1534,7 +1534,6 @@
 101551	gepflegt	ápolt
 101552	e Seife	szappan
 101553	r Schampoo	sampon
-101554	s Duschen	tusolás
 101555	s Baden	fürdés
 101556	störend	zavaró
 101557	s Parfum	parfüm
@@ -1561,7 +1560,7 @@
 101579	erledigen	elintézni vmit
 101580	aufräumen	kitakarít
 101581	r Finger	ujj
-101582	s Bein	láb
+101582	s Bein	láb, csont
 101583	s Warenhaus	áruház
 101584	s Gebäude	épület
 101585	e Abteilung	részleg, osztály
@@ -1791,7 +1790,7 @@
 101815	e Schwimmhalle	uszoda
 101816	e Bewertung	értékelés
 101817	s System	rendszer
-101818	e Eröffnungsfeier	megnyitó
+101818	e Eröffnungsfeier	megnyitóünnepség
 101819	e Fackel	fáklya
 101820	s Stadion	stadion
 101821	e Verletzung	sérülés
@@ -2708,7 +2707,7 @@
 102767	ökonomisch	gazdasági
 102768	e Feuerwehr	tűzoltóság
 102769	r Außenminister	külügyminiszter
-102770	prüfen	megvizsgál
+102770	prüfen	vizsgál
 102771	e Gestalt	forma, alak
 102772	r Name	név
 102773	ehe	mielőtt, amíg
@@ -3407,7 +3406,7 @@
 103478	total	teljes, totális
 103479	schimpfen	szid
 103480	beteiligen	részt vesz
-103481	e Fakten	tények
+103481	r Fakt	tény
 103482	beklagen	panaszkodik, sajnál
 103483	bayrisch	bajor (mn)
 103484	e Bedrohung	fenyegetés
@@ -4231,7 +4230,7 @@
 104321	r Lärm	zaj
 104322	tot	halott (mn)
 104323	fixieren	rögzít
-104324	verteidigen	véd
+104324	verteidigen	megvéd, véd
 104325	trocken	száraz
 104326	wohnen	lakik
 104327	r Landkreis	körzet
@@ -4658,7 +4657,7 @@
 104763	befehlen	parancsol
 104765	beißen	harap
 104768	betrügen	becsap
-104774	blasen	fújni
+104774	blasen	fúj
 104783	einbiegen	bekanyarodik
 104790	erlöschen	elalszik a tűz
 104807	gelten	érvényes (ige)
@@ -5300,7 +5299,7 @@
 105301	kippen	billen
 105302	weder ... noch	sem ... sem
 105303	designieren	kijelöl
-105304	e Sanierung	tatrozás
+105304	e Sanierung	tatarozás
 105305	r Überschuss	felesleg
 105306	untragbar	elviselhetetlen
 105307	hemmen	akadályoz, gátol
@@ -5558,3 +5557,27 @@
 105557	s Minimum	minimum
 105558	über	át
 105559	e Mündung	torkolat
+105560	r Diamant	gyémánt
+105561	s Kupfer	réz
+105562	e Dekade	évtized
+105563	r Binnenstaat	tegerpart nélküli ország
+105564	r Pfeil	nyil
+105565	e Hinrichtung	kivégzés
+105566	e Moschee	mecset
+105567	behüten	megóv
+105568	e Wendung	fordulat
+105569	e Ankunft	érkezés
+105570	wehrlos	védtelen
+105571	bestraffen	megbüntet, büntet
+105572	sich enthalten	tartózkodik
+105573	e Flamme	láng
+105574	r Taucher	búvár
+105575	r Elefant	elefánt
+105576	r Meilenstein	mérföldkő
+105577	e Meile	mérföld
+105578	r Nachschub	utánpótlás
+101554	r Pokal	kupa
+105579	r Milliardär	milliárdos
+105580	e Scheu	félelem, aggódás
+105581	r Rumpf	törzs, hajótest
+105582	r Ruß	korom
