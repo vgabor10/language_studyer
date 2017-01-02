@@ -57,13 +57,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        if (dataContainer.studyStrategy.cardCategoryRestrictions.contains(-1)) {
-            jLabel25.setText("");
-        }
-        else {
-            jLabel25.setText("card category constrains are used!");
-        }
-        
         CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
         for (int i=0; i<testedCards.numberOfCards(); i++) {
             Card card = testedCards.getCardByOrder(i);
@@ -155,7 +148,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -237,9 +229,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
 
         jLabel24.setText("jLabel24");
 
-        jLabel25.setForeground(new java.awt.Color(224, 40, 40));
-        jLabel25.setText("card category constrains are used!");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -303,8 +292,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel12))
-                            .addComponent(jLabel25))
+                                .addComponent(jLabel12)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -362,8 +350,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel9)
                             .addComponent(jLabel12))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton1)
@@ -454,7 +440,6 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

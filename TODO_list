@@ -33,3 +33,15 @@ Card category tree suggestions:
 - kifejezések
 - tanulandó szavak
 - országok
+
+Create ős class:
+
+StudyItemStudier
+	StudyItemTester
+	DataContainer
+	StatisticsMaker
+	StudyStrutegy
+
+StudyItem
+	int index
+	set categories

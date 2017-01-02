@@ -249,7 +249,7 @@ public class CardChooser {
         ////////////////////////////////////////////////////
         
         logger.debug("start evaluate random hardest card indexes");
-        indexesToAdd = getRandomHardestCardIndexes(0.2, studyStrategy.numberOfCardsFromTheLeastKnown20Percent, omittedCardIndexes);
+        indexesToAdd = getRandomHardestCardIndexes(0.4, studyStrategy.numberOfCardsFromTheLeastKnown20Percent, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
         
         logger.debug("card indexes: " + indexesToAdd);
@@ -258,7 +258,7 @@ public class CardChooser {
         
         logger.debug("start evaluate random hardest card indexes 2");
         
-        indexesToAdd = getRandomHardestCardIndex2(100, studyStrategy.numberOfCardsFromTheLeastKnown100, omittedCardIndexes);
+        indexesToAdd = getRandomHardestCardIndex2(600, studyStrategy.numberOfCardsFromTheLeastKnown100, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
         logger.debug("card indexes: " + indexesToAdd);

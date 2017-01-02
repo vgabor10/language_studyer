@@ -159,12 +159,12 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jCheckBox1.setText("question among cards above answer rate");
         jCheckBox1.setEnabled(false);
 
-        jSpinner6.setModel(new javax.swing.SpinnerNumberModel(20, null, null, 1));
+        jSpinner6.setModel(new javax.swing.SpinnerNumberModel(40, 0, 100, 1));
         jSpinner6.setEnabled(false);
 
         jLabel8.setText("%");
 
-        jSpinner7.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
+        jSpinner7.setModel(new javax.swing.SpinnerNumberModel(600, 0, null, 1));
         jSpinner7.setEnabled(false);
 
         jLabel9.setText("least significant answer rate");
@@ -222,12 +222,12 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
                                             .addComponent(jLabel2)
                                             .addComponent(jLabel3))
                                         .addGap(8, 8, 8)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jSpinner7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jSpinner6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addGap(8, 8, 8)
-                                                .addComponent(jLabel8))))))
+                                                .addComponent(jLabel8))
+                                            .addComponent(jSpinner7)))))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jCheckBox1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
