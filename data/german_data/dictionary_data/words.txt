@@ -803,7 +803,6 @@
 100810	e Aussicht	kilátás, remény
 100811	hohe	magas
 100812	besonders	különös
-100813	genehmigt	elfogadott
 100814	mindestens	legalább
 100815	berichten	beszámol, tudósít
 100816	geltend	érvényes (mn)
@@ -2864,7 +2863,7 @@
 102926	r Atem	légzés
 102927	e Gelegenheit	alkalom
 102928	optimistisch	optimista
-102929	e Hütte	menedékház
+102929	e Hütte	kunyhó, menedékház
 102930	e Figur	ábra
 102931	r Aufsatz	tanulmány
 102932	rauschen	zúg
@@ -3777,7 +3776,7 @@
 103860	r Geliebte	szerető
 103861	kennen	ismer
 103863	s Lächeln	mosoly
-103864	spiegeln	ragyog, tükröz
+103864	spiegeln	tükröz, ragyog
 103865	s Umfeld	környezet
 103866	reichen	elér
 103868	zumindest	legalább
@@ -4326,7 +4325,7 @@
 104420	r Zinssatz	kamat, kamatláb
 104421	r Einzelfall	egyedi eset
 104422	regelmäßig	szabályos, rendszeres
-104423	bereiten	elkészít, okoz
+104423	bereiten	okoz
 104424	r Transport	szállítás, szállítmány
 104425	traditionell	hagyományos
 104426	absurd	abszurd, képtelen
@@ -5568,7 +5567,7 @@
 105568	e Wendung	fordulat
 105569	e Ankunft	érkezés
 105570	wehrlos	védtelen
-105571	bestraffen	megbüntet, büntet
+105571	bestrafen	megbüntet, büntet
 105572	sich enthalten	tartózkodik
 105573	e Flamme	láng
 105574	r Taucher	búvár
@@ -5581,3 +5580,6 @@
 105580	e Scheu	félelem, aggódás
 105581	r Rumpf	törzs, hajótest
 105582	r Ruß	korom
+105583	e Telefonnummer	telefonszám
+105584	strafen	büntet, megbüntet
+100813	genehmigen	jóváhagy, beleegyezik

@@ -1112,8 +1112,6 @@
 100278	Eine radikale Veränderung steht uns bevor.
 100278	Ich kann mich gut auf Veränderungen einstellen.
 100279	Das Hochwasser richtete erheblichen Schaden an.
-100283	Der Eisregen machte die Straßen so glatt, dass ich mehrmals fast gestürzt wäre.
-100283	Es ist schon fast Mitternacht. Deshalb
 100283	Es ist schon fast Mitternacht. Deshalb sollten wir jetzt nach Hause gehen.
 100283	Fast jedes Medikament hat unerwünschte Nebenwirkungen.
 100283	Gras wächst fast überall.
@@ -2343,8 +2341,6 @@
 100812	Im dritten Quartal sind die Verluste besonders gestiegen.
 100812	In welchen Lebensmitteln ist besonders viel Kalzium?
 100812	Start und Landung sind beim Fliegen besonders kritisch.
-100813	Der amerikanische Senat genehmigte den Vertrag zügig.
-100813	Der Manager genehmigte unseren Plan.
 100814	Das Haus kostet mindestens eine Million Euro.
 100814	Die Gründung eines Vereins erfordert mindestens sieben Mitglieder.
 100814	Für den Kuchen braucht man mindestens drei Eier.
@@ -3392,11 +3388,9 @@
 101391	Das Dach ist eingestürzt.
 101392	Er klingelte. Es machte ihm jedoch niemand auf.
 101393	Du hast die Rechnung immer noch nicht bezahlt.
-101395	Das Unternehmen ist gerade dabei, ein internes Netzwerk einzurichten.
 101395	Der Name ist mir gerade entfallen.
 101395	Der Vater von Andrea ist gerade vierzig geworden.
 101395	Ich habe gerade Besuch.
-101395	Ich wollte gerade eine Frage stellen, aber Hannes hat mich unterbrochen.
 101395	Im Kino läuft unter anderem gerade Casablanca.
 101395	Man ist gerade dabei, diese Software zu optimieren.
 101395	Moment, ich telefoniere gerade.
@@ -10048,12 +10042,9 @@
 102969	Etwas hatte seine Aufmerksamkeit erregt.
 102969	Ich bin gleich weg, soll ich noch etwas mitbringen?
 102969	Ich habe geahnt, dass etwas passiert ist.
-102969	Ich habe gleich ein Seminar, zuvor muss ich noch etwas kopieren.
-102969	Nach der Knieoperation war er im Laufen noch etwas unsicher.
 102969	Richte ihm bitte aus, dass ich erst etwas später komme.
 102969	Sie gingen ins Kino und anschließend noch etwas essen.
 102969	Wir begreifen einfach nicht, wie so etwas möglich ist.
-102969	Zu Weihnachten schenken sich alle Familienmitglieder etwas.
 102990	Es gab widersprüchliche Meldungen aus dem Krisengebiet.
 102990	Diese Partei besteht aus widersprüchlichen Elementen.
 102990	Unsere Diplomatie und Kriegsstrategie waren offensichtlich widersprüchlich.
