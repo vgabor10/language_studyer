@@ -511,7 +511,7 @@
 100513	r Leiter	vezető
 100514	piksen	megszúr
 100515	empfinden	érez, észlel
-100516	erleichtern	könnyít
+100516	erleichtern	megkönnyít, könnyít
 100517	e Behandlung	kezelés
 100518	betonen	hangsúlyoz
 100519	entscheiden	eldönt
@@ -3797,7 +3797,7 @@
 103883	schief	ferde
 103884	konzentrieren	koncentrál, összpontosít
 103885	nachdenklich	gondolkodtató
-103886	s Gefühl	érzés
+103886	s Gefühl	érzés, érzelem
 103887	strecken	kinyújt, kiterjeszt
 103888	korrekt	pontos, helyes
 103889	r Kongress	kongresszus
@@ -4332,7 +4332,7 @@
 104427	anrichten	elkövet
 104428	r Parkplatz	parkolóhely
 104429	versagen	megbukik, kudarcot vall
-104430	linke	bal (mn)
+104430	link	bal (mn)
 104431	umsonst	ingyen, hiába
 104432	zittern	remeg, reszket
 104433	zurückweisen	elutasít, visszautasít
@@ -4348,7 +4348,7 @@
 104443	beruhen	alapul, alapszik, nyugszik
 104444	s Café	kávézó
 104445	selbe	ugyanaz
-104446	e Anleihe	kölcsön (fn)
+104446	e Anleihe	kölcsön
 104447	s Experiment	kísérlet
 104448	anstehen	fennáll, sorban áll
 104449	repräsentieren	képvisel, reprezentál
@@ -4419,7 +4419,7 @@
 104515	konfrontieren	szembeszáll
 104516	andererseits	másrészt, másfelől
 104517	e Entschuldigung	bocsánatkérés
-104518	veröffentlichen	publikál, közzétesz
+104518	veröffentlichen	publikál, közzétesz, kiad
 104519	vorherrschen	túlsúlyban van, uralkodik
 104520	ansehen	ránéz, megnéz
 104521	sorgen	aggódik, gondoskodik
@@ -5243,7 +5243,7 @@
 105247	e Hoheit	méltóság
 105248	verwüsten	letarol, lerombol
 105249	schöpfen	kinyer, merít
-105250	s Potential	lehetőség
+105250	s Potential	lehetőség, potenciál
 105251	e Präsenz	jelenlét
 105252	Großbritannien	Nagy-Britannia
 105253	beteuern	bizonygat
@@ -5583,3 +5583,9 @@
 105583	e Telefonnummer	telefonszám
 105584	strafen	büntet, megbüntet
 100813	genehmigen	jóváhagy, beleegyezik
+105585	e Ausgleichung	kiegyenlítés
+105586	r Radfahrer	kerékpáros
+105587	anweisen	utasít, kiutal
+105588	überfallen	megtámad
+105589	e Abkürzung	rövidítés
+105590	sich senken	süllyed

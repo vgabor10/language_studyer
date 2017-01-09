@@ -931,7 +931,7 @@
 100936	blanket	takaró
 100937	forthright	egyenes, őszinte
 100938	obliterate	kitöröl, eltávolít
-100939	pork	disznóhús
+100939	pork	sertéshús, disznóhús
 100940	hypocrite	képmutató, álszent
 100941	adamant	hajthatatlan
 100942	rib	borda
@@ -1157,3 +1157,35 @@
 101156	rage	harag, düh
 101157	acquit	felment
 101158	waiter	pincér
+101159	solvency	fizetőképesség
+101160	day after tomorrow	holnapután
+101161	depart	eltávozik, meghal
+101162	death	halál
+101163	outward	kifelé
+101164	decay	hanyatlás, pusztulás
+101165	decadence	romlás, hanyatlás
+101166	exterminate	kiírt, megsemmisít
+101167	overlook	elnéz, szemet huny
+101168	fled	elmenekül (múlt idő)
+101169	decree	határoz, elrendel
+101170	preposterous	abszurd, ostoba
+101171	break	szünet
+101172	coy	félénk, szemérmes
+101173	vary	változtat
+101174	flatten	lapít, szétlapít
+101175	gal	csaj, lány
+101176	grasshopper	szöcske, tücsök
+101177	jew	zsidó
+101178	blame	hibáztat
+101179	satchel	hátitáska
+101180	hijacker	útonálló, gépeltérítő
+101181	necklace	nyaklánc
+101182	attendant	kiszolgáló, szolga
+101183	bucket	vödör
+101184	stink	bűz
+101185	swear	esküszik
+101186	proceed	folytatódik, tovább megy
+101187	halo	glória
+101188	pawn	gyalog, paraszt
+101189	concern	kétely, aggodalom
+101190	chop	szelet, hússzelet
