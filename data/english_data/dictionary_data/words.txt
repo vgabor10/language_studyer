@@ -1189,3 +1189,7 @@
 101188	pawn	gyalog, paraszt
 101189	concern	kétely, aggodalom
 101190	chop	szelet, hússzelet
+101191	of course	természetesen
+101192	doll	baba, bábú
+101193	covet	óhejt, kíván sóvárog
+101194	hollow	üres, üreges
