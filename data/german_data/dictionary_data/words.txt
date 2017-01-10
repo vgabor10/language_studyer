@@ -5589,3 +5589,13 @@
 105588	überfallen	megtámad
 105589	e Abkürzung	rövidítés
 105590	sich senken	süllyed
+105591	zusammenhalten	összefog, összetart
+105592	r Verdächtiger	gyanúsított
+105593	wegspülen	elmos, elhord
+105594	immer noch	még mindig
+105595	mithelfen	segít, közreműködik
+105596	e Affäre	ügy, botrány
+105597	e Richterin	bírónő
+105598	Elbe	Elba
+105599	r Weih	felavatás, felszentelés
+105600	s Video	videó
