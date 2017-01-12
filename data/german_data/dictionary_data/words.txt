@@ -241,7 +241,7 @@
 100241	aufweisen	felmutat
 100242	r Stand	állapot
 100243	r Einwohner	lakos
-100244	einnehmen	bevesz, elfoglal
+100244	einnehmen	beszed, elfoglal
 100245	e Bezeichnung	elnevezés
 100246	zwischen	között
 100247	während	közben, alatt (időben)
@@ -811,7 +811,7 @@
 100819	r Einwand	ellenvetés
 100820	beantragen	indítványoz
 100821	plötzlich	hirtelen
-100822	r Strom	folyam, ár
+100822	r Strom	folyam, ár, áram
 100823	e Unterschrift	aláírás
 100824	e Besatzung	személyzet, legénység
 100825	eigentlich	tulajdonképpen
@@ -990,7 +990,7 @@
 101002	überraschen	meglep
 101003	ausfallen	kiesik, elmarad
 101004	s Zeitalter	korszak
-101005	r Zustand	állapot
+101005	r Zustand	állapot, állag
 101006	r Vormittag	délelőtt
 101007	e Frucht	gyümölcs, termés
 101008	r Rentner	nyugdíjas
@@ -2577,7 +2577,7 @@
 102633	enden	befelyez, végződik
 102634	endlich	végül
 102635	endlos	végtelen
-102636	engagieren	alkalmaz
+102636	engagieren	alkalmaz, gyakorol
 102637	englisch	angol (mn)
 102638	enorm	óriási
 102639	e Norm	norma
@@ -5599,3 +5599,28 @@
 105598	Elbe	Elba
 105599	r Weih	felavatás, felszentelés
 105600	s Video	videó
+105601	würdigen	méltat, elismer
+105602	r Sachverstand	szakértelem, hozzáértés
+105603	r Ruck	lökés, rántás, zökkenés
+105604	Abschied nehmen	búcsút vesz
+105605	e Söhne	fiúk
+105606	e Synode	zsinat
+105607	r Schmuddel	mocsok, piszok
+105608	r Mut	kedv, hangulat
+105609	anheuern	kibérel, alapít
+105610	e Abgabe	adó, illeték
+105611	e Vergabe	kiadás
+105612	dämmen	szigetel, gátat épít
+105613	e Niederlassung	telep, telephely
+105614	verdichten	tömít, sűrít
+105615	s Gewerbe	szakma
+105616	r Ausschuss	selejt
+105617	r Ausschuss	bizottság
+105618	r Versicherer	biztosító
+105619	umhören	érdeklődik
+105620	e Aufsicht	őrizet, felügyelet
+105621	s Augenzwinkern	kacsintás
+105622	e Kauflust	vásáróledv
+105623	e Unterbringung	elszállásolás, elhelyezés
+105624	r Schwung	lendület, lelkesedés
+105625	verbuchen	elkönyvel

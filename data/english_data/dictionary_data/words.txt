@@ -1193,3 +1193,8 @@
 101192	doll	baba, bábú
 101193	covet	óhejt, kíván sóvárog
 101194	hollow	üres, üreges
+101195	statue	szobor
+101196	eternal	örök
+101197	mascot	kabala, talizmán
+101198	bench	pad
+101199	camel	teve

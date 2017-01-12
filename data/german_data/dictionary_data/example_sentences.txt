@@ -996,6 +996,7 @@
 100243	Wie viele Einwohner hat Berlin?
 100243	Indien ist mit seinen rund 1,3 Milliarden Einwohnern der drittgrößte Produzent von Treibhausgasen.
 100244	Die Tabletten muss man eine halbe Stunde vor dem Essen einnehmen.
+100244	Der deutsche Staat nahm mehr Geld ein als er ausgab.
 100245	Wie ist die lateinische Bezeichnung für diese Pﬂanze?
 100246	Das Buch liegt zwischen den Kissen.
 100246	Der Kampf zwischen Arbeitgebern und Arbeitnehmern geht weiter.
