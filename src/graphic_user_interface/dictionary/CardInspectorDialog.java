@@ -2,8 +2,7 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DataContainer;
-import dictionary.DataModificator;
+import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
@@ -12,7 +11,7 @@ import language_studyer.AnswerDataByStudyItem;
 public class CardInspectorDialog extends javax.swing.JDialog {
 
     private Card cardToInspect;
-    private DataContainer dictionaryDataContainer;
+    private Dictionary dictionary;
     
     public DialogAnswer dialogAnswer;
     
@@ -28,9 +27,9 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         seeCardStatisticsButton.setMnemonic(KeyEvent.VK_I);
     }
     
-    public void setDictionaryDataContainer(DataContainer ddc) {
-        dictionaryDataContainer = ddc;
-        cardInspectorPanel.dictionaryDataContainer = ddc;
+    public void setDictionary(Dictionary dictionary) {
+        this.dictionary = dictionary;
+        cardInspectorPanel.dictionaryDataContainer = dictionary.dataContainer;
     }
     
     public void setCardToInspect(Card card) {
@@ -163,7 +162,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
         answerDataByStudyItem.loadDataFromAnswerDataContainer(cardToInspect.index,
-            dictionaryDataContainer.answerDataContainer);
+            dictionary.dataContainer.answerDataContainer);
         dialog.answerDataByCard = answerDataByStudyItem;
 
         dialog.initialise();
@@ -183,10 +182,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         if (reinforceAnswer.boolAnswer) {
             dialogAnswer.stringAnswer = "delete_card";
 
-            DataModificator dictionaryDataModificator 
-                    = new DataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToInspect.index);
+            dictionary.dataModificator.removeCardByCardIndex(cardToInspect.index);
             
             dispose();
         }
@@ -203,10 +199,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
 
         if (reinforceAnswer.boolAnswer) {
-            DataModificator dictionaryDataModificator 
-                    = new DataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.removeCardAnswerDataByCardIndex(cardToInspect.index);
+            dictionary.dataModificator.removeCardAnswerDataByCardIndex(cardToInspect.index);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -216,11 +209,8 @@ public class CardInspectorDialog extends javax.swing.JDialog {
         cardToInspect.definition = cardInspectorPanel.getDefinition();
         cardToInspect.exampleSentences = cardInspectorPanel.getExampleSentences();
         cardToInspect.categoryIndexes = cardInspectorPanel.getCategories();
- 
-        DataModificator dictionaryDataModificator 
-                = new DataModificator();
-        dictionaryDataModificator.setData(dictionaryDataContainer);
-        dictionaryDataModificator.writeLanguageDataToFile();
+
+        dictionary.dataModificator.writeAllDataToFile();
         
         dialogAnswer.stringAnswer = "save_card";    
         dispose();

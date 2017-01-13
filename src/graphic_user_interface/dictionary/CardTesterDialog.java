@@ -398,7 +398,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private void inspectCardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inspectCardButtonActionPerformed
         CardInspectorDialog dialog 
                 = new CardInspectorDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionary.dataContainer);
+        dialog.setDictionary(dictionary);
         dialog.setCardToInspect(cardTester.getActualQuestionedCard());
         DialogAnswer dialogAnswer = new DialogAnswer();
         dialog.dialogAnswer = dialogAnswer;
@@ -410,7 +410,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
             DataModificator dictionaryDataModificator 
                     = new DataModificator();
             dictionaryDataModificator.setData(dictionary.dataContainer);
-            dictionaryDataModificator.writeLanguageDataToFile();
+            dictionaryDataModificator.writeAllDataToFile();
             
             fillCardDatasToDialog();
         }

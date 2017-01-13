@@ -342,7 +342,7 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
             DataModificator dictionaryDataModificator 
                     = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.removeCardWithAnswersByCardIndex(cardToSuggestSentence.index);
+            dictionaryDataModificator.removeCardByCardIndex(cardToSuggestSentence.index);
             
             deleteRowFromTable(selectedTableRowIndex);
             clearTable();
@@ -352,7 +352,7 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
             DataModificator dictionaryDataModificator 
                     = new DataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
-            dictionaryDataModificator.writeLanguageDataToFile();
+            dictionaryDataModificator.writeAllDataToFile();
 
             clearTable();
         }

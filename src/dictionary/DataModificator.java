@@ -19,13 +19,11 @@ public class DataModificator {
         this.dataContainer = dataContainer;
     }
 
-    public void removeCardWithAnswersByCardIndex(int cardIndex) {
+    public void removeCardByCardIndex(int cardIndex) {
         dataContainer.cardContainer.removeByIndex(cardIndex);
         dataContainer.answerDataContainer.removeAnswersWithIndex(cardIndex);
 
-        saveCardContainerDataToFile();
-        saveAnswerDataContainerDataToFile();
-        saveExampleSentencesDataToFile();
+        writeAllDataToFile();
     }
     
     public void removeCardAnswerDataByCardIndex(int cardIndex) {
@@ -160,7 +158,7 @@ public class DataModificator {
         }           
     }
 
-    public void writeLanguageDataToFile() {
+    public void writeAllDataToFile() {
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();
         saveExampleSentencesDataToFile();
