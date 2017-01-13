@@ -396,6 +396,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jTable2MouseClicked
 
     private void listAllCardsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listAllCardsButtonActionPerformed
+        jTextField1.setText("");
         cardFinder.listAllCard();
         toScreenCards(cardFinder.foundCards);
         
