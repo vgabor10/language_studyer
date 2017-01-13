@@ -1206,3 +1206,5 @@
 101205	incinerate	hamvaszt
 101206	insurgent	felkelő, lázadó
 101207	repercussion	visszahatás
+101208	sink	mosogató
+101209	cherry	cseresznye
