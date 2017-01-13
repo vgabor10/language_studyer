@@ -5662,3 +5662,14 @@
 105662	r Personenwagen	személygépkocsi
 105663	e Invasion	invázió, megszállás
 105664	e Mine	akna
+105346	ungerecht	igazságtalan
+105665	erfrieren	megfagy
+105666	e Gewohnheit	szokás
+105667	zurecht	rendben, helyesen
+105668	Südpol	Déli-sark
+105669	r Sponsor	szponzor
+105670	Kroatie	Horvátország
+105671	e Juwel	ékszer
+105672	umständlich	nehézkes, körülményes
+105673	nachmachen	utánoz
+105674	s Lebenswerk	életmű
