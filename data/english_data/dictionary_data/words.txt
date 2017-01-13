@@ -1230,3 +1230,13 @@
 101229	whatever	bármi, akármi
 101230	curfew	kijárási tilalom
 101231	delay	késik
+101232	curtain	függöny
+101233	budding	bimbózó
+101234	marvel	csodálkozik, bámul
+101235	subversive	államellenes, bomlasztó, felforgató
+101236	ancestor	ős, felmenő
+101237	bygone	múlt, régi
+101238	tasteful	ízléses
+101239	inferior	alárendelt, alábbvaló
+101240	instructive	tanulságos
+101241	omission	mulasztás
