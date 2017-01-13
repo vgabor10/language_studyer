@@ -34,8 +34,10 @@ public class DataModificator {
     public void addCard(Card card) {
         card.index = dataContainer.cardContainer.getEmptyCardIndex();
         dataContainer.cardContainer.addCard(card);
+        
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();
+        saveCardIndexesAndCategoryIndexesDataToFile();
     }
 
     //TODO: make it more safe: save new data to file, then delete old data, then rename new data

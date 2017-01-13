@@ -2,8 +2,8 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DataContainer;
 import dictionary.DataModificator;
+import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
 import java.awt.event.KeyEvent;
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class CardAdderDialog extends javax.swing.JDialog {
 
-    private DataContainer dictionaryDataContainer;
+    private Dictionary dictionary;
     public DialogAnswer dialogAnswer;
     
     private Logger logger = new Logger();
@@ -24,9 +24,9 @@ public class CardAdderDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
-    public void setDictionaryDataContainer(DataContainer ddc) {
-        dictionaryDataContainer = ddc;
-        cardInspectorPanel1.dictionaryDataContainer = ddc;
+    public void setDictionary(Dictionary dictionary) {
+        this.dictionary = dictionary;
+        cardInspectorPanel1.dictionaryDataContainer = dictionary.dataContainer;
     }
     
     /**
@@ -113,7 +113,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         Card cardToAdd = cardInspectorPanel1.getCardData();
         
         List<Integer> cardIndexesWithTheSameTerm = 
-                dictionaryDataContainer.cardContainer.findCardsByTerm(cardToAdd.term);
+                dictionary.dataContainer.cardContainer.findCardsByTerm(cardToAdd.term);
         
         if (!cardIndexesWithTheSameTerm.isEmpty()) {
             DialogAnswer addCardDialogAnswer = new DialogAnswer();
@@ -122,7 +122,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
             
             String dialogDescription = "Following cards with given term already exist:\n";
             for (int cardIndex : cardIndexesWithTheSameTerm) {
-                Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+                Card card = dictionary.dataContainer.cardContainer.getCardByIndex(cardIndex);
                 dialogDescription = dialogDescription.concat(card.toString() + "\n");
             }
             dialogDescription = dialogDescription.concat("Would you like to add the card anyway?");
@@ -134,10 +134,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
             dialog.setVisible(true);
       
             if (addCardDialogAnswer.boolAnswer) {
-                DataModificator dictionaryDataModificator 
-                        = new DataModificator();
-                dictionaryDataModificator.setData(dictionaryDataContainer);
-                dictionaryDataModificator.addCard(cardToAdd);
+                dictionary.dataModificator.addCard(cardToAdd);
 
                 dialogAnswer.stringAnswer = "save_card";
 
@@ -148,7 +145,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         else {
             DataModificator dictionaryDataModificator 
                 = new DataModificator();
-            dictionaryDataModificator.setData(dictionaryDataContainer);
+            dictionaryDataModificator.setData(dictionary.dataContainer);
             dictionaryDataModificator.addCard(cardToAdd);
 
             dialogAnswer.stringAnswer = "save_card";

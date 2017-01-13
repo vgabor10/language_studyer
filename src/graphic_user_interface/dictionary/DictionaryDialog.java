@@ -305,7 +305,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         CardAdderDialog dialog 
                 = new CardAdderDialog(new javax.swing.JFrame(), true);
-        dialog.setDictionaryDataContainer(dictionary.dataContainer);
+        dialog.setDictionary(dictionary);
         dialog.dialogAnswer = dialogAnswer;
         
         dialog.setLocationRelativeTo(this);
