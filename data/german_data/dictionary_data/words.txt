@@ -1170,7 +1170,7 @@
 101183	wohlhabend	tehetős
 101184	s Gebirge	hegység
 101185	r Selbstmord	öngyilkosság
-101186	generell	általában
+101186	generell	általában, általános
 101187	e Verbreitung	elterjedés
 101188	r Abschnitt	fejezet
 101189	e Epoche	időszak
@@ -1199,7 +1199,7 @@
 101212	sichtbar	látható
 101213	r Riss	repedés
 101214	s Folgen	következmény
-101215	kritisch	kritikus
+101215	kritisch	kritikus, bíráló
 101216	potentiell	lehetséges, potenciális
 101217	r Vizepräsident	alelnök
 101218	r Überblick	áttekintés
@@ -1720,7 +1720,7 @@
 101745	e Galerie	galéria
 101746	e Statue	szobor
 101747	e Ausstellung	kiállítás
-101748	e Kirche	templom
+101748	e Kirche	templom, egyház
 101749	s Brunnen	kút
 101750	eilig	sürgős, sietős
 101751	e Reise	utazás
@@ -3487,7 +3487,7 @@
 103562	r Fleck	folt
 103563	jede	mindegyik
 103564	anschließend	azután
-103565	doppelt	dupla (mn)
+103565	doppelt	dupla, kétszeres
 103566	beruflich	szakmai
 103567	r Zeitpunkt	időpont
 103568	wild	lakatlan, műveletlen
@@ -5624,3 +5624,34 @@
 105623	e Unterbringung	elszállásolás, elhelyezés
 105624	r Schwung	lendület, lelkesedés
 105625	verbuchen	elkönyvel
+105626	r Spektakel	látványosság
+105627	staunen	bámul, csodálkozik
+105628	e Vereidigung	felesketés
+105629	bürden	terhel, megterhel
+105630	e Würde	méltóság
+105631	tilgen	törleszt
+105632	mutig	bátor
+105633	hehlen	titkol, rejteget, palástol
+105634	leichtgläubig	hiszékeny
+105635	dreist	pimasz, merész
+105636	destabilisieren	destabilizál
+105637	achtziger	nyolcvanas
+105638	verhelfen	hozzásegít
+105639	benachteiligen	megkárosít, megrövidít
+105640	umgehen	kikerül, elkerül
+105641	e Abwertung	leértékelés
+105642	r Halbleiter	félvezető
+105643	voraussehen	előrelát
+105644	e Anhörung	meghalgatás, kihallgatás
+105645	e Irritation	irritáció, zavarás
+105646	r Zorn	düh, harag
+105647	unantastbar	érinthetetlen
+105648	e Befragung	kihallgatás
+105649	dominant	domináns, uralkodó
+105650	hartnäckig	makacs, konok, akaratos
+105651	r Kalkül	számítás, kalkulus
+105652	r Tritt	lépés, rúgás
+105653	s Strafmaß	büntetés
+105654	rechtskräftig	jogerős
+105655	e Instanz	fok
+105656	s Schienbein	sípcsont

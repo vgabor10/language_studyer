@@ -1198,3 +1198,11 @@
 101197	mascot	kabala, talizmán
 101198	bench	pad
 101199	camel	teve
+101200	tray	tálca
+101201	freak	furcsaság, csodabogár
+101202	stature	alak, alkat
+101203	content	elégedett
+101204	herb	gyógynövény
+101205	incinerate	hamvaszt
+101206	insurgent	felkelő, lázadó
+101207	repercussion	visszahatás
