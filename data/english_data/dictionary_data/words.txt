@@ -1208,3 +1208,25 @@
 101207	repercussion	visszahatás
 101208	sink	mosogató
 101209	cherry	cseresznye
+101210	agreeable	kellemes
+101211	patrol	járőröz
+101212	inconclusive	nem meggyőző
+101213	bespectacled	szemüveges
+101214	shift	váltás, műszak
+101215	insist on sg	ragaszkodik vmihez
+101216	comrade	bajtárs
+101217	inspector	ellenőr, felügyelő
+101218	hovercraft	légpárnás hajó
+101219	phrase	kifejezés, mondás
+101220	assignment	megbízás, beosztás
+101221	quest	keresés, kutatás
+101222	proverb	közmondás
+101223	insinuate	beférkőzik
+101224	accusation	vád
+101225	commendation	dícséret, ajánlás
+101226	beneath	alul
+101227	diligence	szorgalom, igyekezet
+101228	noble	előkelő, nemes
+101229	whatever	bármi, akármi
+101230	curfew	kijárási tilalom
+101231	delay	késik

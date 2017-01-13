@@ -5673,3 +5673,4 @@
 105672	umständlich	nehézkes, körülményes
 105673	nachmachen	utánoz
 105674	s Lebenswerk	életmű
+105675	s Exil	száműzetés
