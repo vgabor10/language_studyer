@@ -5340,7 +5340,6 @@
 105343	harren	vár
 105344	r Draht	drót, huzal
 105345	e Brauerei	sörfőzde
-105346	etlich	néhány
 105347	Rumänien	Románia
 105348	stagnieren	stagnál
 105349	e Verstimmung	harag, neheztelés
@@ -5655,3 +5654,11 @@
 105654	rechtskräftig	jogerős
 105655	e Instanz	fok
 105656	s Schienbein	sípcsont
+105657	e Böe	széllökés
+105658	fruchtbar	termékeny
+105659	r Acker	szántóföld
+105660	r Speicher	raktár, pajta
+105661	derweil	ezalatt
+105662	r Personenwagen	személygépkocsi
+105663	e Invasion	invázió, megszállás
+105664	e Mine	akna
