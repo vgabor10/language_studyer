@@ -15,6 +15,7 @@ public class Dictionary {
         dataLoader.setDataContainer(dataContainer);
         dataLoader.loadAllData();
         
+        dataModificator.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);
         dataModificator.setData(dataContainer);
         
         statisticsMaker.setData(dataContainer);

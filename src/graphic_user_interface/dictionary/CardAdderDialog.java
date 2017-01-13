@@ -143,10 +143,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
                     
         }
         else {
-            DataModificator dictionaryDataModificator 
-                = new DataModificator();
-            dictionaryDataModificator.setData(dictionary.dataContainer);
-            dictionaryDataModificator.addCard(cardToAdd);
+            dictionary.dataModificator.addCard(cardToAdd);
 
             dialogAnswer.stringAnswer = "save_card";
 

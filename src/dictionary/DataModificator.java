@@ -11,12 +11,16 @@ public class DataModificator {
     
     private DataContainer dataContainer;
     
-    private final DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();    //TODO: give it from manin frame
+    private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
     private final Logger logger = new Logger();
 
     public void setData(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
+    }
+    
+    public void setDiscFilesMetaDataHandler(DiscFilesMetaDataHandler discFilesMetaDataHandler) {
+        this.discFilesMetaDataHandler = discFilesMetaDataHandler;
     }
 
     public void removeCardByCardIndex(int cardIndex) {
