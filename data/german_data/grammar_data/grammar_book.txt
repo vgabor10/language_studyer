@@ -1,6 +1,7 @@
 \title{Névelők/Határozott névelő/Határozott névelő esetei}
 
 GrammarItemIndex = 0
+Categories = 0
 
 \begin{desc}
 eset     | hímnem | nőnem | semleges nem | többes szám
@@ -32,6 +33,7 @@ birtokos | des -s | der   | des -s       | der
 \title{Névelők/Határozott névelő/Tárgy eset és részes eset - példák}
 
 GrammarItemIndex = 30
+Categories = 0
 
 \begin{desc}
 \end{desc}
@@ -62,6 +64,7 @@ GrammarItemIndex = 30
 \title{Névelők/Határozott névelő/Birtokos eset}
 
 GrammarItemIndex = 3214
+Categories = 0
 
 \begin{desc}
 hímnem       | des -s
@@ -85,6 +88,7 @@ többes szám  | der
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei}
 
 GrammarItemIndex = 1
+Categories = 0
 
 \begin{desc}
           | hímnem   | nőnem | semleges nem | többes szám
@@ -116,6 +120,7 @@ Genitiv   | eines -s | einer | eines -s     | keiner
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei - Példák}
 
 GrammarItemIndex = 31
+Categories = 0
 
 \begin{desc}
           | hímnem   | nőnem | semleges nem | többes szám
@@ -645,6 +650,7 @@ Pl.: der Sohn von dem Vater - az apa fia
 \title{Módbeli segédigék/Módbeli segédigék ragozása}
 
 GrammarItemIndex = 3
+Categories = 0
 
 \begin{desc}
 E/1 | kann   | darf   | mag   | will   | muss   | soll 
@@ -697,6 +703,7 @@ T/3 | können | dürfen | mögen | wollen | müssen | sollen
 \title{Módbeli segédigék/Módbeli segédigék használata}
 
 GrammarItemIndex = 4
+Categories = 0
 
 \begin{desc}
 Módbeli segédigék használata:
@@ -743,6 +750,7 @@ Módbeli segédigék:
 \title{Módbeli segédigék/A möchten módbeli segédige}
 
 GrammarItemIndex = 17
+Categories = 0
 
 \begin{desc}
 A möchten módbeli segédige a mögen (szeretni) ige feltételes módú alakja (tehát: szeretnék, szeretnél...).
@@ -2618,6 +2626,7 @@ Példák vegyes igékre:
 \title{Idők/Präteritum - elbeszélő múlt/A sein Präteriuma}
 
 GrammarItemIndex = 4132
+Categories = 0
 
 \begin{desc}
 ich       | war
@@ -2658,6 +2667,7 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 \title{Idők/Präteritum - elbeszélő múlt/A haben Präteriuma}
 
 GrammarItemIndex = 764658
+Categories = 0
 
 \begin{desc}
 ich hatte
@@ -2692,6 +2702,7 @@ Pl.: Ich hatte zwei Flöhe. - Kér bolhám volt.
 \title{Idők/Präteritum - elbeszélő múlt/A werden Präteriuma}
 
 GrammarItemIndex = 6721
+Categories = 0
 
 \begin{desc}
 ich wurde
@@ -3012,6 +3023,7 @@ Pl.: Klaus wird sicherlich mein Heus kaufen. - Klaus biztosen meg fogja venni a 
 \title{Feltételes mód/Feltételes jelenidő/A würden + Infinitiv}
 
 GrammarItemIndex = 43249
+Categories = 0
 
 \begin{desc}
 Képzése: alany + würden ragozva + többi mondatrész + főnévi igenév.
@@ -3793,6 +3805,7 @@ Ezen igék esetében az alanyt az es szóval fejezzük ki. Ilyenek az időjárá
 \title{Személytelen szerkezetek/Az es gibt szerkezet}
 
 GrammarItemIndex = 423424312
+Categories = 0
 
 \begin{desc}
 Az es gibt (= van) szerkezetet akkor használjuk, ha valaminek a létezését vagy a nem létezését hangsúlyozzuk.

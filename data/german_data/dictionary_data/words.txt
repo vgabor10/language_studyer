@@ -3081,7 +3081,7 @@
 103148	sechzig	hatvan
 103149	r Halt	megállás
 103151	dahinter	mögé, mögötte
-103152	unerwartet	váratlanul
+103152	unerwartet	váratlan, váratlanul
 103153	wiedersehen	viszontlát
 103154	anlegen	befektet, kiköt
 103155	äußerst	rendkívül, nagyon
@@ -5674,3 +5674,27 @@
 105673	nachmachen	utánoz
 105674	s Lebenswerk	életmű
 105675	s Exil	száműzetés
+105676	mittelfristig	középtávon
+105677	e Erreichung	elérés
+105678	behilflich	segítőkész, hasznos
+105679	aufrechterhalten	fenntart, támogat
+105680	e Übergabe	átadás
+105681	normalisieren	normalizál
+105682	untätig	tétlen
+105683	weitreichend	messze ható
+105684	r Ankömmling	jövevény
+105685	e Staatsangehörigkeit	állampolgárság
+105686	r Dorn	tüske
+105687	s Floß	tutaj
+105688	untauglich	alkalmatlan
+105689	r Kadaver	hulla, tetem
+105690	s Aushängeschild	jelkép, cégér
+105691	r Schlager	sláger
+105692	zementieren	cementez
+105693	s Zerrbild	torzkép
+105694	verwundbar	sebezhető
+105695	tragbar	hordható, tartható, elviselhető
+105696	e Flanke	oldal, szárny
+105697	begnügen sich	beígér
+105698	e Wende	fordulat, forduló
+105699	e Altstadt	óváros
