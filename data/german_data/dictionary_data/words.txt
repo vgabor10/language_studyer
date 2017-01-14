@@ -5698,3 +5698,5 @@
 105697	begnügen sich	beígér
 105698	e Wende	fordulat, forduló
 105699	e Altstadt	óváros
+105700	r Hüter	gyám, gondnok
+105701	s Patt	patthelyzet

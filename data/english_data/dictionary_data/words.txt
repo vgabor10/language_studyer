@@ -1240,3 +1240,15 @@
 101239	inferior	alárendelt, alábbvaló
 101240	instructive	tanulságos
 101241	omission	mulasztás
+101242	change	aprópénz
+101243	forgery	hamisítvány
+101244	implicate	belekever
+101245	wrestling	birkózás
+101246	brag	henceg, kérked
+101247	tremor	remegés, reszketés
+101248	paralysis	bénulás, megbénulás
+101249	congenital	veleszületett, születési
+101250	virtue	előny, érték
+101251	acid	sav
+101252	vein	véna
+101253	spilt	kiönt, kiömlik
