@@ -12,7 +12,6 @@ import java.util.Date;
 
 public class GrammarTesterDialog extends javax.swing.JDialog {
 
-    private GrammarBook grammarBook;
     private GrammarItemContainer grammarItemContainer;
     private GrammarAnswerDataContainer grammarAnswerDataContainer;
     private int grammarItemIndexToTest = -1;
@@ -42,9 +41,9 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }
 
     public void setGrammarBook(GrammarBook grammarBook) {
-        this.grammarBook = grammarBook;
-        grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
-        grammarAnswerDataContainer = grammarBook.dataContainer.grammarAnswerDataContainer; 
+        this.grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
+        this.grammarAnswerDataContainer = grammarBook.dataContainer.grammarAnswerDataContainer; 
+        this.grammarTester = grammarBook.grammartester;
     }
     
     /**

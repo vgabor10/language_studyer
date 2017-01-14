@@ -1,6 +1,7 @@
 package grammar_book;
 
 import dictionary.AuxiliaryDataContainer;
+import dictionary.CategoryContainer;
 import language_studyer.AnswerData;
 
 public class DataContainer {
@@ -8,6 +9,7 @@ public class DataContainer {
     public GrammarItemContainer grammarItemContainer = new GrammarItemContainer();
     public GrammarAnswerDataContainer grammarAnswerDataContainer = new GrammarAnswerDataContainer();
     public StudyStrategy studyStrategy = new StudyStrategy();
+    public CategoryContainer categoryContainer = new CategoryContainer();
     
     public AuxiliaryDataContainer auxiliaryDataContainer = new AuxiliaryDataContainer();
     
@@ -34,6 +36,7 @@ public class DataContainer {
         grammarItemContainer.clear();
         grammarAnswerDataContainer.clear();
         studyStrategy.clear();
+        categoryContainer.clear();
     }
     
 }

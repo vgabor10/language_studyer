@@ -13,6 +13,10 @@ public class GrammarBook {
         dataLoader.discFilesMetaDataHandler = discFilesMetaDataHandler;
         dataLoader.setDataContainer(dataContainer);
         dataLoader.loadAllData();
+        
+        grammartester.setData(dataContainer);
+        
+        statisticsMaker.setData(dataContainer);
     }
     
 }

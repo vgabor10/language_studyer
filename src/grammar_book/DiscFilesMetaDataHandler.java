@@ -52,7 +52,10 @@ public class DiscFilesMetaDataHandler {
     public String getStudiedLanguageGrammarAnswerDataPath() {
         return getStudiedLanguageDataPath() + "grammar_answer_data.txt";
     }
-   
+
+    public String getStudiedLanguageCategoryIndexesAndCategoryNames() {
+        return getStudiedLanguageDataPath() + "grammar_item_categories.txt";
+    }
             
             
     public int getStudiedLanguageIndex() {
@@ -94,4 +97,5 @@ public class DiscFilesMetaDataHandler {
     String getStudiedLanguageStudyItemAndCategoryIndexesPath() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
 }

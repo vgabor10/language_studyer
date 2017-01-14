@@ -16,6 +16,7 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
 
     public void setData(DataContainer dataContainer) {
             studyItemContainer = dataContainer.grammarItemContainer;
+            answerDataContainer = dataContainer.grammarAnswerDataContainer;
     }
 
     public GrammarItemContainer getGrammarBook() {

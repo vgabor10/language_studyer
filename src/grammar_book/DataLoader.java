@@ -1,5 +1,6 @@
 package grammar_book;
 
+import dictionary.CardCategory;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -20,7 +21,7 @@ public class DataLoader {
         this.loadAllData();
     }
 
-    public void loadStudyItemContainer() {
+    public void loadGrammarItems() {
         try {
             GrammarItemContainer grammarBook = dataContainer.grammarItemContainer;
             
@@ -48,6 +49,10 @@ public class DataLoader {
                 
                 if (strLine.startsWith("GrammarItemIndex")) {
                     grammarItem.index = Integer.parseInt(strLine.substring(strLine.indexOf("=") + 2));
+                }
+                
+                if (strLine.startsWith("Categories")) {
+                    grammarItem.categoryIndexes.add(Integer.parseInt(strLine.substring(strLine.indexOf("=") + 2)));
                 }
 
                 if (strLine.startsWith("%")) {
@@ -138,11 +143,33 @@ public class DataLoader {
         }*/
     }
     
+    public void loadCategoryIndexesAndCategoryNames() {
+        try {
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageCategoryIndexesAndCategoryNames();
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                String[] splittedRow = strLine.split("\t");
+                int categoryIndex = Integer.parseInt(splittedRow[0]);
+                String categoryName = splittedRow[1];
+
+                CardCategory category = new CardCategory();
+                category.index = categoryIndex;
+                category.name = categoryName;
+
+                dataContainer.categoryContainer.add(category);
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("unable to find file");
+        } catch (IOException e) {
+            System.err.println("exception in load file function");
+        }
+    }   
     
     public void loadAllData() {
-        loadStudyItemContainer();
+        loadGrammarItems();
         loadAnswerData();
-        loadStudyItemIndexesAndCategoryIndexes();
+        loadCategoryIndexesAndCategoryNames();
     }
 
 }

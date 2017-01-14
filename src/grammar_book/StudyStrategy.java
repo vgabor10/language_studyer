@@ -10,7 +10,11 @@ public class StudyStrategy {
     public int randomGrammarItemFromThe5HardestWeight = 0;    
     public int latestStudiedGrammarItemWeight = 0;
     public Set<Integer> categoryRestrictions = new HashSet<>();
-
+    
+    public StudyStrategy() {
+        categoryRestrictions.add(0);
+    }
+    
     public void clear() {
         //TODO: implement
     }

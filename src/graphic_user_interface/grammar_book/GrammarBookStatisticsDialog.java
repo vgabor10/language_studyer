@@ -55,6 +55,8 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
         jLabel7 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -112,6 +114,10 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
 
         jLabel12.setText("jLabel12");
 
+        jLabel25.setText("number of answers today:");
+
+        jLabel13.setText("jLabel13");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -158,8 +164,12 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel12)))
-                .addContainerGap(143, Short.MAX_VALUE))
+                        .addComponent(jLabel12))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel25)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel13)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -172,6 +182,10 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jLabel15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(jLabel13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -204,7 +218,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel12))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(105, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("basic", jPanel1);
@@ -236,11 +250,11 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(324, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -278,8 +292,8 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 341, Short.MAX_VALUE))
-                .addGap(232, 232, 232))
+                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -300,7 +314,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTabbedPane1)
+                    .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 529, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -320,19 +334,20 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void fillDialogWithData() {
-        StatisticsMaker grammarAnswerDataStatisticsMaker 
+        StatisticsMaker statisticsMaker 
                 = grammarBook.statisticsMaker;
 
-	jLabel4.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfStudyItems()));
-        jLabel15.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfAnswers()));
-        jLabel5.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfQuestionedStudyItems()));
-        jLabel16.setText(Integer.toString(grammarAnswerDataStatisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
-        jLabel22.setText(new Date(grammarAnswerDataStatisticsMaker.getLastQuestionedStudyItemDate()).toString());
-	jLabel6.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getNumberOfStudyingDays()));
-	jLabel17.setText(grammarAnswerDataStatisticsMaker.getPractisingTimeAsString());
-	jLabel18.setText(grammarAnswerDataStatisticsMaker.getPercentageOfRightAnswersAsString());
-	jLabel19.setText(grammarAnswerDataStatisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
-        jLabel12.setText(Integer.toString(grammarAnswerDataStatisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+	jLabel4.setText(Integer.toString(statisticsMaker.numberOfStudyItems()));
+        jLabel15.setText(Integer.toString(statisticsMaker.numberOfAnswers()));
+        jLabel5.setText(Integer.toString(statisticsMaker.getNumberOfQuestionedStudyItems()));
+        jLabel16.setText(Integer.toString(statisticsMaker.numberOfQuestionsOfLeastStudiedStudyItem()));
+        jLabel22.setText(new Date(statisticsMaker.getLastQuestionedStudyItemDate()).toString());
+	jLabel6.setText(Integer.toString(statisticsMaker.getNumberOfStudyingDays()));
+	jLabel17.setText(statisticsMaker.getPractisingTimeAsString());
+	jLabel18.setText(statisticsMaker.getPercentageOfRightAnswersAsString());
+	jLabel19.setText(statisticsMaker.getAverageAnswerRateOfStudyItemsAsString());
+        jLabel12.setText(Integer.toString(statisticsMaker.getLongestIntervallSizeOfRightAnswers()));
+        jLabel13.setText(Integer.toString(statisticsMaker.getNumberOfAnswersToday()));
         
         jButton1.setMnemonic(KeyEvent.VK_C);
     }
@@ -468,6 +483,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -477,6 +493,7 @@ public class GrammarBookStatisticsDialog extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

@@ -2,6 +2,7 @@ package grammar_book;
 
 import common.Logger;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -32,9 +33,14 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
         exampleIndexesToTest.clear();
         actualQuestionedExample = null;
         
-        int testedGrammarItemIndex = grammarItemChooser.getGrammarItemIndexForTest1();
+        int testedGrammarItemIndex = grammarItemChooser.getRandomGrammarItemIndex();
         actualTestedGrammarItem = dataContainer.grammarItemContainer.getByIndex(testedGrammarItemIndex);
-        exampleIndexesToTest = new ArrayList(actualTestedGrammarItem.getExampleIndexes()); 
+        exampleIndexesToTest = new ArrayList(actualTestedGrammarItem.getExampleIndexes());
+        Collections.shuffle(exampleIndexesToTest);
+        
+        while (10<exampleIndexesToTest.size()) {
+            exampleIndexesToTest.remove(10);
+        }
     }
 
     public void moveToNextExampleToQuestion() {
