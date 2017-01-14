@@ -41,6 +41,7 @@ public class MainFrame extends javax.swing.JFrame {
         dictionaryOtherToolsButton.setMnemonic(KeyEvent.VK_O);
         
         jLabel3.setText(dictionary.discFilesMetaDataHandler.getStudiedLanguageName());
+        
         setTitle("Language studyer");
     }
 

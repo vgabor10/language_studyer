@@ -88,6 +88,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
         jLabel2.setText("random grammar item from the");
 
         jSpinner2.setModel(new javax.swing.SpinnerNumberModel(5, 0, null, 1));
+        jSpinner2.setEnabled(false);
         jSpinner2.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSpinner2StateChanged(evt);
@@ -120,6 +121,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
         jLabel7.setText("hardest weight");
 
         jSpinner6.setModel(new javax.swing.SpinnerNumberModel(5, 0, null, 1));
+        jSpinner6.setEnabled(false);
         jSpinner6.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jSpinner6StateChanged(evt);
@@ -135,7 +137,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel10.setText("latest studied grammariItem weight");
+        jLabel10.setText("latest studied grammar item weight");
 
         jSpinner11.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner11.addChangeListener(new javax.swing.event.ChangeListener() {
