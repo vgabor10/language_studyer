@@ -3875,7 +3875,7 @@
 103962	sich wehren	védekezik
 103963	ändern	változtat
 103964	r Rechner	számítógép, számológép
-103965	s Werkzeug	eszköz
+103965	s Werkzeug	eszköz, szerszám
 103966	r Widerspruch	ellentmondás
 103967	belasten	terhel, megterhel
 103968	resultieren	eredményez
@@ -5711,3 +5711,6 @@
 105710	e Vollbeschäftigung	teljes foglalkoztatottság
 105711	billigen	jóváhagy, helyesel
 105712	ujjlenyomat	r Fingerabdruck
+105713	s All	világegyetem
+105714	r Rückschlag	visszesés, csapás
+105715	s Weltall	univerzum, világegyetem

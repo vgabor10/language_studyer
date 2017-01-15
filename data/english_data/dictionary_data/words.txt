@@ -1259,3 +1259,23 @@
 101258	considerably	jelentősen
 101259	connoisseur	ínyenc, műkértő
 101260	infallible	tévedhetetlen
+101261	shell	kagyló
+101262	ambush	rajtaüt, lesből támad
+101263	slit	rés, nyílás
+101264	slit	hasít, metsz
+101265	parity	egyenértékűség, egyenlőség
+101266	impound	lefoglal
+101267	futile	hatástalan, eredménytelen
+101268	contain	fékez, visszatart, feltartóztat
+101269	contain	tartalmaz
+101270	disguise	elrejt, palástol
+101271	delight	elragadtat, örömet szerez
+101272	wheel	kerék
+101273	pump	pumpál
+101274	lure	csábítás, vonzerő
+101275	substantial	jelentős, megalapozott
+101276	rein	megfékez, féken tart
+101277	glitch	hiba
+101278	dividend	osztalék, jutalék
+101279	candidly	nyíltan, őszintén
+101280	forfeit	elveszít, eljáttszik
