@@ -5700,3 +5700,14 @@
 105699	e Altstadt	óváros
 105700	r Hüter	gyám, gondnok
 105701	s Patt	patthelyzet
+105702	s Cash	készpénz
+105703	Europäischen Union	Európai Unió
+105704	aussperren	kizár
+105705	e Übereinkunft	megegyezés
+105706	r Steuersatz	adókulcs, adószázalék
+105707	e Mitgliedschaft	tagság
+105708	substanziell	lényeges, alapvető
+105709	e Ungewissheit	bizonytalanság
+105710	e Vollbeschäftigung	teljes foglalkoztatottság
+105711	billigen	jóváhagy, helyesel
+105712	ujjlenyomat	r Fingerabdruck

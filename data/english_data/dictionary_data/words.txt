@@ -1252,3 +1252,10 @@
 101251	acid	sav
 101252	vein	véna
 101253	spilt	kiönt, kiömlik
+101254	ham	sonka
+101255	journey	utazás
+101256	chew	rág
+101257	unharmed	ép, sértetlen
+101258	considerably	jelentősen
+101259	connoisseur	ínyenc, műkértő
+101260	infallible	tévedhetetlen
