@@ -3207,7 +3207,7 @@
 103278	r Spezialist	szakember, specialista
 103279	aufstellen	feltesz, felállít
 103280	r Kritiker	bíráló, kritikus (fn)
-103281	decken	befed
+103281	decken	betakar, befed
 103282	acht	nyolc
 103283	übertragen	átvisz, átruház
 103284	lauter	valódi
@@ -5714,3 +5714,13 @@
 105713	s All	világegyetem
 105714	r Rückschlag	visszesés, csapás
 105715	s Weltall	univerzum, világegyetem
+105716	jubeln	ujjong, örvendezik
+105717	wirbel	forog, forgat, kavarog
+105718	aufgeregt	ideges, zaklatott
+105719	r Leitungsmast	villanyoszlop
+105720	prallen	ütközik
+105721	r Rückweg	visszatérés
+105722	e Mitternacht	éjfél
+105723	verstoßen	vét
+105724	s Verfassungsgericht	alkotmánybíróság
+105725	r Wahlgang	választási forduló
