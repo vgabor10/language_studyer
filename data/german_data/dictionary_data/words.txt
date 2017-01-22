@@ -5724,3 +5724,19 @@
 105723	verstoßen	vét
 105724	s Verfassungsgericht	alkotmánybíróság
 105725	r Wahlgang	választási forduló
+105726	e Lawine	lavina
+105727	e Dörfer	falvak
+105728	verschüttern	kiönt, elönt
+105729	beleidigen	sért, megbánt
+105730	e Turnübung	tornagyakorlat
+105731	r Altar	oltár
+105732	r Klimawandel	klímaváltozás
+105733	e Ärzte	orvosok
+105734	r Erlass	rendelet
+105735	kommandieren	parancsol, vezényel
+105736	r Regenschirm	esernyő
+105737	e Webseite	weboldal
+105738	e Erleichterung	könnyítés
+105739	krass	meglepő, megdöbbentő
+105740	e Marsch	menet, menetelés
+105741	e Kundgebung	tüntetés
