@@ -171,7 +171,7 @@ public class DataModificator {
         saveCardIndexesAndCategoryIndexesDataToFile();
     }
     
-    public void appendToStudiedLanguageCardData(AnswerDataContainer answersToAppend) {
+    public void appendToAnswerDataFile(AnswerDataContainer answersToAppend) {
         try {
             logger.debug("following rows have been added to card data file: ");
 

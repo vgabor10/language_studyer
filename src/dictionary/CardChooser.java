@@ -15,17 +15,20 @@ import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyI
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
 public class CardChooser {
-
+    
+    private DataContainer dataContainer;
     private Set<Integer> cardIndexesFromChoose;
     private StudyStrategy studyStrategy;
     
-    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
+    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer;
     
     private final Random randomGenerator = new Random();
     private final Logger logger = new Logger();
     
     public void setData(DataContainer dataContainer) {
-        studyStrategy = dataContainer.studyStrategy;
+        this.dataContainer = dataContainer;
+        this.studyStrategy = dataContainer.studyStrategy;
+        
         cardIndexesFromChoose = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
         answerDataByStudyItemsContainer = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
     }
@@ -54,7 +57,7 @@ public class CardChooser {
         return -2;
     }
 
-    public Set<Integer> getFormerlyQuestionedCardIndexes(
+    private Set<Integer> getFormerlyQuestionedCardIndexes(
         int numberOfCards, Set<Integer> omittedCardIndexes) {
         
         Set<Integer> notQuestionedCardIndexes = new HashSet<>(cardIndexesFromChoose);
@@ -94,7 +97,7 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> getRandomHardestCardIndexes(
+    private Set<Integer> getRandomHardestCardIndexes(
             double hardestWordRate, int numberOfCards, Set<Integer> omittedCardIndexes) {
 
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
@@ -116,7 +119,7 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> getRandomHardestCardIndex2(
+    private Set<Integer> getRandomHardestCardIndex2(
             int numberOfHardestCards, int numberOfCardsGet, Set<Integer> omittedCardIndexes) {
 
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
@@ -138,7 +141,7 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> getCardIndexesWithLestSignificantAnswerRate(
+    private Set<Integer> getCardIndexesWithLestSignificantAnswerRate(
             int numberOfCards, Set<Integer> omitedCardIndexes) {
 
         AnswerDataByStudyItem[] datasToSort = answerDataByStudyItemsContainer.toArray();
@@ -157,7 +160,7 @@ public class CardChooser {
         return outCardIndexes;
     }
 
-    public Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(
+    private Set<Integer> getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(
             int numberOfCards, Set<Integer> omittedCardIndexes) {
 
         if (answerDataByStudyItemsContainer.numberOfStudiedStudyItems() < 100) {
@@ -182,7 +185,7 @@ public class CardChooser {
         }
     }
 
-    public Set<Integer> getRandomCardIndexes(
+    private Set<Integer> getRandomCardIndexes(
             int numberOfCards, Set<Integer> omittedCardIndexes) {
         
         Set<Integer> outCardIndexes = new HashSet<>();
@@ -226,6 +229,8 @@ public class CardChooser {
     }*/
 
     public List<Integer> getCardIndexes() {
+        dataContainer.fillAuxiliaryDataContainer();
+        
         List<Integer> cardsToTestIndexes = new ArrayList<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();
 

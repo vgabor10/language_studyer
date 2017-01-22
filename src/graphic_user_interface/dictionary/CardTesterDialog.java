@@ -60,7 +60,6 @@ public class CardTesterDialog extends javax.swing.JDialog {
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
         cardTester = dictionary.cardTester;
-        //cardChooser = dictionary.cardChooser;
     }
     
     @SuppressWarnings("unchecked")
@@ -351,24 +350,23 @@ public class CardTesterDialog extends javax.swing.JDialog {
     private void showStatisticsDialogAndSaveTestData() {
         finishTime = new Date().getTime();
         
+        DialogAnswer dialogAnswer = new DialogAnswer();
+        
         CardTesterStatisticsDialog dialog = new CardTesterStatisticsDialog(new javax.swing.JFrame(), true);
         dialog.dataContainer = dictionary.dataContainer;
         dialog.testAnswers = cardTester.getUserAnswers();        
         dialog.finishTime = finishTime;
         dialog.startTime = startTime;
-        dialog.dialogAnswer = new DialogAnswer();
+        dialog.dialogAnswer =  dialogAnswer;
 
         dialog.initialise();
         
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
-        DataModificator dictionaryDataModificator = new DataModificator();
-        dictionaryDataModificator.setData(dictionary.dataContainer);
-
-        dictionaryDataModificator.appendToStudiedLanguageCardData(cardTester.getUserAnswers());
+        dictionary.dataModificator.appendToAnswerDataFile(cardTester.getUserAnswers());
         
-        if (dialog.dialogAnswer.boolAnswer) {
+        if (dialogAnswer.boolAnswer) {
             startNewTest();
         } else {
             dispose();

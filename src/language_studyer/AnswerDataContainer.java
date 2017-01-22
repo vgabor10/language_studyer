@@ -40,9 +40,9 @@ public class AnswerDataContainer {
             }
     }
 
-    public void appendAnswerDataContainer(AnswerDataContainer ac) {
-        for (int i=0; i<ac.numberOfAnswers(); i++) {
-            data.add(ac.getAnswerData(i));
+    public void appendAnswerDataContainer(AnswerDataContainer answerDataContainer) {
+        for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
+            data.add(answerDataContainer.getAnswerData(i));
         }
     }
 

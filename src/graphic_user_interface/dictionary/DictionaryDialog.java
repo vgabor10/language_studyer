@@ -260,6 +260,8 @@ public class DictionaryDialog extends javax.swing.JDialog {
                 + " -> hungarian");
         jComboBox1.addItem("hungarian -> " +
         dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase());
+        
+        setTitle("Dictionary - " + dictionary.discFilesMetaDataHandler.getStudiedLanguageName());
     }
     
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
