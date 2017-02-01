@@ -5761,3 +5761,13 @@
 105760	ebenbürtig	egyenrangú, egyenértékű
 105761	traumhaft	álomszerű
 105762	e Schublade	fiók
+105763	e Aufforderung	felszólítás
+105764	kursieren	kering
+105765	prompt	azonnal
+105766	zielführend	célravezető
+105767	grausam	kegyetlen
+105768	verstören	megzavar, összezavar
+105769	abwerten	leértékel
+105770	r Wechselkurs	árfolyam
+105771	e Anschuldigung	vád
+105772	bemerkbar	észrevehető
