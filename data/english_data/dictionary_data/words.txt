@@ -1285,3 +1285,6 @@
 101284	feel dizzy	szédül
 101285	vignette	címke, vignetta
 101286	culminate	tetőz
+101287	strident	éles, harsogó
+101288	bulwark	bástya, mellvéd
+101289	impede	gátol

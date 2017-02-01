@@ -5740,3 +5740,24 @@
 105739	krass	meglepő, megdöbbentő
 105740	e Marsch	menet, menetelés
 105741	e Kundgebung	tüntetés
+105742	beanspruchen	igényel, igénybe vesz
+105743	e Büchse	doboz, persely
+105744	r Mitstreiter	harcostárs, küzdőtárs
+105745	besiegeln	megpecsétel, lepecsétel
+105746	Neuseeland	Új-Zéland
+105747	kommend	jövő
+105748	ratifizieren	ratifikál
+105749	schmackhaft	ízletes
+105750	Ärmelkanal	La Manche-csatorna
+105751	r Trumpf	adu, ütőkártya
+105752	glühen	izzik
+105753	dubios	kétes, gyanús
+105754	e Waffenruhe	fegyverszünet
+105755	verharmlosen	ártalmatlannak tünteti fel
+105756	s Dekret	rendelet
+105757	gestrig	tegnapi
+105758	e Kanzlei	iroda
+105759	unerschöpflich	kimeríthetetlen
+105760	ebenbürtig	egyenrangú, egyenértékű
+105761	traumhaft	álomszerű
+105762	e Schublade	fiók
