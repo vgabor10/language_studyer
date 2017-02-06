@@ -5771,3 +5771,14 @@
 105770	r Wechselkurs	árfolyam
 105771	e Anschuldigung	vád
 105772	bemerkbar	észrevehető
+105773	r Palast	palota
+105774	e Verabredung	megállapodás, megbeszélés
+105775	Dänemark	Dánia
+105776	r Staatschef 	államfő
+105777	e Meinungsfreiheit	véleményszabadság
+105778	e Fessel	bilincs
+105779	e Funk	rádió
+105780	prügeln	üt, ver
+105781	s Abgas	kipufogógáz
+105782	r Umsturz	megdöntés, összeomlás
+105783	s Schwellenland	feltörekvő ország
