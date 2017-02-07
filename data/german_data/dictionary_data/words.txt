@@ -5782,3 +5782,12 @@
 105781	s Abgas	kipufogógáz
 105782	r Umsturz	megdöntés, összeomlás
 105783	s Schwellenland	feltörekvő ország
+105784	e Belebung	felélénkülés, felpezsdülés
+105785	s Geschrei	kiabálás, üvöltés
+105786	rügen	megszid, kifogásol
+105787	irreparabel	jóvátehetetlen
+105788	e Zuständigkeit	illetékesség
+105789	widrig	ellenkező, ellentétes
+105790	e Mehrwertsteuer	általános forgalmi adó
+105791	bar	mentes, nélküli
+105792	r Mindestlohn	minimálbér
