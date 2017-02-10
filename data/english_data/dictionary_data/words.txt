@@ -1288,3 +1288,4 @@
 101287	strident	éles, harsogó
 101288	bulwark	bástya, mellvéd
 101289	impede	gátol
+101290	dissolve	felold, feloszlat, felbont

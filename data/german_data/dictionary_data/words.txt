@@ -743,7 +743,7 @@
 100749	e Errichtung	kialakítás
 100750	sowie	továbbá
 100751	ausstatten	felszerel
-100752	s Dutzend	tucat
+100752	s Dutzend	tucat (fn)
 100753	melden	közöl
 100754	e Absperrung	sorompó
 100755	verüben	elkövet, véghezvisz
@@ -5791,3 +5791,13 @@
 105790	e Mehrwertsteuer	általános forgalmi adó
 105791	bar	mentes, nélküli
 105792	r Mindestlohn	minimálbér
+105793	Litauen	Litvánia
+105794	r Beistand	segély, támofatás
+105795	e Panne	baleset
+105796	s Bataillon	zászlóalj
+105797	r Tiefgang	merülés
+105798	e Mahnung	figyelmeztetés, intés
+105799	e Tauglichkeit	megfelelés, alkalmasság
+105800	r Daumen	hüvelykujj
+105801	e Nominierung	jelölés
+105802	r Vorsprung	előny
