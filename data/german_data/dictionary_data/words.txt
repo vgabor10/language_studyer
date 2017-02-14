@@ -3234,7 +3234,7 @@
 103305	komisch	vicces, komikus
 103306	wunderschön	gyönyörű
 103307	voraussichtlich	várhatóan
-103308	daneben	mellette
+103308	daneben	mellé, mellette
 103310	wenigstens	legalább
 103311	übergehen	mellőz, behoz
 103312	e Begegnung	találkozás, összeütközés
@@ -5801,3 +5801,19 @@
 105800	r Daumen	hüvelykujj
 105801	e Nominierung	jelölés
 105802	r Vorsprung	előny
+105803	e Korruption	korrupció
+105804	r Einspruch	tiltakozás, ellenvetés
+105805	lächerlich	nevetséges
+105806	rechtmäßig	jogos, törvényes
+105807	doof	buta, ostoba
+105808	s Antlitz	tekintet
+105809	e Filiale	üzlet, fióküzlet
+105810	r Absatz	értékesítés
+105811	e Notbremse	vészfék
+105812	r Antrieb	meghajtás
+105813	übermäßig	túlzottan
+105814	e Einfalt	együgyűség
+105815	ersticken	megfullad, megfojt
+105816	sondieren	szondáz, kipuhatol
+105817	sanieren	rehabilitál
+105818	s Zimt	fahéj

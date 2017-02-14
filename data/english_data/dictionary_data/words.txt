@@ -1289,3 +1289,7 @@
 101288	bulwark	bástya, mellvéd
 101289	impede	gátol
 101290	dissolve	felold, feloszlat, felbont
+101291	plumber	vízvezetékszerelő
+101292	tether	kiköt, láncra köt
+101293	amber	borostyánkő
+101294	jam	lekvár
