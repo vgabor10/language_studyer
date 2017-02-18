@@ -5817,3 +5817,12 @@
 105816	sondieren	szondáz, kipuhatol
 105817	sanieren	rehabilitál
 105818	s Zimt	fahéj
+105819	e Ungnade	kegyvesztettség
+105820	zerrüttet	zilált
+105821	e Unerfahrenheit	tapasztalatlanság
+105822	r Herausforderer	kihívó
+105823	e Ertüchtigung	edzés
+105824	s Geflecht	fonat
+105825	unerschütterlich	rendületlenül
+105826	r Betrug	csalás
+105827	e Gegenwehr	ellenállás
