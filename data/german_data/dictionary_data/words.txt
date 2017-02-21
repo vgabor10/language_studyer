@@ -5826,3 +5826,22 @@
 105825	unerschütterlich	rendületlenül
 105826	r Betrug	csalás
 105827	e Gegenwehr	ellenállás
+105828	e Anstalt	intézet
+105829	aufwenden	rákölt
+105830	s Bruttoinlandsproduk	bruttó hazai termelés
+105831	appellieren	apellál, folyamodik, felhívást intéz
+105832	e Berechenbarkeit	kiszámíthatóság
+105833	r Damm	gát
+105834	r Regenfall	esőzés
+105835	indisch	indiai
+105836	r Satellit	műhold
+105837	e Ausschreitung	zavargás, lázadás
+105838	abenteuerlich	kalandos
+105839	sowohl ... als auch	mind .. mind
+105840	provisorisch	ideiglenes, átmeneti
+105841	schneebedeckt	hófedte
+105842	überlastet	túlterhelt
+105843	e Epidemie	járvány
+105844	verwahrlost	elhanyagolt
+105845	r Fetzen	rongy
+105846	s Sinnbild	jelkép
