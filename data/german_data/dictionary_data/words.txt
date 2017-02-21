@@ -5845,3 +5845,16 @@
 105844	verwahrlost	elhanyagolt
 105845	r Fetzen	rongy
 105846	s Sinnbild	jelkép
+105847	frisieren	fésül
+105848	zumuten	elvár, megkövetel
+105849	r Klient	ügyfél
+105850	sympathisch	szimpatikus
+105851	e Verschwendung	pazarlás
+105852	urteilen	ítél
+105853	aufstocken	emel, kiegészít
+105854	schrittweise	lépésenként
+105855	r Wegfall	megszűnik, elmarad
+105856	e Wehrpflicht	sorkatonai szolgálat
+105857	vermelden	jelez, jelent
+105858	hervorbringen	létrehoz, előhoz
+105859	r Landsmann	honfitárs
