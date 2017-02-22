@@ -569,7 +569,7 @@
 100572	warnen	figyelmeztet
 100573	r Herr	tulajdonos
 100574	e Flut	árvíz
-100575	r Freiwillige	önkéntes
+100575	r Freiwilliger	önkéntes (fn)
 100576	fleißig	szorgalmas
 100577	bestätigen	igazol, megerősít
 100578	r Feiertag	ünnep, ünnepnap
@@ -708,7 +708,7 @@
 100714	beziffern	becsül
 100715	e Wartung	karbantartás
 100716	e Reparatur	javítás
-100717	aufwendig	drága
+100717	aufwendig	drága, költséges
 100718	stattdessen	ehelyett
 100719	errichten	felállít
 100720	r Schmuggler	csempész
@@ -4197,7 +4197,7 @@
 104288	s Nahrungsmittel	élelem, élelmiszer
 104289	dort	ott
 104290	vor kurzem	nemrég
-104291	amerikanisch	amerikai
+104291	amerikanisch	amerikai (mn)
 104292	r Umgang	bánásmód, kapcsolat
 104293	schwanger	várandós, állapotos
 104294	r Islam	iszlám vallás
@@ -5858,3 +5858,9 @@
 105857	vermelden	jelez, jelent
 105858	hervorbringen	létrehoz, előhoz
 105859	r Landsmann	honfitárs
+105860	e Haftanstalt	börtön
+105861	entsetzen	megdöbbent, megrémít
+105862	oberhalb	felett
+105863	e Querele	vita, veszekedés
+105864	verharren	kitart, megmarad
+105865	r Spender	adományozó

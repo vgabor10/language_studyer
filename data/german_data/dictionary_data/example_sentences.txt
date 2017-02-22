@@ -1855,8 +1855,6 @@
 100573	Herr Töpfer ist mit der Organisation des Festes beauftragt.
 100573	Herr Trautmann wurde Opfer einer Intrige.
 100573	Herr Zschoch spekuliert an der Börse.
-100575	Viele freiwillige Helfer unterstützten uns.
-100575	Zusätzlich zu seinem Studium absolvierte er noch drei freiwillige Praktika.
 100577	Ausnahmen bestätigen die Regel.
 100577	Sie versucht, ihre Theorie experimentell zu bestätigen.
 100578	Der Ostermontag ist ein kirchlicher Feiertag.
