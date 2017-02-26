@@ -5864,3 +5864,13 @@
 105863	e Querele	vita, veszekedés
 105864	verharren	kitart, megmarad
 105865	r Spender	adományozó
+105866	schüchtern	szégyenlős, félénk
+105867	e Poesie	költészet
+105868	veraltet	elavult
+105869	Ukraine	Ukrajna
+105870	r Diebstahl	lopás
+105871	e Ampel	közlekedési lámpa
+105872	stutzen	nyír, lenyír
+105873	r Zusatz	pótlás, kiegészítés
+105874	launig	ötletes, tréfás
+105875	r Stab	stáb, csapat

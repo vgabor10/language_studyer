@@ -1293,3 +1293,5 @@
 101292	tether	kiköt, láncra köt
 101293	amber	borostyánkő
 101294	jam	lekvár
+101295	payee	kedvezményezett
+101296	animus	rosszindulat
