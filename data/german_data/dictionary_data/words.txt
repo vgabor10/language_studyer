@@ -5874,3 +5874,11 @@
 105873	r Zusatz	pótlás, kiegészítés
 105874	launig	ötletes, tréfás
 105875	r Stab	stáb, csapat
+105876	r Auffanglager	gyűjtőtábor
+105877	ermuntern	felbátorít
+105878	r Schlepper	szállító, fuvaros
+105879	üblicherweise	általában, rendszerint
+105880	e Gewissheit	bizonyosság
+105881	e Unterstellung	gyanusítás
+105882	e Frechheit	szemtelenség, pimaszság
+105883	e Woge	hullám

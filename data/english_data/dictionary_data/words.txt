@@ -44,7 +44,7 @@
 100044	lease	bérel
 100045	disrupt	szétválaszt
 100046	jeopardise	veszélyeztet
-100047	regardless	figyelmetlen
+100047	regardless	figyelmetlen, tekintet nélkül
 100048	abate	csökken
 100049	meddle	beavatkozik
 100050	day off	szabadnap
@@ -1268,7 +1268,7 @@
 101267	futile	hatástalan, eredménytelen
 101268	contain	fékez, visszatart, feltartóztat
 101269	contain	tartalmaz
-101270	disguise	elrejt, palástol
+101270	disguise	elrejt, álcáz, palástol
 101271	delight	elragadtat, örömet szerez
 101272	wheel	kerék
 101273	pump	pumpál
@@ -1295,3 +1295,17 @@
 101294	jam	lekvár
 101295	payee	kedvezményezett
 101296	animus	rosszindulat
+101297	disposable	eldobható
+101298	misconception	félreértés
+101299	whereas	habár, míg
+101300	clemency	kegyelem
+101301	shortly	hamarosan, nemsokára
+101302	retail	kiskereskedelem
+101303	draft	sorozás
+101304	mediation	közvetítés, közbenjárás
+101305	entail	maga után von
+101306	strenuous	buzgó, kitartó
+101307	inducement	indíték, indítás
+101308	manpower	munkaerő, létszám, élőerő
+101309	by all means	mindenképpen, mindenesetre
+101310	novice	újonc, kezdő
