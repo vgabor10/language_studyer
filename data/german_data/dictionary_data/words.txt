@@ -5882,3 +5882,4 @@
 105881	e Unterstellung	gyanusítás
 105882	e Frechheit	szemtelenség, pimaszság
 105883	e Woge	hullám
+105884	votieren	szavaz

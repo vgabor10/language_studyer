@@ -1309,3 +1309,13 @@
 101308	manpower	munkaerő, létszám, élőerő
 101309	by all means	mindenképpen, mindenesetre
 101310	novice	újonc, kezdő
+101311	seizure	roham
+101312	altercation	veszekedés, civakodás
+101313	seek	kutat, keres
+101314	dismal	szomorú, szörnyű
+101315	disobey	megszeg, nem fogad szót
+101316	shred	széttép, összszaggat
+101317	transcript	másolat, átírás
+101318	conclusive	meggyőző, döntő
+101319	covenant	szövetség, egyezség, szerződés
+101320	unnecessary	felesleges, szükségtelen
