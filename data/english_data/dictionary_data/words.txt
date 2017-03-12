@@ -266,7 +266,7 @@
 100267	in vain	hiába
 100268	prosper	boldogul
 100269	embrace	ölel
-100270	imminent	közelgő
+100270	imminent	köszöbön álló, fenyegető
 100271	latitude	szélesség
 100272	precaution	óvatosság
 100273	gear	felszerelés
@@ -1071,7 +1071,7 @@
 101072	imperative	szükségszerű, elkerülhetetlen
 101073	misery	kín, szenvedés
 101074	suggest	javasol, felvet
-100465	tight	szűk, feszes
+100465	tight	szoros, szűk, feszes
 101075	warden	őr, felügyelő
 101076	expedite	sürget, előmozdít
 101077	be accustomed to sg	hozzá van szokva vmihez
@@ -1328,3 +1328,9 @@
 101327	rabbit	nyúl
 101328	inbound	beérkező
 101329	apt	találó, megfelelő
+101330	forthcomming	készséges
+101331	leash	póráz
+101332	paw	mancs
+101333	spook	szellem, kísértet
+101334	trespass	kihágás, vétek
+101335	kind of	olyasvalahogy, valahogy

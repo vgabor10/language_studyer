@@ -5894,3 +5894,7 @@
 105893	inakzeptabel	elfogadhatatlan
 105894	aussetzen	kirak, kitesz
 105895	unverantwortlich	felelőtlen
+105896	horchen	fülel, hallgatózik
+105897	übergreifen	átterjed, átfed
+105898	r Knecht	szolga, cseléd
+105899	beunruhigt	nyugtalan
