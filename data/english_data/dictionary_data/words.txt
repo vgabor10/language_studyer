@@ -1319,3 +1319,12 @@
 101318	conclusive	meggyőző, döntő
 101319	covenant	szövetség, egyezség, szerződés
 101320	unnecessary	felesleges, szükségtelen
+101321	indictment	vád, vádirat
+101322	clandestine	titkos, rejtett
+101323	indistinct	zavaros, homályos
+101324	chant	énekel, dalol
+101325	furnace	kemence, kályha
+101326	courthouse	bíróság
+101327	rabbit	nyúl
+101328	inbound	beérkező
+101329	apt	találó, megfelelő

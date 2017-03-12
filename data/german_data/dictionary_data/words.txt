@@ -5859,7 +5859,7 @@
 105858	hervorbringen	létrehoz, előhoz
 105859	r Landsmann	honfitárs
 105860	e Haftanstalt	börtön
-105861	entsetzen	megdöbbent, megrémít
+105861	entsetzen	megdöbben, megrémít
 105862	oberhalb	felett
 105863	e Querele	vita, veszekedés
 105864	verharren	kitart, megmarad
@@ -5883,3 +5883,14 @@
 105882	e Frechheit	szemtelenség, pimaszság
 105883	e Woge	hullám
 105884	votieren	szavaz
+105885	nicht mehr	már nem
+105886	noch einmal	még egyszer
+105887	schummeln	csal
+105888	r Schummel	csalás
+105889	e Lüge	hazugság
+105890	r Bagger	markoló, kotrógép
+105891	s Komma	vessző
+105892	r Eklat	botrány
+105893	inakzeptabel	elfogadhatatlan
+105894	aussetzen	kirak, kitesz
+105895	unverantwortlich	felelőtlen
