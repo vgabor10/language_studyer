@@ -5898,3 +5898,9 @@
 105897	übergreifen	átterjed, átfed
 105898	r Knecht	szolga, cseléd
 105899	beunruhigt	nyugtalan
+105900	drinstehen	benne áll
+105901	in erster Linie	elsősorban
+105902	r Umbruch	változás, átalakulás
+105903	e Unwägbarkeit	bizonytalanság, kiszámíthatatlanság
+105904	dezidiert	határozott
+105905	verheerend	pusztító
