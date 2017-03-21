@@ -5904,3 +5904,4 @@
 105903	e Unwägbarkeit	bizonytalanság, kiszámíthatatlanság
 105904	dezidiert	határozott
 105905	verheerend	pusztító
+105906	Nordkorea	Észak-Korea

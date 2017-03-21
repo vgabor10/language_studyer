@@ -491,7 +491,6 @@
 100494	concert	összhang
 100495	infidel	hitetlen
 100496	might	erő
-100497	foster	elősegít
 100498	lament	siránkozik
 100499	tentative	kísérlet, próba
 100500	shove around	erőszakoskodik
@@ -976,7 +975,7 @@
 100981	virtually	szinte
 100982	infuriate	felbosszant
 100983	appeasement	megbékülés
-100984	appeal	folyamodik, fordul
+100984	appeal	folyamodik, fordul, fellebbez
 100985	summon	behív, beidéz
 100986	adjacent	szomszédos, határos, mellette fekvő
 100987	unambiguous	egyértelmű
@@ -1339,3 +1338,12 @@
 101338	clause	cikkely, záradék
 101339	blooper	baki
 101340	unravel	kiderül, feltár
+101341	impeach	kétségbe von
+101342	blatant	otromba, égbekiáltó
+101343	foster	felnevel, támogat, előmozdít
+100497	common	közös
+101344	collar	gallér
+101345	sway	hatalom, befolyás
+101346	vouch	tanúsít, megerősít
+101347	foreseeable	előrelátható
+101348	ribbon	szalag, sáv, rendjel
