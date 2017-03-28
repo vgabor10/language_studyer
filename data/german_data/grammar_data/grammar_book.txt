@@ -2648,7 +2648,7 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 5 | Sie waren dort nicht. | Nem voltak ott.
 6 | Wir waren frisch. | Frissek voltunk.
 7 | Ihr wart schnell. | Gyorsak voltatok.
-8 | Wie war die Speise? | Milyen volt az étel?
+8 | Wie war die Speise sein? | Milyen volt az étel? (e Speise)
 9 | Wo waren Sie gestern? | Hol volt Ön tegnap?
 10 | Wann wart ihr in Kanada? | Mikor voltatok Kanadában?
 11 | Wie war das Wetter? | Milyen volt az idő?

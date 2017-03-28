@@ -1347,3 +1347,7 @@
 101346	vouch	tanúsít, megerősít
 101347	foreseeable	előrelátható
 101348	ribbon	szalag, sáv, rendjel
+101349	disgrace	szégyen
+101350	con	becsap, átejt
+101351	laurel	babér, borostyán
+101352	scaffolding	álványzat

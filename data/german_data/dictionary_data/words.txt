@@ -5905,3 +5905,16 @@
 105904	dezidiert	határozott
 105905	verheerend	pusztító
 105906	Nordkorea	Észak-Korea
+105907	r Briefkasten	postaláda
+105908	e Echtheit	hitelesség, eredetiség
+105909	fragwürdig	kétes
+105910	r Albtraum	rémálom
+105911	vakant	szabad, üres
+105912	erörtern	kifejt, megvitat
+105913	e Belegschaft	személyzet, alkalmazottak
+105914	e Anspielung	utalás, célzás
+105915	durchkreuzen	keresztez, meghiúsít
+105916	r Archipel	szigetscoport
+105917	s Eiland	sziget
+105918	umfahren	elgázol
+105919	mäßig	mérsékelt, közepes
