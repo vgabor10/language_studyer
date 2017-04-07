@@ -2112,7 +2112,6 @@
 100701	Es ist kalt, zugleich weht ein starker Wind aus Nord.
 100701	Hier ist es unangenehm kalt.
 100701	Kauf dir doch einen Schal, wenn es so kalt ist.
-100701	Mir ist kalt.
 100701	Wenn es sehr kalt ist, sollte man eine dicke Jacke anziehen.
 100702	Die Presse wittert schon wieder einen Skandal.
 100702	Die Scheidung war ein Skandal.

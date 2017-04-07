@@ -5918,3 +5918,8 @@
 105917	s Eiland	sziget
 105918	umfahren	elgázol
 105919	mäßig	mérsékelt, közepes
+105920	blechen	fizet
+105921	konkurrenzfähig	versenyképes
+105922	schrauben	csavar
+105923	e Absprache	megállapodás
+105924	e Zusage	ígéret, hozzájárulás
