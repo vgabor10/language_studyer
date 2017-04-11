@@ -5923,3 +5923,13 @@
 105922	schrauben	csavar
 105923	e Absprache	megállapodás
 105924	e Zusage	ígéret, hozzájárulás
+105925	s Edelmetall	nemesfém
+105926	r Zerstörer	romboló
+105927	offenkundig	nyilvánvaló
+105928	s Bombardement	bombázás
+105929	e Souveränität	szuverenitás, függetlenség
+105930	s Windrad	szélkerék, szélturbina
+105931	r Kran	daru
+105932	e Langstrecke	hosszú táv
+105933	e Warnung	figyelmeztetés
+105934	eindringlich	nyomatékos, beható
