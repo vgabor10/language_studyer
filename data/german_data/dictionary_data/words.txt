@@ -5933,3 +5933,10 @@
 105932	e Langstrecke	hosszú táv
 105933	e Warnung	figyelmeztetés
 105934	eindringlich	nyomatékos, beható
+105935	halten sein Wort	tartja a szavát
+105936	begeistert	lelkes, buzgó
+105937	s Futter	élelem, takarmány
+105938	e Verwunderung	csodálkozás, csodálat
+105939	zunehmend	növekvő
+105940	notfalls	szükség esetén
+105941	abwerfen	ledob
