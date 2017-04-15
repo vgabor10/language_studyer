@@ -5940,3 +5940,10 @@
 105939	zunehmend	növekvő
 105940	notfalls	szükség esetén
 105941	abwerfen	ledob
+105942	r Abwurf	ledobás
+105943	s Versteck	rejtekhely, búvóhely
+105944	r Machthaber	hatalmon levő
+105945	zusteuern	vhová tart, irányt vesz vmerre
+105946	allgegenwärtig	mindenütt jelenlevő
+105947	r Bettler	koldus
+105948	r Demonstrant	tüntető

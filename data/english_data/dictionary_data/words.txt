@@ -1351,3 +1351,14 @@
 101350	con	becsap, átejt
 101351	laurel	babér, borostyán
 101352	scaffolding	álványzat
+101353	benign	enyhe
+101354	trailer	utánfutó, pótkocsi
+101355	affluence	bőség, jólét
+101356	stewardship	gondnokság
+101357	perception	észlelés, érzékelés
+101358	coup	puccs (politika)
+101359	ploy	trükk, húzás
+101360	repression	elnyomás, elfojtás
+101361	wane	apad, fogy
+101362	trade union	szakszervezet
+101363	saddle	nyergel
