@@ -5947,3 +5947,5 @@
 105946	allgegenwärtig	mindenütt jelenlevő
 105947	r Bettler	koldus
 105948	r Demonstrant	tüntető
+105949	r Ehemann	férj
+105950	widerwärtig	utálatos, ellenszenves

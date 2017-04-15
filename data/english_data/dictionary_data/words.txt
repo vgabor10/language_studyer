@@ -1362,3 +1362,8 @@
 101361	wane	apad, fogy
 101362	trade union	szakszervezet
 101363	saddle	nyergel
+101364	faction	párt, csoport
+101365	blissfully	szerencsére
+101366	ire	düh, harag
+101367	squeamish	érzékeny, finnyás
+101368	transcend	meghalad, fellülmúl
