@@ -1367,3 +1367,8 @@
 101366	ire	düh, harag
 101367	squeamish	érzékeny, finnyás
 101368	transcend	meghalad, fellülmúl
+101369	inanimate	élettelen
+101370	heft	súly
+101371	persuasion	meggyőzés, rábeszélés
+101372	embolden	felbátorít
+101373	resent	neheztel, megsértődik

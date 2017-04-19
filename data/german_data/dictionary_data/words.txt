@@ -5949,3 +5949,8 @@
 105948	r Demonstrant	tüntető
 105949	r Ehemann	férj
 105950	widerwärtig	utálatos, ellenszenves
+105951	rauben	rabol, elrabol
+105952	vorankommen	halad, előrehalad
+105953	s Geschwader	kötelék, egység
+105954	münden	torkollik
+105955	unnachgiebig	hajthatatlan, rendíthetetlen
