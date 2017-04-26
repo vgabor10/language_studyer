@@ -890,7 +890,7 @@
 100896	echo	visszhang
 100897	quagmire	ingovány
 100898	apprentice	gyakornok
-100899	commemorate	megemlékezik
+100899	commemorate	emlékezet, ünnepel
 100900	naughty	szemtelen, csintalan
 100901	wrist	csukló
 100902	slap	ütés
@@ -1372,3 +1372,11 @@
 101371	persuasion	meggyőzés, rábeszélés
 101372	embolden	felbátorít
 101373	resent	neheztel, megsértődik
+101374	cowardice	gyávaság
+101375	deplorable	szánalmas
+101376	suborn	megveszteget, hamis vallomásra bír
+101377	decoy	csali, csalétek
+101378	ruse	csel, trükk
+101379	accentuate	hangsúlyoz, kihangsúlyoz
+101380	demise	pusztulás, bukás
+101381	notion	fogalom, szándék
