@@ -5954,3 +5954,13 @@
 105953	s Geschwader	kötelék, egység
 105954	münden	torkollik
 105955	unnachgiebig	hajthatatlan, rendíthetetlen
+105956	s Rückgrat	gerinc
+105957	r Stundenkilometer	kilométer per óra
+105958	s Geschehen	esemény, történés
+105959	s Düsenflugzeug	sugárhajtású repülőgép
+105960	wendig	sokoldalú
+105961	s Vermächtnis	hagyaték, örökség
+105962	verteuern	drágít, drágul
+105963	schlucken	nyel
+105964	festklopfen	megállapodik vmiben
+105965	s Treffen	találkozó

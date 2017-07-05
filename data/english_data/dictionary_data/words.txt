@@ -1,6 +1,6 @@
 100000	accumulate	felhalmoz
 100001	attain	elér
-100002	encourage	bíztat
+100002	encourage	bíztat, bátorít
 100003	cater	ellát
 100004	facility	képesség
 100005	annotate	jegyzetel
@@ -1380,3 +1380,19 @@
 101379	accentuate	hangsúlyoz, kihangsúlyoz
 101380	demise	pusztulás, bukás
 101381	notion	fogalom, szándék
+101382	waistband	öv
+101383	ignite	begyújt, lángra lobbant
+101384	waste	pazarol, csökken
+101385	corporation	vállalat, testület
+101386	enact	elrendel, törvénybe iktat
+101387	grasp the chance	megragadja a lehetőséget
+101388	concession	engedmény
+101389	tip	borravaló
+101390	uncharted	feltérképezetlen
+101391	lame	béna, gyatra, sánta
+101392	mayor	polgármester
+101393	assertion	kijelentés, követelés
+101394	outright	nyílt, őszinte
+101395	zeal	buzgalom, mohóság
+101396	steadfast	rendíthetetlen
+101397	expiration	lejárat
