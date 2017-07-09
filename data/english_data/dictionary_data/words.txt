@@ -193,7 +193,7 @@
 100194	bogus	hamis
 100195	bust	mell
 100196	mutilate	megrongál
-100197	bleak	kopár
+100197	bleak	zord, sivár, kopár
 100198	reveal	felfed
 100199	delay	késedelem
 100200	identical	azonos
@@ -973,7 +973,7 @@
 100979	reservation	fenntartás
 100980	banish	száműz
 100981	virtually	szinte
-100982	infuriate	felbosszant
+100982	infuriate	dühít, felbosszant
 100983	appeasement	megbékülés
 100984	appeal	folyamodik, fordul, fellebbez
 100985	summon	behív, beidéz
@@ -1396,3 +1396,23 @@
 101395	zeal	buzgalom, mohóság
 101396	steadfast	rendíthetetlen
 101397	expiration	lejárat
+101398	catfish	harcsa
+101399	counter	pult
+101400	convene	gyülekezik, behív
+101401	admonish	megdorgál, int
+101402	vocational	szakmai
+101403	prudence	megfontoltság, körültekintés
+101404	crumble	porlad, morzsolódik
+101405	compatriot	hinfitárs
+101406	taunt	gúny
+101407	swamp	elönt, eláraszt
+101408	cryptic	rejtélyes, titkos
+101409	constituency	választókerület
+101410	outrun	lehagy, elhagy, megelőz
+101411	rule out	elvet, kizár, elutasít
+101412	remind	emlékeztet
+101413	breakdown	bukás, üzemzavar, összeomlás
+101414	carnage	vérontás, mészárlás
+101415	ensue	ered, származik
+101416	stir	izgalom, felbolydulás
+101417	relinquish	felad, lemond, abbahagy

@@ -703,7 +703,7 @@
 100709	e Entschlossenheit	elszántáság
 100710	s Engagement	kötelezettség
 100711	e Sicherheit	biztonság
-100712	e Einrichtung	bevezetés, berendezés
+100712	e Einrichtung	intézmény, berendezés
 100713	e Verlegung	átköltöztetés
 100714	beziffern	becsül
 100715	e Wartung	karbantartás
@@ -2306,7 +2306,7 @@
 102358	glänzend	ragyogó
 102359	gleichen	simít, kiegyenlít
 102360	gleichmäßig	egyenletes
-102361	gleichzeitig	egyidejűleg
+102361	gleichzeitig	egyszerre, egyidejűleg
 102362	gleiten	lebeg, siklik, csúszik
 102363	global	globális
 102364	glücklich	boldog, szerencsés
@@ -4586,7 +4586,7 @@
 104683	jagen	vadászik
 104684	leuchten	világít
 104685	begeistern	ihlet, lelkesít
-104686	e Praxis	rendelés, praxis
+104686	e Praxis	rendelés, praxis, gyakorlat
 104687	e Droge	drog, kábítószer
 104688	vorsehen	tervbe vesz, előre lát
 104689	verfassen	fogalmaz, megfogalmaz
@@ -5964,3 +5964,7 @@
 105963	schlucken	nyel
 105964	festklopfen	megállapodik vmiben
 105965	s Treffen	találkozó
+105966	e Einrichtung	bevezetés, beiktatás
+105967	e Heizug	fűtés
+105968	heizen	fűt
+105969	beerdigen	eltemet
