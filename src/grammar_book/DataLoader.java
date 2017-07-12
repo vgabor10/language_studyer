@@ -10,10 +10,15 @@ public class DataLoader {
 
     private DataContainer dataContainer;
 
-    public DiscFilesMetaDataHandler discFilesMetaDataHandler;
+    private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
     public void setDataContainer(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
+    }
+    
+    public void setDiscFilesMetaDataHandler
+        (DiscFilesMetaDataHandler discFilesMetaDataHandler) {
+        this.discFilesMetaDataHandler = discFilesMetaDataHandler;
     }
     
     public void loadLanguageDataWithIndex(int languageIndex) {  //TODO: is it used anywehere?
@@ -23,7 +28,7 @@ public class DataLoader {
 
     public void loadGrammarItems() {
         try {
-            GrammarItemContainer grammarBook = dataContainer.grammarItemContainer;
+            GrammarItemContainer grammarItemContainer = dataContainer.grammarItemContainer;
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -37,7 +42,7 @@ public class DataLoader {
                 
                 if (strLine.startsWith("\\title{")) {
                     if (grammarItemOrderIndex != 0) {
-                        grammarBook.addGrammarItem(grammarItem);
+                        grammarItemContainer.addGrammarItem(grammarItem);
                         grammarItem = new GrammarItem();
                     }
                     grammarItemOrderIndex++;
@@ -93,7 +98,7 @@ public class DataLoader {
                 strLine = br.readLine();
             }
             
-            grammarBook.addGrammarItem(grammarItem);
+            grammarItemContainer.addGrammarItem(grammarItem);
             
         } catch (FileNotFoundException e) {
             System.err.println("unable to find grammar book file");
@@ -160,13 +165,15 @@ public class DataLoader {
                 dataContainer.categoryContainer.add(category);
             }
         } catch (FileNotFoundException e) {
-            System.err.println("unable to find file");
+            System.err.println("unable to find category file");
         } catch (IOException e) {
             System.err.println("exception in load file function");
         }
     }   
     
     public void loadAllData() {
+        dataContainer.clear();
+        
         loadGrammarItems();
         loadAnswerData();
         loadCategoryIndexesAndCategoryNames();

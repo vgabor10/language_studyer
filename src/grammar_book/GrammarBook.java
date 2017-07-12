@@ -10,7 +10,7 @@ public class GrammarBook {
     public DataModificator dataModificator = new DataModificator();
     
     public GrammarBook() {
-        dataLoader.discFilesMetaDataHandler = discFilesMetaDataHandler;
+        dataLoader.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);
         dataLoader.setDataContainer(dataContainer);
         dataLoader.loadAllData();
         
