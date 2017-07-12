@@ -49,3 +49,43 @@ T/3     | they      | them      | their           | theirs
 31 | yours | tiétek
 32 | theirs | övék
 \end{exmp}
+
+\title{Módbeli segédigék/Shall}
+
+GrammarItemIndex = 685473
+
+\begin{desc}
+Jelenthet tiltást, parancsot és kényszert.
+Pl. Who will not work, shall not eat. - Aki nem dolgozik, ne is egyék.
+\end{desc}
+
+\begin{exmp}
+1 | You shall take a taxi. | Taxival kell menned.
+2 | You shall see it. | Ezt látnod kell!
+\end{exmp}
+
+\title{Módbeli segédigék/Ought to/Jelen időben}
+
+GrammarItemIndex = 685673
+
+\begin{desc}
+Az ought to jelentése (nyomatékosabb értelemben): kellene.
+Pl. You ought to do it better than me. - Jobban kellene csinálnod nálam.
+\end{desc}
+
+\begin{exmp}
+1 | We ought not to quarrel with him over the things to do. | Nem kellene veszekednünk vele a tennivalókon.
+\end{exmp}
+
+\title{Módbeli segédigék/Ought to/Múlt időben}
+
+GrammarItemIndex = 748635
+
+\begin{desc}
+A múlt idejét a következőképpen alkothatjuk meg: ought to + have + harmadik alak.
+Pl. I ought to have learn the lesson. - Meg kellett volna tanulnom a leckét. 
+\end{desc}
+
+\begin{exmp}
+1 | You oughtn't to have lost your head. | Nem kellett volna elvesztened a fejed.
+\end{exmp}

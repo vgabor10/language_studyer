@@ -126,7 +126,7 @@
 100127	offset	ellensúlyoz
 100128	bear out	igazol
 100129	thrift	takarékosság
-100130	absorb	felszív
+100130	absorb	felszív, elnyel
 100131	tepid	langyos
 100132	burden	teher
 100133	albeit	habár
@@ -318,7 +318,6 @@
 100319	rust	rozsdásodik
 100320	formidable	félelmetes
 100321	tow	vontat
-100322	absorb	elnyel
 100323	diligent	szorgalmas
 100324	arch	ív
 100325	dispel	eloszlat
@@ -1416,3 +1415,34 @@
 101415	ensue	ered, származik
 101416	stir	izgalom, felbolydulás
 101417	relinquish	felad, lemond, abbahagy
+101418	emulate	utánoz
+101419	surpass	felülmúl, túltesz
+101420	prevalence	túlsúly, dominancia
+101421	suffrage	választójog
+101422	dweller	lakos
+101423	bargain	alku
+101424	fringe	szegély
+101425	belligerence	ellenséges magatartás
+101426	nonetheless	mindazonáltal
+101427	enlist	besoroz, megnyer
+101428	desist	eláll
+101429	martial	harcias, katonai
+101430	incendiary	gyújtogató, bujtogató
+101431	abet	elősegít
+101432	adhere	ragad, tapad, ragaszkodik
+101433	hitchhike	autóstoppal utazik
+101434	illegible	olvashatatlan
+101435	blow	utés, csapás
+101436	dependable	megbízható
+100322	blunt	tompa, nyers
+101437	mattress	matrac, ágybetét
+101438	unilateral	egyoldalú
+101439	reconcile	megbékél, kiegyenlít, elsimít
+101440	whatsoever	akármi, bármi, bármilyen
+101441	contribute	hozzájárul, közreműködik
+101442	rule of law	jogálla, jogrend
+101443	capable of sg	képes vmire
+101444	retail	kereskedik
+101445	tailor	szab, varr
+101446	threadbare	kopott, viseltes
+101447	itinerary	útvonal, utiterv
