@@ -1446,3 +1446,22 @@
 101445	tailor	szab, varr
 101446	threadbare	kopott, viseltes
 101447	itinerary	útvonal, utiterv
+101448	cuddle	ölel, megölel
+101449	clown	bohóc
+101450	sensitivity	érzékenység
+101451	cadaver	hulla, tetem
+101452	cultivate	ápol, művel
+101453	mean	átlag
+101454	mean	vacak, rusnya
+101455	spectre	kísértet, szellem
+101456	yoke	iga, rabiga
+101457	altogether	teljesen, együtt, összesen
+101458	amphibious	kétéltű
+101459	disruptive	bomlasztó, szakító
+101460	sidewalk	járda
+101461	scrape	vakar, kapar
+101462	hoe	kapa
+101463	senseless	értelmetlen
+101464	on the contrary	ellenkezőleg
+101465	persist	kitart, folytatódik, ragaszkodik vmihez
+101466	caveat	óvás, figyelmeztetés

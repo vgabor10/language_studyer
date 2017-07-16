@@ -89,3 +89,52 @@ Pl. I ought to have learn the lesson. - Meg kellett volna tanulnom a leckét.
 \begin{exmp}
 1 | You oughtn't to have lost your head. | Nem kellett volna elvesztened a fejed.
 \end{exmp}
+
+\title{Melléknévfokozás/Egyszótagú melléknevek}
+
+GrammarItemIndex = 859314
+
+\begin{desc}
+Azok az egy szótagú melléknevek, amelyek -e betűre végződtek (nice, cute, wide), középfokon -r, felsőfokon -st végződést kapnak, minden más esetben, pedig -er, -est végződés kerül a melléknevek végére (slow, fast, tall, long, small).
+
+Ha a melléknév egy szótagú és mássalhangzó + magánhangzó + mássalhangzóra végződik (vagy ennyiből áll), akkor az utolsó mássalhangzó a melléknévfokozás során megduplázódik.
+hot 	hotter 	hottest
+big 	bigger 	biggest
+fat 	fatter 	fattest
+
+Melléknévfokozás szempontjából az egy szótagúak csoportjához soroljuk azkat a mellékneveket, amelyek két szótagúak, de a második szótag egy mássalhangzó + -y-ra végződik.
+happy 	happier 	happiest
+silly 	sillier 	silliest
+lonely 	lonelier 	loneliest
+friendly 	friendlier 	friendliest
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
+
+\title{Melléknévfokozás/Többszotagú melléknevek}
+
+GrammarItemIndex = 567412
+
+\begin{desc}
+Az egynél több szótagú melléknevek (amelyek nem sorolandók még az első csoportba), középfokon a more, felsőfokon a most előtagok segítségével fokozandók.
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
+
+\title{Melléknévfokozás/Rendhagyú fokozású melléknevek}
+
+GrammarItemIndex = 325796
+
+\begin{desc}
+good 	| better 	    | best
+bad 	| worse 	    | worst
+many 	| more 	            | most
+much 	| more 	            | most
+little 	| less 	            | least
+far 	| further / farther | furthest / farthest
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
