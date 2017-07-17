@@ -396,7 +396,7 @@
 100398	devise	kigondol
 100399	manifestation	megnyilvánulás
 100400	allegedly	állítólag
-100401	discern	észrevesz
+100401	discern	észrevesz, észlel, érzékel
 100402	overthrow	megbuktat, megdönt
 100403	attribute	tulajdonság
 100404	deception	csalás
@@ -748,7 +748,7 @@
 100754	contribution	hozzájárulás, adomány
 100755	foresee	előre lát
 100756	margin	szegély, perem
-100757	ease	enyhül, megnyugszik
+100757	ease	enyhül, megnyugszik, könnyít, lazít
 100758	windshield	szélvédő
 100759	notwithstanding	mégis
 100760	decency	illendőség
@@ -1465,3 +1465,59 @@
 101464	on the contrary	ellenkezőleg
 101465	persist	kitart, folytatódik, ragaszkodik vmihez
 101466	caveat	óvás, figyelmeztetés
+101467	lucrative	jövedelmező
+101468	uncongenial	ellenszenves
+101469	countrymen	vidéki ember
+101470	lawn	gyep, pázsit, fű
+101471	preface	előszó
+101472	oust	elűz
+101473	though	bár, habár
+101474	immutable	megváltoztathatatlan, állandó
+101475	rainfall	eső, esőzés
+101476	inimical	kedvezőtlen, ellenséges
+101477	pundit	tudós
+101478	devle	ás, kutat, turkál
+101479	trajectory	pálya, pályagörbe
+101480	deficient	hibás, hiányos, elégtelen
+101481	sewage	szennyvíz
+101482	expropriation	kisajátítás, eltulajdonítás
+101483	amenity	kedvesség, kellemesség
+101484	endeavour	törekvés, igyekezet, erőfeszítés
+101485	germ	baktérium
+101486	sanitary	egészségügyi, egészségi
+101487	conductive	hasznos, elősegítő
+101488	estuary	torkolat, tölcsértorkolat
+101489	helm	sisak
+101490	tilling	szántás, megművelés
+101491	ingot	öntvény
+101492	viceroy	alkirály
+101493	loot	fosztogat, zsákmányol
+101494	sap	kiszipolyoz
+101495	plentiful	bőséges, gazdag
+101496	dither	izgul, remeg, reszket
+101497	victual	élelem
+101498	free	szabaddá tesz, felszabadít, mentesít
+101499	manorial	földesuri, uradalmi
+101500	espouse	magáévá tesz, támogat, eljegyez
+101501	abdicate	felad, lemond, leköszön
+101502	abrogate	eltöröl, érvénytelenít
+101503	mutiny	fellázad, zendül
+101504	yet	már
+101505	enfranchise	választójogot ad
+101506	sordid	mocskos, piszkos, aljas
+101507	intermediation	közvetítés
+101508	twine	fonal, zsinór
+101509	reconciliation	kibékülés
+101510	loophole	kibúvó
+101511	venture	vállalkozik, merészel
+101512	grievance	sérelem, panasz
+101513	complement	kiegészít, pótol
+101514	for one thing	elsősorban
+101515	temperate	mérsékelt, mértékletes
+101516	superficial	felületes, felszínes
+101517	inquisitiveness	kíváncsiság
+101518	measure	intézkedés
+101519	measure	mérték, méret
+101520	dissemination	terjesztés, elterjedés
+101521	lag	késés, lemaradás
+101522	insurmountable	leküzdhetetlen
