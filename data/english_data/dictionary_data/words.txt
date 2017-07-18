@@ -241,7 +241,7 @@
 100242	hurry	siet
 100243	thrive	növekszik
 100244	tremendous	óriási
-100245	cascade	vízesés
+100245	cascade	vízesés, zuhatag
 100246	abrasion	kopás
 100247	drove	tömeg
 100248	notorious	hírhedt
@@ -530,7 +530,7 @@
 100535	obese	elhízott
 100536	zealous	lelkes
 100537	fade	fakul
-100538	oppression	elnyomás
+100538	oppression	elnyomás, zsarnokság
 100539	savage	vad, műveletlen
 100540	tempestuous	viharos
 100541	decelerate	lassít
@@ -649,7 +649,7 @@
 100654	invincible	legyőzhetetlen
 100655	hospitality	vendéglátás
 100656	dignity	méltóság
-100657	feast	ünnepség
+100657	feast	ünnepség, lakoma
 100658	amuse	szórakoztat
 100659	bleed	vérzik
 100660	timid	félénk
@@ -1521,3 +1521,33 @@
 101520	dissemination	terjesztés, elterjedés
 101521	lag	késés, lemaradás
 101522	insurmountable	leküzdhetetlen
+101523	incidence	előfordulás
+101524	cattle	marha
+101525	spur	sarkall, ösztönöz
+101526	articulate	kiejt
+101527	profligate	erkölcstelen
+101528	impecunious	szegény, pénztelen
+101529	trumpet	trombitál, híresztel
+101530	plow	eke
+101531	venerable	tiszteletre méltó
+101532	extent	nagyság, fok, méret
+101533	mimic	utánoz
+101534	spurious	hamis
+101535	scarce	szűkös
+101536	mistaken	téves, helytelen
+101537	footwear	cipő, lábbeli
+101538	implausible	valószínűtlen
+101539	outlaw	száműz, törvényen kívül helyez
+101540	exert	kifejt, hatást gyakorol
+101541	expropriate	kisajátít, elvesz
+101542	coercive	korlátozó, kényszerítő
+101543	fraud	csalás
+101544	flourish	fejlődik, gyarapszik
+101545	extract	kivon, eltávolít
+101546	pleasant	kellemes, barátságos
+101547	soundly	alaposan
+101548	pretender	trónkövetelő
+101549	lamentable	siralmas, szánalmas
+101550	harness	hasznosít, felfegyverez
+101551	augment	gyarapít, bővít
+101552	avalanche	lavina
