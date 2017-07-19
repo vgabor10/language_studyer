@@ -652,7 +652,7 @@
 100657	feast	ünnepség, lakoma
 100658	amuse	szórakoztat
 100659	bleed	vérzik
-100660	timid	félénk
+100660	timid	félénk, bátortalan
 100661	tame	szelíd
 100662	livestock	állatállomány
 100663	carry on	kitart, folytat
@@ -1551,3 +1551,33 @@
 101550	harness	hasznosít, felfegyverez
 101551	augment	gyarapít, bővít
 101552	avalanche	lavina
+101553	curb	megfékez
+101554	lavish	bőséges, pazarló
+101555	breach	áttör, rést üt
+101556	combustion	gyulladás. égés
+101557	combustion engine	belső égésű motor
+101558	breed	nevel, szül
+101559	pledge	megígér, megfogad
+101560	deceptively	félrevezetően, megtévesztően
+101561	erratic	szeszélyes, szabálytalan
+101562	encouraging	bíztató
+101563	intrigue	izgat, érdekel
+101564	stripe	sáv, csík, vonal
+101565	murky	sötét, homályos
+101566	meddling	beavatkozás
+101567	parrot	papagály
+101568	turtle	teknős
+101569	autobiography	önéletrajz
+101570	beam	sugár, fénysugár
+101571	classified	titkos, bizalmas
+101572	projectile	lövedék
+101573	proliferate	osztódik, szaporodik, burjánzik
+101574	swamp	mocsár, láp
+101575	outlet	kivezetés, kijárat, konnektor
+101576	sputter	szikrázik
+101577	embark	beszáll
+101578	repressive	elnyomó
+101579	defamation	rágalmazás, becsületsértés
+101580	appall	elborzaszt, megrémít
+101581	reminisce	emlékeiről mesél
+101582	martial law	statárium, katonai közigazgatás
