@@ -37,7 +37,7 @@
 100037	prosperity	jólét
 100038	utility	hasznosság
 100039	tough	erős
-100040	austerity	szigorúság
+100040	austerity	megszorítás, szigorúság
 100041	delusion	csalódás
 100042	sprawl	terjeszkedik
 100043	impetus	ösztönzés
@@ -249,7 +249,7 @@
 100250	tracer	másoló
 100251	start from scratch	semmiből kezdi
 100252	prescribe	felír (orvosságot)
-100253	wrapper	burkolat
+100253	wrapper	csomagolás, burkolat
 100254	adept	szakértő
 100255	anticipate	előre lát
 100256	pertinent	találó
@@ -1581,3 +1581,51 @@
 101580	appall	elborzaszt, megrémít
 101581	reminisce	emlékeiről mesél
 101582	martial law	statárium, katonai közigazgatás
+101583	sense of humor	humorérzék
+101584	undercover	titkos, rejtett
+101585	infringement	megszegés, áthágás
+101586	annihilation	megsemmisülés
+101587	spindle	orsó, tengely
+101588	towel	törölköző
+101589	appraisal	értékbecslés
+101590	distasteful	undorító, utálatos
+101591	bark	ugat
+101592	immaterial	lényegtelen
+101593	palm	tenyér
+101594	purview	hatáskör
+101595	spill	bukás, esés
+101596	extortion	zsarolás
+101597	genocide	népírtás
+101598	ponytail	copf
+101599	revenue	bevétel, jövedelem
+101600	seal	fóka
+101601	acclimate	meghonosít, hozzászokik
+101602	neurotic	idegbajos
+101603	disorder	betegség, rendellenesség, zűrzavar
+101604	drawback	hátrány
+101605	febrile	lázas
+101606	order of magnitude	nagyságrend
+101607	deplet	kimerít, kürül, elfogyaszt
+101608	unrelated	össze nem függő
+101609	infestation	fertőzés
+101610	infection	fertőzés
+101611	cigar	szivar
+101612	denounce	vádol, feljelent
+101613	power cur	áramkimaradás
+101614	ransack	kirabol, kifoszt
+101615	spit	köp
+101616	cellar	pince
+101617	tiptoe	lábujjhegyen megy
+101618	outfit	társaság, csapat, alakulat
+101619	straw	szalma
+101620	requisition	követelés, igénybevétel
+101621	serfdom	jobbágyság
+101622	illicit	illegális, tiltott
+101623	compromise	kiegyezik, megalkuszik
+101624	humiliation	megalázás
+101625	prelude	bevezetés, előzmény
+101626	despair	kétségbeesik
+101627	vanity	hiúság, beképzeltség
+101628	contradict	tagad, cáfol
+101629	disappearance	eltűnés
+101630	retain	megtart, megőriz
