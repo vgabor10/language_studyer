@@ -911,7 +911,7 @@
 100918	surge	hullám, roham
 100919	thwart	keresztez, akadályoz, kijátszik
 100920	deteriorate	romlik, rosszabbodik
-100921	stance	állás, hozzáállás
+100921	stance	hozzáállás
 100922	resilience	rugalmasság
 100923	crave	könyörög, sóvárog
 100924	accessory	kiegészítő, tartozék
@@ -1629,3 +1629,30 @@
 101628	contradict	tagad, cáfol
 101629	disappearance	eltűnés
 101630	retain	megtart, megőriz
+101631	fish tank	akvárium
+101632	verification	igazolás, bizonyítás, ellenőrzés
+101633	lack	hiány
+101634	charge	vád, roham, támadás
+101635	oppose	ellenez
+101636	honk	dudál
+101637	fateful	életbevágó, végzetes
+101638	fraud	csaló, szélhámos
+101639	perspiration	izzadság
+101640	thrust	lökés, döfés, tolóerő
+101641	purge	megtisztít
+101642	interregnum	trónüresedés
+101643	expulsion	kizárás, kiutasítás, kiűzés
+101644	eruption	kitörés
+101645	infighting	belharc, közelharc
+101646	ascendancy	hatalom, befolyás, fölény
+101647	shuffle	kever
+101648	hose	slag, tömlő
+101649	proponent	támofató
+101650	elobrate	kidolgoz, kifejt
+101651	regard	tekint, tart, néz
+101652	mesdeed	gaztett, bűn
+101653	evict	kilakoltat, kikerget
+101654	promptly	hamar, azonnal
+101655	aversion	idegenkedés, irtózás
+101656	seize	elkoboz, lefoglal
+101657	inherently	vele járóan
