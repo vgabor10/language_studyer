@@ -1656,3 +1656,67 @@
 101655	aversion	idegenkedés, irtózás
 101656	seize	elkoboz, lefoglal
 101657	inherently	vele járóan
+101658	stuck	ragad, tapad, elakad
+101659	overhaul	nagyjavítás
+101660	slip	csúszik
+101661	draft	tervezet, vázlat
+101662	bankroll	finanszíroz
+101663	rural	vidéki
+101664	slash	hasít, megvág, csökkent
+101665	pervasive	szétterjedt, kiterjedt
+101666	tarnish	elhomályosít, elfakít
+101667	slpeen	lép
+101668	stakeholder	részvényes
+101669	jeopardy	kockázat, veszély
+101670	meanwhile	eközben, időközben
+101671	refugee	menekült
+101672	eliminite	felszámol, eltávolít, megsemmisít
+101673	mint	érme, pénzverde
+101674	mint	menta
+101675	crew	személyzet, legénység
+101676	dump	kirak, eldob
+101677	vengeance	bosszú
+101678	vanquish	győz, legyőz
+101679	exclusion	kizárás, kirekesztés
+101680	exclude	kizár, kirekeszt
+101681	devour	felfal, lenyel, elpusztít
+101682	auspicious	kedvező
+101683	lure	csal, csábít
+101684	solemn	ünnepélyes, komoly
+101685	lever	fogantyú, kar
+101686	loose	lazán
+101687	commoner	közember
+101688	people	emberek
+101689	ointment	kenőcs, balzsam
+101690	odds	esély
+101691	remedy	orvosol, helyrehoz
+101692	subsequently	következésképpen, azután
+101693	elapse	telík, múlik
+101694	invoke	hív, idéz, lehív
+101695	ambiguous	bizonytalan, kétes, kétséges
+101696	backdrop	háttér
+101697	oversight	felügyelet
+101698	apprehensive	nyugtalan, aggódó
+101699	friction	súrlódás
+101700	insistence	ragaszkodás
+101701	custom	szokás, vám
+101702	revert	visszatér
+101703	alimony	tartásdíj, ellátás
+101704	sustainable	fenntartható, elviselhető
+101705	overwhelmed	túlterhelt
+101706	wield	kezel, gyakorol, kormányoz
+101707	sway	leng, billeg
+101708	distract	megzavar, eltérít
+101709	landscape	táj
+101710	discrepancy	eltérés
+101711	onerous	terhes, súlyos
+101712	eject	kiad, kirak, elűz
+101713	insubordinate	engedetlen, fegyelmezetlen
+101714	eye	szem
+101715	pendulum	inga
+101716	drill	gyakorlat
+101717	drill	fúrás, fúró
+101718	elusive	megfoghatatlan, bizonytalan
+101719	since	mivel, mert
+101720	since	óta
+101721	sincere	őszinte, nyílt, egyenes
