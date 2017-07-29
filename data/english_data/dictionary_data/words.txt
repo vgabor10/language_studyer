@@ -1282,7 +1282,7 @@
 101283	shaft	tengely
 101284	feel dizzy	szédül
 101285	vignette	címke, vignetta
-101286	culminate	tetőz
+101286	culminate	tetőz, tetőfokára hág
 101287	strident	éles, harsogó
 101288	bulwark	bástya, mellvéd
 101289	impede	gátol
@@ -1720,3 +1720,37 @@
 101719	since	mivel, mert
 101720	since	óta
 101721	sincere	őszinte, nyílt, egyenes
+101722	beverage	ital, italok
+101723	distress	veszély, baj
+101724	oyster	osztiga
+101725	reason	ok, indíték, indok
+101726	contingent	esetleges
+101727	underway	úton
+101728	manifest	jegyzék
+101729	renege	becsap, megcsal, cserbenhagy
+101730	disgruntled	háborgó, elégedetlen
+101731	liability	teher, felelősség
+101732	superior	felettes, főnök
+101733	perjury	hamis eskü
+101734	residue	maradvány, üledék
+101735	proxy	meghatalmazott, helyettes, megbízott
+101736	waver	remeg, habozik, meginog
+101737	contagious	fertőző, ragályos
+101738	dread	retteg, fél
+101739	figure out	kigondol, kitalál
+101740	radiant	sugárzó, ragyogó
+101741	tenacity	kitartás, makacsság, szívósság
+101742	bracelet	karkötő
+101743	liver	máj
+101744	humor	kedvében jár
+101745	riot	zavargás, lázadás
+101746	arson	gyújtogatás
+101747	decay	pusztul, hanyatlik
+101748	derelict	elhagyott, gazdátlan
+101749	muscle	izom
+101750	backyard	udvar
+101751	bent	hajlam
+101752	shoal	zátony
+101753	clamour	zajong, lármázik
+101754	legislator	törvényhozó
+101755	conscious	tudatos, megfontolt
