@@ -1076,7 +1076,6 @@
 101078	trail	sáv, ösvény
 101079	temper	enyhít, higít, mérsékel
 101080	stain	folt
-101081	embezzle	elsikkaszt
 101082	revenge	bosszú
 101083	right away	azonnal, rögtön
 101084	ominous	baljós, vészes
@@ -1754,3 +1753,35 @@
 101753	clamour	zajong, lármázik
 101754	legislator	törvényhozó
 101755	conscious	tudatos, megfontolt
+101756	profess	vall, állít
+101757	embezzle	sikkaszt, hűtlenül kezel
+101081	inept	ostoba, alkalmatlan
+101758	peninsula	félsziget
+101759	deterrence	elrettentés
+101760	jitter	idegesség
+101761	reaffirm	megerősít
+101762	chagrin	bosszúság, kellemetlenség
+101763	disruption	szakadás, bomlás
+101764	timely	időben, idejében
+101765	bar	akadályoz, gátol
+101766	lethality	halált okozó képesség
+101767	ponder	töpreng, mérlegel
+101768	wedge	ék
+101769	wreak	kiad, szabadjára enged
+101770	overhaul	alaposan átvizsgál
+101771	filibuster	obstrukció
+101772	landlocked	szárazfölddel körülvett
+101773	forest	erdő
+101774	oak	tölgy
+101775	reshuffle	átrendez, átalakít
+101776	stern	merev, zord, rideg
+101777	tormented	kínoz, zaklat
+101778	bid	ajánl, ígér, licitál
+101779	exquisite	rendkívüli, remek, kitűnő
+101780	impeccable	kifogástalan, feddhetetlen
+101781	fibb	füllet
+101782	chum	haver, cimbora
+101783	confectionery	cukrászda
+101784	snap up	elkapkod, fekap
+101785	sauce	szósz, mártás
+101786	splurge	felvág, feltűnően viselkedik
