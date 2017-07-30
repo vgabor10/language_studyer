@@ -36,7 +36,7 @@
 100036	carry out	végre hajt
 100037	prosperity	jólét
 100038	utility	hasznosság
-100039	tough	erős
+100039	tough	erős, kemény
 100040	austerity	megszorítás, szigorúság
 100041	delusion	csalódás
 100042	sprawl	terjeszkedik
@@ -93,7 +93,7 @@
 100094	departure	elindulás
 100095	pursue	folytat
 100096	vigorous	erőteljes
-100097	so far	eddig
+100097	so far	eddig, idáig
 100098	asset	vagyon, birtok
 100099	bold	bátor
 100100	incorporate	keveredik
@@ -408,7 +408,7 @@
 100410	entangle	összezavar
 100411	be bound to do sg	kötelessége megtenni vmit
 100412	limp	sántít
-100413	toll	vám
+100413	toll	vám, díj
 100414	linger	időzik
 100415	shade	árnyék
 100416	foolish	bolond
@@ -1785,3 +1785,29 @@
 101784	snap up	elkapkod, fekap
 101785	sauce	szósz, mártás
 101786	splurge	felvág, feltűnően viselkedik
+101787	maverick	pártonkívüli, szabadúszó
+101788	disparity	különbség
+101789	encapsulation	betokosodás
+101790	warmth	melegség
+101791	backfire	visszafelé sül el
+101792	condone	elnéz, megbocsát
+101793	proper	birtok
+101794	commit	rábíz
+101795	fervour	buzgalom, szenvedély
+101796	implode	belobban
+101797	on a daily basis	naponta
+101798	age	öregszik
+101799	unveil	leleplez, felfed
+101800	appreciation	elismerés, méltatás
+101801	intricate	bonyolult, kusza, komplikált
+101802	falter	akadozik, botladozik
+101803	reign	uralkodik, kormányoz
+101804	compound	kever, vegyít, keveredik
+101805	slump	pangás, zuhanás
+101806	languish	lankad
+101807	boost	emelkedés, fokozás, fellendülés
+101808	bumpy	göröngyös, döcögős
+101809	gloom	homály, mélabú
+101810	in spite of sg	vminek ellenére
+101811	rumble	dörög, morajlik
+101812	inexorable	hajthatatlan, rendíthetetlen
