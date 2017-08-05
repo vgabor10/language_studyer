@@ -1811,3 +1811,33 @@
 101810	in spite of sg	vminek ellenére
 101811	rumble	dörög, morajlik
 101812	inexorable	hajthatatlan, rendíthetetlen
+101813	grave	komoly, súlyos
+101814	hermit	remete
+101815	blunder	melléfog, elfuserál
+101816	backward	fejletlen, visszamaradt
+101817	vow	megfogad, megesküszik
+101818	scatter	elszór, szétszór
+101819	dissolute	kicsapongó, könnyelmő
+101820	deity	istenség, isten
+101821	misconstrue	félremagyaráz
+101822	be fed up with sg	elege van vmiből
+101823	thaw	olvad, felenged, enyhül
+101824	stall	akadályoz, lelassul
+101825	rampage	tombol, dühöng, őrjöng
+101826	defence	védelem, védekezés
+101827	crunch	roppanás
+101828	tatter	rongy
+101829	wallet	pénztárca
+101830	standoff	holtpont, patthelyzet
+101831	insulate	elszigetel, elkülönít
+101832	turnout	részvétel
+101833	snapshot	felvétel, fénykép
+101834	distaste	ellenszenv, utálat
+101835	scheme	séma, tervezet, vázlat
+101836	distort	torzít, elferdít
+101837	square	kifizet, kiegyenlít
+101838	evaporate	elpárolog
+101839	shallow	sekély, lapos
+101840	scare	megijeszt, megrémít
+101841	virtuous	erényes, érdemes
+101842	paragon	mintakép
