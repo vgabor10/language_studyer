@@ -1419,7 +1419,7 @@
 101420	prevalence	túlsúly, dominancia
 101421	suffrage	választójog
 101422	dweller	lakos
-101423	bargain	alku
+101423	bargain	alku, üzlet
 101424	fringe	szegély
 101425	belligerence	ellenséges magatartás
 101426	nonetheless	mindazonáltal
@@ -1841,3 +1841,17 @@
 101840	scare	megijeszt, megrémít
 101841	virtuous	erényes, érdemes
 101842	paragon	mintakép
+101843	illuminating	világító
+101844	ostensibly	látszólag
+101845	doubter	kételkedő
+101846	worthwhile	érdemes
+101847	afresh	újra. ismét ,előről
+101848	signal	jelez
+101849	rebuff	elutasít, visszautasít
+101850	be averse to sg	irtózik vmitől, idegenkedik vmitől
+101851	causality	okozati viszony
+101852	malaise	gyengélkedés
+101853	gauge	mér, felmér
+101854	plague	gyötör
+101855	doldrums	pangás, szélcsend
+101856	inflammatory	gyújtó, gyulladást okozó
