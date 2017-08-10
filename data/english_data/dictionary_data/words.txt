@@ -1550,7 +1550,7 @@
 101550	harness	hasznosít, felfegyverez
 101551	augment	gyarapít, bővít
 101552	avalanche	lavina
-101553	curb	megfékez
+101553	curb	megfékez, elfojt
 101554	lavish	bőséges, pazarló
 101555	breach	áttör, rést üt
 101556	combustion	gyulladás. égés
@@ -1855,3 +1855,39 @@
 101854	plague	gyötör
 101855	doldrums	pangás, szélcsend
 101856	inflammatory	gyújtó, gyulladást okozó
+101857	roar	zúgás, üvöltés, morajlás
+101858	disband	elbocsát, elküld, feloszlat
+101859	rubbish	szemét, hulladék, törmelék
+101860	burgeoning	bimbózó
+101861	inadvertently	akaratlanul, véletlenül
+101862	grubby	piszkos, kukacos
+101863	landfill	szemétlerakó
+101864	transparency	átláthatóság, áttetszőség
+101865	in advace	előzetesen
+101866	scream	sikít
+101867	tire	fárad
+101868	tire	gumi, kerék
+101869	tire	fáradság
+101870	jet	sugárhajtású repülőgép
+101871	bankruptcy	csőd, fizetésképtelenség
+101872	reef	zátony
+101873	disintegration	szétesés, felbomlás
+101874	attribute	tulajdonít vminek
+101875	fraught	megterhelt, megrakott
+101876	challenge	vitat, kifogásol, kérdőre von
+101877	broil	sül a napon
+101878	cite	idéz
+101879	droughts	aszály
+101880	culprit	vádlott
+101881	accord	egyettértés, egyezmény, összhang
+101882	infest	ellep, eléraszt
+101883	tackle	megold, megküzd
+101884	fury	harag
+101885	jittery	ideges, nyugtalan
+101886	endorse	támogat
+101887	crackdown	lehordás, megleckéztetés
+101888	purchase	vétel, szerzemény
+101889	lead	ólom
+101890	curb	akadály, fékezés
+101891	hallmark	fémjel
+101892	accelerator	gázpedál, gyorsító
