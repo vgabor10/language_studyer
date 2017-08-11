@@ -1698,7 +1698,7 @@
 101698	apprehensive	nyugtalan, aggódó
 101699	friction	súrlódás
 101700	insistence	ragaszkodás
-101701	custom	szokás, vám
+101701	custom	szokás
 101702	revert	visszatér
 101703	alimony	tartásdíj, ellátás
 101704	sustainable	fenntartható, elviselhető
@@ -1891,3 +1891,27 @@
 101890	curb	akadály, fékezés
 101891	hallmark	fémjel
 101892	accelerator	gázpedál, gyorsító
+101893	posture	testtartás, póz, magatartás
+101894	essentially	lényegében, alapvetően
+101895	haste	siatség, igyekezet
+101896	designate	kijelöl, megnevez
+101897	up to	akár
+101898	custom	vám
+101899	fuzzy	homályos, rojtos
+101900	launch	indít, kilő, vízre bocsát
+101901	dare	mer, merészel
+101902	dare	vakmerőség
+101903	unleash	elenged, pórázról elenged
+101904	leash	pórázon vezet, pórázra köt
+101905	modest	szerény, mérsékelt
+101906	rattle	zörgés, csörgés
+101907	lorry	teherautó
+101908	produce	termel
+101909	subsidiary	mellékes, kisegítő
+101910	cope	megbirkózik
+101911	measured	megfontolt
+101912	mistrust	gyanakvás, bizalmatlanság
+101913	climax	tetőpont
+101914	dummy	színlelt, hamis, ál
+101915	springboard	ugródeszka
+101916	collision	ütközés
