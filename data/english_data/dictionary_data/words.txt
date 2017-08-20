@@ -8,7 +8,7 @@
 100007	standalone	független
 100008	utilize	használ
 100009	commodity	áru
-100010	revise	javít
+100010	revise	javít, átnéz
 100011	queu	sorban áll
 100012	manner	mód
 100013	template	sablon
@@ -225,8 +225,8 @@
 100226	crawl	csúszik
 100227	definitely	határozottan
 100228	resolve	elhatároz
-100229	torch	elemlámpa
-100230	descent	leszállás
+100229	torch	fáklya, elemlámpa
+100230	descent	leszállás, származás, öröklés
 100231	leap	ugrik
 100232	verge	szegély
 100233	crack up	összeomlik
@@ -415,12 +415,12 @@
 100417	intimidate	megfélemlít
 100418	take over	átvesz
 100419	doom	végzet
-100420	stem from	származik
+100420	stem from	származik vmiből
 100421	upfront	nyílt
 100422	treat	bánik, kezel
 100423	fascinate	elbűvöl
 100424	discontent	elégedetlenség
-100425	mortgage	teher
+100425	mortgage	teher, jelzálog
 100426	admission	elismerés
 100427	moot	felvet
 100428	casual work	alkalmi munka
@@ -1604,7 +1604,7 @@
 101604	drawback	hátrány
 101605	febrile	lázas
 101606	order of magnitude	nagyságrend
-101607	deplet	kimerít, kürül, elfogyaszt
+101607	deplete	kimerít, kürül, elfogyaszt
 101608	unrelated	össze nem függő
 101609	infestation	fertőzés
 101610	infection	fertőzés
@@ -1915,3 +1915,61 @@
 101914	dummy	színlelt, hamis, ál
 101915	springboard	ugródeszka
 101916	collision	ütközés
+101917	stalemate	patthelyzet
+101918	loom	homályosan láthatóvá válik, dereng
+101919	revision	felülvizsgálat
+101920	reclusive	világtól elvonult
+101921	truce	fegyverszünet
+101922	sanguine	optimista, derülátó, bizakodó
+101923	resolutely	határozottan
+101924	lonley	magányos
+101925	hazard	kockázat
+101926	obesity	elhízottság
+101927	companionship	társaság
+101928	confinement	korlátozás, fogság
+101929	solitary	magányos, visszavonult
+101930	epidemic	járvány
+101931	utmost	legtöbb
+101932	attainment	elérés, szerzemény
+101933	underscore	aláhúz, kihangsúlyoz
+101934	spill	kiömlik, kiönt, kiesik
+101935	amount to sg	felér vmivel
+101936	brunt	lökés, támadás
+101937	specter	szellem, kísértet
+101938	aside	mellé, oldalt
+101939	at hand	közelben
+101940	chant	ének, kántálás
+101941	count	számol
+101942	attest	tanúsít, hitelesít
+101943	cluster	összegyűlik, csoportosul
+101944	improbable	valószínűtlen, kevéssé hihető
+101945	thriving	növekvő, gyarapodó, virágzó
+101946	mansion	villa, kastély
+101947	trade	kereskedelem, szakma
+101948	rally	gyűlés, menet
+101949	thrill	izgalomba hoz, fellelkesít
+101950	sneaky	trükkös
+101951	leisure	kényelem, pihenő
+101952	minuscule	pici, apró
+101953	staggering	döbbenetes, megrázó
+101954	reap	arat, kaszál
+101955	decrepit	rokkant, elvénült
+101956	sleek	sima, fényes
+101957	devout	buzgó, istenfélő
+101958	persecution	üldözés, zaklatás
+101959	destitute	nyomorgó, nincstelen
+101960	defiance	ellenszegülés, dac
+101961	sham	tettet, színlel
+101962	beg	könyörög, koldul
+101963	bow	meghajol
+101964	nomenclature	szaknyelv
+101965	face	szembenéz vmivel
+101966	substance	tartalom, lényeg
+101967	interim	ideiglenes, átmeneti
+101968	bland	udvarias, kedves, enyhe
+101969	elude	kitér, kijátszik
+101970	broad	széles, terjedelmes
+101971	paragons	mintakép
+101972	irreverent	tiszteletlen
+101973	fracas	perpatvar, csetepaté
+101974	deputy	helyettes
