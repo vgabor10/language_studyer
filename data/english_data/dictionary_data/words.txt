@@ -326,7 +326,7 @@
 100328	posterity	utókor
 100329	passage	átkelés
 100330	fierce	vad
-100331	cumbersome	kényelmetlen
+100331	cumbersome	kényelmetlen, körülményes
 100332	slice	szelet
 100333	offender	bűnös
 100334	mighty	erős, hatalmas
@@ -1420,7 +1420,7 @@
 101421	suffrage	választójog
 101422	dweller	lakos
 101423	bargain	alku, üzlet
-101424	fringe	szegély
+101424	fringe	szegély, perem
 101425	belligerence	ellenséges magatartás
 101426	nonetheless	mindazonáltal
 101427	enlist	besoroz, megnyer
@@ -1973,3 +1973,44 @@
 101972	irreverent	tiszteletlen
 101973	fracas	perpatvar, csetepaté
 101974	deputy	helyettes
+101975	trail	vonul, cammog
+101976	disclose	felfed, feltár, leleplez
+101977	raft	tutaj
+101978	merchant bank	kereskedelmi bank
+101979	mercenary	pénzért dolgozó
+101980	intercede	közbenjár
+101981	clarification	tisztázás
+101982	unsentimental	nem érzelgős
+101983	ferment	erjeszt, erjed
+101984	armistice	fegyverszünet
+101985	meet	találkozik
+101986	met	találkozik (past perfect)
+101987	lean	sovány, vézna
+101988	glower	mogorván néz
+101989	bowel	bél
+101990	scount	felderítő
+101991	desperate	kétségbeesett, reménytelen
+101992	stingy	fukar, zsugori
+101993	senescence	megöregedés
+101994	swift	gyors, fürge
+101995	bedridden	ágyhozkötött
+101996	municipality	önkormányzat
+101997	raze	lerombol, földdel egynlővé tesz
+101998	consolidate	megerősít, egységesít, egyesít
+101999	tempt	csábít, rávesz
+102000	tentacle	csáp, kar
+102001	conceive	felfog, képzel
+102002	credulous	hiszékeny
+102003	audit	vizsgálat
+102004	eclipse	fogyatkozás, elsötétülés
+102005	rattle	zörög, csörög
+102006	sabre	kard, szablya
+102007	jam	elakad, beszorul
+102008	envoy	követ, küldött
+102009	congested	tömött
+102010	beggar	koldus
+102011	emit	kibocsát, sugároz
+102012	stealthy	titkos, rejtett
+102013	foray	behatols, előrenyomulás
+102014	condemnation	elítélés, elutasítás
+102015	unequivocal	határozott, világos, egyértelmű
