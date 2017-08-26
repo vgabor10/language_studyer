@@ -851,7 +851,7 @@
 100857	haulage	szállítás
 100858	despair	kétségbeesés
 100859	rampant	heves, féktelen
-100860	stunning	meglepő
+100860	stunning	pompás, meglepő, nyomasztó
 100861	alacrity	fürgeség
 100862	allege	állít
 100863	salvage	kiment, megment
@@ -1022,7 +1022,7 @@
 101027	resentment	neheztelés, harag
 101028	crossroads	útkereszteződés
 101029	mandatory	kötelező
-101030	disclosure	felfed, leleplez
+101030	disclosure	leleplezés, közzététel
 101031	transparent	átlátszó
 101032	irreparable	helyrehozhatatlan
 101033	disarray	rendetlenség, zűrzavar
@@ -1610,7 +1610,7 @@
 101610	infection	fertőzés
 101611	cigar	szivar
 101612	denounce	vádol, feljelent
-101613	power cur	áramkimaradás
+101613	power cut	áramkimaradás
 101614	ransack	kirabol, kifoszt
 101615	spit	köp
 101616	cellar	pince
@@ -2014,3 +2014,45 @@
 102013	foray	behatols, előrenyomulás
 102014	condemnation	elítélés, elutasítás
 102015	unequivocal	határozott, világos, egyértelmű
+102016	forsake	lemond, elhagy
+102017	resolute	elszánt, eltökélt, határozott
+102018	lunacy	őrültség, őrület, bolondság
+102019	scramble	kúszás, mászás
+102020	purport	bizonyítani szándékozik
+102021	cramp	szűk, szoros
+102022	sanctuary	menedék
+102023	crossword	keresztrejtvény
+102024	endanger	veszélyeztet, kockáztat
+102025	fray	dörzsöl, elkoptet
+102026	raucous	rekedt
+102027	navy	haditengerészet
+102028	muskrat	cickány
+102029	northward	észak felé
+102030	liable	felelős, hajlamos
+102031	briny	tengeri
+102032	inundation	árvíz
+102033	wetland	láp
+102034	fowl	madár
+102035	shale	pala
+102036	focus	koncentrál, összpontosít
+102037	impeccably	hibátlanul
+102038	marshland	mocsár, láp
+102039	sediment	üledék
+102040	levee	védőgát
+102041	abundant	bőséges
+102042	substance	anyag, vagyon
+102043	nutrition	táplálás, élelmezés
+102044	thick	vastag
+102045	freezer	fagyasztó, mélyhűtő
+102046	grunt	morog, röfög
+102047	sniff	szimatol
+102048	overturn	legyőz, megdönt
+102049	crosshair	célkereszt
+102050	redeem	jóvátesz, helyrehoz
+102051	bulk	tömeg, nagy mennyiség
+102052	obituary	gyász
+102053	indict	vádol, eljárást indít
+102054	swap	cserél
+102055	power outlet	konnektor
+102056	crowd	tömeg
+102057	tamper	meghamisít
