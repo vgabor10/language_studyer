@@ -5968,3 +5968,4 @@
 105967	e Heizug	fűtés
 105968	heizen	fűt
 105969	beerdigen	eltemet
+105970	r Wirt	vendéglős

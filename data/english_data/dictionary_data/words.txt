@@ -2056,3 +2056,21 @@
 102055	power outlet	konnektor
 102056	crowd	tömeg
 102057	tamper	meghamisít
+102058	defect	diszidál, elfordul
+102059	retract	visszavon
+102060	contender	versenyző
+102061	emanate	ered
+102062	preliminary	előzetes, bevezető
+102063	artillery	tüzérség
+102064	deliberate	szándékos, megfontolt
+102065	jolt	ráz, lökdös
+102066	host of	sok
+102067	grovel	hason csúszik, megalázkodik
+102068	antipathy	ellenszenv, idegenkedés
+102069	brisk	élénk, fürge, eleven
+102070	buzz	zúgás, zümmögés
+102071	rogue	zsivány, gazember
+102072	unfold	kienged, kiterjed, kifejlődik
+102073	latter	utóbbi, későbbi
+102074	affront	sértés, bántás
+102075	janitor	gondnok, portás
