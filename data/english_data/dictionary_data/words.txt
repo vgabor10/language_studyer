@@ -2074,3 +2074,16 @@
 102073	latter	utóbbi, későbbi
 102074	affront	sértés, bántás
 102075	janitor	gondnok, portás
+102076	wicked	komisz, csintalan
+102077	resourceful	leleményes, találékony
+102078	deride	kigúnyol, kicsúfol
+102079	stringent	szigorú, szoros
+102080	incremental	növekvő
+102081	downtrodden	elnyomott, letaposott
+102082	give or take	nagyjából
+102083	submit	bead, benyújt
+102084	submit	meghódol, engedelmeskedik
+102085	one another	egymás
+102086	terrify	megrémít
+102087	immediate	azonnali, sürgős
+102088	vulture	keselyű
