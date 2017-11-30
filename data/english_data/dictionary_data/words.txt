@@ -2087,3 +2087,7 @@
 102086	terrify	megrémít
 102087	immediate	azonnali, sürgős
 102088	vulture	keselyű
+102089	budge	mozdul, megmozdul
+102090	seldom	ritkán
+102091	cushion	kipárnáz
+102092	spring	rugó

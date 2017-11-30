@@ -2238,7 +2238,7 @@
 102287	fertig	kész
 102288	festhalten	visszatart
 102289	festnehmen	elfog
-102290	fest	kemény
+102290	fest	kemény, szilárd
 102291	festsetzen	megállapít
 102292	feststellen	megállapít
 102293	feucht	nedves
@@ -5409,7 +5409,7 @@
 105412	s Elend	nyomorúság
 105413	abschieben	kiutasít
 105414	e Abschiebung	kiutasítás, kitoloncolás
-105415	dann	azután
+105415	dann	azután, azonfellül
 105416	e Häuser	házak
 105417	missachten	figyelmen kívül hagy
 105418	e Demut	alázat
@@ -5969,3 +5969,19 @@
 105968	heizen	fűt
 105969	beerdigen	eltemet
 105970	r Wirt	vendéglős
+105971	s Laster	káros szenvedély
+105972	baufällig	omladozó, düledező
+105973	e Eile	sietség
+105974	gemächlich	ráérős, lassú, kényelmes
+105975	r Notfall	veszély, szükséghelyzet
+105976	fehlschlagen	félresikerül, balul üt ki
+105977	hacken	vág, vagdal
+105978	e Pfanne	serpenyő
+105979	kassieren	pénzt beszed
+105980	e Kreuzung	kereszteződés
+105981	bezahlbar	kifizethető
+105982	r Führerschein	jogosítvány
+105983	fraglich	kétes, kétséges
+105984	gehorchen	szótfogad, engedelmeskedik
+105985	r Fingernagel	köröm
+105986	s Nomen	főnév
