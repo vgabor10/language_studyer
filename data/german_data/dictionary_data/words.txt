@@ -3002,7 +3002,7 @@
 103067	r Nachteil	hátrány
 103068	aufspringen	felugrik
 103069	anderthalb	másfél (mn)
-103070	absetzen	elad, elhelyez
+103070	absetzen	elad, letesz, hivataltától megfoszt
 103071	mögen	szeret
 103072	anstelle	helyett
 103073	verdrängen	előz, kiszorít
@@ -5985,3 +5985,17 @@
 105984	gehorchen	szótfogad, engedelmeskedik
 105985	r Fingernagel	köröm
 105986	s Nomen	főnév
+105987	r Auszug	részlet, kivonat
+105988	unbequem	kényelmetlen
+105989	r Schwur	eskü
+105990	daran	azon
+105991	betteln	koldul, könyörög
+105992	beschuldigen	vádol, megvádol
+105993	e Greusamkeit	kegyetlenség
+105994	r Eimer	vödör
+105995	zu	túl, túlságosan
+105996	ertrinken	megfullad, vízbe fullad
+105997	fernhalten	távol tart
+105998	e Freilassung	szabadon engedés
+105999	e Justiz	igazságszolgáltatás
+106000	unverschämt	pimasz, arcátlan
