@@ -4475,7 +4475,7 @@
 104571	r Russe	orosz (ember)
 104572	verweigern	megtagad
 104573	jemand	valaki
-104574	e Anlage	létesítmény
+104574	e Anlage	létesítmény, berendezés
 104575	berufen	kinevez
 104576	kämpfen	harcol
 104577	anscheinend	látszólag
@@ -5999,3 +5999,10 @@
 105998	e Freilassung	szabadon engedés
 105999	e Justiz	igazságszolgáltatás
 106000	unverschämt	pimasz, arcátlan
+106001	Irland	Írország
+106002	ungelöste	megoldatlan
+106003	brisant	kényes, nehéz
+106004	Vereinigte Königreich	Egyesült Királyság
+106005	r Entschluss	döntés, elhatározás
+106006	annektieren	elfoglal, annektál
+106007	r Vermittler	közvetítő, közbenjáró

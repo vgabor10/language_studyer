@@ -2091,3 +2091,8 @@
 102090	seldom	ritkán
 102091	cushion	kipárnáz
 102092	spring	rugó
+102093	dairy	tejüzem
+102094	appliance	készülék, berendezés
+102095	fatigue	fáradság, kimerültség
+102096	jeer	csúfolódás, gúnyolódás
+102097	vigilance	éberség, vigyázat
