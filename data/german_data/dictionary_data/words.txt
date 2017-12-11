@@ -2070,7 +2070,7 @@
 102111	r Kosename	becenév
 102113	r Politiker	politikus
 102114	e Gedenkfeier	visszaemlékezés
-102115	e Forderung	követelmény, követelés
+102115	e Forderung	követelés, követelmény
 102116	zusammenfassen	összefoglalni
 102117	e Königin	királynő
 102118	r Herzog	herceg
@@ -6006,3 +6006,15 @@
 106005	r Entschluss	döntés, elhatározás
 106006	annektieren	elfoglal, annektál
 106007	r Vermittler	közvetítő, közbenjáró
+106008	kapieren	megért, felfog
+106009	lauwarm	langyos
+106010	r Hebel	emelő
+106011	hissen	felhúz, felvon
+106012	e Verzögerung	késés, késedelem
+106013	e Ansage	bemondás, bejelentés
+106014	verneinen	tagad
+106015	klarstellen	tisztáz
+106016	r Takt	ütem
+106017	s Missfallen	visszatetszés
+106018	r Slum	nyomornegyed
+106019	gemeinhin	általában, egészében véve

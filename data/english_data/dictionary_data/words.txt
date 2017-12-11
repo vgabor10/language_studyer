@@ -2096,3 +2096,4 @@
 102095	fatigue	fáradság, kimerültség
 102096	jeer	csúfolódás, gúnyolódás
 102097	vigilance	éberség, vigyázat
+102098	deliverance	felmentés
