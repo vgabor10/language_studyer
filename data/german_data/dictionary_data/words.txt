@@ -265,7 +265,7 @@
 100265	r Einfluss	befolyás
 100266	verlieren	veszít, elveszít
 100267	zunehmen	nő (ige)
-100268	fördern	támogat
+100268	fördern	támogat, elősegít, előmozdít
 100269	e See	tenger, tó
 100270	r Rückhalt	támasz
 100271	schließlich	végül
@@ -3265,7 +3265,7 @@
 103337	ausbrechen	kitör
 103338	aufhören	abbahagy
 103339	ausnutzen	kihasznál
-103340	verweisen	utal
+103340	verweisen	utal, utasít, megró
 103341	unterscheiden	megkülönböztet
 103342	bitten	kér
 103343	irgendwie	valahogyan
@@ -3422,7 +3422,7 @@
 103497	trinken	iszik
 103498	technologisch	technológiai
 103499	bedienen	kezel, kiszolgál
-103500	anvertrauen	rábíz
+103500	anvertrauen	rábíz, bizalmasan közöl
 103501	r Spaß	vidámság
 103502	anklagen	vádol
 103503	e Abwehr	védelem
@@ -5554,7 +5554,7 @@
 105556	e Einbuße	veszteség
 105557	s Minimum	minimum
 105558	über	át
-105559	e Mündung	torkolat
+105559	e Mündung	torkolat, nyílás
 105560	r Diamant	gyémánt
 105561	s Kupfer	réz
 105562	e Dekade	évtized
@@ -6018,3 +6018,42 @@
 106017	s Missfallen	visszatetszés
 106018	r Slum	nyomornegyed
 106019	gemeinhin	általában, egészében véve
+106020	e Todesstrafe	halálbüntetés
+106021	lax	laza, ernyedt, petyhüdt
+106022	unzureichend	elégtelen
+106023	r Passant	járókelő, gyalogos
+106024	r Sprengsatz	robbanóanyag
+106025	rächen	megbosszul
+106026	herantreten	odalép
+106027	angehender	kezdő
+106028	e Zuwanderung	bevándorlás
+106029	unerwünscht	nemkívánatos
+106030	s Ventil	szelep
+106031	r Tiefpunkt	mélypont
+106032	auffallend	feltűnő
+106033	s Mobbing	molesztálás
+106034	umsichtig	megfontolt, körültekintő
+106035	s Verhängnis	sors, végzet
+106036	e Lustlosigkeit	közömbösség, kedvetlenség
+106037	sehnen	vágyódik, eped
+106038	kauzig	furcsa
+106039	vereinsamen	elmagányosodik
+106040	rechthaberisch	konok, akaratos
+106041	beschwichtigen	csillapít, megnyugtat
+106042	e Schlaflosigkeit	álmatlanság
+106043	einweisen	beutal
+106044	e Putzfrau	takarítónő
+106045	verwiesen	kiutasít
+106046	r Diebstahls	lopás, tolvajlás
+106047	attestieren	igazol
+106048	r Wehrdienst	katonai szolgálat
+106049	r Gutachter	szakértő
+106050	gewalttätig	erőszakos
+106051	e Prügelei	verekedés
+106052	e Haftstrafe	börtönbüntetés
+106053	r Abstieg	leszállás, hanyatlás
+106054	r Reichtum	vagyon, gazdagság
+106055	auslachen	kinevet
+106056	s Gebüsch	bokor, bozót
+106057	ab	le
+106058	gestanden	bevall, beismer
