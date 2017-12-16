@@ -2097,3 +2097,4 @@
 102096	jeer	csúfolódás, gúnyolódás
 102097	vigilance	éberség, vigyázat
 102098	deliverance	felmentés
+102099	fabled	legendás, mesés

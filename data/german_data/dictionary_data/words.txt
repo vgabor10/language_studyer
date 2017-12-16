@@ -380,7 +380,7 @@
 100381	s Holz	fa
 100382	s Beispiel	példa
 100383	r Arm	kar
-100384	gleich	egyenlő, azonos
+100384	gleich	azonos, egyforma, egyenletes
 100385	lang	hosszú
 100386	unbedingt	feltétlenül
 100387	r Flügel	szárny
@@ -3822,7 +3822,7 @@
 103908	schmelzen	olvad, megolvaszt
 103909	abschließen	bezár, befelyez
 103910	vorbeigehen	elmegy, elmúlik
-103911	r Wähler	szavazó
+103911	r Wähler	szavazó, választó
 103912	r Maßstab	mérce, mérték
 103913	r Erreger	kórokozó
 103914	e Anstrengung	törekvés, erőfeszítés
@@ -6057,3 +6057,13 @@
 106056	s Gebüsch	bokor, bozót
 106057	ab	le
 106058	gestanden	bevall, beismer
+106059	finster	sötét, komor
+106060	gleich	azonnal, mindjárt, rögtön
+106061	in Kauf nehmen	beletörődik
+106062	hinsetzen	leül, odaül
+106063	bewährt	kipróbált, bevált
+106064	ausmustern	kiselejtez
+106065	r Astronaut	űrhajós
+106066	e Feindlichkeit	ellenségesség
+106067	sauer	keserű, savanyú
+106068	belästigen	zaklat, molesztál
