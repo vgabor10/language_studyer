@@ -52,10 +52,13 @@ public class CardFinder {
     
     private List<Card> getCardsWithGivenTermPart(String termPart) {
         List<Card> cardsToList = new ArrayList<>();
+        String searchedTermPart = termPart.toLowerCase().replaceAll("ä", "a");  //for german language
 
         for (int i = 0; i < cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
-            if (card.term.toLowerCase().contains(termPart.toLowerCase())) {
+            String examinedTermPart = card.term.toLowerCase().replaceAll("ä", "a");  //for german language
+
+            if (examinedTermPart.contains(searchedTermPart)) {
                 cardsToList.add(card);
             }
         }

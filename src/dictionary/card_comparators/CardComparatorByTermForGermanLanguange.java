@@ -19,6 +19,7 @@ public class CardComparatorByTermForGermanLanguange implements Comparator<Card> 
                 || term1.substring(0, 2).equals("s ")) {
             term1 = term1.substring(2);
         }
+        term1 = term1.replaceAll("ä", "a");
 
         String term2 = c2.term.toLowerCase();
         if (term2.substring(0, 2).equals("r ")
@@ -26,7 +27,8 @@ public class CardComparatorByTermForGermanLanguange implements Comparator<Card> 
                 || term2.substring(0, 2).equals("s ")) {
             term2 = term2.substring(2);
         }
-
+        term2 = term2.replaceAll("ä", "a");
+        
         if (term1.startsWith(cardTermToFind)
                 && !term2.startsWith(cardTermToFind)) {
             return -1;
