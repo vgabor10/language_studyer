@@ -2456,7 +2456,7 @@
 102510	e Stimmung	kedv, hangulat
 102511	e Strahlung	sugárzás
 102512	e Straße	utca
-102513	e Strecke	távolság
+102513	e Strecke	távolság, vasúti pálya
 102514	e Struktur	szerkezet
 102515	e Substanz	lényeg
 102516	e Subvention	anyagi támogatás
@@ -3305,7 +3305,7 @@
 103377	indirekt	közvetett, indirekt
 103378	differenzieren	megkülönböztet
 103379	s Gramm	gramm
-103380	schaffen	teremt
+103380	schaffen	alkot, teremt
 103381	verschließen	elzár, bezár
 103382	touristisch	túrisztikai
 103383	regieren	vezet, kormányoz
@@ -6067,3 +6067,26 @@
 106066	e Feindlichkeit	ellenségesség
 106067	sauer	keserű, savanyú
 106068	belästigen	zaklat, molesztál
+106069	e Pleite	csőd, kudarc
+106070	pleite sein	csődbe jutott, tönkrement
+106071	e Landung	kikötés, leszállás
+106072	e Insolvenz	csőd, fizetésképtelenség
+106073	r Boykott	bojkott
+106074	r Sinneswandel	véleményváltozás
+106075	lahm	béna, sánta
+106076	lahmen	sántít
+106077	r Schein	bankjegy
+106078	e Stromrechnung	villanyszámla
+106079	glitzern	ragyog, csillog
+106080	montieren	szerel, felszerel
+106081	e Türme	tornyok
+106082	unschuldig	ártatlan
+106083	behindern	gátol, akadályoz
+106084	e Beschuldigung	vád, gyanúsítás
+106085	e Abrechnung	elszámolás
+106086	r Keil	ék
+106087	vereiteln	meghiúsít, elgáncsol
+106088	dehnen	kinyújt, megnyújt
+106089	r Umtausch	csere
+106090	e Abspaltung	leszakadás
+106091	entmachten	hatalmától megfoszt

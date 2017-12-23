@@ -2098,3 +2098,6 @@
 102097	vigilance	éberség, vigyázat
 102098	deliverance	felmentés
 102099	fabled	legendás, mesés
+102100	devoid	mentes, üres
+102101	stroll	sétál, csatangol
+102102	plummet	zuhan
