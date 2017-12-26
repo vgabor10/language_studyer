@@ -2888,7 +2888,7 @@
 102951	einfallen	összeomlik, bedől
 102952	einkaufen	bevásárol
 102953	r Brief	levél
-102954	r Anhänger	szurkoló
+102954	r Anhänger	szurkoló, követő
 102955	r Anwalt	ügyvéd, ügyész
 102956	ehemalig	korábbi
 102957	e Formel	képlet, formula
@@ -6090,3 +6090,8 @@
 106089	r Umtausch	csere
 106090	e Abspaltung	leszakadás
 106091	entmachten	hatalmától megfoszt
+106092	s Gestein	kőzet
+106093	e Körperschaft	társaság
+106094	e Körperschaftssteuer	társasági adó
+106095	e Anleitung	utasítás
+106096	e Diskrepanz	különbség

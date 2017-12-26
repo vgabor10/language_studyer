@@ -948,7 +948,7 @@
 100955	stillness	nyugalom
 100956	laggard	lusta, tunya
 100957	disavow	tagad, megtagad
-100958	dissent	véleményeltérés
+100958	dissent	nézeteltérés, véleményeltérés
 100959	greed	kapzsiság
 100960	as for	ami azt illeti
 100961	heir	örökös
@@ -2101,3 +2101,8 @@
 102100	devoid	mentes, üres
 102101	stroll	sétál, csatangol
 102102	plummet	zuhan
+102103	domicile	lakás, lakóhely
+102104	shore up	alátámaszt, aládúcol
+102105	slender	kercsú, vékony
+102106	revere	tisztel, nagyra becsül
+102107	knuckle	csukló
