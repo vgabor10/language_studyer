@@ -315,7 +315,7 @@
 100316	r Krieg	háború
 100317	s Reich	birodalom
 100318	r Teil	rész
-100319	e Notwendigkeit	szükség
+100319	e Notwendigkeit	szükségesség
 100320	e Konzession	engedély, koncesszió
 100321	zuvorkommen	megelőz
 100322	e Revolution	forradalom
@@ -435,7 +435,7 @@
 100437	s Frühjahr	tavasz
 100438	r Konsum	fogyasztás
 100439	Griechenland	Görögország
-100440	angekurbeln	ösztökél
+100440	ankurbeln	ösztökél, sarkall
 100441	dagegen	viszont
 100442	trotz	vmi ellenére
 100443	momentan	jelenleg, pillanatnyilag
@@ -672,7 +672,7 @@
 100678	s Glück	szerencse
 100679	zuvor	azelőtt
 100680	e Möglichkeit	lehetőség
-100681	verbrauchen	fogyaszt
+100681	verbrauchen	elhasznál, fogyaszt
 100682	r Vorrat	készlet
 100683	s Zentrum	központ
 100684	e Leistung	teljesítmény
@@ -710,7 +710,7 @@
 100716	e Reparatur	javítás
 100717	aufwendig	drága, költséges
 100718	stattdessen	ehelyett
-100719	errichten	felállít
+100719	errichten	alapít, létesít, felállít
 100720	r Schmuggler	csempész
 100721	bisher	eddig
 100722	verschonen	megkímél
@@ -753,7 +753,6 @@
 100759	e Rede	beszéd
 100760	seitdem	azóta
 100761	e Infiltration	beszivárgás
-100762	aufgehalten	feltartóztat
 100763	dauern	tart
 100764	s Übel	baj, gond, betegség
 100765	packen	csomagol, megragad, megfog
@@ -805,11 +804,11 @@
 100812	besonders	különös
 100814	mindestens	legalább
 100815	berichten	beszámol, tudósít
-100816	geltend	érvényes (mn)
+100816	geltend	érvényes
 100817	leisten	nyújt, teljesít
 100818	hervorheben	hangsúlyoz, kiemel
 100819	r Einwand	ellenvetés
-100820	beantragen	indítványoz
+100820	beantragen	indítványoz, kérvényez
 100821	plötzlich	hirtelen
 100822	r Strom	folyam, ár, áram
 100823	e Unterschrift	aláírás
@@ -870,7 +869,7 @@
 100880	erläutern	elmagyaráz
 100881	früher	előbb
 100882	r Anwärter	jelölt
-100883	befürworten	javasol
+100883	befürworten	ajánl, javasol, tanácsol
 100884	e Ausweitung	tágulás
 100885	strikt	szigorú
 100886	vorbereiten	előkészít
@@ -897,7 +896,7 @@
 100908	herrschen	uralkodik
 100909	sogar	sőt, akár
 100910	gewaltig	óriási
-100911	einsetzen	alkalmaz, berak
+100911	einsetzen	alkalmaz, berak, bevet
 100912	zwar	noha
 100913	vor allem	mindenekelőtt
 100915	r Kreuzer	cirkáló
@@ -1004,7 +1003,7 @@
 101016	heimlich	titokban
 101017	s Meer	tenger
 101018	kürzlich	nemrég
-101019	laden	megrak, megterhel
+101019	laden	rak, megterhel
 101020	e Leiferung	szállítmány
 101021	vorrücken	előrenyomul
 101022	e Umgebung	vidék
@@ -1015,7 +1014,7 @@
 101027	bergen	elrejt, kiment
 101029	r Zustrom	beáramlás
 101030	spürbar	észrevehető
-101031	entkommen	szökik
+101031	entkommen	megszökik, elmenekül
 101032	präsentieren	bemutat, prezentál
 101033	erkundigen	érdeklődik
 101034	e Traube	szőlő
@@ -1555,7 +1554,7 @@
 101575	e Hand	kéz
 101576	e Hausarbeit	házimunka
 101577	tagsüber	napközben
-101578	lösen	megold
+101578	lösen	vált, megvált, megold
 101579	erledigen	elintézni vmit
 101580	aufräumen	kitakarít
 101581	r Finger	ujj
@@ -2411,7 +2410,7 @@
 102463	erwähnen	megemlít
 102464	erwecken	felébreszt
 102465	erweisen	bebizonyít
-102466	erweitern	tágít, bővít
+102466	erweitern	tágít, bővít, kiterjeszt
 102467	erwerben	megszerez
 102468	erwidern	viszonoz, válaszol
 102469	erwischen	elkap
@@ -2592,7 +2591,7 @@
 102650	e Materie	anyag
 102651	e Medizin	orvosság
 102652	e Mehrheit	többség
-102653	e Meldung	jelentés
+102653	e Meldung	jelentés, közlemény
 102654	e Menge	mennyiség
 102655	e Messe	vásár
 102656	e Messung	mérés
@@ -2809,7 +2808,7 @@
 102871	e Gewalt	erőszak, erő
 102872	r Akteur	színész
 102873	r August	augusztus
-102874	e Gegenwart	jelen
+102874	e Gegenwart	jelen, jelenlét
 102875	örtlich	helyi
 102876	eigenständig	önálló
 102877	e Großstadt	nagyváros
@@ -2821,7 +2820,7 @@
 102883	r Ausbau	kiépítés
 102884	politisch	politikai
 102885	r November	november
-102886	effektiv	tényleges
+102886	effektiv	hatékony, tényleges
 102887	pressen	présel, összeszorít
 102888	orientieren	tájol
 102889	r Beginn	kezdet
@@ -3646,7 +3645,7 @@
 103727	r Montag	hétfő
 103728	e Aufregung	izgalom
 103729	dahin	oda
-103730	mitnehmen	elvisz
+103730	mitnehmen	magával visz, elvisz
 103731	unbekannt	ismeretlen
 103732	streben	törekszik
 103733	e Basis	bázis
@@ -3809,7 +3808,7 @@
 103895	vertraglich	elfogadható, elviselhető
 103896	reiten	lovagol
 103897	begegnen	találkozik, történik, szembeszáll vmivel
-103898	e Erscheinung	jelenség
+103898	e Erscheinung	jelenség, megjelenés
 103899	süß	édes
 103900	unterbringen	elszállásol, elhelyez
 103901	e Beschreibung	leírás
@@ -4018,7 +4017,7 @@
 104106	schneiden	vág
 104108	relativ	relatív, viszonylagos
 104109	südlich	déli
-104110	r Sprecher	szónok
+104110	r Sprecher	szónok, bemondó
 104111	betrieblich	üzemi
 104112	sich befinden	vmilyennek talál, vhov van
 104113	vermögen	képes vmire, megtehet vmit
@@ -4084,7 +4083,6 @@
 104174	sich bemühen	igyekszik, fáradozik
 104175	s Paar	pár (fn)
 104176	unabhängig	független (mn)
-104177	aufrufen	felhív, felszólít
 104178	biologisch	biológiai
 104179	flüchtig	múlandó, felületes
 104180	verdoppeln	megkettőz, megdupláz
@@ -4144,7 +4142,7 @@
 104234	trauen	bízik
 104235	r Eigentümer	tulajdonos
 104236	s Tuch	szövet, kendő
-104237	lauten	hangzik
+104237	lauten	szól, hangzik
 104238	vorschreiben	előír, megszab
 104239	r Professor	professzor
 104240	ausschalten	kikapcsol
@@ -4333,7 +4331,7 @@
 104428	r Parkplatz	parkolóhely
 104429	versagen	megbukik, kudarcot vall
 104430	link	bal (mn)
-104431	umsonst	ingyen, hiába
+104431	umsonst	hiába
 104432	zittern	remeg, reszket
 104433	zurückweisen	elutasít, visszautasít
 104434	nächste	következő
@@ -4969,7 +4967,7 @@
 100657	e Ente	kacsa
 100861	s Seil	kötél
 100406	r Zwilling	iker
-100914	e Schaffung	létesítés, teremtés
+100914	e Schaffung	létesítés, alkotás
 101028	gütlich	békés, barátságos
 101548	r Untergang	pusztulás, bukás
 101637	r Austritt	kilépés, távozás
@@ -6095,3 +6093,12 @@
 106094	e Körperschaftssteuer	társasági adó
 106095	e Anleitung	utasítás
 106096	e Diskrepanz	különbség
+106097	plazieren	helyez, elhelyez
+106098	tarnen	álcáz
+106099	e Überschrift	cím, felirat
+106100	kurbeln	forgat
+106101	e Aufschwung	virágzás, fellendülés
+100762	e Teuerungsrate	infláció
+106102	einschüchtern	megfélemlít
+104177	e Ausrichtung	irány
+106103	kneifen	csipked

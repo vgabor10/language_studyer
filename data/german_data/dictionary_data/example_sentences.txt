@@ -2683,9 +2683,7 @@
 101017	Wirbelstürme entstehen über dem Meer.
 101018	Der Film kam erst kürzlich wieder im Fernsehen.
 101018	Unser Angebot wurde kürzlich erweitert.
-101019	Der Laden an der Ecke musste schließen.
 101019	Helge lädt sich drei Stück Kuchen auf seinen Teller.
-101019	Im Restaurant kostet das Bier etwa viermal so viel wie im Laden.
 101019	Kräftige junge Männer laden die Möbel auf einen LKW.
 101021	Die Armee rückte auf den Feind vor.
 101022	In einer ruhigen Umgebung lernt man besser.
@@ -3561,11 +3559,7 @@
 101467	Die Lehrerin schreibt Vokabeln an die Tafel.
 101467	Tom kaufte sich eine Tafel Schokolade.
 101467	Auf der Tafel war eine Tabelle zu sehen.
-101468	Der Mann steht unter Verdacht, eine Bank ausgeraubt zu haben.
-101468	Die Bank hat dem jungen Ehepaar einen Kredit gewährt.
 101468	Die Bank ist frisch gestrichen.
-101468	Ich habe noch in der Bank zu tun.
-101468	Sabine bekommt bei keiner Bank mehr ein Darlehen.
 101469	In diesem Heft ﬁnden Sie viele Anregungen für Bastelarbeiten.
 101469	Moritz hat das Heft mit den Hausaufgaben zuhause vergessen.
 101472	Ich brauche einen Spitzer.
@@ -5788,9 +5782,6 @@
 102671	Er brachte nur ein müdes Lächeln zustande.
 102671	Harry war von Sallys Lächeln hingerissen.
 102672	Die Situation war derart komisch, dass wir einfach lachen mussten.
-102672	Euer Lachen wird euch schon noch vergehen.
-102672	Lachen ist gesund.
-102672	Sie konnte ein Lachen kaum unterdrücken.
 102673	Unten im Keller lagern noch 20 Weinflaschen.
 102674	Ich werde mir demnächst eine künstliche Hüfte einsetzen lassen.
 102674	Tom nahm seine künstlichen Zähne heraus.
@@ -7920,7 +7911,6 @@
 103894	Die Astronauten wurden mit spontanem Applaus begrüßt.
 103895	Der Kauf des Hauses muss noch vertraglich geregelt werden.
 103896	Wir reiten durch den Wald.
-103896	Wir reiten durch den Wald. 22 –A, –N
 103897	Vielen Krankheiten kann man mit Penicillin begegnen.
 103898	Der Präsident ist eine beeindruckende Erscheinung.
 103900	Wo können wir nur die vielen Gäste unterbringen?
@@ -9322,7 +9312,6 @@
 104669	Ich habe den Eindruck, dass er ein schlechtes Gedächtnis hat.
 104669	Markus hat ein fotograﬁsches Gedächtnis.
 104669	Stephan hat ein gutes Gedächtnis.
-104670	Die Creme enthält keine Konservierungsstoffe.
 104671	In der Nacht musste sie sich dreimal übergeben.
 104671	Morgen übergeben wir Ihnen die Papiere.
 104673	In großen Städten verliere ich leicht die Orientierung.
