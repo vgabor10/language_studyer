@@ -8470,8 +8470,6 @@
 104209	Das Niveau nimmt kontinuierlich ab.
 104211	Der Zahnarzt muss heute bohren.
 104212	Hinter dem Horizont geht es weiter.
-104213	Das Unternehmen zieht in Betracht, weitere Ausbildungsplätze zu schaffen.
-104213	Im Text wird auf eine weitere Quelle verwiesen.
 104214	2015 waren rund 26 Millionen Touristen nach Griechenland gereist.
 104214	Der Stadtführer zeigt den Touristen die Stadt.
 104214	Zahlreiche Touristen verlassen das Land.

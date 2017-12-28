@@ -15,7 +15,7 @@
 100014	sofort	rögtön, azonnal
 100015	e Strassenbahn	villamos
 100016	oft	gyakran, gyakori
-100017	richtig	helyes, igazi
+100017	richtig	helyes, igaz, igazi
 100018	r Schüler	tanuló, diák
 100019	viel	sok
 100020	schrecklich	borzasztó
@@ -590,7 +590,7 @@
 100594	bauern	gazdálkodik
 100595	rot	piros
 100596	rollen	gurul
-100597	übersetzen	fordít
+100597	übersetzen	fordít, lefordít
 100598	s Tor	kapu
 100599	r Himmel	ég, égbolt
 100600	e Schau	bemutató
@@ -648,7 +648,7 @@
 100653	e Gefahr	veszély
 100654	s Produkt	termék
 100655	r Umfang	méret
-100656	e Flasche	üveg
+100656	e Flasche	üveg, palack
 100658	wehen	fúj
 100659	schießen	lő
 100660	selten	ritka, ritkán
@@ -1891,7 +1891,7 @@
 101924	e Information	információ
 101925	e Bibliothek	könyvtár
 101926	unkontrolliert	ellenőrizetlen
-101927	e Störung	zavarás
+101927	e Störung	zavar, üzemzavar
 101928	e Unabhängigkeit	függetlenség
 101929	e Vergangenheit	múlt (fn)
 101930	geräumig	tágas
@@ -2407,7 +2407,7 @@
 102460	erst	első
 102461	ertragen	elvisel
 102462	e Rücksicht	tekintet
-102463	erwähnen	megemlít
+102463	erwähnen	említ, megemlít
 102464	erwecken	felébreszt
 102465	erweisen	bebizonyít
 102466	erweitern	tágít, bővít, kiterjeszt
@@ -2419,7 +2419,7 @@
 102472	erzielen	elér
 102473	e Saison	idény, szezon
 102474	e Säule	oszlop
-102475	e Scheibe	üveg, ablak
+102475	e Scheibe	ablak, szélvédő
 102476	e Scheidung	elválás
 102477	e Schlange	kígyó
 102478	e Schnittstelle	adapter
@@ -2700,7 +2700,7 @@
 102762	e Nuss	dió, mogyoró
 102763	null	nulla
 102764	r Angehörige	rokon
-102765	r Amerikaner	amerikai (ember)
+102765	r Amerikaner	amerikai ember
 102766	r Planet	bolygó
 102767	ökonomisch	gazdasági
 102768	e Feuerwehr	tűzoltóság
@@ -2723,7 +2723,7 @@
 102785	e Furcht	félelem
 102786	neugierig	kíváncsi
 102787	r Dialog	párbeszéd
-102788	e Haustür	kapu
+102788	e Haustür	kapu, bejárati ajtó
 102789	e Generation	generáció
 102790	e Geste	gesztus
 102791	e Hauptstadt	főváros
@@ -2787,7 +2787,7 @@
 102849	e Herstellung	gyártás
 102850	niemals	soha, sohasem
 102851	notwendig	szükséges
-102852	wagen	kockáztat
+102852	wagen	mer, merészel
 102853	e Gerechtigkeit	igazságosság
 102854	e Flüssigkeit	folyadék
 102855	e Freizeit	szabadidő
@@ -2891,11 +2891,11 @@
 102955	r Anwalt	ügyvéd, ügyész
 102956	ehemalig	korábbi
 102957	e Formel	képlet, formula
-102958	wandern	kirándul
+102958	wandern	kirándul, túrázik
 102959	vorziehen	előnyben részesít, preferál
 102960	e Innenstadt	belváros
 102961	zwölf	tizenkettő
-102962	wandeln	megváltoztat
+102962	wandeln	megváltoztat, válik vmivé
 102963	r Pilot	pilóta
 102964	r Abbau	leépítés
 102965	problematisch	problémás
@@ -3468,7 +3468,7 @@
 103544	murmeln	morog
 103545	drastisch	drasztikus
 103546	e Ausnahme	kivétel
-103547	vielfach	sokszor
+103547	vielfach	sokszor, többször
 103548	virtuell	virtuális
 103549	s Maß	mérték, méret
 103550	r Deutsche	német (ember)
@@ -3589,7 +3589,7 @@
 103668	ausrichten	elrendez, sorbaáll, kiegyenesít
 103669	s Individuum	egyén
 103670	r Chinese	kínai (fn)
-103671	umstritten	vitás
+103671	umstritten	vitás, vitatott
 103672	achten	figyel, becsül
 103673	installieren	felszerel, beszerel
 103674	integrieren	integrál, egyesít
@@ -4118,7 +4118,6 @@
 104210	s Krankenhaus	kórház
 104211	bohren	fúr
 104212	r Horizont	horizont, látóhatár
-104213	weitere	többi
 104214	r Tourist	turista
 104215	s Verbrechen	bűntett
 104216	e Entfernung	távolság
@@ -4323,7 +4322,7 @@
 104420	r Zinssatz	kamat, kamatláb
 104421	r Einzelfall	egyedi eset
 104422	regelmäßig	szabályos, rendszeres
-104423	bereiten	okoz
+104423	bereiten	tesz, szerez, okoz
 104424	r Transport	szállítás, szállítmány
 104425	traditionell	hagyományos
 104426	absurd	abszurd, képtelen
@@ -4360,7 +4359,7 @@
 104457	abhalten	visszatart
 104458	r Zwang	kényszer
 104459	meinetwegen	tőlem, miattam
-104460	meiste	többnyire, legtöbbször
+104460	meist	többnyire, legtöbbször
 104461	erleiden	szenved, elszenved
 104462	r Kompromiss	kompromisszum, kiegyezés
 104463	e Erwachsene	felnőttek
@@ -4484,7 +4483,7 @@
 104582	e Beschwerde	panasz, teher
 104583	stoßen	lök, taszít
 104584	berechnen	kiszámol
-104585	starten	indul
+104585	starten	indul, indít, elindít
 104586	kennzeichnen	jellemez, megjelöl
 104587	ausweichen	elkerül, kikerül
 104588	unsicher	bizonytalan
@@ -4615,7 +4614,7 @@
 104714	ausgeprägt	megkülönböztető, kifejezett
 104715	aufeinander	egymásra
 104716	nah	közel, közeli
-104717	e Ebene	sík, szint
+104717	e Ebene	szint, síkság
 104718	s Protein	fehérje
 104719	e Produktion	termelés
 104720	entnehmen	kivesz, merít
@@ -6102,3 +6101,19 @@
 106102	einschüchtern	megfélemlít
 104177	e Ausrichtung	irány
 106103	kneifen	csipked
+106104	r Stau	torlódás, forgalmi dugó
+106105	r Gewehrlauf	puskacső
+106106	r Vorsitz	elnökség
+104213	e Befugnis	jogkör, jogosultság
+106107	r Amtsantritt	hivatalba lépés
+106108	verlagern	elmozdít, áthelyez
+106109	ausrüsten	felszerel, felfegyverez
+106110	bekunden	kinyilvánít, kihirdet
+106111	überaus	rendkívül, felettébb
+106112	e Inhaftierung	börtönbe zárás
+106113	namentlich	nevezetesen
+106114	drangsalieren	kínoz
+106115	daher	ezért, ennélfogva
+106116	r Auszug	kiköltözés
+106117	schlummern	szundikál, szunnyad
+106118	r Wettlauf	versenyfutás
