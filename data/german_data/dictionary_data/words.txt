@@ -61,7 +61,7 @@
 100060	e Wand	fal
 100061	s Fieber	láz
 100062	e Idee	ötlet
-100063	Angst haben	fél (kefejezés)
+100063	Angst haben	fél (kifejezés)
 100064	hungrig	éhes
 100065	durstig	szomjas
 100066	böse	gonosz
@@ -779,7 +779,7 @@
 100786	widersprechen	ellentmond
 100787	s Recht	törvény
 100788	s Verständnis	értelem
-100789	durchsetzen	érvényesít
+100789	durchsetzen	érvényesít, keresztülvisz
 100790	wichtig	fontos
 100791	e Freiwilligkeit	önkéntesség
 100792	hitzig	heves
@@ -859,7 +859,7 @@
 100870	erteilen	ad, adományoz
 100871	s Mindestmaß	minimum
 100872	e Ausbildung	oktatás, kiképzés
-100873	erwägen	megfontol
+100873	erwägen	megfontol, mérlegel
 100874	schlagen	üt, ver
 100875	nachdenken	gondolkodik, elgondolkodig
 100876	ermöglichen	engedélyez
@@ -2306,7 +2306,7 @@
 102359	gleichen	simít, kiegyenlít
 102360	gleichmäßig	egyenletes
 102361	gleichzeitig	egyszerre, egyidejűleg
-102362	gleiten	lebeg, siklik, csúszik
+102362	gleiten	siklik, csúszik, lebeg
 102363	global	globális
 102364	glücklich	boldog, szerencsés
 102365	golden	aranyszínű
@@ -2415,7 +2415,7 @@
 102468	erwidern	viszonoz, válaszol
 102469	erwischen	elkap
 102470	erzeugen	termel
-102471	erziehen	nevel
+102471	erziehen	nevel, felnevel
 102472	erzielen	elér
 102473	e Saison	idény, szezon
 102474	e Säule	oszlop
@@ -2585,7 +2585,7 @@
 102643	entgehen	elkerül, elmenekül
 102644	enthalten	tartalmaz
 102645	e Lust	öröm
-102646	e Malerei	festmény
+102646	e Malerei	festmény, festészet
 102647	e Marke	bélyeg, márka
 102649	e Masse	tömeg
 102650	e Materie	anyag
@@ -3051,7 +3051,7 @@
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van, küszöbön áll
 103119	s Lager	tábor, raktár
-103120	verabschieden	elbocsát, elbúcsúzik
+103120	verabschieden	elbocsát, elbúcsúzik, elfogad
 103121	e Rechtsprechung	igazságszolgáltatás
 103122	s Resultat	eredmény
 103124	behandeln	kezel, bánik
@@ -3087,7 +3087,7 @@
 103156	blicken	pillant, tekint
 103157	sinnvoll	ésszerű, értelmes
 103158	s Geräusch	zaj
-103159	wenden	elfordít
+103159	wenden	elfordít, megforgat
 103160	s Gespräch	beszélgetés
 103161	s Element	elem, elemi rész
 103162	e Planung	terv
@@ -3193,7 +3193,7 @@
 103264	lieb	kedves
 103265	verknüpfen	összekapcsol, összefűz
 103266	s Heim	haza
-103267	irgendwann	valamikor
+103267	irgendwann	valamikor, bármikor
 103268	aufsuchen	felkeres, meglátogat
 103269	ausgeben	kiad, kibocsát
 103270	s Team	csapat
@@ -3251,7 +3251,7 @@
 103324	r Umzug	költözés, felvonulás
 103325	allmählich	fokozatos
 103326	r Motor	motor
-103327	stützen	támogat
+103327	stützen	támogat, alátámaszt
 103328	spionieren	kémkedik
 103329	r Fachbereich	szakterület, tanszék
 103330	e Partie	parti, játszma
@@ -3415,7 +3415,7 @@
 103490	katholisch	katolikus
 103491	s Geschäftsjahr	üzleti év
 103492	r Einblick	betekintés
-103494	r Ersatz	pótlás, kárpótlás
+103494	r Ersatz	pótlás, kiegészítés
 103495	verschaffen	beszerez, biztosít
 103496	e Auswirkung	hatás
 103497	trinken	iszik
@@ -3508,7 +3508,7 @@
 103584	modern	modern, korszerű
 103585	relevant	releváns, lényeges
 103586	sämtlich	összes
-103588	r Dienst	szolgálat
+103588	r Dienst	szolgálat, szolgáltatás
 103589	s Talent	tehetség
 103590	e Durchführung	kivitelezés
 103591	r Sieg	gyűzelem
@@ -3556,7 +3556,7 @@
 103635	verhalten	viselkedik, viszonyul
 103636	s Wesen	lét, teremtmény
 103637	beleben	lelkesít, élénkít
-103638	lenken	vezet, irányít
+103638	lenken	vezet, kormányoz, hajt
 103639	e Option	opció, választási jog
 103640	bestreiten	tagad, kétségbe von, vitat
 103641	aufsetzen	felrak
@@ -3582,7 +3582,7 @@
 103661	r Umsatz	forgalom (kereskedelemben) 
 103662	r Offizier	tiszt, tisztségviselő
 103663	westlich	nyugati
-103664	entsprechend	vmi szerint, vminek megfelelően
+103664	entsprechend	szerint, vminek megfelelően
 103665	drücken	tol, nyom
 103666	s Gepäck	csomag, poggyász
 103667	loslassen	elenged, elereszt
@@ -3777,7 +3777,7 @@
 103863	s Lächeln	mosoly
 103864	spiegeln	tükröz, ragyog
 103865	s Umfeld	környezet
-103866	reichen	elér
+103866	reichen	nyújt, nyúl vmiért, elér
 103868	zumindest	legalább
 103869	testen	tesztel
 103870	wiederum	újra
@@ -4532,7 +4532,7 @@
 104631	sich abspielen	lejátszódik, végbemegy
 104632	anwenden	alkalmaz, felhasznál
 104633	e Besonderheit	sajátosság
-104634	r Sieger	győztes, bajnok
+104634	r Sieger	győztes
 104635	r Tisch	asztal
 104636	nähern	közelít
 104637	dementsprechend	eszerint, megfelelően
@@ -6117,3 +6117,21 @@
 106116	r Auszug	kiköltözés
 106117	schlummern	szundikál, szunnyad
 106118	r Wettlauf	versenyfutás
+106119	erst	eleinte, először
+106120	gliedern	tagol, tagolódik
+106121	r Bezug	járandóság
+106122	s Untergewicht	soványság
+106123	dösen	szundikál, bóbiskol
+106124	eröffnen	közöl
+106125	vorbereitet	felkészült
+106126	darauf	erre, arra
+106127	zierlich	kecses
+106128	verreisen	elutazik
+106129	desto	annál
+106130	zusammenrücken	összetol, egymáshoz közel áll
+106131	kennenlernen	megismer
+106132	diejenige	az, pontosan az
+106133	betroffen	érintett, érdekelt
+106134	e Gabe	adomány
+106135	ertappen	tetten ér
+106136	reihen	sorakozik
