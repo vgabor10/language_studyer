@@ -1237,7 +1237,7 @@
 101251	s Schwein	disznó
 101252	e Angabe	közlés, adat
 101253	e Ablehnung	elutasítás
-101254	massiv	erőteljes
+101254	massiv	súlyos, erőteljes, masszív
 101255	taub	süket
 101256	e Gemeinschaft	közösség
 101257	s Kino	mozi
@@ -1971,7 +1971,7 @@
 102010	e Sonne	Nap
 102011	sonnig	napos
 102012	heiß	forró
-102013	warm	meleg (mn)
+102013	warm	meleg
 102014	nass	nedves
 102015	e Jahreszeit	évszak
 102016	r Sturm	vihar
@@ -3095,7 +3095,7 @@
 103164	vorig	előző
 103165	darunter	alatta, közötte
 103166	r Durchschnitt	átlag
-103167	schlimm	rossz, végzetes
+103167	schlimm	rossz, gonosz
 103168	sprachlich	nyelvi
 103169	e Beschäftigung	alkalmazás, foglalkozás
 103170	e Fachleute	szakemberek
@@ -3307,7 +3307,7 @@
 103380	schaffen	alkot, teremt
 103381	verschließen	elzár, bezár
 103382	touristisch	túrisztikai
-103383	regieren	vezet, kormányoz
+103383	regieren	uralkodik, kormányoz
 103384	s Vitamin	vitamin
 103385	zurückführen	származtat, visszavezet
 103386	alltäglich	mindennapos, megszokott
@@ -3345,7 +3345,7 @@
 103418	s Ministerium	ministérium
 103419	schweben	lebeg
 103420	r Ofen	tűzhely
-103421	anzeigen	közöl, bejelent
+103421	anzeigen	közöl, bejelent, feljelent
 103422	r Reiz	inger, vonzerő
 103423	r Quadratmeter	négyzetméter
 103424	telefonieren	telefonál
@@ -3558,7 +3558,7 @@
 103637	beleben	lelkesít, élénkít
 103638	lenken	vezet, kormányoz, hajt
 103639	e Option	opció, választási jog
-103640	bestreiten	tagad, kétségbe von, vitat
+103640	bestreiten	vitat, kétségbe von
 103641	aufsetzen	felrak
 103642	monatlich	havonta
 103643	befreien	kiszabadít, felszabadít
@@ -6135,3 +6135,12 @@
 106134	e Gabe	adomány
 106135	ertappen	tetten ér
 106136	reihen	sorakozik
+106137	begnadigen	megkegyelmez
+106138	umziehen	elköltözik
+106139	mitreden	hozzászól, beleszól
+106140	segnen	megáld
+106141	Nil	Nílus
+106142	trüben	elront
+106143	s Rampenlicht	rivaldafény
+106144	r Vorzug	előny, elsőbség
+106145	zusichern	garantál, biztosít

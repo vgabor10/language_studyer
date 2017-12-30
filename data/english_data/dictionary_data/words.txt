@@ -57,7 +57,7 @@
 100057	mice	egerek
 100058	plateau	fennsík
 100059	irk	bosszant
-100060	assertive	önző
+100060	assertive	tolakodó, rámenős, nyers
 100061	facilitate	elősegít
 100062	for the moment	pillanatnyilag
 100063	calamity	szerencsétlenség
@@ -75,7 +75,7 @@
 100076	make up one's mind	elhatározza magát
 100077	apparently	nyilvánvalóan
 100078	offend	bánt
-100079	afford	nyújt, ad
+100079	afford	megengedhet magának, nyújt, ad
 100080	badge	jelvény
 100081	assessment	értékelés
 100082	advocate	támogat
@@ -2106,3 +2106,17 @@
 102105	slender	kercsú, vékony
 102106	revere	tisztel, nagyra becsül
 102107	knuckle	csukló
+102108	welder	hegesztő
+102109	clarity	világosság
+102110	whip	ostor, korbács
+102111	sob	zokog
+102112	rehearse	próbál, elpróbál
+102113	steady	merev, biztos, állandó
+102114	stew	fő, párol
+102115	commendable	dícséretes
+102116	lap	térd
+102117	antidote	ellenszer
+102118	onus	súly, teher
+102119	prospective	leendő, jövőbeli
+102120	airtight	légmentes
+102121	illuminate	megvilágít
