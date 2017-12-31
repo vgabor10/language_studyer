@@ -718,7 +718,7 @@
 100724	strömen	árad, ömlik
 100725	e Debatte	vita
 100726	darüber	erről, arról
-100727	ob	hogy, vajon
+100727	ob	ha, hogy, vajon
 100728	bedrängen	szorongat
 100729	dazu	ehhez, ahhoz
 100730	r Jude	zsidó
@@ -1884,7 +1884,7 @@
 101915	transportieren	szállít
 101917	benutzen	használ
 101918	s Internet	internet
-101919	r Provider	szolgáltató
+101919	r Provider	szolgáltató, ellátó
 101920	r Benutzername	felhasználónév
 101921	s Passwort	jelszó
 101922	abschicken	elküld
@@ -2108,7 +2108,7 @@
 102154	s Filter	szűrő
 102155	volljährig	nagykorú
 102156	minderjährig	fiatalkorú
-102157	e Stimme	hang, szavazat
+102157	e Stimme	szavazat
 102158	s Mandatum	mandátum
 102159	e Koalition	koalíció
 102160	e Post	posta
@@ -2741,7 +2741,7 @@
 102803	öffnen	nyit, kinyit
 102804	passen	passzol, illik
 102805	e Freiheit	szabadság
-102806	niederländisch	holland (mn)
+102806	niederländisch	holland
 102807	einmalig	egyszeri, egyedülálló
 102808	olympisch	olimpiai
 102809	e Freundin	barátnő
@@ -3269,7 +3269,7 @@
 103342	bitten	kér
 103343	irgendwie	valahogyan
 103344	jederzeit	bármikor
-103345	r Bau	szerkezet, épület
+103345	r Bau	építkezés, termelés, művelés
 103346	e Auseinandersetzung	vita, veszekedés
 103347	r Geschäftsführer	ügyvezető igazgató
 103348	r Betrachter	néző, szemlélő
@@ -6159,3 +6159,21 @@
 106158	e Wiederholung	ismétlés
 106159	s Geschehnis	eset, esemény
 106160	s Tauwetter	olvadás
+106161	r Meiler	atomerőmű
+106162	e Demontage	leszerelés, szétbontás
+106163	e Umgehung	kitérő, kerülő út
+106164	drosseln	elfojt, korlátoz, csökkent
+106165	e Verfügbarkeit	elérhetőség
+106166	verlangsamen	lassít, lelassít
+106167	strafbar	büntetendő
+106168	zuschauen	szemlél, néz
+106169	inklusive	beleértve
+106170	kollabieren	összeomlik
+106171	begriffen	felfog, megért
+106172	vergeuden	elherdál, elpazarol
+106173	s Geschoss	lövedék
+106174	e Einhaltung	betartás
+106175	kontraproduktiv	kontraproduktív
+106176	e Annullierung	visszavonás, érvénytelenítés, törlés
+106177	allerhand	mindenféle
+106178	Kanada	Kanada

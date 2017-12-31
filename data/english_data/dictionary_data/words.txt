@@ -2147,3 +2147,4 @@
 102146	candor	elfogulatlanság, őszinteség
 102147	bloom	virágzás, szépség
 102148	gist	lényeg, veleje vminek
+102149	slight	enyhe, csekély

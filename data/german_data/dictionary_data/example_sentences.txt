@@ -3829,6 +3829,8 @@
 101597	Wir trinken pro Woche etwa einen Kasten Bier.
 101598	Käse, Butter, Sahne, Jogurt und Kefir sind Milchprodukte.
 101598	Skyr ist wie Jogurt.
+101599	Ich versuchte, Zeitung zu lesen und meinen Quark zu genießen.
+101599	Keinen rohen Fisch, keine Filets, kein Hackfleisch, nur ein bisschen Quark.
 101600	Margarine ist zum Braten ebenso gut geeignet wie Butter.
 101601	Pudding kochen ist eine einfache Aufgabe.
 101603	Für meine Eierkuchen brauche ich 200 Gramm Mehl.
@@ -7898,6 +7900,7 @@
 103885	Nachdenklich schüttelte er den Kopf.
 103886	Ich habe kein gutes Gefühl dabei.
 103887	Sie streckte ihre Arme und Beine.
+103887	Er versuchte das linke Bein zu strecken.
 103888	Die korrekte Antwort lautet anders.
 103889	Der Kongress ﬁndet auf der Neuen Messe statt.
 103889	Die Ergebnisse werden im Rahmen eines Kongresses diskutiert.
@@ -8204,6 +8207,9 @@
 104068	Leute wie Ernst August sind für dich kein Umgang.
 104069	Du darfst nicht vom Weg abweichen, sonst verirrst du dich.
 104069	Theo trinkt kein Bier, sonst alles.
+104070	Vangard wußte die Zeichen zu deuten.
+104070	Aber ich kann es nicht alleine deuten.
+104070	Sie versuchte, ihre Mienen zu deuten.
 104071	Behandeln Sie das Problem bitte diskret!
 104071	Bitte hol neue Zeitschriften aus dem Lager.
 104071	Bitte machen Sie Ihre Angaben so präzise wie möglich!
@@ -10065,5 +10071,12 @@
 101836	Wie können wir Krieg abschaffen?
 101836	Wir sollten diese alten Regeln abschaffen.
 104838	Ist der Preis annehmbar?
+105073	Niemand würde sich ihm offen widersetzen.
+105073	Sie war unfähig, sich ihm zu widersetzen.
+105073	Ich hatte keine Energie mehr, mich ihm zu widersetzen.
 101916	Unser Projekt ist ausreichend finanziert.
 101916	Naturschutz ist eine Methode, mit der wir sicherstellen können, in Zukunft ausreichend Energie zu haben.
+105520	Ich hatte Angst, wieder zu versagen.
+105520	Ein zweites Versagen werde ich nicht dulden.
+105520	Ich schreibe es meinem eigenen Versagen zu.
+105520	Die Strafe für Versagen ist der Tod.
