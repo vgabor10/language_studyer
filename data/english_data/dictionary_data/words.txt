@@ -2120,3 +2120,30 @@
 102119	prospective	leendő, jövőbeli
 102120	airtight	légmentes
 102121	illuminate	megvilágít
+102122	fare	boldogul, sikerül
+102123	lid	fedél, fedő
+102124	redress	orvosol, jóvátesz
+102125	tenuous	vékony, ritka, híg
+102126	brain	agy
+102127	antecedent	előbbi, megelőző
+102128	coercion	kényszer, kényszerítés
+102129	aspiring	törekvő, becsvágyó
+102130	indulge	kielégít, kedvében jár
+102131	brand new	vadonatúj
+102132	bait	csalogat
+102133	rapport	kapcsolat, összhang
+102134	fume	gőz, pára
+102135	coworker	munkatárs
+102136	remorse	bűntudat
+102137	tickle	csiklandoz
+102138	compulsion	kényszer
+102139	preemptive	megelőző
+102140	recess	szünidő
+102141	toe	lábujj
+102142	smug	pedáns
+102143	fuss	fontoskodik, akadékoskodik
+102144	fear	félelem
+102145	principal	igazgató
+102146	candor	elfogulatlanság, őszinteség
+102147	bloom	virágzás, szépség
+102148	gist	lényeg, veleje vminek

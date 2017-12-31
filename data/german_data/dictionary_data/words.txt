@@ -849,7 +849,7 @@
 100859	oben	fennt
 100860	e Einschränkung	megszorítás
 100862	r Vertreter	képviselő
-100863	r Zugang	bejárat
+100863	r Zugang	bejárat, hozzáférés
 100864	r Arbeitsmarkt	munkaerőpiac
 100865	e Flucht	szökés
 100866	e Vertreibung	elűzés
@@ -4108,7 +4108,7 @@
 104200	aufrecht	függőleges
 104201	materiell	anyagi
 104202	nachträglich	utólag
-104203	zurzeit	pillanatnyilag
+104203	zurzeit	jelenleg, pillanatnyilag
 104204	e Problematik	probléma, problematika
 104205	e Rezession	visszaesés, recesszió
 104206	versetzen	áthelyez
@@ -4822,7 +4822,7 @@
 105049	h. geboten	nyújt, kínál (Perfekt)
 105050	h. gebunden	köt, megköt (Perfekt)
 105051	h. gebeten	kér (Perfekt)
-105052	h. geblasen	fújni (Perfekt)
+105052	h. geblasen	fúj (Perfekt)
 105053	i. geblieben	marad (Perfekt)
 105054	h. gebracht	hoz (Perfekt)
 105055	h. gebrochen	eltör, eltörik (Perfekt)
@@ -6144,3 +6144,18 @@
 106143	s Rampenlicht	rivaldafény
 106144	r Vorzug	előny, elsőbség
 106145	zusichern	garantál, biztosít
+106146	abrufen	lehív
+106147	niederschlagen	leüt, lever
+106148	ausweiten	kiépít, kibővít
+106149	r Aufwiegler	lázadó, felbujtó
+106150	r Gouverneur	kormányzó
+106151	absperren	lezár
+106152	wertlos	értéktelen
+106153	ermahnen	figyelmeztet
+106154	forttragen	továbbvisz
+106155	verifizieren	ellenőriz
+106156	s Grundrecht	alapvető jog
+106157	klarmachen	világossá tesz
+106158	e Wiederholung	ismétlés
+106159	s Geschehnis	eset, esemény
+106160	s Tauwetter	olvadás
