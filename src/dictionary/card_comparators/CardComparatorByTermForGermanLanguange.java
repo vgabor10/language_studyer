@@ -29,16 +29,29 @@ public class CardComparatorByTermForGermanLanguange implements Comparator<Card> 
         }
         term2 = term2.replaceAll("ä", "a");
         
+        if (cardTermToFind.equals("")) {
+            return term1.compareTo(term2);
+        } else
         if (term1.startsWith(cardTermToFind)
                 && !term2.startsWith(cardTermToFind)) {
             return -1;
-        } else {
-            if (!term1.startsWith(cardTermToFind)
-                    && term2.startsWith(cardTermToFind)) {
-                return 1;
-            } else {
-                return term1.compareTo(term2);
+        } else 
+        if (!term1.startsWith(cardTermToFind)
+                && term2.startsWith(cardTermToFind)) {
+            return 1;
+        } if (term1.startsWith(cardTermToFind)
+                && term2.startsWith(cardTermToFind)) {
+            
+            if (term1.length() < term2.length()) {
+                return -1;
             }
+            else {
+                return 1;
+            }
+            
+        }
+        else {
+            return term1.compareTo(term2);
         }
     }
 }
