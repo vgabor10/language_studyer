@@ -2148,3 +2148,40 @@
 102147	bloom	virágzás, szépség
 102148	gist	lényeg, veleje vminek
 102149	slight	enyhe, csekély
+102150	phase out	kivon, fokozatosan megszüntet
+102151	provenance	eredet, származás
+102152	logging	fakitermelés
+102153	sever	elvág, levág, leválaszt
+102154	drear	sivár, kietlen, szomorú
+102155	congregate	összehív, összejön, összegyűlik
+102156	greenhouse	üvegház
+102157	frantic	dühöngő, őrjöngő
+102158	flank	szegélyez, támogat
+102159	duly	helyesen, illendően
+102160	hover	lebeg, kering
+102161	eternally	örökké
+102162	colonel	ezredes
+102163	lab	labor
+102164	coexist	létezik, egyidejűleg létezik
+102165	distraught	megzavarodott, kétségbeesett
+102166	assurance	biztosíték
+102167	tribute	tisztelet, elismerés
+102168	stack	halom, rakás
+102169	edification	tanulság, oktatás
+102170	comprehend	felfog, megért
+102171	travesty	paródia
+102172	settlement	egyezség, rendezés, hozomány
+102173	settlement	település, gyarmat
+102174	disorientation	zavar, megzavarodás
+102175	injunction	rendelkezés, parancs, végzés
+102176	damn	átkoz, megátkoz
+102177	shabby	kopott, rongyos
+102178	disperse	szétszór, elszór
+102179	graft	korrupció, vesztegetés
+102180	rife	elterjedt, gyakori, mindennapos
+102181	woodenly	ügyetlenül, esetlenül
+102182	overweening	beképzelt, gőgös
+102183	in effect	gyakorlatilag, valójában
+102184	municipal	önkormányzati, helyhatósági
+102185	out of the question	kizárt, lehetetlen, elképzelhetetlen
+102186	chill	hűvösség, fagy

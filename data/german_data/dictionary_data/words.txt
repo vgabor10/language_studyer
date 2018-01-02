@@ -6177,3 +6177,7 @@
 106176	e Annullierung	visszavonás, érvénytelenítés, törlés
 106177	allerhand	mindenféle
 106178	Kanada	Kanada
+106179	r Rabatte	árengedmény
+106180	gewerblich	ipari
+106181	anpeilen	szándékozik
+106182	bevölkern	benépesít
