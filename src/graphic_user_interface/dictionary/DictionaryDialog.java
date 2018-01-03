@@ -318,6 +318,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
             clearTable();
             cardFinder.makeSearch();
             toScreenCards(cardFinder.foundCards);
+            inspectCardButton.setEnabled(false);
         }
 
         jTextField1.requestFocus();
