@@ -2,7 +2,6 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DataModificator;
 import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.warning_error_dialogs.YesNoDialog;
