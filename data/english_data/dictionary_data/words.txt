@@ -211,7 +211,7 @@
 100212	trap	csapda
 100213	ridiculous	nevetséges
 100214	overwhelm	megsemmisít
-100215	obstackle	akadály
+100215	obstackle	akadály, gát
 100216	capitalize	hasznosít
 100217	overcome	legyőz
 100218	exacerbate	súlyosbít
@@ -944,7 +944,7 @@
 100951	ulterior	rejtett, távolabbi
 100952	relay	továbbít, közvetít
 100953	leverage	befolyás. hatalom
-100954	drought	szály, szárazság
+100954	drought	aszály, szárazság
 100955	stillness	nyugalom
 100956	laggard	lusta, tunya
 100957	disavow	tagad, megtagad
@@ -1877,7 +1877,6 @@
 101876	challenge	vitat, kifogásol, kérdőre von
 101877	broil	sül a napon
 101878	cite	idéz
-101879	droughts	aszály
 101880	culprit	vádlott
 101881	accord	egyettértés, egyezmény, összhang
 101882	infest	ellep, eléraszt
@@ -2185,3 +2184,92 @@
 102184	municipal	önkormányzati, helyhatósági
 102185	out of the question	kizárt, lehetetlen, elképzelhetetlen
 102186	chill	hűvösség, fagy
+102187	whim	szeszély, rigolya, hóbort
+102188	head	irányít, vezet
+102189	proliferation	burjánzás
+102190	because	mert
+102191	because of	miatt
+102192	seminal	mag
+102193	maple	juharfa
+102194	exuberance	bőség, bővelkedés, gazdagság
+102195	woe	baj, szomorúság, lesújtottság
+102196	meltdown	leolvadás, összomlás
+102197	irresistible	ellenállhatatlan
+102198	fragility	törékenység, gyengeség
+102199	delux	luxus
+102200	swarm	raj, sokaság
+102201	hull	hajótest, törzs
+102202	wreckage	roncs, hajóroncs
+102203	awkward	kínos, kellemetlen
+102204	liaison	összeköttetés, kapcsolat
+102205	duress	fogság, kényszer
+102206	conflation	összeolvasztás
+102207	valiant	bátor, merész
+102208	phenomena	jelenség
+102209	boon	áldás, adomány
+102210	unenthusiastic	nem lelkesedő
+102211	prejudice	előitéletm, elfogultság
+102212	blossom	virágzik, kivirul
+102213	passable	elfogadható, tűrhető
+102214	engulf	elönt, eláraszt, elborít
+102215	preacher	prédikátor, hitszónok
+102216	pauper	koldus, szegény
+102217	assuage	olt, enyhít, csillapít
+102218	topple	ledönt
+102219	shovel	lapátol
+102220	conformity	alkalmazkodás, beillszkedés
+102221	account	beszámoló, számadás, elmondás
+102222	account	bankszámla, felhasználói fiók
+102223	coverage	tudósítás, beszámoló
+102224	streak	sáv, csík, réteg
+102225	competence	hozzáértés, szakértelem, kompetencia
+102226	pear	körte
+102227	fret	idegesít, nyugtalanít, izgat
+102228	elves	manó, törpe
+102229	clay	agyag
+102230	consultancy	tanácsadás
+102231	recollect	emlékezik
+102232	attitude	hozzáállás, magatartás
+102233	lackey	inas, lakáj
+102234	repatriation	hazatelepítés
+102235	ally	szövetséges
+102236	thoroughfare	főútvonal
+102237	bastion	bástya
+102238	teeth	fog
+102239	overture	nyitány, ajánlat
+102240	commander in chief	főparancsnok
+102241	petulant	sértődékeny, ingerlékeny
+102242	at sy's disposal	vkinek a rendelkezésére
+102243	broach	szóvá tesz, felhoz
+102244	viable	életképes, járható
+102245	specify	megnevez, meghatároz
+102246	simmering	párolás
+102247	simmer	párol, lassú tűzön fő
+102248	moderate	mérsékelt, higgadt
+102249	swept	söpör
+102250	catalyst	katalizátor
+102251	enrich	gazdagít
+102252	retaliation	megtorlás
+102253	pious	vallásos, kegyes
+101879	dilapidated	rozoga, roskadozó, düledező
+102254	by no means	semmi esetre sem
+102255	borough	kerület, választó kerület
+102256	derail	kisiklik
+102257	cumulative	halmozott
+102258	hiccup	csuklás
+102259	flatly	határozottan, kereken
+102260	fondly	szeretettel, gyengéden
+102261	phony	hamis, szélhámos
+102262	submission	alávetés, alázatosság, behódolás
+102263	inhibited	gátlásos
+102264	pot	marihuána
+102265	sunglasses	napszemüveg
+102266	unregulated	szabályozatlan
+102267	resounding	viszhangzó, harsogó, zengő
+102268	dispensary	gyógyszertár
+102269	recreational	szórakozási
+102270	expunge	kihúz, kitöröl, kihagy
+102271	possession	birtoklás
+102272	poll	szavazás
+102273	flop	esés, bukás, kudarc
+102274	tend	hajlik, irányul
