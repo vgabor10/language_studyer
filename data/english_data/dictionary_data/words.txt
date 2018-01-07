@@ -2273,3 +2273,57 @@
 102272	poll	szavazás
 102273	flop	esés, bukás, kudarc
 102274	tend	hajlik, irányul
+102275	collusion	összejátszás, összebeszélés
+102276	money laundering	pénzmosás
+102277	money	pénz
+102278	salty	sós
+102279	intermediary	közvetítő
+102280	incriminate	megvádol, gyanúsít
+102281	immediately	azonnal, rögtön
+102282	lying	hazugság
+102283	fire	kirúg, elbocsát
+102284	gravely	komolyan
+102285	greasy	zsíros, piszkos
+102286	audacious	arcátlan, szemtelen
+102287	epoch	kor, korszak
+102288	credentials	bizonyítvány, ajánlás
+102289	odometer	távolságmérő
+102290	ginger	lendület, élénkség
+102291	ginger	gyömbér
+102292	resist	elutasít, ellenáll, ellenkezik
+102293	heel	sarok
+102294	coastline	tengerpart, partvonal
+102295	giveaway	elárulás
+102296	blueprint	tervrajz, tervezet
+102297	blue	kék
+102298	feud	viszály, ellenségeskedés
+102299	excerpt	kivonat, részlet
+102300	eviscerate	kibelez, kizsigerel
+102301	lambast	elagyabugyál
+102302	scathing	maró, csípős
+102303	muse	eltűnődik, elmélkedik, elmereng
+102304	even though	annak ellenére
+102305	spree	tréfa, mulatság
+102306	denture	műfogsor
+102307	dispose	rendelkezik, ekrendez
+102308	procure	szerez, megszerez
+102309	pen pal	levelező társ
+102310	sour	savanyít, elkeserít
+102311	missile	lövedék
+102312	out of date	elavult
+102313	stride	lépés
+102314	failure	hiba, kudarc, bukás
+102315	assortment	választék, osztályozás
+102316	casualty	sebesült, veszteség
+102317	pristine	ős, ősi, eredeti
+102318	contention	vita, viszály, harc
+102319	provoke	provokál, bosszant
+102320	assail	megtámad, megrohamoz
+102321	deduct	levon, beszámít
+102322	by contrast	ezzel szemben
+102323	frontier	határ
+102324	reversal	visszafordítás, visszafordulás
+102325	rope	kötél
+102326	sentiment	érzelem, érzékenység
+102327	reiterate	ismétel
+102328	vindictive	gyűlölködő, bosszúálló, megtorló

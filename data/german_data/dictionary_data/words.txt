@@ -453,7 +453,7 @@
 100455	s Silber	ezüst
 100456	tauschen	cserél
 100457	e Schande	szégyen
-100458	mächtig	nagyon, hatalmas
+100458	mächtig	hatalmas
 100459	produzieren	termel
 100460	e Industrie	ipar
 100461	schwach	gyenge
@@ -6181,3 +6181,5 @@
 106180	gewerblich	ipari
 106181	anpeilen	szándékozik
 106182	bevölkern	benépesít
+106183	mächtig	nagyon, erősen
+106184	r Tresor	széf
