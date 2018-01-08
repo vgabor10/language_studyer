@@ -218,7 +218,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         this.dictionary = dictionary;
         this.cardFinder = dictionary.cardFinder;
         
-        cardFinder.setStringToSearch("");
+        cardFinder.clearExceptCardContainer();
         
         jTextField1.setText("");
         jTextField1.requestFocus();

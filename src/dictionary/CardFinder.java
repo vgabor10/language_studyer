@@ -173,4 +173,13 @@ public class CardFinder {
         }
     }
     
+    public void clearExceptCardContainer() {
+        cardCategoriesRestriction.clear();
+        stringToSearch = "";
+        searchAccordingToTerm = true;
+        useCategoryRestrictions = false;
+        anyStringAccepted = false;
+        foundCards.clear();
+    }
+    
 }
