@@ -1431,7 +1431,7 @@
 101432	adhere	ragad, tapad, ragaszkodik
 101433	hitchhike	autóstoppal utazik
 101434	illegible	olvashatatlan
-101435	blow	utés, csapás
+101435	blow	ütés, csapás
 101436	dependable	megbízható
 100322	blunt	tompa, nyers
 101437	mattress	matrac, ágybetét
@@ -2327,3 +2327,53 @@
 102326	sentiment	érzelem, érzékenység
 102327	reiterate	ismétel
 102328	vindictive	gyűlölködő, bosszúálló, megtorló
+102329	planet	bolygó
+102330	ape	majom
+102331	vengeful	basszúálló
+102332	for good	végleg, örökre
+102333	take office	hivatalba lép
+102334	veer	irányt változtat
+102335	belligerent	harcias, ellenséges
+102336	excess	túlzás
+102337	credibility	hitelesség
+102338	rebuke	rendreutasítás
+102339	guarantor	kezes, jótálló
+102340	annoy	bosszant, idegesít, zavar
+102341	deceit	csalás
+102342	tersely	röviden, tömören, velősen
+102343	surreptitiously	titokban, alattomban
+102344	scion	sarj, ivadék
+102345	bribery	vesztegetés
+102346	embezzlement	sikkasztás, hűtlen kezelés
+102347	landslide	földcsuszamlás
+102348	obfuscation	összezavarás, elhomályosítás
+102349	ambiguity	kétértelműség, homályosság
+102350	fulmination	dörgés, robbanás
+102351	scowl	morcosan néz, komoran néz
+102352	thin	vékony, vézna
+102353	hawk	héja, sólyom
+102354	brawl	veszekedés, civakodás
+102355	except	kivéve
+102356	aisle	folyosó
+102357	dubiously	kétkedően
+102358	overshadow	beárnyékol
+102359	seat	ülés, szék
+102360	fruitless	eredménytelen, terméketlen
+102361	strife	harc, viszály, küzdelem
+102362	plow	szánt, felszánt
+102363	pollster	közvéleménykutató
+102364	hindrance	akadály, gát
+102365	prerogative	előjog, kiváltság
+102366	purr	dorombol
+102367	marry	megházasodik, házasodik
+102368	scoff	csúfolódik, gúnyolódik
+102369	renounce	felad, lemond
+102370	weariness	kimerültség, fáradtság
+102371	mutate	átalakul
+102372	acute	sürgős, heveny
+102373	chronic	krónikus, tartós
+102374	sandbag	homokszák
+102375	rebound	visszaugrás
+102376	pace	iram, sebesség
+102377	contract	összemegy, zsugorodik
+102378	abduction	emberrablás
