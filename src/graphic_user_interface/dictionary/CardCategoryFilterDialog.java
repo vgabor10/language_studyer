@@ -2,22 +2,22 @@ package graphic_user_interface.dictionary;
 
 import dictionary.CardCategory;
 import dictionary.CategoryContainer;
+import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
-import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 
 public class CardCategoryFilterDialog extends javax.swing.JDialog {
     
-    private Set<Integer> outCategoryIndexes;
+    private Dictionary dictionary;
+    
+    DialogAnswer dialogAnswer;
     
     private CategoryContainer allCategoryContainer;
     private CategoryContainer selectedCategoryContainer = new CategoryContainer();
     
     private final DefaultTableModel allCategoriesTableModel;
     private final DefaultTableModel selectedCategoriesTableModel;
-
-    public DialogAnswer dialogAnswer;
     
     public CardCategoryFilterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -32,23 +32,31 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
         closeButton.setMnemonic(KeyEvent.VK_C);
     }
     
-    public void setAllCategories(CategoryContainer cc) {
-        allCategoryContainer = cc;
+    public void setDictionary(Dictionary d) {
+        dictionary = d;
         
+        allCategoryContainer = dictionary.dataContainer.categoryContainer;
         for (int i=0; i<allCategoryContainer.numberOfItems(); i++) {
             String categoryName = allCategoryContainer.getCategoryNameByOrder(i);
             allCategoriesTableModel.addRow(new Object[]{categoryName});
         }
-    }
-    
-    public void setSelectedCategories(Set<Integer> categoryIndexes) {
-        for (int categoryIndex : categoryIndexes) {
-            CardCategory cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
-            selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
-            selectedCategoryContainer.add(cardCategory);
-        }
         
-        outCategoryIndexes = categoryIndexes;
+        
+        if (dictionary.cardFinder.isCategoryRestrictionsUsed()) {
+            
+            for (int categoryIndex : dictionary.cardFinder.getCardCategoryRestrictions()) {
+                CardCategory cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
+                selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
+                selectedCategoryContainer.add(cardCategory);
+            }
+            
+            selectAllCardCheckBox.setSelected(false);
+            selectedCategoriesTable.setEnabled(true);
+        }
+        else {
+            selectAllCardCheckBox.setSelected(true);
+            selectedCategoriesTable.setEnabled(false);
+        }
     }
     
     /**
@@ -68,7 +76,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
         jButton4 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         allCategoriesTable = new javax.swing.JTable();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        selectAllCardCheckBox = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -104,6 +112,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
             }
         });
         selectedCategoriesTable.setToolTipText("");
+        selectedCategoriesTable.setEnabled(false);
         selectedCategoriesTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         selectedCategoriesTable.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -151,10 +160,11 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
         });
         jScrollPane4.setViewportView(allCategoriesTable);
 
-        jCheckBox1.setText("select all card");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        selectAllCardCheckBox.setSelected(true);
+        selectAllCardCheckBox.setText("select all card");
+        selectAllCardCheckBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+                selectAllCardCheckBoxActionPerformed(evt);
             }
         });
 
@@ -181,7 +191,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
                             .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(closeButton, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jCheckBox1)
+                        .addComponent(selectAllCardCheckBox)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jCheckBox2)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -192,7 +202,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jCheckBox1)
+                    .addComponent(selectAllCardCheckBox)
                     .addComponent(jCheckBox2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -213,11 +223,15 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
     
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        addCategoryToCard();
+        addSelectedCategory();
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void addCategoryToCard() {
+    private void addSelectedCategory() {
+        
         if (allCategoriesTable.getSelectedRowCount() == 1) {
+            selectAllCardCheckBox.setSelected(false);
+            selectedCategoriesTable.setEnabled(true);
+            
             int selectedTableRowIndex = allCategoriesTable.getSelectedRow();
             CardCategory cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
 
@@ -230,18 +244,21 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
         }
     }
     
-    private void removeCategoryFromCard() {
+    private void removeSelectedCategory() {
+        
         if (selectedCategoriesTable.getSelectedRowCount() == 1) {
+            selectAllCardCheckBox.setSelected(false);
+            selectedCategoriesTable.setEnabled(true);
+            
             int selectedTableRowIndex = selectedCategoriesTable.getSelectedRow();
             selectedCategoriesTableModel.removeRow(selectedTableRowIndex);
             selectedCategoryContainer.removeCategoryByOrder(selectedTableRowIndex);
-            
             selectedCategoriesTable.clearSelection();
         }
     }
     
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        removeCategoryFromCard();
+        removeSelectedCategory();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
@@ -250,13 +267,18 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
 
     private void okButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_okButtonActionPerformed
         dialogAnswer.stringAnswer = "ok_button_pressed";
-
-        if (!jCheckBox1.isSelected()) {
-            outCategoryIndexes.clear();
+        
+        if (!selectAllCardCheckBox.isSelected()) {
+            dictionary.cardFinder.setCategoryRestrictionUsage(true);
+            dictionary.cardFinder.getCardCategoryRestrictions().clear();
         
             for (int i=0; i<selectedCategoryContainer.numberOfItems(); i++) {
-                outCategoryIndexes.add(selectedCategoryContainer.getCategoryByOrder(i).index);
+                dictionary.cardFinder.getCardCategoryRestrictions().add(
+                        selectedCategoryContainer.getCategoryByOrder(i).index);
             }   
+        }
+        else {
+            dictionary.cardFinder.setCategoryRestrictionUsage(false);
         }
         
         dispose();
@@ -264,35 +286,27 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
 
     private void allCategoriesTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_allCategoriesTableMouseClicked
         if (evt.getClickCount() == 2) {
-            addCategoryToCard();   
+            addSelectedCategory();   
         }
     }//GEN-LAST:event_allCategoriesTableMouseClicked
 
     private void selectedCategoriesTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_selectedCategoriesTableMouseClicked
         if (evt.getClickCount() == 2) {
-            removeCategoryFromCard();   
+            removeSelectedCategory();   
         }
     }//GEN-LAST:event_selectedCategoriesTableMouseClicked
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        if (jCheckBox1.isSelected()) {
-            setEnabledWidgets(false);
+    private void selectAllCardCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectAllCardCheckBoxActionPerformed
+        if (selectAllCardCheckBox.isSelected()) {
+            selectedCategoryContainer.clear();
+            selectedCategoriesTable.setEnabled(false);
             selectedCategoriesTableModel.setRowCount(0);
-            outCategoryIndexes.clear();
-            outCategoryIndexes.add(-1);
         }
         else {
-            setEnabledWidgets(true);
-            outCategoryIndexes.clear();
+            selectedCategoriesTable.setEnabled(true);
         }
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+    }//GEN-LAST:event_selectAllCardCheckBoxActionPerformed
 
-    private void setEnabledWidgets(boolean isEnabled) {
-        allCategoriesTable.setEnabled(isEnabled);
-        jButton3.setEnabled(isEnabled);
-        jButton4.setEnabled(isEnabled);
-        selectedCategoriesTable.setEnabled(isEnabled);
-    }
     /**
      * @param args the command line arguments
      */
@@ -343,11 +357,11 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
     private javax.swing.JButton closeButton;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JButton okButton;
+    private javax.swing.JCheckBox selectAllCardCheckBox;
     private javax.swing.JTable selectedCategoriesTable;
     // End of variables declaration//GEN-END:variables
 }

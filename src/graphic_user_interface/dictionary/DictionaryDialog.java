@@ -367,20 +367,16 @@ public class DictionaryDialog extends javax.swing.JDialog {
         
         CardCategoryFilterDialog dialog 
                 = new CardCategoryFilterDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dictionary.dataContainer.categoryContainer);
+        
         dialog.dialogAnswer = dialogAnswer;
-        dialog.setSelectedCategories(cardFinder.getCardCategoryRestrictions());
+        dialog.setDictionary(dictionary);
+
+        
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
         if (dialogAnswer.stringAnswer.equals("ok_button_pressed")) {
             clearTable();
-            if (!cardFinder.getCardCategoryRestrictions().contains(-1)) {
-                cardFinder.setCategoryRestrictionUsage(true);
-            }
-            else {
-                cardFinder.setCategoryRestrictionUsage(false);
-            }
         }
         
         jTextField1.requestFocus();

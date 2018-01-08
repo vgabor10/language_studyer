@@ -31,6 +31,10 @@ public class CardFinder {
         }
     }
     
+    public boolean isCategoryRestrictionsUsed() {
+        return useCategoryRestrictions;
+    }
+    
     public void setCardCategoryRestrictions(Set<Integer> ccr) {
         cardCategoriesRestriction = ccr;
     }
