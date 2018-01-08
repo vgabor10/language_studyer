@@ -46,7 +46,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTable1 = new javax.swing.JTable();
         jTextField1 = new javax.swing.JTextField();
         closeButton = new javax.swing.JButton();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        searchDirectionComboBox = new javax.swing.JComboBox<>();
         inspectCardButton = new javax.swing.JButton();
         addNewCardButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -105,10 +105,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "foreign -> hungarian", "hungarian -> foreign" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        searchDirectionComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "foreign -> hungarian", "hungarian -> foreign" }));
+        searchDirectionComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                searchDirectionComboBoxActionPerformed(evt);
             }
         });
 
@@ -169,7 +169,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jComboBox1, 0, 1, Short.MAX_VALUE)
+                            .addComponent(searchDirectionComboBox, 0, 1, Short.MAX_VALUE)
                             .addComponent(addNewCardButton, javax.swing.GroupLayout.DEFAULT_SIZE, 157, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,7 +186,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(searchDirectionComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(categoryFilterButton)
                     .addComponent(searchModeComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -209,7 +209,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {addNewCardButton, inspectCardButton, listAllCardsButton});
 
-        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {categoryFilterButton, jComboBox1, searchModeComboBox});
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {categoryFilterButton, searchDirectionComboBox, searchModeComboBox});
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -224,10 +224,10 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
         jLabel1.setText("-");
         
-        jComboBox1.removeAllItems();
-        jComboBox1.addItem(dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase()
+        searchDirectionComboBox.removeAllItems();
+        searchDirectionComboBox.addItem(dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase()
                 + " -> hungarian");
-        jComboBox1.addItem("hungarian -> " +
+        searchDirectionComboBox.addItem("hungarian -> " +
         dictionary.discFilesMetaDataHandler.getStudiedLanguageName().toLowerCase());
         
         setTitle("Dictionary - " + dictionary.discFilesMetaDataHandler.getStudiedLanguageName());
@@ -247,7 +247,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private void toScreenCards(List<Card> cardList) {
         clearTable();
         
-        if (jComboBox1.getSelectedIndex() == 0) {
+        if (searchDirectionComboBox.getSelectedIndex() == 0) {
             for (int i = 0; i < cardList.size(); i++) {
                 tableModel.addRow(new Object[]{
                     cardList.get(i).term,
@@ -255,7 +255,7 @@ public class DictionaryDialog extends javax.swing.JDialog {
             }
         }
 
-        if (jComboBox1.getSelectedIndex() == 1) {
+        if (searchDirectionComboBox.getSelectedIndex() == 1) {
             for (int i = 0; i < cardList.size(); i++) {
                 tableModel.addRow(new Object[]{
                     cardList.get(i).definition,
@@ -324,21 +324,21 @@ public class DictionaryDialog extends javax.swing.JDialog {
         jTextField1.requestFocus();
     }
     
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void searchDirectionComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchDirectionComboBoxActionPerformed
         
         JTableHeader th = jTable1.getTableHeader();
         TableColumnModel tcm = th.getColumnModel();
         TableColumn tc0 = tcm.getColumn(0);
         TableColumn tc1 = tcm.getColumn(1);
         
-        if( jComboBox1.getSelectedIndex() == 0) {
+        if( searchDirectionComboBox.getSelectedIndex() == 0) {
             tc0.setHeaderValue("term");
             tc1.setHeaderValue("definition");
             
             cardFinder.setSearchAccordingToTerm();
         }
         
-        if( jComboBox1.getSelectedIndex() == 1) {
+        if( searchDirectionComboBox.getSelectedIndex() == 1) {
             tc0.setHeaderValue("definition");
             tc1.setHeaderValue("term");
             
@@ -349,12 +349,14 @@ public class DictionaryDialog extends javax.swing.JDialog {
         clearTable();
         inspectCardButton.setEnabled(false);
         
+        jTextField1.setText("");
         jTextField1.requestFocus();
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_searchDirectionComboBoxActionPerformed
 
     private void listAllCardsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listAllCardsButtonActionPerformed
         jTextField1.setText("");
-        cardFinder.listAllCard();
+        cardFinder.setAnyStringAccepted();
+        cardFinder.makeSearch();
         toScreenCards(cardFinder.foundCards);
         
         inspectCardButton.setEnabled(false);
@@ -479,13 +481,13 @@ public class DictionaryDialog extends javax.swing.JDialog {
     private javax.swing.JButton categoryFilterButton;
     private javax.swing.JButton closeButton;
     private javax.swing.JButton inspectCardButton;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JButton listAllCardsButton;
+    private javax.swing.JComboBox<String> searchDirectionComboBox;
     private javax.swing.JComboBox<String> searchModeComboBox;
     // End of variables declaration//GEN-END:variables
 }
