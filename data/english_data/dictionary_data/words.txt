@@ -2438,3 +2438,4 @@
 102437	shun	kibújik, kikerül
 102438	thorny	nehéz, tüskés
 102439	backer	támogató
+102440	poor	szegény
