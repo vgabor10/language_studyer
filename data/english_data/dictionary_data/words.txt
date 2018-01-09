@@ -2377,3 +2377,64 @@
 102376	pace	iram, sebesség
 102377	contract	összemegy, zsugorodik
 102378	abduction	emberrablás
+102379	cutlery	evőeszköz
+102380	soil	talaj, föld
+102381	mercy	kegyelem, irgalom
+102382	recon	felderít
+102383	beast	bestia, vadállat
+102384	trigger	ravasz
+102385	pen	toll
+102386	pen	karám, akol, ketrec
+102387	quarry	kőbánya
+102388	escape	elmenekül, kilép
+102389	seduction	csábítás, vonzerő
+102390	acclaim	éjjenez
+102391	interwind	egybefon, összefon
+102392	inextricably	kibogozhatatlanul
+102393	discourse	társalgás, értekezés
+102394	pin down	elkap, lerögzít
+102395	dean	dékán
+102396	ubiquity	mindenütt jelenvalóság
+102397	enchantment	varázs, bűvölet
+102398	inertia	tehetetlenség
+102399	insoluble	megoldhatatlan, megfejthetetlen
+102400	fearful	félelmetes
+102401	dike	gát, töltés
+102402	avail	haszon, előny
+102403	hasten	siet, siettet, sürget
+102404	herald	hírnök
+102405	reverence	tisztelet, hódolat
+102406	contractor	vállalkozó, szállító
+102407	assume	feltételez, magára vállal
+102408	primate	főemlős
+102409	warlike	harcias
+102410	nurture	nevelés, gondozás
+102411	recluse	remete
+102412	equanimity	egykedvűség, nyugalom
+102413	inculcate	belenevel
+102414	bandwidth	sávszélesség
+102415	induce	rávesz, rábír
+102416	fallacy	tévedés, csalás
+102417	carrot	répa, sárgarépa
+102418	excommunication	kiközösítés
+102419	law enforcement	bűnüldözés
+102420	entice	csábít, csalogat
+102421	scapegoat	bűnbak
+102422	subordinate	alárendelt
+102423	docile	engedelmes
+102424	according to	szerint
+102425	obedient	engedelmes, szófogadó
+102426	domain	terület, birtok
+102427	dismissal	elbocsátás, felmondás
+102428	intuit	ösztönösen megérez
+102429	exalt	felemel, magasztal
+102430	heredity	öröklés
+102431	inauspicious	szerencsétlen
+102432	renaissance	reneszánsz
+102433	intrusive	tolakodó
+102434	dodge	kikerül, kitér
+102435	slippery	csúszós, síkos
+102436	nudge	oldalba bök
+102437	shun	kibújik, kikerül
+102438	thorny	nehéz, tüskés
+102439	backer	támogató
