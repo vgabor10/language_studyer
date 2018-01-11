@@ -2439,3 +2439,32 @@
 102438	thorny	nehéz, tüskés
 102439	backer	támogató
 102440	poor	szegény
+102441	voracity	mohóság, falánkság
+102442	dispensable	mellőzhető, nélkülözhető
+102443	sensibly	értelmesen, helyesen
+102444	arbitration	bírói döntés
+102445	boot	csomagtartó
+102446	fettle	állapot
+102447	ditch	árok
+102448	regressive	csökkenő, visszaeső
+102449	obsession	megszállottság, rögeszme
+102450	comatose	eszméletlen, kábult
+102451	painkiller	fájdalomcsillapító
+102452	diversion	elterelés, eltérítés
+102453	annotation	kommentár
+102454	indoctrination	kioktatás, betanítás
+102455	struck	megüt, megver
+102456	interdependent	egymásra utalt
+102457	intimidation	megfélemlítés, fenyegetés
+102458	bully	terrorizál, zsarnokoskodik
+102459	indiscriminate	önkényes, felelőtlen
+102460	wielder	kezelő
+102461	henchmen	szolga, csatlós
+102462	acolyt	követő, tanítvány
+102463	per se	önmagában
+102464	abscond	meglép, meglóg
+102465	redundant	felesleges, szükségtelen
+102466	adolescent	kamasz, tinédzser
+102467	deferential	tiszteletteljes, engedelmes
+102468	in addition	ráadásul, azonkívül
+102469	hamper	akadályoz, gátol
