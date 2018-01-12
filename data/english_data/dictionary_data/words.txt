@@ -2468,3 +2468,15 @@
 102467	deferential	tiszteletteljes, engedelmes
 102468	in addition	ráadásul, azonkívül
 102469	hamper	akadályoz, gátol
+102470	thug	bandita
+102471	rant	felvágás
+102472	conviction	meggyőzés
+102473	aspire	vágyik, törekszik
+102474	mediate	közvetít, közbenjár
+102475	ornament	dísz, díszítés
+102476	palatial	fényűző, nagyszabású
+102477	adverse	ártalmas, káros
+102478	lamb	bárány
+102479	mutton	birkahús
+102480	bolshie	bolsevik
+102481	vociferous	zajos, lármás
