@@ -360,6 +360,9 @@ public class DictionaryDialog extends javax.swing.JDialog {
         toScreenCards(cardFinder.foundCards);
         
         inspectCardButton.setEnabled(false);
+        
+        jTextField1.setText("");
+        jTextField1.requestFocus();   
     }//GEN-LAST:event_listAllCardsButtonActionPerformed
 
     private void categoryFilterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_categoryFilterButtonActionPerformed
