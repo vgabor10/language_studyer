@@ -245,7 +245,7 @@
 100246	abrasion	kopás
 100247	drove	tömeg
 100248	notorious	hírhedt
-100249	barren	terméketlen
+100249	barren	terméketlen, meddő
 100250	tracer	másoló
 100251	start from scratch	semmiből kezdi
 100252	prescribe	felír (orvosságot)
@@ -2480,3 +2480,56 @@
 102479	mutton	birkahús
 102480	bolshie	bolsevik
 102481	vociferous	zajos, lármás
+102482	purplish	vörösses
+102483	likelier	valószínűbb
+102484	ravage	pusztít, dúl
+102485	flock	csoportosul, gyülekezik
+102486	depopulation	elnéptelenedés
+102487	decorous	illő, illedelmes
+102488	herring	hering
+102489	sound	ép, egészséges, jó állapotban levő
+102490	morose	mogorva
+102491	endear	megszerettet, megkedveltet
+102492	acuity	élesség, hegyesség
+102493	side effect	mellékhatás
+102494	affect	befolyásol, hatással van valamire
+102495	ladle	merítőkanál
+102496	ladle	mer, kiönt
+102497	apostatize	megtagadja a hitét
+102498	slander	rágalom
+102499	multitude	sokaság, tömeg
+102500	fervor	buzgalom, szenvedély
+102501	luggage	poggyász, csomag
+102502	lice	tetű
+102503	wretch	nyomorult, hitvány
+102504	trample	tapos, elnyom
+102505	vinegar	ecet
+102506	venerate	tisztel, hódol
+102507	pity	szán, sajnál
+102508	esteem	tisztelet, becsület
+102509	fidelity	hűség
+102510	incision	metszés, bevágás
+102511	sapling	facsemete
+102512	enigma	talány, rejtély
+102513	scorn	megvet, lenéz
+102514	apostasy	hithagyás
+102515	sideline	oldalvonal
+102516	substitute	helyettes, cserejátékos
+102517	stifling	fullasztó, fojtogató
+102518	commission	megbíz, üzembe helyez
+102519	frenzy	őrület, őrjöngés
+102520	drizzle	szitál, szemerkél
+102521	shower	zuhanyozik, zuhog
+102522	candid	nyílt, őszinte
+102523	stellar	csillagos
+102524	lurch	ingadozás, megdőlés
+102525	thrash	üt, elver
+102526	resurrection	feltámadás. feléledés
+102527	daunt	megijed, megijesz, elcsüggeszt
+102528	dauntless	elszánt, rettenthetetlen
+102529	encompass	övez, felölel, körülfog
+102530	pell-mell	összevissza
+102531	point out	kifejt, rámutat
+102532	wrench	ficam
+102533	modicum of	kis mennyiség vmiből
+102534	furl	felcsavar, felteker, becsavar
