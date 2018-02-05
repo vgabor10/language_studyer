@@ -105,7 +105,7 @@
 100106	courtyard	udvar
 100107	bend	hajlik
 100108	fencer	vívó
-100109	detach	elkülönít
+100109	detach	leválaszt, elkülönít
 100110	compliment	bókol
 100111	bitter	keserű
 100112	slap	üt
@@ -2533,3 +2533,20 @@
 102532	wrench	ficam
 102533	modicum of	kis mennyiség vmiből
 102534	furl	felcsavar, felteker, becsavar
+102535	midget	törpe, apró
+102536	imposition	teher, megterhelés
+102537	blend	vegyül, elvegyül, keveredik
+102538	muster	felvonultat, gyülekezik
+102539	retrenchment	csökkenés, korlátozás, elsáncolás
+102540	truculent	vad, garázda
+102541	squander	elherdál, elpazarol
+102542	row	sor
+102543	row	veszekedés, csetepaté
+102544	animosity	ellenségeskedés
+102545	insincere	színlelt, hamis, kétszínű
+102546	degradation	lefokozás, elkopás, lealacsonyítás
+102547	purposeful	eltőkélt, céltudatos
+102548	cosy	kényelmes, barátságos
+102549	flagrant	botrányos, vérlázító
+102550	windfall	váratlan szerencse
+102551	mainstay	oszlop, főtámasz
