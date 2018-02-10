@@ -555,7 +555,7 @@
 100560	prosperous	virágzó, sikeres
 100561	fiance	vőlegény
 100562	verbatim	szó szerint
-100563	merit	érdem
+100563	merit	érdem, jutalom, érték
 100564	ledge	párkány, szegély
 100565	riddle	rejtvény
 100566	insane	őrült
@@ -2550,3 +2550,27 @@
 102549	flagrant	botrányos, vérlázító
 102550	windfall	váratlan szerencse
 102551	mainstay	oszlop, főtámasz
+102552	takeover	átvétel, átvállalás
+102553	vault	ugrik, átugrik vmit
+102554	bay	öböl
+102555	bare	csupasz, puszta, meztelen
+102556	polity	államvezetés, államigazgatás
+102557	enshrine	gonddal őriz
+102558	banquet	bankett, lakoma
+102559	interpret	magyaráz, értelmez, értékel
+102560	blip	radarjel
+102561	meaningless	értelmetlen, semmitmondó
+102562	apart	kívül, szét
+102563	swoon	ájulás
+102564	ebb	apály, hanyatlás, esés
+102565	spike	szeg, tüske
+102566	tumble	esés, bukás
+102567	bump	daganat, ütés, lökés
+102568	scale	megmászik, felmászik
+102569	preach	prédikál, igét hirdet
+102570	far cry	nagy távolság, nagy különbség
+102571	quandary	dilemma, bizonytalanság
+102572	cherish	kedvel, dédelget
+102573	reunification	újraegyesítés
+102574	outcry	felháborodás, felzúdulás
+102575	implacable	engesztelhetetlen
