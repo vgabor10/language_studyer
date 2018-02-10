@@ -2574,3 +2574,7 @@
 102573	reunification	újraegyesítés
 102574	outcry	felháborodás, felzúdulás
 102575	implacable	engesztelhetetlen
+102576	rapprochement	kiengesztelődés, kiengesztelődés
+102577	detente	enyhülés
+102578	frosty	fagyos
+102579	willing	hajlandó
