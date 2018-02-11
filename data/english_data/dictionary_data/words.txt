@@ -608,7 +608,7 @@
 100613	worship	imád, imádkozik
 100614	flesh	hús
 100615	concur	egyetért
-100616	belly	has
+100616	belly	has, méh
 100617	hasty	meggondolatlan, hirtelen
 100618	orphan	árva
 100619	lad	srác, fiú
@@ -1825,7 +1825,7 @@
 101824	stall	akadályoz, lelassul
 101825	rampage	tombol, dühöng, őrjöng
 101826	defence	védelem, védekezés
-101827	crunch	roppanás
+101827	crunch	roppanás, recsegés
 101828	tatter	rongy
 101829	wallet	pénztárca
 101830	standoff	holtpont, patthelyzet
@@ -2578,3 +2578,30 @@
 102577	detente	enyhülés
 102578	frosty	fagyos
 102579	willing	hajlandó
+102580	goalkeeper	kapus
+102581	crunch	ropog, recseg
+102582	goalie	kapus
+102583	boot	csizma, bakancs
+102584	discount	kedvezmény, engedmény
+102585	buffalo	bölény, bivaly
+102586	fuel	tüzel, üzemanyaggal ellát
+102587	fuel	üzemanyag, fűtőanyag
+102588	sardonic	cinikus
+102589	association	társítás, társulás
+102590	dispossess	megfoszt, kisajátít
+102591	shrink	zsugorodik, összemegy
+102592	encroach	betolakodik, beavatkozik
+102593	sickly	beteges, gyenge
+102594	huddle	összebújik, halomba hány
+102595	dispense	kioszt, szétoszt
+102596	bison	bölény
+102597	trustworthily	megbízhatóan, tisztességesen
+102598	connotation	értelem, jelentés, másodlagos jelentés
+102599	scene	jelenet
+102600	outpost	előőrs
+102601	dated	elavult, régimódi
+102602	fearsome	ilyesztő, botzasztó
+102603	decimate	tizedel, megtizedel
+102604	peer	társ
+102605	cockiness	pimaszság, fölényeskedés, elbizakodottság
+102606	redoubt	erőd
