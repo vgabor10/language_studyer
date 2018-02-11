@@ -1593,7 +1593,7 @@
 101593	palm	tenyér
 101594	purview	hatáskör
 101595	spill	bukás, esés
-101596	extortion	zsarolás
+101596	extortion	zsarolás, kierőszakolás
 101597	genocide	népírtás
 101598	ponytail	copf
 101599	revenue	bevétel, jövedelem
@@ -2605,3 +2605,26 @@
 102604	peer	társ
 102605	cockiness	pimaszság, fölényeskedés, elbizakodottság
 102606	redoubt	erőd
+102607	violation	megszegés, áthágás
+102608	refine	csiszol, finomít, tisztít
+102609	ingenious	eszes, ügyes, ötletes
+102610	credence	hitel, hihetőség
+102611	exorbitant	túlzó
+102612	fiefdom	hűbérbirtok
+102613	bile	epe
+102614	rebuttal	cáfolat
+102615	vile	aljas, ócska, hitvány
+102616	vindication	követelés, érvényesítés, védelmezés
+102617	payload	hasznos teher
+102618	beefy	húsos, izmos
+102619	hubris	pimaszság, önhittség, szemtelenség
+102620	ardent	lelkes, heves, buzgó
+102621	halve	megfelez
+102622	loth	vonakodó, kelletlen
+102623	bakery	pékség
+102624	unintended	szándékolatlan
+102625	congestion	torlódás, zsúfoltság
+102626	colossal	kolosszális, nagyszabású
+102627	afterwards	azután, később
+102628	castaway	hajótörött, száműzött
+102629	yawn	ásít
