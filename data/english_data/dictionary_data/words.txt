@@ -79,7 +79,7 @@
 100080	badge	jelvény
 100081	assessment	értékelés
 100082	advocate	támogat
-100083	plausible	elfogadható
+100083	plausible	valószínű, elfogadható
 100084	besides	ezenkívül
 100085	enhance	növel
 100086	draw conclusion	következtet
@@ -495,7 +495,7 @@
 100500	shove around	erőszakoskodik
 100501	elaborate	kidolgoz
 100502	lenient	elnéző
-100503	backtrack	visszalép
+100503	backtrack	visszalép, visszatáncol
 100504	demeanor	viselkedés
 100505	aloof	zárkózott
 100506	enduring	tartós
@@ -2628,3 +2628,17 @@
 102627	afterwards	azután, később
 102628	castaway	hajótörött, száműzött
 102629	yawn	ásít
+102630	rifle	puska, géppisztoly
+102631	brawn	izom, izomerő
+102632	intentionally	szándékosan
+102633	collude	összejátszik
+102634	unappealing	ellenszenves
+102635	bearing	csapágy
+102636	maintenance	karbantartás, szervíz, javítás
+102637	maintain	karbantart, javít, fenntart
+102638	repairment	kijavítás
+102639	laugh	nevet
+102640	state	állít
+102641	balk	megakadályoz, meggátol
+102642	resurgent	feltámadó, feléledő
+102643	forgo	lemond vmiről
