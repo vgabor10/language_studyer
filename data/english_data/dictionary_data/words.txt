@@ -803,7 +803,7 @@
 100810	stymie	megakaszt, megakadályoz
 100811	equidistant	egyenlő távolságú
 100812	commerce	kereskedelem
-100813	expel	kiűz, kizár
+100813	expel	kiűz, kizár, kirak
 100814	intercept	elfog, befog
 100815	rebuke	leszid, megró
 100816	covert	burkolt, rejtett
@@ -2649,3 +2649,12 @@
 102649	allay	enyhíit, csillapít, könnyít
 102650	incursion	behatolás, betörés
 102651	reconnaissance	felderítés
+100338	former	előbbi, korábbi, előző
+102652	perpetrator	elkövető
+102653	rampage	tombolás, dühöngés, őrjöngés
+102654	cursory	felületes, futólagos
+102655	condolence	részvétnyilvánítás
+102656	at most	legfeljebb
+102657	as far as	amennyire
+102658	peculiar	különös, sajátos
+102659	proprietor	tulajdonos, birtokos
