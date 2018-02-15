@@ -235,7 +235,7 @@
 100236	residual	megmaradó
 100237	bear	elvisel
 100238	feat	tett
-100239	gloomy	homályos
+100239	gloomy	homályos, borús
 100240	wrestle	birkózik
 100241	divert	elterel
 100242	hurry	siet
@@ -325,7 +325,7 @@
 100327	pound	üt
 100328	posterity	utókor
 100329	passage	átkelés
-100330	fierce	vad
+100330	fierce	vad, heves
 100331	cumbersome	kényelmetlen, körülményes
 100332	slice	szelet
 100333	offender	bűnös
@@ -333,7 +333,6 @@
 100335	dig	ás
 100336	handful	maroknyi
 100337	smuggle	csempészik
-100338	gloomy	borús
 100339	contagion	fertőzés
 100340	smashing	hatalmas
 100341	pebble	kavics
@@ -431,7 +430,7 @@
 100433	amid	közepette
 100434	thumping	óriási
 100435	hapless	szerencsétlen
-100436	grim	borzalmas
+100436	grim	zord, nyomasztó, sötés
 100437	laud	dícsér
 100438	outrage	bánt
 100439	indignation	felháborodás
@@ -2642,3 +2641,11 @@
 102641	balk	megakadályoz, meggátol
 102642	resurgent	feltámadó, feléledő
 102643	forgo	lemond vmiről
+102644	inflatable	felfújható
+102645	scupper	megfúr, elront
+102646	wrecker	romboló, pusztító
+102647	booster	reklámozó, gyorsító
+102648	howl	üvöltés, ordítás
+102649	allay	enyhíit, csillapít, könnyít
+102650	incursion	behatolás, betörés
+102651	reconnaissance	felderítés
