@@ -1774,7 +1774,7 @@
 101774	oak	tölgy
 101775	reshuffle	átrendez, átalakít
 101776	stern	merev, zord, rideg
-101777	tormented	kínoz, zaklat
+101777	torment	kínoz, zaklat
 101778	bid	ajánl, ígér, licitál
 101779	exquisite	rendkívüli, remek, kitűnő
 101780	impeccable	kifogástalan, feddhetetlen
@@ -2658,3 +2658,13 @@
 102657	as far as	amennyire
 102658	peculiar	különös, sajátos
 102659	proprietor	tulajdonos, birtokos
+102660	trade	kereskedik, cserél
+102661	mischief	csíny
+102662	premeditated	előre megfontolt
+102663	thursday	csütörtök
+102664	ostracize	kiközösít, társaságból kizár
+102665	smirk	vigyor
+102666	insanity	elmebaj, elmezavar
+102667	nascent	születő, fejlődő, keletkező
+102668	beget	kelt, okoz
+102669	fester	gennyesedés, fekély
