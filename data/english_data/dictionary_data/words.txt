@@ -2668,3 +2668,20 @@
 102667	nascent	születő, fejlődő, keletkező
 102668	beget	kelt, okoz
 102669	fester	gennyesedés, fekély
+102670	flawlessly	hibátlanul, tökéletesen
+102671	echo	visszhangzik
+102672	timing	időzítés, ütemezés
+102673	profane	átkozódó, káromló, durva
+102674	unruly	engedetlen, rakoncátlan
+102675	premature	korai, elhamarkodott, idő előtti
+102676	complicit	bűnrészes
+102677	punctuate	írásjelez
+102678	compassion	szánalom, könyörület
+102679	bag	táska, zsák, zacskó
+102680	embed	beágyaz
+102681	fasten	zár, bekapcsol
+102682	suppose	feltételez, gondol, képzel, feltesz
+102683	mean	vél, gondol, szándékozik
+102684	cupboard	konyhaszekrény
+102685	that	hogy
+102686	once and for all	egyszer és mindenkorra
