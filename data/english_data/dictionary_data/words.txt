@@ -1791,7 +1791,7 @@
 101791	backfire	visszafelé sül el
 101792	condone	elnéz, megbocsát
 101793	proper	birtok
-101794	commit	rábíz
+101794	commit	elkövet
 101795	fervour	buzgalom, szenvedély
 101796	implode	belobban
 101797	on a daily basis	naponta
@@ -2661,7 +2661,7 @@
 102660	trade	kereskedik, cserél
 102661	mischief	csíny
 102662	premeditated	előre megfontolt
-102663	thursday	csütörtök
+102663	Thursday	csütörtök
 102664	ostracize	kiközösít, társaságból kizár
 102665	smirk	vigyor
 102666	insanity	elmebaj, elmezavar
@@ -2685,3 +2685,42 @@
 102684	cupboard	konyhaszekrény
 102685	that	hogy
 102686	once and for all	egyszer és mindenkorra
+102687	tender	ajánlat
+102688	solicitor	ügyvéd
+102689	bloat	duzzad, felfúvódik
+102690	tap	megcsapol
+102691	erode	kopik, koptat
+102692	beyond	túl, kívül
+102693	evade	kitér, elkerül
+102694	temporarily	ideiglenesen
+102695	temporary	ideiglenes, átmeneti
+102696	judiciary	bíróság
+102697	make up	alkot, képez
+102698	herd	összeterel, legeltet, pásztorol
+102699	barn	istálló, pajta
+102700	distortion	torzítás
+102701	pay attention	foglalkozik, odafigyel
+102702	juggernaut	kamion
+102703	lawnmower	fűnyíró
+102704	extraordinary	rendkívüli, kivételes, szokatlan
+102705	ramp	őrjöng, dühöng, burjánzik
+102706	stockpile	felhalmoz, készletet felhalmoz
+102707	permanent	tartós, állandó, maradandó
+102708	disturbance	zavar, zavarás, háborgatás
+102709	bribe	megveszteget
+102710	deputy	megbízott, küldött, követ
+102711	parking lot	parkoló
+102712	knife	kés
+102713	knives	kések
+102714	wife	feleség
+102715	longtime	régi
+102716	light	könnyű
+102717	enable	lehetővé tesz, képessé tesz
+102718	enabled	engedélyezett
+102719	marksmen	lövész, mesterlövész
+102720	wound	seb
+102721	wound	megsebesít
+102722	retort	visszavág
+102723	pepper	bors
+102724	brink	vminek a széle
+102725	lag	lemarad, késlekedik
