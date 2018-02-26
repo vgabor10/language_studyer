@@ -2724,3 +2724,21 @@
 102723	pepper	bors
 102724	brink	vminek a széle
 102725	lag	lemarad, késlekedik
+102726	dollop	tömb, massza
+102727	peculiarity	sajátosság, különlegesség
+102728	contend	versenyez, vitatkozik
+102729	crook	csaló
+102730	crook	hajlít, görbít
+102731	fire	tűz
+102732	hard	nehéz, kemény
+102733	peasant	paraszt, földműves
+102734	down	legyőz, lenyom
+102735	strode	lépked
+102736	undermine	aláás, aláaknáz
+102737	sow	vet, hint
+102738	seed	mag
+102739	instill	sugalmaz, belenevel
+102740	wool	gyapjú
+102741	prevail	győz, győzedelmeskedik, érvényesül
+102742	clutch	megragad, megfog
+102743	clutch	kuplung
