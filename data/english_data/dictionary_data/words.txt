@@ -2742,3 +2742,25 @@
 102741	prevail	győz, győzedelmeskedik, érvényesül
 102742	clutch	megragad, megfog
 102743	clutch	kuplung
+102744	wharf	rakpart
+102745	creed	hit, hitvallás
+102746	indefinitely	korlátlanul, mértéktelenül
+102747	obedience	engedelmesség, szófogadás
+102748	billow	gomolyog, hömpölyög
+102749	outskirts	külváros, peremváros
+102750	snub	rendreutasít
+102751	rustle	susog, zörög
+102752	garner	betakarít, összegyűjt
+102753	boo	lehurrog, kifütyül
+102754	excite	izgat, gerjeszt
+102755	pugnacious	harcias, civakodó
+102756	heathen	pogány
+102757	infantry	gyalogos, gyalogság
+102758	grievous	súlyos, keserves
+102759	recoil	visszaugrás, visszaütés
+102760	magazine	tár, tölténytár
+102761	hurt	fáj, bánt, megsért
+102762	stock	áruval ellát, raktáron tart
+102763	recede	csökken, visszahúzódik, eláll
+102764	backlash	reakció, visszhahatás, visszacsapás
+102765	as of	óta

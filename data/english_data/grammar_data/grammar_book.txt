@@ -138,3 +138,52 @@ far 	| further / farther | furthest / farthest
 
 \begin{exmp}
 \end{exmp}
+
+\title{Feltételes mód - First conditional}
+
+GrammarItemIndex = 196635
+
+\begin{desc}
+If you come to the party, we’ll dance.
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
+
+\title{Feltételes mód - Second conditional}
+
+GrammarItemIndex = 538556
+
+\begin{desc}
+If you came to the party, we would dance.
+\end{desc}
+
+\begin{exmp}
+1 | If I owned a car, I would drive to work. | Ha lenne autóm, azzal mennék munkába.
+2 | If the weather wasn't so bad, we would go to the park. | He nem lenne túl rossz idő, most elmennénk a parkba.
+3 | If I had a lot of money, I would pay off the debt. | Ha sok pénzem lenne, kifizetném az adósságot.
+\end{exmp}
+
+\title{Feltételes mód - Third conditional}
+
+GrammarItemIndex = 966351
+
+\begin{desc}
+If you had come to the party, we would have danced. - Ha eljöttél volna a buliba, táncoltunk volna.
+
+Képzése: if + past perfect, would have + ige 3. alak
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
+
+\title{Feltételes mód - Third conditional - Segédigével}
+
+GrammarItemIndex = 532588
+
+\begin{desc}
+We could have been a part of this story. - Lehettünk volne részesei ennek a történetnek.
+\end{desc}
+
+\begin{exmp}
+\end{exmp}
