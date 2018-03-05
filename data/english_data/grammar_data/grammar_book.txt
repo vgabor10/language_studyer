@@ -187,3 +187,14 @@ We could have been a part of this story. - Lehettünk volne részesei ennek a t�
 
 \begin{exmp}
 \end{exmp}
+
+\title{Whom használata}
+
+GrammarItemIndex = 863651
+
+\begin{desc}
+whom
+\end{desc}
+
+\begin{exmp}
+\end{exmp}

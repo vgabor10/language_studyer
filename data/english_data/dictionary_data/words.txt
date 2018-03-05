@@ -2764,3 +2764,16 @@
 102763	recede	csökken, visszahúzódik, eláll
 102764	backlash	reakció, visszhahatás, visszacsapás
 102765	as of	óta
+102766	downtown	belváros, városközpont
+102767	fool	becsap
+102768	overt	nyílt, nyilvánvaló
+102769	unwilling	vonakodó
+102770	threat	fenyegetés
+102771	cleave	ragaszkodik
+102772	get wrong	félreért
+102773	tariff	vám
+102774	groan	nyög, nyöszörög
+102775	glut	bőség, telítettség
+102776	hike	túra, kirándulás
+102777	refrain	visszariad
+102778	conciliatory	békülékeny
