@@ -1324,7 +1324,7 @@
 101327	rabbit	nyúl
 101328	inbound	beérkező
 101329	apt	találó, megfelelő
-101330	forthcomming	készséges
+101330	forthcomming	közeledő
 101331	leash	póráz
 101332	paw	mancs
 101333	spook	szellem, kísértet
@@ -2777,3 +2777,27 @@
 102776	hike	túra, kirándulás
 102777	refrain	visszariad
 102778	conciliatory	békülékeny
+102779	comprehensive	átfogó, széleskörű
+102780	woolly	gyapjas, ködös
+102781	rile	idegesít, bosszant
+102782	doubt	kételkedik
+102783	frictionless	súrlódásmentes
+102784	vantage	előny, fölény
+102785	fealty	hűség, lojalitás
+102786	Tuesday	kedd
+102787	insightful	éleslátó
+102788	specimen	minta, példány
+102789	sleeve	ingujj
+102790	foreman	csoportvezető
+102791	perpetuity	örökkévalóság
+102792	succeed	sikerül, sikert ér el
+102793	manufacturer	gyártó, gyáros, készítő
+102794	criticize	kritizál, bírál
+102795	word	szó
+102796	world	világ
+102797	midwife	bába, szülész
+102798	simultaneously	egyszerre, egyidejűleg
+102799	reporter	riporter, tudósító
+102800	mystery	rejtély
+102801	disentangle	kibogoz, megold, kiszabadít
+102802	malign	ártalmas, veszedelmes

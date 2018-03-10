@@ -169,7 +169,7 @@ If you came to the party, we would dance.
 GrammarItemIndex = 966351
 
 \begin{desc}
-If you had come to the party, we would have danced. - Ha eljöttél volna a buliba, táncoltunk volna.
+If you had come to the party, we would have danced. | Ha eljöttél volna a buliba, táncoltunk volna.
 
 Képzése: if + past perfect, would have + ige 3. alak
 \end{desc}
@@ -182,7 +182,7 @@ Képzése: if + past perfect, would have + ige 3. alak
 GrammarItemIndex = 532588
 
 \begin{desc}
-We could have been a part of this story. - Lehettünk volne részesei ennek a történetnek.
+1 | We could have been a part of this story. | Lehettünk volne részesei ennek a történetnek.
 \end{desc}
 
 \begin{exmp}
