@@ -2801,3 +2801,22 @@
 102800	mystery	rejtély
 102801	disentangle	kibogoz, megold, kiszabadít
 102802	malign	ártalmas, veszedelmes
+102803	rusty	rozsdás
+102804	cube	kocka
+102805	rollback	visszaszorítás
+102806	evoke	kivált, előidéz
+102807	precipitously	meredeken
+102808	malfunction	üzemzavar, meghibásodás
+102809	grease	zsír
+102810	plug	tömít, betöm, bedug
+102811	exceed	túltesz, fellülmúl
+102812	anodyne	fájdalomcsillapító
+102813	falsehood	hamisság, valótlanság
+102814	fend	megvéd, hárít, oltalmaz
+102815	levy	beszed, behajt, kiró
+102816	berate	szid, lehord
+102817	bash	megüt
+102818	duke	herceg
+102819	amble	mendegél, poroszkál
+102820	hobble	sántít
+102821	cavity	üreg, lyuk
