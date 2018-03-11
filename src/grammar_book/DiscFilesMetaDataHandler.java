@@ -35,6 +35,8 @@ public class DiscFilesMetaDataHandler {
 
         languageDatas.add(languageData1);
         languageDatas.add(languageData2);
+        
+        loadSettingsData();
     }
 
     public String getStudiedLanguageName() {
@@ -75,8 +77,8 @@ public class DiscFilesMetaDataHandler {
     public void setStudyedLanguageIndex(int languageIndex) {
         studyedLanguageIndex = languageIndex;
         try {
-            FileWriter fw = new FileWriter(settingsDataFilePath, false);	//the true will append the new data
-            fw.write(Integer.toString(languageIndex));	//appends the string to the file
+            FileWriter fw = new FileWriter(settingsDataFilePath, false);	//true will append the new data
+            fw.write(Integer.toString(languageIndex));
             fw.close();
         } catch (IOException ioe) {
             System.err.println("IOException: " + ioe.getMessage());
