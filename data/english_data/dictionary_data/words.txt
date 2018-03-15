@@ -717,7 +717,7 @@
 100724	adorable	imádni való
 100725	persistence	kitartás
 100726	weird	furcsa
-100727	awesome	óriási, félelmetes
+100727	awesome	klassz, óriási, félelmetes
 100728	charity	jótékonyság
 100729	attorney	ügyvéd
 100730	appealing	vonzó, rokonszenves
@@ -2820,3 +2820,27 @@
 102819	amble	mendegél, poroszkál
 102820	hobble	sántít
 102821	cavity	üreg, lyuk
+102822	vital	életbevágó, létfontosságú
+102823	salmon	lazac
+102824	quintuple	ötszöröz
+102825	culpable	bűnös, vétkes
+102826	narrow	szűk, keskeny
+102827	fag	buzi
+102828	bail	óvadék
+102829	crucify	gyötör, sanyargat
+102830	inquiry	érdeklődés, kérdezősködés
+102831	scalpel	szike
+102832	stifle	elfojt, fojtogat
+102833	bread	kenyér
+102834	corn	búza, gabona
+102835	menace	fenyeget, veszélyeztet
+102836	especially	különösen
+102837	absentee	hiányzó, távolmaradó
+102838	ballot	szavazat, szavazócédula
+102839	liken	hasonlóvá tesz, összehasonlít
+102840	impending	közelgő, küszöbön álló
+102841	whose	akié
+102842	ascertain	tisztáz, kiderít
+102843	indelible	kitörölhetetlen, feledhetetlen
+102844	tenacious	makacs, kitartó
+102845	confound	összezavar
