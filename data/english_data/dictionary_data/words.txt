@@ -983,7 +983,7 @@
 100991	cease	megszüntet, abbahagy
 100992	slaughter	leöl, mészárol
 100993	enmity	ellenségeskedés
-100994	allegation	állítás
+100994	allegation	állítás, vád
 100995	downside	rossz oldala vminek
 100996	discourage	elcsüggeszt, elriaszt
 100997	basically	alapvetően
@@ -2844,3 +2844,42 @@
 102843	indelible	kitörölhetetlen, feledhetetlen
 102844	tenacious	makacs, kitartó
 102845	confound	összezavar
+102846	contraption	szerkezet
+102847	quip	gúnyolódik
+102848	thirst	szomjúság
+102849	exhaust	kimerít, kifáraszt
+102850	scarcity	hiány, ritkaság
+102851	bane	romlás, csapás, baj
+102852	contemplation	elmélkedés, szemlélődés
+102853	pinch	csíp
+102854	hinge	zsanér
+102855	contradictory	ellentétes, ellentmondó
+102856	couch	kanapé
+102857	cog	fogaskerék
+102858	sit	ül
+102859	solder	forraszt
+102860	flaw	tévedés, hiba
+102861	squirm	vonaglik, vergődik
+102862	at last	végül, végre
+102863	taint	megront, megfertőz
+102864	inadmissible	elfogadhatatlan, megengedhetetlen
+102865	credit	hitel, elismerés
+102866	carpenter	ács, asztalos
+102867	ferocious	vad, vérengző
+102868	gleeful	vidám, jókedvű
+102869	hornet	lódarázs
+102870	magnanimity	nagylelkűség
+102871	vineyard	szőlőkert
+102872	oven	sütő, kemence
+102873	muzzle	elnémít, elhallgattat
+102874	ambulance	mentőautó
+102875	rouse	felver, felriaszt
+102876	basin	medence, lavór
+102877	silent	csendes, halk
+102878	outcome	kimenetel, eredmény
+102879	splurge	spriccel, fröcsköl
+102880	affable	kellemes, udvarias, megnyerő
+102881	revolve	forog, forgat
+102882	attrition	elhasználódás, lemorzsolódás
+102883	outgoing	kimenő, távozó
+102884	boozing	ivás, kocsmázás
