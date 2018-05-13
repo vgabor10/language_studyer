@@ -1118,7 +1118,7 @@
 101121	cuddle	ölelés
 101122	tsunami	cunami, szökőár
 101123	void	üresség, hézag
-101124	wail	sír
+101124	wail	sír, jajgat, üvölt
 101125	notify	közöl, értesít
 101126	prosecutor	ügyész, vádló
 101127	vicious	gonosz, bűnös
@@ -2469,7 +2469,7 @@
 102469	hamper	akadályoz, gátol
 102470	thug	bandita
 102471	rant	felvágás
-102472	conviction	meggyőzés
+102472	conviction	meggyőződés, ítélet
 102473	aspire	vágyik, törekszik
 102474	mediate	közvetít, közbenjár
 102475	ornament	dísz, díszítés
@@ -2883,3 +2883,19 @@
 102882	attrition	elhasználódás, lemorzsolódás
 102883	outgoing	kimenő, távozó
 102884	boozing	ivás, kocsmázás
+102885	sponge	szivacs
+102886	inveterate	makacs, megrögzött
+102887	clout	befolyás
+102888	temporal	múlandó, időleges
+102889	siren	sziréna
+102890	cough	köhög
+102891	expire	lejár, eltelik, elmúlik
+102892	unused	használatlan
+102893	vent	kiereszt
+102894	month	hónap
+102895	mouth	száj
+102896	pedestrian	gyalogos
+102897	bereave	megfoszt vmitől
+102898	bereaved	gyászoló
+102899	lash	ostor, korbács
+102900	aggrieve	bánt, jogaiban sért
