@@ -2899,3 +2899,15 @@
 102898	bereaved	gyászoló
 102899	lash	ostor, korbács
 102900	aggrieve	bánt, jogaiban sért
+102901	sensation	szenzáció
+102902	sensation	érzés, érzet, érzékelés
+102903	decree	rendelet, határozat
+102904	entourage	környezet, kíséret
+102905	groom	kefél, vakar
+102906	shiny	ragyogó, csillogó
+102907	score	pont, pontszám
+102908	fete	ünnepel
+102909	kindred	rokon, hasonló
+102910	outlast	túlél, tovább tart
+102911	precursor	előjel, előfutár
+102912	intransigence	meg nem alkuvás
