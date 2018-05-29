@@ -2928,3 +2928,10 @@
 102927	vice	bűn, bujaság
 102928	envision	elképzel
 102929	far longer	sokkal hosszabb
+102930	several	számos, több
+102931	cauldron	üst, katlan, bogrács
+102932	revel	mulat, dőzsöl
+102933	firm	cég, vállalat
+102934	describe	leír, ismertet
+102935	magnifying glass	nagyító
+102936	magnify	túloz, nagyít
