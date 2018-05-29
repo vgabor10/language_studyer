@@ -42,7 +42,7 @@
 100042	sprawl	terjeszkedik
 100043	impetus	ösztönzés
 100044	lease	bérel
-100045	disrupt	szétválaszt
+100045	disrupt	szétválaszt, szétszakít
 100046	jeopardise	veszélyeztet
 100047	regardless	figyelmetlen, tekintet nélkül
 100048	abate	csökken
@@ -2911,3 +2911,20 @@
 102910	outlast	túlél, tovább tart
 102911	precursor	előjel, előfutár
 102912	intransigence	meg nem alkuvás
+102913	reject	elutasít, visszautasít
+102914	refuse	elutasít, megtagad
+102915	dine	ebédel
+102916	have lunch	ebédel
+102917	spouse	házastárs
+102918	burst	kipukkad, szétreped, szétrobban
+102919	pinpoint	eltalál
+102920	repatriate	hazatelepül
+102921	kneel	térdel
+102922	debris	roncs, romhalmaz, törmelék
+102923	needless	szükségtelen, felesleges
+102924	through	át, keresztül
+102925	despondent	csüggedt, levert
+102926	skipper	hajóskapitány, kapitány
+102927	vice	bűn, bujaság
+102928	envision	elképzel
+102929	far longer	sokkal hosszabb
