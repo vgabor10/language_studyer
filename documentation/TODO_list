@@ -13,7 +13,6 @@ Modification ideas in src:
 - measure answer rate, only when enough number of answers are given (3 answers probably)
 - take AnswerDataByStudyItemsContainer in AnswerDataContainer 
 - at searching cards let "a" and "ä" be the same caracter
-- show card ID at CardStatisticsDialog
 
 Card category tree suggestions:
 - szófajok
