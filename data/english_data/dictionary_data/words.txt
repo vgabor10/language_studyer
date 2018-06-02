@@ -698,7 +698,7 @@
 100705	infant	csecsemő
 100706	nightfall	alkony
 100707	wade	gázol, átgázol
-100708	wary	óvatos
+100708	wary	óvatos, bizalmatlan
 100709	exile	száműz
 100710	ripe	érett
 100711	miller	molnár
@@ -1128,7 +1128,7 @@
 101131	capable	alkalmas, hozzáértő
 101132	hideout	búvóhely, rejtekhely
 101133	decline	visszautasít
-101134	will	végrendelet
+101134	will	akarat, végrendelet
 101135	moron	idióta, hülye
 101136	villain	gazember
 101137	inquire	érdeklődik
@@ -1162,7 +1162,7 @@
 101165	decadence	romlás, hanyatlás
 101166	exterminate	kiírt, megsemmisít
 101167	overlook	elnéz, szemet huny
-101168	fled	elmenekül (múlt idő)
+101168	fled	elmenekül (simple past)
 101169	decree	határoz, elrendel
 101170	preposterous	abszurd, ostoba
 101171	break	szünet
@@ -2935,3 +2935,24 @@
 102934	describe	leír, ismertet
 102935	magnifying glass	nagyító
 102936	magnify	túloz, nagyít
+102937	bar	rúd, szelet
+102938	anoint	felszentel
+102939	throw	vet, dob
+102940	threw	dob, vet (simple)
+102941	thrown	dob (perfect)
+102942	flee	menekül
+102943	fled	menekül (perfect)
+102944	last	tart, fennmarad
+102945	reverse	megfordít, megmásít
+102946	goodwill	jóakarat, jóindulat
+102947	nowhere near	távolról sem
+102948	captivate	megnyer, meghódít
+102949	avenue	sugárút
+102950	plate	tányér
+102951	immersion	bemerítés, elmerülés
+102952	twist	csavar, teker, kifordít
+102953	court	udvarol
+102954	be wary of sg	nem bízik vmiben
+102955	prop up	támaszt
+102956	suitor	kérő, udavarló
+102957	mitigation	csökkentés, enyhítés
