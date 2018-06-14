@@ -6183,3 +6183,6 @@
 106182	bevölkern	benépesít
 106183	mächtig	nagyon, erősen
 106184	r Tresor	széf
+106185	wanken	inog
+106186	r Herrscher	uralkodó
+106187	unangefochten	nem vitatott
