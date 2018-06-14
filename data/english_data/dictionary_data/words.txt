@@ -2956,3 +2956,23 @@
 102955	prop up	támaszt
 102956	suitor	kérő, udavarló
 102957	mitigation	csökkentés, enyhítés
+102958	potential	lehetőség, potenciál
+102959	supplement	pótol, kiegészít
+102960	burly	testes, tetemes
+102961	deft	ügyes, fürge
+102962	revamp	átdolgoz, átalakít
+102963	scout	megfigyel, felderít
+102964	ail	betegeskedik, gyengélkedik
+102965	crony	haver, cimbora
+102966	clutch	karom, köröm
+102967	wrest	kicsavar, elragad
+102968	diehard	vaskalapos
+102969	remorseless	irgalmatlan, könyörtelen
+102970	be in force	hatályban van
+102971	affirm	elismer, jóváhagy
+102972	meritocracy	meritokrácia, teljesítményelvű rendszer
+102973	wreck	tönkre tesz, összeroncsol
+102974	endow	adományoz, megáld
+102975	undergo	keresztülmegy, átmegy
+102976	regress	visszaesés, visszafejlődés
+102977	overstate	túloz, felnagyít
