@@ -651,7 +651,7 @@
 100656	e Flasche	üveg, palack
 100658	wehen	fúj
 100659	schießen	lő
-100660	selten	ritka, ritkán
+100660	selten	ritka
 100661	e Investition	beruházás
 100662	wünschen	kíván
 100663	s Instrument	eszköz
@@ -692,7 +692,7 @@
 100698	r Tribun	vezér
 100699	erschien	megjelenik
 100700	r Verlag	kiadó
-100701	kalt	hideg (mn)
+100701	kalt	hideg
 100702	r Skandal	botrány
 100703	erreichen	elér
 100704	verlegen	áttesz, elhalaszt
@@ -2344,7 +2344,7 @@
 102397	herausgeben	kiad
 102398	herausfinden	rájön
 102399	herausnehmen	kivesz
-102400	heraus	ki (hat)
+102400	heraus	ki
 102401	herausstellen	kiemel vmit 
 102402	herkommen	ide jön, származik
 102403	herrlich	gyönyörű
@@ -2562,7 +2562,7 @@
 102619	r Fall	esés
 102620	fällig	esedékes
 102621	falsch	hamis
-102622	fassen	megfog, megragad, megért, befogad
+102622	fassen	megfog, megragad, megért
 102623	faszinieren	lenyűgöz
 102624	r Februar	február
 102625	fehlen	hiányzik
@@ -3307,7 +3307,7 @@
 103380	schaffen	alkot, teremt
 103381	verschließen	elzár, bezár
 103382	touristisch	túrisztikai
-103383	regieren	uralkodik, kormányoz
+103383	regieren	kormányoz, uralkodik
 103384	s Vitamin	vitamin
 103385	zurückführen	származtat, visszavezet
 103386	alltäglich	mindennapos, megszokott
@@ -4291,7 +4291,6 @@
 104388	chronisch	krónikus, tartós
 104389	e Energie	energia
 104390	weitergeben	továbbad, továbbít
-104391	mehrere	több, többen
 104392	sofern	hogyha, hacsak
 104393	vernünftig	értelmes, ésszerű
 104394	s Ausland	külföld (fn)

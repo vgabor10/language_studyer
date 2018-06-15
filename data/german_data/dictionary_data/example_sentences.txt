@@ -8312,7 +8312,6 @@
 104112	Rund um das Haus befinden sich Rosen.
 104112	Wie viele Bäume befinden sich im Park?
 104112	Wir befinden uns auf einer Rettungsmission.
-104113	Er hat ein Vermögen für den Hauskauf ausgegeben.
 104113	Ich vermag diese Frage nicht zu beantworten.
 104114	Die Polizei will Tom vernehmen.
 104115	Unser Projekt ist ausreichend finanziert.
@@ -8795,10 +8794,6 @@
 104389	Energie kann man nicht nur aus Kohle und Öl erzeugen, sondern auch aus Wasser und Wind.
 104389	Wasser muss man Energie zuführen, um es zum Kochen zu bringen.
 104389	Wenn man schneller geht, verbraucht man zwangsläuﬁg mehr Energie.
-104391	Damals wohnten oft mehrere Familien in einer Wohnung.
-104391	Die Aufklärung des Mordfalls dauerte mehrere Jahre.
-104391	Man sollte täglich mehrere Liter Flüssigkeit zu sich nehmen.
-104391	Mehrere Autos waren bei dem Unfall ineinander gefahren.
 104392	Sofern es meine Zeit zulässt, komme ich gern zu der Auktion.
 104393	Sie haben ein sehr vernünftiges Kind.
 104394	Er möchte ein Jahr lang im Ausland studieren.
