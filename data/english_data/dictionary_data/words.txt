@@ -2976,3 +2976,4 @@
 102975	undergo	keresztülmegy, átmegy
 102976	regress	visszaesés, visszafejlődés
 102977	overstate	túloz, felnagyít
+102978	fixture	verseny, mérkőzés
