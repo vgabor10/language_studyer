@@ -292,7 +292,7 @@
 100293	genügend	elég, elegendő
 100294	e Vorgeschichte	előzmények
 100295	nahezu	majdnem
-100296	führen	vezet, tart
+100296	führen	vezet, irányít
 100297	einschließlich	beleértve
 100298	r Raum	hely, tér
 100299	e Vorstellung	előadás, elképzelés
@@ -1515,7 +1515,7 @@
 101533	r Lebenslauf	életrajz
 101534	r Tag	nap (hét napja)
 101535	r Tagesablauf	napirend
-101536	r Morgen	reggel
+101536	r Morgen	reggel (fn)
 101537	r Wecker	ébresztőóra
 101538	rasieren	borotválkozik
 101539	frühstücken	reggelizik
@@ -2138,7 +2138,7 @@
 102185	e Fahne	zászló
 102186	e Hymne	himnusz
 102188	e Melodie	dallam
-102189	e Oberfläche	felszín
+102189	e Oberfläche	felszín, felület
 102190	r Fluss	folyó
 102192	r Bodenschatz	ásványkincs
 102193	e Wiese	rét, mező
@@ -6187,3 +6187,4 @@
 106187	unangefochten	nem vitatott
 104391	vorschnell	elhamarkodott
 106188	e Nachhaltigkeit	fenntarthatóság
+106189	e Rücklage	megtakarítás, tartalék
