@@ -2577,7 +2577,7 @@
 102634	endlich	végül
 102635	endlos	végtelen
 102636	engagieren	alkalmaz, gyakorol
-102637	englisch	angol (mn)
+102637	englisch	angol
 102638	enorm	óriási
 102639	e Norm	norma
 102641	entfalten	kibont, kifejt
@@ -3045,7 +3045,7 @@
 103111	r Sprung	ugrás
 103112	zusammenarbeiten	együttműködik
 103113	aufführen	előad
-103114	r Fortschritt	haladás
+103114	r Fortschritt	haladás, fejlődés
 103115	r Bereich	térség, körzet, terület
 103116	untersuchen	kivizsgál, megvizsgál
 103117	e Fahrt	út, utazás
@@ -4036,7 +4036,7 @@
 104126	anhand	alapján, segítségével
 104127	verlängern	hosszabbít, meghosszabbít
 104128	beeindrucken	benyomást kelt
-104129	braun	barna (mn)
+104129	braun	barna
 104130	r Betrag	mennyiség
 104131	verhandeln	tárgyal
 104132	r Stolz	büszkeség
@@ -4602,7 +4602,7 @@
 104703	dankbar	hálás
 104704	städtisch	városi
 104705	braten	süt, megsüt
-104706	e Bahn	vonat, vasút
+104706	e Bahn	vasút, vonat
 104707	informieren	informál, tájékoztat
 104708	r Terrorist	terrorista
 104709	r Papa	apu
@@ -6185,3 +6185,5 @@
 106185	wanken	inog
 106186	r Herrscher	uralkodó
 106187	unangefochten	nem vitatott
+104391	vorschnell	elhamarkodott
+106188	e Nachhaltigkeit	fenntarthatóság

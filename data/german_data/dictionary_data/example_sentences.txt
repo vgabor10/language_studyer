@@ -9652,12 +9652,7 @@
 104985	Der Jäger schoss auf den Vogel.
 104985	Der Jäger schoss auf den Hirsch.
 104985	Tom schoss das erste Tor des Spiels.
-104988	Auf dem Schloss lebten ein König und eine Königin.
-104988	Das Schloss ist von einem kleinen Park umgeben.
-104988	Das Schloss wird von einem gefährlichen Riesen bewacht.
-104988	Der Dieb bricht das Schloss auf.
 104988	Sie schloss ihr Fahrrad an die Laterne an.
-104988	Unter der Herrschaft Herzog Ernsts wurde das Schloss gebaut.
 104990	Der Verkäufer trennt dem Fisch mit einem Schnitt den Kopf ab.
 104991	Am Abend schrieb Anne stundenlang in ihr Tagebuch.
 104991	Der Journalist schrieb einen sehr kritischen Artikel.
