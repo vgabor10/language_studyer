@@ -2977,3 +2977,5 @@
 102976	regress	visszaesés, visszafejlődés
 102977	overstate	túloz, felnagyít
 102978	fixture	verseny, mérkőzés
+102979	pipe	pipa
+102980	patent	szabadalom
