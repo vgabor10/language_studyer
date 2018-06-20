@@ -9054,9 +9054,6 @@
 104533	Du kannst den Fehler ruhig zugeben.
 104533	Offensichtlich hast du mit dem Thema mehr Probleme, als du zugeben willst.
 104534	Die Fischer holen ihre Netze ein.
-104535	Autodidakten setzen eine Vielzahl von kognitiven Strategien ein.
-104535	Gewerkschaften setzen sich für die Arbeitnehmer ein.
-104535	Mit Alkohol sollte man sich nicht ans Steuer setzen.
 104536	Wir müssen den Umsatz steigern.
 104537	Wir sollten uns eine strategische Vorgehensweise überlegen.
 104538	Mich interessiert deine Einschätzung der Situation.

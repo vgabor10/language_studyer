@@ -578,7 +578,7 @@
 100581	s Schiff	hajó
 100582	e Küste	part
 100583	e Schlacht	csata
-100584	e Weise	mód
+100584	e Weise	mód, módszer
 100585	verlassen	elhagy
 100586	r Weltraum	világűr
 100587	s Gleis	sín
@@ -1113,7 +1113,7 @@
 101127	r Ritter	lovag
 101128	e Erziehung	nevelés
 101129	bewerben	megpályázik vmit
-101130	e Prüfung	vizsgálat, próba
+101130	e Prüfung	vizsga, vizsgálat
 101131	profund	alapos
 101132	r Stil	stílus
 101133	s Zitat	idézet
@@ -1284,7 +1284,7 @@
 101298	e Apotheke	gyógyszertár
 101299	r Gang	menet, séta
 101300	kommerziell	kereskedelmi
-101301	raten	tanácsol
+101301	raten	ajánl, tanácsol
 101302	e Qualität	minőség
 101303	überragend	kiemelkedő
 101304	e Studie	tanulmány
@@ -2591,7 +2591,7 @@
 102650	e Materie	anyag
 102651	e Medizin	orvosság
 102652	e Mehrheit	többség
-102653	e Meldung	jelentés, közlemény
+102653	e Meldung	közlemény, jelentés
 102654	e Menge	mennyiség
 102655	e Messe	vásár
 102656	e Messung	mérés
@@ -2603,7 +2603,7 @@
 102662	emotional	érzelmi
 102663	e Motivation	motiváció
 102664	empfangen	fogad
-102665	empfehlen	ajánl
+102665	empfehlen	ajánl, javasol
 102666	empirisch	tapasztalati
 102667	empfindlich	érzékeny
 102668	kritisieren	kritizál
@@ -3050,7 +3050,7 @@
 103116	untersuchen	kivizsgál, megvizsgál
 103117	e Fahrt	út, utazás
 103118	bevorstehen	közel van, küszöbön áll
-103119	s Lager	tábor, raktár
+103119	s Lager	raktár, tábor
 103120	verabschieden	elbocsát, elbúcsúzik, elfogad
 103121	e Rechtsprechung	igazságszolgáltatás
 103122	s Resultat	eredmény
@@ -3211,7 +3211,7 @@
 103283	übertragen	átvisz, átruház
 103284	lauter	valódi
 103285	intensiv	intenzív
-103286	setzen	tesz, helyez
+103286	setzen	ültet, tesz, helyez
 103287	e Botschaft	üzenet
 103288	r Rhythmus	ritmus
 103289	s Gut	vagyon, érték
@@ -3344,7 +3344,7 @@
 103417	unverzüglich	haladéktalan
 103418	s Ministerium	ministérium
 103419	schweben	lebeg
-103420	r Ofen	tűzhely
+103420	r Ofen	tűzhely, kemence
 103421	anzeigen	közöl, bejelent, feljelent
 103422	r Reiz	inger, vonzerő
 103423	r Quadratmeter	négyzetméter
@@ -3671,7 +3671,7 @@
 103753	darstellen	ábrázol, vázol
 103755	e Erinnerung	emlék, emlékezet
 103756	r West	nyugat
-103757	zählen	számol
+103757	zählen	számol, számít
 103758	r Käufer	vevő
 103759	sanft	enyhe, szelíd
 103760	verlegen	zavarodott
@@ -4432,7 +4432,6 @@
 104532	demokratisch	demokratikus
 104533	zugeben	bevall, elismer
 104534	s Netz	hálózat
-104535	setzen	leül, helyet foglal
 104536	steigern	növel, emel
 104537	strategisch	stratégiai
 104538	interessieren	érdekel (ig)
@@ -4749,7 +4748,7 @@
 104975	mochte	szeret (Präterium)
 104976	nahm	vesz (Präterium)
 104977	nannte	nevez (Präterium)
-104978	riet	tanácsol (Präterium)
+104978	riet	ajánl, tanácsol (Präterium)
 104979	ritt	lovagol (Präterium)
 104980	rannte	rohan (Präterium)
 104981	rief	hív, kiabál (Präterium)
@@ -4884,7 +4883,7 @@
 105114	h. gemocht	szeret (Perfekt)
 105115	h. genommen	vesz (Perfekt)
 105116	h. genannt	nevez (Perfekt)
-105117	h. geraten	tanácsol (Perfekt)
+105117	h. geraten	ajánl, tanácsol (Perfekt)
 105118	i. geritten	lovagol (Perfekt)
 105119	i. gerannt	rohan (Perfekt)
 105120	h. gerufen	hív, kiabál (Perfekt)
@@ -5615,7 +5614,7 @@
 105619	umhören	érdeklődik
 105620	e Aufsicht	őrizet, felügyelet
 105621	s Augenzwinkern	kacsintás
-105622	e Kauflust	vásáróledv
+105622	e Kauflust	vásárólkedv
 105623	e Unterbringung	elszállásolás, elhelyezés
 105624	r Schwung	lendület, lelkesedés
 105625	verbuchen	elkönyvel
@@ -6188,3 +6187,8 @@
 104391	vorschnell	elhamarkodott
 106188	e Nachhaltigkeit	fenntarthatóság
 106189	e Rücklage	megtakarítás, tartalék
+106190	e Vergleichung	összehasonlítás
+106191	oder	vagy
+104535	r Ausgang	kimenetel, eredmény
+106192	e Abschreibung	leírás, értékcsökkenés
+106193	drucken	nyomtat
