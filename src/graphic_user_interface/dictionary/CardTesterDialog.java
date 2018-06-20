@@ -292,7 +292,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
         if (cardTester.isUserAnswerRightSuggestion()) {
             acceptAnswerButton.requestFocus();
-            if (cardTester.getActualQuestionedCard().term.equals(cardTester.getUserActualAnswer())) {
+            if (cardTester.getActualQuestionedCard().term.toLowerCase().equals(
+                    cardTester.getUserActualAnswer().toLowerCase())) {
                 jTextField2.setForeground(new Color(45, 107, 53));   //green 
                 acceptAnswerButton.setBackground(new Color(102,255,102));
             }

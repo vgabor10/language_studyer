@@ -126,7 +126,12 @@ public class CardTester {
     }
 
     public boolean isUserAnswerRightSuggestion() {
-        return acceptabelAnswersAndCardIndexesForActualQuestion.containsKey(userAnswerToActualQuestion);
+        for (String acceptabelAnswer : acceptabelAnswersAndCardIndexesForActualQuestion.keySet()) {
+            if (acceptabelAnswer.toLowerCase().equals(userAnswerToActualQuestion.toLowerCase())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public boolean isMoreCardToTest() {
