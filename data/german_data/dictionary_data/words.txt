@@ -266,7 +266,7 @@
 100266	verlieren	veszít, elveszít
 100267	zunehmen	nő (ige)
 100268	fördern	támogat, elősegít, előmozdít
-100269	e See	tenger, tó
+100269	e See	tenger
 100270	r Rückhalt	támasz
 100271	schließlich	végül
 100272	e Lage	helyzet, állapot
@@ -6192,3 +6192,6 @@
 104535	r Ausgang	kimenetel, eredmény
 106192	e Abschreibung	leírás, értékcsökkenés
 106193	drucken	nyomtat
+106194	r See	tó
+106195	trampen	stoppol
+106196	rar	gyér, ritka

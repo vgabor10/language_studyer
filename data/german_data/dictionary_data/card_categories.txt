@@ -13,6 +13,5 @@
 7	prepozíciók
 10	földrajzi_nevek
 8	kifejezések
-16	tanulandó_szavak_alap_fok
-9	tanulandó_szavak_közép_fok
-17	tanulandó_szavak_felső_fok
+16	aktív_szókincs
+9	passzív_szókincs
