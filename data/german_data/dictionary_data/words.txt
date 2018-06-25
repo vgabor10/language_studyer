@@ -200,7 +200,7 @@
 100200	e Aufgabe	feladat
 100201	r Spiegel	tükör
 100202	e Milch	tej
-100203	auch	is
+100203	auch	is, szintén
 100204	bellen	ugat
 100205	s Stück	darab
 100206	auslösen	okoz, kivált
@@ -6195,3 +6195,5 @@
 106194	r See	tó
 106195	trampen	stoppol
 106196	rar	gyér, ritka
+106197	r Teich	tó
+106198	suspendieren	felfüggeszt
