@@ -613,7 +613,7 @@
 100617	s Essen	étel, evés
 100618	wunderbar	csodálatos
 100619	handeln	cselekszik, kereskedik
-100620	gestern	tegnap
+100620	gestern	tegnap (mn)
 100621	s Geheimnis	titok
 100622	s Frühstück	reggeli
 100623	abstimmen	szavaz
@@ -2336,7 +2336,7 @@
 102389	hassen	gyűlöl
 102390	heben	emel
 102391	heftig	heves
-102392	heilig	szent (mn)
+102392	heilig	szent
 102393	heimisch	hazai
 102394	heißen	hívják vhogyan
 102395	helfen	segít
@@ -3747,7 +3747,7 @@
 103831	e Erhaltung	megőrzés, fenntartás
 103832	s Klavier	zongora
 103833	abzeichnen	lerajzol
-103834	r Dank	hála
+103834	r Dank	hála, köszönet
 103836	bewerten	értékel, elbírál
 103837	flüstern	suttog
 103838	r Graf	gróf
@@ -6197,3 +6197,7 @@
 106196	rar	gyér, ritka
 106197	r Teich	tó
 106198	suspendieren	felfüggeszt
+106199	e Gefährdung	veszélyeztetés
+106200	revidieren	átvizsgál
+106201	e Sackgasse	zsákutca
+106202	übertreffen	túltesz, fellülmúl
