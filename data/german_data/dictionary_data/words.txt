@@ -764,7 +764,7 @@
 100771	hingegen	viszont
 100772	schwächen	gyengít
 100773	maßgeblich	meghatározó
-100774	verantwortlich	felelős
+100774	verantwortlich (mn)	felelős
 100775	bombardieren	bombáz
 100776	zusätzlich	további
 100777	e Verteilung	elosztás
@@ -1227,7 +1227,7 @@
 101241	r Verbraucher	fogyasztó
 101242	rasch	gyors
 101243	r Schauspieler	színész
-101244	r Gipfel	tető
+101244	r Gipfel	tető, csúcs
 101245	e Geschlossenheit	egység
 101246	wütend	dühös
 101247	r Mond	hold
@@ -6201,3 +6201,4 @@
 106200	revidieren	átvizsgál
 106201	e Sackgasse	zsákutca
 106202	übertreffen	túltesz, fellülmúl
+106203	s Desaster	katasztrófa

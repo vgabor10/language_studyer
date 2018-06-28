@@ -707,14 +707,14 @@ Categories = 0
 
 \begin{desc}
 Módbeli segédigék használata:
-alany + módbeli segédige ragozva+ többi mondatrész + ige főnévi igenév alakban 
+alany + módbeli segédige ragozva + többi mondatrész + ige főnévi igenév alakban 
 
 Módbeli segédigék:
 * können - tud
 * dürfen - szabad
 * mögen - szeret, kedvel
-* müssen - kell
-* sollen - kell
+* müssen - kell (külső kényszer)
+* sollen - kell (belső kényszer)
 * wollen - akar
 \end{desc}
 
@@ -753,7 +753,7 @@ GrammarItemIndex = 17
 Categories = 0
 
 \begin{desc}
-A möchten módbeli segédige a mögen (szeretni) ige feltételes módú alakja (tehát: szeretnék, szeretnél...).
+A möchten módbeli segédige a mögen (szeretni) ige feltételes módú alakja.
 
 A möchten ragozása:
 ich möchte
@@ -812,10 +812,11 @@ mögen -> talán
 GrammarItemIndex = 4235
 
 \begin{desc}
-
 sollen - állítólag, szóbeszéd szerint
 wollen - azt állítja, hogy; állítása szerint
 
+Pl.: In Peter soll das ganze Dorf verliebt sein. - Peterbe állítólag az egész falu szerelmes.
+In Peter will das ganze Dorf verliebt sein. - Peter azt állítja, hogy az egész falu belé szerelmes.
 \end{desc}
 
 %Maklári: 128. oldal
@@ -3839,7 +3840,7 @@ Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. - Sok látnivaló van Salzbu
 GrammarItemIndex = 423412
 
 \begin{desc}
-Célhatározói mellékmondat képzésére használatos akkor, ha a fő és a mellékmondat alanya megegyezik.
+Az um zu + Infinitiv szerkezet célhatározói mellékmondat képzésére használatos akkor, ha a fő és a mellékmondat alanya megegyezik.
 
 Képzése:
 főmondat + um + többi mondatrész + zu + ige Infinitiv alakja
@@ -3862,12 +3863,12 @@ Pl.: Sokat dolgozik, azért, hogy több pénzt keressen. - Er arbeitet viel, um 
 11 | Ich gebe dir eine Ohrfeige, um besser mich zu füllen. | Adok neked egy pofont, hogy jobban étezzem magamat. (sich füllen)
 \end{exmp}
 
-\title{Célhatározói mellékmondatok/Damit + KATI}
+\title{Célhatározói mellékmondatok/Damit + KATI szerkezet}
 
 GrammarItemIndex = 862153
 
 \begin{desc}
-Célhatározói mellékmondat képzésére használatos akkor, ha a fő és a mellékmondat alanya nem egyezik meg.
+Damit + KATI szerkezet célhatározói mellékmondat képzésére használatos akkor, ha a fő és a mellékmondat alanya nem egyezik meg.
 
 Képzése:
 főmondat + damit + alany + többi mondatrész + ige ragozva
