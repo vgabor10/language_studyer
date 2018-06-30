@@ -2979,3 +2979,11 @@
 102978	fixture	verseny, mérkőzés
 102979	pipe	pipa
 102980	patent	szabadalom
+102981	become	válik vmivé
+102982	became	válik vmivé (simple)
+102983	become	válik vmivé (perfect)
+102984	eke out	kipótól, kiegészít
+102985	hemisphere	félgömb
+102986	declare	kihirdet, kijelent
+102987	hoover	porszívó
+102988	swirl	kavarog, örvénylik
