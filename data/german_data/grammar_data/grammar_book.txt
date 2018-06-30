@@ -30,7 +30,7 @@ birtokos | des -s | der   | des -s       | der
 16 | der | többes szám, birtokos eset
 \end{exmp}
 
-\title{Névelők/Határozott névelő/Tárgy eset és részes eset - példák}
+\title{Névelők/Határozott névelő/Tárgy eset és részes eset, példák}
 
 GrammarItemIndex = 30
 Categories = 0
@@ -40,25 +40,25 @@ Categories = 0
 
 %Maklári 27. oldal
 \begin{exmp}
-1 | den Vater | az apát
-2 | die Tische | az asztalokat
-3 | das Kind | a gyereket
-4 | den Kindern | a gyerekeknek
-5 | der Oma | a nagyinak
-6 | dem Großvater | a nagypapának
-7 | die Tische | az asztalok
-8 | das Auto | az autót
-9 | den Stuhl | a széket
-10 | den Schrank | a szekrényt
-11 | den Tisch | az asztalt
-12 | der Mutter | az anyának
-13 | den Müttern | az anyáknak
-14 | dem Kind | a gyereknek
-15 | die Lampe | a lámpát
-16 | dem Vater | az apának
-17 | den Vätern | az apáknak
-18 | das Haus | a házat
-19 | den Hof | az udvart
+1 | den | ___ Vater - az apát
+2 | die | ___ Tische - az asztalokat
+3 | das | ___ Kind - a gyereket
+4 | den | ___ Kindern - a gyerekeknek
+5 | der | ___ Oma - a nagyinak
+6 | dem | ___ Großvater - a nagypapának
+7 | die | ___ Tische - az asztalok
+8 | das | ___ Auto - az autót
+9 | den | ___ Stuhl - a széket
+10 | den | ___ Schrank - a szekrényt
+11 | den | ___ Tisch - az asztalt
+12 | der | ___ Mutter - az anyának
+13 | den | ___ Müttern - az anyáknak
+14 | dem | ___ Kind - a gyereknek
+15 | die | ___ Lampe - a lámpát
+16 | dem | ___ Vater - az apának
+17 | den | ___ Vätern - az apáknak
+18 | das | ___ Haus - a házat
+19 | den | ___ Hof - az udvart
 \end{exmp}
 
 \title{Névelők/Határozott névelő/Birtokos eset}
@@ -74,15 +74,15 @@ többes szám  | der
 \end{desc}
 
 \begin{exmp}
-1 | der Sohn des Vaters | az apa fia
-2 | das Fenster des Hauses | a ház ablaka
-3 | die Tochter der Mutter | az anya lánya
-4 | der Freund des Vaters | az apa barátja
-5 | das Spielzeug des Kindes | a gyerek játéka
-6 | die Scheibe des Wagens | a kocsi ablaka
-7 | die Kleider der Kinder | a gyerekek ruhái
-8 | der Bus der Lehrer | a tanárok busza
-9 | die Freundin der Mutter | az anya barátnője
+1 | des Vaters | der Sohn ____ - az apa fia
+2 | des Hauses | das Fenster ____ - a ház ablaka
+3 | der Mutter | die Tochter ____ - az anya lánya
+4 | des Vaters | der Freund ____ - az apa barátja
+5 | des Kindes | das Spielzeug ____ - a gyerek játéka
+6 | des Wagens | die Scheibe ____ - a kocsi ablaka
+7 | der Kinder | die Kleider ____ - a gyerekek ruhái
+8 | der Lehrer | der Bus ____ - a tanárok busza
+9 | der Mutter | die Freundin ____ - az anya barátnője
 \end{exmp}
 
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei}
@@ -91,11 +91,11 @@ GrammarItemIndex = 1
 Categories = 0
 
 \begin{desc}
-          | hímnem   | nőnem | semleges nem | többes szám
-Nominativ | ein      | eine  | ein          | keine
-Akkusativ | einen    | eine  | ein          | keine
-Dativ     | einem    | einer | einem        | keinen -n
-Genitiv   | eines -s | einer | eines -s     | keiner
+          | hímnem   | nőnem | semleges nem
+Nominativ | ein      | eine  | ein
+Akkusativ | einen    | eine  | ein
+Dativ     | einem    | einer | einem
+Genitiv   | eines -s | einer | eines -s
 \end{desc}
 
 \begin{exmp}
@@ -111,10 +111,6 @@ Genitiv   | eines -s | einer | eines -s     | keiner
 10 | eines -s | hím nem, birtokos eset
 11 | einer | nő nem, birtokos eset
 12 | eines -s | semleges nem, birtokos eset
-13 | keine | többes szám, alany eset
-14 | keine | többes szám, tárgy eset
-15 | keinen -n | többes szám, részes eset
-16 | keiner | többes szám, birtokos eset
 \end{exmp}
 
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei - Példák}
@@ -132,47 +128,47 @@ Genitiv   | eines -s | einer | eines -s     | keiner
 
 %Maklári: 37. oldal
 \begin{exmp}
-1 | ein Mädchen | egy lány
-2 | ein Kind | egy gyerek
-3 | ein Vater | egy apa
-4 | einen Wagen | egy kocsit
-5 | einer Frau | egy nőnek (részére)
-6 | einen Garten | egy kertet
-7 | einem Kind | egy gyereknek
-8 | ein Auto | egy autót
-9 | ein Buch | egy könyvet
-10 | ein Mann | egy férfi
-11 | ein Haus | egy ház
-12 | einen Schrank | egy szekrényt
-13 | einem Mädchen | egy lánynak
-14 | einem Mann | egy férfinak
-15 | eine Frau | egy nő
-16 | einer Lehrerin | egy tanárnőnek
-17 | eine Lampe | egy lámpa
-18 | einen Stuhl | egy széket
-19 | einem Gast | egy vendégnek
-20 | ein Fenster | egy ablakot
-21 | einen Tisch | egy asztalt
-22 | ein Junge | egy fiú
-23 | ein Haus | egy házat
-24 | ein Fenster | egy ablak
-25 | einem Hund | egy kutyának
-26 | ein Auto | egy autó
-27 | einen Lehrer | egy tanárt
-28 | ein Buch | egy könyv
-29 | ein Mann | egy ember
-30 | einem Lehrer | egy tanárnak
-31 | ein Mädchen | egy lányt
-32 | einer Mutter | egy anyának
-33 | die Feder eines Vogels | egy madár tolla
-34 | das Heft eines Schülers | egy diák füzete
-35 | das Fenster eines Hauses | egy ház ablaka
-36 | der Rock einer Frau | egy nő szoknyája
-37 | die Frau eines Lehrers | egy tanár felesége
-38 | das Heft einer Schülerin | egy diáklány füzete
-39 | die Seiten eines Buches | egy könyv oldalai
-40 | der Kuli einer Lehrerin | egy tanárnő tolla
-41 | der Ball eines Kindes | egy gyerek labdája
+1 | ein | ____ Mädchen - egy lány
+2 | ein | ____ Kind - egy gyerek
+3 | ein | ____ Vater - egy apa
+4 | einen | ____ Wagen - egy kocsit
+5 | einer | ____ Frau - egy nőnek (részére)
+6 | einen | ____ Garten - egy kertet
+7 | einem | ____ Kind - egy gyereknek
+8 | ein | ____ Auto - egy autót
+9 | ein | ____ Buch - egy könyvet
+10 | ein | ____ Mann - egy férfi
+11 | ein | ____ Haus - egy ház
+12 | einen | ____ Schrank - egy szekrényt
+13 | einem | ____ Mädchen - egy lánynak
+14 | einem | ____ Mann - egy férfinak
+15 | eine | ____ Frau - egy nő
+16 | einer | ____ Lehrerin - egy tanárnőnek
+17 | eine | ____ Lampe - egy lámpa
+18 | einen | ____ Stuhl - egy széket
+19 | einem | ____ Gast - egy vendégnek
+20 | ein | ____ Fenster - egy ablakot
+21 | einen | ____ Tisch - egy asztalt
+22 | ein | ____ Junge - egy fiú
+23 | ein | ____ Haus - egy házat
+24 | ein | ____ Fenster - egy ablak
+25 | einem | ____ Hund - egy kutyának
+26 | ein | ____ Auto - egy autó
+27 | einen | ____ Lehrer - egy tanárt
+28 | ein | ____ Buch - egy könyv
+29 | ein | ____ Mann - egy ember
+30 | einem | ____ Lehrer - egy tanárnak
+31 | ein | ____ Mädchen - egy lányt
+32 | einer | ____ Mutter - egy anyának
+33 | eines Volges | die Feder ____ - egy madár tolla
+34 | eines Schülers | das Heft ____ - egy diák füzete
+35 | eines Hauses | das Fenster ____ - egy ház ablaka
+36 | einer Frau | der Rock ____ - egy nő szoknyája
+37 | eines Lehrers | die Frau ____ - egy tanár felesége
+38 | einer Schülerin | das Heft ____ - egy diáklány füzete
+39 | eines Buches | die Seiten ____ - egy könyv oldalai
+40 | einer Lehrerin | der Kuli ____ - egy tanárnő tolla
+41 | eines Kindes | der Ball ____ - egy gyerek labdája
 \end{exmp}
 
 \title{Névmások/Személyes névmás/Személyes névmás esetei}
@@ -358,6 +354,7 @@ egy -e betűt illesztünk.
 \title{Névmások/Birtokos névmás/Birtokos névmás ragozása}
 
 GrammarItemIndex = 40
+Categories = 0
 
 \begin{desc}
           | hímnem    | nőnem  | semleges nem | többes szám 
@@ -369,35 +366,36 @@ genitiv   | meines -s | meiner | meines -s    | meiner
 
 %Maklári: 45. oldal
 \begin{exmp}
-1 | meinen Vater | az apámat
-2 | deiner Mutter | az anyádnak
-3 | meiner Großmutter | a nagymamámnak
-4 | eueren Tisch | az asztalotokat
-5 | unseren Freundinnen | a barátnőinknek
-6 | unserer Freundin | a barátnőnknek
-7 | Ihren Anzug | az Ön öltönyét
-8 | meine Frau | a feleségemet
-9 | mein Bruder | a fivérem
-10 | meinem Bruder | a fivéremnek
-11 | Ihre Frau | az Ön feleségét
-12 | deinen Hund | a kutyádat
-13 | euer Auto | az autótokat
-14 | sein Haus | a házát (f)
-15 | seiner Frau | a feleségének
-16 | unseren Kindern | a gyerekeinknek
-17 | euerem Kind | a gyereketeknek
-18 | unsere Lampe | a lámpánkat
-19 | deinem Hund | a kutyádnak
-20 | deinen Freund | a barátodat
-21 | unseren Eltern | a szüleinknek
-22 | euere Kinder | a gyerekeiteket
-23 | Ihrem Mann | az Önök férjének
-24 | meinen Freund | a barátomat
+1 | meinen | ____ Vater - az apámat
+2 | deiner | ____ Mutter - az anyádnak
+3 | meiner | ____ Großmutter - a nagymamámnak
+4 | eueren | ____ Tisch - az asztalotokat
+5 | unseren | ____ Freundinnen - a barátnőinknek
+6 | unserer | ____ Freundin - a barátnőnknek
+7 | Ihren | ____ Anzug - az Ön öltönyét
+8 | meine | ____ Frau - a feleségemet
+9 | mein | ____ Bruder - a fivérem
+10 | meinem | ____ Bruder - a fivéremnek
+11 | Ihre | ____ Frau - az Ön feleségét
+12 | deinen | ____ Hund - a kutyádat
+13 | euer | ____ Auto - az autótokat
+14 | sein | ____ Haus - a házát (f)
+15 | seiner | ____ Frau - a feleségének
+16 | unseren | ____ Kindern - a gyerekeinknek
+17 | euerem | ____ Kind - a gyereketeknek
+18 | unsere | ____ Lampe - a lámpánkat
+19 | deinem | ____ Hund - a kutyádnak
+20 | deinen | ____ Freund - a barátodat
+21 | unseren | ____ Eltern - a szüleinknek
+22 | euere | ____ Kinder - a gyerekeiteket
+23 | Ihrem | ____ Mann - az Önök férjének
+24 | meinen | ____ Freund - a barátomat
 \end{exmp}
 
 \title{Névmások/Birtokos névmás/Birtokos névmás birtokos esete}
 
 GrammarItemIndex = 50
+Categories = 0
 
 \begin{desc}
 nominativ/alany | genitiv/birtokos 
@@ -414,24 +412,24 @@ Sie             | Ihr
 
 %Maklári: 45. oldal
 \begin{exmp}
-1 | der Kind unserer Eltern | a szüleink gyereke
-2 | der Sohn meines Vaters | az apám fia
-3 | die Tochter meiner Mutter | az anyám lánya
-4 | die Tür unseres Hauses | a házunk ajtaja
-5 | die Lampe ihres Autos | az autójuk lámpája
-6 | die Scheibe Ihres Wagens | az Ön kocsijának az ablaka
-7 | die Bälle euerer Kinder | a gyerekeitek labdái
-8 | die Shöne euerer Tochter | a lányaitok fiai
-9 | der Freund ihres Mannes | a férjének a barátja
-10 | das Rad deines Fahrrads | a kerékpárod kereke
-11 | das Geld euerer Freunde | a barátaitok pénze
-12 | das Zeit unseres Lehrers | a tanárunk ideje
-13 | das Kleid seiner Freundin | a barátnőjének (f) a ruhája
-14 | die Fenster ihrer Häuser | a házaiknak az ablakai
-15 | der Knopf meiner Hose | a nadrágom gombja (r Knopf)
-16 | das Ende unserer Aufgaben | a feladataink vége
-17 | der Beginn unserer Leidens | a szenvedéseink kezdete (r Beginn, s Leiden)
-18 | die Freundin seiner Frau | a feleségének a barátnője
+1 | unserer | der Kind ____ Eltern - a szüleink gyereke
+2 | meines | der Sohn ____ Vaters - az apám fia
+3 | meiner | die Tochter ____ Mutter - az anyám lánya
+4 | unseres | die Tür ____ Hauses - a házunk ajtaja
+5 | ihres | die Lampe ____ Autos - az autójuk lámpája
+6 | Ihres | die Scheibe ____ Wagens - az Ön kocsijának az ablaka
+7 | euerer | die Bälle ____ Kinder - a gyerekeitek labdái
+8 | euerer | die Shöne ____ Tochter - a lányaitok fiai
+9 | ihres | der Freund ____ Mannes - a férjének a barátja
+10 | deines | das Rad ____ Fahrrads - a kerékpárod kereke
+11 | euerer | das Geld ____ Freunde - a barátaitok pénze
+12 | unseres | das Zeit ____ Lehrers - a tanárunk ideje
+13 | seiner | das Kleid ____ Freundin - a barátnőjének (f) a ruhája
+14 | ihrer | die Fenster ____ Häuser - a házaiknak az ablakai
+15 | meiner | der Knopf ____ Hose - a nadrágom gombja (r Knopf)
+16 | unserer | das Ende ____ Aufgaben - a feladataink vége
+17 | unserer | der Beginn ____ Leidens - a szenvedéseink kezdete (r Beginn, s Leiden)
+18 | seiner | die Freundin ____ Frau - a feleségének a barátnője
 \end{exmp}
 
 \title{Névmások/Birtokos névmás/Birtokos névmás önálló alakja}
@@ -628,23 +626,27 @@ Peters Freundin - Peter barátnője
 \title{Birtokos szerkezetek/Birtokos szerkezet von + D-val}
 
 GrammarItemIndex = 117336
+Categories = 0
 
 \begin{desc}
-Pl.: der Sohn von dem Vater - az apa fia
+Pl.: * der Sohn von dem Vater - az apa fia
+* die Tochter von der Mutter - az anya lánya
+* der Schuh von dem Vater - az apa cipője
+* die Brille von den Kindern - a gyerekek szemüvege
 \end{desc}
 
 %Maklári: 30. oldal
 \begin{exmp}
-1 | die Tochter von der Mutter | az anya lánya
-2 | der Schuh von dem Vater | az apa cipője
-3 | die Brille von den Kindern | a gyerekek szemüvege
-4 | die Lampe von dem Einbrecher | a betörő lámpája (r Einbrecher)
-5 | das Zeugnis von dem Schüler | a tanuló bizonyítványa (s Zeugnis)
-6 | die Torte von der Großmutter | a nagymama tortája
-7 | der Kuli von dem Schüler | a tanuló tolla
-8 | die Spielzeuge von den Kindern | a gyerekek játékai
-9 | die Mütze von dem Kontrolleur | az ellenőr sapkája
-10 | der Humor von dem Kontrolleur | az ellenőr humora
+1 | von der | die Tochter ____ Mutter - az anya lánya
+2 | von dem | der Schuh ____ Vater - az apa cipője
+3 | von den | die Brille ____ Kindern - a gyerekek szemüvege
+4 | von dem | die Lampe ____ Einbrecher - a betörő lámpája
+5 | von dem | das Zeugnis ____ Schüler - a tanuló bizonyítványa
+6 | von der | die Torte ____ Großmutter - a nagymama tortája
+7 | von dem | der Kuli ____ Schüler - a tanuló tolla
+8 | von den | die Spielzeuge ____ Kindern - a gyerekek játékai
+9 | von dem | die Mütze ____ Kontrolleur - az ellenőr sapkája
+10 | von dem | der Humor ____ Kontrolleur - az ellenőr humora
 \end{exmp}
 
 \title{Módbeli segédigék/Módbeli segédigék ragozása}
@@ -661,6 +663,7 @@ T/2 | könnt  | dürft  | mögt  | wollt  | müsst  | sollt
 T/3 | können | dürfen | mögen | wollen | müssen | sollen 
 \end{desc}
 
+%TODO: kis mondatokkal helyettesíteni a példákat
 \begin{exmp}
 1 | kann | tud, E/1
 2 | kannst | tud, E/2
@@ -668,8 +671,8 @@ T/3 | können | dürfen | mögen | wollen | müssen | sollen
 4 | können | tud, T/1
 5 | könnt | tud, T/2
 6 | können | tud, T/3
-7 | darf | szabad, E/1
-8 | darfst | szabad, E/2
+7 | darf | Ich ____ trinken. - Szabad innom.
+8 | darfst | Du ____ laufen. - Szabad futnod.
 9 | darf | szabad, E/3
 10 | dürfen | szabad, T/1
 11 | dürft | szabad, T/2
@@ -716,35 +719,46 @@ Módbeli segédigék:
 * müssen - kell (külső kényszer)
 * sollen - kell (belső kényszer)
 * wollen - akar
+
+Példák:
+Ich will heute in das Kino gehen. - Ma moziba akarok menni.
+Ilona darf in das Theater gehen. - Ilonának szabad színházba mennie.
+Ich kann schnell Bier trinken. - Gyorsan tudok sört inni.
+Ich kann schwimmen. - Tudok úszni.
+Sie will kommen. - Akar jönni.
+Wir mögen Fußball spielen. - Szeretünk focizni.
+Er muss nach Hause gehen. - Haza kell mennie.
+Du musst Blume kaufen. - Virágot kell venned.
+Wir dürfen spielen. - Szabad játszanunk.
 \end{desc}
 
 \begin{exmp}
-1 | Ich will heute in das Kino gehen. | Ma moziba akarok menni.
-2 | Ilona darf in das Theater gehen. | Ilonának szabad színházba mennie.
-3 | Ich kann schnell Bier trinken. | Gyorsan tudok sört inni.
-4 | Ich kann schwimmen. | Tudok úszni.
-5 | Sie will kommen. | Akar jönni. (n)
-6 | Wir mögen Fußball spielen. | Szeretünk focizni.
-7 | Er muss nach Hause gehen. | Haza kell mennie. (f)
-8 | Du musst Blume kaufen. | Virágot kell venned.
-9 | Wir dürfen spielen. | Szabad játszanunk.
-10 | Wir wollen fernsehen. | Akarunk tévézni. (fernsehen - TV-t néz)
-11 | Wollt ihr in das Bett gehen? | Akartok ágyba menni?
-12 | Er kann gut sprechen. | Jól tud beszélni. (f)
-13 | Ihr dürft nach Hause gehen. | Haza mehettek.
-14 | Mögt ihr Korbball spielen? | Szerettek kosárlabdázni? (Korbball spielen)
-15 | Er soll nett sind. | Kedvesnek kell lennie. (f)
-16 | Mögt ihr Eis essen? | Szerettek fagyit enni?
-17 | Ich muss lernen. | Tanulnom kell.
-18 | Sie muss einkaufen. | Be kell vásárolnia (n).
-19 | Wollt ihr trinken? | Akartok inni?
-20 | Sie mag Schach spielen. | Szeret (n) sakkozni.
-21 | Sie wollen nach Hause gehen. | Haza akarnak menni.
-22 | Darfst du rauchen? | Szabad cigarettáznod?
-23 | Sie wollen schlafen. | Aludni akarnak.
-24 | Sie müssen lernen. | Tanulniuk kell.
-25 | Gizi will Wasser trinken. | Gizi vizet akar inni.
-26 | Ihr musst höflich sein. | Udvariasnak kell lennetek. (höflich - udvarias)
+1 | will, gehen | Ich ____ heute in das Kino ____. - Ma moziba akarok menni.
+2 | darf, gehen | Ilona ____ in das Theater ____. - Ilonának szabad színházba mennie.
+3 | kann, trinken | Ich ____ schnell Bier ____. - Gyorsan tudok sört inni.
+4 | kann, schwimmen | Ich ____ ____. - Tudok úszni.
+5 | will, kommen | Sie ____ ____. - Akar jönni.
+6 | mögen, spielen | Wir ____ Fußball ____. - Szeretünk focizni.
+7 | muss, gehen | Er ____ nach Hause ____. - Haza kell mennie.
+8 | musst, kaufen | Du ____ Blume ____. - Virágot kell venned.
+9 | dürfen, spielen | Wir ____ ____. - Szabad játszanunk.
+10 | wollen, fernsehen | Wir ____ ____. - Akarunk tévézni. (fernsehen)
+11 | Wollt, gehen | ____ ihr in das Bett ____? - Akartok ágyba menni?
+12 | kann, sprechen | Er ____ gut ____. - Jól tud beszélni. (f)
+13 | dürft, gehen | Ihr ____ nach Hause ____. - Haza mehettek.
+14 | Mögt, spielen | ____ ihr Korbball ____? - Szerettek kosárlabdázni? (Korbball spielen)
+15 | soll, sind | Er ____ nett ____. - Kedvesnek kell lennie.
+16 | Mögt, essen | ____ ihr Eis ____? - Szerettek fagyit enni?
+17 | muss, lernen | Ich ____ ____. - Tanulnom kell.
+18 | muss, einkaufen | Sie ____ ____. - Be kell vásárolnia (n).
+19 | Wollt, trinken | ____ ihr ____? - Akartok inni?
+20 | mag, spielen | Sie ____ Schach ____. - Szeret (n) sakkozni.
+21 | wollen, gehen | Sie ____ nach Hause ____. - Haza akarnak menni.
+22 | datfst, rauchen | ____ du ____? - Szabad cigarettáznod?
+23 | wollen, schlafen | Sie ____ ____. - Aludni akarnak.
+24 | müssen, lernen | Sie ____ ____. - Tanulniuk kell.
+25 | will, trinken | Gizi ____ Wasser ____. - Gizi vizet akar inni.
+26 | musst, sein | Ihr ____ höflich ____. - Udvariasnak kell lennetek.
 \end{exmp}
 
 \title{Módbeli segédigék/A möchten módbeli segédige}
@@ -763,29 +777,32 @@ wir möchten
 ihr möchtet
 sie/Sie möchten
 
-Pl.: Ich möchte heute ins Theater gehen. - Szeretnék me színházba menni.
+Pl.: * Ich möchte heute ins Theater gehen. - Szeretnék ma színházba menni.
+* Möchtet ihr laufen? - Szeretnétek futni?
+* Er möchte Fußball spielen. - Szeretne (f) focizni.
+* Ich möchte schon schlafen. - Szeretnék már aludni.
 \end{desc}
 
 %Maklári: 123. oldal
 \begin{exmp}
-1 | Möchtet ihr laufen? | Szeretnétek futni?
-2 | Er möchte Fußball spielen. | Szeretne (f) focizni.
-3 | Ich möchte schon schlafen. | Szeretnék már aludni.
-4 | Sie möchten ein Haus bekommen. | Szeretnének egy Házat kapni.
-5 | Möchten Sie nach Hause gehen? | Szeretne Ön haza menni?
-6 | Möchtest du ein Glas Wasser trinken? | Szeretnél egy pohár vizet inni?
-7 | Möchtet ihr Abend essen? | Szeretnétek vacsorázni?
-8 | Ich möchte fahrradfahren. | Szeretnék biciklizni. (fahrradfahren - biciklizik)
-9 | Ich möchte etwas essen. | Szeretnék valamit enni.
-10 | Ich möchte ein Fahrrad haben. | Szeretnék egy kerékpárt.
-11 | Ich möchte in die Schule nicht gehen. | Nem szeretnék iskolába menni.
-12 | Möchten Sie hier schlafen? | Szeretne (Ön) itt aludni?
-13 | Möchtet ihr eine Tasse Tee trinken? | Szeretnétek egy csésze teát inni?
-14 | Sie möchten morgen spazieren. | Szeretnének holnap sétálni.
-15 | Möchtest du nach Deutschland reisen? | Szeretnél Németországba utazni? (reisen)
-16 | Möchtet ihr Mittag essen? | Szeretnétek ebédelni? (Mittag essen)
-17 | Ich möchte nach Hause gehen. | Haza szeretnék menni.
-18 | Ich möchte sie sehen. | Szeretném látni őt (n).
+1 | Möchtet, laufen | ____ ihr ____? - Szeretnétek futni?
+2 | möchte, spielen |  Er ____ Fußball ____. - Szeretne (f) focizni.
+3 | möchte, schlafen |  Ich ____ schon ____. - Szeretnék már aludni.
+4 | möchten, bekommen |  Sie ____ ein Haus ____. - Szeretnének egy Házat kapni.
+5 | Möchten, gehen |  ____ Sie nach Hause ____? - Szeretne Ön haza menni?
+6 | Möchtest, trinken |  ____ du ein Glas Wasser ____? - Szeretnél egy pohár vizet inni?
+7 | Möchtet, essen |  ____ ihr Abend ____? - Szeretnétek vacsorázni?
+8 | möchte, fahrradfahren |  Ich ____ ____. - Szeretnék biciklizni. (fahrradfahren)
+9 | möchte, essen |  Ich ____ etwas ____. - Szeretnék valamit enni.
+10 | möchte, haben |  Ich ____ ein Fahrrad ____. - Szeretnék egy kerékpárt.
+11 | möchte, gehen |  Ich ____ in die Schule nicht ____. - Nem szeretnék iskolába menni.
+12 | Möchten, schlafen |  ____ Sie hier ____? - Szeretne (Ön) itt aludni?
+13 | Möchtet, trinken |  ____ ihr eine Tasse Tee ____? - Szeretnétek egy csésze teát inni?
+14 | möchten, spazieren |  Sie ____ morgen ____. - Szeretnének holnap sétálni.
+15 | Möchtest, reisen |  ____ du nach Deutschland ____? - Szeretnél Németországba utazni? (reisen)
+16 | Möchtet, essen |  ____ ihr Mittag ____? - Szeretnétek ebédelni? (Mittag essen)
+17 | möchte, gehen |  Ich ____ nach Hause ____. - Haza szeretnék menni.
+18 | möchte, sehen |  Ich ____ sie ____. - Szeretném látni őt.
 \end{exmp}
 
 \title{Módbeli segédigék/A módbeli segédigék másodlagos jelentése/A valószínűség fokozatai}
@@ -828,6 +845,7 @@ In Peter will das ganze Dorf verliebt sein. - Peter azt állítja, hogy az egés
 \title{Prepozíciók/Hol? kérdésre felelő prepozíciók}
 
 GrammarItemIndex = 161485
+Categories = 0
 
 \begin{desc}
 A hol? kérdésre felelő prepozíciók részes esettel állnak.
@@ -846,38 +864,38 @@ Példák ilyen prepozíciókra:
 
 %Maklári: 53. oldal
 \begin{exmp}
-1 | auf dem Stuhl | a széken
-2 | an der Wand | a falon
-3 | unter dem Tisch | az asztal alatt
-4 | neben der Vase | a váza mellett
-5 | über der Frau | a nő felett
-6 | vor den Häusern | a házak előtt
-7 | zwischen den Lampen | a lámpák között
-8 | unter dem Baum | a fa alatt
-9 | an den Bildern | a képeken
-10 | vor der Mutter | az anya előtt
-11 | hinter dem Schrank | a szekrény mögött
-12 | auf dem Teppich | a szőnyegen
-13 | in dem Haus | a házban
-14 | in der Wohnung | a lakásban
-15 | unter den Betten | az ágyak alatt
-16 | zwischen der Tür und der Treppe | az ajtó és a lépcső között
-17 | vor dem Haus | a ház előtt
-18 | an dem Baum | a fán
-19 | auf der Straße | az utcán
-20 | vor der Tür | az ajtó előtt
-21 | unter dem Teppich | a szőnyeg alatt
-22 | in dem Wagen | a kocsiban
-23 | neben den Lampen | a lámpák mellett
-24 | in dem Bus | a buszban
-25 | an dem Vorrang | a függönyön (r Vorhang)
-26 | neben dem Mädchen | a lány mellett
-27 | zwischen dem Kind und dem Stuhl | a gyerek és a szék között
-28 | an dem Tafel | a táblán
-29 | zwischen der Tür un dem Fenster | az ajtó és az ablak között
-30 | an der Uhr | az órán
-31 | über dem Haus | a ház felett
-32 | zwischen dem Stuhl und dem Bett | a szék és az ágy között
+1 | auf dem | ____ Stuhl - a széken
+2 | an der | ____ Wand - a falon
+3 | unter dem | ____ Tisch - az asztal alatt
+4 | neben der | ____ Vase - a váza mellett
+5 | über der | ____ Frau - a nő felett
+6 | vor den | ____ Häusern - a házak előtt
+7 | zwischen den | ____ Lampen - a lámpák között
+8 | unter dem | ____ Baum - a fa alatt
+9 | an den | ____ Bildern - a képeken
+10 | vor der | ____ Mutter - az anya előtt
+11 | hinter dem | ____ Schrank - a szekrény mögött
+12 | auf dem | ____ Teppich - a szőnyegen
+13 | in dem | ____ Haus - a házban
+14 | in der | ____ Wohnung - a lakásban
+15 | unter den | ____ Betten - az ágyak alatt
+16 | zwischen der, der | ____ Tür und ____ Treppe - az ajtó és a lépcső között
+17 | vor dem | ____ Haus - a ház előtt
+18 | an dem | ____ Baum - a fán
+19 | auf der | ____ Straße - az utcán
+20 | vor der | ____ Tür - az ajtó előtt
+21 | unter dem | ____ Teppich - a szőnyeg alatt
+22 | in dem | ____ Wagen - a kocsiban
+23 | neben den | ____ Lampen - a lámpák mellett
+24 | in dem | ____ Bus - a buszban
+25 | an dem | ____ Vorrang - a függönyön (r Vorhang)
+26 | neben dem | ____ Mädchen - a lány mellett
+27 | zwischen dem, dem | ____ Kind und ____ Stuhl - a gyerek és a szék között
+28 | an dem | ____ Tafel - a táblán
+29 | zwischen der, dem | zwischen ____ Tür und ____ Fenster - az ajtó és az ablak között
+30 | an der | ____ Uhr - az órán
+31 | über dem | ____ Haus - a ház felett
+32 | zwischen dem, dem | ____ Stuhl ____ Bett - a szék és az ágy között
 \end{exmp}
 
 \title{Prepozíciók/Hol? kérdésre felelő prepozíciók/Prepozíciók összevonása}
@@ -2642,27 +2660,27 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 
 %Maklári: 249.oldal
 \begin{exmp}
-1 | Wo warst du? | Hol voltál?
-2 | War Klara krank? | Beteg volt Klara?
-3 | Wart ihr bei ihr? | Voltatok nála (n)?
-4 | Sie war nett. | Kedves volt (n). (nett)
-5 | Sie waren dort nicht. | Nem voltak ott.
-6 | Wir waren frisch. | Frissek voltunk.
-7 | Ihr wart schnell. | Gyorsak voltatok.
-8 | Wie war die Speise sein? | Milyen volt az étel? (e Speise)
-9 | Wo waren Sie gestern? | Hol volt Ön tegnap?
-10 | Wann wart ihr in Kanada? | Mikor voltatok Kanadában?
-11 | Wie war das Wetter? | Milyen volt az idő?
-12 | Wart ihr böse auf mich? | Mérgesek voltatok rám?
-13 | Waren Sie schon in dem Wald? | Volt (Ön) már az erdőben?
-14 | Wir waren in Vien. | Bécsben voltunk.
-15 | Ich war müde. | Fáradt voltam.
-16 | Wir waren nicht bei ihnen. | Nem voltunk náluk.
-17 | Wie war der Film? | Milyen volt a film?
-18 | Wart ihr in dem Garten? | A kertben voltatok?
-19 | Ich war gespannt darauf. | Kíváncsi voltam rá. (gespannt, darauf)
-20 | Ich war dumm. | Buta voltam. (dumm)
-21 | Wann war sie hier? | Mikor volt (n) itt?
+1 | warst | Wo ____ du? - Hol voltál?
+2 | War | ____ Klara krank? - Beteg volt Klara?
+3 | Wart | ____ ihr bei ihr? - Voltatok nála?
+4 | war | Sie ____ nett. - Kedves volt.
+5 | waren | Sie ____ dort nicht. - Nem voltak ott.
+6 | waren | Wir ____ frisch. - Frissek voltunk.
+7 | wart | Ihr ____ schnell. - Gyorsak voltatok.
+8 | war | Wie ____ die Speise sein? - Milyen volt az étel?
+9 | waren | Wo ____ Sie gestern? - Hol volt Ön tegnap?
+10 | wart | Wann ____ ihr in Kanada? - Mikor voltatok Kanadában?
+11 | war | Wie ____ das Wetter? - Milyen volt az idő?
+12 | Wart | ____ ihr böse auf mich? - Mérgesek voltatok rám?
+13 | Waren | ____ Sie schon in dem Wald? - Volt (Ön) már az erdőben?
+14 | waren | Wir ____ in Vien. - Bécsben voltunk.
+15 | war | Ich ____ müde. - Fáradt voltam.
+16 | waren | Wir ____ nicht bei ihnen. - Nem voltunk náluk.
+17 | war | Wie ____ der Film? - Milyen volt a film?
+18 | Wart | ____ ihr in dem Garten? - A kertben voltatok?
+19 | war | Ich ____ gespannt darauf. - Kíváncsi voltam rá.
+20 | war | Ich ____ dumm. - Buta voltam.
+21 | War | Wann ____ sie hier? - Mikor volt itt?
 \end{exmp}
 
 \title{Idők/Präteritum - elbeszélő múlt/A haben Präteriuma}
@@ -2678,26 +2696,33 @@ wir hatten
 ihr hattet
 sie hatten
 
-Pl.: Ich hatte zwei Flöhe. - Kér bolhám volt.
+Pl.: * Ich hatte zwei Flöhe. - Kér bolhám volt.
+* Er hatte ein Haus. - Volt egy háza.
+* Hatten sie zehn Kinder? - Volt tíz gyerekük?
+* Ich hatte Angst. - Féltem.
+* Sie hatte Kopfschmerzen. - Fájt a feje.
+* Sie hatte Lust dazu. - Volt kedve hozzá.
+* Hattet ihr Hausaufgabe? - Volt házifeladatotok?
+* Hattest du Zeit? - Volt időd?
 \end{desc}
 
 %Maklári: 250.oldal
 \begin{exmp}
-1 | Er hatte ein Haus. | Volt (f) egy háza.
-2 | Hatten sie zehn Kinder? | Volt tíz gyerekük?
-3 | Ich hatte Angst. | Féltem.
-4 | Sie hatte Kopfschmerzen. | Fájt (n) a feje.
-5 | Sie hatte Lust dazu. | Volt kedve (n) hozzá. (dazu)
-6 | Hattet ihr Hausaufgabe? | Volt házifeladatotok?
-7 | Hattest du Zeit? | Volt időd?
-8 | Hatten sie Bier? | Volt sörük?
-9 | Hattet ihr Angst? | Féltetek?
-10 | Hattet ihr Bauchweh? | Fájt a hasatok? (Bauchweh haben)
-11 | Hattet ihr Durst? | Szomjasak voltatok? (Durst haben)
-12 | Hattest du Hunger? | Éhes voltál?
-13 | Hattet ihr Geld? | Volt pénzetek?
-14 | Ich hatte keine Idee. | Nem volt ötletem.
-15 | Hattest du Buch? | Volt könyved?
+1 | hatte | Er ____ ein Haus. - Volt egy háza.
+2 | Hatten | ____ sie zehn Kinder? - Volt tíz gyerekük?
+3 | hatte | Ich ____ Angst. - Féltem.
+4 | hatte | Sie ____ Kopfschmerzen. - Fájt a feje.
+5 | hatte | Sie ____ Lust dazu. - Volt kedve hozzá.
+6 | Hattet | ____ ihr Hausaufgabe? - Volt házifeladatotok?
+7 | Hattest | ____ du Zeit? - Volt időd?
+8 | Hatten | ____ sie Bier? - Volt sörük?
+9 | Hattet | ____ ihr Angst? - Féltetek?
+10 | Hattet | ____ ihr Bauchweh? - Fájt a hasatok?
+11 | Hattet | ____ ihr Durst? - Szomjasak voltatok?
+12 | Hattest | ____ du Hunger? - Éhes voltál?
+13 | Hattet | ____ ihr Geld? - Volt pénzetek?
+14 | hatte | Ich ____ keine Idee. - Nem volt ötletem.
+15 | Hattest | ____ du Buch? - Volt könyved?
 \end{exmp}
 
 \title{Idők/Präteritum - elbeszélő múlt/A werden Präteriuma}
@@ -2713,29 +2738,36 @@ wir wurden
 ihr wurdet
 si wurden
 
-Pl.: Er wurde böse. - Mérges lett.
+Pl.: * Er wurde böse. - Mérges lett.
+* Mein Freund wurde berühmt. - A barátom híres lett.
+* Er wurde arm. - Szegény lett.
+* Wir wurden reich. - Gazdagok lettünk.
+* Sie wurde gesund. - Egészséges lett.
+* Es wurde dunkel. - Sötét lett.
+* Es wurde kalt. - Hideg lett.
+* Ich wurde fertig nicht. - Nem lettem kész.
 \end{desc}
 
 %Maklári: 250.oldal
 \begin{exmp}
-1 | Mein Freund wurde berühmt. | A barátom híres lett. (berühmt)
-2 | Er wurde arm. | Szegény lett (f).
-3 | Wir wurden reich. | Gazdagok lettünk.
-4 | Sie wurde gesund. | Egészséges lett (n).
-5 | Es wurde dunkel. | Sötét lett. (dunkel)
-6 | Es wurde kalt. | Hideg lett.
-7 | Ich wurde fertig nicht. | Nem lettem kész.
-8 | Wir wurden alt und hässlich. | Öregek lettünk és csúnyák. (hässlich)
-9 | Wurden Sie krank? | Beteg lett (Ön)?
-10 | Die Tage wurden länger. | A napok hosszabbak lettek.
-11 | Die Suppe wurde sauer. | A leves megsavanyodott. (sauer)
-12 | Es wurde hell in dem Zimmer. | Világos lett a szobában. (hell)
-13 | Wurden sie müde? | Fáradtak lettek?
-14 | Er wurde Stein. | Kővé vált (f). (r Stein)
-15 | Ich wurde Soldat. | Katona lettem.
-16 | Mátyás wurde Soldat. | Mátyás katona lett.
-17 | Józsi wurde böse. | Józsi mérges lett.
-18 | Es wurde Winter. | Tél lett.
+1 | wurde | Mein Freund ____ berühmt. - A barátom híres lett.
+2 | wurde | Er ____ arm. - Szegény lett.
+3 | wurden | Wir ____ reich. - Gazdagok lettünk.
+4 | wurde | Sie ____ gesund. - Egészséges lett.
+5 | wurde | Es ____ dunkel. - Sötét lett.
+6 | wurde | Es ____ kalt. - Hideg lett.
+7 | wurde | Ich ____ fertig nicht. - Nem lettem kész.
+8 | wurden | Wir ____ alt und hässlich. - Öregek lettünk és csúnyák.
+9 | Wurden | ____ Sie krank? - Beteg lett (Ön)?
+10 | wurden | Die Tage ____ länger. - A napok hosszabbak lettek.
+11 | wurde | Die Suppe ____ sauer. - A leves megsavanyodott.
+12 | wurde | Es ____ hell in dem Zimmer. - Világos lett a szobában.
+13 | Wurden | ____ sie müde? - Fáradtak lettek?
+14 | wurde | Er ____ Stein. - Kővé vált.
+15 | wurde | Ich ____ Soldat. - Katona lettem.
+16 | wurde | Mátyás ____ Soldat. - Mátyás katona lett.
+17 | wurde | Józsi ____ böse. - Józsi mérges lett.
+18 | wurde | Es ____ Winter. - Tél lett.
 \end{exmp}
 
 \title{Idők/Präteritum - elbeszélő múlt/Módbeli segédigék Präteriuma}
@@ -2918,6 +2950,7 @@ Pl.: Ich habe mit ihm nicht spielen wollen. - Nem akartam vele játszani.
 
 GrammarItemIndex = 432478
 
+
 \begin{desc}
 Képzése:
 alany + haben ragozva + többi mondatrész + ige 1 Infinitivben + ige 2 Infinitivben
@@ -2983,6 +3016,7 @@ Pl.: Zuerst war ich ins Geschäft gegangen, dann aß ich Mittag. - Először elm
 \title{Idők/A jövő idő - Futur I}
 
 GrammarItemIndex = 423429
+Categories = 0
 
 \begin{desc}
 Ezt a jövő idős szerkezetet akkor használjuk, ha azt akarjuk kifejezni, hogy valami mindenképpen megtörténik a jövőben. Ez magyar fog + főnévi igenév szerkezetnek felel meg.
@@ -2997,28 +3031,37 @@ wir werden
 ihr werdet
 sie/Sie werden
 
-Pl.: Klaus wird sicherlich mein Heus kaufen. - Klaus biztosen meg fogja venni a házamat.
+Pl.: * Klaus wird sicherlich mein Haus kaufen. - Klaus biztosen meg fogja venni a házamat.
+* Wir werden euch besuchen. - Meg fogunk látogatni titeket.
+* Werdet ihr umziehen? - El fogtok költözni? (umziehen)
+* Mein Freund wird ein Buch schreiben. - A barátom egy könyvet fog írni.
+* Wirst du dein Auto verkaufen? - El fogod adni az autódat?
+* Wann wirst du deine Hausaufgabe schreiben? - Mikor fogod megírni a házifeladatodat?
+* Wird sie bei uns wohnen? - Nálunk fog (n) lakni?
+* Sie werden in dem Hotel übernachten. - A hotelben fognak éjszakázni. (übernachten)
+* Wann wirst du Ordnung machen? - Mikor fogsz rendet csinálni?
+* Sie werden um 6 Uhr aufstehen. - 6 órakor fognak felkelni.
 \end{desc}
 
 %Maklári 266.oldal
 \begin{exmp}
-1 | Wir werden euch besuchen. | Meg fogunk látogatni titeket.
-2 | Werdet ihr umziehen? | El fogtok költözni? (umziehen)
-3 | Mein Freund wird ein Buch schreiben. | A barátom egy könyvet fog írni.
-4 | Wirst du dein Auto verkaufen? | El fogod adni az autódat?
-5 | Wann wirst du deine Hausaufgabe schreiben? | Mikor fogod megírni a házifeladatodat?
-6 | Wird sie bei uns wohnen? | Nálunk fog (n) lakni?
-7 | Sie werden in dem Hotel übernachten. | A hotelben fognak éjszakázni. (übernachten)
-8 | Wann wirst du Ordnung machen? | Mikor fogsz rendet csinálni?
-9 | Sie werden um 6 Uhr aufstehen. | 6 órakor fognak felkelni.
-10 | Wo werdet ihr Urlaub machen? | Hol fogtok nyaralni? (Urlaub machen)
-11 | Der Zug wird um 5 Uhr ankommen. | A vonat 5 órakor fog megérkezni.
-12 | Wann wirst du aufstehen? | Mikor fogsz felkelni?
-13 | Mein Nachbar wird nach Italien reisen. | A szomszédom Olaszországba fog utazni. (reisen)
-14 | Mutter wird für mich kochen. | Anya fog nekem főzni. (für)
-15 | Wann wird dieser Mann weggehen? | Mikor fog elmenni ez az ember? (weggehen)
-16 | Ich werde morgen kommen. | Holnap fogok jönni.
-17 | Wir werden sie besuchen. | Meg fogjuk őt (n) látogatni.
+1 | werden, besuchen | Wir ____ euch ____. - Meg fogunk látogatni titeket.
+2 | Werdet, umziehen | ____ ihr ____? - El fogtok költözni? (umziehen)
+3 | wird, schreiben | Mein Freund ____ ein Buch ____. - A barátom egy könyvet fog írni.
+4 | Wirst, verkaufen | ____ du dein Auto ____? - El fogod adni az autódat?
+5 | wirst, schreiben | Wann ____ du deine Hausaufgabe ____? - Mikor fogod megírni a házifeladatodat?
+6 | Wird, wohnen | ____ sie bei uns ____? - Nálunk fog (n) lakni?
+7 | werden, schlafen | Sie ____ in dem Hotel ____. - A hotelben fognak aludni.
+8 | wirst, machen | Wann ____ du Ordnung ____? - Mikor fogsz rendet csinálni?
+9 | werden, aufstehen | Sie ____ um 6 Uhr ____. - 6 órakor fognak felkelni.
+10 | werdet, machen | Wo ____ ihr Urlaub ____? - Hol fogtok nyaralni? (Urlaub machen)
+11 | wird, ankommen | Der Zug ____ um 5 Uhr ____. - A vonat 5 órakor fog megérkezni.
+12 | wirst, aufstehen | Wann ____ du ____? - Mikor fogsz felkelni?
+13 | wird, reisen | Mein Nachbar ____ nach Italien ____. - A szomszédom Olaszországba fog utazni. (reisen)
+14 | wird, kochen | Mutter ____ für mich ____. - Anya fog nekem főzni.
+15 | wird, weggehen | Wann ____ dieser Mann ____? - Mikor fog elmenni ez az ember? (weggehen)
+16 | werde, kommen | Ich ____ morgen ____. - Holnap fogok jönni.
+17 | werden, besuchen | Wir ____ sie ____. - Meg fogjuk őt (n) látogatni.
 \end{exmp}
 
 \title{Feltételes mód/Feltételes jelenidő/A würden + Infinitiv}
@@ -3037,31 +3080,35 @@ wir würden
 ihr würdet
 sie würden
 
-Pl.: Ich würde gern morgen zu euch fahren. - Szívesen elutaznék holnap hozzátok.
+Pl.: * Ich würde gern morgen zu euch fahren. - Szívesen elutaznék holnap hozzátok.
+* Ich würde nach Hause gehen. - Haza mennék.
+* Sie würden uns besuchen. - Meglátogatnának minket.
+* Würdet ihr zu uns kommen? - Eljönnétek hozzánk?
+* Würdet ihr die Hausaufgabe schreiben? - Megírnátok a házifeladatot?
 \end{desc}
 
 %Maklári: 269.oldal
 \begin{exmp}
-1 | Ich würde nach Hause gehen. | Haza mennék.
-2 | Sie würden uns besuchen. | Meglátogatnának minket.
-3 | Würdet ihr zu uns kommen? | Eljönnétek hozzánk?
-4 | Würdet ihr die Hausaufgabe schreiben? | Megírnátok a házifeladatot?
-5 | Ich würde nicht rauchen. | Nem dohányoznék.
-6 | Mein Freund würde sein Auto verkaufen. | A barátom eladná az autóját.
-7 | Würdest du eine Zeitung kaufen? | Vennél egy újságot? (kaufen)
-8 | Würdet ihr ein Brot bringen? | Hoznátok egy kenyeret? (bringen)
-9 | Er würde eher schlafen. | Inkább aludna (f).
-10 | Ich würde gern schlafen. | Szívesen aludnék.
-11 | Ich würde ihm eine Ohrfeige geben. | Adnék neki (f) egy pofont.
-12 | Wir würden zu der Oma gehen. | Elmennénk a nagyihoz.
-13 | Ich würde zwei Kilogramm Apfel kaufen. | Vásárolnék két kilogramm almát
-14 | Die Lehrerin würde die Schularbeit korrigieren. | A tanárnő kijavítaná a dolgozatot. (e Schularbeit, korrigieren)
-15 | Der Mechaniker würde meinen Wagen reparieren. | A szerelő megjavítaná a kocsimat.
-16 | Würdet ihr morgen in das Kino gehen? | Jönnétek holnap moziba?
-17 | Würden Sie mir es glauben? | Elhinné (Ön) ezt nekem?
-18 | Würdet ihr Ordnung machen? | Rendet csinálnátok?
-19 | Wir würden alles einkaufen. | Mindent bevásárolnánk. (einkaufen)
-20 | Ich würde in das Kino gehen. | Moziba mennék.
+1 | würde, gehen | Ich ____ nach Hause ____. - Haza mennék.
+2 | würden, besuchen | Sie ____ uns ____. - Meglátogatnának minket.
+3 | Würdet, kommen | ____ ihr zu uns ____? - Eljönnétek hozzánk?
+4 | Würdet, schreiben | ____ ihr die Hausaufgabe ____? - Megírnátok a házifeladatot?
+5 | Würde, rauchen | Ich ____ nicht ____. - Nem dohányoznék.
+6 | würde, verkaufen | Mein Freund ____ sein Auto ____. - A barátom eladná az autóját.
+7 | Würdest kaufen | ____ du eine Zeitung ____? - Vennél egy újságot?
+8 | Würdet, bringen | ____ ihr ein Brot ____? - Hoznátok egy kenyeret?
+9 | würde, schlafen | Er ____ eher ____. - Inkább aludna.
+10 | würde, schlafen | Ich ____ gern ____. - Szívesen aludnék.
+11 | würde, geben | Ich ____ ihm eine Ohrfeige ____. - Adnék neki egy pofont.
+12 | würden, gehen | Wir ____ zu der Oma ____. - Elmennénk a nagyihoz.
+13 | würde, kaufen | Ich ____ zwei Kilogramm Apfel ____. - Vásárolnék két kilogramm almát
+14 | würde, korrigieren | Die Lehrerin ____ die Schularbeit ____. - A tanárnő kijavítaná a dolgozatot.
+15 | würde, reparieren | Der Mechaniker ____ meinen Wagen ____. - A szerelő megjavítaná a kocsimat.
+16 | Würdet, gehen | ____ ihr morgen in das Kino ____? - Jönnétek holnap moziba?
+17 | Würden, glauben | ____ Sie mir es ____? - Elhinné (Ön) ezt nekem?
+18 | Würdet, machen | ____ ihr Ordnung ____? - Rendet csinálnátok?
+19 | würden, einkaufen | Wir ____ alles ____. - Mindent bevásárolnánk.
+20 | würde, gehen | Ich ____ in das Kino ____. - Moziba mennék.
 \end{exmp}
 
 \title{Feltételes mód/Feltételes jelenidő/Konjunktiv II/Haben és sein Konjunktiv II alakja}
@@ -3328,6 +3375,7 @@ Pl.: Ich hätte viel lernen müssen. - Sokat kellet volna tanulnom.
 \title{Cselekvő passiv mondatszerkezet/Passiv jelen időben}
 
 GrammarItemIndex = 52351
+Categories = 0
 
 \begin{desc}
 alany + werden ragozva + többi mondatrész + ige Partizip Perfekt alakja
@@ -3340,6 +3388,9 @@ Az alanyt kifejezhetjük egy passzív mondatban a következő módon:
 
 Pl.: * Der Tisch wird von Oma gedeckt. - Az asztalt nyagyi teríti meg.
 * Oma wird durch das Heilwasser geheilt. - A gyógyvíz gyógyítja meg nagyit.
+* Das Auto wird von dem Mechaniker repariert. - A szerelő megjavítja az autót.
+* Ein Brief wird von meinem Freund geschrieben. - A barátom ír egy levelet.
+* Der Text wird von uns übersetzen. - Lefordítjuk a szöveget.
 
 werden ragozása:
 ich werde
@@ -3352,27 +3403,28 @@ sie/Sie werden
 
 %Maklári: 325. oldal
 \begin{exmp}
-1 | Das Auto wird von dem Mechaniker repariert. | A szerelő megjavítja az autót.
-2 | Ein Brief wird von meinem Freund geschrieben. | A barátom ír egy levelet.
-3 | Der Text wird von uns übersetzen. | Lefordítjuk a szöveget.
-4 | Das Ticket wird durch die Maschine kontrolliert. | A gép ellenőrzi a jegyet. (kontrollieren)
-5 | Die Familie wird durch die Polizei benachrichtigt. | A rendőrség értesíti a családot. (benachrichtigen)
-6 | Deutsch wird in Deutschland gesprochen. | Németországban németül beszélnek.
-7 | Die Tür wird von dem Gast geöffnet. | A vendég kinyitja az ajtót.
-8 | Das Gebäude wird durch eine Firma gebaut. | Az épületet egy cég építi. (s Gebäude)
-9 | Das Radio wird von dem Großvater repariert. | A nagyapa megszereli a rádiót.
-10 | Die Rechnungen werden von mir gezahlt. | A számlákat én fizetem. (e Rechnung, zahlen)
-11 | Die Wand wird von den Arbeitern gemalt. | A munkások befestik a falat.
-12 | Die Schularbeiten werden von der Lehrerin ausgeteilt. | A tanárnő kiosztja a dolgozatokat. (e Schularbeit, austeilen)
-13 | Die Kranken werden von der Pflegerin gedient. | A betegeket az ápolónő szolgálja ki. (e Kranke (tsz), dienen)
-14 | Wasser wird von den Freiwilligen geteilt. | Vizet osztanak az önkéntesek. (teilen - oszt)
-15 | Mein Freund wird durch das Medikament geheilt. | A gyógyszer meggyógyitja a barátomat. (s Medikament)
-16 | Die Gäste werden von Imre abgeholt. | Imre hozza el a vendégeket. (abholen)
+1 | wird, repariert | Das Auto ____ von dem Mechaniker ____. - A szerelő megjavítja az autót.
+2 | wird, geschrieben | Ein Brief ____ von meinem Freund ____. - A barátom ír egy levelet.
+3 | wird, übersetzen | Der Text ____ von uns ____. - Lefordítjuk a szöveget.
+4 | wird, kontrolliert | Das Ticket ____ durch die Maschine ____. - A gép ellenőrzi a jegyet. (kontrollieren)
+5 | wird, benachrichtigt | Die Familie ____ durch die Polizei ____. - A rendőrség értesíti a családot. (benachrichtigen)
+6 | wird, gesprochen | Deutsch ____ in Deutschland ____. - Németországban németül beszélnek.
+7 | wird, geöffnet | Die Tür ____ von dem Gast ____. - A vendég kinyitja az ajtót.
+8 | wird, gebaut | Das Gebäude ____ durch eine Firma ____. - Az épületet egy cég építi. (s Gebäude)
+9 | wird, repariert | Das Radio ____ von dem Großvater ____. - A nagyapa megszereli a rádiót.
+10 | werden, gezahlt | Die Rechnungen ____ von mir ____. - A számlákat én fizetem. (zahlen)
+11 | wird, gemalt | Die Wand ____ von den Arbeitern ____. - A munkások befestik a falat.
+12 | werden, ausgeteilt | Die Schularbeiten ____ von der Lehrerin ____. - A tanárnő kiosztja a dolgozatokat. (austeilen)
+13 | werden, gedient | Die Kranken ____ von der Pflegerin ____. - A betegeket az ápolónő szolgálja ki. (dienen)
+14 | wird, geteilt | Wasser ____ von den Freiwilligen ____. - Vizet osztanak az önkéntesek.
+15 | wird, geheilt | Mein Freund ____ durch das Medikament ____. - A gyógyszer meggyógyitja a barátomat.
+16 | werden, abgeholt | Die Gäste ____ von Imre ____. - Imre hozza el a vendégeket. (abholen)
 \end{exmp}
 
 \title{Cselekvő passiv mondatszerkezet/Passiv elbeszélő múlt időben}
 
 GrammarItemIndex = 423216
+Categories = 0
 
 \begin{desc}
 Képzése: alany + wurden + többi mondatrész + ige befelyezett alakja
@@ -3385,25 +3437,28 @@ wir wurden
 ihr wurdet
 sie/Sie wurden
 
-Pl.: Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
+Pl.: * Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
+* Das Lied wurde von den Kindern gesungen. - A dalt gyerekek énekelték.
+* Viel wurde in dem Büro gesprochen. - Az irodában sokat beszéltek.
+* Karten wurden in der Pause gespielt. - A szünetben kártyáztak.
 \end{desc}
 
 %Maklári: 330.oldal
 \begin{exmp}
-1 | Das Lied wurde von den Kindern gesungen. | A dalt gyerekek énekelték.
-2 | Viel wurde in dem Büro gesprochen. | Az irodában sokat beszéltek.
-3 | Karten wurden in der Pause gespielt. | A szünetben kártyáztak. (Karten spielen)
-4 | Das Geschäft wurde von dem Verkäufer geöffnet. | Az eladó kinyitotta az üzletet. (r Verkäufer)
-5 | Die Tablette wurde von den Kranken nicht eingenommen. | A betegek nem vették be a tablettát. (einnehmen)
-6 | Der Kranke wurde von dem Arzt geheilt. | A beteget meggyógyította az orvos.
-7 | Die Uhr wurde von dem Vater repariert. | Az apa megjavította az órát.
-8 | Meine Bücher wurden von Peter gekauft. | A könyveimet Peter vette meg. (kaufen)
-9 | Die Tür wurde geklopft. | Az ajtót kopogtatták. (klopfen)
-10 | Mein Buch wurde von meiner Freundin gelesen. | A barátnőm olvasta a könyvemet.
-11 | Die Uhr wurde nicht von der Mutter gesehen. | Az anya nem nézte meg az órát.
-12 | Der Tisch wurde nicht von Anna gedeckt. | Anna nem terítette meg az asztalt.
-13 | Die Burg wurde durch den Wind zerstört. | A várat a szél lerombolta. (r Wind)
-14 | Mein Zimmer wurde gemalt. | A szobámat kifestették.
+1 | wurde, gesungen | Das Lied ____ von den Kindern ____. - A dalt gyerekek énekelték.
+2 | wurde, gesprochen | Viel ____ in dem Büro ____. - Az irodában sokat beszéltek.
+3 | wurde, gespielt | Karten ____ in der Pause ____. - A szünetben kártyáztak. (Karten spielen)
+4 | wurde, geöffner | Das Geschäft ____ von dem Verkäufer ____. - Az eladó kinyitotta az üzletet.
+5 | wurde, eingenommen | Die Tablette ____ von den Kranken nicht ____. - A betegek nem vették be a tablettát. (einnehmen)
+6 | wurde, geheilt | Der Kranke ____ von dem Arzt ____. - A beteget meggyógyította az orvos.
+7 | wurde, repariert | Die Uhr ____ von dem Vater ____. - Az apa megjavította az órát.
+8 | wurden, gekauft | Meine Bücher ____ von Peter ____. - A könyveimet Peter vette meg.
+9 | wurde, geklopft | Die Tür ____ ____. - Az ajtót kopogtatták. (klopfen)
+10 | wurde, gelesen | Mein Buch ____ von meiner Freundin ____. - A barátnőm olvasta a könyvemet.
+11 | wurde, gesehen | Die Uhr ____ nicht von der Mutter ____. - Az anya nem nézte meg az órát.
+12 | wurde, gedeckt | Der Tisch ____ nicht von Anna ____. - Anna nem terítette meg az asztalt.
+13 | wurde, zerstört | Die Burg ____ durch den Wind ____. - A várat a szél lerombolta.
+14 | wurde, gemalt | Mein Zimmer ____ ____. - A szobámat kifestették.
 \end{exmp}
 
 \title{Cselekvő passiv mondatszerkezet/Passiv befejezett múlt időben - Passiv perfect}
@@ -3422,34 +3477,38 @@ Das Haus ist von Peter gabaut worden. - Egy ház Peter által lett építve.
 \title{Cselekvő passiv mondatszerkezet/Passiv módbeli segédigével - Jelen időben}
 
 GrammarItemIndex = 4232134
+Categories = 0
 
 \begin{desc}
 Képzése:
 alany + segédige + többi mondatrész + ige Perfektje + werden
 
-Pl.: Das Auto must von dem Mechaniker repariert werden. - A szerelőnek meg kell javítani az autót.
+Pl.: * Das Auto must von dem Mechaniker repariert werden. - A szerelőnek meg kell javítani az autót.
+* Der Apfel darf nicht gegessen werden. - Az almát nem szabad megenni.
+* Das Zimmer muss ausgeräumt werden. - A szobát ki kell takarítani.
+* Das Fenster muss geöffnet werden. - Az ablakot ki kell nyitni.
 \end{desc}
 
 %Maklári: 334.oldal
 \begin{exmp}
-1 | Der Apfel darf nicht gegessen werden. | Az almát nem szabad megenni.
-2 | Das Zimmer muss ausgeräumt werden. | A szobát ki kell takarítani. (ausräumen)
-3 | Das Fenster muss geöffnet werden. | Az ablakot ki kell nyitni. (öffnen)
-4 | Parken muss hier verboten werden. | Parkolásnak tilosnak kell lenni itt. (s Parken, verbieten)
-5 | Das Brief muss gesandt werden. | A levelet el kell küldeni. (senden)
-6 | Die Bücher müssen ausgeliehen werden. | A könyveket ki kell kölcsönözni. (ausleihen)
-7 | Die Großeltern müssen geholfen werden. | Az nagyszülőket segíteni kell.
-8 | Dieses Motorrad muss repariert werden. | Ezt a motorbiciklit meg kell javítani. (s Motorrad)
-9 | Das Brief muss für die Post gegeben werden. | A postának oda kell adni a levelet. (für, geben)
-10 | Die Suppe kann schon gegessen werden. | A levest már meg lehet enni.
-11 | Die Häuser können hier gemietet werden. | A házakat ki lehet itt bérelni. (mieten)
-12 | Geschenk muss für die Oma gekauft werden. | A nagyinak ajándékot kell venni. (s Geschenk, kaufen)
-13 | Der Kuchen darf von den Kindern nicht gegessen werden. | A gyerekek nem ehetik meg a süteményt. (r Kuchen)
-14 | Sie muss besucht werden. | Meg kell látogatni őt (n).
-15 | Das Auto darf von dir schnell gefahren werden. | Vezetheted gyorsan az autót. (fahren)
-16 | Diese Angelegenheit muss gelöst werden. | Ezt az ügyet meg kell oldani. (e Angelegenheit)
-17 | Das Brief muss geschrieben werden. | A levelet meg kell írni.
-18 | Der Kranke kann operiert werden. | A beteget meg lehet operálni.
+1 | darf, gegessen, werden | Der Apfel ____ nicht ____ ____. - Az almát nem szabad megenni.
+2 | muss, ausgeräumt, werden | Das Zimmer ____ ____ ____. - A szobát ki kell takarítani. (ausräumen)
+3 | muss, geöffnet, werden | Das Fenster ____ ____ ____. - Az ablakot ki kell nyitni. (öffnen)
+4 | muss, verboten, werden | Parken ____ hier ____ ____. - Parkolásnak tilosnak kell lenni itt. (verbieten)
+5 | muss, gesandt, werden | Das Brief ____ ____ ____. - A levelet el kell küldeni. (senden)
+6 | müssen, ausgeliehen, werden | Die Bücher ____ ____ ____. - A könyveket ki kell kölcsönözni. (ausleihen)
+7 | müssen, geholfen, werden | Die Großeltern ____ ____ ____. - Az nagyszülőket segíteni kell.
+8 | muss, repariert, werden | Dieses Motorrad ____ ____ ____. - Ezt a motorbiciklit meg kell javítani.
+9 | muss, gegeben, werden | Das Brief ____ für die Post ____ ____. - A postának oda kell adni a levelet. (geben)
+10 | kann, gegessen, werden | Die Suppe ____ schon ____ ____. - A levest már meg lehet enni.
+11 | können, gemietet, werden | Die Häuser ____ hier ____ ____. - A házakat ki lehet itt bérelni. (mieten)
+12 | muss, gekauft, werden | Geschenk ____ für die Oma ____ ____. - A nagyinak ajándékot kell venni. (kaufen)
+13 | darf, gegessen, werden | Der Kuchen ____ von den Kindern nicht ____ ____. - A gyerekek nem ehetik meg a süteményt.
+14 | muss, besucht, werden | Sie ____ ____ ____. - Meg kell látogatni őt (n).
+15 | darf, gefahren, werden | Das Auto ____ von dir schnell ____ ____. - Vezetheted gyorsan az autót. (fahren)
+16 | muss, gelöst, werden | Diese Angelegenheit ____ ____ ____. - Ezt az ügyet meg kell oldani.
+17 | muss, geschrieben, werden | Das Brief ____ ____ ____. - A levelet meg kell írni.
+18 | kann, operiert, werden | Der Kranke ____ ____ ____. - A beteget meg lehet operálni.
 \end{exmp}
 
 \title{Cselekvő passiv mondatszerkezet/Passiv módbeli segédigével elbeszélő múlt időben}
@@ -3512,6 +3571,7 @@ GrammarItemIndex = 759344
 \title{Cselekvő passiv mondatszerkezet/Passiv jövő időben}
 
 GrammarItemIndex = 541385
+Categories = 0
 
 \begin{desc}
 Képzése:
@@ -3522,18 +3582,18 @@ Pl.: Die Vase wird in der Ence gestellt werden. - A váza a sarokba lesz állít
 
 %Maklári: 337. oldal
 \begin{exmp}
-1 | Die Milch wird in den Kühlschrank getan werden. | A tejet a hűtőszekrénybe fogják rakni. (tun)
-2 | Die Suppe wird von dem Koch gekostet werden. | A szakács meg foja kóstolni a levest. (r Koch, kosten)
-3 | Das Buch wird viel gesprochen werden. | A könyvről sokat fognak beszélni.
-4 | Er wird auf seinen Geburtstag gratuliert werden. | Gratulálni fognak neki (f) a születésnapjára. (auf)
-5 | Deine Briefe werden nicht geantwortet werden. | A leveleidre nem fognak válaszolni.
-6 | Der Kranke wird von dem Arzt geprüft werden. | A beteget meg fogja vizsgálni az orvos. (r Kranke, prüfen)
-7 | Der Hund wird auch operiert werden. | A kutyát is meg fogják operálni.
-8 | Der Platz wird von den Gästen besetzt werden. | A helyet a vendégek fogják lefoglalni. (r Platz, besetzen)
-9 | Interessante Vorstellung wird in dem Theater gespielt werden. | Érdekes előadást fognak játszani a színházban. (e Vorstellung)
-10 | Das Brief wird nicht unterschrieben werden. | A levél nem lesz aláírva. (unterschreiben)
-11 | Wird sie von Peter morgen eingeladen werden? | Meghívja őt (n) Peter holnap? (einladen)
-12 | Wird es von dir bestellt werden? | Meg fogod ezt rendelni? (bestellen)
+1 | wird, getan, werden | Die Milch ____ in den Kühlschrank ____ ____. - A tejet a hűtőszekrénybe fogják rakni. (tun)
+2 | wird, gekostet, werden | Die Suppe ____ von dem Koch ____ ____. - A szakács meg foja kóstolni a levest. (kosten)
+3 | wird, gesprochen, werden | Das Buch ____ viel ____ ____. - A könyvről sokat fognak beszélni.
+4 | wird, gratuliert, werden | Er ____ auf seinen Geburtstag ____ ____. - Gratulálni fognak neki a születésnapjára.
+5 | werden, geantwortet, werden | Deine Briefe ____ nicht ____ ____. - A leveleidre nem fognak válaszolni.
+6 | wird, geprüft, werden | Der Kranke ____ von dem Arzt ____ ____. - A beteget meg fogja vizsgálni az orvos. (prüfen)
+7 | wird, operiert, werden | Der Hund ____ auch ____ ____. - A kutyát is meg fogják operálni.
+8 | wird, besetzt, werden | Der Platz ____ von den Gästen ____ ____. - A helyet a vendégek fogják lefoglalni. (besetzen)
+9 | wird, gespielt, werden | Interessante Vorstellung ____ in dem Theater ____ ____. - Érdekes előadást fognak játszani a színházban.
+10 | wird, unterschrieben, werden |  Das Brief ____ nicht ____ ____. - A levél nem lesz aláírva. (unterschreiben)
+11 | Wird, eingeladen, werden | ____ sie von Peter morgen ____ ____? - Meghívja őt Peter holnap? (einladen)
+12 | Wird, bestellt, werden | ____ es von dir ____ ____? - Meg fogod ezt rendelni? (bestellen)
 \end{exmp}
 
 \title{Állapot passzív/Jelen időben}
