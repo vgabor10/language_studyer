@@ -3009,10 +3009,6 @@
 101210	Erwachsene brauchen ca. acht Stunden Schlaf pro Tag.
 101210	Haribo macht Kinder froh, und Erwachsne ebenso.
 101210	Kinder können Fremdsprachen schneller erlernen als Erwachsene.
-101214	Bewahren Sie Ruhe und folgen Sie unbedingt den Anweisungen des Kabinenpersonals.
-101214	Der Unfall hatte tödliche Folgen.
-101214	Kritiker warnen indes vor möglichen Folgen.
-101214	Mächtigen Worten folgen meist keine Taten.
 101215	Der Journalist schrieb einen sehr kritischen Artikel.
 101215	Start und Landung sind beim Fliegen besonders kritisch.
 101215	Viele Menschen waren einverstanden. Gleichwohl gab es auch kritische Stimmen.
@@ -6106,7 +6102,6 @@
 102859	Der größte Anteil gehört seiner Schwester.
 102861	Effizientes, schnelles Arbeiten ist wichtig.
 102862	Die Folge davon war, dass er arbeitslos wurde.
-102862	Ich folge deinem Rat.
 102863	Abschließend möchte ich die Thesen noch einmal zusammenfassen.
 102863	Der Artikel muss noch einmal bearbeitet werden.
 102863	Der Frankfurter Flughafen soll noch einmal erweitert werden.
