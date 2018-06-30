@@ -1,5 +1,6 @@
 package grammar_book;
 
+import common.Logger;
 import dictionary.CardCategory;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -7,6 +8,8 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class DataLoader {
+    
+    private final Logger logger = new Logger();
 
     private DataContainer dataContainer;
 
@@ -28,6 +31,8 @@ public class DataLoader {
 
     public void loadGrammarItems() {
         try {
+            logger.debug("start loading grammar items");
+            
             GrammarItemContainer grammarItemContainer = dataContainer.grammarItemContainer;
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
@@ -43,6 +48,9 @@ public class DataLoader {
                 if (strLine.startsWith("\\title{")) {
                     if (grammarItemOrderIndex != 0) {
                         grammarItemContainer.addGrammarItem(grammarItem);
+                        
+                        logger.debug("grammar item " + grammarItem.title.toString() + " loaded");
+                        
                         grammarItem = new GrammarItem();
                     }
                     grammarItemOrderIndex++;

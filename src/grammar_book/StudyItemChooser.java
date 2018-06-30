@@ -10,7 +10,8 @@ public class StudyItemChooser {
     protected Set<Integer> studyItemIndexesFromChoose;
     protected StudyStrategy studyStrategy;
     
-    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer = new AnswerDataByStudyItemContainer();;
+    private AnswerDataByStudyItemContainer answerDataByStudyItemsContainer 
+            = new AnswerDataByStudyItemContainer();;
     
     private final Random randomGenerator = new Random();
     private final Logger logger = new Logger();

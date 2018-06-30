@@ -8,7 +8,7 @@ import java.util.TreeMap;
 import language_studyer.StudyItem;
 
 public class GrammarItem extends StudyItem {
-
+    
     public GrammarItemTitle title = new GrammarItemTitle();
     public String description;
     public String comments;
@@ -48,7 +48,7 @@ public class GrammarItem extends StudyItem {
     public void clearExamples() {
         examples.clear();
     }
-
+    
     @Override
     public String toString() {
         String outString = "";

@@ -5,22 +5,26 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
 
+    private final Random randomGenerator = new Random();    //should be taken to other class
+    
     private DataContainer dataContainer;
     
     private GrammarItemChooser grammarItemChooser = new GrammarItemChooser();
     
     private int numberOfExamplesQuestioned = 0;
-    private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
+    private int numberOfExamplesToQuestion = 10;
+    //private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
     private Example actualQuestionedExample;
     private GrammarItem actualTestedGrammarItem;
 
-    private List<Integer> exampleIndexesToTest = new ArrayList<>();
+    //private List<Integer> exampleIndexesToTest = new ArrayList<>();
     
     private final Logger logger = new Logger();
-
+    
     public void setData(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
         dataContainer.fillAuxiliaryDataContainer();
@@ -29,42 +33,46 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     
     public void startNewTest() {
         numberOfExamplesQuestioned = 0;
-        userAnswers.clear();
-        exampleIndexesToTest.clear();
+        //userAnswers.clear();
+        //exampleIndexesToTest.clear();
         actualQuestionedExample = null;
         
-        int testedGrammarItemIndex = grammarItemChooser.getRandomGrammarItemIndex();
-        actualTestedGrammarItem = dataContainer.grammarItemContainer.getByIndex(testedGrammarItemIndex);
-        exampleIndexesToTest = new ArrayList(actualTestedGrammarItem.getExampleIndexes());
-        Collections.shuffle(exampleIndexesToTest);
+        //exampleIndexesToTest = new ArrayList(actualTestedGrammarItem.getExampleIndexes());
+        /*Collections.shuffle(exampleIndexesToTest);
         
         while (10<exampleIndexesToTest.size()) {
             exampleIndexesToTest.remove(10);
-        }
+        }*/
     }
 
     public void moveToNextExampleToQuestion() {
-        int actualExampleIndex = exampleIndexesToTest.get(numberOfExamplesQuestioned);
+        /*int actualExampleIndex = exampleIndexesToTest.get(numberOfExamplesQuestioned);
         actualQuestionedExample
-                = actualTestedGrammarItem.getExampleByIndex(actualExampleIndex);
+                = actualTestedGrammarItem.getExampleByIndex(actualExampleIndex);*/
 
+        int testedGrammarItemIndex = grammarItemChooser.getRandomGrammarItemIndex();
+        actualTestedGrammarItem = dataContainer.grammarItemContainer.getByIndex(testedGrammarItemIndex);
+        int actualExampleIndex = randomGenerator.nextInt(actualTestedGrammarItem.numberOfExamples())+1;
+        actualQuestionedExample 
+                = actualTestedGrammarItem.getExampleByIndex(actualExampleIndex); 
+        
         numberOfExamplesQuestioned++;
 
         logger.debug("questioned example: " + actualQuestionedExample.toString());
     }
 
     public void userAnswerAccepted() {
-        long date = new Date().getTime();
+        //long date = new Date().getTime();
 
-        GrammarAnswerData actualAnswerData = new GrammarAnswerData();
-        actualAnswerData.date = date;
-        actualAnswerData.index = actualTestedGrammarItem.index;
-        actualAnswerData.exampleIndex = actualQuestionedExample.index;
-        actualAnswerData.isRight = true;
+        //GrammarAnswerData actualAnswerData = new GrammarAnswerData();
+        //actualAnswerData.date = date;
+        //actualAnswerData.index = actualTestedGrammarItem.index;
+        //actualAnswerData.exampleIndex = actualQuestionedExample.index;
+        //actualAnswerData.isRight = true;
 
-        userAnswers.addAnswerData(actualAnswerData);
+        //userAnswers.addAnswerData(actualAnswerData);
 
-        logger.debug("added answer data: " + actualAnswerData.toStringData());
+        //logger.debug("added answer data: " + actualAnswerData.toStringData());
     }
 
     public void userAnswerIgnored() {
@@ -72,7 +80,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     }
 
     public void userAnswerRejected() {
-        long date = new Date().getTime();
+        /*long date = new Date().getTime();
 
         GrammarAnswerData actualAnswerData = new GrammarAnswerData();
         actualAnswerData.date = date;
@@ -82,7 +90,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
 
         userAnswers.addAnswerData(actualAnswerData);
 
-        logger.debug("added answer data: " + actualAnswerData.toStringData());
+        logger.debug("added answer data: " + actualAnswerData.toStringData());*/
     }
 
     public Example getActualQuestionedExample() {
@@ -94,16 +102,17 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     }
 
     public boolean isMoreExamplesToQuestion() {
-        return numberOfExamplesQuestioned != getNumberOfQuestions();
+        //return numberOfExamplesQuestioned != getNumberOfQuestions();
+        return numberOfExamplesQuestioned != numberOfExamplesToQuestion;
     }
 
-    public GrammarAnswerDataContainer getUserAnswers() {
+    /*public GrammarAnswerDataContainer getUserAnswers() {
         return userAnswers;
-    }
+    }*/
 
-    public int getNumberOfQuestions() {
+    /*public int getNumberOfQuestions() {
         return exampleIndexesToTest.size();
-    }
+    }*/
 
     public int numberOfExamplesQuestioned() {
         return numberOfExamplesQuestioned;

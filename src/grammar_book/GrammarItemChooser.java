@@ -1,9 +1,7 @@
 package grammar_book;
 
 import common.Logger;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
+
 import java.util.Random;
 
 public class GrammarItemChooser extends StudyItemChooser {
@@ -39,7 +37,7 @@ public class GrammarItemChooser extends StudyItemChooser {
         
         return -2;
     }
-
+    
     /*public int getRandomIndexFromThe5LeastStudiedGrammarItem() {
         logger.debug("run getRandomIndexFromThe5LeastStudiedGrammarItem function");
 
