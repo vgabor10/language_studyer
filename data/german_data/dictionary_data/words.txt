@@ -659,7 +659,7 @@
 100665	e Eisenbahn	vasút
 100666	s Herz	szív
 100667	r Pensionär	nyugdíjas
-100668	erobern	elfoglal
+100668	erobern	legyőz, meghódít, elfoglal
 100669	zerstören	lerombol
 100670	messen	mér
 100671	r Herbst	ősz
@@ -6207,3 +6207,4 @@
 106207	e Aufarbeitung	feldolgozás
 106208	e Bekanntheit	ismertség
 106209	e Verachtung	lenézés, megvetés
+101214	kosten	kóstol

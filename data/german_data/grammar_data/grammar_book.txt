@@ -12,22 +12,22 @@ birtokos | des -s | der   | des -s       | der
 \end{desc}
 
 \begin{exmp}
-1 | der | hím nem, alany eset
-2 | die | nő nem, alany eset
-3 | das | semleges nem, alany eset
-4 | die | többes szám, alany eset
-5 | den | hím nem, tárgy eset
-6 | die | nő nem, tárgy eset
-7 | das | semleges nem, tárgy eset
-8 | die | többes szám, tárgy eset
-9 | dem | hím nem, részes eset
-10 | der | nő nem, részes eset
-11 | dem | semleges nem, részes eset
-12 | den -n | többes szám, részes eset
-13 | des -s | hím nem, birtokos eset
-14 | der | nő nem, birtokos eset
-15 | des -s | semleges nem, birtokos eset
-16 | der | többes szám, birtokos eset
+1 | der | a/az (hím nem, alany eset)
+2 | die | a/az (nő nem, alany eset)
+3 | das | a/az (semleges nem, alany eset)
+4 | die | a/az (többes szám, alany eset)
+5 | den | a/az (hím nem, tárgy eset)
+6 | die | a/az (nő nem, tárgy eset)
+7 | das | a/az (semleges nem, tárgy eset)
+8 | die | a/az (többes szám, tárgy eset)
+9 | dem | a/az (hím nem, részes eset)
+10 | der | a/az (nő nem, részes eset)
+11 | dem | a/az (semleges nem, részes eset)
+12 | den -n | a/az (többes szám, részes eset)
+13 | des -s | a/az (hím nem, birtokos eset)
+14 | der | a/az (nő nem, birtokos eset)
+15 | des -s | a/az (semleges nem, birtokos eset)
+16 | der | a/az (többes szám, birtokos eset)
 \end{exmp}
 
 \title{Névelők/Határozott névelő/Tárgy eset és részes eset, példák}
@@ -99,18 +99,18 @@ Genitiv   | eines -s | einer | eines -s
 \end{desc}
 
 \begin{exmp}
-1 | ein | hím nem, alany eset
-2 | eine | nő nem, alany eset
-3 | ein | semleges nem, alany eset
-4 | einen | hím nem, tárgy eset
-5 | eine | nő nem, tárgy eset
-6 | ein | semleges nem, tárgy eset
-7 | einem | hím nem, részes eset
-8 | einer | nő nem, részes eset
-9 | einem | semleges nem, részes eset
-10 | eines -s | hím nem, birtokos eset
-11 | einer | nő nem, birtokos eset
-12 | eines -s | semleges nem, birtokos eset
+1 | ein | egy (hím nem, alany eset)
+2 | eine | egy (nő nem, alany eset)
+3 | ein | egy (semleges nem, alany eset)
+4 | einen | egy (hím nem, tárgy eset)
+5 | eine | egy (nő nem, tárgy eset)
+6 | ein | egy (semleges nem, tárgy eset)
+7 | einem | egy (hím nem, részes eset)
+8 | einer | egy (nő nem, részes eset)
+9 | einem | egy (semleges nem, részes eset)
+10 | eines -s | egy (hím nem, birtokos eset)
+11 | einer | egy (nő nem, birtokos eset)
+12 | eines -s | egy (semleges nem, birtokos eset)
 \end{exmp}
 
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei - Példák}
@@ -426,9 +426,9 @@ Sie             | Ihr
 12 | unseres | das Zeit ____ Lehrers - a tanárunk ideje
 13 | seiner | das Kleid ____ Freundin - a barátnőjének (f) a ruhája
 14 | ihrer | die Fenster ____ Häuser - a házaiknak az ablakai
-15 | meiner | der Knopf ____ Hose - a nadrágom gombja (r Knopf)
+15 | meiner | der Knopf ____ Hose - a nadrágom gombja
 16 | unserer | das Ende ____ Aufgaben - a feladataink vége
-17 | unserer | der Beginn ____ Leidens - a szenvedéseink kezdete (r Beginn, s Leiden)
+17 | unserer | der Beginn ____ Leidens - a szenvedéseink kezdete
 18 | seiner | die Freundin ____ Frau - a feleségének a barátnője
 \end{exmp}
 
@@ -934,35 +934,35 @@ zwischen + A | közé
 
 %Maklári: 54. oldal
 \begin{exmp}
-1 | an die Wand | a falra
-2 | in die Küche | a konyhába
-3 | auf den Schrank | a szekrényre
-4 | neben den Tisch | az asztal mellé
-5 | vor das Zimmer | a szoba elé
-6 | in die Schränke | a szekrényekbe
-7 | auf den Tisch | az asztalra
-8 | hinter die Wand | a fal mögé
-9 | unter das Buch | a könyv alá
-10 | über das Haus | a ház fölé
-11 | hinter die Leute | az emberek mögé (e Leute)
-12 | in den Wagen | a kocsiba
-13 | auf den Boden | a padlóra
-14 | an den Vorhang | a függönyre
-15 | in das Zimmer | a szobába
-16 | neben das Auto | az autó mellé
-17 | über den Garten | a kert fölé
-18 | unter den Boden | a föld alá
-19 | neben die Garage | a garázs mellé
-20 | zwischen das Zimmer und die Küche | a szoba és a kunyha közé
-21 | zwischen die Stühle | a székek közé
-22 | zwischen das Bett un die Tür | az ágy és a székek közé
-23 | vor die Küche | az konyha elé
-24 | an die Wände | a falakra (Wände)
-25 | in die Betten | az ágyakba
-26 | auf das Auto | az autóra
-27 | vor die Lehrerin | a tanárnő elé
-28 | unter den Teppich | a szőnyeg alá
-29 | zwischen die Lampe und die Blume | a lámpa és a virág közé
+1 | an die | ____ Wand - a falra
+2 | in die | ____Küche - a konyhába
+3 | auf den | ____ Schrank - a szekrényre
+4 | neben den | ____ Tisch - az asztal mellé
+5 | vor das | ____Zimmer - a szoba elé
+6 | in die | ____ Schränke - a szekrényekbe
+7 | auf den | ____ Tisch - az asztalra
+8 | hinter die | ____ Wand - a fal mögé
+9 | unter das | ____ Buch - a könyv alá
+10 | über das | ____ Haus - a ház fölé
+11 | hinter die | ____ Leute - az emberek mögé
+12 | in den | ____ Wagen - a kocsiba
+13 | auf den | ____ Boden - a padlóra
+14 | an den | ____Vorhang - a függönyre
+15 | in das | ____Zimmer - a szobába
+16 | neben das | ____ Auto - az autó mellé
+17 | über den | ____Garten - a kert fölé
+18 | unter den | ____ Boden - a föld alá
+19 | neben die | ____ Garage - a garázs mellé
+20 | zwischen das, und die | ____ Zimmer ____ Küche - a szoba és a kunyha közé
+21 | zwischen die | ____ Stühle - a székek közé
+22 | zwischen das, und die | ____ Bett ____ Tür | az ágy és a székek közé
+23 | vor die | ____ Küche - az konyha elé
+24 | an die | ____ Wände - a falakra
+25 | in die | ____ Betten - az ágyakba
+26 | auf das | ____ Auto - az autóra
+27 | vor die | ____ Lehrerin - a tanárnő elé
+28 | unter den | ____ Teppich - a szőnyeg alá
+29 | zwischen die, und die | ____ Lampe ____ Blume - a lámpa és a virág közé
 \end{exmp}
 
 \title{Prepozíciók/Hová? kérdésre felelő prepozíciók/Prepozíciók összevonása}
