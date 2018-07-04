@@ -8,9 +8,8 @@ import language_studyer.AnswerDataContainer;
 
 public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
 
-    public GrammarItem testedGrammarItem;
     public AnswerDataContainer testAnswers;
-    public AnswerDataContainer oldAnswers;
+    //public AnswerDataContainer oldAnswers;
     public DialogAnswer dialogAnswer = new DialogAnswer();
     
     public long startTime = -1;
@@ -27,20 +26,19 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
 
     public void toScreenStatistics() {
         GrammarTestStatisticsMaker grammarTestStatisticsMaker = new GrammarTestStatisticsMaker();
-        grammarTestStatisticsMaker.testedGrammarItem = testedGrammarItem;
-        grammarTestStatisticsMaker.oldAnswers = oldAnswers;
+        //grammarTestStatisticsMaker.oldAnswers = oldAnswers;
         grammarTestStatisticsMaker.testAnswers = testAnswers;
         grammarTestStatisticsMaker.startTime = startTime;
         grammarTestStatisticsMaker.finishTime = finishTime;
         
-        grammarTestStatisticsMaker.makePreProcessing();
+        //grammarTestStatisticsMaker.makePreProcessing();
         
         jLabel6.setText(Integer.toString(grammarTestStatisticsMaker.getNumberOfRegisteredAnswers()));
         jLabel7.setText(grammarTestStatisticsMaker.getPercentageOfRightAnswersAsString());
-        jLabel8.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateBeforeTestAsString());
-        jLabel9.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateAfterTestAsString());
+        //jLabel8.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateBeforeTestAsString());
+        //jLabel9.setText(grammarTestStatisticsMaker.getGrammarItemRightAnswerRateAfterTestAsString());
         jLabel10.setText(grammarTestStatisticsMaker.gesUsedTimeAsString());
-        jLabel12.setText(Integer.toString(grammarTestStatisticsMaker.getNumberOfAnswersAfterTest()));
+        //jLabel12.setText(Integer.toString(grammarTestStatisticsMaker.getNumberOfAnswersAfterTest()));
     }
 
     /**

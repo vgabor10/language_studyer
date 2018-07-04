@@ -2,7 +2,8 @@ package grammar_book;
 
 public class Example {
 
-    public int index;
+    public int grammarItemIndex = -1;
+    public int index = -1;
     public String hun;
     public String foreign;
 

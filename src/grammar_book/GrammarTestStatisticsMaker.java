@@ -16,29 +16,29 @@ public class GrammarTestStatisticsMaker {
     public long startTime;
     public long finishTime;
     
-    private AnswerDataByStudyItem answerDataByStudyItemBeforeTest = new AnswerDataByStudyItem();
-    private AnswerDataByStudyItem answerDataByStudyItemAfterTest = new AnswerDataByStudyItem();
+    //private AnswerDataByStudyItem answerDataByStudyItemBeforeTest = new AnswerDataByStudyItem();
+    //private AnswerDataByStudyItem answerDataByStudyItemAfterTest = new AnswerDataByStudyItem();
     
     public void makePreProcessing() {
         AnswerDataContainer answerDataContainer = new AnswerDataContainer();
         answerDataContainer.appendAnswerDataContainer(oldAnswers);
         
-        answerDataByStudyItemBeforeTest.loadDataFromAnswerDataContainer(
+        /*answerDataByStudyItemBeforeTest.loadDataFromAnswerDataContainer(
                 testedGrammarItem.index, answerDataContainer);
         
         answerDataContainer.appendAnswerDataContainer(testAnswers);
         
         answerDataByStudyItemAfterTest.loadDataFromAnswerDataContainer(
-                testedGrammarItem.index, answerDataContainer);
+                testedGrammarItem.index, answerDataContainer);*/
     }
     
     public int getNumberOfRegisteredAnswers() {
         return testAnswers.numberOfAnswers();
     }
     
-    public int getNumberOfAnswersAfterTest() {
+    /*public int getNumberOfAnswersAfterTest() {
         return answerDataByStudyItemAfterTest.numberOfAnswers();
-    }
+    }*/
     
     public String getPercentageOfRightAnswersAsString() {
         int numberOfRightAnswers = 0;
@@ -50,25 +50,25 @@ public class GrammarTestStatisticsMaker {
         return df.format(percentage) + "%";
     }
     
-    public double getGrammarItemRightAnswerRateBeforeTest() {
+    /*public double getGrammarItemRightAnswerRateBeforeTest() {
        return answerDataByStudyItemBeforeTest.countRightAnswerRate();
-    }
+    }*/
     
-    public String getGrammarItemRightAnswerRateBeforeTestAsString() {
+    /*public String getGrammarItemRightAnswerRateBeforeTestAsString() {
         DecimalFormat df = new DecimalFormat("#.0000");
         double rar = getGrammarItemRightAnswerRateBeforeTest();
         return df.format(rar);
-    }
+    }*/
     
-    public double getGrammarItemRightAnswerRateAfterTest() {
+   /* public double getGrammarItemRightAnswerRateAfterTest() {
        return answerDataByStudyItemAfterTest.countRightAnswerRate();
-    }
+    }*/
     
-    public String getGrammarItemRightAnswerRateAfterTestAsString() {
+    /*public String getGrammarItemRightAnswerRateAfterTestAsString() {
         DecimalFormat df = new DecimalFormat("#.0000");
         double rar = getGrammarItemRightAnswerRateAfterTest();
         return df.format(rar);
-    }
+    }*/
     
     public String gesUsedTimeAsString() {
         Date date = new Date(finishTime - startTime);

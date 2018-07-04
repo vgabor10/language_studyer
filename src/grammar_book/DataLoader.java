@@ -93,6 +93,7 @@ public class DataLoader {
                         String[] strings = strLine.split(" \\| ");
                         Example example = new Example();
 
+                        example.grammarItemIndex = grammarItem.index;
                         example.index = Integer.parseInt(strings[0]);
                         example.hun = strings[2];
                         example.foreign = strings[1];

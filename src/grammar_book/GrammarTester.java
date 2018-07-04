@@ -1,10 +1,7 @@
 package grammar_book;
 
 import common.Logger;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 import java.util.Random;
 
 public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
@@ -17,7 +14,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     
     private int numberOfExamplesQuestioned = 0;
     private int numberOfExamplesToQuestion = 10;
-    //private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
+    private final GrammarAnswerDataContainer userAnswers = new GrammarAnswerDataContainer();
     private Example actualQuestionedExample;
     private GrammarItem actualTestedGrammarItem;
 
@@ -33,7 +30,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     
     public void startNewTest() {
         numberOfExamplesQuestioned = 0;
-        //userAnswers.clear();
+        userAnswers.clear();
         //exampleIndexesToTest.clear();
         actualQuestionedExample = null;
         
@@ -62,17 +59,17 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     }
 
     public void userAnswerAccepted() {
-        //long date = new Date().getTime();
+        long date = new Date().getTime();
 
-        //GrammarAnswerData actualAnswerData = new GrammarAnswerData();
-        //actualAnswerData.date = date;
-        //actualAnswerData.index = actualTestedGrammarItem.index;
-        //actualAnswerData.exampleIndex = actualQuestionedExample.index;
-        //actualAnswerData.isRight = true;
+        GrammarAnswerData actualAnswerData = new GrammarAnswerData();
+        actualAnswerData.date = date;
+        actualAnswerData.index = actualTestedGrammarItem.index;
+        actualAnswerData.exampleIndex = actualQuestionedExample.index;
+        actualAnswerData.isRight = true;
 
-        //userAnswers.addAnswerData(actualAnswerData);
+        userAnswers.addAnswerData(actualAnswerData);
 
-        //logger.debug("added answer data: " + actualAnswerData.toStringData());
+        logger.debug("added answer data: " + actualAnswerData.toStringData());
     }
 
     public void userAnswerIgnored() {
@@ -80,7 +77,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
     }
 
     public void userAnswerRejected() {
-        /*long date = new Date().getTime();
+        long date = new Date().getTime();
 
         GrammarAnswerData actualAnswerData = new GrammarAnswerData();
         actualAnswerData.date = date;
@@ -90,7 +87,7 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
 
         userAnswers.addAnswerData(actualAnswerData);
 
-        logger.debug("added answer data: " + actualAnswerData.toStringData());*/
+        logger.debug("added answer data: " + actualAnswerData.toStringData());
     }
 
     public Example getActualQuestionedExample() {
@@ -106,13 +103,13 @@ public class GrammarTester {    //TODO: maybe do a StudyItemTester ősosztály
         return numberOfExamplesQuestioned != numberOfExamplesToQuestion;
     }
 
-    /*public GrammarAnswerDataContainer getUserAnswers() {
+    public GrammarAnswerDataContainer getUserAnswers() {
         return userAnswers;
-    }*/
+    }
 
-    /*public int getNumberOfQuestions() {
-        return exampleIndexesToTest.size();
-    }*/
+    public int getNumberOfQuestions() {
+        return numberOfExamplesToQuestion;
+    }
 
     public int numberOfExamplesQuestioned() {
         return numberOfExamplesQuestioned;

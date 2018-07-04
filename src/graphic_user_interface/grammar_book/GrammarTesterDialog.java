@@ -354,8 +354,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
         jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
         jTextField2.setText("");
-        //jLabel3.setText(Integer.toString(grammarTester.numberOfExamplesQuestioned()) 
-        //        + "\\" + Integer.toString(grammarTester.getNumberOfQuestions()));
+        jLabel3.setText(Integer.toString(grammarTester.numberOfExamplesQuestioned()) 
+                + "\\" + Integer.toString(grammarTester.getNumberOfQuestions()));
         
         jTextField2.setEnabled(true);
         jTextField2.requestFocus();
@@ -369,8 +369,9 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }
     
     private void goToStatisticsFrameAndSaveData() {
-        /*finishTime = new Date().getTime();
+        finishTime = new Date().getTime();
         
+        //saving data
         DataModificator grammarDataModificator = new DataModificator();
         grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
         grammarDataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
@@ -378,8 +379,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         
         GrammarTesterStatisticsDialog dialog = new GrammarTesterStatisticsDialog(new javax.swing.JFrame(), true);
         
-        dialog.testedGrammarItem = grammarTester.getActualQuestionedGrammarItem();
-        //dialog.testAnswers = grammarTester.getUserAnswers();
+        dialog.testAnswers = grammarTester.getUserAnswers();
         //dialog.oldAnswers = grammarAnswerDataContainer;
         dialog.startTime = startTime;
         dialog.finishTime = finishTime;
@@ -392,7 +392,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
             initialise();
         } else {
             dispose();
-        }*/
+        }
         
     }
     
