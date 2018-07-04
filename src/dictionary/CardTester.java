@@ -17,7 +17,7 @@ public class CardTester extends StudyItemTester {
             = new HashMap<>();
 
     @Override
-    public void moveToNextCardToQuestion() {
+    public void moveToNextStudyItemToQuestion() {
         actualQuestionedStudyItem = studyItemsToTest.getStudyItemByOrder(numberOfItemsQuestioned);
         numberOfItemsQuestioned++;
 

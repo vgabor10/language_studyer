@@ -176,7 +176,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="random cards"/>
+        <Property name="text" type="java.lang.String" value="random grammar items"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSpinner" name="jSpinner1">
@@ -191,7 +191,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="random cards from the least known"/>
+        <Property name="text" type="java.lang.String" value="random grammar items from the least known"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSpinner" name="jSpinner2">
@@ -206,7 +206,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="random cards from the least known"/>
+        <Property name="text" type="java.lang.String" value="random grammar items from the least known"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSpinner" name="jSpinner3">
@@ -221,7 +221,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="random cards from the"/>
+        <Property name="text" type="java.lang.String" value="random grammar items from the"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JSpinner" name="jSpinner4">
@@ -246,7 +246,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
-        <Property name="text" type="java.lang.String" value="latest questioned cards"/>
+        <Property name="text" type="java.lang.String" value="latest questioned grammar items"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
@@ -330,7 +330,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Card category filter"/>
+        <Property name="text" type="java.lang.String" value="Grammar items category filter"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>

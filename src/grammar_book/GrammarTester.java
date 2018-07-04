@@ -8,7 +8,7 @@ public class GrammarTester extends StudyItemTester {
     private Example actualQuestionedExample = new Example();
 
     @Override
-    public void moveToNextCardToQuestion() {
+    public void moveToNextStudyItemToQuestion() {
         actualQuestionedStudyItem = studyItemsToTest.getStudyItemByOrder(numberOfItemsQuestioned);
         numberOfItemsQuestioned++;
         
@@ -18,7 +18,8 @@ public class GrammarTester extends StudyItemTester {
         userAnswerToActualQuestion = "";
         isGetAnswerToActualQuestion = false;
 
-        logger.debug("questioned example: " + actualQuestionedStudyItem.toString());
+        logger.debug("questioned grammar item: " 
+                + ((GrammarItem) actualQuestionedStudyItem).title.toString());
 
     }
 

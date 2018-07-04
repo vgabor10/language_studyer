@@ -165,6 +165,7 @@ public class GrammarDataLoader extends DataLoader {
         loadGrammarItems();
         loadAnswerData();
         loadCategoryIndexesAndCategoryNames();
+        loadStudyStrategyDataFromDisc();
     }
 
 }

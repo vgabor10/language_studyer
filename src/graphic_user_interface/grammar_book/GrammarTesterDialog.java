@@ -1,6 +1,6 @@
 package graphic_user_interface.grammar_book;
 
-import language_studyer.DataModificator;
+import common.Logger;
 import grammar_book.GrammarTester;
 import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarBook;
@@ -21,6 +21,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     private long startTime = -1;
     private long finishTime = -1;
     
+    private Logger logger = new Logger();
+    
     public GrammarTesterDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -34,10 +36,18 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         ignoreAnswerButton.setMnemonic(KeyEvent.VK_G);
     }
     
-    public void initialise() {
+    public void startNewTest() {
         grammarTester.startNewTest();
-        moveToTheNextQuestion();
    
+        jTextField2.requestFocus();
+
+        jTextField2.setText("");
+        jTextField3.setText("");
+        
+        jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
+        jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
+        jLabel3.setText(grammarTester.numberOfStudyItemsQuestioned() + "\\" + grammarTester.getNumberOfQuestions());
+
         startTime = new Date().getTime();
     }
 
@@ -219,6 +229,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             
             String expectedAnswer = grammarTester.getActualQuestionedExample().foreign;
+            logger.debug("expected answer: " + expectedAnswer);
             
             expectedAnswer = expectedAnswer.toLowerCase();
             expectedAnswer = expectedAnswer.replaceAll(",", "");
@@ -271,6 +282,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         wrongAnswerButton.setEnabled(false);
         
         if (grammarTester.isMoreStudyItemsToTest()) {
+            logger.debug("grammarTester.isMoreStudyItemsToTest() " + grammarTester.isMoreStudyItemsToTest());
             moveToTheNextQuestion();
         }
         else {
@@ -351,11 +363,11 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void moveToTheNextQuestion() {
-        grammarTester.isMoreStudyItemsToTest();
+        grammarTester.moveToNextStudyItemToQuestion();
         jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
         jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
         jTextField2.setText("");
-        jLabel3.setText(Integer.toString(grammarTester.numberOfCardsQuestioned()) 
+        jLabel3.setText(Integer.toString(grammarTester.numberOfStudyItemsQuestioned()) 
                 + "\\" + Integer.toString(grammarTester.getNumberOfQuestions()));
         
         jTextField2.setEnabled(true);
@@ -390,7 +402,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
         
         if (dialog.dialogAnswer.boolAnswer) {
-            initialise();
+            startNewTest();
         } else {
             dispose();
         }

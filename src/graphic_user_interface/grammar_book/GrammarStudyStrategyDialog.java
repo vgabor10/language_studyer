@@ -1,7 +1,6 @@
 package graphic_user_interface.grammar_book;
 
 import graphic_user_interface.dictionary.*;
-import dictionary.Dictionary;
 import grammar_book.GrammarBook;
 import language_studyer.StudyStrategy;
 import java.awt.event.KeyEvent;
@@ -9,13 +8,12 @@ import java.awt.event.KeyEvent;
 public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
 
     private GrammarBook grammarBook;
-    private StudyStrategy studyStrategy;
  
     public GrammarStudyStrategyDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
-        setTitle("Study strategy editor");
+        setTitle("Grammar study strategy editor");
         
         jLabel7.setText(Integer.toString(evaluateNumberOfCardsToTest()));  
         
@@ -25,7 +23,6 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     
     public void setGrammarBook(GrammarBook grammarBook) {
         this.grammarBook = grammarBook;
-        studyStrategy = grammarBook.dataContainer.getStudyStrategy();
         setStudyStrategyDataToDialog();
     }
     
@@ -42,6 +39,8 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     }
     
     private void setStudyStrategyDataToDialog() {
+        StudyStrategy studyStrategy = grammarBook.dataContainer.getStudyStrategy();
+        
         jSpinner1.setValue(studyStrategy.numberOfRandomItems);
         jSpinner2.setValue(studyStrategy.numberOfItemsFromTheLeastKnown20Percent);
         jSpinner3.setValue(studyStrategy.numberOfItemsFromTheLeastKnown100);
@@ -102,7 +101,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel1.setText("random cards");
+        jLabel1.setText("random grammar items");
 
         jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -111,7 +110,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel2.setText("random cards from the least known");
+        jLabel2.setText("random grammar items from the least known");
 
         jSpinner2.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner2.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -120,7 +119,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel3.setText("random cards from the least known");
+        jLabel3.setText("random grammar items from the least known");
 
         jSpinner3.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner3.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -129,7 +128,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel4.setText("random cards from the");
+        jLabel4.setText("random grammar items from the");
 
         jSpinner4.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jSpinner4.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -145,7 +144,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel5.setText("latest questioned cards");
+        jLabel5.setText("latest questioned grammar items");
 
         jLabel6.setText("number of questioned cards:");
 
@@ -182,7 +181,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
         jSpinner10.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
         jSpinner10.setEnabled(false);
 
-        jButton4.setText("Card category filter");
+        jButton4.setText("Grammar items category filter");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -302,6 +301,8 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        StudyStrategy studyStrategy = grammarBook.dataContainer.getStudyStrategy();
+        
         studyStrategy.numberOfRandomItems 
                 = (Integer)jSpinner1.getModel().getValue();
         
@@ -349,6 +350,8 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jSpinner5StateChanged
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        StudyStrategy studyStrategy = grammarBook.dataContainer.getStudyStrategy();
+        
         studyStrategy.numberOfRandomItems = 6;
         studyStrategy.numberOfItemsFromTheLeastKnown20Percent = 4;
         studyStrategy.numberOfItemsFromTheLeastKnown100 = 4;
@@ -360,6 +363,8 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        StudyStrategy studyStrategy = grammarBook.dataContainer.getStudyStrategy();
+        
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
         dialog.setAllCategories(grammarBook.dataContainer.getCategoryContainer());

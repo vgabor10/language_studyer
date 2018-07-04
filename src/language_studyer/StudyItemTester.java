@@ -32,10 +32,10 @@ public class StudyItemTester {
                     allStudyItem.getStudyItemByIndex(studyItemIndex));
         }
         
-        moveToNextCardToQuestion();
+        moveToNextStudyItemToQuestion();
     }
     
-    public void moveToNextCardToQuestion() {
+    public void moveToNextStudyItemToQuestion() {
     }
     
     public void setData(DataContainer dataContainer) {
@@ -45,7 +45,7 @@ public class StudyItemTester {
         this.studyItemChooser.setData(dataContainer);
     }
 
-    public StudyItemContainer getCardsToTest() {
+    public StudyItemContainer getStudyItemsToTest() {
         return studyItemsToTest;
     }
 
@@ -93,7 +93,7 @@ public class StudyItemTester {
         return studyItemsToTest.numberOfStudyItems();
     }
 
-    public int numberOfCardsQuestioned() {
+    public int numberOfStudyItemsQuestioned() {
         return numberOfItemsQuestioned;
     }
 

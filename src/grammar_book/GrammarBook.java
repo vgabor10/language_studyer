@@ -18,6 +18,8 @@ public class GrammarBook {
         
         grammartester.setData(dataContainer);
         
+        dataModificator.setData(dataContainer);
+        
         statisticsMaker.studiedAnswerDataContainer 
                 = dataContainer.getAnswerDataContainer();
         statisticsMaker.studiedAnswerDataByStudyItemsContainer 

@@ -52,7 +52,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         jTextField1.setText("");
         jTextField2.setText("");
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
-        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+        jLabel2.setText(cardTester.numberOfStudyItemsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
 
         startTime = new Date().getTime();
     }
@@ -507,8 +507,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
     }
     
     private void moveToNextQuestion() {
-        cardTester.moveToNextCardToQuestion();
-        jLabel2.setText(cardTester.numberOfCardsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
+        cardTester.moveToNextStudyItemToQuestion();
+        jLabel2.setText(cardTester.numberOfStudyItemsQuestioned() + "\\" + cardTester.getNumberOfQuestions());
         jTextField3.setText(cardTester.getActualQuestionedCard().definition);
         jTextField1.setText("");
         jTextField2.setText("");

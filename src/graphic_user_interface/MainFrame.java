@@ -292,7 +292,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void grammarPractisingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_grammarPractisingButtonActionPerformed
         GrammarTesterDialog dialog = new GrammarTesterDialog(new javax.swing.JFrame(), true); 
         dialog.setGrammarBook(grammarBook);
-        dialog.initialise();
+        dialog.startNewTest();
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_grammarPractisingButtonActionPerformed
