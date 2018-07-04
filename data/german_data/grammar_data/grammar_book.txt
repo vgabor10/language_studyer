@@ -427,7 +427,7 @@ Sie             | Ihr
 13 | seiner | das Kleid ____ Freundin - a barátnőjének (f) a ruhája
 14 | ihrer | die Fenster ____ Häuser - a házaiknak az ablakai
 15 | meiner | der Knopf ____ Hose - a nadrágom gombja
-16 | unserer | das Ende ____ Aufgaben - a feladataink vége
+16 | unseren | das Ende ____ Aufgaben - a feladataink vége
 17 | unserer | der Beginn ____ Leidens - a szenvedéseink kezdete
 18 | seiner | die Freundin ____ Frau - a feleségének a barátnője
 \end{exmp}
@@ -720,16 +720,9 @@ Módbeli segédigék:
 * sollen - kell (belső kényszer)
 * wollen - akar
 
-Példák:
-Ich will heute in das Kino gehen. - Ma moziba akarok menni.
-Ilona darf in das Theater gehen. - Ilonának szabad színházba mennie.
-Ich kann schnell Bier trinken. - Gyorsan tudok sört inni.
-Ich kann schwimmen. - Tudok úszni.
-Sie will kommen. - Akar jönni.
-Wir mögen Fußball spielen. - Szeretünk focizni.
-Er muss nach Hause gehen. - Haza kell mennie.
-Du musst Blume kaufen. - Virágot kell venned.
-Wir dürfen spielen. - Szabad játszanunk.
+Példák: * Ich will heute in das Kino gehen. - Ma moziba akarok menni.
+* Ilona darf in das Theater gehen. - Ilonának szabad színházba mennie.
+* Ich kann schnell Bier trinken. - Gyorsan tudok sört inni.
 \end{desc}
 
 \begin{exmp}
@@ -895,7 +888,7 @@ Példák ilyen prepozíciókra:
 29 | zwischen der, dem | zwischen ____ Tür und ____ Fenster - az ajtó és az ablak között
 30 | an der | ____ Uhr - az órán
 31 | über dem | ____ Haus - a ház felett
-32 | zwischen dem, dem | ____ Stuhl ____ Bett - a szék és az ágy között
+32 | zwischen dem, dem | ____ Stuhl und ____ Bett - a szék és az ágy között
 \end{exmp}
 
 \title{Prepozíciók/Hol? kérdésre felelő prepozíciók/Prepozíciók összevonása}
@@ -963,7 +956,7 @@ zwischen + A | közé
 26 | auf das | ____ Auto - az autóra
 27 | vor die | ____ Lehrerin - a tanárnő elé
 28 | unter den | ____ Teppich - a szőnyeg alá
-29 | zwischen die, und die | ____ Lampe ____ Blume - a lámpa és a virág közé
+29 | zwischen die, die | ____ Lampe und ____ Blume - a lámpa és a virág közé
 \end{exmp}
 
 \title{Prepozíciók/Hová? kérdésre felelő prepozíciók/Prepozíciók összevonása}
@@ -1114,7 +1107,7 @@ Categories = 0
 30 | bei der | ____ Freundin - a barátnőnél
 31 | zu dem | ____ Fenster - az ablakhoz
 32 | nach der | ____ Schule - iskola után
-33 | gegenüber dem | ____ Sohn - a fiával szemben
+33 | gegenüber dem | ____ Schrank - a szerkénnyel szemben
 34 | nach | ____ Deutschland - Németországba
 35 | mit einer | ____ Strassenbahn - egy villamossal
 36 | seit | ____ zehn Uhr - tíz órája
@@ -1587,6 +1580,7 @@ Példák brechungos igékre:
 \title{Az ige ragozása jelen időben/Tőhangváltós, azaz erős igék/Az essen és nehmen Brechungos igék ragozása}
 
 GrammarItemIndex = 645385
+Categories = 0
 
 \begin{desc}
 essen - eszik
@@ -1602,26 +1596,26 @@ sie, Sie    | nehmen | essen
 
 %Maklári: 15. oldal
 \begin{exmp}
-1 | Er isst Suppe. | Sevest eszik (f).
-2 | Du isst Apfel. | Almát eszel.
-3 | Wir nehmen Käse. | Veszünk sajtot.
-4 | Ihr nehmt Mittagessen. | Vesztek Ebédet.
-5 | Ich esse Abendessen. | Eszek vacsorát.
-6 | Peter nimmt Brot. | Peter vesz kenyeret.
-7 | Ági isst Torte. | Ági tortát eszik.
-8 | Wir essen Schinken. | Sonkát eszünk.
-9 | Ich nehme Gemüse. | Veszek zöldséget.
-10 | Joe isst Zwiebel. | Joe hagymát eszik.
-11 | Ihr esst Nudeln. | Tésztát esztek. (Nudeln)
-12 | Vater isst Strudel. | Apa rétest eszik. (Strudel)
-13 | Klaus nimmt ein Haus. | Klaus vesz egy házat.
-14 | Du nimmst Brot. | Veszel kenyeret.
-15 | Mutter nimmt Fleisch. | Anya húst vesz.
-16 | Ihr esst zu Hause. | Otthon esztek.
-17 | Er nimmt Brötchen. | Zsömlét vesz (f).
-18 | Sie essen hier. | Ők itt esznek.
-19 | Sie nehmen Orange. | Ők narancsot vesznek.
-20 | Du nimmst ein Haus. | Egy házat veszel.
+1 | isst | Er ____ Suppe. - Levest eszik.
+2 | isst | Du ____ Apfel. - Almát eszel.
+3 | nehmen | Wir ____ Käse. - Veszünk sajtot.
+4 | nehmt | Ihr ____ Mittagessen. - Vesztek Ebédet.
+5 | esse | Ich es____se Abendessen. - Eszek vacsorát.
+6 | nimmt | Peter ____ Brot. - Peter vesz kenyeret.
+7 | isst | Ági ____ Torte. - Ági tortát eszik.
+8 | essen | Wir ____ Schinken. - Sonkát eszünk.
+9 | nehme | Ich ____ Gemüse. - Veszek zöldséget.
+10 | isst | Joe ____ Zwiebel. - Joe hagymát eszik.
+11 | esst | Ihr ____ Nudeln. - Tésztát esztek.
+12 | isst | Vater ____ Strudel. - Apa rétest eszik.
+13 | nimmt | Klaus ____ ein Haus. - Klaus vesz egy házat.
+14 | nimmst | Du ____ Brot. - Veszel kenyeret.
+15 | nimmt | Mutter ____ Fleisch. - Anya húst vesz.
+16 | esst | Ihr ____ zu Hause. - Otthon esztek.
+17 | nimmt | Er ____ Brötchen. - Zsömlét vesz.
+18 | essen | Sie ____ hier. - Ők itt esznek.
+19 | nehmen | Sie ____ Orange. - Ők narancsot vesznek.
+20 | nimmst | Du ____ ein Haus. - Egy házat veszel.
 \end{exmp}
 
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A sein}
@@ -1643,6 +1637,7 @@ sie/Sie sind
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A haben}
 
 GrammarItemIndex = 42343
+Categories = 0
 
 \begin{desc}
 A haben igével birtoklást fejezünk ki, és amit birtoklunk, azt tárgyesetbe (Akkusativ) tesszük.
@@ -1654,18 +1649,20 @@ er/sie/es | hat
 wir       | haben
 ihr       | habt
 sie/Sie   | haben
+
+Példa: Sie haben einen Garten. - Van egy kertjük.
 \end{desc}
 
 \begin{exmp}
-1 | Mein Vater hat ein Haus. | Apámnak van egy háza.
-2 | Du hast Zeit. | Van időd.
-3 | Sie haben einen Garten. | Van egy kertjük.
-4 | Mutter hat viel Blumen. | Anyának sok virága van.
-5 | Er hat ein Buch. | Neki (f) van egy könyve.
-6 | Ich habe eine Freundin. | Nekem van egy barátnőm.
-7 | Ihr habt Zeit immer. | Mindig van időtök.
-8 | Józsi hat einen Kuli. | Józsinak van egy tolla.
-9 | Hans und Gertrud haben einen Garten. | Hansnak és Gertrudnak van egy kertje.
+1 | hat ein | Mein Vater ____ Haus. - Apámnak van egy háza.
+2 | hast | Du ____ Zeit. - Van időd.
+3 | haben einen | Sie ____ Garten. - Van egy kertjük.
+4 | hat | Mutter ____ Blumen. - Anyának sok virága van.
+5 | hat ein | Er ____ Buch. - Neki van egy könyve.
+6 | habe eine | Ich ____ Freundin. - Nekem van egy barátnőm.
+7 | habt | Ihr ____ Zeit immer. - Mindig van időtök.
+8 | hat einen | Józsi ____ Kuli. - Józsinak van egy tolla.
+9 | haben einen | Hans und Gertrud ____ Garten. - Hansnak és Gertrudnak van egy kertje.
 \end{exmp}
 
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A werden}
@@ -3039,13 +3036,6 @@ sie/Sie werden
 Pl.: * Klaus wird sicherlich mein Haus kaufen. - Klaus biztosen meg fogja venni a házamat.
 * Wir werden euch besuchen. - Meg fogunk látogatni titeket.
 * Werdet ihr umziehen? - El fogtok költözni? (umziehen)
-* Mein Freund wird ein Buch schreiben. - A barátom egy könyvet fog írni.
-* Wirst du dein Auto verkaufen? - El fogod adni az autódat?
-* Wann wirst du deine Hausaufgabe schreiben? - Mikor fogod megírni a házifeladatodat?
-* Wird sie bei uns wohnen? - Nálunk fog (n) lakni?
-* Sie werden in dem Hotel übernachten. - A hotelben fognak éjszakázni. (übernachten)
-* Wann wirst du Ordnung machen? - Mikor fogsz rendet csinálni?
-* Sie werden um 6 Uhr aufstehen. - 6 órakor fognak felkelni.
 \end{desc}
 
 %Maklári 266.oldal
@@ -3055,7 +3045,7 @@ Pl.: * Klaus wird sicherlich mein Haus kaufen. - Klaus biztosen meg fogja venni 
 3 | wird, schreiben | Mein Freund ____ ein Buch ____. - A barátom egy könyvet fog írni.
 4 | Wirst, verkaufen | ____ du dein Auto ____? - El fogod adni az autódat?
 5 | wirst, schreiben | Wann ____ du deine Hausaufgabe ____? - Mikor fogod megírni a házifeladatodat?
-6 | Wird, wohnen | ____ sie bei uns ____? - Nálunk fog (n) lakni?
+6 | Wird, wohnen | ____ sie bei uns ____? - Nálunk fog lakni?
 7 | werden, schlafen | Sie ____ in dem Hotel ____. - A hotelben fognak aludni.
 8 | wirst, machen | Wann ____ du Ordnung ____? - Mikor fogsz rendet csinálni?
 9 | werden, aufstehen | Sie ____ um 6 Uhr ____. - 6 órakor fognak felkelni.
@@ -3882,7 +3872,7 @@ Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. - Sok látnivaló van Salzbu
 1 | Es gibt | ____ Wunder. - Léteznek csodák.
 2 | Gibt es | ____ hier eine Toilette? - Van itt egy toalett?
 3 | gibt es | Wo ____ in der Stadt Restaurant? - Hol van a városban étterem?
-4 | Gibt es | ____ Wurst? - Van kolbász?
+4 | Gibt es | ____ auf den Speisekarte Wurst? - Van az étlapon kolbász?
 5 | Gibt es | ____ hier Giraffen? - Vannak itt zsiráfok?
 6 | Es gibt | ____ viele Möglichkeiten. - Sok lehetőség van.
 7 | Gibt es | ____ U-Bahn in Zürich? - Van metró Zürichben?
