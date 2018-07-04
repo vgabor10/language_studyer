@@ -744,15 +744,15 @@ Wir dürfen spielen. - Szabad játszanunk.
 9 | dürfen, spielen | Wir ____ ____. - Szabad játszanunk.
 10 | wollen, fernsehen | Wir ____ ____. - Akarunk tévézni. (fernsehen)
 11 | Wollt, gehen | ____ ihr in das Bett ____? - Akartok ágyba menni?
-12 | kann, sprechen | Er ____ gut ____. - Jól tud beszélni. (f)
+12 | kann, sprechen | Er ____ gut ____. - Jól tud beszélni.
 13 | dürft, gehen | Ihr ____ nach Hause ____. - Haza mehettek.
-14 | Mögt, spielen | ____ ihr Korbball ____? - Szerettek kosárlabdázni? (Korbball spielen)
+14 | Mögt, spielen | ____ ihr Korbball ____? - Szerettek kosárlabdázni?
 15 | soll, sind | Er ____ nett ____. - Kedvesnek kell lennie.
 16 | Mögt, essen | ____ ihr Eis ____? - Szerettek fagyit enni?
 17 | muss, lernen | Ich ____ ____. - Tanulnom kell.
-18 | muss, einkaufen | Sie ____ ____. - Be kell vásárolnia (n).
+18 | muss, einkaufen | Sie ____ ____. - Be kell vásárolnia.
 19 | Wollt, trinken | ____ ihr ____? - Akartok inni?
-20 | mag, spielen | Sie ____ Schach ____. - Szeret (n) sakkozni.
+20 | mag, spielen | Sie ____ Schach ____. - Szeret sakkozni.
 21 | wollen, gehen | Sie ____ nach Hause ____. - Haza akarnak menni.
 22 | datfst, rauchen | ____ du ____? - Szabad cigarettáznod?
 23 | wollen, schlafen | Sie ____ ____. - Aludni akarnak.
@@ -786,23 +786,23 @@ Pl.: * Ich möchte heute ins Theater gehen. - Szeretnék ma színházba menni.
 %Maklári: 123. oldal
 \begin{exmp}
 1 | Möchtet, laufen | ____ ihr ____? - Szeretnétek futni?
-2 | möchte, spielen |  Er ____ Fußball ____. - Szeretne (f) focizni.
-3 | möchte, schlafen |  Ich ____ schon ____. - Szeretnék már aludni.
-4 | möchten, bekommen |  Sie ____ ein Haus ____. - Szeretnének egy Házat kapni.
-5 | Möchten, gehen |  ____ Sie nach Hause ____? - Szeretne Ön haza menni?
-6 | Möchtest, trinken |  ____ du ein Glas Wasser ____? - Szeretnél egy pohár vizet inni?
-7 | Möchtet, essen |  ____ ihr Abend ____? - Szeretnétek vacsorázni?
-8 | möchte, fahrradfahren |  Ich ____ ____. - Szeretnék biciklizni. (fahrradfahren)
-9 | möchte, essen |  Ich ____ etwas ____. - Szeretnék valamit enni.
-10 | möchte, haben |  Ich ____ ein Fahrrad ____. - Szeretnék egy kerékpárt.
-11 | möchte, gehen |  Ich ____ in die Schule nicht ____. - Nem szeretnék iskolába menni.
-12 | Möchten, schlafen |  ____ Sie hier ____? - Szeretne (Ön) itt aludni?
-13 | Möchtet, trinken |  ____ ihr eine Tasse Tee ____? - Szeretnétek egy csésze teát inni?
-14 | möchten, spazieren |  Sie ____ morgen ____. - Szeretnének holnap sétálni.
-15 | Möchtest, reisen |  ____ du nach Deutschland ____? - Szeretnél Németországba utazni? (reisen)
-16 | Möchtet, essen |  ____ ihr Mittag ____? - Szeretnétek ebédelni? (Mittag essen)
-17 | möchte, gehen |  Ich ____ nach Hause ____. - Haza szeretnék menni.
-18 | möchte, sehen |  Ich ____ sie ____. - Szeretném látni őt.
+2 | möchte, spielen | Er ____ Fußball ____. - Szeretne (f) focizni.
+3 | möchte, schlafen | Ich ____ schon ____. - Szeretnék már aludni.
+4 | möchten, bekommen | Sie ____ ein Haus ____. - Szeretnének egy Házat kapni.
+5 | Möchten, gehen | ____ Sie nach Hause ____? - Szeretne Ön haza menni?
+6 | Möchtest, trinken | ____ du ein Glas Wasser ____? - Szeretnél egy pohár vizet inni?
+7 | Möchtet, essen | ____ ihr Abend ____? - Szeretnétek vacsorázni?
+8 | möchte, fahrradfahren | Ich ____ ____. - Szeretnék biciklizni. (fahrradfahren)
+9 | möchte, essen | Ich ____ etwas ____. - Szeretnék valamit enni.
+10 | möchte, haben | Ich ____ ein Fahrrad ____. - Szeretnék egy kerékpárt.
+11 | möchte, gehen | Ich ____ in die Schule nicht ____. - Nem szeretnék iskolába menni.
+12 | Möchten, schlafen | ____ Sie hier ____? - Szeretne (Ön) itt aludni?
+13 | Möchtet, trinken | ____ ihr eine Tasse Tee ____? - Szeretnétek egy csésze teát inni?
+14 | möchten, spazieren | Sie ____ morgen ____. - Szeretnének holnap sétálni.
+15 | Möchtest, reisen | ____ du nach Deutschland ____? - Szeretnél Németországba utazni? (reisen)
+16 | Möchtet, essen | ____ ihr Mittag ____? - Szeretnétek ebédelni? (Mittag essen)
+17 | möchte, gehen | Ich ____ nach Hause ____. - Haza szeretnék menni.
+18 | möchte, sehen | Ich ____ sie ____. - Szeretném látni őt.
 \end{exmp}
 
 \title{Módbeli segédigék/A módbeli segédigék másodlagos jelentése/A valószínűség fokozatai}
@@ -917,6 +917,7 @@ unter dem = unterm (beszédben)
 \title{Prepozíciók/Hová? kérdésre felelő prepozíciók}
 
 GrammarItemIndex = 423265
+Categories = 0
 
 \begin{desc}
 A hová kérdésre felelő prepozíciók tárgy esettel állnak.
@@ -935,10 +936,10 @@ zwischen + A | közé
 %Maklári: 54. oldal
 \begin{exmp}
 1 | an die | ____ Wand - a falra
-2 | in die | ____Küche - a konyhába
+2 | in die | ____ Küche - a konyhába
 3 | auf den | ____ Schrank - a szekrényre
 4 | neben den | ____ Tisch - az asztal mellé
-5 | vor das | ____Zimmer - a szoba elé
+5 | vor das | ____ Zimmer - a szoba elé
 6 | in die | ____ Schränke - a szekrényekbe
 7 | auf den | ____ Tisch - az asztalra
 8 | hinter die | ____ Wand - a fal mögé
@@ -947,10 +948,10 @@ zwischen + A | közé
 11 | hinter die | ____ Leute - az emberek mögé
 12 | in den | ____ Wagen - a kocsiba
 13 | auf den | ____ Boden - a padlóra
-14 | an den | ____Vorhang - a függönyre
-15 | in das | ____Zimmer - a szobába
+14 | an den | ____ Vorhang - a függönyre
+15 | in das | ____ Zimmer - a szobába
 16 | neben das | ____ Auto - az autó mellé
-17 | über den | ____Garten - a kert fölé
+17 | über den | ____ Garten - a kert fölé
 18 | unter den | ____ Boden - a föld alá
 19 | neben die | ____ Garage - a garázs mellé
 20 | zwischen das, und die | ____ Zimmer ____ Küche - a szoba és a kunyha közé
@@ -985,6 +986,7 @@ GrammarItemIndex = 1236
 \title{Prepozíciók/Prepozíciók kizárólag tárgy esettel}
 
 GrammarItemIndex = 5
+Categories = 0
 
 \begin{desc}
 * für - -ért, részére, számára
@@ -997,74 +999,75 @@ GrammarItemIndex = 5
 
 %Maklári: 59. oldal
 \begin{exmp}
-1 | für den Vater | az apa részére
-2 | für die Mutter | az anya részére
-3 | ohne Geld | pénz nélkül
-4 | ohne Tasche | táska nélkül
-5 | gegen den Freund | a barát ellen
-6 | gegen den Feind | az ellenséggel szemben
-7 | um das Haus | a ház körül
-8 | durch meine Schwester | a nővérem által
-9 | durch den Tunnel | keresztül az alagúton
-10 | durch die Eltern | a szülőkön keresztül
-11 | ohne Schuh | cipő nélkül
-12 | bis Budapest | Budapestig
-13 | bis 5 Uhr | 5 óráig
-14 | um den Garten | a kert körül
-15 | für das Mädchen | a lánynak
-16 | für fünf Forint | öt forintért
-17 | für einen Wagen | egy kocsiért
-18 | ohne Lampe | lámpa nélkül
-19 | um die Stadt | a város körül
-20 | ohne die Schweigermutter | az anyós nélkül
-21 | durch einen Freund | egy barát által
-22 | um einen Tisch | egy asztal körül
-23 | durch ein Haus | egy házon át
-24 | durch meinen Vater | apám által
-25 | ohne Heft | füzet nélkül
-26 | für einen Apfel | egy almáért
-27 | durch das Dorf | keresztül a falun
-28 | durch den Park | keresztül a parkon
-29 | bis zwei | kettőig
-30 | um meinen Mann | a férjem körül
-31 | gegen die Eltern | a szülőkkel szemben
-32 | um einen Garten | egy kert körül
-33 | durch den Weg | keresztül az úton
-34 | gegen mich | ellenem
-35 | für ihn | érte (hímnem)
-36 | ohne uns | nélkülünk
-37 | ohne sie | nélküle (nőnem)
-38 | um euch | körülöttetek
-39 | für uns | értünk
-40 | für Sie | Önért
-41 | um uns | körülöttünk
-42 | durch mich | általam
-43 | für sie | részükre
-44 | gegen dich | ellened
-45 | um uns | körülöttünk
-46 | ohne sie | nélkülük
-47 | gegen Sie | Ön ellen
-48 | ohne dich | nélküled
-49 | für uns | nekünk
-50 | für euch | értetek
-51 | durch Sie | Ön által
-52 | für dich | érted
-53 | ohne mich | nélkülem
-54 | um mich | körülöttem
-55 | für sie | számukra
-56 | gegen euch | ellenetek
-57 | gegen ihn | ellene (hímnem)
-58 | um dich | körülötted
-59 | um sie | körülötte (nőnem)
-60 | durch sie | általa (nőnem)
-61 | gegen uns | ellenünk
-62 | für mich | értem
-63 | für euch | részetekre
+1 | für den | ____ Vater - az apa részére
+2 | für die | ____ Mutter - az anya részére
+3 | ohne | ____ Geld - pénz nélkül
+4 | ohne | ____ Tasche - táska nélkül
+5 | gegen | ____ den Freund - a barát ellen
+6 | gegen | ____ den Feind - az ellenséggel szemben
+7 | um das | ____ Haus - a ház körül
+8 | durch meine | ____ Schwester - a nővérem által
+9 | durch den | ____ Tunnel - keresztül az alagúton
+10 | durch die | ____ Eltern - a szülőkön keresztül
+11 | ohne | ____ Schuh - cipő nélkül
+12 | bis | ____ Budapest - Budapestig
+13 | bis | ____ 5 Uhr - 5 óráig
+14 | um den | ____ Garten - a kert körül
+15 | für das | ____ Mädchen - a lánynak
+16 | für fünf | ____ Forint - öt forintért
+17 | für einen | ____ Wagen - egy kocsiért
+18 | ohne | ____ Lampe - lámpa nélkül
+19 | um die | ____ Stadt - a város körül
+20 | ohne die | ____ Schweigermutter - az anyós nélkül
+21 | durch einen | ____ Freund - egy barát által
+22 | um einen | ____ Tisch - egy asztal körül
+23 | durch ein | ____ Haus - egy házon át
+24 | durch meinen | ____ Vater - apám által
+25 | ohne | ____ Heft - füzet nélkül
+26 | für einen | ____ Apfel - egy almáért
+27 | durch das | ____ Dorf - keresztül a falun
+28 | durch den | ____ Park - keresztül a parkon
+29 | bis | ____ zwei - kettőig
+30 | um meinen | ____ Mann - a férjem körül
+31 | gegen die | ____ Eltern - a szülőkkel szemben
+32 | um einen | ____ Garten - egy kert körül
+33 | durch den | ____ Weg - keresztül az úton
+34 | gegen | ____ mich - ellenem
+35 | für | ____ ihn - érte (hímnem)
+36 | ohne | ____ uns - nélkülünk
+37 | ohne | ____ sie - nélküle (nőnem)
+38 | um | ____ euch - körülöttetek
+39 | für | ____ uns - értünk
+40 | für | ____ Sie - Önért
+41 | um | ____ uns - körülöttünk
+42 | durch | ____ mich - általam
+43 | für | ____ sie - részükre
+44 | gegen | ____ dich - ellened
+45 | um | ____ uns - körülöttünk
+46 | ohne | ____ sie - nélkülük
+47 | gegen | ____ Sie - Ön ellen
+48 | ohne | ____ dich - nélküled
+49 | für | ____ uns - nekünk
+50 | für | ____ euch - értetek
+51 | durch | ____ Sie - Ön által
+52 | für | ____ dich - érted
+53 | ohne | ____ mich - nélkülem
+54 | um | ____ mich - körülöttem
+55 | für | ____ sie - számukra
+56 | gegen | ____ euch - ellenetek
+57 | gegen | ____ ihn - ellene (hímnem)
+58 | um | ____ dich - körülötted
+59 | um | ____ sie - körülötte (nőnem)
+60 | durch | ____ sie - általa (nőnem)
+61 | gegen | ____ uns - ellenünk
+62 | für | ____ mich - értem
+63 | für | ____ euch - részetekre
 \end{exmp}
 
 \title{Prepozíciók/Prepozíciók kizárólag részes esettel}
 
 GrammarItemIndex = 13
+Categories = 0
 
 \begin{desc}
 * aus = -ból, -ből
@@ -1079,43 +1082,43 @@ GrammarItemIndex = 13
 
 %Maklári: 61. oldal
 \begin{exmp}
-1 | aus der Küche | a konyhából
-2 | aus dem Zimmer | a szobából
-3 | bei der Großmutter | a nagymamánál
-4 | mit dem Kuli | a tollal
-5 | nach der Frühstück | reggeli után
-6 | nach Budapest | Budapestre
-7 | nach Vien | Bécsbe
-8 | zu dem Lehrer | a tanárhoz
-9 | vod dem Schrank | a szekrénytől
-10 | zu der Oma | a nagyihoz
-11 | mit dem Bus | busszal
-12 | gegenüber der Tür | az ajtóval szemben
-13 | von dem Gast | a vendégtől
-14 | seit zwei Stunden | két órája
-15 | bei der Firma | a cégnél
-16 | von dem Tisch | az asztalról
-17 | von dem Schrank | a szekrényről
-18 | gegenüber dem Haus | a házzal szemben
-19 | seit dem Frühstück | a reggeli óta
-20 | aus dem Wagen | a kocsiból
-21 | seit vier Uhr | négy órája
-22 | nach München | Münchenbe
-23 | nach dem Mittagessen | ebéd után
-24 | seit ein Jahr | egy éve
-25 | bei dem Schriftsteller | az írónál
-26 | mit dem Vater | az apával
-27 | mit der Mutter | az anyával
-28 | nach Ungarn | Magyarországra
-29 | von dem Freund | a baráttól
-30 | bei der Freundin | a barátnőnél
-31 | zu dem Fenster | az ablakhoz
-32 | nach der Schule | iskola után
-33 | gegenüber dem Sohn | a fiával szemben
-34 | nach Deutschland | Németországba
-35 | mit einer Strassenbahn | egy villamossal
-36 | seit zehn Uhr | tíz órája
-37 | zu der Tür | az ajtóhoz
+1 | aus der | ____ Küche - a konyhából
+2 | aus dem | ____ Zimmer - a szobából
+3 | bei der | ____ Großmutter - a nagymamánál
+4 | mit dem | ____ Kuli - a tollal
+5 | nach der | ____ Frühstück - reggeli után
+6 | nach | ____ Budapest - Budapestre
+7 | nach | ____ Vien - Bécsbe
+8 | zu dem | ____ Lehrer - a tanárhoz
+9 | vod dem | ____ Schrank - a szekrénytől
+10 | zu der | ____ Oma - a nagyihoz
+11 | mit dem | ____ Bus - busszal
+12 | gegenüber der | ____ Tür - az ajtóval szemben
+13 | von dem | ____ Gast - a vendégtől
+14 | seit zwei | ____ Stunden - két órája
+15 | bei der | ____ Firma - a cégnél
+16 | von dem | ____ Tisch - az asztalról
+17 | von dem | ____ Schrank - a szekrényről
+18 | gegenüber dem | ____ Haus - a házzal szemben
+19 | seit dem | ____ Frühstück - a reggeli óta
+20 | aus dem | ____ Wagen - a kocsiból
+21 | seit vier | ____ Uhr - négy órája
+22 | nach | ____ München - Münchenbe
+23 | nach | ____ dem Mittagessen - ebéd után
+24 | seit | ____ ein Jahr - egy éve
+25 | bei dem | ____ Schriftsteller - az írónál
+26 | mit dem | ____ Vater - az apával
+27 | mit der | ____ Mutter - az anyával
+28 | nach | ____ Ungarn - Magyarországra
+29 | von dem | ____ Freund - a baráttól
+30 | bei der | ____ Freundin - a barátnőnél
+31 | zu dem | ____ Fenster - az ablakhoz
+32 | nach der | ____ Schule - iskola után
+33 | gegenüber dem | ____ Sohn - a fiával szemben
+34 | nach | ____ Deutschland - Németországba
+35 | mit einer | ____ Strassenbahn - egy villamossal
+36 | seit | ____ zehn Uhr - tíz órája
+37 | zu der | ____ Tür - az ajtóhoz
 38 | beu uns | nálunk
 39 | zu euch | hozzátok
 40 | von dir | tőled
@@ -1153,6 +1156,7 @@ GrammarItemIndex = 13
 \title{Prepozíciók/Prepozíciók kizárólag birtokos esettel}
 
 GrammarItemIndex = 536851
+Categories = 0
 
 \begin{desc}
 * statt = helyett
@@ -1165,34 +1169,34 @@ GrammarItemIndex = 536851
 
 %Maklári: 63. oldal
 \begin{exmp}
-1 | wegen des Wetters | az időjárás miatt
-2 | wegen des Krigs | a háború miatt
-3 | trotz der Kälte | a hideg ellenére (e Kälte)
-4 | außerhalb der Stadt | a városon kívül
-5 | wegen des Verkäufers | az eladó miatt
-6 | während der Deutschstunde | a németóra alatt
-7 | statt des Mittagessens | az ebéd helyett
-8 | während des Urlaubs | a nyaralás alatt
-9 | während des Mahls | az étkezés alatt (s Mahl)
-10 | statt des Ausflugs | a kirándulás helyett
-11 | innerhalb des Dorfes | a falun bellül
-12 | innerhalb des Gartens | a kerten bellül
-13 | während der Reise | az utazás alatt (e Reise)
-14 | statt des Brotes | a kenyér helyett
-15 | statt der Schule | iskola helyett
-16 | innerhalb zwei Stunden | két órán bellül
-17 | statt des Kakaos | a kakaó helyett
-18 | während des Films | a film alatt
-19 | trotz des Regens | az eső ellenére
-20 | während der Stunde | az óra alatt
-21 | statt des Tees | tea helyett
-22 | außerhalb des Landes | az országon kívül
-23 | innerhalb der vier Wand | a négy fal között (innerhalb)
-24 | während der Vorstellung | az előadás alatt (e Vorstellung)
-25 | trotz des Befehls | a parancs ellenére
-26 | während zwei Stunden | két óra alatt
-27 | während des Krieges | a háború alatt
-28 | trotz des Verbots | a tiltás ellenére (s Verbot)
+1 | wegen des | ____ Wetters - az időjárás miatt
+2 | wegen des | ____ Krigs - a háború miatt
+3 | trotz der | ____ Kälte - a hideg ellenére
+4 | außerhalb der | ____ Stadt - a városon kívül
+5 | wegen des | ____ Verkäufers - az eladó miatt
+6 | während der | ____ Deutschstunde - a németóra alatt
+7 | statt des | ____ Mittagessens - az ebéd helyett
+8 | während des | ____ Urlaubs - a nyaralás alatt
+9 | während des | ____ Mahls - az étkezés alatt
+10 | statt des | ____ Ausflugs - a kirándulás helyett
+11 | innerhalb des | ____ Dorfes - a falun bellül
+12 | innerhalb des | ____ Gartens - a kerten bellül
+13 | während der | ____ Reise - az utazás alatt
+14 | statt des | ____ Brotes - a kenyér helyett
+15 | statt der | ____ Schule - iskola helyett
+16 | innerhalb | ____ zwei Stunden - két órán bellül
+17 | statt des | ____ Kakaos - a kakaó helyett
+18 | während des | ____ Films - a film alatt
+19 | trotz des | ____ Regens - az eső ellenére
+20 | während der | ____ Stunde - az óra alatt
+21 | statt des | ____ Tees - tea helyett
+22 | außerhalb des | ____ Landes - az országon kívül
+23 | innerhalb der | ____ vier Wand - a négy fal között (innerhalb)
+24 | während der | ____ Vorstellung - az előadás alatt
+25 | trotz des | ____ Befehls - a parancs ellenére
+26 | während | ____ zwei Stunden - két óra alatt
+27 | während des | ____ Krieges - a háború alatt
+28 | trotz des | ____ Verbots - a tiltás ellenére
 \end{exmp}
 
 \title{Prepozíciók/Kettős elöljárószavak}
@@ -1330,6 +1334,7 @@ Ha mindkét tagmondatban ugyanaz az alany, akkor nem kell az und után újra ki�
 \title{Kötőszavak/Kötőszavak fordított szórenddel}
 
 GrammarItemIndex = 116354
+Categories = 0
 
 \begin{desc}
 Képzése: kötőszó + ige + alany + többi mondatrész
@@ -1346,22 +1351,22 @@ Pl.: Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost
 
 %Maklári: 147. oldal
 \begin{exmp}
-1 | Ich gehe nach Hause, dann esse ich. | Haza megyek, aztán eszek.
-2 | Ich esse das Mittagessen, dann spazieren wir. | Megeszem az ebédet, aztán sétálunk. (s Mittagessen)
-3 | Das Wetter ist schön, deshalb bleiben wir nicht zu Hause. | Az idő szép, ezért nem maradunk otthon.
-4 | Du schreibst die Lektion, sonst bekommst du eine Eins. | Megírod a leckét, különben kapsz egy egyest. (e Lektion, bekommen, e Eins)
-5 | Wir lernen klein, dann spielen wir Fußball. | Tanulunk egy kicsit, aztán focizunk.
-6 | Wir arbeiten, dann gehen wir in die Kneipe. | Dolgozunk, aztán megyünk a kocsmába.
-7 | Er arbeitet viel, darum ist er reich. | Sokat dolgozik (f), ezért gazdag.
-8 | Er arbeitet viel, trotzdem ist er arm. | Sokat dolgozik (f), mégis szegény.
-9 | Peter ist krank, trotzdem kommt er mit uns. | Peter beteg, mégis velünk jön.
-10 | Er trinkt viel, trotzdem ist er durstig. | Sokat iszik (f), mégis szomjas.
-11 | Mein Freund lernt viel, trotzdem ist er dumm. | A barátom sokat tanul, mégis buta. (dumm)
-12 | Du machst Ordnung in deinem Zimmer, sonst gehst du nicht in Schwimmbad. | Rendet csinálsz a szobádban, különben nem mész uszodába. (s Schwimmbad)
-13 | Er gibt mir Schokolade nicht, deshalb gehe ich nicht zu ihm. | Nem ad (f) nekem csokoládét, ezért nem megyek hozzá.
-14 | Du isst das Abendessen, sonst kommst du nicht mit mir. | Megeszed a vacsorát, különben nem jössz velem. (s Abendessen)
-15 | Ich stehe auf, dann trinke ich Tee. | Felkelek, aztán teát iszok.
-16 | Ich schlafe viel, trotzdem bin ich müde. | Sokat alszom, mégis fáradt vagyok.
+1 | dann esse ich | Ich gehe nach Hause, ____. - Haza megyek, aztán eszek.
+2 | dann spazieren wir | Ich esse das Mittagessen, ____. - Megeszem az ebédet, aztán sétálunk.
+3 | deshalb bleiben wir | Das Wetter ist schön, ____ nicht zu Hause. - Az idő szép, ezért nem maradunk otthon.
+4 | sonst bekommst du | Du schreibst die Lektion, ____ eine Eins. - Megírod a leckét, különben kapsz egy egyest.
+5 | dann spielen wir | Wir lernen klein, ____ Fußball. - Tanulunk egy kicsit, aztán focizunk.
+6 | dann gehen wir | Wir arbeiten, ____ in die Kneipe. - Dolgozunk, aztán megyünk a kocsmába.
+7 | darum ist er | Er arbeitet viel, ____ reich. - Sokat dolgozik, ezért gazdag.
+8 | trotzdem ist er | Er arbeitet viel, ____ arm. - Sokat dolgozik, mégis szegény.
+9 | trotzdem kommt er | Peter ist krank, ____ mit uns. - Peter beteg, mégis velünk jön.
+10 | trotzdem ist er | Er trinkt viel, ____ durstig. - Sokat iszik, mégis szomjas.
+11 | trotzdem ist er | Mein Freund lernt viel, ____ dumm. - A barátom sokat tanul, mégis buta.
+12 | sonst gehst du | Du machst Ordnung in deinem Zimmer, ____ nicht in Schwimmbad. - Rendet csinálsz a szobádban, különben nem mész uszodába.
+13 | deshalb gehe ich | Er gibt mir Schokolade nicht, ____ nicht zu ihm. - Nem ad nekem csokoládét, ezért nem megyek hozzá.
+14 | sonst kommst du | Du isst das Abendessen, ____ nicht mit mir. - Megeszed a vacsorát, különben nem jössz velem.
+15 | dann trinke ich | Ich stehe auf, ____ Tee. - Felkelek, aztán teát iszok.
+16 | trotzdem bin ich | Ich schlafe viel, ____ müde. - Sokat alszom, mégis fáradt vagyok.
 \end{exmp}
 
 \title{Kötőszavak/KATI szórend}
@@ -3372,7 +3377,7 @@ Pl.: Ich hätte viel lernen müssen. - Sokat kellet volna tanulnom.
 17 | Du hättest von Heim nicht weggehen dürfen. | Nem szabadott volna elmenned otthonról. (s Heim, weggehen)
 \end{exmp}
 
-\title{Cselekvő passiv mondatszerkezet/Passiv jelen időben}
+\title{Cselekvő passziv mondatszerkezet/Passziv jelen időben}
 
 GrammarItemIndex = 52351
 Categories = 0
@@ -3380,13 +3385,12 @@ Categories = 0
 \begin{desc}
 alany + werden ragozva + többi mondatrész + ige Partizip Perfekt alakja
 
-Pl.: Ein Haus wird von Peter gebaut. - Egy ház Peter által van építve.
-
 Az alanyt kifejezhetjük egy passzív mondatban a következő módon:
 * von + D: ha élő a cselekvés okozója,
 * durch + A: ha élettelen a cselekvés okozója.
 
-Pl.: * Der Tisch wird von Oma gedeckt. - Az asztalt nyagyi teríti meg.
+Pl.: * Ein Haus wird von Peter gebaut. - Egy ház Peter által van építve.
+* Der Tisch wird von Oma gedeckt. - Az asztalt nyagyi teríti meg.
 * Oma wird durch das Heilwasser geheilt. - A gyógyvíz gyógyítja meg nagyit.
 * Das Auto wird von dem Mechaniker repariert. - A szerelő megjavítja az autót.
 * Ein Brief wird von meinem Freund geschrieben. - A barátom ír egy levelet.
@@ -3875,24 +3879,24 @@ Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. - Sok látnivaló van Salzbu
 \end{desc}
 
 \begin{exmp}
-1 | Es gibt Wunder. | Léteznek csodák.
-2 | Gibt es hier eine Toilette? | Van itt egy toalett?
-3 | Wo gibt es in der Stadt Restaurant? | Hol van a városban étterem?
-4 | Gibt es Wurst? | Van kolbász?
-5 | Gibt es hier Giraffen? | Vannak itt zsiráfok?
-6 | Es gibt viele Möglichkeiten. | Sok lehetőség van.
-7 | Gibt es U-Bahn in Zürich? | Van metró Zürichben?
-8 | Es gibt viele Regenschirme in England. | Sok esernyő van Angliában. (r Regenschirm - esernyő)
-9 | Es gibt 50 Hotel in der Stadt. | A városban 50 szálloda van.
-10 | Es gibt in der Bibliothek viele Bücher. | A könyvtárban sok könyv van.
-11 | Es gibt 30 Museen in der Stadt. | 30 múzeum van a városban.
-12 | Es gibt hier nur Lebensmittel. | Itt csak élelmiszer van.
-13 | Gibt es hier ein Platz? | Van itt egy hely?
-14 | Gibt es ein Hotel irgendwo? | Van valahol egy hotel?
-15 | Es gibt bei uns wenig Konditorei. | Nálunk kevés cukrászda van.
-16 | Gibt es hier ein gute Bier? | Van itt egy jó sör?
-17 | Es gibt nicht Personalausweis in Amerika. | Nincs személyiigazolvány Amerikában.
-18 | Es gibt bei der Ecke eine Kneipe. | A sarkon (saroknál) van egy kocsma.
+1 | Es gibt | ____ Wunder. - Léteznek csodák.
+2 | Gibt es | ____ hier eine Toilette? - Van itt egy toalett?
+3 | gibt es | Wo ____ in der Stadt Restaurant? - Hol van a városban étterem?
+4 | Gibt es | ____ Wurst? - Van kolbász?
+5 | Gibt es | ____ hier Giraffen? - Vannak itt zsiráfok?
+6 | Es gibt | ____ viele Möglichkeiten. - Sok lehetőség van.
+7 | Gibt es | ____ U-Bahn in Zürich? - Van metró Zürichben?
+8 | Es gibt | ____ viele Regenschirme in England. - Sok esernyő van Angliában.
+9 | Es gibt | ____ 50 Hotel in der Stadt. - A városban 50 szálloda van.
+10 | Es gibt | ____ in der Bibliothek viele Bücher. - A könyvtárban sok könyv van.
+11 | Es gibt | ____ 30 Museen in der Stadt. - 30 múzeum van a városban.
+12 | Es gibt | ____ hier nur Lebensmittel. - Itt csak élelmiszer van.
+13 | Gibt es | ____ hier ein Platz? - Van itt egy hely?
+14 | Gibt es | ____ ein Hotel irgendwo? - Van valahol egy hotel?
+15 | Es gibt | ____ bei uns wenig Konditorei. - Nálunk kevés cukrászda van.
+16 | Gibt es | ____ hier ein gute Bier? - Van itt egy jó sör?
+17 | Es gibt | ____ nicht Personalausweis in Amerika. - Nincs személyiigazolvány Amerikában.
+18 | Es gibt | ____ bei der Ecke eine Kneipe. - A sarkon van egy kocsma.
 \end{exmp}
 
 \title{Célhatározói mellékmondatok/Az um zu + Infinitiv szerkezet}
@@ -3910,7 +3914,7 @@ Pl.: Sokat dolgozik, azért, hogy több pénzt keressen. - Er arbeitet viel, um 
 
 %Maklári: 320. oldal, 321. oldal
 \begin{exmp}
-1 | Ich reise nach Deutschland, um die Sprache zu üben. | Németországba utazom, hogy gyakoroljam a nyelvet. (üben)
+1 | Ich reise nach Deutschland, um die Sprache zu üben. | Németországba utazom, hogy gyakoroljam a nyelvet.
 2 | Ich ziehe einen Mantel an, um schön auf der Party zu sein. | Felveszek egy kabátot, azért, hogy szép legyek a partin. (anziehen)
 3 | Er schläft viel, um schnell zu heilen. | Sokat alszik (f), hogy gyorsan meggyógyuljon. (heilen)
 4 | Ich hebe mein Geld aus der Bank ab, um ein Auto zu kaufen. | Felveszem a pénzem a bankból, hogy vegyek egy autót. (abheben)
