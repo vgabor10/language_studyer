@@ -1,5 +1,7 @@
 package grammar_book;
 
+import language_studyer.DiscFilesMetaDataHandler;
+
 public class GrammarBook {
     
     public GrammarDataContainer dataContainer = new GrammarDataContainer();
@@ -7,7 +9,7 @@ public class GrammarBook {
     public GrammarDataLoader dataLoader = new GrammarDataLoader();
     public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
     public GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
-    public DataModificator dataModificator = new DataModificator();
+    public GrammarDataModificator dataModificator = new GrammarDataModificator();
     
     public GrammarBook() {
         dataLoader.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);

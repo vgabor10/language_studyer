@@ -5,7 +5,7 @@ import dictionary.CardContainer;
 import dictionary.CardFinder;
 import dictionary.DictionaryDataContainer;
 import dictionary.DictionaryDataModificator;
-import dictionary.DiscFilesMetaDataHandler;
+import language_studyer.DiscFilesMetaDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.dictionary.ExampleSentenceSuggestionsDialog;

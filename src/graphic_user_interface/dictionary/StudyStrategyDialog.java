@@ -1,15 +1,15 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.Dictionary;
+import dictionary.DictionaryDataModificator;
 import language_studyer.StudyStrategy;
 import java.awt.event.KeyEvent;
 
-public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
+public class StudyStrategyDialog extends javax.swing.JDialog {
 
-    private Dictionary dictionary;
+    private DictionaryDataModificator dataModificator;
     private StudyStrategy studyStrategy;
  
-    public DictionaryStudyStrategyDialog(java.awt.Frame parent, boolean modal) {
+    public StudyStrategyDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
         
@@ -21,9 +21,8 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
         jButton1.setMnemonic(KeyEvent.VK_S);
     }
     
-    public void setDictionary(Dictionary dictionary) {
-        this.dictionary = dictionary;
-        studyStrategy = dictionary.dataContainer.getStudyStrategy();
+    public void setData(StudyStrategy ss) {
+        studyStrategy = ss;
         setStudyStrategyDataToDialog();
     }
     
@@ -317,7 +316,7 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
         
         studyStrategy.studyingGradually = jCheckBox1.isSelected();
         
-        dictionary.dataModificator.writeDictionaryStudyStrategyDataToDisc();
+        dataModificator.writeDictionaryStudyStrategyDataToDisc();
         
         dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -360,7 +359,7 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dictionary.dataContainer.getCategoryContainer());
+        dialog.setAllCategories(dataModificator.getDataContainer().getCategoryContainer());
         dialog.setSelectedCategories(studyStrategy.cardCategoryRestrictions);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -383,21 +382,27 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(DictionaryStudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(StudyStrategyDialog.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                DictionaryStudyStrategyDialog dialog = new DictionaryStudyStrategyDialog(new javax.swing.JFrame(), true);
+                StudyStrategyDialog dialog = new StudyStrategyDialog(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

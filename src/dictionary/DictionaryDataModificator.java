@@ -1,31 +1,22 @@
 package dictionary;
 
-import language_studyer.StudyStrategy;
 import language_studyer.AnswerDataContainer;
 import common.Logger;
+import language_studyer.DataModificator;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import language_studyer.DiscFilesMetaDataHandler;
 
-public class DictionaryDataModificator {
-    
-    private DictionaryDataContainer dataContainer;
+public class DictionaryDataModificator extends DataModificator {
     
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
     private final Logger logger = new Logger();
 
-    public void setData(DictionaryDataContainer dataContainer) {
-        this.dataContainer = dataContainer;
-    }
-    
-    public void setDiscFilesMetaDataHandler(DiscFilesMetaDataHandler discFilesMetaDataHandler) {
-        this.discFilesMetaDataHandler = discFilesMetaDataHandler;
-    }
-
     public void removeCardByCardIndex(int cardIndex) {
-        dataContainer.getCardContainer().removeByIndex(cardIndex);
+        dataContainer.getStudyItemContainer().removeByIndex(cardIndex);
         dataContainer.getAnswerDataContainer().removeAnswersWithIndex(cardIndex);
 
         writeAllDataToFile();
@@ -37,8 +28,8 @@ public class DictionaryDataModificator {
     }    
 
     public void addCard(Card card) {
-        card.index = dataContainer.getCardContainer().getEmptyCardIndex();
-        dataContainer.getCardContainer().addCard(card);
+        card.index = ((CardContainer) dataContainer.getStudyItemContainer()).getEmptyCardIndex();
+        dataContainer.getStudyItemContainer().addStudyItem(card);
         
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();
@@ -54,8 +45,8 @@ public class DictionaryDataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
-                Card card = dataContainer.getCardContainer().getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
+                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
                 fw.write(Integer.toString(card.index) + "\t" +
                     card.term + "\t" + card.definition + "\n");
             }
@@ -91,8 +82,8 @@ public class DictionaryDataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
-                Card card = dataContainer.getCardContainer().getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
+                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
                 for (String exampleSentence : card.exampleSentences) {
                     fw.write(card.index + "\t" + exampleSentence  + "\n");	//appends the string to the file
                 }
@@ -111,8 +102,8 @@ public class DictionaryDataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
-                Card card = dataContainer.getCardContainer().getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
+                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
                 if (!card.categoryIndexes.isEmpty()) {
                     String outString = Integer.toString(card.index);
                     for (int categoryIndex : card.categoryIndexes) {
@@ -126,45 +117,14 @@ public class DictionaryDataModificator {
             System.err.println("IOException: " + ioe.getMessage());
         }
     }
-    
-    public void writeStudyStrategyDataToDisc() {
-        try {
-            
-            StudyStrategy studyStrategy = dataContainer.getStudyStrategy();
-            
-            //the true will append the new data
-            FileWriter fw = new FileWriter(discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategy(), false);
-            
-            fw.write("numberOfRandomCards: " +
-                    Integer.toString(studyStrategy.numberOfRandomItems) + "\n");
 
-            fw.write("numberOfCardsFromTheLeastKnown20Percent: "
-                    + Integer.toString(studyStrategy.numberOfItemsFromTheLeastKnown20Percent) + "\n");
-
-            fw.write("numberOfCardsFromTheLeastKnown100: "
-                    + Integer.toString(studyStrategy.numberOfItemsFromTheLeastKnown100) + "\n");
-            
-            fw.write("numberOfCardsWithLeastSignificantAr: "
-                    + Integer.toString(studyStrategy.numberOfItemsAmongTheLeastSignificantAr) + "\n");
-
-            fw.write("numberOfLatestQuestionedCards: "
-                    + Integer.toString(studyStrategy.numberOfLatestQuestionedItems) + "\n");
-            
-            fw.write("studyingGradually: "
-                    + Boolean.toString(studyStrategy.studyingGradually) + "\n");
-            
-            fw.write("cardCategoryRestrictions:");
-            for (int categoryIndex : studyStrategy.cardCategoryRestrictions) {
-                fw.write(" " + categoryIndex);
-            }
-            fw.write("\n");
-            
-            fw.close();
-        } catch (IOException ioe) {
-            System.err.println("IOException: " + ioe.getMessage());
-        }           
+    public void writeDictionaryStudyStrategyDataToDisc() {
+        String filePath 
+                = discFilesMetaDataHandler.getStudiedLanguageGrammarStudyStrategyPath();
+        
+        writeStudyStrategyDataToDisc(filePath);
     }
-
+    
     public void writeAllDataToFile() {
         saveCardContainerDataToFile();
         saveAnswerDataContainerDataToFile();

@@ -1,9 +1,10 @@
 package graphic_user_interface.grammar_book;
 
-import grammar_book.DataModificator;
+import language_studyer.DataModificator;
 import grammar_book.GrammarTester;
 import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarBook;
+import grammar_book.GrammarDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -334,16 +335,15 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
         
-        if (inspectGrammarItemDialogAnswer.equals("save")) {
+        /*if (inspectGrammarItemDialogAnswer.equals("save")) {
             DataModificator grammarDataModificator 
                     = new DataModificator();
             
-            grammarDataModificator.
-                    setGrammarAnswerDataContainer(answerDataContainer);
+            grammarDataModificator.setAnswerDataContainer(answerDataContainer);
             grammarDataModificator.setData(grammarItemContainer);
             
             grammarDataModificator.writeGrammarBookToDisk();
-        }
+        }*/
         
         if (inspectGrammarItemDialogAnswer.equals("delete")) {
             //TODO
@@ -373,8 +373,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         finishTime = new Date().getTime();
         
         //saving data
-        DataModificator grammarDataModificator = new DataModificator();
-        grammarDataModificator.setGrammarAnswerDataContainer(answerDataContainer);
+        GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
+        grammarDataModificator.setAnswerDataContainer(answerDataContainer);
         grammarDataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
         
         

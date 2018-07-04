@@ -1,24 +1,11 @@
 package grammar_book;
 
+import language_studyer.DataModificator;
 import java.io.FileWriter;
 import java.io.IOException;
 import language_studyer.AnswerDataContainer;
 
-public class DataModificator {
-
-    private GrammarItemContainer grammarBook;
-    private AnswerDataContainer answerDataContainer;
-
-    private DiscFilesMetaDataHandler languageFilesDataHendler
-            = new DiscFilesMetaDataHandler();
-
-    public void setData(GrammarItemContainer gb) {
-        grammarBook = gb;
-    }
-
-    public void setGrammarAnswerDataContainer(AnswerDataContainer gac) {
-        answerDataContainer = gac;
-    }
+public class GrammarDataModificator extends DataModificator {
 
     //TODO: can be done more safe: first write new file, remove old file, rename new file
     public void writeGrammarBookToDisk() {
@@ -28,9 +15,11 @@ public class DataModificator {
             //the true will append the new data
             FileWriter fw = new FileWriter(filePath, false);
 
-            for (int orderIndex = 0; orderIndex < grammarBook.numberOfGrammarItems(); orderIndex++) {
+            for (int orderIndex = 0; orderIndex 
+                    < dataContainer.getStudyItemContainer().numberOfStudyItems(); orderIndex++) {
 
-                GrammarItem grammarItem = grammarBook.getGrammarItemByOrder(orderIndex);
+                GrammarItem grammarItem 
+                        = (GrammarItem) dataContainer.getStudyItemContainer().getStudyItemByOrder(orderIndex);
 
                 fw.write(grammarItem.toString());
                 fw.write("\n");
@@ -72,8 +61,15 @@ public class DataModificator {
         }
     }
 
+    public void writeGrammarStudyStrategyDataToDisc() {
+        String filePath 
+                = languageFilesDataHendler.getStudiedLanguageGrammarStudyStrategyPath();
+        
+        writeStudyStrategyDataToDisc(filePath);
+    }
+    
     public void deleteGrammarItemByIndex(int grammarItemIndex) {
-        grammarBook.removeByIndex(grammarItemIndex);
+        dataContainer.getStudyItemContainer().removeByIndex(grammarItemIndex);
         answerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
         writeDataToDisc();
     }
@@ -82,7 +78,7 @@ public class DataModificator {
         writeGrammarBookToDisk();
         writeGrammarAnswerDataToDisk();
     }
-
+    
     //TODO: implenet
     public void deleteExample(int grammarItemIndex, int exampleIndex) {
     }

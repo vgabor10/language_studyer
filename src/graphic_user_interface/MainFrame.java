@@ -13,6 +13,7 @@ import graphic_user_interface.dictionary.CardTesterDialog;
 import graphic_user_interface.dictionary.DictionaryOtherToolsDialog;
 import graphic_user_interface.dictionary.DictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarBookStatisticsDialog;
+import graphic_user_interface.dictionary.StudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarStudyStrategyDialog;
 import java.awt.event.KeyEvent;
 

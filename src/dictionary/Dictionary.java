@@ -1,5 +1,7 @@
 package dictionary;
 
+import language_studyer.DiscFilesMetaDataHandler;
+
 public class Dictionary {
     
     public CardTester cardTester = new CardTester();

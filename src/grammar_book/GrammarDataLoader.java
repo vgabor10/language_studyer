@@ -1,19 +1,18 @@
 package grammar_book;
 
 import common.Logger;
-import language_studyer.Category;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import language_studyer.AnswerDataContainer;
 import language_studyer.DataContainer;
+import language_studyer.DataLoader;
+import language_studyer.DiscFilesMetaDataHandler;
 
-public class GrammarDataLoader {
+public class GrammarDataLoader extends DataLoader {
     
     private final Logger logger = new Logger();
-
-    private DataContainer dataContainer;
 
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
@@ -139,49 +138,26 @@ public class GrammarDataLoader {
         }
     }
 
-    public void loadStudyItemIndexesAndCategoryIndexes() {
-        /*try {
-            String filePath = discFilesMetaDataHandler.getStudiedLanguageStudyItemAndCategoryIndexesPath();
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                String[] splittedRow = strLine.split("\t");
-                int cardIndex = Integer.parseInt(splittedRow[0]);
-
-                for (int i=1; i<splittedRow.length; i++) {
-                    int categoryIndex = Integer.parseInt(splittedRow[i]);
-                    dataContainer.grammarItemContainer.getByIndex(cardIndex).categoryIndexes.add(categoryIndex);
-                }
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find study item categories file");
-        } catch (IOException e) {
-            System.err.println("exception in loadStudyItemIndexesAndCategoryIndexes function");
-        }*/
+    public void loadGrammarItemIndexesAndCategoryIndexes() {
+        String filePath = discFilesMetaDataHandler
+                .getStudiedLanguageGrammarItemAndCategoryIndexesPath();
+        
+        loadStudyItemIndexesAndCategoryIndexes(filePath);
     }
     
     public void loadCategoryIndexesAndCategoryNames() {
-        try {
-            String filePath = discFilesMetaDataHandler.getStudiedLanguageCategoryIndexesAndCategoryNames();
-            BufferedReader br = new BufferedReader(new FileReader(filePath));
-            String strLine;
-            while ((strLine = br.readLine()) != null) {
-                String[] splittedRow = strLine.split("\t");
-                int categoryIndex = Integer.parseInt(splittedRow[0]);
-                String categoryName = splittedRow[1];
-
-                Category category = new Category();
-                category.index = categoryIndex;
-                category.name = categoryName;
-
-                dataContainer.getCategoryContainer().add(category);
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("unable to find category file");
-        } catch (IOException e) {
-            System.err.println("exception in load file function");
-        }
-    }   
+        String filePath = discFilesMetaDataHandler
+                .getStudiedLanguageGrammarItemCategoryIndexesAndCategoryNames();
+        
+        loadCategoryIndexesAndCategoryNames(filePath);
+    }
+    
+    public void loadStudyStrategyDataFromDisc() {
+        String filePath = discFilesMetaDataHandler
+                .getStudiedLanguageGrammarStudyStrategyPath();
+        
+        loadStudyStrategyDataFromDisc(filePath);
+    }
     
     public void loadAllData() {
         dataContainer.clear();
