@@ -1,7 +1,7 @@
 package graphic_user_interface.dictionary;
 
 import common.Logger;
-import dictionary.DataModificator;
+import dictionary.DictionaryDataModificator;
 import dictionary.CardTester;
 import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
@@ -318,8 +318,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
 
         for (int index : acceptableCardIndexes) {
             acceptableAnswersTableModel.addRow(new Object[]{
-                dictionary.dataContainer.cardContainer.getCardByIndex(index).term,
-                dictionary.dataContainer.cardContainer.getCardByIndex(index).definition
+                dictionary.dataContainer.getCardContainer().getCardByIndex(index).term,
+                dictionary.dataContainer.getCardContainer().getCardByIndex(index).definition
             });
         }
     }
@@ -406,8 +406,8 @@ public class CardTesterDialog extends javax.swing.JDialog {
         dialog.setVisible(true);
         
         if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DataModificator dictionaryDataModificator 
-                    = new DataModificator();
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
             dictionaryDataModificator.setData(dictionary.dataContainer);
             dictionaryDataModificator.writeAllDataToFile();
             
@@ -432,7 +432,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
         jTextField1.requestFocus();
         
-        if (cardTester.isMoreCardToTest()) {
+        if (cardTester.isMoreStudyItemsToTest()) {
             moveToNextQuestion();
         }
         else {
@@ -457,7 +457,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
                 
         jTextField1.requestFocus();
         
-        if (cardTester.isMoreCardToTest()) {
+        if (cardTester.isMoreStudyItemsToTest()) {
             moveToNextQuestion();
         }
         else {
@@ -476,7 +476,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
         answerDataByStudyItem.loadDataFromAnswerDataContainer(
                 cardTester.getActualQuestionedCard().index,
-                dictionary.dataContainer.answerDataContainer);
+                dictionary.dataContainer.getAnswerDataContainer());
         dialog.answerDataByCard = answerDataByStudyItem;
 
         dialog.initialise();
@@ -498,7 +498,7 @@ public class CardTesterDialog extends javax.swing.JDialog {
         
         jTextField1.requestFocus();
         
-        if (cardTester.isMoreCardToTest()) {
+        if (cardTester.isMoreStudyItemsToTest()) {
             moveToNextQuestion();
         }
         else {

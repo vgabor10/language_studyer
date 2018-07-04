@@ -10,10 +10,12 @@ import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.Set;
 import language_studyer.AnswerData;
+import language_studyer.DataContainer;
 
 public class CardTestStatisticsMaker {
 
     private DataContainer dataContainer;
+    private CardContainer allCards;
     private AnswerDataContainer testAnswers;
     
     private AnswerDataContainer relevantOldAnswers = new AnswerDataContainer();
@@ -37,7 +39,8 @@ public class CardTestStatisticsMaker {
             AnswerDataContainer testAnswers) {
         this.dataContainer = dataContainer;
         this.testAnswers = testAnswers;
-        this.categoryRestrictions = dataContainer.studyStrategy.cardCategoryRestrictions;
+        this.categoryRestrictions = dataContainer.getStudyStrategy().cardCategoryRestrictions;
+        this.allCards = (CardContainer) dataContainer.getStudyItemContainer();
         
         if (!categoryRestrictions.contains(-1)) {
             categoryRestrictionUsage = true;
@@ -45,9 +48,8 @@ public class CardTestStatisticsMaker {
         else {
             categoryRestrictionUsage = false;
         }
-        
-        CardContainer allCards = dataContainer.cardContainer;
-        AnswerDataContainer allOldAnswers = dataContainer.answerDataContainer;
+
+        AnswerDataContainer allOldAnswers = dataContainer.getAnswerDataContainer();
         
         if (categoryRestrictionUsage) {
             for (int i = 0; i < allOldAnswers.numberOfAnswers(); i++) {
@@ -134,7 +136,7 @@ public class CardTestStatisticsMaker {
         
         for (int i=0; i<testAnswers.numberOfAnswers(); i++) {
             AnswerData answerData = testAnswers.getAnswerData(i);
-            Card card = dataContainer.cardContainer.getCardByIndex(answerData.index);
+            Card card = allCards.getCardByIndex(answerData.index);
             out.addCard(card);
         } 
         

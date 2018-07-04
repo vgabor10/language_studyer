@@ -1,7 +1,7 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.CardCategory;
-import dictionary.CategoryContainer;
+import language_studyer.Category;
+import language_studyer.CategoryContainer;
 import dictionary.Dictionary;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -35,7 +35,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
     public void setDictionary(Dictionary d) {
         dictionary = d;
         
-        allCategoryContainer = dictionary.dataContainer.categoryContainer;
+        allCategoryContainer = dictionary.dataContainer.getCategoryContainer();
         for (int i=0; i<allCategoryContainer.numberOfItems(); i++) {
             String categoryName = allCategoryContainer.getCategoryNameByOrder(i);
             allCategoriesTableModel.addRow(new Object[]{categoryName});
@@ -45,7 +45,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
         if (dictionary.cardFinder.isCategoryRestrictionsUsed()) {
             
             for (int categoryIndex : dictionary.cardFinder.getCardCategoryRestrictions()) {
-                CardCategory cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
+                Category cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
                 selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
                 selectedCategoryContainer.add(cardCategory);
             }
@@ -233,7 +233,7 @@ public class CardCategoryFilterDialog extends javax.swing.JDialog {
             selectedCategoriesTable.setEnabled(true);
             
             int selectedTableRowIndex = allCategoriesTable.getSelectedRow();
-            CardCategory cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
+            Category cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
 
             if (!selectedCategoryContainer.containsCategoryWithIndex(cardCategory.index)) {
                 selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});

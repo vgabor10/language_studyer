@@ -1,13 +1,15 @@
 package grammar_book;
 
 import common.Logger;
-import dictionary.CardCategory;
+import language_studyer.Category;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import language_studyer.AnswerDataContainer;
+import language_studyer.DataContainer;
 
-public class DataLoader {
+public class GrammarDataLoader {
     
     private final Logger logger = new Logger();
 
@@ -33,7 +35,8 @@ public class DataLoader {
         try {
             logger.debug("start loading grammar items");
             
-            GrammarItemContainer grammarItemContainer = dataContainer.grammarItemContainer;
+            GrammarItemContainer grammarItemContainer 
+                    = (GrammarItemContainer) dataContainer.getStudyItemContainer();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -118,8 +121,8 @@ public class DataLoader {
 
     public void loadAnswerData() {
         try {
-            GrammarAnswerDataContainer grammarAnswerDataContainer 
-                    = dataContainer.grammarAnswerDataContainer;
+            AnswerDataContainer grammarAnswerDataContainer 
+                    =  dataContainer.getAnswerDataContainer();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
             String strLine;
@@ -167,11 +170,11 @@ public class DataLoader {
                 int categoryIndex = Integer.parseInt(splittedRow[0]);
                 String categoryName = splittedRow[1];
 
-                CardCategory category = new CardCategory();
+                Category category = new Category();
                 category.index = categoryIndex;
                 category.name = categoryName;
 
-                dataContainer.categoryContainer.add(category);
+                dataContainer.getCategoryContainer().add(category);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find category file");

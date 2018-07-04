@@ -3,8 +3,8 @@ package graphic_user_interface.dictionary;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardFinder;
-import dictionary.DataContainer;
-import dictionary.DataModificator;
+import dictionary.DictionaryDataContainer;
+import dictionary.DictionaryDataModificator;
 import dictionary.DiscFilesMetaDataHandler;
 import graphic_user_interface.common.DialogAnswer;
 import graphic_user_interface.common.DialogAnswer;
@@ -25,7 +25,7 @@ import language_studyer.AnswerDataContainer;
 
 public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
 
-    public DataContainer dictionaryDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
     
     private List<String> exampleSentenceDepot = new ArrayList<>();
     private CardContainer cardContainer;
@@ -77,8 +77,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
     }
 
     public void initialise() {
-        cardContainer = dictionaryDataContainer.cardContainer;
-        answerDataContainer = dictionaryDataContainer.answerDataContainer;
+        cardContainer = dictionaryDataContainer.getCardContainer();
+        answerDataContainer = dictionaryDataContainer.getAnswerDataContainer();
         
         cardFinder.setCardContainer(cardContainer);
         
@@ -339,8 +339,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         dialog.setVisible(true);
 
         if (dialogAnswer.stringAnswer.equals("delete_card")) {
-            DataModificator dictionaryDataModificator 
-                    = new DataModificator();
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.removeCardByCardIndex(cardToSuggestSentence.index);
             
@@ -349,8 +349,8 @@ public class ExampleSentenceAssigner2Dialog extends javax.swing.JDialog {
         }
         
         if (dialogAnswer.stringAnswer.equals("save_card")) {
-            DataModificator dictionaryDataModificator 
-                    = new DataModificator();
+            DictionaryDataModificator dictionaryDataModificator 
+                    = new DictionaryDataModificator();
             dictionaryDataModificator.setData(dictionaryDataContainer);
             dictionaryDataModificator.writeAllDataToFile();
 

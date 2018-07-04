@@ -1,5 +1,7 @@
 package dictionary;
 
+import language_studyer.StudyStrategy;
+import language_studyer.Category;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -7,13 +9,13 @@ import java.io.IOException;
 import language_studyer.AnswerData;
 import language_studyer.AnswerDataContainer;
 
-public class DataLoader {
+public class DictionaryDataLoader {
     
-    private DataContainer dataContainer;
+    private DictionaryDataContainer dataContainer;
     
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
     
-    public void setDataContainer(DataContainer dc) {
+    public void setDataContainer(DictionaryDataContainer dc) {
         this.dataContainer = dc;
     }
 
@@ -23,7 +25,7 @@ public class DataLoader {
     
     public void loadCardContainer() {
         try {        
-            CardContainer cardContainer = dataContainer.cardContainer;
+            CardContainer cardContainer = dataContainer.getCardContainer();
             cardContainer.clear();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageCardDataPath();
@@ -48,7 +50,7 @@ public class DataLoader {
     
     public void loadAnswerData() {
         try {
-            AnswerDataContainer answerDataContainer = dataContainer.answerDataContainer;
+            AnswerDataContainer answerDataContainer = dataContainer.getAnswerDataContainer();
             answerDataContainer.clear();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageAnswerDataPath();
@@ -77,7 +79,7 @@ public class DataLoader {
                 int cardIndex = Integer.parseInt(splittedRow[0]);
                 String exampleSentence = splittedRow[1];
                 
-                dataContainer.cardContainer.getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
+                dataContainer.getCardContainer().getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
             }
             
         } catch (FileNotFoundException e) {
@@ -98,7 +100,8 @@ public class DataLoader {
 
                 for (int i=1; i<splittedRow.length; i++) {
                     int categoryIndex = Integer.parseInt(splittedRow[i]);
-                    dataContainer.cardContainer.getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
+                    dataContainer.getCardContainer()
+                            .getCardByIndex(cardIndex).categoryIndexes.add(categoryIndex);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -118,11 +121,11 @@ public class DataLoader {
                 int categoryIndex = Integer.parseInt(splittedRow[0]);
                 String categoryName = splittedRow[1];
 
-                CardCategory category = new CardCategory();
+                Category category = new Category();
                 category.index = categoryIndex;
                 category.name = categoryName;
 
-                dataContainer.categoryContainer.add(category);
+                dataContainer.getCategoryContainer().add(category);
             }
         } catch (FileNotFoundException e) {
             System.err.println("unable to find file");
@@ -136,7 +139,7 @@ public class DataLoader {
             String filePath = discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategy();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             
-            StudyStrategy studyStrategy = dataContainer.studyStrategy;
+            StudyStrategy studyStrategy = dataContainer.getStudyStrategy();
             
             String line;
             while ((line = br.readLine()) != null) {
@@ -144,31 +147,31 @@ public class DataLoader {
                 if (line.startsWith("numberOfRandomCards: ")) {
                     String s = line.substring(line.lastIndexOf(":") + 2);
                     //System.out.println(s);
-                    studyStrategy.numberOfRandomCards = Integer.parseInt(s);
+                    studyStrategy.numberOfRandomItems = Integer.parseInt(s);
                 }
                 
                 if (line.startsWith("numberOfCardsFromTheLeastKnown20Percent: ")) {
                     String s = line.substring(line.lastIndexOf(":") + 2);
                     //System.out.println(s);
-                    studyStrategy.numberOfCardsFromTheLeastKnown20Percent = Integer.parseInt(s);
+                    studyStrategy.numberOfItemsFromTheLeastKnown20Percent = Integer.parseInt(s);
                 }
                 
                 if (line.startsWith("numberOfCardsFromTheLeastKnown100: ")) {
                     String s = line.substring(line.lastIndexOf(":") + 2);
                     //System.out.println(s);
-                    studyStrategy.numberOfCardsFromTheLeastKnown100 = Integer.parseInt(s);
+                    studyStrategy.numberOfItemsFromTheLeastKnown100 = Integer.parseInt(s);
                 }
 
                 if (line.startsWith("numberOfCardsWithLeastSignificantAr: ")) {
                     String s = line.substring(line.lastIndexOf(":") + 2);
                     //System.out.println(s);
-                    studyStrategy.numberOfCardsAmongTheLeastSignificantAr = Integer.parseInt(s);
+                    studyStrategy.numberOfItemsAmongTheLeastSignificantAr = Integer.parseInt(s);
                 }
 
                 if (line.startsWith("numberOfLatestQuestionedCards: ")) {
                     String s = line.substring(line.lastIndexOf(":") + 2);
                     //System.out.println(s);
-                    studyStrategy.numberOfLatestQuestionedCards = Integer.parseInt(s);
+                    studyStrategy.numberOfLatestQuestionedItems = Integer.parseInt(s);
                 }
                 
                 if (line.startsWith("studyingGradually: ")) {

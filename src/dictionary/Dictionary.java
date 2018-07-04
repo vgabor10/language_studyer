@@ -4,10 +4,10 @@ public class Dictionary {
     
     public CardTester cardTester = new CardTester();
     public CardFinder cardFinder = new CardFinder();
-    public DataContainer dataContainer = new DataContainer();
-    public StatisticsMaker statisticsMaker = new StatisticsMaker();
-    public DataLoader dataLoader = new DataLoader();
-    public DataModificator dataModificator = new DataModificator();
+    public DictionaryDataContainer dataContainer = new DictionaryDataContainer();
+    public DictionaryStatisticsMaker statisticsMaker = new DictionaryStatisticsMaker();
+    public DictionaryDataLoader dataLoader = new DictionaryDataLoader();
+    public DictionaryDataModificator dataModificator = new DictionaryDataModificator();
     public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
     
     public Dictionary() {
@@ -20,7 +20,7 @@ public class Dictionary {
         
         statisticsMaker.setData(dataContainer);
         
-        cardFinder.setCardContainer(dataContainer.cardContainer);
+        cardFinder.setCardContainer(dataContainer.getCardContainer());
         
         cardTester.setData(dataContainer);
     }

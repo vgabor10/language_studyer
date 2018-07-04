@@ -1,7 +1,5 @@
 package grammar_book;
 
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -13,7 +11,6 @@ public class GrammarItem extends StudyItem {
     public String description;
     public String comments;
     private Map<Integer, Example> examples = new TreeMap<>();
-    public Set<Integer> categoryIndexes = new HashSet<>();
 
     public GrammarItem() {
         title.clear();
@@ -39,10 +36,6 @@ public class GrammarItem extends StudyItem {
 
     public Set<Integer> getExampleIndexes() {
         return examples.keySet();
-    }
-
-    public boolean containsAnyCategoryIndex(Set<Integer> categoryIndexes2) {
-        return !Collections.disjoint(this.categoryIndexes, categoryIndexes2);
     }
     
     public void clearExamples() {

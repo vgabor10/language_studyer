@@ -1,5 +1,6 @@
 package dictionary;
 
+import language_studyer.StudyStrategy;
 import language_studyer.AnswerDataContainer;
 import common.Logger;
 
@@ -7,15 +8,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class DataModificator {
+public class DictionaryDataModificator {
     
-    private DataContainer dataContainer;
+    private DictionaryDataContainer dataContainer;
     
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
     private final Logger logger = new Logger();
 
-    public void setData(DataContainer dataContainer) {
+    public void setData(DictionaryDataContainer dataContainer) {
         this.dataContainer = dataContainer;
     }
     
@@ -24,20 +25,20 @@ public class DataModificator {
     }
 
     public void removeCardByCardIndex(int cardIndex) {
-        dataContainer.cardContainer.removeByIndex(cardIndex);
-        dataContainer.answerDataContainer.removeAnswersWithIndex(cardIndex);
+        dataContainer.getCardContainer().removeByIndex(cardIndex);
+        dataContainer.getAnswerDataContainer().removeAnswersWithIndex(cardIndex);
 
         writeAllDataToFile();
     }
     
     public void removeCardAnswerDataByCardIndex(int cardIndex) {
-        dataContainer.answerDataContainer.removeAnswersWithIndex(cardIndex);
+        dataContainer.getAnswerDataContainer().removeAnswersWithIndex(cardIndex);
         saveAnswerDataContainerDataToFile();
     }    
 
     public void addCard(Card card) {
-        card.index = dataContainer.cardContainer.getEmptyCardIndex();
-        dataContainer.cardContainer.addCard(card);
+        card.index = dataContainer.getCardContainer().getEmptyCardIndex();
+        dataContainer.getCardContainer().addCard(card);
         
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();
@@ -53,8 +54,8 @@ public class DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
-                Card card = dataContainer.cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
+                Card card = dataContainer.getCardContainer().getCardByOrder(i);
                 fw.write(Integer.toString(card.index) + "\t" +
                     card.term + "\t" + card.definition + "\n");
             }
@@ -73,8 +74,8 @@ public class DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.answerDataContainer.numberOfAnswers(); i++) {
-                fw.write(dataContainer.answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            for (int i = 0; i < dataContainer.getAnswerDataContainer().numberOfAnswers(); i++) {
+                fw.write(dataContainer.getAnswerDataContainer().getAnswerData(i).toStringData() + "\n");	//appends the string to the file
             }
             fw.close();
         } catch (IOException ioe) {
@@ -90,8 +91,8 @@ public class DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
-                Card card = dataContainer.cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
+                Card card = dataContainer.getCardContainer().getCardByOrder(i);
                 for (String exampleSentence : card.exampleSentences) {
                     fw.write(card.index + "\t" + exampleSentence  + "\n");	//appends the string to the file
                 }
@@ -110,8 +111,8 @@ public class DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.cardContainer.numberOfCards(); i++) {
-                Card card = dataContainer.cardContainer.getCardByOrder(i);
+            for (int i = 0; i < dataContainer.getCardContainer().numberOfCards(); i++) {
+                Card card = dataContainer.getCardContainer().getCardByOrder(i);
                 if (!card.categoryIndexes.isEmpty()) {
                     String outString = Integer.toString(card.index);
                     for (int categoryIndex : card.categoryIndexes) {
@@ -129,25 +130,25 @@ public class DataModificator {
     public void writeStudyStrategyDataToDisc() {
         try {
             
-            StudyStrategy studyStrategy = dataContainer.studyStrategy;
+            StudyStrategy studyStrategy = dataContainer.getStudyStrategy();
             
             //the true will append the new data
             FileWriter fw = new FileWriter(discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategy(), false);
             
             fw.write("numberOfRandomCards: " +
-                    Integer.toString(studyStrategy.numberOfRandomCards) + "\n");
+                    Integer.toString(studyStrategy.numberOfRandomItems) + "\n");
 
             fw.write("numberOfCardsFromTheLeastKnown20Percent: "
-                    + Integer.toString(studyStrategy.numberOfCardsFromTheLeastKnown20Percent) + "\n");
+                    + Integer.toString(studyStrategy.numberOfItemsFromTheLeastKnown20Percent) + "\n");
 
             fw.write("numberOfCardsFromTheLeastKnown100: "
-                    + Integer.toString(studyStrategy.numberOfCardsFromTheLeastKnown100) + "\n");
+                    + Integer.toString(studyStrategy.numberOfItemsFromTheLeastKnown100) + "\n");
             
             fw.write("numberOfCardsWithLeastSignificantAr: "
-                    + Integer.toString(studyStrategy.numberOfCardsAmongTheLeastSignificantAr) + "\n");
+                    + Integer.toString(studyStrategy.numberOfItemsAmongTheLeastSignificantAr) + "\n");
 
             fw.write("numberOfLatestQuestionedCards: "
-                    + Integer.toString(studyStrategy.numberOfLatestQuestionedCards) + "\n");
+                    + Integer.toString(studyStrategy.numberOfLatestQuestionedItems) + "\n");
             
             fw.write("studyingGradually: "
                     + Boolean.toString(studyStrategy.studyingGradually) + "\n");
@@ -184,7 +185,7 @@ public class DataModificator {
             }
             fw.close();
 
-            dataContainer.answerDataContainer.appendAnswerDataContainer(answersToAppend);
+            dataContainer.getAnswerDataContainer().appendAnswerDataContainer(answersToAppend);
         } catch (IOException ioe) {
             System.err.println("IOException: " + ioe.getMessage());
         }

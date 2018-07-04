@@ -2,11 +2,12 @@ package grammar_book;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import language_studyer.AnswerDataContainer;
 
 public class DataModificator {
 
     private GrammarItemContainer grammarBook;
-    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+    private AnswerDataContainer answerDataContainer;
 
     private DiscFilesMetaDataHandler languageFilesDataHendler
             = new DiscFilesMetaDataHandler();
@@ -15,8 +16,8 @@ public class DataModificator {
         grammarBook = gb;
     }
 
-    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
-        grammarAnswerDataContainer = gac;
+    public void setGrammarAnswerDataContainer(AnswerDataContainer gac) {
+        answerDataContainer = gac;
     }
 
     //TODO: can be done more safe: first write new file, remove old file, rename new file
@@ -47,8 +48,8 @@ public class DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < grammarAnswerDataContainer.numberOfAnswers(); i++) {
-                fw.write(grammarAnswerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
+            for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
+                fw.write(answerDataContainer.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
             }
             fw.close();
         } catch (IOException ioe) {
@@ -56,9 +57,9 @@ public class DataModificator {
         }
     }
 
-    public void appendGrammarAnswerData(GrammarAnswerDataContainer gadc) {
+    public void appendGrammarAnswerData(AnswerDataContainer gadc) {
         try {
-            grammarAnswerDataContainer.appendAnswerDataContainer(gadc);
+            answerDataContainer.appendAnswerDataContainer(gadc);
             
             String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
             FileWriter fw = new FileWriter(filePath, true);	//the true will append the new data
@@ -73,7 +74,7 @@ public class DataModificator {
 
     public void deleteGrammarItemByIndex(int grammarItemIndex) {
         grammarBook.removeByIndex(grammarItemIndex);
-        grammarAnswerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
+        answerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
         writeDataToDisc();
     }
     

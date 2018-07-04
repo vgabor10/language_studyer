@@ -1,7 +1,7 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Dictionary;
-import dictionary.StudyStrategy;
+import language_studyer.StudyStrategy;
 import java.awt.event.KeyEvent;
 
 public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
@@ -23,7 +23,7 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     
     public void setDictionary(Dictionary dictionary) {
         this.dictionary = dictionary;
-        studyStrategy = dictionary.dataContainer.studyStrategy;
+        studyStrategy = dictionary.dataContainer.getStudyStrategy();
         setStudyStrategyDataToDialog();
     }
     
@@ -40,11 +40,11 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     }
     
     private void setStudyStrategyDataToDialog() {
-        jSpinner1.setValue(studyStrategy.numberOfRandomCards);
-        jSpinner2.setValue(studyStrategy.numberOfCardsFromTheLeastKnown20Percent);
-        jSpinner3.setValue(studyStrategy.numberOfCardsFromTheLeastKnown100);
-        jSpinner4.setValue(studyStrategy.numberOfCardsAmongTheLeastSignificantAr);
-        jSpinner5.setValue(studyStrategy.numberOfLatestQuestionedCards); 
+        jSpinner1.setValue(studyStrategy.numberOfRandomItems);
+        jSpinner2.setValue(studyStrategy.numberOfItemsFromTheLeastKnown20Percent);
+        jSpinner3.setValue(studyStrategy.numberOfItemsFromTheLeastKnown100);
+        jSpinner4.setValue(studyStrategy.numberOfItemsAmongTheLeastSignificantAr);
+        jSpinner5.setValue(studyStrategy.numberOfLatestQuestionedItems); 
         jCheckBox1.setSelected(studyStrategy.studyingGradually);
     }
 
@@ -300,19 +300,19 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        studyStrategy.numberOfRandomCards 
+        studyStrategy.numberOfRandomItems 
                 = (Integer)jSpinner1.getModel().getValue();
         
-        studyStrategy.numberOfCardsFromTheLeastKnown20Percent
+        studyStrategy.numberOfItemsFromTheLeastKnown20Percent
                 = (Integer) jSpinner2.getModel().getValue();
 
-        studyStrategy.numberOfCardsFromTheLeastKnown100
+        studyStrategy.numberOfItemsFromTheLeastKnown100
                 = (Integer) jSpinner3.getModel().getValue();
         
-        studyStrategy.numberOfCardsAmongTheLeastSignificantAr 
+        studyStrategy.numberOfItemsAmongTheLeastSignificantAr 
                 = (Integer)jSpinner4.getModel().getValue();
  
-        studyStrategy.numberOfLatestQuestionedCards 
+        studyStrategy.numberOfLatestQuestionedItems 
                 = (Integer)jSpinner5.getModel().getValue();
         
         studyStrategy.studyingGradually = jCheckBox1.isSelected();
@@ -347,11 +347,11 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jSpinner5StateChanged
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        studyStrategy.numberOfRandomCards = 6;
-        studyStrategy.numberOfCardsFromTheLeastKnown20Percent = 4;
-        studyStrategy.numberOfCardsFromTheLeastKnown100 = 4;
-        studyStrategy.numberOfCardsAmongTheLeastSignificantAr = 2;
-        studyStrategy.numberOfLatestQuestionedCards = 4;
+        studyStrategy.numberOfRandomItems = 6;
+        studyStrategy.numberOfItemsFromTheLeastKnown20Percent = 4;
+        studyStrategy.numberOfItemsFromTheLeastKnown100 = 4;
+        studyStrategy.numberOfItemsAmongTheLeastSignificantAr = 2;
+        studyStrategy.numberOfLatestQuestionedItems = 4;
         studyStrategy.cardCategoryRestrictions.clear();
         
         setStudyStrategyDataToDialog();
@@ -360,7 +360,7 @@ public class DictionaryStudyStrategyDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dictionary.dataContainer.categoryContainer);
+        dialog.setAllCategories(dictionary.dataContainer.getCategoryContainer());
         dialog.setSelectedCategories(studyStrategy.cardCategoryRestrictions);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);

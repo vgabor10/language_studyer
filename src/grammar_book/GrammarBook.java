@@ -2,11 +2,11 @@ package grammar_book;
 
 public class GrammarBook {
     
-    public DataContainer dataContainer = new DataContainer();
+    public GrammarDataContainer dataContainer = new GrammarDataContainer();
     public GrammarTester grammartester = new GrammarTester();
-    public DataLoader dataLoader = new DataLoader();
+    public GrammarDataLoader dataLoader = new GrammarDataLoader();
     public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
-    public StatisticsMaker statisticsMaker = new StatisticsMaker();
+    public GrammarAnswerDataStatisticsMaker statisticsMaker = new GrammarAnswerDataStatisticsMaker();
     public DataModificator dataModificator = new DataModificator();
     
     public GrammarBook() {
@@ -16,7 +16,12 @@ public class GrammarBook {
         
         grammartester.setData(dataContainer);
         
-        statisticsMaker.setData(dataContainer);
+        statisticsMaker.studiedAnswerDataContainer 
+                = dataContainer.getAnswerDataContainer();
+        statisticsMaker.studiedAnswerDataByStudyItemsContainer 
+                = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+        statisticsMaker.studiedStudyItemIndexes
+                = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
     }
     
 }

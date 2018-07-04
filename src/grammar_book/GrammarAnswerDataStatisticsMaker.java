@@ -1,33 +1,14 @@
 package grammar_book;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
-import language_studyer.AnswerData;
 import language_studyer.AnswerDataStatisticsMaker;
 
-public class StatisticsMaker extends AnswerDataStatisticsMaker {
+public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
 
-    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer gac) {
-            setAnswerDataContainer(gac);
-    }
-
-    public void setData(DataContainer dataContainer) {
-            studyItemContainer = dataContainer.grammarItemContainer;
-            answerDataContainer = dataContainer.grammarAnswerDataContainer;
-    }
-
-    public GrammarItemContainer getGrammarBook() {
-            return (GrammarItemContainer)studyItemContainer;
-    }
-
-    public int numberOfGrammarItems() {
+    /*public int numberOfGrammarItems() {
             return getGrammarBook().numberOfGrammarItems();
-    }
+    }*/
 
-    public int numberOfExamples() {
+    /*public int numberOfExamples() {
             int numberOfExamples = 0;
             Set<Integer> grammarItemIndexes = getGrammarBook().getGrammarItemIndexes();
             for (int index : grammarItemIndexes) {
@@ -35,9 +16,9 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
             }
 
             return numberOfExamples;
-    }
+    }*/
 
-    public long getLastStudyTimeOfGrammarItem(int grammarItemIndex) {	//TODO: take to the ancestor class
+    /*public long getLastStudyTimeOfGrammarItem(int grammarItemIndex) {	//TODO: take to the ancestor class
             long lastStudyTime = 0;
             for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
                     AnswerData answerData = answerDataContainer.getAnswerData(i);
@@ -47,9 +28,9 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
             }
 
             return lastStudyTime;
-    }
+    }*/
 
-    public int getLastStudiedGrammarItemIndex() {	//TODO: take to the ancestor class
+    /*public int getLastStudiedGrammarItemIndex() {	//TODO: take to the ancestor class
 
             Map<Integer,Long> GrammarItemIndexAndLastStudyTime = new HashMap<Integer,Long>();
 
@@ -72,9 +53,9 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
             }
 
             return lastStudiedGrammarItemIndex;
-    }
+    }*/
 
-    public void toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime() {
+    /*public void toScreenGrammarItemsWithAtLeast10ExamplesOrderedByLastSutdyTime() {
             Map<Long,Integer> LastStudyTimeAndGrammarItemIndex = new HashMap<Long,Integer>();
             int numberOfUntestedGrammarItems = 0;
             for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
@@ -103,9 +84,9 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
                                     + " | " + date2);
                     }
             }
-    }
+    }*/
 
-    public int numberOfGrammarItemsWithAtLeast10Examples() {
+    /*public int numberOfGrammarItemsWithAtLeast10Examples() {
             int numberOfGrammarItems = 0;
             for (int grammarItemIndex : getGrammarBook().getGrammarItemIndexes()) {
                     if (10 <= getGrammarBook().getByIndex(grammarItemIndex).numberOfExamples()) {
@@ -113,6 +94,6 @@ public class StatisticsMaker extends AnswerDataStatisticsMaker {
                     }
             }
             return numberOfGrammarItems;
-    }
+    }*/
 
 }

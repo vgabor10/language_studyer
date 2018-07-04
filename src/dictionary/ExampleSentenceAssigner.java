@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class ExampleSentenceAssigner {
     
-    public DataContainer dictionaryDataContainer ;
+    public DictionaryDataContainer dictionaryDataContainer ;
     
     public List<String> exampeSentences = new ArrayList<>();
     public Map<Integer, Set<String>> exampeSentencesByCardIndexes = new HashMap<>();
@@ -26,8 +26,8 @@ public class ExampleSentenceAssigner {
         
         ArrayList<Integer> cardIndexes = new ArrayList<>();
         
-        for (int i=0; i<dictionaryDataContainer.cardContainer.numberOfCards(); i++) {
-            Card card = dictionaryDataContainer.cardContainer.getCardByOrder(i);
+        for (int i=0; i<dictionaryDataContainer.getCardContainer().numberOfCards(); i++) {
+            Card card = dictionaryDataContainer.getCardContainer().getCardByOrder(i);
             if (card.exampleSentences.size() < maxNumberOfExampleSentences) {
                 cardIndexes.add(card.index);
             }
@@ -38,7 +38,7 @@ public class ExampleSentenceAssigner {
     }
     
     public void fillExampeSentencesFromDDC() {
-        CardContainer cardContainer = dictionaryDataContainer.cardContainer;
+        CardContainer cardContainer = dictionaryDataContainer.getCardContainer();
         for (int i=0; i<cardContainer.numberOfCards(); i++) {
             Card card = cardContainer.getCardByOrder(i);
             
@@ -49,7 +49,8 @@ public class ExampleSentenceAssigner {
     }
     
     public String getSuggestion(int cardIndex) {
-        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+        Card card = dictionaryDataContainer.getCardContainer()
+                .getCardByIndex(cardIndex);
         
         String cardTermComparition = card.term;
         cardTermComparition = cardTermComparition.toLowerCase();
@@ -80,7 +81,7 @@ public class ExampleSentenceAssigner {
     }
     
     public List<String> getSuggestions(int cardIndex) {
-        Card card = dictionaryDataContainer.cardContainer.getCardByIndex(cardIndex);
+        Card card = dictionaryDataContainer.getCardContainer().getCardByIndex(cardIndex);
         
         String cardTermComparition = card.term;
         cardTermComparition = cardTermComparition.toLowerCase();

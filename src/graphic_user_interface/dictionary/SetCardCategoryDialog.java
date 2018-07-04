@@ -1,7 +1,7 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.CardCategory;
-import dictionary.CategoryContainer;
+import language_studyer.Category;
+import language_studyer.CategoryContainer;
 import java.awt.event.KeyEvent;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
@@ -40,7 +40,7 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     
     public void setSelectedCategories(Set<Integer> categoryIndexes) {
         for (int categoryIndex : categoryIndexes) {
-            CardCategory cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
+            Category cardCategory = allCategoryContainer.getCategoryByIndex(categoryIndex);
             selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});
             selectedCategoryContainer.add(cardCategory);
         }
@@ -193,7 +193,7 @@ public class SetCardCategoryDialog extends javax.swing.JDialog {
     private void addCategoryToCard() {
         if (allCategoriesTable.getSelectedRowCount() == 1) {
             int selectedTableRowIndex = allCategoriesTable.getSelectedRow();
-            CardCategory cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
+            Category cardCategory = allCategoryContainer.getCategoryByOrder(selectedTableRowIndex);
 
             if (!selectedCategoryContainer.containsCategoryWithIndex(cardCategory.index)) {
                 selectedCategoriesTableModel.addRow(new Object[]{cardCategory.name});

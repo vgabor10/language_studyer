@@ -1,4 +1,4 @@
-package dictionary;
+package language_studyer;
 
 import java.util.HashSet;
 import java.util.Set;

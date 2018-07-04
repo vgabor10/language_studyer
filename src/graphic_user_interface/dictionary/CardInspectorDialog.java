@@ -162,7 +162,7 @@ public class CardInspectorDialog extends javax.swing.JDialog {
 
         AnswerDataByStudyItem answerDataByStudyItem = new AnswerDataByStudyItem();
         answerDataByStudyItem.loadDataFromAnswerDataContainer(cardToInspect.index,
-            dictionary.dataContainer.answerDataContainer);
+            dictionary.dataContainer.getAnswerDataContainer());
         dialog.cardIndex = cardToInspect.index;
         dialog.answerDataByCard = answerDataByStudyItem;
 

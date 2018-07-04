@@ -1,6 +1,6 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.StatisticsMaker;
+import dictionary.DictionaryStatisticsMaker;
 import dictionary.Dictionary;
 import dictionary.StatisticsToFileWriter;
 import graphic_user_interface.grammar_book.GrammarBookOtherToolsDialog;
@@ -459,7 +459,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
 
     public void initialise() {
         dictionary.dataContainer.fillAuxiliaryDataContainer();
-        StatisticsMaker statisticsMaker = dictionary.statisticsMaker;
+        DictionaryStatisticsMaker statisticsMaker = dictionary.statisticsMaker;
         
 	jLabel4.setText(Integer.toString(statisticsMaker.numberOfStudyItems()));
         jLabel15.setText(Integer.toString(statisticsMaker.numberOfAnswers()));

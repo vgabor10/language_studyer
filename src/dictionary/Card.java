@@ -1,10 +1,7 @@
 package dictionary;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 import language_studyer.StudyItem;
 
 public class Card extends StudyItem {
@@ -12,7 +9,6 @@ public class Card extends StudyItem {
     public String term;
     public String definition;
     public List<String> exampleSentences = new ArrayList<>();
-    public Set<Integer> categoryIndexes = new HashSet<>();
 
     public Card() {
         index = -1;
@@ -24,10 +20,6 @@ public class Card extends StudyItem {
         index = i;
         term = t;
         definition = d;
-    }
-
-    public boolean containsAnyCategoryIndex(Set<Integer> categoryIndexes2) {
-        return !Collections.disjoint(this.categoryIndexes, categoryIndexes2);
     }
     
     public String toStringData() {

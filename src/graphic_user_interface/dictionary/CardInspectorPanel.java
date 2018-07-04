@@ -2,7 +2,7 @@ package graphic_user_interface.dictionary;
 
 import common.Logger;
 import dictionary.Card;
-import dictionary.DataContainer;
+import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     public Integer cardIndex = -1;
     private Set<Integer> categories = new HashSet<>();
     
-    public DataContainer dictionaryDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
     
     private final DefaultTableModel tableModel;
     
@@ -51,7 +51,8 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         for (int categoryIndex : card.categoryIndexes) { 
             categories.add(categoryIndex);
             jComboBox1.addItem(
-                    dictionaryDataContainer.categoryContainer.getCategoryNameByIndex(categoryIndex));
+                    dictionaryDataContainer.getCategoryContainer()
+                            .getCategoryNameByIndex(categoryIndex));
         }
     }
     
@@ -285,7 +286,7 @@ public class CardInspectorPanel extends javax.swing.JPanel {
     private void setCardCategoriesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setCardCategoriesButtonActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dictionaryDataContainer.categoryContainer);
+        dialog.setAllCategories(dictionaryDataContainer.getCategoryContainer());
         dialog.setSelectedCategories(categories);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
@@ -293,7 +294,8 @@ public class CardInspectorPanel extends javax.swing.JPanel {
         jComboBox1.removeAllItems();
         for (int categoryIndex : categories) {
             jComboBox1.addItem(
-                    dictionaryDataContainer.categoryContainer.getCategoryNameByIndex(categoryIndex));
+                    dictionaryDataContainer.getCategoryContainer()
+                            .getCategoryNameByIndex(categoryIndex));
         }
     }//GEN-LAST:event_setCardCategoriesButtonActionPerformed
 

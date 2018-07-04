@@ -5,7 +5,7 @@ import common.Logger;
 import dictionary.Card;
 import dictionary.CardContainer;
 import dictionary.CardTestStatisticsMaker;
-import dictionary.DataContainer;
+import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
@@ -17,7 +17,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
     private CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
 
-    public DataContainer dataContainer;
+    public DictionaryDataContainer dataContainer;
     public Set<Integer> categoryConstrains;
     
     public AnswerDataContainer testAnswers;

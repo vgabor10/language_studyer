@@ -112,7 +112,7 @@ public class CardAdderDialog extends javax.swing.JDialog {
         Card cardToAdd = cardInspectorPanel1.getCardData();
         
         List<Integer> cardIndexesWithTheSameTerm = 
-                dictionary.dataContainer.cardContainer.findCardsByTerm(cardToAdd.term);
+                dictionary.dataContainer.getCardContainer().findCardsByTerm(cardToAdd.term);
         
         if (!cardIndexesWithTheSameTerm.isEmpty()) {
             DialogAnswer addCardDialogAnswer = new DialogAnswer();
@@ -121,7 +121,8 @@ public class CardAdderDialog extends javax.swing.JDialog {
             
             String dialogDescription = "Following cards with given term already exist:\n";
             for (int cardIndex : cardIndexesWithTheSameTerm) {
-                Card card = dictionary.dataContainer.cardContainer.getCardByIndex(cardIndex);
+                Card card = dictionary.dataContainer
+                        .getCardContainer().getCardByIndex(cardIndex);
                 dialogDescription = dialogDescription.concat(card.toString() + "\n");
             }
             dialogDescription = dialogDescription.concat("Would you like to add the card anyway?");

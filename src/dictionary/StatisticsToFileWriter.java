@@ -11,7 +11,7 @@ import language_studyer.Histogram;
 
 public class StatisticsToFileWriter {
     
-    public StatisticsMaker statisticsMaker;
+    public DictionaryStatisticsMaker statisticsMaker;
     
     public void toFileHistogramOfStudyItemAnswerRatesByNumberOfAnswers(
         String filePath, int numberOfAnswers) {

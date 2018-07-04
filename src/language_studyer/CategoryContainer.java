@@ -1,4 +1,4 @@
-package dictionary;
+package language_studyer;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,10 +9,10 @@ import java.util.Set;
 
 public class CategoryContainer {
 
-    private List<CardCategory> data = new ArrayList<>();
+    private List<Category> data = new ArrayList<>();
     private Map<Integer, Integer> categoryIndexToOrder = new HashMap<>();
     
-    public void add(CardCategory category) {
+    public void add(Category category) {
         data.add(category);
         categoryIndexToOrder.put(category.index, data.size()-1);
     }
@@ -21,7 +21,7 @@ public class CategoryContainer {
         return data.size();
     }
 
-    public CardCategory getCategoryByOrder(int order) {
+    public Category getCategoryByOrder(int order) {
         return data.get(order);
     }
     
@@ -29,7 +29,7 @@ public class CategoryContainer {
         return data.get(order).name;
     }
     
-    public CardCategory getCategoryByIndex(int categoryIndex) {
+    public Category getCategoryByIndex(int categoryIndex) {
         return data.get(categoryIndexToOrder.get(categoryIndex));
     }    
     

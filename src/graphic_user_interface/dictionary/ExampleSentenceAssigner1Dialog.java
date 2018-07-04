@@ -1,14 +1,14 @@
 package graphic_user_interface.dictionary;
 
 import dictionary.Card;
-import dictionary.DataContainer;
+import dictionary.DictionaryDataContainer;
 import dictionary.ExampleSentenceAssigner;
-import dictionary.DataModificator;
+import dictionary.DictionaryDataModificator;
 import java.util.ArrayList;
 
 public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
-    public DataContainer dictionaryDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
 
     private ExampleSentenceAssigner exampleSentenceAssigner
             = new ExampleSentenceAssigner();
@@ -16,7 +16,7 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
     private Card suggestedCard;
     private String suggestedExampleSentence;
     
-    public void setData(DataContainer ddc) {
+    public void setData(DictionaryDataContainer ddc) {
         dictionaryDataContainer = ddc;
     }
 
@@ -36,8 +36,8 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
         String exampleSentenceSuggestion = "";
         Card card = new Card();
         while (exampleSentenceSuggestion.equals("") 
-                && i<dictionaryDataContainer.cardContainer.numberOfCards()) {
-            card = dictionaryDataContainer.cardContainer.getCardByIndex(
+                && i<dictionaryDataContainer.getCardContainer().numberOfCards()) {
+            card = dictionaryDataContainer.getCardContainer().getCardByIndex(
                 cardIndexesWithNoExampleSentences.get(i));
 
             exampleSentenceSuggestion
@@ -45,7 +45,7 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
             i++;
         }
         
-        if (i==dictionaryDataContainer.cardContainer.numberOfCards()) {
+        if (i==dictionaryDataContainer.getCardContainer().numberOfCards()) {
             System.out.println("there are no more suggestions");
         }
         
@@ -163,8 +163,8 @@ public class ExampleSentenceAssigner1Dialog extends javax.swing.JDialog {
 
         suggestedCard.exampleSentences.add(suggestedExampleSentence);
         
-        DataModificator dictionaryDataModificator
-                = new DataModificator();
+        DictionaryDataModificator dictionaryDataModificator
+                = new DictionaryDataModificator();
         dictionaryDataModificator.setData(dictionaryDataContainer);
         dictionaryDataModificator.saveExampleSentencesDataToFile();
         

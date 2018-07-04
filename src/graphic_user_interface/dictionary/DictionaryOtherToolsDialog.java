@@ -1,12 +1,11 @@
 package graphic_user_interface.dictionary;
 
-import dictionary.DataContainer;
+import dictionary.DictionaryDataContainer;
 import java.awt.event.KeyEvent;
-import java.util.HashSet;
 
 public class DictionaryOtherToolsDialog extends javax.swing.JDialog {
 
-    public DataContainer dictionaryDataContainer;
+    public DictionaryDataContainer dictionaryDataContainer;
     
     public DictionaryOtherToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);

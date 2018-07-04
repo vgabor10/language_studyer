@@ -1,11 +1,11 @@
-package dictionary;
+package language_studyer;
 
-public class CardCategory {
+public class Category {
     
     public int index;
     public String name;
     
-    public CardCategory() {
+    public Category() {
         index = -1;
         name = "";
     }

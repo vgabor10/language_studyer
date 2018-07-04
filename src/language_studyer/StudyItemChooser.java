@@ -1,9 +1,8 @@
-package dictionary;
+package language_studyer;
 
-import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
-import language_studyer.AnswerDataByStudyItemContainer;
-import language_studyer.AnswerDataByStudyItem;
 import common.Logger;
+import grammar_book.Example;
+import grammar_book.GrammarItem;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,9 +11,10 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
+import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
-public class CardChooser {
+public class StudyItemChooser {
     
     private DataContainer dataContainer;
     private Set<Integer> cardIndexesFromChoose;
@@ -27,13 +27,13 @@ public class CardChooser {
     
     public void setData(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
-        this.studyStrategy = dataContainer.studyStrategy;
+        this.studyStrategy = dataContainer.getStudyStrategy();
         
         cardIndexesFromChoose = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
         answerDataByStudyItemsContainer = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
     }
     
-    private int getRandomCardIndex(
+    private int getRandomStudyItemIndex(
        Set<Integer> cardIndexesFromChoose, Set<Integer> omittedCardIndexes) {
 
         cardIndexesFromChoose.removeAll(omittedCardIndexes);
@@ -55,6 +55,25 @@ public class CardChooser {
         }
         
         return -2;
+    }
+    
+    public Example getRandomExample(GrammarItem grammarItem) {
+        Set<Integer> exampleIndexes = grammarItem.getExampleIndexes();
+        
+        if (!exampleIndexes.isEmpty()) {
+        
+            int r = randomGenerator.nextInt(exampleIndexes.size());
+
+            int i = 0;
+            for (int index : exampleIndexes) {
+                if (i == r) {
+                    return grammarItem.getExampleByIndex(index);
+                }
+                i++;
+            }
+        }
+        
+        return null;
     }
 
     private Set<Integer> getFormerlyQuestionedCardIndexes(
@@ -111,7 +130,7 @@ public class CardChooser {
 
         Set<Integer> outCardIndexes = new HashSet<>();
         for (int i = 0; i < numberOfCards; i++) {
-            int cardIndex = getRandomCardIndex(hardestCardIndexes, omittedCardIndexes);
+            int cardIndex = getRandomStudyItemIndex(hardestCardIndexes, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -135,7 +154,7 @@ public class CardChooser {
         }
 
         for (int i = 0; i < numberOfCardsGet; i++) {
-            int cardIndex = getRandomCardIndex(hardestCardIndexes, omittedCardIndexes);
+            int cardIndex = getRandomStudyItemIndex(hardestCardIndexes, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -180,7 +199,7 @@ public class CardChooser {
         }
 
         for (int i = 0; i < numberOfCards; i++) {
-            int cardIndex = getRandomCardIndex(cardIndexesWithFewAnswers, omittedCardIndexes);
+            int cardIndex = getRandomStudyItemIndex(cardIndexesWithFewAnswers, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -194,7 +213,7 @@ public class CardChooser {
         Set<Integer> outCardIndexes = new HashSet<>();
 
         for (int i = 0; i < numberOfCards; i++) {
-            int cardIndex = getRandomCardIndex(this.cardIndexesFromChoose, omittedCardIndexes);
+            int cardIndex = getRandomStudyItemIndex(this.cardIndexesFromChoose, omittedCardIndexes);
             outCardIndexes.add(cardIndex);
             omittedCardIndexes.add(cardIndex);
         }
@@ -231,7 +250,7 @@ public class CardChooser {
         return cardIndexes;
     }*/
 
-    public List<Integer> getCardIndexes() {
+    public List<Integer> getStudyItemIndexes() {
         dataContainer.fillAuxiliaryDataContainer();
         
         List<Integer> cardsToTestIndexes = new ArrayList<>();
@@ -249,7 +268,7 @@ public class CardChooser {
 
         logger.debug("start evaluate formerly questioned card indexes");
         
-        indexesToAdd = getFormerlyQuestionedCardIndexes(studyStrategy.numberOfLatestQuestionedCards, omittedCardIndexes);
+        indexesToAdd = getFormerlyQuestionedCardIndexes(studyStrategy.numberOfLatestQuestionedItems, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
         logger.debug("card indexes: " + indexesToAdd);
@@ -257,7 +276,7 @@ public class CardChooser {
         ////////////////////////////////////////////////////
         
         logger.debug("start evaluate random hardest card indexes");
-        indexesToAdd = getRandomHardestCardIndexes(0.4, studyStrategy.numberOfCardsFromTheLeastKnown20Percent, omittedCardIndexes);
+        indexesToAdd = getRandomHardestCardIndexes(0.4, studyStrategy.numberOfItemsFromTheLeastKnown20Percent, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
         
         logger.debug("card indexes: " + indexesToAdd);
@@ -266,7 +285,7 @@ public class CardChooser {
         
         logger.debug("start evaluate random hardest card indexes 2");
         
-        indexesToAdd = getRandomHardestCardIndex2(100, studyStrategy.numberOfCardsFromTheLeastKnown100, omittedCardIndexes);
+        indexesToAdd = getRandomHardestCardIndex2(100, studyStrategy.numberOfItemsFromTheLeastKnown100, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
         logger.debug("card indexes: " + indexesToAdd);
@@ -275,7 +294,7 @@ public class CardChooser {
         
         logger.debug("start evaluate card indexes from the 100 lest significant answer rate");
         
-        indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(studyStrategy.numberOfCardsAmongTheLeastSignificantAr, omittedCardIndexes);
+        indexesToAdd = getCardIndexesAmongCardsWithThe100LestSignificantAnswerRate(studyStrategy.numberOfItemsAmongTheLeastSignificantAr, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
         logger.debug("card indexes: " + indexesToAdd);
@@ -284,7 +303,7 @@ public class CardChooser {
 
         logger.debug("start evaluate random  card indexes");
         
-        indexesToAdd = getRandomCardIndexes(studyStrategy.numberOfRandomCards, omittedCardIndexes);
+        indexesToAdd = getRandomCardIndexes(studyStrategy.numberOfRandomItems, omittedCardIndexes);
         cardsToTestIndexes.addAll(indexesToAdd);
 
         logger.debug("card indexes: " + indexesToAdd);

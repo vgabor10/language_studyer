@@ -1,24 +1,55 @@
-package dictionary;
-
-import language_studyer.AnswerData;
-import language_studyer.AnswerDataContainer;
+package language_studyer;
 
 public class DataContainer {
     
-    public CardContainer cardContainer = new CardContainer();
-    public AnswerDataContainer answerDataContainer = new AnswerDataContainer();
-    public CategoryContainer categoryContainer = new CategoryContainer();
-    public StudyStrategy studyStrategy = new StudyStrategy();
+    private StudyItemContainer studyItemContainer = new StudyItemContainer();
+    private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
+    private CategoryContainer categoryContainer = new CategoryContainer();
+    private StudyStrategy studyStrategy = new StudyStrategy();
 
     public AuxiliaryDataContainer auxiliaryDataContainer = new AuxiliaryDataContainer();
+  
+    
+    protected void setStudyItemContainer(StudyItemContainer sic) {
+        this.studyItemContainer = sic;
+    }
+    
+    public StudyItemContainer getStudyItemContainer() {
+        return this.studyItemContainer;
+    }
+    
+    public void setAnswerDataContainer(AnswerDataContainer adc) {
+        this.answerDataContainer = adc;
+    }
+    
+    public AnswerDataContainer getAnswerDataContainer() {
+        return this.answerDataContainer;
+    }
+    
+    public void setCategoryContainer(CategoryContainer cc) {
+        this.categoryContainer = cc;
+    }
+    
+    public CategoryContainer getCategoryContainer() {
+        return this.categoryContainer;
+    }
+    
+    public void setStudyStrategy(StudyStrategy ss) {
+        this.studyStrategy = ss;
+    }
+    
+    public StudyStrategy getStudyStrategy() {
+        return this.studyStrategy;
+    }
     
     public void fillAuxiliaryDataContainer() {
         auxiliaryDataContainer.clear();
         
-        for (int i=0; i<cardContainer.numberOfCards(); i++) {
-            Card card = cardContainer.getCardByOrder(i);
-            if (card.containsAnyCategoryIndex(studyStrategy.cardCategoryRestrictions)) {
-                auxiliaryDataContainer.studiedCardIndexes.add(card.index);
+        for (int i=0; i<studyItemContainer.numberOfStudyItems(); i++) {
+            StudyItem studyItem = studyItemContainer.getStudyItemByOrder(i);
+            if (studyItem.containsAnyCategoryIndex(
+                    studyStrategy.cardCategoryRestrictions)) {
+                auxiliaryDataContainer.studiedCardIndexes.add(studyItem.index);
             }
         }
         
@@ -32,7 +63,7 @@ public class DataContainer {
     }
     
     public void clear() {
-        cardContainer.clear();
+        studyItemContainer.clear();
         answerDataContainer.clear();
         categoryContainer.clear();
         studyStrategy.clear();

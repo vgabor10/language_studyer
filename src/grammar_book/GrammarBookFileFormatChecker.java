@@ -1,23 +1,22 @@
 package grammar_book;
 
-import grammar_book.GrammarAnswerDataContainer;
-import grammar_book.GrammarItemContainer;
 import java.util.*;
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.FileNotFoundException;
+import language_studyer.AnswerDataContainer;
 
 public class GrammarBookFileFormatChecker {
 
     private GrammarItemContainer grammarBook;
-    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+    private AnswerDataContainer grammarAnswerDataContainer;
 
     public void setGrammarBook(GrammarItemContainer g) {
         grammarBook = g;
     }
 
-    public void setGrammarAnswerDataContainer(GrammarAnswerDataContainer g) {
+    public void setGrammarAnswerDataContainer(AnswerDataContainer g) {
         grammarAnswerDataContainer = g;
     }
 

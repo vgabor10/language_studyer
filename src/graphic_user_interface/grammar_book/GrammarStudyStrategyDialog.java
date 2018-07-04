@@ -1,8 +1,9 @@
 package graphic_user_interface.grammar_book;
 
-import grammar_book.*;
+import grammar_book.GrammarBook;
 import graphic_user_interface.dictionary.SetCardCategoryDialog;
 import java.awt.event.KeyEvent;
+import language_studyer.StudyStrategy;
 
 public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
 
@@ -21,7 +22,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     
     public void setGrammarBook(GrammarBook grammarBook) {
         this.grammarBook = grammarBook;
-        studyStrategy = grammarBook.dataContainer.studyStrategy;
+        studyStrategy = grammarBook.dataContainer.getStudyStrategy();
         setStudyStrategyDataToDialog();
     }
     
@@ -270,8 +271,8 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(grammarBook.dataContainer.categoryContainer);
-        dialog.setSelectedCategories(studyStrategy.categoryRestrictions);
+        dialog.setAllCategories(grammarBook.dataContainer.getCategoryContainer());
+        dialog.setSelectedCategories(studyStrategy.cardCategoryRestrictions);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed

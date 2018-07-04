@@ -1,92 +1,42 @@
 package dictionary;
 
-import language_studyer.AnswerDataContainer;
 import common.Logger;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import language_studyer.StudyItemTester;
 
-public class CardTester {
-    
-    private CardChooser cardChooser = new CardChooser();
-    
-    private CardContainer allCard;
-    private CardContainer cardsToTest = new CardContainer();
-    private int numberOfCardsQuestioned = 0;
-    private final AnswerDataContainer userAnswers = new AnswerDataContainer();
-    private Card actualQuestionedCard;
-    private String userAnswerToActualQuestion;
-    private Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion
-            = new HashMap<>();
-    private boolean isGetAnswerToActualQuestion = false;
-    
+public class CardTester extends StudyItemTester {
+
     private final Logger logger = new Logger();
+    
+    protected Map<String, Integer> acceptabelAnswersAndCardIndexesForActualQuestion
+            = new HashMap<>();
 
-    public void setData(DataContainer dataContainer) {
-        this.allCard = dataContainer.cardContainer;
-        
-        dataContainer.fillAuxiliaryDataContainer();
-        this.cardChooser.setData(dataContainer);
-    }
-
-    public void startNewTest() {
-        numberOfCardsQuestioned = 0;
-        userAnswers.clear();
-        cardsToTest.clear();
-        actualQuestionedCard = null;
-        userAnswerToActualQuestion = null;
-        acceptabelAnswersAndCardIndexesForActualQuestion.clear();
-        isGetAnswerToActualQuestion = false;
-        
-        List<Integer> cardIndexesToTest = cardChooser.getCardIndexes();
-        for (int cardIndex : cardIndexesToTest) {
-            cardsToTest.addCard(allCard.getCardByIndex(cardIndex));
-        }
-        
-        moveToNextCardToQuestion();
-    }
-
-    public CardContainer getCardsToTest() {
-        return cardsToTest;
-    }
-
+    @Override
     public void moveToNextCardToQuestion() {
-        actualQuestionedCard = cardsToTest.getCardByOrder(numberOfCardsQuestioned);
-        numberOfCardsQuestioned++;
+        actualQuestionedStudyItem = studyItemsToTest.getStudyItemByOrder(numberOfItemsQuestioned);
+        numberOfItemsQuestioned++;
 
         userAnswerToActualQuestion = "";
         isGetAnswerToActualQuestion = false;
 
-        logger.debug("questioned card: " + actualQuestionedCard.toString());
+        logger.debug("questioned card: " + actualQuestionedStudyItem.toString());
 
         acceptabelAnswersAndCardIndexesForActualQuestion
-                = getAcceptabelAnswersAndCardIndexes(actualQuestionedCard.definition);
+                = getAcceptabelAnswersAndCardIndexes(((Card) actualQuestionedStudyItem).definition);
 
         logger.debug("acceptabel answers and card indexes: " + acceptabelAnswersAndCardIndexesForActualQuestion.toString());
     }
 
-    public Card getActualQuestionedCard() {
-        return actualQuestionedCard;
-    }
-
-    public void setUserAnswer(String answer) {
-        userAnswerToActualQuestion = answer;
-
-        isGetAnswerToActualQuestion = true;
-
-        logger.debug("user answer: " + answer);
-
-    }
-
     public void acceptUserAnswer() {
-        if (userAnswerToActualQuestion.equals(actualQuestionedCard.term)) {
+        if (userAnswerToActualQuestion.equals(((Card) actualQuestionedStudyItem).term)) {
             Date date = new Date();
-            userAnswers.addElement(actualQuestionedCard.index, true, date.getTime());
-            logger.debug("added answer data: " + actualQuestionedCard.index + ", true");
+            userAnswers.addElement(actualQuestionedStudyItem.index, true, date.getTime());
+            logger.debug("added answer data: " + actualQuestionedStudyItem.index + ", true");
         } else if (acceptabelAnswersAndCardIndexesForActualQuestion.keySet().contains(
                 userAnswerToActualQuestion)) {
             Date date = new Date();
@@ -97,32 +47,13 @@ public class CardTester {
         }
         else {
             Date date = new Date();
-            userAnswers.addElement(actualQuestionedCard.index, true, date.getTime());
-            logger.debug("added answer data: " + actualQuestionedCard.index + ", true");
+            userAnswers.addElement(actualQuestionedStudyItem.index, true, date.getTime());
+            logger.debug("added answer data: " + actualQuestionedStudyItem.index + ", true");
         }
-    }
-    
-    public void rejectUserAnswer() {
-        Date date = new Date();
-        userAnswers.addElement(actualQuestionedCard.index, false, date.getTime());
-
-        logger.debug("added answer data: " + actualQuestionedCard.index + ", false");        
-    }
-    
-    public void ignoreUserAnswer() {
-        logger.debug("user answer ignored");  
-    }
-    
-    public boolean isGetAnswerToActualQuestion() {
-        return isGetAnswerToActualQuestion;
-    }
-
-    public String getUserActualAnswer() {
-        return userAnswerToActualQuestion;
     }
 
     public String getStandardAnswerToLastQuestion() {
-        return actualQuestionedCard.term;
+        return ((Card) actualQuestionedStudyItem).term;
     }
 
     public boolean isUserAnswerRightSuggestion() {
@@ -134,29 +65,13 @@ public class CardTester {
         return false;
     }
 
-    public boolean isMoreCardToTest() {
-        return numberOfCardsQuestioned != cardsToTest.numberOfCards();
-    }
-
-    public AnswerDataContainer getUserAnswers() {
-        return userAnswers;
-    }
-
-    public int getNumberOfQuestions() {
-        return cardsToTest.numberOfCards();
-    }
-
-    public int numberOfCardsQuestioned() {
-        return numberOfCardsQuestioned;
-    }
-
     private Map<String, Integer> getAcceptabelAnswersAndCardIndexes(String definition) {
         Map<String, Integer> acceptableAnswersAndCardIndexes = new HashMap<>();
 
         Set<String> definitionParts = new HashSet<>(Arrays.asList(definition.split(", ")));
 
-        for (int i = 0; i < allCard.numberOfCards(); i++) {
-            Card card = allCard.getCardByOrder(i);
+        for (int i = 0; i < allStudyItem.numberOfStudyItems(); i++) {
+            Card card = (Card) allStudyItem.getStudyItemByOrder(i);
 
             Set<String> definitionParts2 = new HashSet<>(Arrays.asList(card.definition.split(", ")));
 
@@ -175,8 +90,8 @@ public class CardTester {
 
         Set<String> definitionParts = new HashSet<>(Arrays.asList(definition.split(", ")));
 
-        for (int i = 0; i < allCard.numberOfCards(); i++) {
-            Card card = allCard.getCardByOrder(i);
+        for (int i = 0; i < allStudyItem.numberOfStudyItems(); i++) {
+            Card card = (Card) allStudyItem.getStudyItemByOrder(i);
 
             Set<String> definitionParts2 = new HashSet<>(Arrays.asList(card.definition.split(", ")));
 
@@ -188,6 +103,10 @@ public class CardTester {
         }
 
         return acceptableCardIndexes;
+    }
+
+    public Card getActualQuestionedCard() {
+       return (Card) this.actualQuestionedStudyItem;
     }
 
 }

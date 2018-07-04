@@ -2,18 +2,18 @@ package graphic_user_interface.grammar_book;
 
 import grammar_book.DataModificator;
 import grammar_book.GrammarTester;
-import grammar_book.GrammarAnswerDataContainer;
 import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarBook;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import java.util.Date;
+import language_studyer.AnswerDataContainer;
 
 public class GrammarTesterDialog extends javax.swing.JDialog {
 
     private GrammarItemContainer grammarItemContainer;
-    private GrammarAnswerDataContainer grammarAnswerDataContainer;
+    private AnswerDataContainer answerDataContainer;
     private int grammarItemIndexToTest = -1;
     private GrammarTester grammarTester;
     
@@ -41,8 +41,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }
 
     public void setGrammarBook(GrammarBook grammarBook) {
-        this.grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
-        this.grammarAnswerDataContainer = grammarBook.dataContainer.grammarAnswerDataContainer; 
+        this.grammarItemContainer = grammarBook.dataContainer.getGrammarItemContainer();
+        this.answerDataContainer = grammarBook.dataContainer.getAnswerDataContainer(); 
         this.grammarTester = grammarBook.grammartester;
     }
     
@@ -243,7 +243,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
                 wrongAnswerButton.setBackground(new Color(255,102,102));
                 
                 jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
-                jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
+                jTextArea1.setText(grammarTester.getActualQuestionedStudyItem().description);
 
                 ignoreAnswerButton.setEnabled(true);
                 acceptAnswerButton.setEnabled(true);
@@ -269,7 +269,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setEnabled(false);
         wrongAnswerButton.setEnabled(false);
         
-        if (grammarTester.isMoreExamplesToQuestion()) {
+        if (grammarTester.isMoreStudyItemsToTest()) {
             moveToTheNextQuestion();
         }
         else {
@@ -287,7 +287,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setEnabled(false);
         wrongAnswerButton.setEnabled(false);
 
-        if (grammarTester.isMoreExamplesToQuestion()) {
+        if (grammarTester.isMoreStudyItemsToTest()) {
             moveToTheNextQuestion();
         }
         else {
@@ -305,7 +305,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         acceptAnswerButton.setEnabled(false);
         wrongAnswerButton.setEnabled(false);
         
-        if (grammarTester.isMoreExamplesToQuestion()) {
+        if (grammarTester.isMoreStudyItemsToTest()) {
             moveToTheNextQuestion();
         }
         else {
@@ -338,7 +338,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
             DataModificator grammarDataModificator 
                     = new DataModificator();
             
-            grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+            grammarDataModificator.
+                    setGrammarAnswerDataContainer(answerDataContainer);
             grammarDataModificator.setData(grammarItemContainer);
             
             grammarDataModificator.writeGrammarBookToDisk();
@@ -350,11 +351,11 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void moveToTheNextQuestion() {
-        grammarTester.moveToNextExampleToQuestion();
+        grammarTester.isMoreStudyItemsToTest();
         jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
         jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
         jTextField2.setText("");
-        jLabel3.setText(Integer.toString(grammarTester.numberOfExamplesQuestioned()) 
+        jLabel3.setText(Integer.toString(grammarTester.numberOfCardsQuestioned()) 
                 + "\\" + Integer.toString(grammarTester.getNumberOfQuestions()));
         
         jTextField2.setEnabled(true);
@@ -373,7 +374,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         
         //saving data
         DataModificator grammarDataModificator = new DataModificator();
-        grammarDataModificator.setGrammarAnswerDataContainer(grammarAnswerDataContainer);
+        grammarDataModificator.setGrammarAnswerDataContainer(answerDataContainer);
         grammarDataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
         
         

@@ -1,9 +1,8 @@
 package graphic_user_interface.common;
 
 import dictionary.Card;
-import dictionary.CardContainer;
-import dictionary.DataContainer;
-import dictionary.StatisticsMaker;
+import dictionary.DictionaryDataContainer;
+import dictionary.DictionaryStatisticsMaker;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,7 +19,7 @@ import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyI
 
 public class TableModelMaker {
     
-    public DefaultTableModel numberOfAnswersByDays(StatisticsMaker statisticsMaker) {
+    public DefaultTableModel numberOfAnswersByDays(DictionaryStatisticsMaker statisticsMaker) {
         Map<Integer,Integer> numberOfAnswersByDays = statisticsMaker.getNumberOfAnswersByDays();
 
         List<Integer> sortedDays = new ArrayList<>(numberOfAnswersByDays.keySet());
@@ -41,7 +40,7 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel histogramOfAnswerRatesByDays(StatisticsMaker statisticsMaker) {        
+    public DefaultTableModel histogramOfAnswerRatesByDays(DictionaryStatisticsMaker statisticsMaker) {        
         Map<Integer,Histogram> histogramOfStudyItemAnswerRatesByDays 
                 = statisticsMaker.getHistogramOfStudyItemAnswerRatesByDays();
         
@@ -82,7 +81,7 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel practisingTimeByDay(StatisticsMaker statisticsMaker) {
+    public DefaultTableModel practisingTimeByDay(DictionaryStatisticsMaker statisticsMaker) {
 
         Map<Integer,String> practisingTimeByDays = statisticsMaker.getPractisingTimeByDaysAsString();
 
@@ -104,7 +103,7 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel histogramOfStudyItemsByNumberOfAnswers(StatisticsMaker statisticsMaker) {
+    public DefaultTableModel histogramOfStudyItemsByNumberOfAnswers(DictionaryStatisticsMaker statisticsMaker) {
 
         Map<Integer,Integer> histogramOfStudyItemsByNumberOfAnswers 
                 = statisticsMaker.getHistogramOfStudyItemsByNumberOfAnswers();
@@ -126,7 +125,7 @@ public class TableModelMaker {
         return model;
     }
     
-    public DefaultTableModel numberOfNewStudyItemsQuestionedByDays(StatisticsMaker statisticsMaker) {
+    public DefaultTableModel numberOfNewStudyItemsQuestionedByDays(DictionaryStatisticsMaker statisticsMaker) {
 
         Map<Integer,Integer> numberOfNewStudyItemsQuestionedByDays 
                 = statisticsMaker.numberOfNewStudyItemsTestedByDays();
@@ -149,7 +148,7 @@ public class TableModelMaker {
         return model;
     }
    
-    public DefaultTableModel cardsOrderedByAnswerRate(DataContainer dataContainer) {
+    public DefaultTableModel cardsOrderedByAnswerRate(DictionaryDataContainer dataContainer) {
 
         AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
                 = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
@@ -165,7 +164,7 @@ public class TableModelMaker {
         model.addColumn("number of answers");
         
         for (AnswerDataByStudyItem answerDataByStudyItem : sortedDatas) {
-            Card card = dataContainer.cardContainer.getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
+            Card card = dataContainer.getCardContainer().getCardByIndex(answerDataByStudyItem.getStudyItemIndex());
                   
             DecimalFormat df = new DecimalFormat("#.0000");
             

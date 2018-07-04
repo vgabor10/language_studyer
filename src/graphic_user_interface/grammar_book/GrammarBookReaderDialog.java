@@ -43,7 +43,7 @@ public class GrammarBookReaderDialog extends javax.swing.JDialog {
     }
 
     public void setGrammarBook(GrammarBook grammarBook) {
-        grammarItemContainer = grammarBook.dataContainer.grammarItemContainer;
+        grammarItemContainer = grammarBook.dataContainer.getGrammarItemContainer();
         
         fillTreeWithGrammarBookData();
     }

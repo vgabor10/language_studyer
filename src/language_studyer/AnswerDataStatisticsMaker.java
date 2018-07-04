@@ -1,4 +1,4 @@
-package dictionary;
+package language_studyer;
 
 import common.GeneralFunctions;
 import common.Logger;
@@ -12,26 +12,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.Vector;
-import language_studyer.AnswerData;
-import language_studyer.AnswerDataByStudyItem;
-import language_studyer.AnswerDataByStudyItemContainer;
-import language_studyer.AnswerDataContainer;
-import language_studyer.Histogram;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByLastStudyDate;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByNumberOfAnswers;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
-public class StatisticsMaker {
+public class AnswerDataStatisticsMaker {
         
-    private AnswerDataByStudyItemContainer studiedAnswerDataByStudyItemsContainer;
-    private AnswerDataContainer studiedAnswerDataContainer;
-    private Set<Integer> studiedStudyItemIndexes = new HashSet<>();
-
-    public void setData(DataContainer dictionaryDataContainer) {
-        this.studiedAnswerDataContainer = dictionaryDataContainer.auxiliaryDataContainer.studiedAnswerDataContainer;
-        this.studiedStudyItemIndexes = dictionaryDataContainer.auxiliaryDataContainer.studiedCardIndexes;
-        this.studiedAnswerDataByStudyItemsContainer = dictionaryDataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
-    }
+    public AnswerDataByStudyItemContainer studiedAnswerDataByStudyItemsContainer;
+    public AnswerDataContainer studiedAnswerDataContainer;
+    public Set<Integer> studiedStudyItemIndexes = new HashSet<>();
 
     public AnswerDataContainer getAnswerDataContainer() {
         return this.studiedAnswerDataContainer;
