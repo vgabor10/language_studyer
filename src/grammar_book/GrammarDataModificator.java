@@ -10,7 +10,7 @@ public class GrammarDataModificator extends DataModificator {
     //TODO: can be done more safe: first write new file, remove old file, rename new file
     public void writeGrammarBookToDisk() {
         try {
-            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarBookPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
             
             //the true will append the new data
             FileWriter fw = new FileWriter(filePath, false);
@@ -33,7 +33,7 @@ public class GrammarDataModificator extends DataModificator {
 
     public void writeGrammarAnswerDataToDisk() {
 
-        String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+        String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
@@ -50,7 +50,7 @@ public class GrammarDataModificator extends DataModificator {
         try {
             answerDataContainer.appendAnswerDataContainer(gadc);
             
-            String filePath = languageFilesDataHendler.getStudiedLanguageGrammarAnswerDataPath();
+            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
             FileWriter fw = new FileWriter(filePath, true);	//the true will append the new data
             for (int i = 0; i < gadc.numberOfAnswers(); i++) {
                 fw.write(gadc.getAnswerData(i).toStringData() + "\n");	//appends the string to the file
@@ -63,7 +63,7 @@ public class GrammarDataModificator extends DataModificator {
 
     public void writeGrammarStudyStrategyDataToDisc() {
         String filePath 
-                = languageFilesDataHendler.getStudiedLanguageGrammarStudyStrategyPath();
+                = discFilesMetaDataHandler.getStudiedLanguageGrammarStudyStrategyPath();
         
         writeStudyStrategyDataToDisc(filePath);
     }

@@ -7,11 +7,8 @@ import language_studyer.DataModificator;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import language_studyer.DiscFilesMetaDataHandler;
 
 public class DictionaryDataModificator extends DataModificator {
-    
-    private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
     private final Logger logger = new Logger();
 

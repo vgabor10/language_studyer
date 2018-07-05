@@ -8,7 +8,7 @@ public class DataModificator {
     protected DataContainer dataContainer;
     protected AnswerDataContainer answerDataContainer;
 
-    protected DiscFilesMetaDataHandler languageFilesDataHendler
+    protected DiscFilesMetaDataHandler discFilesMetaDataHandler
             = new DiscFilesMetaDataHandler();
     
     public void setData(DataContainer dc) {
@@ -20,7 +20,7 @@ public class DataModificator {
     }
     
     public void setDiscFilesMetaDataHandler(DiscFilesMetaDataHandler dfmdh) {
-        languageFilesDataHendler = dfmdh;
+        discFilesMetaDataHandler = dfmdh;
     }
 
     public void setAnswerDataContainer(AnswerDataContainer adc) {

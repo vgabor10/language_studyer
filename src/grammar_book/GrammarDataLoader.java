@@ -66,7 +66,7 @@ public class GrammarDataLoader extends DataLoader {
                     grammarItem.index = Integer.parseInt(strLine.substring(strLine.indexOf("=") + 2));
                 }
                 
-                if (strLine.startsWith("Categories")) {
+                if (strLine.startsWith("Categories")) {     //TODO: should delete!!!!!!
                     grammarItem.categoryIndexes.add(Integer.parseInt(strLine.substring(strLine.indexOf("=") + 2)));
                 }
 
