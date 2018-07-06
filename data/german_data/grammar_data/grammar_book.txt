@@ -1025,36 +1025,36 @@ Categories = 0
 31 | gegen die | ____ Eltern - a szülőkkel szemben
 32 | um einen | ____ Garten - egy kert körül
 33 | durch den | ____ Weg - keresztül az úton
-34 | gegen | ____ mich - ellenem
-35 | für | ____ ihn - érte (hímnem)
-36 | ohne | ____ uns - nélkülünk
-37 | ohne | ____ sie - nélküle (nőnem)
-38 | um | ____ euch - körülöttetek
-39 | für | ____ uns - értünk
-40 | für | ____ Sie - Önért
-41 | um | ____ uns - körülöttünk
-42 | durch | ____ mich - általam
-43 | für | ____ sie - részükre
-44 | gegen | ____ dich - ellened
-45 | um | ____ uns - körülöttünk
-46 | ohne | ____ sie - nélkülük
-47 | gegen | ____ Sie - Ön ellen
-48 | ohne | ____ dich - nélküled
-49 | für | ____ uns - nekünk
-50 | für | ____ euch - értetek
-51 | durch | ____ Sie - Ön által
-52 | für | ____ dich - érted
-53 | ohne | ____ mich - nélkülem
-54 | um | ____ mich - körülöttem
-55 | für | ____ sie - számukra
-56 | gegen | ____ euch - ellenetek
-57 | gegen | ____ ihn - ellene (hímnem)
-58 | um | ____ dich - körülötted
-59 | um | ____ sie - körülötte (nőnem)
-60 | durch | ____ sie - általa (nőnem)
-61 | gegen | ____ uns - ellenünk
-62 | für | ____ mich - értem
-63 | für | ____ euch - részetekre
+34 | gegen mich | ____ - ellenem
+35 | für érte | ____ - érte (hímnem)
+36 | ohne uns | ____ - nélkülünk
+37 | ohne sie | ____ - nélküle (nőnem)
+38 | um euch | ____ - körülöttetek
+39 | für uns | ____ - értünk
+40 | für Sie | ____ - Önért
+41 | um uns | ____ - körülöttünk
+42 | durch mich | ____ - általam
+43 | für sie | ____ - részükre
+44 | gege dichn | ____ - ellened
+45 | um uns | ____ - körülöttünk
+46 | ohne sie | ____ - nélkülük
+47 | gege Sien | ____ - Ön ellen
+48 | ohne dich | ____ - nélküled
+49 | für uns | ____ - nekünk
+50 | für euch | ____ - értetek
+51 | durch Sie | ____ - Ön által
+52 | für dich | ____ - érted
+53 | ohne mich | ____ - nélkülem
+54 | um mich | ____ - körülöttem
+55 | für sie | ____ - számukra
+56 | gegen euch | ____ - ellenetek
+57 | gegen ihn | ____ - ellene (hímnem)
+58 | um dich | ____ - körülötted
+59 | um sie | ____ - körülötte (nőnem)
+60 | durch sie | ____ - általa (nőnem)
+61 | gegen uns | ____ - ellenünk
+62 | für mich | ____ - értem
+63 | für euch | ____ - részetekre
 \end{exmp}
 
 \title{Prepozíciók/Prepozíciók kizárólag részes esettel}
@@ -1353,7 +1353,7 @@ Pl.: Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost
 7 | darum ist er | Er arbeitet viel, ____ reich. - Sokat dolgozik, ezért gazdag.
 8 | trotzdem ist er | Er arbeitet viel, ____ arm. - Sokat dolgozik, mégis szegény.
 9 | trotzdem kommt er | Peter ist krank, ____ mit uns. - Peter beteg, mégis velünk jön.
-10 | trotzdem ist er | Er trinkt viel, ____ durstig. - Sokat iszik, mégis szomjas.
+10 | trotzdem ist er | Er trinkt viel, ____ durstig ____. - Sokat iszik, mégis szomjas.
 11 | trotzdem ist er | Mein Freund lernt viel, ____ dumm. - A barátom sokat tanul, mégis buta.
 12 | sonst gehst du | Du machst Ordnung in deinem Zimmer, ____ nicht in Schwimmbad. - Rendet csinálsz a szobádban, különben nem mész uszodába.
 13 | deshalb gehe ich | Er gibt mir Schokolade nicht, ____ nicht zu ihm. - Nem ad nekem csokoládét, ezért nem megyek hozzá.
