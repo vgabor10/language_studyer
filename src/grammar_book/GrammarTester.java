@@ -9,7 +9,8 @@ public class GrammarTester extends StudyItemTester {
 
     @Override
     public void moveToNextStudyItemToQuestion() {
-        actualQuestionedStudyItem = studyItemsToTest.getStudyItemByOrder(numberOfItemsQuestioned);
+        actualQuestionedStudyItem 
+                = studyItemsToTest.getStudyItemByOrder(numberOfItemsQuestioned);
         numberOfItemsQuestioned++;
         
         actualQuestionedExample = this.studyItemChooser

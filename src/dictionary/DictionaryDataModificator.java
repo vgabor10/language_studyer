@@ -12,9 +12,13 @@ public class DictionaryDataModificator extends DataModificator {
 
     private final Logger logger = new Logger();
 
+    public DictionaryDataContainer getDictionaryDataContainer() {
+        return (DictionaryDataContainer) dataContainer;
+    }
+    
     public void removeCardByCardIndex(int cardIndex) {
-        dataContainer.getStudyItemContainer().removeByIndex(cardIndex);
-        dataContainer.getAnswerDataContainer().removeAnswersWithIndex(cardIndex);
+        getDictionaryDataContainer().getCardContainer().removeByIndex(cardIndex);
+        getDictionaryDataContainer().getAnswerDataContainer().removeAnswersWithIndex(cardIndex);
 
         writeAllDataToFile();
     }
@@ -25,8 +29,8 @@ public class DictionaryDataModificator extends DataModificator {
     }    
 
     public void addCard(Card card) {
-        card.index = ((CardContainer) dataContainer.getStudyItemContainer()).getEmptyCardIndex();
-        dataContainer.getStudyItemContainer().addStudyItem(card);
+        card.index = getDictionaryDataContainer().getCardContainer().getEmptyCardIndex();
+        getDictionaryDataContainer().getCardContainer().addStudyItem(card);
         
         saveCardContainerDataToFile();
         saveExampleSentencesDataToFile();
@@ -42,8 +46,12 @@ public class DictionaryDataModificator extends DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
-                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
+            for (int i = 0; i < getDictionaryDataContainer().getCardContainer()
+                    .numberOfStudyItems(); i++) {
+                
+                Card card = (Card) getDictionaryDataContainer().getCardContainer()
+                        .getStudyItemByOrder(i);
+                
                 fw.write(Integer.toString(card.index) + "\t" +
                     card.term + "\t" + card.definition + "\n");
             }
@@ -79,8 +87,12 @@ public class DictionaryDataModificator extends DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
-                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
+            for (int i = 0; i < getDictionaryDataContainer().getCardContainer()
+                    .numberOfStudyItems(); i++) {
+                
+                Card card = (Card) getDictionaryDataContainer().getCardContainer()
+                        .getStudyItemByOrder(i);
+                
                 for (String exampleSentence : card.exampleSentences) {
                     fw.write(card.index + "\t" + exampleSentence  + "\n");	//appends the string to the file
                 }
@@ -99,8 +111,12 @@ public class DictionaryDataModificator extends DataModificator {
 
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
-            for (int i = 0; i < dataContainer.getStudyItemContainer().numberOfStudyItems(); i++) {
-                Card card = (Card) dataContainer.getStudyItemContainer().getStudyItemByOrder(i);
+            for (int i = 0; i < getDictionaryDataContainer().getCardContainer()
+                    .numberOfStudyItems(); i++) {
+                
+                Card card = (Card) getDictionaryDataContainer().getCardContainer()
+                        .getStudyItemByOrder(i);
+                
                 if (!card.categoryIndexes.isEmpty()) {
                     String outString = Integer.toString(card.index);
                     for (int categoryIndex : card.categoryIndexes) {

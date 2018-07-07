@@ -15,8 +15,12 @@ public class DictionaryDataLoader extends DataLoader {
     
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
     
-    public void setDataContainer(DictionaryDataContainer dc) {
+    public void setDictionaryDataContainer(DictionaryDataContainer dc) {
         this.dataContainer = dc;
+    }
+    
+    public DictionaryDataContainer getDictionaryDataContainer() {
+        return (DictionaryDataContainer) this.dataContainer;
     }
 
     public void setLanguageFilesDataHandler(DiscFilesMetaDataHandler discFilesMetaDataHandler) {
@@ -25,7 +29,7 @@ public class DictionaryDataLoader extends DataLoader {
     
     public void loadCardContainer() {
         try {        
-            CardContainer cardContainer = (CardContainer ) dataContainer.getStudyItemContainer();
+            CardContainer cardContainer = getDictionaryDataContainer().getCardContainer();
             cardContainer.clear();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageCardDataPath();
@@ -79,8 +83,8 @@ public class DictionaryDataLoader extends DataLoader {
                 int cardIndex = Integer.parseInt(splittedRow[0]);
                 String exampleSentence = splittedRow[1];
                 
-                ((CardContainer) dataContainer.getStudyItemContainer()).getCardByIndex(cardIndex)
-                        .exampleSentences.add(exampleSentence);
+                getDictionaryDataContainer().getCardContainer()
+                        .getCardByIndex(cardIndex).exampleSentences.add(exampleSentence);
             }
             
         } catch (FileNotFoundException e) {

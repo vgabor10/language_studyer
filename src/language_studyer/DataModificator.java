@@ -11,11 +11,11 @@ public class DataModificator {
     protected DiscFilesMetaDataHandler discFilesMetaDataHandler
             = new DiscFilesMetaDataHandler();
     
-    public void setData(DataContainer dc) {
+    public void setData(DataContainer dc) { //TODO: remove this method
         dataContainer = dc;
     }
     
-    public DataContainer getDataContainer() {
+    protected DataContainer getDataContainer() {
         return dataContainer;
     }
     

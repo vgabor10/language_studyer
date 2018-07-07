@@ -16,9 +16,13 @@ public class GrammarDataLoader extends DataLoader {
 
     private DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
-    public void setDataContainer(DataContainer dataContainer) {
+    public void setGrammarDataContainer(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
     }
+    
+    public GrammarDataContainer getGrammarDataContainer() {
+        return (GrammarDataContainer) this.dataContainer;
+    }   
     
     public void setDiscFilesMetaDataHandler
         (DiscFilesMetaDataHandler discFilesMetaDataHandler) {
@@ -35,7 +39,7 @@ public class GrammarDataLoader extends DataLoader {
             logger.debug("start loading grammar items");
             
             GrammarItemContainer grammarItemContainer 
-                    = (GrammarItemContainer) dataContainer.getStudyItemContainer();
+                    = getGrammarDataContainer().getGrammarItemContainer();
             
             String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarBookPath();
             BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -146,6 +150,8 @@ public class GrammarDataLoader extends DataLoader {
     }
     
     public void loadCategoryIndexesAndCategoryNames() {
+        logger.debug("start to load grammar item categories");
+        
         String filePath = discFilesMetaDataHandler
                 .getStudiedLanguageGrammarItemCategoryIndexesAndCategoryNames();
         

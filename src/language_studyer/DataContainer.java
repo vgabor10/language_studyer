@@ -14,7 +14,7 @@ public class DataContainer {
         this.studyItemContainer = sic;
     }
     
-    public StudyItemContainer getStudyItemContainer() {
+    protected StudyItemContainer getStudyItemContainer() { //TODO: make it protected
         return this.studyItemContainer;
     }
     

@@ -14,7 +14,7 @@ public class Dictionary {
     
     public Dictionary() {
         dataLoader.setLanguageFilesDataHandler(discFilesMetaDataHandler);
-        dataLoader.setDataContainer(dataContainer);
+        dataLoader.setDictionaryDataContainer(dataContainer);
         dataLoader.loadAllData();
         
         dataModificator.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);

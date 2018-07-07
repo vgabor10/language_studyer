@@ -10,11 +10,9 @@ import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.Set;
 import language_studyer.AnswerData;
-import language_studyer.DataContainer;
 
-public class CardTestStatisticsMaker {
+public class CardTestStatisticsMaker {  //TODO: make StudyItemTestStatisticsMaker class
 
-    private DataContainer dataContainer;
     private CardContainer allCards;
     private AnswerDataContainer testAnswers;
     
@@ -35,12 +33,12 @@ public class CardTestStatisticsMaker {
     
     private Logger logger = new Logger();
     
-    public void setData(DataContainer dataContainer,
+    public void setData(DictionaryDataContainer dataContainer,
             AnswerDataContainer testAnswers) {
-        this.dataContainer = dataContainer;
+        
         this.testAnswers = testAnswers;
         this.categoryRestrictions = dataContainer.getStudyStrategy().cardCategoryRestrictions;
-        this.allCards = (CardContainer) dataContainer.getStudyItemContainer();
+        this.allCards = dataContainer.getCardContainer();
         
         if (!categoryRestrictions.contains(-1)) {
             categoryRestrictionUsage = true;

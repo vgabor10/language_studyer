@@ -181,7 +181,7 @@ public class GrammarStudyStrategyDialog extends javax.swing.JDialog {
         jSpinner10.setModel(new javax.swing.SpinnerNumberModel(100, null, null, 1));
         jSpinner10.setEnabled(false);
 
-        jButton4.setText("Grammar items category filter");
+        jButton4.setText("Grammar item category filter");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

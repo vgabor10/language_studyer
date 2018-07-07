@@ -13,7 +13,7 @@ public class GrammarBook {
     
     public GrammarBook() {
         dataLoader.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);
-        dataLoader.setDataContainer(dataContainer);
+        dataLoader.setGrammarDataContainer(dataContainer);
         dataLoader.loadAllData();
         
         grammartester.setData(dataContainer);

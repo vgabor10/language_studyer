@@ -1,5 +1,6 @@
 package language_studyer;
 
+import common.Logger;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -8,6 +9,8 @@ import java.io.IOException;
 public class DataLoader {
     
     protected DataContainer dataContainer;
+    
+    private final Logger logger = new Logger();
     
     public void loadStudyStrategyDataFromDisc(String filePath) {
         try {
@@ -114,6 +117,8 @@ public class DataLoader {
                 Category category = new Category();
                 category.index = categoryIndex;
                 category.name = categoryName;
+                
+                 logger.debug("category loaded: " + category.toString());
 
                 dataContainer.getCategoryContainer().add(category);
             }

@@ -13,9 +13,7 @@ import language_studyer.AnswerDataContainer;
 
 public class GrammarTesterDialog extends javax.swing.JDialog {
 
-    private GrammarItemContainer grammarItemContainer;
     private AnswerDataContainer answerDataContainer;
-    private int grammarItemIndexToTest = -1;
     private GrammarTester grammarTester;
     
     private long startTime = -1;
@@ -52,7 +50,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     }
 
     public void setGrammarBook(GrammarBook grammarBook) {
-        this.grammarItemContainer = grammarBook.dataContainer.getGrammarItemContainer();
         this.answerDataContainer = grammarBook.dataContainer.getAnswerDataContainer(); 
         this.grammarTester = grammarBook.grammartester;
     }
@@ -97,6 +94,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         jLabel1.setText("jLabel1");
 
         ignoreAnswerButton.setText("Ignore answer");
+        ignoreAnswerButton.setEnabled(false);
         ignoreAnswerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ignoreAnswerButtonActionPerformed(evt);
@@ -104,6 +102,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         });
 
         acceptAnswerButton.setText("Accept answer");
+        acceptAnswerButton.setEnabled(false);
         acceptAnswerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 acceptAnswerButtonActionPerformed(evt);
@@ -116,6 +115,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
         });
 
         wrongAnswerButton.setText("Wrong answer");
+        wrongAnswerButton.setEnabled(false);
         wrongAnswerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 wrongAnswerButtonActionPerformed(evt);
@@ -255,8 +255,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
                 wrongAnswerButton.setBackground(new Color(255,102,102));
                 
                 jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
-                jTextArea1.setText(grammarTester.getActualQuestionedStudyItem().description);
-
+                jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
+  
                 ignoreAnswerButton.setEnabled(true);
                 acceptAnswerButton.setEnabled(true);
                 wrongAnswerButton.setEnabled(true);

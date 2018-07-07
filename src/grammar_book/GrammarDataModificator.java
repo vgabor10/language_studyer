@@ -7,6 +7,10 @@ import language_studyer.AnswerDataContainer;
 
 public class GrammarDataModificator extends DataModificator {
 
+    private GrammarDataContainer getGrammarDataContainer() {
+        return (GrammarDataContainer) this.dataContainer;
+    }
+    
     //TODO: can be done more safe: first write new file, remove old file, rename new file
     public void writeGrammarBookToDisk() {
         try {
@@ -16,10 +20,12 @@ public class GrammarDataModificator extends DataModificator {
             FileWriter fw = new FileWriter(filePath, false);
 
             for (int orderIndex = 0; orderIndex 
-                    < dataContainer.getStudyItemContainer().numberOfStudyItems(); orderIndex++) {
+                    < getGrammarDataContainer().getGrammarItemContainer()
+                            .numberOfStudyItems(); orderIndex++) {
 
                 GrammarItem grammarItem 
-                        = (GrammarItem) dataContainer.getStudyItemContainer().getStudyItemByOrder(orderIndex);
+                        = getGrammarDataContainer().getGrammarItemContainer()
+                                .getGrammarItemByOrder(orderIndex);
 
                 fw.write(grammarItem.toString());
                 fw.write("\n");
@@ -69,7 +75,8 @@ public class GrammarDataModificator extends DataModificator {
     }
     
     public void deleteGrammarItemByIndex(int grammarItemIndex) {
-        dataContainer.getStudyItemContainer().removeByIndex(grammarItemIndex);
+        getGrammarDataContainer().getGrammarItemContainer()
+                .removeByIndex(grammarItemIndex);
         answerDataContainer.removeAnswerDataWithIndex(grammarItemIndex);
         writeDataToDisc();
     }

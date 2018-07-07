@@ -359,7 +359,7 @@ public class StudyStrategyDialog extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         SetCardCategoryDialog dialog 
                 = new SetCardCategoryDialog(new javax.swing.JFrame(), true);
-        dialog.setAllCategories(dataModificator.getDataContainer().getCategoryContainer());
+        dialog.setAllCategories(dataModificator.getDictionaryDataContainer().getCategoryContainer());
         dialog.setSelectedCategories(studyStrategy.cardCategoryRestrictions);
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);

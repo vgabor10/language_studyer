@@ -49,7 +49,7 @@ public class StudyItemTester {
         return studyItemsToTest;
     }
 
-    public StudyItem getActualQuestionedStudyItem() {
+    protected StudyItem getActualQuestionedStudyItem() {
         return actualQuestionedStudyItem;
     }
 

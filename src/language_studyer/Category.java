@@ -10,4 +10,9 @@ public class Category {
         name = "";
     }
     
+    @Override
+    public String toString() {
+        return Integer.toString(index) + " " + name;
+    }
+    
 }

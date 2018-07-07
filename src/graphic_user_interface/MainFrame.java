@@ -39,6 +39,8 @@ public class MainFrame extends javax.swing.JFrame {
         readGrammarBookButton.setMnemonic(KeyEvent.VK_E);
         jButton13.setMnemonic(KeyEvent.VK_U);
         dictionaryOtherToolsButton.setMnemonic(KeyEvent.VK_O);
+        readGrammarBookButton.setMnemonic(KeyEvent.VK_G);
+        jButton14.setMnemonic(KeyEvent.VK_Y);
         
         jLabel3.setText(dictionary.discFilesMetaDataHandler.getStudiedLanguageName());
         

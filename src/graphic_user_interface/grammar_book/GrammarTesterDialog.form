@@ -112,6 +112,7 @@
     <Component class="javax.swing.JButton" name="ignoreAnswerButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ignore answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ignoreAnswerButtonActionPerformed"/>
@@ -120,6 +121,7 @@
     <Component class="javax.swing.JButton" name="acceptAnswerButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Accept answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acceptAnswerButtonActionPerformed"/>
@@ -129,6 +131,7 @@
     <Component class="javax.swing.JButton" name="wrongAnswerButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Wrong answer"/>
+        <Property name="enabled" type="boolean" value="false"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="wrongAnswerButtonActionPerformed"/>
