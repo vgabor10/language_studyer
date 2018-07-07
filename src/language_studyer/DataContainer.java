@@ -8,13 +8,8 @@ public class DataContainer {
     private StudyStrategy studyStrategy = new StudyStrategy();
 
     public AuxiliaryDataContainer auxiliaryDataContainer = new AuxiliaryDataContainer();
-  
     
-    protected void setStudyItemContainer(StudyItemContainer sic) {
-        this.studyItemContainer = sic;
-    }
-    
-    protected StudyItemContainer getStudyItemContainer() { //TODO: make it protected
+    protected StudyItemContainer getStudyItemContainer() {
         return this.studyItemContainer;
     }
     
