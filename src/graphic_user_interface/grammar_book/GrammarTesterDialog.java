@@ -37,6 +37,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     public void startNewTest() {
         grammarTester.startNewTest();
    
+        jTextField2.setEnabled(true);
         jTextField2.requestFocus();
 
         jTextField2.setText("");

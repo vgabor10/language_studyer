@@ -2,7 +2,7 @@ package language_studyer;
 
 public class DataContainer {
     
-    private StudyItemContainer studyItemContainer = new StudyItemContainer();
+    protected StudyItemContainer studyItemContainer;
     private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     private CategoryContainer categoryContainer = new CategoryContainer();
     private StudyStrategy studyStrategy = new StudyStrategy();
@@ -58,7 +58,7 @@ public class DataContainer {
     }
     
     public void clear() {
-        studyItemContainer.clear();
+        studyItemContainer.clear(); //  TODO: it can occure, that studyItemContainer does not exist 
         answerDataContainer.clear();
         categoryContainer.clear();
         studyStrategy.clear();
