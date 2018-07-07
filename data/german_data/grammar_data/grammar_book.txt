@@ -1075,43 +1075,43 @@ Categories = 0
 
 %Maklári: 61. oldal
 \begin{exmp}
-1 | aus der | ____ Küche - a konyhából
-2 | aus dem | ____ Zimmer - a szobából
-3 | bei der | ____ Großmutter - a nagymamánál
-4 | mit dem | ____ Kuli - a tollal
-5 | nach der | ____ Frühstück - reggeli után
+1 | aus der | ____ ____ Küche - a konyhából
+2 | aus dem | ____ ____ Zimmer - a szobából
+3 | bei der | ____ ____ Großmutter - a nagymamánál
+4 | mit dem | ____ ____ Kuli - a tollal
+5 | nach der | ____ ____ Frühstück - reggeli után
 6 | nach | ____ Budapest - Budapestre
 7 | nach | ____ Vien - Bécsbe
-8 | zu dem | ____ Lehrer - a tanárhoz
-9 | vod dem | ____ Schrank - a szekrénytől
-10 | zu der | ____ Oma - a nagyihoz
-11 | mit dem | ____ Bus - busszal
-12 | gegenüber der | ____ Tür - az ajtóval szemben
-13 | von dem | ____ Gast - a vendégtől
-14 | seit zwei | ____ Stunden - két órája
-15 | bei der | ____ Firma - a cégnél
-16 | von dem | ____ Tisch - az asztalról
-17 | von dem | ____ Schrank - a szekrényről
-18 | gegenüber dem | ____ Haus - a házzal szemben
-19 | seit dem | ____ Frühstück - a reggeli óta
-20 | aus dem | ____ Wagen - a kocsiból
-21 | seit vier | ____ Uhr - négy órája
+8 | zu dem | ____ ____ Lehrer - a tanárhoz
+9 | vod dem | ____ ____ Schrank - a szekrénytől
+10 | zu der | ____ ____ Oma - a nagyihoz
+11 | mit dem | ____ ____ Bus - busszal
+12 | gegenüber der | ____ ____ Tür - az ajtóval szemben
+13 | von dem | ____ ____ Gast - a vendégtől
+14 | seit zwei | ____ zwei Stunden - két órája
+15 | bei der | ____ ____ Firma - a cégnél
+16 | von dem | ____ ____ Tisch - az asztalról
+17 | von dem | ____ ____ Schrank - a szekrényről
+18 | gegenüber dem | ____ ____ Haus - a házzal szemben
+19 | seit dem | ____ ____ Frühstück - a reggeli óta
+20 | aus dem | ____ ____ Wagen - a kocsiból
+21 | seit | ____ vier Uhr - négy órája
 22 | nach | ____ München - Münchenbe
-23 | nach | ____ dem Mittagessen - ebéd után
-24 | seit | ____ ein Jahr - egy éve
-25 | bei dem | ____ Schriftsteller - az írónál
-26 | mit dem | ____ Vater - az apával
-27 | mit der | ____ Mutter - az anyával
+23 | nach dem | ____ ____ Mittagessen - ebéd után
+24 | seit ein | ____ ____ Jahr - egy éve
+25 | bei dem | ____ ____ Schriftsteller - az írónál
+26 | mit dem | ____ ____ Vater - az apával
+27 | mit der | ____ ____ Mutter - az anyával
 28 | nach | ____ Ungarn - Magyarországra
-29 | von dem | ____ Freund - a baráttól
-30 | bei der | ____ Freundin - a barátnőnél
-31 | zu dem | ____ Fenster - az ablakhoz
-32 | nach der | ____ Schule - iskola után
-33 | gegenüber dem | ____ Schrank - a szerkénnyel szemben
+29 | von dem | ____ ____ Freund - a baráttól
+30 | bei der | ____ ____ Freundin - a barátnőnél
+31 | zu dem | ____ ____ Fenster - az ablakhoz
+32 | nach der | ____ ____ Schule - iskola után
+33 | gegenüber dem | ____ ____ Schrank - a szerkénnyel szemben
 34 | nach | ____ Deutschland - Németországba
 35 | mit einer | ____ Strassenbahn - egy villamossal
 36 | seit | ____ zehn Uhr - tíz órája
-37 | zu der | ____ Tür - az ajtóhoz
+37 | zu der | ____ ____ Tür - az ajtóhoz
 38 | beu uns | nálunk
 39 | zu euch | hozzátok
 40 | von dir | tőled
@@ -1146,12 +1146,13 @@ Categories = 0
 69 | von ihm | tőle (f)
 \end{exmp}
 
-\title{Prepozíciók/Prepozíciók kizárólag birtokos esettel}
+\title{Prepozíciók/Prepozíciók birtokos esettel}
 
 GrammarItemIndex = 536851
 Categories = 0
 
 \begin{desc}
+Prepozíciók kizárólag birtokos esettel:
 * statt = helyett
 * trotz = ellenére
 * wegen = miatt
@@ -1182,7 +1183,7 @@ Categories = 0
 18 | während des | ____ Films - a film alatt
 19 | trotz des | ____ Regens - az eső ellenére
 20 | während der | ____ Stunde - az óra alatt
-21 | statt des | ____ Tees - tea helyett
+21 | statt des | ____ Tees - a tea helyett
 22 | außerhalb des | ____ Landes - az országon kívül
 23 | innerhalb der | ____ vier Wand - a négy fal között (innerhalb)
 24 | während der | ____ Vorstellung - az előadás alatt
@@ -1668,39 +1669,41 @@ Példa: Sie haben einen Garten. - Van egy kertjük.
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A werden}
 
 GrammarItemIndex = 543264
+Categories = 0
 
 \begin{desc}
-A werden ige azt fejezi ki, hogy valaki vagy valami válik, lesz
-valamivé.
-Pl.: Ich werde Millionär.
+A werden ige azt fejezi ki, hogy valaki vagy valami válik, lesz valamivé.
 
 werden ragozása:
-ich werde - leszek 
-du wirst - leszel
-er/sie/es wird - lesz
-wir werden - leszünk
-ihr werdet - lesztek
-sie/Sie werden - lesznek
+ich ------- werde -- leszek 
+du -------- wirst -- leszel
+er/sie/es - wird --- lesz
+wir ------- werden - leszünk
+ihr ------- werdet - lesztek
+sie/Sie --- werden - lesznek
+
+Pl.: * Ich werde Millionär. - Milliomos leszek.
+* Ich werde alt. - Öreg leszek.
 \end{desc}
 
 %Maklári: 22.oldal
 \begin{exmp}
-1 | Ich werde alt. | Öreg leszek.
-2 | Józsi wird Lehrer. | Tanár lesz Józsi.
-3 | Wir werden hungrig. | Éhesek leszünk.
-4 | Anna wird müde. | Anna fáradt lesz.
-5 | Ihr werdet frisch. | Frissek lesztek.
-6 | Wirst du Lehrer? | Tanár leszel?
-7 | Sie werden durstig. | Szomjasak lesznek.
-8 | Sie wird traurig. | Szomorú lesz (n).
-9 | Ich werde böse. | Mérges leszek.
-10 | Die Lehrerin wird gesund. | A tanárnő egészséges lesz.
-11 | Pista wird Ingenieur. | Pista mérnök lesz. (r Ingenieur)
-12 | Wirst du Arzt? | Orvos leszel?
-13 | Bözsi wird Hausfrau. | Bözsi házlasszony lesz.
-14 | Wir werden reich. | Gazdagok leszünk.
-15 | Ich werde stark und klug. | Erős és okos leszek.
-16 | Die Kinder werden hungrig. | Éhesek lesznek a gyerekek.
+1 | werde | Ich ____ alt. - Öreg leszek.
+2 | wird | Józsi ____ Lehrer. - Tanár lesz Józsi.
+3 | werden | Wir ____ hungrig. - Éhesek leszünk.
+4 | wird | Anna ____ müde. - Anna fáradt lesz.
+5 | werdet | Ihr ____ frisch. - Frissek lesztek.
+6 | Wirst | ____ du Lehrer? - Tanár leszel?
+7 | werden | Sie ____ durstig. - Szomjasak lesznek.
+8 | wird | Sie ____ traurig. - Szomorú lesz.
+9 | werde | Ich ____ böse. - Mérges leszek.
+10 | wird | Die Lehrerin ____ gesund. - A tanárnő egészséges lesz.
+11 | wird | Pista ____ Ingenieur. - Pista mérnök lesz.
+12 | Wirst | ____ du Arzt? - Orvos leszel?
+13 | wird | Bözsi ____ Hausfrau. - Bözsi házlasszony lesz.
+14 | werden | Wir ____ reich. - Gazdagok leszünk.
+15 | werde | Ich ____ stark und klug. - Erős és okos leszek.
+16 | werden | Die Kinder ____ hungrig. - Éhesek lesznek a gyerekek.
 \end{exmp}
 
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A wissen}
@@ -3442,7 +3445,7 @@ Pl.: * Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 1 | wurde, gesungen | Das Lied ____ von den Kindern ____. - A dalt gyerekek énekelték.
 2 | wurde, gesprochen | Viel ____ in dem Büro ____. - Az irodában sokat beszéltek.
 3 | wurde, gespielt | Karten ____ in der Pause ____. - A szünetben kártyáztak. (Karten spielen)
-4 | wurde, geöffner | Das Geschäft ____ von dem Verkäufer ____. - Az eladó kinyitotta az üzletet.
+4 | wurde, geöffnet | Das Geschäft ____ von dem Verkäufer ____. - Az eladó kinyitotta az üzletet.
 5 | wurde, eingenommen | Die Tablette ____ von den Kranken nicht ____. - A betegek nem vették be a tablettát. (einnehmen)
 6 | wurde, geheilt | Der Kranke ____ von dem Arzt ____. - A beteget meggyógyította az orvos.
 7 | wurde, repariert | Die Uhr ____ von dem Vater ____. - Az apa megjavította az órát.
@@ -3565,6 +3568,7 @@ GrammarItemIndex = 759344
 \title{Cselekvő passiv mondatszerkezet/Passiv jövő időben}
 
 GrammarItemIndex = 541385
+
 Categories = 0
 
 \begin{desc}
@@ -3678,6 +3682,7 @@ Pl.: Die Tür ist geschlossen gewesen. - Az ajtó be volt zárva.
 \title{Melléknévfokozás/Reguláris melléknevek fokozása}
 
 GrammarItemIndex = 534452
+Categories = 0
 
 \begin{desc}
 * Alapfok: szótári alak
@@ -3689,29 +3694,30 @@ GrammarItemIndex = 534452
 
 %Maklári: 202. oldal
 \begin{exmp}
-1 | dicker | kövérebb
-2 | dickste | legkövérebb
-3 | magerer | soványabb
-4 | magerste | legsoványabb
-5 | niedriger | alacsonyabb
-6 | niedrigste | legalacsonyabb
-7 | billiger | olcsóbb
-8 | billigste | legolcsóbb
-9 | breiter | szélesebb
-10 | breitste | legszélesebb
-11 | geschickter | ügyesebb
-12 | geschicktste | legügyesebb
-13 | schneller | gyorsabb
-14 | schnellste | leggyorsabb
-15 | langsamer | lassabb
-16 | langsamste | leglassabb
-17 | teuerer | drágább
-18 | teuerste | legdrágább
+1 | dicker | ____ - kövérebb
+2 | dickste | ____ - legkövérebb
+3 | magerer | ____ - soványabb
+4 | magerste | ____ - legsoványabb
+5 | niedriger | ____ - alacsonyabb
+6 | niedrigste | ____ - legalacsonyabb
+7 | billiger | ____ - olcsóbb
+8 | billigste | ____ - legolcsóbb
+9 | breiter | ____ - szélesebb
+10 | breitste | ____ - legszélesebb
+11 | geschickter | ____ - ügyesebb
+12 | geschicktste | ____ - legügyesebb
+13 | schneller | ____ - gyorsabb
+14 | schnellste | ____ - leggyorsabb
+15 | langsamer | ____ - lassabb
+16 | langsamste | ____ - leglassabb
+17 | teuerer | ____ - drágább
+18 | teuerste | ____ - legdrágább
 \end{exmp}
 
 \title{Melléknévfokozás/Umlautos melléknevek}
 
 GrammarItemIndex = 423423
+Categories = 0
 
 \begin{desc}
 Az egyszótagos a, o, u tövű melléknevek umlautot kapnak.
@@ -3734,37 +3740,38 @@ scharf  | schärfer  | schärfste
 \end{desc}
 
 \begin{exmp}
-1 | älter | öregebb
-2 | älteste | legöregebb
-3 | kälter | hidegebb
-4 | kälteste | leghidegebb
-5 | jünger | fiatalabb
-6 | jüngste | legfiatalabb
-7 | stärker | erősebb
-8 | stärkste | legerősebb
-9 | länger | hosszabb
-10 | längste | leghosszabb
-11 | wärmer | melegebb
-12 | wärmste | legmelegebb
-13 | kürzer | rövidebb
-14 | kürzeste | legrövidebb
-15 | härter | keményebb
-16 | härtste | legkeményebb
-17 | schwächer | gyengébb
-18 | schwächste | leggyengébb
-19 | dümmer | butább
-20 | dümmste | legbutább
-21 | klüger | okosabb
-22 | klügste | legokosabb
-23 | ärmer | szegényebb
-24 | ärmste | legszegényebb
-25 | schärfer | élesebb
-26 | schärfste | legélesebb
+1 | älter | ____ - öregebb
+2 | älteste | ____ - legöregebb
+3 | kälter | ____ - hidegebb
+4 | kälteste | ____ - leghidegebb
+5 | jünger | ____ - fiatalabb
+6 | jüngste | ____ - legfiatalabb
+7 | stärker | ____ - erősebb
+8 | stärkste | ____ - legerősebb
+9 | länger | ____ - hosszabb
+10 | längste | ____ - leghosszabb
+11 | wärmer | ____ - melegebb
+12 | wärmste | ____ - legmelegebb
+13 | kürzer | ____ - rövidebb
+14 | kürzeste | ____ - legrövidebb
+15 | härter | ____ - keményebb
+16 | härtste | ____ - legkeményebb
+17 | schwächer | ____ - gyengébb
+18 | schwächste | ____ - leggyengébb
+19 | dümmer | ____ - butább
+20 | dümmste | ____ - legbutább
+21 | klüger | ____ - okosabb
+22 | klügste | ____ - legokosabb
+23 | ärmer | ____ - szegényebb
+24 | ärmste | ____ - legszegényebb
+25 | schärfer | ____ - élesebb
+26 | schärfste | ____ - legélesebb
 \end{exmp}
 
 \title{Melléknévfokozás/Rendhagyó melléknevek}
 
 GrammarItemIndex = 132141
+Categories = 0
 
 \begin{desc}
          | ALAPFOK | KÖZÉPFOK | FELSŐFOK
@@ -3779,18 +3786,18 @@ nagy     | groß    | größer   | größte
 
 %Maklári: 202. oldal
 \begin{exmp}
-1 | besser | jobb, jobban
-2 | beste | legjobb
-3 | mehr | több
-4 | meiste | legtöbb
-5 | lieber | inkább, szívesebben
-6 | liebste | legkedvesebb
-7 | näher | közelebb
-8 | nächste | legközelebbi
-9 | höher | magasabb
-10 | höchste | legmagasabb
-11 | größer | nagyobb
-12 | größte | legnagyobb
+1 | besser | ____ - jobb, jobban
+2 | beste | ____ - legjobb
+3 | mehr | ____ - több
+4 | meiste | ____ - legtöbb
+5 | lieber | ____ - inkább, szívesebben
+6 | liebste | ____ - legkedvesebb
+7 | näher | ____ - közelebb
+8 | nächste | ____ - legközelebbi
+9 | höher | ____ - magasabb
+10 | höchste | ____ - legmagasabb
+11 | größer | ____ - nagyobb
+12 | größte | ____ - legnagyobb
 \end{exmp}
 
 \title{Melléknévfokozás/Rendhagyó melléknevek/Melléknévfokozás - Példák}
@@ -3869,24 +3876,24 @@ Pl.: Es gibt viele Sehenswürdigkeiten in Salzburg. - Sok látnivaló van Salzbu
 \end{desc}
 
 \begin{exmp}
-1 | Es gibt | ____ Wunder. - Léteznek csodák.
-2 | Gibt es | ____ hier eine Toilette? - Van itt egy toalett?
-3 | gibt es | Wo ____ in der Stadt Restaurant? - Hol van a városban étterem?
-4 | Gibt es | ____ auf den Speisekarte Wurst? - Van az étlapon kolbász?
-5 | Gibt es | ____ hier Giraffen? - Vannak itt zsiráfok?
-6 | Es gibt | ____ viele Möglichkeiten. - Sok lehetőség van.
-7 | Gibt es | ____ U-Bahn in Zürich? - Van metró Zürichben?
-8 | Es gibt | ____ viele Regenschirme in England. - Sok esernyő van Angliában.
-9 | Es gibt | ____ 50 Hotel in der Stadt. - A városban 50 szálloda van.
-10 | Es gibt | ____ in der Bibliothek viele Bücher. - A könyvtárban sok könyv van.
-11 | Es gibt | ____ 30 Museen in der Stadt. - 30 múzeum van a városban.
-12 | Es gibt | ____ hier nur Lebensmittel. - Itt csak élelmiszer van.
-13 | Gibt es | ____ hier ein Platz? - Van itt egy hely?
-14 | Gibt es | ____ ein Hotel irgendwo? - Van valahol egy hotel?
-15 | Es gibt | ____ bei uns wenig Konditorei. - Nálunk kevés cukrászda van.
-16 | Gibt es | ____ hier ein gute Bier? - Van itt egy jó sör?
-17 | Es gibt | ____ nicht Personalausweis in Amerika. - Nincs személyiigazolvány Amerikában.
-18 | Es gibt | ____ bei der Ecke eine Kneipe. - A sarkon van egy kocsma.
+1 | Es gibt | ____ ____ Wunder. - Léteznek csodák.
+2 | Gibt es | ____ ____ hier eine Toilette? - Van itt egy toalett?
+3 | gibt es | Wo ____ ____ in der Stadt Restaurant? - Hol van a városban étterem?
+4 | Gibt es | ____ ____ auf den Speisekarte Wurst? - Van az étlapon kolbász?
+5 | Gibt es | ____ ____ hier Giraffen? - Vannak itt zsiráfok?
+6 | Es gibt | ____ ____ viele Möglichkeiten. - Sok lehetőség van.
+7 | Gibt es | ____ ____ U-Bahn in Zürich? - Van metró Zürichben?
+8 | Es gibt | ____ ____ viele Regenschirme in England. - Sok esernyő van Angliában.
+9 | Es gibt | ____ ____ 50 Hotel in der Stadt. - A városban 50 szálloda van.
+10 | Es gibt | ____ ____ in der Bibliothek viele Bücher. - A könyvtárban sok könyv van.
+11 | Es gibt | ____ ____ 30 Museen in der Stadt. - 30 múzeum van a városban.
+12 | Es gibt | ____ ____ hier nur Lebensmittel. - Itt csak élelmiszer van.
+13 | Gibt es | ____ ____ hier ein Platz? - Van itt egy hely?
+14 | Gibt es | ____ ____ ein Hotel irgendwo? - Van valahol egy hotel?
+15 | Es gibt | ____ ____ bei uns wenig Konditorei. - Nálunk kevés cukrászda van.
+16 | Gibt es | ____ ____ hier ein gute Bier? - Van itt egy jó sör?
+17 | Es gibt | ____ ____ nicht Personalausweis in Amerika. - Nincs személyiigazolvány Amerikában.
+18 | Es gibt | ____ ____ bei der Ecke eine Kneipe. - A sarkon van egy kocsma.
 \end{exmp}
 
 \title{Célhatározói mellékmondatok/Az um zu + Infinitiv szerkezet}
@@ -4395,12 +4402,14 @@ Csak akkor használhatunk zu + infinitives szerkezetet, ha a főmondat és a mel
 
 Ha a mellékmondetban csak zu és ige áll, akkor nem kell vesszőt tenni.
 
-Pl.: Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
+Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
+* Sie glaubt, klug zu sein. - Azt hiszi, hogy okos.
+* Ich hoffe, eine gute Note zu bekommen. - Remélem, kapok egy jó jegyet.
 \end{desc}
 
 %Maklári: 304. oldal, 305. oldal
 \begin{exmp}
-1 | Sie glaubt, klug zu sein. | Azt hiszi (n), hogy okos.
+1 | zu sein | Sie glaubt, klug ____. - Azt hiszi, hogy okos.
 2 | Ich hoffe, eine gute Note zu bekommen. | Remélem, kapok egy jó jegyet. (e Note)
 3 | Sie beginnt jetzt zu arbeiten. | Elkezdett most (n) dolgozni. (beginnen)
 4 | Er behauptet, alle meine Freunde zu kennen. | Azt állítja (f), hogy ismeri minden barátomat. (behaupten)
@@ -4529,6 +4538,7 @@ Pl.: Er fährt das Auto von Peter, ohne dass es ihm Peter erlaubt. - Peter kocsi
 \title{Néhány Akkusativ-os és Dativ-os vonzatú ige/A gefallen + D}
 
 GrammarItemIndex = 861276
+Categories = 0
 
 \begin{desc}
 gefallen + D (ä) = tetszik vkinek vmi
@@ -4546,23 +4556,24 @@ Pl.: Das Heft gefällt dem Kind. - A füzet tetszik a gyereknek.
 
 %Maklári: 33. oldal
 \begin{exmp}
-1 | Ich gefalle dem Mädchen. | Tetszem a lánynak.
-2 | Das Mädchen gefällt mir. | A lány tetszik nekem.
-3 | Der Lehrer gefällt den Eltern. | A szülőknek tetszik a tanár.
-4 | Die Eltern gefallen dem Lehrer. | A tanárnak tetszenek a szülők.
-5 | Der Schauspieler gefällt dem Publikum. | A közönségnek tetszik a színész.
-6 | Das Publikum gefällt dem Schauspieler. | A színésznek tetszik a közönség.
-7 | Meine Börse gefällt ihm. | Tetszik neki (f) a pénztárcám.
-8 | Sie gefällt mir nicht. | Nekem nem tetszik ő (n).
-9 | Ich gefalle ihr nicht. | Nem tetszem neki (n).
-10 | Ich gefalle deiner Schwiegermutter nicht. | Nem tetszem az anyósodnak.
-11 | Die Schwiegermutter gefällt mir nicht. | Az anyós nem tetszik nekem.
-12 | Das Bild gefällt den Gästen. | A kép tetszik a vendégeknek.
+1 | gefalle dem | Ich ____ ____ Mädchen. - Tetszem a lánynak.
+2 | gefällt mir | Das Mädchen ____ ____. - A lány tetszik nekem.
+3 | gefällt den | Der Lehrer ____ ____ Eltern. - A szülőknek tetszik a tanár.
+4 | gefallen dem | Die Eltern ____ ____ Lehrer. - A tanárnak tetszenek a szülők.
+5 | gefällt dem | Der Schauspieler ____ ____ Publikum. - A közönségnek tetszik a színész.
+6 | gefällt dem | Das Publikum ____ ____ Schauspieler. - A színésznek tetszik a közönség.
+7 | gefällt ihm | Meine Börse ____ ____. - Tetszik neki a pénztárcám.
+8 | mir nicht | Sie gefällt ____ ____. - Nekem nem tetszik ő.
+9 | ihr nicht | Ich gefalle ____ ____. - Nem tetszem neki.
+10 | gefalle deiner | Ich ____ ____ Schwiegermutter nicht. - Nem tetszem az anyósodnak.
+11 | gefällt mir | Die Schwiegermutter ____ ____ nicht. - Az anyós nem tetszik nekem.
+12 | gefällt den | Das Bild ____ ____ Gästen. - A kép tetszik a vendégeknek.
 \end{exmp}
 
 \title{Néhány Akkusativ-os és Dativ-os vonzatú ige/A gehören + D}
 
 GrammarItemIndex = 637854
+Categories = 0
 
 \begin{desc}
 gehören + D = valakié, valakinek a tulajdona
@@ -4572,18 +4583,18 @@ Pl.: Das Fahrrad gehört dem Kind.
 
 %Maklári: 33. oldal
 \begin{exmp}
-1 | Der Rock gehört dem Mädchen. | A szoknya a lányé.
-2 | Die Bücher gehören dem Lehrer. | A könyvek a tanáré.
-3 | Die Tasche gehört der Frau. | A táska a nőé.
-4 | Der Kuli gehört dem Schüler. | A toll a diáké.
-5 | Das Auto gehört dem Polizist. | Az autó a rendőré.
-6 | Die Mütze gehört dem Vater. | A sapka az apáé.
-7 | Der Kühlschrank gehört der Müller Familie. | A hűtőszekrény a Müller családé.
-8 | Der Wagen gehört dem Chef. | A kocsi a főnöké.
-9 | Die Garage gehört dem Nachbar. | A garázs a szomszédé.
-10 | Der Kuli gehört uns. | A toll a miénk.
-11 | Der Wagen gehört dem Lehrer. | A kocsi a tanáré.
-12 | Der Wolkenkratzer gehört der Firma. | A felhőkarcoló a cégé.
+1 | gehört dem | Der Rock ____ ____ Mädchen. - A szoknya a lányé.
+2 | gehören dem | Die Bücher ____ ____ Lehrer. - A könyvek a tanáré.
+3 | gehört der | Die Tasche ____ ____ Frau. - A táska a nőé.
+4 | gehört dem | Der Kuli ____ ____ Schüler. - A toll a diáké.
+5 | gehört dem | Das Auto ____ ____ Polizist. - Az autó a rendőré.
+6 | gehört dem | Die Mütze ____ ____ Vater. - A sapka az apáé.
+7 | gehört der | Der Kühlschrank ____ ____ Müller Familie. - A hűtőszekrény a Müller családé.
+8 | gehört der | Der Wagen ____ ____ Chef. - A kocsi a főnöké.
+9 | gehört der | Die Garage ____ ____ Nachbar. - A garázs a szomszédé.
+10 | gehört der | Der Kuli ____ ____. - A toll a miénk.
+11 | gehört der | Der Wagen ____ ____ Lehrer. - A kocsi a tanáré.
+12 | gehört der | Der Wolkenkratzer ____ ____ Firma. - A felhőkarcoló a cégé.
 \end{exmp}
 
 \title{Néhány Akkusativ-os és Dativ-os vonzatú ige/A gehören zu + D}
