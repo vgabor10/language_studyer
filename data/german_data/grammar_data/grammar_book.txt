@@ -174,6 +174,7 @@ Genitiv   | eines -s | einer | eines -s     | keiner
 \title{Névmások/Személyes névmás/Személyes névmás esetei}
 
 GrammarItemIndex = 295361
+Categories = 0
 
 \begin{desc}
 nominativ/alany | akusativ/tárgy | dativ/részes | genitiv/birtokos
@@ -191,7 +192,7 @@ Sie             | Sie            | Ihnen        | Ihr
 \begin{exmp}
 1 | mich | engem
 2 | dich | téged
-3 | ihn | őt (himnem)
+3 | ihn | őt (hímnem)
 4 | sie | őt (nőnem)
 5 | es | azt
 6 | uns | minket
@@ -221,6 +222,7 @@ Sie             | Sie            | Ihnen        | Ihr
 \title{Névmások/Személyes névmás/Személyes névmás tárgyesete}
 
 GrammarItemIndex = 206354
+Categories = 0
 
 \begin{desc}
 nominativ/alany | akusativ/tárgy
@@ -237,18 +239,18 @@ Sie             | Sie
 
 %Maklári: 38. oldal
 \begin{exmp}
-1 | Wir hören euch. | Hallgatunk titeket.
-2 | István sieht sie. | István nézi őt (n).
-3 | Ich höre sie. | Hallom őket.
-4 | Sie suchen uns. | Keresnek minket.
-5 | Helga liebt ihn. | Helga szereti őt (f).
-6 | Peter ruft mich. | Engem hív Peter.
-7 | Wir fragen euch. | Titeket kérdezünk.
-8 | Der Lehrer fragt mich. | A tanár engem kérdez.
-9 | Ich bitte Sie. | Kérem Önt.
-10 | Wir bitten Sie. | Kérjük Önöket.
-11 | Hört ihr sie? | Halljátok őket?
-12 | Mutter liebt ihn. | Anya szereti őt (f). (lieben)
+1 | euch | Wir hören ____. - Hallgatunk titeket.
+2 | sie | István sieht ____. - István nézi őt (n).
+3 | sie | Ich höre ____. - Hallom őket.
+4 | uns | Sie suchen ____. - Keresnek minket.
+5 | ihn | Helga liebt ____. - Helga szereti őt (f).
+6 | mich | Peter ruft ____. - Engem hív Peter.
+7 | euch | Wir fragen ____. - Titeket kérdezünk.
+8 | mich | Der Lehrer fragt ____. - A tanár engem kérdez.
+9 | Sie | Ich bitte ____. - Kérem Önt.
+10 | Sie | Wir bitten ____. - Kérjük Önöket.
+11 | sie | Hört ihr ____? - Halljátok őket?
+12 | ihn | Mutter liebt ____. - Anya szereti őt (f). (lieben)
 \end{exmp}
 
 \title{Névmások/Személyes névmás/Személyes névmás részes esete}
@@ -637,16 +639,16 @@ Pl.: * der Sohn von dem Vater - az apa fia
 
 %Maklári: 30. oldal
 \begin{exmp}
-1 | von der | die Tochter ____ Mutter - az anya lánya
-2 | von dem | der Schuh ____ Vater - az apa cipője
-3 | von den | die Brille ____ Kindern - a gyerekek szemüvege
-4 | von dem | die Lampe ____ Einbrecher - a betörő lámpája
-5 | von dem | das Zeugnis ____ Schüler - a tanuló bizonyítványa
-6 | von der | die Torte ____ Großmutter - a nagymama tortája
-7 | von dem | der Kuli ____ Schüler - a tanuló tolla
-8 | von den | die Spielzeuge ____ Kindern - a gyerekek játékai
-9 | von dem | die Mütze ____ Kontrolleur - az ellenőr sapkája
-10 | von dem | der Humor ____ Kontrolleur - az ellenőr humora
+1 | von der | die Tochter ____ ____ Mutter - az anya lánya
+2 | von dem | der Schuh ____ ____ Vater - az apa cipője
+3 | von den | die Brille ____ ____ Kindern - a gyerekek szemüvege
+4 | von dem | die Lampe ____ ____ Einbrecher - a betörő lámpája
+5 | von dem | das Zeugnis ____ ____ Schüler - a tanuló bizonyítványa
+6 | von der | die Torte ____ ____ Großmutter - a nagymama tortája
+7 | von dem | der Kuli ____ ____ Schüler - a tanuló tolla
+8 | von den | die Spielzeuge ____ ____ Kindern - a gyerekek játékai
+9 | von dem | die Mütze ____ ____ Kontrolleur - az ellenőr sapkája
+10 | von dem | der Humor ____ ____ Kontrolleur - az ellenőr humora
 \end{exmp}
 
 \title{Módbeli segédigék/Módbeli segédigék ragozása}
@@ -655,12 +657,12 @@ GrammarItemIndex = 3
 Categories = 0
 
 \begin{desc}
-E/1 | kann   | darf   | mag   | will   | muss   | soll 
-E/2 | kannst | darfst | magst | willst | musst  | sollst 
-E/3 | kann   | darf   | mag   | will   | muss   | soll 
-T/1 | können | dürfen | mögen | wollen | müssen | sollen 
-T/2 | könnt  | dürft  | mögt  | wollt  | müsst  | sollt 
-T/3 | können | dürfen | mögen | wollen | müssen | sollen 
+ich       | kann   | darf   | mag   | will   | muss   | soll 
+du        | kannst | darfst | magst | willst | musst  | sollst 
+er/sie/es | kann   | darf   | mag   | will   | muss   | soll 
+wir       | können | dürfen | mögen | wollen | müssen | sollen 
+ihr       | könnt  | dürft  | mögt  | wollt  | müsst  | sollt 
+sie/Sie   | können | dürfen | mögen | wollen | müssen | sollen 
 \end{desc}
 
 %TODO: kis mondatokkal helyettesíteni a példákat
@@ -772,14 +774,14 @@ sie/Sie möchten
 
 Pl.: * Ich möchte heute ins Theater gehen. - Szeretnék ma színházba menni.
 * Möchtet ihr laufen? - Szeretnétek futni?
-* Er möchte Fußball spielen. - Szeretne (f) focizni.
+* Er möchte Fußball spielen. - Szeretne focizni.
 * Ich möchte schon schlafen. - Szeretnék már aludni.
 \end{desc}
 
 %Maklári: 123. oldal
 \begin{exmp}
 1 | Möchtet, laufen | ____ ihr ____? - Szeretnétek futni?
-2 | möchte, spielen | Er ____ Fußball ____. - Szeretne (f) focizni.
+2 | möchte, spielen | Er ____ Fußball ____. - Szeretne focizni.
 3 | möchte, schlafen | Ich ____ schon ____. - Szeretnék már aludni.
 4 | möchten, bekommen | Sie ____ ein Haus ____. - Szeretnének egy Házat kapni.
 5 | Möchten, gehen | ____ Sie nach Hause ____? - Szeretne Ön haza menni?
@@ -857,38 +859,38 @@ Példák ilyen prepozíciókra:
 
 %Maklári: 53. oldal
 \begin{exmp}
-1 | auf dem | ____ Stuhl - a széken
-2 | an der | ____ Wand - a falon
-3 | unter dem | ____ Tisch - az asztal alatt
-4 | neben der | ____ Vase - a váza mellett
-5 | über der | ____ Frau - a nő felett
-6 | vor den | ____ Häusern - a házak előtt
-7 | zwischen den | ____ Lampen - a lámpák között
-8 | unter dem | ____ Baum - a fa alatt
-9 | an den | ____ Bildern - a képeken
-10 | vor der | ____ Mutter - az anya előtt
-11 | hinter dem | ____ Schrank - a szekrény mögött
-12 | auf dem | ____ Teppich - a szőnyegen
-13 | in dem | ____ Haus - a házban
-14 | in der | ____ Wohnung - a lakásban
-15 | unter den | ____ Betten - az ágyak alatt
-16 | zwischen der, der | ____ Tür und ____ Treppe - az ajtó és a lépcső között
-17 | vor dem | ____ Haus - a ház előtt
-18 | an dem | ____ Baum - a fán
-19 | auf der | ____ Straße - az utcán
-20 | vor der | ____ Tür - az ajtó előtt
-21 | unter dem | ____ Teppich - a szőnyeg alatt
-22 | in dem | ____ Wagen - a kocsiban
-23 | neben den | ____ Lampen - a lámpák mellett
-24 | in dem | ____ Bus - a buszban
-25 | an dem | ____ Vorrang - a függönyön (r Vorhang)
-26 | neben dem | ____ Mädchen - a lány mellett
-27 | zwischen dem, dem | ____ Kind und ____ Stuhl - a gyerek és a szék között
-28 | an dem | ____ Tafel - a táblán
-29 | zwischen der, dem | zwischen ____ Tür und ____ Fenster - az ajtó és az ablak között
-30 | an der | ____ Uhr - az órán
-31 | über dem | ____ Haus - a ház felett
-32 | zwischen dem, dem | ____ Stuhl und ____ Bett - a szék és az ágy között
+1 | auf dem | ____ ____ Stuhl - a széken
+2 | an der | ____ ____ Wand - a falon
+3 | unter dem | ____ ____ Tisch - az asztal alatt
+4 | neben der | ____ ____ Vase - a váza mellett
+5 | über der | ____ ____ Frau - a nő felett
+6 | vor den | ____ ____ Häusern - a házak előtt
+7 | zwischen den | ____ ____ Lampen - a lámpák között
+8 | unter dem | ____ ____ Baum - a fa alatt
+9 | an den | ____ ____ Bildern - a képeken
+10 | vor der | ____ ____ Mutter - az anya előtt
+11 | hinter dem | ____ ____ Schrank - a szekrény mögött
+12 | auf dem | ____ ____ Teppich - a szőnyegen
+13 | in dem | ____ ____ Haus - a házban
+14 | in der | ____ ____ Wohnung - a lakásban
+15 | unter den | ____ ____ Betten - az ágyak alatt
+16 | zwischen der, der | ____ ____ Tür und ____ Treppe - az ajtó és a lépcső között
+17 | vor dem | ____ ____ Haus - a ház előtt
+18 | an dem | ____ ____ Baum - a fán
+19 | auf der | ____ ____ Straße - az utcán
+20 | vor der | ____ ____ Tür - az ajtó előtt
+21 | unter dem | ____ ____ Teppich - a szőnyeg alatt
+22 | in dem | ____ ____ Wagen - a kocsiban
+23 | neben den | ____ ____ Lampen - a lámpák mellett
+24 | in dem | ____ ____ Bus - a buszban
+25 | an dem | ____ ____ Vorhang - a függönyön
+26 | neben dem | ____ ____ Mädchen - a lány mellett
+27 | zwischen dem, dem | ____ ____ Kind und ____ Stuhl - a gyerek és a szék között
+28 | an dem | ____ ____ Tafel - a táblán
+29 | zwischen der, dem | zwischen ____ ____ Tür und ____ Fenster - az ajtó és az ablak között
+30 | an der | ____ ____ Uhr - az órán
+31 | über dem | ____ Haus ____ - a ház felett
+32 | zwischen dem, dem | ____ ____ Stuhl und ____ Bett - a szék és az ágy között
 \end{exmp}
 
 \title{Prepozíciók/Hol? kérdésre felelő prepozíciók/Prepozíciók összevonása}
@@ -1063,6 +1065,7 @@ GrammarItemIndex = 13
 Categories = 0
 
 \begin{desc}
+Prepozíciók kizárólag részes esettel:
 * aus = -ból, -ből
 * bei = -nál, -nél
 * mit = -val, -vel
@@ -1163,34 +1166,34 @@ Prepozíciók kizárólag birtokos esettel:
 
 %Maklári: 63. oldal
 \begin{exmp}
-1 | wegen des | ____ Wetters - az időjárás miatt
-2 | wegen des | ____ Krigs - a háború miatt
-3 | trotz der | ____ Kälte - a hideg ellenére
-4 | außerhalb der | ____ Stadt - a városon kívül
-5 | wegen des | ____ Verkäufers - az eladó miatt
-6 | während der | ____ Deutschstunde - a németóra alatt
-7 | statt des | ____ Mittagessens - az ebéd helyett
-8 | während des | ____ Urlaubs - a nyaralás alatt
-9 | während des | ____ Mahls - az étkezés alatt
-10 | statt des | ____ Ausflugs - a kirándulás helyett
-11 | innerhalb des | ____ Dorfes - a falun bellül
-12 | innerhalb des | ____ Gartens - a kerten bellül
-13 | während der | ____ Reise - az utazás alatt
-14 | statt des | ____ Brotes - a kenyér helyett
-15 | statt der | ____ Schule - iskola helyett
+1 | wegen des | ____ ____ Wetters - az időjárás miatt
+2 | wegen des | ____ ____ Krigs - a háború miatt
+3 | trotz der | ____ ____ Kälte - a hideg ellenére
+4 | außerhalb der | ____ ____ Stadt - a városon kívül
+5 | wegen des | ____ ____ Verkäufers - az eladó miatt
+6 | während der | ____ ____ Deutschstunde - a németóra alatt
+7 | statt des | ____ ____ Mittagessens - az ebéd helyett
+8 | während des | ____ ____ Urlaubs - a nyaralás alatt
+9 | während des | ____ ____ Mahls - az étkezés alatt
+10 | statt des | ____ ____ Ausflugs - a kirándulás helyett
+11 | innerhalb des | ____ ____ Dorfes - a falun bellül
+12 | innerhalb des | ____ ____ Gartens - a kerten bellül
+13 | während der | ____ ____ Reise - az utazás alatt
+14 | statt des | ____ ____ Brotes - a kenyér helyett
+15 | statt der | ____ ____ Schule - iskola helyett
 16 | innerhalb | ____ zwei Stunden - két órán bellül
-17 | statt des | ____ Kakaos - a kakaó helyett
-18 | während des | ____ Films - a film alatt
-19 | trotz des | ____ Regens - az eső ellenére
-20 | während der | ____ Stunde - az óra alatt
-21 | statt des | ____ Tees - a tea helyett
-22 | außerhalb des | ____ Landes - az országon kívül
-23 | innerhalb der | ____ vier Wand - a négy fal között (innerhalb)
-24 | während der | ____ Vorstellung - az előadás alatt
-25 | trotz des | ____ Befehls - a parancs ellenére
-26 | während | ____ zwei Stunden - két óra alatt
-27 | während des | ____ Krieges - a háború alatt
-28 | trotz des | ____ Verbots - a tiltás ellenére
+17 | statt des | ____ ____ Kakaos - a kakaó helyett
+18 | während des | ____ ____ Films - a film alatt
+19 | trotz des | ____ ____ Regens - az eső ellenére
+20 | während der | ____ ____ Stunde - az óra alatt
+21 | statt des | ____ ____ Tees - a tea helyett
+22 | außerhalb des | ____  ____Landes - az országon kívül
+23 | innerhalb der | ____ ____ vier Wand - a négy fal között (innerhalb)
+24 | während der | ____ ____ Vorstellung - az előadás alatt
+25 | trotz des | ____ ____ Befehls - a parancs ellenére
+26 | während | ____ ____ zwei Stunden - két óra alatt
+27 | während des | ____ ____ Krieges - a háború alatt
+28 | trotz des | ____ ____ Verbots - a tiltás ellenére
 \end{exmp}
 
 \title{Prepozíciók/Kettős elöljárószavak}
@@ -1651,19 +1654,20 @@ wir       | haben
 ihr       | habt
 sie/Sie   | haben
 
-Példa: Sie haben einen Garten. - Van egy kertjük.
+Pl: * Sie haben einen Garten. - Van egy kertjük.
+* Ihr habt Zeit immer.
 \end{desc}
 
 \begin{exmp}
-1 | hat ein | Mein Vater ____ Haus. - Apámnak van egy háza.
+1 | hat ein | Mein Vater ____ ____ Haus. - Apámnak van egy háza.
 2 | hast | Du ____ Zeit. - Van időd.
-3 | haben einen | Sie ____ Garten. - Van egy kertjük.
+3 | haben einen | Sie ____ ____ Garten. - Van egy kertjük.
 4 | hat | Mutter ____ Blumen. - Anyának sok virága van.
-5 | hat ein | Er ____ Buch. - Neki van egy könyve.
-6 | habe eine | Ich ____ Freundin. - Nekem van egy barátnőm.
+5 | hat ein | Er ____ ____ Buch. - Neki van egy könyve.
+6 | habe eine | Ich ____ ____ Freundin. - Nekem van egy barátnőm.
 7 | habt | Ihr ____ Zeit immer. - Mindig van időtök.
-8 | hat einen | Józsi ____ Kuli. - Józsinak van egy tolla.
-9 | haben einen | Hans und Gertrud ____ Garten. - Hansnak és Gertrudnak van egy kertje.
+8 | hat einen | Józsi ____ ____ Kuli. - Józsinak van egy tolla.
+9 | haben einen | Hans und Gertrud ____ ____ Garten. - Hansnak és Gertrudnak van egy kertje.
 \end{exmp}
 
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A werden}
@@ -3370,12 +3374,13 @@ Pl.: Ich hätte viel lernen müssen. - Sokat kellet volna tanulnom.
 17 | Du hättest von Heim nicht weggehen dürfen. | Nem szabadott volna elmenned otthonról. (s Heim, weggehen)
 \end{exmp}
 
-\title{Cselekvő passziv mondatszerkezet/Passziv jelen időben}
+\title{Cselekvő passziv mondatszerkezet/Passzív jelen időben}
 
 GrammarItemIndex = 52351
 Categories = 0
 
 \begin{desc}
+Képzése:
 alany + werden ragozva + többi mondatrész + ige Partizip Perfekt alakja
 
 Az alanyt kifejezhetjük egy passzív mondatban a következő módon:
@@ -3385,9 +3390,6 @@ Az alanyt kifejezhetjük egy passzív mondatban a következő módon:
 Pl.: * Ein Haus wird von Peter gebaut. - Egy ház Peter által van építve.
 * Der Tisch wird von Oma gedeckt. - Az asztalt nyagyi teríti meg.
 * Oma wird durch das Heilwasser geheilt. - A gyógyvíz gyógyítja meg nagyit.
-* Das Auto wird von dem Mechaniker repariert. - A szerelő megjavítja az autót.
-* Ein Brief wird von meinem Freund geschrieben. - A barátom ír egy levelet.
-* Der Text wird von uns übersetzen. - Lefordítjuk a szöveget.
 
 werden ragozása:
 ich werde
@@ -3589,7 +3591,7 @@ Pl.: Die Vase wird in der Ence gestellt werden. - A váza a sarokba lesz állít
 7 | wird, operiert, werden | Der Hund ____ auch ____ ____. - A kutyát is meg fogják operálni.
 8 | wird, besetzt, werden | Der Platz ____ von den Gästen ____ ____. - A helyet a vendégek fogják lefoglalni. (besetzen)
 9 | wird, gespielt, werden | Interessante Vorstellung ____ in dem Theater ____ ____. - Érdekes előadást fognak játszani a színházban.
-10 | wird, unterschrieben, werden |  Das Brief ____ nicht ____ ____. - A levél nem lesz aláírva. (unterschreiben)
+10 | wird, unterschrieben, werden | Das Brief ____ nicht ____ ____. - A levél nem lesz aláírva. (unterschreiben)
 11 | Wird, eingeladen, werden | ____ sie von Peter morgen ____ ____? - Meghívja őt Peter holnap? (einladen)
 12 | Wird, bestellt, werden | ____ es von dir ____ ____? - Meg fogod ezt rendelni? (bestellen)
 \end{exmp}
@@ -3686,8 +3688,10 @@ Categories = 0
 
 \begin{desc}
 * Alapfok: szótári alak
+
 * Középfok: melléknév + er
   Pl.: schöner - szebb
+
 * Felsőfok: melléknév + ste
   Pl.: die schönste Frau - a legszebb nő
 \end{desc}
@@ -4396,6 +4400,7 @@ Pl.: mit dem fünften Auto - az ötödik autóval
 \title{A zu + infinitiv szerkezet/A zu + infinitiv általában}
 
 GrammarItemIndex = 354964
+Categories = 0
 
 \begin{desc}
 Csak akkor használhatunk zu + infinitives szerkezetet, ha a főmondat és a mellékmondat alanya megegyezik.
@@ -4409,23 +4414,23 @@ Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
 
 %Maklári: 304. oldal, 305. oldal
 \begin{exmp}
-1 | zu sein | Sie glaubt, klug ____. - Azt hiszi, hogy okos.
-2 | Ich hoffe, eine gute Note zu bekommen. | Remélem, kapok egy jó jegyet. (e Note)
-3 | Sie beginnt jetzt zu arbeiten. | Elkezdett most (n) dolgozni. (beginnen)
-4 | Er behauptet, alle meine Freunde zu kennen. | Azt állítja (f), hogy ismeri minden barátomat. (behaupten)
-5 | Sie ist müde, nicht auf zu stehen. | Olyan fáradt (n), hogy nem kel fel.
-6 | Otto hat Angst, den Bus nicht zu erreichen. | Otto mérges, hogy nem éri el a buszt. (Angst haben, erreichen)
-7 | Das Kind hört nicht aufzuschreien. | A gyerek nem hallja, hogy kiáltozik. (aufschreien)
-8 | Peter glaubt, schön zu sein. | Peter azt hisz, hogy szép.
-9 | Er meint, die Prüfung zu bestehen. | Azt gondolja (f), hogy átmegy a vizsgát. (meinen, die Prüfung bestehen)
-10 | Ildi hofft, den Zug zu erreichen. | Ildi reméli, hogy eléri a vonatot.
-11 | Anna hofft, größer zu werden. | Anna reméli, hogy nagyobbá válik.
-12 | Wir hoffen, noch ein Ticket zu bekommen. | Reméljük, hogy kapunk még egy jegyet. (s Ticket)
-13 | Wir vergessen darüber nicht, morgen euch zu besuchen. | Nem feledkeztünk meg arról, hogy meglátogassunk holnap titeket. (darüber)
-14 | Er denkt daran, übermorgen mich zu besuchen. | Arra gondol (f), hogy holnapután meglátogat engem. (denken, daran, übermorgen)
-15 | Meine Freundin meint, immer Recht zu haben. | A barátnőm azt kondolja, hogy mindig igaza van. (meinen)
-16 | Glaubst du, dein Geld in meiner Tasche zu finden? | Azt hiszed, hogy a pénzedet a táskámban találod?
-17 | Anna verspricht immer, mich zu besuchen. | Anna mindig megígéri, hogy meglátogat. (versprechen)
+1 | zu sein | Sie glaubt, klug ____ ____. - Azt hiszi, hogy okos.
+2 | zu bekommen | Ich hoffe, eine gute Note ____ ____. - Remélem, kapok egy jó jegyet.
+3 | zu bekommen | Sie beginnt jetzt ____ ____. - Elkezdett most dolgozni. (beginnen)
+4 | zu kennen | Er behauptet, alle meine Freunde ____ ____. - Azt állítja, hogy ismeri minden barátomat. (behaupten)
+5 | zu stehen | Sie ist müde, nicht auf ____ ____. - Olyan fáradt, hogy nem kel fel.
+6 | zu erreichen | Otto hat Angst, den Bus nicht ____ ____. - Otto mérges, hogy nem éri el a buszt. (erreichen)
+7 | aufzuschreien | Das Kind hört nicht ____. - A gyerek nem hallja, hogy kiáltozik. (aufschreien)
+8 | zu sein | Peter glaubt, schön ____ ____. - Peter azt hisz, hogy szép.
+9 | zu bestehen | Er meint, die Prüfung ____ ____. - Azt gondolja, hogy átmegy a vizsgát. (die Prüfung bestehen)
+10 | zu erreichen | Ildi hofft, den Zug ____ ____. - Ildi reméli, hogy eléri a vonatot.
+11 | zu werden | Anna hofft, größer ____ ____. - Anna reméli, hogy nagyobbá válik.
+12 | zu werden | Wir hoffen, noch ein Ticket ____ ____. - Reméljük, hogy kapunk még egy jegyet.
+13 | zu besuchen | Wir vergessen darüber nicht, morgen euch ____ ____. - Nem feledkeztünk meg arról, hogy meglátogassunk holnap titeket.
+14 | zu besuchen | Er denkt daran, übermorgen mich ____ ____. - Arra gondol, hogy holnapután meglátogat engem.
+15 | zu besuchen | Meine Freundin meint, immer Recht ____ ____. - A barátnőm azt kondolja, hogy mindig igaza van.
+16 | zu finden | Glaubst du, dein Geld in meiner Tasche ____ ____? - Azt hiszed, hogy a pénzedet a táskámban találod?
+17 | zu besuchen | Anna verspricht immer, mich ____ ____. - Anna mindig megígéri, hogy meglátogat. (versprechen)
 \end{exmp}
 
 \title{A zu + infinitiv szerkezet/A zu helye a mondatban}
@@ -4562,9 +4567,9 @@ Pl.: Das Heft gefällt dem Kind. - A füzet tetszik a gyereknek.
 4 | gefallen dem | Die Eltern ____ ____ Lehrer. - A tanárnak tetszenek a szülők.
 5 | gefällt dem | Der Schauspieler ____ ____ Publikum. - A közönségnek tetszik a színész.
 6 | gefällt dem | Das Publikum ____ ____ Schauspieler. - A színésznek tetszik a közönség.
-7 | gefällt ihm | Meine Börse ____ ____. - Tetszik neki a pénztárcám.
+7 | gefällt ihm | Meine Börse ____ ____. - Tetszik neki (f) a pénztárcám.
 8 | mir nicht | Sie gefällt ____ ____. - Nekem nem tetszik ő.
-9 | ihr nicht | Ich gefalle ____ ____. - Nem tetszem neki.
+9 | gefalle ihr | Ich ____ ____ nicht. - Nem tetszem neki.
 10 | gefalle deiner | Ich ____ ____ Schwiegermutter nicht. - Nem tetszem az anyósodnak.
 11 | gefällt mir | Die Schwiegermutter ____ ____ nicht. - Az anyós nem tetszik nekem.
 12 | gefällt den | Das Bild ____ ____ Gästen. - A kép tetszik a vendégeknek.
