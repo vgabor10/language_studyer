@@ -994,69 +994,69 @@ Categories = 0
 
 %Maklári: 59. oldal
 \begin{exmp}
-1 | für den | ____ Vater - az apa részére
-2 | für die | ____ Mutter - az anya részére
+1 | für den | ____ ____ Vater - az apa részére
+2 | für die | ____ ____ Mutter - az anya részére
 3 | ohne | ____ Geld - pénz nélkül
 4 | ohne | ____ Tasche - táska nélkül
 5 | gegen | ____ den Freund - a barát ellen
 6 | gegen | ____ den Feind - az ellenséggel szemben
-7 | um das | ____ Haus - a ház körül
-8 | durch meine | ____ Schwester - a nővérem által
-9 | durch den | ____ Tunnel - keresztül az alagúton
-10 | durch die | ____ Eltern - a szülőkön keresztül
+7 | um das | ____ ____ Haus - a ház körül
+8 | durch meine | ____ ____ Schwester - a nővérem által
+9 | durch den | ____ ____ Tunnel - keresztül az alagúton
+10 | durch die | ____ ____ Eltern - a szülőkön keresztül
 11 | ohne | ____ Schuh - cipő nélkül
 12 | bis | ____ Budapest - Budapestig
 13 | bis | ____ 5 Uhr - 5 óráig
-14 | um den | ____ Garten - a kert körül
-15 | für das | ____ Mädchen - a lánynak
-16 | für fünf | ____ Forint - öt forintért
-17 | für einen | ____ Wagen - egy kocsiért
+14 | um den | ____ ____ Garten - a kert körül
+15 | für das | ____ ____ Mädchen - a lánynak
+16 | für | ____ fünf Forint - öt forintért
+17 | für einen | ____ ____ Wagen - egy kocsiért
 18 | ohne | ____ Lampe - lámpa nélkül
-19 | um die | ____ Stadt - a város körül
-20 | ohne die | ____ Schweigermutter - az anyós nélkül
-21 | durch einen | ____ Freund - egy barát által
-22 | um einen | ____ Tisch - egy asztal körül
-23 | durch ein | ____ Haus - egy házon át
-24 | durch meinen | ____ Vater - apám által
+19 | um die | ____ ____ Stadt - a város körül
+20 | ohne die | ____ ____ Schweigermutter - az anyós nélkül
+21 | durch einen | ____ ____ Freund - egy barát által
+22 | um einen | ____ ____ Tisch - egy asztal körül
+23 | durch ein | ____ ____ Haus - egy házon át
+24 | durch meinen | ____ ____ Vater - apám által
 25 | ohne | ____ Heft - füzet nélkül
-26 | für einen | ____ Apfel - egy almáért
-27 | durch das | ____ Dorf - keresztül a falun
-28 | durch den | ____ Park - keresztül a parkon
+26 | für einen | ____ ____ Apfel - egy almáért
+27 | durch das | ____ ____ Dorf - keresztül a falun
+28 | durch den | ____ ____ Park - keresztül a parkon
 29 | bis | ____ zwei - kettőig
-30 | um meinen | ____ Mann - a férjem körül
-31 | gegen die | ____ Eltern - a szülőkkel szemben
-32 | um einen | ____ Garten - egy kert körül
-33 | durch den | ____ Weg - keresztül az úton
-34 | gegen mich | ____ - ellenem
-35 | für érte | ____ - érte (hímnem)
-36 | ohne uns | ____ - nélkülünk
-37 | ohne sie | ____ - nélküle (nőnem)
-38 | um euch | ____ - körülöttetek
-39 | für uns | ____ - értünk
-40 | für Sie | ____ - Önért
-41 | um uns | ____ - körülöttünk
-42 | durch mich | ____ - általam
-43 | für sie | ____ - részükre
-44 | gege dichn | ____ - ellened
-45 | um uns | ____ - körülöttünk
-46 | ohne sie | ____ - nélkülük
-47 | gege Sien | ____ - Ön ellen
-48 | ohne dich | ____ - nélküled
-49 | für uns | ____ - nekünk
-50 | für euch | ____ - értetek
-51 | durch Sie | ____ - Ön által
-52 | für dich | ____ - érted
-53 | ohne mich | ____ - nélkülem
-54 | um mich | ____ - körülöttem
-55 | für sie | ____ - számukra
-56 | gegen euch | ____ - ellenetek
-57 | gegen ihn | ____ - ellene (hímnem)
-58 | um dich | ____ - körülötted
-59 | um sie | ____ - körülötte (nőnem)
-60 | durch sie | ____ - általa (nőnem)
-61 | gegen uns | ____ - ellenünk
-62 | für mich | ____ - értem
-63 | für euch | ____ - részetekre
+30 | um meinen | ____ ____ Mann - a férjem körül
+31 | gegen die | ____ ____ Eltern - a szülőkkel szemben
+32 | um einen | ____ ____ Garten - egy kert körül
+33 | durch den | ____ ____ Weg - keresztül az úton
+34 | gegen mich | ____ ____ - ellenem
+35 | für érte | ____ ____ - érte (hímnem)
+36 | ohne uns | ____ ____ - nélkülünk
+37 | ohne sie | ____ ____ - nélküle (nőnem)
+38 | um euch | ____ ____ - körülöttetek
+39 | für uns | ____ ____ - értünk
+40 | für Sie | ____ ____ - Önért
+41 | um uns | ____ ____ - körülöttünk
+42 | durch mich | ____ ____ - általam
+43 | für sie | ____ ____ - részükre
+44 | gege dichn | ____ ____ - ellened
+45 | um uns | ____ ____ - körülöttünk
+46 | ohne sie | ____ ____ - nélkülük
+47 | gege Sien | ____ ____ - Ön ellen
+48 | ohne dich | ____ ____ - nélküled
+49 | für uns | ____ ____ - nekünk
+50 | für euch | ____ ____ - értetek
+51 | durch Sie | ____ ____ - Ön által
+52 | für dich | ____ ____ - érted
+53 | ohne mich | ____ ____ - nélkülem
+54 | um mich | ____ ____ - körülöttem
+55 | für sie | ____ ____ - számukra
+56 | gegen euch | ____ ____ - ellenetek
+57 | gegen ihn | ____ ____ - ellene (hímnem)
+58 | um dich | ____ ____ - körülötted
+59 | um sie | ____ ____ - körülötte (nőnem)
+60 | durch sie | ____ ____ - általa (nőnem)
+61 | gegen uns | ____ ____ - ellenünk
+62 | für mich | ____ ____ - értem
+63 | für euch | ____ ____ - részetekre
 \end{exmp}
 
 \title{Prepozíciók/Prepozíciók kizárólag részes esettel}
@@ -1279,6 +1279,7 @@ GrammarItemIndex = 786385
 \title{Kötőszavak/Kötőszavak egyenes szórenddel}
 
 GrammarItemIndex = 536812
+Categories = 0
 
 \begin{desc}
 A következő kötöszavak után van egyenes szórend (usoda):
@@ -1291,19 +1292,19 @@ A következő kötöszavak után van egyenes szórend (usoda):
 
 %Maklári: 144. oldal
 \begin{exmp}
-1 | Wir kaufen und ihr kocht. | Mi vásárolunk és ti főztök.
-2 | Ich bin nervös, denn mein Freund kommt nicht. | Ideges vagyok, mert nem jön a barátom. (nervös)
-3 | Ich gehe, oder du kommst. | Én megyek, vagy te jössz.
-4 | Er ist schlecht, aber du bekommst die Ohrfeige. | Ö (f) rossz, de te kapod a pofont. (schlecht, bekommen)
-5 | Ich bleibe zu Hause, denn ich bin krank. | Otthon maradok, mert beteg vagyok. (krank)
-6 | Ich spüle heute und du kaufst ein. | Ma én mosogatok és te vásárolsz be. (spülen)
-7 | Ich bin müde, aber ich gehe. | Fáradt vagyok, de megyek.
-8 | Peter isst die Suppe nicht, sondern er trinkt. | Peter nem eszi a levest, hanem issza.
-9 | Wir besuchen sie nicht, denn sie sind nicht zu Hause. | Nem látogatjuk meg őket, mert nincsenek otthon.
-10 | Wir reisen nach Italien, aber wir bleiben nur zwei Tage. | Olaszországba utazunk, de csak két napot maradunk. (reisen, Italien)
-11 | Wir bleiben hier nicht, sondern wir gehen nach Hause. | Nem maradunk itt, hanem haza megyünk.
-12 | Die Gäste steigen in den Bus ein und der Bus fährt ab. | A vendégek beszállnak a buszba és a busz elindul. (einsteigen, abfahren)
-13 | Ich arbeite und sie hört Musik. | Én dolgozom és ő (n) zenét hallgat.
+1 | und ihr kocht | Wir kaufen ____ ____ ____. - Mi vásárolunk és ti főztök.
+2 | denn mein Freund kommt |Ich bin nervös, ____ ____ ____ ____ nicht. | Ideges vagyok, mert nem jön a barátom.
+3 | mein Freund kommt nicht | Ich gehe, ____ ____ ____. | Én megyek, vagy te jössz.
+4 | aber du bekommst | Er ist schlecht, ____ ____ ____ die Ohrfeige. - Ö rossz, de te kapod a pofont.
+5 | denn ich bin | Ich bleibe zu Hause, ____ ____ ____ krank. - Otthon maradok, mert beteg vagyok.
+6 | und du kaufst ein | Ich spüle heute ____ ____ ____ ____. - Ma én mosogatok és te vásárolsz be.
+7 | aber ich gehe | Ich bin müde, ____ ____ ____. - Fáradt vagyok, de megyek.
+8 | sondern er trinkt | Peter isst die Suppe nicht, ____ ____ ____. - Peter nem eszi a levest, hanem issza.
+9 | denn sie sind | Wir besuchen sie nicht, ____ ____ ____ nicht zu Hause. - Nem látogatjuk meg őket, mert nincsenek otthon.
+10 | aber wir bleiben | Wir reisen nach Italien, ____ ____ ____ nur zwei Tage. - Olaszországba utazunk, de csak két napot maradunk.
+11 | sondern wir gehen | Wir bleiben hier nicht, ____ ____ ____ nach Hause. - Nem maradunk itt, hanem haza megyünk.
+12 | und der Bus fährt ab | Die Gäste steigen in den Bus ein ____ ____ ____ ____ ____. - A vendégek beszállnak a buszba és a busz elindul. (abfahren)
+13 | und sie hört | Ich arbeite ____ ____ ____ Musik. - Én dolgozom és ő (n) zenét hallgat.
 \end{exmp}
 
 \title{Kötőszavak/Kötőszavak egyenes szórenddel/Alany elhagyása und kötőszó esetén}
@@ -1348,22 +1349,22 @@ Pl.: Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost
 
 %Maklári: 147. oldal
 \begin{exmp}
-1 | dann esse ich | Ich gehe nach Hause, ____. - Haza megyek, aztán eszek.
-2 | dann spazieren wir | Ich esse das Mittagessen, ____. - Megeszem az ebédet, aztán sétálunk.
-3 | deshalb bleiben wir | Das Wetter ist schön, ____ nicht zu Hause. - Az idő szép, ezért nem maradunk otthon.
-4 | sonst bekommst du | Du schreibst die Lektion, ____ eine Eins. - Megírod a leckét, különben kapsz egy egyest.
-5 | dann spielen wir | Wir lernen klein, ____ Fußball. - Tanulunk egy kicsit, aztán focizunk.
-6 | dann gehen wir | Wir arbeiten, ____ in die Kneipe. - Dolgozunk, aztán megyünk a kocsmába.
-7 | darum ist er | Er arbeitet viel, ____ reich. - Sokat dolgozik, ezért gazdag.
-8 | trotzdem ist er | Er arbeitet viel, ____ arm. - Sokat dolgozik, mégis szegény.
-9 | trotzdem kommt er | Peter ist krank, ____ mit uns. - Peter beteg, mégis velünk jön.
-10 | trotzdem ist er | Er trinkt viel, ____ durstig ____. - Sokat iszik, mégis szomjas.
-11 | trotzdem ist er | Mein Freund lernt viel, ____ dumm. - A barátom sokat tanul, mégis buta.
-12 | sonst gehst du | Du machst Ordnung in deinem Zimmer, ____ nicht in Schwimmbad. - Rendet csinálsz a szobádban, különben nem mész uszodába.
-13 | deshalb gehe ich | Er gibt mir Schokolade nicht, ____ nicht zu ihm. - Nem ad nekem csokoládét, ezért nem megyek hozzá.
-14 | sonst kommst du | Du isst das Abendessen, ____ nicht mit mir. - Megeszed a vacsorát, különben nem jössz velem.
-15 | dann trinke ich | Ich stehe auf, ____ Tee. - Felkelek, aztán teát iszok.
-16 | trotzdem bin ich | Ich schlafe viel, ____ müde. - Sokat alszom, mégis fáradt vagyok.
+1 | dann esse ich | Ich gehe nach Hause, ____ ____ ____. - Haza megyek, aztán eszek.
+2 | dann spazieren wir | Ich esse das Mittagessen, ____ ____ ____. - Megeszem az ebédet, aztán sétálunk.
+3 | deshalb bleiben wir | Das Wetter ist schön, ____ ____ ____ nicht zu Hause. - Az idő szép, ezért nem maradunk otthon.
+4 | sonst bekommst du | Du schreibst die Lektion, ____ ____ ____ eine Eins. - Megírod a leckét, különben kapsz egy egyest.
+5 | dann spielen wir | Wir lernen klein, ____ ____ ____ Fußball. - Tanulunk egy kicsit, aztán focizunk.
+6 | dann gehen wir | Wir arbeiten, ____ ____ ____ in die Kneipe. - Dolgozunk, aztán megyünk a kocsmába.
+7 | darum ist er | Er arbeitet viel, ____ ____ ____ reich. - Sokat dolgozik, ezért gazdag.
+8 | trotzdem ist er | Er arbeitet viel, ____ ____ ____ arm. - Sokat dolgozik, mégis szegény.
+9 | trotzdem kommt er | Peter ist krank, ____ ____ ____ mit uns. - Peter beteg, mégis velünk jön.
+10 | trotzdem ist er | Er trinkt viel, ____ ____ ____ durstig. - Sokat iszik, mégis szomjas.
+11 | trotzdem ist er | Mein Freund lernt viel, ____ ____ ____ dumm. - A barátom sokat tanul, mégis buta.
+12 | sonst gehst du | Du machst Ordnung in deinem Zimmer, ____ ____ ____ nicht in Schwimmbad. - Rendet csinálsz a szobádban, különben nem mész uszodába.
+13 | deshalb gehe ich | Er gibt mir Schokolade nicht, ____ ____ ____ nicht zu ihm. - Nem ad nekem csokoládét, ezért nem megyek hozzá.
+14 | sonst kommst du | Du isst das Abendessen, ____  ____ ____ nicht mit mir. - Megeszed a vacsorát, különben nem jössz velem.
+15 | dann trinke ich | Ich stehe auf, ____  ____ ____ Tee. - Felkelek, aztán teát iszok.
+16 | trotzdem bin ich | Ich schlafe viel, ____  ____ ____ müde. - Sokat alszom, mégis fáradt vagyok.
 \end{exmp}
 
 \title{Kötőszavak/KATI szórend}
@@ -1604,7 +1605,7 @@ sie, Sie    | nehmen | essen
 2 | isst | Du ____ Apfel. - Almát eszel.
 3 | nehmen | Wir ____ Käse. - Veszünk sajtot.
 4 | nehmt | Ihr ____ Mittagessen. - Vesztek Ebédet.
-5 | esse | Ich es____se Abendessen. - Eszek vacsorát.
+5 | esse | Ich ____ Abendessen. - Eszek vacsorát.
 6 | nimmt | Peter ____ Brot. - Peter vesz kenyeret.
 7 | isst | Ági ____ Torte. - Ági tortát eszik.
 8 | essen | Wir ____ Schinken. - Sonkát eszünk.
@@ -2657,6 +2658,8 @@ GrammarItemIndex = 4132
 Categories = 0
 
 \begin{desc}
+waren - volt
+
 ich       | war
 du        | warst
 er/sie/es | war
@@ -2740,6 +2743,8 @@ GrammarItemIndex = 6721
 Categories = 0
 
 \begin{desc}
+wurden - vált vmivé
+
 ich wurde
 du wurdes
 er/sie/es wurde
@@ -2751,10 +2756,6 @@ Pl.: * Er wurde böse. - Mérges lett.
 * Mein Freund wurde berühmt. - A barátom híres lett.
 * Er wurde arm. - Szegény lett.
 * Wir wurden reich. - Gazdagok lettünk.
-* Sie wurde gesund. - Egészséges lett.
-* Es wurde dunkel. - Sötét lett.
-* Es wurde kalt. - Hideg lett.
-* Ich wurde fertig nicht. - Nem lettem kész.
 \end{desc}
 
 %Maklári: 250.oldal
@@ -4430,7 +4431,7 @@ Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
 14 | zu besuchen | Er denkt daran, übermorgen mich ____ ____. - Arra gondol, hogy holnapután meglátogat engem.
 15 | zu besuchen | Meine Freundin meint, immer Recht ____ ____. - A barátnőm azt kondolja, hogy mindig igaza van.
 16 | zu finden | Glaubst du, dein Geld in meiner Tasche ____ ____? - Azt hiszed, hogy a pénzedet a táskámban találod?
-17 | zu besuchen | Anna verspricht immer, mich ____ ____. - Anna mindig megígéri, hogy meglátogat. (versprechen)
+17 | zu besuchen | Anna verspricht immer, mich ____ ____. - Anna mindig megígéri, hogy meglátogat.
 \end{exmp}
 
 \title{A zu + infinitiv szerkezet/A zu helye a mondatban}
@@ -4584,6 +4585,8 @@ Categories = 0
 gehören + D = valakié, valakinek a tulajdona
 
 Pl.: Das Fahrrad gehört dem Kind.
+Der Rock gehört dem Mädchen. - A szoknya a lányé.
+Die Bücher gehören dem Lehrer. - A könyvek a tanáré.
 \end{desc}
 
 %Maklári: 33. oldal
@@ -4605,6 +4608,7 @@ Pl.: Das Fahrrad gehört dem Kind.
 \title{Néhány Akkusativ-os és Dativ-os vonzatú ige/A gehören zu + D}
 
 GrammarItemIndex = 863524
+Categories = 0
 
 \begin{desc}
 gehören zu + D = tartozik vkihez/vmihez
@@ -4614,21 +4618,22 @@ Pl.: Peter gehört auch zur Gesellschaft. - Peter is a társasághoz tartozik.
 
 %Maklári: 33.oldal
 \begin{exmp}
-1 | Gehörst du auch zu uns? | Te is hozzánk tartozol?
-2 | Diese Frage gehört nicht zu dem Thema. | Ez a kérdés nem tartozik a témához. (s Thema)
-3 | Ivan gehört zu meinen Feinden. | Ivan az ellenségeimhez tartozik. (r Feind)
-4 | Wer gehört zu dieser Gesellschaft? | Ki tartozik ehhez a társasághoz? (e Gesellschaft)
-5 | Joe gehört zu euch. | Joe hozzátok tartozik.
-6 | Vien gehört zu Österreich. | Bécs Ausztriához tartozik.
-7 | Es gehört nicht zu der Sache. | Ez nem tartozik a tárgyhoz. (es, e Sache)
-8 | Deutschland gehört zu Europa. | Németország Europához tartozik.
-9 | Bill gehört zu den Terroristen. | Bill a terroristákhoz tartozik. (r Terrorist)
-10 | Ich gehöre nicht zu dieser Partei. | Nem tartozom ehhez a párthoz. (e Partei)
+1 | Gehörst, zu uns | ____ du auch ____ ____? - Te is hozzánk tartozol?
+2 | gehört zu dem | Diese Frage ____ nicht ____ ____ Thema. - Ez a kérdés nem tartozik a témához.
+3 | gehört zu meinen | Ivan ____ ____ ____ Feinden. - Ivan az ellenségeimhez tartozik.
+4 | gehört zu dieser | Wer ____ ____ ____ Gesellschaft? - Ki tartozik ehhez a társasághoz?
+5 | gehört zu euch | Joe ____ ____ ____. - Joe hozzátok tartozik.
+6 | gehört zu | Vien ____ ____ Österreich. - Bécs Ausztriához tartozik.
+7 | gehört, zu der | Es ____ nicht ____ ____ Sache. - Ez nem tartozik a tárgyhoz.
+8 | gehört zu | Deutschland ____ ____ Europa. - Németország Europához tartozik.
+9 | gehört zu den | Bill ____ ____ ____ Terroristen. - Bill a terroristákhoz tartozik.
+10 | gehöre, zu dieser | Ich geh____öre nicht ____ ____ Partei. - Nem tartozom ehhez a párthoz.
 \end{exmp}
 
 \title{A lassen ige/Önállóan, főigeként}
 
 GrammarItemIndex = 861386
+Categories = 0
 
 \begin{desc}
 ich       | lasse
@@ -4643,22 +4648,22 @@ Pl.: Ivan lässt mich nie in Ruhe. - Iván sose hagy békén.
 
 %Maklári: 215. oldal
 \begin{exmp}
-1 | Ich lasse die Uhr auf den Tisch. | Az órát az asztalon hagyom.
-2 | Er lässt den Wagen bei dem Mechaniker. | A kocsit a szerelőnél hagyja (f).
-3 | Ich lasse bei euch mein Radio. | Nálatok hagyom a rádiómat.
-4 | Lässt du mich in Ruhe? | Békén hagysz? (in Ruhe)
-5 | Warum lässt du ihn im Stich? | Miért hagyod cserben (f)? (im Stich)
-6 | Ich lasse dich nicht im Stich. | Nem hagylak cserben. (im Stich)
-7 | Er lässt mich nicht in Ruhe. | Nem hagy (f) békén. (in Ruhe)
-8 | Wo lässt du das Fahrrad? | Hol hagyod a kerékpárt?
-9 | Lässt du bei mir den Wagen? | Nálam hagyod a kocsit?
-10 | Sie lässt ohne Geld hier mich. | Pénz nélkül (n) hagy itt engem.
-11 | Józsi lässt sein Heft zu Hause. | Józsi a füzetét otthon hagyja.
-12 | Ihr lasst immer zu Hause Béla. | Mindig otthon hagyjátok Bélát.
-13 | Sie lässt uns im Stich. | Cserben hagy (n) minket. (im Stich)
-14 | Ich lasse den Wagen bei dem Mechaniker. | A kocsit a szerelőnél hagyom.
-15 | Ich lasse bei dir das Kind. | Nálad hagyom a gyereket.
-16 | Lasst ihr meinen Freund in Ruhe? | Békén hagyjátok a barátomat? (in Ruhe)
+1 | lasse | Ich ____ die Uhr auf den Tisch. - Az órát az asztalon hagyom.
+2 | lässt | Er ____ den Wagen bei dem Mechaniker. - A kocsit a szerelőnél hagyja.
+3 | lasselasselasselasse | Ich ____ bei euch mein Radio. - Nálatok hagyom a rádiómat.
+4 | Lässt | ____ du mich in Ruhe? - Békén hagysz?
+5 | lässt | Warum ____ du ihn im Stich? - Miért hagyod cserben?
+6 | lasse | Ich ____ dich nicht im Stich. - Nem hagylak cserben.
+7 | lässt | Er ____ mich nicht in Ruhe. - Nem hagy békén.
+8 | lässt | Wo ____ du das Fahrrad? - Hol hagyod a kerékpárt?
+9 | Lässt | ____ du bei mir den Wagen? - Nálam hagyod a kocsit?
+10 | lässt | Sie ____ ohne Geld hier mich. - Pénz nélkül hagy itt engem.
+11 | lässt | Józsi ____ sein Heft zu Hause. - Józsi a füzetét otthon hagyja.
+12 | lasst | Ihr ____ immer zu Hause Béla. - Mindig otthon hagyjátok Bélát.
+13 | lässt | Sie ____ uns im Stich. | Cserben hagy minket.
+14 | lasse | Ich ____ den Wagen bei dem Mechaniker. - A kocsit a szerelőnél hagyom.
+15 | lasse | Ich ____ bei dir das Kind. - Nálad hagyom a gyereket.
+16 | Lasst | ____ ihr meinen Freund in Ruhe? - Békén hagyjátok a barátomat?
 \end{exmp}
 
 \title{A lassen ige/Segédigeként}
