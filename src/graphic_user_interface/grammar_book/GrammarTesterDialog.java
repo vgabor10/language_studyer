@@ -2,7 +2,6 @@ package graphic_user_interface.grammar_book;
 
 import common.Logger;
 import grammar_book.GrammarTester;
-import grammar_book.GrammarItemContainer;
 import grammar_book.GrammarBook;
 import grammar_book.GrammarDataModificator;
 import graphic_user_interface.common.DialogAnswer;
@@ -42,6 +41,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
 
         jTextField2.setText("");
         jTextField3.setText("");
+        jTextArea1.setText("");
         
         jTextField1.setText(grammarTester.getActualQuestionedExample().hun);
         jLabel1.setText(grammarTester.getActualQuestionedGrammarItem().title.toString());
@@ -239,6 +239,8 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
             getAnswer = getAnswer.toLowerCase();
             getAnswer =getAnswer.replaceAll(",", "");
             
+            jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
+            
             if (getAnswer.equals(expectedAnswer)) {                
                 acceptAnswerButton.requestFocus();
                 acceptAnswerButton.setBackground(new Color(102,255,102));
@@ -256,7 +258,6 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
                 wrongAnswerButton.setBackground(new Color(255,102,102));
                 
                 jTextField3.setText(grammarTester.getActualQuestionedExample().foreign);
-                jTextArea1.setText(grammarTester.getActualQuestionedGrammarItem().description);
   
                 ignoreAnswerButton.setEnabled(true);
                 acceptAnswerButton.setEnabled(true);
