@@ -4712,16 +4712,13 @@ Pl.: Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
 \title{A lassen ige/A lassen mint műveltető}
 
 GrammarItemIndex = 136545
+Categories = 0
 
 \begin{desc}
-1) Képzése: alany + lassen ragozva + többi mondatrész + ige Infinitivben 
+Képzése: alany + lassen ragozva + többi mondatrész + ige Infinitivben 
 
-Pl.: Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót.
-
-2) A lassen ige vonzata eltér a magyartól, ugyanis tárgyesetbe tesszük
+A lassen ige vonzata eltér a magyartól, ugyanis tárgyesetbe tesszük
 azt, akivel csináltatunk valamit.
-
-Pl.: Peter lässt seine Freundin das Auto waschen. - Peter a barátnőjével mosatja az autót.
 
 lassen ragozása:
 ich ------- lasse
@@ -4730,30 +4727,33 @@ er/sie/es - lässt
 wir ------- lassen
 ihr ------- lasst
 sie/Sie --- lassen
+
+Pl.: * Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót.
+* Peter lässt seine Freundin das Auto waschen. - Peter a barátnőjével mosatja az autót.
 \end{desc}
 
 %Maklári: 219. oldal
 \begin{exmp}
-1 | Ich lasse meinen Wagen reparieren. | Megjavíttatom a kocsimat.
-2 | Ihr lasst ihm zwei Torten backen. | Süttetnek neki (f) két tortát. (backen)
-3 | Ich lasse mich fotografieren. | Lefotóztatom magamat. (fotografieren)
-4 | Sie lassen euch ein Haus bilden. | Építtettek (ők) nektek egy házat.
-5 | Wir lassen die Koffer bringen. | Elhozatjuk a bőröndöket. (r Koffer)
-6 | Wir lassen uns Kleid machen. | Csináltatunk magunknak ruhát.
-7 | Du lässt den Teppich putzen. | Kitisztíttatod a szőnyeget. (r Teppich, putzen)
-8 | Lässt du dir Bier bringen? | Hozatsz magadnak sört? (bringen)
-9 | Ich lasse meine Wohnung malen. | Kifestem a lakásomat. (malen)
-10 | Béla lässt ein Haus renovieren. | Béla renováltat egy házat. (renovieren)
-11 | Ich lasse Józsi das Fenster waschen. | Józsival lemosatom az ablakot.
-12 | Ich lasse Peter meine Lektion schreiben. | Peterrel megíratom a leckémet. (e Lektion)
-13 | Er lässt den Dolmetscher zwei Briefe übersetzen. | A tolmáccsal két levelet fordíttat (f). (r Dolmetscher, übersetzen)
-14 | Warum lässt du mich deine Briefe schreiben? | Miért velem íratod a leveleidet?
-15 | Sie lässt seine Freundin einen Arzt rufen. | A barátnőjével hívat (f) egy orvost.
-16 | Sie lässt den Nachbar ihr Haus renovieren. | A szomszéddal renováltatja (n) a házát. (renovieren)
-17 | Der Lehrer lässt den Schüler die Tür öffnen. | A tanár a diákkal kinyittatja az ajtót.
-18 | Ich lasse meine Schwester mich fotografieren. | A húgommal fotóztatom le magamat. (e Schwester)
-19 | Du lässt den Monteur das Telefon montieren. | Megszerelteted a szerelővel a telefont. (montieren, r Monteur)
-20 | Du lässt deinen Freund deinen Hund waschen. | Megmosatod a barátoddal a kutyádat.
+1 | lasse reparieren | Ich ____ meinen Wagen ____. - Megjavíttatom a kocsimat.
+2 | lasst backen | Ihr ___ ihm zwei Torten ____. - Süttetnek neki két tortát. (backen)
+3 | lasse fotografieren | Ich ____ mich ____. - Lefotóztatom magamat. (fotografieren)
+4 | lassen bilden | Sie ____ euch ein Haus ____. - Építtettek nektek egy házat.
+5 | lassen bringen | Wir ____ die Koffer ____. - Elhozatjuk a bőröndöket.
+6 | lassen machen | Wir ____ uns Kleid ____. - Csináltatunk magunknak ruhát.
+7 | lässt putzen | Du ____ den Teppich ____. - Kitisztíttatod a szőnyeget.
+8 | Lässt bringen | ____ du dir Bier ____? - Hozatsz magadnak sört?
+9 | lassen malen |  Ich ____ meine Wohnung ____. - Kifestetem a lakásomat. (malen)
+10 | lässt renovieren | Béla ____ ein Haus ____. - Béla renováltat egy házat. (renovieren)
+11 | lasse waschen | Ich ____ Józsi das Fenster ____. - Józsival lemosatom az ablakot.
+12 | lasse schreiben | Ich ____ Peter meine Lektion ____. - Peterrel megíratom a leckémet.
+13 | lässt den übersetzen | Er ____ ____ Dolmetscher zwei Briefe ____. - A tolmáccsal két levelet fordíttat. (übersetzen)
+14 | lässt mich schreiben| Warum ____ du ____ deine Briefe ____? - Miért velem íratod a leveleidet?
+15 | lässt seine rufen | Sie ____ ____ Freundin einen Arzt ____. - A barátnőjével hívat egy orvost.
+16 | lässt den renovieren | Sie ____ ____ Nachbar ihr Haus ____. - A szomszéddal renováltatja a házát.
+17 | lässt den öffnen | Der Lehrer ____ ____ Schüler die Tür ____. - A tanár a diákkal kinyittatja az ajtót.
+18 | lasen meine fotografieren | Ich ____ ____ Schwester mich ____. - A húgommal fotóztatom le magamat.
+19 | lässt den montieren | Du ____ ____ Monteur das Telefon ____. - Megszerelteted a szerelővel a telefont. (montieren)
+20 | lässt deinen waschen | Du ____ ____ Freund deinen Hund ____. - Megmosatod a barátoddal a kutyádat.
 \end{exmp}
 
 \title{Határozatlan névmások/A jeder/e/es}
