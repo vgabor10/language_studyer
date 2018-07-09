@@ -415,22 +415,22 @@ Sie             | Ihr
 %Maklári: 45. oldal
 \begin{exmp}
 1 | unserer | der Kind ____ Eltern - a szüleink gyereke
-2 | meines | der Sohn ____ Vaters - az apám fia
+2 | meines Vaters | der Sohn ____ ____ - az apám fia
 3 | meiner | die Tochter ____ Mutter - az anyám lánya
-4 | unseres | die Tür ____ Hauses - a házunk ajtaja
-5 | ihres | die Lampe ____ Autos - az autójuk lámpája
-6 | Ihres | die Scheibe ____ Wagens - az Ön kocsijának az ablaka
+4 | unseres Hauses | die Tür ____ ____ - a házunk ajtaja
+5 | ihres Autos | die Lampe ____ ____ - az autójuk lámpája
+6 | Ihres Wagens | die Scheibe ____ ____ - az Ön kocsijának az ablaka
 7 | euerer | die Bälle ____ Kinder - a gyerekeitek labdái
 8 | euerer | die Shöne ____ Tochter - a lányaitok fiai
-9 | ihres | der Freund ____ Mannes - a férjének a barátja
-10 | deines | das Rad ____ Fahrrads - a kerékpárod kereke
+9 | ihres Mannes | der Freund ____ ____ - a férjének a barátja
+10 | deines Mannes | das Rad ____ ____ - a kerékpárod kereke
 11 | euerer | das Geld ____ Freunde - a barátaitok pénze
-12 | unseres | das Zeit ____ Lehrers - a tanárunk ideje
+12 | unseres Mannes | das Zeit ____ ____ - a tanárunk ideje
 13 | seiner | das Kleid ____ Freundin - a barátnőjének (f) a ruhája
 14 | ihrer | die Fenster ____ Häuser - a házaiknak az ablakai
 15 | meiner | der Knopf ____ Hose - a nadrágom gombja
 16 | unseren | das Ende ____ Aufgaben - a feladataink vége
-17 | unserer | der Beginn ____ Leidens - a szenvedéseink kezdete
+17 | unserer Leidens | der Beginn ____ ____ - a szenvedéseink kezdete
 18 | seiner | die Freundin ____ Frau - a feleségének a barátnője
 \end{exmp}
 
@@ -889,7 +889,7 @@ Példák ilyen prepozíciókra:
 28 | an dem | ____ ____ Tafel - a táblán
 29 | zwischen der, dem | zwischen ____ ____ Tür und ____ Fenster - az ajtó és az ablak között
 30 | an der | ____ ____ Uhr - az órán
-31 | über dem | ____ Haus ____ - a ház felett
+31 | über dem | ____ ____ Haus - a ház felett
 32 | zwischen dem, dem | ____ ____ Stuhl und ____ Bett - a szék és az ágy között
 \end{exmp}
 
@@ -930,35 +930,35 @@ zwischen + A | közé
 
 %Maklári: 54. oldal
 \begin{exmp}
-1 | an die | ____ Wand - a falra
-2 | in die | ____ Küche - a konyhába
-3 | auf den | ____ Schrank - a szekrényre
-4 | neben den | ____ Tisch - az asztal mellé
-5 | vor das | ____ Zimmer - a szoba elé
-6 | in die | ____ Schränke - a szekrényekbe
-7 | auf den | ____ Tisch - az asztalra
-8 | hinter die | ____ Wand - a fal mögé
-9 | unter das | ____ Buch - a könyv alá
-10 | über das | ____ Haus - a ház fölé
-11 | hinter die | ____ Leute - az emberek mögé
-12 | in den | ____ Wagen - a kocsiba
-13 | auf den | ____ Boden - a padlóra
-14 | an den | ____ Vorhang - a függönyre
-15 | in das | ____ Zimmer - a szobába
-16 | neben das | ____ Auto - az autó mellé
-17 | über den | ____ Garten - a kert fölé
-18 | unter den | ____ Boden - a föld alá
-19 | neben die | ____ Garage - a garázs mellé
-20 | zwischen das, und die | ____ Zimmer ____ Küche - a szoba és a kunyha közé
-21 | zwischen die | ____ Stühle - a székek közé
-22 | zwischen das, und die | ____ Bett ____ Tür | az ágy és a székek közé
-23 | vor die | ____ Küche - az konyha elé
-24 | an die | ____ Wände - a falakra
-25 | in die | ____ Betten - az ágyakba
-26 | auf das | ____ Auto - az autóra
-27 | vor die | ____ Lehrerin - a tanárnő elé
-28 | unter den | ____ Teppich - a szőnyeg alá
-29 | zwischen die, die | ____ Lampe und ____ Blume - a lámpa és a virág közé
+1 | an die | ____ ____ Wand - a falra
+2 | in die | ____ ____ Küche - a konyhába
+3 | auf den | ____ ____ Schrank - a szekrényre
+4 | neben den | ____ ____ Tisch - az asztal mellé
+5 | vor das | ____ ____ Zimmer - a szoba elé
+6 | in die | ____ ____ Schränke - a szekrényekbe
+7 | auf den | ____ ____ Tisch - az asztalra
+8 | hinter die | ____ ____ Wand - a fal mögé
+9 | unter das | ____ ____ Buch - a könyv alá
+10 | über das | ____ ____ Haus - a ház fölé
+11 | hinter die | ____ ____ Leute - az emberek mögé
+12 | in den | ____ ____ Wagen - a kocsiba
+13 | auf den | ____ ____ Boden - a padlóra
+14 | an den | ____ ____ Vorhang - a függönyre
+15 | in das | ____ ____ Zimmer - a szobába
+16 | neben das | ____ ____ Auto - az autó mellé
+17 | über den | ____ ____ Garten - a kert fölé
+18 | unter den | ____ ____ Boden - a föld alá
+19 | neben die | ____ ____ Garage - a garázs mellé
+20 | zwischen das, und die | ____ ____ Zimmer ____ Küche - a szoba és a kunyha közé
+21 | zwischen die | ____ ____ Stühle - a székek közé
+22 | zwischen das, und die | ____ ____ Bett ____ Tür | az ágy és a székek közé
+23 | vor die | ____ ____ Küche - az konyha elé
+24 | an die | ____ ____ Wände - a falakra
+25 | in die | ____ ____ Betten - az ágyakba
+26 | auf das | ____ ____ Auto - az autóra
+27 | vor die | ____ ____ Lehrerin - a tanárnő elé
+28 | unter den | ____ ____ Teppich - a szőnyeg alá
+29 | zwischen die, die | ____ ____ Lampe und ____ Blume - a lámpa és a virág közé
 \end{exmp}
 
 \title{Prepozíciók/Hová? kérdésre felelő prepozíciók/Prepozíciók összevonása}
@@ -4650,7 +4650,7 @@ Pl.: Ivan lässt mich nie in Ruhe. - Iván sose hagy békén.
 \begin{exmp}
 1 | lasse | Ich ____ die Uhr auf den Tisch. - Az órát az asztalon hagyom.
 2 | lässt | Er ____ den Wagen bei dem Mechaniker. - A kocsit a szerelőnél hagyja.
-3 | lasselasselasselasse | Ich ____ bei euch mein Radio. - Nálatok hagyom a rádiómat.
+3 | lasse | Ich ____ bei euch mein Radio. - Nálatok hagyom a rádiómat.
 4 | Lässt | ____ du mich in Ruhe? - Békén hagysz?
 5 | lässt | Warum ____ du ihn im Stich? - Miért hagyod cserben?
 6 | lasse | Ich ____ dich nicht im Stich. - Nem hagylak cserben.
@@ -4747,7 +4747,7 @@ Pl.: * Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót
 11 | lasse waschen | Ich ____ Józsi das Fenster ____. - Józsival lemosatom az ablakot.
 12 | lasse schreiben | Ich ____ Peter meine Lektion ____. - Peterrel megíratom a leckémet.
 13 | lässt den übersetzen | Er ____ ____ Dolmetscher zwei Briefe ____. - A tolmáccsal két levelet fordíttat. (übersetzen)
-14 | lässt mich schreiben| Warum ____ du ____ deine Briefe ____? - Miért velem íratod a leveleidet?
+14 | lässt mich schreiben | Warum ____ du ____ deine Briefe ____? - Miért velem íratod a leveleidet?
 15 | lässt seine rufen | Sie ____ ____ Freundin einen Arzt ____. - A barátnőjével hívat egy orvost.
 16 | lässt den renovieren | Sie ____ ____ Nachbar ihr Haus ____. - A szomszéddal renováltatja a házát.
 17 | lässt den öffnen | Der Lehrer ____ ____ Schüler die Tür ____. - A tanár a diákkal kinyittatja az ajtót.
