@@ -641,12 +641,12 @@ Pl.: * der Sohn von dem Vater - az apa fia
 \begin{exmp}
 1 | von der | die Tochter ____ ____ Mutter - az anya lánya
 2 | von dem | der Schuh ____ ____ Vater - az apa cipője
-3 | von den | die Brille ____ ____ Kindern - a gyerekek szemüvege
+3 | von den Kindern | die Brille ____ ____ ____ - a gyerekek szemüvege
 4 | von dem | die Lampe ____ ____ Einbrecher - a betörő lámpája
 5 | von dem | das Zeugnis ____ ____ Schüler - a tanuló bizonyítványa
 6 | von der | die Torte ____ ____ Großmutter - a nagymama tortája
 7 | von dem | der Kuli ____ ____ Schüler - a tanuló tolla
-8 | von den | die Spielzeuge ____ ____ Kindern - a gyerekek játékai
+8 | von den Kindern | die Spielzeuge ____ ____ ____ - a gyerekek játékai
 9 | von dem | die Mütze ____ ____ Kontrolleur - az ellenőr sapkája
 10 | von dem | der Humor ____ ____ Kontrolleur - az ellenőr humora
 \end{exmp}
@@ -887,7 +887,7 @@ Példák ilyen prepozíciókra:
 26 | neben dem | ____ ____ Mädchen - a lány mellett
 27 | zwischen dem, dem | ____ ____ Kind und ____ Stuhl - a gyerek és a szék között
 28 | an dem | ____ ____ Tafel - a táblán
-29 | zwischen der, dem | zwischen ____ ____ Tür und ____ Fenster - az ajtó és az ablak között
+29 | zwischen der, dem | ____ ____ Tür und ____ Fenster - az ajtó és az ablak között
 30 | an der | ____ ____ Uhr - az órán
 31 | über dem | ____ ____ Haus - a ház felett
 32 | zwischen dem, dem | ____ ____ Stuhl und ____ Bett - a szék és az ágy között
@@ -998,8 +998,8 @@ Categories = 0
 2 | für die | ____ ____ Mutter - az anya részére
 3 | ohne | ____ Geld - pénz nélkül
 4 | ohne | ____ Tasche - táska nélkül
-5 | gegen | ____ den Freund - a barát ellen
-6 | gegen | ____ den Feind - az ellenséggel szemben
+5 | gegen den | ____ ____ Freund - a barát ellen
+6 | gegen den | ____ ____ Feind - az ellenséggel szemben
 7 | um das | ____ ____ Haus - a ház körül
 8 | durch meine | ____ ____ Schwester - a nővérem által
 9 | durch den | ____ ____ Tunnel - keresztül az alagúton
@@ -1294,7 +1294,7 @@ A következő kötöszavak után van egyenes szórend (usoda):
 \begin{exmp}
 1 | und ihr kocht | Wir kaufen ____ ____ ____. - Mi vásárolunk és ti főztök.
 2 | denn mein Freund kommt |Ich bin nervös, ____ ____ ____ ____ nicht. | Ideges vagyok, mert nem jön a barátom.
-3 | mein Freund kommt nicht | Ich gehe, ____ ____ ____. | Én megyek, vagy te jössz.
+3 | mein Freund kommt nicht | Ich gehe, ____ ____ ____. - Én megyek, vagy te jössz.
 4 | aber du bekommst | Er ist schlecht, ____ ____ ____ die Ohrfeige. - Ö rossz, de te kapod a pofont.
 5 | denn ich bin | Ich bleibe zu Hause, ____ ____ ____ krank. - Otthon maradok, mert beteg vagyok.
 6 | und du kaufst ein | Ich spüle heute ____ ____ ____ ____. - Ma én mosogatok és te vásárolsz be.
@@ -3411,7 +3411,7 @@ sie/Sie werden
 6 | wird, gesprochen | Deutsch ____ in Deutschland ____. - Németországban németül beszélnek.
 7 | wird, geöffnet | Die Tür ____ von dem Gast ____. - A vendég kinyitja az ajtót.
 8 | wird, gebaut | Das Gebäude ____ durch eine Firma ____. - Az épületet egy cég építi. (s Gebäude)
-9 | wird, repariert | Das Radio ____ von dem Großvater ____. - A nagyapa megszereli a rádiót.
+9 | wird, repariert | Das Radio ____ von dem Großvater ____. - A nagyapa megjavítja a rádiót.
 10 | werden, gezahlt | Die Rechnungen ____ von mir ____. - A számlákat én fizetem. (zahlen)
 11 | wird, gemalt | Die Wand ____ von den Arbeitern ____. - A munkások befestik a falat.
 12 | werden, ausgeteilt | Die Schularbeiten ____ von der Lehrerin ____. - A tanárnő kiosztja a dolgozatokat. (austeilen)
@@ -3791,7 +3791,7 @@ nagy     | groß    | größer   | größte
 
 %Maklári: 202. oldal
 \begin{exmp}
-1 | besser | ____ - jobb, jobban
+1 | besser | ____ - jobb
 2 | beste | ____ - legjobb
 3 | mehr | ____ - több
 4 | meiste | ____ - legtöbb
@@ -4429,7 +4429,7 @@ Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
 12 | zu werden | Wir hoffen, noch ein Ticket ____ ____. - Reméljük, hogy kapunk még egy jegyet.
 13 | zu besuchen | Wir vergessen darüber nicht, morgen euch ____ ____. - Nem feledkeztünk meg arról, hogy meglátogassunk holnap titeket.
 14 | zu besuchen | Er denkt daran, übermorgen mich ____ ____. - Arra gondol, hogy holnapután meglátogat engem.
-15 | zu besuchen | Meine Freundin meint, immer Recht ____ ____. - A barátnőm azt kondolja, hogy mindig igaza van.
+15 | zu haben | Meine Freundin meint, immer Recht ____ ____. - A barátnőm azt kondolja, hogy mindig igaza van.
 16 | zu finden | Glaubst du, dein Geld in meiner Tasche ____ ____? - Azt hiszed, hogy a pénzedet a táskámban találod?
 17 | zu besuchen | Anna verspricht immer, mich ____ ____. - Anna mindig megígéri, hogy meglátogat.
 \end{exmp}
@@ -4598,8 +4598,8 @@ Die Bücher gehören dem Lehrer. - A könyvek a tanáré.
 5 | gehört dem | Das Auto ____ ____ Polizist. - Az autó a rendőré.
 6 | gehört dem | Die Mütze ____ ____ Vater. - A sapka az apáé.
 7 | gehört der | Der Kühlschrank ____ ____ Müller Familie. - A hűtőszekrény a Müller családé.
-8 | gehört der | Der Wagen ____ ____ Chef. - A kocsi a főnöké.
-9 | gehört der | Die Garage ____ ____ Nachbar. - A garázs a szomszédé.
+8 | gehört dem | Der Wagen ____ ____ Chef. - A kocsi a főnöké.
+9 | gehört dem | Die Garage ____ ____ Nachbar. - A garázs a szomszédé.
 10 | gehört der | Der Kuli ____ ____. - A toll a miénk.
 11 | gehört der | Der Wagen ____ ____ Lehrer. - A kocsi a tanáré.
 12 | gehört der | Der Wolkenkratzer ____ ____ Firma. - A felhőkarcoló a cégé.
@@ -4620,14 +4620,14 @@ Pl.: Peter gehört auch zur Gesellschaft. - Peter is a társasághoz tartozik.
 \begin{exmp}
 1 | Gehörst, zu uns | ____ du auch ____ ____? - Te is hozzánk tartozol?
 2 | gehört zu dem | Diese Frage ____ nicht ____ ____ Thema. - Ez a kérdés nem tartozik a témához.
-3 | gehört zu meinen | Ivan ____ ____ ____ Feinden. - Ivan az ellenségeimhez tartozik.
+3 | gehört zu meinem | Ivan ____ ____ ____ Feinden. - Ivan az ellenségeimhez tartozik.
 4 | gehört zu dieser | Wer ____ ____ ____ Gesellschaft? - Ki tartozik ehhez a társasághoz?
 5 | gehört zu euch | Joe ____ ____ ____. - Joe hozzátok tartozik.
 6 | gehört zu | Vien ____ ____ Österreich. - Bécs Ausztriához tartozik.
 7 | gehört, zu der | Es ____ nicht ____ ____ Sache. - Ez nem tartozik a tárgyhoz.
 8 | gehört zu | Deutschland ____ ____ Europa. - Németország Europához tartozik.
 9 | gehört zu den | Bill ____ ____ ____ Terroristen. - Bill a terroristákhoz tartozik.
-10 | gehöre, zu dieser | Ich geh____öre nicht ____ ____ Partei. - Nem tartozom ehhez a párthoz.
+10 | gehöre, zu dieser | Ich ____ nicht ____ ____ Partei. - Nem tartozom ehhez a párthoz.
 \end{exmp}
 
 \title{A lassen ige/Önállóan, főigeként}
@@ -4669,44 +4669,47 @@ Pl.: Ivan lässt mich nie in Ruhe. - Iván sose hagy békén.
 \title{A lassen ige/Segédigeként}
 
 GrammarItemIndex = 132451
+Categories = 0
 
 \begin{desc}
 Képzése:
 alany + lassen ragozva + többi mondatrész + ige Infinitivben
 
-ich       | lasse
-du        | lässt
-er/sie/se | lässt
-wir       | lassen
-ihr       | lasst
-sie/Sie   | lassen
+ich ------- lasse
+du -------- lässt
+er/sie/se - lässt
+wir ------- lassen
+ihr ------- lasst
+sie/Sie --- lassen
 
-Pl.: Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
+Pl.: * Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
+* Lässt sie uns spielen? - Hagy minket játszani?
+* Lasst ihr hier uns Fußball spielen? - Engedtek itt focizni minket?
 \end{desc}
 
 %Maklári: 215. oldal
 \begin{exmp}
-1 | Lässt sie uns spielen? | Hagy (n) minket játszani?
-2 | Lasst ihr hier uns Fußball spielen? | Engedtek itt focizni minket?
-3 | Ich lasse ihm mit meinem Fahrrad fahren. | Megengedem neki (f), hogy kerékpározzon a kerékpárommal.
-4 | Lasst ihr uns hier baden? | Megengeditek, hogy itt fürödjünk?
-5 | Ich lasse dir neben mir sitzen. | Megengedem, hogy mellém ülj.
-6 | Lasst ihr sie nicht zu Hause lernen? | Nem hagyjátok őt (n) tanulni otthon?
-7 | Lässt sie dir Eis essen? | Megengedi (n), hogy fagyit egyél?
-8 | Lasst ihr uns eintreten? | Megengeditek, hogy belépjünk? (eintreten)
-9 | Er lässt auf der Stunde nicht schlafen. | Nem enged (f) az órán aludni.
-10 | Sie lässt mich nicht rauchen. | Nem enged (n) dohányozni.
-11 | Wo lasst ihr uns Basketball spielen? | Hol engedtek minket kosárlabdázni?
-12 | Lässt du ein klein fahren? | Megengeded, hogy kicsit vezessek?
-13 | Lässt du mir sehen? | Megengeded, hogy megnézzem?
-14 | Er lässt seinen Hund in unsere Garten essen. | A kutyáját (f) a kertünkbe engedi enni.
-15 | Lasst ihr mir reparieren? | Megengeditek, hogy megjavítsam?
-16 | Ich lasse dir mein Kleid anziehen. | Megengedem, hogy felvedd a ruhámat. (anziehen)
-17 | Sie lassen uns hier nicht schlafen. | Nem engedik meg, hogy itt aludjunk.
-18 | Lässt du die Suppe aufkochen? | Hagyod a levest felforrni? (aufkochen)
-19 | Warum lässt du ihn nicht schlafen? | Miért nem engeded őt (f) aludni?
-20 | Ich lasse ihn Alkohol nicht trinken. | Nem engedem őt (f) alkoholt inni.
-21 | Lässt du nicht in der Schule gehen? | Nem engeded iskolába menni?
+1 | Lässt spielen | ____ sie uns ____? - Hagy minket játszani?
+2 | Lasst spielen |  ____ ihr hier uns Fußball ____? - Engedtek itt focizni minket?
+3 | lasse fahren | Ich ____ ihm mit meinem Fahrrad ____. - Megengedem neki, hogy kerékpározzon a kerékpárommal.
+4 | Lasst baden | ____ ihr uns hier ____? - Megengeditek, hogy itt fürödjünk?
+5 | lasse sitzen | Ich ____ dir neben mir ____. - Megengedem, hogy mellém ülj.
+6 | Lasst lernen | ____ ihr sie nicht zu Hause ____?  Nem hagyjátok őt tanulni otthon?
+7 | Lässt essen | ____ sie dir Eis ____? - Megengedi, hogy fagyit egyél?
+8 | Lasst eintreten | ____ ihr uns ____? - Megengeditek, hogy belépjünk? (eintreten)
+9 | lässt schlafen | Er ____ auf der Stunde nicht ____. - Nem enged az órán aludni.
+10 | lässt rauchen | Sie ____ mich nicht ____. - Nem enged dohányozni.
+11 | lasst spielen | Wo ____ ihr uns Basketball ____? - Hol engedtek minket kosárlabdázni?
+12 | Lässt fahren | ____ du ein klein ____? - Megengeded, hogy kicsit vezessek?
+13 | Lässt sehen | ____ du mir ____? - Megengeded, hogy megnézzem?
+14 | lässt essen | Er ____ seinen Hund in unsere Garten ____. - A kutyáját (f) a kertünkbe engedi enni.
+15 | Lasst reparieren | ____ ihr mir ____? - Megengeditek, hogy megjavítsam?
+16 | lasse anziehen | Ich ____ dir mein Kleid ____. - Megengedem, hogy felvedd a ruhámat. (anziehen)
+17 | lassen schlafen | Sie ____ uns hier nicht ____. - Nem engedik meg, hogy itt aludjunk.
+18 | Lässt aufkochen | ____ du die Suppe ____? - Hagyod a levest felforrni? (aufkochen)
+19 | lässt schlafen | Warum ____ du ihn nicht ____lafen? - Miért nem engeded őt (f) aludni?
+20 | lasse trinken | Ich ____ ihn Alkohol nicht ____. - Nem engedem őt (f) alkoholt inni.
+21 | Lässt gehen | ____ du nicht in der Schule ____? - Nem engeded iskolába menni?
 \end{exmp}
 
 \title{A lassen ige/A lassen mint műveltető}
@@ -4742,7 +4745,7 @@ Pl.: * Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót
 6 | lassen machen | Wir ____ uns Kleid ____. - Csináltatunk magunknak ruhát.
 7 | lässt putzen | Du ____ den Teppich ____. - Kitisztíttatod a szőnyeget.
 8 | Lässt bringen | ____ du dir Bier ____? - Hozatsz magadnak sört?
-9 | lassen malen |  Ich ____ meine Wohnung ____. - Kifestetem a lakásomat. (malen)
+9 | lasse malen | Ich ____ meine Wohnung ____. - Kifestetem a lakásomat. (malen)
 10 | lässt renovieren | Béla ____ ein Haus ____. - Béla renováltat egy házat. (renovieren)
 11 | lasse waschen | Ich ____ Józsi das Fenster ____. - Józsival lemosatom az ablakot.
 12 | lasse schreiben | Ich ____ Peter meine Lektion ____. - Peterrel megíratom a leckémet.
