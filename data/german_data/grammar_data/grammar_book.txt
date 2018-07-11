@@ -1082,13 +1082,13 @@ Prepozíciók kizárólag részes esettel:
 2 | aus dem | ____ ____ Zimmer - a szobából
 3 | bei der | ____ ____ Großmutter - a nagymamánál
 4 | mit dem | ____ ____ Kuli - a tollal
-5 | nach der | ____ ____ Frühstück - reggeli után
+5 | nach der | ____ ____ Frühstück - a reggeli után
 6 | nach | ____ Budapest - Budapestre
 7 | nach | ____ Vien - Bécsbe
 8 | zu dem | ____ ____ Lehrer - a tanárhoz
 9 | vod dem | ____ ____ Schrank - a szekrénytől
 10 | zu der | ____ ____ Oma - a nagyihoz
-11 | mit dem | ____ ____ Bus - busszal
+11 | mit dem | ____ ____ Bus - a busszal
 12 | gegenüber der | ____ ____ Tür - az ajtóval szemben
 13 | von dem | ____ ____ Gast - a vendégtől
 14 | seit zwei | ____ zwei Stunden - két órája
@@ -1100,7 +1100,7 @@ Prepozíciók kizárólag részes esettel:
 20 | aus dem | ____ ____ Wagen - a kocsiból
 21 | seit | ____ vier Uhr - négy órája
 22 | nach | ____ München - Münchenbe
-23 | nach dem | ____ ____ Mittagessen - ebéd után
+23 | nach dem | ____ ____ Mittagessen - az ebéd után
 24 | seit ein | ____ ____ Jahr - egy éve
 25 | bei dem | ____ ____ Schriftsteller - az írónál
 26 | mit dem | ____ ____ Vater - az apával
@@ -1109,7 +1109,7 @@ Prepozíciók kizárólag részes esettel:
 29 | von dem | ____ ____ Freund - a baráttól
 30 | bei der | ____ ____ Freundin - a barátnőnél
 31 | zu dem | ____ ____ Fenster - az ablakhoz
-32 | nach der | ____ ____ Schule - iskola után
+32 | nach der | ____ ____ Schule - az iskola után
 33 | gegenüber dem | ____ ____ Schrank - a szerkénnyel szemben
 34 | nach | ____ Deutschland - Németországba
 35 | mit einer | ____ Strassenbahn - egy villamossal
@@ -4600,8 +4600,8 @@ Die Bücher gehören dem Lehrer. - A könyvek a tanáré.
 7 | gehört der | Der Kühlschrank ____ ____ Müller Familie. - A hűtőszekrény a Müller családé.
 8 | gehört dem | Der Wagen ____ ____ Chef. - A kocsi a főnöké.
 9 | gehört dem | Die Garage ____ ____ Nachbar. - A garázs a szomszédé.
-10 | gehört der | Der Kuli ____ ____. - A toll a miénk.
-11 | gehört der | Der Wagen ____ ____ Lehrer. - A kocsi a tanáré.
+10 | gehört uns | Der Kuli ____ ____. - A toll a miénk.
+11 | gehört dem | Der Wagen ____ ____ Lehrer. - A kocsi a tanáré.
 12 | gehört der | Der Wolkenkratzer ____ ____ Firma. - A felhőkarcoló a cégé.
 \end{exmp}
 
@@ -4892,6 +4892,7 @@ Pl.: Mein Geld ist alle. - Elfogyott a pénzem.
 \title{Határozatlan névmások/Irgend-}
 
 GrammarItemIndex = 234596
+Categories = 0
 
 \begin{desc}
 * irgendwer = valaki
@@ -4903,25 +4904,27 @@ GrammarItemIndex = 234596
 * irgendwo = valahol
 * irgendeinmal = egyszer majd
 
-Pl.: Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
+Pl.: * Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
+* Ich wolle dir irgendwas sagen. - Akarok neked valamit mondani.
+* Es muss irgendwo sein! - Valahol meg kell lennie!
 \end{desc}
 
 %Maklári: 183. oldal
 \begin{exmp}
-1 | Ich wolle dir irgendwas sagen. | Akarok neked valamit mondani.
-2 | Es muss irgendwo sein! | Valahol meg kell lennie! (es)
-3 | Es gibt irgendwas in seinem Mund. | Valami van a szájában (f). (es gibt, r Mund)
-4 | Sie gehen irgendwohin morgen weg. | Valahová elmennek (ők) holnap. (weggehen)
-5 | Wir gewinnen irgendeinmal das Lotto. | Mi is megnyerjük egyszer majd a lottót. (gewinnen, s Lotto)
-6 | Hilfe kommt irgendwoher. | Valahonnan jön segítség. (e Hilfe)
-7 | Wir müssen irgendwo tanken. | Valahol kell tankolnunk. (tanken)
-8 | Ich rufe dich irgendwann an. | Felhívlak valamikor.
-9 | Wir müssen irgendwann weggehen. | Valamikor el kell mennünk. (weggehen)
-10 | Es ist irgendwas in deiner Tasche. | Valami van a zsebedben. (es, e Tasche)
-11 | Irgendwer kommt morgen zu uns. | Valaki jön holnap hozzánk.
-12 | Der Gefangene ist irgendwie verschwunden. | Valahogy eltűnt a fogoly. (r Gefangene, i. verschwunden)
-13 | Er schafft irgendwoher eine Waffe. | Valahonnan szerzett (f) egy fegyvert. (schaffen)
-14 | Es gibt irgendwo jetzt Krieg. | Valahol most háború van. (es gibt)
+1 | irgendwas | Ich wolle dir ____ sagen. - Akarok neked valamit mondani.
+2 | irgendwo | Es muss ____ sein! - Valahol meg kell lennie!
+3 | irgendwas | Es gibt ____ in seinem Mund. - Valami van a szájában.
+4 | irgendwohin | Sie gehen ____ morgen weg. - Valahová elmennek holnap.
+5 | irgendeinmal | Wir gewinnen ____ das Lotto. - Mi is megnyerjük egyszer majd a lottót.
+6 | irgendwoher | Hilfe kommt ____. | Valahonnan jön segítség.
+7 | irgendwo | Wir müssen ____ tanken. - Valahol kell tankolnunk.
+8 | irgendwann | Ich rufe dich ____ an. - Felhívlak valamikor.
+9 | irgendwann | Wir müssen ____ weggehen. - Valamikor el kell mennünk.
+10 | irgendwas | Es ist ____ in deiner Tasche. - Valami van a zsebedben.
+11 | Irgendwer | ____ kommt morgen zu uns. - Valaki jön holnap hozzánk.
+12 | irgendwie | Der Gefangene ist ____ verschwunden. - Valahogy eltűnt a fogoly.
+13 | irgendwoher | Er schafft ____ eine Waffe. | Valahonnan szerzett egy fegyvert.
+14 | irgendwo | Es gibt ____ jetzt Krieg. | Valahol most háború van.
 \end{exmp}
 
 \title{Melléknévi igenevek/Folyamatos melléknévi igenevek}
