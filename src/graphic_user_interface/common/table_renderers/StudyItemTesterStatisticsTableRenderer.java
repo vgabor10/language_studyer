@@ -1,4 +1,4 @@
-package graphic_user_interface.dictionary.table_renderers;
+package graphic_user_interface.common.table_renderers;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -6,7 +6,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
-public class CardTesterStatisticsTableRenderer implements TableCellRenderer {
+public class StudyItemTesterStatisticsTableRenderer implements TableCellRenderer {
     
     public static final DefaultTableCellRenderer DEFAULT_RENDERER = new DefaultTableCellRenderer();
 
@@ -17,8 +17,10 @@ public class CardTesterStatisticsTableRenderer implements TableCellRenderer {
 	    Component c = DEFAULT_RENDERER.getTableCellRendererComponent(table,
 	    value, isSelected, hasFocus, row, column);
             
-            String rarAfter = (String)table.getModel().getValueAt(row,2);
-            String rarBefore = (String)table.getModel().getValueAt(row,3);
+            String rarAfter 
+                    = (String)table.getModel().getValueAt(row, table.getColumnCount()-3);
+            String rarBefore 
+                    = (String)table.getModel().getValueAt(row, table.getColumnCount()-2);
 
             if (rarAfter.equals("-")) {
                 c.setBackground(new Color(255,255,255));  //white

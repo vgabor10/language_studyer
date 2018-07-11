@@ -3,7 +3,6 @@ package graphic_user_interface.grammar_book;
 import common.Logger;
 import grammar_book.GrammarTester;
 import grammar_book.GrammarBook;
-import grammar_book.GrammarDataModificator;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
@@ -14,6 +13,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
 
     private AnswerDataContainer answerDataContainer;
     private GrammarTester grammarTester;
+    private GrammarBook grammarBook;
     
     private long startTime = -1;
     private long finishTime = -1;
@@ -53,6 +53,7 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     public void setGrammarBook(GrammarBook grammarBook) {
         this.answerDataContainer = grammarBook.dataContainer.getAnswerDataContainer(); 
         this.grammarTester = grammarBook.grammartester;
+        this.grammarBook = grammarBook;
     }
     
     /**
@@ -389,22 +390,24 @@ public class GrammarTesterDialog extends javax.swing.JDialog {
     private void goToStatisticsFrameAndSaveData() {
         finishTime = new Date().getTime();
         
-        //saving data
-        GrammarDataModificator grammarDataModificator = new GrammarDataModificator();
-        grammarDataModificator.setAnswerDataContainer(answerDataContainer);
-        grammarDataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
-        
+        DialogAnswer dialogAnswer = new DialogAnswer();
         
         GrammarTesterStatisticsDialog dialog = new GrammarTesterStatisticsDialog(new javax.swing.JFrame(), true);
         
         dialog.testAnswers = grammarTester.getUserAnswers();
-        //dialog.oldAnswers = grammarAnswerDataContainer;
-        dialog.startTime = startTime;
+        dialog.dataContainer = grammarBook.dataContainer;
+        dialog.testAnswers = grammarTester.getUserAnswers();        
         dialog.finishTime = finishTime;
-        dialog.toScreenStatistics();
+        dialog.startTime = startTime;
+        dialog.dialogAnswer =  dialogAnswer;
+
+        dialog.initialise();
         
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
+                
+        grammarBook.dataModificator.appendGrammarAnswerData(grammarTester.getUserAnswers());
+        
         
         if (dialog.dialogAnswer.boolAnswer) {
             startNewTest();

@@ -1,10 +1,8 @@
 package graphic_user_interface.dictionary;
 
-import graphic_user_interface.dictionary.table_renderers.CardTesterStatisticsTableRenderer;
+import graphic_user_interface.common.table_renderers.StudyItemTesterStatisticsTableRenderer;
 import common.Logger;
 import dictionary.Card;
-import dictionary.CardContainer;
-import dictionary.CardTestStatisticsMaker;
 import dictionary.DictionaryDataContainer;
 import graphic_user_interface.common.DialogAnswer;
 import java.awt.event.KeyEvent;
@@ -12,10 +10,13 @@ import java.text.DecimalFormat;
 import java.util.Set;
 import javax.swing.table.DefaultTableModel;
 import language_studyer.AnswerDataContainer;
+import language_studyer.StudyItemContainer;
+import language_studyer.StudyItemTestStatisticsMaker;
 
 public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
-    private CardTestStatisticsMaker cardTestStatisticsMaker = new CardTestStatisticsMaker();
+    private StudyItemTestStatisticsMaker cardTestStatisticsMaker 
+            = new StudyItemTestStatisticsMaker();
 
     public DictionaryDataContainer dataContainer;
     public Set<Integer> categoryConstrains;
@@ -44,22 +45,23 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
         
         cardTestStatisticsMaker.setStartAndFinishTime(startTime, finishTime);
 
-        jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArImprovement()));
-        jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithNoArChange()));        
-        jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfCardsWithArReducement()));
+        jLabel13.setText(Integer.toString(cardTestStatisticsMaker.numberOfStudyItemsWithArImprovement()));
+        jLabel14.setText(Integer.toString(cardTestStatisticsMaker.numberOfStudyItemsWithNoArChange()));        
+        jLabel18.setText(Integer.toString(cardTestStatisticsMaker.numberOfStudyItemsWithArReducement()));
         jLabel19.setText(cardTestStatisticsMaker.aggragatedImprovementsAsString());
         jLabel20.setText(cardTestStatisticsMaker.aggragatedReducementsAsString());
         jLabel16.setText(cardTestStatisticsMaker.numberOfUserAnswersAsString());
         jLabel17.setText(Integer.toString(cardTestStatisticsMaker.numberOfNewCardsTested()));
         jLabel15.setText(cardTestStatisticsMaker.percentageOfRightAnswersAsString());
-        jLabel21.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsBeforeTestAsString());
-        jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfCardsAfterTestAsString());
+        jLabel21.setText(cardTestStatisticsMaker.averageAnswerRateOfStudyItemsBeforeTestAsString());
+        jLabel22.setText(cardTestStatisticsMaker.averageAnswerRateOfStudyItemsAfterTestAsString());
         jLabel24.setText(cardTestStatisticsMaker.getAggregatedUserPointsChangeAsString());
         jLabel12.setText(cardTestStatisticsMaker.getUsedTimeAsString());
         
-        CardContainer testedCards = cardTestStatisticsMaker.getTestedCards();
-        for (int i=0; i<testedCards.numberOfCards(); i++) {
-            Card card = testedCards.getCardByOrder(i);
+        StudyItemContainer testedStudyItems 
+                = cardTestStatisticsMaker.getTestedStudyItems();
+        for (int i=0; i<testedStudyItems.numberOfStudyItems(); i++) {
+            Card card = (Card) testedStudyItems.getStudyItemByOrder(i);
             
             String afterTestRarAsString = getAfterTestRarAsString(card);
             String afterTestNumberOfAnswersAsString = getAfterTestNumberOfAnswersAsString(card);
@@ -75,13 +77,13 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
             
         }
         
-        CardTesterStatisticsTableRenderer colorRenderer = new CardTesterStatisticsTableRenderer();
+        StudyItemTesterStatisticsTableRenderer colorRenderer = new StudyItemTesterStatisticsTableRenderer();
         Table.setDefaultRenderer(Object.class, colorRenderer);
     }
   
     private String getBeforeTestRarAsString(Card card) {
         DecimalFormat df = new DecimalFormat("#.000");
-        double beforeTestRar = cardTestStatisticsMaker.getAnswerRateOfCardBeforeTest(card.index);
+        double beforeTestRar = cardTestStatisticsMaker.getAnswerRateOfStudyItemBeforeTest(card.index);
         if (beforeTestRar != -1) {
             return df.format(beforeTestRar);
         }
@@ -92,7 +94,7 @@ public class CardTesterStatisticsDialog extends javax.swing.JDialog {
     
     private String getAfterTestRarAsString(Card card) {
         DecimalFormat df = new DecimalFormat("#.000");
-        double afterTestRar = cardTestStatisticsMaker.getAnswerRateOfCardAfterTest(card.index);
+        double afterTestRar = cardTestStatisticsMaker.getAnswerRateOfStudyItemAfterTest(card.index);
         if (afterTestRar != -1) {
             return df.format(afterTestRar);
         }

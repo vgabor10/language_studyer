@@ -1,4 +1,4 @@
-package graphic_user_interface.dictionary.table_renderers;
+package graphic_user_interface.common.table_renderers;
 
 import java.awt.Color;
 import java.awt.Component;

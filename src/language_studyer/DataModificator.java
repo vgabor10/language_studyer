@@ -13,6 +13,7 @@ public class DataModificator {
     
     public void setData(DataContainer dc) { //TODO: remove this method
         dataContainer = dc;
+        answerDataContainer = dc.getAnswerDataContainer();
     }
     
     protected DataContainer getDataContainer() {
