@@ -74,15 +74,15 @@ többes szám  | der
 \end{desc}
 
 \begin{exmp}
-1 | des Vaters | der Sohn ____ - az apa fia
-2 | des Hauses | das Fenster ____ - a ház ablaka
-3 | der Mutter | die Tochter ____ - az anya lánya
-4 | des Vaters | der Freund ____ - az apa barátja
-5 | des Kindes | das Spielzeug ____ - a gyerek játéka
-6 | des Wagens | die Scheibe ____ - a kocsi ablaka
-7 | der Kinder | die Kleider ____ - a gyerekek ruhái
-8 | der Lehrer | der Bus ____ - a tanárok busza
-9 | der Mutter | die Freundin ____ - az anya barátnője
+1 | des Vaters | der Sohn ____ ____ - az apa fia
+2 | des Hauses | das Fenster ____ ____ - a ház ablaka
+3 | der Mutter | die Tochter ____ ____ - az anya lánya
+4 | des Vaters | der Freund ____ ____ - az apa barátja
+5 | des Kindes | das Spielzeug ____ ____ - a gyerek játéka
+6 | des Wagens | die Scheibe ____ ____ - a kocsi ablaka
+7 | der Kinder | die Kleider ____ ____ - a gyerekek ruhái
+8 | der Lehrer | der Bus ____ ____ - a tanárok busza
+9 | der Mutter | die Freundin ____ ____ - az anya barátnője
 \end{exmp}
 
 \title{Névelők/Határozatlan névelő/Határozatlan névelő esetei}
@@ -4417,8 +4417,8 @@ Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
 \begin{exmp}
 1 | zu sein | Sie glaubt, klug ____ ____. - Azt hiszi, hogy okos.
 2 | zu bekommen | Ich hoffe, eine gute Note ____ ____. - Remélem, kapok egy jó jegyet.
-3 | zu bekommen | Sie beginnt jetzt ____ ____. - Elkezdett most dolgozni. (beginnen)
-4 | zu kennen | Er behauptet, alle meine Freunde ____ ____. - Azt állítja, hogy ismeri minden barátomat. (behaupten)
+3 | zu bekommen | Sie beginnt jetzt ____ ____. - Elkezdett most dolgozni.
+4 | zu kennen | Er behauptet, alle meine Freunde ____ ____. - Azt állítja, hogy ismeri minden barátomat.
 5 | zu stehen | Sie ist müde, nicht auf ____ ____. - Olyan fáradt, hogy nem kel fel.
 6 | zu erreichen | Otto hat Angst, den Bus nicht ____ ____. - Otto mérges, hogy nem éri el a buszt. (erreichen)
 7 | aufzuschreien | Das Kind hört nicht ____. - A gyerek nem hallja, hogy kiáltozik. (aufschreien)
@@ -4569,7 +4569,7 @@ Pl.: Das Heft gefällt dem Kind. - A füzet tetszik a gyereknek.
 5 | gefällt dem | Der Schauspieler ____ ____ Publikum. - A közönségnek tetszik a színész.
 6 | gefällt dem | Das Publikum ____ ____ Schauspieler. - A színésznek tetszik a közönség.
 7 | gefällt ihm | Meine Börse ____ ____. - Tetszik neki (f) a pénztárcám.
-8 | mir nicht | Sie gefällt ____ ____. - Nekem nem tetszik ő.
+8 | gefällt mir | Sie ____ ____ nicht. - Nekem nem tetszik ő.
 9 | gefalle ihr | Ich ____ ____ nicht. - Nem tetszem neki.
 10 | gefalle deiner | Ich ____ ____ Schwiegermutter nicht. - Nem tetszem az anyósodnak.
 11 | gefällt mir | Die Schwiegermutter ____ ____ nicht. - Az anyós nem tetszik nekem.
@@ -4690,7 +4690,7 @@ Pl.: * Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
 %Maklári: 215. oldal
 \begin{exmp}
 1 | Lässt spielen | ____ sie uns ____? - Hagy minket játszani?
-2 | Lasst spielen |  ____ ihr hier uns Fußball ____? - Engedtek itt focizni minket?
+2 | Lasst spielen | ____ ihr hier uns Fußball ____? - Engedtek itt focizni minket?
 3 | lasse fahren | Ich ____ ihm mit meinem Fahrrad ____. - Megengedem neki, hogy kerékpározzon a kerékpárommal.
 4 | Lasst baden | ____ ihr uns hier ____? - Megengeditek, hogy itt fürödjünk?
 5 | lasse sitzen | Ich ____ dir neben mir ____. - Megengedem, hogy mellém ülj.
@@ -4702,13 +4702,13 @@ Pl.: * Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
 11 | lasst spielen | Wo ____ ihr uns Basketball ____? - Hol engedtek minket kosárlabdázni?
 12 | Lässt fahren | ____ du ein klein ____? - Megengeded, hogy kicsit vezessek?
 13 | Lässt sehen | ____ du mir ____? - Megengeded, hogy megnézzem?
-14 | lässt essen | Er ____ seinen Hund in unsere Garten ____. - A kutyáját (f) a kertünkbe engedi enni.
+14 | lässt essen | Er ____ seinen Hund in unsere Garten ____. - A kutyáját a kertünkbe engedi enni.
 15 | Lasst reparieren | ____ ihr mir ____? - Megengeditek, hogy megjavítsam?
 16 | lasse anziehen | Ich ____ dir mein Kleid ____. - Megengedem, hogy felvedd a ruhámat. (anziehen)
 17 | lassen schlafen | Sie ____ uns hier nicht ____. - Nem engedik meg, hogy itt aludjunk.
 18 | Lässt aufkochen | ____ du die Suppe ____? - Hagyod a levest felforrni? (aufkochen)
-19 | lässt schlafen | Warum ____ du ihn nicht ____lafen? - Miért nem engeded őt (f) aludni?
-20 | lasse trinken | Ich ____ ihn Alkohol nicht ____. - Nem engedem őt (f) alkoholt inni.
+19 | lässt schlafen | Warum ____ du ihn nicht ____lafen? - Miért nem engeded őt aludni?
+20 | lasse trinken | Ich ____ ihn Alkohol nicht ____. - Nem engedem őt alkoholt inni.
 21 | Lässt gehen | ____ du nicht in der Schule ____? - Nem engeded iskolába menni?
 \end{exmp}
 
@@ -5117,6 +5117,7 @@ Pl.: * um zwei - kettőkor
 \title{Az idő/Az idő kérdőszavai/Elöljárószavak/Dativ}
 
 GrammarItemIndex = 456238
+Categories = 0
 
 \begin{desc}
 * seit + D = óta
@@ -5134,31 +5135,32 @@ Pl.: * seit 5 Jahren - 5 éve
 * ab Mitte Mai - május közepétől
 \end{desc}
 
+%von +D ... an elöljárószóval nincsenek példák
 %Maklári: 78. oldal
 \begin{exmp}
-1 | Sie hat vor zwei Tagen geboren. | Két nappal ezelőtt született (n).
-2 | Ich bin seit zwei Tagen zu Hause. | Két napja itthon vagyok.
-3 | Ich werde in einer Jahr fünfzehn Jahre alt sein. | Egy év múlva tizenöt éves leszek.
-4 | Sie kommen vor fünf mit zehn Minuten nach Hause an. | Öt előtt tíz perccel érkeznek haza. (ankommen)
-5 | Ich warte seit fünf Minuten auf dich. | Öt perce várok rád. (warten auf + A)
-6 | Was macht ihr ab Montag bis Mittwoch? | Hétfőtől szerdáig mit csináltok?
-7 | Wir freuen uns in fünf Wochen deinen Geburtstag. | Öt hét múlva ünnepeljük a szülinapodat. (sich freuen)
-8 | Ich esse seit zwei Tagen nicht. | Két napja nem eszek.
-9 | Ich aß vor zwei Tagen nichts. | Két nappal ezelőtt nem ettem semmit.
-10 | Die Gäste kommen zwischen 4 und 5. | 4 és 5 között jönnek a vendégek.
-11 | Sie trinkt seit 10 Jahren Wasser nicht. | 10 év óta nem iszik vizet. (n)
-12 | Ich komme in 5 Minuten zurück. | 5 perc múlva visszajövök.
-13 | Er arbeitet seit 25 Jahren hier. | 25 éve itt dolgozik (f).
-14 | Er heiratet in zwei Jahren. | Két év múlva megházasodik (f). (heiraten)
-15 | Es gibt zwischen 8 un 10 Uhr Wasser nicht. | 8 és 10 óra között nincs víz. (es gibt)
-16 | Ági war vor zwei Wochen hier. | Két hete itt volt Ági.
-17 | Ich werde in einer Jahr volljährig. | Egy év múlva nagykorú leszek. (volljährig)
-18 | Sie raucht seit vier Jahren nicht. | Négy év óta nem dohányzik (n).
-19 | Es ist ab morgen Schule nicht. | Holnaptól nincs iskola. (es ist)
-20 | Ich habe seit einer Ewigkeit dich nicht gesehen. | Egy örökkévalósága óta nem láttalak. (e Ewigkeit)
-21 | Dein Bus fährt in zwei Minuten ab. | Két perc múlva indul a buszod. (abfahren)
-22 | Ich lerne ab Mitte August dort. | Augusztus közepétől ott tanulok.
-23 | Ich werde in drei Monaten 16 Jahre alt sein. | Három hónap múlva 16 éves leszek.
-24 | Meine Cousine wohnt seit 8 Jahren hier. | 8 éve lakik itt az unokatestvérem (n). (e Cousine)
+1 | vor | Sie hat ____ zwei Tagen geboren. - Két nappal ezelőtt született.
+2 | seit | Ich bin ____ zwei Tagen zu Hause. - Két napja itthon vagyok.
+3 | in einer | Ich werde ____ ____ Jahr fünfzehn Jahre alt sein. - Egy év múlva tizenöt éves leszek.
+4 | vor | Sie kommen ____ fünf mit zehn Minuten nach Hause an. - Öt előtt tíz perccel érkeznek haza.
+5 | seit | Ich warte ____ fünf Minuten auf dich.- Öt perce várok rád.
+6 | bis | Was macht ihr ab Montag ____ Mittwoch? - Hétfőtől szerdáig mit csináltok?
+7 | in | Wir freuen uns ____ fünf Wochen deinen Geburtstag. - Öt hét múlva ünnepeljük a szülinapodat.
+8 | seit | Ich esse ____ zwei Tagen nicht. - Két napja nem eszek.
+9 | vor | Ich aß ____ zwei Tagen nichts. - Két nappal ezelőtt nem ettem semmit.
+10 | zwischen | Die Gäste kommen ____ 4 und 5. - 4 és 5 között jönnek a vendégek.
+11 | seit | Sie trinkt ____ 10 Jahren Wasser nicht. - 10 év óta nem iszik vizet.
+12 | in | Ich komme ____ 5 Minuten zurück. - 5 perc múlva visszajövök.
+13 | seit | Er arbeitet ____ 25 Jahren hier. - 25 éve itt dolgozik.
+14 | in | Er heiratet ____ zwei Jahren. - Két év múlva megházasodik.
+15 | zwischen | Es gibt ____ 8 un 10 Uhr Wasser nicht. - 8 és 10 óra között nincs víz.
+16 | vor | Ági war ____ zwei Wochen hier. - Két hete itt volt Ági.
+17 | in einer | Ich werde ____ ____ Jahr volljährig. - Egy év múlva nagykorú leszek.
+18 | seit | Sie raucht ____ vier Jahren nicht. - Négy év óta nem dohányzik.
+19 | ab | Es ist ____ morgen Schule nicht. - Holnaptól nincs iskola.
+20 | seit einer | Ich habe ____ ____ Ewigkeit dich nicht gesehen. - Egy örökkévalósága óta nem láttalak.
+21 | in | Dein Bus fährt ____ zwei Minuten ab. - Két perc múlva indul a buszod.
+22 | ab | Ich lerne ____ Mitte August dort. - Augusztus közepétől ott tanulok.
+23 | in | Ich werde ____ drei Monaten 16 Jahre alt sein. - Három hónap múlva 16 éves leszek.
+24 | seit | Meine Cousine wohnt ____ 8 Jahren hier. - 8 éve lakik itt az unokatestvérem.
 \end{exmp}
 
