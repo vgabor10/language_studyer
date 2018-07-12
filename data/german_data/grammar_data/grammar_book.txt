@@ -1293,7 +1293,7 @@ A következő kötöszavak után van egyenes szórend (usoda):
 %Maklári: 144. oldal
 \begin{exmp}
 1 | und ihr kocht | Wir kaufen ____ ____ ____. - Mi vásárolunk és ti főztök.
-2 | denn mein Freund kommt |Ich bin nervös, ____ ____ ____ ____ nicht. | Ideges vagyok, mert nem jön a barátom.
+2 | denn mein Freund kommt | Ich bin nervös, ____ ____ ____ ____ nicht. - Ideges vagyok, mert nem jön a barátom.
 3 | mein Freund kommt nicht | Ich gehe, ____ ____ ____. - Én megyek, vagy te jössz.
 4 | aber du bekommst | Er ist schlecht, ____ ____ ____ die Ohrfeige. - Ö rossz, de te kapod a pofont.
 5 | denn ich bin | Ich bleibe zu Hause, ____ ____ ____ krank. - Otthon maradok, mert beteg vagyok.
@@ -1988,6 +1988,7 @@ GrammarItemIndex = 534278
 \title{Kérdő mondatok/Kérdőszó nélküli mondat}
 
 GrammarItemIndex = 6432
+Categories = 0
 
 \begin{desc}
 Képzése: állítmány + alany + többi mondatrész
@@ -1995,16 +1996,18 @@ Képzése: állítmány + alany + többi mondatrész
 Pl: Kommst du morgen ins Kino?
 \end{desc}
 
+%több példa kéne
 \begin{exmp}
-1 | Kommst du morgen ins Kino? | Jössz holnap moziba?
-2 | Gehen wir nach Hause? | Haza megyünk?
-3 | Lesen Sie Zeitung? | Újságot olvas?
-4 | Essen ihr Suppe? | Esztek levest?
+1 | Kommst du | ____ ____ morgen ins Kino? - Jössz holnap moziba?
+2 | Gehen wir | ____ ____ nach Hause? - Haza megyünk?
+3 | Lesen Sie | ____ ____ Zeitung? - Újságot olvas? (Ön)
+4 | Essen ihr | ____ ____ Suppe? - Esztek levest?
 \end{exmp}
 
 \title{Kérdő mondatok/Kérdőmondat kérdőszóval}
 
 GrammarItemIndex = 42357
+Categories = 0
 
 \begin{desc}
 Képzése: kérdőszó + állítmány + alany + többi mondatrész
@@ -2012,17 +2015,19 @@ Képzése: kérdőszó + állítmány + alany + többi mondatrész
 Pl: Wann kommst du nach Hause?
 \end{desc}
 
+%több példa kéne
 \begin{exmp}
-1 | Wann kommst du nach Hause? | Mikor jössz haza?
-2 | Wer steht hier? | Ki áll itt?
-3 | Wer sind deine Eltern? | Kik a szüleid?
-4 | Wem gibst du die Blume? | Kinek adod a virágot?
-5 | Was siehst du dort? | Kit látsz ott?
+1 | Wann kommst | ____ ____ du nach Hause? - Mikor jössz haza?
+2 | Wer steht | ____ ____ hier? - Ki áll itt?
+3 | Wer sind | ____ ____ deine Eltern? - Kik a szüleid?
+4 | Wem gibst | ____ ____ du die Blume? - Kinek adod a virágot?
+5 | Was siehst | ____ ____ du dort? - Kit látsz ott?
 \end{exmp}
 
 \title{Kérdő mondatok/Prepozíciós kérdőszavak/Személyekre kérdezve}
 
 GrammarItemIndex = 335433
+Categories = 0
 
 \begin{desc}
 A prepozíció esetébe kell tenni a kérdőnévmást.
@@ -2062,6 +2067,7 @@ részes eset -> wem
 \title{Kérdő mondatok/Prepozíciós kérdőszavak/Éllettelenre kérdezve}
 
 GrammarItemIndex = 765433
+Categories = 0
 
 \begin{desc}
 wo(r) + prepozíció
@@ -2098,6 +2104,7 @@ wo(r) + prepozíció
 \title{Kérdő mondatok/Prepozíciós kérdőszavak/Éllettelenre vonatkozó kérdésre való válaszok}
 
 GrammarItemIndex = 423425
+Categories = 0
 
 \begin{desc}
 da(r) + prepozíció.
@@ -2692,7 +2699,7 @@ Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 18 | Wart | ____ ihr in dem Garten? - A kertben voltatok?
 19 | war | Ich ____ gespannt darauf. - Kíváncsi voltam rá.
 20 | war | Ich ____ dumm. - Buta voltam.
-21 | War | Wann ____ sie hier? - Mikor volt itt?
+21 | war | Wann ____ sie hier? - Mikor volt (n) itt?
 \end{exmp}
 
 \title{Idők/Präteritum - elbeszélő múlt/A haben Präteriuma}
@@ -4916,15 +4923,15 @@ Pl.: * Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
 3 | irgendwas | Es gibt ____ in seinem Mund. - Valami van a szájában.
 4 | irgendwohin | Sie gehen ____ morgen weg. - Valahová elmennek holnap.
 5 | irgendeinmal | Wir gewinnen ____ das Lotto. - Mi is megnyerjük egyszer majd a lottót.
-6 | irgendwoher | Hilfe kommt ____. | Valahonnan jön segítség.
+6 | irgendwoher | Hilfe kommt ____. - Valahonnan jön segítség.
 7 | irgendwo | Wir müssen ____ tanken. - Valahol kell tankolnunk.
 8 | irgendwann | Ich rufe dich ____ an. - Felhívlak valamikor.
 9 | irgendwann | Wir müssen ____ weggehen. - Valamikor el kell mennünk.
 10 | irgendwas | Es ist ____ in deiner Tasche. - Valami van a zsebedben.
 11 | Irgendwer | ____ kommt morgen zu uns. - Valaki jön holnap hozzánk.
 12 | irgendwie | Der Gefangene ist ____ verschwunden. - Valahogy eltűnt a fogoly.
-13 | irgendwoher | Er schafft ____ eine Waffe. | Valahonnan szerzett egy fegyvert.
-14 | irgendwo | Es gibt ____ jetzt Krieg. | Valahol most háború van.
+13 | irgendwoher | Er schafft ____ eine Waffe. - Valahonnan szerzett egy fegyvert.
+14 | irgendwo | Es gibt ____ jetzt Krieg. - Valahol most háború van.
 \end{exmp}
 
 \title{Melléknévi igenevek/Folyamatos melléknévi igenevek}
@@ -5074,6 +5081,7 @@ Pl.: Seit wann lebst du hier? - Mióta élsz itt?
 \title{Az idő/Az idő kérdőszavai/Elöljárószavak/Akkusativ-val}
 
 GrammarItemIndex = 564862
+Categories = 0
 
 \begin{desc}
 * um + A = -kor
@@ -5093,25 +5101,25 @@ Pl.: * um zwei - kettőkor
 
 %Maklári: 76. oldal
 \begin{exmp}
-1 | Mein Freund kommt gegen fünf. | A barátom öt körül jön.
-2 | Ihr könnt bis 3 Uhr Handball spielen. | 3 óráig tudtok kézilabdázni.
-3 | Ich lade die Gäste für heute Abend ein. | Meghívom a vendégeket ma estére. (einladen)
-4 | Ich beende für Mittwoch die Arbeit. | Szerdára befelyezem a munkát. (beenden)
-5 | Die Gäste besuchen uns übermorgen gegen elf. | A vendégek meglátogatnak minket holnapután tizenegy körül.
-6 | Ich war vorgestern bis 12 in dem Kino. | Tegnapelőtt 12-ig moziban voltam. (vorgestern)
-7 | Sie kommen nur für ein paar Minuten. | Ők csak néhány percre jönnek. (ein paar) 
-8 | Er ist über 50. | Ő (f) több mint 50.
-9 | Ich habe bei ihnen über 28 Jahre gearbeitet. | Náluk több mit 28 évet dolgoztam. (arbeiten (Perfekt))
-10 | Ich beende für morgen diese Arbeit. | Befejezem holnapra ezt a munkát. (beenden)
-11 | Er bleibt über 3 Jahre in Budapest. | 3 évig marad (f) Budapesten.
-12 | Unsere Nachbarn verreisen für zwei Wochen. | A szomszédaink elutaznak két hétre. (verreisen)
-13 | Wir werden bis Montag mit der Arbeit fertig sein. | Hétfőig a munkával készen leszünk.
-14 | Ich lade für morgen meinen Freund ein. | Holnapra meghívom a barátomat. (einladen)
-15 | Sie fahren für das Wochenende nach Österreich. | A hétvégére Ausztiába utaznak. (fahren, s Wochenende)
-16 | Wir renovieren bis Mitte Oktober das Haus. | Október közepéig felújítjuk a házat. (renovieren, Mitte Oktober)
-17 | Sie werden gegen Abend zu Hause. | Este körül otthon lesznek.
-18 | Die Müller Familie verreist für Weihnacht. | A Müller család elutazik karácsonyra. (verreisen, e Weihnacht)
-19 | Ich gehe über eine Stunde zu euch. | Egy órára megyek hozzátok.
+1 | gegen | Mein Freund kommt ____ fünf. - A barátom öt körül jön.
+2 | bis | Ihr könnt ____ 3 Uhr Handball spielen. - 3 óráig tudtok kézilabdázni.
+3 | für | Ich lade die Gäste ____ heute Abend ein. - Meghívom a vendégeket ma estére.
+4 | für |  Ich beende ____ Mittwoch die Arbeit. - Szerdára befelyezem a munkát. (beenden)
+5 | gegen |  Die Gäste besuchen uns übermorgen ____ elf. - A vendégek meglátogatnak minket holnapután tizenegy körül.
+6 | bis |  Ich war vorgestern ____ 12 in dem Kino. - Tegnapelőtt 12-ig moziban voltam.
+7 | für |  Sie kommen nur ____ ein paar Minuten. - Ők csak néhány percre jönnek.
+8 | über |  Er ist ____ 50. - Ő több mint 50.
+9 | über |  Ich habe bei ihnen ____ 28 Jahre gearbeitet. - Náluk több mit 28 évet dolgoztam.
+10 | für |  Ich beende ____ morgen diese Arbeit. - Befejezem holnapra ezt a munkát.
+11 | über |  Er bleibt ____ 3 Jahre in Budapest. - 3 évig marad Budapesten.
+12 | für |  Unsere Nachbarn verreisen ____ zwei Wochen. - A szomszédaink elutaznak két hétre.
+13 | bis |  Wir werden ____ Montag mit der Arbeit fertig sein. - Hétfőig a munkával készen leszünk.
+14 | für |  Ich lade ____ morgen meinen Freund ein. - Holnapra meghívom a barátomat.
+15 | für |  Sie fahren ____ das Wochenende nach Österreich. - A hétvégére Ausztiába utaznak.
+16 | bis |  Wir renovieren ____ Mitte Oktober das Haus. - Október közepéig felújítjuk a házat.
+17 | gegen |  Sie werden ____ Abend zu Hause. - Este körül otthon lesznek.
+18 | für |  Die Müller Familie verreist ____ Weihnacht. - A Müller család elutazik karácsonyra.
+19 | über |  Ich gehe ____ eine Stunde zu euch. - Egy órára megyek hozzátok.
 \end{exmp}
 
 \title{Az idő/Az idő kérdőszavai/Elöljárószavak/Dativ}
@@ -5143,7 +5151,7 @@ Pl.: * seit 5 Jahren - 5 éve
 3 | in einer | Ich werde ____ ____ Jahr fünfzehn Jahre alt sein. - Egy év múlva tizenöt éves leszek.
 4 | vor | Sie kommen ____ fünf mit zehn Minuten nach Hause an. - Öt előtt tíz perccel érkeznek haza.
 5 | seit | Ich warte ____ fünf Minuten auf dich.- Öt perce várok rád.
-6 | bis | Was macht ihr ab Montag ____ Mittwoch? - Hétfőtől szerdáig mit csináltok?
+6 | ab | Was macht ihr ____ Montag bis Mittwoch? - Hétfőtől szerdáig mit csináltok?
 7 | in | Wir freuen uns ____ fünf Wochen deinen Geburtstag. - Öt hét múlva ünnepeljük a szülinapodat.
 8 | seit | Ich esse ____ zwei Tagen nicht. - Két napja nem eszek.
 9 | vor | Ich aß ____ zwei Tagen nichts. - Két nappal ezelőtt nem ettem semmit.
@@ -5152,7 +5160,7 @@ Pl.: * seit 5 Jahren - 5 éve
 12 | in | Ich komme ____ 5 Minuten zurück. - 5 perc múlva visszajövök.
 13 | seit | Er arbeitet ____ 25 Jahren hier. - 25 éve itt dolgozik.
 14 | in | Er heiratet ____ zwei Jahren. - Két év múlva megházasodik.
-15 | zwischen | Es gibt ____ 8 un 10 Uhr Wasser nicht. - 8 és 10 óra között nincs víz.
+15 | zwischen | Es gibt ____ 8 und 10 Uhr Wasser nicht. - 8 és 10 óra között nincs víz.
 16 | vor | Ági war ____ zwei Wochen hier. - Két hete itt volt Ági.
 17 | in einer | Ich werde ____ ____ Jahr volljährig. - Egy év múlva nagykorú leszek.
 18 | seit | Sie raucht ____ vier Jahren nicht. - Négy év óta nem dohányzik.

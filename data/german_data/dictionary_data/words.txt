@@ -6208,3 +6208,4 @@
 106208	e Bekanntheit	ismertség
 106209	e Verachtung	lenézés, megvetés
 101214	kosten	kóstol
+106210	vorgestern	tegnapelőtt
