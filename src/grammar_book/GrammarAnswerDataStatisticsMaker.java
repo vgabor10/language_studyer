@@ -1,5 +1,6 @@
 package grammar_book;
 
+import java.util.Set;
 import language_studyer.AnswerDataStatisticsMaker;
 
 public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker {
@@ -8,15 +9,20 @@ public class GrammarAnswerDataStatisticsMaker extends AnswerDataStatisticsMaker 
             return getGrammarBook().numberOfGrammarItems();
     }*/
 
-    /*public int numberOfExamples() {
-            int numberOfExamples = 0;
-            Set<Integer> grammarItemIndexes = getGrammarBook().getGrammarItemIndexes();
-            for (int index : grammarItemIndexes) {
-                    numberOfExamples = numberOfExamples + getGrammarBook().getByIndex(index).numberOfExamples();
-            }
+    public int numberOfExamples() {
+        GrammarItemContainer grammarItemContainer
+                = ((GrammarDataContainer) this.dataContainer).getGrammarItemContainer();
+        
+        int numberOfExamples = 0;
+        Set<Integer> grammarItemIndexes = grammarItemContainer.getGrammarItemIndexes();
 
-            return numberOfExamples;
-    }*/
+        for (int index : grammarItemIndexes) {
+            GrammarItem grammarItem = grammarItemContainer.getByIndex(index);
+            numberOfExamples = numberOfExamples + grammarItem.numberOfExamples();
+        }
+
+        return numberOfExamples;
+    }
 
     /*public long getLastStudyTimeOfGrammarItem(int grammarItemIndex) {	//TODO: take to the ancestor class
             long lastStudyTime = 0;

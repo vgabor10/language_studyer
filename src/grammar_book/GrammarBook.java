@@ -20,12 +20,7 @@ public class GrammarBook {
         
         dataModificator.setData(dataContainer);
         
-        statisticsMaker.studiedAnswerDataContainer 
-                = dataContainer.getAnswerDataContainer();
-        statisticsMaker.studiedAnswerDataByStudyItemsContainer 
-                = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
-        statisticsMaker.studiedStudyItemIndexes
-                = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
+        statisticsMaker.setData(dataContainer);
     }
     
 }

@@ -70,7 +70,7 @@ public class GrammarTesterStatisticsDialog extends javax.swing.JDialog {
                     = getBeforeTestRarAsString(grammarItem);
              
             model.addRow(new Object[] {
-                    grammarItem.title.toString(),
+                    grammarItem.title.toStringReverse(),
                     afterTestRarAsString,
                     beforeTestRarAsString,
                     afterTestNumberOfAnswersAsString

@@ -18,10 +18,24 @@ import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyI
 
 public class AnswerDataStatisticsMaker {
         
-    public AnswerDataByStudyItemContainer studiedAnswerDataByStudyItemsContainer;
-    public AnswerDataContainer studiedAnswerDataContainer;
-    public Set<Integer> studiedStudyItemIndexes = new HashSet<>();
+    protected DataContainer dataContainer;
+    protected AnswerDataByStudyItemContainer studiedAnswerDataByStudyItemsContainer;
+    protected AnswerDataContainer studiedAnswerDataContainer;
+    protected Set<Integer> studiedStudyItemIndexes = new HashSet<>();
 
+    public void setData(DataContainer dc) {
+        this.dataContainer = dc;
+                
+        this.studiedAnswerDataByStudyItemsContainer 
+                = dc.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+        
+        this.studiedAnswerDataContainer 
+                = dataContainer.getAnswerDataContainer();
+        
+        this.studiedStudyItemIndexes
+                = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
+    }
+    
     public AnswerDataContainer getAnswerDataContainer() {
         return this.studiedAnswerDataContainer;
     }

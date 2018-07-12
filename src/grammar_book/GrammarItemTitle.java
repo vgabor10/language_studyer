@@ -39,6 +39,17 @@ public class GrammarItemTitle {
         }
         return out;
     }
+    
+   public String toStringReverse() {
+        String out = "";
+        if (!categoris.isEmpty()) {
+            out = categoris.get(categoris.size()-1);
+            for (int i = categoris.size()-2; 0 <= i; i--) {
+                out = out + " \\ " + categoris.get(i);
+            }
+        }
+        return out;
+    }
 
     public void clear() {
         categoris.clear();
