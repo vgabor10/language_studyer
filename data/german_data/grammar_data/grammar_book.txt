@@ -423,7 +423,7 @@ Sie             | Ihr
 7 | euerer | die Bälle ____ Kinder - a gyerekeitek labdái
 8 | euerer | die Shöne ____ Tochter - a lányaitok fiai
 9 | ihres Mannes | der Freund ____ ____ - a férjének a barátja
-10 | deines Mannes | das Rad ____ ____ - a kerékpárod kereke
+10 | deines Fahhardes | das Rad ____ ____ - a kerékpárod kereke
 11 | euerer | das Geld ____ Freunde - a barátaitok pénze
 12 | unseres Lehrers | das Zeit ____ ____ - a tanárunk ideje
 13 | seiner | das Kleid ____ Freundin - a barátnőjének (f) a ruhája
@@ -1167,34 +1167,34 @@ Prepozíciók kizárólag birtokos esettel:
 
 %Maklári: 63. oldal
 \begin{exmp}
-1 | wegen des | ____ ____ Wetters - az időjárás miatt
-2 | wegen des | ____ ____ Krigs - a háború miatt
+1 | wegen des Wetters | ____ ____ ____ - az időjárás miatt
+2 | wegen des Krigs | ____ ____ ____ - a háború miatt
 3 | trotz der | ____ ____ Kälte - a hideg ellenére
 4 | außerhalb der | ____ ____ Stadt - a városon kívül
-5 | wegen des | ____ ____ Verkäufers - az eladó miatt
+5 | wegen des Verkäufers | ____ ____ ____ - az eladó miatt
 6 | während der | ____ ____ Deutschstunde - a németóra alatt
-7 | statt des | ____ ____ Mittagessens - az ebéd helyett
-8 | während des | ____ ____ Urlaubs - a nyaralás alatt
-9 | während des | ____ ____ Mahls - az étkezés alatt
-10 | statt des | ____ ____ Ausflugs - a kirándulás helyett
-11 | innerhalb des | ____ ____ Dorfes - a falun bellül
-12 | innerhalb des | ____ ____ Gartens - a kerten bellül
+7 | statt des Mittagessens | ____ ____ ____ - az ebéd helyett
+8 | während des Urlaubs | ____ ____ ____ - a nyaralás alatt
+9 | während des Mahls | ____ ____ ____ - az étkezés alatt
+10 | statt des Ausflugs | ____ ____ ____ - a kirándulás helyett
+11 | innerhalb des Dorfes | ____ ____ ____ - a falun bellül
+12 | innerhalb des Gartens | ____ ____ ____ - a kerten bellül
 13 | während der | ____ ____ Reise - az utazás alatt
-14 | statt des | ____ ____ Brotes - a kenyér helyett
+14 | statt des Brotes | ____ ____ ____ - a kenyér helyett
 15 | statt der | ____ ____ Schule - iskola helyett
 16 | innerhalb | ____ zwei Stunden - két órán bellül
-17 | statt des | ____ ____ Kakaos - a kakaó helyett
-18 | während des | ____ ____ Films - a film alatt
-19 | trotz des | ____ ____ Regens - az eső ellenére
+17 | statt des Kakaos | ____ ____ ____ - a kakaó helyett
+18 | während des Films | ____ ____ ____ - a film alatt
+19 | trotz des Regens | ____ ____ ____ - az eső ellenére
 20 | während der | ____ ____ Stunde - az óra alatt
-21 | statt des | ____ ____ Tees - a tea helyett
-22 | außerhalb des | ____  ____Landes - az országon kívül
+21 | statt des Tees | ____ ____ ____ - a tea helyett
+22 | außerhalb des Landes | ____  ____ ____ - az országon kívül
 23 | innerhalb der | ____ ____ vier Wand - a négy fal között (innerhalb)
 24 | während der | ____ ____ Vorstellung - az előadás alatt
-25 | trotz des | ____ ____ Befehls - a parancs ellenére
+25 | trotz des Befehls | ____ ____ ____ - a parancs ellenére
 26 | während | ____ ____ zwei Stunden - két óra alatt
-27 | während des | ____ ____ Krieges - a háború alatt
-28 | trotz des | ____ ____ Verbots - a tiltás ellenére
+27 | während des Krieges | ____ ____ ____ - a háború alatt
+28 | trotz des Verbots | ____ ____ ____ - a tiltás ellenére
 \end{exmp}
 
 \title{Prepozíciók/Kettős elöljárószavak}
@@ -1345,7 +1345,9 @@ A következő kötöszavak után van fordított szórend:
 * darum - ezért
 * deshalb - ezért
 
-Pl.: Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost.
+Pl.: * Sie ist krank, darum sucht sie einen Arzt. - Beteg, ezért keres egy orvost.
+* Ich gehe nach Hause, dann esse ich. - Haza megyek, aztán eszek.
+* Du schreibst die Lektion, sonst bekommst du eine Eins. - Megírod a leckét, különben kapsz egy egyest.
 \end{desc}
 
 %Maklári: 147. oldal
@@ -1442,14 +1444,15 @@ Pl.: Wenn sie müde ist, trinkt sie einen Kaffe.
 \title{Az ige ragozása jelen időben/Szabályos ragozású igék}
 
 GrammarItemIndex = 446658
+Categories = 0
 
 \begin{desc}
-ich komme
-du kommst
-er/sie/es kommt
-wir kommen
-ihr kommt
-sie/Sie kommen
+ich ------- komme
+du -------- kommst
+er/sie/es - kommt
+wir ------- kommen
+ihr ------- kommt
+sie/Sie --- kommen
 \end{desc}
 
 %Maklári 10.oldal
@@ -1477,6 +1480,7 @@ sie/Sie kommen
 \title{Az ige ragozása jelen időben/Igeragozás d-re, t-re végződő igető esetén}
 
 GrammarItemIndex = 658954
+Categories = 0
 
 \begin{desc}
 Ha az igető d-re vagy t-te végződik, a könnyebb kiejtés miatt egy -e
@@ -4460,7 +4464,7 @@ Pl.: * Ich hoffe, den Zug noch zu erreichen. - Remélem még elérem a vonatot.
 9 | zu bestehen | Er meint, die Prüfung ____ ____. - Azt gondolja, hogy átmegy a vizsgát. (die Prüfung bestehen)
 10 | zu erreichen | Ildi hofft, den Zug ____ ____. - Ildi reméli, hogy eléri a vonatot.
 11 | zu werden | Anna hofft, größer ____ ____. - Anna reméli, hogy nagyobbá válik.
-12 | zu werden | Wir hoffen, noch ein Ticket ____ ____. - Reméljük, hogy kapunk még egy jegyet.
+12 | zu bekommen | Wir hoffen, noch ein Ticket ____ ____. - Reméljük, hogy kapunk még egy jegyet.
 13 | zu besuchen | Wir vergessen darüber nicht, morgen euch ____ ____. - Nem feledkeztünk meg arról, hogy meglátogassunk holnap titeket.
 14 | zu besuchen | Er denkt daran, übermorgen mich ____ ____. - Arra gondol, hogy holnapután meglátogat engem.
 15 | zu haben | Meine Freundin meint, immer Recht ____ ____. - A barátnőm azt kondolja, hogy mindig igaza van.
@@ -4741,7 +4745,7 @@ Pl.: * Ich lasse dich ins Kino gehen. - Hagylak moziba menni.
 16 | lasse anziehen | Ich ____ dir mein Kleid ____. - Megengedem, hogy felvedd a ruhámat. (anziehen)
 17 | lassen schlafen | Sie ____ uns hier nicht ____. - Nem engedik meg, hogy itt aludjunk.
 18 | Lässt aufkochen | ____ du die Suppe ____? - Hagyod a levest felforrni? (aufkochen)
-19 | lässt schlafen | Warum ____ du ihn nicht ____lafen? - Miért nem engeded őt aludni?
+19 | lässt schlafen | Warum ____ du ihn nicht ____? - Miért nem engeded őt aludni?
 20 | lasse trinken | Ich ____ ihn Alkohol nicht ____. - Nem engedem őt alkoholt inni.
 21 | Lässt gehen | ____ du nicht in der Schule ____? - Nem engeded iskolába menni?
 \end{exmp}
@@ -4929,14 +4933,14 @@ GrammarItemIndex = 234596
 Categories = 0
 
 \begin{desc}
-* irgendwer = valaki
-* irgendwas = valami
-* irgendwann = valamikor
-* irgendwoher = valahonnan
-* irgendwohin = valahová
-* irgendwie = valahogy
-* irgendwo = valahol
-* irgendeinmal = egyszer majd
+irgendwer ---- valaki
+irgendwas ---- valami
+irgendwann --- valamikor
+irgendwoher -- valahonnan
+irgendwohin -- valahová
+irgendwie ---- valahogy
+irgendwo ----- valahol
+irgendeinmal - egyszer majd
 
 Pl.: * Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
 * Ich wolle dir irgendwas sagen. - Akarok neked valamit mondani.
@@ -5065,6 +5069,7 @@ Pl.: * der zu reparierende Kühlschrank - a megjavítandó hűtőszekrény
 \title{Az idő/Az idő kérdőszavai}
 
 GrammarItemIndex = 541543
+Categories = 0
 
 \begin{desc}
 * wann? = mikor?
@@ -5074,35 +5079,37 @@ GrammarItemIndex = 541543
 * wie oft? = milyen gyakran?
 * ab wann? = mikortól?
 
-Pl.: Seit wann lebst du hier? - Mióta élsz itt?
+Pl.: * Seit wann lebst du hier? - Mióta élsz itt?
+* Bis wann dauert das Konzert? - Meddig tart a koncert?
+* Wie lange dauert das Konzert? - Mennyi ideig tart a koncert?
 \end{desc}
 
 %Maklári: 74. oldal
 \begin{exmp}
-1 | Bis wann dauert das Konzert? | Meddig tart a koncert? (dauern)
-2 | Wie lange dauert das Konzert? | Mennyi ideig tart a koncert? (dauern)
-3 | Seit wann wartet ihr auf uns? | Mióta vártok ránk?
-4 | Wie oft geht ihr in Theater? | Milyen gyakran mentek színházba?
-5 | Wann kann Man hier einkaufen? | Mikor tud az ember itt bevásárolni? (man, einkaufen)
-6 | Bis wann bleibt ihr in New York? | Meddig maradtok New Yorkban?
-7 | We oft fahrt ihr nach Ausland? | Milyen gyakran utaztok külföldre? (s Ausland)
-8 | Seit wann wohnt ihr hier? | Mióta laktok itt?
-9 | Bis wann ist das Museum geöffnet? | Meddig van a múzeum nyitva?
-10 | Wie lange dauert die Reise nach Asien? | Meddig tart az út ázsiába? (dauern, e Reise, Asien)
-11 | Seit wann stehen diese Häuser hier? | Mióta állnak itt ezek a házak?
-12 | Seit wann ist dieses Geschäft geschlossen? | Mióta van ez az üzlet zárva? (schließen)
-13 | Ab wann ist das Abonnement gültig? | Mikortól érvényes a bérlet? (s Abonnement, gültig)
-14 | Wann kommt ihr wieder zu uns? | Mikor jöttök újra hozzánk? (wieder)
-15 | Bis wann dauert der Film? | Meddig tart a film? (dauern)
-16 | Ab wann geht dein Sohn in den Kindergarren? | Mikortól megy a fiad az óvodába? (r Kindergarten)
-17 | Seit wann wartet ihr auf den Bus? | Mióta vártok a buszra?
-18 | Wie oft gehst du in das Schwimmbad? | Milyen gyakran mész uszodába? (s Schwimmbad)
-19 | Wie lange spricht er noch? | Mennyi ideig beszél (f) még?
-20 | Wie lange kochst du das Fleisch? | Mennyi ideig főzöd a húst? (kochen)
-21 | Wann schließen die Geschäfte? | Mikor zárnak az üzletek? (schließen)
-22 | Seit wann trinkst du den Kaffee mit Milch? | Mióta iszod a kávét tejjel? (r Kaffee, e Milch) 
-23 | Ab wann geht Pista in die Schule? | Mikortól megy Pista iskolába?
-24 | Wie oft besuchst du deine Großmutter? | Milyen gyakran látogatod meg a nagymamádat?
+1 | Bis wann | ____ ____ dauert das Konzert? - Meddig tart a koncert?
+2 | Wie lange | ____ ____ dauert das Konzert? - Mennyi ideig tart a koncert?
+3 | Seit wann | ____ ____ wartet ihr auf uns? - Mióta vártok ránk?
+4 | Wie oft | ____ ____ geht ihr in Theater? - Milyen gyakran mentek színházba?
+5 | Wann | ____ kann Man hier einkaufen? - Mikor tud az ember itt bevásárolni?
+6 | Bis wann | ____ ____ bleibt ihr in New York? - Meddig maradtok New Yorkban?
+7 | We oft | ____ ____ fahrt ihr nach Ausland? - Milyen gyakran utaztok külföldre?
+8 | Seit wann | ____ ____ wohnt ihr hier? - Mióta laktok itt?
+9 | Bis wann | ____ ____ ist das Museum geöffnet? - Meddig van a múzeum nyitva?
+10 | Wie lange | ____ ____ dauert die Reise nach Asien? - Meddig tart az út ázsiába?
+11 | Seit wann | ____ ____ stehen diese Häuser hier? - Mióta állnak itt ezek a házak?
+12 | Seit wann | ____ ____ ist dieses Geschäft geschlossen? - Mióta van ez az üzlet zárva?
+13 | Ab wann | ____ ____ ist das Abonnement gültig? - Mikortól érvényes a bérlet?
+14 | Wann | ____ kommt ihr wieder zu uns? - Mikor jöttök újra hozzánk?
+15 | Bis wann | ____ ____ dauert der Film? - Meddig tart a film?
+16 | Ab wann | ____ ____ geht dein Sohn in den Kindergarren? - Mikortól megy a fiad az óvodába?
+17 | Seit wann | ____ ____ wartet ihr auf den Bus? - Mióta vártok a buszra?
+18 | Wie oft | ____ ____ gehst du in das Schwimmbad? - Milyen gyakran mész uszodába?
+19 | Wie lange | ____ ____ spricht er noch? - Mennyi ideig beszél még?
+20 | Wie lange | ____ ____ kochst du das Fleisch? - Mennyi ideig főzöd a húst?
+21 | Wann | ____ schließen die Geschäfte? - Mikor zárnak az üzletek?
+22 | Seit wann | ____ ____ trinkst du den Kaffee mit Milch? - Mióta iszod a kávét tejjel?
+23 | Ab wann | ____ ____ geht Pista in die Schule? - Mikortól megy Pista iskolába?
+24 | Wie oft | ____ ____ besuchst du deine Großmutter? - Milyen gyakran látogatod meg a nagymamádat?
 \end{exmp}
 
 \title{Az idő/Az idő kérdőszavai/Elöljárószavak/Akkusativ-val}

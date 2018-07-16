@@ -2206,7 +2206,7 @@
 102257	r Wolf	farkas
 102258	ramponieren	tönkretesz, megkárosít
 102259	r Beton	beton
-102260	e Tasche	táska
+102260	e Tasche	táska, zseb
 102261	künftig	jövőbeli
 102262	r Nutzer	felhasználó
 102263	brüsten	dicsekszik
