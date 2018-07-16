@@ -985,6 +985,7 @@ GrammarItemIndex = 5
 Categories = 0
 
 \begin{desc}
+Az alábbi prepozíciók mindig tárgy esetet vonzanak:
 * für - -ért, részére, számára
 * ohne - nélkül
 * gegen - ellen, körül (időben)
@@ -1289,6 +1290,10 @@ A következő kötöszavak után van egyenes szórend (usoda):
 * oder - vagy
 * denn - mert
 * aber  de
+
+Pl.: * Wir kaufen und ihr kocht. - Mi vásárolunk és ti főztök.
+* Ich bin nervös, denn mein Freund kommt nicht. - Ideges vagyok, mert nem jön a barátom.
+* Ich gehe, mein Freund kommt nicht. - Én megyek, vagy te jössz.
 \end{desc}
 
 %Maklári: 144. oldal
@@ -1671,7 +1676,7 @@ Pl: * Sie haben einen Garten. - Van egy kertjük.
 1 | hat ein | Mein Vater ____ ____ Haus. - Apámnak van egy háza.
 2 | hast | Du ____ Zeit. - Van időd.
 3 | haben einen | Sie ____ ____ Garten. - Van egy kertjük.
-4 | hat | Mutter ____ Blumen. - Anyának sok virága van.
+4 | hat | Mutter ____ viele Blumen. - Anyának sok virága van.
 5 | hat ein | Er ____ ____ Buch. - Neki van egy könyve.
 6 | habe eine | Ich ____ ____ Freundin. - Nekem van egy barátnőm.
 7 | habt | Ihr ____ Zeit immer. - Mindig van időtök.
@@ -2009,7 +2014,7 @@ Pl: Kommst du morgen ins Kino?
 1 | Kommst du | ____ ____ morgen ins Kino? - Jössz holnap moziba?
 2 | Gehen wir | ____ ____ nach Hause? - Haza megyünk?
 3 | Lesen Sie | ____ ____ Zeitung? - Újságot olvas? (Ön)
-4 | Essen ihr | ____ ____ Suppe? - Esztek levest?
+4 | Esst ihr | ____ ____ Suppe? - Esztek levest?
 \end{exmp}
 
 \title{Kérdő mondatok/Kérdőmondat kérdőszóval}
@@ -2260,48 +2265,48 @@ A magyarral ellentétben a németben nincs kettős tagadás.
 
 %Maklári: 132. oldal
 \begin{exmp}
-1 | Ich sehe nichts. | Semmit se látok.
-2 | Er hört nichts. | Semmit se hall (f).
-3 | Sie trinkt nichts. | Semmit sem iszik (n).
-4 | Siehst du nichts? | Semmit se látsz?
-5 | Ich habe nichts. | Semmim sincs.
-6 | Es ist nichts hier. | Itt semmi nincs.
-7 | Seht ihr nichts? | Semmit se láttok?
-8 | Er sagt nichts. | Semmit sem mond (f).
-9 | Du bekommst nichts. | Semmit sem kapsz.
-10 | Es ist nichts in der Tasche. | Semmi sincs a táskában.
-11 | Wir kaufen nichts. | Semmit se vásárolunk.
-12 | Ich möchte nichts. | Nem szeretnék semmit.
-13 | Niemand kommt. | Senki se jön.
-14 | Ich sehe niemand. | Senkit sem látok.
-15 | Ich kaufe niemand Geschenk. | Senkinek sem veszek ajándékot.
-16 | Niemand liebt mein Hund. | Senki sem szereti a kutyámat.
-17 | Niemand isst Eis. | Senki sem eszik fagyit.
-18 | Sie hilfen niemand. | Senkinek sem segítenek.
-19 | Sie lädt niemand ein. | Senkit sem hív (n) meg.
-20 | Er liebt niemand. | Senkit sem szeret (f).
-21 | Er gibt niemand seinen Wagen. | Senkinek sem adja (f) a kocsiját.
-22 | Niemand steht hier. | Senki sem áll itt.
-23 | Niemand liebt mich. | Senki sem szeret engem.
-24 | Ich erzähle es niemand. | Senkinek se mesélem el.
-25 | Ich sehe sie nirgendwo. | Sehol sem látom őt (n).
-26 | Wir gehen nirgendwohin. | Sehová nem megyünk.
-27 | Du bekommst Schuh nirgendwo. | Sehol sem kapsz cipőt.
-28 | Sie findet ihre Tasche nirgendwo. | Sehol sem találja (n) a táskáját.
-29 | Ich spaziere nirgendwohin. | Sehov nem sétálok.
-30 | Ich finde nirgendwo das Brot. | Sehol sem találom a kenyeret.
-31 | Sie ist froh nirgendwo. | Sehol sem boldog (n). (froh)
-32 | Du gehst nirgendwo. | Sehová sem mész.
-33 | Du bist nie zu Hause. | Sohasem vagy otthon.
-34 | Ihr spracht nie miteinander. | Sohasem beszéltek egymással.
-35 | Ich habe sie noch nie gesehen. | Még sohasem láttam őt (n).
-36 | Er singt nie. | Sohase énekel.
-37 | Jetzt oder nie! | Most vagy soha!
-38 | Ich bin noch nie geschwommen. | Még sohasem úsztam.
-39 | Er arbeitet nie. | Sohase dolgozik (f).
-40 | Sie ist nie müde. | Sohase fáradt (n).
-41 | Du kommst nie zu uns. | Sohase jössz hozzánk.
-42 | Er geht nie in die Schule. | Sohase megy (f) iskolába.
+1 | nichts | Ich sehe ____. - Semmit se látok.
+2 | nichts | Er hört ____. - Semmit se hall.
+3 | nichts | Sie trinkt ____. - Semmit sem iszik.
+4 | nichts | Siehst du ____? - Semmit se látsz?
+5 | nichts | Ich habe ____. - Semmim sincs.
+6 | nichts | Es ist ____ hier. - Itt semmi nincs.
+7 | nichts | Seht ihr ____? - Semmit se láttok?
+8 | nichts | Er sagt ____. - Semmit sem mond.
+9 | nichts | Du bekommst ____. - Semmit sem kapsz.
+10 | nichts | Es ist ____ in der Tasche. - Semmi sincs a táskában.
+11 | nichts | Wir kaufen ____. - Semmit se vásárolunk.
+12 | nichts | Ich möchte ____. - Nem szeretnék semmit.
+13 | Niemand | ____ kommt. - Senki se jön.
+14 | niemand | Ich sehe ____. - Senkit sem látok.
+15 | niemand | Ich kaufe ____ Geschenk. - Senkinek sem veszek ajándékot.
+16 | Niemand | ____ liebt mein Hund. - Senki sem szereti a kutyámat.
+17 | Niemand | ____ isst Eis. - Senki sem eszik fagyit.
+18 | niemand | Sie hilfen ____. - Senkinek sem segítenek.
+19 | niemand | Sie lädt ____ ein. - Senkit sem hív meg.
+20 | niemand | Er liebt ____. - Senkit sem szeret.
+21 | niemand | Er gibt ____ seinen Wagen. - Senkinek sem adja a kocsiját.
+22 | Niemand | ____ steht hier. - Senki sem áll itt.
+23 | Niemand | ____ liebt mich. - Senki sem szeret engem.
+24 | niemand | Ich erzähle es ____. - Senkinek se mesélem el.
+25 | nirgendwo | Ich sehe sie ____. - Sehol sem látom őt.
+26 | nirgendwohin | Wir gehen ____. - Sehová nem megyünk.
+27 | nirgendwo | Du bekommst Schuh ____. - Sehol sem kapsz cipőt.
+28 | nirgendwo | Sie findet ihre Tasche ____. - Sehol sem találja a táskáját.
+29 | nirgendwohin | Ich spaziere ____. - Sehov nem sétálok.
+30 | nirgendwo | Ich finde ____ das Brot. - Sehol sem találom a kenyeret.
+31 | nirgendwo | Sie ist froh ____. - Sehol sem boldog.
+32 | nirgendwo | Du gehst ____. - Sehová sem mész.
+33 | nie | Du bist ____ zu Hause. - Sohasem vagy otthon.
+34 | nie | Ihr spracht ____ miteinander. - Sohasem beszéltek egymással.
+35 | nie | Ich habe sie noch ____ gesehen. - Még sohasem láttam őt.
+36 | nie | Er singt ____. - Sohase énekel.
+37 | nie | Jetzt oder ____! - Most vagy soha!
+38 | nie | Ich bin noch ____ geschwommen. - Még sohasem úsztam.
+39 | nie | Er arbeitet ____. - Sohase dolgozik.
+40 | nie | Sie ist ____ müde. - Sohase fáradt.
+41 | nie | Du kommst ____ zu uns. - Sohase jössz hozzánk.
+42 | nie | Er geht ____ in die Schule. - Sohase megy iskolába.
 \end{exmp}
 
 \title{Tagadás/Kéttagú tagadószavak}
@@ -5092,7 +5097,7 @@ Pl.: * Seit wann lebst du hier? - Mióta élsz itt?
 4 | Wie oft | ____ ____ geht ihr in Theater? - Milyen gyakran mentek színházba?
 5 | Wann | ____ kann Man hier einkaufen? - Mikor tud az ember itt bevásárolni?
 6 | Bis wann | ____ ____ bleibt ihr in New York? - Meddig maradtok New Yorkban?
-7 | We oft | ____ ____ fahrt ihr nach Ausland? - Milyen gyakran utaztok külföldre?
+7 | Wie oft | ____ ____ fahrt ihr nach Ausland? - Milyen gyakran utaztok külföldre?
 8 | Seit wann | ____ ____ wohnt ihr hier? - Mióta laktok itt?
 9 | Bis wann | ____ ____ ist das Museum geöffnet? - Meddig van a múzeum nyitva?
 10 | Wie lange | ____ ____ dauert die Reise nach Asien? - Meddig tart az út ázsiába?
