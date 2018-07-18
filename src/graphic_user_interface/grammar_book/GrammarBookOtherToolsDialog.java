@@ -1,6 +1,6 @@
 package graphic_user_interface.grammar_book;
 
-import grammar_book.GrammarBookFileFormatChecker;
+import grammar_book.GrammarFormatChecker;
 import grammar_book.GrammarDataContainer;
 import grammar_book.GrammarDataModificator;
 import java.awt.event.KeyEvent;
@@ -130,7 +130,7 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        GrammarBookFileFormatChecker fileFormatChecker = new GrammarBookFileFormatChecker();
+        GrammarFormatChecker fileFormatChecker = new GrammarFormatChecker();
         
         fileFormatChecker.setData(grammarDataContainer);
         fileFormatChecker.isThereAnswerDataWithInvalidGrammarItemIndex();

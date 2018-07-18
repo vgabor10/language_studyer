@@ -1,13 +1,10 @@
 package grammar_book;
 
-import java.util.*;
-import java.io.FileReader;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.FileNotFoundException;
+import java.util.HashSet;
+import java.util.Set;
 import language_studyer.AnswerDataContainer;
 
-public class GrammarBookFileFormatChecker {
+public class GrammarFormatChecker {
 
     private GrammarItemContainer grammarItemContainer;
     private AnswerDataContainer grammarAnswerDataContainer;
