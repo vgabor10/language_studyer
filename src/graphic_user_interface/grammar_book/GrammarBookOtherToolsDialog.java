@@ -1,14 +1,13 @@
 package graphic_user_interface.grammar_book;
 
-import dictionary.DictionaryDataContainer;
+import grammar_book.GrammarBookFileFormatChecker;
+import grammar_book.GrammarDataContainer;
 import grammar_book.GrammarDataModificator;
-import grammar_book.GrammarItemContainer;
 import java.awt.event.KeyEvent;
 
 public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
-    public DictionaryDataContainer dictionaryDataContainer;
-    public GrammarItemContainer grammarBook;
+    public GrammarDataContainer  grammarDataContainer;
     
     public GrammarBookOtherToolsDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -28,7 +27,6 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
         jButton16 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
@@ -36,7 +34,7 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jButton16.setText("Check data format");
+        jButton16.setText("Check grammar data format");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
@@ -49,8 +47,6 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
                 jButton1ActionPerformed(evt);
             }
         });
-
-        jButton6.setText("Check grammar book format");
 
         jButton2.setText("Create pdf from grammar book");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -89,11 +85,10 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 387, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(modificateGrammarBookButton, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE))
+                    .addComponent(modificateGrammarBookButton, javax.swing.GroupLayout.DEFAULT_SIZE, 387, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -102,18 +97,16 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addComponent(jButton16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(modificateGrammarBookButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton5)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -131,13 +124,17 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
         GrammarDataModificator grammarDataModificator 
                 = new GrammarDataModificator();
         
-        grammarDataModificator.setData(dictionaryDataContainer);
+        grammarDataModificator.setData(grammarDataContainer);
         
         grammarDataModificator.writeGrammarBookToDisk();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
+        GrammarBookFileFormatChecker fileFormatChecker = new GrammarBookFileFormatChecker();
+        
+        fileFormatChecker.setData(grammarDataContainer);
+        fileFormatChecker.isThereAnswerDataWithInvalidGrammarItemIndex();
+        fileFormatChecker.isThereDuplicationInGrammarItemIndexes();
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -210,7 +207,6 @@ public class GrammarBookOtherToolsDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton modificateGrammarBookButton;
     // End of variables declaration//GEN-END:variables
 }

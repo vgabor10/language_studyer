@@ -374,8 +374,8 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         GrammarBookOtherToolsDialog dialog = new GrammarBookOtherToolsDialog(new javax.swing.JFrame(), true);
-        //dialog.grammarBook = grammarDataContainer.grammarBook;
-        dialog.dictionaryDataContainer = dictionary.dataContainer;
+        
+        dialog.grammarDataContainer = grammarBook.dataContainer;
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }//GEN-LAST:event_jButton2ActionPerformed

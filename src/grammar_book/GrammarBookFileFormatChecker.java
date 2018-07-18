@@ -9,19 +9,16 @@ import language_studyer.AnswerDataContainer;
 
 public class GrammarBookFileFormatChecker {
 
-    private GrammarItemContainer grammarBook;
+    private GrammarItemContainer grammarItemContainer;
     private AnswerDataContainer grammarAnswerDataContainer;
 
-    public void setGrammarBook(GrammarItemContainer g) {
-        grammarBook = g;
-    }
-
-    public void setGrammarAnswerDataContainer(AnswerDataContainer g) {
-        grammarAnswerDataContainer = g;
+    public void setData(GrammarDataContainer  grammarDataContainer) {
+        grammarItemContainer = grammarDataContainer.getGrammarItemContainer();
+        grammarAnswerDataContainer = grammarDataContainer.getAnswerDataContainer();
     }
 
     public void isThereAnswerDataWithInvalidGrammarItemIndex() {	//TODO: take it to an other class
-        Set<Integer> grammarItemIndexes = grammarBook.getGrammarItemIndexes();
+        Set<Integer> grammarItemIndexes = grammarItemContainer.getGrammarItemIndexes();
 
         int i = 0;
         while (i < grammarAnswerDataContainer.numberOfAnswers()
@@ -30,49 +27,36 @@ public class GrammarBookFileFormatChecker {
         }
 
         if (i == grammarAnswerDataContainer.numberOfAnswers()) {
-            System.out.println("fortunately there is not answer data with invalid grammar item index");
+            System.out.println("there is NOT answer data with invalid grammar item index");
         } else {
             System.out.println("answer data file contains answer data with invalid grammar item index, an invalid index is: "
                     + grammarAnswerDataContainer.getAnswerData(i).index);
         }
     }
 
-    public boolean checkGrammarItemIndexes(String filePath) {
-        BufferedReader br = null;
-        String strLine = "";
+    public void isThereDuplicationInGrammarItemIndexes() {
+        Set<Integer> grammarItemIndexes = new HashSet<>();
         boolean isCorrect = true;
-
-        try {
-
-            br = new BufferedReader(new FileReader(filePath));
-            int lineNumber = 0;
-            Set<Integer> grammarItemIndexes = new HashSet<Integer>();
-            do {
-                strLine = br.readLine();
-                lineNumber++;
-
-                if (strLine != null && strLine.startsWith("GrammarItemIndex")) {
-
-                    int grammarItemIndex = Integer.parseInt(strLine.substring(19));
-                    if (grammarItemIndexes.contains(grammarItemIndex)) {
-                        System.out.println("error: duplications in GrammarItemIndexes at line " + lineNumber);
-                        isCorrect = false;
-                    } else {
-                        grammarItemIndexes.add(grammarItemIndex);
-                    }
-                }
-            } while (strLine != null);
-
-        } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
-        } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+        
+        int i = 0;
+        while (i < grammarItemContainer.numberOfGrammarItems()) {
+            int grammarItemIndex = grammarItemContainer.getGrammarItemByOrder(i).index;
+            if (grammarItemIndexes.contains(grammarItemIndex)) {
+                System.out.println("error: duplications in GrammarItemIndexes");
+                isCorrect = false;
+            } else {
+                grammarItemIndexes.add(grammarItemIndex);
+            }
+            i++;
+        }    
+        
+        if (isCorrect) {
+            System.out.println("there is NO duplications in GrammarItemIndexes");
         }
-
-        return isCorrect;
+        
     }
 
-    public boolean checkExistanceOfGrammarItemIndexes(String filePath) {
+    /*public boolean checkExistanceOfGrammarItemIndexes(String filePath) {
         BufferedReader br = null;
         String strLine = "";
         boolean isCorrect = true;
@@ -126,9 +110,9 @@ public class GrammarBookFileFormatChecker {
         }
 
         return isCorrect;
-    }
+    }*/
 
-    public boolean checkExampleEnvironments(String filePath) {	//TODO: rename to: checkExampleEnvironments
+    /*public boolean checkExampleEnvironments(String filePath) {	//TODO: rename to: checkExampleEnvironments
         BufferedReader br = null;
         String strLine = "";
         String str;
@@ -187,9 +171,10 @@ public class GrammarBookFileFormatChecker {
 
     public boolean generalCheck(String filePath) {
         boolean isCorrect = true;
-        isCorrect = checkGrammarItemIndexes(filePath);
+        //isCorrect = checkGrammarItemIndexes(filePath);
         isCorrect = checkExampleEnvironments(filePath) && isCorrect;
         isCorrect = checkExistanceOfGrammarItemIndexes(filePath) && isCorrect;
         return isCorrect;
-    }
+    }*/
+
 }
