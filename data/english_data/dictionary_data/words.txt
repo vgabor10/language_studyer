@@ -2988,3 +2988,13 @@
 102987	hoover	porszívó
 102988	swirl	kavarog, örvénylik
 102989	sight	látás
+102990	airliner	utasszállító repülőgép
+102991	agent	hatóanyag
+102992	agent	ügynök
+102993	interpreter	tolmács
+102994	probe	nyomozás
+102995	summit	csúcs, hegytető
+102996	descend	leereszkedik, lemegy
+102997	striker	csatár
+102998	bounce	ugrál ,visszapattan
+102999	classy	klassz, príma
