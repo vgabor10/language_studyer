@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import language_studyer.AnswerDataContainer;
 
-public class GrammarFormatChecker {
+public class GrammarFormatChecker { //TODO: implement base class: FormatChecker
 
     private GrammarItemContainer grammarItemContainer;
     private AnswerDataContainer grammarAnswerDataContainer;
