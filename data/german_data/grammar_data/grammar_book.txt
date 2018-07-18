@@ -255,10 +255,12 @@ Sie             | Sie
 
 \title{Névmások/Személyes névmás/Személyes névmás részes esete}
 
-GrammarItemIndex = 155
+GrammarItemIndex = 155845
+Categories = 0
 
 \begin{desc}
-nominativ/alany | dativ/részes 
+nominativ/alany | dativ/részes
+----------------+--------------
 ich             | mir 
 du              | dir 
 er              | ihm 
@@ -272,32 +274,32 @@ Sie             | Ihnen
 
 %Maklári: 40. oldal
 \begin{exmp}
-1 | Er kauft uns etwas. | Vásárol (f) nekünk valamit.
-2 | Ich gebe dir eine Ohrfeige. | Adok neked egy pofont.
-3 | Johann und Wolfgang helfen ihnen. | Johann és Wolfgang segítenek nekik.
-4 | Ich gebe euch Zeit. | Adok nektek időt.
-5 | Wir kaufen Ihnen das Radio. | Megvesszük Önnek a rádiót.
-6 | Pista schenkt ihr einen Rock. | Pista ajándékoz neki egy szoknyát.
-7 | Das Mädchen gefällt mir. | Tetszik nekem a lány.
-8 | Gefällt das Spielzeug dir? | Tetszik neked a játék?
-9 | Gefallen das Auto Ihnen? | Tetszik Önnek az autó?
-10 | Wir gratulieren ihnen. | Gratulálunk nekik.
-11 | Ich gebe dir den Wagen. | Odaadom neked a kocsit.
-12 | Ihr schenkt ihnen eine Torte. | Ajándékozok nekik egy tortát.
-13 | Ich gebe ihr ein Buch. | Adok neki (n) egy könyvet.
-14 | Anna hilft ihm Auto reparieren. | Anna segít neki (f) autót szerelni.
-15 | Ich schenke ihr eine Bluse. | Ajándékozok neki (n) egy blúzt. (e Bluse)
-16 | Wir geben euch Geld. | Adunk pénzt nektek.
-17 | Wir gratulieren Ihnen. | Gratulálunk Önöknek.
-18 | Sie gibt mir eine Uhr. | Ad (n) nekem egy órát.
-19 | Er gibt uns das Buch. | Nekünk adja (f) a könyvet.
-20 | Öffnest du mir die Tür? | Kinyitod nekem az ajtót?
-21 | Ich erzähle dir die Geschichte. | Elmesélem neked a történetet.
+1 | uns | Er kauft ____ etwas. - Vásárol nekünk valamit.
+2 | dir | Ich gebe ____ eine Ohrfeige. - Adok neked egy pofont.
+3 | ihnen | Johann und Wolfgang helfen ____. - Johann és Wolfgang segítenek nekik.
+4 | euch | Ich gebe ____ Zeit. - Adok nektek időt.
+5 | Ihnen | Wir kaufen ____ das Radio. - Megvesszük Önnek a rádiót.
+6 | ihr | Pista schenkt ____ einen Rock. - Pista ajándékoz neki (n) egy szoknyát.
+7 | mir | Das Mädchen gefällt ____. - Tetszik nekem a lány.
+8 | dir | Gefällt das Spielzeug ____? - Tetszik neked a játék?
+9 | Ihnen | Gefallen das Auto ____? - Tetszik Önnek az autó?
+10 | ihnen | Wir gratulieren ____. - Gratulálunk nekik.
+11 | dir | Ich gebe ____ den Wagen. - Odaadom neked a kocsit.
+12 | ihnen | Ihr schenkt ____ eine Torte. - Ajándékozok nekik egy tortát.
+13 | ihr | Ich gebe ____ ein Buch. - Adok neki (n) egy könyvet.
+14 | ihm | Anna hilft ____ Auto reparieren. - Anna segít neki (f) autót szerelni.
+15 | ihr | Ich schenke ____ eine Bluse. - Ajándékozok neki (n) egy blúzt. (e Bluse)
+16 | euch | Wir geben ____ Geld. - Adunk pénzt nektek.
+17 | Ihnen | Wir gratulieren ____. - Gratulálunk Önöknek.
+18 | mir | Sie gibt ____ eine Uhr. - Ad (n) nekem egy órát.
+19 | uns | Er gibt ____ das Buch. - Nekünk adja (f) a könyvet.
+20 | mir | Öffnest du ____ die Tür? - Kinyitod nekem az ajtót?
+21 | dir | Ich erzähle ____ die Geschichte. - Elmesélem neked a történetet.
 \end{exmp}
 
 \title{Névmások/Személyes névmás/Személyes névmás birtokos esete}
 
-GrammarItemIndex = 18
+GrammarItemIndex = 187931
 
 \begin{desc}
 ALANY | BIRTOKOS 
@@ -986,12 +988,12 @@ Categories = 0
 
 \begin{desc}
 Az alábbi prepozíciók mindig tárgy esetet vonzanak:
-* für - -ért, részére, számára
-* ohne - nélkül
+* für --- -ért, részére, számára
+* ohne -- nélkül
 * gegen - ellen, körül (időben)
-* bis - -ig
+* bis --- -ig
 * durch - át, keresztül, által
-* um - -kor, körül (térben)
+* um ---- -kor, körül (térben)
 \end{desc}
 
 %Maklári: 59. oldal
@@ -1293,14 +1295,14 @@ A következő kötöszavak után van egyenes szórend (usoda):
 
 Pl.: * Wir kaufen und ihr kocht. - Mi vásárolunk és ti főztök.
 * Ich bin nervös, denn mein Freund kommt nicht. - Ideges vagyok, mert nem jön a barátom.
-* Ich gehe, mein Freund kommt nicht. - Én megyek, vagy te jössz.
+* Ich gehe, oder du kommst. - Én megyek, vagy te jössz.
 \end{desc}
 
 %Maklári: 144. oldal
 \begin{exmp}
 1 | und ihr kocht | Wir kaufen ____ ____ ____. - Mi vásárolunk és ti főztök.
 2 | denn mein Freund kommt | Ich bin nervös, ____ ____ ____ ____ nicht. - Ideges vagyok, mert nem jön a barátom.
-3 | mein Freund kommt nicht | Ich gehe, ____ ____ ____. - Én megyek, vagy te jössz.
+3 | oder du kommst | Ich gehe, ____ ____ ____. - Én megyek, vagy te jössz.
 4 | aber du bekommst | Er ist schlecht, ____ ____ ____ die Ohrfeige. - Ö rossz, de te kapod a pofont.
 5 | denn ich bin | Ich bleibe zu Hause, ____ ____ ____ krank. - Otthon maradok, mert beteg vagyok.
 6 | und du kaufst ein | Ich spüle heute ____ ____ ____ ____. - Ma én mosogatok és te vásárolsz be.
@@ -3455,22 +3457,22 @@ sie/Sie werden
 
 %Maklári: 325. oldal
 \begin{exmp}
-1 | wird, repariert | Das Auto ____ von dem Mechaniker ____. - A szerelő megjavítja az autót.
-2 | wird, geschrieben | Ein Brief ____ von meinem Freund ____. - A barátom ír egy levelet.
-3 | wird, übersetzen | Der Text ____ von uns ____. - Lefordítjuk a szöveget.
-4 | wird, kontrolliert | Das Ticket ____ durch die Maschine ____. - A gép ellenőrzi a jegyet. (kontrollieren)
-5 | wird, benachrichtigt | Die Familie ____ durch die Polizei ____. - A rendőrség értesíti a családot. (benachrichtigen)
+1 | wird von dem, repariert | Das Auto ____ ____ ____ Mechaniker ____. - A szerelő megjavítja az autót.
+2 | wird von meinem, geschrieben | Ein Brief ____ ____ ____ Freund ____. - A barátom ír egy levelet.
+3 | wird von uns übersetzt | Der Text ____ ____ ____ ____. - Lefordítjuk a szöveget.
+4 | wird durch die, kontrolliert | Das Ticket ____ ____ ____ Maschine ____. - A gép ellenőrzi a jegyet. (kontrollieren)
+5 | wird durch die, benachrichtigt | Die Familie ____ ____ ____ Polizei ____. - A rendőrség értesíti a családot. (benachrichtigen)
 6 | wird, gesprochen | Deutsch ____ in Deutschland ____. - Németországban németül beszélnek.
-7 | wird, geöffnet | Die Tür ____ von dem Gast ____. - A vendég kinyitja az ajtót.
-8 | wird, gebaut | Das Gebäude ____ durch eine Firma ____. - Az épületet egy cég építi. (s Gebäude)
-9 | wird, repariert | Das Radio ____ von dem Großvater ____. - A nagyapa megjavítja a rádiót.
-10 | werden, gezahlt | Die Rechnungen ____ von mir ____. - A számlákat én fizetem. (zahlen)
-11 | wird, gemalt | Die Wand ____ von den Arbeitern ____. - A munkások befestik a falat.
-12 | werden, ausgeteilt | Die Schularbeiten ____ von der Lehrerin ____. - A tanárnő kiosztja a dolgozatokat. (austeilen)
-13 | werden, gedient | Die Kranken ____ von der Pflegerin ____. - A betegeket az ápolónő szolgálja ki. (dienen)
-14 | wird, geteilt | Wasser ____ von den Freiwilligen ____. - Vizet osztanak az önkéntesek.
-15 | wird, geheilt | Mein Freund ____ durch das Medikament ____. - A gyógyszer meggyógyitja a barátomat.
-16 | werden, abgeholt | Die Gäste ____ von Imre ____. - Imre hozza el a vendégeket. (abholen)
+7 | wird von dem, geöffnet | Die Tür ____ ____ ____ Gast ____. - A vendég kinyitja az ajtót.
+8 | wird durch eine, gebaut | Das Gebäude ____ ____ ____ Firma ____. - Az épületet egy cég építi.
+9 | wird von dem, repariert | Das Radio ____ ____ ____ Großvater ____. - A nagyapa megjavítja a rádiót.
+10 | werden von mir gezahlt | Die Rechnungen ____ ____ ____ ____. - A számlákat én fizetem. (zahlen)
+11 | wird von den, gemalt | Die Wand ____ ____ ____ Arbeitern ____. - A munkások befestik a falat.
+12 | werden von der, ausgeteilt | Die Schularbeiten ____ ____ ____ Lehrerin ____. - A tanárnő kiosztja a dolgozatokat. (austeilen)
+13 | werden von der, gedient | Die Kranken ____ ____ ____ Pflegerin ____. - A betegeket az ápolónő szolgálja ki. (dienen)
+14 | wird von den, geteilt | Wasser ____ ____ ____ Freiwilligen ____. - Vizet osztanak az önkéntesek.
+15 | wird durch das, geheilt | Mein Freund ____ ____ ____ Medikament ____. - A gyógyszer meggyógyitja a barátomat.
+16 | werden von, abgeholt | Die Gäste ____ ____ Imre ____. - Imre hozza el a vendégeket. (abholen)
 \end{exmp}
 
 \title{Cselekvő passiv mondatszerkezet/Passiv elbeszélő múlt időben}
@@ -3560,7 +3562,7 @@ Pl.: * Das Auto must von dem Mechaniker repariert werden. - A szerelőnek meg ke
 15 | darf, gefahren, werden | Das Auto ____ von dir schnell ____ ____. - Vezetheted gyorsan az autót. (fahren)
 16 | muss, gelöst, werden | Diese Angelegenheit ____ ____ ____. - Ezt az ügyet meg kell oldani.
 17 | muss, geschrieben, werden | Das Brief ____ ____ ____. - A levelet meg kell írni.
-18 | kann, operiert, werden | Der Kranke ____ ____ ____. - A beteget meg lehet operálni.
+18 | kann, operiert, werden | Der Kranke ____ schon ____ ____. - A beteget meg lehet már operálni.
 \end{exmp}
 
 \title{Cselekvő passiv mondatszerkezet/Passiv módbeli segédigével elbeszélő múlt időben}

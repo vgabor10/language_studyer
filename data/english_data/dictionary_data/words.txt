@@ -2998,3 +2998,4 @@
 102997	striker	csatár
 102998	bounce	ugrál ,visszapattan
 102999	classy	klassz, príma
+103000	fortunate	szerencsés
