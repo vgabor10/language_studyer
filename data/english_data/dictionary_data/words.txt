@@ -2987,3 +2987,4 @@
 102986	declare	kihirdet, kijelent
 102987	hoover	porszívó
 102988	swirl	kavarog, örvénylik
+102989	sight	látás

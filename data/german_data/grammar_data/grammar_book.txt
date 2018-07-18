@@ -250,7 +250,7 @@ Sie             | Sie
 9 | Sie | Ich bitte ____. - Kérem Önt.
 10 | Sie | Wir bitten ____. - Kérjük Önöket.
 11 | sie | Hört ihr ____? - Halljátok őket?
-12 | ihn | Mutter liebt ____. - Anya szereti őt (f). (lieben)
+12 | ihn | Mutter liebt ____. - Anya szereti őt (f).
 \end{exmp}
 
 \title{Névmások/Személyes névmás/Személyes névmás részes esete}
@@ -1093,7 +1093,7 @@ Prepozíciók kizárólag részes esettel:
 11 | mit dem | ____ ____ Bus - a busszal
 12 | gegenüber der | ____ ____ Tür - az ajtóval szemben
 13 | von dem | ____ ____ Gast - a vendégtől
-14 | seit zwei | ____ zwei Stunden - két órája
+14 | seit | ____ zwei Stunden - két órája
 15 | bei der | ____ ____ Firma - a cégnél
 16 | von dem | ____ ____ Tisch - az asztalról
 17 | von dem | ____ ____ Schrank - a szekrényről
@@ -1417,7 +1417,7 @@ Pl.: * Ich weiß, dass er um 5 Uhr kommt. - Tudom, hogy 5 órakor jön.
 7 | wer sie ist | Ich weiß nicht, ____ ____ ____. - Nem tudom, ki ő (n).
 8 | wenn er klingelt | Wir hören, ____ ____ ____. - Halljuk, ha csönget (f). (klingeln)
 9 | wenn ich kann | Ich komme, ____ ____ ____. - Jövök, ha tudok.
-10 | ob er kommt | Ich möchte wissen, ____ ____ heute zu uns kommt. - Szeretném tudni, vajon ma eljön-e (f) hozzánk.
+10 | ob er kommt | Ich möchte wissen, ____ ____ heute zu uns ____. - Szeretném tudni, vajon ma eljön-e (f) hozzánk.
 11 | wie sie heißt | Weißt du nicht, ____ ____ ____? - Nem tudod, hogy hívják (n)?
 12 | dass wir haben | Ich glaube, ____ ____ noch Zeit ____. - Azt hiszem, hogy még van időnk.
 13 | weil er ist | Ich gebe ihm alles, ____ ____ mein Freund ____. - Mindent neki (f) adok, mert a barátom.
@@ -1763,7 +1763,7 @@ Pl: Tante Ancika weiß alles. - Ancika néni mindent tud.
 
 \title{Az ige ragozása jelen időben/Rendhagyó ragozású igék/A tun}
 
-GrammarItemIndex = 54327
+GrammarItemIndex = 543273
 
 \begin{desc}
 tun A, für + A = tesz, csinál vmit (vkiért/vmiért)
@@ -1776,27 +1776,29 @@ wir ------- tun
 ihr ------- tut
 sie/Sie---- tun
 
-Pl.: Meine Oma tut alles für uns. - A nagyim mindent megtesz értünk.
+Pl.: * Meine Oma tut alles für uns. - A nagyim mindent megtesz értünk
+* Er tut nichts. - Semmit se tesz.
+* Tust du das? - Megteszed azt?.
 \end{desc}
 
 %Maklári: 24. oldal
 \begin{exmp}
-1 | Er tut nichts. | Semmit se tesz (f).
-2 | Tust du das? | Megteszed azt?
-3 | Sie tut ihre Tochter hierher. | A lányát ide teszi (n). (hierher)
-4 | Ihr tut Salz in die Suppe. | Sót tesztek a levesbe.
-5 | Was tust du? | Mit teszel?
-6 | Er tut alles für uns. | Mindent megtesz (f) értünk.
-7 | Ich tue das Radio auf den Tisch. | A rádiót az asztalra teszem.
-8 | Was tust du hier? | Mit csinálsz itt?
-9 | Sie tut immer etwas Gutes. | Mindig valami jót tesz (n). (tun Gut)
-10 | Warum tut ihr es? | Miért teszitek ezt?
-11 | Béla tut immer Wunder. | Béla mindig csodát tesz.
-12 | Ida tut viel für ihn. | Ida sokat tesz érte (f). (für)
-13 | Du tust das Buch auf den Tisch. | A könyvet az asztalra teszed.
-14 | Ich tue für sie es. | Érte (n) teszem ezt.
-15 | Er tut das recht. | Azt helyesen teszi (f).
-16 | Was tust du damit? | Mit csinálsz ezzel? (damit)
+1 | tut | Er ____ nichts. - Semmit se tesz.
+2 | Tust | ____ du das? - Megteszed azt?
+3 | tut | Sie ____ ihre Tochter hierher. - A lányát ide teszi.
+4 | tut | Ihr ____ Salz in die Suppe. - Sót tesztek a levesbe.
+5 | tust | Was ____ du? - Mit teszel?
+6 | tut | Er ____ alles für uns. - Mindent megtesz értünk.
+7 | tue | Ich ____ das Radio auf den Tisch. - A rádiót az asztalra teszem.
+8 | tust | Was ____ du hier? - Mit csinálsz itt?
+9 | tut | Sie ____ immer etwas Gutes. - Mindig valami jót tesz.
+10 | tut | Warum ____ ihr es? - Miért teszitek ezt?
+11 | tut | Béla ____ immer Wunder. - Béla mindig csodát tesz.
+12 | tut | Ida ____ viel für ihn. - Ida sokat tesz érte.
+13 | tust | Du ____ das Buch auf den Tisch. - A könyvet az asztalra teszed.
+14 | tue | Ich ____ für sie es. - Érte teszem ezt.
+15 | tut | Er ____ das recht. - Azt helyesen teszi.
+16 | tust | Was ____ du damit? - Mit csinálsz ezzel?
 \end{exmp}
 
 \title{Szórend kijelentő mondatban/Szórend kijelentő mondatban alap esetben}
@@ -2120,7 +2122,11 @@ GrammarItemIndex = 423425
 Categories = 0
 
 \begin{desc}
-da(r) + prepozíció.
+Képzése: da(r) + prepozíció
+
+Pl.: * davon - attól
+* darunter - azalá
+* darüber - a fölé
 \end{desc}
 
 %Maklári: 114
@@ -2848,7 +2854,7 @@ Pl.: * Ich bin schon bei ihm gewesen. - Voltam már nála.
 2 | ist gewesen | Sie ____ müde gestern ____. - Fáradt volt tegnap.
 3 | ist gewesen | Er ____ nicht zu Hause ____. - Nem volt otthon.
 4 | seid gewesen | Ihr ____ klug ____. - Okosak voltatok.
-5 | sie gewesen | Ist ____ dort auch ____? - Ott volt ő is?
+5 | Ist gewesen | ____ sie dort auch ____? - Ott volt ő is?
 6 | bist gewesen | Warum ____ du nicht dort ____? - Miért nem voltál ott?
 7 | ist gewesen | Jürgen ____ nicht bei ihr ____. - Jürgen nem volt nála.
 8 | sind gewesen | Wo ____ Sie gestern ____? - Hol volt (Ön) tegnap?
@@ -2901,36 +2907,39 @@ Pl.: * Er hat einen Wagen gehabt. - Volt egy kocsija.
 \title{Idők/Perfekt - befelyezett jelen/Elváló igekötős igék perfektje}
 
 GrammarItemIndex = 274216
+Categories = 0
 
 \begin{desc}
 Elváló igekötős igéknél az igekötő és az ige közé tesszük a ge szócskát.
 
-Pl.: Jürgen ist gestern angekommen. - Jürgen tegnap érkezett meg.
+* ankommen ---- ist angekommen ---- megérkezett
+* aufstehen --- ist aufgestanden -- felket
+* einschlafen - ist eingeschlafen - elaludt
+* einkaufen --- hat eingekauft ---- bevásárolt
+* fernsehen --- hat ferngesehen --- tévézett
+* weggehen ---- ist weggegangen --- elment
 
-* ankommen -> ist angekommen = megérkezett
-* aufstehen -> ist aufgestanden = felket
-* einschlafen -> ist eingeschlafen = elaludt
-* einkaufen -> hat eingekauft = bevásárolt
-* fernsehen -> hat ferngesehen = tévézett
-* weggehen -> ist weggegangen = elment
+Pl.: * Jürgen ist gestern angekommen. - Jürgen tegnap érkezett meg.
+* Ich bin um 5 Uhr aufgestanden. - 5 órakor keltem fel.
+* Wann seid ihr aufgestanden? - Mikor keltetek fel?
 \end{desc}
 
 %Maklári: 233. oldal
 \begin{exmp}
-1 | Ich bin um 5 Uhr aufgestanden. | 5 órakor keltem fel.
-2 | Wann seid ihr aufgestanden? | Mikor keltetek fel?
-3 | Ich bin in der Schule eingeschlafen. | Elaludtam az iskolában.
-4 | Wir haben alles eingekauft. | Mindent bevásároltunk.
-5 | Er hat gestern viel ferngesehen. | Tegnap sokat tévézett (f).
-6 | Seid ihr schon aufgestanden? | Már felkeltetek?
-7 | Sind die Gäste schon weggegangen? | Elmentek már a vendégek?
-8 | Der Zug ist schon angekommen. | A vonat már megérkezett.
-9 | Wann sind sie auf den Bahnsteig angekommen? | Mikor érkeztek (ők) meg a peronra?
-10 | Wir haben immer ferngesehen. | Mindig tévéztünk.
-11 | Józsi ist schon in die Schule weggegangen. | Józsi már elment az iskolába.
-12 | Ich habe alles mit meinem Bruder eingekauft. | Mindent bevásároltam a testvéremmel (f).
-13 | Wo habt ihr auf das Wochenende eingekauft? | Hol vásároltatok be a hétvégére? (s Wochenende)
-14 | Ich bin schon vor 4 Uhr aufgestanden. | Már 4 óra előtt felkeltem.
+1 | bin, aufgestanden | Ich ____ um 5 Uhr ____. - 5 órakor keltem fel.
+2 | seid, aufgestanden | Wann ____ ihr ____? - Mikor keltetek fel?
+3 | bin, eingeschlafen | Ich ____ in der Schule ____. - Elaludtam az iskolában.
+4 | haben, eingekauft | Wir ____ alles ____. - Mindent bevásároltunk.
+5 | hat, ferngesehen | Er ____ gestern viel ____. - Tegnap sokat tévézett.
+6 | Seid, aufgestanden | ____ ihr schon ____? - Már felkeltetek?
+7 | Sind, weggegangen | ____ die Gäste schon ____? - Elmentek már a vendégek?
+8 | ist, angekommen | Der Zug ____ schon ____. - A vonat már megérkezett.
+9 | sind, angekommen | Wann ____ sie auf den Bahnsteig ____? - Mikor érkeztek meg a peronra?
+10 | haben, ferngesehen | Wir ____ immer ____. - Mindig tévéztünk.
+11 | ist, weggegangen | Józsi ____ schon in die Schule ____. - Józsi már elment az iskolába.
+12 | habe, eingekauft | Ich ____ alles mit meinem Bruder ____. - Mindent bevásároltam a testvéremmel.
+13 | habt, eingekauft | Wo ____ ihr auf das Wochenende ____? - Hol vásároltatok be a hétvégére?
+14 | bin, aufgestanden | Ich ____ schon vor 4 Uhr ____. - Már 4 óra előtt felkeltem.
 \end{exmp}
 
 \title{Idők/Perfekt - befelyezett jelen/Módbeli segédigék perfekte/Ha a módbeli segédige önmagában áll}
@@ -3473,12 +3482,12 @@ Categories = 0
 Képzése: alany + wurden + többi mondatrész + ige befelyezett alakja
 
 wurden ragozása:
-ich wurde
-du wurdest
-er/sie/es wurde
-wir wurden
-ihr wurdet
-sie/Sie wurden
+ich ------- wurde
+du -------- wurdest
+er/sie/es - wurde
+wir ------- wurden
+ihr ------- wurdet
+sie/Sie --- wurden
 
 Pl.: * Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 * Das Lied wurde von den Kindern gesungen. - A dalt gyerekek énekelték.
@@ -3499,7 +3508,7 @@ Pl.: * Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 9 | wurde, geklopft | Die Tür ____ ____. - Az ajtót kopogtatták. (klopfen)
 10 | wurde, gelesen | Mein Buch ____ von meiner Freundin ____. - A barátnőm olvasta a könyvemet.
 11 | wurde, gesehen | Die Uhr ____ nicht von der Mutter ____. - Az anya nem nézte meg az órát.
-12 | wurde, gedeckt | Der Tisch ____ nicht von Anna ____. - Anna nem terítette meg az asztalt.
+12 | wurde, gedeckt | Der Tisch ____ nicht von Anna ____. - Anna nem terítette meg az asztalt. (decken)
 13 | wurde, zerstört | Die Burg ____ durch den Wind ____. - A várat a szél lerombolta.
 14 | wurde, gemalt | Mein Zimmer ____ ____. - A szobámat kifestették.
 \end{exmp}
@@ -3687,7 +3696,7 @@ Pl.: Die Tür war geschlossen. - Az ajtó be volt zárva.
 3 | Der Teppich war geputzt. | A szőnyeg ki volt tisztítva. (r Teppich)
 4 | Das Vorhaben war besprochen. | A terv meg volt beszélve. (s Vorhaben, besprechen)
 5 | Das Bier war getrunken. | A sört megitták.
-6 | Der Tisch war gedeckt. | Az asztat megterítették.
+6 | Der Tisch war gedeckt. | Az asztat megterítették. (decken)
 7 | Zwei Zimmer waren bestellt. | Két szobát rendeltek. (bestellen)
 8 | Die Lektion war gemocht. | Megcsinálták a leckét. (e Lektion)
 9 | Das Radio war eingeschaltet. | A rádió be volt kapcsolva. (einschlaten)
@@ -4282,35 +4291,37 @@ GrammarItemIndex = 431225
 
 \title{Az általános alany/A Man}
 
-GrammarItemIndex = 5864
+GrammarItemIndex = 586423
+Categories = 0
 
 \begin{desc}
 Man után az állítmány csak E/3 személyben állhat.
 
 Pl.: * Man kann hier gut essen. - Itt jót lehet enni.
-* Man isst nicht viel in der Oper. - Az operában nem eszünk sokat. 
+* Man isst nicht viel in der Oper. - Az operában nem eszünk sokat.
+* Man spricht hier Englisch. - Itt beszélnek angolul.
 \end{desc}
 
 %Maklári: 116. oldal
 \begin{exmp}
-1 | Man spricht hier Englisch. | Itt beszélnek angolul.
-2 | Man raucht hier nicht. | Itt nem dohányoznak.
-3 | Man kann hier billig einkaufen. | Itt olcsón lehet bevásárolni.
-4 | Man darf in dem Restaurant singen. | Az étteremben szabad énekelni.
-5 | Man arbeitet in Deutschland viel. | Németországban sokat dolgoznak.
-6 | Man lebt in diesem Land gut. | Ebben az országban jól élnek.
-7 | Man steht bei uns um 8 Uhr auf. | Nálunk 8-kor kelnek.
-8 | Man darf hier nicht rauchen. | Itt nem szabad dohányozni.
-9 | Wie sagt Man es in Deutsch? | Hogy mondják ezt németül?
-10 | Man trinkt nicht vor Autofahren. | Autó vezetés előtt nem iszunk. (s Autofahren)
-11 | Man isst Schokolade nicht vor Mittagessen . | Nem eszünk csokit ebéd előtt.
-12 | Man spricht bei Essen nicht. | Étkezés közben nem beszélünk. (bei Essen)
-13 | Man darf hier nicht Fußball spielen. | Itt nem szabad focizni.
-14 | Man isst in Ungarn viel Fleisch. | Magyarországon sok húst esznek. (s Fleisch)
-15 | Man kann nicht ohne Wasser leben. | Víz nélkül nem lehet élni.
-16 | Man darf dorthin nicht treten. | Oda nem szabad lépni. (dorthin)
-17 | Was kann Man hier tun? | Mit lehet itt tenni?
-18 | Wie sagt Man es in Englisch? | Hogy mondják ezt angolul?
+1 | Man spricht | ____ ____ hier Englisch. - Itt beszélnek angolul.
+2 | Man raucht | ____ ____ hier nicht. - Itt nem dohányoznak.
+3 | Man kann | ____ ____ hier billig einkaufen. - Itt olcsón lehet bevásárolni.
+4 | Man darf | ____ ____ in dem Restaurant singen. - Az étteremben szabad énekelni.
+5 | Man arbeitet | ____ ____ in Deutschland viel. - Németországban sokat dolgoznak.
+6 | Man lebt | ____ ____ in diesem Land gut. - Ebben az országban jól élnek.
+7 | Man steht | ____ ____ bei uns um 8 Uhr auf. - Nálunk 8-kor kelnek.
+8 | Man darf | ____ ____ hier nicht rauchen. - Itt nem szabad dohányozni.
+9 | Man es | Wie sagt ____ ____ in Deutsch? - Hogy mondják ezt németül?
+10 | Man trinkt | ____ ____ nicht vor Autofahren. - Autó vezetés előtt nem iszunk.
+11 | Man isst | ____ ____ Schokolade nicht vor Mittagessen . - Nem eszünk csokit ebéd előtt.
+12 | Man spricht | ____ ____ bei Essen nicht. - Étkezés közben nem beszélünk.
+13 | Man darf | ____ ____ hier nicht Fußball spielen. - Itt nem szabad focizni.
+14 | Man isst | ____ ____ in Ungarn viel Fleisch. - Magyarországon sok húst esznek.
+15 | Man kann | ____ ____ nicht ohne Wasser leben. - Víz nélkül nem lehet élni.
+16 | Man darf | ____ ____ dorthin nicht treten. - Oda nem szabad lépni.
+17 | Was kann | ____ ____ Man hier tun? - Mit lehet itt tenni?
+18 | Wie sagt | ____ ____ Man es in Englisch? - Hogy mondják ezt angolul?
 \end{exmp}
 
 \title{A számok/Tőszámnevek/Tőszámnevek 30-ig}
@@ -4613,7 +4624,7 @@ Pl.: Das Heft gefällt dem Kind. - A füzet tetszik a gyereknek.
 6 | gefällt dem | Das Publikum ____ ____ Schauspieler. - A színésznek tetszik a közönség.
 7 | gefällt ihm | Meine Börse ____ ____. - Tetszik neki (f) a pénztárcám.
 8 | gefällt mir | Sie ____ ____ nicht. - Nekem nem tetszik ő.
-9 | gefalle ihr | Ich ____ ____ nicht. - Nem tetszem neki.
+9 | gefalle ihr | Ich ____ ____ nicht. - Nem tetszem neki (n).
 10 | gefalle deiner | Ich ____ ____ Schwiegermutter nicht. - Nem tetszem az anyósodnak.
 11 | gefällt mir | Die Schwiegermutter ____ ____ nicht. - Az anyós nem tetszik nekem.
 12 | gefällt den | Das Bild ____ ____ Gästen. - A kép tetszik a vendégeknek.
@@ -4679,12 +4690,12 @@ GrammarItemIndex = 861386
 Categories = 0
 
 \begin{desc}
-ich       | lasse
-du        | lässt
-er/sie/se | lässt
-wir       | lassen
-ihr       | lasst
-sie/Sie   | lassen
+ich ------- lasse
+du -------- lässt
+er/sie/se - lässt
+wir ------- lassen
+ihr ------- lasst
+sie/Sie --- lassen
 
 Pl.: Ivan lässt mich nie in Ruhe. - Iván sose hagy békén.
 \end{desc}
