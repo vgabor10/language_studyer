@@ -43,7 +43,7 @@ Categories = 0
 1 | den | ___ Vater - az apát
 2 | die | ___ Tische - az asztalokat
 3 | das | ___ Kind - a gyereket
-4 | den | ___ Kindern - a gyerekeknek
+4 | den Kindern | ___ ____ - a gyerekeknek
 5 | der | ___ Oma - a nagyinak
 6 | dem | ___ Großvater - a nagypapának
 7 | die | ___ Tische - az asztalok
@@ -52,11 +52,11 @@ Categories = 0
 10 | den | ___ Schrank - a szekrényt
 11 | den | ___ Tisch - az asztalt
 12 | der | ___ Mutter - az anyának
-13 | den | ___ Müttern - az anyáknak
+13 | den Müttern | ___ ____ - az anyáknak
 14 | dem | ___ Kind - a gyereknek
 15 | die | ___ Lampe - a lámpát
 16 | dem | ___ Vater - az apának
-17 | den | ___ Vätern - az apáknak
+17 | den Vätern | ___ ____ - az apáknak
 18 | das | ___ Haus - a házat
 19 | den | ___ Hof - az udvart
 \end{exmp}
@@ -2944,7 +2944,7 @@ Pl.: * Jürgen ist gestern angekommen. - Jürgen tegnap érkezett meg.
 14 | bin, aufgestanden | Ich ____ schon vor 4 Uhr ____. - Már 4 óra előtt felkeltem.
 \end{exmp}
 
-\title{Idők/Perfekt - befelyezett jelen/Módbeli segédigék perfekte/Ha a módbeli segédige önmagában áll}
+\title{Idők/Perfekt - befelyezett jelen/Módbeli segédigék perfekte/Módbeli segédige perfekte, ha önmagában áll}
 
 GrammarItemIndex = 412426
 Categories = 0
@@ -2979,9 +2979,10 @@ Pl.: * Ich habe das nicht gewollt. - Nem akartam azt.
 10 | habe, gemocht | Ich ____ die Hunde nicht ____. - Nem szerettem a kutyákat.
 \end{exmp}
 
-\title{Idők/Perfekt - befelyezett jelen/Módbeli segédigék perfekte/Ha a módbeli segédige igével áll}
+\title{Idők/Perfekt - befelyezett jelen/Módbeli segédigék perfekte/Módbeli segédigék perfekte, ha igével áll}
 
 GrammarItemIndex = 423526
+Categories = 0
 
 \begin{desc}
 Képzése:
@@ -2992,22 +2993,22 @@ Pl.: Ich habe mit ihm nicht spielen wollen. - Nem akartam vele játszani.
 
 %Maklári: 240.oldal
 \begin{exmp}
-1 | Er hat uns nicht sehen wollen. | Nem akart (f) látni bennünket.
-2 | Ich habe in dem Zimmer nicht rauchen dürfen. | A szobában nem volt szabad dohányoznom.
-3 | Habt ihr in das Schwimmbad gehen dürfen? | Szabad volt az uszodába mennetek?
-4 | Sie haben nicht spülen mögen. | Nem szerettek (ők) mosogatni.
-5 | Wann habt ihr nach Hause gehen müssen? | Mikor kellet haza mennetek?
-6 | Ich habe in der Stadt spazieren mögen. | Szerettem sétálni a városban.
-7 | Ich habe mit Puskás Fußball spielen wollen. | Focizni akartam Puskással.
-8 | Sie hat mit mir sprechen wollen. | Beszélni akart (n) velem.
-9 | Er hat seine Hausaufgabe schreiben müssen. | Meg kellett írnia (f) a házi feladatát.
-10 | Ich habe von dir etwas fragen wollen. | Akartam kérdezni tőled valamit.
-11 | Ich habe früh in das Bett gehen müssen. | Korán ágyba kellet mennem.
-12 | Wann hat er dich erwachen wollen? | Mikor akart (f) felébreszteni téged? (erwachen - felébreszt)
-13 | Wir haben ihr nicht helfen können. | Nem tudtunk neki (n) segíteni.
-14 | Der Krank hat schon nicht aufstehen dürfen. | A betegnek még nem szabadott felkelnie.
-15 | Ich habe nich gut antworten können. | Nem tudtam jól válaszolni.
-16 | Er hat seine Suppe essen müssen. | Meg kelett (f) ennie a levesét.
+1 | hat, sehen wollen | Er ____ uns nicht ____ ____. - Nem akart látni bennünket.
+2 | habe, rauchen dürfen | Ich ____ in dem Zimmer nicht ____ ____. - A szobában nem volt szabad dohányoznom.
+3 | Habt, gehen dürfen | ____ ihr in das Schwimmbad ____ ____? - Szabad volt az uszodába mennetek?
+4 | haben, spülen mögen | Sie ____ nicht ____ ____. - Nem szerettek mosogatni. (spülen)
+5 | habt, gehen müssen | Wann ____ ihr nach Hause ____ ____? - Mikor kellet haza mennetek?
+6 | habe, spazieren mögen | Ich ____ in der Stadt ____ ____. - Szerettem sétálni a városban.
+7 | habe, spielen wollen | Ich ____ mit Puskás Fußball ____ ____. - Focizni akartam Puskással.
+8 | hat, sprechen wollen | Sie ____ mit mir ____ ____. - Beszélni akart velem.
+9 | hat, schreiben müssen | Er ____ seine Hausaufgabe ____ ____. - Meg kellett írnia a házi feladatát.
+10 | habe, fragen wollen | Ich ____ von dir etwas ____ ____. - Akartam kérdezni tőled valamit.
+11 | habe, gehen müssen | Ich ____ früh in das Bett ____ ____. - Korán ágyba kellet mennem.
+12 | hat, erwachen wollen | Wann ____ er dich ____ ____? - Mikor akart felébreszteni téged? (erwachen)
+13 | haben, helfen können | Wir ____ ihr nicht ____ ____. - Nem tudtunk neki segíteni.
+14 | hat, aufstehen dürfen | Der Krank ____ schon nicht ____ ____. - A betegnek még nem szabadott felkelnie.
+15 | habe, antworten können | Ich ____ nich gut ____ ____. - Nem tudtam jól válaszolni.
+16 | hat, essen müssen | Er ____ seine Suppe ____ ____. - Meg kelett ennie a levesét.
 \end{exmp}
 
 \title{Idők/Perfekt - befelyezett jelen/Kettős infinitiv szerkezet perfektben}
@@ -4818,6 +4819,7 @@ Pl.: * Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót
 \title{Határozatlan névmások/A jeder/e/es}
 
 GrammarItemIndex = 583325
+Categories = 0
 
 \begin{desc}
 jeder/e/es = mindegyik, minden egyes
@@ -4838,18 +4840,18 @@ Pl.: * Jeder Mann ist anders - Minden férfi más.
 
 %Maklári: 179. oldal
 \begin{exmp}
-1 | Wir geben jeder Frau Blume. | Minden nőnek adunk virágot.
-2 | Jedes Auto gefällt ihm. | Minden autó tetszik neki (f).
-3 | Wir geben jedem Gast Tee. | Minden vendégnek adunk teát.
-4 | Jeder Schüler ist in der Schule. | Minden tanuló az iskolában van.
-5 | Sie hilft jedem Kind. | Minden gyereknek segít (n).
-6 | Ich decke jeden Tisch. | Minden asztalt megterítek.
-7 | Er hat in jedem Land eine Frau. | Minden országban van (f) egy felesége.
-8 | Es gibt in jeder Wohnung ein Badezimmer. | Minden lakásban van egy fürdőszoba. (es gibt, s Badezimmer)
-9 | Jedes Buch kostet fünf Euro. | Minden könyv öt euróba kerül. (kostet + A, r Euro)
-10 | Vater repariert morgen jeden Tisch. | Apa holnap minden aszalt megjavít.
-11 | Er spricht mit jedem Schüler in der Schule. | Minden tanulóval beszél (f) az iskolában.
-12 | Sie streichelt jeden Hund. | Minden kutyát megsimogat (n). (streicheln)
+1 | jeder | Wir geben ____ Frau Blume. - Minden nőnek adunk virágot.
+2 | Jedes | ____ Auto gefällt ihm. - Minden autó tetszik neki.
+3 | jedem | Wir geben ____ Gast Tee. - Minden vendégnek adunk teát.
+4 | Jeder | ____ Schüler ist in der Schule. - Minden tanuló az iskolában van.
+5 | jedem | Sie hilft ____ Kind. - Minden gyereknek segít.
+6 | jeden | Ich decke ____ Tisch. - Minden asztalt megterítek.
+7 | jedem | Er hat in ____ Land eine Frau. - Minden országban van egy felesége.
+8 | jeder | Es gibt in ____ Wohnung ein Badezimmer. - Minden lakásban van egy fürdőszoba.
+9 | Jedes | ____ Buch kostet fünf Euro. - Minden könyv öt euróba kerül.
+10 | jeden | Vater repariert morgen ____ Tisch. - Apa holnap minden aszalt megjavít.
+11 | jedem | Er spricht mit ____ Schüler in der Schule. - Minden tanulóval beszél az iskolában.
+12 | jeden | Sie streichelt ____ Hund. - Minden kutyát megsimogat.
 \end{exmp}
 
 \title{Határozatlan névmások/Alle és variánsai/Alle}

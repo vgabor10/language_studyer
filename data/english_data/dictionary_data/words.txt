@@ -2999,3 +2999,4 @@
 102998	bounce	ugrál ,visszapattan
 102999	classy	klassz, príma
 103000	fortunate	szerencsés
+103001	plebiscite	népszavazás
