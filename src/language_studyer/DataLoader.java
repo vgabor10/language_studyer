@@ -78,9 +78,9 @@ public class DataLoader {
             
             //studyStrategyIndex = Integer.parseInt(br.readLine());
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("unable to find the file: " + filePath);
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("unable to read the file: fileName");
         }   
     }
     
@@ -123,7 +123,7 @@ public class DataLoader {
                 dataContainer.getCategoryContainer().add(category);
             }
         } catch (FileNotFoundException e) {
-            System.err.println("unable to find file");
+            System.err.println("unable to find file: " + filePath);
         } catch (IOException e) {
             System.err.println("exception in load file function");
         }
