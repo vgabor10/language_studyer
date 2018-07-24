@@ -3010,3 +3010,4 @@
 103009	rear end	fenék
 103010	overtime	túlóra
 103011	prudent	óvatos, megfontolt, körültekintő
+103012	sulk	duzzog
