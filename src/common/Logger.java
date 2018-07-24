@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Logger {
 
-	private final String logFilePath = "/home/varga/git/language_studyer/log_files/log_file.txt";
+	private final String logFilePath = "../log_files/log_file.txt";
 
 	public final boolean isDebug;
 
