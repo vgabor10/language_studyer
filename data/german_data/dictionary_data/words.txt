@@ -468,7 +468,7 @@
 100470	e Börse	tőzsde
 100471	r Beobachter	mefigyelő
 100472	vornehmlich	főként, főleg
-100473	beenden	befelyez
+100473	beenden	befejez
 100474	r Handel	kereskedelem
 100475	s Öl	olaj
 100476	s Gold	arany
@@ -2572,7 +2572,7 @@
 102630	e Nation	nemzet
 102631	e Natur	természet
 102632	e Naturwissenschaft	természettudomány
-102633	enden	befelyez, végződik
+102633	enden	befejez, végződik
 102634	endlich	végül
 102635	endlos	végtelen
 102636	engagieren	alkalmaz, gyakorol
@@ -6209,3 +6209,6 @@
 106209	e Verachtung	lenézés, megvetés
 101214	kosten	kóstol
 106210	vorgestern	tegnapelőtt
+106211	erwirtschaften	fáradsággal megszerez
+106212	häufen	felhalmoz
+106213	davon	ebből, abból

@@ -791,7 +791,7 @@
 100798	custody	őrizet, felügyelet
 100799	handcuff	bilincs
 100800	immoral	erkölcstelen
-100801	wind up	befelyeződik, végetér
+100801	wind up	befejeződik, végetér
 100802	mount	beállít, felállít
 100803	depreciate	elértéktelenedik
 100804	obsolete	elavult
@@ -1088,7 +1088,7 @@
 101091	vet	állatorvos
 101092	mortal	halálos, végzetes
 101093	antagonize	ellenszegül, szembeszáll
-101094	presume	feltételez
+101094	presume	feltételez, mer
 101095	confide	bízik
 101096	exaggerate	túloz
 101097	commotion	felbolydulás, zűrzavar
@@ -3000,3 +3000,13 @@
 102999	classy	klassz, príma
 103000	fortunate	szerencsés
 103001	plebiscite	népszavazás
+103002	storey	szint, emelet
+103003	egregious	hallatlan, szörnyű
+103004	detrimental	sérelmes, káros
+103005	crumb	morzsa
+103006	candle	gyertya
+103007	wage	bér, fizetés
+103008	all along	mindvégig, kezdettől fogva
+103009	rear end	fenék
+103010	overtime	túlóra
+103011	prudent	óvatos, megfontolt, körültekintő
