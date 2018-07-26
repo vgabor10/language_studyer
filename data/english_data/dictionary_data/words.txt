@@ -3018,3 +3018,6 @@
 103017	awry	ferdén
 103018	hostile	ellenséges
 103019	procurement	beszerzés, megszerzés
+103020	deterioration	romlás, hanyatlás
+103021	erudite	művelt, nagy tudású
+103022	wrongdoing	bűn, gaztett
