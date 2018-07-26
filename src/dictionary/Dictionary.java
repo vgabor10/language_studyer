@@ -4,15 +4,24 @@ import language_studyer.DiscFilesMetaDataHandler;
 
 public class Dictionary {
     
-    public CardTester cardTester = new CardTester();
-    public CardFinder cardFinder = new CardFinder();
-    public DictionaryDataContainer dataContainer = new DictionaryDataContainer();
-    public DictionaryStatisticsMaker statisticsMaker = new DictionaryStatisticsMaker();
-    public DictionaryDataLoader dataLoader = new DictionaryDataLoader();
-    public DictionaryDataModificator dataModificator = new DictionaryDataModificator();
-    public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
+    public CardTester cardTester;
+    public CardFinder cardFinder;
+    public DictionaryDataContainer dataContainer;
+    public DictionaryStatisticsMaker statisticsMaker;
+    public DictionaryDataLoader dataLoader;
+    public DictionaryDataModificator dataModificator;
+    public DiscFilesMetaDataHandler discFilesMetaDataHandler;
     
-    public Dictionary() {
+    public void initialise(DiscFilesMetaDataHandler dfmdh) {
+        this.discFilesMetaDataHandler = dfmdh;
+        
+        this.cardTester = new CardTester();
+        this.cardFinder = new CardFinder();
+        this.dataContainer = new DictionaryDataContainer();
+        this.statisticsMaker = new DictionaryStatisticsMaker();
+        this.dataLoader = new DictionaryDataLoader();
+        this.dataModificator = new DictionaryDataModificator();
+        
         dataLoader.setLanguageFilesDataHandler(discFilesMetaDataHandler);
         dataLoader.setDictionaryDataContainer(dataContainer);
         dataLoader.loadAllData();

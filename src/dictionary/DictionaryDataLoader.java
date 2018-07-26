@@ -1,8 +1,6 @@
 package dictionary;
 
 import language_studyer.DataLoader;
-import language_studyer.StudyStrategy;
-import language_studyer.Category;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

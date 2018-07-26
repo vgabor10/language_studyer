@@ -2038,7 +2038,7 @@ Pl: Wann kommst du nach Hause?
 2 | Wer steht | ____ ____ hier? - Ki áll itt?
 3 | Wer sind | ____ ____ deine Eltern? - Kik a szüleid?
 4 | Wem gibst | ____ ____ du die Blume? - Kinek adod a virágot?
-5 | Was siehst | ____ ____ du dort? - Kit látsz ott?
+5 | Wer siehst | ____ ____ du dort? - Kit látsz ott?
 \end{exmp}
 
 \title{Kérdő mondatok/Prepozíciós kérdőszavak/Személyekre kérdezve}

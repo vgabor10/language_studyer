@@ -127,7 +127,9 @@ public class GrammarDataLoader extends DataLoader {
             AnswerDataContainer grammarAnswerDataContainer 
                     =  dataContainer.getAnswerDataContainer();
             
-            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
+            String filePath = discFilesMetaDataHandler
+                    .getStudiedLanguageGrammarAnswerDataPath();
+            
             String strLine;
             BufferedReader br = new BufferedReader(new FileReader(filePath));
             while ((strLine = br.readLine()) != null) {

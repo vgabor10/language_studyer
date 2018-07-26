@@ -15,11 +15,14 @@ import graphic_user_interface.dictionary.DictionaryStudyStrategyDialog;
 import graphic_user_interface.grammar_book.GrammarBookStatisticsDialog;
 import graphic_user_interface.grammar_book.GrammarStudyStrategyDialog;
 import java.awt.event.KeyEvent;
+import language_studyer.DiscFilesMetaDataHandler;
 
 public class MainFrame extends javax.swing.JFrame {
 
+    //TODO: take these to a LanguageStudyer class
     public Dictionary dictionary = new Dictionary();
     public GrammarBook grammarBook = new GrammarBook();
+    public DiscFilesMetaDataHandler discFilesMetaDataHandler = new DiscFilesMetaDataHandler();
     
     private Logger logger = new Logger();
     
@@ -27,6 +30,9 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
 
         setLocationRelativeTo(null);
+
+        dictionary.initialise(discFilesMetaDataHandler);
+        grammarBook.initialise(discFilesMetaDataHandler);
         
         practisingButton.setMnemonic(KeyEvent.VK_P);
         dictionaryStatisticsButton.setMnemonic(KeyEvent.VK_B);

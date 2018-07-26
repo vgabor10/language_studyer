@@ -122,9 +122,8 @@ public class LanguageChooserDialog extends javax.swing.JDialog {
         }
         
         dictionary.discFilesMetaDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
-        dictionary.dataLoader.loadAllData();
         
-        grammarBook.discFilesMetaDataHandler.setStudyedLanguageIndex(languageIndexToLoad);
+        dictionary.dataLoader.loadAllData();        
         grammarBook.dataLoader.loadAllData();
         
         dispose();

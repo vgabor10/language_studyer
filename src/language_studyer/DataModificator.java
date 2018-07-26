@@ -1,9 +1,12 @@
 package language_studyer;
 
+import common.Logger;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class DataModificator {
+    
+    protected final Logger logger = new Logger();
     
     protected DataContainer dataContainer;
     protected AnswerDataContainer answerDataContainer;

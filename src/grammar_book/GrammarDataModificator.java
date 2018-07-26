@@ -41,6 +41,8 @@ public class GrammarDataModificator extends DataModificator {
 
         String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
 
+        logger.debug("start to write grammar answer data to file " + filePath);
+        
         try {
             FileWriter fw = new FileWriter(filePath, false);	//the true will append the new data
             for (int i = 0; i < answerDataContainer.numberOfAnswers(); i++) {
