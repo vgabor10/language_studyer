@@ -3011,3 +3011,10 @@
 103010	overtime	túlóra
 103011	prudent	óvatos, megfontolt, körültekintő
 103012	sulk	duzzog
+103013	rage	tombol, dühöng
+103014	sinister	baljós, vészjósló
+103015	flank	oldal, szegély. szárny
+103016	unease	nyugtalanság, kényelmetlenség
+103017	awry	ferdén
+103018	hostile	ellenséges
+103019	procurement	beszerzés, megszerzés
