@@ -37,7 +37,7 @@ public class DataContainer {
         return this.studyStrategy;
     }
     
-    public void updateStudiedData() {   //TODO: make safer
+    public void updateStudiedData() {   //TODO: it can be forgotten to call, make safer
         studiedDataContainer.clear();
         
         for (int i=0; i<studyItemContainer.numberOfStudyItems(); i++) {

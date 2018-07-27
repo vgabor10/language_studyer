@@ -58,7 +58,9 @@ public class GrammarDataModificator extends DataModificator {
         try {
             answerDataContainer.appendAnswerDataContainer(gadc);
             
-            String filePath = discFilesMetaDataHandler.getStudiedLanguageGrammarAnswerDataPath();
+            String filePath = discFilesMetaDataHandler
+                    .getStudiedLanguageGrammarAnswerDataPath();
+            
             FileWriter fw = new FileWriter(filePath, true);	//the true will append the new data
             for (int i = 0; i < gadc.numberOfAnswers(); i++) {
                 fw.write(gadc.getAnswerData(i).toStringData() + "\n");	//appends the string to the file

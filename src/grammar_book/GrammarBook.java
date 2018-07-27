@@ -25,11 +25,12 @@ public class GrammarBook {
         dataLoader.setGrammarDataContainer(dataContainer);
         dataLoader.loadAllData();
         
-        grammartester.setData(dataContainer);
-        
+        dataModificator.setDiscFilesMetaDataHandler(discFilesMetaDataHandler);
         dataModificator.setData(dataContainer);
         
         statisticsMaker.setData(dataContainer);
+        
+        grammartester.setData(dataContainer);
     }
     
 }

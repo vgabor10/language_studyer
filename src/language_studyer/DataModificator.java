@@ -11,8 +11,7 @@ public class DataModificator {
     protected DataContainer dataContainer;
     protected AnswerDataContainer answerDataContainer;
 
-    protected DiscFilesMetaDataHandler discFilesMetaDataHandler
-            = new DiscFilesMetaDataHandler();
+    protected DiscFilesMetaDataHandler discFilesMetaDataHandler;
     
     public void setData(DataContainer dc) { //TODO: remove this method
         dataContainer = dc;

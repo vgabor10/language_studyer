@@ -31,8 +31,8 @@ public class Dictionary {
         
         statisticsMaker.setData(dataContainer);
         
-        cardFinder.setCardContainer(dataContainer.getCardContainer());
-        
         cardTester.setData(dataContainer);
+      
+        cardFinder.setCardContainer(dataContainer.getCardContainer());
     }
 }
