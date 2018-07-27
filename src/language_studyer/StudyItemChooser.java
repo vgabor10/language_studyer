@@ -29,8 +29,8 @@ public class StudyItemChooser {
         this.dataContainer = dataContainer;
         this.studyStrategy = dataContainer.getStudyStrategy();
         
-        cardIndexesFromChoose = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
-        answerDataByStudyItemsContainer = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+        cardIndexesFromChoose = dataContainer.studiedDataContainer.studiedCardIndexes;
+        answerDataByStudyItemsContainer = dataContainer.studiedDataContainer.studiedAnswerDataByStudyItemContainer;
     }
     
     private int getRandomStudyItemIndex(
@@ -251,7 +251,7 @@ public class StudyItemChooser {
     }*/
 
     public List<Integer> getStudyItemIndexes() {
-        dataContainer.fillAuxiliaryDataContainer();
+        dataContainer.updateStudiedData();
         
         List<Integer> cardsToTestIndexes = new ArrayList<>();
         Set<Integer> omittedCardIndexes = new HashSet<>();

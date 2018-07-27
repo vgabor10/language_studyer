@@ -6,8 +6,8 @@ public class DataContainer {
     private AnswerDataContainer answerDataContainer = new AnswerDataContainer();
     private CategoryContainer categoryContainer = new CategoryContainer();
     private StudyStrategy studyStrategy = new StudyStrategy();
-
-    public AuxiliaryDataContainer auxiliaryDataContainer = new AuxiliaryDataContainer();
+    
+    public StudiedDataContainer studiedDataContainer = new StudiedDataContainer();
     
     protected StudyItemContainer getStudyItemContainer() {
         return this.studyItemContainer;
@@ -37,22 +37,22 @@ public class DataContainer {
         return this.studyStrategy;
     }
     
-    public void fillAuxiliaryDataContainer() {
-        auxiliaryDataContainer.clear();
+    public void updateStudiedData() {   //TODO: make safer
+        studiedDataContainer.clear();
         
         for (int i=0; i<studyItemContainer.numberOfStudyItems(); i++) {
             StudyItem studyItem = studyItemContainer.getStudyItemByOrder(i);
             if (studyItem.containsAnyCategoryIndex(
                     studyStrategy.cardCategoryRestrictions)) {
-                auxiliaryDataContainer.studiedCardIndexes.add(studyItem.index);
+                studiedDataContainer.studiedCardIndexes.add(studyItem.index);
             }
         }
         
         for (int i=0; i<answerDataContainer.numberOfAnswers(); i++) {
             AnswerData answerData = answerDataContainer.getAnswerData(i);
-            if (auxiliaryDataContainer.studiedCardIndexes.contains(answerData.index)) {
-                auxiliaryDataContainer.studiedAnswerDataContainer.addAnswerData(answerData);
-                auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer.addAnswerData(answerData);
+            if (studiedDataContainer.studiedCardIndexes.contains(answerData.index)) {
+                studiedDataContainer.studiedAnswerDataContainer.addAnswerData(answerData);
+                studiedDataContainer.studiedAnswerDataByStudyItemContainer.addAnswerData(answerData);
             }
         }        
     }
@@ -62,6 +62,6 @@ public class DataContainer {
         answerDataContainer.clear();
         categoryContainer.clear();
         studyStrategy.clear();
-        auxiliaryDataContainer.clear();
+        studiedDataContainer.clear();
     }
 }

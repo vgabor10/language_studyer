@@ -27,13 +27,13 @@ public class AnswerDataStatisticsMaker {
         this.dataContainer = dc;
                 
         this.studiedAnswerDataByStudyItemsContainer 
-                = dc.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+                = dc.studiedDataContainer.studiedAnswerDataByStudyItemContainer;
         
         this.studiedAnswerDataContainer 
                 = dataContainer.getAnswerDataContainer();
         
         this.studiedStudyItemIndexes
-                = dataContainer.auxiliaryDataContainer.studiedCardIndexes;
+                = dataContainer.studiedDataContainer.studiedCardIndexes;
     }
     
     public AnswerDataContainer getAnswerDataContainer() {

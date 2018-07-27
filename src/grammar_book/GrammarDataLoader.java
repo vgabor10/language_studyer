@@ -174,6 +174,7 @@ public class GrammarDataLoader extends DataLoader {
         loadAnswerData();
         loadCategoryIndexesAndCategoryNames();
         loadStudyStrategyDataFromDisc();
+        dataContainer.updateStudiedData();
     }
 
 }

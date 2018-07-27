@@ -124,6 +124,6 @@ public class DictionaryDataLoader extends DataLoader {
         loadCategoryIndexesAndCategoryNames();
         loadStudyStrategyDataFromDisc();
         
-        dataContainer.fillAuxiliaryDataContainer();
+        dataContainer.updateStudiedData();
     }
 }

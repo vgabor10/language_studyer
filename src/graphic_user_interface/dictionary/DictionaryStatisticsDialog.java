@@ -458,7 +458,7 @@ public class DictionaryStatisticsDialog extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     public void initialise() {
-        dictionary.dataContainer.fillAuxiliaryDataContainer();
+        dictionary.dataContainer.updateStudiedData();
         DictionaryStatisticsMaker statisticsMaker = dictionary.statisticsMaker;
         
 	jLabel4.setText(Integer.toString(statisticsMaker.numberOfStudyItems()));

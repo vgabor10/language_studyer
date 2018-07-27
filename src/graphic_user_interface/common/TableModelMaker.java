@@ -151,7 +151,7 @@ public class TableModelMaker {
     public DefaultTableModel cardsOrderedByAnswerRate(DictionaryDataContainer dataContainer) {
 
         AnswerDataByStudyItemContainer answerDataByStudyItemContainer 
-                = dataContainer.auxiliaryDataContainer.studiedAnswerDataByStudyItemContainer;
+                = dataContainer.studiedDataContainer.studiedAnswerDataByStudyItemContainer;
                 
         AnswerDataByStudyItem[] sortedDatas = answerDataByStudyItemContainer.toArray();
         Arrays.sort(sortedDatas,

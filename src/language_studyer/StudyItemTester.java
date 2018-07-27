@@ -41,7 +41,7 @@ public class StudyItemTester {
     public void setData(DataContainer dataContainer) {
         this.allStudyItem = dataContainer.getStudyItemContainer();
         
-        dataContainer.fillAuxiliaryDataContainer();
+        dataContainer.updateStudiedData();
         this.studyItemChooser.setData(dataContainer);
     }
 
