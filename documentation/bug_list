@@ -1,16 +1,3 @@
 vocubilary practising -> inspect card -> change card -> exception
 
 In dictionary activating ListAllCard button by key combination does not work. It is because first it lists all card and set focus to text field and when the key is released the text fields function runs.
-
-SERIOUS bug at loading data
-start program
-set english language
-set german language
-practice german grammar
-german grammar answer data is saved into english language data
-
-SERIOUS bug at grammar statuistics dialog
-start program
-set english language
-set german language
-number of german grammar items is 0 at grammar statuistics dialog
