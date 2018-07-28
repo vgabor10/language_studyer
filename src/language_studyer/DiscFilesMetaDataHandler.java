@@ -11,6 +11,8 @@ import java.util.Set;
 
 public class DiscFilesMetaDataHandler {
 
+    //TODO: make different classes for grammar book and dictionary
+    
     public String settingsDataFilePath = "../data/settings_data/settings_data_file.txt";
 
     

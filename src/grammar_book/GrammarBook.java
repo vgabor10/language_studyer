@@ -11,7 +11,6 @@ public class GrammarBook {
     public GrammarDataModificator dataModificator;
     public DiscFilesMetaDataHandler discFilesMetaDataHandler;
 
-    
     public void initialise(DiscFilesMetaDataHandler dfmdh) {
         this.discFilesMetaDataHandler = dfmdh;
         
