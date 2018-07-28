@@ -53,9 +53,11 @@ public class AnswerDataByStudyItem {
             
             //System.out.println("LOG: answerDataClassName: " + answerDataClassName);
             
+            int actualAnswerWeight = -1;
+            
             if (answerDataClassName.equals("GrammarAnswerData")) {
                 int i = data.size() - 1;
-                int actualAnswerWeight = 50;
+                actualAnswerWeight = 50;
                 int allRightAnswerWeight = 0;
                 int allAnswerWeight = 0;
                 while (0 <= i && 1 <= actualAnswerWeight) {
@@ -72,7 +74,7 @@ public class AnswerDataByStudyItem {
             }
             else {
                 int i = data.size() - 1;
-                int actualAnswerWeight = 10;
+                actualAnswerWeight = 10;
                 int allRightAnswerWeight = 0;
                 int allAnswerWeight = 0;
                 while (0 <= i && 1 <= actualAnswerWeight) {
