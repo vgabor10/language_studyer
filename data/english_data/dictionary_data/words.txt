@@ -3026,3 +3026,8 @@
 103025	coin	új szót alkot
 103026	plant	üzem, gyártelep
 103027	code	törvénykönyv, szabályzat
+103028	notice	észrevesz, észlel
+103029	willful	akaratos, makacs, önfejű
+103030	cagey	gyanakvó, ravasz
+103031	shake	remeg, reszket
+103032	corrigible	javítható, helyrehozható

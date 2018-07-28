@@ -1,6 +1,7 @@
 \title{Személyes névmások ragozása}
 
 GrammarItemIndex = 165486
+Categories = 0
 
 \begin{desc}
         | alanyeset | tárgyeset | jelzői birtokos | önálló birtokos névmás
