@@ -1,18 +1,13 @@
 Modification ideas in src:
-- give log file path relatively
-- create average answer rates by days statistics
-- consider study vocabulary with sentencesy
 - fix bugs when there is still no data
-- store card categories data in different file
-- in gnuplot scripts the file path should be added be parameter
+- in gnuplot scripts the file path should be added by parameter
 - german grammar items to add: többesszámok
 - create card categroy tree
 - create CategoryFilterDialog with "select all cards" and "select complement" feature
-- make right CardTesterStatisticsDialog
 - consider to restrict stored number of answers for a card (at least 20 answer)
 - measure answer rate, only when enough number of answers are given (3 answers probably)
 - take AnswerDataByStudyItemsContainer in AnswerDataContainer 
-- at searching cards let "a" and "ä" be the same caracter
+- at searching cards when search "a", then list cards with term contains "a" or "ä" (but not reverse)
 
 Card category tree suggestions:
 - szófajok
