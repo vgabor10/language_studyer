@@ -6215,3 +6215,4 @@
 106214	besichtigen	megtekint, megszemlél
 106215	pünktlich	pontos
 106216	e Sauberkeit	tisztaság
+106217	florieren	virágzik

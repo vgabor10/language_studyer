@@ -3035,3 +3035,11 @@
 103034	obliquely	burkoltan
 103035	portend	előre jelez, megjövendöl
 103036	feasibility	kivitelezhetőség, megvalósíthatóság
+103037	consensual	megegyezésen alapuló
+103038	incineration	hamvasztás
+103039	hoard	készlet
+103040	fiend	démon
+103041	recover	felépül, kihever
+103042	pliers	fogó, csipesz
+103043	shrug	vállat von
+103044	bean	bab
