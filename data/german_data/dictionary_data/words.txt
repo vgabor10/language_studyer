@@ -6212,3 +6212,6 @@
 106211	erwirtschaften	fáradsággal megszerez
 106212	häufen	felhalmoz
 106213	davon	ebből, abból
+106214	besichtigen	megtekint, megszemlél
+106215	pünktlich	pontos
+106216	e Sauberkeit	tisztaság

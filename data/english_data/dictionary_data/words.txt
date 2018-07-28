@@ -3031,3 +3031,7 @@
 103030	cagey	gyanakvó, ravasz
 103031	shake	remeg, reszket
 103032	corrigible	javítható, helyrehozható
+103033	stiff	merev, feszes, kemény
+103034	obliquely	burkoltan
+103035	portend	előre jelez, megjövendöl
+103036	feasibility	kivitelezhetőség, megvalósíthatóság

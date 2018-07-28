@@ -2224,37 +2224,39 @@ A nicht szóval mondatrészt tagadunk.
 \title{Tagadás/A kein}
 
 GrammarItemIndex = 423837
+Categories = 0
 
 \begin{desc}
 A kein szóval főnevet tagadunk. Úgy ragozzuk, mint az ein határozatlan névelőt és a tagadott főnév elé írjuk.
 
 Pl.: * Er bekommt keinen Tisch. - Nem kap asztalt.
 * Wir haben keine Zeit - Nincs időnk.
+* Ich habe kein Geld. - Nincs pénzem.
 \end{desc}
 
 %Maklári: 131. oldal
 \begin{exmp}
-1 | Ich habe kein Geld. | Nincs pénzem.
-2 | Er hat keinen Vater. | Nincs apja (f).
-3 | Wir haben kein Brot. | Nincs kenyerünk.
-4 | Habt ihr kein Auto? | Nincs autótok?
-5 | Wir haben keine Bücher. | Nincsenek könyveink.
-6 | Hast du keinen Zucker? | Nincs cukrod? (r Zucker)
-7 | Wir haben keine Kinder. | Nincsenek gyerekeink.
-8 | Kaufst du kein Brot? | Nem vettél kenyeret?
-9 | Ich habe keine Idee. | Nincs ötletem.
-10 | Er ist kein Mörder. | Ő (f) nem gyiklos.
-11 | Ich habe keine Lust. | Nincs kedvem.
-12 | Hast du keine Hunde? | Nincsenek kutyáid?
-13 | Hast du keinen Garage? | Nincsen garázsod?
-14 | Er bekommt keinen Tisch. | Nem kap (f) asztalt. (bekommen)
-15 | Sie hat keine Zeit. | Nincs ideje (n).
-16 | Haben sie kein Fieber? | Nincs lázuk? (s Fieber)
-17 | Ich habe keinen Bruder. | Nincs fivérem.
-18 | Habt ihr keine Idee? | Nincs ötletetek?
-19 | Wir haben keine Idee. | Nincs ötletünk.
-20 | Hattet ihr keinen Apfel? | nincs almátok?
-21 | Wir haben keinen Apfel. | Nincs almánk.
+1 | kein | Ich habe ____ Geld. - Nincs pénzem.
+2 | keinen | Er hat ____ Vater. - Nincs apja.
+3 | kein | Wir haben ____ Brot. - Nincs kenyerünk.
+4 | kein | Habt ihr ____ Auto? - Nincs autótok?
+5 | keine | Wir haben ____ Bücher. - Nincsenek könyveink.
+6 | keinen | Hast du ____ Zucker? - Nincs cukrod?
+7 | keine | Wir haben ____ Kinder. - Nincsenek gyerekeink.
+8 | kein | Kaufst du ____ Brot? - Nem vettél kenyeret?
+9 | keine | Ich habe ____ Idee. - Nincs ötletem.
+10 | kein | Er ist ____ Mörder. - Ő nem gyiklos.
+11 | keine | Ich habe ____ Lust. - Nincs kedvem.
+12 | keine | Hast du ____ Hunde? - Nincsenek kutyáid?
+13 | keinen | Hast du ____ Garage? - Nincsen garázsod?
+14 | keinen | Er bekommt ____ Tisch. - Nem kap asztalt.
+15 | keine | Sie hat ____ Zeit. - Nincs ideje.
+16 | kein | Haben sie ____ Fieber? - Nincs lázuk?
+17 | keinen | Ich habe ____ Bruder. - Nincs fivérem.
+18 | keine | Habt ihr ____ Idee? - Nincs ötletetek?
+19 | keine | Wir haben ____ Idee. - Nincs ötletünk.
+20 | keinen | Hattet ihr ____ Apfel? - nincs almátok?
+21 | keinen | Wir haben ____ Apfel. - Nincs almánk.
 \end{exmp}
 
 \title{Tagadás/Nichts, niemand, nirgendwo, nirgendwohin, nie}
@@ -2319,7 +2321,7 @@ A magyarral ellentétben a németben nincs kettős tagadás.
 
 \title{Tagadás/Kéttagú tagadószavak}
 
-GrammarItemIndex = 5344
+GrammarItemIndex = 534426
 
 \begin{desc}
 * noch nicht = még nem
@@ -2373,7 +2375,7 @@ Pl: * Ich gehe noch nicht in die Schule. - Még nem megyek iskolába.
 
 \title{Visszaható igék/Visszaható névmás tárgyesete}
 
-GrammarItemIndex = 5453
+GrammarItemIndex = 545384
 
 \begin{desc}
 mich | magam 
@@ -2496,7 +2498,7 @@ sich | maguknak
 GrammarItemIndex = 532558
 
 \begin{desc}
-Vannak olyan ikerigék, melyeknek van sich-es és sich nélküli formája is, mely jelentésüket is módosítja.
+Vannak olyan ikerigék, melyeknek van sich-es és sich nélküli formája is, amely jelentésüket is módosítja.
 \end{desc}
 
 \begin{exmp}
