@@ -6216,3 +6216,5 @@
 106215	pünktlich	pontos
 106216	e Sauberkeit	tisztaság
 106217	florieren	virágzik
+106218	loslegen	elkezd, belevág
+106219	e Geige	hegedű

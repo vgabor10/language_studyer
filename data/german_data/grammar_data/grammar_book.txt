@@ -747,7 +747,7 @@ Példák: * Ich will heute in das Kino gehen. - Ma moziba akarok menni.
 14 | Mögt, spielen | ____ ihr Korbball ____? - Szerettek kosárlabdázni?
 15 | soll, sind | Er ____ nett ____. - Kedvesnek kell lennie.
 16 | Mögt, essen | ____ ihr Eis ____? - Szerettek fagyit enni?
-17 | muss, lernen | Ich ____ ____. - Tanulnom kell.
+17 | muss, lernen | Ich ____ jetzt ____. - Most tanulnom kell.
 18 | muss, einkaufen | Sie ____ ____. - Be kell vásárolnia.
 19 | Wollt, trinken | ____ ihr ____? - Akartok inni?
 20 | mag, spielen | Sie ____ Schach ____. - Szeret sakkozni.
