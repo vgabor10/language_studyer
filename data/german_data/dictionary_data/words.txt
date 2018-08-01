@@ -764,7 +764,7 @@
 100771	hingegen	viszont
 100772	schwächen	gyengít
 100773	maßgeblich	meghatározó
-100774	verantwortlich (mn)	felelős
+100774	verantwortlich	felelős (mn)
 100775	bombardieren	bombáz
 100776	zusätzlich	további
 100777	e Verteilung	elosztás

@@ -1851,7 +1851,7 @@
 101851	causality	okozati viszony
 101852	malaise	gyengélkedés
 101853	gauge	mér, felmér
-101854	plague	gyötör
+101854	plague	gyötör, bosszant
 101855	doldrums	pangás, szélcsend
 101856	inflammatory	gyújtó, gyulladást okozó
 101857	roar	zúgás, üvöltés, morajlás
@@ -3044,3 +3044,7 @@
 103043	shrug	vállat von
 103044	bean	bab
 103045	pending	függőben levő, el nem döntött
+103046	plague	pestis
+103047	corollary	következmény
+103048	port	kikötő
+103049	booze	szeszes ital
