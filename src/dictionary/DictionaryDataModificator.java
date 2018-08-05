@@ -133,7 +133,7 @@ public class DictionaryDataModificator extends DataModificator {
 
     public void writeDictionaryStudyStrategyDataToDisc() {
         String filePath 
-                = discFilesMetaDataHandler.getStudiedLanguageGrammarStudyStrategyPath();
+                = discFilesMetaDataHandler.getStudiedLanguageDictionaryStudyStrategyPath();
         
         writeStudyStrategyDataToDisc(filePath);
     }
