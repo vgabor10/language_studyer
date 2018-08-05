@@ -681,7 +681,7 @@
 100687	aufholen	utolér
 100688	erfahren	megtud
 100689	abfangen	elkap
-100690	r Versuch	próbálkozás
+100690	r Versuch	próbálkozás, kísérlet
 100691	erzwingen	kikényszerít
 100692	r Zoo	állatkert
 100693	e Wehr	fegyver
