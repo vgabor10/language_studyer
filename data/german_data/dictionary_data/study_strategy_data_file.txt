@@ -1,7 +1,7 @@
-numberOfRandomCards: 6
-numberOfCardsFromTheLeastKnown20Percent: 8
+numberOfRandomCards: 2
+numberOfCardsFromTheLeastKnown20Percent: 4
 numberOfCardsFromTheLeastKnown100: 0
 numberOfCardsWithLeastSignificantAr: 2
-numberOfLatestQuestionedCards: 4
+numberOfLatestQuestionedCards: 2
 studyingGradually: false
 cardCategoryRestrictions: 16
