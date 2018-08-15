@@ -2779,7 +2779,7 @@
 102778	conciliatory	békülékeny
 102779	comprehensive	átfogó, széleskörű
 102780	woolly	gyapjas, ködös
-102781	rile	idegesít, bosszant
+102781	rile	heccel, bosszant
 102782	doubt	kételkedik
 102783	frictionless	súrlódásmentes
 102784	vantage	előny, fölény
@@ -3048,3 +3048,8 @@
 103047	corollary	következmény
 103048	port	kikötő
 103049	booze	szeszes ital
+103050	ripe	érik, érlel
+103051	hog	disznó, sertés
+103052	shed	fészer, pajta, csűr
+103053	lately	nemrég, mostanában
+103054	thorn	tüske
