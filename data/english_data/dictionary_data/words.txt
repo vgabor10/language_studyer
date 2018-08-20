@@ -3053,3 +3053,7 @@
 103052	shed	fészer, pajta, csűr
 103053	lately	nemrég, mostanában
 103054	thorn	tüske
+103055	alley	sikátor, köz
+103056	exhilaration	jókedv, vidámság
+103057	encase	befoglal, tokba zár
+103058	shoddy	vacak, hitvány
