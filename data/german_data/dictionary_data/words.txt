@@ -6219,3 +6219,6 @@
 106218	loslegen	elkezd, belevág
 106219	e Geige	hegedű
 106220	intakt	ép, sértetlen
+106221	anschlagen	megüt
+106222	e Klippe	szirt
+106223	verlässlich	megbízható

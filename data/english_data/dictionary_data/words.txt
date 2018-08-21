@@ -2573,7 +2573,7 @@
 102573	reunification	újraegyesítés
 102574	outcry	felháborodás, felzúdulás
 102575	implacable	engesztelhetetlen
-102576	rapprochement	kiengesztelődés, kiengesztelődés
+102576	rapprochement	kiengesztelődés, normalizálás
 102577	detente	enyhülés
 102578	frosty	fagyos
 102579	willing	hajlandó
@@ -3057,3 +3057,13 @@
 103056	exhilaration	jókedv, vidámság
 103057	encase	befoglal, tokba zár
 103058	shoddy	vacak, hitvány
+103059	thought	gondolat
+103060	moose	jávorszarvas
+103061	majestic	méltóságteljes, fenséges
+103062	take for granted	természetesnek vesz
+103063	haunt	tartózkodási hely
+103064	all but	majdnem, csaknem
+103065	earnestly	komolyan
+103066	apprehension	nyugtalanság, aggódás
+103067	tetchy	kötekedő, ingerlékeny
+103068	mingle	kever, vegyül
