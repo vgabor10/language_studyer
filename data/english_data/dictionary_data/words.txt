@@ -3067,3 +3067,8 @@
 103066	apprehension	nyugtalanság, aggódás
 103067	tetchy	kötekedő, ingerlékeny
 103068	mingle	kever, vegyül
+103069	revelation	leleplezés, felfedezés
+103070	evasion	kitérés, kikerülés
+103071	heinous	kegyetlen, szörnyű
+103072	fairly	meglehetősen, eléggé
+103073	goods	áru
