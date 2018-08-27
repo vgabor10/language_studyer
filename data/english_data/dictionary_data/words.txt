@@ -2048,7 +2048,7 @@
 102049	crosshair	célkereszt
 102050	redeem	jóvátesz, helyrehoz
 102051	bulk	tömeg, nagy mennyiség
-102052	obituary	gyász
+102052	obituary	gyász, gyászjelentés
 102053	indict	vádol, eljárást indít
 102054	swap	cserél
 102055	power outlet	konnektor
@@ -3072,3 +3072,9 @@
 103071	heinous	kegyetlen, szörnyű
 103072	fairly	meglehetősen, eléggé
 103073	goods	áru
+103074	deadline	határidő
+103075	bond	kötvény
+103076	inclination	hajlam, hajlandóság
+103077	cartilage	porc
+103078	centre	központ
+103079	weary	untat, kifáraszt

@@ -6222,3 +6222,8 @@
 106221	anschlagen	megüt
 106222	e Klippe	szirt
 106223	verlässlich	megbízható
+106224	bereinigen	rendez, tisztáz
+106225	lossagen	szakít, vkivel, vmivel
+106226	rätseln	töri a fejét
+106227	e Abmahnung	figyelmeztetés
+106228	s Komplott	összeesküvés
