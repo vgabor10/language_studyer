@@ -96,7 +96,7 @@
 100097	so far	eddig, idáig
 100098	asset	vagyon, birtok
 100099	bold	bátor
-100100	incorporate	keveredik
+100100	incorporate	keveredik, magába foglal
 100101	overlap	átfedés
 100102	constitute	alkot
 100103	unlike	ellentétben
@@ -1269,7 +1269,7 @@
 101272	wheel	kerék
 101273	pump	pumpál
 101274	lure	csábítás, vonzerő
-101275	substantial	jelentős, megalapozott
+101275	substantial	jelentős, megalapozott, alapos
 101276	rein	megfékez, féken tart
 101277	glitch	hiba
 101278	dividend	osztalék, jutalék
@@ -3078,3 +3078,10 @@
 103077	cartilage	porc
 103078	centre	központ
 103079	weary	untat, kifáraszt
+103080	pollute	szennyez
+103081	jettison	megszabadul vmitől
+103082	labor union	szakszervezet
+103083	permissible	megengedhető
+103084	retaliatory	megtorló
+103085	strain	feszül
+103086	squabble	civakodik, veszekszik
