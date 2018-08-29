@@ -291,7 +291,7 @@ Sie             | Ihnen
 15 | ihr | Ich schenke ____ eine Bluse. - Ajándékozok neki (n) egy blúzt. (e Bluse)
 16 | euch | Wir geben ____ Geld. - Adunk pénzt nektek.
 17 | Ihnen | Wir gratulieren ____. - Gratulálunk Önöknek.
-18 | mir | Sie gibt ____ eine Uhr. - Ad (n) nekem egy órát.
+18 | mir | Sie gibt ____ eine Uhr. - Ad nekem egy órát.
 19 | uns | Er gibt ____ das Buch. - Nekünk adja (f) a könyvet.
 20 | mir | Öffnest du ____ die Tür? - Kinyitod nekem az ajtót?
 21 | dir | Ich erzähle ____ die Geschichte. - Elmesélem neked a történetet.
@@ -1606,12 +1606,19 @@ Categories = 0
 essen - eszik
 nehmen - vesz
 
-ich         | nehme  | esse 
-du          | nimmst | isst 
-er, sie, es | nimmt  | isst 
-wir         | nehmen | essen 
-ihr         | nehmt  | esst 
-sie, Sie    | nehmen | essen 
+ich nehme
+du nimmst
+er/sie/es nimmt
+wir nehmen
+ihr nehmt
+sie/Sie nehmen
+
+ich esse 
+du isst 
+er/sie/es isst 
+wir essen 
+ihr esst 
+sie/Sie essen 
 \end{desc}
 
 %Maklári: 15. oldal
@@ -1695,12 +1702,12 @@ Categories = 0
 A werden ige azt fejezi ki, hogy valaki vagy valami válik, lesz valamivé.
 
 werden ragozása:
-ich ------- werde -- leszek 
-du -------- wirst -- leszel
-er/sie/es - wird --- lesz
-wir ------- werden - leszünk
-ihr ------- werdet - lesztek
-sie/Sie --- werden - lesznek
+ich werde
+du wirst
+er/sie/es wird
+wir werden
+ihr werdet
+sie/Sie werden
 
 Pl.: * Ich werde Millionär. - Milliomos leszek.
 * Ich werde alt. - Öreg leszek.

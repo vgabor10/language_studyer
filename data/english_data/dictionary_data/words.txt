@@ -393,7 +393,7 @@
 100396	fabric	szerkezet
 100397	underpin	alátámaszt
 100398	devise	kigondol
-100399	manifestation	megnyilvánulás
+100399	manifestation	megnyilvánulás, kinyilvánítás
 100400	allegedly	állítólag
 100401	discern	észrevesz, észlel, érzékel
 100402	overthrow	megbuktat, megdönt
@@ -3085,3 +3085,16 @@
 103084	retaliatory	megtorló
 103085	strain	feszül
 103086	squabble	civakodik, veszekszik
+103087	crow	kiabál, sikongat
+103088	short of	vmin kívül
+103089	procession	felvonulás, menet
+103090	wage war	hadat visel
+103091	farther	messzebb
+103092	yield	ad, enged, beismer
+103093	yield	jövedelmez
+103094	bedrock	alapkő
+103095	pare	meghámoz, farag, megnyír
+103096	blunt	tompít, enyhít
+103097	repel	kivéd, elhárít, visszaver
+103098	prey	préda, áldozat, zsákmány
+103099	get used to	hozzászokik vmihez
