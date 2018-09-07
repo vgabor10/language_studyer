@@ -806,20 +806,36 @@ Pl.: * Ich möchte heute ins Theater gehen. - Szeretnék ma színházba menni.
 \title{Módbeli segédigék/A módbeli segédigék másodlagos jelentése/A valószínűség fokozatai}
 
 GrammarItemIndex = 543358
+Categories = 0
 
 \begin{desc}
 müssen -> egész bitzos, kétségtelen
 dürfen -> valószínűleg
 können -> lehet, lehetséges
 mögen -> talán
+
+Pl.: * Er muss zu hause sein. - Egész biztos, hogy otthon van.
+* Er darf zu Hause sein. - Valószínűleg otthon van.
+* Er kann zu Hause sein. - Lehet, hogy otthon van.
+* Er mag zu Hause sein. - Talán otthon van.
 \end{desc}
 
 %Maklári: 126. oldal
 \begin{exmp}
-1 | Er muss zu hause sein. | Egész biztos, hogy otthon van.
-2 | Er darf zu Hause sein. | Valószínűleg otthon van.
-3 | Er kann zu Hause sein. | Lehet, hogy otthon van.
-4 | Er mag zu Hause sein. | Talán otthon van.
+1 | muss sein | Er ____ zu hause ____. - Egész biztos, hogy otthon van.
+2 | darf sein | Er ____ zu Hause ____. - Valószínűleg otthon van.
+3 | kann sein | Er ____ zu Hause ____. - Lehet, hogy otthon van.
+4 | mag sein | Er ____ zu Hause ____. - Talán otthon van.
+5 | muss sein | Er ____ jetzt bei Ági ____. | Ő biztosan Áginál van.
+6 | darf sein | Meine Freundin ____ zu Hause ____. - A barátnőm valószínűleg otthon van.
+7 | kann sein | Das ____ ____, ich weiB es nicht. - Lehetséges, hogy ezt nem tudom.
+8 | darf sein | Mein Hund ____ irgendwo in der Náhe ____. - A kutyám valószínűleg valahol a közelben van.
+9 | mag sein | Das ____ Peters Bleistift ____. - Ez talán Peter ceruzája.
+10 | mag sein | Es ____ Peters uhr ____. - Ez talán Péter órája. 
+11 | darf sein | Anna ____ schon über 70 ____. - Anna valószíűleg 70 felett van.
+12 | darf interessieren | Das ____ ihn ____. - Ez valószínűleg érdekli őt.
+13 | darf stimmen | Ist sie wirklich 16? Ja, das ____ ____. - Ő tényleg 16? Igen, ez valószínűleg stimmel. (stimmen)
+14 | kann sein | Er ____ ihr Vater ____, denn sie sieht ihm sehr ähnlich aus. - Ő az apja lehet, mert nagyon hasonlóan néz ki.
 \end{exmp}
 
 \title{Módbeli segédigék/A módbeli segédigék másodlagos jelentése/Állítólagosság}
@@ -2166,6 +2182,39 @@ Pl.: * davon - attól
 24 | darauf | arra (vízszintes)
 \end{exmp}
 
+\title{Kérdő mondatok/Kérdőszavak/Wem és wessen}
+
+GrammarItemIndex = 886344
+Categories = 0
+
+\begin{desc}
+wem = kinek a részére
+wessen = kinek a vmije/vkije
+
+Pl.: * Wem kaufst du Blume? - Kinek vásárolsz virágot?
+* Wessen Auto steht da? - Kinek az autója áll ott?
+\end{desc}
+
+%Maklári: 109
+\begin{exmp}
+1 | Wem | ____ kaufst du Blume? - Kinek vásárolsz virágot?
+2 | Wessen | ____ Blume stehst hier? - Kinek  a virága áll itt?
+3 | Wessen | ____ Buch liest sie? - Kinek  a könyvét olvassa?
+4 | Wessen | ____ Schrank ist groß? - Kinek a sekrénye nagy?
+5 | Wessen | ____ Hausaufgabe schreibst du? - Kinek a házifeladatát írod?
+6 | Wem | ____ gebt ihr die Hausaufgabe? - Kinek adjátok a házifeladatot?
+7 | Wem | ____ gehört diesem Bett? - Kié ez az ágy? 
+8 | Wem | ____ gehört diesem Radio? - Kié ez rádió? 
+9 | Wem | ____ helft ihr? - Kiken segítetek?
+10 | Wessen | ____ Tisch ist es? - Kinek az asztala ez? 
+11 | Wessen | ____ Sohn kommt jetzt? - Kinek a fia jön most?
+12 | Wem | ____ gebt ihr das Kuli? - Kinek adjátok a tollat?
+13 | Wessen | ____ Kuli ist es? - Kinek a tolla ez?
+14 | Wem | ____ gefällt Ildikó? - Kinek tetszik Ildikó?
+15 | Wem | ____ gehört dem Wagen? - Kié a kocsi?
+16 | Wessen | ____ Haus steht dort? - Kinek a háza áll ott?
+\end{exmp}
+
 \title{Tagadás/Nein}
 
 GrammarItemIndex = 5253
@@ -3491,7 +3540,8 @@ GrammarItemIndex = 423216
 Categories = 0
 
 \begin{desc}
-Képzése: alany + wurden + többi mondatrész + ige befelyezett alakja
+Képzése:
+alany + wurden + többi mondatrész + ige befelyezett alakja
 
 wurden ragozása:
 ich ------- wurde
@@ -4148,6 +4198,7 @@ Jelentése: nem csak - hanem ... is.
 \title{Melléknév ragozás/Erős, avagy névelőpótló ragozás}
 
 GrammarItemIndex = 432425
+Categories = 0
 
 \begin{desc}
 Ha nem tartozik névelő a főnévhez, akkor a melléknév tartalmaz minden információt a főnévről (neme, száma esete).
@@ -4167,56 +4218,56 @@ G | guten Weines | warmer Milch | frischen Brotes | guter Bücher
 
 %Maklári: 190. oldal
 \begin{exmp}
-1 | guter Mann | jó ember
-2 | kleines Auto | kicsi autó
-3 | gute Fahrt | jó utazást (e Fahrt)
-4 | schönes Bild | szép kép
-5 | dicke Frau | kövér nő (dick)
-6 | magerer Hund | sovány kutya
-7 | altes Haus | öreg ház
-8 | feine Suppe | finom leves (fein)
-9 | teueres Kleid | drága ruha
-10 | billige Hose | olcsó nadrágot
-11 | rote Rosen | vörös rózsák (e Rose-n)
-12 | blauer Stuhl | kék szék
-13 | faule Kinder | lusta gyerekek (faul)
-14 | dummer Politiker | buta politikus (dumm)
-15 | schneller Wagen | gyors kocsi
-16 | neue Zeitung | új újság
-17 | laute Musik | hangos zene
-18 | großen Tisch | nagy asztalt
-19 | kleinen Kindern | kicsi gyerekeknek
-20 | schwarzem Hund | fekete kutyának
-21 | zwei schöne Abende | két szép estét
-22 | fünf lichte Hosen | öt világos nadrágot (licht)
-23 | viele gute Kleider | sok jó ruha
-24 | einige kleine Kuli | néhány kis tollat
-25 | drei interessante Tage | három érdekes napot
-26 | zwei dicke Katzen | két kövér macskát (dick)
-27 | wenige grünen Hasen | kevés zöld nyulat (r Hase)
-28 | einige gute Zimmer | néhány jó szoba
-29 | viele langweilige Abende | sok unalmas estét
-30 | viele Männer | sok ember
-31 | einige Bücher | néhány könyv
-32 | großen Erfolg | nagy sikert
-33 | lauten Hunden | hangos kutyáknak
-34 | mehreren Kindern | több gyereknek
-35 | liebe Kati | kedves Kati
-36 | neues Jahr | új év
-37 | guten Appetit | jó étvágyat (r Appetit)
-38 | gute Idee | jó ötlet
-39 | guten Abend | jó estét
-40 | lieber István | kedves István
-41 | gute Nacht | jó éjszakát
-42 | viele dicke Frau | sok kövér nő
-43 | einige dicke Männer | néhány kövér férfi 
-44 | lautem, kleinem, nervösem Hund | hangos, kicsi, ideges kutyának (nervös)
-45 | billige, gute Ware | olcsó, jó áruk
-46 | die Seiten guter Bücher | jó könyvek oldalali
-47 | die Fenster hoher, großer Häuser | magas, nagy házak ablakai
-48 | schnellen, mageren Hunden | gyors, sovány kutyáknak
-49 | viele interessante Geschichten | sok érdekes történet
-50 | niedrige Kinder hoher Eltern | magas szülők alacsony gyermekei
+1 | guter | ____ Mann - jó ember
+2 | kleines | ____ Auto - kicsi autó
+3 | gute | ____ Fahrt - jó utazást
+4 | schönes | ____ Bild - szép kép
+5 | dicke | ____ Frau - kövér nő (dick)
+6 | magerer | ____ Hund - sovány kutya
+7 | altes | ____ Haus - öreg ház
+8 | feine | ____ Suppe - finom leves (fein)
+9 | teueres | ____ Kleid - drága ruha
+10 | billige | ____ Hose - olcsó nadrágot
+11 | rote | ____ Rosen - vörös rózsák
+12 | blauer | ____ Stuhl - kék szék
+13 | faule | ____ Kinder - lusta gyerekek (faul)
+14 | dummer | ____ Politiker - buta politikus (dumm)
+15 | schneller | ____ Wagen - gyors kocsi
+16 | neue | ____ Zeitung - új újság
+17 | laute | ____ Musik - hangos zene
+18 | großen | ____ Tisch - nagy asztalt
+19 | kleinen | ____ Kindern - kicsi gyerekeknek
+20 | schwarzem | ____ Hund - fekete kutyának
+21 | schöne | zwei ____ Abende - két szép estét
+22 | lichte | fünf ____ Hosen - öt világos nadrágot (licht)
+23 | gute | viele ____ Kleider | sok jó ruha
+24 | einige kleine | ____ ____ Kuli - néhány kis tollat
+25 | interessante | drei ____ Tage - három érdekes napot
+26 | dicke | zwei ____ Katzen - két kövér macskát (dick)
+27 | wenige grünen | ____ ____ Hasen - kevés zöld nyulat
+28 | einige gute | ____ ____ Zimmer - néhány jó szoba
+29 | viele langweilige | ____ ____ Abende - sok unalmas estét
+30 | viele | ____ Männer - sok ember
+31 | einige | ____ Bücher - néhány könyv
+32 | großen | ____ Erfolg - nagy sikert
+33 | lauten | ____ Hunden - hangos kutyáknak
+34 | mehreren | ____ Kindern - több gyereknek
+35 | liebe | ____ Kati - kedves Kati
+36 | neues | ____ Jahr - új év
+37 | guten | ____ Appetit - jó étvágyat
+38 | gute | ____ Idee - jó ötlet
+39 | guten | ____ Abend - jó estét
+40 | lieber | ____ István - kedves István
+41 | gute | ____ Nacht - jó éjszakát
+42 | viele dicke | ____ ____ Frau - sok kövér nő
+43 | einige dicke | ____ ____ Männer - néhány kövér férfi 
+44 | lautem kleinem nervösem | ____, ____, ____ Hund - hangos, kicsi, ideges kutyának (nervös)
+45 | billige gute | ____, ____ Ware - olcsó, jó áruk
+46 | guter | die Seiten ____ Bücher - jó könyvek oldalali
+47 | hoher großer | die Fenster ____, ____ Häuser - magas, nagy házak ablakai
+48 | schnellen mageren | ____, ____ Hunden - gyors, sovány kutyáknak
+49 | viele interessante | ____ ____ Geschichten - sok érdekes történet
+50 | niedrige hoher | ____ Kinder ____ Eltern - magas szülők alacsony gyermekei
 \end{exmp}
 
 \title{Melléknév ragozás/Gyenge, avagy határozott névelős ragozás}
@@ -4543,6 +4594,7 @@ Pl.: Ich habe jetzt keine Zeit fernzusehen. - Nincs időm tévét nézni.
 \title{A zu + infinitiv szerkezet/Scheinen zu + Infinitiv}
 
 GrammarItemIndex = 537695
+Categories = 0
 
 \begin{desc}
 scheinen zu + Infinitiv = úgy tűnik, hogy
@@ -4552,26 +4604,26 @@ Pl.: Der Professor scheint dafür keine Lösung zu finden. - Úgy tűnik, hogy a
 
 %Maklári: 312. oldal
 \begin{exmp}
-1 | Dein Freund scheint heute auch nicht zu kommen. | Úgy tűnik, hogy ma sem jön a barátod.
-2 | Ági scheint Kinder zu erwarten. | Úgy tűnik, hogy Ági gyereket vár. (Kinder erwarten)
-3 | Er scheint von der Schlange sich nicht zu fürchten. | Úgy tűnik, hogy nem fél (f) a kígyótól. (e Schlange, sich fürchten)
-4 | Deine Freundin scheint viel zu essen. | Úgy tűnik, hogy sokat eszik a barátnőd.
-5 | Medizin scheint darauf nicht zu sein. | Úgy tűnik, hogy nincs orvosság rá. (s Medizin, darauf)
-6 | Er scheint keine Freunde zu haben. | Úgy tűnik, hogy nincsenek barátai (f). (kein)
-7 | Klára scheint sich gut nicht zu fühlen. | Úgy tűnik, hogy Klára nem érzi jól magát. (sich fühlen)
-8 | Béla scheint die Orange zu lieben. | Úgy tűnik, hogy Béla szereti a narancsot. (lieben)
-9 | Sie scheint die Banane nicht zu lieben. | Úgy tűnik, hogy nem szereti (n) a banánt. (lieben)
-10 | Dein Freund scheint zu viel zu sprechen. | Úgy tűnik, hogy a barátod túl sokat beszél. (zu viel)
-11 | Dein Zimmer scheint an den Bildern kleiner zu sein. | A képeken kisebbnek tűnt a szobád.
-12 | Seine Worten scheinen kindisch zu sein. | Gyerekesnek tűntek a szavai (f). (kindlich)
-13 | Sie scheint klug an dem Wettkampf nicht zu sein. | Nem tűnt (n) okosnak a versenyen. (an, r Wettkampf)
-14 | Die Gäste scheinen Nachmittag schläfrig zu sein. | Ébéd után álmosnak tűntek a vendégek. (schläfrig)
-15 | Dein Freund scheint traurig zu sein. | A barátod szomorúnak tűnik.
-16 | Deine Freundin scheint betrunken zu sein. | A barátnőd részegnek tűnik. (betrunken sein)
-17 | Seine Freundin scheint nett zu sein. | Kedvesnek tűnik a barátnője. (nett)
-18 | Die Aufgabe scheint schwer zu sein. | Nehéznek tűnik a feladat.
-19 | Dieser Fisch scheint frisch zu sein. | Ez a hal frissnek tűnik. (r Fisch)
-20 | Dieses Fleisch scheint verdorben zu sein. | Ez a hús romlottnak tűnik. (s Fleisch)
+1 | scheint zu kommen | Dein Freund ____ heute auch nicht ____ ____. - Úgy tűnik, hogy ma sem jön a barátod.
+2 | scheint zu erwarten | Ági ____ Kinder ____ ____. - Úgy tűnik, hogy Ági gyereket vár. (erwarten)
+3 | scheint zu fürchten | Er ____ von der Schlange sich nicht ____ ____. - Úgy tűnik, hogy nem fél a kígyótól. (sich fürchten)
+4 | scheint zu essen | Deine Freundin ____ viel ____ ____. - Úgy tűnik, hogy sokat eszik a barátnőd.
+5 | scheint zu sein | Medizin ____ darauf nicht ____ ____. - Úgy tűnik, hogy nincs orvosság rá.
+6 | scheint zu sein | Er ____ keine Freunde ____ ____. - Úgy tűnik, hogy nincsenek barátai.
+7 | scheint zu fühlen | Klára ____ sich gut nicht ____ ____. - Úgy tűnik, hogy Klára nem érzi jól magát. (fühlen)
+8 | scheint zu lieben | Béla ____ die Orange ____ ____. - Úgy tűnik, hogy Béla szereti a narancsot. (lieben)
+9 | scheint zu lieben | Sie ____ die Banane nicht ____ ____. - Úgy tűnik, hogy nem szereti a banánt. (lieben)
+10 | scheint zu sprechen | Dein Freund ____ zu viel ____ ____. - Úgy tűnik, hogy a barátod túl sokat beszél.
+11 | scheint zu sein | Dein Zimmer ____ an den Bildern kleiner ____ ____. - A képeken kisebbnek tűnt a szobád.
+12 | scheinen zu sein | Seine Worten ____ kindisch ____ ____. - Gyerekesnek tűntek a szavai.
+13 | scheint zu sein | Sie ____ klug an dem Wettkampf nicht ____ ____. - Nem tűnt okosnak a versenyen.
+14 | scheinen zu sein | Die Gäste ____ Nachmittag schläfrig ____ ____. - Ébéd után álmosnak tűntek a vendégek.
+15 | scheint zu sein | Dein Freund ____ traurig ____ ____. - A barátod szomorúnak tűnik.
+16 | scheint zu sein | Deine Freundin ____ betrunken ____ ____. - A barátnőd részegnek tűnik.
+17 | scheint zu sein | Seine Freundin ____ nett ____ ____. - Kedvesnek tűnik a barátnője.
+18 | scheint zu sein | Die Aufgabe ____ schwer ____ ____. - Nehéznek tűnik a feladat.
+19 | scheint zu sein | Dieser Fisch ____ frisch ____ ____. - Ez a hal frissnek tűnik.
+20 | scheint zu sein | Dieses Fleisch ____ verdorben ____ ____. - Ez a hús romlottnak tűnik.
 \end{exmp}
 
 \title{A zu + infinitiv szerkezet/Az ohne dass és az ohne zu + Infinitiv szerkezetek}

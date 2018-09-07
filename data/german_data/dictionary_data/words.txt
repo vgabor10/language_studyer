@@ -698,7 +698,7 @@
 100704	verlegen	áttesz, elhalaszt
 100705	abschrecken	elilyeszt
 100706	teilnehmen	résztvesz
-100707	r Verbündete	szövetséges (fn)
+100707	r Verbündete	szövetséges
 100708	e Entsendung	elküldés
 100709	e Entschlossenheit	elszántáság
 100710	s Engagement	kötelezettség
@@ -6227,3 +6227,7 @@
 106226	rätseln	töri a fejét
 106227	e Abmahnung	figyelmeztetés
 106228	s Komplott	összeesküvés
+106229	r Fisch	hal
+106230	forcieren	erőltet
+106231	bezichtigen	vádol, megvádol
+106232	r Frust	frusztráció

@@ -3098,3 +3098,18 @@
 103097	repel	kivéd, elhárít, visszaver
 103098	prey	préda, áldozat, zsákmány
 103099	get used to	hozzászokik vmihez
+103100	cycle	kör, ciklus
+103101	trace	másol
+103102	trace	nyomon követ
+103103	peace	béke, nyugalom
+103104	shamble	csoszog
+103105	artefact	műemlék, lelet
+103106	palace	palota
+103107	refurbish	felújít, renovál
+103108	fund	tőke, forrás
+103109	pharmacy	gyógyszertár
+103110	pharmaceutical	gyógyszerészeti
+103111	gaze	bámul
+103112	indebtedness	eladósodás
+103113	complacency	elégedettség
+103114	insolvent	fizetésképtelen
