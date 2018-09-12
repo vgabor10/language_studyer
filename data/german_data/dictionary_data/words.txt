@@ -6231,3 +6231,5 @@
 106230	forcieren	erőltet
 106231	bezichtigen	vádol, megvádol
 106232	r Frust	frusztráció
+106233	erpressen	zsarol, megzsarol
+106234	absprechen	kétségbe von

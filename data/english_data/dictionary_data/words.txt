@@ -3113,3 +3113,17 @@
 103112	indebtedness	eladósodás
 103113	complacency	elégedettség
 103114	insolvent	fizetésképtelen
+103115	fracture	törik, roncsol
+103116	unsavoury	kellemetlen
+103117	trounce	legyőz, megver
+103118	aghast	megijeszt, megrémít
+103119	convention	konvenció, megállapodás
+103120	wobbly	ingatag, ingadozó
+103121	misfortune	balszerencse
+103122	complacent	öntelt, önelégült
+103123	point of view	szemszög, nézőpont
+103124	take part	részt vesz
+103125	displace	kiszorít
+103126	pretence	látszat, színlelés
+103127	reassert	űjra megerősít
+103128	although	habár
