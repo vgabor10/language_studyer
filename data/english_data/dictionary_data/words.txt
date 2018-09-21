@@ -3127,3 +3127,13 @@
 103126	pretence	látszat, színlelés
 103127	reassert	űjra megerősít
 103128	although	habár
+103129	transgression	bűn, vétek
+103130	parliament	parlament
+103131	beleaguer	ostromol, körülvesz
+103132	unassailable	vitathatatlan
+103133	subtle	finom, kényes
+103134	exempt	felment, mentesít
+103135	resident	lakos
+103136	arraignment	vádirat, vád alá helyezés
+103137	peel	hámoz
+103138	stab	döf. szúr

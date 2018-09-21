@@ -6233,3 +6233,8 @@
 106232	r Frust	frusztráció
 106233	erpressen	zsarol, megzsarol
 106234	absprechen	kétségbe von
+106235	r Ehrgeiz	törekvés, nyagyravágyás
+106236	woanders	máshol
+106237	e Vorfahrt	elsőbbség
+106238	r Kiefer	állkapocs
+106239	versehentlich	tévesen, tévedésből
