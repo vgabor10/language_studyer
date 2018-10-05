@@ -1648,7 +1648,7 @@
 101649	proponent	támofató
 101650	elobrate	kidolgoz, kifejt
 101651	regard	tekint, tart, néz
-101652	mesdeed	gaztett, bűn
+101652	misdeed	gaztett, bűn
 101653	evict	kilakoltat, kikerget
 101654	promptly	hamar, azonnal
 101655	aversion	idegenkedés, irtózás
@@ -1778,7 +1778,7 @@
 101778	bid	ajánl, ígér, licitál
 101779	exquisite	rendkívüli, remek, kitűnő
 101780	impeccable	kifogástalan, feddhetetlen
-101781	fibb	füllet
+101781	fib	füllent
 101782	chum	haver, cimbora
 101783	confectionery	cukrászda
 101784	snap up	elkapkod, fekap
@@ -3137,3 +3137,13 @@
 103136	arraignment	vádirat, vád alá helyezés
 103137	peel	hámoz
 103138	stab	döf. szúr
+103139	complaint	vád
+103140	pursuant to sg	vmi szerint, vminek értelmében
+103141	sane	épelméjű, józan
+103142	dissect	elemez, boncol
+103143	suggestion	javaslat
+103144	admissible	elfogadható
+103145	concurrently	egyidejűleg
+103146	evasive	kitérő, kerülő
+103147	loathing	megvetés, utálat
+103148	umpire	bíró, játékvezető
