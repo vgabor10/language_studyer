@@ -6238,3 +6238,10 @@
 106237	e Vorfahrt	elsőbbség
 106238	r Kiefer	állkapocs
 106239	versehentlich	tévesen, tévedésből
+106240	e Glaubwürdigkeit	hitelesség, szavahihetőség
+106241	aufwärts	felfelé
+106242	wettmachen	behoz, kiegyenlít
+106243	r Ökonom	közgazdász
+106244	e Voraussage	előrejelzés, jóslat
+106245	r Ausweg	kiút
+106246	e Wirksamkeit	hatékonyság

@@ -1082,7 +1082,7 @@
 101086	incline	hajlik
 100483	impediment	gát, akadály
 101087	tenure	hivatali idő, birtoklás
-101088	redemption	jóvátétel, helyrehozás
+101088	redemption	jóvátétel, helyrehozás, visszafizetés
 101089	for one's sake	vki kedvéért
 101090	vet	átvizsgál, ellenőriz
 101091	vet	állatorvos
@@ -2021,7 +2021,7 @@
 102022	sanctuary	menedék
 102023	crossword	keresztrejtvény
 102024	endanger	veszélyeztet, kockáztat
-102025	fray	dörzsöl, elkoptet
+102025	fray	dörzsöl, elkoptat
 102026	raucous	rekedt
 102027	navy	haditengerészet
 102028	muskrat	cickány
@@ -3147,3 +3147,13 @@
 103146	evasive	kitérő, kerülő
 103147	loathing	megvetés, utálat
 103148	umpire	bíró, játékvezető
+103149	hubbub	zaj, lárma
+103150	littoral	parti, tengerparti
+103151	teem	hemzseg, nyüzsög
+103152	prowl	portyázik, ólálkodik
+103153	resignation	lemondás, beletörődés
+103154	fright	ijedség, rémület
+103155	wise	bölcs
+103156	assort	kiválogat, szortíroz
+103157	assailant	támadó
+103158	chore	házimunka
