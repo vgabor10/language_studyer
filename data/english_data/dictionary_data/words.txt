@@ -3157,3 +3157,9 @@
 103156	assort	kiválogat, szortíroz
 103157	assailant	támadó
 103158	chore	házimunka
+103159	bred	szül, okoz
+103160	semblance	látszat
+103161	severity	szigor
+103162	disenchant	kiábrándul
+103163	Indigence	ínség, szegénység
+103164	mould	penész
