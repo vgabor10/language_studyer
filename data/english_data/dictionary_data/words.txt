@@ -3163,3 +3163,6 @@
 103162	disenchant	kiábrándul
 103163	Indigence	ínség, szegénység
 103164	mould	penész
+103165	sword	kard
+103166	relic	emlék, maradvány
+103167	argue	vitat, érvel

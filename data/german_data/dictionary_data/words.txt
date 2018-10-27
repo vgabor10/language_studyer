@@ -6245,3 +6245,6 @@
 106244	e Voraussage	előrejelzés, jóslat
 106245	r Ausweg	kiút
 106246	e Wirksamkeit	hatékonyság
+106247	e Bonität	fizetőképesség
+106248	e Herabstufung	leminősítés
+106249	r Ratschlag	tanács
