@@ -2341,7 +2341,7 @@
 102395	helfen	segít
 102396	hell	tiszta
 102397	herausgeben	kiad
-102398	herausfinden	rájön
+102398	herausfinden	rájön, felfedez
 102399	herausnehmen	kivesz
 102400	heraus	ki
 102401	herausstellen	kiemel vmit 
@@ -6248,3 +6248,14 @@
 106247	e Bonität	fizetőképesség
 106248	e Herabstufung	leminősítés
 106249	r Ratschlag	tanács
+106250	dreieinhalb	három és fél
+106251	neidisch	irigy
+106252	r Rundgang	körút
+106253	meutern	fellázad
+106254	schmachvoll	megalázó, szégyenteljes
+106255	e Silbe	szótag
+106256	stocken	akadozik
+106257	e Reportage	reportage
+106258	nachschlagen	utánanéz, fellapoz
+106259	herein	határozószó
+106260	hin und wieder	néha, elvétve

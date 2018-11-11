@@ -4736,7 +4736,7 @@ Pl.: Peter gehört auch zur Gesellschaft. - Peter is a társasághoz tartozik.
 
 %Maklári: 33.oldal
 \begin{exmp}
-1 | Gehörst, zu uns | ____ du auch ____ ____? - Te is hozzánk tartozol?
+1 | Gehörst zu uns | ____ du auch ____ ____? - Te is hozzánk tartozol?
 2 | gehört zu dem | Diese Frage ____ nicht ____ ____ Thema. - Ez a kérdés nem tartozik a témához.
 3 | gehört zu meinem | Ivan ____ ____ ____ Feinden. - Ivan az ellenségeimhez tartozik.
 4 | gehört zu dieser | Wer ____ ____ ____ Gesellschaft? - Ki tartozik ehhez a társasághoz?
@@ -4745,7 +4745,7 @@ Pl.: Peter gehört auch zur Gesellschaft. - Peter is a társasághoz tartozik.
 7 | gehört, zu der | Es ____ nicht ____ ____ Sache. - Ez nem tartozik a tárgyhoz.
 8 | gehört zu | Deutschland ____ ____ Europa. - Németország Europához tartozik.
 9 | gehört zu den | Bill ____ ____ ____ Terroristen. - Bill a terroristákhoz tartozik.
-10 | gehöre, zu dieser | Ich ____ nicht ____ ____ Partei. - Nem tartozom ehhez a párthoz.
+10 | gehöre zu dieser | Ich ____ nicht ____ ____ Partei. - Nem tartozom ehhez a párthoz.
 \end{exmp}
 
 \title{A lassen ige/Önállóan, főigeként}

@@ -3166,3 +3166,14 @@
 103165	sword	kard
 103166	relic	emlék, maradvány
 103167	argue	vitat, érvel
+103168	pool	medence, tócsa, pocsolya
+103169	receipts	bevétel
+103170	dim	sötétít, elhomályosít
+103171	beacon	jelzőtűz, jelzőfény
+103172	rot	rothadás, rohadás
+103173	inheritable	örökölhető
+103174	man	ember, férfi
+103175	men	emberek
+103176	woman	nő
+103177	women	nők
+103178	herd	csorda
