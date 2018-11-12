@@ -970,7 +970,7 @@ zwischen + A - közé
 19 | neben die | ____ ____ Garage - a garázs mellé
 20 | zwischen das, und die | ____ ____ Zimmer ____ Küche - a szoba és a kunyha közé
 21 | zwischen die | ____ ____ Stühle - a székek közé
-22 | zwischen das, und die | ____ ____ Bett ____ Tür | az ágy és a székek közé
+22 | zwischen das, und die | ____ ____ Bett ____ Tür - az ágy és a székek közé
 23 | vor die | ____ ____ Küche - az konyha elé
 24 | an die | ____ ____ Wände - a falakra
 25 | in die | ____ ____ Betten - az ágyakba
@@ -1307,7 +1307,7 @@ A következő kötöszavak után van egyenes szórend (usoda):
 * sondern - hanem
 * oder - vagy
 * denn - mert
-* aber  de
+* aber - de
 
 Pl.: * Wir kaufen und ihr kocht. - Mi vásárolunk és ti főztök.
 * Ich bin nervös, denn mein Freund kommt nicht. - Ideges vagyok, mert nem jön a barátom.
@@ -1685,16 +1685,16 @@ Categories = 0
 \begin{desc}
 A haben igével birtoklást fejezünk ki, és amit birtoklunk, azt tárgyesetbe (Akkusativ) tesszük.
 
-Ragozása:
-ich       | habe
-du        | hast
-er/sie/es | hat
-wir       | haben
-ihr       | habt
-sie/Sie   | haben
+A haben ragozása:
+ich habe
+du hast
+er/sie/es hat
+wir haben
+ihr habt
+sie/Sie haben
 
 Pl: * Sie haben einen Garten. - Van egy kertjük.
-* Ihr habt Zeit immer.
+* Ihr habt Zeit immer. - Mindig van időtök.
 \end{desc}
 
 \begin{exmp}
@@ -2746,12 +2746,13 @@ Categories = 0
 \begin{desc}
 waren - volt
 
-ich       | war
-du        | warst
-er/sie/es | war
-wir       | waren
-ihr       | wart
-sie/Sie   | waren
+A waren ragozása:
+ich war
+du warst
+er/sie/es war
+wir waren
+ihr wart
+sie/Sie waren
 
 Pl.: Ich war schon in Österreich. - Voltam már ausztriában.
 \end{desc}
@@ -2896,12 +2897,12 @@ Categories = 0
 Képzése:
 alany + sein ragozott alakja + többi mondatrész + gewesen
 
-ich ------- bin gewesen -- voltam
-du -------- bist gewesen - voltál
-er/sie/es - ist gewesen -- volt
-wir ------- sind gewesen - voltatak
-ihr ------- seid gewesen - voltatok
-sie/Sie --- sind gewesen - voltak
+ich bin gewesen - voltam
+du bist gewesen - voltál
+er/sie/es ist gewesen - volt
+wir sind gewesen - voltatak
+ihr seid gewesen - voltatok
+sie/Sie sind gewesen - voltak
 
 Pl.: * Ich bin schon bei ihm gewesen. - Voltam már nála.
 * Sie ist müde gestern gewesen. - Fáradt volt tegnap.
@@ -3144,9 +3145,10 @@ Categories = 0
 \begin{desc}
 Ezt a jövő idős szerkezetet akkor használjuk, ha azt akarjuk kifejezni, hogy valami mindenképpen megtörténik a jövőben. Ez magyar fog + főnévi igenév szerkezetnek felel meg.
 
-Képzése: alany + werden ragozott alakja + többi mondatrész + ige főnévi igenév alakban
+Képzése:
+alany + werden ragozott alakja + többi mondatrész + ige főnévi igenév alakban
 
-werden ragozása:
+A werden ragozása:
 ich werde
 du wirst
 er/sie/es wird
@@ -3543,13 +3545,13 @@ Categories = 0
 Képzése:
 alany + wurden + többi mondatrész + ige befelyezett alakja
 
-wurden ragozása:
-ich ------- wurde
-du -------- wurdest
-er/sie/es - wurde
-wir ------- wurden
-ihr ------- wurdet
-sie/Sie --- wurden
+A wurden ragozása:
+ich wurde
+du wurdest
+er/sie/es wurde
+wir wurden
+ihr wurdet
+sie/Sie wurden
 
 Pl.: * Ein Haus wurde von Peter gebaut. - "Egy ház Peter által volt építve."
 * Das Lied wurde von den Kindern gesungen. - A dalt gyerekek énekelték.
@@ -5014,14 +5016,14 @@ GrammarItemIndex = 234596
 Categories = 0
 
 \begin{desc}
-irgendwer ---- valaki
-irgendwas ---- valami
-irgendwann --- valamikor
-irgendwoher -- valahonnan
-irgendwohin -- valahová
-irgendwie ---- valahogy
-irgendwo ----- valahol
-irgendeinmal - egyszer majd
+* irgendwer - valaki
+* irgendwas - valami
+* irgendwann - valamikor
+* irgendwoher - valahonnan
+* irgendwohin - valahová
+* irgendwie - valahogy
+* irgendwo - valahol
+* irgendeinmal - egyszer majd
 
 Pl.: * Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
 * Ich wolle dir irgendwas sagen. - Akarok neked valamit mondani.
@@ -5049,6 +5051,7 @@ Pl.: * Irgendwer wartet auf dich im Zimmer. - Valaki vár rád a szobában.
 \title{Melléknévi igenevek/Folyamatos melléknévi igenevek}
 
 GrammarItemIndex = 321596
+Categories = 0
 
 \begin{desc}
 1) Módhatározóként: főnévi igenév + d
@@ -5059,7 +5062,8 @@ Pl.: * stehend - állva
 2) Képzőként: főnévi igenév + d + melléknév végződés
 
 Pl.: * Das sprechende Frau da ist meine Frau. - A beszélő nő ott a feleségem.
-* die sitzende Frau - az ülő nő
+
+Pl.: * die sitzende Frau - az ülő nő
 * der stehende Mann - az álló férfi
 * mit dem sprechenden Kind - a beszélő gyerekkel
 \end{desc}
@@ -5080,26 +5084,27 @@ Pl.: * Das sprechende Frau da ist meine Frau. - A beszélő nő ott a feleségem
 12 | lernend | tanulva
 13 | arbeitend | dolgozva
 14 | stotternd | dadogva (stottern)
-15 | die sitzende Frau | az ülő nő
-16 | der stehende Mann | az álló férfi
-17 | mit dem sprechenden Kind | a beszélő gyerekkel
-18 | der schlafende Lehrer | az alvó tanár
-19 | die schriebende Mutter | az író anya
-20 | das lehrende Kind | a tanuló gyerek
-21 | der pfeifende Schüler | a fütyülő diák (pfeifen)
-22 | das trinkende Mädchen | az ivó lány
-23 | das essende Kind | az evő gyerek
-24 | der schwimmende Mann | az evő férfi
-25 | die schreiende Frau | a kiabáló nő
-26 | der sprechende Papagei | a beszélő papagáj (r Papagei)
+15 | sitzende | die ____ Frau - az ülő nő
+16 | stehende | der ____ Mann - az álló férfi
+17 | dem sprechenden | mit ____ ____ Kind - a beszélő gyerekkel
+18 | schlafende | der ____ Lehrer - az alvó tanár
+19 | schriebende | die ____ Mutter - az író anya
+20 | lehrende | das ____ Kind - a tanuló gyerek
+21 | pfeifende | der ____ Schüler - a fütyülő diák (pfeifen)
+22 | trinkende | das ____ Mädchen - az ivó lány
+23 | essende | das ____ Kind - az evő gyerek
+24 | schwimmende | der ____ Mann - az evő férfi
+25 | schreiende | die ____ Frau - a kiabáló nő
+26 | sprechende | der ____ Papagei - a beszélő papagáj
 \end{exmp}
 
 \title{Melléknévi igenevek/Befelyezett melléknévi igenevek}
 
 GrammarItemIndex = 126358
+Categories = 0
 
 \begin{desc}
-Jelzőként: Partizip Perfekt + melléknév végződés
+Képzése: Partizip Perfekt + melléknév végződés
 
 Pl.: * die geöffnete Tür - a kinyitott ajtó
 * das gekaufte Auto - a megvásárolt autó
@@ -5107,44 +5112,45 @@ Pl.: * die geöffnete Tür - a kinyitott ajtó
 
 %Maklári: 362. oldal
 \begin{exmp}
-1 | die geöffnete Tür | a kinyitott ajtó
-2 | das gekaufte Auto | a megvásárolt autó
-3 | die geschriebene Hausaufgabe | a megírt házifeladat
-4 | die gekochte Suppe | a megfőzött leves
-5 | der geprügelte Hund | a megvert kutya (prügeln)
-6 | der reparierte Wagen | a megszerelt kocsi (reparieren)
-7 | das restaurierte Haus | a restaurált ház (restaurieren)
-8 | das gelesene Buch | az elolvasott könyv
-9 | die getrunkene Milch | a megivott tej
-10 | der gedeckte Tisch | a megterített asztal
-11 | der eingeladene Gast | a meghívott vendég
+1 | geöffnete | die ____ Tür - a kinyitott ajtó
+2 | gekaufte | das ____ Auto - a megvásárolt autó
+3 | geschriebene | die ____ Hausaufgabe - a megírt házifeladat
+4 | gekochte | die ____ Suppe - a megfőzött leves
+5 | geprügelte | der ____ Hund - a megvert kutya (prügeln)
+6 | reparierte | der ____ Wagen - a megszerelt kocsi (reparieren)
+7 | restaurierte | das ____ Haus - a restaurált ház (restaurieren)
+8 | gelesene | das ____ Buch - az elolvasott könyv
+9 | getrunkene | die ____ Milch - a megivott tej
+10 | gedeckte | der ____ Tisch - a megterített asztal
+11 | eingeladene | der ____ Gast - a meghívott vendég (einladen)
 \end{exmp}
 
 \title{Melléknévi igenevek/Beálló melléknévi igenevek}
 
 GrammarItemIndex = 536756
+Categories = 0
 
 \begin{desc}
 Képzése: zu + főnévi igenév + d + melléknév végződés
 
 Pl.: * der zu reparierende Kühlschrank - a megjavítandó hűtőszekrény
-* ein zu lösendes Problem - a megoldandó probléme
+* ein zu lösendes Problem - a megoldandó probléma
 \end{desc}
 
 %Maklári: 366. oldal
 \begin{exmp}
-1 | ein zu reparierendes Radio | egy megjavítandó rádió
-2 | die zu lernende Wörter | a megtanulandó szavak
-3 | die zu lösende Aufgaben | a megoldandó feladatok
-4 | die zu anerkennende Leistung | az elismerendő teljesítmény (anerkennen, e Leistung)
-5 | die zu korrigierende Arbeiten | a kijavítandó munkák (korrigieren)
-6 | ein zu lesendes Buch | egy elolvasandó könyv
-7 | die zu waschende Kleider | a kimosandó ruhák
-8 | die zu lernende Materie | a megtanulandó anyag (e Materie)
-9 | ein zu wiedergutmachender Fehler | egy jóváteendő hiba (wiedergutmachen, r Fehler)
-10 | ein zu vermeidender Fehler | egy elkerülendő hiba (vermeiden, r Fehler)
-11 | das zu nutztende Wörterbuch | a használandó szótár (nutzen)
-12 | das zu schreibende Brief | a megírandó levél
+1 | zu reparierendes | ein ____ ____ Radio - egy megjavítandó rádió
+2 | zu lernende | die ____ ____ Wörter - a megtanulandó szavak
+3 | zu lösende | die ____ ____ Aufgaben - a megoldandó feladatok
+4 | zu anerkennende | die ____ ____ Leistung - az elismerendő teljesítmény (anerkennen)
+5 | zu korrigierende | die ____ ____ Arbeiten - a kijavítandó munkák (korrigieren)
+6 | zu lesendes | ein ____ ____ Buch - egy elolvasandó könyv
+7 | zu waschende | die ____ ____Kleider - a kimosandó ruhák
+8 | zu lernende | die ____ ____ Materie - a megtanulandó anyag (e Materie)
+9 | zu wiedergutmachender | ein ____ ____ Fehler - egy jóváteendő hiba (wiedergutmachen)
+10 | zu vermeidender | ein ____ ____ Fehler - egy elkerülendő hiba (vermeiden)
+11 | zu nutztende | das ____ ____ Wörterbuch - a használandó szótár (nutzen)
+12 | zu schreibende | das ____ ____ Brief - a megírandó levél
 \end{exmp}
 
 \title{Az idő/Az idő kérdőszavai}

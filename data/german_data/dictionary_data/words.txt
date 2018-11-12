@@ -851,7 +851,7 @@
 100862	r Vertreter	képviselő
 100863	r Zugang	bejárat, hozzáférés
 100864	r Arbeitsmarkt	munkaerőpiac
-100865	e Flucht	szökés
+100865	e Flucht	szökés, menekülés
 100866	e Vertreibung	elűzés
 100867	e Frist	határidő
 100868	zügig	gyors
@@ -6259,3 +6259,13 @@
 106258	nachschlagen	utánanéz, fellapoz
 106259	herein	határozószó
 106260	hin und wieder	néha, elvétve
+106261	e Entwarnung	riadó megszüntetése
+106262	r Brand	égés, tűzvész
+106263	e Luftfeuchtigkeit	páratartalom
+106264	e Forst	erdő
+106265	r Entzug	elvonás
+106266	e Verspätung	késés
+106267	beheben	elhárít, kiküszöböl
+106268	e Drosselung	fojtás, csökkentés
+106269	r Papagei	papagáj
+106270	e Quote	arány

@@ -3177,3 +3177,17 @@
 103176	woman	nő
 103177	women	nők
 103178	herd	csorda
+103179	respiratory	légző, légzési
+103180	franchise	választójog
+103181	tend	ápol, ellát, gondoz
+103182	sentry	őr
+103183	tear	könny
+103184	drop	csepp
+103185	sure	persze
+103186	reanimate	újraéleszt
+103187	take care of sy/sg	gondoskodik vkiről/vmiről
+103188	corporal	tizedes
+103189	barely	alig, éppen hogy
+103190	badly	súlyosan
+103191	bellicose	harcias
+103192	be prone to sg	hajlamos vmire
