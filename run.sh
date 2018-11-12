@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd Java
-java LanguageStudyer
+java LanguageStudyer &
 cd ..
