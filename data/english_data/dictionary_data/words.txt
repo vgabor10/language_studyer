@@ -3191,3 +3191,13 @@
 103190	badly	súlyosan
 103191	bellicose	harcias
 103192	be prone to sg	hajlamos vmire
+103193	convulse	rázkódik
+103194	debunk	leleplez
+103195	strand	partra vet, zátonyra fut
+103196	let alone	nem beszélve róla
+103197	scratch	karcol, karmol
+103198	rind	héj, kéreg
+103199	dislodge	eltávolít, kiűz
+103200	steel	acél
+103201	breeze	szél
+103202	eloquence	szónoklás

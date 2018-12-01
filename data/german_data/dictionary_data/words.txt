@@ -6269,3 +6269,6 @@
 106268	e Drosselung	fojtás, csökkentés
 106269	r Papagei	papagáj
 106270	e Quote	arány
+106271	e Belohnung	díj, jutalom, fizetés
+106272	wohlgemerkt	természetesen
+106273	einreden	meggyőz, rávesz

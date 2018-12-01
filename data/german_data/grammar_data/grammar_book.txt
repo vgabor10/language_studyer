@@ -89,6 +89,7 @@ többes szám  | der
 
 GrammarItemIndex = 1
 Categories = 0
+%törölni lehetne, helyette index 31 jó
 
 \begin{desc}
           | hímnem   | nőnem | semleges nem
@@ -119,11 +120,11 @@ GrammarItemIndex = 31
 Categories = 0
 
 \begin{desc}
-          | hímnem   | nőnem | semleges nem | többes szám
-Nominativ | ein      | eine  | ein          | keine
-Akkusativ | einen    | eine  | ein          | keine
-Dativ     | einem    | einer | einem        | keinen -n
-Genitiv   | eines -s | einer | eines -s     | keiner
+          | hímnem   | nőnem | semleges nem
+Nominativ | ein      | eine  | ein
+Akkusativ | einen    | eine  | ein
+Dativ     | einem    | einer | einem
+Genitiv   | eines -s | einer | eines -s
 \end{desc}
 
 %Maklári: 37. oldal
@@ -4756,12 +4757,15 @@ GrammarItemIndex = 861386
 Categories = 0
 
 \begin{desc}
-ich ------- lasse
-du -------- lässt
-er/sie/se - lässt
-wir ------- lassen
-ihr ------- lasst
-sie/Sie --- lassen
+lassen - hagy
+
+A lassen ragozása:
+ich lasse
+du lässt
+er/sie/se lässt
+wir lassen
+ihr lasst
+sie/Sie lassen
 
 Pl.: Ivan lässt mich nie in Ruhe. - Iván sose hagy békén.
 \end{desc}
@@ -4844,12 +4848,12 @@ A lassen ige vonzata eltér a magyartól, ugyanis tárgyesetbe tesszük
 azt, akivel csináltatunk valamit.
 
 lassen ragozása:
-ich ------- lasse
-du -------- lässt
-er/sie/es - lässt
-wir ------- lassen
-ihr ------- lasst
-sie/Sie --- lassen
+ich lasse
+du lässt
+er/sie/es lässt
+wir lassen
+ihr lasst
+sie/Sie lassen
 
 Pl.: * Ich lasse morgen das Radio reparieren. - Megjavíttatom holnap a rádiót.
 * Peter lässt seine Freundin das Auto waschen. - Peter a barátnőjével mosatja az autót.
