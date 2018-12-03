@@ -8,6 +8,7 @@ Modification ideas in src:
 - measure answer rate, only when enough number of answers are given (3 answers probably)
 - take AnswerDataByStudyItemsContainer in AnswerDataContainer 
 - at searching cards when search "a", then list cards with term contains "a" or "ä" (but not reverse)
+- create delete grammar item feature
 
 Card category tree suggestions:
 - szófajok
