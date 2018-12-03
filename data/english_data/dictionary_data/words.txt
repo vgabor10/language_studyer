@@ -3201,3 +3201,15 @@
 103200	steel	acél
 103201	breeze	szél
 103202	eloquence	szónoklás
+103203	relentless	hajthatatlan, irgalmatlan
+103204	bluster	kérkedés, nagyzolás
+103205	gobble	zabál, felfal
+103206	hold on	kitart
+103207	retrieve	visszaszerez, elhoz
+103208	rapporteur	előadó, referens
+103209	wager	fogadás
+103210	balloon	emelkedik, felfúj
+103211	cap	sapka
+103212	cumbrous	nehéz, terhes
+103213	cube root	köbgyök
+103214	contiguity	összefüggőség

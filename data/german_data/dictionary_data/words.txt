@@ -6272,3 +6272,4 @@
 106271	e Belohnung	díj, jutalom, fizetés
 106272	wohlgemerkt	természetesen
 106273	einreden	meggyőz, rávesz
+106274	e Verfassung	állapot
