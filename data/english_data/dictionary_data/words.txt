@@ -258,7 +258,7 @@
 100259	dismantle	lebont
 100260	praise	dícsér
 100261	shovel	lapát
-100262	idle	lusta
+100262	idle	tétlen, lusta
 100263	turnover	forgalom
 100264	marvel	csoda
 100265	canny	ravasz
@@ -550,7 +550,7 @@
 100556	amend	módosít, helyesbít
 100557	envious	irigy
 100558	swan	hattyú
-100559	deem	vminek gondol
+100559	deem	vél, vminek gondol
 100560	prosperous	virágzó, sikeres
 100561	fiance	vőlegény
 100562	verbatim	szó szerint
@@ -3213,3 +3213,24 @@
 103212	cumbrous	nehéz, terhes
 103213	cube root	köbgyök
 103214	contiguity	összefüggőség
+103215	nibble	rágcsál
+103216	bumper	lökhárító
+103217	plunderer	fosztogató
+103218	perculiar	kólönös
+103219	assent	hozzájárulás
+103220	indifference	közöny
+103221	imminence	közelség, küszöbön állás
+103222	vindicate	megvéd
+103223	intent	szándék
+103224	concise	tömör, velős
+103225	semicolon	pontosvessző
+103226	entry	belépés
+103227	entry	bejegyzés, feljegyzés
+103228	parentheses	zárójel
+103229	extensible	kiterjeszthető
+103230	queue	sor, sorbanállás
+103231	preclude	meggátol, megakadályoz
+103232	amenable	alkalmas
+103233	allude	utal, céloz
+103234	deduce	levezet, következtet
+103235	resilient	ellenálló, rugalmas
