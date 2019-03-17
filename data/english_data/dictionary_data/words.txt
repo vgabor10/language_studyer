@@ -3125,7 +3125,7 @@
 103124	take part	részt vesz
 103125	displace	kiszorít
 103126	pretence	látszat, színlelés
-103127	reassert	űjra megerősít
+103127	reassert	újra megerősít
 103128	although	habár
 103129	transgression	bűn, vétek
 103130	parliament	parlament
@@ -3234,3 +3234,31 @@
 103233	allude	utal, céloz
 103234	deduce	levezet, következtet
 103235	resilient	ellenálló, rugalmas
+103236	sublime	fenséges, nagyszerű
+103237	in general	általában, többnyire
+103238	subscript	index
+103239	vowel	magánhangzó
+103240	aesthetic	esztétikus
+103241	cleverness	okosság
+103242	embelish	díszít
+103243	revoke	visszavon
+103244	furtively	rejtve, titokban
+103245	ledner	kölcsönző
+103246	thrifty	takarékos
+103247	splash	loccsan, fröcsköl, spriccel
+103248	exposure	kitettség
+103249	uncertainty	bizonytalanság
+103250	allocate	juttat, kioszt
+103251	depress	lenyom
+103252	urge	ösztönöz, szorgalmaz
+103253	scam	csalás, átverés
+103254	bust	megbukik. szétrobban
+103255	outfit	felszerel, felszereléssel ellát
+103256	slum	nyomornegyed
+103257	sewerage	csatornahálózat
+103258	cluster	csoport
+103259	soak	felszív, áztat
+103260	entitled	jogosult
+103261	repent	megbán
+103262	feckless	felelőtlen, hanyag
+103263	disreputable	gyalázatos, szégyenletes

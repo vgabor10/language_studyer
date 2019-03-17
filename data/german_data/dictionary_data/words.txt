@@ -6273,3 +6273,4 @@
 106272	wohlgemerkt	természetesen
 106273	einreden	meggyőz, rávesz
 106274	e Verfassung	állapot
+106275	nahebringen	összehoz
