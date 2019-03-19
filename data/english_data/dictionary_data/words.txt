@@ -3262,3 +3262,20 @@
 103261	repent	megbán
 103262	feckless	felelőtlen, hanyag
 103263	disreputable	gyalázatos, szégyenletes
+103264	comprehensible	felfogható, megérthető
+103265	comprehesion	megértés, felfogás
+103266	unless	hacsak
+103267	rule of thumb	ökölszabály, bevett gyakorlat
+103268	resolution	felbontás
+103269	appreciate	méltányol, becsül
+103270	expend	ráfordít, költ
+103271	propagate	továbbad, terjeszt
+103272	contort	elferdít, eltorzít
+103273	adherence	tapadás, csatlakozás
+103274	infeasible	kivitelezhetetlen, megvalósíthatatlan
+103275	breadth	szélesség
+103276	earring	fülbevaló
+103277	subsceptible	hajlamos, fogékony
+103278	take into account	számításba vesz, figyelembe vesz
+103279	coarse	durva, érdes
+103280	inhibit	meggátol. akadályoz
