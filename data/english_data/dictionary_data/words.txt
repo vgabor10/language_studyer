@@ -38,7 +38,7 @@
 100038	utility	hasznosság
 100039	tough	erős, kemény
 100040	austerity	megszorítás, szigorúság
-100041	delusion	csalódás
+100041	delusion	illúzió, téveszme
 100042	sprawl	terjeszkedik
 100043	impetus	ösztönzés
 100044	lease	bérel
@@ -2775,7 +2775,7 @@
 102774	groan	nyög, nyöszörög
 102775	glut	bőség, telítettség
 102776	hike	túra, kirándulás
-102777	refrain	visszariad
+102777	refrain	visszatartja magát, visszariad
 102778	conciliatory	békülékeny
 102779	comprehensive	átfogó, széleskörű
 102780	woolly	gyapjas, ködös
@@ -3279,3 +3279,9 @@
 103278	take into account	számításba vesz, figyelembe vesz
 103279	coarse	durva, érdes
 103280	inhibit	meggátol. akadályoz
+103281	so far so good	eddig rendben van
+103282	decouple	felfog
+103283	expose to sg	kitesz vminek
+103284	addendum	függelék, toldalék
+103285	farcical	abszurd, nevetséges
+103286	eve	este
