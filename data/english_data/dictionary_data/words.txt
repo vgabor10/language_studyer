@@ -114,7 +114,7 @@
 100115	affiliate	egyesít
 100116	convince	meggyőz
 100117	acquisition	vétel
-100118	devote	szán
+100118	devote	szán, rászán
 100119	interrupt	félbeszakít
 100120	ultimately	végül
 100121	feeble	gyenge
@@ -1148,7 +1148,7 @@
 101151	seal	pecsét
 101152	utter	kiejt, kimond
 101153	expose	megvilágít, leleplez
-101154	assert	követel
+101154	assert	követel, kijelent
 101155	curtail	rövidít
 101156	rage	harag, düh
 101157	acquit	felment
@@ -2304,7 +2304,7 @@
 102304	even though	annak ellenére
 102305	spree	tréfa, mulatság
 102306	denture	műfogsor
-102307	dispose	rendelkezik, ekrendez
+102307	dispose	rendelkezik, elrendez
 102308	procure	szerez, megszerez
 102309	pen pal	levelező társ
 102310	sour	savanyít, elkeserít
@@ -3285,3 +3285,17 @@
 103284	addendum	függelék, toldalék
 103285	farcical	abszurd, nevetséges
 103286	eve	este
+103287	sliver	forgács, szilánk
+103288	applaud	tapsol, megtapsol
+103289	surrender	megadja magát, felad, lemond
+103290	awe	félelem
+103291	solicitation	kérelmezés, nyomatékos kérés
+103292	premeditate	előre megfontol
+103293	subjugate	leigáz
+103294	anteroom	várószoba, előszoba
+103295	cradle	bölcső
+103296	postpone	halaszt, elhalaszt
+103297	circumvent	megkerül, kijátszik
+103298	malicious	rosszindulatú, rosszhiszemű
+103299	abbreviate	rövidít
+103300	pressure	nyomás
