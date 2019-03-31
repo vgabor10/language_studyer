@@ -793,7 +793,7 @@
 100800	immoral	erkölcstelen
 100801	wind up	befejeződik, végetér
 100802	mount	beállít, felállít
-100803	depreciate	elértéktelenedik
+100803	depreciate	elértéktelenedik, elutasít
 100804	obsolete	elavult
 100805	axe	csökkent
 100806	vie	verseng
@@ -3311,3 +3311,6 @@
 103310	myriad	számtalan
 103311	verbosity	bőbeszédűség
 103312	unwary	könnyelmű, elővigyázatlan
+103313	take advantage of	kihasznál vmit
+103314	socket	konnektor, foglalat
+103315	far-fetched	erőltetett, túlzott
