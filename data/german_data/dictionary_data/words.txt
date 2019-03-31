@@ -6274,3 +6274,5 @@
 106273	einreden	meggyőz, rávesz
 106274	e Verfassung	állapot
 106275	nahebringen	összehoz
+106276	schweißen	hegeszt
+106277	schirmen	véd, oltalmaz

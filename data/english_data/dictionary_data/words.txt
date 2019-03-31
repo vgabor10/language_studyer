@@ -3299,3 +3299,15 @@
 103298	malicious	rosszindulatú, rosszhiszemű
 103299	abbreviate	rövidít
 103300	pressure	nyomás
+103301	by dint of	vminél fogva
+103302	mutable	változó, változékony
+103303	encumbrance	teher, megterhelés, kellemetlenség
+103304	contrive	kigondol, kieszel
+103305	toil	vesződik, bajlódik
+103306	redact	szerkeszt
+103307	predicament	kellemetlen helyzet
+103308	parry	elhárít, kivéd
+103309	degrade	gyengít, lealacsonyít, degradál
+103310	myriad	számtalan
+103311	verbosity	bőbeszédűség
+103312	unwary	könnyelmű, elővigyázatlan
