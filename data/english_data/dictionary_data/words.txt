@@ -3314,3 +3314,8 @@
 103313	take advantage of	kihasznál vmit
 103314	socket	konnektor, foglalat
 103315	far-fetched	erőltetett, túlzott
+103316	solace	vigasz, enyhülés
+103317	amicable	baráti, szívélyes
+103318	desert	elhagy
+103319	pinnacle	csúcs, tetőpont
+103320	buyback	visszavásárlás
