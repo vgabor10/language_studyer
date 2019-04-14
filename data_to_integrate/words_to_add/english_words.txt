@@ -1,0 +1,32 @@
+conformance	megfelelõség
+wrapper	csomagoló
+refinement	finomítás
+conscientious	lelkiismeretes
+irrespective	független
+contingency	eshetõség
+complement	kiegészít
+ramble	bolyong, kószál
+assess	felbecsül
+inhibit	meggátol
+defect	hiányosság, elégtelenség
+scope	hatáskör
+high-end	csúcsminõségû
+traceability	nyomon követhetõség
+granularity	részletesség
+elicitation	közzététel
+compliance	engedelmesség, szolgálatkészség
+defer	elhalaszt
+cognizant	tudomással bíró
+pervasive	átható, szétterjedt
+depict		ábrázol, lefest
+fairness	méltányosság
+throughput	áteresztõképesség
+preempt	megelõz
+relinquish	abbahagy, felad
+adjacent	szomszédos, egymás melletti
+dummy	színlelt, hamis
+recurring	ismétlõdõ, visszatérõ
+conformance	megfelelõség
+latency	lappangás
+prerequisite	elõfeltétel
+suppress	elnyom, elfojt
