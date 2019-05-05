@@ -3319,3 +3319,8 @@
 103318	desert	elhagy
 103319	pinnacle	csúcs, tetőpont
 103320	buyback	visszavásárlás
+103321	feature	tulajdonság, sajátosság, jellemvonás
+103322	spawn	ered, származik
+103323	saunter	sétál, ballag, kóborol
+103324	nourishment	táplálék, étel
+103325	eschew	lemond, elkerül
