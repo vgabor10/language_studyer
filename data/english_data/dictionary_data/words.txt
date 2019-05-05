@@ -216,7 +216,7 @@
 100217	overcome	legyőz
 100218	exacerbate	súlyosbít
 100219	sluggish	lomha
-100220	contingency	lehetőség
+100220	contingency	eshetőség, lehetőség
 100221	conspicuously	feltűnően
 100222	allure	csábít
 100223	catch up	utol ér
@@ -777,7 +777,7 @@
 100784	untenable	tarthatatlan
 100785	whine	nyafog
 100786	inevitable	elkerülhetetlen
-100787	scope	terület, hatály
+100787	scope	terület, hatály, hatáskör
 100788	feasible	megvalósítható
 100789	feedback	visszajelzés
 100790	cede	átenged, felad
@@ -1060,7 +1060,7 @@
 101064	allegiance	hűség
 101065	annihilate	megsemmisít
 101066	deliberately	szándékosan, akarattal
-101067	assess	elbírál, megítél
+101067	assess	elbírál, megítél, felbecsül
 101068	reliability	megbízhatóság
 101069	disconcerting	nyugtalanító
 101070	harsh	durva, érdes, kíméletlen
@@ -1661,7 +1661,7 @@
 101662	bankroll	finanszíroz
 101663	rural	vidéki
 101664	slash	hasít, megvág, csökkent
-101665	pervasive	szétterjedt, kiterjedt
+101665	pervasive	szétterjedt, kiterjedt, átható
 101666	tarnish	elhomályosít, elfakít
 101667	slpeen	lép
 101668	stakeholder	részvényes
@@ -3324,3 +3324,20 @@
 103323	saunter	sétál, ballag, kóborol
 103324	nourishment	táplálék, étel
 103325	eschew	lemond, elkerül
+103326	conformance	megfelelõség
+103327	refinement	finomítás
+103328	conscientious	lelkiismeretes
+103329	irrespective	független
+103330	ramble	bolyong, kószál
+103331	defect	hiányosság, elégtelenség
+103332	high-end	csúcsminõségû
+103333	traceability	nyomonkövethetõség
+103334	granularity	részletesség
+103335	elicitation	közzététel
+103336	cognizant	tudomással bíró
+103337	prerequisite	elõfeltétel
+103338	latency	lappangás
+103339	recurring	ismétlõdõ, visszatérõ
+103340	preempt	megelõz
+103341	throughput	áteresztõképesség
+103342	fairness	méltányosság
