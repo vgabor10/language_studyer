@@ -3341,3 +3341,7 @@
 103340	preempt	megelõz
 103341	throughput	áteresztõképesség
 103342	fairness	méltányosság
+103343	whether	vajon, ha
+103344	beset	szorongat
+103345	dish	tálal
+103346	dish	étel, fogás
