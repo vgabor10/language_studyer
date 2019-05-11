@@ -3345,3 +3345,6 @@
 103344	beset	szorongat
 103345	dish	tálal
 103346	dish	étel, fogás
+103347	treachery	árulás, hűtlenség
+103348	supposedly	állítólag, feltehetően
+103349	renowned	híres, nevezetes
