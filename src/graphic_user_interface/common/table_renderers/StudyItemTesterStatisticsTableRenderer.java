@@ -15,41 +15,41 @@ public class StudyItemTesterStatisticsTableRenderer implements TableCellRenderer
 	public Component getTableCellRendererComponent(JTable table, Object value,
 	    boolean isSelected, boolean hasFocus, int row, int column) {
             
-	    Component c = DEFAULT_RENDERER.getTableCellRendererComponent(table,
-	    value, isSelected, hasFocus, row, column);
-            
-            String rarAfter 
-                    = (String)table.getModel().getValueAt(row, table.getColumnCount()-3);
-            String rarBefore 
-                    = (String)table.getModel().getValueAt(row, table.getColumnCount()-2);
+	    Component c = DEFAULT_RENDERER.getTableCellRendererComponent(
+			table, value, isSelected, hasFocus, row, column);
+		
+		String rarAfter 
+				= (String)table.getModel().getValueAt(row, table.getColumnCount()-3);
+		String rarBefore 
+				= (String)table.getModel().getValueAt(row, table.getColumnCount()-2);
 
-			GeneralFunctions generalFunctions = new GeneralFunctions();
+		GeneralFunctions generalFunctions = new GeneralFunctions();
 
-            if (!generalFunctions.isDouble(rarAfter)) {
-                c.setBackground(new Color(255,255,255));  //white
-            }
-            else
-            if (!generalFunctions.isDouble(rarBefore)) {
-                c.setBackground(new Color(51,194,242)); //light blue
-            }
-            else {
-                double rarChange = Double.parseDouble((String)rarAfter) 
-                    - Double.parseDouble((String)rarBefore);
-                                    
-                if (rarChange > 0) {
-                    c.setBackground(new Color(0,255,89));   //light green
-                }
+		if (!generalFunctions.isDouble(rarAfter)) {
+			c.setBackground(new Color(255,255,255));  //white
+		}
+		else
+		if (!generalFunctions.isDouble(rarBefore)) {
+			c.setBackground(new Color(51,194,242)); //light blue
+		}
+		else {
+			double rarChange = Double.parseDouble((String)rarAfter) 
+				- Double.parseDouble((String)rarBefore);
+								
+			if (rarChange > 0) {
+				c.setBackground(new Color(0,255,89));   //light green
+			}
 
 
-                if (rarChange == 0) {
-                    c.setBackground(Color.lightGray);
-                }
+			if (rarChange == 0) {
+				c.setBackground(Color.lightGray);
+			}
 
-                if (rarChange < 0) {
-                    c.setBackground(new Color(255,71,71));  //light red
-                }
-            }
-            
-            return c;
+			if (rarChange < 0) {
+				c.setBackground(new Color(255,71,71));  //light red
+			}
+		}
+		
+		return c;
 	}
 }
