@@ -5,6 +5,7 @@ import java.awt.Component;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
+import language_studyer.common.GeneralFunctions;
 
 public class StudyItemTesterStatisticsTableRenderer implements TableCellRenderer {
     
@@ -22,11 +23,11 @@ public class StudyItemTesterStatisticsTableRenderer implements TableCellRenderer
             String rarBefore 
                     = (String)table.getModel().getValueAt(row, table.getColumnCount()-2);
 
-            if (rarAfter.equals("-")) {
+            if (!isDouble(rarAfter)) {
                 c.setBackground(new Color(255,255,255));  //white
             }
             else
-            if (rarBefore.equals("-")) {
+            if (!isDouble(rarBefore)) {
                 c.setBackground(new Color(51,194,242)); //light blue
             }
             else {
