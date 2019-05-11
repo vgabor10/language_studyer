@@ -3348,3 +3348,4 @@
 103347	treachery	árulás, hűtlenség
 103348	supposedly	állítólag, feltehetően
 103349	renowned	híres, nevezetes
+103350	warning	figyelmeztetés
