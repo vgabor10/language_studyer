@@ -26,15 +26,20 @@ public class GeneralFunctions {
         
 	public boolean isInteger(String s) {
 		try {
-			int cardIndex = Integer.parseInt(s);
+			int i = Integer.parseInt(s);
 			return true;
 		} catch (NumberFormatException e) {
 			return false;
 		}
 	}
 
-	public boolean isDouble() {	//TODO: implement
-		return false;
+	public boolean isDouble(String s) {
+		try {
+			double d = Double.parseDouble(s);
+		} catch (NumberFormatException e) {
+			return false;
+		}
+		return true;
 	}
 
 }
