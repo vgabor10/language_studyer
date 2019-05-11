@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -119,7 +120,7 @@ public class DiscFilesMetaDataHandler {
     public void setStudyedLanguageIndex(int languageIndex) {
         studyedLanguageIndex = languageIndex;
         try {
-            FileWriter fw = new FileWriter(settingsDataFilePath, false);	//true will append the new data
+            FileWriter fw = new FileWriter(settingsDataFilePath, false);	//true  will append to file
             fw.write(Integer.toString(languageIndex));
             fw.close();
         } catch (IOException ioe) {
@@ -129,13 +130,29 @@ public class DiscFilesMetaDataHandler {
     
     
     public void loadSettingsData() {
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("../data/settings_data/settings_data_file.txt"));
-            studyedLanguageIndex = Integer.parseInt(br.readLine());
+		
+		try {
+		
+			File file= new File("../data/settings_data/settings_data_file.txt");
+			if (!file.exists())
+			{
+				new File("../data/settings_data").mkdir();
+				FileWriter fw = new FileWriter(file, false);	//true  will append to file
+				fw.write(Integer.toString(studyedLanguageIndex));
+				fw.close();
+			}
+			else
+			{
+				BufferedReader br = new BufferedReader(new FileReader(file));
+				studyedLanguageIndex = Integer.parseInt(br.readLine());
+			}
+		
+
         } catch (FileNotFoundException e) {
-            System.err.println("Unable to find the file: fileName");
+            System.err.println("Unable to find the file: data/settings_data/settings_data_file.txt");
+			setStudyedLanguageIndex(0);
         } catch (IOException e) {
-            System.err.println("Unable to read the file: fileName");
+            System.err.println("Unable to read the file: data/settings_data/settings_data_file.txt");
         }
     }
 }
