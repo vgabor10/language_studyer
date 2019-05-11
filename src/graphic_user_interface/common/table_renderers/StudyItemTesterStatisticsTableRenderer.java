@@ -13,7 +13,7 @@ public class StudyItemTesterStatisticsTableRenderer implements TableCellRenderer
 
 	@Override
 	public Component getTableCellRendererComponent(JTable table, Object value,
-	    boolean isSelected, boolean hasFocus, int row, int column) {
+		boolean isSelected, boolean hasFocus, int row, int column) {
             
 		Component c = DEFAULT_RENDERER.getTableCellRendererComponent(
 			table, value, isSelected, hasFocus, row, column);
