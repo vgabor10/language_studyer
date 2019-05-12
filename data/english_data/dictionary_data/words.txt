@@ -1967,7 +1967,6 @@
 101968	bland	udvarias, kedves, enyhe
 101969	elude	kitér, kijátszik
 101970	broad	széles, terjedelmes
-101971	paragons	mintakép
 101972	irreverent	tiszteletlen
 101973	fracas	perpatvar, csetepaté
 101974	deputy	helyettes
@@ -3349,3 +3348,9 @@
 103348	supposedly	állítólag, feltehetően
 103349	renowned	híres, nevezetes
 103350	warning	figyelmeztetés
+103351	upcoming	közelgő, küszöbön álló
+103352	cling	ragaszkodik, kapaszkodik
+103353	annul	érvénytelenít
+103354	thoroughly	teljesen, alaposan
+103355	consternation	megdöbbenés, megrökönyödés
+103356	dreary	sivár, kopár
