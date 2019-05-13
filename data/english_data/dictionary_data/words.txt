@@ -1921,7 +1921,7 @@
 101922	sanguine	optimista, derülátó, bizakodó
 101923	resolutely	határozottan
 101924	lonley	magányos
-101925	hazard	kockázat
+101925	hazard	veszély, kockázat
 101926	obesity	elhízottság
 101927	companionship	társaság
 101928	confinement	korlátozás, fogság
@@ -3354,3 +3354,9 @@
 103354	thoroughly	teljesen, alaposan
 103355	consternation	megdöbbenés, megrökönyödés
 103356	dreary	sivár, kopár
+101971	grit	határozottság, jellemszilárdság
+103357	shorted	zárlatos
+103358	statutory	törvényes
+103359	accountable	felelős
+103360	likelihood	valószínűség
+103361	in conjunction 	együtt
