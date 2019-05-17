@@ -3360,3 +3360,4 @@
 103359	accountable	felelős
 103360	likelihood	valószínűség
 103361	in conjunction 	együtt
+103362	instantiate	példányosít
