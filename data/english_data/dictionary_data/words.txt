@@ -3362,3 +3362,7 @@
 103361	in conjunction 	együtt
 103362	instantiate	példányosít
 103363	sensible	józan, értelmes
+103364	regarding	vonatkozólag, illetőleg
+103365	fortune	szerencse, siker
+103366	fortune	vagyon
+103367	grin	vigyor
