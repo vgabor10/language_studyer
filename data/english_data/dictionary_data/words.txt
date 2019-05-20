@@ -3366,3 +3366,5 @@
 103365	fortune	szerencse, siker
 103366	fortune	vagyon
 103367	grin	vigyor
+103368	still	nyugodt, csendes
+103369	fallback	lemaradás, visszaesés
