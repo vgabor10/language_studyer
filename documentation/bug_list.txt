@@ -6,3 +6,5 @@ In dictionary activating ListAllCard button by key combination does not work. It
 
 3.
 start program -> grammar statistics -> number of grammar items = 70 -> close -> practising -> close -> grammar statistics -> number of grammar items = 66
+
+3. set minimum frame size at main frame
