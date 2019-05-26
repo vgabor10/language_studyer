@@ -3368,3 +3368,12 @@
 103367	grin	vigyor
 103368	still	nyugodt, csendes
 103369	fallback	lemaradás, visszaesés
+103370	dent	horpaszt
+103371	bidding	licit, ajánlat
+103372	blurt	fecseg
+103373	truth	igazság
+103374	pilfer	csen, ellop
+103375	gem	drágakő
+103376	implosion	beszakadás, összeroppanás
+103377	detest	utál, megvet, gyűlöl
+103378	pound	font
