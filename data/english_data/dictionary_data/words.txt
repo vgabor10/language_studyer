@@ -3378,3 +3378,9 @@
 103377	detest	utál, megvet, gyűlöl
 103378	pound	font
 103379	adjudicate	ítél, eldönt
+103380	nestle	fészkel, fészket rak
+103381	spurt	kilövellés, kitörés, hajrá
+103382	throng	tömeg, sokaság
+103383	swell	dagad, árad, duzzad
+103384	extoll	dicsőít, magasztal
+103385	worthy	méltó, érdemes

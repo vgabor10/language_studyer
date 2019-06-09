@@ -11,4 +11,6 @@
 7	prepozíciók
 10	földrajzi_nevek
 8	kifejezések
-9	tanulandó_szavak
+9	alapszintű szavak
+16	középszintű szavak
+17 felsőfokú szavak
