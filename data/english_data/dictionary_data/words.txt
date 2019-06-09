@@ -3377,3 +3377,4 @@
 103376	implosion	beszakadás, összeroppanás
 103377	detest	utál, megvet, gyűlöl
 103378	pound	font
+103379	adjudicate	ítél, eldönt
