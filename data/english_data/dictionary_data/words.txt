@@ -830,7 +830,7 @@
 100837	freight	teher, rakomány
 100838	compliance	betartás, teljesítés
 100839	waive	felad, lemond
-100840	comply	teljesít, engedelmeskedik
+100840	comply	teljesít, összeegyeztet, engedelmeskedik
 100841	aviation	repülés, légi közlekedés
 100842	interfere	zavar, beavatkozik
 100843	run aground	zátonyra fut
@@ -3393,3 +3393,6 @@
 103392	parish	plébánia, parókia
 103393	alien	idegen
 103394	efface	töröl, elhomályosít
+103395	extradition	kiadatás
+103396	baton	gumibot
+103397	subversion	felfordulás
