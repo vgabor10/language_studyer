@@ -740,7 +740,7 @@
 100747	vend	kereskedik, árul
 100748	on purpose	szándékosan, akarattal
 100749	ignition	begyulladás, égés
-100750	rupture	szakít
+100750	rupture	szakít, repeszt
 100751	nap	szunyókálás
 100752	pertain	vonatkozik vmire
 100753	blackmail	zsarol
@@ -3384,3 +3384,12 @@
 103383	swell	dagad, árad, duzzad
 103384	extoll	dicsőít, magasztal
 103385	worthy	méltó, érdemes
+103386	fail	megbukik, kudarcot vall
+103387	favour	szívesség
+103388	adorn	ékesít, díszít, szépít
+103389	lip	ajak
+103390	spruce	csinos, takaros
+103391	gripe	megragad, megmarkol
+103392	parish	plébánia, parókia
+103393	alien	idegen
+103394	efface	töröl, elhomályosít
