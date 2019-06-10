@@ -13,4 +13,4 @@
 8	kifejezések
 9	alapszintű szavak
 16	középszintű szavak
-17 felsőfokú szavak
+17	felsőfokú szavak
