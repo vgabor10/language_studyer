@@ -3396,3 +3396,7 @@
 103395	extradition	kiadatás
 103396	baton	gumibot
 103397	subversion	felfordulás
+103398	felt	filc
+103399	colleague	kolléga
+103400	conflict of interest	összeférhetetlenség
+103401	stick	ragad, tapad
