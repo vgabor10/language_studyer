@@ -3400,3 +3400,5 @@
 103399	colleague	kolléga
 103400	conflict of interest	összeférhetetlenség
 103401	stick	ragad, tapad
+103402	receive	kap, fogag, megkap
+103403	valve	szelep
