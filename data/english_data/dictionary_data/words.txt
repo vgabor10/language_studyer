@@ -3402,3 +3402,7 @@
 103401	stick	ragad, tapad
 103402	receive	kap, fogag, megkap
 103403	valve	szelep
+103404	they	ők
+103405	cape	fok, partfok
+103406	tidy	takaros, rendes, rendben tartott
+103407	opt	dönt, választ
