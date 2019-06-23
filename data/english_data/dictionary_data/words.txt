@@ -3406,3 +3406,9 @@
 103405	cape	fok, partfok
 103406	tidy	takaros, rendes, rendben tartott
 103407	opt	dönt, választ
+103408	joust	lovagi torna
+103409	spearhead	dárdahegy, lándzshegy
+103410	spearhead	élén jár valaminek
+103411	affluent	gazdag
+103412	subdue	elfojt, megfékez
+103413	insurrection	felkelés, lázadás, zendülés
