@@ -3412,3 +3412,5 @@
 103411	affluent	gazdag
 103412	subdue	elfojt, megfékez
 103413	insurrection	felkelés, lázadás, zendülés
+103414	be under way	folyamatban van
+103415	header	fejléc
