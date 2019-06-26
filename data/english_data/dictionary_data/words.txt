@@ -746,7 +746,7 @@
 100753	blackmail	zsarol
 100754	contribution	hozzájárulás, adomány
 100755	foresee	előre lát
-100756	margin	szegély, perem
+100756	margin	szegély, perem, margó
 100757	ease	enyhül, megnyugszik, könnyít, lazít
 100758	windshield	szélvédő
 100759	notwithstanding	mégis
