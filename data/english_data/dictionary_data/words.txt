@@ -282,7 +282,7 @@
 100283	crane	daru
 100284	tenant	lakó
 100285	precious	értékes
-100286	intact	ép
+100286	intact	ép, sértetlen
 100287	shatter	összezúz
 100288	ingenuity	találékonyság
 100289	tangible	kézzelfogható
@@ -1400,7 +1400,7 @@
 101402	vocational	szakmai
 101403	prudence	megfontoltság, körültekintés
 101404	crumble	porlad, morzsolódik
-101405	compatriot	hinfitárs
+101405	compatriot	honfitárs
 101406	taunt	gúny
 101407	swamp	elönt, eláraszt
 101408	cryptic	rejtélyes, titkos
@@ -3426,3 +3426,13 @@
 103425	eradicate	kiírt, kipusztít
 103426	seafarer	tengerész
 103427	underdog	gyengébb fél
+103428	take place	végbemegy, lezajlik
+103429	reparation	jóvátétel, helyreállítás
+103430	pip	mag, gyümölcsmag
+103431	recipient	átvevő, címzett
+103432	cabal	ármány, cselszövés
+103433	goad	serkent, ösztökél, felbíztat
+103434	lender	kölcsönadó
+103435	amiable	kedves, barátságos
+103436	primarily	elsősorban
+103437	frugal	takarékos, szerény
