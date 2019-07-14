@@ -3440,3 +3440,6 @@
 103439	uncontroversial	vitathatatlan, nem vitatott
 103440	stitch	tűz, ölt, fűz
 103441	daunted	rémült
+103442	harbinger	előjel
+103443	placid	szelíd, higgadt
+103444	fickle	ingatag, szeszélyes, változékony
