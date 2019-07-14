@@ -910,7 +910,7 @@
 100918	surge	hullám, roham
 100919	thwart	keresztez, akadályoz, kijátszik
 100920	deteriorate	romlik, rosszabbodik
-100921	stance	hozzáállás
+100921	stance	hozzáállás, álláspont
 100922	resilience	rugalmasság
 100923	crave	könyörög, sóvárog
 100924	accessory	kiegészítő, tartozék
@@ -3436,3 +3436,7 @@
 103435	amiable	kedves, barátságos
 103436	primarily	elsősorban
 103437	frugal	takarékos, szerény
+103438	controversial	vitatott
+103439	uncontroversial	vitathatatlan, nem vitatott
+103440	stitch	tűz, ölt, fűz
+103441	daunted	rémült
