@@ -3443,3 +3443,4 @@
 103442	harbinger	előjel
 103443	placid	szelíd, higgadt
 103444	fickle	ingatag, szeszélyes, változékony
+103445	architecture	építészet, szerkezet
