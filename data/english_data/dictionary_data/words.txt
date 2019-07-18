@@ -3444,3 +3444,5 @@
 103443	placid	szelíd, higgadt
 103444	fickle	ingatag, szeszélyes, változékony
 103445	architecture	építészet, szerkezet
+103446	simple	egyszerű
+103447	conclude	következtet
