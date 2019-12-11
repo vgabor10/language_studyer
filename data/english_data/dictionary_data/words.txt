@@ -3446,3 +3446,5 @@
 103445	architecture	építészet, szerkezet
 103446	simple	egyszerű
 103447	conclude	következtet
+103448	stipulate	meghatároz, megállapít
+103449	tune	hangol
