@@ -1927,7 +1927,7 @@
 101928	confinement	korlátozás, fogság
 101929	solitary	magányos, visszavonult
 101930	epidemic	járvány
-101931	utmost	legtöbb
+101931	utmost	legtöbb, maximális
 101932	attainment	elérés, szerzemény
 101933	underscore	aláhúz, kihangsúlyoz
 101934	spill	kiömlik, kiönt, kiesik
@@ -3448,3 +3448,15 @@
 103447	conclude	következtet
 103448	stipulate	meghatároz, megállapít
 103449	tune	hangol
+103450	armour	páncél, fegyverzet
+103451	exoneration	felmentés
+103452	rancour	harag, gyűlölet
+103453	lull	tűzszünet
+103454	seal	pecsétel
+103455	premise	feltevés
+103456	disposition	elhelyezkedés
+103457	succinct	velős, tömör
+103458	dent	horpadás
+103459	ridge	hegygerinc
+103460	elate	fellelkesít
+103461	thank	köszön, megköszön
