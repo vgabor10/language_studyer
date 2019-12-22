@@ -3460,3 +3460,6 @@
 103459	ridge	hegygerinc
 103460	elate	fellelkesít
 103461	thank	köszön, megköszön
+103462	plot	összeesküvés, cselszövés
+103463	default	fizetésképtelenség, mulasztás
+103464	timber	fa, faanyag
