@@ -3463,3 +3463,16 @@
 103462	plot	összeesküvés, cselszövés
 103463	default	fizetésképtelenség, mulasztás
 103464	timber	fa, faanyag
+103465	savior	megmentő
+103466	exclaim	kiállt, felkiállt
+103467	wither	elsorvad, elhervad
+103468	recoup	kártalanít
+103469	privation	nyomor
+103470	spice	íz, zamat
+103471	stricken	megsebzett
+103472	tarmac	leszállópálya
+103473	pile up	felhalmoz
+103474	skimp	spórol, lefarag
+103475	flour	liszt
+103476	adjourn	berekeszt
+103477	entitle	felhatalmaz, feljogosít
