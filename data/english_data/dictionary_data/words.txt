@@ -482,7 +482,7 @@
 100487	turmoil	nyugtalanság
 100488	durable	tartós
 100489	derision	gúnyolódás
-100490	surmise	feltételez
+100490	surmise	sejt, feltételez
 100491	headway	előmenetel
 100492	tack	taktika
 100493	withold	elhallgat
@@ -3480,3 +3480,13 @@
 103479	canal	csatorna
 103480	shove	lök, taszít
 103481	union	szakszervezet
+103482	appoint	kinevez
+103483	vault	pince, kripta
+103484	ordnance	lőszer
+103485	confer	tárgyal, értekezik
+103486	gather	gyűjt
+103487	intelligence	hírszerzés
+103488	intelligence	ész, értelem
+103489	tuna	tonhal
+103490	predominant	uralkodó, túlnyomó
+103491	equipment	berendezés, felszerelés
