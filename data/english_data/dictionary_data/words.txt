@@ -185,7 +185,7 @@
 100186	counterfeit	utánoz
 100187	greedy	kapzsi
 100188	blink	pislog
-100189	confiscate	lefoglal
+100189	confiscate	lefoglal, elkoboz
 100190	surveillance	felügyelet, fekderítés
 100191	courtroom	tárgyalóterem
 100192	denominate	elnevez
@@ -1307,7 +1307,7 @@
 101310	novice	újonc, kezdő
 101311	seizure	roham
 101312	altercation	veszekedés, civakodás
-101313	seek	kutat, keres
+101313	seek	kutat, keres, törekszik
 101314	dismal	szomorú, szörnyű
 101315	disobey	megszeg, nem fogad szót
 101316	shred	széttép, összszaggat
@@ -3490,3 +3490,7 @@
 103489	tuna	tonhal
 103490	predominant	uralkodó, túlnyomó
 103491	equipment	berendezés, felszerelés
+103492	back and forth	oda-vissza, előre-hátra
+103493	onetime	hajdani, egykori
+103494	fraternize	barátkozik
+103495	malleable	képlékeny, alakítható
