@@ -3494,3 +3494,17 @@
 103493	onetime	hajdani, egykori
 103494	fraternize	barátkozik
 103495	malleable	képlékeny, alakítható
+103496	set in motion	elindít
+103497	entanglement	belekeveredés, belegabalyodás
+103498	scrawl	firkál
+103499	unrest	zavargás
+103500	compound	létesítmény
+103501	vanguard	előörs
+103502	befell	előfordul, történik
+103503	foil	ellentét
+103504	mockingly	gúnyosan
+103505	architect	építész
+103506	somber	komor, sötét
+103507	reprisal	szankció, megtorlás
+103508	taunt	gúnyol
+103509	apple	alma
