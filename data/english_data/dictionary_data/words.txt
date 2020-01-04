@@ -3519,3 +3519,4 @@
 103518	certainly	biztosan
 103519	air strike	légi csapás, légitámadás
 103520	dubious	bizonytalan, kétséges
+103521	perpetual	örökös, szüntelen
