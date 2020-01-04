@@ -1633,7 +1633,7 @@
 101634	charge	vád, roham, támadás
 101635	oppose	ellenez
 101636	honk	dudál
-101637	fateful	életbevágó, végzetes
+101637	fateful	végzetes, életbevágó
 101638	fraud	csaló, szélhámos
 101639	perspiration	izzadság
 101640	thrust	lökés, döfés, tolóerő
@@ -1704,7 +1704,7 @@
 101705	overwhelmed	túlterhelt
 101706	wield	kezel, gyakorol, kormányoz
 101707	sway	leng, billeg
-101708	distract	megzavar, eltérít
+101708	distract	eltérít, megzavar
 101709	landscape	táj
 101710	discrepancy	eltérés
 101711	onerous	terhes, súlyos
@@ -3510,3 +3510,12 @@
 103509	apple	alma
 103510	whereabouts	whereabouts
 103511	moreover	azonfelül, emellett, azonkívül
+103512	weigh	mér
+103513	protracted	elhúzódó, elnyújtott
+103514	gamble	szerencsejáték
+103515	Friday	péntek
+103516	bolster	kipárnáz, támogat
+103517	withdraw	visszavon
+103518	certainly	biztosan
+103519	air strike	légi csapás, légitámadás
+103520	dubious	bizonytalan, kétséges
