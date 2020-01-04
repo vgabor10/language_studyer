@@ -1001,7 +1001,7 @@
 101009	infidelity	hűtlenség, hitetlenség
 101010	integrity	sértetlenség, tisztesség
 101011	sustain	tart, fenntart, kibír
-101012	avert	elfordít, eltérít, elhárít
+101012	avert	eltérít, elhárít
 101013	sigh	sóhajt
 101014	undertake	elvállal
 101015	resemble	hasonlít
@@ -3508,3 +3508,5 @@
 103507	reprisal	szankció, megtorlás
 103508	taunt	gúnyol
 103509	apple	alma
+103510	whereabouts	whereabouts
+103511	moreover	azonfelül, emellett, azonkívül
