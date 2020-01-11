@@ -78,7 +78,7 @@
 100079	afford	megengedhet magának, nyújt, ad
 100080	badge	jelvény
 100081	assessment	értékelés
-100082	advocate	támogat
+100082	advocate	támogat, pártol
 100083	plausible	valószínű, elfogadható
 100084	besides	ezenkívül
 100085	enhance	növel
@@ -3517,6 +3517,11 @@
 103516	bolster	kipárnáz, támogat
 103517	withdraw	visszavon
 103518	certainly	biztosan
-103519	air strike	légi csapás, légitámadás
+103519	airstrike	légi csapás, légitámadás
 103520	dubious	bizonytalan, kétséges
 103521	perpetual	örökös, szüntelen
+103522	against	ellen, szemben
+103523	flex	hajlít, feszít
+103524	inhabitant	lakos, lakó
+103525	devolve	átruház, áthárít
+103526	mural	falfestmény, freskó
