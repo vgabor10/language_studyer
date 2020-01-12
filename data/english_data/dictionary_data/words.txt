@@ -3525,3 +3525,5 @@
 103524	inhabitant	lakos, lakó
 103525	devolve	átruház, áthárít
 103526	mural	falfestmény, freskó
+103527	vessel	hajó
+103528	collapse	összeomlás
