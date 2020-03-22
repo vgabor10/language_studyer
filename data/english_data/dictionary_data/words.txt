@@ -3527,3 +3527,4 @@
 103526	mural	falfestmény, freskó
 103527	vessel	hajó
 103528	collapse	összeomlás
+103529	assuredly	biztosan
