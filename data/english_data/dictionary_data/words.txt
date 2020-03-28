@@ -3528,3 +3528,4 @@
 103527	vessel	hajó
 103528	collapse	összeomlás
 103529	assuredly	biztosan
+103530	ascendant	befolyásos, növekvő
