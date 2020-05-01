@@ -611,7 +611,7 @@
 100615	s Tausend	ezer (fn)
 100616	verbessern	javít, megjavít
 100617	s Essen	étel, evés
-100618	wunderbar	csodálatos
+100618	wunderbar	csodálatos, gyönyörű
 100619	handeln	cselekszik, kereskedik
 100620	gestern	tegnap (mn)
 100621	s Geheimnis	titok
