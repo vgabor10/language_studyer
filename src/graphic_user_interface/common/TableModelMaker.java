@@ -13,7 +13,6 @@ import java.util.Map;
 import javax.swing.table.DefaultTableModel;
 import language_studyer.AnswerDataByStudyItem;
 import language_studyer.AnswerDataByStudyItemContainer;
-import language_studyer.AnswerDataContainer;
 import language_studyer.Histogram;
 import language_studyer.answer_data_by_study_item_comparators.AnswerDataByStudyItemComparatorByRateOfRightAnswers;
 
