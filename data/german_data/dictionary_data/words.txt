@@ -4656,7 +4656,7 @@
 104807	gelten	érvényes (ige)
 104808	genesen	gyógyul
 104815	haben	birtokol vmit
-104824	können	tud
+104824	können	tud, képes
 104831	leihen	kölcsönöz
 104833	meiden	kerül, elkerül
 104835	müssen	kell (külső kényszer)
