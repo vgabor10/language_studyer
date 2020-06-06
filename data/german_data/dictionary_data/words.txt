@@ -6276,3 +6276,6 @@
 106275	nahebringen	összehoz
 106276	schweißen	hegeszt
 106277	schirmen	véd, oltalmaz
+106278	s Ansehen	hírnév, tekintély
+106279	r Kratzer	karcolás
+106280	e Fachzeitschrift	szaklap
