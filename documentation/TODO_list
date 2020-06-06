@@ -1,4 +1,5 @@
 Modification ideas in src:
+- using json files for language data storage
 - fix bugs when there is still no data
 - in gnuplot scripts the file path should be added by parameter
 - german grammar items to add: többesszámok
