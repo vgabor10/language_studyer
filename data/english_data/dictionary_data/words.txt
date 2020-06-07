@@ -3530,3 +3530,5 @@
 103529	assuredly	biztosan
 103530	ascendant	befolyásos, növekvő
 103531	dispatch	intézkedés, eligazítás
+103532	apprehension	letartóztatás, elfogás
+103533	disguise	álruha
