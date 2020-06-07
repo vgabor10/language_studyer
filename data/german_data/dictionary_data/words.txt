@@ -4539,7 +4539,7 @@
 104641	stärken	erősít
 104642	sozusagen	úgymond, úgyszólván
 104643	r Durcheinander	zűrzavar
-104644	verfügen	elrendel, intézkedik
+104644	verfügen	elrendel, intézkedik, birtokol
 104645	r Zusammenhang	kapcsolat, összefüggés
 104646	abstrakt	absztrakt, elvont
 104647	r Bulle	bika
@@ -6279,3 +6279,11 @@
 106278	s Ansehen	hírnév, tekintély
 106279	r Kratzer	karcolás
 106280	e Fachzeitschrift	szaklap
+106281	r Pomp	pompa
+106282	vorausgehen	megelőz, előremegy
+106283	e Meerenge	tengerszoros
+106284	r Kaliber	képesség
+106285	e Indienststellung	hivatalba állás
+106286	missbrauchen	visszaél, rosszul bánik
+106287	sacken	beedől, süllyed
+106288	freiheitlich	szabadságpárti, szabadságszerető
