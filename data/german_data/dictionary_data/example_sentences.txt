@@ -2691,8 +2691,6 @@
 101022	Sie suchen eine Arbeit in der Umgebung von Hamburg.
 101023	Auf der CD ist eine historische Aufnahme einer Rede Willy Brandts zu hören.
 101024	Deutschland durfte nach dem Ersten Weltkrieg nur eine kleine Flotte unterhalten.
-101024	Die Freunde unterhalten sich bis tief in die Nacht.
-101024	Die Zuschauer unterhalten sich über den Inhalt des Films.
 101026	Der Direktor hat seinen baldigen Rücktritt angekündigt.
 101027	Die sieben Zwerge wohnen hinter den sieben Bergen.
 101027	Markus und Ravit haben den ganzen Tag in den Bergen verbracht.
@@ -10062,3 +10060,5 @@
 105520	Ein zweites Versagen werde ich nicht dulden.
 105520	Ich schreibe es meinem eigenen Versagen zu.
 105520	Die Strafe für Versagen ist der Tod.
+106295	Die Freunde unterhalten sich bis tief in die Nacht.
+106295	Die Zuschauer unterhalten sich über den Inhalt des Films.

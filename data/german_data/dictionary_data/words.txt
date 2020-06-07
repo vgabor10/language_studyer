@@ -1008,7 +1008,7 @@
 101021	vorrücken	előrenyomul
 101022	e Umgebung	vidék
 101023	e Aufnahme	felvétel
-101024	unterhalten	fenntart, szórakoztat
+101024	unterhalten	fenntart, folytat
 101025	klarkommen	boldogul
 101026	r Rücktritt	visszavonulás
 101027	bergen	elrejt, kiment
@@ -6287,3 +6287,10 @@
 106286	missbrauchen	visszaél, rosszul bánik
 106287	sacken	beedől, süllyed
 106288	freiheitlich	szabadságpárti, szabadságszerető
+106289	essenziell	alapvető
+106290	benachbart	szomszédos
+106291	e Eskalation	eszkaláció, kiterjeszrés
+106292	beiderseitig	kétoldali, kölcsönös
+106293	krachen	ropog, recseg
+106294	r Lieferant	szállító
+106295	unterhalten	szórakoztat
