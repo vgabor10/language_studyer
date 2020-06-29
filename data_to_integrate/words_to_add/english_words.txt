@@ -4,3 +4,4 @@ graceful	elegáns, méltóságteljes
 rigour	szigor
 embark	beszáll, behajóz
 disorienting   zavaró
+needlessly	szükségtelenül, feleslegesen
