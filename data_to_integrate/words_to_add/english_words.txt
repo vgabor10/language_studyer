@@ -5,3 +5,4 @@ rigour	szigor
 embark	beszáll, behajóz
 disorienting   zavaró
 needlessly	szükségtelenül, feleslegesen
+payload	hasznos teher
