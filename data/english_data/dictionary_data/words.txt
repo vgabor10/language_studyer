@@ -3532,3 +3532,4 @@
 103531	dispatch	intézkedés, eligazítás
 103532	apprehension	letartóztatás, elfogás
 103533	disguise	álruha
+103534	tournament	verseny, lovagi torna
