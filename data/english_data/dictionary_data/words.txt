@@ -540,7 +540,7 @@
 100546	compile	összeállít
 100547	reprimand	rendreutasít, megfedd
 100548	altercate	veszekszik
-100549	commence	kezdődik
+100549	commence	kezdődik, kezd, elindít
 100550	endurance	állóképesség
 100551	abduct	elrabol
 100552	rivalry	vetélkedés
@@ -3533,3 +3533,9 @@
 103532	apprehension	letartóztatás, elfogás
 103533	disguise	álruha
 103534	tournament	verseny, lovagi torna
+103535	respite	haladék, halasztás
+103536	fisticuff	bunyó, ökölharc
+103537	mount	állvány, emelvény
+103538	flock	nyáj, falka
+103539	ram	üt, döngl
+103540	hound	kopó, vadászkutya
