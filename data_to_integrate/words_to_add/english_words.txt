@@ -6,3 +6,4 @@ embark	beszáll, behajóz
 disorienting   zavaró
 needlessly	szükségtelenül, feleslegesen
 payload	hasznos teher
+inversely proportional	fordítottan arányos
