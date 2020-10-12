@@ -2332,7 +2332,7 @@
 102333	take office	hivatalba lép
 102334	veer	irányt változtat
 102335	belligerent	harcias, ellenséges
-102336	excess	túlzás
+102336	excess	túlzás, felesleg, többlet
 102337	credibility	hitelesség
 102338	rebuke	rendreutasítás
 102339	guarantor	kezes, jótálló
@@ -3539,3 +3539,5 @@
 103538	flock	nyáj, falka
 103539	ram	üt, döngl
 103540	hound	kopó, vadászkutya
+103541	debilitate	gyengít
+103542	requisit	követelmény, előfeltétel
