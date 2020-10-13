@@ -1,13 +1,14 @@
-deficience	gyengeség
+﻿deficience	gyengeség
 cascade	zuhog, aláesik
 graceful	elegáns, méltóságteljes
 rigour	szigor
 embark	beszáll, behajóz
-disorienting   zavaró
+disorienting	zavaró
 needlessly	szükségtelenül, feleslegesen
 payload	hasznos teher
 inversely proportional	fordítottan arányos
 exclamation	felkiáltás
 asterisk	csillag
 savvy	hozzáértés, ész
-intrinsically	eredend�en
+intrinsically	eredendően
+praise	dícsér
