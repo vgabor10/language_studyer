@@ -12,3 +12,8 @@ asterisk	csillag
 savvy	hozzáértés, ész
 intrinsically	eredendően
 praise	dícsér
+precipitation	csapadék
+normally	normálisan, rendszerint
+attainable	megvalósítható
+decipher	megold, megfejt
+temper	meghamisít, befolyásol
