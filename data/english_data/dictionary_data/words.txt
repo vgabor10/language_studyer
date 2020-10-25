@@ -2042,7 +2042,7 @@
 102044	thick	vastag
 102045	freezer	fagyasztó, mélyhűtő
 102046	grunt	morog, röfög
-102047	sniff	szimatol
+102047	sniff	szimatol, szippant
 102048	overturn	legyőz, megdönt
 102049	crosshair	célkereszt
 102050	redeem	jóvátesz, helyrehoz
@@ -3541,3 +3541,7 @@
 103540	hound	kopó, vadászkutya
 103541	debilitate	gyengít
 103542	requisit	követelmény, előfeltétel
+103543	discipline	fegyelem
+103544	discipline	tudományág
+103545	versatile	sokoldalú
+103546	hilarious	vidám, derűs
