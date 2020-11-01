@@ -17,3 +17,6 @@ normally	normálisan, rendszerint
 attainable	megvalósítható
 decipher	megold, megfejt
 temper	meghamisít, befolyásol
+conformance egyezés, megfelelőség
+bidirectional  kétirányú
+triage   prioritási sorrend
