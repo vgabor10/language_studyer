@@ -611,7 +611,7 @@
 100617	hasty	meggondolatlan, hirtelen
 100618	orphan	árva
 100619	lad	srác, fiú
-100620	endure	eltűr, elvisel
+100620	endure	eltűr, elvisel, kiáll
 100621	strangle	megfojt, fojtogat
 100622	pursuit	üldözés
 100623	disdain	lenéz, megvet
@@ -3545,3 +3545,8 @@
 103544	discipline	tudományág
 103545	versatile	sokoldalú
 103546	hilarious	vidám, derűs
+103547	tenet	elv, tan
+103548	reassuring	biztató, megnyugtató
+103549	recalcitrant	makacs, akaratos, ellenkező
+103550	interject	közbevet
+103551	upheld	fenntartott
