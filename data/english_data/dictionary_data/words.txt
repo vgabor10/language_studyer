@@ -3550,3 +3550,5 @@
 103549	recalcitrant	makacs, akaratos, ellenkező
 103550	interject	közbevet
 103551	upheld	fenntartott
+103552	site	telek, hely
+103553	ramp up	növel, felzárkózik
