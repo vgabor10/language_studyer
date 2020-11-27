@@ -3552,3 +3552,7 @@
 103551	upheld	fenntartott
 103552	site	telek, hely
 103553	ramp up	növel, felzárkózik
+103554	inference	következtetés, megállapítás
+103555	confusion	zavar
+103556	weather	átvészel, kiáll
+103557	weather	időjárás
