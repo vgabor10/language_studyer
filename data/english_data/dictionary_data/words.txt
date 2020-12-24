@@ -3556,3 +3556,9 @@
 103555	confusion	zavar
 103556	weather	átvészel, kiáll
 103557	weather	időjárás
+103558	equity	részvény
+103559	grid	rács
+103560	stench	bűz
+103561	pan	serpenyő
+103562	lair	odú
+103563	cart	kordé, kocsi
