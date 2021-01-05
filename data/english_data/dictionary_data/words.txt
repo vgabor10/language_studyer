@@ -3562,3 +3562,13 @@
 103561	pan	serpenyő
 103562	lair	odú
 103563	cart	kordé, kocsi
+103564	commutation	átváltoztatás, felcserélés
+103565	stinging	maró, égtő
+103566	bore	fúr
+103567	unearth	kiás, napvilágra hoz
+103568	admonitory	figyelmeztető, intő
+103569	contemptuous	megvető, lenéző
+103570	excoriate	felsért, felhorzsol
+103571	mercurial	ingatag, szeszélyes
+103572	itch	viszket
+103573	liar	hazug ember
