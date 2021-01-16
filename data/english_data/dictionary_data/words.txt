@@ -129,7 +129,7 @@
 100130	absorb	felszív, elnyel
 100131	tepid	langyos
 100132	burden	teher
-100133	albeit	habár
+100133	albeit	habár, noha
 100134	squeeze	összenyom
 100135	dire	szörnyű
 100136	maize	kukorica
@@ -1149,7 +1149,7 @@
 101152	utter	kiejt, kimond
 101153	expose	megvilágít, leleplez
 101154	assert	követel, kijelent
-101155	curtail	rövidít
+101155	curtail	rövidít, megfoszt
 101156	rage	harag, düh
 101157	acquit	felment
 101158	waiter	pincér
@@ -3572,3 +3572,12 @@
 103571	mercurial	ingatag, szeszélyes
 103572	itch	viszket
 103573	liar	hazug ember
+103574	relegate	leminősít, száműz
+103575	stay tuned!	maradjon velünk!
+103576	instigate	szít, uszít
+103577	splended	pompás, nagyszerű
+103578	wariness	óvatosság, körültekintés
+103579	attendance	jelenlét, hallgatóság, közönség
+103580	spectator	néző, szemlélő
+103581	no longer	már nem
+103582	upon	-on, -en, -ön
