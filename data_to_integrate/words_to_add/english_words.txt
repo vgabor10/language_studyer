@@ -21,3 +21,8 @@ conformance egyezés, megfelelőség
 bidirectional  kétirányú
 triage   prioritási sorrend
 at large	általában
+conformance	egyezés, megfelelőség
+bidirectional	kétirányú
+triage	prioritási sorrend
+be offended at sg	megsértődik vmi miatt
+right away	azonnal

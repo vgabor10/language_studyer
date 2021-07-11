@@ -6295,3 +6295,4 @@
 106294	r Lieferant	szállító
 106295	unterhalten	szórakoztat
 106296	r Schlaganfall	agyvérzés
+106297	r Überrest	maradvány
