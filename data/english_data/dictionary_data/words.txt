@@ -1187,7 +1187,7 @@
 101190	chop	szelet, hússzelet
 101191	of course	természetesen
 101192	doll	baba, bábú
-101193	covet	óhajt, kíván sóvárog
+101193	covet	óhajt, kíván, sóvárog
 101194	hollow	üres, üreges
 101195	statue	szobor
 101196	eternal	örök
@@ -3581,3 +3581,7 @@
 103580	spectator	néző, szemlélő
 103581	no longer	már nem
 103582	upon	-on, -en, -ön
+103583	mediocre	középszerű
+103584	recall	emlékezik, emlékeztet, felidéz
+103585	logger	favágó
+103586	anew	újra

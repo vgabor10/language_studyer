@@ -20,3 +20,4 @@ temper	meghamisít, befolyásol
 conformance egyezés, megfelelőség
 bidirectional  kétirányú
 triage   prioritási sorrend
+at large	általában
