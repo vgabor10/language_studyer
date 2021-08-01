@@ -1,4 +1,5 @@
 Modification ideas in src:
+- in dictionary highlight with bold caracters the concurrent substring
 - using json files for language data storage
 - fix bugs when there is still no data
 - in gnuplot scripts the file path should be added by parameter
