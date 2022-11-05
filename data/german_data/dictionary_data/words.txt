@@ -6296,3 +6296,5 @@
 106295	unterhalten	szórakoztat
 106296	r Schlaganfall	agyvérzés
 106297	r Überrest	maradvány
+106298	e Rendite	hozam
+106299	r Argwohn	gyanú
