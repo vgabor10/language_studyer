@@ -6298,3 +6298,6 @@
 106297	r Überrest	maradvány
 106298	e Rendite	hozam
 106299	r Argwohn	gyanú
+106300	durchkommen	győz
+106301	zwischenzeitlich	időközben
+106302	s Verlassen	elhagyás
