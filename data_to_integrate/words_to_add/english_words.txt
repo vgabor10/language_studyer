@@ -27,3 +27,6 @@ triage	prioritási sorrend
 be offended at sg	megsértődik vmi miatt
 right away	azonnal
 dubbed	szinkronizált
+lesson	tanúlság
+skin	bőr
+thick	vastag
