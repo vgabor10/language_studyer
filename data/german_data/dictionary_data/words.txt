@@ -6301,3 +6301,4 @@
 106300	durchkommen	győz
 106301	zwischenzeitlich	időközben
 106302	s Verlassen	elhagyás
+106303	erschwinglich	megfizethető, elérhető
