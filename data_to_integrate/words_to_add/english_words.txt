@@ -30,3 +30,4 @@ dubbed	szinkronizált
 lesson	tanúlság
 skin	bőr
 thick	vastag
+it is an asset and not a liability
