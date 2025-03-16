@@ -1,6 +1,4 @@
 Todos:
-- create requirements.txt
-
 Modification ideas in src:
 - in dictionary highlight with bold caracters the concurrent substring
 - using json files for language data storage
